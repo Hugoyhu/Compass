@@ -3,13 +3,13 @@
  * data/catalog/offerings/<term>.json, and import-report.md.
  *
  *   npm run import:courses                 # full import, model parsing within --budget (USD, default 3)
- *   npm run import:courses -- --no-model   # rules only, no API calls
+ *   npm run import:courses -- --no-model   # rules and cached model results only, no API calls
  *
- * Other flags: --model, --effort, --concurrency (default 4).
+ * Other flags: --input (scraper output folder here, default data), --model, --effort, --concurrency (default 4).
  * Model results are cached in prereq-cache.json, so reruns are free.
  */
 import { spawnSync } from "node:child_process";
-import { mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { CourseCodeSchema, type CourseCode, type Season } from "@/lib/domain/catalog/common";
 import { CourseRecordSchema, type CourseRecord, type Prereq } from "@/lib/domain/catalog/course";
@@ -29,7 +29,8 @@ import { CACHE_FILE, parseWithModel, type ModelRunResult } from "./prereq-llm";
 import { allowConcurrent, hasUnparsed, parseSimplePrereq } from "./prereq-rules";
 
 const HERE = path.resolve("utilities/scrapers/course-offering-scraper");
-const RAW = path.join(HERE, "data");
+// Scraper output folder; --input=data-fresh reads another run.
+const RAW = path.join(HERE, process.argv.find((a) => a.startsWith("--input="))?.split("=")[1] ?? "data");
 const CATALOG_DIR = path.resolve("data/catalog");
 const OFFERINGS_DIR = path.join(CATALOG_DIR, "offerings");
 const REPORT_FILE = path.join(HERE, "import-report.md");
@@ -74,6 +75,27 @@ const SEASON_CODE: Record<Season, string> = { Spring: "SP", Summer: "SU", Fall: 
 function isoDate(us: string): string {
   const [m, d, y] = us.split("/");
   return `${y}-${m}-${d}`;
+}
+
+/**
+ * Term ids the scrape collected sections for ("Spring 2027" → "2027-SP"), or
+ * null when it asked for every term. Only these term files are replaced.
+ */
+function scrapedTerms(sectionsTerm: string | undefined): Set<string> | null {
+  if (!sectionsTerm || /^all$/i.test(sectionsTerm.trim())) return null;
+  const ids = sectionsTerm.split(",").flatMap((t) => {
+    const m = t.trim().match(/^(Spring|Summer|Fall|Winter) (\d{4})$/);
+    return m ? [`${m[2]}-${SEASON_CODE[m[1] as Season]}`] : [];
+  });
+  return ids.length > 0 ? new Set(ids) : null;
+}
+
+/** Existing term files the scrape didn't cover; they are kept as they are. */
+function keptOfferings(scraped: Set<string> | null): OfferingTerm[] {
+  if (!scraped || !existsSync(OFFERINGS_DIR)) return [];
+  return readdirSync(OFFERINGS_DIR)
+    .filter((f) => f.endsWith(".json") && !scraped.has(f.replace(/\.json$/, "")))
+    .map((f) => OfferingTermSchema.parse(JSON.parse(readFileSync(path.join(OFFERINGS_DIR, f), "utf8"))));
 }
 
 /** Section course codes sometimes use the index format, "CSE (330)". */
@@ -162,6 +184,15 @@ async function main() {
   const mainSeasons = new Map<CourseCode, Set<Season>>();
   let nonUndergradSections = 0;
   let undated = 0;
+  let outsideScrapedTerms = 0;
+  const scraped = scrapedTerms(summary.sections_term);
+  const kept = keptOfferings(scraped);
+  const SEASON_OF: Record<string, Season> = { SP: "Spring", SU: "Summer", FA: "Fall", WI: "Winter" };
+  for (const o of kept) {
+    for (const s of o.sections) {
+      if (s.campus === "main") mainSeasons.set(s.code, (mainSeasons.get(s.code) ?? new Set()).add(SEASON_OF[o.term.slice(5)]));
+    }
+  }
   // A rescraped course leaves its older rows behind under a different term label; keep the newest row per section.
   const latest = new Map<string, RawSection>();
   for (const r of rawSections) {
@@ -180,6 +211,11 @@ async function main() {
     }
     const section = toSection(raw);
     const id = `${term.year}-${SEASON_CODE[term.season]}`;
+    // Stray rows dated in another term would replace that term's full file with a handful of sections.
+    if (scraped && !scraped.has(id)) {
+      outsideScrapedTerms++;
+      continue;
+    }
     terms.set(id, [...(terms.get(id) ?? []), section]);
     if (section.campus === "main") {
       mainSeasons.set(section.code, (mainSeasons.get(section.code) ?? new Set()).add(term.season));
@@ -245,9 +281,11 @@ async function main() {
   }
   let model: ModelRunResult = { trees: new Map(), failures: new Map(), costUsd: 0, fromCache: 0, skipped: 0 };
   const modelName = arg("model") ?? "claude-haiku-5-5";
-  if (useModel && forModel.length > 0) {
-    loadEnv();
+  if (forModel.length > 0) {
+    // Without the model, cached trees from earlier runs still apply.
+    if (useModel) loadEnv();
     model = await parseWithModel(forModel, {
+      cacheOnly: !useModel,
       model: modelName,
       effort: (arg("effort") as "low" | "medium" | "high") ?? "medium",
       budgetUsd: Number(arg("budget") ?? 3),
@@ -281,8 +319,9 @@ async function main() {
     if (!parsed.success) throw new Error(`${r.code} failed CourseRecordSchema: ${parsed.error.issues[0]?.message}`);
   }
   writeFileSync(path.join(CATALOG_DIR, "courses.json"), JSON.stringify(records, null, 1) + "\n");
-  // Term files are regenerated from scratch so a term that disappears from the data doesn't linger.
-  rmSync(OFFERINGS_DIR, { recursive: true, force: true });
+  // A full scrape (every term) regenerates the folder so a term that disappears doesn't linger;
+  // a scrape of some terms replaces only those files.
+  if (!scraped) rmSync(OFFERINGS_DIR, { recursive: true, force: true });
   mkdirSync(OFFERINGS_DIR, { recursive: true });
   const offerings: OfferingTerm[] = [...terms]
     .sort(([a], [b]) => a.localeCompare(b))
@@ -392,7 +431,8 @@ async function main() {
       (o) =>
         `- ${o.term}: ${o.sections.length} sections (${o.sections.filter((s) => s.campus === "korea").length} at SUNY Korea)`,
     ),
-    `- Sections skipped: ${nonUndergradSections} for graduate or unknown courses, ${undated} with no meeting dates`,
+    `- Sections skipped: ${nonUndergradSections} for graduate or unknown courses, ${undated} with no meeting dates${scraped ? `, ${outsideScrapedTerms} dated outside the scraped term (${[...scraped].join(", ")})` : ""}`,
+    ...(kept.length > 0 ? [`- Kept from earlier imports: ${kept.map((o) => `${o.term} (${o.sections.length} sections)`).join(", ")}`] : []),
     "",
     "## Duplicates merged",
     "",
