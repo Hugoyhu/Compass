@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import { ArrowLeft, ExternalLink, FileQuestion } from "lucide-react";
+import { ArrowLeft, ArrowLeftRight, ExternalLink, FileQuestion } from "lucide-react";
 import { RuleTree, type RuleContext } from "@/components/degrees/rule-tree";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
-import type { ProgramDefinition, ProgramPolicy, Rule } from "@/lib/domain/catalog/program";
+import type { ProgramDefinition, ProgramPolicy, Rule, Substitution } from "@/lib/domain/catalog/program";
 import { itemNumber, NOTE_TOPICS, POLICY_TITLES, requirementHeading } from "@/lib/engine/describe";
 import { getProgramDetail, listProgramIds, type ProgramDetail } from "@/lib/services/degrees";
 
@@ -42,6 +42,7 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
 
   const { program, unparsedCount } = detail;
   const refs = requirementRefs(program);
+  const { byRequirement, unattached } = substitutionsByRequirement(program);
   const ctx: RuleContext = { courses: detail.courseInfo, refs: refs.full };
 
   return (
@@ -106,6 +107,7 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
               </CardHeader>
               <CardContent className="space-y-3">
                 <RuleTree rule={r.rule} ctx={ctx} />
+                {byRequirement.get(r.id)?.map((sub) => <SubstitutionNote key={sub.id} sub={sub} />)}
                 <CatalogText text={r.sourceText} />
               </CardContent>
             </Card>
@@ -134,14 +136,14 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
             </Card>
           )}
 
-          {program.substitutions.length > 0 && (
+          {unattached.length > 0 && (
             <Card size="sm">
               <CardHeader>
                 <CardTitle>Allowed substitutions</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-xs text-muted-foreground">
-                  {program.substitutions.map((s) => (
+                  {unattached.map((s) => (
                     <li key={s.id}>
                       {s.sourceText}
                       {s.requiresApproval && (
@@ -242,6 +244,56 @@ function SampleSequence({ detail }: { detail: ProgramDetail }) {
       </CardContent>
     </Card>
   );
+}
+
+function SubstitutionNote({ sub }: { sub: Substitution }) {
+  return (
+    <div className="flex gap-2 rounded-md border bg-muted/30 p-2 text-xs">
+      <ArrowLeftRight className="mt-px size-3.5 shrink-0 text-muted-foreground" aria-hidden />
+      <div className="min-w-0 space-y-1">
+        <p className="font-medium">
+          Alternative path
+          {sub.condition && <span className="font-normal text-muted-foreground"> · {sub.condition}</span>}
+          {sub.requiresApproval && (
+            <Badge variant="outline" className="ml-1.5 font-normal">
+              Needs approval
+            </Badge>
+          )}
+        </p>
+        <p className="leading-relaxed text-muted-foreground">{sub.sourceText}</p>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * Shows each substitution on every requirement it changes (one that names a
+ * replaced course or contains the replaced rule), so alternatives like an
+ * honors sequence appear next to the courses they replace.
+ */
+function substitutionsByRequirement(program: ProgramDefinition) {
+  const byRequirement = new Map<string, Substitution[]>();
+  const unattached: Substitution[] = [];
+  const contents = program.requirements.map((r) => {
+    const codes = new Set<string>();
+    const ids = new Set<string>([r.id]);
+    const visit = (rule: Rule) => {
+      if (rule.id) ids.add(rule.id);
+      if (rule.type === "course") codes.add(rule.code);
+      if (rule.type === "choose") rule.from.courses?.forEach((c) => codes.add(c));
+      if (rule.type === "allOf" || rule.type === "anyOf") rule.rules.forEach(visit);
+    };
+    visit(r.rule);
+    return { id: r.id, codes, ids };
+  });
+  for (const sub of program.substitutions) {
+    const targets = contents.filter(({ codes, ids }) =>
+      sub.replaces.type === "courses" ? sub.replaces.courses.some((c) => codes.has(c)) : ids.has(sub.replaces.ruleId),
+    );
+    if (targets.length === 0) unattached.push(sub);
+    targets.forEach(({ id }) => byRequirement.set(id, [...(byRequirement.get(id) ?? []), sub]));
+  }
+  return { byRequirement, unattached };
 }
 
 function CatalogText({ text }: { text: string }) {

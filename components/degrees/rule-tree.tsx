@@ -105,20 +105,31 @@ function Choose({ rule, ctx }: { rule: Extract<Rule, { type: "choose" }>; ctx: R
       ? `${rule.credits} credits`
       : `${rule.count ?? 1} ${(rule.count ?? 1) === 1 ? "course" : "courses"}`;
   const listed = rule.from.courses ?? [];
-  const pool = describePool(rule.from, ctx);
+  const { sources, qualifiers } = describeSelectorParts(rule.from, ctx);
 
+  // Lead with the broad pool when there is one, so a few named extras don't read as the whole list.
   return (
     <Group label={`Choose ${amount}`}>
-      {listed.length > 0 && (
-        <ul className="space-y-1">
-          {listed.map((code) => (
-            <li key={code}>
-              <CourseLine code={code} ctx={ctx} />
-            </li>
+      {sources.length > 0 && (
+        <ul className="list-disc space-y-0.5 pl-5 text-sm">
+          {sources.map((s) => (
+            <li key={s}>{s}</li>
           ))}
         </ul>
       )}
-      {pool && <p className="text-xs text-muted-foreground">{listed.length > 0 ? `Also: ${pool}` : `From ${pool}`}</p>}
+      {listed.length > 0 && (
+        <div className="space-y-1">
+          {sources.length > 0 && <p className="text-xs text-muted-foreground">Or these specific courses:</p>}
+          <ul className="space-y-1">
+            {listed.map((code) => (
+              <li key={code}>
+                <CourseLine code={code} ctx={ctx} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {qualifiers.length > 0 && <p className="text-xs text-muted-foreground">Excluding {qualifiers.join("; ")}.</p>}
       {(rule.constraints ?? []).map((k, i) => (
         <p key={i} className="text-xs text-muted-foreground">
           {describeConstraint(k, ctx)}
@@ -159,33 +170,42 @@ function ManualCheck({ rule }: { rule: Rule }) {
   );
 }
 
-/** The non-listed part of a selector (subjects, levels, ranges) plus exclusions, or null when it only lists courses. */
-function describePool(sel: CourseSelector, ctx: RuleContext): string | null {
-  const parts: string[] = [];
-  if (sel.subjects?.length) {
-    const level =
-      sel.minNumber !== undefined && sel.maxNumber !== undefined
-        ? ` numbered ${sel.minNumber}–${sel.maxNumber}`
-        : sel.minNumber !== undefined
-          ? ` numbered ${sel.minNumber} or higher`
-          : sel.maxNumber !== undefined
-            ? ` numbered ${sel.maxNumber} or lower`
-            : "";
-    parts.push(`${sel.subjects.join(", ")} courses${level}`);
-  } else if (sel.minNumber !== undefined && !sel.courses?.length && !sel.ranges?.length) {
-    parts.push(`any course numbered ${sel.minNumber} or higher`);
-  }
-  sel.ranges?.forEach((r) => parts.push(`${r.subject} ${r.from}–${r.to}`));
+function describeRange(r: { subject: string; from: number; to: number }): string {
+  return r.to >= 999 ? `${r.subject} courses numbered ${r.from} and above` : `${r.subject} ${r.from}–${r.to}`;
+}
+
+/**
+ * A selector's non-listed sources (subjects, levels, ranges) and its exclusions.
+ * Listed courses are rendered separately.
+ */
+function describeSelectorParts(sel: CourseSelector, ctx: RuleContext): { sources: string[]; qualifiers: string[] } {
+  const sources: string[] = [];
+  const level =
+    sel.minNumber !== undefined && sel.maxNumber !== undefined
+      ? ` numbered ${sel.minNumber}–${sel.maxNumber}`
+      : sel.minNumber !== undefined
+        ? ` numbered ${sel.minNumber} and above`
+        : sel.maxNumber !== undefined
+          ? ` numbered ${sel.maxNumber} and below`
+          : "";
+  const credits = sel.minCredits ? `, each at least ${sel.minCredits} credits` : "";
+  if (sel.subjects?.length) sources.push(`${sel.subjects.join(", ")} courses${level}${credits}`);
+  else if (sel.minNumber !== undefined && !sel.courses?.length && !sel.ranges?.length) sources.push(`Any course${level}${credits}`);
+  sel.ranges?.forEach((r) => sources.push(describeRange(r)));
 
   const qualifiers: string[] = [];
-  if (sel.minCredits) qualifiers.push(`each at least ${sel.minCredits} credits`);
-  if (sel.excludeCourses?.length) qualifiers.push(`not ${sel.excludeCourses.join(", ")}`);
-  if (sel.excludeAttributes?.length) qualifiers.push(`excluding ${sel.excludeAttributes.join(", ")} courses`);
-  if (sel.excludeUsedBy?.length) qualifiers.push(`not already counted toward ${sel.excludeUsedBy.map((id) => ctx.refs[id] ?? id).join(", ")}`);
+  if (sel.excludeCourses?.length) qualifiers.push(sel.excludeCourses.join(", "));
+  if (sel.excludeAttributes?.length) qualifiers.push(`${sel.excludeAttributes.join(", ")} courses`);
+  if (sel.excludeUsedBy?.length) qualifiers.push(`courses already counted toward ${[...new Set(sel.excludeUsedBy.map((id) => ctx.refs[id] ?? id))].join(", ")}`);
+  return { sources, qualifiers };
+}
 
-  if (!parts.length && !qualifiers.length) return null;
-  const base = parts.join(" or ") || "the listed courses";
-  return qualifiers.length ? `${base} (${qualifiers.join("; ")})` : base;
+/** One-line summary of a selector, for constraints. */
+function describePool(sel: CourseSelector, ctx: RuleContext): string {
+  const { sources, qualifiers } = describeSelectorParts(sel, ctx);
+  const all = [...sources.map((s) => s.replace(/^Any /, "any ")), ...(sel.courses ?? [])];
+  const base = all.length ? all.join(", ") : "the listed courses";
+  return qualifiers.length ? `${base} (excluding ${qualifiers.join("; ")})` : base;
 }
 
 function describeConstraint(k: ChooseConstraint, ctx: RuleContext): string {
@@ -197,17 +217,13 @@ function describeConstraint(k: ChooseConstraint, ctx: RuleContext): string {
       ]
         .filter(Boolean)
         .join(" or ");
-      return `At most ${limit} from ${describePool(k.from, ctx) ?? listOf(k.from.courses)}.`;
+      return `At most ${limit} from ${describePool(k.from, ctx)}.`;
     }
     case "minFrom":
-      return `At least ${k.minCourses} from ${describePool(k.from, ctx) ?? listOf(k.from.courses)}.`;
+      return `At least ${k.minCourses} from ${describePool(k.from, ctx)}.`;
     case "onePerGroup":
       return `No more than one of each: ${k.groups.map((g) => g.join(" / ")).join("; ")}.`;
     case "notEquivalentTo":
       return `May not be equivalent to courses counted toward ${ctx.refs[k.requirementId] ?? k.requirementId}.`;
   }
-}
-
-function listOf(codes: string[] | undefined): string {
-  return codes?.length ? codes.join(", ") : "the listed courses";
 }
