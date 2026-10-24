@@ -8,7 +8,7 @@ import { AuthForm } from "./auth-form";
 
 export function AuthPage({ mode }: { mode: "sign-in" | "sign-up" }) {
   return (
-    <main className="flex w-full flex-1 items-start justify-center p-4 pt-12 md:p-6 md:pt-20">
+    <main className="mx-auto w-full max-w-7xl px-4 py-8 md:px-8 md:py-12">
       <Suspense fallback={<Skeleton className="h-80 w-full max-w-sm" />}>
         <AuthContent mode={mode} />
       </Suspense>

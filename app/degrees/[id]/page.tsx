@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: PageProps<"/degrees/[id]">): 
 
 export default function DegreePage({ params }: PageProps<"/degrees/[id]">) {
   return (
-    <main className="mx-auto w-full max-w-7xl space-y-6 p-4 md:p-6">
+    <main className="mx-auto w-full max-w-7xl space-y-10 px-4 py-8 md:px-8 md:py-12">
       <Link href="/degrees" className={buttonVariants({ variant: "ghost", size: "sm", className: "-ml-2" })}>
         <ArrowLeft />
         All programs
@@ -59,7 +59,7 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
     <>
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="space-y-1">
-          <h2 className="text-3xl font-normal tracking-tight">{program.name}</h2>
+          <h2 className="text-5xl font-bold tracking-tight md:text-6xl">{program.name}</h2>
           <p className="text-sm text-muted-foreground">
             {[program.degree ?? kindLabel(program.kind), program.approxCredits && `${program.approxCredits} credits`]
               .filter(Boolean)
@@ -92,8 +92,8 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
         </Suspense>
       )}
 
-      <div className="grid gap-6 lg:grid-cols-3">
-        <section className="space-y-4 lg:col-span-2" aria-label="Requirements">
+      <div className="grid gap-x-12 gap-y-12 lg:grid-cols-3">
+        <section className="space-y-12 lg:col-span-2" aria-label="Requirements">
           {program.requirements.map((r) => (
             <RequirementCard
               key={r.id}
@@ -107,7 +107,7 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
           {program.sampleSequence && program.sampleSequence.length > 0 && <SampleSequence detail={detail} />}
         </section>
 
-        <aside className="space-y-4">
+        <aside className="space-y-12">
           <ProgramRulesCard policies={program.policies} shortRefs={refs.short} />
           <SubstitutionsCard substitutions={unattached} />
           {(program.sbc.exemptions.length > 0 || program.sbc.fulfillment.length > 0) && (

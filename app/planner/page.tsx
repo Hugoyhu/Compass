@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: "Schedule Builder" };
 
 export default function PlannerPage({ searchParams }: PageProps<"/planner">) {
   return (
-    <main className="mx-auto w-full max-w-7xl p-4 md:p-6">
+    <main className="mx-auto w-full max-w-7xl px-4 py-8 md:px-8 md:py-12">
       <Suspense fallback={<Skeleton className="h-[40rem]" />}>
         <Schedule searchParams={searchParams} />
       </Suspense>

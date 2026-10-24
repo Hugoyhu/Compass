@@ -11,8 +11,8 @@ export function NextSemesterCard({ schedule }: { schedule: NextSemesterSchedule 
   return (
     <Card className="h-full">
       <CardHeader>
-        <CardDescription className="not-italic small-caps">Next semester</CardDescription>
-        <CardTitle className="text-lg">{formatTerm(schedule.term)}</CardTitle>
+        <CardTitle>Next semester</CardTitle>
+        <CardDescription>{formatTerm(schedule.term)}</CardDescription>
       </CardHeader>
       <CardContent className="flex-1">
         {!schedule.published ? (
