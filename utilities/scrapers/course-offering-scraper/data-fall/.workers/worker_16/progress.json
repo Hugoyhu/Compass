@@ -1,12 +1,12 @@
 {
   "letter": "P",
   "loading": false,
-  "letter_position": 216,
+  "letter_position": 258,
   "letter_total": 258,
-  "groups_done": 0,
+  "groups_done": 1,
   "total_groups": 1,
-  "elapsed_seconds": 823.0,
-  "scraped": 216,
+  "elapsed_seconds": 1049.8,
+  "scraped": 258,
   "already_done": 0,
   "failed": 0,
   "skipped_level": 343
