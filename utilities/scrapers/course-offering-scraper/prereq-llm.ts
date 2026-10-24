@@ -49,6 +49,8 @@ export interface ModelRunOptions {
   effort: "low" | "medium" | "high";
   budgetUsd: number;
   concurrency: number;
+  /** Use cached trees only; uncached texts are counted as skipped. */
+  cacheOnly?: boolean;
 }
 
 export interface ModelRunResult {
@@ -83,6 +85,10 @@ export async function parseWithModel(texts: string[], options: ModelRunOptions):
     }
   }
   if (todo.length === 0) return result;
+  if (options.cacheOnly) {
+    result.skipped = todo.length;
+    return result;
+  }
 
   const client = new Anthropic({ maxRetries: 4 });
   const system: Anthropic.TextBlockParam[] = [{ type: "text", text: INSTRUCTIONS, cache_control: { type: "ephemeral" } }];
