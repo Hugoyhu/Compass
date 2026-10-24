@@ -9,8 +9,8 @@ export interface NavItem {
 export const navItems: NavItem[] = [
   { title: "Dashboard", href: "/", icon: LayoutDashboard },
   { title: "My Courses", href: "/record", icon: NotebookPen },
-  { title: "Course Explorer", href: "/courses", icon: BookOpen },
   { title: "Degree Explorer", href: "/degrees", icon: GraduationCap },
+  { title: "Course Explorer", href: "/courses", icon: BookOpen },
   { title: "Degree Progress", href: "/progress", icon: ListChecks },
   { title: "Semester Planner", href: "/planner", icon: CalendarRange },
 ];

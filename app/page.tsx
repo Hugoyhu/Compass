@@ -31,9 +31,13 @@ async function Dashboard() {
   const record = await getStudentRecord();
   if (!record) return <GetStarted />;
 
-  const { student, audit, major, proposal, graduation, currentCourses } = await getStudentView(record);
+  const { student, audit, programs, major, proposal, graduation, currentCourses } = await getStudentView(record);
   const firstName = student.name.split(" ")[0];
-  const outstanding = major?.requirements.filter((r) => r.status !== "satisfied") ?? [];
+  const outstanding = programs.map((p) => ({
+    programId: p.program.id,
+    name: p.program.name,
+    results: p.requirements.filter((r) => r.status !== "satisfied"),
+  }));
   const finishing = major?.requirements.filter((r) => r.status === "in-progress").length ?? 0;
   const upper = audit.credits.upperDivision;
 
@@ -42,18 +46,18 @@ async function Dashboard() {
       <div className="space-y-1">
         <h2 className="text-2xl font-semibold tracking-tight">{firstName || "Your degree"}</h2>
         <p className="text-sm text-muted-foreground">
-          {major ? `${major.program.name} · ` : ""}
+          {programs.map((p) => `${p.program.name} · `).join("")}
           {audit.credits.standing} · {formatTerm(student.currentTerm)}
         </p>
       </div>
 
-      {!major && (
+      {programs.length === 0 && (
         <Alert>
           <GraduationCap />
-          <AlertTitle>No major selected</AlertTitle>
+          <AlertTitle>No majors or minors added</AlertTitle>
           <AlertAction>
-            <Link href="/record" className={buttonVariants({ size: "sm" })}>
-              Choose major
+            <Link href="/degrees" className={buttonVariants({ size: "sm" })}>
+              Browse programs
             </Link>
           </AlertAction>
         </Alert>
@@ -104,10 +108,10 @@ async function Dashboard() {
         </div>
       </section>
 
-      {major && (
+      {programs.length > 0 && (
         <section className="grid gap-4 lg:grid-cols-5" aria-label="Requirements and plan">
           <div className="lg:col-span-3">
-            <OutstandingRequirementsCard results={outstanding} />
+            <OutstandingRequirementsCard groups={outstanding} />
           </div>
           <div className="lg:col-span-2">
             <NextSemesterCard proposal={proposal} />

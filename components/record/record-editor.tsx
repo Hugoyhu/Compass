@@ -1,13 +1,13 @@
 "use client";
 
 import { useMemo, useState, useTransition } from "react";
-import { Loader2, Plus, Trash2 } from "lucide-react";
+import { Loader2, Plus, Trash2, X } from "lucide-react";
 import { clearRecord, loadSampleRecord, saveRecord } from "@/app/actions/record";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
-import type { CourseAttempt, CreditSource, Grade, StudentRecord, TermId } from "@/lib/domain/types";
+import { MAX_PROGRAMS, type CourseAttempt, type CreditSource, type Grade, type StudentRecord, type TermId } from "@/lib/domain/types";
 import {
   DEFAULT_CURRENT_TERM,
   GRADE_OPTIONS,
@@ -85,7 +85,8 @@ export function RecordEditor({
     });
   }
 
-  const majors = programs.filter((p) => p.kind === "major");
+  const programsById = new Map(programs.map((p) => [p.id, p]));
+  const available = programs.filter((p) => !draft.programIds.includes(p.id));
   const totalCredits = draft.attempts
     .filter((a) => a.status === "completed" && a.grade && !["F", "NC", "W", "I"].includes(a.grade))
     .reduce((sum, a) => sum + (a.credits ?? catalog.get(a.code)?.credits ?? 0), 0);
@@ -181,21 +182,55 @@ export function RecordEditor({
               <span className="text-xs font-medium">Name</span>
               <Input value={draft.name} maxLength={80} onChange={(e) => update({ name: e.target.value })} />
             </label>
-            <label className="block space-y-1.5">
-              <span className="text-xs font-medium">Major</span>
-              <select
-                className={selectClassName}
-                value={draft.programIds[0] ?? ""}
-                onChange={(e) => update({ programIds: e.target.value ? [e.target.value] : [] })}
-              >
-                <option value="">None</option>
-                {majors.map((p) => (
-                  <option key={p.id} value={p.id}>
-                    {p.name}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <div className="space-y-1.5">
+              <span className="text-xs font-medium">Majors and minors</span>
+              {draft.programIds.length > 0 && (
+                <ul className="divide-y rounded-lg border text-sm">
+                  {draft.programIds.map((id) => (
+                    <li key={id} className="flex items-center gap-2 py-1 pr-1 pl-3">
+                      <span className="min-w-0 flex-1 truncate">{programsById.get(id)?.name ?? id}</span>
+                      <span className="text-xs text-muted-foreground capitalize">{programsById.get(id)?.kind}</span>
+                      <Button
+                        variant="ghost"
+                        size="icon-sm"
+                        aria-label={`Remove ${programsById.get(id)?.name ?? id}`}
+                        onClick={() => update({ programIds: draft.programIds.filter((p) => p !== id) })}
+                      >
+                        <X />
+                      </Button>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {draft.programIds.length < MAX_PROGRAMS && (
+                <select
+                  aria-label="Add a major or minor"
+                  className={selectClassName}
+                  value=""
+                  onChange={(e) => e.target.value && update({ programIds: [...draft.programIds, e.target.value] })}
+                >
+                  <option value="">Add…</option>
+                  <optgroup label="Majors">
+                    {available
+                      .filter((p) => p.kind === "major")
+                      .map((p) => (
+                        <option key={p.id} value={p.id}>
+                          {p.name}
+                        </option>
+                      ))}
+                  </optgroup>
+                  <optgroup label="Minors">
+                    {available
+                      .filter((p) => p.kind === "minor")
+                      .map((p) => (
+                        <option key={p.id} value={p.id}>
+                          {p.name}
+                        </option>
+                      ))}
+                  </optgroup>
+                </select>
+              )}
+            </div>
             <label className="block space-y-1.5">
               <span className="text-xs font-medium">Current term</span>
               <select

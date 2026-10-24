@@ -49,10 +49,16 @@ export async function getStudentView(student: StudentRecord) {
       credits: attempt.credits ?? catalog.get(attempt.code)?.credits.max ?? 0,
     }));
 
+  // Majors first, then in the order the student added them.
+  const order = (p: (typeof audit.programs)[number]) =>
+    (p.program.kind === "major" ? 0 : 100) + student.programIds.indexOf(p.program.id);
+  const enrolled = [...audit.programs].sort((a, b) => order(a) - order(b));
+
   return {
     student,
     audit,
-    major: audit.programs.find((p) => p.program.kind === "major"),
+    programs: enrolled,
+    major: enrolled.find((p) => p.program.kind === "major"),
     proposal,
     graduation,
     currentCourses,

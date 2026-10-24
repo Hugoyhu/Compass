@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { DegreeList } from "@/components/degrees/degree-list";
 import { Skeleton } from "@/components/ui/skeleton";
 import { listProgramSummaries } from "@/lib/services/degrees";
+import { getStudentRecord } from "@/lib/student/store";
 
 export const metadata: Metadata = { title: "Degree Explorer" };
 
@@ -18,5 +19,6 @@ export default function DegreesPage() {
 }
 
 async function Programs() {
-  return <DegreeList programs={await listProgramSummaries()} />;
+  const [programs, record] = await Promise.all([listProgramSummaries(), getStudentRecord()]);
+  return <DegreeList programs={programs} mine={record?.programIds ?? []} />;
 }
