@@ -1,0 +1,83 @@
+{
+  "id": "art-studio",
+  "name": "Art, Studio",
+  "kind": "minor",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "art-studio.1",
+      "label": "1",
+      "title": "Foundations: Drawing",
+      "rule": {
+        "type": "course",
+        "code": "ARS 154"
+      },
+      "sourceText": "ARS 154 - Foundations: Drawing 3 credits"
+    },
+    {
+      "id": "art-studio.2",
+      "label": "2",
+      "title": "Additional studio credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Eighteen additional studio credits, of which at least nine must be upper division",
+        "reason": "The page does not enumerate which courses count as studio credits, so the course pool cannot be defined as a choose rule."
+      },
+      "sourceText": "Eighteen additional studio credits, of which at least nine must be upper division"
+    },
+    {
+      "id": "art-studio.3",
+      "label": "3",
+      "title": "Upper-division studio credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least nine of the eighteen additional studio credits must be upper division",
+        "reason": "The page does not define the studio course pool or a credit-level selector for upper-division credits, so this cannot be checked exactly."
+      },
+      "sourceText": "Eighteen additional studio credits, of which at least nine must be upper division"
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "art-studio.1",
+        "art-studio.2",
+        "art-studio.3"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "art-studio.1",
+        "art-studio.2",
+        "art-studio.3"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "Completion of the minor in Studio Art requires 21 credits."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1359",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

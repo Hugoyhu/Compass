@@ -1,0 +1,398 @@
+{
+  "id": "cse-bs",
+  "name": "Computer Science, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Computer Science",
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1411",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": { "status": "draft", "extractedBy": "hand" },
+  "approxCredits": 80,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "cse-bs.1",
+      "label": "1",
+      "title": "Required Introductory Courses",
+      "sourceText": "CSE 113 - Foundations of Computer Science I OR CSE 150 - Foundations of Computer Science: Honors; CSE 114 - Introduction to Object-Oriented Programming; CSE 213 - Foundations of Computer Science II; CSE 214 - Data Structures; CSE 220 - Systems Fundamentals I",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              { "type": "course", "code": "CSE 113" },
+              { "type": "course", "code": "CSE 150" }
+            ]
+          },
+          { "type": "course", "code": "CSE 114" },
+          { "type": "course", "code": "CSE 213" },
+          { "type": "course", "code": "CSE 214" },
+          { "type": "course", "code": "CSE 220" }
+        ]
+      }
+    },
+    {
+      "id": "cse-bs.2",
+      "label": "2",
+      "title": "Required Advanced Courses",
+      "sourceText": "CSE 307 - Principles of Programming Languages; CSE 316 - Fundamentals of Software Development; CSE 320 - Systems Fundamentals II; CSE 373 - Analysis of Algorithms OR CSE 385 - Analysis of Algorithms: Honors; CSE 356 - Cloud Computing OR CSE 416 - Software Engineering. Note: CSE 356 or CSE 416 must be completed at Stony Brook University.",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          { "type": "course", "code": "CSE 307" },
+          { "type": "course", "code": "CSE 316" },
+          { "type": "course", "code": "CSE 320" },
+          {
+            "type": "anyOf",
+            "rules": [
+              { "type": "course", "code": "CSE 373" },
+              { "type": "course", "code": "CSE 385" }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "id": "cse-bs.2.capstone",
+            "rules": [
+              { "type": "course", "code": "CSE 356" },
+              { "type": "course", "code": "CSE 416" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "cse-bs.3",
+      "label": "3",
+      "title": "Computer Science Electives",
+      "sourceText": "Six additional upper-division technical CSE courses, each of which must carry at least three credits. Courses used to satisfy the required advanced courses requirement may not be used to satisfy the computer science electives requirement. Technical electives do not include teaching practica (CSE 475), the first part of the senior honors project (CSE 495), and courses designated as non-technical in the course description (such as CSE 301). Students may only use 3 credits from the following courses to satisfy one upper-division technical elective for the CSE major requirements: CSE 487, CSE 496, VIP 395, VIP 396, VIP 495, VIP 496.",
+      "rule": {
+        "type": "choose",
+        "count": 6,
+        "from": {
+          "courses": ["VIP 395", "VIP 396", "VIP 495", "VIP 496"],
+          "subjects": ["CSE"],
+          "minNumber": 300,
+          "minCredits": 3,
+          "excludeCourses": ["CSE 475", "CSE 495"],
+          "excludeAttributes": ["non-technical"],
+          "excludeUsedBy": ["cse-bs.2"]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": { "courses": ["CSE 487", "CSE 496", "VIP 395", "VIP 396", "VIP 495", "VIP 496"] },
+            "maxCourses": 1,
+            "maxCredits": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cse-bs.4",
+      "label": "4",
+      "title": "Calculus sequence",
+      "sourceText": "One of the following calculus course sequences: AMS 151, AMS 161; MAT 125, MAT 126, MAT 127; MAT 131, MAT 132. Equivalency for MAT courses achieved through the Mathematics Placement Examination is accepted to meet the Calculus course requirements.",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              { "type": "course", "code": "AMS 151" },
+              { "type": "course", "code": "AMS 161" }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              { "type": "course", "code": "MAT 125" },
+              { "type": "course", "code": "MAT 126" },
+              { "type": "course", "code": "MAT 127" }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              { "type": "course", "code": "MAT 131" },
+              { "type": "course", "code": "MAT 132" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "cse-bs.5",
+      "label": "5",
+      "title": "Linear algebra",
+      "sourceText": "One of the following linear algebra courses: MAT 211 - Introduction to Linear Algebra; AMS 210 - Applied Linear Algebra",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          { "type": "course", "code": "MAT 211" },
+          { "type": "course", "code": "AMS 210" }
+        ]
+      }
+    },
+    {
+      "id": "cse-bs.6",
+      "label": "6",
+      "title": "Required Upper-Division Statistics Course",
+      "sourceText": "AMS 310 - Survey of Probability and Statistics",
+      "rule": { "type": "course", "code": "AMS 310" }
+    },
+    {
+      "id": "cse-bs.7",
+      "label": "7",
+      "title": "Science lecture/laboratory combination",
+      "sourceText": "At least one of the following science lecture/laboratory combinations: BIO 201 + BIO 204; BIO 202 + BIO 204; BIO 203 + BIO 204; CHE 131 + CHE 133; CHE 152 + CHE 154; PHY 126 + PHY 133; PHY 131 + PHY 133; PHY 141 + PHY 133",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          { "type": "allOf", "rules": [{ "type": "course", "code": "BIO 201" }, { "type": "course", "code": "BIO 204" }] },
+          { "type": "allOf", "rules": [{ "type": "course", "code": "BIO 202" }, { "type": "course", "code": "BIO 204" }] },
+          { "type": "allOf", "rules": [{ "type": "course", "code": "BIO 203" }, { "type": "course", "code": "BIO 204" }] },
+          { "type": "allOf", "rules": [{ "type": "course", "code": "CHE 131" }, { "type": "course", "code": "CHE 133" }] },
+          { "type": "allOf", "rules": [{ "type": "course", "code": "CHE 152" }, { "type": "course", "code": "CHE 154" }] },
+          { "type": "allOf", "rules": [{ "type": "course", "code": "PHY 126" }, { "type": "course", "code": "PHY 133" }] },
+          { "type": "allOf", "rules": [{ "type": "course", "code": "PHY 131" }, { "type": "course", "code": "PHY 133" }] },
+          { "type": "allOf", "rules": [{ "type": "course", "code": "PHY 141" }, { "type": "course", "code": "PHY 133" }] }
+        ]
+      }
+    },
+    {
+      "id": "cse-bs.8",
+      "label": "8",
+      "title": "Additional natural science course",
+      "sourceText": "One additional natural science course selected from below. Note: One may not take science courses that are deemed equivalent to satisfy 7 and 8 (e.g., PHY 125 and PHY 131).",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "AST 203", "AST 205",
+            "BIO 201", "BIO 202", "BIO 203",
+            "CHE 131", "CHE 132", "CHE 152", "CHE 321", "CHE 322", "CHE 331", "CHE 332",
+            "PHY 125", "PHY 126", "PHY 127", "PHY 131", "PHY 132", "PHY 142", "PHY 251"
+          ]
+        },
+        "constraints": [{ "type": "notEquivalentTo", "requirementId": "cse-bs.7" }]
+      }
+    },
+    {
+      "id": "cse-bs.9",
+      "label": "9",
+      "title": "Required Non-Technical Courses",
+      "sourceText": "CSE 300 - Technical Communications; CSE 312 - Social, Legal, and Ethical Issues in Computing",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          { "type": "course", "code": "CSE 300" },
+          { "type": "course", "code": "CSE 312" }
+        ]
+      }
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": ["cse-bs.1", "cse-bs.2", "cse-bs.3", "cse-bs.4", "cse-bs.5", "cse-bs.6", "cse-bs.7", "cse-bs.8", "cse-bs.9"],
+      "sourceText": "All courses taken to satisfy Requirements 1 through 9 must be taken for a letter grade."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": ["cse-bs.1", "cse-bs.2", "cse-bs.3", "cse-bs.4", "cse-bs.5", "cse-bs.6", "cse-bs.9"],
+      "sourceText": "The courses in Requirements 1-6, and 9 must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGpa",
+      "gpa": 2.0,
+      "appliesTo": ["cse-bs.7", "cse-bs.8"],
+      "sourceText": "The grade point average for the courses in Requirements 7 and 8 must be at least 2.00."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 24,
+      "appliesTo": ["cse-bs.1", "cse-bs.2", "cse-bs.3"],
+      "sourceText": "At least 24 credits from items 1 to 3 below, and at least 18 credits from items 2 and 3, must be completed at Stony Brook."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 18,
+      "appliesTo": ["cse-bs.2", "cse-bs.3"],
+      "sourceText": "At least 24 credits from items 1 to 3 below, and at least 18 credits from items 2 and 3, must be completed at Stony Brook."
+    },
+    {
+      "type": "residencyRequired",
+      "appliesTo": ["cse-bs.2.capstone"],
+      "sourceText": "Note: CSE 356 or CSE 416 must be completed at Stony Brook University."
+    },
+    {
+      "type": "prerequisiteGrade",
+      "subjects": ["CSE"],
+      "minGrade": "C",
+      "passNoCreditAllowed": false,
+      "sourceText": "To enroll in CSE courses, students must: Have completed all prerequisites with a grade of C or higher. (Pass/No Credit grades are not acceptable to meet prerequisites.)"
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "cse-bs.sub.honors-sequence",
+      "replaces": { "type": "courses", "courses": ["CSE 114", "CSE 214", "CSE 307"] },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          { "type": "course", "code": "CSE 160" },
+          { "type": "course", "code": "CSE 161" },
+          { "type": "course", "code": "CSE 260" },
+          { "type": "course", "code": "CSE 261" }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: Students may substitute the four courses CSE 160, CSE 161, CSE 260 and CSE 261 for the three courses CSE 114, CSE 214 and CSE 307."
+    },
+    {
+      "id": "cse-bs.sub.honors-theory",
+      "replaces": { "type": "courses", "courses": ["CSE 213"] },
+      "with": { "type": "course", "code": "CSE 350" },
+      "condition": "Students pursuing Honors",
+      "requiresApproval": false,
+      "sourceText": "Students pursuing Honors may substitute CSE 350 - Theory of Computation: Honors for CSE 213."
+    },
+    {
+      "id": "cse-bs.sub.senior-design",
+      "replaces": { "type": "rule", "ruleId": "cse-bs.2.capstone" },
+      "with": {
+        "type": "unparsed",
+        "text": "Senior design (440/441) in ECE, ESE or MEC, provided that the design project contains a significant software component",
+        "reason": "The page gives course numbers but not subject codes, and eligibility depends on project content"
+      },
+      "condition": "Students double majoring with ECE, ESE or MEC",
+      "requiresApproval": true,
+      "sourceText": "In Requirement 2 above, students who are double majoring with ECE, ESE or MEC may substitute their senior design (440/441) for CSE 356 - Cloud Computing or CSE 416 - Software Engineering provided that the design project contains a significant software component. Approval of the Department of Computer Science is required."
+    }
+  ],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        { "kind": "placeholder", "label": "First Year Seminar 101", "credits": 1 },
+        { "kind": "course", "code": "WRT 101", "credits": 3 },
+        { "kind": "course", "code": "CSE 101", "alternatives": ["CSE 103"], "credits": 4 },
+        { "kind": "course", "code": "AMS 151", "credits": 3 },
+        { "kind": "placeholder", "label": "SBC", "credits": 3 },
+        { "kind": "placeholder", "label": "SBC", "credits": 3 }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        { "kind": "placeholder", "label": "First Year Seminar 102", "credits": 1 },
+        { "kind": "course", "code": "WRT 102", "credits": 3 },
+        { "kind": "course", "code": "AMS 161", "credits": 3 },
+        { "kind": "placeholder", "label": "Natural Science Course + Lab", "credits": 4 },
+        { "kind": "course", "code": "CSE 114", "credits": 4 }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        { "kind": "course", "code": "CSE 214", "credits": 4 },
+        { "kind": "course", "code": "CSE 113", "credits": 4 },
+        { "kind": "course", "code": "AMS 210", "alternatives": ["MAT 211"], "credits": 3 },
+        { "kind": "placeholder", "label": "Natural Science", "credits": 3 },
+        { "kind": "placeholder", "label": "SBC", "credits": 3 }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        { "kind": "course", "code": "CSE 213", "credits": 4 },
+        { "kind": "course", "code": "CSE 220", "credits": 4 },
+        { "kind": "course", "code": "AMS 310", "credits": 3 },
+        { "kind": "placeholder", "label": "SBC", "credits": 3 }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        { "kind": "course", "code": "CSE 300", "credits": 3 },
+        { "kind": "course", "code": "CSE 307", "credits": 3 },
+        { "kind": "course", "code": "CSE 373", "credits": 3 },
+        { "kind": "placeholder", "label": "UD Technical Elective 1", "credits": 3 },
+        { "kind": "placeholder", "label": "SBC", "credits": 3 }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        { "kind": "course", "code": "CSE 312", "credits": 3 },
+        { "kind": "course", "code": "CSE 316", "credits": 3 },
+        { "kind": "placeholder", "label": "UD Technical Elective 2", "credits": 3 },
+        { "kind": "placeholder", "label": "SBC", "credits": 3 },
+        { "kind": "placeholder", "label": "Elective", "credits": 3 }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        { "kind": "course", "code": "CSE 320", "credits": 3 },
+        { "kind": "placeholder", "label": "UD Technical Elective 3", "credits": 3 },
+        { "kind": "placeholder", "label": "UD Technical Elective 4", "credits": 3 },
+        { "kind": "placeholder", "label": "UD Elective", "credits": 3 },
+        { "kind": "placeholder", "label": "Elective or SBC (SBS+ or HFA+)", "credits": 3 }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        { "kind": "placeholder", "label": "UD Technical Elective 5", "credits": 3 },
+        { "kind": "placeholder", "label": "UD Technical Elective 6", "credits": 3 },
+        { "kind": "course", "code": "CSE 416", "alternatives": ["CSE 356"], "credits": 3 },
+        { "kind": "placeholder", "label": "Elective", "credits": 3 }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students outside the major are admitted after completing CSE 113, CSE 114, and CSE 214 with grades of B- or higher and a 3.00 GPA in those courses, repeating at most one of them, with a cumulative GPA of 3.00 or higher. Applications are due January 5 (Spring) and June 5 (Fall)."
+    },
+    {
+      "topic": "grading",
+      "text": "The Pass/No Credit option is not available for CSE courses."
+    },
+    {
+      "topic": "other",
+      "text": "Equivalency for MAT courses achieved through the Mathematics Placement Examination is accepted to meet the Calculus course requirements."
+    },
+    {
+      "topic": "sbc",
+      "text": "Students may satisfy the Pursue Deeper Understanding category of the SBC by completing CSE 316 and CSE 416. An SBS+ or HFA+ course is required for students who complete CSE 356 in lieu of CSE 416."
+    },
+    {
+      "topic": "advising",
+      "text": "All students are encouraged to discuss their program with an undergraduate advisor."
+    }
+  ]
+}

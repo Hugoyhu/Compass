@@ -1,0 +1,862 @@
+{
+  "id": "chemical-and-molecular-engineering-be",
+  "name": "Chemical and Molecular Engineering, BE",
+  "kind": "major",
+  "degree": "Bachelor of Engineering in Chemical and Molecular Engineering",
+  "approxCredits": 100,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "chemical-and-molecular-engineering-be.1",
+      "label": "1",
+      "title": "Mathematics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 151"
+          },
+          {
+            "type": "course",
+            "code": "AMS 161"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 261"
+              },
+              {
+                "type": "course",
+                "code": "MAT 203"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 361"
+              },
+              {
+                "type": "course",
+                "code": "MAT 303"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "AMS 151 - Applied Calculus I; AMS 161 - Applied Calculus II; AMS 261 - Applied Calculus III OR MAT 203 - Calculus III with Applications; AMS 361 - Applied Calculus IV: Differential Equations OR MAT 303 - Calculus IV with Applications. Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161: MAT 131, MAT 132 or MAT 125, MAT 126, MAT 127"
+    },
+    {
+      "id": "chemical-and-molecular-engineering-be.2",
+      "label": "2",
+      "title": "Natural Sciences",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "chemical-and-molecular-engineering-be.2.chemistry",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 131"
+              },
+              {
+                "type": "course",
+                "code": "CHE 132"
+              },
+              {
+                "type": "course",
+                "code": "CHE 133"
+              },
+              {
+                "type": "course",
+                "code": "CHE 134"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 321"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 331"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 327"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 383"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chemical-and-molecular-engineering-be.2.physics",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 131"
+              },
+              {
+                "type": "course",
+                "code": "PHY 132"
+              },
+              {
+                "type": "course",
+                "code": "PHY 133"
+              },
+              {
+                "type": "course",
+                "code": "PHY 134"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Chemistry: CHE 131 - General Chemistry IB; CHE 132 - General Chemistry II; CHE 133 - General Chemistry Laboratory I; CHE 134 - General Chemistry Laboratory II; CHE 321 - Organic Chemistry I OR CHE 331 - Molecular Science II; CHE 327 - Organic Chemistry Laboratory OR CHE 383 - Introductory Synthetic and Spectroscopic Laboratory Techniques. Physics: PHY 131 - Classical Physics I; PHY 132 - Classical Physics II; PHY 133 - Classical Physics Laboratory I; PHY 134 - Classical Physics Laboratory II. Alternate sequences are listed in the substitutions."
+    },
+    {
+      "id": "chemical-and-molecular-engineering-be.3",
+      "label": "3",
+      "title": "Computer Programming",
+      "rule": {
+        "type": "course",
+        "code": "ESG 111"
+      },
+      "sourceText": "ESG 111 - Programming for Engineers"
+    },
+    {
+      "id": "chemical-and-molecular-engineering-be.4",
+      "label": "4",
+      "title": "Chemical Engineering",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CME 101"
+          },
+          {
+            "type": "course",
+            "code": "CME 233"
+          },
+          {
+            "id": "chemical-and-molecular-engineering-be.4.cme304",
+            "type": "course",
+            "code": "CME 304"
+          },
+          {
+            "type": "course",
+            "code": "CME 314"
+          },
+          {
+            "type": "course",
+            "code": "CME 312"
+          },
+          {
+            "type": "course",
+            "code": "CME 315"
+          },
+          {
+            "type": "course",
+            "code": "CME 318"
+          },
+          {
+            "type": "course",
+            "code": "CME 322"
+          },
+          {
+            "type": "course",
+            "code": "CME 323"
+          },
+          {
+            "type": "course",
+            "code": "CME 310"
+          },
+          {
+            "type": "course",
+            "code": "CME 320"
+          },
+          {
+            "type": "course",
+            "code": "CME 410"
+          },
+          {
+            "type": "course",
+            "code": "CME 420"
+          },
+          {
+            "type": "course",
+            "code": "CME 401"
+          },
+          {
+            "type": "course",
+            "code": "CME 405"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CME 425"
+              },
+              {
+                "type": "course",
+                "code": "CME 427"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CME 440"
+          },
+          {
+            "type": "course",
+            "code": "CME 441"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CME 480"
+              },
+              {
+                "type": "course",
+                "code": "BIO 202"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "CME 101; CME 233; CME 304; CME 314; CME 312; CME 315; CME 318; CME 322; CME 323; CME 310; CME 320; CME 410; CME 420; CME 401; CME 405; CME 425 OR CME 427; CME 440; CME 441; CME 480 OR BIO 202"
+    },
+    {
+      "id": "chemical-and-molecular-engineering-be.5",
+      "label": "5",
+      "title": "Specializations in Chemical and Molecular Engineering",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "chemical-and-molecular-engineering-be.5.materials-science",
+            "manualCheck": "Materials Science specialization: three courses from the listed pool, with at most one of CME 369 or ESM 469. The page gives the pool without stating which courses are required.",
+            "type": "choose",
+            "count": 3,
+            "from": {
+              "courses": [
+                "CME 360",
+                "CME 369",
+                "ESM 469",
+                "CME 375",
+                "CME 460",
+                "ESG 332",
+                "ESG 333",
+                "ESM 335",
+                "ESM 336"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "onePerGroup",
+                "groups": [
+                  [
+                    "CME 369",
+                    "ESM 469"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chemical-and-molecular-engineering-be.5.nanotechnology",
+            "manualCheck": "Nanotechnology specialization: the page lists CME 360 and CME 460 and then a choice of CME 425 or CME 427 (only if not used for a core requirement), CME 369 or ESM 469, and CME 372. Confirm the required courses and count with the program director.",
+            "type": "choose",
+            "count": 3,
+            "from": {
+              "courses": [
+                "CME 360",
+                "CME 460",
+                "CME 425",
+                "CME 427",
+                "CME 369",
+                "ESM 469",
+                "CME 372"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "onePerGroup",
+                "groups": [
+                  [
+                    "CME 369",
+                    "ESM 469"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chemical-and-molecular-engineering-be.5.polymer",
+            "manualCheck": "Polymer specialization: the page lists CME 369 or ESM 469, CME 371, CME 460, CME 470, and allows any one of these to be replaced by CME 425 or CME 427. Confirm the required courses with the program director.",
+            "type": "choose",
+            "count": 3,
+            "from": {
+              "courses": [
+                "CME 369",
+                "ESM 469",
+                "CME 371",
+                "CME 460",
+                "CME 470",
+                "CME 425",
+                "CME 427"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "onePerGroup",
+                "groups": [
+                  [
+                    "CME 369",
+                    "ESM 469"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chemical-and-molecular-engineering-be.5.tissue-engineering",
+            "type": "unparsed",
+            "text": "Tissue Engineering specialization: BME 404 - Essentials of Tissue Engineering; any TWO (three for students admitted prior to Fall 2012) of BIO 310, BIO 328, BIO 335, BIO 317, BME 354, CHE 346; CME 371 - Biomaterials OR BME 353 - Introduction to Biomaterials; CME 481 - Advanced Cell Biology for Chemical Engineers",
+            "reason": "The page's structure for this track (required courses, a choose-two pool, and an either/or) is ambiguous and cannot be expressed reliably."
+          },
+          {
+            "id": "chemical-and-molecular-engineering-be.5.business",
+            "sourceText": "The Business specialization consists of 9 credits of any upper division (300 level or above) Business courses not required for the CME major.",
+            "type": "choose",
+            "credits": 9,
+            "from": {
+              "subjects": [
+                "BUS"
+              ],
+              "minNumber": 300,
+              "excludeUsedBy": [
+                "chemical-and-molecular-engineering-be.1",
+                "chemical-and-molecular-engineering-be.2",
+                "chemical-and-molecular-engineering-be.3",
+                "chemical-and-molecular-engineering-be.4"
+              ]
+            }
+          },
+          {
+            "id": "chemical-and-molecular-engineering-be.5.chemistry",
+            "sourceText": "The Chemistry specialization consists of 9 credits of upper level CHE 300 courses not already required for the CME Major.",
+            "type": "choose",
+            "credits": 9,
+            "from": {
+              "subjects": [
+                "CHE"
+              ],
+              "minNumber": 300,
+              "excludeUsedBy": [
+                "chemical-and-molecular-engineering-be.1",
+                "chemical-and-molecular-engineering-be.2",
+                "chemical-and-molecular-engineering-be.3",
+                "chemical-and-molecular-engineering-be.4"
+              ]
+            }
+          },
+          {
+            "id": "chemical-and-molecular-engineering-be.5.physics",
+            "sourceText": "The Physics specialization consists of 9 credits of any upper division (300 level or above) Physics courses not required for the CME major.",
+            "type": "choose",
+            "credits": 9,
+            "from": {
+              "subjects": [
+                "PHY"
+              ],
+              "minNumber": 300,
+              "excludeUsedBy": [
+                "chemical-and-molecular-engineering-be.1",
+                "chemical-and-molecular-engineering-be.2",
+                "chemical-and-molecular-engineering-be.3",
+                "chemical-and-molecular-engineering-be.4"
+              ]
+            }
+          },
+          {
+            "id": "chemical-and-molecular-engineering-be.5.custom",
+            "sourceText": "Custom Specialization: Students will select three upper level courses (four for students admitted prior to fall 2012) related to the chosen specialty within the courses offered at the university and approved by the CME undergraduate program director.",
+            "manualCheck": "Custom specialization: three upper level courses related to the chosen specialty, offered at the university and approved by the CME undergraduate program director.",
+            "type": "choose",
+            "count": 3,
+            "from": {
+              "minNumber": 300
+            }
+          }
+        ]
+      },
+      "sourceText": "Chemical and Molecular Engineering students must choose from one of the eight specializations offered. Each specialization requires the completion of three (four for students admitted prior to Fall 2012) technical elective courses at the 300 level or higher."
+    },
+    {
+      "id": "chemical-and-molecular-engineering-be.6",
+      "label": "6",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "CME 300 must be taken concurrently with CME 310. Satisfactory writing warrants an S grade for CME 300. Writing is evaluated on CME 310 technical reports.",
+        "type": "course",
+        "code": "CME 300"
+      },
+      "sourceText": "All Chemical and Molecular Engineering students must complete the writing course CME 300 concurrently with CME 310. ... Satisfactory writing warrants an S grade for CME 300, thereby satisfying the requirement. - CME 300 - Writing in Chemical and Molecular Engineering 0 credit"
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "chemical-and-molecular-engineering-be.1",
+        "chemical-and-molecular-engineering-be.2",
+        "chemical-and-molecular-engineering-be.3",
+        "chemical-and-molecular-engineering-be.4",
+        "chemical-and-molecular-engineering-be.5"
+      ],
+      "sourceText": "All courses taken to satisfy requirements 1 through 5 above must be taken for a letter grade of C or higher, except in CME 304 which must be taken for a letter grade of B- or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "chemical-and-molecular-engineering-be.1",
+        "chemical-and-molecular-engineering-be.2",
+        "chemical-and-molecular-engineering-be.3",
+        "chemical-and-molecular-engineering-be.4",
+        "chemical-and-molecular-engineering-be.5"
+      ],
+      "sourceText": "All courses taken to satisfy requirements 1 through 5 above must be taken for a letter grade of C or higher, except in CME 304 which must be taken for a letter grade of B- or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "B-",
+      "appliesTo": [
+        "chemical-and-molecular-engineering-be.4.cme304"
+      ],
+      "sourceText": "except in CME 304 which must be taken for a letter grade of B- or higher."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "chemical-and-molecular-engineering-be.sub.calculus",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "AMS 151",
+          "AMS 161"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "MAT 131 and MAT 132, or MAT 125, MAT 126 and MAT 127, may be substituted for AMS 151 and AMS 161",
+        "reason": "The substitution schema cannot express a choice between two multi-course sequences nested in a substitution."
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate calculus course sequences may be substituted for AMS 151, AMS 161: MAT 131, MAT 132 or MAT 125, MAT 126, MAT 127"
+    },
+    {
+      "id": "chemical-and-molecular-engineering-be.sub.chemistry",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 131",
+          "CHE 132",
+          "CHE 133",
+          "CHE 134"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 152"
+          },
+          {
+            "type": "course",
+            "code": "CHE 154"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate chemistry/organic chemistry course sequence may be substituted for CHE 131/CHE 133/CHE 132/ CHE 134: CHE 152 - Molecular Science I and CHE 154 - Molecular Science Laboratory I"
+    },
+    {
+      "id": "chemical-and-molecular-engineering-be.sub.physics",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "PHY 131",
+          "PHY 132"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "PHY 125, PHY 126 and PHY 127, or PHY 141 and PHY 142, may be substituted for PHY 131 and PHY 132 (PHY 133 and PHY 134 still apply)",
+        "reason": "The substitution schema cannot express a choice between two multi-course sequences nested in a substitution."
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate physics course sequences may be substituted for PHY 131/PHY 133, PHY 132/PHY 134: PHY 125 , PHY 126 , PHY 127 , PHY 133 , PHY 134 Classical Physics A, B, C and Laboratories or PHY 141 , PHY 142 , PHY 133 , PHY 134 Classical Physics I, II: Honors"
+    }
+  ],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 151",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CME 101",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 133",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 133",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 161",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 134",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 261",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 321",
+          "alternatives": [
+            "CHE 331"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 327",
+          "alternatives": [
+            "CHE 383"
+          ],
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "CME 304",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESG 111",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 361",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CME 233",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CME 312",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CME 314",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CME 310",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CME 300",
+          "credits": 0
+        },
+        {
+          "kind": "course",
+          "code": "CME 318",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CME 315",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CME 323",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CME 320",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "CME 405",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CME 322",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization Course",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CME 401",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CME 410",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "CME 440",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CME 480",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course or CME 425",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CME 420",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "CME 441",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "CME 427 or Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Acceptance into the major: AOI and other CEAS students must have a grade of B or higher in all 100-level mathematics, physics, and chemistry courses required by the major, and an overall GPA of 3.2 with no more than one grade of C+ or lower in any course (waivable by the undergraduate program director). Applications are due January 5 (Spring) and June 5 (Fall). Non-CEAS students and double major applicants are admitted competitively, subject to program capacity."
+    },
+    {
+      "topic": "advising",
+      "text": "The program culminates in a senior thesis (CME 420) defended at the end of the senior year. Specializations are selected in consultation with a program director by the Spring semester of the junior year."
+    },
+    {
+      "topic": "other",
+      "text": "Students admitted prior to Fall 2012 complete four (not three) courses in their specialization and four (not three) technical electives at the 300 level or higher."
+    },
+    {
+      "topic": "other",
+      "text": "The accelerated B.E./M.S. program in chemical and molecular engineering allows up to six graduate credits to count toward both degrees. See the Graduate Catalog for requirements."
+    },
+    {
+      "topic": "sbc",
+      "text": "In the sample sequence, CME 440 and CME 441 partially satisfy ESI, CER, SPK, WRTD, SBS+, STEM+, and EXP+. CME 441 is a senior design course; contact the CEAS Undergraduate Student Office for details."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1387",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

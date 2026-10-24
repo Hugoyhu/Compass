@@ -1,0 +1,178 @@
+{
+  "id": "music-theory",
+  "name": "Music Theory",
+  "kind": "minor",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "music-theory.theory",
+      "label": "Theory",
+      "title": "Theory",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MUS 120"
+          },
+          {
+            "type": "course",
+            "code": "MUS 121"
+          },
+          {
+            "type": "course",
+            "code": "MUS 220"
+          },
+          {
+            "type": "course",
+            "code": "MUS 221"
+          },
+          {
+            "type": "course",
+            "code": "MUS 321"
+          },
+          {
+            "type": "course",
+            "code": "MUS 322"
+          }
+        ]
+      },
+      "sourceText": "Theory: MUS 120 - Elementary Musicianship 2 credits; MUS 121 - Musicianship I 2 credits; MUS 220 - Musicianship II 2 credits; MUS 221 - Musicianship III 2 credits; MUS 321 - Tonal Harmony I 3 credits; MUS 322 - Tonal Harmony II 3 credits"
+    },
+    {
+      "id": "music-theory.history",
+      "label": "History",
+      "title": "History",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MUS 101"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "MUS 105",
+                "MUS 314",
+                "MUS 320"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "History: MUS 101 - Introduction to Western Classical Music 3 credits; and one course chosen from the following: MUS 105 - Music Cultures of the World 3 credits; MUS 314 - Music, Gender, and Sexuality 3 credits; MUS 320 - U.S. Popular Music 3 credits"
+    },
+    {
+      "id": "music-theory.performance",
+      "label": "Performance",
+      "title": "Performance",
+      "rule": {
+        "id": "music-theory.performance.ensemble",
+        "manualCheck": "Requirement is two semesters, not two courses. Confirm that two semesters of the listed ensembles are completed.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "MUS 261",
+            "MUS 262",
+            "MUS 263",
+            "MUS 264",
+            "MUS 266",
+            "MUS 267",
+            "MUS 268",
+            "MUS 235",
+            "MUS 335",
+            "MUS 271",
+            "MUS 391"
+          ]
+        }
+      },
+      "sourceText": "Performance: Two semesters of one or more of the following: MUS 261 - Stony Brook Chorale 1 credit; MUS 262 - University Orchestra 1 credit; MUS 263 - University Wind Ensemble 0-1 credit; MUS 264 - Big Band Jazz Ensemble 1 credit; MUS 266 - Guitar Workshop 1 credit; MUS 267 - Small Jazz Ensemble Level 1 6 credits.; MUS 268 - Spirit of Stony Brook Athletic Band 0-2 credits; MUS 235 - Introduction to African Drumming 4 credits.; MUS 335 - Advanced African Drumming 4 credits.; MUS 271 - Camerata Singers 1 credit; MUS 391 - Chamber Music 1 credit"
+    },
+    {
+      "id": "music-theory.credits",
+      "label": "credits",
+      "title": "Minimum credits for the minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "The minor requires a minimum of 20 credits.",
+        "reason": "Program-wide minimum credit total that no rule type covers"
+      },
+      "sourceText": "The minor requires a minimum of 20 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "music-theory.theory",
+        "music-theory.history",
+        "music-theory.performance"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "music-theory.theory",
+        "music-theory.history",
+        "music-theory.performance"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "music-theory.sub.private-lessons",
+      "replaces": {
+        "type": "rule",
+        "ruleId": "music-theory.performance.ensemble"
+      },
+      "with": {
+        "manualCheck": "Lessons are counted as two semesters. The ensemble corequisite for private lessons is waived for minor students.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "ranges": [
+            {
+              "subject": "MUS",
+              "from": 161,
+              "to": 187
+            }
+          ]
+        }
+      },
+      "condition": "Students who do not pass the audition for one of the ensembles",
+      "requiresApproval": true,
+      "sourceText": "With the permission of the director of undergraduate studies, students who do not pass the audition for one of the ensembles may fulfill the performance requirement through private lessons (MUS 161 -MUS 187 ). For students in the minor who fulfill the performance requirement through lessons, the ensemble corequisite for private lessons (MUS 161 -MUS 187 ) will be waived."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "The general Music minor (MUS) is for students who do not seek training in more sophisticated aspects of music theory and musicianship. The Music Theory minor (MTY) uses Music major courses in theory and musicianship."
+    },
+    {
+      "topic": "other",
+      "text": "Contact the Director of Undergraduate Studies, Deborah Heckert, for permission to fulfill the performance requirement through private lessons."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1542",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

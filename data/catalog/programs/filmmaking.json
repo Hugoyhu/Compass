@@ -1,0 +1,138 @@
+{
+  "id": "filmmaking",
+  "name": "Filmmaking",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "filmmaking.intro",
+      "label": "intro",
+      "title": "Introductory Courses required of all minors (6 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "FLM 101"
+          },
+          {
+            "type": "course",
+            "code": "FLM 102"
+          }
+        ]
+      },
+      "sourceText": "Introductory Courses required of all minors (6 credits): FLM 101 - Introduction to Filmmaking and Television: Visual Storytelling 3 credits; FLM 102 - Introduction to Film and Television Composition: How Films and TV Shows Say What They Mean 3 credits"
+    },
+    {
+      "id": "filmmaking.workshops",
+      "label": "workshops",
+      "title": "Three Filmmaking Workshops (9 credits)",
+      "rule": {
+        "manualCheck": "FLM 215, FLM 220, FLM 221 and FLM 302 are listed as 6 credits as the topic changes, while the item is stated as 9 credits total. Students may repeat one of FLM 215, FLM 220, FLM 221, FLM 302, FLM 310 or FLM 320 as topic changes, to a maximum of 6 credits per course. Verify credit totals and repeats against the transcript.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "FLM 201",
+            "FLM 203",
+            "FLM 215",
+            "FLM 220",
+            "FLM 221",
+            "FLM 301",
+            "FLM 302"
+          ]
+        }
+      },
+      "sourceText": "Three Filmmaking Workshops chosen from the following (9 credits): FLM 201 - Visual Storytelling Across the Disciplines 3 credits; FLM 203 - Podcasting: Audio Storytelling Skills for Filmmakers 3 credits; FLM 215 - Scriptwriting for Film and Television 6 credits as the topic changes. *; FLM 220 - Documentary Filmmaking 6 credits as the topic changes. *; FLM 221 - Fiction Filmmaking 6 credits as the topic changes. *; FLM 301 - The Filmmaker's Toolbox: Cinematography, Sound and Editing 3 credits; FLM 302 - Producing Practices for Film and Television: Producing and Directing 6 credits as the topic changes. *  Notes: *Students may repeat one of FLM 215, FLM 220, FLM 221, FLM 302, FLM 310, and FLM 320 as topic changes, to a maximum of 6 credits per course."
+    },
+    {
+      "id": "filmmaking.survey",
+      "label": "survey",
+      "title": "One Film Survey Course for Filmmakers (3 credits)",
+      "rule": {
+        "manualCheck": "With the permission of the Director, students may select one 300-level film course from other departments at the university. Verify Director approval on the record if such a course is used.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "FLM 310",
+            "FLM 320"
+          ]
+        }
+      },
+      "sourceText": "One Film Survey Course for Filmmakers (3 credits): FLM 310 - Story Analysis for Filmmakers and Television Writers 3 credits; FLM 320 - Topics in Film for Filmmakers and Television Writers 3 credits  Notes: With the permission of the Director, students may select one 300-level film course from other departments at the university."
+    },
+    {
+      "id": "filmmaking.capstone",
+      "label": "capstone",
+      "title": "Capstone Project (3 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "filmmaking.capstone.course",
+            "manualCheck": "Workshop courses taken to satisfy the Three Filmmaking Workshops requirement may not also be used to satisfy this requirement. Permission of the Director is required.",
+            "type": "course",
+            "code": "FLM 402"
+          }
+        ]
+      },
+      "sourceText": "Capstone Project (3 credits)** All students are required to take the capstone project course or its equivalent. Permission of the Director is required. FLM 402 - Capstone Project 3 credits  **Workshop courses taken to satisfy requirement B may not be used to also satisfy requirement D."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "filmmaking.intro",
+        "filmmaking.workshops",
+        "filmmaking.survey",
+        "filmmaking.capstone"
+      ],
+      "sourceText": "Students must earn a grade of C or better in all courses toward the minor."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "filmmaking.sub.capstone-workshop",
+      "replaces": {
+        "type": "rule",
+        "ruleId": "filmmaking.capstone.course"
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "A filmmaking workshop at the 300- or graduate level (preferably a graduate FLM course offered in Manhattan) that builds on a project begun in a previous workshop, or an internship completed through enrollment in FLM 488",
+        "reason": "The page does not define the 300-level or graduate workshop eligibility or how 'builds on a project begun in a previous workshop' is verified; the internship option is stated only by course number"
+      },
+      "requiresApproval": true,
+      "sourceText": "Additional Requirements: In consultation with the Director, a filmmaking workshop at the 300- or graduate level (preferably a graduate FLM course offered in Manhattan) that builds on a project begun in a previous workshop, or an internship completed through enrollment in FLM 488, may satisfy this requirement."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students should declare the minor in Filmmaking no later than the middle of their sophomore year, at which time they should consult with the directors of their major and minor to plan their course of study."
+    },
+    {
+      "topic": "other",
+      "text": "Program Director: Karen Offitzer, karen.offitzer@stonybrook.edu. Program Coordinator: Chryso Tsoumpelis, chrysovalantou.tsoumpelis@stonybrook.edu. Office: Melville Library, 3rd Floor."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1455",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "television-writing",
+  "name": "Television Writing",
+  "kind": "minor",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "television-writing.intro",
+      "label": "intro",
+      "title": "Introductory courses required of all minors (9 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "FLM 101"
+          },
+          {
+            "type": "course",
+            "code": "FLM 102"
+          },
+          {
+            "id": "television-writing.intro.flm215",
+            "manualCheck": "Page lists FLM 215 as 6 credits 'as the topic changes' and says students must take Topic: TV Writing. The three listed courses total 12 credits, which conflicts with the stated 9-credit heading; verify the topic and credit count with the program.",
+            "type": "course",
+            "code": "FLM 215"
+          }
+        ]
+      },
+      "sourceText": "Introductory courses required of all minors (9 credits) - FLM 101 - Introduction to Filmmaking and Television: Visual Storytelling 3 credits - FLM 102 - Introduction to Film and Television Composition: How Films and TV Shows Say What They Mean 3 credits - FLM 215 - Scriptwriting for Film and Television 6 credits as the topic changes. (must take Topic: TV Writing)"
+    },
+    {
+      "id": "television-writing.workshop",
+      "label": "workshop",
+      "title": "Advanced TV Writing Workshop (TVW 220) and ONE additional Advanced Workshop (6 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "TVW 220"
+          },
+          {
+            "id": "television-writing.workshop.additional",
+            "manualCheck": "FLM 302 is listed as 6 credits 'as the topic changes'; the other listed workshops are 3 credits. Verify the credit total for the additional workshop is 6 credits.",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "FLM 201",
+                "FLM 203",
+                "TVW 221",
+                "FLM 302"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Advanced TV Writing Workshop (TVW 220) and ONE additional Advanced Workshop (6 credits) - FLM 201 - Visual Storytelling Across the Disciplines 3 credits - FLM 203 - Podcasting: Audio Storytelling Skills for Filmmakers 3 credits - TVW 220 - Advanced TV Writing 3 credits - TVW 221 - The Writers Room 3 credits - FLM 302 - Producing Practices for Film and Television: Producing and Directing 6 credits as the topic changes."
+    },
+    {
+      "id": "television-writing.survey",
+      "label": "survey",
+      "title": "One Survey Course for Filmmakers (3 credits)",
+      "rule": {
+        "manualCheck": "Notes state that, with the permission of the undergraduate minor director, students may select one 300-level survey course from other departments at the University. Such a course is not listed here and requires director approval.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "FLM 310",
+            "FLM 320"
+          ]
+        }
+      },
+      "sourceText": "One Survey Course for Filmmakers (3 credits) - FLM 310 - Story Analysis for Filmmakers and Television Writers 3 credits - FLM 320 - Topics in Film for Filmmakers and Television Writers 3 credits Notes: *With the permission of the undergraduate minor director, students may select one 300 level survey course from other departments at the University."
+    },
+    {
+      "id": "television-writing.capstone",
+      "label": "capstone",
+      "title": "Capstone Project (3 credits)",
+      "rule": {
+        "manualCheck": "Page says 'capstone project course or equivalent' and that permission of the director is required.",
+        "type": "course",
+        "code": "FLM 402"
+      },
+      "sourceText": "Capstone Project (3 credits) All students are required to take the capstone project course or equivalent. Permission of the director is required. - FLM 402 - Capstone Project 3 credits"
+    },
+    {
+      "id": "television-writing.total-credits",
+      "label": "total-credits",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor in TV Writing requires 21 credits, distributed as follows.",
+        "reason": "Program-wide credit total; no rule type sums credits across all minor requirements."
+      },
+      "sourceText": "Completion of the minor in TV Writing requires 21 credits, distributed as follows:"
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "television-writing.intro",
+        "television-writing.workshop",
+        "television-writing.survey",
+        "television-writing.capstone"
+      ],
+      "sourceText": "Students must earn a grade of C or better in all courses toward the minor."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students should declare the Television Writing Minor no later than the middle of their sophomore year, at which time they should consult with the directors of their major and minor to plan their course of study."
+    },
+    {
+      "topic": "other",
+      "text": "The minor in TV Writing is offered in conjunction with the minor in Filmmaking through the undergraduate Creative Writing and Film Program. Minors graduate with a SPEC SCRIPT and a REVISED PILOT SCRIPT."
+    },
+    {
+      "topic": "other",
+      "text": "Program contacts: Undergraduate Program Director Karen Offitzer (karen.offitzer@stonybrook.edu); Program Coordinator Chryso Tsoumpelis (chrysovalantou.tsoumpelis@stonybrook.edu); Office: Melville Library, 3rd floor, N3017."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1505",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

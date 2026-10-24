@@ -1,0 +1,877 @@
+{
+  "id": "coastal-environmental-studies-bs",
+  "name": "Coastal Environmental Studies, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Coastal Environmental Studies",
+  "approxCredits": 73,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "coastal-environmental-studies-bs.foundation",
+      "label": "foundation",
+      "title": "Required Foundation Courses for Major (35 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 102"
+              },
+              {
+                "type": "course",
+                "code": "AMS 110"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "BIO 201"
+          },
+          {
+            "type": "course",
+            "code": "BIO 204"
+          },
+          {
+            "type": "course",
+            "code": "CHE 131"
+          },
+          {
+            "type": "course",
+            "code": "CHE 133"
+          },
+          {
+            "type": "course",
+            "code": "CHE 132"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ENS 119"
+              },
+              {
+                "type": "course",
+                "code": "PHY 119"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 132"
+                  }
+                ]
+              },
+              {
+                "manualCheck": "Listed on the page as a standalone alternative to the other calculus sequences.",
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 130"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 126"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 161"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 111"
+              },
+              {
+                "type": "course",
+                "code": "ENS 101"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 113"
+              },
+              {
+                "type": "course",
+                "code": "GEO 102"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SUS 201"
+          }
+        ]
+      },
+      "sourceText": "AMS 102 - Elements of Statistics OR AMS 110 - Probability and Statistics in the Life Sciences; BIO 201 - Fundamentals of Biology: Organisms to Ecosystems; BIO 204 - Fundamentals of Scientific Inquiry in the Biological Sciences I; CHE 131 - General Chemistry IB; CHE 133 - General Chemistry Laboratory I AND CHE 132 - General Chemistry II (see Note 4); ENS 119 - Physics for Environmental Studies OR PHY 119 - Physics for Environmental Studies (see Note 3); MAT 131 - Calculus I; MAT 132 - Calculus II OR MAT 125 - Calculus A OR MAT 130 - Trigonometry and Logarithms, MAT 125 - Calculus A, MAT 126 - Calculus B OR AMS 151 - Applied Calculus I, AMS 161 - Applied Calculus II; SUS 111 - Introduction to Sustainability OR ENS 101 - Prospects for Planet Earth; SUS 113 - Physical Geography Lecture OR GEO 102 - The Earth; SUS 201 - Systems and Models"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.foundation-math-placement",
+      "label": "foundation-math-placement",
+      "title": "Math placement requirement",
+      "rule": {
+        "manualCheck": "Confirm whether the student placed into MAT 125, MAT 131, or AMS 151; if not, MAT 123 (or MAT 119 and MAT 123) is required.",
+        "type": "unparsed",
+        "text": "If students do not place into MAT 125 or MAT 131 or AMS 151 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major.",
+        "reason": "Conditional on math placement examination results, which are not a transcript course rule."
+      },
+      "sourceText": "If students do not place into MAT 125 or MAT 131 or AMS 151 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major."
+    },
+    {
+      "id": "coastal-environmental-studies-bs.career-leadership",
+      "label": "career-leadership",
+      "title": "Career and Leadership Skills",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "SUS 301"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 305"
+              },
+              {
+                "type": "course",
+                "code": "ENS 301"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "SUS 301 - Technical Writing and Communication; SUS 305 - Collective Action and Advocacy OR ENS 301 - Contemporary Environmental Issues and Policies"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.core",
+      "label": "core",
+      "title": "Core Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ATM 305"
+              },
+              {
+                "type": "course",
+                "code": "ENV 304"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "BIO 351"
+          },
+          {
+            "type": "course",
+            "code": "ENV 320"
+          },
+          {
+            "manualCheck": "Page notes CHE 311 was formerly offered as ENV 321.",
+            "type": "course",
+            "code": "CHE 311"
+          },
+          {
+            "type": "course",
+            "code": "GSS 313"
+          },
+          {
+            "type": "course",
+            "code": "GSS 314"
+          }
+        ]
+      },
+      "sourceText": "ATM 305 - Global Atmospheric Change OR ENV 304 - Global Environmental Change; BIO 351 - Ecology; ENV 320 - Chemistry for Environmental Scientists; CHE 311 - Environmental Chemistry Lab (formerly offered as ENV 321); GSS 313 - GIS Design and Application I; GSS 314 - GIS Laboratory"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.group-a",
+      "label": "group-a",
+      "title": "Group A: Environmental Science Electives (choose 9 credits)",
+      "rule": {
+        "type": "choose",
+        "credits": 9,
+        "from": {
+          "courses": [
+            "BIO 352",
+            "CHE 312",
+            "CHE 321",
+            "ENS 311",
+            "BIO 386",
+            "ENV 310",
+            "ENV 315",
+            "GEO 315",
+            "ENV 316",
+            "ENV 340",
+            "GEO 313",
+            "GSS 354",
+            "MAR 303",
+            "MAR 304",
+            "MAR 308",
+            "MAR 315",
+            "MAR 320",
+            "MAR 333",
+            "MAR 336",
+            "MAR 354",
+            "MAR 388",
+            "MAR 394",
+            "SUS 319"
+          ]
+        }
+      },
+      "sourceText": "Students are required to select 9 credits from group A and 6 credits from group B. Group A: Environmental Science Electives (choose 9 credits): BIO 352 - Ecology Laboratory *; CHE 312 - Physical Chemistry for the Life Sciences *; CHE 321 - Organic Chemistry I; ENS 311 - Ecosystem Ecology and the Global Environment; BIO 386 - Ecosystem Ecology and the Global Environment; ENV 310 - Sustainability and Renewable Energy - Costa Rica; ENV 315 - Principles and Applications of Groundwater Hydrology; GEO 315 - Groundwater Hydrology; ENV 316 - Coastal Zone Management; ENV 340 - Contemporary Topics in Environmental Science; GEO 313 - Understanding Water Resources for the 21st Century; GSS 354 - Geospatial Science for the Coastal Zone; MAR 303 - Long Island Marine Habitats; MAR 304 - Waves, Tides, and Beaches; MAR 308 - Environmental Instrumental Analysis *; MAR 315 - Marine Conservation; MAR 320 - Limnology; MAR 333 - Coastal Oceanography; MAR 336 - Marine Pollution; MAR 354 - Introduction to Geological Oceanography; MAR 388 - Tropical Marine Ecology; MAR 394 - Environmental Toxicology and Public Health; SUS 319 - Restoration Ecology"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.group-b",
+      "label": "group-b",
+      "title": "Group B: Environment, Society, and Policy (choose 6 credits)",
+      "rule": {
+        "type": "choose",
+        "credits": 6,
+        "from": {
+          "courses": [
+            "EDP 301",
+            "EDP 305",
+            "EDP 309",
+            "ENV 339",
+            "SOC 344",
+            "SUS 311",
+            "SUS 317",
+            "SUS 318",
+            "SUS 321",
+            "SUS 323",
+            "SUS 324",
+            "SUS 325",
+            "SUS 340",
+            "SUS 342",
+            "SUS 366"
+          ]
+        }
+      },
+      "sourceText": "Group B: Environment, Society, and Policy (choose 6 credits): EDP 301 - Urban Systems *; EDP 305 - Risk Assessment and Sustainable Development; EDP 309 - Planning: Policies and Regulations *; ENV 339 - Economics of Coastal and Marine Ecosystems; SOC 344 - Environmental Sociology; SUS 311 - Disasters and Society: A Global Perspective *; SUS 317 - American Environmental History; SUS 318 - American Environmental Politics *; SUS 321 - Ecology and Evolution in American Literature; SUS 323 - Environmental Justice; SUS 324 - Human Geography and the Environment; SUS 325 - Environmental Writing and the Media; SUS 340 - Ecological and Social Dimensions of Disease; SUS 342 - Energy and Mineral Resources; SUS 366 - Philosophy of the Environment (III) *"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.systems",
+      "label": "systems",
+      "title": "Systems Course (3 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "ENS 443",
+            "ENV 301",
+            "ENV 487",
+            "ENV 488",
+            "SUS 401"
+          ]
+        }
+      },
+      "sourceText": "One Integrative, Collaborative Systems Project course: ENS 443 - Environmental Problem Solving 3 credits; ENV 301 - Sustainability of the Long Island Pine Barrens 3 credits; ENV 487 - Research in Environmental Sciences 0-6 credits (see Note 1); ENV 488 - Internship in Coastal Environmental Studies 0-12 credits, (see Note 2); SUS 401 - Integrative, Collaborative Systems Studies 3 credits"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.upper-division-writing",
+      "label": "upper-division-writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Requires registration in the 0-credit SUS 459 and approval of either a term paper or a laboratory report written for an advanced course in the appropriate major at Stony Brook (including Readings and Research courses). Completion of SUS 459 with a grade of S results in approval of the WRTD requirement. A list of preapproved courses can be obtained through the department.",
+        "type": "course",
+        "code": "SUS 459"
+      },
+      "sourceText": "The advanced writing component of the major in COS requires registration in the 0-credit SUS 459 and approval of either a term paper or a laboratory report written for an advanced course in the appropriate major at Stony Brook (including Readings and Research courses). Completion of SUS 459 with a grade of S will result in approval of the WRTD requirement."
+    },
+    {
+      "id": "coastal-environmental-studies-bs.low-grade-exception",
+      "label": "low-grade-exception",
+      "title": "Limit on passing grades below C",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one course (4 credits maximum) with a passing grade lower than C can be credited towards the major.",
+        "reason": "A program-wide cap on courses with grades below C that no rule type expresses."
+      },
+      "sourceText": "No more than one course (4 credits maximum) with a passing grade lower than C can be credited towards the major."
+    },
+    {
+      "id": "coastal-environmental-studies-bs.double-major-limit",
+      "label": "double-major-limit",
+      "title": "Double major limit within SoMAS",
+      "rule": {
+        "type": "unparsed",
+        "text": "Excluding ENV 301, SUS 301, SUS 305, and SUS 401, no more than 6 credits of 300-400 level course credits can be applied to two majors within the School of Marine and Atmospheric Sciences.",
+        "reason": "Cross-major credit limit that no rule type expresses."
+      },
+      "sourceText": "Excluding ENV 301 - Sustainability of the Long Island Pine Barrens , SUS 301 - Technical Writing and Communication , SUS 305 - Collective Action and Advocacy , and SUS 401 - Integrative, Collaborative Systems Studies , no more than 6 credits of 300-400 level course credits can be applied to two majors within the School of Marine and Atmospheric Sciences."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "coastal-environmental-studies-bs.foundation",
+        "coastal-environmental-studies-bs.foundation-math-placement",
+        "coastal-environmental-studies-bs.career-leadership",
+        "coastal-environmental-studies-bs.core",
+        "coastal-environmental-studies-bs.group-a",
+        "coastal-environmental-studies-bs.group-b",
+        "coastal-environmental-studies-bs.systems"
+      ],
+      "sourceText": "Courses taken with the Pass/NC option may not be applied to the major."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "coastal-environmental-studies-bs.sub.che154-for-che133",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 133"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "CHE 154"
+      },
+      "requiresApproval": false,
+      "sourceText": "CHE 154 may be substituted for CHE 133"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.sub.che129-che152-for-che131",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 131"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "CHE 129/CHE 130 or CHE 152 may be substituted for CHE 131",
+        "reason": "The page's slash notation for CHE 129/CHE 130 is ambiguous as to whether either course or both are required."
+      },
+      "requiresApproval": false,
+      "sourceText": "CHE 129 /CHE 130 or CHE 152 may be substituted for CHE 131"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.sub.phy121-for-ens119",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "ENS 119",
+          "PHY 119"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "PHY 121"
+      },
+      "requiresApproval": false,
+      "sourceText": "PHY 121 may be substituted for PHY 119 /ENS 119"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.sub.phy125-126-133-for-ens119",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "ENS 119",
+          "PHY 119"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHY 125"
+          },
+          {
+            "type": "course",
+            "code": "PHY 126"
+          },
+          {
+            "type": "course",
+            "code": "PHY 133"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "PHY 125 and PHY 126 and PHY 133 may be substituted for PHY 119 /ENS 119"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.sub.phy131-133-for-ens119",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "ENS 119",
+          "PHY 119"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHY 131"
+          },
+          {
+            "type": "course",
+            "code": "PHY 133"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "PHY 131 and PHY 133 may be substituted for PHY 119 /ENS 119"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.sub.phy141-133-for-ens119",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "ENS 119",
+          "PHY 119"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHY 141"
+          },
+          {
+            "type": "course",
+            "code": "PHY 133"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "PHY 141 and PHY 133 may be substituted for PHY 119 /ENS 119"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.sub.ats-ens-mar-sus-for-env487",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "ENV 487"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ATM 487"
+          },
+          {
+            "type": "course",
+            "code": "ENS 487"
+          },
+          {
+            "type": "course",
+            "code": "MAR 487"
+          },
+          {
+            "type": "course",
+            "code": "SUS 487"
+          }
+        ]
+      },
+      "requiresApproval": true,
+      "sourceText": "ATM 487 , ENS 487 , MAR 487 , or SUS 487 may, with permission, be substituted for ENV 487"
+    },
+    {
+      "id": "coastal-environmental-studies-bs.sub.ats-ens-mar-sus-for-env488",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "ENV 488"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ATM 488"
+          },
+          {
+            "type": "course",
+            "code": "ENS 488"
+          },
+          {
+            "type": "course",
+            "code": "MAR 488"
+          },
+          {
+            "type": "course",
+            "code": "SUS 488"
+          }
+        ]
+      },
+      "requiresApproval": true,
+      "sourceText": "ATM 488 , ENS 488 , MAR 488 , or SUS 488 may, with permission, be substituted for ENV 488"
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 125",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ENS 101",
+          "alternatives": [
+            "SUS 111"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 133",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "MAT 126",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 201",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 204",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "AMS 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 113",
+          "alternatives": [
+            "GEO 102"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SUS 201",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ENS 119",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SUS 305",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 351",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ENV 320",
+          "alternatives": [
+            "ENV 321"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GSS 313",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GSS 314",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "Group A elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Group B elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SUS 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ENV 304",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Group A elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SUS 401",
+          "alternatives": [
+            "ENV 487",
+            "ENV 488"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Group A elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Group B elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Program director: Katherine B. Aubrecht (katherine.aubrecht@stonybrook.edu). Undergraduate advisor: Nancy Black (nancy.black@stonybrook.edu). Program office: E2361 Melville Library, (631) 632-9404."
+    },
+    {
+      "topic": "grading",
+      "text": "Completion of the major requires 73 credits. Courses taken with the Pass/NC option may not be applied to the major."
+    },
+    {
+      "topic": "other",
+      "text": "Courses marked with * have additional prerequisites outside of the major."
+    },
+    {
+      "topic": "other",
+      "text": "CHE 311 is formerly offered as ENV 321; the sample sequence lists ENV 320/ENV 321 together."
+    },
+    {
+      "topic": "other",
+      "text": "Study abroad experiences in Costa Rica, Madagascar, and the Turkana Basin (Kenya) are available; students should talk with the major director about how study abroad coursework can fulfill major requirements."
+    },
+    {
+      "topic": "other",
+      "text": "The Degree Requirements section also notes this degree prepares students for graduate study and entry-level employment; no admission requirements are listed for the major."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1402",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

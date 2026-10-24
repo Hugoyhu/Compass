@@ -1,0 +1,114 @@
+{
+  "id": "asian-and-asian-american-studies",
+  "name": "Asian and Asian American Studies",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "asian-and-asian-american-studies.A",
+      "label": "A",
+      "title": "Core Courses",
+      "rule": {
+        "manualCheck": "The choice of core courses may be changed with the approval of the Undergraduate Program Director as long as the choice ensures the diversity within AAS and appropriate core knowledge needed for completing the minor in AAS.",
+        "type": "choose",
+        "credits": 6,
+        "from": {
+          "courses": [
+            "AAS 102",
+            "AAS 201",
+            "AAS 216",
+            "AAS 217",
+            "AAS 220",
+            "AAS 232"
+          ]
+        }
+      },
+      "sourceText": "AAS minors are required to take six credits from the core courses. - AAS 102 - Eastern Religions 3 credits - AAS 201 - Introduction to the Civilization of the Indian Subcontinent 3 credits - AAS 216 - Introduction to Japanese Studies 3 credits - AAS 217 - Introduction to Korean Culture 3 credits - AAS 220 - China: Language and Culture 3 credits - AAS 232 - Introduction to Asian American Fiction and Film 3 credits - Note: The choice of core courses may be changed with the approval of the Undergraduate Program Director as long as the choice ensures the diversity within AAS and appropriate core knowledge needed for completing the minor in AAS."
+    },
+    {
+      "id": "asian-and-asian-american-studies.B",
+      "label": "B",
+      "title": "Concentration Courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "AAS minors are required to take nine credits from one area of concentration including at least six credits from upper-division courses. Areas: Asian Philosophy and Religions; Literatures, Arts, and Cultures of Asia and Asian America; Society and Contemporary Issues; Region and Language. For available courses, refer to the AAS Major requirement C.",
+        "reason": "The course lists for each concentration area are on the AAS Major requirement C, which is not on this page. Nine credits from one area with at least six upper-division credits cannot be checked without those lists."
+      },
+      "sourceText": "AAS minors are required to take nine credits from one area of concentration including at least six credits from upper-division courses. For available courses, refer to the AAS Major requirement C . - Asian Philosophy and Religions - Literatures, Arts, and Cultures of Asia and Asian America - Society and Contemporary Issues - Region and Language"
+    },
+    {
+      "id": "asian-and-asian-american-studies.C",
+      "label": "C",
+      "title": "Asian and Asian American Studies Elective",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "subjects": [
+            "AAS"
+          ]
+        }
+      },
+      "sourceText": "Minors are required to take one elective in AAS to meet the total credit and upper-division credit requirements."
+    },
+    {
+      "id": "asian-and-asian-american-studies.total-credits",
+      "label": "total-credits",
+      "title": "Total credits and upper-division credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 18 credits, including at least 9 upper-division credits.",
+        "reason": "Program-wide credit totals and upper-division minimums are not a rule type that can be applied to the requirement items above."
+      },
+      "sourceText": "Completion of the minor requires 18 credits, including at least 9 upper-division credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "asian-and-asian-american-studies.A",
+        "asian-and-asian-american-studies.B",
+        "asian-and-asian-american-studies.C"
+      ],
+      "sourceText": "All courses for the minor must be taken for a letter grade and passed with a grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "asian-and-asian-american-studies.A",
+        "asian-and-asian-american-studies.B",
+        "asian-and-asian-american-studies.C"
+      ],
+      "sourceText": "All courses for the minor must be taken for a letter grade and passed with a grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students with a minor in Asian and Asian American Studies consult with the Undergraduate Program Director of Asian and Asian American Studies to select a curriculum of interdisciplinary comparative study that speaks to their particular interests and career goals."
+    },
+    {
+      "topic": "other",
+      "text": "The concentration course lists are referenced to the AAS Major requirement C, which is not included on this page."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1362",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

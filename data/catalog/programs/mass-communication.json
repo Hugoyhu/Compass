@@ -1,0 +1,88 @@
+{
+  "id": "mass-communication",
+  "name": "Mass Communication",
+  "kind": "minor",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "mass-communication.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "COM 106"
+          },
+          {
+            "type": "course",
+            "code": "COM 120"
+          },
+          {
+            "type": "course",
+            "code": "COM 305"
+          }
+        ]
+      },
+      "sourceText": "The following courses (9 credits) are required of mass communication minors; an asterisk (*) denotes an online course: COM 106 - Introduction to Mass Media 3 credits *; COM 120 - Fundamentals of Public Speaking 3 credits *; COM 305 - Mass Communication Law & Ethics 3 credits *"
+    },
+    {
+      "id": "mass-communication.electives",
+      "label": "electives",
+      "title": "Electives",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "COM 306",
+            "COM 307",
+            "COM 316",
+            "COM 317",
+            "JRN 301",
+            "JRN 319",
+            "JRN 363",
+            "COM 365",
+            "JRN 366",
+            "COM 399",
+            "JRN 413",
+            "COM 436"
+          ],
+          "minNumber": 300
+        }
+      },
+      "sourceText": "Three electives (9 credits) at or above the 300 level are required; an asterisk (*) denotes an online course. Students may choose from the following (all three-credit courses): COM 306 - Modes of Media Criticism 3 credits; COM 307 - Critical Media Theory 3 credits; COM 316 - Mass Communication Research Methods 3 credits; COM 317 - Mass Communication Theory 3 credits; JRN 301 - The Changing News Business 3 credits; JRN 319 - The Image of the Journalist in Popular Culture 3 credits; JRN 363 - Magazine Writing 3 credits; COM 365 - Talking Science 3 credits; JRN 366 - Press & the Presidency 3 credits; COM 399 - Special Topics in Mass Communication 3 credits; JRN 413 - Journalisms of the Global South 3 credits; COM 436 - Environmental Communication 3 credits"
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Advising: Visit SoCJ Undergraduate Advising for program resources and ways to connect with an advisor. Director of Undergraduate Studies: Irene Virag, Melville Library N-4004, socjadvising@stonybrook.edu."
+    },
+    {
+      "topic": "other",
+      "text": "Transfer courses will be evaluated individually for mass communication equivalency by the Undergraduate Director."
+    },
+    {
+      "topic": "other",
+      "text": "An asterisk (*) denotes an online course."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1559",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

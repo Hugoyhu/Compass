@@ -1,0 +1,819 @@
+{
+  "id": "information-systems-bs",
+  "name": "Information Systems, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Information Systems",
+  "approxCredits": 64,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "information-systems-bs.lower-division",
+      "label": "lower-division",
+      "title": "Lower Division Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CSE 114"
+          },
+          {
+            "type": "course",
+            "code": "CSE 214"
+          },
+          {
+            "type": "course",
+            "code": "ISE 218"
+          }
+        ]
+      },
+      "sourceText": "Lower Division Courses: CSE 114 - Introduction to Object-Oriented Programming 4 credits; CSE 214 - Data Structures 4 credits; ISE 218 - Fundamentals of Information Technology 3 credits"
+    },
+    {
+      "id": "information-systems-bs.upper-division",
+      "label": "upper-division",
+      "title": "Upper Division Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ISE 312"
+          },
+          {
+            "type": "course",
+            "code": "ISE 305"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ISE 316"
+              },
+              {
+                "type": "course",
+                "code": "CSE 310"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ISE 320"
+          }
+        ]
+      },
+      "sourceText": "Upper Division Courses: ISE 312 - Social, Legal, and Ethical Issues in Computing 3 credits; ISE 305 - Database Design and Practice 3 credits; ISE 316 - Introduction to Networking 3 credits OR CSE 310 - Computer Networks 3 credits; ISE 320 - Information Management 3 credits"
+    },
+    {
+      "id": "information-systems-bs.electives",
+      "label": "electives",
+      "title": "Electives",
+      "rule": {
+        "type": "choose",
+        "count": 4,
+        "from": {
+          "subjects": [
+            "ISE"
+          ],
+          "minNumber": 300,
+          "excludeUsedBy": [
+            "information-systems-bs.upper-division",
+            "information-systems-bs.writing"
+          ]
+        }
+      },
+      "sourceText": "Electives: Four additional upper-division ISE courses. Note: ISE 475 may be considered among the ISE upper-division electives, but may only be counted once towards the ISE upper-division elective requirement."
+    },
+    {
+      "id": "information-systems-bs.calculus",
+      "label": "calculus",
+      "title": "Mathematics: calculus sequence",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 151"
+              },
+              {
+                "type": "course",
+                "code": "AMS 161"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CSE 113"
+          }
+        ]
+      },
+      "sourceText": "One of the following calculus course sequences: AMS 151 - Applied Calculus I 3 credits; AMS 161 - Applied Calculus II 3 credits; OR CSE 113 - Foundations of Computer Science I 4 credits. Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161 in major requirements or prerequisites: MAT 125, MAT 126, MAT 127 or MAT 131, MAT 132. Equivalency for MAT courses achieved through the Mathematics Placement Examination is accepted to meet the Calculus course requirements."
+    },
+    {
+      "id": "information-systems-bs.linear-algebra",
+      "label": "linear-algebra",
+      "title": "Mathematics: linear algebra",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 210"
+          },
+          {
+            "type": "course",
+            "code": "MAT 211"
+          }
+        ]
+      },
+      "sourceText": "One of the following linear algebra courses: AMS 210 - Applied Linear Algebra 3 credits; MAT 211 - Introduction to Linear Algebra 3 credits"
+    },
+    {
+      "id": "information-systems-bs.statistics",
+      "label": "statistics",
+      "title": "Mathematics: statistics",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 310"
+          },
+          {
+            "type": "course",
+            "code": "ECO 320"
+          },
+          {
+            "type": "course",
+            "code": "AMS 110"
+          }
+        ]
+      },
+      "sourceText": "One of the following statistics courses: AMS 310 - Survey of Probability and Statistics 3 credits; ECO 320 - Mathematical Statistics 4 credits; AMS 110 - Probability and Statistics in the Life Sciences 3 credits"
+    },
+    {
+      "id": "information-systems-bs.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "course",
+        "code": "ISE 300"
+      },
+      "sourceText": "Upper-Division Writing Requirement: ISE 300 - Technical Communications 3 credits"
+    },
+    {
+      "id": "information-systems-bs.specialization",
+      "label": "specialization",
+      "title": "Specialization",
+      "rule": {
+        "manualCheck": "Students must complete one of the listed specializations or design one in consultation with the ISE undergraduate director. Confirm the chosen specialization with the director.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "information-systems-bs.specialization.business-economics",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ECO 110"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO 111"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ACC 210"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "ACC 214",
+                    "ESE 201",
+                    "BUS 115",
+                    "BUS 215",
+                    "BUS 220",
+                    "BUS 294"
+                  ]
+                }
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "BUS 330",
+                    "BUS 346",
+                    "BUS 348",
+                    "BUS 353",
+                    "BUS 355",
+                    "BUS 356",
+                    "EST 305",
+                    "EST 320",
+                    "EST 325",
+                    "EST 364",
+                    "EST 392",
+                    "EST 393",
+                    "ECO 326",
+                    "ECO 348",
+                    "ECO 389",
+                    "POL 319",
+                    "POL 359",
+                    "SOC 381"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "information-systems-bs.specialization.financial-is",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "CSE 113",
+                    "AMS 315",
+                    "AMS 318"
+                  ]
+                }
+              },
+              {
+                "type": "choose",
+                "count": 4,
+                "from": {
+                  "courses": [
+                    "ACC 210",
+                    "AMS 311",
+                    "AMS 316",
+                    "AMS 320",
+                    "AMS 341",
+                    "AMS 394",
+                    "AMS 441",
+                    "BUS 330",
+                    "BUS 331",
+                    "BUS 355",
+                    "BUS 356",
+                    "ISE 323",
+                    "ISE 331"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "information-systems-bs.specialization.health-informatics",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "HAN 200"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "BIO 202"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BIO 203"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 4,
+                "from": {
+                  "courses": [
+                    "BCP 405",
+                    "BME 205",
+                    "CSE 377",
+                    "ECO 327",
+                    "HAN 202",
+                    "PSY 103"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "information-systems-bs.specialization.system-network-admin",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ISE 311"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 311"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ISE 321"
+              },
+              {
+                "type": "course",
+                "code": "ISE 331"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ISE 337"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 337"
+                  }
+                ]
+              },
+              {
+                "manualCheck": "ISE 487 is 0-6 credits and CSE 487 is 0-3 credits; CSE or ISE 487 must be completed for a minimum of three credits. Courses applied to this specialization may not be used toward requirements to satisfy the ISE major or minor.",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ISE 488"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ISE 487"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 487"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ESE 442"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 370"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EST 393"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BUS 346"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 341"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "information-systems-bs.specialization.technological-systems-mgmt",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "EST 201"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EST 202"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "EST 391"
+              },
+              {
+                "type": "course",
+                "code": "EST 392"
+              },
+              {
+                "type": "course",
+                "code": "EST 393"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "EST 310",
+                    "ISE 340",
+                    "EST 320",
+                    "EST 323",
+                    "ISE 323",
+                    "EST 326",
+                    "EST 327",
+                    "EST 364"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "information-systems-bs.specialization.other",
+            "type": "unparsed",
+            "text": "Specialization in Other Application Areas: design a specialization of six to eight courses in another application area in consultation with the ISE undergraduate director before the courses for the specialization are completed.",
+            "reason": "The page does not list the courses; the specialization is designed with the undergraduate director."
+          }
+        ]
+      },
+      "sourceText": "Students must complete a specialization in one of the application areas listed below, or else design a specialization of six to eight courses in another application area in consultation with the ISE undergraduate director before the courses for the specialization are completed."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "information-systems-bs.lower-division",
+        "information-systems-bs.upper-division",
+        "information-systems-bs.electives",
+        "information-systems-bs.calculus",
+        "information-systems-bs.linear-algebra",
+        "information-systems-bs.statistics",
+        "information-systems-bs.writing",
+        "information-systems-bs.specialization"
+      ],
+      "sourceText": "All courses taken to satisfy the Degree Requirements must be taken for a letter grade and completed with a grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "information-systems-bs.lower-division",
+        "information-systems-bs.upper-division",
+        "information-systems-bs.electives",
+        "information-systems-bs.calculus",
+        "information-systems-bs.linear-algebra",
+        "information-systems-bs.statistics",
+        "information-systems-bs.writing",
+        "information-systems-bs.specialization"
+      ],
+      "sourceText": "All courses taken to satisfy the Degree Requirements must be taken for a letter grade and completed with a grade of C or higher."
+    },
+    {
+      "type": "prerequisiteGrade",
+      "subjects": [
+        "CSE",
+        "ISE"
+      ],
+      "minGrade": "C",
+      "passNoCreditAllowed": false,
+      "sourceText": "A grade of C or higher is required in prerequisite courses listed for all CSE and ISE courses. To enroll in ISE courses, students must have completed all prerequisites with a grade of C or higher (Pass/No Credit grades are not acceptable to meet prerequisites)."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "information-systems-bs.sub.mat-calculus",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "AMS 151",
+          "AMS 161"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "MAT 125, MAT 126, MAT 127 or MAT 131, MAT 132",
+        "reason": "The substitute is one of two alternative sequences; the substitution schema cannot express an alternative of multi-course sequences."
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate calculus course sequences may be substituted for AMS 151, AMS 161 in major requirements or prerequisites: MAT 125, MAT 126, MAT 127 or MAT 131, MAT 132."
+    }
+  ],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CSE 101",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "AMS 151",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CSE 114",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "AMS 161",
+          "alternatives": [
+            "CSE 113"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ISE 218",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 210",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CSE 214",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ISE 320",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ISE 305",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 310",
+          "alternatives": [
+            "ECO 320"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ISE 312",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ISE 316",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ISE Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ISE 300",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ISE Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ISE Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "ISE Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Area of Interest admission requires completing CSE 114; AMS 151, MAT 125, or MAT 131; and either WRT 102 or ISE 218, with grades of B- or higher and a GPA of 3.00 or higher in these courses (the higher grade is used if both ISE 218 and WRT 102 were taken), repeating at most one of the courses, and a cumulative GPA of 3.00 or higher. Applications are due January 5 (Spring) and June 5 (Fall), and must be made within one year of the first course that applies toward major entry. Students outside Computer Science and Information Systems follow a separate, competitive process; fulfilling the requirements does not guarantee acceptance."
+    },
+    {
+      "topic": "grading",
+      "text": "The Pass/No Credit option is not available to ISE majors for ISE courses."
+    },
+    {
+      "topic": "other",
+      "text": "The calculus alternative CSE 113 is listed on the page as an OR option to the calculus sequence; it is modeled as an alternative as printed."
+    },
+    {
+      "topic": "other",
+      "text": "Courses applied to the System & Network Administration specialization may not be used toward requirements to satisfy the ISE major or minor."
+    },
+    {
+      "topic": "other",
+      "text": "The Technological Systems Management specialization notes that courses cross-listed between ISE and EST may be taken either as ISE electives or as TSM specialization electives."
+    },
+    {
+      "topic": "other",
+      "text": "The Accelerated BS in ISE + MS in DAS program (nine credits may be applied to both degrees) is an accelerated program and is not modeled here."
+    },
+    {
+      "topic": "other",
+      "text": "Declared Computer Science majors may switch to the Information Systems major after exceeding the one-year admission timeline, provided they meet the stated criteria."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1476",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

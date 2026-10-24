@@ -1,0 +1,185 @@
+{
+  "id": "applied-mathematics-and-statistics",
+  "name": "Applied Mathematics and Statistics",
+  "kind": "minor",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "applied-mathematics-and-statistics.calculus",
+      "label": "calculus",
+      "title": "Calculus",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 151"
+              },
+              {
+                "type": "course",
+                "code": "AMS 161"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 126"
+              },
+              {
+                "type": "course",
+                "code": "MAT 127"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "MAT 132"
+              }
+            ]
+          },
+          {
+            "type": "unparsed",
+            "text": "Level 9 on the MPE",
+            "reason": "A placement examination level is not a course and cannot be checked from a transcript"
+          }
+        ]
+      },
+      "sourceText": "Calculus: AMS 151 - Applied Calculus I 3 credits (See Note); AMS 161 - Applied Calculus II 3 credits (See Note). Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161 in requirements for the minor or prerequisites: MAT 125 AND MAT 126 AND MAT 127; OR MAT 131 AND MAT 132; OR Level 9 on the MPE."
+    },
+    {
+      "id": "applied-mathematics-and-statistics.linear-algebra",
+      "label": "linear-algebra",
+      "title": "Linear algebra",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 210"
+          },
+          {
+            "type": "course",
+            "code": "MAT 211"
+          }
+        ]
+      },
+      "sourceText": "Linear algebra: AMS 210 - Applied Linear Algebra 3 credits OR MAT 211 - Introduction to Linear Algebra 3 credits"
+    },
+    {
+      "id": "applied-mathematics-and-statistics.core",
+      "label": "core-ams-courses",
+      "title": "Core AMS courses",
+      "rule": {
+        "manualCheck": "The page lists AMS 301 AND AMS 310, then OR AMS 311. This is modeled literally as (AMS 301 and AMS 310) or AMS 311. Confirm with the department whether AMS 301 is required alongside AMS 311.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 301"
+              },
+              {
+                "type": "course",
+                "code": "AMS 310"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "AMS 311"
+          }
+        ]
+      },
+      "sourceText": "Core AMS courses: AMS 301 - Finite Mathematical Structures 3 credits AND AMS 310 - Survey of Probability and Statistics 3 credits OR AMS 311 - Probability Theory 3 credits"
+    },
+    {
+      "id": "applied-mathematics-and-statistics.electives",
+      "label": "ams-electives",
+      "title": "AMS electives",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "subjects": [
+            "AMS"
+          ],
+          "minNumber": 300,
+          "excludeUsedBy": [
+            "applied-mathematics-and-statistics.core"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "AMS 475",
+                "AMS 476",
+                "AMS 487",
+                "AMS 488"
+              ]
+            },
+            "maxCourses": 1
+          }
+        ]
+      },
+      "sourceText": "AMS electives: three additional 300+ level AMS courses with the exception of AMS 300, AMS 301, AMS 310 or AMS 311 if used as a requirement in Core AMS courses. At most one of the AMS upper division electives can be from among AMS 475 - Undergraduate Teaching Practicum 3 credits; AMS 476 - Undergraduate Teaching Practicum 3 credits; AMS 487 - Research in Applied Mathematics and Statistics 0-3 credits; AMS 488 - Internship in Applied Mathematics and Statistics 0-3 credits"
+    },
+    {
+      "id": "applied-mathematics-and-statistics.credits",
+      "label": "minor-credits",
+      "title": "Credits not used by the major",
+      "rule": {
+        "type": "unparsed",
+        "text": "The AMS minor must include at least 18 credits in courses that are not used to satisfy the requirements of the student's major(s).",
+        "reason": "Program-wide credit rule that no rule type covers; requires comparison against the student's major requirements"
+      },
+      "sourceText": "The AMS minor must include at least 18 credits in courses that are not used to satisfy the requirements of the student's major(s); therefore, students in majors requiring a substantial amount of mathematics may find that a double major with AMS requires fewer credits."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Admission to the minor is competitive and contingent upon program capacity."
+    },
+    {
+      "topic": "other",
+      "text": "Students in majors requiring a substantial amount of mathematics may find that a double major with AMS requires fewer credits."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1353",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

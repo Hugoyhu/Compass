@@ -1,0 +1,932 @@
+{
+  "id": "civil-engineering-be",
+  "name": "Civil Engineering, BE",
+  "kind": "major",
+  "degree": "Bachelor of Engineering in Civil Engineering",
+  "approxCredits": 112,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "civil-engineering-be.1",
+      "label": "1",
+      "title": "Mathematics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "id": "civil-engineering-be.1.ams151",
+                    "type": "course",
+                    "code": "AMS 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 161"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "id": "civil-engineering-be.1.mat125",
+                    "type": "course",
+                    "code": "MAT 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 127"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "id": "civil-engineering-be.1.mat131",
+                    "type": "course",
+                    "code": "MAT 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 132"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 261"
+              },
+              {
+                "type": "course",
+                "code": "MAT 203"
+              },
+              {
+                "type": "course",
+                "code": "MAT 307"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 361"
+              },
+              {
+                "type": "course",
+                "code": "MAT 303"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "AMS 151 - Applied Calculus I; AMS 161 - Applied Calculus II. Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161: MAT 125, MAT 126, MAT 127, or MAT 131, MAT 132; AMS 261 - Applied Calculus III OR MAT 203 - Calculus III with Applications OR MAT 307 - Multivariable Calculus with Linear Algebra; AMS 361 - Applied Calculus IV: Differential Equations OR MAT 303 - Calculus IV with Applications"
+    },
+    {
+      "id": "civil-engineering-be.2",
+      "label": "2",
+      "title": "Natural Sciences",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "id": "civil-engineering-be.2.phy131",
+                    "type": "course",
+                    "code": "PHY 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "id": "civil-engineering-be.2.phy125",
+                    "type": "course",
+                    "code": "PHY 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 127"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 142"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 152"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 154"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "GEO 102",
+                "MAR 104",
+                "BIO 201",
+                "ATM 201"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "PHY 131 - Classical Physics I; PHY 133 - Classical Physics Laboratory I; PHY 132 - Classical Physics II; PHY 134 - Classical Physics Laboratory II; CHE 131 - General Chemistry IB; CHE 133 - General Chemistry Laboratory I; CHE 132 - General Chemistry II; CHE 134 - General Chemistry Laboratory II OR CHE 152 - Molecular Science I; CHE 154 - Molecular Science Laboratory I; A basic science elective to be selected from the following list of courses: GEO 102, MAR 104, BIO 201, ATM 201. Note: The following alternate physics course sequences may be substituted for PHY 131/PHY 133, PHY 132/PHY 134: PHY 125, PHY 126, PHY 127, PHY 133, PHY 134 or PHY 141, PHY 142, PHY 133, PHY 134."
+    },
+    {
+      "id": "civil-engineering-be.3",
+      "label": "3",
+      "title": "Mathematical Methods",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MEC 102"
+          },
+          {
+            "id": "civil-engineering-be.3.civ301",
+            "type": "course",
+            "code": "CIV 301"
+          },
+          {
+            "id": "civil-engineering-be.3.civ350",
+            "type": "course",
+            "code": "CIV 350"
+          }
+        ]
+      },
+      "sourceText": "MEC 102 - Engineering Computing and Problem Solving; CIV 301 - Probability and Statistics for Civil and Environmental Engineering; CIV 350 - Numerical Analysis for Civil Engineers"
+    },
+    {
+      "id": "civil-engineering-be.4",
+      "label": "4",
+      "title": "Engineering Fundamentals",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "civil-engineering-be.4.civ260",
+            "type": "course",
+            "code": "CIV 260"
+          },
+          {
+            "id": "civil-engineering-be.4.mec363",
+            "type": "course",
+            "code": "MEC 363"
+          },
+          {
+            "id": "civil-engineering-be.4.civ364",
+            "type": "course",
+            "code": "CIV 364"
+          }
+        ]
+      },
+      "sourceText": "CIV 260 - Engineering Mechanics; MEC 363 - Mechanics of Solids; CIV 364 - Fluid Mechanics for Civil Engineers"
+    },
+    {
+      "id": "civil-engineering-be.5",
+      "label": "5",
+      "title": "Experimental Methods in Civil Engineering",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CIV 340"
+          },
+          {
+            "type": "course",
+            "code": "CIV 341"
+          },
+          {
+            "type": "course",
+            "code": "CIV 342"
+          }
+        ]
+      },
+      "sourceText": "CIV 340 - Civil Engineering Materials Laboratory; CIV 341 - Geotechnical Engineering Laboratory; CIV 342 - Civil Engineering Hydraulics Laboratory"
+    },
+    {
+      "id": "civil-engineering-be.6",
+      "label": "6",
+      "title": "Civil Engineering Core",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "civil-engineering-be.6.civ101",
+            "type": "course",
+            "code": "CIV 101"
+          },
+          {
+            "type": "course",
+            "code": "CIV 203"
+          },
+          {
+            "id": "civil-engineering-be.6.civ210",
+            "type": "course",
+            "code": "CIV 210"
+          },
+          {
+            "id": "civil-engineering-be.6.civ220",
+            "type": "course",
+            "code": "CIV 220"
+          },
+          {
+            "id": "civil-engineering-be.6.civ305",
+            "type": "course",
+            "code": "CIV 305"
+          },
+          {
+            "id": "civil-engineering-be.6.civ310",
+            "type": "course",
+            "code": "CIV 310"
+          },
+          {
+            "id": "civil-engineering-be.6.civ330",
+            "type": "course",
+            "code": "CIV 330"
+          },
+          {
+            "id": "civil-engineering-be.6.civ393",
+            "type": "course",
+            "code": "CIV 393"
+          },
+          {
+            "id": "civil-engineering-be.6.civ420",
+            "type": "course",
+            "code": "CIV 420"
+          }
+        ]
+      },
+      "sourceText": "CIV 101 - Introduction to Civil Engineering; CIV 203 - Autocad Basics; CIV 210 - Land Surveying; CIV 220 - Civil and Environmental Infrastructure Systems; CIV 305 - Transportation Systems Analysis I; CIV 310 - Structural Analysis; CIV 330 - Introduction to Geotechnical Engineering; CIV 393 - Construction Engineering, Management, and Technology; CIV 420 - Hydraulics"
+    },
+    {
+      "id": "civil-engineering-be.7",
+      "label": "7",
+      "title": "Civil Engineering Design",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "civil-engineering-be.7.civ312",
+            "type": "course",
+            "code": "CIV 312"
+          },
+          {
+            "id": "civil-engineering-be.7.civ320",
+            "type": "course",
+            "code": "CIV 320"
+          },
+          {
+            "id": "civil-engineering-be.7.civ440",
+            "type": "course",
+            "code": "CIV 440"
+          },
+          {
+            "id": "civil-engineering-be.7.civ441",
+            "type": "course",
+            "code": "CIV 441"
+          }
+        ]
+      },
+      "sourceText": "CIV 312 - Steel and Reinforced Concrete Design I; CIV 320 - Water Supply and Wastewater Treatment Design; CIV 440 - Senior Design I; CIV 441 - Senior Design II"
+    },
+    {
+      "id": "civil-engineering-be.8",
+      "label": "8",
+      "title": "Engineering Practice and Professional Responsibility",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "EST 392"
+          },
+          {
+            "type": "course",
+            "code": "CIV 300"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ESE 301"
+              },
+              {
+                "type": "course",
+                "code": "CME 233"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "EST 392 - Engineering Economics; CIV 300 - Technical Communication; ESE 301 - Engineering Ethics and Societal Impact OR CME 233 - Ethics and Business Practices for Engineers"
+    },
+    {
+      "id": "civil-engineering-be.9",
+      "label": "9",
+      "title": "Technical Electives",
+      "rule": {
+        "type": "choose",
+        "credits": 12,
+        "from": {
+          "courses": [
+            "CIV 306",
+            "CIV 355",
+            "CIV 394",
+            "CIV 402",
+            "CIV 407",
+            "CIV 410",
+            "CIV 411",
+            "CIV 412",
+            "CIV 414",
+            "CIV 418",
+            "CIV 423",
+            "CIV 424",
+            "CIV 426",
+            "CIV 432",
+            "CIV 436",
+            "CIV 476",
+            "CIV 488",
+            "CIV 491",
+            "CIV 499",
+            "AMS 315",
+            "ESG 332",
+            "GEO 315",
+            "GEO 347",
+            "MEC 393",
+            "MEC 455"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "CIV 476",
+                "CIV 488",
+                "CIV 499"
+              ]
+            },
+            "maxCredits": 3
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "CIV 491"
+              ]
+            },
+            "maxCredits": 6
+          }
+        ]
+      },
+      "sourceText": "Complete 12 credits of electives from the approved list below. At least 9 credits must be CIV courses with no more than 3 credits total from CIV 476 - Instructional Laboratory Development Practicum, CIV 488 - Civil Engineering Internship, or CIV 499 - Independent Research. A maximum of 6 credits of CIV 491 - Topics in Civil Engineering may count towards the technical electives requirement."
+    },
+    {
+      "id": "civil-engineering-be.9.civ-credits",
+      "label": "9",
+      "title": "Technical Electives: CIV credit minimum",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 9 credits of the technical electives must be CIV courses.",
+        "reason": "The choose rule can cap credits by course but cannot require a minimum number of credits from a subject."
+      },
+      "sourceText": "At least 9 credits must be CIV courses with no more than 3 credits total from CIV 476 - Instructional Laboratory Development Practicum, CIV 488 - Civil Engineering Internship, or CIV 499 - Independent Research."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "civil-engineering-be.1",
+        "civil-engineering-be.2",
+        "civil-engineering-be.3",
+        "civil-engineering-be.4",
+        "civil-engineering-be.5",
+        "civil-engineering-be.6",
+        "civil-engineering-be.7",
+        "civil-engineering-be.8",
+        "civil-engineering-be.9",
+        "civil-engineering-be.9.civ-credits"
+      ],
+      "sourceText": "All courses taken to satisfy requirements 1 through 9 above must be taken for a letter grade."
+    },
+    {
+      "type": "minGpa",
+      "gpa": 2,
+      "appliesTo": [
+        "civil-engineering-be.6.civ101",
+        "civil-engineering-be.6.civ210",
+        "civil-engineering-be.6.civ220",
+        "civil-engineering-be.4.civ260",
+        "civil-engineering-be.3.civ301",
+        "civil-engineering-be.6.civ305",
+        "civil-engineering-be.6.civ310",
+        "civil-engineering-be.7.civ312",
+        "civil-engineering-be.7.civ320",
+        "civil-engineering-be.6.civ330",
+        "civil-engineering-be.3.civ350",
+        "civil-engineering-be.4.civ364",
+        "civil-engineering-be.6.civ393",
+        "civil-engineering-be.6.civ420",
+        "civil-engineering-be.7.civ440",
+        "civil-engineering-be.7.civ441",
+        "civil-engineering-be.9"
+      ],
+      "sourceText": "The grade point average for the courses CIV 101, CIV 210, CIV 220, CIV 260 (or MEC 260 and MEC 262), CIV 301, CIV 305, CIV 310, CIV 312, CIV 320, CIV 330, CIV 350, CIV 364, CIV 393, CIV 420, CIV 440, CIV 441, and all technical electives must be at least 2.00. When a course is repeated, the higher grade will be used in calculating this average."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "civil-engineering-be.2.phy131",
+        "civil-engineering-be.2.phy125",
+        "civil-engineering-be.1.ams151",
+        "civil-engineering-be.1.mat131",
+        "civil-engineering-be.1.mat125",
+        "civil-engineering-be.4.civ260",
+        "civil-engineering-be.4.mec363",
+        "civil-engineering-be.7.civ440",
+        "civil-engineering-be.7.civ441"
+      ],
+      "sourceText": "A minimum grade of \"C\" in PHY 131 or PHY 125, AMS 151 or MAT 131 or MAT 125, CIV 260 (or MEC 260 and MEC 262), MEC 363, CIV 440 and CIV 441 is required for the BE degree."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "civil-engineering-be.sub.mec-260-262",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CIV 260"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MEC 260"
+          },
+          {
+            "type": "course",
+            "code": "MEC 262"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "CIV 260 (or MEC 260 and MEC 262)"
+    }
+  ],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 151",
+          "alternatives": [
+            "MAT 131"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 133",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "CIV 101",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Basic Science Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "AMS 161",
+          "alternatives": [
+            "MAT 132"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MEC 102",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 261",
+          "alternatives": [
+            "MAT 203"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 133",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "CIV 260",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CIV 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CIV 203",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 361",
+          "alternatives": [
+            "MAT 303"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CIV 220",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 363",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EST 392",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 134",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CIV 364",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CIV 210",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "CIV 305",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CIV 310",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CIV 340",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "ESE 301",
+          "alternatives": [
+            "CME 233"
+          ],
+          "credits": 2
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CIV 300",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "CIV 312",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CIV 320",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CIV 330",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CIV 341",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "CIV 350",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CIV 440",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CIV 420",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CIV 342",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CIV 441",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CIV 393",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Area of Interest and other CEAS students (excluding double major applicants) are admitted if they have completed at least 10 credits of mathematics, physics, chemistry, and engineering courses (excluding EST 392, ESE 301 and CME 233) required for the major, earned a GPA of 3.2 in those courses with no more than one grade less than B-, have not repeated any required course, and have completed course evaluations for transferred courses used for the major. Applications are due January 5 (Spring) and June 5 (Fall) and must be made no later than one year after enrolling in the first course that applies toward the major. Non-CEAS students and double major applicants follow a separate, competitive process; fulfilling the requirements does not guarantee acceptance."
+    },
+    {
+      "topic": "other",
+      "text": "The Accelerated BE/MS Degree Program in Civil Engineering is not described here; see the department website or contact the department."
+    },
+    {
+      "topic": "sbc",
+      "text": "One SBC must fulfill two objectives. CIV 440 and CIV 441 partially satisfy ESI, CER, SPK, WRTD, SBS+, STEM+, and EXP+; see the CEAS Undergraduate Student Office. The per-course SBC table was not transcribed as program rules."
+    },
+    {
+      "topic": "advising",
+      "text": "Undergraduate Program Coordinator and Advisor: Maria Moore, 231 Engineering, (631) 632-8381, civil_engineering@stonybrook.edu."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1397",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

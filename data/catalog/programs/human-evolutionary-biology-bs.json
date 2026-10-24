@@ -1,0 +1,712 @@
+{
+  "id": "human-evolutionary-biology-bs",
+  "name": "Human Evolutionary Biology, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Human Evolutionary Biology",
+  "approxCredits": 59,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "human-evolutionary-biology-bs.I.A",
+      "label": "I.A",
+      "title": "Biology and Scientific Skills (11-12 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BIO 201"
+          },
+          {
+            "type": "course",
+            "code": "BIO 202"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BIO 204"
+              },
+              {
+                "type": "course",
+                "code": "EBH 204"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "BIO 354"
+          }
+        ]
+      },
+      "sourceText": "BIO 201 - Fundamentals of Biology: Organisms to Ecosystems 3 credits; BIO 202 - Fundamentals of Biology: Molecular and Cellular Biology 3 credits; BIO 204 - Fundamentals of Scientific Inquiry in the Biological Sciences I 2 credits OR EBH 204 - Research Skills 3 credits; BIO 354 - Evolution 3 credits"
+    },
+    {
+      "id": "human-evolutionary-biology-bs.I.B",
+      "label": "I.B",
+      "title": "Courses Required in Related Fields (11 credits)",
+      "rule": {
+        "manualCheck": "Page does not clearly state whether MAT 123 is tied to CHE 129/CHE 130 or is a separate conditional requirement. Verify chemistry and placement-dependent MAT 123 status. Placement exam, AP, or comparable credit may satisfy this requirement.",
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 131"
+              },
+              {
+                "type": "course",
+                "code": "CHE 152"
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 129"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 130"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 130"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "MAT 141"
+              },
+              {
+                "type": "course",
+                "code": "MAT 171"
+              },
+              {
+                "type": "course",
+                "code": "AMS 151"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "EBH 230"
+          },
+          {
+            "type": "unparsed",
+            "text": "MAT 123 - Precalculus 3 credits, required if the student does not place into MAT 125 or higher on the Mathematics Placement Exam",
+            "reason": "Conditional on math placement result, which a transcript cannot show"
+          }
+        ]
+      },
+      "sourceText": "CHE 131 - General Chemistry IB 4 credits OR CHE 152 - Molecular Science I 4 credits OR CHE 129 - General Chemistry IA 4 credits; CHE 130 - Problem Solving in General Chemistry 1 credit, AND MAT 123 - Precalculus 3 credits; MAT 125 - Calculus A 3 credits OR MAT 130 - Trigonometry and Logarithms 1 credit, MAT 125 - Calculus A 3 credits OR MAT 131 - Calculus I 4 credits OR MAT 141 - Honors Calculus I OR MAT 171 - Accelerated Single Variable Calculus OR AMS 151 - Applied Calculus I 3 credits; EBH 230 - Computer-based Biostatistics 4 credits. Notes: Some or all of this requirement may be fulfilled by an appropriate score on the Mathematics Placement Exam, by AP credit, or by comparable means. If students do not place into MAT 125 or higher on the basis of the math placement examination, MAT 123 is a required course for the major."
+    },
+    {
+      "id": "human-evolutionary-biology-bs.I.C",
+      "label": "I.C",
+      "title": "Courses Required from Major Subfields (9 credits)",
+      "rule": {
+        "manualCheck": "Catalog states a minimum of 31-32 credits for Core Requirements (I., A-C); this rule is modeled at the 31-credit minimum stated in the Core Requirements heading.",
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "EBH 200"
+          },
+          {
+            "type": "course",
+            "code": "ANT 201"
+          },
+          {
+            "type": "course",
+            "code": "EBH 302"
+          }
+        ]
+      },
+      "sourceText": "EBH 200 - The Evolution of Human Behavior 3 credits; ANT 201 - Human Evolution 3 credits; EBH 302 - Human Genetics 3 credits"
+    },
+    {
+      "id": "human-evolutionary-biology-bs.II",
+      "label": "II",
+      "title": "Subfield Courses (minimum 28 credits)",
+      "rule": {
+        "manualCheck": "Catalog also states 'No more than 6-7 credits' from Related Courses and a minimum of 28-29 subfield credits; this rule uses the stated maximum of 7 and minimum of 28. Subfield pool includes the subfield A, B, and C lists, the non-subfield-specific courses, and the Related Courses list. The Double Major option (12 credits from subfields A and C, non-overlapping with Biology) is not modeled here.",
+        "type": "choose",
+        "credits": 28,
+        "from": {
+          "courses": [
+            "ANT 101",
+            "ANT 255",
+            "ANT 300",
+            "ANT 322",
+            "ANT 404",
+            "ANT 407",
+            "ANT 411",
+            "ANT 104",
+            "ANT 268",
+            "ANT 273",
+            "ANT 277",
+            "ANT 290",
+            "ANT 357",
+            "ANT 418",
+            "ANT 419",
+            "BIO 208",
+            "BIO 344",
+            "EBH 316",
+            "BIO 203",
+            "BIO 312",
+            "BIO 320",
+            "BIO 321",
+            "BIO 325",
+            "BIO 327",
+            "BIO 367",
+            "EBH 370",
+            "EBH 380",
+            "EBH 381",
+            "ANT 202",
+            "ANT 220",
+            "ANT 408",
+            "ANT 377",
+            "BIO 328",
+            "EBH 325",
+            "EBH 331",
+            "EBH 359",
+            "EBH 362",
+            "EBH 404",
+            "EBH 405",
+            "POL 375",
+            "PSY 356",
+            "BIO 205",
+            "BIO 207",
+            "EBH 391",
+            "EBH 401",
+            "EBH 447",
+            "EBH 487",
+            "ANT 304",
+            "ANT 303",
+            "ANT 306",
+            "ANT 309",
+            "ANT 308",
+            "ANT 310",
+            "ANT 326",
+            "ANT 352",
+            "ANT 353",
+            "ANT 361",
+            "ANT 406",
+            "ANT 215",
+            "ANT 307",
+            "ANT 321",
+            "ANT 410",
+            "BIO 351",
+            "BIO 352",
+            "GEO 303"
+          ],
+          "excludeCourses": [
+            "EBH 475",
+            "EBH 476",
+            "EBH 488",
+            "EBH 495",
+            "EBH 496"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "ANT 304",
+                "ANT 303",
+                "ANT 306",
+                "ANT 309",
+                "ANT 308",
+                "ANT 310",
+                "ANT 326",
+                "ANT 352",
+                "ANT 353",
+                "ANT 361",
+                "ANT 406",
+                "ANT 215",
+                "ANT 307",
+                "ANT 321",
+                "ANT 410",
+                "BIO 351",
+                "BIO 352",
+                "GEO 303"
+              ]
+            },
+            "maxCredits": 7
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "EBH 447"
+              ]
+            },
+            "maxCredits": 2
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "EBH 487"
+              ]
+            },
+            "maxCredits": 3
+          }
+        ]
+      },
+      "sourceText": "Students must complete a minimum of 28 credits in the Subfield Courses. Students may sample broadly across all subfields, taking classes from Sections A, B and C, or choose to specialize in only one of the three areas. BIO 205 (or BIO 207), EBH 391, EBH 401, EBH 447 (max. 2 credits), and EBH 487 (max. 3 credits) are not specific to one of the Subfields, but can be applied towards the major. Courses in the Subfields may be supplemented by courses listed in section D (Related Courses), although only a maximum of 7 of these credits can be applied towards the major."
+    },
+    {
+      "id": "human-evolutionary-biology-bs.II.seminar",
+      "label": "II.seminar",
+      "title": "400-level seminar in the Subfields",
+      "rule": {
+        "manualCheck": "The catalog lists 'ANP 405' in the seminar list; it is entered as printed. Verify the subject code, and verify that the seminar course is also counted within the Subfield Courses requirement (II).",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "ANT 408",
+            "ANT 404",
+            "ANP 405",
+            "ANT 406",
+            "ANT 407",
+            "ANT 411",
+            "ANT 418",
+            "ANT 419",
+            "EBH 401",
+            "EBH 404",
+            "EBH 405"
+          ]
+        }
+      },
+      "sourceText": "One of the classes in the Subfields must be a 400-level seminar chosen from ANT 408, ANT 404, ANP 405, ANT 406, ANT 407, ANT 411, ANT 418, ANT 419, EBH 401, EBH 404, or EBH 405."
+    },
+    {
+      "id": "human-evolutionary-biology-bs.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Verify WRTD status of the chosen elective and that EBH 459 was co-registered and graded S. Paper option requires director sign-off.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "manualCheck": "Must be taken in conjunction with an upper-division elective in the major (including Reading or Research courses), co-registered after advance notice to the instructor, and a grade of 'S' must be earned.",
+            "type": "course",
+            "code": "EBH 459"
+          },
+          {
+            "type": "unparsed",
+            "text": "One elective of the major satisfying the WRTD requirement, or a paper written for a 300-level or higher course and approved by the program director",
+            "reason": "WRTD designation and paper approval are not course-list properties and cannot be expressed as a course selection"
+          }
+        ]
+      },
+      "sourceText": "Human Evolutionary Biology students are required to either take one of the elective courses of the major satisfying the WRTD requirement or register for the 0-credit EBH 459 Write Effectively in Human Evolutionary Biology. EBH 459 has to be taken in conjunction with an upper-division elective course in the major (including Reading or Research courses). ... Students must earn a grade of 'S' in EBH 459 to satisfy the WRTD requirement."
+    },
+    {
+      "id": "human-evolutionary-biology-bs.total-credits",
+      "label": "total-credits",
+      "title": "Minimum total credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires a minimum of 59 credits.",
+        "reason": "Program-wide total credit minimum has no rule type"
+      },
+      "sourceText": "Completion of the major requires a minimum of 59 credits."
+    },
+    {
+      "id": "human-evolutionary-biology-bs.upper-division-credits",
+      "label": "upper-division-credits",
+      "title": "Upper-division credit minimum",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 21 credits must be upper division courses (300 level or higher).",
+        "reason": "Program-wide upper-division credit minimum has no rule type"
+      },
+      "sourceText": "At least 21 credits must be upper division courses (300 level or higher)."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "human-evolutionary-biology-bs.I.A",
+        "human-evolutionary-biology-bs.I.B",
+        "human-evolutionary-biology-bs.I.C",
+        "human-evolutionary-biology-bs.II",
+        "human-evolutionary-biology-bs.II.seminar"
+      ],
+      "sourceText": "All major courses (including transfer credits) must be passed with a letter grade of C or higher. Courses with S/U grading and courses taken under the Pass/ No Credit option may not be used to satisfy major requirements."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "human-evolutionary-biology-bs.I.A",
+        "human-evolutionary-biology-bs.I.B",
+        "human-evolutionary-biology-bs.I.C",
+        "human-evolutionary-biology-bs.II",
+        "human-evolutionary-biology-bs.II.seminar"
+      ],
+      "sourceText": "All major courses (including transfer credits) must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "prerequisiteGrade",
+      "subjects": [
+        "BIO"
+      ],
+      "minGrade": "C",
+      "passNoCreditAllowed": false,
+      "sourceText": "A grade of C or higher is required in each 200 level prerequisite in order to enroll in any 300 level Biology course."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 201",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 125",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 202",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ANP 201",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 204",
+          "alternatives": [
+            "EBH 204"
+          ],
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "EBH 302",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EBH 200",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EBH 230",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EBH 204",
+          "alternatives": [
+            "BIO 204"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EBH subfield",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EBH subfield",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 354",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EBH subfield",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EBH subfield",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "EBH subfield",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EBH subfield",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "EBH subfield",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EBH subfield",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "EBH subfield",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EBH subfield",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Majors are strongly encouraged to explore research opportunities, either in faculty laboratories or in field projects such as the Turkana Basin or Madagascar Field Schools. Interested students should contact the Director of Undergraduate Studies (humanevolbio@stonybrook.edu)."
+    },
+    {
+      "topic": "grading",
+      "text": "Courses with S/U grading or Pass/No Credit may not be used to satisfy major requirements. EBH 475, EBH 476, EBH 488, EBH 495, and EBH 496 do not count toward the major requirements."
+    },
+    {
+      "topic": "other",
+      "text": "Double major in Biology and Human Evolutionary Biology: 12 credits (4 subfield courses) must be non-overlapping with Biology and chosen from subfields A and C. This alternative is not modeled in the Subfield Courses requirement."
+    },
+    {
+      "topic": "other",
+      "text": "Honors Program in Human Evolutionary Biology (not modeled): requires a cumulative GPA of 3.50 or higher in all courses for the major and an honors thesis based on a one-year independent research project (EBH 495 and EBH 496), approved by a thesis committee."
+    },
+    {
+      "topic": "other",
+      "text": "The catalog gives ranges of 31-32 credits for Core Requirements, 28-29 credits for Subfield Courses, and 6-7 credits for Related Courses within Subfields. Verify against the department's current audit."
+    },
+    {
+      "topic": "other",
+      "text": "Some or all of the Related Fields requirement may be fulfilled by an appropriate Mathematics Placement Exam score, AP credit, or comparable means."
+    },
+    {
+      "topic": "other",
+      "text": "Upper-division subfield courses have one or more 200-level prerequisites. Some subfield courses may require additional prerequisites."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1473",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

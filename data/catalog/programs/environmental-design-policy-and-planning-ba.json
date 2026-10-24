@@ -1,0 +1,627 @@
+{
+  "id": "environmental-design-policy-and-planning-ba",
+  "name": "Environmental Design, Policy, and Planning, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Environmental Design, Policy, and Planning",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "environmental-design-policy-and-planning-ba.foundation",
+      "label": "foundation",
+      "title": "Required Foundation Courses for Major (35 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 102"
+          },
+          {
+            "manualCheck": "Catalog states CHE 115, CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115.",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 115"
+              },
+              {
+                "type": "course",
+                "code": "ENV 115"
+              },
+              {
+                "type": "course",
+                "code": "CHE 129"
+              },
+              {
+                "type": "course",
+                "code": "CHE 131"
+              },
+              {
+                "type": "course",
+                "code": "CHE 152"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ECO 108"
+              },
+              {
+                "type": "course",
+                "code": "ECO 110"
+              },
+              {
+                "type": "course",
+                "code": "ECO 111"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "GSS 105"
+          },
+          {
+            "manualCheck": "Catalog also lists MAT 130 (1 credit) with MAT 125 as an alternative pairing; placement exam outcome determines which applies.",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "AMS 151"
+              }
+            ]
+          },
+          {
+            "type": "unparsed",
+            "text": "If students do not place into MAT 125, MAT 131, or AMS 151 on the math placement examination, MAT 123 (or MAT 119/MAT 123) is a required course for the major.",
+            "reason": "Requirement depends on placement exam outcome, which cannot be evaluated from a transcript."
+          },
+          {
+            "type": "course",
+            "code": "POL 102"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 111"
+              },
+              {
+                "type": "course",
+                "code": "ENS 101"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 113"
+              },
+              {
+                "type": "course",
+                "code": "GEO 102"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SUS 115"
+          },
+          {
+            "type": "course",
+            "code": "SUS 201"
+          },
+          {
+            "type": "course",
+            "code": "SUS 206"
+          }
+        ]
+      },
+      "sourceText": "Required Foundation Courses for Major (35 credits): AMS 102 - Elements of Statistics; CHE 115 - Chemistry, Life, and Environment (Note: CHE 115, CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115); ENV 115 - Chemistry, Life, and Environment; ECO 108 OR ECO 110 OR ECO 111; GSS 105 - Introduction to Maps and Mapping; MAT 125 OR MAT 130 with MAT 125 OR MAT 131 OR AMS 151; If students do not place into MAT 125 or MAT 131 or AMS 151 on the basis of the math placement examination, MAT 123 (or MAT 119/MAT 123) is a required course for the major; POL 102 - Introduction to American Government; SUS 111 OR ENS 101; SUS 113 OR GEO 102; SUS 115 - Introduction to Human Demography; SUS 201 - Systems and Models; SUS 206 - Economics and Sustainability"
+    },
+    {
+      "id": "environmental-design-policy-and-planning-ba.core",
+      "label": "core",
+      "title": "Core Courses (30-31 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "EDP 301"
+          },
+          {
+            "type": "course",
+            "code": "EDP 302"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "EDP 303"
+              },
+              {
+                "type": "course",
+                "code": "SUS 362"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "EDP 307"
+          },
+          {
+            "type": "course",
+            "code": "EDP 404"
+          },
+          {
+            "type": "course",
+            "code": "ENS 333"
+          },
+          {
+            "manualCheck": "GSS 314 is required only if taking GSS 313.",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "GSS 313"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GSS 314"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "GSS 317"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "GSS 325"
+          },
+          {
+            "type": "course",
+            "code": "SUS 200"
+          },
+          {
+            "type": "course",
+            "code": "SUS 301"
+          }
+        ]
+      },
+      "sourceText": "Core Courses (30-31 credits): EDP 301 - Urban Systems; EDP 302 - Sustainable Planning and Development; EDP 303 - Spatial Economics OR SUS 362 - Resilient Communities; EDP 307 - Theories and Design of Urban Settlements; EDP 404 - Environmental Design Project (see notes); ENS 333 - Environmental Law; GSS 313 - GIS Design and Application I OR GSS 317 - Geospatial Narratives: Deep Mapping for Humanities and Social Sciences; GSS 314 - GIS Laboratory (only if taking GSS 313); GSS 325 - GIS Design & Applications II; SUS 200 - Human Settlement: History and Future; SUS 301 - Technical Writing and Communication"
+    },
+    {
+      "id": "environmental-design-policy-and-planning-ba.elective",
+      "label": "elective",
+      "title": "Elective (3 credits)",
+      "rule": {
+        "manualCheck": "EDP 487 and EDP 488 require permission.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "AFS 374",
+            "SUS 374",
+            "EDP 305",
+            "EDP 487",
+            "EDP 488",
+            "ENV 316",
+            "SUS 303",
+            "SUS 309",
+            "SUS 310",
+            "SUS 311",
+            "SUS 312",
+            "SUS 316",
+            "SUS 317",
+            "SUS 318",
+            "SUS 320",
+            "SUS 321",
+            "SUS 322",
+            "SUS 325",
+            "SUS 328",
+            "SUS 329",
+            "SUS 350",
+            "SUS 366"
+          ]
+        }
+      },
+      "sourceText": "Elective (3 credits): Choose one of the following courses: AFS 374; SUS 374; EDP 305; EDP 487 - Research in Environmental Design, Policy, & Planning 0-6 credits (with permission); EDP 488 - Internship in Environmental Design, Policy, & Planning 0-12 credits, (with permission); ENV 316; SUS 303; SUS 309; SUS 310; SUS 311; SUS 312; SUS 316; SUS 317; SUS 318; SUS 320; SUS 321; SUS 322; SUS 325; SUS 328; SUS 329; SUS 350; SUS 366"
+    },
+    {
+      "id": "environmental-design-policy-and-planning-ba.writing",
+      "label": "writing",
+      "title": "Communications and Writing requirement",
+      "rule": {
+        "manualCheck": "Requires approval of a term paper or laboratory report written for an advanced course in the appropriate major (including Readings and Research courses); SUS 459 must be completed with a grade of S. Preapproved courses are available through the department.",
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "SUS 459"
+          }
+        ]
+      },
+      "sourceText": "The advanced writing component of the major in EDP requires registration in the 0-credit SUS 459 and approval of either a term paper or a laboratory report written for an advanced course in the appropriate major at Stony Brook (including Readings and Research courses). Completion of SUS 459 with a grade of S will result in approval of the WRTD requirement. A list of preapproved courses can be obtained through the department."
+    },
+    {
+      "id": "environmental-design-policy-and-planning-ba.grading-limit",
+      "label": "grading-limit",
+      "title": "Lower-grade and Pass/NC limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one course (4 credits maximum) with a passing grade lower than C can be credited towards the major. Course taken with the Pass/NC option may not be applied to the major.",
+        "reason": "Count and credit limit on sub-C passing grades and the Pass/NC exclusion have no rule type."
+      },
+      "sourceText": "No more than one course (4 credits maximum) with a passing grade lower than C can be credited towards the major. Course taken with the Pass/NC option may not be applied to the major."
+    },
+    {
+      "id": "environmental-design-policy-and-planning-ba.double-major-limit",
+      "label": "double-major-limit",
+      "title": "Double major limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "Excluding SUS 301, no more than 6 credits of 300-400 level course credits can be applied to two majors within the School of Marine and Atmospheric Sciences.",
+        "reason": "Cross-major credit cap has no rule type."
+      },
+      "sourceText": "Excluding SUS 301 Technical Writing and Communication, no more than 6 credits of 300-400 level course credits can be applied to two majors within the School of Marine and Atmospheric Sciences."
+    }
+  ],
+  "policies": [],
+  "substitutions": [
+    {
+      "id": "environmental-design-policy-and-planning-ba.sub.edp-404-internship",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "EDP 404"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "Internship with significant practical experience in planning and/or environmental design",
+        "reason": "Eligibility depends on judgment of practical experience content"
+      },
+      "requiresApproval": true,
+      "sourceText": "Internship with significant practical experience in planning and/or environmental design may be substituted for EDP 404 with permission of Undergraduate EDP Program Director."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "allOf",
+          "rules": [
+            {
+              "type": "course",
+              "code": "SUS 459"
+            }
+          ]
+        },
+        "sourceText": "The advanced writing component of the major in EDP requires registration in the 0-credit SUS 459 and approval of either a term paper or a laboratory report... Completion of SUS 459 with a grade of S will result in approval of the WRTD requirement."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 111",
+          "alternatives": [
+            "ENS 101"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 125",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 113",
+          "alternatives": [
+            "GEO 102"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 200",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "POL 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GSS 105",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ECO 108",
+          "alternatives": [
+            "ECO 110",
+            "ECO 111"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 201",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SUS 206",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ENV 115",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 115",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EDP 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EDP 302",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ENS 333",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EDP 307",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GSS 313",
+          "alternatives": [
+            "GSS 317"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EDP elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GSS 325",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 362",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SUS 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EDP 404",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Undergraduate Advisor: Nancy Black. Program Office: E2361 Melville Library. Students should consult the department advisor about the Upper Division Writing Requirement and general education requirements."
+    },
+    {
+      "topic": "advising",
+      "text": "Study abroad experiences focused on sustainability are offered in Cuba, Madagascar, and the Turkana Basin (Kenya). Students should talk with the major director about how study abroad coursework can fulfill major requirements."
+    },
+    {
+      "topic": "sbc",
+      "text": "Students completing the Stony Brook Curriculum must complete a WRTD course to graduate; the major's Upper Division Writing Requirement is consistent in most cases with WRTD."
+    },
+    {
+      "topic": "other",
+      "text": "Seniors are required to present their Design Project at an Annual Gathering of Researchers and Scholars."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1444",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

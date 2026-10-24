@@ -1,0 +1,132 @@
+{
+  "id": "information-systems",
+  "name": "Information Systems",
+  "kind": "minor",
+  "approxCredits": 22,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "information-systems.cse-101",
+      "label": "1",
+      "title": "CSE 101 - Computer Science Principles",
+      "rule": {
+        "type": "course",
+        "code": "CSE 101"
+      },
+      "sourceText": "CSE 101 - Computer Science Principles 4 credits"
+    },
+    {
+      "id": "information-systems.cse-114",
+      "label": "2",
+      "title": "CSE 114 - Introduction to Object-Oriented Programming",
+      "rule": {
+        "type": "course",
+        "code": "CSE 114"
+      },
+      "sourceText": "CSE 114 - Introduction to Object-Oriented Programming 4 credits"
+    },
+    {
+      "id": "information-systems.ise-218",
+      "label": "3",
+      "title": "ISE 218 - Fundamentals of Information Technology",
+      "rule": {
+        "type": "course",
+        "code": "ISE 218"
+      },
+      "sourceText": "ISE 218 - Fundamentals of Information Technology 3 credits"
+    },
+    {
+      "id": "information-systems.electives",
+      "label": "4",
+      "title": "Four electives totaling at least twelve credits",
+      "rule": {
+        "manualCheck": "Approved electives include most ISE/CSE courses and other courses relevant to Information Systems that are not listed on the page. Students must consult the ISE Undergraduate Program Director on the suitability of any elective before registration. Courses outside CSE/ISE are eligible only if approved.",
+        "type": "choose",
+        "credits": 12,
+        "from": {
+          "subjects": [
+            "CSE",
+            "ISE"
+          ],
+          "excludeUsedBy": [
+            "information-systems.cse-101",
+            "information-systems.cse-114",
+            "information-systems.ise-218"
+          ]
+        }
+      },
+      "sourceText": "Four electives totaling at least twelve credits. Electives must include nine credits of upper-division courses and at least nine credits of CSE or ISE courses. Approved courses include most ISE/CSE courses and other courses relevant to Information Systems. Consult with the ISE Undergraduate Program Director on the suitability of an elective course prior to registration."
+    },
+    {
+      "id": "information-systems.electives-upper-division",
+      "label": "4a",
+      "title": "Elective upper-division credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Electives must include nine credits of upper-division courses",
+        "reason": "Credit-sum minimum on the elective pool; the choose rule counts credits but cannot express a minimum credit total within a subset by course level"
+      },
+      "sourceText": "Electives must include nine credits of upper-division courses"
+    },
+    {
+      "id": "information-systems.electives-cse-ise",
+      "label": "4b",
+      "title": "Elective CSE or ISE credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Electives must include at least nine credits of CSE or ISE courses",
+        "reason": "Credit-sum minimum within the elective pool that the choose rule cannot express as a separate constraint"
+      },
+      "sourceText": "and at least nine credits of CSE or ISE courses"
+    },
+    {
+      "id": "information-systems.total-credits",
+      "label": "5",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "The minor requires seven courses totaling at least 22 credits",
+        "reason": "Program-wide credit total not enforced by any rule type"
+      },
+      "sourceText": "The minor requires seven courses totaling at least 22 credits as outlined below:"
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "information-systems.cse-101",
+        "information-systems.cse-114",
+        "information-systems.ise-218",
+        "information-systems.electives"
+      ],
+      "sourceText": "All courses above must be passed with a grade of C or higher"
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "To declare the minor, students must complete CSE 101 with a grade of B- or higher and possess a cumulative grade point average of 3.00 or higher. Students with transfer credit toward the required course must speak to the Undergraduate Program Director to determine the course needed for minor entry. Admission is competitive and contingent upon program capacity. The minor is open to students not majoring in Computer Science or Information Systems and not minoring in Computer Science."
+    },
+    {
+      "topic": "advising",
+      "text": "Consult with the ISE Undergraduate Program Director on the suitability of an elective course prior to registration."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1477",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

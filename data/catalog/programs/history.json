@@ -1,0 +1,129 @@
+{
+  "id": "history",
+  "name": "History",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "history.1",
+      "label": "1",
+      "title": "Two-course introductory survey",
+      "rule": {
+        "manualCheck": "Confirm that each course is part of a survey sequence in the student's geographic and/or temporal area of interest. The page does not list the eligible survey courses.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "subjects": [
+            "HIS"
+          ],
+          "minNumber": 100,
+          "maxNumber": 299
+        }
+      },
+      "sourceText": "Two courses in any survey sequence at the 100- or 200-level"
+    },
+    {
+      "id": "history.2",
+      "label": "2",
+      "title": "Four courses in one thematic cluster",
+      "rule": {
+        "type": "unparsed",
+        "text": "Four courses in one of the following Thematic clusters: Arts, Ideas & Culture; Empires, Violence & Global Connections; Health, Science & Environmental Change; Law, Politics & Social Justice; Race, Religion, Gender & Sexualities (see course list above)",
+        "reason": "The page refers to a course list for the thematic clusters, but that list is not present on this page, so the eligible courses cannot be enumerated."
+      },
+      "sourceText": "Four courses in one of the following Thematic clusters: Arts, Ideas & Culture; Empires, Violence & Global Connections; Health, Science & Environmental Change; Law, Politics & Social Justice; Race, Religion, Gender & Sexualities (see course list above)"
+    },
+    {
+      "id": "history.3",
+      "label": "3",
+      "title": "One upper-level course",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "subjects": [
+            "HIS"
+          ],
+          "minNumber": 300,
+          "excludeCourses": [
+            "HIS 447",
+            "HIS 487",
+            "HIS 488",
+            "HIS 495",
+            "HIS 496"
+          ]
+        }
+      },
+      "sourceText": "One course in any area at the 300 level or above. HIS 447, HIS 487, HIS 488, HIS 495, HIS 496 may not be used to satisfy major or minor requirements."
+    },
+    {
+      "id": "history.credit-rules",
+      "label": "credit-rules",
+      "title": "Program-wide credit rules",
+      "rule": {
+        "type": "unparsed",
+        "text": "The minor requires 21 credits. At least 12 of the 21 credits must be taken at Stony Brook. At least 9 of the 21 credits must be upper-division.",
+        "reason": "Program-wide credit totals and an upper-division credit minimum are not covered by the available rule types."
+      },
+      "sourceText": "The minor, which requires 21 credits, ... at least twelve of the 21 credits must be taken at Stony Brook. At least 9 of the 21 credits must be upper-division."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "history.1",
+        "history.2",
+        "history.3"
+      ],
+      "sourceText": "Courses offered for the minor must be taken for a letter grade."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "history.1",
+        "history.2",
+        "history.3"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a grade of C or higher. No grade lower than \"C\" may be applied to the minor"
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 12,
+      "appliesTo": [
+        "history.1",
+        "history.2",
+        "history.3"
+      ],
+      "sourceText": "at least twelve of the 21 credits must be taken at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students interested in history, whether as a major, a minor, a social science course related to their major, or for general liberal arts purposes, are invited to review the History Department website and to seek advice from the Department's director of undergraduate studies and other faculty members. Director of Undergraduate Studies: April Masten."
+    },
+    {
+      "topic": "other",
+      "text": "The minor is organized around a thematic cluster. A final course can be used either to deepen a particular area of interest or explore a new subject."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1470",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

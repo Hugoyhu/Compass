@@ -1,0 +1,202 @@
+{
+  "id": "ethnomusicology",
+  "name": "Ethnomusicology",
+  "kind": "minor",
+  "degree": "Minor in Ethnomusicology",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "ethnomusicology.series",
+      "label": "series",
+      "title": "Ethnomusicology series (3 classes; 9 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "MUS 105",
+            "MUS 109",
+            "MUS 311"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "courses": [
+                "MUS 105",
+                "MUS 109"
+              ]
+            },
+            "minCourses": 1
+          }
+        ]
+      },
+      "sourceText": "Students are required to take a series of three ethnomusicology classes... Ethnomusicology series (3 classes required; 9 credits) - MUS 105 - Music Cultures of the World 3 credits - MUS 109 - Rock, Popular Music, and Society 3 credits - MUS 311 - Topics in Ethnomusicology 3 credits. Notes: Students must take one introductory course (either MUS 105 or MUS 109), and choose two of the other courses. MUS 311 may be repeated with a different topic (i.e., \"Music and Islam\" and \"Music of China\"). Other ethnomusicology options possible with UGPD permission."
+    },
+    {
+      "id": "ethnomusicology.area",
+      "label": "area-studies",
+      "title": "Area Studies and Social Sciences (2 courses; 6 credits)",
+      "rule": {
+        "manualCheck": "AAS 379 and ANT 379 carry the same title (Cultural Diversity in China); the page does not state whether they are equivalent, so a student may not count both. Petitions for other courses can be submitted to the UGPD.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AFS 101"
+              },
+              {
+                "type": "course",
+                "code": "AFS 102"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "courses": [
+                "AAS 110",
+                "AAS 118",
+                "AAS 211",
+                "AAS 212",
+                "AAS 280",
+                "AAS 305",
+                "AAS 351",
+                "AAS 379",
+                "ANT 379",
+                "AFH 339",
+                "AFS 365",
+                "ANT 102",
+                "HUS 254",
+                "HUS 271",
+                "JDS 226",
+                "SOC 247",
+                "WST 102",
+                "WST 103",
+                "WST 111",
+                "WST 112",
+                "WST 210",
+                "WST 291"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Area Studies and Social Sciences (2 courses required; 6 credits) Students must choose two from the following list of courses (below) from other departments. Petitions for other courses can be submitted to the UGPD. AAS 110 - Appreciating Indian Music 3 credits; AAS 118 - Introduction to Asian Studies; AAS 211 - Asian and Asian American Studies Topics in the Social Sciences 3 credits; AAS 212 - Asian and Asian American Studies Topics in the Humanities 3 credits; AAS 280 - Islam 3 credits; AAS 305 - The Pacific, Travel & Empire 3 credits; AAS 351 - Revolutionary China: Politics, Culture, and Power 3 credits; AAS 379 - Cultural Diversity in China 3 credits; ANT 379 - Cultural Diversity in China 3 credits; AFH 339 - Arts of the African Diaspora 3 credits; AFS 101 - Themes in the Black Experience I 3 credits AND AFS 102 - Themes in the Black Experience II 3 credits; AFS 365 - Global Africa 3 credits; ANT 102 - What Makes Us Human? 3 credits; HUS 254 - Latin America Today 3 credits; HUS 271 - United States Latino Literature and Culture 3 credits; JDS 226 - Modern Jewish History: Dilemmas of Difference 3 credits; SOC 247 - Sociology of Gender 3 credits; WST 102 - Introduction to Women's and Gender Studies in the Social Sciences 3 credits; WST 103 - Gender, Culture, and Difference 3 credits; WST 111 - Introduction to Queer Studies in the Humanities 3 credits; WST 112 - Introduction to Queer Studies in the Social Sciences 3 credits; WST 210 - Contemporary Issues in Women's and Gender Studies 3 credits; WST 291 - Introduction to Feminist Theory 3 credits"
+    },
+    {
+      "id": "ethnomusicology.performance",
+      "label": "performance",
+      "title": "Performance/practice-based requirements (3 semesters; 3 credits)",
+      "rule": {
+        "manualCheck": "Other performance/production options are possible with UGPD permission. The page lists MUS 235 and MUS 335 at 4 credits each, while the heading states 3 credits.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "choose",
+            "count": 3,
+            "from": {
+              "courses": [
+                "MUS 235",
+                "MUS 335"
+              ]
+            }
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "MUS 235",
+                    "MUS 335"
+                  ]
+                }
+              },
+              {
+                "type": "course",
+                "code": "MUS 341"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Performance/practice-based requirements (3 semesters required; 3 credits) Option A: 3 semesters of Ethnomusicology ensemble - MUS 235 - Introduction to African Drumming 4 credits. OR - MUS 335 - Advanced African Drumming 4 credits. Option B: 2 semesters of Ethnomusicology ensemble such as MUS 235 - Introduction to African Drumming 4 credits. OR MUS 335 - Advanced African Drumming 4 credits. AND 1 semester of composition/production class - MUS 341 - Sound Design 3 credits. Other performance/production options possible with UGPD permission"
+    },
+    {
+      "id": "ethnomusicology.capstone",
+      "label": "capstone",
+      "title": "Capstone ethnography course",
+      "rule": {
+        "type": "course",
+        "code": "MUS 451"
+      },
+      "sourceText": "The capstone course is MUS 451 - Senior Seminar in Ethnography of Music in which students conduct ethnographic research projects related to music. ... a 400-level ethnography class (MUS 451 - Senior Seminar in Ethnography of Music)."
+    },
+    {
+      "id": "ethnomusicology.total-credits",
+      "label": "total-credits",
+      "title": "Total credits for the minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21 credits.",
+        "reason": "Program-wide total credit requirement, which no course-level rule type expresses."
+      },
+      "sourceText": "Completion of the minor requires 21 credits."
+    },
+    {
+      "id": "ethnomusicology.music-major-independent-study",
+      "label": "music-major-independent-study",
+      "title": "Independent study for Music majors (conditional)",
+      "rule": {
+        "manualCheck": "Confirm whether the student is a Music major. If so, verify a 3-credit MUS 487 Independent Project on a relevant topic under faculty supervision.",
+        "type": "unparsed",
+        "text": "If a Music major also completes this minor, the student must undertake a relevant independent project under faculty supervision, taken as a 3 credit MUS 487 - Independent Project.",
+        "reason": "Applies only to students who are Music majors, which a transcript audit cannot determine."
+      },
+      "sourceText": "Music majors must take an additional independent study. ... Notes: If a Music major wants to also do a minor in Ethnomusicology he/she must undertake a relevant independent project under faculty supervision, taken as a 3 credit MUS 487 - Independent Project."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students should be advised to monitor their progress toward completing their upper division credit requirement. It is suggested that students take at least three upper-division courses as part of their ethnomusicology minor. The page does not state the upper-division credit amount."
+    },
+    {
+      "topic": "other",
+      "text": "MUS 311 may be repeated with a different topic (e.g., \"Music and Islam\" and \"Music of China\")."
+    },
+    {
+      "topic": "other",
+      "text": "Other ethnomusicology series options, other area studies courses (via petition), and other performance/production options are possible with permission from the Undergraduate Program Director (UGPD)."
+    },
+    {
+      "topic": "other",
+      "text": "The minor is distinct from other music minors in offering training in fieldwork methods, and it often emphasizes repertoire and practice from outside Europe and the United States, especially Asia. It is a 21-credit minor with a related area of specialization in the social sciences."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1540",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "respiratory-care-bs",
+  "name": "Respiratory Care, BS",
+  "kind": "major",
+  "degree": "",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "respiratory-care-bs.unparsed",
+      "label": "unparsed",
+      "title": "Program requirements not on page",
+      "rule": {
+        "type": "unparsed",
+        "text": "Information and program requirements for the major in Respiratory Care may be found in the Health Sciences Catalog.",
+        "reason": "The catalog page provided contains no requirements for this major; they are published in the Health Sciences Catalog."
+      },
+      "sourceText": "Information and program requirements for the major in Respiratory Care may be found in the Health Sciences Catalog."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "Requirements for the Respiratory Care major are published in the Health Sciences Catalog, not on this page. Degree title is not stated on this page."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1573",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

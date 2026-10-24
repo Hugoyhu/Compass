@@ -1,0 +1,195 @@
+{
+  "id": "spanish-language-and-literature",
+  "name": "Spanish Language and Literature",
+  "kind": "minor",
+  "degree": "Minor in Spanish",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "spanish-language-and-literature.intermediate",
+      "label": "intermediate",
+      "title": "Intermediate Spanish Language Courses",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SPN 211"
+              },
+              {
+                "type": "course",
+                "code": "SPN 212"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SPN 214"
+              },
+              {
+                "type": "course",
+                "code": "SPN 215"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SPN 213"
+          },
+          {
+            "type": "unparsed",
+            "text": "Equivalent proficiency satisfied through permission of the department or through the placement or the challenge exam",
+            "reason": "Placement, challenge exam, and departmental permission are not course-based and cannot be checked from a transcript"
+          }
+        ]
+      },
+      "sourceText": "There are several ways to satisfy this requirement. Please choose one of the four options listed below depending on your proficiency and/or interests: SPN 211 - Intermediate Spanish I 3 credits and SPN 212 - Intermediate Spanish II 3 credits OR SPN 214 - Intermediate Medical Spanish I 3 credits and SPN 215 - Intermediate Medical Spanish II 3 credits OR SPN 213 - Intermediate Spanish for Speakers of Spanish 3 credits OR equivalent proficiency satisfied through permission of the department or through the placement or the challenge exam."
+    },
+    {
+      "id": "spanish-language-and-literature.advanced",
+      "label": "advanced",
+      "title": "Required Advanced Courses (9 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SPN 311"
+              },
+              {
+                "type": "course",
+                "code": "SPN 310"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SPN 312"
+          },
+          {
+            "type": "course",
+            "code": "SPN 321"
+          }
+        ]
+      },
+      "sourceText": "SPN 311 - Spanish Conversation and Composition 3 credits OR SPN 310 - Spanish Grammar and Composition for Students of Hispanic-American Background 3 credits; SPN 312 - Introduction to Literary Studies 3 credits; SPN 321 - Advanced Spanish Grammar and Composition 3 credits"
+    },
+    {
+      "id": "spanish-language-and-literature.elective",
+      "label": "elective",
+      "title": "Elective Advanced Courses (9 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "subjects": [
+            "SPN"
+          ],
+          "minNumber": 300,
+          "excludeCourses": [
+            "SPN 475",
+            "SPN 488"
+          ],
+          "excludeUsedBy": [
+            "spanish-language-and-literature.advanced"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "SPN"
+              ],
+              "minNumber": 400,
+              "excludeCourses": [
+                "SPN 475",
+                "SPN 488"
+              ]
+            },
+            "minCourses": 1
+          }
+        ]
+      },
+      "sourceText": "THREE other upper-division (i.e., 300-level or higher) SPN courses, one of which must be at the 400 level. S/U graded courses such as SPN 475 and SPN 488 do not count towards fulfillment of this requirement."
+    },
+    {
+      "id": "spanish-language-and-literature.total-credits",
+      "label": "total-credits",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 18-24 credits, depending on language placement",
+        "reason": "Program-wide total credit range depends on placement; no rule type expresses a total-credit range across requirements"
+      },
+      "sourceText": "Completion of the minor requires 18-24 credits, depending on language placement (see note 1 below)."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "spanish-language-and-literature.intermediate",
+        "spanish-language-and-literature.advanced",
+        "spanish-language-and-literature.elective"
+      ],
+      "sourceText": "All courses in Spanish offered to fulfill minor requirements must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "spanish-language-and-literature.intermediate",
+        "spanish-language-and-literature.advanced",
+        "spanish-language-and-literature.elective"
+      ],
+      "sourceText": "All courses in Spanish offered to fulfill minor requirements must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 9,
+      "appliesTo": [
+        "spanish-language-and-literature.advanced",
+        "spanish-language-and-literature.elective"
+      ],
+      "sourceText": "At least nine credits of upper-division Spanish courses must be earned at Stony Brook to complete the minor."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Entering students who wish to continue the study of Spanish started in high school should consult a departmental advisor to help them choose the appropriate course (Placement)."
+    },
+    {
+      "topic": "other",
+      "text": "Students with enough language proficiency to satisfy the intermediate requirement complete a total of 18 credits. Students who need SPN 211 and SPN 212, or SPN 214 and SPN 215, complete a total of 24 credits. Students with a Spanish-speaking background can begin the minor by taking SPN 213 or SPN 310, depending on their Spanish written proficiency."
+    },
+    {
+      "topic": "other",
+      "text": "Students wishing to major in Spanish should consult with a Departmental advisor. The Department also offers a major in Spanish language and literature (Bachelor of Arts); this page covers the minor only."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1512",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

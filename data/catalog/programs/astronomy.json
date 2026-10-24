@@ -1,0 +1,202 @@
+{
+  "id": "astronomy",
+  "name": "Astronomy",
+  "kind": "minor",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "astronomy.core",
+      "label": "core",
+      "title": "Core Astronomy Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AST 203"
+          },
+          {
+            "type": "course",
+            "code": "AST 205"
+          }
+        ]
+      },
+      "sourceText": "AST 203 - Astronomy 4 credits; AST 205 - Introduction to Planetary Sciences 3 credits"
+    },
+    {
+      "id": "astronomy.physics",
+      "label": "physics",
+      "title": "Physics Sequence with Laboratories",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 127"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 132"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 142"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "PHY 133"
+          },
+          {
+            "type": "course",
+            "code": "PHY 134"
+          }
+        ]
+      },
+      "sourceText": "One of the Following Physics Sequences (with Laboratories): PHY 125 - Classical Physics A 3 credits; PHY 126 - Classical Physics B 3 credits; PHY 127 - Classical Physics C 3 credits; OR PHY 131 - Classical Physics I 3 credits; PHY 132 - Classical Physics II 3 credits; OR PHY 141 - Classical Physics I: Honors 3 credits; PHY 142 - Classical Physics II: Honors 3 credits; PHY 133 - Classical Physics Laboratory I 1 credit; PHY 134 - Classical Physics Laboratory II 1 credit"
+    },
+    {
+      "id": "astronomy.calculus",
+      "label": "calculus",
+      "title": "One Calculus Course",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "manualCheck": "The page lists 'MAT 125 - Calculus A (or MAT 130 /MAT 125)'; the parenthetical is ambiguous and is not modeled as an alternative. Verify whether MAT 130 or another course is accepted.",
+            "type": "course",
+            "code": "MAT 125"
+          },
+          {
+            "type": "course",
+            "code": "MAT 131"
+          },
+          {
+            "type": "course",
+            "code": "AMS 151"
+          }
+        ]
+      },
+      "sourceText": "One of the Following Calculus Courses: MAT 125 - Calculus A 3 credits (or MAT 130 /MAT 125); OR MAT 131 - Calculus I 4 credits; OR AMS 151 - Applied Calculus I 3 credits"
+    },
+    {
+      "id": "astronomy.electives",
+      "label": "electives",
+      "title": "Upper-Division AST Credits",
+      "rule": {
+        "type": "choose",
+        "credits": 9,
+        "from": {
+          "subjects": [
+            "AST"
+          ],
+          "minNumber": 300
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "AST 301",
+                "AST 389",
+                "AST 487"
+              ]
+            },
+            "maxCredits": 3
+          }
+        ]
+      },
+      "sourceText": "At least nine additional credits in AST courses at the 300 level or higher.* Note*: No more than three of these credits may come from AST 301 or AST 389 or AST 487."
+    },
+    {
+      "id": "astronomy.total-credits",
+      "label": "total-credits",
+      "title": "Total Minor Credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 23 to 24 credits.",
+        "reason": "A program-wide total credit range is not covered by any rule type."
+      },
+      "sourceText": "Completion of the minor requires 23 to 24 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "astronomy.core",
+        "astronomy.physics",
+        "astronomy.calculus",
+        "astronomy.electives"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "astronomy.core",
+        "astronomy.physics",
+        "astronomy.calculus",
+        "astronomy.electives"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "The calculus line reads 'MAT 125 - Calculus A 3 credits (or MAT 130 /MAT 125)'. The alternative is not modeled and should be verified."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1365",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

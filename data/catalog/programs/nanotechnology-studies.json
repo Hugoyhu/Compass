@@ -1,0 +1,152 @@
+{
+  "id": "nanotechnology-studies",
+  "name": "Nanotechnology Studies",
+  "kind": "minor",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "nanotechnology-studies.1",
+      "label": "1",
+      "title": "Minor requirements by major",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "nanotechnology-studies.non-cme",
+            "sourceText": "For all majors, except for Chemical and Molecular Engineering (CME): ESM 213 - Introduction to Nanotechnology Studies 3 credits; Two semesters (at least 6 credits) of independent research (299, 499 or 488). Research topics must be approved by the director of the NTS minor for courses to be accepted to the NTS minor.; Two technical electives, chosen from among the following courses: BME 381, ESM 339, PHY 472, ESE 331, CHE 378 OR ESM 378, MEC 470, EST 391, ESM 212; ESM 400 - Research and Nanotechnology 3 credits",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ESM 213"
+              },
+              {
+                "id": "nanotechnology-studies.non-cme.research",
+                "manualCheck": "Confirm two semesters (at least 6 credits) of independent research in 299, 499 or 488 and that the research topic was approved by the NTS minor director.",
+                "type": "unparsed",
+                "text": "Two semesters (at least 6 credits) of independent research (299, 499 or 488). Research topics must be approved by the director of the NTS minor for courses to be accepted to the NTS minor.",
+                "reason": "Course subject code is not stated, only course numbers 299, 499 or 488, so the pool cannot be expressed as a course selector."
+              },
+              {
+                "id": "nanotechnology-studies.non-cme.electives",
+                "sourceText": "Two technical electives, chosen from among the following courses: BME 381 - Nanofabrication in Biomedical Applications 3 credits; ESM 339 - Microfabrication and Thin Film Processing of Advanced Materials 4 credits; PHY 472 - Solid-State Physics 3 credits; ESE 331 - Semiconductor Devices 3 credits; CHE 378 - Materials Chemistry 3 credits OR ESM 378 - Materials Chemistry 3 credits; MEC 470 - Introduction to Tribology 3 credits; EST 391 - Technology Assessment 3 credits; ESM 212 - Introduction to Environmental Engineering 3 credits. Note: Other upper division technical elective courses may be substituted with permission of the director of the minor.",
+                "manualCheck": "Other upper division technical electives may be substituted with permission of the NTS minor director.",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "BME 381",
+                    "ESM 339",
+                    "PHY 472",
+                    "ESE 331",
+                    "CHE 378",
+                    "ESM 378",
+                    "MEC 470",
+                    "EST 391",
+                    "ESM 212"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "CHE 378",
+                        "ESM 378"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
+              },
+              {
+                "id": "nanotechnology-studies.non-cme.research-and-nano",
+                "sourceText": "Research and Nanotechnology - ESM 400 - Research and Nanotechnology 3 credits",
+                "type": "course",
+                "code": "ESM 400"
+              }
+            ]
+          },
+          {
+            "id": "nanotechnology-studies.cme",
+            "sourceText": "For students who are majoring in Chemical and Molecular Engineering (CME): Completion of the three course requirement for the specialization in Nanotechnology (for the CME major); Two semesters (at least 6 credits) of independent research (299, 499 or 488). Research topics must be approved by the director of the NTS minor for courses to be accepted to the NTS minor.; ESM 400 - Research and Nanotechnology 3 credits",
+            "type": "allOf",
+            "rules": [
+              {
+                "id": "nanotechnology-studies.cme.specialization",
+                "manualCheck": "Verify completion of the three-course Nanotechnology specialization for CME majors.",
+                "type": "unparsed",
+                "text": "Completion of the three course requirement for the specialization in Nanotechnology (for the CME major)",
+                "reason": "The three courses for the CME Nanotechnology specialization are not listed on this page."
+              },
+              {
+                "id": "nanotechnology-studies.cme.research",
+                "manualCheck": "Confirm two semesters (at least 6 credits) of independent research in 299, 499 or 488 and that the research topic was approved by the NTS minor director.",
+                "type": "unparsed",
+                "text": "Two semesters (at least 6 credits) of independent research (299, 499 or 488). Research topics must be approved by the director of the NTS minor for courses to be accepted to the NTS minor.",
+                "reason": "Course subject code is not stated, only course numbers 299, 499 or 488, so the pool cannot be expressed as a course selector."
+              },
+              {
+                "id": "nanotechnology-studies.cme.research-and-nano",
+                "sourceText": "ESM 400 - Research and Nanotechnology 3 credits",
+                "type": "course",
+                "code": "ESM 400"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Completion of the minor requires 18-22 credits and consists of the following requirements: For all majors, except for Chemical and Molecular Engineering (CME): ESM 213; two semesters (at least 6 credits) of independent research (299, 499 or 488); two technical electives from BME 381, ESM 339, PHY 472, ESE 331, CHE 378 OR ESM 378, MEC 470, EST 391, ESM 212; ESM 400. For students who are majoring in Chemical and Molecular Engineering (CME): completion of the three course requirement for the specialization in Nanotechnology; two semesters (at least 6 credits) of independent research (299, 499 or 488); ESM 400."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGpa",
+      "gpa": 3,
+      "appliesTo": [
+        "nanotechnology-studies.1"
+      ],
+      "sourceText": "All courses for the minor must be passed with an average grade of B or higher."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "nanotechnology-studies.sub.other-electives",
+      "replaces": {
+        "type": "rule",
+        "ruleId": "nanotechnology-studies.non-cme.electives"
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "Other upper division technical elective courses",
+        "reason": "The page does not list the specific courses that may be substituted."
+      },
+      "requiresApproval": true,
+      "sourceText": "Note: Other upper division technical elective courses may be substituted with permission of the director of the minor."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students should check the schedule of courses for current scheduling information, as not all courses are offered every semester."
+    },
+    {
+      "topic": "other",
+      "text": "The minor is intended for students in majors from the College of Engineering and Applied Sciences or the College of Arts and Sciences. Research must be in the student's own major area and integrated with the minor through approved research topics."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1537",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "id": "jazz-music",
+  "name": "Jazz Music",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "jazz-music.theory",
+      "label": "theory",
+      "title": "Theory",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MUS 119"
+              },
+              {
+                "type": "course",
+                "code": "MUS 130"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MUS 315"
+          },
+          {
+            "type": "course",
+            "code": "MUS 316"
+          }
+        ]
+      },
+      "sourceText": "Theory: MUS 119 - The Elements of Music 3 credits OR MUS 130 - Sound Structures 3 credits; MUS 315 - The Structural Principles of Music I 3 credits; MUS 316 - The Structural Principles of Music II 3 credits. Notes: Students well versed in music notation and basic theory (demonstrated by the MUS 119 challenge examination) should take MUS 130 - Sound Structures"
+    },
+    {
+      "id": "jazz-music.history",
+      "label": "history",
+      "title": "History",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MUS 308"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "MUS 304",
+                "MUS 310",
+                "MUS 311",
+                "MUS 313",
+                "MUS 320"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "History: MUS 308 - History of Jazz 3 credits. And one of the following: MUS 304 - American Music 3 credits; MUS 310 - Music and Culture in the 1960's 3 credits; MUS 311 - Topics in Ethnomusicology 3 credits; MUS 313 - Hearing Politics 3 credits; MUS 320 - U.S. Popular Music 3 credits"
+    },
+    {
+      "id": "jazz-music.performance",
+      "label": "performance",
+      "title": "Performance",
+      "rule": {
+        "manualCheck": "Students must audition to be accepted to MUS 189, MUS 264, and MUS 267. The page lists six semesters (6 credits) but the course credit values vary (1, 4, 1, 6, 4), so confirm the semester count as well as the credit total.",
+        "type": "choose",
+        "credits": 6,
+        "from": {
+          "courses": [
+            "MUS 189",
+            "MUS 235",
+            "MUS 264",
+            "MUS 267",
+            "MUS 335"
+          ]
+        }
+      },
+      "sourceText": "Performance: Six semesters (6 credits) in any combination of the following courses: MUS 189 - Introduction to Jazz Improvisation 1 credit; MUS 235 - Introduction to African Drumming 4 credits.; MUS 264 - Big Band Jazz Ensemble 1 credit; MUS 267 - Small Jazz Ensemble Level 1 6 credits.; MUS 335 - Advanced African Drumming 4 credits. Notes: Students must audition to be accepted to MUS 189, MUS 264, and MUS 267."
+    },
+    {
+      "id": "jazz-music.upper-division",
+      "label": "upper-division",
+      "title": "Upper-division credit requirement",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 3 credits from Requirement 2 in either track must be at the upper division level.",
+        "reason": "The page refers to 'Requirement 2' and 'either track', but it has no numbered requirements or tracks. The required courses must be matched to the page's sections, so this cannot be checked automatically."
+      },
+      "sourceText": "At least 3 credits from Requirement 2 in either track must be at the upper division level."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "jazz-music.theory",
+        "jazz-music.history",
+        "jazz-music.performance"
+      ],
+      "sourceText": "All courses offered for the minor in Jazz Studies must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "jazz-music.theory",
+        "jazz-music.history",
+        "jazz-music.performance"
+      ],
+      "sourceText": "All courses offered for the minor in Jazz Studies must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students must audition to be accepted to MUS 189, MUS 264, and MUS 267."
+    },
+    {
+      "topic": "advising",
+      "text": "The minor is designed for students who are interested in jazz but who do not seek training in more sophisticated aspects of music theory and musicianship. Students well versed in music notation and basic theory (demonstrated by the MUS 119 challenge examination) should take MUS 130 - Sound Structures."
+    },
+    {
+      "topic": "other",
+      "text": "If a Music major wants to also do a minor in Jazz, he or she must undertake a relevant independent project under faculty supervision, taken as a 3 credit MUS 487 - Independent Project. This is not modeled as a rule because it applies only to Music majors."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1484",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

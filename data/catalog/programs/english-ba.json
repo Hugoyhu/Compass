@@ -1,0 +1,612 @@
+{
+  "id": "english-ba",
+  "name": "English, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in English",
+  "approxCredits": 42,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "english-ba.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses",
+      "rule": {
+        "type": "course",
+        "code": "EGL 204"
+      },
+      "sourceText": "Required Courses - EGL 204 - Literary Analysis and Argumentation 3 credits"
+    },
+    {
+      "id": "english-ba.survey-courses",
+      "label": "survey-courses",
+      "title": "3 Required Survey courses",
+      "rule": {
+        "manualCheck": "Among the three required survey courses, at least one must be an American survey and at least one a British survey. The catalog's course lists do not label each survey as American or British, so confirm this from the course records.",
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "english-ba.survey-courses.early",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "EGL 205"
+              },
+              {
+                "type": "course",
+                "code": "EGL 217"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "courses": [
+                "EGL 205",
+                "EGL 206",
+                "EGL 207",
+                "EGL 217",
+                "EGL 218",
+                "EGL 224",
+                "EGL 226",
+                "EGL 243",
+                "EGL 260",
+                "EGL 274",
+                "EGL 276"
+              ],
+              "excludeUsedBy": [
+                "english-ba.survey-courses.early"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "3 Required Survey courses: Among the required survey courses, students must take at least one American and one British survey. One early literature survey course: either EGL 205 - Survey of British Literature I OR EGL 217 - American Literature I. Two survey courses chosen from the following: EGL 205 (if not used above), EGL 206, EGL 207, EGL 217 (if not used above), EGL 218, EGL 224, EGL 226, EGL 243, EGL 260, EGL 274, EGL 276"
+    },
+    {
+      "id": "english-ba.egl-elective",
+      "label": "egl-elective",
+      "title": "One EGL 100-, 200-, or 300-level elective",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "subjects": [
+            "EGL"
+          ],
+          "minNumber": 100,
+          "maxNumber": 399,
+          "excludeUsedBy": [
+            "english-ba.required-courses",
+            "english-ba.survey-courses",
+            "english-ba.upper-division"
+          ]
+        }
+      },
+      "sourceText": "One EGL 100-, 200-, or 300-level elective not used to fulfill other requirements for the major."
+    },
+    {
+      "id": "english-ba.upper-division",
+      "label": "upper-division",
+      "title": "Upper-Division Requirements (7 courses)",
+      "rule": {
+        "manualCheck": "At least one of the five electives must be pre-1900 (course dates are not on transcripts; confirm from course records). With department permission, one course may satisfy up to two topic areas; alternate courses may be substituted with permission of the program director. Those exceptions are not modeled.",
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "EGL 301"
+          },
+          {
+            "type": "course",
+            "code": "EGL 380"
+          },
+          {
+            "type": "choose",
+            "count": 5,
+            "from": {
+              "courses": [
+                "EGL 303",
+                "EGL 307",
+                "EGL 325",
+                "EGL 328",
+                "EGL 360",
+                "EGL 361",
+                "EGL 362",
+                "EGL 364",
+                "EGL 385",
+                "EGL 386",
+                "EGL 387",
+                "EGL 389",
+                "EGL 308",
+                "EGL 340",
+                "EGL 342",
+                "EGL 345",
+                "EGL 346",
+                "EGL 305",
+                "EGL 309",
+                "EGL 319",
+                "EGL 333",
+                "EGL 353",
+                "EGL 368",
+                "EGL 369",
+                "EGL 370",
+                "EGL 371",
+                "EGL 372",
+                "EGL 376",
+                "EGL 379",
+                "EGL 381",
+                "EGL 382",
+                "EGL 394",
+                "EGL 311",
+                "EGL 320",
+                "EGL 367",
+                "EGL 373",
+                "EGL 378",
+                "EGL 300",
+                "EGL 399",
+                "EGL 488"
+              ],
+              "excludeUsedBy": [
+                "english-ba.survey-courses",
+                "english-ba.required-courses"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "EGL 303",
+                    "EGL 307",
+                    "EGL 325",
+                    "EGL 328",
+                    "EGL 360",
+                    "EGL 361",
+                    "EGL 362",
+                    "EGL 364",
+                    "EGL 385",
+                    "EGL 386",
+                    "EGL 387",
+                    "EGL 389"
+                  ]
+                },
+                "minCourses": 1
+              },
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "EGL 308",
+                    "EGL 340",
+                    "EGL 342",
+                    "EGL 345",
+                    "EGL 346"
+                  ]
+                },
+                "minCourses": 1
+              },
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "EGL 305",
+                    "EGL 309",
+                    "EGL 319",
+                    "EGL 333",
+                    "EGL 353",
+                    "EGL 368",
+                    "EGL 369",
+                    "EGL 370",
+                    "EGL 371",
+                    "EGL 372",
+                    "EGL 376",
+                    "EGL 379",
+                    "EGL 381",
+                    "EGL 382",
+                    "EGL 394"
+                  ]
+                },
+                "minCourses": 1
+              },
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "EGL 311",
+                    "EGL 320",
+                    "EGL 367",
+                    "EGL 373",
+                    "EGL 378"
+                  ]
+                },
+                "minCourses": 1
+              },
+              {
+                "type": "maxFrom",
+                "from": {
+                  "courses": [
+                    "EGL 385",
+                    "EGL 386",
+                    "EGL 387"
+                  ]
+                },
+                "maxCourses": 1
+              },
+              {
+                "type": "maxFrom",
+                "from": {
+                  "courses": [
+                    "EGL 488"
+                  ]
+                },
+                "maxCredits": 3
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Upper-Division Requirements (7 courses): EGL 301 - Authors, Periods, Topics, or Genres, with Intensive Writing 3 credits; EGL 380 - Senior Seminar 3 credits; Five electives from (at least 1 course should be pre-1900): EGL 300, EGL 399, EGL 488 (3 credits of EGL 488 may count toward the major). Courses must include at least one in each of four topic areas: Genre or Media; Single-Author; Interdisciplinary Study of Literature; Literary or Critical History."
+    },
+    {
+      "id": "english-ba.upper-division-writing",
+      "label": "upper-division-writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "unparsed",
+        "text": "Satisfactory completion of EGL 301 with a grade of C or better.",
+        "reason": "Names the same course, EGL 301, already required in the upper-division requirements. The page does not say whether it counts toward both items, and course reuse is not allowed by default. The C-or-better grade is captured by the minGrade policy."
+      },
+      "sourceText": "Upper-Division Writing Requirement: Satisfactory completion of EGL 301 with a grade of C or better."
+    },
+    {
+      "id": "english-ba.non-english-concentration",
+      "label": "non-english-concentration",
+      "title": "Required non-English Courses: Interdisciplinary Concentration",
+      "rule": {
+        "manualCheck": "Two courses (six credits) above the 100 level in one department of the student's choosing other than English (EGL), such as Foreign Language, History, Philosophy, or Arts. The department restriction cannot be expressed in the pool and must be checked manually.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "minNumber": 101
+        }
+      },
+      "sourceText": "Required non-English Courses: Interdisciplinary Concentration - Six credits (two courses) in one other department of the student's choosing (Foreign Language, History, Philosophy, Arts, etc.) above the 100 level."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "english-ba.required-courses",
+        "english-ba.survey-courses",
+        "english-ba.egl-elective",
+        "english-ba.upper-division",
+        "english-ba.upper-division-writing",
+        "english-ba.non-english-concentration"
+      ],
+      "sourceText": "All courses used to fulfill the English major/minor requirements must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "english-ba.required-courses",
+        "english-ba.survey-courses",
+        "english-ba.egl-elective",
+        "english-ba.upper-division",
+        "english-ba.upper-division-writing",
+        "english-ba.non-english-concentration"
+      ],
+      "sourceText": "All courses used to fulfill the English major/minor requirements must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 9,
+      "appliesTo": [
+        "english-ba.upper-division"
+      ],
+      "sourceText": "Students must earn a minimum of 9 upper division EGL credits at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EGL 204",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EGL 205",
+          "alternatives": [
+            "EGL 217"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EGL survey",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Foreign language",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EGL 207",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EGL survey",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EGL 200-level or 300-level elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Foreign language or elective",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EGL 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EGL 308",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Outside concentration elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EGL 303",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EGL 309",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EGL 311",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "EGL 300-level elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EGL 300-level elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EGL 380",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "The Honors Program in English is an optional program and is not modeled here. It requires an overall GPA of at least 3.0, an English GPA of at least 3.5, and a sample paper. It also requires 45 credits, eight upper-division courses, two Honors Seminars, an Honors Practicum, EGL 496, and a B or higher in 400-level honors courses."
+    },
+    {
+      "topic": "other",
+      "text": "The following courses may not be used for the English major: EGL 440, EGL 441, EGL 449, EGL 450, EGL 451, EGL 452, EGL 454, EGL 475, EGL 476. Three credits of EGL 488 may be used toward upper-division electives for the major."
+    },
+    {
+      "topic": "other",
+      "text": "With department permission, one course may satisfy up to two topic areas. Alternate courses may be substituted with permission of the program director. Neither exception is modeled."
+    },
+    {
+      "topic": "other",
+      "text": "The department also offers a BA English Education Program leading to NYS Adolescence Education certification (grades 7-12), and minors in English, Film and Screen Studies, and Theatre Arts. Minors of particular interest to English majors include Foreign Languages and Journalism (JRN)."
+    },
+    {
+      "topic": "advising",
+      "text": "Undergraduate advisor: Charles Edwards. Director of Undergraduate Studies: Justin Johnston."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1441",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

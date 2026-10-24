@@ -1,0 +1,96 @@
+{
+  "id": "communication-and-innovation",
+  "name": "Communication and Innovation",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "communication-and-innovation.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BUS 115"
+          },
+          {
+            "type": "course",
+            "code": "COM 120"
+          },
+          {
+            "type": "course",
+            "code": "BUS 301"
+          },
+          {
+            "type": "course",
+            "code": "COM 365"
+          },
+          {
+            "type": "course",
+            "code": "COM 351"
+          }
+        ]
+      },
+      "sourceText": "The following courses (15 credits) are required of minors: BUS 115 - Introduction to Business 3 credits; COM 120 - Fundamentals of Public Speaking 3 credits; BUS 301 - Business Communications 3 credits; COM 365 - Talking Science 3 credits; COM 351 - Team Collaboration and Community Engagement 3 credits"
+    },
+    {
+      "id": "communication-and-innovation.elective",
+      "label": "elective",
+      "title": "Elective",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BUS 353"
+          },
+          {
+            "type": "course",
+            "code": "BUS 383"
+          },
+          {
+            "type": "course",
+            "code": "BUS 399"
+          }
+        ]
+      },
+      "sourceText": "One of the following courses (3 credits) is required of minors: BUS 353 - Entrepreneurship 3 credits; BUS 383 - Social Entrepreneurship 3 credits; BUS 399 - Intellectual Property Strategy 3 credits"
+    },
+    {
+      "id": "communication-and-innovation.total-credits",
+      "label": "total-credits",
+      "title": "Total Credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor in Communication and Innovation requires 18 credits.",
+        "reason": "Program-wide total credit requirement; no rule type expresses a total credit minimum for the minor."
+      },
+      "sourceText": "Completion of the minor in Communication and Innovation requires 18 credits."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "Designed especially for students in STEM fields. Transfer courses will be evaluated individually for Communication and Innovation equivalency by the Undergraduate Director."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1407",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

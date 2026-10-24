@@ -1,0 +1,856 @@
+{
+  "id": "journalism-ba",
+  "name": "Journalism, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Journalism",
+  "approxCredits": 45,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "journalism-ba.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses (36 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "JRN 101"
+          },
+          {
+            "type": "course",
+            "code": "COM 106"
+          },
+          {
+            "type": "course",
+            "code": "JRN 116"
+          },
+          {
+            "type": "course",
+            "code": "COM 208"
+          },
+          {
+            "type": "course",
+            "code": "JRN 216"
+          },
+          {
+            "type": "course",
+            "code": "JRN 217"
+          },
+          {
+            "type": "course",
+            "code": "JRN 301"
+          },
+          {
+            "type": "course",
+            "code": "COM 305"
+          },
+          {
+            "type": "course",
+            "code": "POL 102"
+          },
+          {
+            "id": "journalism-ba.required-courses.global-issues",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "JRN 303"
+              },
+              {
+                "type": "course",
+                "code": "JRN 339"
+              }
+            ]
+          },
+          {
+            "id": "journalism-ba.required-courses.advanced-skills",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "JRN 311"
+              },
+              {
+                "type": "course",
+                "code": "JRN 312"
+              },
+              {
+                "type": "course",
+                "code": "JRN 313"
+              }
+            ]
+          },
+          {
+            "id": "journalism-ba.required-courses.senior-project",
+            "manualCheck": "JRN 490 (Journalism Senior Project) requires U3/U4 standing and must follow completion of one of JRN 311, JRN 312, or JRN 313.",
+            "type": "course",
+            "code": "JRN 490"
+          }
+        ]
+      },
+      "sourceText": "JRN 101 - News Literacy; COM 106 - Introduction to Mass Media *; JRN 116 - Introduction to Digital Journalism; COM 208 - Mass Communication *; JRN 216 - Intermediate Digital Journalism; JRN 217 - Journalistic Reporting and Writing (this course can be taken before, after or in the same semester as JRN 216); JRN 301 - The Changing News Business; COM 305 - Mass Communication Law & Ethics *; POL 102 - Introduction to American Government; Choose one of the following: JRN 303 - Global Issues in Journalism OR JRN 339 - Foreign Reporting; Choose one of the following advanced skills courses, which must be completed before students can move on to JRN 490: JRN 311 - Advanced Digital Journalism - Text; JRN 312 - Podcasting, Radio, and Storytelling; JRN 313 - Advanced Digital Journalism - Audio-Visual; After completing JRN 311, JRN 312, or JRN 313, all majors must complete the following 400-level required course: JRN 490 - Journalism Senior Project"
+    },
+    {
+      "id": "journalism-ba.jrn-electives",
+      "label": "jrn-electives",
+      "title": "Required JRN Electives (9 credits)",
+      "rule": {
+        "manualCheck": "Students must complete three three-credit upper-division electives with Junior or Senior standing. Variable-credit courses (JRN 487, JRN 488, JRN 489) must be taken for three credits, or multiple courses must add up to three credits, to count as a journalism elective. Not all electives are offered every semester; consult the major advisor.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "COM 306",
+            "COM 307",
+            "COM 316",
+            "COM 317",
+            "JRN 319",
+            "JRN 322",
+            "JRN 334",
+            "JRN 335",
+            "JRN 336",
+            "JRN 337",
+            "JRN 340",
+            "COM 346",
+            "JRN 363",
+            "JRN 364",
+            "COM 365",
+            "JRN 366",
+            "JRN 367",
+            "JRN 368",
+            "JRN 390",
+            "JRN 413",
+            "COM 415",
+            "JRN 433",
+            "JRN 434",
+            "JRN 435",
+            "COM 436",
+            "JRN 438",
+            "JRN 487",
+            "JRN 488",
+            "JRN 489"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "JRN 487",
+                "JRN 488",
+                "JRN 489"
+              ]
+            },
+            "maxCredits": 6
+          }
+        ]
+      },
+      "sourceText": "Students must complete three three-credit upper-division electives. Junior or Senior standing is required. Students can choose three courses from the following electives: COM 306; COM 307; COM 316; COM 317; JRN 319; JRN 322; JRN 334; JRN 335; JRN 336; JRN 337; JRN 340; COM 346; JRN 363; JRN 364; COM 365; JRN 366; JRN 367; JRN 368; JRN 390; JRN 413; COM 415; JRN 433; JRN 434; JRN 435; COM 436; JRN 438; JRN 487 (0-6 credits); JRN 488 (0-12 credits); JRN 489 (0-6 credits). Students may apply up to 6 credits from JRN internships and/or independent studies to the major."
+    },
+    {
+      "id": "journalism-ba.concentration",
+      "label": "concentration",
+      "title": "Concentration in Outside Area (18 credits)",
+      "rule": {
+        "manualCheck": "Concentration courses marked 'Individual Topics need approval' (e.g., ATM 237, PHY 237, SOC 390, WST 399, HIS 396) require approval. Check prerequisites. Each concentration needs at least 9 credits (three courses) at the upper-division level.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "unparsed",
+            "text": "Declare a second major or a minor (requirements set by the other program)",
+            "reason": "Second major and minor requirements are defined by other programs and are not part of this page."
+          },
+          {
+            "type": "choose",
+            "count": 6,
+            "from": {
+              "courses": [
+                "ATM 102",
+                "ATM 237",
+                "BIO 103",
+                "BIO 113",
+                "BIO 115",
+                "BIO 201",
+                "BIO 353",
+                "BIO 358",
+                "BIO 386",
+                "CHE 115",
+                "ECO 373",
+                "ENS 101",
+                "ENS 301",
+                "ENS 311",
+                "ENS 312",
+                "ENS 333",
+                "ENV 115",
+                "EST 102",
+                "EST 201",
+                "EST 291",
+                "EST 330",
+                "GEO 101",
+                "GEO 102",
+                "GEO 103",
+                "GEO 107",
+                "GEO 304",
+                "GEO 305",
+                "GEO 311",
+                "GEO 313",
+                "HIS 365",
+                "HIS 399",
+                "MAR 101",
+                "MAR 104",
+                "MAR 340",
+                "PHI 366",
+                "PHY 113",
+                "PHY 237",
+                "POL 333",
+                "SBC 111",
+                "SOC 315",
+                "SOC 340",
+                "SOC 344",
+                "WST 340"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "minNumber": 300
+                },
+                "minCourses": 3
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 6,
+            "from": {
+              "courses": [
+                "AAS 102",
+                "AAS 250",
+                "AAS 280",
+                "AAS 334",
+                "AAS 338",
+                "AFH 382",
+                "AFS 277",
+                "AFS 310",
+                "AFS 319",
+                "AFS 325",
+                "AFS 350",
+                "AFS 363",
+                "AFS 394",
+                "AMR 102",
+                "AMR 301",
+                "ANT 203",
+                "CLT 235",
+                "EGL 382",
+                "EST 330",
+                "HIS 277",
+                "HIS 287",
+                "HIS 325",
+                "HIS 362",
+                "HIS 368",
+                "HIS 396",
+                "HUI 336",
+                "LIN 101",
+                "LIN 200",
+                "LIN 250",
+                "PHI 105",
+                "PHI 383",
+                "POL 101",
+                "POL 102",
+                "POL 320",
+                "POL 330",
+                "RLS 102",
+                "RLS 280",
+                "SOC 105",
+                "SOC 204",
+                "SOC 243",
+                "SOC 247",
+                "SOC 248",
+                "SOC 302",
+                "SOC 303",
+                "SOC 304",
+                "SOC 310",
+                "SOC 315",
+                "SOC 330",
+                "SOC 336",
+                "SOC 337",
+                "SOC 338",
+                "SOC 340",
+                "SOC 348",
+                "SOC 378",
+                "SOC 380",
+                "SOC 390",
+                "WST 102",
+                "WST 103",
+                "WST 247",
+                "WST 310",
+                "WST 330",
+                "WST 335",
+                "WST 347",
+                "WST 350",
+                "WST 382",
+                "WST 383",
+                "WST 399"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "minNumber": 300
+                },
+                "minCourses": 3
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 6,
+            "from": {
+              "courses": [
+                "ATM 102",
+                "AFS 325",
+                "AFS 339",
+                "AMR 102",
+                "ANT 310",
+                "BUS 348",
+                "ECO 108",
+                "ECO 303",
+                "ECO 305",
+                "ECO 360",
+                "ENS 333",
+                "EST 102",
+                "EST 201",
+                "EST 330",
+                "GEO 105",
+                "HIS 104",
+                "HIS 325",
+                "HIS 339",
+                "HIS 378",
+                "HIS 396",
+                "HUI 236",
+                "HUR 249",
+                "LIN 200",
+                "MAR 340",
+                "PHI 105",
+                "PHI 113",
+                "POL 101",
+                "POL 102",
+                "POL 103",
+                "POL 309",
+                "POL 317",
+                "POL 318",
+                "POL 319",
+                "POL 320",
+                "POL 322",
+                "POL 323",
+                "POL 324",
+                "POL 325",
+                "POL 327",
+                "POL 332",
+                "POL 333",
+                "POL 336",
+                "POL 346",
+                "POL 359",
+                "POL 367",
+                "SOC 105",
+                "SOC 200",
+                "SOC 247",
+                "SOC 302",
+                "SOC 336",
+                "SOC 337",
+                "SOC 338",
+                "SOC 340",
+                "SOC 378",
+                "SOC 386",
+                "WST 340",
+                "WST 247"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "minNumber": 300
+                },
+                "minCourses": 3
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 6,
+            "from": {
+              "courses": [
+                "AAS 201",
+                "AAS 216",
+                "AAS 250",
+                "AAS 280",
+                "AAS 372",
+                "AFH 339",
+                "AFH 390",
+                "AFS 221",
+                "AFS 240",
+                "AFS 319",
+                "AFS 337",
+                "AFS 346",
+                "AFS 350",
+                "AFS 365",
+                "AFS 375",
+                "AMR 101",
+                "ANT 250",
+                "ARH 329",
+                "ATM 237",
+                "EST 330",
+                "EUR 101",
+                "GEO 101",
+                "GEO 311",
+                "HIS 102",
+                "HIS 214",
+                "HIS 221",
+                "HIS 227",
+                "HIS 281",
+                "HIS 341",
+                "HIS 346",
+                "HIS 353",
+                "HIS 378",
+                "HIS 393",
+                "HIS 397",
+                "HUF 219",
+                "HUI 239",
+                "HUI 336",
+                "HUI 338",
+                "HUR 249",
+                "HUS 254",
+                "HUS 255",
+                "LIN 250",
+                "PHY 237",
+                "POL 101",
+                "POL 103",
+                "POL 214",
+                "POL 309",
+                "POL 310",
+                "POL 311",
+                "POL 313",
+                "POL 336",
+                "POL 337",
+                "POL 338",
+                "POL 350",
+                "POL 374",
+                "RLS 280",
+                "SOC 105",
+                "SOC 248",
+                "SOC 348",
+                "SOC 364",
+                "SOC 365",
+                "SOC 374",
+                "SOC 378",
+                "SOC 386",
+                "WST 301",
+                "WST 350"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "minNumber": 300
+                },
+                "minCourses": 3
+              }
+            ]
+          },
+          {
+            "type": "unparsed",
+            "text": "Design an 18-credit interdisciplinary concentration in an academic subject of the student's choosing, with at least nine upper-division credits (consult the undergraduate director)",
+            "reason": "Individually designed concentrations are approved by the undergraduate director and cannot be checked against a fixed course pool."
+          }
+        ]
+      },
+      "sourceText": "Students must declare a second major, a minor, or an interdisciplinary concentration. Students may design an 18-credit interdisciplinary concentration in an academic subject of their choosing. Nine credits, or three classes, of the 18 credits required of all concentrations must be at the upper-division level. Students may also select one of four pre-designed concentrations created to explore broad topics - Public Affairs/Public Policy, Diversity and American Society, Global Issues and Perspectives, and Science and The Environment (complete 6 courses in any one area)."
+    },
+    {
+      "id": "journalism-ba.internship-limits",
+      "label": "internship-limits",
+      "title": "Internship credit limits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Students may enroll in multiple internships up to 6 credits each. The total number of credits from all internships combined may not exceed 12. Students may apply up to 6 credits from JRN internships and/or independent studies to the major and a total of 12 credits to general graduation requirements.",
+        "reason": "Cross-course credit caps on internships are not expressible as a single requirement rule. The 6-credit major cap is modeled as a constraint on the electives requirement."
+      },
+      "sourceText": "Students may enroll in multiple internships up to 6 credits each. The total number of credits from all internships combined may not exceed 12. Students may apply up to 6 credits from JRN internships and/or independent studies to the major and a total of 12 credits to general graduation requirements."
+    },
+    {
+      "id": "journalism-ba.academic-standing",
+      "label": "academic-standing",
+      "title": "Continuation in the major",
+      "rule": {
+        "type": "unparsed",
+        "text": "Students who earn final grades of C- or lower twice in the same journalism course, or in three different journalism classes, will be dropped from the major.",
+        "reason": "Continuation-in-major rule based on grade history; not a degree-requirement rule type."
+      },
+      "sourceText": "Students who earn final grades of C- or lower twice in the same journalism course, or in three different journalism classes, will be dropped from the major. A finding of academic dishonesty in any journalism or mass communication course will result in a failing grade for that course."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "journalism-ba.required-courses",
+        "journalism-ba.jrn-electives",
+        "journalism-ba.concentration"
+      ],
+      "sourceText": "Students must earn a letter grade of C or higher in all required courses, including courses in the concentration, and Satisfactory or S in JRN internships, independent studies and workshops for these to count toward the major."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "journalism-ba.required-courses",
+        "journalism-ba.jrn-electives",
+        "journalism-ba.concentration"
+      ],
+      "sourceText": "Students must earn a letter grade of C or higher in all required courses, including courses in the concentration."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "journalism-ba.concentration"
+      ],
+      "sourceText": "For a course to count toward the concentration, it must be passed with a grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "EXP+",
+        "rule": {
+          "type": "course",
+          "code": "JRN 490"
+        },
+        "sourceText": "Majors complete their production training in the senior capstone course, JRN 490, which satisfies the university's experiential learning requirement."
+      },
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "course",
+          "code": "JRN 490"
+        },
+        "sourceText": "Successful completion of JRN 490, the Senior Capstone Project, will satisfy the SBC WRTD requirement as well as the Journalism major upper-division writing requirement."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "JRN 101",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "COM 106",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "JRN 116",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "POL 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "COM 208",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "JRN 216",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Multidisciplinary concentration",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "JRN 217",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Multidisciplinary concentration",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "JRN 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "COM 305",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "JRN 311",
+          "alternatives": [
+            "JRN 312",
+            "JRN 313"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Multidisciplinary concentration",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "JRN 303",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Multidisciplinary concentration",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division JRN elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division JRN elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Multidisciplinary concentration",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "JRN 490",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Multidisciplinary concentration",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "All journalism students should see a departmental advisor to plan their course programs. The sample course sequence is an example; consult a Journalism advisor to plan a schedule."
+    },
+    {
+      "topic": "other",
+      "text": "Transfer courses will be evaluated individually for journalism equivalency by the Undergraduate Director."
+    },
+    {
+      "topic": "other",
+      "text": "Journalism majors may not declare a second major or minor in Mass Communication (CMM). They may double major in Communication (COM) but cannot get credit for the same electives. They may minor in Communication and Innovation (CBI)."
+    },
+    {
+      "topic": "grading",
+      "text": "JRN internships, independent studies and workshops must be taken for Satisfactory (S) to count toward the major."
+    },
+    {
+      "topic": "other",
+      "text": "A finding of academic dishonesty in any journalism or mass communication course will result in a failing grade for that course and may result in dismissal from the journalism program or expulsion from the university."
+    },
+    {
+      "topic": "sbc",
+      "text": "The Upper-Division Writing Requirement is satisfied by completing JRN 490, the Senior Capstone Project, which also satisfies the SBC WRTD requirement. Students should consult the department advisor about General Education requirements."
+    },
+    {
+      "topic": "other",
+      "text": "The program page lists the Journalism major as 45 credits. The sample sequence rows for Junior Fall total more than the 15 credits printed on the page; follow the course list, not the printed totals."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1485",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

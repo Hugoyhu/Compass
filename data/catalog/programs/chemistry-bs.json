@@ -1,0 +1,960 @@
+{
+  "id": "chemistry-bs",
+  "name": "Chemistry, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Chemistry",
+  "approxCredits": 66,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "chemistry-bs.core",
+      "label": "core",
+      "title": "Core Requirements",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 131"
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 129"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 130"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 132"
+              },
+              {
+                "type": "course",
+                "code": "CHE 152"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 134"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CHE 154"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CHE 301"
+          },
+          {
+            "type": "course",
+            "code": "CHE 302"
+          },
+          {
+            "type": "course",
+            "code": "CHE 303"
+          },
+          {
+            "type": "course",
+            "code": "CHE 321"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 322"
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 331"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 332"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CHE 375"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 327"
+              },
+              {
+                "type": "course",
+                "code": "CHE 383"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CHE 385"
+          },
+          {
+            "type": "course",
+            "code": "MAT 131"
+          },
+          {
+            "type": "course",
+            "code": "MAT 132"
+          },
+          {
+            "type": "course",
+            "code": "MAT 203"
+          },
+          {
+            "type": "course",
+            "code": "PHY 131"
+          },
+          {
+            "type": "course",
+            "code": "PHY 133"
+          },
+          {
+            "type": "course",
+            "code": "PHY 132"
+          },
+          {
+            "type": "course",
+            "code": "PHY 134"
+          }
+        ]
+      },
+      "sourceText": "CHE 131 - General Chemistry IB OR CHE 129 - General Chemistry IA AND CHE 130 - Problem Solving in General Chemistry; CHE 132 - General Chemistry II OR CHE 152 - Molecular Science I; CHE 133 - General Chemistry Laboratory I, CHE 134 - General Chemistry Laboratory II OR CHE 154 - Molecular Science Laboratory I; CHE 301 - Physical Chemistry I; CHE 302 - Physical Chemistry II; CHE 303 - Solution Chemistry Laboratory; CHE 321 - Organic Chemistry I; CHE 322 - Organic Chemistry IIA OR CHE 331 - Molecular Science II and CHE 332 - Molecular Science III; CHE 375 - Inorganic Chemistry I; CHE 327 - Organic Chemistry Laboratory OR CHE 383 - Introductory Synthetic and Spectroscopic Laboratory Techniques; CHE 385 - Tools of Chemistry; MAT 131 - Calculus I; MAT 132 - Calculus II; MAT 203 - Calculus III with Applications (See note 1 for possible substitutions); PHY 131 - Classical Physics I; PHY 133 - Classical Physics Laboratory I; PHY 132 - Classical Physics II; PHY 134 - Classical Physics Laboratory II (See note 2 for possible substitutions)"
+    },
+    {
+      "id": "chemistry-bs.area",
+      "label": "area",
+      "title": "Area Requirements (one option)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 304"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 357"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 377"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 328"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 384"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "manualCheck": "CHE 487 is 0-6 credits; the research requirement must total the credits stated for the option.",
+                    "type": "course",
+                    "code": "CHE 487"
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "CHE 495"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 496"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "manualCheck": "Elective list is listed under 'Two electives chosen from'. CHE 461 is 1-3 credits. Note 3: CHE 377 can fulfill only one of the alternative to CHE 357, the alternative to research, or one elective.",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "CHE 345",
+                    "CHE 461",
+                    "CHE 346",
+                    "CHE 348",
+                    "CHE 351",
+                    "CHE 353",
+                    "CHE 358",
+                    "CHE 376",
+                    "CHE 377",
+                    "CHE 378",
+                    "PHY 251",
+                    "ESG 281"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 328"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 384"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "BIO 202"
+              },
+              {
+                "manualCheck": "CHE 461 is recommended, not required, with CHE 346. CHE 346/CHE 461 may not be used both as an elective and as a substitute for BIO 361 (note 4).",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 346"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BIO 361"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "BIO 310"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BIO 362"
+                  }
+                ]
+              },
+              {
+                "manualCheck": "Organic or inorganic chemistry elective. Confirm CHE 346/CHE 461 is not counted here if it was used for the BIO 361 alternative.",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "CHE 345",
+                    "CHE 346",
+                    "CHE 348",
+                    "CHE 376",
+                    "CHE 377",
+                    "CHE 378",
+                    "CHE 461",
+                    "CHE 495",
+                    "CHE 496"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 304"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 351"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 353"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CHE 357"
+              },
+              {
+                "manualCheck": "Page lists these as OR alternatives, but note 6 states the Chemical Physics option requires two math courses in addition to Calculus I and II.",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "AMS 210",
+                    "MAT 211",
+                    "AMS 261",
+                    "MAT 303"
+                  ]
+                }
+              },
+              {
+                "type": "course",
+                "code": "PHY 251"
+              },
+              {
+                "type": "course",
+                "code": "PHY 252"
+              },
+              {
+                "manualCheck": "PHY 300, PHY 307, PHY 301, PHY 303 and PHY 306 require other physics prerequisites or instructor permission.",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "CHE 358",
+                    "PHY 277",
+                    "PHY 300",
+                    "PHY 307",
+                    "PHY 301",
+                    "PHY 303",
+                    "PHY 306"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 304"
+              },
+              {
+                "type": "course",
+                "code": "CHE 310"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 357"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 377"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 311"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 328"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 384"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "BIO 201"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BIO 113"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ATM 397"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ATM 205"
+              },
+              {
+                "type": "course",
+                "code": "MAR 308"
+              },
+              {
+                "type": "course",
+                "code": "MAR 333"
+              },
+              {
+                "type": "course",
+                "code": "MAR 351"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "MAR 301",
+                    "MAR 302",
+                    "MAR 334",
+                    "MAR 336",
+                    "MAR 394",
+                    "ATM 305",
+                    "ATM 345",
+                    "ATM 397"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "One of the following options: Chemical Science Option (CHE 304; CHE 357 OR CHE 377; CHE 328 OR CHE 384; CHE 487 - Research in Chemistry 0-6 credits OR CHE 495 - Senior Research 3 credits, CHE 496 - Senior Research 3 credits (see note 3); two electives from CHE 345, CHE 461, CHE 346, CHE 348, CHE 351, CHE 353, CHE 358, CHE 376, CHE 377, CHE 378, PHY 251, ESG 281). Biological Chemistry Option (CHE 328 OR CHE 384; BIO 202; CHE 346, CHE 461 (recommended) OR BIO 361; BIO 310 OR BIO 362; one organic or inorganic chemistry elective from CHE 345, CHE 461, CHE 346, CHE 348, CHE 376, CHE 377, CHE 378, CHE 495, CHE 496). Chemical Physics Option (CHE 304; CHE 351 OR CHE 353; CHE 357; AMS 210 OR MAT 211 OR AMS 261 OR MAT 303 (see note 6); PHY 251; PHY 252; one elective from CHE 358, PHY 277, PHY 300, PHY 307, PHY 301, PHY 303, PHY 306). Environmental Chemistry Option (CHE 304; CHE 310; CHE 357 OR CHE 377 OR CHE 311; CHE 328 OR CHE 384; BIO 201 OR BIO 113; ATM 397 (see note 6 for possible substitutions)). Marine and Atmospheric Chemistry Option (ATM 205; MAR 308; MAR 333; MAR 351; two electives from MAR 301, MAR 302, MAR 334, MAR 336, MAR 394, ATM 305, ATM 345, ATM 397)."
+    },
+    {
+      "id": "chemistry-bs.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "CHE 303 is also a core requirement. Confirm the writing course is counted once, since reuse is not allowed.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 303"
+          },
+          {
+            "type": "course",
+            "code": "CHE 304"
+          },
+          {
+            "type": "course",
+            "code": "CHE 384"
+          }
+        ]
+      },
+      "sourceText": "Each student majoring in Chemistry must use CHE 303, CHE 304, or CHE 384 to satisfy the writing requirement for the Chemistry major (a satisfactory grade is required)."
+    },
+    {
+      "id": "chemistry-bs.grade-exception",
+      "label": "grade-exception",
+      "title": "Grade exception for three major courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "Three courses used for the major may be passed with a grade of C- (courses not identified on the page).",
+        "reason": "The page does not identify which three courses may carry a C- grade, so the exception cannot be applied exactly."
+      },
+      "sourceText": "All of the courses used to fulfill the requirements of the major (CHE, MAT, PHY, BIO, etc.) must be passed with a letter grade of C or higher, with the exception of three courses, for which the grade may be C-."
+    },
+    {
+      "id": "chemistry-bs.upper-division-residency",
+      "label": "upper-division-residency",
+      "title": "Upper-division chemistry residency",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 12 credits of upper-division work in chemistry must be taken at Stony Brook, in at least two of the major subdisciplines (inorganic, physical, and organic chemistry).",
+        "reason": "Residency is limited to upper-division chemistry credits spread across subdisciplines, which no residency rule type expresses."
+      },
+      "sourceText": "At least 12 credits of upper-division work in chemistry must be taken at Stony Brook; these must be taken in at least two of the major subdisciplines (inorganic, physical, and organic chemistry)."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "chemistry-bs.core",
+        "chemistry-bs.area",
+        "chemistry-bs.writing"
+      ],
+      "sourceText": "All of the courses used to fulfill the requirements of the major (CHE, MAT, PHY, BIO, etc.) must be passed with a letter grade of C or higher... G/P/NC grades are not acceptable in courses taken for the major."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "chemistry-bs.core",
+        "chemistry-bs.area",
+        "chemistry-bs.writing"
+      ],
+      "sourceText": "All of the courses used to fulfill the requirements of the major must be passed with a letter grade of C or higher, with the exception of three courses, for which the grade may be C-. No transferred course with a grade lower than C may be used to fulfill any major requirement."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "chemistry-bs.sub.math-131-132",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 131",
+          "MAT 132"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "MAT 125 (or MAT 130/MAT 125), MAT 126, MAT 127 or MAT 141, MAT 142 or MAT 171 or AMS 151, AMS 161 for MAT 131, MAT 132",
+        "reason": "The alternate sequence wording is ambiguous about which courses combine into each alternative."
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate sequences may be substituted for major requirements or prerequisites: MAT 125 (or MAT 130 /MAT 125), MAT 126, MAT 127 or MAT 141, MAT 142 or MAT 171 or AMS 151, AMS 161 for MAT 131, MAT 132."
+    },
+    {
+      "id": "chemistry-bs.sub.math-203",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 203"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 210"
+          },
+          {
+            "type": "course",
+            "code": "MAT 211"
+          },
+          {
+            "type": "course",
+            "code": "AMS 261"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "AMS 210 or MAT 211 or AMS 261 for MAT 203."
+    },
+    {
+      "id": "chemistry-bs.sub.physics",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "PHY 131",
+          "PHY 132",
+          "PHY 133",
+          "PHY 134"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "PHY 141/PHY 133, PHY 142/PHY 134 or PHY 125, PHY 126/PHY 133, PHY 127/PHY 134 for PHY 131/PHY 133, PHY 132/PHY 134",
+        "reason": "The alternate physics pairings are ambiguous for the PHY 132/PHY 134 slot and the PHY 125 alternative."
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate sequences may be substituted for physics requirements or prerequisites: PHY 141 /PHY 133, PHY 142 /PHY 134 or PHY 125, PHY 126 /PHY 133, PHY 127 /PHY 134 for PHY 131 /PHY 133, PHY 132 /PHY 134."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "anyOf",
+          "rules": [
+            {
+              "type": "course",
+              "code": "CHE 303"
+            },
+            {
+              "type": "course",
+              "code": "CHE 304"
+            },
+            {
+              "type": "course",
+              "code": "CHE 384"
+            }
+          ]
+        },
+        "sourceText": "Each student majoring in Chemistry must use CHE 303, CHE 304, or CHE 384 to satisfy the writing requirement for the Chemistry major (a satisfactory grade is required). These courses ... satisfy the university Stony Brook Curriculum WRTD learning objective."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 133",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MAT 132",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CHE 321",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 327",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "MAT 203",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CHE 322",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 328",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 385",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CHE 301",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 303",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "CHE 375",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CHE 302",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 304",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CHE 357",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "CHE 487",
+          "alternatives": [
+            "CHE 495"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CHE 496",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division CHE Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "ACS certification is recommended for students pursuing chemical sciences careers. Requirements differ by option: chemical science option needs CHE 346/CHE 461 or BIO 361; biological chemistry option needs one more chemistry or related elective, CHE 304, and one of several research/lab routes; chemical physics option needs CHE 346/CHE 461 plus 6 additional credits or an approved 180-hour research experience; marine and atmospheric chemistry and environmental chemistry options have their own ACS routes. See the catalog note on ACS certification."
+    },
+    {
+      "topic": "advising",
+      "text": "Students who fulfill ACS requirements with an off-campus research experience must register for CHE 487 (0 credits) and prepare a written research report evaluated by a Stony Brook Chemistry faculty member."
+    },
+    {
+      "topic": "advising",
+      "text": "Computer programming knowledge is valuable; CHE 358 or another computer programming course is recommended."
+    },
+    {
+      "topic": "other",
+      "text": "The Bachelor of Arts in Chemistry is a separate degree with more elective flexibility. Students may also see the Interdisciplinary Program in Engineering Chemistry for materials science combinations."
+    },
+    {
+      "topic": "other",
+      "text": "Chemistry Honors Program: students with a cumulative GPA of at least 3.00 in science and mathematics through the junior year are eligible; requires a senior thesis based on senior-year research, an oral examination, and a 3.40 senior-year chemistry GPA for conferral. Honors is optional and not part of the major requirements."
+    },
+    {
+      "topic": "other",
+      "text": "Chemistry Secondary Teacher Education Program: see the Education and Teacher Certification entry."
+    },
+    {
+      "topic": "other",
+      "text": "B.S./M.S. program in Chemistry: applications at the end of the junior year; includes two 500-level CHE courses, GRD 500, and a fifth-year CHE 599 research sequence. Not evaluated here."
+    },
+    {
+      "topic": "grading",
+      "text": "Three major courses may be passed with C- (not identified on the page). G/P/NC grades are not acceptable in courses taken for the major."
+    },
+    {
+      "topic": "sbc",
+      "text": "Sample sequence footnote: CHE 496 is taken in the spring of senior year only if CHE 495 was taken the prior fall."
+    },
+    {
+      "topic": "other",
+      "text": "The page lists a 66-credit minimum for the major."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1390",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

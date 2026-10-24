@@ -1,0 +1,136 @@
+{
+  "id": "environmental-engineering",
+  "name": "Environmental Engineering",
+  "kind": "minor",
+  "degree": "Minor in Environmental Engineering",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "environmental-engineering.required-fluid-mechanics",
+      "label": "required-fluid-mechanics",
+      "title": "Two required courses: fluid mechanics course",
+      "rule": {
+        "id": "environmental-engineering.required-fluid-mechanics.course",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ESM 212"
+          },
+          {
+            "manualCheck": "Marked with * on the page: may be taken as a technical elective if not taken as a required course.",
+            "type": "course",
+            "code": "BME 305"
+          },
+          {
+            "manualCheck": "Marked with * on the page: may be taken as a technical elective if not taken as a required course.",
+            "type": "course",
+            "code": "CME 318"
+          },
+          {
+            "manualCheck": "Marked with * on the page: may be taken as a technical elective if not taken as a required course.",
+            "type": "course",
+            "code": "MEC 364"
+          }
+        ]
+      },
+      "sourceText": "Two required courses: ESM 212 - Introduction to Environmental Engineering 3 credits OR BME 305 - Biofluids 3 credits * OR CME 318 - Chemical Engineering Fluid Mechanics 3 credits * OR MEC 364 - Introduction to Fluid Mechanics 3 credits * Notes: *May be taken as a technical elective if not taken as a required course."
+    },
+    {
+      "id": "environmental-engineering.required-physical-chemistry",
+      "label": "required-physical-chemistry",
+      "title": "One course from physical chemistry",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 312"
+          },
+          {
+            "type": "course",
+            "code": "CHE 301"
+          }
+        ]
+      },
+      "sourceText": "One course selected from CHE 312 - Physical Chemistry for the Life Sciences 3 credits OR CHE 301 - Physical Chemistry I 4 credits"
+    },
+    {
+      "id": "environmental-engineering.technical-electives",
+      "label": "technical-electives",
+      "title": "Technical Electives",
+      "rule": {
+        "manualCheck": "Choose four technical electives, at least one of which must be an ESG or ESM course. Notes on the page: ESM 488, ESM 499 and ESG 487 carry 0 to 6, 0 to 4 and 0 to 3 credits, respectively, and at least 3 credits require permission of the Director of the Minor. ESG 302 and CME 304 are available only to students in the College of Arts and Sciences who are not CEAS majors. BME 305, CME 318 and MEC 364 count only if not used as a required course. Any substitution of a course outside this list requires the permission of the director of the minor before registering.",
+        "type": "choose",
+        "count": 4,
+        "from": {
+          "courses": [
+            "ENV 301",
+            "ESG 332",
+            "ESM 488",
+            "ESM 499",
+            "ESG 487",
+            "BIO 386",
+            "ENS 311",
+            "CHE 302",
+            "GEO 315",
+            "GEO 316",
+            "GEO 318",
+            "MAR 301",
+            "MAR 336",
+            "MAR 392",
+            "MAR 394",
+            "ATM 397",
+            "CHE 310",
+            "BME 305",
+            "CME 318",
+            "MEC 364",
+            "ESG 302",
+            "CME 304"
+          ],
+          "excludeUsedBy": [
+            "environmental-engineering.required-fluid-mechanics"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "ESG",
+                "ESM"
+              ]
+            },
+            "minCourses": 1
+          }
+        ]
+      },
+      "sourceText": "Technical Electives Choose four, of which at least one must be an ESG or ESM course: ENV 301 - Sustainability of the Long Island Pine Barrens 3 credits; ESG 332 - Materials Science I: Structure and Properties of Materials 3 credits; ESM 488 - Cooperative Industrial Practice 0-6 credits OR ESM 499 - Research in Materials Science 0-4 credits OR ESG 487 - Cooperative Research in Technological Solutions 0-3 credits; BIO 386 - Ecosystem Ecology and the Global Environment 3 credits OR ENS 311 - Ecosystem Ecology and the Global Environment 3 credits; CHE 302 - Physical Chemistry II 4 credits; GEO 315 - Groundwater Hydrology 3 credits; GEO 316 - Geochemistry of Surficial Processes 4 credits; GEO 318 - Engineering Geology and Coastal Processes 3 credits; MAR 301 - Environmental Microbiology 4 credits; MAR 336 - Marine Pollution 3 credits; MAR 392 - Waste Management Issues 3 credits; MAR 394 - Environmental Toxicology and Public Health 3 credits; ATM 397 - Air Pollution and Global Warming 3 credits; CHE 310 - Chemistry in Technology and the Environment 3 credits. Notes: *at least 3 credits, with permission of the Director of the Minor. Students in the College of Arts and Sciences (but not CEAS majors) may also use ESG 302 - Thermodynamics of Materials or CME 304 Chemical Engineering Thermodynamics I as a technical elective for the minor in Environmental Engineering. Any substitution of a course outside this list for a technical elective requires the permission of the director of the minor prior to registering for the desired course."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Undergraduate Program Coordinator and Advisor: Samantha Riccardi, Engineering 231, esg_undergradadvising@stonybrook.edu, (631) 632-8381."
+    },
+    {
+      "topic": "other",
+      "text": "Any substitution of a course outside the technical elective list requires the permission of the director of the minor prior to registering for the desired course."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1447",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

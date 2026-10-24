@@ -1,0 +1,209 @@
+{
+  "id": "china-studies",
+  "name": "China Studies",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "china-studies.1",
+      "label": "1",
+      "title": "Foundation Course (3 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "AAS 220",
+            "AAS 223",
+            "AAS 228"
+          ]
+        }
+      },
+      "sourceText": "Select one course from the following: AAS 220 - China: Language and Culture 3 credits; AAS 223 - China: Society and Civilization 3 credits; AAS 228 - China: History and Geography 3 credits"
+    },
+    {
+      "id": "china-studies.2",
+      "label": "2",
+      "title": "Chinese Language Courses (6-7 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "CHI 101",
+            "CHI 112",
+            "CHI 120",
+            "CHI 201",
+            "CHI 211",
+            "CHI 212",
+            "CHI 220",
+            "CHI 311",
+            "CHI 312",
+            "CHI 410",
+            "CHI 411",
+            "CHI 412",
+            "CHI 421",
+            "CHI 422",
+            "CHI 426",
+            "CHI 447",
+            "CHI 487"
+          ]
+        },
+        "constraints": []
+      },
+      "sourceText": "Two Chinese language courses, the equivalent of CHI 112 or higher, are required from the following (6-7 credits): CHI 101 - Intensive Elementary Chinese 6 credits; CHI 112 - Elementary Chinese II 4 credits; CHI 120 - Elementary Chinese for Heritage Speakers 4 credits; CHI 201 - Intensive Intermediate Chinese 6 credits; CHI 211 - Intermediate Chinese I 3 credits; CHI 212 - Intermediate Chinese II 3 credits; CHI 220 - Intermediate Chinese for Heritage Speakers 3 credits; CHI 311 - Advanced Chinese I 3 credits; CHI 312 - Advanced Chinese II 3 credits; CHI 410 - Business Chinese 3 credits; CHI 411 - Readings in Journalistic Chinese 3 credits; CHI 412 - Readings in Classical Chinese 3 credits; CHI 421 - Chinese Poetry and Short Stories 3 credits; CHI 422 - Chinese Lyric Prose and Plays 3 credits; CHI 426 - Structure of Mandarin Chinese 3 credits; CHI 447 - Directed Readings in Chinese 1-6 credits; CHI 487 - Supervised Research in Chinese 0-3 credits"
+    },
+    {
+      "id": "china-studies.3",
+      "label": "3",
+      "title": "Elective Courses (9 credits)",
+      "rule": {
+        "manualCheck": "AAS 340, AAS 391, AAS 392, AAS 396, AAS 401, AAS 447, and AAS 487 count only when the topic is appropriate; confirm the topic with the Director of China Studies. Some courses are crosslisted with other departments and may be taken for credit under only one listing.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "AAS 240",
+            "AAS 287",
+            "AAS 300",
+            "AAS 339",
+            "AAS 340",
+            "AAS 344",
+            "AAS 351",
+            "AAS 352",
+            "AAS 360",
+            "AAS 370",
+            "AAS 371",
+            "AAS 372",
+            "AAS 379",
+            "AAS 385",
+            "AAS 387",
+            "AAS 391",
+            "AAS 392",
+            "AAS 396",
+            "AAS 401",
+            "AAS 440",
+            "AAS 447",
+            "AAS 487",
+            "AAS 358",
+            "CHI 220",
+            "CHI 212",
+            "CHI 311",
+            "CHI 312",
+            "CHI 410",
+            "CHI 411",
+            "CHI 412",
+            "CHI 421",
+            "CHI 422",
+            "CHI 426",
+            "HIS 219"
+          ],
+          "excludeUsedBy": [
+            "china-studies.2"
+          ]
+        }
+      },
+      "sourceText": "Select three courses from the following: AAS 240 - Confucianism and Daoism 3 credits (see note 5); AAS 287 - Islam in China 3 credits (see note 5); AAS 300 - Intellectual History of East Asia 3 credits; AAS 339 - Contemporary China: History, Politics, and Diplomacy 3 credits; AAS 340 - Topics in Asian History 3 credits (when topic is appropriate; see notes 4 & 5); AAS 344 - Learning of Asian Languages 3 credits; AAS 351 - Revolutionary China: Politics, Culture, and Power 3 credits (see note 5); AAS 352 - Environmental History of China 3 credits (see note 5); AAS 360 - Chinese Sociolinguistics 3 credits; AAS 370 - Intercultural Communication 3 credits (see note 5); AAS 371 - Ancient China 3 credits (see note 5); AAS 372 - Family, Marriage, and Kinship in China 3 credits (see note 5); AAS 379 - Cultural Diversity in China 3 credits (see note 5); AAS 385 - Translation Studies of Asian Languages 3 credits; AAS 387 - Islam and Confucianism 3 credits; AAS 391 - Humanities Topics in Asian and Asian American Studies 3 credits (when topic is appropriate; see note 4); AAS 392 - Social Science Topics in Asian and Asian American Studies 3 credits (when topic is appropriate; see note 4); AAS 396 - Topics in Sinophone Literature and Culture 3 credits (when topic is appropriate; see note 4); AAS 401 - Proseminar in Asian and Asian American Studies 3 credits (when topic is appropriate; see note 4); AAS 440 - Inter-Asia Cultural Studies 3 credits; AAS 447 - Directed Readings in Asian and Asian American Studies 1-6 credits (when topic is appropriate; see note 4); AAS 487 - Supervised Research in Asian and Asian American Studies 0-3 credits (when topic is appropriate; see note 4); CHI 220 - Intermediate Chinese for Heritage Speakers 3 credits; AAS 358 - China's Lang, Media, Pop Culture in Global Context 3 credits; CHI 212 - Intermediate Chinese II 3 credits (see note 1); CHI 311 - Advanced Chinese I 3 credits (see note 1); CHI 312 - Advanced Chinese II 3 credits (see note 1); CHI 410 - Business Chinese 3 credits (see note 1); CHI 411 - Readings in Journalistic Chinese 3 credits (see note 1); CHI 412 - Readings in Classical Chinese 3 credits (see note 1); CHI 421 - Chinese Poetry and Short Stories 3 credits (see note 1); CHI 422 - Chinese Lyric Prose and Plays 3 credits (see note 1); CHI 426 - Structure of Mandarin Chinese 3 credits (see note 1); HIS 219 - Introduction to Chinese History and Civilization 3 credits"
+    },
+    {
+      "id": "china-studies.upper-division",
+      "label": "upper-division",
+      "title": "Upper-division credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 9 credits must be taken in courses numbered 300 or higher.",
+        "reason": "Program-wide minimum credits at the 300 level cannot be expressed with the available rule types."
+      },
+      "sourceText": "At least 9 credits must be taken in courses numbered 300 or higher. All courses must be completed with a letter grade of C or higher."
+    },
+    {
+      "id": "china-studies.total-credits",
+      "label": "total-credits",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 18 credits.",
+        "reason": "Program-wide total credit requirement has no dedicated rule type."
+      },
+      "sourceText": "Completion of the minor requires 18 credits."
+    },
+    {
+      "id": "china-studies.transfer-credit",
+      "label": "transfer-credit",
+      "title": "Transfer credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "Up to six credits taken in China Studies-related courses from other institutions may count toward the China Studies minor with approval of the Director of China Studies.",
+        "reason": "Credit cap with an approval condition cannot be expressed with the available rule types."
+      },
+      "sourceText": "Up to six credits taken in China Studies-related courses from other institutions may count toward the China Studies minor with approval of the Director of China Studies."
+    },
+    {
+      "id": "china-studies.study-abroad",
+      "label": "study-abroad",
+      "title": "Study abroad credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "Up to nine (9) credits earned from SBU's study abroad/exchange programs in China count toward the minor in China Studies with approval of the Director of China Studies.",
+        "reason": "Credit cap with an approval condition cannot be expressed with the available rule types."
+      },
+      "sourceText": "Up to nine (9) credits earned from SBU's study abroad/exchange programs in China count toward the minor in China Studies with approval of the Director of China Studies."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "china-studies.1",
+        "china-studies.2",
+        "china-studies.3"
+      ],
+      "sourceText": "All courses must be completed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "china-studies.1",
+        "china-studies.2",
+        "china-studies.3"
+      ],
+      "sourceText": "All courses must be completed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Director of the Minor: Yi Wang. Students should consult the Director of China Studies before studying abroad."
+    },
+    {
+      "topic": "other",
+      "text": "Students may fulfill the language requirement by taking Chinese courses offered by the Department of Asian and Asian American Studies on the SBU campus or department-approved study-abroad courses overseas."
+    },
+    {
+      "topic": "other",
+      "text": "Courses used to complete Requirement 2 (Chinese language courses) may not also be used to complete Requirement 3 (elective courses)."
+    },
+    {
+      "topic": "other",
+      "text": "Some courses are crosslisted with at least one other academic department. Students earn credit by registering for either course but may not repeat the course by enrolling a second time under the other option."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1396",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

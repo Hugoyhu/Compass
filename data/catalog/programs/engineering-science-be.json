@@ -1,0 +1,1219 @@
+{
+  "id": "engineering-science-be",
+  "name": "Engineering Science, BE",
+  "kind": "major",
+  "degree": "Bachelor of Engineering in Engineering Science",
+  "approxCredits": 108,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "engineering-science-be.A-mathematics",
+      "label": "A-Mathematics",
+      "title": "Core: Mathematics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "engineering-science-be.A-mathematics.ams151",
+            "type": "course",
+            "code": "AMS 151"
+          },
+          {
+            "id": "engineering-science-be.A-mathematics.ams161",
+            "type": "course",
+            "code": "AMS 161"
+          },
+          {
+            "id": "engineering-science-be.A-mathematics.ams261",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 261"
+              },
+              {
+                "type": "course",
+                "code": "MAT 203"
+              }
+            ]
+          },
+          {
+            "id": "engineering-science-be.A-mathematics.ams361",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 361"
+              },
+              {
+                "type": "course",
+                "code": "MAT 303"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "AMS 151 - Applied Calculus I; AMS 161 - Applied Calculus II; AMS 261 - Applied Calculus III OR MAT 203 - Calculus III with Applications; AMS 361 - Applied Calculus IV: Differential Equations OR MAT 303 - Calculus IV with Applications. Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161 in major requirements or prerequisites: MAT 125, MAT 126, MAT 127 or MAT 131, MAT 132"
+    },
+    {
+      "id": "engineering-science-be.A-natural-sciences",
+      "label": "A-Natural Sciences",
+      "title": "Core: Natural Sciences",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "id": "engineering-science-be.A-natural-sciences.phy131",
+                "type": "course",
+                "code": "PHY 131"
+              },
+              {
+                "id": "engineering-science-be.A-natural-sciences.phy133",
+                "type": "course",
+                "code": "PHY 133"
+              },
+              {
+                "id": "engineering-science-be.A-natural-sciences.phy132",
+                "type": "course",
+                "code": "PHY 132"
+              },
+              {
+                "id": "engineering-science-be.A-natural-sciences.phy134",
+                "type": "course",
+                "code": "PHY 134"
+              }
+            ]
+          },
+          {
+            "id": "engineering-science-be.A-natural-sciences.modern-physics",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 251"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 252"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ESG 281"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "id": "engineering-science-be.A-natural-sciences.che131",
+                "type": "course",
+                "code": "CHE 131"
+              },
+              {
+                "id": "engineering-science-be.A-natural-sciences.che133",
+                "type": "course",
+                "code": "CHE 133"
+              },
+              {
+                "id": "engineering-science-be.A-natural-sciences.che132",
+                "type": "course",
+                "code": "CHE 132"
+              },
+              {
+                "id": "engineering-science-be.A-natural-sciences.che134",
+                "type": "course",
+                "code": "CHE 134"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "PHY 131 - Classical Physics I; PHY 133 - Classical Physics Laboratory I; PHY 132 - Classical Physics II; PHY 134 - Classical Physics Laboratory II; PHY 251 - Modern Physics AND PHY 252 - Modern Physics Laboratory OR ESG 281 - Engineering Introduction to the Solid State; CHE 131 - General Chemistry IB; CHE 133 - General Chemistry Laboratory I; CHE 132 - General Chemistry II; CHE 134 - General Chemistry Laboratory II"
+    },
+    {
+      "id": "engineering-science-be.A-computer-science",
+      "label": "A-Computer Science",
+      "title": "Core: Computer Science",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ESG 111"
+          },
+          {
+            "type": "course",
+            "code": "CSE 114"
+          }
+        ]
+      },
+      "sourceText": "ESG 111 - Programming for Engineers OR CSE 114 - Introduction to Object-Oriented Programming"
+    },
+    {
+      "id": "engineering-science-be.A-engineering-science",
+      "label": "A-Engineering Science",
+      "title": "Core: Engineering Science",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "engineering-science-be.A-engineering-science.esg100",
+            "type": "course",
+            "code": "ESG 100"
+          },
+          {
+            "type": "course",
+            "code": "ESG 201"
+          },
+          {
+            "id": "engineering-science-be.A-engineering-science.esg312",
+            "type": "course",
+            "code": "ESG 312"
+          },
+          {
+            "type": "course",
+            "code": "ESG 375"
+          },
+          {
+            "type": "course",
+            "code": "ESG 420"
+          },
+          {
+            "type": "course",
+            "code": "ESM 450"
+          },
+          {
+            "type": "course",
+            "code": "ESM 460"
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "id": "engineering-science-be.A-engineering-science.thermo",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ESG 302"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CME 304"
+                  }
+                ]
+              },
+              {
+                "id": "engineering-science-be.A-engineering-science.esg332",
+                "type": "course",
+                "code": "ESG 332"
+              },
+              {
+                "type": "course",
+                "code": "ESG 333"
+              },
+              {
+                "type": "course",
+                "code": "ESE 271"
+              },
+              {
+                "id": "engineering-science-be.A-engineering-science.mec260",
+                "type": "course",
+                "code": "MEC 260"
+              },
+              {
+                "type": "course",
+                "code": "MEC 363"
+              },
+              {
+                "type": "course",
+                "code": "ESM 335"
+              },
+              {
+                "type": "course",
+                "code": "ESM 212"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "ESG 100 - Introduction to Engineering Science; ESG 201 - Learning from Engineering Disaster; ESG 312 - Engineering Laboratory; ESG 375 - Fundamentals of Professional Engineering; ESG 420 - Fluid Flow, Heat & Mass Transport; ESM 450 - Engineering Systems Laboratory; ESM 460 - Advanced Engineering Laboratory; and the following eight courses: Materials Science and Engineering: ESG 302 OR CME 304; ESG 332; ESG 333; Electrical Engineering and Electronic Properties: ESE 271; Mechanical Engineering and Properties: MEC 260, MEC 363, ESM 335; Environmental Engineering: ESM 212"
+    },
+    {
+      "id": "engineering-science-be.A-synthesis-design",
+      "label": "A-Engineering Synthesis and Design",
+      "title": "Core: Engineering Synthesis and Design",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ESG 316"
+          },
+          {
+            "id": "engineering-science-be.A-synthesis-design.esg440",
+            "type": "course",
+            "code": "ESG 440"
+          },
+          {
+            "id": "engineering-science-be.A-synthesis-design.esg441",
+            "type": "course",
+            "code": "ESG 441"
+          },
+          {
+            "type": "course",
+            "code": "ESM 455"
+          }
+        ]
+      },
+      "sourceText": "ESG 316 - Engineering Science Design Methods; ESG 440 - Capstone Engineering Design I; ESG 441 - Capstone Engineering Design II; ESM 455 - Materials and Processes in Manufacturing Design"
+    },
+    {
+      "id": "engineering-science-be.B",
+      "label": "B",
+      "title": "Engineering Specialization and Technical Electives",
+      "rule": {
+        "manualCheck": "Student must have declared the area of specialization in writing by the end of the junior year, chosen in consultation with a faculty advisor. Other technical electives may be substituted only with approval of the undergraduate program director.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "engineering-science-be.B.biotechnology",
+            "sourceText": "Biotechnology: BIO 202 and ESM 453 must be completed; two courses from the following list; ESM 488 OR ESM 499 may be used ONCE as a technical elective.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BIO 202"
+              },
+              {
+                "type": "course",
+                "code": "ESM 453"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "ESM 469",
+                    "BIO 203",
+                    "BIO 328",
+                    "BIO 334",
+                    "BME 304",
+                    "BME 354",
+                    "BME 381",
+                    "BME 402",
+                    "BME 404",
+                    "BME 430",
+                    "BME 481",
+                    "ESM 488",
+                    "ESM 499"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "ESM 488",
+                        "ESM 499"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "engineering-science-be.B.civil-engineering",
+            "sourceText": "Civil Engineering: GEO 102, GEO 112, CIV 310; two technical electives chosen from the following list; ESM 488 or ESM 499 may be used ONCE as a technical elective.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "GEO 102"
+              },
+              {
+                "type": "course",
+                "code": "GEO 112"
+              },
+              {
+                "type": "course",
+                "code": "CIV 310"
+              },
+              {
+                "manualCheck": "CSE 390 counts only when the topic is Solid Modeling.",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "ARH 205",
+                    "CIV 210",
+                    "CIV 305",
+                    "CIV 407",
+                    "CSE 390",
+                    "MEC 442",
+                    "MEC 455",
+                    "EST 330",
+                    "EST 392",
+                    "ECO 373",
+                    "MAR 392",
+                    "MAR 393",
+                    "MEC 262",
+                    "ESM 488",
+                    "ESM 499"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "ESM 488",
+                        "ESM 499"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "engineering-science-be.B.environmental-engineering",
+            "sourceText": "Environmental Engineering: BIO 201; CHE 312 OR CHE 301; two technical electives chosen from the list; ESM 488 or ESM 499 may be used ONCE as a technical elective.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BIO 201"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 312"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 301"
+                  }
+                ]
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "ATM 205",
+                    "ATM 247",
+                    "ATM 305",
+                    "ATM 345",
+                    "ATM 348",
+                    "ATM 397",
+                    "CHE 302",
+                    "CHE 321",
+                    "CHE 361",
+                    "CHE 362",
+                    "ECO 373",
+                    "ENV 301",
+                    "ESM 336",
+                    "ESM 488",
+                    "ESM 499",
+                    "GEO 309",
+                    "GEO 316",
+                    "MAR 301",
+                    "MAR 308",
+                    "MAR 320",
+                    "MAR 333",
+                    "MAR 336",
+                    "MAR 340",
+                    "MAR 385",
+                    "MAR 392",
+                    "MAR 393",
+                    "MAR 394"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "ESM 488",
+                        "ESM 499"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "engineering-science-be.B.electronics-engineering",
+            "sourceText": "Electronics Engineering: ESM 336 and ESM 339; two technical elective courses from the list; ESM 488 or ESM 499 may be used ONCE as a technical elective.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ESM 336"
+              },
+              {
+                "type": "course",
+                "code": "ESM 339"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "ESE 118",
+                    "ESE 272",
+                    "ESE 304",
+                    "ESE 315",
+                    "ESE 325",
+                    "ESE 330",
+                    "ESE 411",
+                    "ESM 488",
+                    "ESM 499",
+                    "MEC 456",
+                    "MEC 457"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "ESM 488",
+                        "ESM 499"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "engineering-science-be.B.materials-science-engineering",
+            "sourceText": "Materials Science and Engineering: ESM 336 and ESM 325; two technical elective courses from the list; ESM 488 or ESM 499 may be used ONCE as a technical elective.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ESM 336"
+              },
+              {
+                "type": "course",
+                "code": "ESM 325"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "ESM 213",
+                    "ESM 339",
+                    "ESM 453",
+                    "ESM 469",
+                    "ESM 400",
+                    "ESM 475",
+                    "ESM 486",
+                    "ESM 488",
+                    "ESM 499",
+                    "MEC 456",
+                    "MEC 457"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "ESM 488",
+                        "ESM 499"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "engineering-science-be.B.mechanical-manufacturing-engineering",
+            "sourceText": "Mechanical and Manufacturing Engineering: MEC 262 and MEC 310; two technical elective courses from the list; other upper level MEC coursework (C or higher) may be counted with permission; ESM 488 or ESM 499 may be used ONCE as a technical elective.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MEC 262"
+              },
+              {
+                "type": "course",
+                "code": "MEC 310"
+              },
+              {
+                "manualCheck": "Other upper-level MEC coursework completed with a grade of C or higher may count as a technical elective with permission of the ESG Undergraduate Program Director.",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "AMS 310",
+                    "ESM 339",
+                    "ESM 486",
+                    "MEC 325",
+                    "MEC 410",
+                    "MEC 411",
+                    "MEC 442",
+                    "MEC 455",
+                    "MEC 457",
+                    "ESM 488",
+                    "ESM 499"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "ESM 488",
+                        "ESM 499"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "engineering-science-be.B.nanoscale-engineering",
+            "sourceText": "Nanoscale Engineering: ESM 213 and ESM 336; two technical elective courses from the list; ESM 488 OR ESM 499 may be used ONCE as a technical elective.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ESM 213"
+              },
+              {
+                "type": "course",
+                "code": "ESM 336"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "ESM 339",
+                    "ESM 469",
+                    "CHE 301",
+                    "CHE 302",
+                    "CHE 312",
+                    "CHE 321",
+                    "CHE 322",
+                    "CHE 345",
+                    "CHE 351",
+                    "CHE 378",
+                    "BME 381",
+                    "ESM 325",
+                    "ESM 453",
+                    "ESM 400",
+                    "ESM 488",
+                    "ESM 499"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "ESM 488",
+                        "ESM 499"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "engineering-science-be.B.engineering-management",
+            "sourceText": "Engineering Management: EST 392 and EST 326; two technical elective courses chosen from the following list.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "EST 392"
+              },
+              {
+                "type": "course",
+                "code": "EST 326"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "AMS 310",
+                    "ACC 210",
+                    "BUS 330",
+                    "BUS 340",
+                    "BUS 348",
+                    "EST 305",
+                    "EST 327",
+                    "EST 391",
+                    "EST 393",
+                    "ESM 486",
+                    "ISE 320"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "The area of specialization, composed of four technical electives, must be declared in writing by the end of the junior year. The eight areas of specialization are biotechnology, civil engineering, environmental engineering, electronics engineering, materials science and engineering, mechanical and manufacturing engineering, nanoscale engineering, and engineering management."
+    },
+    {
+      "id": "engineering-science-be.C",
+      "label": "C",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Student receives an S grade for ESG 300 after the writing standard in ESG 312 technical reports is judged acceptable.",
+        "type": "course",
+        "code": "ESG 300"
+      },
+      "sourceText": "ESG 300 - Writing in Engineering Science 0 credits. All degree candidates must demonstrate skill in written English at a level acceptable for Engineering Science majors. The Engineering Science student must register for the writing course ESG 300 concurrently with ESG 312."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "engineering-science-be.A-mathematics",
+        "engineering-science-be.A-natural-sciences",
+        "engineering-science-be.A-computer-science",
+        "engineering-science-be.A-engineering-science",
+        "engineering-science-be.A-synthesis-design",
+        "engineering-science-be.B"
+      ],
+      "sourceText": "All courses taken to satisfy Requirements A and B above must be taken for a letter grade."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "engineering-science-be.A-mathematics.ams151",
+        "engineering-science-be.A-mathematics.ams161",
+        "engineering-science-be.A-mathematics.ams261",
+        "engineering-science-be.A-mathematics.ams361",
+        "engineering-science-be.A-natural-sciences.phy131",
+        "engineering-science-be.A-natural-sciences.phy133",
+        "engineering-science-be.A-natural-sciences.phy132",
+        "engineering-science-be.A-natural-sciences.phy134",
+        "engineering-science-be.A-natural-sciences.che131",
+        "engineering-science-be.A-natural-sciences.che133",
+        "engineering-science-be.A-natural-sciences.che132",
+        "engineering-science-be.A-natural-sciences.che134",
+        "engineering-science-be.A-engineering-science.esg100",
+        "engineering-science-be.A-engineering-science.mec260",
+        "engineering-science-be.A-engineering-science.thermo",
+        "engineering-science-be.A-engineering-science.esg312",
+        "engineering-science-be.A-engineering-science.esg332",
+        "engineering-science-be.A-synthesis-design.esg440",
+        "engineering-science-be.A-synthesis-design.esg441",
+        "engineering-science-be.B"
+      ],
+      "sourceText": "A grade of C or higher is required in the following courses (or their equivalents): AMS 151, AMS 161, AMS 261, AMS 361; PHY 131, PHY 133, PHY 132, PHY 134; CHE 131, CHE 133, CHE 132, CHE 134; ESG 100, MEC 260, ESG 302, ESG 312, ESG 332, ESG 440, ESG 441; Each of the four required technical electives offered by the college."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "engineering-science-be.sub.calculus",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "AMS 151",
+          "AMS 161"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 126"
+              },
+              {
+                "type": "course",
+                "code": "MAT 127"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "MAT 132"
+              }
+            ]
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate calculus course sequences may be substituted for AMS 151, AMS 161 in major requirements or prerequisites: MAT 125, MAT 126, MAT 127 or MAT 131, MAT 132"
+    },
+    {
+      "id": "engineering-science-be.sub.physics",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "PHY 131",
+          "PHY 133",
+          "PHY 132",
+          "PHY 134"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 125"
+              },
+              {
+                "type": "course",
+                "code": "PHY 126"
+              },
+              {
+                "type": "course",
+                "code": "PHY 127"
+              },
+              {
+                "type": "course",
+                "code": "PHY 133"
+              },
+              {
+                "type": "course",
+                "code": "PHY 134"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 141"
+              },
+              {
+                "type": "course",
+                "code": "PHY 142"
+              },
+              {
+                "type": "course",
+                "code": "PHY 133"
+              },
+              {
+                "type": "course",
+                "code": "PHY 134"
+              }
+            ]
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate physics course sequences may be substituted for PHY 131/PHY 133, PHY 132/PHY 134: PHY 125, PHY 126, PHY 127, PHY 133, PHY 134 Classical Physics A, B, C and Laboratories or PHY 141, PHY 142, PHY 133, PHY 134 Classical Physics I, II: Honors and Laboratories"
+    },
+    {
+      "id": "engineering-science-be.sub.chemistry",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 131",
+          "CHE 133",
+          "CHE 132",
+          "CHE 134"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 152"
+          },
+          {
+            "type": "course",
+            "code": "CHE 154"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate chemistry course sequence may be substituted for CHE 131/133, CHE 132/134: CHE 152 - Molecular Science I and CHE 154 - Molecular Science Laboratory I"
+    }
+  ],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESG 100",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 151",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 133",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "AMS 161",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESG 111",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESG 201",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 134",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 261",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 133",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "ESG 281",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 271",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 361",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "ESG 302",
+          "alternatives": [
+            "CME 304"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ESG 312",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESG 300",
+          "credits": 0
+        },
+        {
+          "kind": "course",
+          "code": "ESG 332",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 260",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESM 212",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ESG 316",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESM 335",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 363",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ESG 375",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "ESG 440",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESM 450",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESG 420",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESG 333",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ESM 460",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESM 455",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESG 441",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Acceptance into the major: AOI and other CEAS students must have a cumulative GPA of 3.00, a GPA of 3.00 or above in all mathematics, physics, and chemistry courses with no more than one grade in the C range, and completed course evaluations for transferred courses used toward the major. Applications are due January 5 for Spring admission and June 5 for Fall admission, and must be submitted within one year of enrolling in the first course that applies toward major entry. Non-CEAS students and double major applicants apply through a separate, competitive process contingent on program capacity; meeting requirements does not guarantee acceptance."
+    },
+    {
+      "topic": "advising",
+      "text": "Students should choose their area of specialization in consultation with a faculty advisor and declare it in writing by the end of the junior year. Contact the Undergraduate Program Coordinator and Advisor for guidance."
+    },
+    {
+      "topic": "grading",
+      "text": "ESG 300 is graded S/unsatisfactory on the writing evaluation performed through ESG 312 rather than by letter grade."
+    },
+    {
+      "topic": "other",
+      "text": "The major requires approximately 108 credits, in addition to any credits needed for SBC and other University requirements."
+    },
+    {
+      "topic": "other",
+      "text": "ESM 488 (Cooperative Industrial Practice) or ESM 499 (Research in Materials Science), or other departmental independent research with program director permission, may be used once as a technical elective."
+    },
+    {
+      "topic": "other",
+      "text": "Engineering Chemistry (B.S., College of Arts and Sciences) and Physics of Materials (physics major pathway) are separate programs and are not part of this BE major. Minors of interest include Environmental Engineering, Manufacturing Engineering, Materials Science, and Nanotechnology Studies."
+    },
+    {
+      "topic": "other",
+      "text": "The BE Degree/MS Degree accelerated program is not modeled here; see the graduate program director for details."
+    },
+    {
+      "topic": "other",
+      "text": "The program is accredited by ABET under the General Criteria with no applicable program criteria."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1438",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

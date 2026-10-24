@@ -1,0 +1,236 @@
+{
+  "id": "italian-studies",
+  "name": "Italian Studies",
+  "kind": "minor",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "italian-studies.emphasis",
+      "label": "A or B",
+      "title": "Emphasis (complete one): Emphasis on Language or Emphasis on Italian Studies",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "italian-studies.emphasis.a",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ITL 211"
+              },
+              {
+                "type": "course",
+                "code": "ITL 212"
+              },
+              {
+                "id": "italian-studies.emphasis.a.311-312",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ITL 311"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ITL 312"
+                  }
+                ]
+              },
+              {
+                "id": "italian-studies.emphasis.a.395-396",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ITL 395"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ITL 396"
+                  }
+                ]
+              },
+              {
+                "id": "italian-studies.emphasis.a.411",
+                "manualCheck": "Credits for ITL 411 cannot be transferred from another institution without prior permission of the department.",
+                "type": "course",
+                "code": "ITL 411"
+              },
+              {
+                "id": "italian-studies.emphasis.a.412",
+                "manualCheck": "Credits for ITL 412 cannot be transferred from another institution without prior permission of the department.",
+                "type": "course",
+                "code": "ITL 412"
+              },
+              {
+                "id": "italian-studies.emphasis.a.electives",
+                "type": "choose",
+                "count": 3,
+                "from": {
+                  "subjects": [
+                    "ITL",
+                    "HUI"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "minFrom",
+                    "from": {
+                      "subjects": [
+                        "ITL",
+                        "HUI"
+                      ],
+                      "minNumber": 300
+                    },
+                    "minCourses": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "italian-studies.emphasis.b",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ITL 211"
+              },
+              {
+                "type": "course",
+                "code": "ITL 212"
+              },
+              {
+                "id": "italian-studies.emphasis.b.311-312",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ITL 311"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ITL 312"
+                  }
+                ]
+              },
+              {
+                "id": "italian-studies.emphasis.b.395-396",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ITL 395"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ITL 396"
+                  }
+                ]
+              },
+              {
+                "id": "italian-studies.emphasis.b.hui-200",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "subjects": [
+                    "HUI"
+                  ],
+                  "minNumber": 200,
+                  "maxNumber": 299
+                }
+              },
+              {
+                "id": "italian-studies.emphasis.b.electives",
+                "manualCheck": "Courses must be Italian studies courses at the 300 level or higher, chosen in consultation with the student's advisor. The page does not list the pool; confirm with advisor.",
+                "type": "choose",
+                "count": 3,
+                "from": {
+                  "subjects": [
+                    "ITL",
+                    "HUI"
+                  ],
+                  "minNumber": 300
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Students must complete either Emphasis A Language or Emphasis B Italian Studies. Emphasis on Language: ITL 211; ITL 212; ITL 311 OR ITL 312; ITL 395 OR ITL 396; ITL 411; ITL 412; Three additional courses with the designator ITL or HUI, at least one of which must be 300 level or higher. Emphasis on Italian Studies: ITL 211; ITL 212; ITL 311 OR ITL 312; ITL 395 OR ITL 396; Two HUI courses at the 200 level; Three additional courses at the 300 level or higher in Italian studies chosen in consultation with the student's advisor."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "italian-studies.emphasis"
+      ],
+      "sourceText": "All courses for the minor must be taken for a letter grade, excluding those graded S/U."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "italian-studies.emphasis.a.311-312",
+        "italian-studies.emphasis.a.395-396",
+        "italian-studies.emphasis.a.411",
+        "italian-studies.emphasis.a.412",
+        "italian-studies.emphasis.a.electives",
+        "italian-studies.emphasis.b.311-312",
+        "italian-studies.emphasis.b.395-396",
+        "italian-studies.emphasis.b.electives"
+      ],
+      "sourceText": "All upper-division courses for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 6,
+      "appliesTo": [
+        "italian-studies.emphasis.a.311-312",
+        "italian-studies.emphasis.a.395-396",
+        "italian-studies.emphasis.a.411",
+        "italian-studies.emphasis.a.412",
+        "italian-studies.emphasis.a.electives",
+        "italian-studies.emphasis.b.311-312",
+        "italian-studies.emphasis.b.395-396",
+        "italian-studies.emphasis.b.electives"
+      ],
+      "sourceText": "Transfer students who wish to graduate with a minor in Italian must take at least six credits of upper-division Italian courses in residence at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students who have studied Italian previously are encouraged to take the Italian Placement Exam offered through the Language Learning Research Center. High school language study is not counted for college credit. Students who believe they should be placed in a different level should consult the ITL Program Coordinator."
+    },
+    {
+      "topic": "other",
+      "text": "Completion of the minor with either emphasis requires 21-27 credits, depending on language placement."
+    },
+    {
+      "topic": "advising",
+      "text": "Students interested in teaching Italian should concentrate on courses taught in the Italian language. Students interested in other careers should choose courses in culture, film studies, and Italian American social issues."
+    },
+    {
+      "topic": "other",
+      "text": "Minor is available to students majoring in other disciplines."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1481",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

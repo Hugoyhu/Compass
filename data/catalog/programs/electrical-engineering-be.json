@@ -1,0 +1,743 @@
+{
+  "id": "electrical-engineering-be",
+  "name": "Electrical Engineering, BE",
+  "kind": "major",
+  "degree": "Bachelor of Engineering in Electrical Engineering",
+  "approxCredits": 100,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "electrical-engineering-be.mathematics",
+      "label": "mathematics",
+      "title": "Mathematics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "electrical-engineering-be.mathematics.calculus",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 161"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 132"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 127"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 261"
+              },
+              {
+                "type": "course",
+                "code": "MAT 203"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 361"
+              },
+              {
+                "type": "course",
+                "code": "MAT 303"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 210"
+              },
+              {
+                "type": "course",
+                "code": "MAT 211"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "AMS 151 - Applied Calculus I; AMS 161 - Applied Calculus II; AMS 261 - Applied Calculus III OR MAT 203 - Calculus III with Applications; AMS 361 - Applied Calculus IV: Differential Equations OR MAT 303 - Calculus IV with Applications; AMS 210 - Applied Linear Algebra OR MAT 211 - Introduction to Linear Algebra. Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161 in major requirements or prerequisites: MAT 131 and MAT 132 or MAT 125, MAT 126 and MAT 127."
+    },
+    {
+      "id": "electrical-engineering-be.natural-sciences-mathematics",
+      "label": "natural-sciences-mathematics",
+      "title": "Natural Sciences & Mathematics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "electrical-engineering-be.natural-sciences-mathematics.physics",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 127"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 142"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "CHE 131",
+                "CHE 152",
+                "ESG 198",
+                "BIO 202",
+                "BIO 203",
+                "PHY 251",
+                "AMS 301",
+                "ESE 122"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "PHY 131 - Classical Physics I; PHY 133 - Classical Physics Laboratory I; PHY 132 - Classical Physics II; PHY 134 - Classical Physics Laboratory II. Note: The physics course sequence PHY 125, PHY 126, PHY 127, PHY 133, PHY 134 or PHY 141, PHY 142, PHY 133, PHY 134 is accepted in lieu of PHY 131/PHY 133, PHY 132/PHY 134. One course from: CHE 131; CHE 152; ESG 198; BIO 202; BIO 203; PHY 251; AMS 301; ESE 122."
+    },
+    {
+      "id": "electrical-engineering-be.freshman-introduction",
+      "label": "freshman-introduction",
+      "title": "Freshman Introduction to Electrical Engineering",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ESE 123"
+          },
+          {
+            "type": "course",
+            "code": "ESE 124"
+          }
+        ]
+      },
+      "sourceText": "ESE 123 - Introduction to Electrical and Computer Engineering 4 credits; ESE 124 - Programming Fundamentals 4 credits"
+    },
+    {
+      "id": "electrical-engineering-be.core-courses",
+      "label": "core-courses",
+      "title": "Core Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "electrical-engineering-be.core-courses.ese-118",
+            "type": "course",
+            "code": "ESE 118"
+          },
+          {
+            "type": "course",
+            "code": "ESE 224"
+          },
+          {
+            "id": "electrical-engineering-be.core-courses.ese-271",
+            "type": "course",
+            "code": "ESE 271"
+          },
+          {
+            "id": "electrical-engineering-be.core-courses.ese-272",
+            "type": "course",
+            "code": "ESE 272"
+          },
+          {
+            "id": "electrical-engineering-be.core-courses.ese-273",
+            "type": "course",
+            "code": "ESE 273"
+          },
+          {
+            "type": "course",
+            "code": "ESE 280"
+          },
+          {
+            "id": "electrical-engineering-be.core-courses.ese-305",
+            "type": "course",
+            "code": "ESE 305"
+          },
+          {
+            "type": "course",
+            "code": "ESE 306"
+          },
+          {
+            "id": "electrical-engineering-be.core-courses.ese-315",
+            "type": "course",
+            "code": "ESE 315"
+          },
+          {
+            "type": "course",
+            "code": "ESE 319"
+          },
+          {
+            "id": "electrical-engineering-be.core-courses.ese-323",
+            "type": "course",
+            "code": "ESE 323"
+          },
+          {
+            "type": "course",
+            "code": "ESE 324"
+          },
+          {
+            "id": "electrical-engineering-be.core-courses.ese-331",
+            "type": "course",
+            "code": "ESE 331"
+          },
+          {
+            "id": "electrical-engineering-be.core-courses.ese-342",
+            "type": "course",
+            "code": "ESE 342"
+          }
+        ]
+      },
+      "sourceText": "ESE 118 - Digital Logic Design; ESE 224 - Advanced Programming and Data Structures; ESE 271 - Electrical Circuit Analysis; ESE 272 - Electronics; ESE 273 - Microelectronic Circuits; ESE 280 - Embedded Microcontroller Systems Design I; ESE 305 - Deterministic Signals and Systems; ESE 306 - Random Signals and Systems; ESE 315 - Control System Design; ESE 319 - Electromagnetic Waves and Transmission Lines; ESE 323 - Modern Circuit Board Design and Prototyping; ESE 324 - Advanced Electronics Laboratory; ESE 331 - Semiconductor Devices; ESE 342 - Communication Systems"
+    },
+    {
+      "id": "electrical-engineering-be.specializations",
+      "label": "specializations",
+      "title": "Specializations",
+      "rule": {
+        "manualCheck": "Student must select one specialization by the end of the sophomore year and complete 2 specialization electives from the undergraduate guide list. Specialization courses must be passed with a C or higher.",
+        "type": "unparsed",
+        "text": "Select one of four specializations (Circuits and VLSI; Communications, Signal Processing, and Networking; Nanoelectronics and Photonics; Power and Energy Systems), each requiring 2 elective courses. Acceptable electives are listed in the electrical engineering undergraduate guide.",
+        "reason": "The page names the four specializations and says each requires 2 electives, but the elective course lists are not on this page."
+      },
+      "sourceText": "Students must select one of the four specializations listed below by the end of the sophomore year. Circuits and VLSI; Communications, Signal Processing, and Networking; Nanoelectronics and Photonics; Power and Energy Systems. Each specialization requires 2 elective courses. A list of acceptable electives can be found in the electrical engineering undergraduate guide."
+    },
+    {
+      "id": "electrical-engineering-be.ese-technical-electives",
+      "label": "ese-technical-electives",
+      "title": "ESE Technical Electives",
+      "rule": {
+        "manualCheck": "Courses must not already be required for the ESE major or used to satisfy the chosen specialization.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "subjects": [
+            "ESE"
+          ],
+          "minNumber": 300,
+          "minCredits": 3,
+          "excludeUsedBy": [
+            "electrical-engineering-be.core-courses",
+            "electrical-engineering-be.design",
+            "electrical-engineering-be.upper-division-writing",
+            "electrical-engineering-be.engineering-ethics"
+          ]
+        }
+      },
+      "sourceText": "Students are required to take three ESE technical electives (3 or 4 credit courses) which can be any upper division (300 or 400 level) ESE courses not already required for the ESE major or used to satisfy the chosen specialization."
+    },
+    {
+      "id": "electrical-engineering-be.design",
+      "label": "design",
+      "title": "Design",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ESE 440"
+          },
+          {
+            "type": "course",
+            "code": "ESE 441"
+          }
+        ]
+      },
+      "sourceText": "ESE 440 - Senior Design I 3 credits; ESE 441 - Senior Design II 3 credits. Note: ESE 440 and ESE 441 are engineering design project courses that must be carried out at Stony Brook under the supervision of an Electrical and Computer Engineering faculty member."
+    },
+    {
+      "id": "electrical-engineering-be.upper-division-writing",
+      "label": "upper-division-writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Register for ESE 300 after completing ESE 280.",
+        "type": "course",
+        "code": "ESE 300"
+      },
+      "sourceText": "ESE 300 - Technical Communication for Electrical and Computer Engineers 2 credits. Note: All degree candidates must demonstrate skill in written English at a level acceptable for Electrical Engineering majors. Students must register for the writing course ESE 300 after completion of ESE 280."
+    },
+    {
+      "id": "electrical-engineering-be.engineering-ethics",
+      "label": "engineering-ethics",
+      "title": "Engineering Ethics",
+      "rule": {
+        "type": "course",
+        "code": "ESE 301"
+      },
+      "sourceText": "ESE 301 - Engineering Ethics and Societal Impact 2 credits"
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "electrical-engineering-be.mathematics",
+        "electrical-engineering-be.natural-sciences-mathematics",
+        "electrical-engineering-be.freshman-introduction",
+        "electrical-engineering-be.core-courses",
+        "electrical-engineering-be.specializations",
+        "electrical-engineering-be.ese-technical-electives",
+        "electrical-engineering-be.design",
+        "electrical-engineering-be.upper-division-writing",
+        "electrical-engineering-be.engineering-ethics"
+      ],
+      "sourceText": "All courses taken for the major must be taken for a letter grade."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "electrical-engineering-be.mathematics.calculus",
+        "electrical-engineering-be.natural-sciences-mathematics.physics",
+        "electrical-engineering-be.core-courses.ese-118",
+        "electrical-engineering-be.core-courses.ese-271",
+        "electrical-engineering-be.core-courses.ese-272",
+        "electrical-engineering-be.core-courses.ese-273",
+        "electrical-engineering-be.core-courses.ese-305",
+        "electrical-engineering-be.core-courses.ese-315",
+        "electrical-engineering-be.core-courses.ese-323",
+        "electrical-engineering-be.core-courses.ese-331",
+        "electrical-engineering-be.core-courses.ese-342",
+        "electrical-engineering-be.upper-division-writing",
+        "electrical-engineering-be.engineering-ethics",
+        "electrical-engineering-be.design",
+        "electrical-engineering-be.specializations",
+        "electrical-engineering-be.ese-technical-electives"
+      ],
+      "sourceText": "A grade of C or higher is required in the following courses: ESE 118, ESE 271, ESE 272, ESE 273, ESE 300, ESE 301, ESE 305, ESE 315, ESE 323, ESE 331, ESE 342, ESE 440, ESE 441, Two ESE Technical Electives, ESE Specialization Courses, AMS 151 and AMS 161 or MAT 131 and MAT 132, PHY 131, PHY 132, PHY 133, PHY 134."
+    },
+    {
+      "type": "residencyRequired",
+      "appliesTo": [
+        "electrical-engineering-be.design"
+      ],
+      "sourceText": "Note: ESE 440 and ESE 441 are engineering design project courses that must be carried out at Stony Brook under the supervision of an Electrical and Computer Engineering faculty member."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 151",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 133",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "ESE 123",
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "AMS 161",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "ESE 118",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "AMS 210",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 361",
+          "alternatives": [
+            "MAT 303"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESE 280",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESE 271",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 124",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESE 305",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 261",
+          "alternatives": [
+            "MAT 203"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESE 273",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 272",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESE 224",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESE 306",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ESE 331",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 323",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 319",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 342",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ESE Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "ESE Specialization Course",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 324",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 300",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "ESE 301",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "ESE Elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 315",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ESE 440",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "ESE Specialization Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ESE 441",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ESE Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Acceptance into the major: AOI and other CEAS students must apply by January 5 (Spring) or June 5 (Fall) and meet these requirements: at least 10 credits of required mathematics, physics, and ECE courses (excluding ESE 300 and ESE 301); a G.P.A. of 3.2 or higher in those courses with no more than one grade below B-; no required major course repeated; and course evaluations completed for transferred courses used to meet major requirements. Requirements must be completed within one year of enrolling in the first course that applies toward major entry. Non-CEAS students and double major applicants follow a separate, competitive process that does not guarantee acceptance."
+    },
+    {
+      "topic": "advising",
+      "text": "All students are assigned a faculty advisor who consults on course selection, academic progress, and career preparation. Course selection may be made in consultation with a faculty advisor."
+    },
+    {
+      "topic": "grading",
+      "text": "The grading section lists 'Two ESE Technical Electives' while the Electrical Engineering requirements text says three. The ESE technical electives requirement above follows the requirements text (three). The C-or-higher policy covers that requirement as a whole."
+    },
+    {
+      "topic": "other",
+      "text": "Honors Program in Electrical Engineering (not evaluated): apply at the end of the sophomore year with a cumulative GPA of at least 3.50 and a B or better in all major required courses (including math and physics). Graduation with departmental honors requires a cumulative GPA of 3.50 or higher, a B or better in major required courses, ESE 494 (1-credit seminar, B or better, junior year), ESE 495 (3-credit honors research project, B or better), and an honors thesis approved by a two-faculty committee."
+    },
+    {
+      "topic": "other",
+      "text": "Accelerated five-year BE/MS in Electrical Engineering (or Computer Engineering) (not evaluated): open to the top 10 to 20 percent of the junior class with a major GPA of at least 3.30. Two 300-level electives are replaced by two 500-level graduate courses, counting six graduate credits toward the undergraduate degree."
+    },
+    {
+      "topic": "sbc",
+      "text": "Sample sequence note: ESE 440 and ESE 441 partially satisfy ESI, CER, SPK, WRTD, SBS+, STEM+, and EXP+. ESE 301 satisfies STAS. One SBC must fulfill two objectives. SBC tags for individual courses are stored on course records."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1427",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

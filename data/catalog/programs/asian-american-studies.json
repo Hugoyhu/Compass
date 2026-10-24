@@ -1,0 +1,145 @@
+{
+  "id": "asian-american-studies",
+  "name": "Asian American Studies",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "asian-american-studies.1",
+      "label": "1",
+      "title": "One Core Course",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AAS 210"
+          },
+          {
+            "type": "course",
+            "code": "AAS 232"
+          },
+          {
+            "type": "course",
+            "code": "AAS 305"
+          },
+          {
+            "type": "course",
+            "code": "AAS 311"
+          },
+          {
+            "type": "course",
+            "code": "AAS 336"
+          }
+        ]
+      },
+      "sourceText": "One Core Course: AAS 210 - Formations of Asian American Identity 3 credits; AAS 232 - Introduction to Asian American Fiction and Film 3 credits; AAS 305 - The Pacific, Travel & Empire 3 credits; AAS 311 - Asian American Studies: Theories and Methods 3 credits; AAS 336 - Asian and Pacific Islanders in American History 3 credits"
+    },
+    {
+      "id": "asian-american-studies.2",
+      "label": "2",
+      "title": "Electives (Choose 5)",
+      "rule": {
+        "manualCheck": "AAS 391, AAS 392, AAS 447, and AAS 487 require the director's permission. Other courses not listed require approval of the program director.",
+        "type": "choose",
+        "count": 5,
+        "from": {
+          "courses": [
+            "AAS 210",
+            "AAS 211",
+            "AAS 212",
+            "AAS 232",
+            "AAS 238",
+            "AAS 250",
+            "AAS 305",
+            "AAS 311",
+            "AAS 328",
+            "AAS 333",
+            "AAS 336",
+            "AAS 391",
+            "AAS 392",
+            "AAS 447",
+            "AAS 473",
+            "AAS 487"
+          ],
+          "excludeUsedBy": [
+            "asian-american-studies.1"
+          ]
+        }
+      },
+      "sourceText": "Electives (Choose 5): AAS 210 (see Notes); AAS 211; AAS 212; AAS 232 (see Notes); AAS 238; AAS 250; AAS 305 (see Notes); AAS 311 (see Notes); AAS 328; AAS 333; AAS 336 * (see Notes); AAS 391 (with the director's permission); AAS 392 (with the director's permission); AAS 447 (with the director's permission); AAS 473; AAS 487 (with the director's permission); Other courses with the approval of the program director"
+    },
+    {
+      "id": "asian-american-studies.upper-division",
+      "label": "upper-division-credits",
+      "title": "At least nine credits at the 300 level or higher",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least nine credits toward the minor must be taken in courses numbered 300 or higher.",
+        "reason": "Program-wide credit-level rule that no rule type covers"
+      },
+      "sourceText": "At least nine credits toward the minor must be taken in courses numbered 300 or higher."
+    },
+    {
+      "id": "asian-american-studies.aam-overlap",
+      "label": "aam-overlap",
+      "title": "Limit on credits shared with the AAM minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than 6 credits applied toward the AAM minor may also be applied toward the AAS minor.",
+        "reason": "Cross-minor credit limit that no rule type covers"
+      },
+      "sourceText": "No more than 6 credits applied toward the AAM minor may also be applied toward the AAS minor."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "asian-american-studies.1",
+        "asian-american-studies.2"
+      ],
+      "sourceText": "All courses must be completed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "asian-american-studies.1",
+        "asian-american-studies.2"
+      ],
+      "sourceText": "All courses must be completed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "Completion of the minor requires six courses or 18 credits."
+    },
+    {
+      "topic": "other",
+      "text": "AAS 210, AAS 232, AAS 305, AAS 311, and AAS 336 may be used for either Requirement 1 (Core) or Requirement 2 (Electives), but not both."
+    },
+    {
+      "topic": "other",
+      "text": "Courses marked with an (*) are crosslisted with at least one other academic department. Students earn credit by registering for either course but may not repeat the course by enrolling a second time under the other option."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1569",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

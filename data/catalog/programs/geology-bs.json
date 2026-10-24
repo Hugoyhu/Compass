@@ -1,0 +1,738 @@
+{
+  "id": "geology-bs",
+  "name": "Geology, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Geology",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "geology-bs.departmental",
+      "label": "departmental",
+      "title": "Required departmental courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "GEO 103"
+          },
+          {
+            "type": "course",
+            "code": "GEO 113"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "GEO 122"
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "GEO 102"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GEO 112"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "GEO 306"
+              },
+              {
+                "type": "course",
+                "code": "GEO 366"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "GEO 309"
+              },
+              {
+                "type": "course",
+                "code": "GEO 369"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "GEO 403"
+              },
+              {
+                "type": "course",
+                "code": "GEO 463"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "GEO 407"
+              },
+              {
+                "type": "course",
+                "code": "GEO 467"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "GEO 103 - The Earth Through Time 3 credits; GEO 113 - Historical Geology Laboratory 1 credit; GEO 122 - Physical Geology 4 credits OR GEO 102 - The Earth 3 credits AND GEO 112 - Physical Geology Laboratory 1 credit; GEO 306 - Mineralogy 3 credits; GEO 366 - Mineralogy Laboratory 1 credit; GEO 309 - Structural Geology 3 credits; GEO 369 - Structural Geology Laboratory 1 credit; GEO 403 - Sedimentation and Stratigraphy 3 credits; GEO 463 - Sedimentation and Stratigraphy Laboratory 1 credit; GEO 407 - Igneous and Metamorphic Petrology 3 credits; GEO 467 - Igneous and Metamorphic Petrology Laboratory 1 credit"
+    },
+    {
+      "id": "geology-bs.math",
+      "label": "math",
+      "title": "Required related mathematics (calculus)",
+      "rule": {
+        "manualCheck": "If the student does not place into AMS 151, MAT 125, or MAT 131 on the math placement examination, MAT 123 becomes a required course for the major. Placement equivalency for MAT courses is accepted without substituting other credits.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 151"
+              },
+              {
+                "type": "course",
+                "code": "AMS 161"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "MAT 132"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 126"
+              },
+              {
+                "type": "course",
+                "code": "MAT 127"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 141"
+              },
+              {
+                "type": "course",
+                "code": "MAT 142"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MAT 171"
+          }
+        ]
+      },
+      "sourceText": "AMS 151 - Applied Calculus I 3 credits AND AMS 161 - Applied Calculus II 3 credits OR MAT 131 - Calculus I 4 credits AND MAT 132 - Calculus II 4 credits OR MAT 125 - Calculus A 3 credits AND MAT 126 - Calculus B 3 credits AND MAT 127 - Calculus C 3 credits OR MAT 141 AND MAT 142 OR MAT 171. If students do not place into AMS 151 or MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 becomes a required course for the major. Equivalency for MAT courses achieved by earning the appropriate score on a University mathematics placement examination will be accepted as fulfillment of the requirement without the necessity of substituting other credits."
+    },
+    {
+      "id": "geology-bs.chemistry",
+      "label": "chemistry",
+      "title": "Required related chemistry",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 131"
+          },
+          {
+            "type": "course",
+            "code": "CHE 133"
+          },
+          {
+            "type": "course",
+            "code": "CHE 132"
+          }
+        ]
+      },
+      "sourceText": "CHE 131 - General Chemistry IB 4 credits AND CHE 133 - General Chemistry Laboratory I 1 credit; CHE 132 - General Chemistry II 4 credits"
+    },
+    {
+      "id": "geology-bs.physics",
+      "label": "physics",
+      "title": "Required related physics I with laboratory",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 131"
+              },
+              {
+                "type": "course",
+                "code": "PHY 133"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 141"
+              },
+              {
+                "type": "course",
+                "code": "PHY 133"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 125"
+              },
+              {
+                "type": "course",
+                "code": "PHY 126"
+              },
+              {
+                "type": "course",
+                "code": "PHY 133"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "PHY 131 - Classical Physics I 3 credits AND PHY 133 Classical Physics Laboratory I Credits: 1 credit OR PHY 141 - Classical Physics I: Honors 3 credits AND PHY 133 Classical Physics Laboratory I Credits: 1 credit OR PHY 125 - Classical Physics A 3 credits AND PHY 126 - Classical Physics B 3 credits AND PHY 133 Classical Physics Laboratory I Credits: 1 credit"
+    },
+    {
+      "id": "geology-bs.physics-ii",
+      "label": "physics-ii",
+      "title": "Required related physics II",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHY 132"
+          },
+          {
+            "type": "course",
+            "code": "PHY 142"
+          },
+          {
+            "type": "course",
+            "code": "PHY 127"
+          }
+        ]
+      },
+      "sourceText": "PHY 132 - Classical Physics II 3 credits OR PHY 142 - Classical Physics II: Honors 3 credits OR PHY 127 - Classical Physics C 3 credits"
+    },
+    {
+      "id": "geology-bs.lab-ii",
+      "label": "lab-ii",
+      "title": "Required second laboratory",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 134"
+          },
+          {
+            "type": "course",
+            "code": "PHY 134"
+          }
+        ]
+      },
+      "sourceText": "CHE 134 - General Chemistry Laboratory II 1 credit OR PHY 134 - Classical Physics Laboratory II 1 credit"
+    },
+    {
+      "id": "geology-bs.science-electives",
+      "label": "science-electives",
+      "title": "Related science electives",
+      "rule": {
+        "type": "unparsed",
+        "text": "A set of upper-division science courses, totaling 19 credits, that has been approved by the department.",
+        "reason": "The page requires 19 credits of upper-division science/mathematics electives approved by the department, but does not list the approved pool; the list is not available to the audit engine."
+      },
+      "sourceText": "Related science electives: A set of upper-division science courses, totaling 19 credits, that has been approved by the department."
+    },
+    {
+      "id": "geology-bs.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing and Speaking Requirement",
+      "rule": {
+        "manualCheck": "Completion of the WRTD requires that a 15-page paper written by the student receives a B or higher as determined by the instructor of the 300-400 level GEO course.",
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "GEO 496"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "ranges": [
+                {
+                  "subject": "GEO",
+                  "from": 300,
+                  "to": 400
+                }
+              ],
+              "subjects": [
+                "GEO"
+              ],
+              "excludeCourses": [
+                "GEO 496"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Before graduation all students in the Geology major must register for the 1-credit GEO 496 WRTD course along with a 300-400 level GEO course. Completion of the WRTD requires that a 15-page paper written by the student receives a B or higher as determined by the instructor of the 300-400 level course."
+    },
+    {
+      "id": "geology-bs.credits",
+      "label": "credits",
+      "title": "Total major credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires 63 to 66 credits.",
+        "reason": "Program-wide credit range is not expressible with the available rule types."
+      },
+      "sourceText": "Completion of the major requires 63 to 66 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "geology-bs.departmental",
+        "geology-bs.math",
+        "geology-bs.chemistry",
+        "geology-bs.physics",
+        "geology-bs.physics-ii",
+        "geology-bs.lab-ii",
+        "geology-bs.science-electives",
+        "geology-bs.writing"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "geology-bs.departmental",
+        "geology-bs.math",
+        "geology-bs.chemistry",
+        "geology-bs.physics",
+        "geology-bs.physics-ii",
+        "geology-bs.lab-ii",
+        "geology-bs.science-electives",
+        "geology-bs.writing"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "SPK",
+        "rule": {
+          "type": "course",
+          "code": "GEO 497"
+        },
+        "sourceText": "The SBC SPK requirement can be completed with GEO 497 with a grade of 'S'."
+      },
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "course",
+          "code": "GEO 496"
+        },
+        "sourceText": "Before graduation all students in the Geology major must register for the 1-credit GEO 496 WRTD course along with a 300-400 level GEO course."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 133",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "GEO 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 112",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "AMS 151",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 103",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 113",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 161",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 133",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GEO 306",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 366",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 134",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GEO 407",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 467",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division science elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GEO 309",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 369",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "GEO 403",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 463",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division science elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division science elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GEO 310",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 496",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "GEO 497",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division science elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division science elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division science elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division science elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Upon declaring the major, the student is assigned a faculty advisor who will assist in the selection of a course sequence leading to the degree. Students should consult frequently with their faculty advisors regarding their progress and regarding appropriate science courses."
+    },
+    {
+      "topic": "other",
+      "text": "Geology Honors Program (optional, not evaluated): at least 3 credits of GEO 487 Senior Research in Geology taken with a Research Advisor; a satisfactory written thesis; and an overall GPA of at least 3.30 in all science courses numbered 300 or higher."
+    },
+    {
+      "topic": "other",
+      "text": "Suggested clusters of science electives (Geology, Environmental Geoscience, Geological Oceanography) are advisory only and are not requirements."
+    },
+    {
+      "topic": "other",
+      "text": "MAT 123 becomes a required course for the major if the student does not place into AMS 151, MAT 125, or MAT 131 on the math placement examination."
+    },
+    {
+      "topic": "other",
+      "text": "The Department of Geosciences also offers the Earth and Space Sciences major (B.A.), which has separate requirements."
+    },
+    {
+      "topic": "sbc",
+      "text": "SBC courses listed for this major are informational; per-course SBC tags are taken from course records."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1460",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "id": "biology",
+  "name": "Biology",
+  "kind": "minor",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "biology.1",
+      "label": "1",
+      "title": "At least two of the following courses",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "BIO 201",
+            "BIO 202",
+            "BIO 203"
+          ]
+        }
+      },
+      "sourceText": "At least two of the following courses: BIO 201 - Fundamentals of Biology: Organisms to Ecosystems 3 credits; BIO 202 - Fundamentals of Biology: Molecular and Cellular Biology 3 credits; BIO 203 - Fundamentals of Biology: Cellular and Organ Physiology 3 credits"
+    },
+    {
+      "id": "biology.2",
+      "label": "2",
+      "title": "BIO 204 and BIO 205/BIO 207",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BIO 204"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BIO 205"
+              },
+              {
+                "type": "course",
+                "code": "BIO 207"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "BIO 204 and BIO 205/BIO 207: BIO 204 - Fundamentals of Scientific Inquiry in the Biological Sciences I 2 credits; AND; BIO 205 - Fundamentals of Scientific Inquiry in the Biological Sciences IIA 2 credits; OR; BIO 207 - Fundamentals of Scientific Inquiry in the Biological Sciences IIB 2 credits"
+    },
+    {
+      "id": "biology.3",
+      "label": "3",
+      "title": "Advanced Lecture/Laboratory or Lecture/Laboratory Courses",
+      "rule": {
+        "manualCheck": "Verify that the chosen advanced courses span at least two of the biology major's areas of inquiry (I-IV), and that any course without a BIO indicator is one of EBH 302, EBH 370, EBH 359, EBH 380, or EBH 381.",
+        "type": "unparsed",
+        "text": "Advanced lecture, laboratory or lecture/laboratory courses in at least two of the four areas of inquiry (I-IV) listed under the biology major. Only courses with BIO indicators are accepted for the Biology minor with the exception of: EBH 302, EBH 370, EBH 359, EBH 380, EBH 381.",
+        "reason": "The four areas of inquiry (I-IV) are defined under the biology major and are not listed on this page, so the eligible course pool cannot be specified."
+      },
+      "sourceText": "Advanced lecture, laboratory or lecture/laboratory courses in at least two of the four areas of inquiry (I-IV) listed under the biology major . Only courses with BIO indicators are accepted for the Biology minor with the exception of: EBH 302 , EBH 370 , EBH 359 , EBH 380 , EBH 381 ."
+    },
+    {
+      "id": "biology.4",
+      "label": "4",
+      "title": "300 Level BIO Courses",
+      "rule": {
+        "manualCheck": "Independent research and tutorial readings count only if graded Satisfactory: at most two credits of BIO 484, BIO 486, BIO 487, BIO 489 and at most one credit of BIO 444, BIO 446, BIO 447, BIO 449.",
+        "type": "choose",
+        "credits": 9,
+        "from": {
+          "subjects": [
+            "BIO",
+            "EBH"
+          ],
+          "minNumber": 300
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "BIO 484",
+                "BIO 486",
+                "BIO 487",
+                "BIO 489"
+              ]
+            },
+            "maxCredits": 2
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "BIO 444",
+                "BIO 446",
+                "BIO 447",
+                "BIO 449"
+              ]
+            },
+            "maxCredits": 1
+          }
+        ]
+      },
+      "sourceText": "At least nine credits of approved 300 or higher level BIO or EBH courses. Note, a grade of Satisfactory in at most two credits of biology independent research (BIO 484, BIO 486, BIO 487, BIO 489) and at most one credit of tutorial readings (BIO 444, BIO 446, BIO 447, BIO 449) may be applied toward the minor."
+    },
+    {
+      "id": "biology.credits",
+      "label": "credits",
+      "title": "Minor credit total",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires at least 20 credits in BIO courses designed for the Biology major.",
+        "reason": "Program-wide credit minimum across requirements 1 through 4 that no rule type covers."
+      },
+      "sourceText": "Completion of the minor requires at least 20 credits in BIO courses designed for the Biology major."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "biology.1",
+        "biology.2",
+        "biology.3",
+        "biology.4",
+        "biology.credits"
+      ],
+      "sourceText": "All courses for the minor must be taken for a letter grade and must be passed with a grade of C or higher"
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "biology.1",
+        "biology.2",
+        "biology.3",
+        "biology.4",
+        "biology.credits"
+      ],
+      "sourceText": "All courses for the minor must be taken for a letter grade and must be passed with a grade of C or higher"
+    },
+    {
+      "type": "residencyRequired",
+      "appliesTo": [
+        "biology.3",
+        "biology.4"
+      ],
+      "sourceText": "All advanced courses for the minor must be in approved lecture, laboratory, or lecture/laboratory courses taken at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Only students with majors other than Biology, Biochemistry, Human Evolutionary Biology, Pharmacology, Marine Sciences or Marine Vertebrate Biology may elect the Biology minor."
+    },
+    {
+      "topic": "advising",
+      "text": "Information related to the Biology minor is available from the Undergraduate Biology Office and website. Advisors: Rachel Pilero, Kayla McFadden, Allison Young."
+    },
+    {
+      "topic": "other",
+      "text": "Requirement 3 cannot be checked against the four areas of inquiry from this page alone; consult the biology major requirements."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1380",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

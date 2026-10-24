@@ -1,0 +1,304 @@
+{
+  "id": "bioengineering",
+  "name": "Bioengineering",
+  "kind": "minor",
+  "degree": "",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "bioengineering.physics-declaration",
+      "label": "physics-declaration",
+      "title": "Physics sequence required to declare the minor",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 131"
+              },
+              {
+                "type": "course",
+                "code": "PHY 132"
+              },
+              {
+                "type": "course",
+                "code": "PHY 133"
+              },
+              {
+                "type": "course",
+                "code": "PHY 134"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 125"
+              },
+              {
+                "type": "course",
+                "code": "PHY 126"
+              },
+              {
+                "type": "course",
+                "code": "PHY 127"
+              },
+              {
+                "type": "course",
+                "code": "PHY 133"
+              },
+              {
+                "type": "course",
+                "code": "PHY 134"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 141"
+              },
+              {
+                "type": "course",
+                "code": "PHY 142"
+              },
+              {
+                "type": "course",
+                "code": "PHY 133"
+              },
+              {
+                "type": "course",
+                "code": "PHY 134"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "To declare the minor in Bioengineering, students must complete PHY 131, PHY 132, PHY 133, and PHY 134 with grades of C or higher (Note: the following alternate physics sequences are acceptable: PHY 125, PHY 126, PHY 127, PHY 133 and PHY 134 or PHY 141, PHY 142, PHY 133 and PHY 134.)."
+    },
+    {
+      "id": "bioengineering.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses for each Track",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BME 100"
+          },
+          {
+            "type": "course",
+            "code": "BME 120"
+          }
+        ]
+      },
+      "sourceText": "Required Courses for each Track: BME 100 - Introduction to Biomedical Engineering 3 credits; BME 120 - Programming Fundamentals in Biomedical Engineering 3 credits"
+    },
+    {
+      "id": "bioengineering.tracks",
+      "label": "specialization-tracks",
+      "title": "Specialization Tracks (complete one track)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BME 260"
+              },
+              {
+                "type": "course",
+                "code": "BME 303"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "BME 353"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BME 381"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 261"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 203"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BME 271"
+              },
+              {
+                "type": "course",
+                "code": "BME 301"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "BME 311"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BME 313"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BME 481"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 210"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 211"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BME 304"
+              },
+              {
+                "type": "course",
+                "code": "BME 381"
+              },
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "BME 404",
+                    "BME 402",
+                    "BME 371"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Biomaterials/Biomechanics: BME 260 - Statics and Dynamics in Biological Systems 4 credits; BME 303 - Biomechanics 3 credits; BME 353 - Introduction to Biomaterials 3 credits OR BME 381 - Nanofabrication in Biomedical Applications 3 credits; Calculus III: AMS 261 - Applied Calculus III 4 credits OR MAT 203 - Calculus III with Applications 4 credits. Bioelectricity: BME 271 - Introduction to Electric Circuits and Bioelectricity 3 credits; BME 301 - Bioelectricity 3 credits; BME 311 - Fundamentals of Macro to Molecular Bioimaging 3 credits OR BME 313 - Bioinstrumentation 3 credits OR BME 481 - Biosensors 3 credits; Linear Algebra: AMS 210 - Applied Linear Algebra 3 credits OR MAT 211 - Introduction to Linear Algebra 3 credits. Molecular/Cellular: BME 304 - Genetic Engineering 3 credits; BME 381 - Nanofabrication in Biomedical Applications 3 credits; PICK TWO: BME 404 - Essentials of Tissue Engineering 3 credits, BME 402 - Contemporary Biotechnology 3 credits, BME 371 - Biological Microfluidics 3 credits"
+    },
+    {
+      "id": "bioengineering.upper-division",
+      "label": "upper-division",
+      "title": "Upper Division Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "manualCheck": "Confirm the student has completed one advanced biology lecture course.",
+            "type": "unparsed",
+            "text": "One advanced biology lecture course",
+            "reason": "The page does not list which advanced biology lecture courses qualify"
+          },
+          {
+            "manualCheck": "Confirm the student has completed one advanced biology laboratory course.",
+            "type": "unparsed",
+            "text": "One advanced biology laboratory course",
+            "reason": "The page does not list which advanced biology laboratory courses qualify"
+          }
+        ]
+      },
+      "sourceText": "Upper Division Courses: One advanced biology lecture course; One advanced biology laboratory course"
+    },
+    {
+      "id": "bioengineering.credits",
+      "label": "credits",
+      "title": "Total credits for the minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21-23 credits as outlined below.",
+        "reason": "A total-credit range for the minor is not a rule type the engine supports"
+      },
+      "sourceText": "Completion of the minor requires 21-23 credits as outlined below."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "bioengineering.physics-declaration",
+        "bioengineering.required-courses",
+        "bioengineering.tracks",
+        "bioengineering.upper-division"
+      ],
+      "sourceText": "All courses for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "bioengineering.physics-declaration",
+        "bioengineering.required-courses",
+        "bioengineering.tracks",
+        "bioengineering.upper-division"
+      ],
+      "sourceText": "All courses for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Priority is given to students with a grade point average of 3.00 or higher. Admission is competitive and contingent upon program capacity."
+    },
+    {
+      "topic": "advising",
+      "text": "The Bioengineering minor is the same as the Biomedical Engineering Specialization track within the Biology major. It is designed for College of Arts and Sciences students. Contact the Bioengineering undergraduate program director or coordinator (bme_ug_program@stonybrook.edu) for advising."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1374",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

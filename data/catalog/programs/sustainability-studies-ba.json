@@ -1,0 +1,858 @@
+{
+  "id": "sustainability-studies-ba",
+  "name": "Sustainability Studies, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Sustainability Studies",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "sustainability-studies-ba.A",
+      "label": "A",
+      "title": "Common Foundation Courses (15-17 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 102"
+              },
+              {
+                "type": "course",
+                "code": "AMS 110"
+              },
+              {
+                "type": "course",
+                "code": "BIO 211"
+              }
+            ]
+          },
+          {
+            "manualCheck": "CHE 115 and ENV 115 are listed with the same title; treated as alternatives (cross-listed). The sample sequence shows them as one course, CHE/ENV 115.",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 115"
+              },
+              {
+                "type": "course",
+                "code": "ENV 115"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 111"
+              },
+              {
+                "type": "course",
+                "code": "ENS 101"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 113"
+              },
+              {
+                "type": "course",
+                "code": "GEO 102"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SUS 201"
+          }
+        ]
+      },
+      "sourceText": "A. Common Foundation Courses (15-17 credits): AMS 102 - Elements of Statistics OR AMS 110 - Probability and Statistics in the Life Sciences OR BIO 211 - Statistics and Data Analysis: A Conceptual Approach; CHE 115 - Chemistry, Life, and Environment; ENV 115 - Chemistry, Life, and Environment; SUS 111 - Introduction to Sustainability OR ENS 101 - Prospects for Planet Earth; SUS 113 - Physical Geography Lecture OR GEO 102 - The Earth; SUS 201 - Systems and Models"
+    },
+    {
+      "id": "sustainability-studies-ba.B",
+      "label": "B",
+      "title": "Common Core Courses (12-13 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ATM 201"
+              },
+              {
+                "type": "course",
+                "code": "ENV 304"
+              },
+              {
+                "type": "course",
+                "code": "SUS 343"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "GSS 313"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GSS 314"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "GSS 317"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 301"
+              },
+              {
+                "type": "course",
+                "code": "COM 365"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 305"
+              },
+              {
+                "type": "course",
+                "code": "SUS 323"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "B. Common Core Courses (12-13 credits): ATM 201 - Introduction to Climate and Climate Change OR ENV 304 - Global Environmental Change OR SUS 343 - Age of the Anthropocene; GSS 313 - GIS Design and Application I; GSS 314 - GIS Laboratory OR GSS 317 - Geospatial Narratives: Deep Mapping for Humanities and Social Sciences; SUS 301 - Technical Writing and Communication OR COM 365 - Talking Science; SUS 305 - Collective Action and Advocacy OR SUS 323 - Environmental Justice"
+    },
+    {
+      "id": "sustainability-studies-ba.C",
+      "label": "C",
+      "title": "Capstone Course (3 credits)",
+      "rule": {
+        "manualCheck": "SUS 487 is listed as 0-6 credits and SUS 488 as 0-12 credits; the page states the capstone as 3 credits. Verify credits against the course record.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "ENV 301",
+            "SUS 352",
+            "SUS 390",
+            "SUS 401",
+            "SUS 487",
+            "SUS 488"
+          ]
+        }
+      },
+      "sourceText": "C. Capstone Course (3 credits): One course selected from the choices below: ENV 301 - Sustainability of the Long Island Pine Barrens; SUS 352 - Conduct and Communicate a Research Project in Ecotoxicology; SUS 390 - Environmental Humanities Capstone; SUS 401 - Integrative, Collaborative Systems Studies; SUS 487 - Research in Sustainability 0-6 credits; SUS 488 - Internship in Sustainability Studies 0-12 credits"
+    },
+    {
+      "id": "sustainability-studies-ba.D",
+      "label": "D",
+      "title": "Tracks (Choose one, 39-40 credits)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "sourceText": "1. Ecosystems and Human Impact: Required Foundation Track Courses: ANT 120 - Introduction to Biological Anthropology (formerly ANP 120); BIO 201; BIO 204 *; ECO 108 OR ECO 111; MAT 125 OR MAT 130 + MAT 125 OR MAT 131 OR AMS 151; SUS 204 - Population Studies. Upper Division Track Electives: Seven courses (at least 21 credits) from the choices below (list of ANT, BIO, ENS, GEO, GSS, MAR, and SUS courses). Notes: If students do not place into MAT 125 or MAT 131 or AMS 151 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123 ) is a required course for the major.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ANT 120"
+              },
+              {
+                "type": "course",
+                "code": "BIO 201"
+              },
+              {
+                "type": "course",
+                "code": "BIO 204"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ECO 108"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO 111"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "MAT 130"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT 125"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 151"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "SUS 204"
+              },
+              {
+                "type": "unparsed",
+                "text": "If students do not place into MAT 125 or MAT 131 or AMS 151 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123 ) is a required course for the major.",
+                "reason": "Conditional on math placement exam results, which are not on the transcript."
+              },
+              {
+                "manualCheck": "Upper Division Track Electives: seven courses (at least 21 credits) from the list.",
+                "type": "choose",
+                "count": 7,
+                "from": {
+                  "courses": [
+                    "ANT 309",
+                    "ANT 352",
+                    "ANT 353",
+                    "ANT 408",
+                    "BIO 319",
+                    "BIO 351",
+                    "BIO 352",
+                    "BIO 371",
+                    "ENS 311",
+                    "BIO 386",
+                    "GEO 304",
+                    "GEO 313",
+                    "GSS 325",
+                    "MAR 303",
+                    "MAR 315",
+                    "MAR 320",
+                    "MAR 336",
+                    "MAR 340",
+                    "MAR 388",
+                    "MAR 394",
+                    "SUS 319",
+                    "SUS 322",
+                    "SUS 326",
+                    "SUS 340",
+                    "SUS 344",
+                    "SUS 350",
+                    "SUS 351",
+                    "SUS 405"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "sourceText": "2. Environmental Humanities: Required Foundation Track Courses: ANT 102 - What Makes Us Human?; GSS 105 - Introduction to Maps and Mapping; MAR 104 - Oceanography; PHI 104 OR PHI 105; SUS 202 - Introduction to Environmental Humanities; SUS 203 - Interpretation and Critical Analysis. Upper Division Track Electives: Seven courses (at least 21 credits) from the choices below.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ANT 102"
+              },
+              {
+                "type": "course",
+                "code": "GSS 105"
+              },
+              {
+                "type": "course",
+                "code": "MAR 104"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHI 104"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHI 105"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "SUS 202"
+              },
+              {
+                "type": "course",
+                "code": "SUS 203"
+              },
+              {
+                "manualCheck": "Upper Division Track Electives: seven courses (at least 21 credits) from the list.",
+                "type": "choose",
+                "count": 7,
+                "from": {
+                  "courses": [
+                    "ENS 333",
+                    "POL 333",
+                    "GSS 325",
+                    "HIS 302",
+                    "HIS 352",
+                    "AAS 352",
+                    "MAR 355",
+                    "MAR 356",
+                    "SOC 344",
+                    "SUS 314",
+                    "SUS 316",
+                    "SUS 317",
+                    "SUS 320",
+                    "SUS 321",
+                    "SUS 324",
+                    "SUS 325",
+                    "SUS 328",
+                    "SUS 350",
+                    "SUS 362",
+                    "SUS 366",
+                    "PHI 366",
+                    "SUS 405"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "sourceText": "3. Societies, Economics, and Governance: Required Foundation Track Courses: BIO 201; ECO 108 OR ECO 110 OR ECO 111; MAT 125 OR MAT 130 + MAT 125 OR MAT 131 OR AMS 151; POL 102 - Introduction to American Government; SUS 115 OR SUS 204; SUS 200 - Human Settlement: History and Future; SUS 206 - Economics and Sustainability. Upper Division Track Electives: Six courses (at least 18 credits) from the choices below. Note: If students do not place into MAT 125 or MAT 131 or AMS 151 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123 ) is a required course for the major.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BIO 201"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ECO 108"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO 110"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO 111"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "MAT 130"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT 125"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 151"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "POL 102"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "SUS 115"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SUS 204"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "SUS 200"
+              },
+              {
+                "type": "course",
+                "code": "SUS 206"
+              },
+              {
+                "type": "unparsed",
+                "text": "If students do not place into MAT 125 or MAT 131 or AMS 151 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123 ) is a required course for the major.",
+                "reason": "Conditional on math placement exam results, which are not on the transcript."
+              },
+              {
+                "manualCheck": "Upper Division Track Electives: six courses (at least 18 credits) from the list.",
+                "type": "choose",
+                "count": 6,
+                "from": {
+                  "courses": [
+                    "EDP 303",
+                    "EDP 305",
+                    "ENS 311",
+                    "BIO 386",
+                    "ENS 333",
+                    "POL 333",
+                    "ENV 316",
+                    "ENV 339",
+                    "GEO 304",
+                    "GEO 313",
+                    "GSS 325",
+                    "GSS 350",
+                    "HIS 302",
+                    "HIS 352",
+                    "AAS 352",
+                    "MAR 392",
+                    "POL 310",
+                    "POL 359",
+                    "SOC 344",
+                    "SUS 302",
+                    "SUS 306",
+                    "SUS 307",
+                    "SUS 316",
+                    "SUS 317",
+                    "SUS 318",
+                    "SUS 324",
+                    "SUS 340",
+                    "SUS 350",
+                    "SUS 362",
+                    "SUS 366",
+                    "PHI 366",
+                    "SUS 405"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "D. Tracks (Choose one, 39-40 credits): 1. Ecosystems and Human Impact; 2. Environmental Humanities; 3. Societies, Economics, and Governance"
+    },
+    {
+      "id": "sustainability-studies-ba.E",
+      "label": "E",
+      "title": "Communications and Writing Requirement",
+      "rule": {
+        "manualCheck": "Requires registration in the 0-credit SUS 459 and department approval of a term paper or laboratory report written for an advanced course in the major (including Readings and Research courses) from the preapproved list. SUS 459 is completed with a grade of S, which approves the WRTD requirement.",
+        "type": "course",
+        "code": "SUS 459"
+      },
+      "sourceText": "E. Communications and Writing Requirement: The advanced writing component of the major in SUS requires registration in the 0-credit SUS 459 and approval of either a term paper or a laboratory report written for an advanced course in the appropriate major at Stony Brook (including Readings and Research courses). Completion of SUS 459 with a grade of S will result in approval of the WRTD requirement."
+    },
+    {
+      "id": "sustainability-studies-ba.grades",
+      "label": "grades",
+      "title": "Passing grades below C and Pass/NC",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one course (4 credits maximum) with a passing grade lower than C can be credited towards the major. Courses taken with the Pass/NC option may not be applied to the major.",
+        "reason": "A one-course exception to the C-or-higher standard and the Pass/NC exclusion cannot be expressed as a minGrade policy without incorrectly failing the allowed exception."
+      },
+      "sourceText": "Note: No more than one course (4 credits maximum) with a passing grade lower than C can be credited towards the major. Courses taken with the Pass/NC option may not be applied to the major."
+    },
+    {
+      "id": "sustainability-studies-ba.double-majors",
+      "label": "double-majors",
+      "title": "Double majors within SoMAS",
+      "rule": {
+        "type": "unparsed",
+        "text": "Excluding ENV 301, SUS 301, SUS 305, and SUS 401, no more than 6 credits of 300-400 level course credits can be applied to two majors within the School of Marine and Atmospheric Sciences.",
+        "reason": "Program-wide cap on shared upper-division credits across two majors; no rule type covers it."
+      },
+      "sourceText": "Double Majors: Excluding ENV 301 - Sustainability of the Long Island Pine Barrens, SUS 301 - Technical Writing and Communication, SUS 305 - Collective Action and Advocacy, and SUS 401 - Integrative, Collaborative Systems Studies, no more than 6 credits of 300-400 level course credits can be applied to two majors within the School of Marine and Atmospheric Sciences."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "course",
+          "code": "SUS 459"
+        },
+        "sourceText": "Completion of SUS 459 with a grade of S will result in approval of the WRTD requirement."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 125",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ENS 101",
+          "alternatives": [
+            "SUS 111"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 113",
+          "alternatives": [
+            "GEO 102"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 115",
+          "alternatives": [
+            "ENV 115"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "POL 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ECO 110",
+          "alternatives": [
+            "ECO 111"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "SUS 200",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 201",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 201",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 115",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 206",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SUS 305",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division track elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division track elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SUS 343",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division track elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division track elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GSS 313",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GSS 314",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division track elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division track elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SUS 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 401",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Undergraduate Advisor: Nancy Black (nancy.black@stonybrook.edu). Program Director: Adam Charboneau. Program Office: E2361 Melville Library, (631) 632-9404."
+    },
+    {
+      "topic": "other",
+      "text": "ANT 120 is listed as formerly ANP 120; ANT 309, ANT 352, ANT 353, and ANT 408 are listed as formerly ANP 307, ANP 350, ANP 351, and ANP 401. Verify transcript codes against the current course numbers."
+    },
+    {
+      "topic": "other",
+      "text": "Courses marked * in the tracks have a prerequisite outside the major/track and/or require CHE 129, CHE 131, or CHE 152."
+    },
+    {
+      "topic": "other",
+      "text": "Other classes may be substituted with permission of the undergraduate director. This is not evaluated by the audit."
+    },
+    {
+      "topic": "other",
+      "text": "Study abroad experiences in Cuba, Madagascar, and the Turkana Basin (Kenya) are available. Students should talk with the major director about how study abroad coursework can fulfill major requirements."
+    },
+    {
+      "topic": "sbc",
+      "text": "Students completing the Stony Brook Curriculum must complete a WRTD course to graduate; SUS 459 is the department's WRTD route."
+    },
+    {
+      "topic": "other",
+      "text": "Sample sequence note: students in the Ecosystems and Human Impact track should take ECO 111; students in the Societies, Economics, and Governance track may take either ECO 110 or ECO 111."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1508",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

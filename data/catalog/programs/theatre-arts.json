@@ -1,0 +1,120 @@
+{
+  "id": "theatre-arts",
+  "name": "Theatre Arts",
+  "kind": "minor",
+  "degree": "Minor in Theatre Arts",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "theatre-arts.foundation",
+      "label": "foundation",
+      "title": "Foundation Courses (6-7 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "THR 100",
+            "THR 101",
+            "THR 103",
+            "THR 104",
+            "THR 105",
+            "THR 107",
+            "THR 115",
+            "THR 201",
+            "THR 214",
+            "THR 216"
+          ]
+        }
+      },
+      "sourceText": "Foundation Courses (6-7 credits) Choose two (2) of the following: THR 100 - Performing and Performance 3 credits; THR 101 - Introduction to Theatre Arts 3 credits; THR 103 - Introduction to Theatre Design 3 credits; THR 104 - Play Analysis 3 credits; THR 105 - Acting I 3 credits; THR 107 - The Broadway Musical 3 credits; THR 115 - Stagecraft 4 credits; THR 201 - Theatre History I: Greeks to Moliere 3 credits; THR 214 - Theatre in New York 3 credits; THR 216 - Introduction to Visual Interpretation 3 credits"
+    },
+    {
+      "id": "theatre-arts.upper-division-electives",
+      "label": "upper-division-electives",
+      "title": "Upper-Division Electives (12 credits)",
+      "rule": {
+        "manualCheck": "Theatre-related courses in other departments (such as English, Art, Classics, Creative Writing, Liberal Arts, Media Arts, Music, or Women's and Gender Studies) require approval of the Director of the Theatre Minor and host program. The page's elective list is not exhaustive.",
+        "type": "choose",
+        "credits": 12,
+        "from": {
+          "courses": [
+            "EGL 325",
+            "EGL 328",
+            "EGL 387",
+            "ARH 334",
+            "ARH 344",
+            "EGL 345",
+            "EGL 346",
+            "EGL 362"
+          ],
+          "subjects": [
+            "THR"
+          ],
+          "minNumber": 300
+        }
+      },
+      "sourceText": "Upper-Division Electives (12 credits) Twelve (12) upper-division credits to be chosen from courses in theatre (THR) or theatre-related courses in other departments, such as but not limited to English, Art, Classics, Creative Writing, Liberal Arts, Media Arts, Music, or Women's and Gender Studies, with the approval of the Director of the Theatre Minor and host program. Elective courses may include, but are not limited to: THR 312 - American Theatre and Drama 3 credits; THR 315 - Topics in Theatre History & Theory: The Classical Age 6 credits; THR 316 - Topics in Theatre History & Theory: The Modern Era 6 credits; THR 319 - AIDS Drama, 1980s & 90s 3 credits; THR 325 - Screenwriting 3 credits; EGL 325 - Screenwriting 3 credits; THR 328 - Documentary Theatre Creation; EGL 328 - Documentary Theatre Creation 3 credits; THR 326 - Playwriting 3 credits; EGL 387 - Playwriting 3 credits; THR 334 - Performance Art I: The European Avant-Garde 3 credits; ARH 334 - Performance Art I: The European Avant-Garde 3 credits; THR 344 - Performance Art II: World War II to the Present 3 credits; ARH 344 - Performance Art II: World War II to the Present 3 credits; THR 335 - The Musicals of Stephen Sondheim 3 credits; THR 337 - Advanced Technical Theatre 3 credits; THR 351 - Special Topics in Performance 3 credits; THR 354 - Topics in Theatre 3 credits; THR 355 - Media and Production Design for Theatre 3 credits; THR 403 - Media: Theory and Criticism 3 credits; THR 487 - Independent Research 0-6 credits; THR 488 - Internship 0-6 credits; THR 447 - Readings In Theatre Arts 3 credits; THR 484 - Projects in Theater 3 credits; EGL 345 - Shakespeare I 3 credits; EGL 346 - Shakespeare II 3 credits; EGL 362 - Drama in English 3 credits"
+    },
+    {
+      "id": "theatre-arts.credits",
+      "label": "credits",
+      "title": "Minimum credits for the minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires a minimum of 18-19 credits.",
+        "reason": "Program-wide total credit minimum is not a rule type the audit engine supports; the page gives a range of 18-19 credits."
+      },
+      "sourceText": "Completion of the minor requires a minimum of 18-19 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "theatre-arts.foundation",
+        "theatre-arts.upper-division-electives"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "theatre-arts.foundation",
+        "theatre-arts.upper-division-electives"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 12,
+      "appliesTo": [
+        "theatre-arts.foundation",
+        "theatre-arts.upper-division-electives"
+      ],
+      "sourceText": "At least 12 of the credits must be taken at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Director of the Minor: Krya Sabongui, kyra.sabongui@stonybrook.edu. Office: Humanities Building 2019, Phone: (631) 632-7413."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1504",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

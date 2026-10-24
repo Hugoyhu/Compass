@@ -1,0 +1,164 @@
+{
+  "id": "creative-writing",
+  "name": "Creative Writing",
+  "kind": "minor",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "creative-writing.intro",
+      "label": "intro",
+      "title": "Introductory Courses required of all minors (6 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CWL 190"
+          },
+          {
+            "type": "course",
+            "code": "CWL 202"
+          }
+        ]
+      },
+      "sourceText": "Introductory Courses required of all minors (6 credits) - CWL 190 - Introduction to Contemporary Literature 3 credits - CWL 202 - Introduction to Creative Writing: Writing Everything 3 credits"
+    },
+    {
+      "id": "creative-writing.workshops",
+      "label": "workshops",
+      "title": "Three writing workshops (9 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "CWL 300",
+            "CWL 305",
+            "CWL 310",
+            "CWL 315",
+            "CWL 320",
+            "CWL 325",
+            "CWL 510",
+            "CWL 520",
+            "CWL 530",
+            "CWL 540",
+            "CWL 550"
+          ]
+        }
+      },
+      "sourceText": "Three writing workshops chosen from the following (9 credits) Students may repeat a workshop as the topic changes. CWL 300 - Forms of Creative Nonfiction 3 credits; CWL 305 - Forms of Fiction 3 credits; CWL 310 - Forms of Poetry 3 credits; CWL 315 - Forms of Scriptwriting 3 credits; CWL 320 - Forms of Interdisciplinary Arts 3 credits; CWL 325 - Forms of Science Writing 3 credits; CWL 510, 520, 530, 540, 550 Forms of Fiction, Poetry, Scriptwriting, Creative Nonfiction, Professional and Scientific Writing (MFA faculty). By special permission, exceptional undergraduates may earn entry into the graduate writing program's workshops."
+    },
+    {
+      "id": "creative-writing.literature",
+      "label": "literature",
+      "title": "One literature course for writers (3 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "CWL 330",
+            "CWL 335",
+            "CWL 340"
+          ]
+        }
+      },
+      "sourceText": "One literature course for writers chosen from the following (3 credits) - CWL 330 - Topics in European Literature for Writers 3 credits - CWL 335 - Topics in American Literature for Writers 3 credits - CWL 340 - Topics in World Literature for Writers 3 credits"
+    },
+    {
+      "id": "creative-writing.capstone",
+      "label": "capstone",
+      "title": "Senior Project or one Additional Writing Workshop at the 300 or graduate level (3 credits)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CWL 450"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "CWL 300",
+                "CWL 305",
+                "CWL 310",
+                "CWL 315",
+                "CWL 320",
+                "CWL 325",
+                "CWL 510",
+                "CWL 520",
+                "CWL 530",
+                "CWL 540",
+                "CWL 550"
+              ],
+              "excludeUsedBy": [
+                "creative-writing.workshops"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Senior Project or one Additional Writing Workshop at the 300 or graduate level (3 credits)* - CWL 450 - Senior Project 3 credits; OR - CWL 300 - Forms of Creative Nonfiction 3 credits; CWL 305 - Forms of Fiction 3 credits; CWL 310 - Forms of Poetry 3 credits; CWL 315 - Forms of Scriptwriting 3 credits; CWL 320 - Forms of Interdisciplinary Arts 3 credits; CWL 325 - Forms of Science Writing 3 credits; OR graduate-level CWL 510, 520, 530, 540, 550. *Note: Workshop courses taken to satisfy requirement Three writing workshops may not be used to also satisfy the Senior Project or one Additional Writing Workshop."
+    },
+    {
+      "id": "creative-writing.total",
+      "label": "total",
+      "title": "Total credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor in creative writing requires 21 credits.",
+        "reason": "Program-wide total credit requirement that no rule type expresses; flagged for audit."
+      },
+      "sourceText": "Completion of the minor in creative writing requires 21 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "creative-writing.intro",
+        "creative-writing.workshops",
+        "creative-writing.literature",
+        "creative-writing.capstone"
+      ],
+      "sourceText": "Students must earn a grade of C or better in all courses toward the minor."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students should declare the Creative Writing minor no later than the middle of their sophomore year, at which time they should consult with the directors of both their major and minor to plan their course of study. The objective is to fulfill both sets of requirements in a coherent and complementary way."
+    },
+    {
+      "topic": "other",
+      "text": "A student may repeat a workshop as the topic changes."
+    },
+    {
+      "topic": "other",
+      "text": "Graduate-level workshops CWL 510, 520, 530, 540, and 550 (MFA faculty) are open to exceptional undergraduates only by special permission."
+    },
+    {
+      "topic": "sbc",
+      "text": "The minor provides a themed pathway through many of the SBC requirements in the humanities."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1416",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

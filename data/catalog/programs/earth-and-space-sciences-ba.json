@@ -1,0 +1,1031 @@
+{
+  "id": "earth-and-space-sciences-ba",
+  "name": "Earth and Space Sciences, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Earth and Space Sciences",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "earth-and-space-sciences-ba.track",
+      "label": "track",
+      "title": "Track: Earth and Space Sciences track or Earth Science Education track",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "earth-and-space-sciences-ba.track.ess",
+            "sourceText": "Requirements for the Earth and Space Sciences Track: Introductory earth and space sciences courses; Upper-division earth and space sciences courses; Introductory related science courses; Specific science concentration; Upper-division writing and speaking requirement",
+            "type": "allOf",
+            "rules": [
+              {
+                "sourceText": "GEO 103 - The Earth Through Time AND GEO 113 - Historical Geology Laboratory",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "GEO 103"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GEO 113"
+                  }
+                ]
+              },
+              {
+                "sourceText": "GEO 122 - Physical Geology OR GEO 102 - The Earth AND GEO 112 - Physical Geology Laboratory",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "GEO 122"
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "GEO 102"
+                      },
+                      {
+                        "type": "course",
+                        "code": "GEO 112"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "AST 101"
+              },
+              {
+                "type": "course",
+                "code": "AST 112"
+              },
+              {
+                "type": "course",
+                "code": "ATM 205"
+              },
+              {
+                "sourceText": "At least four 300-400 level GEO, AST, or ATM courses (minimum of 3 credits each); at least one must include a laboratory. Courses with STAS designation are excluded.",
+                "manualCheck": "At least one of the four courses must include a laboratory.",
+                "type": "choose",
+                "count": 4,
+                "from": {
+                  "subjects": [
+                    "GEO",
+                    "AST",
+                    "ATM"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499,
+                  "minCredits": 3,
+                  "excludeAttributes": [
+                    "STAS"
+                  ]
+                }
+              },
+              {
+                "sourceText": "MAT 131 - Calculus I AND MAT 132 - Calculus II, or the alternate beginning calculus sequences MAT 125-MAT 126-MAT 127; MAT 141 and MAT 142; AMS 151 and AMS 161; or MAT 171",
+                "manualCheck": "If student does not place into MAT 125 or MAT 131 on the math placement examination, MAT 123 becomes an additional required course for the major. Placement-based equivalency is accepted.",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "MAT 131"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT 132"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "MAT 125"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT 126"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT 127"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "MAT 141"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT 142"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "AMS 151"
+                      },
+                      {
+                        "type": "course",
+                        "code": "AMS 161"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 171"
+                  }
+                ]
+              },
+              {
+                "sourceText": "PHY 121 - Physics for the Life Sciences I OR PHY 131 AND PHY 133 OR PHY 141 AND PHY 133 OR PHY 125 AND PHY 126 AND PHY 133",
+                "manualCheck": "PHY 121 is not accepted for the physics, atmospheric science, mathematics, or astronomy concentrations.",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 121"
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "PHY 131"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHY 133"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "PHY 141"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHY 133"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "PHY 125"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHY 126"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHY 133"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sourceText": "CHE 131 - General Chemistry IB OR CHE 129 - General Chemistry IA; CHE 133 - General Chemistry Laboratory I",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "CHE 131"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 129"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 133"
+                  }
+                ]
+              },
+              {
+                "sourceText": "Either A for students not choosing the physics concentration (any two of the following groups: PHY 122 or PHY 132 + PHY 134 or PHY 142 + PHY 134 or PHY 126 + PHY 127 + PHY 134; CHE 132 + CHE 134; BIO 201 + BIO 204) or B for students choosing the physics concentration (PHY 132 + PHY 134 or PHY 142 + PHY 134 or PHY 126 + PHY 127 + PHY 134)",
+                "manualCheck": "The fourth alternative (physics II group alone) applies only to students choosing the physics concentration. PHY 122 is not accepted for the atmospheric science, mathematics, or astronomy concentrations.",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "anyOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 122"
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "PHY 132"
+                              },
+                              {
+                                "type": "course",
+                                "code": "PHY 134"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "PHY 142"
+                              },
+                              {
+                                "type": "course",
+                                "code": "PHY 134"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "PHY 126"
+                              },
+                              {
+                                "type": "course",
+                                "code": "PHY 127"
+                              },
+                              {
+                                "type": "course",
+                                "code": "PHY 134"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "CHE 132"
+                          },
+                          {
+                            "type": "course",
+                            "code": "CHE 134"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "anyOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 122"
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "PHY 132"
+                              },
+                              {
+                                "type": "course",
+                                "code": "PHY 134"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "PHY 142"
+                              },
+                              {
+                                "type": "course",
+                                "code": "PHY 134"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "PHY 126"
+                              },
+                              {
+                                "type": "course",
+                                "code": "PHY 127"
+                              },
+                              {
+                                "type": "course",
+                                "code": "PHY 134"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "BIO 201"
+                          },
+                          {
+                            "type": "course",
+                            "code": "BIO 204"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "CHE 132"
+                          },
+                          {
+                            "type": "course",
+                            "code": "CHE 134"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "BIO 201"
+                          },
+                          {
+                            "type": "course",
+                            "code": "BIO 204"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "PHY 122"
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 132"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 134"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 142"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 134"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 126"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 127"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 134"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sourceText": "One of MAT 205, MAT 203 - Calculus III with Applications, or AMS 261 - Applied Calculus III",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 205"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 203"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 261"
+                  }
+                ]
+              },
+              {
+                "sourceText": "One of MAT 305, MAT 303 - Calculus IV with Applications, or AMS 361 - Applied Calculus IV: Differential Equations",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 305"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 303"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 361"
+                  }
+                ]
+              },
+              {
+                "sourceText": "At least 12 credits in courses acceptable for one of the following concentrations: astronomy, atmospheric sciences, biology, chemistry, geology, marine sciences, mathematics, or physics. Students must obtain departmental approval of courses chosen to satisfy the specific science concentration.",
+                "type": "unparsed",
+                "text": "At least 12 credits in courses acceptable for one of the following concentrations: astronomy, atmospheric sciences, biology, chemistry, geology, marine sciences, mathematics, or physics. Students must obtain departmental approval of courses chosen to satisfy the specific science concentration.",
+                "reason": "The concentration course pool is not listed on the page; acceptance requires departmental approval."
+              },
+              {
+                "sourceText": "Before graduation all students in the Earth and Space Sciences track must register for the 1-credit GEO 496 WRTD course along with a 300-400 level GEO course. Completion requires a 15 page paper receiving a B or higher from the instructor of the 300-400 level course.",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "manualCheck": "Requires a 15 page paper graded B or higher by the instructor of the accompanying 300-400 level GEO course, and a 300-400 level GEO course taken alongside it.",
+                    "type": "course",
+                    "code": "GEO 496"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "earth-and-space-sciences-ba.track.education",
+            "sourceText": "Requirements for the Earth Science Education Track: Introductory science courses; Elective Courses; Specific Science Concentration; Upper-division writing requirement",
+            "type": "allOf",
+            "rules": [
+              {
+                "sourceText": "GEO 103 AND GEO 113",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "GEO 103"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GEO 113"
+                  }
+                ]
+              },
+              {
+                "sourceText": "GEO 122 - Physical Geology OR GEO 102 - The Earth AND GEO 112 - Physical Geology Laboratory",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "GEO 122"
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "GEO 102"
+                      },
+                      {
+                        "type": "course",
+                        "code": "GEO 112"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "AST 101"
+              },
+              {
+                "type": "course",
+                "code": "AST 112"
+              },
+              {
+                "type": "course",
+                "code": "ATM 205"
+              },
+              {
+                "type": "course",
+                "code": "BIO 201"
+              },
+              {
+                "type": "course",
+                "code": "BIO 202"
+              },
+              {
+                "type": "course",
+                "code": "BIO 204"
+              },
+              {
+                "sourceText": "CHE 131 - General Chemistry IB OR CHE 129 - General Chemistry IA AND CHE 132 - General Chemistry II",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 131"
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "CHE 129"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 132"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CHE 133"
+              },
+              {
+                "type": "course",
+                "code": "CHE 134"
+              },
+              {
+                "type": "course",
+                "code": "AMS 102"
+              },
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "sourceText": "PHY 119 - Physics for Environmental Studies OR PHY 125 AND PHY 126 AND PHY 133",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 119"
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "PHY 125"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHY 126"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHY 133"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ATM 102"
+              },
+              {
+                "sourceText": "At least 24 credits chosen in consultation with the program director. At least two of the courses must include a laboratory.",
+                "type": "unparsed",
+                "text": "At least 24 credits chosen in consultation with the program director. At least two of the courses must include a laboratory.",
+                "reason": "The elective pool is not specified on the page; selection is made with the program director."
+              },
+              {
+                "sourceText": "At least 12 credits of the 24 elective credits must be chosen from one of the earth and space science disciplines: astronomy, atmospheric sciences or geosciences.",
+                "type": "unparsed",
+                "text": "At least 12 credits of the 24 elective credits must be chosen from one of the earth and space science disciplines: astronomy, atmospheric sciences or geosciences.",
+                "reason": "Concentration constraint over the elective pool, which is not enumerated on the page."
+              },
+              {
+                "sourceText": "Before graduation all students in the Earth Science Education Track must register for the 1-credit GEO 496 WRTD course along with a 300-400 level GEO course. Completion requires a 15 page paper receiving a B or higher from the instructor of the 300-400 level course.",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "manualCheck": "Requires a 15 page paper graded B or higher by the instructor of the accompanying 300-400 level GEO course, and a 300-400 level GEO course taken alongside it.",
+                    "type": "course",
+                    "code": "GEO 496"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "The major in Earth and Space Sciences leads to the Bachelor of Arts degree. All courses offered for the major must be passed with a letter grade of C or higher. Completion of the major requires approximately 61-73 credits. Requirements for the Earth and Space Sciences Track and Requirements for the Earth Science Education Track are listed separately."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "earth-and-space-sciences-ba.track"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "earth-and-space-sciences-ba.track"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "SPK",
+        "rule": {
+          "manualCheck": "Must be completed with a grade of S.",
+          "type": "course",
+          "code": "GEO 497"
+        },
+        "sourceText": "The SBC SPK requirement can be completed with GEO 497 with a grade of 'S'."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 133",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "GEO 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 112",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MAT 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "GEO 103",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 113",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MAT 132",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "PHY 121 or PHY 131/PHY 133",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "GEO 306 or GEO 366",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "PHY 122 or PHY 132/PHY 134",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "GEO/AST/ATM Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ATM 205",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Concentration elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AST 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AST 112",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "BIO 201",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Concentration elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "GEO/AST/ATM Elective",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "BIO 204",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Concentration elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division GEO, AST, or ATM elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 458",
+          "credits": 0
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Concentration elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "GEO/AST/ATM Elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 459",
+          "credits": 0
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Director of Undergraduate Studies and Major Advisor: Hanna Nekvasil, Hanna.Nekvasil@stonybrook.edu, 255 Earth and Space Sciences, (631) 632-8201."
+    },
+    {
+      "topic": "other",
+      "text": "Completion of the major requires approximately 61-73 credits. This range is not evaluated."
+    },
+    {
+      "topic": "other",
+      "text": "Students choose either the Earth and Space Sciences track or the Earth Science Education track. The Earth Science Secondary Teacher Education Program is described under the Education and Teacher Certification entry in the alphabetical listings of Approved Majors, Minors, and Programs."
+    },
+    {
+      "topic": "other",
+      "text": "Mathematics placement equivalency is accepted to satisfy the calculus requirements. Alternate beginning calculus sequences may substitute for MAT 131 and MAT 132 in major requirements or prerequisites."
+    },
+    {
+      "topic": "sbc",
+      "text": "GEO 497 may complete the SBC SPK requirement with a grade of S. The sample sequence's GEO 458 and GEO 459 are listed with 0 credits."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1419",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

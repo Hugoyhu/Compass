@@ -1,0 +1,425 @@
+{
+  "id": "ecosystems-and-human-impact-ba",
+  "name": "Ecosystems and Human Impact, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Ecosystems and Human Impact",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "ecosystems-and-human-impact-ba.foundation",
+      "label": "Foundation",
+      "title": "Required Foundation Courses for Major (27-28 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ANT 120"
+          },
+          {
+            "type": "course",
+            "code": "BIO 201"
+          },
+          {
+            "type": "course",
+            "code": "BIO 204"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 115"
+              },
+              {
+                "type": "course",
+                "code": "ENV 115"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ECO 108"
+          },
+          {
+            "manualCheck": "If students do not place into MAT 125, MAT 131, or AMS 151 on the basis of the math placement examination, MAT 123 (or MAT 119/MAT 123) is a required course for the major.",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 130"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "AMS 151"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 111"
+              },
+              {
+                "type": "course",
+                "code": "ENS 101"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SUS 201"
+          },
+          {
+            "type": "course",
+            "code": "SUS 204"
+          }
+        ]
+      },
+      "sourceText": "ANT 120 - Introduction to Biological Anthropology 3 credits; BIO 201 - Fundamentals of Biology: Organisms to Ecosystems 3 credits; BIO 204 - Fundamentals of Scientific Inquiry in the Biological Sciences I 2 credits; CHE 115 - Chemistry, Life, and Environment 3 credits; ENV 115 - Chemistry, Life, and Environment 3 credits (Note: CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115); ECO 108 - Introduction to Economics 4 credits; MAT 125 - Calculus A 3 credits OR MAT 130 - Trigonometry and Logarithms 1 credit, MAT 125 - Calculus A Credits: 3 credits OR MAT 131 - Calculus I 4 credits OR AMS 151 - Applied Calculus I 3 credits If students do not place into MAT 125 or MAT 131 or AMS 151 on the basis of the math placement examination, MAT 123 (or MAT 119/MAT 123) is a required course for the major.; SUS 111 - Introduction to Sustainability 3 credits OR ENS 101 - Prospects for Planet Earth 3 credits; SUS 201 - Systems and Models 3 credits; SUS 204 - Population Studies 3 credits"
+    },
+    {
+      "id": "ecosystems-and-human-impact-ba.core",
+      "label": "Core",
+      "title": "Core Courses (24-25 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BIO 351"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ENV 301"
+              },
+              {
+                "type": "course",
+                "code": "SUS 401"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ENV 304"
+              },
+              {
+                "type": "course",
+                "code": "ATM 305"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "GSS 313"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GSS 314"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "GIS 317"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SUS 301"
+          },
+          {
+            "type": "course",
+            "code": "SUS 305"
+          },
+          {
+            "type": "course",
+            "code": "SUS 322"
+          },
+          {
+            "type": "course",
+            "code": "SUS 326"
+          }
+        ]
+      },
+      "sourceText": "BIO 351 - Ecology 3 credits; ENV 301 - Sustainability of the Long Island Pine Barrens 3 credits OR SUS 401 - Integrative, Collaborative Systems Studies 3 credits; ENV 304 - Global Environmental Change 3 credits OR ATM 305 - Global Atmospheric Change 3 credits; GSS 313 - GIS Design and Application I 3 credits; GSS 314 - GIS Laboratory 1 credit OR GIS 317 - Geospatial Narratives; SUS 301 - Technical Writing and Communication 3 credits; SUS 305 - Collective Action and Advocacy 3 credits; SUS 322 - Human Ecology 3 credits; SUS 326 - Conservation Genetics 3 credits"
+    },
+    {
+      "id": "ecosystems-and-human-impact-ba.electives-1",
+      "label": "Group I",
+      "title": "Elective Group I: Technical Skills",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "BIO 211",
+            "CSE 101",
+            "GSS 325"
+          ]
+        }
+      },
+      "sourceText": "Choose one of the following three courses: BIO 211 - Statistics and Data Analysis: A Conceptual Approach 4 credits (AMS 110, AMS 310, ECO 320 or POL 201 may be substituted for BIO 211); CSE 101 - Computer Science Principles 4 credits; GSS 325 - GIS Design & Applications II 3 credits"
+    },
+    {
+      "id": "ecosystems-and-human-impact-ba.electives-2",
+      "label": "Group 2",
+      "title": "Elective Group 2: Solutions for Environmental Problems",
+      "rule": {
+        "manualCheck": "SUS 488, SUS 487, ANP 387, ANP 487, and ANT 487 may be taken as a three-credit course only with permission of the faculty advisor. Other classes may be substituted with permission of the undergraduate director.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "ANT 309",
+            "ANT 326",
+            "ANT 352",
+            "ANT 408",
+            "ANT 353",
+            "BIO 319",
+            "BIO 352",
+            "BIO 353",
+            "BIO 371",
+            "ENV 340",
+            "GEO 304",
+            "GEO 313",
+            "MAR 315",
+            "MAR 336",
+            "MAR 384",
+            "MAR 388",
+            "MAR 394",
+            "SUS 313",
+            "SUS 319",
+            "SUS 340",
+            "SUS 344",
+            "SUS 351",
+            "SUS 352",
+            "SUS 488",
+            "SUS 487",
+            "ANP 387",
+            "ANP 487",
+            "ANT 487"
+          ]
+        }
+      },
+      "sourceText": "Choose three courses from the following list. Students may take a three credit SUS 488, SUS 487, ANP 387, ANP 487, or ANT 487 with permission of their faculty advisor. ANT 309 - Comparing Ecosystems in Madagascar 3 credits; ANT 326 - Lemurs of Madagascar 3 credits; ANT 352 - Methods in Studying Primates 3 credits; ANT 408 - Pastoralism Under Pressure: Savannas, Societies, and Sustainability in East Africa 3 credits; ANT 353 - Biodiversity Assessment Methods for Tropical Field Research 3 credits; BIO 319 - Landscape Ecology Laboratory 3 credits; BIO 352 - Ecology Laboratory 3 credits; BIO 353 - Marine Ecology 3 credits; BIO 371 - Restoration of Aquatic Ecosystems 4 credits; ENV 340 - Contemporary Topics in Environmental Science 3 credits; GEO 304 - Energy, Mineral Resources, and the Environment 3 credits; GEO 313 - Understanding Water Resources for the 21st Century 3 credits; MAR 315 - Marine Conservation 3 credits; MAR 336 - Marine Pollution 3 credits; MAR 384 - Diseases of Aquatic Organisms 3 credits; MAR 388 - Tropical Marine Ecology 4 credits; MAR 394 - Environmental Toxicology and Public Health 3 credits; SUS 313 - Ecosystem Based Management (formerly offered as EHI 311); SUS 319 - Restoration Ecology 3 credits; SUS 340 - Ecological and Social Dimensions of Disease 3 credits; SUS 344 - Sustainable Natural Resources 3 credits; SUS 351 - Design and Implement a Research Project in Ecotoxicology 3 credits; SUS 352 - Conduct and Communicate a Research Project in Ecotoxicology 3 credits"
+    },
+    {
+      "id": "ecosystems-and-human-impact-ba.electives-3",
+      "label": "Group 3",
+      "title": "Elective Group 3: History and Policy of Environmental Issues",
+      "rule": {
+        "manualCheck": "Other classes may be substituted with permission of the undergraduate director.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "AFS 374",
+            "SUS 374",
+            "ENS 311",
+            "ENS 333",
+            "MAR 340",
+            "MAR 392",
+            "SOC 344",
+            "SUS 203",
+            "SUS 206",
+            "SUS 307",
+            "SUS 309",
+            "SUS 311",
+            "SUS 312",
+            "SUS 314",
+            "SUS 316",
+            "SUS 317",
+            "SUS 325",
+            "SUS 341",
+            "SUS 350"
+          ]
+        }
+      },
+      "sourceText": "Choose one of the following courses: AFS 374 - Environment and Development in African History 3 credits; SUS 374 - Environment and Development in African History 3 credits; ENS 311 - Ecosystem Ecology and the Global Environment 3 credits; ENS 333 - Environmental Law 3 credits; MAR 340 - Environmental Problems and Solutions 3 credits; MAR 392 - Waste Management Issues 3 credits; SOC 344 - Environmental Sociology 3 credits; SUS 203 - Interpretation and Critical Analysis 3 credits; SUS 206 - Economics and Sustainability 3 credits; SUS 307 - Environmental Economics and Management 3 credits; SUS 309 - Global Environmental Politics (formerly offered as SBC 309); SUS 311 - Disasters and Society: A Global Perspective 3 credits; SUS 312 - Environment, Society, and Health (formerly offered as SBC 312); SUS 314 - Civilizations and Collapse 3 credits; SUS 316 - Cuba and Sustainability 3 credits; SUS 317 - American Environmental History 3 credits; SUS 325 - Environmental Writing and the Media 3 credits; SUS 341 - Environmental Treatises and Protocol; SUS 350 - Contemporary Topics in Sustainability 3 credits"
+    },
+    {
+      "id": "ecosystems-and-human-impact-ba.writing",
+      "label": "Writing",
+      "title": "Communications and Writing Requirement",
+      "rule": {
+        "manualCheck": "Requires registration in the 0-credit SUS 459 and approval of a term paper or laboratory report written for an advanced course in the major (including Readings and Research courses). Completion of SUS 459 with a grade of S approves the WRTD requirement. Preapproved courses are available from the department.",
+        "type": "course",
+        "code": "SUS 459"
+      },
+      "sourceText": "The advanced writing component of the major in EHI requires registration in the 0-credit SUS 459 and approval of either a term paper or a laboratory report written for an advanced course in the appropriate major at Stony Brook (including Readings and Research courses). Completion of SUS 459 with a grade of S will result in approval of the WRTD requirement."
+    },
+    {
+      "id": "ecosystems-and-human-impact-ba.grade-exception",
+      "label": "Grade exception",
+      "title": "Grade below C limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one course (4 credits maximum) with a passing grade lower than C can be credited towards the major.",
+        "reason": "Limits the number and credits of sub-C courses across the whole major, which no rule type covers."
+      },
+      "sourceText": "No more than one course (4 credits maximum) with a passing grade lower than C can be credited towards the major. Course taken with the Pass/NC option may not be applied to the major."
+    },
+    {
+      "id": "ecosystems-and-human-impact-ba.double-major-limit",
+      "label": "Double majors",
+      "title": "Double major 300-400 level credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "Excluding ENV 301, SUS 301, SUS 305, and SUS 401, no more than 6 credits of 300-400 level course credits can be applied to two majors within the Sustainability Studies Program or the School of Marine and Atmospheric Sciences.",
+        "reason": "Program-wide credit limit across two majors, which no rule type covers."
+      },
+      "sourceText": "Excluding ENV 301 - Sustainability of the Long Island Pine Barrens, SUS 301 - Technical Writing and Communication, SUS 305 - Collective Action and Advocacy, and SUS 401 - Integrative, Collaborative Systems Studies, no more than 6 credits of 300-400 level course credits can be applied to two majors within the Sustainability Studies Program or the School of Marine and Atmospheric Sciences."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "ecosystems-and-human-impact-ba.foundation",
+        "ecosystems-and-human-impact-ba.core",
+        "ecosystems-and-human-impact-ba.electives-1",
+        "ecosystems-and-human-impact-ba.electives-2",
+        "ecosystems-and-human-impact-ba.electives-3",
+        "ecosystems-and-human-impact-ba.writing"
+      ],
+      "sourceText": "Course taken with the Pass/NC option may not be applied to the major."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "ecosystems-and-human-impact-ba.sub.bio211",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "BIO 211"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 110"
+          },
+          {
+            "type": "course",
+            "code": "AMS 310"
+          },
+          {
+            "type": "course",
+            "code": "ECO 320"
+          },
+          {
+            "type": "course",
+            "code": "POL 201"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "AMS 110, AMS 310, ECO 320 or POL 201 may be substituted for BIO 211"
+    },
+    {
+      "id": "ecosystems-and-human-impact-ba.sub.chem",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 115",
+          "ENV 115"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 129"
+          },
+          {
+            "type": "course",
+            "code": "CHE 131"
+          },
+          {
+            "type": "course",
+            "code": "CHE 152"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115"
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "course",
+          "code": "SUS 459"
+        },
+        "sourceText": "Completion of SUS 459 with a grade of S will result in approval of the WRTD requirement."
+      }
+    ]
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Effective Spring 2023, students may not declare the major in Ecosystems and Human Impact. Students may instead enroll in the Ecosystems and Human Impact track in the BA in Sustainability Studies."
+    },
+    {
+      "topic": "advising",
+      "text": "Students should consult with the department advisor to ensure that their plan for completing the Upper Division Writing Requirement is consistent with university graduation requirements for General Education. Students are encouraged to talk with the major director about how study abroad coursework can be used to fulfill major requirements."
+    },
+    {
+      "topic": "other",
+      "text": "Study abroad is available in Cuba, Madagascar, and the Turkana Basin (Kenya). Students may enroll in the study abroad program at Ranomafana, Madagascar in their junior or senior year. Local internships, research courses, and field courses are also available."
+    },
+    {
+      "topic": "sbc",
+      "text": "Students completing the Stony Brook Curriculum must complete a course that satisfies the WRTD learning objective to graduate."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1423",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

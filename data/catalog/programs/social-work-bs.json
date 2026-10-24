@@ -1,0 +1,29 @@
+{
+  "id": "social-work-bs",
+  "name": "Social Work, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Social Work",
+  "allowCourseReuse": false,
+  "requirements": [],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "other",
+      "text": "The catalog page states that information and program requirements for the major in Social Work are found in the Health Sciences Catalog. No requirements for the major are listed on this page, so none are modeled here."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1574",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

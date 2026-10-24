@@ -1,0 +1,670 @@
+{
+  "id": "data-science-bs",
+  "name": "Data Science, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Data Science",
+  "approxCredits": 58,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "data-science-bs.1",
+      "label": "1",
+      "title": "Mathematics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 161"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 127"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 132"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 210"
+              },
+              {
+                "type": "course",
+                "code": "MAT 211"
+              },
+              {
+                "type": "course",
+                "code": "MAT 308"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 261"
+              },
+              {
+                "type": "course",
+                "code": "CSE 113"
+              },
+              {
+                "type": "course",
+                "code": "MAT 203"
+              },
+              {
+                "type": "course",
+                "code": "MAT 307"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "AMS 310"
+          }
+        ]
+      },
+      "sourceText": "1. Mathematics: a. AMS 151 - Applied Calculus I 3 credits; b. AMS 161 - Applied Calculus II 3 credits; Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161 in major requirements or prerequisites: MAT 125, MAT 126, MAT 127, or MAT 131, MAT 132. Equivalency for MAT courses achieved through the Mathematics Placement Examination is accepted to meet MAT course requirements. c. One Linear Algebra Course: AMS 210 - Applied Linear Algebra 3 credits; MAT 211 - Introduction to Linear Algebra 3 credits; MAT 308 - Differential Equations with Linear Algebra 4 credits. d. One Additional Calculus or Computer Science Foundations Courses: AMS 261 - Applied Calculus III 4 credits; CSE 113 - Foundations of Computer Science I 4 credits; MAT 203 - Calculus III with Applications 4 credits; MAT 307 - Multivariable Calculus with Linear Algebra 4 credits. e. AMS 310 - Survey of Probability and Statistics 3 credits"
+    },
+    {
+      "id": "data-science-bs.2",
+      "label": "2",
+      "title": "Computer Science",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CSE 101"
+              },
+              {
+                "type": "course",
+                "code": "CSE 103"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CSE 114"
+          },
+          {
+            "type": "course",
+            "code": "CSE 214"
+          }
+        ]
+      },
+      "sourceText": "2. Computer Science: a. CSE 101 - Computer Science Principles 4 credits OR CSE 103 - Data Science Principles 4 credits; b. CSE 114 - Introduction to Object-Oriented Programming 4 credits; c. CSE 214 - Data Structures 4 credits"
+    },
+    {
+      "id": "data-science-bs.3",
+      "label": "3",
+      "title": "Data Science",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CSE 351"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 315"
+              },
+              {
+                "type": "course",
+                "code": "CSE 357"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "3. Data Science: a. CSE 351 - Introduction to Data Science 3 credits; b. One Upper-Division Data Analysis Course: AMS 315 - Data Analysis 3 credits; CSE 357 - Statistical Methods for Data Science 3 credits"
+    },
+    {
+      "id": "data-science-bs.4",
+      "label": "4",
+      "title": "One Upper Division Writing Course",
+      "rule": {
+        "type": "course",
+        "code": "CSE 300"
+      },
+      "sourceText": "4. One Upper Division Writing Course: a. CSE 300 - Technical Communications 3 credits"
+    },
+    {
+      "id": "data-science-bs.5",
+      "label": "5",
+      "title": "Professional Ethics",
+      "rule": {
+        "type": "course",
+        "code": "CSE 312"
+      },
+      "sourceText": "5. Professional Ethics: a. CSE 312 - Social, Legal, and Ethical Issues in Computing 3 credits"
+    },
+    {
+      "id": "data-science-bs.6",
+      "label": "6",
+      "title": "Technical Electives",
+      "rule": {
+        "manualCheck": "Other upper-division courses may be selected with approval of the Undergraduate Program Director; confirm approval where a course outside the list is used.",
+        "type": "choose",
+        "credits": 9,
+        "from": {
+          "courses": [
+            "AMS 301",
+            "AMS 311",
+            "AMS 316",
+            "AMS 317",
+            "AMS 318",
+            "AMS 326",
+            "AMS 341",
+            "AMS 345",
+            "AMS 380",
+            "AMS 394",
+            "AMS 412",
+            "AMS 487",
+            "AMS 488",
+            "CSE 327",
+            "CSE 332",
+            "CSE 337",
+            "CSE 352",
+            "CSE 353",
+            "CSE 354",
+            "CSE 373",
+            "ISE 305",
+            "CSE 305",
+            "CSE 487",
+            "CSE 488"
+          ],
+          "minNumber": 300,
+          "excludeUsedBy": [
+            "data-science-bs.3",
+            "data-science-bs.7"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "AMS 487",
+                "AMS 488",
+                "CSE 487",
+                "CSE 488"
+              ]
+            },
+            "maxCredits": 3
+          }
+        ]
+      },
+      "sourceText": "6. Technical Electives: Each student must complete at least 9 credits of data science technical electives at the upper-division level. Electives may be drawn from any of the courses listed below. Other courses may be selected with approval of the Undergraduate Program Director. Notes: Courses taken to satisfy requirement 3 may not also be used to satisfy the technical elective requirement. Only 3 credits of AMS 487, AMS 488, CSE 487 or CSE 488 may be used to satisfy the technical elective requirement. a. AMS 301; b. AMS 311; c. AMS 316; d. AMS 317; e. AMS 318; f. AMS 326; g. AMS 341; h. AMS 345; i. AMS 380; j. AMS 394; k. AMS 412; l. AMS 487; m. AMS 488; n. CSE 327; o. CSE 332; p. CSE 337; q. CSE 352; r. CSE 353; s. CSE 354; t. CSE 373; u. One of: ISE 305 - Database Design and Practice 3 credits, CSE 305 - Principles of Database Systems 3 credits; v. CSE 487 - Research in Computer Science 0-3 credits; w. CSE 488 - Internship in Computer Science 3 credits"
+    },
+    {
+      "id": "data-science-bs.7",
+      "label": "7",
+      "title": "Specialization",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BUS 220"
+              },
+              {
+                "type": "choose",
+                "count": 3,
+                "from": {
+                  "courses": [
+                    "BUS 340",
+                    "BUS 346",
+                    "BUS 375",
+                    "BUS 376",
+                    "BUS 377"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "manualCheck": "Upper-division CSE technical lecture courses only, not taken to satisfy any other major requirement.",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "CSE"
+              ],
+              "minNumber": 300,
+              "excludeUsedBy": [
+                "data-science-bs.1",
+                "data-science-bs.2",
+                "data-science-bs.3",
+                "data-science-bs.4",
+                "data-science-bs.5",
+                "data-science-bs.6"
+              ]
+            }
+          },
+          {
+            "manualCheck": "Upper-division AMS technical lecture courses only, not taken to satisfy any other major requirement.",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "AMS"
+              ],
+              "minNumber": 300,
+              "excludeUsedBy": [
+                "data-science-bs.1",
+                "data-science-bs.2",
+                "data-science-bs.3",
+                "data-science-bs.4",
+                "data-science-bs.5",
+                "data-science-bs.6"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "7. Specialization: Each student must complete a specialization consisting of 12 or more credits. Courses taken to satisfy a specialization requirement may not be used to satisfy the technical elective requirements. Business: BUS 220 - Introduction to Decision Sciences 3 credits; At least three of the following: BUS 340, BUS 346, BUS 375, BUS 376, BUS 377. Computer Science: Any combination of upper-division CSE technical lecture courses totaling 12 or more credits not taken to satisfy any other major requirement. Applied Mathematics and Statistics: Any combination of upper-division AMS technical lecture courses totaling 12 or more credits not taken to satisfy any other major requirement."
+    },
+    {
+      "id": "data-science-bs.total-credits",
+      "label": "total-credits",
+      "title": "Total major credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires at least 58 credits.",
+        "reason": "Program-wide credit minimum; no rule type covers total major credits."
+      },
+      "sourceText": "The major in Data Science leads to the Bachelor of Science degree. Completion of the major requires at least 58 credits."
+    },
+    {
+      "id": "data-science-bs.residency-credits",
+      "label": "residency-credits",
+      "title": "Additional Stony Brook residency",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 15 additional major requirement credits must be completed at Stony Brook.",
+        "reason": "Stated as additional to the 15 credits from requirements 3 and 6; the page does not clearly define which requirements the additional credits are drawn from, so no residency rule type can express it exactly."
+      },
+      "sourceText": "Residency requirement: 15 credits from requirements 3 and 6 below, and at least 15 additional major requirement credits must be completed at Stony Brook."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "data-science-bs.1",
+        "data-science-bs.2",
+        "data-science-bs.3",
+        "data-science-bs.4",
+        "data-science-bs.5",
+        "data-science-bs.6",
+        "data-science-bs.7"
+      ],
+      "sourceText": "All courses taken to satisfy requirements for the major must be taken for a letter grade and passed with a grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "data-science-bs.1",
+        "data-science-bs.2",
+        "data-science-bs.3",
+        "data-science-bs.4",
+        "data-science-bs.5",
+        "data-science-bs.6",
+        "data-science-bs.7"
+      ],
+      "sourceText": "All courses taken to satisfy requirements for the major must be taken for a letter grade and passed with a grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 15,
+      "appliesTo": [
+        "data-science-bs.3",
+        "data-science-bs.6"
+      ],
+      "sourceText": "Residency requirement: 15 credits from requirements 3 and 6 below, and at least 15 additional major requirement credits must be completed at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 151",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CSE 101",
+          "alternatives": [
+            "CSE 103"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 161",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CSE 114",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Additional Calculus or Computer Science Foundations",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CSE 214",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Linear Algebra Course (STEM+)",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 310",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CSE 312",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization Course 1",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "UD Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CSE 300",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "UD Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CSE 351",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization Course 2",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "UD Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "UD Specialization Course 3",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "UD Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "UD Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "UD Data Analysis Course",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "UD Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "UD Specialization Course 4",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "UD Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "UD Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Acceptance into the major: Area of Interest or declared AMS, CSE, DAS and ISE students must complete CSE 114, CSE 214 and one of CSE 113, AMS 261, MAT 203 or MAT 307, with grades of B- or higher and a 3.00 GPA in those courses, repeat at most one of them, have a cumulative GPA of 3.00 or higher, and have course evaluations completed for transferred courses used toward the major. Requirements must be completed within one year of enrolling in the first course that applies toward major entry. Applications are due January 5 (Spring) and June 5 (Fall). Students outside AMS, CSE, DAS and ISE are admitted competitively, contingent on program capacity."
+    },
+    {
+      "topic": "advising",
+      "text": "Students majoring in Data Science may not double-major or minor in Computer Science, Information Systems or Applied Mathematics & Statistics."
+    },
+    {
+      "topic": "other",
+      "text": "The program offers a 'Data Science + X' option with a variety of subject areas through its specialization requirement."
+    },
+    {
+      "topic": "other",
+      "text": "An accelerated BS in DAS + MS in DAS program is available to majors, in which nine credits may be applied to both undergraduate and graduate requirements. This optional program is not modeled here."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1568",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

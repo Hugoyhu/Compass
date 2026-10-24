@@ -1,0 +1,191 @@
+{
+  "id": "physics",
+  "name": "Physics",
+  "kind": "minor",
+  "degree": "",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "physics.tracks",
+      "label": "tracks",
+      "title": "Requirements for the Minor in Physics (by major college)",
+      "rule": {
+        "manualCheck": "Use the first track for students whose major is in the College of Arts and Sciences and the second track for students whose major is in the College of Engineering and Applied Sciences.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "physics.tracks.as",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 251"
+              },
+              {
+                "type": "course",
+                "code": "PHY 252"
+              },
+              {
+                "type": "course",
+                "code": "PHY 300"
+              },
+              {
+                "type": "course",
+                "code": "PHY 301"
+              },
+              {
+                "type": "course",
+                "code": "PHY 303"
+              },
+              {
+                "type": "course",
+                "code": "PHY 335"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 306"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 302"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "physics.tracks.ceas",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 300"
+              },
+              {
+                "type": "course",
+                "code": "PHY 303"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "PHY 251"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHY 252"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "ESG 281"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 301"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ESE 319"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 306"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MEC 398"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CME 314"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 335"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ESE 314"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Requirements for the Minor in Physics for students with majors in the College of Arts and Sciences: PHY 251 - Modern Physics; PHY 252 - Modern Physics Laboratory; PHY 300 - Waves and Optics; PHY 301 - Electromagnetic Theory I; PHY 303 - Mechanics; PHY 335 - Electronics and Instrumentation Laboratory; and one of the following: PHY 306 - Thermodynamics, Kinetic Theory, and Statistical Mechanics OR CHE 302 - Physical Chemistry II. Requirements for the Minor in Physics for students with majors in the College of Engineering and Applied Sciences: the following two courses: PHY 300 - Waves and Optics; PHY 303 - Mechanics; one of the following: PHY 251 - Modern Physics AND PHY 252 - Modern Physics Laboratory OR ESG 281 - Engineering Introduction to the Solid State; one of the following: PHY 301 - Electromagnetic Theory I OR ESE 319 - Electromagnetic Waves and Transmission Lines; one of the following: PHY 306 - Thermodynamics, Kinetic Theory, and Statistical Mechanics OR MEC 398 - Thermodynamics II OR CME 314 - Chemical Engineering Thermodynamics II; one of the following: PHY 335 - Electronics and Instrumentation Laboratory OR ESE 314 - Electronics Laboratory B"
+    },
+    {
+      "id": "physics.credits",
+      "label": "credits",
+      "title": "Approximate credit total beyond the 100 level",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires approximately 20 physics, chemistry or engineering credits beyond the 100 level.",
+        "reason": "Approximate program-wide credit guidance that no rule type covers; cannot be checked exactly."
+      },
+      "sourceText": "Completion of the minor requires approximately 20 physics, chemistry or engineering credits beyond the 100 level."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "physics.tracks"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "physics.tracks"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "other",
+      "text": "The minor is available for students who want their University studies to include significant upper-division work in physics."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1531",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "id": "environmental-design-policy-and-planning",
+  "name": "Environmental Design, Policy, and Planning",
+  "kind": "minor",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "environmental-design-policy-and-planning.1",
+      "label": "1",
+      "title": "Required courses (18 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "environmental-design-policy-and-planning.1.edp-301",
+            "type": "course",
+            "code": "EDP 301"
+          },
+          {
+            "id": "environmental-design-policy-and-planning.1.edp-302",
+            "type": "course",
+            "code": "EDP 302"
+          },
+          {
+            "type": "course",
+            "code": "GSS 105"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 111"
+              },
+              {
+                "type": "course",
+                "code": "ENS 101"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SUS 200"
+          },
+          {
+            "type": "course",
+            "code": "SUS 206"
+          }
+        ]
+      },
+      "sourceText": "Required courses (18 credits): EDP 301 - Urban Systems 3 credits; EDP 302 - Sustainable Planning and Development 3 credits; GSS 105 - Introduction to Maps and Mapping 3 credits; SUS 111 - Introduction to Sustainability 3 credits (formerly offered as SBC 111) OR ENS 101 - Prospects for Planet Earth 3 credits; SUS 200 - Human Settlement: History and Future 3 credits (formerly offered as SBC 200); SUS 206 - Economics and Sustainability 3 credits (formerly offered as SBC 206)"
+    },
+    {
+      "id": "environmental-design-policy-and-planning.2",
+      "label": "2",
+      "title": "Electives (3-4 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "EDP 303",
+            "EDP 307",
+            "SUS 309",
+            "SUS 317",
+            "SUS 318",
+            "SUS 362"
+          ]
+        }
+      },
+      "sourceText": "Electives (3-4 credits): Choose one of the following courses: EDP 303 - Spatial Economics 3 credits; EDP 307 - Theories and Design of Urban Settlements 3 credits; SUS 309 - Global Environmental Politics (formerly offered as SBC 309); SUS 317 - American Environmental History 3 credits (formerly offered as SBC 307); SUS 318 - American Environmental Politics 3 credits (formerly offered as SBC 308); SUS 362 - Resilient Communities 3 credits"
+    },
+    {
+      "id": "environmental-design-policy-and-planning.overlap",
+      "label": "overlap",
+      "title": "Credit overlap restriction",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 12 credits applied to the minor may not be applied to any major or other minor.",
+        "reason": "Cross-program credit overlap limit has no rule type; the audit must check it across programs."
+      },
+      "sourceText": "At least 12 credits applied to the minor may not be applied to any major or other minor."
+    },
+    {
+      "id": "environmental-design-policy-and-planning.pass-no-credit",
+      "label": "pass-no-credit",
+      "title": "Pass/No Credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option.",
+        "reason": "No rule type limits the number of Pass/No Credit courses."
+      },
+      "sourceText": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "environmental-design-policy-and-planning.1.edp-301",
+        "environmental-design-policy-and-planning.1.edp-302",
+        "environmental-design-policy-and-planning.2"
+      ],
+      "sourceText": "All upper-division courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students should declare the Environmental Design, Policy, and Planning minor no later than the middle of their sophomore year, at which time they should consult with the minor coordinator or undergraduate director and plan their course of study."
+    },
+    {
+      "topic": "advising",
+      "text": "Interim Director: Adam Charboneau (adam.charboneau@stonybrook.edu). Undergraduate Advisor: Nancy Black. Program Office: E2361 Melville Library, (631) 632-9404."
+    },
+    {
+      "topic": "other",
+      "text": "Completion of the minor requires 21-22 credits. The approxCredits value of 21 is the low end of that range."
+    },
+    {
+      "topic": "other",
+      "text": "SUS 111, SUS 200, SUS 206, SUS 309, SUS 317, and SUS 318 were formerly offered as SBC courses; the catalog lists the former SBC numbers in parentheses."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1445",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,973 @@
+{
+  "id": "psychology-ba",
+  "name": "Psychology, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Psychology",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "psychology-ba.credits",
+      "label": "credits",
+      "title": "Total credit requirements for the major",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major for either a B.S. or a B.A. in Psychology requires 58 to 67 credits, including 34 to 35 credits in psychology and 24 to 32 credits of courses outside the Department.",
+        "reason": "Program-wide credit totals are not a rule type this engine can evaluate."
+      },
+      "sourceText": "Completion of the major for either a B.S. or a B.A. in Psychology requires 58 to 67 credits. For both degree programs, 34 to 35 credits in psychology to be distributed as follows... In addition to the 34 to 35 credits in psychology, students must also complete 24 to 32 credits of courses outside the Department."
+    },
+    {
+      "id": "psychology-ba.core-program",
+      "label": "core-program",
+      "title": "Core Program",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PSY 103"
+          },
+          {
+            "id": "psychology-ba.core-program.statistics",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PSY 201"
+              },
+              {
+                "type": "course",
+                "code": "AMS 102"
+              },
+              {
+                "type": "course",
+                "code": "AMS 110"
+              },
+              {
+                "type": "course",
+                "code": "AMS 310"
+              },
+              {
+                "type": "course",
+                "code": "BUS 215"
+              },
+              {
+                "type": "course",
+                "code": "ECO 320"
+              },
+              {
+                "type": "course",
+                "code": "POL 201"
+              },
+              {
+                "type": "course",
+                "code": "SOC 202"
+              },
+              {
+                "manualCheck": "Confirm the department approved this statistics course.",
+                "type": "unparsed",
+                "text": "Another statistics course approved by the department",
+                "reason": "Department approval of a statistics course is not checkable from catalog data"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "PSY 310"
+          }
+        ]
+      },
+      "sourceText": "PSY 103 - Introduction to Psychology 3 credits; One of the following statistics courses: PSY 201; AMS 102; AMS 110; AMS 310; BUS 215; ECO 320; POL 201; SOC 202; Another statistics course approved by the department; PSY 310 - Research and Writing in Psychology 4 credits"
+    },
+    {
+      "id": "psychology-ba.survey-courses",
+      "label": "survey-courses",
+      "title": "Survey Courses in Psychology",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "PSY 220",
+            "PSY 230",
+            "PSY 240",
+            "PSY 250",
+            "PSY 260"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "courses": [
+                "PSY 220",
+                "PSY 230",
+                "PSY 240"
+              ]
+            },
+            "minCourses": 1
+          },
+          {
+            "type": "minFrom",
+            "from": {
+              "courses": [
+                "PSY 250",
+                "PSY 260"
+              ]
+            },
+            "minCourses": 1
+          }
+        ]
+      },
+      "sourceText": "One course from Group A, one from Group B, and a third course from Group A or B: Group A: PSY 220 - Survey in Developmental Psychology 3 credits; PSY 230 - Survey in Abnormal and Clinical Psychology 3 credits; PSY 240 - Survey in Social Psychology 3 credits. Group B: PSY 250 - Survey in Biopsychology 3 credits; PSY 260 - Survey in Cognition and Perception 3 credits"
+    },
+    {
+      "id": "psychology-ba.five-psy-courses",
+      "label": "five-psy-courses",
+      "title": "Five PSY courses (B.A. student)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "psychology-ba.five-psy-courses.upper-200",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "subjects": [
+                "PSY"
+              ],
+              "minNumber": 200,
+              "excludeCourses": [
+                "PSY 201",
+                "PSY 273",
+                "PSY 283",
+                "PSY 300",
+                "PSY 310",
+                "PSY 399",
+                "PSY 447",
+                "PSY 475",
+                "PSY 476",
+                "PSY 487",
+                "PSY 488",
+                "PSY 495",
+                "PSY 496"
+              ],
+              "excludeUsedBy": [
+                "psychology-ba.survey-courses"
+              ]
+            }
+          },
+          {
+            "id": "psychology-ba.five-psy-courses.upper-301-383",
+            "type": "choose",
+            "count": 4,
+            "from": {
+              "ranges": [
+                {
+                  "subject": "PSY",
+                  "from": 301,
+                  "to": 383
+                }
+              ],
+              "excludeCourses": [
+                "PSY 310"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "For the B.A. student: One course numbered 200 or higher, excluding PSY 201, PSY 273, PSY 283, PSY 310, PSY 399, PSY 447, PSY 475, PSY 476, PSY 487, PSY 488, PSY 495-PSY 496, the discontinued PSY 300, and 200-level survey courses used to satisfy requirement #2. Four more courses from among advanced courses numbered PSY 301 to PSY 383, excluding PSY 310."
+    },
+    {
+      "id": "psychology-ba.outside-math",
+      "label": "outside-math",
+      "title": "Outside courses: Mathematics",
+      "rule": {
+        "manualCheck": "Page lists 'MAT 123 (or MAT 119 /MAT 123)' and 'MAT 125 (or MAT 130 /MAT 125)'; these alternate pairings are not modeled. Students passing the Mathematics Placement Exam at Level 4 or above are not required to complete this category. PSY 201 does not satisfy this category.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 118"
+          },
+          {
+            "type": "course",
+            "code": "MAT 122"
+          },
+          {
+            "type": "course",
+            "code": "MAT 123"
+          },
+          {
+            "type": "course",
+            "code": "MAT 125"
+          },
+          {
+            "type": "course",
+            "code": "MAT 126"
+          },
+          {
+            "type": "course",
+            "code": "MAT 131"
+          },
+          {
+            "type": "course",
+            "code": "MAT 132"
+          },
+          {
+            "type": "course",
+            "code": "AMS 103"
+          },
+          {
+            "type": "course",
+            "code": "AMS 104"
+          },
+          {
+            "type": "unparsed",
+            "text": "Any higher AMS, CSE, or MAT course approved by the department",
+            "reason": "Department approval is not checkable from catalog data"
+          }
+        ]
+      },
+      "sourceText": "1. Mathematics: Choose one from the following: MAT 118 - Mathematical Thinking 3 credits; MAT 122 - Overview of Calculus with Applications 3 credits; MAT 123 - Precalculus 3 credits (or MAT 119 /MAT 123); MAT 125 - Calculus A 3 credits (or MAT 130 /MAT 125); MAT 126 - Calculus B 3 credits; MAT 131 - Calculus I 4 credits; MAT 132 - Calculus II 4 credits; AMS 103 - Applied Mathematics in Modern Technology 3 credits; AMS 104 - Spreadsheet Technology and Applications 3 credits; Any higher AMS, CSE, or MAT course approved by the department. Note: PSY 201 (or equivalent introductory statistics course) does not satisfy this requirement. Students who pass the Mathematics Placement Exam at Level 4 or above are not required to complete a course in this category."
+    },
+    {
+      "id": "psychology-ba.outside-biology",
+      "label": "outside-biology",
+      "title": "Outside courses: Biology",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "ANT 101",
+            "ANT 120",
+            "ANT 201",
+            "ANT 220",
+            "HAN 200",
+            "HAN 202"
+          ],
+          "subjects": [
+            "BIO"
+          ]
+        }
+      },
+      "sourceText": "2. Biology: Any one-semester BIO course. Note: ANT 101, ANT 120, ANT 201, ANT 220, HAN 200, or HAN 202 may be used as a substitute to fulfill this requirement."
+    },
+    {
+      "id": "psychology-ba.outside-philosophy",
+      "label": "outside-philosophy",
+      "title": "Outside courses: Philosophy",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "subjects": [
+            "PHI"
+          ]
+        }
+      },
+      "sourceText": "3. Philosophy: Any one-semester PHI course"
+    },
+    {
+      "id": "psychology-ba.outside-social-sciences",
+      "label": "outside-social-sciences",
+      "title": "Outside courses: Social Sciences",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "subjects": [
+            "ANT",
+            "HIS",
+            "POL",
+            "SOC"
+          ],
+          "excludeCourses": [
+            "SOC 201",
+            "SOC 202",
+            "POL 201"
+          ]
+        }
+      },
+      "sourceText": "4. Social Sciences: Any one-semester ANT, HIS, POL, or SOC course except SOC 201 or SOC 202 or POL 201."
+    },
+    {
+      "id": "psychology-ba.outside-concentration",
+      "label": "outside-concentration",
+      "title": "Outside concentration (12 credits, minimum four courses)",
+      "rule": {
+        "manualCheck": "Concentration must be 12 credits in one subject, with at least two courses numbered 300-499. Practica, research, and internship courses do not satisfy this requirement. The concentration may instead be an approved minor or a second major in any department or program.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "psychology-ba.outside-concentration.afs",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "AFS"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "AFS"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "psychology-ba.outside-concentration.ant",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "ANT"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "ANT"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "psychology-ba.outside-concentration.ams",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "AMS"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "AMS"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "psychology-ba.outside-concentration.bio",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "BIO"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "BIO"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "psychology-ba.outside-concentration.cse",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "CSE"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "CSE"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "psychology-ba.outside-concentration.eco",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "ECO"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "ECO"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "psychology-ba.outside-concentration.his",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "HIS"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "HIS"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "psychology-ba.outside-concentration.lin",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "LIN"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "LIN"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "psychology-ba.outside-concentration.mat",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "MAT"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "MAT"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "psychology-ba.outside-concentration.phi",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "PHI"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "PHI"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "psychology-ba.outside-concentration.pol",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "POL"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "POL"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "psychology-ba.outside-concentration.soc",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "SOC"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "SOC"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "psychology-ba.outside-concentration.wst",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "subjects": [
+                "WST"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "WST"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "type": "unparsed",
+            "text": "Marketing (MKT): requires BUS 348 and BUS 448; one elective from BUS 334, BUS 302, or BUS 378; and another elective from BUS 359, BUS 358, or independent study in research BUS 487.",
+            "reason": "Marketing concentration has its own required and elective structure that is not modeled as a 12-credit subject pool."
+          },
+          {
+            "type": "unparsed",
+            "text": "Writing: requires WRT 305 or WRT 380 plus three other upper-division writing courses.",
+            "reason": "Writing concentration has its own required and elective structure that is not modeled as a 12-credit subject pool."
+          }
+        ]
+      },
+      "sourceText": "5. A 12-credit (minimum four courses) concentration in one of the course subjects listed below. At least two courses must be upper-division (numbered between 300 and 499). Practica, research, and internship courses do not satisfy this requirement. The concentration requirement may also be satisfied by an approved minor or a second major in any department or program."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "psychology-ba.core-program",
+        "psychology-ba.survey-courses",
+        "psychology-ba.five-psy-courses",
+        "psychology-ba.outside-math",
+        "psychology-ba.outside-biology",
+        "psychology-ba.outside-philosophy",
+        "psychology-ba.outside-social-sciences",
+        "psychology-ba.outside-concentration"
+      ],
+      "sourceText": "All courses required for either the B.S. or B.A. degree must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "psychology-ba.core-program",
+        "psychology-ba.survey-courses",
+        "psychology-ba.five-psy-courses",
+        "psychology-ba.outside-math",
+        "psychology-ba.outside-biology",
+        "psychology-ba.outside-philosophy",
+        "psychology-ba.outside-social-sciences",
+        "psychology-ba.outside-concentration"
+      ],
+      "sourceText": "All courses required for either the B.S. or B.A. degree must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 12,
+      "appliesTo": [
+        "psychology-ba.core-program",
+        "psychology-ba.survey-courses",
+        "psychology-ba.five-psy-courses"
+      ],
+      "sourceText": "Transfer students must take at least 12 credits of psychology in residence at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "anyOf",
+          "rules": [
+            {
+              "type": "course",
+              "code": "PSY 310"
+            },
+            {
+              "manualCheck": "PSY 459 (0 credits) applies only when co-registered while completing a substantial paper or writing sample in another Psychology course, with the course instructor's permission obtained beforehand.",
+              "type": "course",
+              "code": "PSY 459"
+            }
+          ]
+        },
+        "sourceText": "For students pursuing the Stony Brook Curriculum (SBC), a course that satisfies the 'Write Effectively within One's Discipline' (WRTD) learning objective must be completed in order to graduate. This WRTD requirement will routinely be satisfied by completing PSY 310. However, in special cases, co-registration for the 0-credit PSY 459 while completing a substantial paper or writing sample in another Psychology course will satisfy the WRTD requirement. A student must obtain the permission of the course instructor prior to registering for PSY 459."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PSY 103",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SOC or ANT or POL course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "LANG Part 1",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "PSY Group A or PSY Group B",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "MAT course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "LANG Part 2",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Unlabeled slot",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "PSY Group A or PSY Group B",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Course for outside concentration (#1)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Statistics course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "PSY Group A or PSY Group B course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "PSY 200 and above elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "BIO Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "PSY Upper-division elective (PSY 301 to PSY 382)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Course for outside concentration (#2)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "PSY Upper-division elective (PSY 301 to PSY 382)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "PSY Upper-division elective (PSY 301 to PSY 382)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division course outside concentration (#3)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "PSY Upper-division elective (PSY 301 to PSY 382)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PSY 310",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division outside concentration (#4)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students interested in a Psychology major should meet with a Psychology Department Undergraduate Advisor (Room B-109). Additional meetings should be scheduled periodically to review progress toward Department requirements. Students are also strongly encouraged to become research assistants (PSY 273) if planning graduate school."
+    },
+    {
+      "topic": "grading",
+      "text": "Psychology courses may be repeated only ONE time. No more than six credits from among PSY 273, PSY 283, PSY 447, and PSY 487 may be taken in one semester."
+    },
+    {
+      "topic": "other",
+      "text": "The concentration in Anthropology, Biology, Mathematics, Philosophy, Political Science, or Sociology automatically satisfies the matching outside-course requirement among items 1 to 4 for the B.A. student (for example, the Biology concentration also satisfies item 2). This cross-satisfaction is not modeled."
+    },
+    {
+      "topic": "other",
+      "text": "The Psychology Honors Program (not modeled): requires a 3.50 GPA in psychology courses and a 3.20 cumulative GPA to apply at the end of the junior year, a faculty mentor, and a senior thesis via PSY 495 and PSY 496. Conferral requires a cumulative GPA of 3.00 and a 3.50 psychology GPA."
+    },
+    {
+      "topic": "other",
+      "text": "Minors of particular interest to Psychology majors: Africana Studies (AFS) and Women's and Gender Studies (WST)."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1521",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

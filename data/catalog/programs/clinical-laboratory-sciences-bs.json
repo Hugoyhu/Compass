@@ -1,0 +1,41 @@
+{
+  "id": "clinical-laboratory-sciences-bs",
+  "name": "Clinical Laboratory Sciences, BS",
+  "kind": "major",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "clinical-laboratory-sciences-bs.requirements",
+      "label": "requirements",
+      "title": "Requirements for the Major",
+      "rule": {
+        "type": "unparsed",
+        "text": "Program requirements for the major in Clinical Laboratory Sciences are published in the Health Sciences Catalog and are not on this page.",
+        "reason": "The catalog page provided contains no program requirements; they must be entered from the Health Sciences Catalog before this program can be audited."
+      },
+      "sourceText": "Information and program requirements for the major in Clinical Laboratory Sciences may be found in the Health Sciences Catalog."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "The page provided contains no Requirements for the Major. Requirements are published in the Health Sciences Catalog; this program needs its requirements entered from that source before it can be audited."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1572",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

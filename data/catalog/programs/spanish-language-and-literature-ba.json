@@ -1,0 +1,501 @@
+{
+  "id": "spanish-language-and-literature-ba",
+  "name": "Spanish Language and Literature, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Spanish Language and Literature",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "spanish-language-and-literature-ba.intermediate-spanish",
+      "label": "intermediate-spanish",
+      "title": "Intermediate Spanish Language Courses",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SPN 211"
+              },
+              {
+                "type": "course",
+                "code": "SPN 212"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SPN 214"
+              },
+              {
+                "type": "course",
+                "code": "SPN 215"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SPN 213"
+          },
+          {
+            "type": "unparsed",
+            "text": "Equivalent proficiency satisfied through permission of the department or through the placement or the challenge exam",
+            "reason": "Placement, permission, and challenge-exam outcomes are not course records that can be matched."
+          }
+        ]
+      },
+      "sourceText": "There are several ways to satisfy this requirement. Please choose one of the four options listed below depending on your proficiency and/or interests: SPN 211 - Intermediate Spanish I 3 credits and SPN 212 - Intermediate Spanish II 3 credits OR SPN 214 - Intermediate Medical Spanish I 3 credits and SPN 215 - Intermediate Medical Spanish II 3 credits OR SPN 213 - Intermediate Spanish for Speakers of Spanish 3 credits OR equivalent proficiency satisfied through permission of the department or through the placement or the challenge exam."
+    },
+    {
+      "id": "spanish-language-and-literature-ba.advanced-courses",
+      "label": "advanced-courses",
+      "title": "Required Advanced Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SPN 311"
+              },
+              {
+                "type": "course",
+                "code": "SPN 310"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SPN 312"
+          },
+          {
+            "type": "course",
+            "code": "SPN 321"
+          },
+          {
+            "type": "course",
+            "code": "SPN 393"
+          }
+        ]
+      },
+      "sourceText": "SPN 311 - Spanish Conversation and Composition 3 credits OR SPN 310 - Spanish Grammar and Composition for Students of Hispanic-American Background 3 credits; SPN 312 - Introduction to Literary Studies 3 credits; SPN 321 - Advanced Spanish Grammar and Composition 3 credits; SPN 393 - Introduction to Hispanic Linguistics 3 credits"
+    },
+    {
+      "id": "spanish-language-and-literature-ba.literature-survey",
+      "label": "literature-survey",
+      "title": "Three courses from Latin American and Spanish literature and culture",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "ranges": [
+            {
+              "subject": "SPN",
+              "from": 384,
+              "to": 389
+            }
+          ]
+        }
+      },
+      "sourceText": "Three courses from: SPN 384 - Introduction to Latin American Literature and Culture I 3 credits; SPN 385 - Introduction to Latin American Literature and Culture II 3 credits; SPN 386 - Introduction to Latin American Literature and Culture III 3 credits; SPN 387 - Introduction to Spanish Literature and Culture I 3 credits; SPN 388 - Introduction to Spanish Literature and Culture II 3 credits; SPN 389 - Introduction to Spanish Literature and Culture III 3 credits"
+    },
+    {
+      "id": "spanish-language-and-literature-ba.electives",
+      "label": "electives",
+      "title": "Elective Advanced Courses in Hispanic Linguistics, Literature, and Culture",
+      "rule": {
+        "type": "choose",
+        "count": 5,
+        "from": {
+          "subjects": [
+            "SPN"
+          ],
+          "minNumber": 300,
+          "excludeCourses": [
+            "SPN 443",
+            "SPN 475",
+            "SPN 488"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "SPN 447"
+              ]
+            },
+            "maxCredits": 3
+          },
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "SPN"
+              ],
+              "minNumber": 400
+            },
+            "minCourses": 3
+          }
+        ]
+      },
+      "sourceText": "Five additional courses in upper-division SPN courses chosen in consultation with the Departmental advisor. A maximum of three credits of SPN 447 is applicable toward this requirement. At least three of the upper-division courses for the major must be 400-level. 300-level courses in the above list that are in excess of the required number may also count in this category. S/U graded courses such as SPN 443, SPN 475 and SPN 488 do not count towards fulfillment of this requirement."
+    },
+    {
+      "id": "spanish-language-and-literature-ba.upper-division-writing",
+      "label": "upper-division-writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "unparsed",
+        "text": "Beginning Fall 2014, all students who complete SPN 321 will have satisfied the upper-division writing requirement for the major as well as the university WRTD requirement.",
+        "reason": "The requirement is satisfied by completing a course already applied in the advanced courses requirement; it is not a separate course slot or credit rule."
+      },
+      "sourceText": "Beginning Fall 2014, all students who complete SPN 321 will have satisfied the upper-division writing requirement for the major as well as the university WRTD requirement."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "spanish-language-and-literature-ba.intermediate-spanish",
+        "spanish-language-and-literature-ba.advanced-courses",
+        "spanish-language-and-literature-ba.literature-survey",
+        "spanish-language-and-literature-ba.electives"
+      ],
+      "sourceText": "All courses offered for the major must be taken for a letter grade (except that S is acceptable for SPN 211, SPN 212, and SPN 310 /SPN 311 completed through Challenge examinations)."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "spanish-language-and-literature-ba.intermediate-spanish",
+        "spanish-language-and-literature-ba.advanced-courses",
+        "spanish-language-and-literature-ba.literature-survey",
+        "spanish-language-and-literature-ba.electives"
+      ],
+      "sourceText": "All courses in Spanish must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 18,
+      "appliesTo": [
+        "spanish-language-and-literature-ba.intermediate-spanish",
+        "spanish-language-and-literature-ba.advanced-courses",
+        "spanish-language-and-literature-ba.literature-survey",
+        "spanish-language-and-literature-ba.electives"
+      ],
+      "sourceText": "The Department requires transfer students to take at least 18 credits of Spanish courses in residence at Stony Brook to complete a Spanish major."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SPN 211",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SPN 212",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SPN 311",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SPN 312",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SPN 321",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SPN 387",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SPN 393",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SPN 384",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SPN 388",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SPN 385",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SPN 386",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "SPN 400-level elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SPN 400-level elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "SPN 400-level elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students wishing to major in Spanish should consult with a Departmental advisor to choose individual programs. Entering students who wish to continue Spanish started in high school should consult a departmental advisor to help them choose the appropriate course."
+    },
+    {
+      "topic": "grading",
+      "text": "S is acceptable for SPN 211, SPN 212, and SPN 310/SPN 311 completed through Challenge examinations. Students of Spanish-speaking background may take the Challenge examination for SPN 310/SPN 311."
+    },
+    {
+      "topic": "other",
+      "text": "Completion of the major requires 33-42 credits, depending on language placement: 36 credits for students with enough proficiency to satisfy the intermediate requirement without SPN 211/212 or SPN 214/215, and 42 credits for students who take SPN 211 and SPN 212 or SPN 214 and SPN 215. Students with Spanish-speaking background can begin the major with SPN 213 or SPN 310, depending on written proficiency. A double major requires 30-36 credits."
+    },
+    {
+      "topic": "other",
+      "text": "Honors Program in Spanish (optional): to be awarded honors, a major must maintain a cumulative GPA of at least 3.00 and a GPA of at least 3.50 in Spanish courses taken for the major, and write a senior thesis judged worthy of honors. Students must find a faculty thesis advisor, enroll in SPN 495, have the thesis topic approved by the director of undergraduate studies and the thesis advisor, and apply during the semester prior to registering for the program."
+    },
+    {
+      "topic": "other",
+      "text": "Spanish Secondary Teacher Education Program: see the Education and Teacher Certification entry in the alphabetical listings of Approved Majors, Minors, and Programs."
+    },
+    {
+      "topic": "other",
+      "text": "Study Abroad: language majors and other interested students who wish to spend a semester or a year abroad should consult the director of undergraduate studies prior to going abroad."
+    },
+    {
+      "topic": "advising",
+      "text": "Minors of particular interest to Spanish majors include Latin American and Caribbean studies (LAC) and Native American and Indigenous Studies (NAIS)."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1511",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

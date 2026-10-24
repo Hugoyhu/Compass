@@ -1,0 +1,188 @@
+{
+  "id": "japanese-studies",
+  "name": "Japanese Studies",
+  "kind": "minor",
+  "degree": "",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "japanese-studies.1",
+      "label": "1",
+      "title": "Intermediate Japanese",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "JPN 211"
+          },
+          {
+            "type": "course",
+            "code": "JPN 212"
+          }
+        ]
+      },
+      "sourceText": "JPN 211 - Intermediate Japanese I 4 credits; OR; JPN 212 - Intermediate Japanese II 3 credits"
+    },
+    {
+      "id": "japanese-studies.2",
+      "label": "2",
+      "title": "Five of the following",
+      "rule": {
+        "manualCheck": "AAS 447, AAS 487 and ANT 311 count only for an appropriate topic. Courses are chosen with the approval of the director of the minor. The paired courses listed with identical titles are treated as cross-listed equivalents that may count once; confirm with the department.",
+        "type": "choose",
+        "count": 5,
+        "from": {
+          "courses": [
+            "AAS 216",
+            "AAS 219",
+            "HIS 220",
+            "AAS 237",
+            "AAS 322",
+            "AAS 331",
+            "WST 331",
+            "AAS 332",
+            "AAS 343",
+            "HIS 344",
+            "AAS 344",
+            "AAS 353",
+            "HIS 353",
+            "AAS 382",
+            "RLS 382",
+            "AAS 385",
+            "AAS 447",
+            "AAS 487",
+            "ANT 311",
+            "JPN 212",
+            "JPN 311",
+            "JPN 312",
+            "JPN 331",
+            "JPN 332",
+            "JPN 410",
+            "JPN 411",
+            "JPN 412",
+            "JPN 426",
+            "JPN 447",
+            "JPN 475",
+            "JPN 476",
+            "JPN 487",
+            "PHI 344"
+          ],
+          "excludeUsedBy": [
+            "japanese-studies.1"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "onePerGroup",
+            "groups": [
+              [
+                "AAS 219",
+                "HIS 220"
+              ],
+              [
+                "AAS 331",
+                "WST 331"
+              ],
+              [
+                "AAS 343",
+                "HIS 344"
+              ],
+              [
+                "AAS 353",
+                "HIS 353"
+              ],
+              [
+                "AAS 382",
+                "RLS 382"
+              ]
+            ]
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "AAS 447",
+                "AAS 487",
+                "JPN 447",
+                "JPN 487"
+              ]
+            },
+            "maxCredits": 3
+          }
+        ]
+      },
+      "sourceText": "Five of the following: AAS 216 - Introduction to Japanese Studies 3 credits; AAS 219 - Japan in the Age of Courtier and Samurai 3 credits; HIS 220 - Japan in the Age of Courtier and Samurai 3 credits; AAS 237 - Introduction to Japanese Literature 3 credits; AAS 322 - Literature of Japan 3 credits; AAS 331 - Japanese Literature in the Feminine Domain 3 credits; WST 331 - Japanese Literature in the Feminine Domain 3 credits; AAS 332 - Japanese Literature in the Meiji Era 3 credits; AAS 343 - Modern Japan 3 credits; HIS 344 - Modern Japan 3 credits; AAS 344 - Learning of Asian Languages 3 credits; AAS 353 - Postwar Japan 3 credits; HIS 353 - Postwar Japan 3 credits; AAS 382 - Japanese Buddhism 3 credits; RLS 382 - Japanese Buddhism 3 credits; AAS 385 - Translation Studies of Asian Languages 3 credits; AAS 447 - Directed Readings in Asian and Asian American Studies 1-6 credits (appropriate topic only); AAS 487 - Supervised Research in Asian and Asian American Studies 0-3 credits (appropriate topic only); ANT 311 - Immersion in Another Culture 3 credits (appropriate topic only); JPN 212 - Intermediate Japanese II 3 credits (if not used in requirement 1); JPN 311 - Advanced Japanese I 3 credits; JPN 312 - Advanced Japanese II 3 credits; JPN 331 - Social Sciences Topics in Japanese Studies 3 credits; JPN 332 - Humanities Topics in Japanese Studies 3 credits; JPN 410 - Business Japanese 3 credits; JPN 411 - Advanced Japanese III 3 credits; JPN 412 - Advanced Japanese IV 3 credits; JPN 426 - Structure of Japanese 3 credits; JPN 447 - Independent Study 1-6 credits; JPN 475 - Undergraduate Teaching Practicum I 3 credits; JPN 476 - Undergraduate Teaching Practicum II 3 credits; JPN 487 - Independent Research 0-3 credits; PHI 344 - Japanese Thought and Philosophy (I) 3 credits. Notes: JPN 212 may not count toward Requirement 1 and Requirement 2. Independent study may fulfill only three credits."
+    },
+    {
+      "id": "japanese-studies.credits",
+      "label": "credits",
+      "title": "Total credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 18-19 credits.",
+        "reason": "The minimum is a range that no rule type expresses; the audit must flag it for review."
+      },
+      "sourceText": "Completion of the minor requires 18-19 credits."
+    },
+    {
+      "id": "japanese-studies.pass-cap",
+      "label": "pass-cap",
+      "title": "Pass/Satisfactory credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than 3 credits with a grade of P (Pass) or S (Satisfactory) may be applied to the minor.",
+        "reason": "No rule type caps credits earned with P or S grades."
+      },
+      "sourceText": "No more than 3 credits with a grade of P (Pass) or S (Satisfactory) may be applied to the minor."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "japanese-studies.1",
+        "japanese-studies.2"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "japanese-studies.1",
+        "japanese-studies.2"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students choose courses for the minor with the approval of the director of the minor. Director of the Minor: Eva Nagase, Department of Asian and Asian American Studies, 1046 Humanities, (631) 632-4030."
+    },
+    {
+      "topic": "other",
+      "text": "Students excused from JPN 211 and JPN 212 because of previous Japanese language proficiency are required to take an extra course from Requirement 2 in order to satisfy Requirement 1."
+    },
+    {
+      "topic": "other",
+      "text": "The Japanese Studies minor has full-year and half-year study abroad programs with seven major Japanese universities. A summer program is offered in which students stay with Japanese host families for one month while studying in Japan. Credits earned during these programs count toward the Japanese Studies minor and the major in Asian and Asian American Studies."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1483",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

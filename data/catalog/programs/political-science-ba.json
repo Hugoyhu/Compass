@@ -1,0 +1,614 @@
+{
+  "id": "political-science-ba",
+  "name": "Political Science, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Political Science",
+  "approxCredits": 42,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "political-science-ba.A-required",
+      "label": "A-required",
+      "title": "Study Within the Area of the Major: Required courses (9 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "POL 101"
+          },
+          {
+            "type": "course",
+            "code": "POL 102"
+          },
+          {
+            "type": "course",
+            "code": "POL 103"
+          }
+        ]
+      },
+      "sourceText": "Required courses: (9 credits) POL 101 - World Politics 3 credits; POL 102 - Introduction to American Government 3 credits; POL 103 - Introduction to Comparative Politics 3 credits"
+    },
+    {
+      "id": "political-science-ba.A-concentration",
+      "label": "A-concentration",
+      "title": "Study Within the Area of the Major: Concentration (12 credits)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "political-science-ba.A-concentration.cpir",
+            "sourceText": "Comparative Politics and International Relations concentration",
+            "manualCheck": "POL 390 and POL 401 count only when the topic is appropriate to the concentration. Courses marked crosslisted on the page may be taken under either department but not both.",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "courses": [
+                "POL 214",
+                "POL 216",
+                "POL 301",
+                "POL 302",
+                "POL 303",
+                "POL 304",
+                "POL 305",
+                "POL 308",
+                "POL 309",
+                "POL 310",
+                "POL 311",
+                "POL 313",
+                "POL 334",
+                "POL 336",
+                "POL 337",
+                "POL 338",
+                "POL 339",
+                "POL 350",
+                "POL 365",
+                "POL 371",
+                "POL 374",
+                "POL 380",
+                "PHI 367",
+                "POL 390",
+                "POL 401"
+              ],
+              "minNumber": 200,
+              "excludeCourses": [
+                "POL 201"
+              ]
+            }
+          },
+          {
+            "id": "political-science-ba.A-concentration.aglp",
+            "sourceText": "American Government, Law, and Public Policy concentration",
+            "manualCheck": "POL 390 and POL 401 count only when the topic is appropriate to the concentration. Courses marked crosslisted on the page may be taken under either department but not both.",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "courses": [
+                "POL 317",
+                "POL 318",
+                "POL 319",
+                "POL 320",
+                "POL 322",
+                "POL 323",
+                "POL 324",
+                "POL 325",
+                "POL 327",
+                "POL 328",
+                "POL 330",
+                "POL 332",
+                "POL 333",
+                "POL 336",
+                "POL 344",
+                "POL 347",
+                "POL 349",
+                "POL 350",
+                "POL 351",
+                "POL 352",
+                "POL 353",
+                "POL 359",
+                "POL 365",
+                "POL 366",
+                "POL 367",
+                "POL 368",
+                "POL 369",
+                "POL 371",
+                "POL 378",
+                "POL 379",
+                "PHI 277",
+                "PHI 375",
+                "PHI 377",
+                "POL 390",
+                "POL 401"
+              ],
+              "minNumber": 200,
+              "excludeCourses": [
+                "POL 201"
+              ]
+            }
+          },
+          {
+            "id": "political-science-ba.A-concentration.pbpp",
+            "sourceText": "Political Behavior and Political Psychology concentration",
+            "manualCheck": "POL 390 and POL 401 count only when the topic is appropriate to the concentration. Courses marked crosslisted on the page may be taken under either department but not both.",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "courses": [
+                "POL 270",
+                "POL 303",
+                "POL 317",
+                "POL 318",
+                "POL 323",
+                "POL 344",
+                "POL 346",
+                "POL 347",
+                "POL 348",
+                "POL 349",
+                "POL 350",
+                "POL 351",
+                "POL 352",
+                "POL 353",
+                "POL 367",
+                "POL 368",
+                "POL 369",
+                "POL 371",
+                "POL 373",
+                "POL 375",
+                "PHI 379",
+                "POL 390",
+                "POL 401",
+                "POL 402"
+              ],
+              "minNumber": 200,
+              "excludeCourses": [
+                "POL 201"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Concentration: (12 credits) 12 credits must be taken from courses in one of the concentrations listed below."
+    },
+    {
+      "id": "political-science-ba.A-electives",
+      "label": "A-electives",
+      "title": "Study Within the Area of the Major: Political Science electives (12 credits)",
+      "rule": {
+        "sourceText": "12 credits must be taken from POL courses or courses that are crosslisted with POL.",
+        "manualCheck": "Courses crosslisted with POL that carry another subject code are not matched by subject; verify manually. POL 475 and POL 476 may not be used toward the major.",
+        "type": "choose",
+        "credits": 12,
+        "from": {
+          "subjects": [
+            "POL"
+          ],
+          "minNumber": 200,
+          "excludeCourses": [
+            "POL 201",
+            "POL 475",
+            "POL 476"
+          ]
+        }
+      },
+      "sourceText": "Political Science electives: (12 credits) 12 credits must be taken from POL courses or courses that are crosslisted with POL."
+    },
+    {
+      "id": "political-science-ba.A-300-level",
+      "label": "A-300-level",
+      "title": "300-level credit minimum for concentration and electives",
+      "rule": {
+        "type": "unparsed",
+        "text": "For the Concentration and Political Science Electives, at least 12 credits must be from courses numbered 300 or above.",
+        "reason": "Credit minimum spanning two requirements (concentration and electives); no rule type covers it."
+      },
+      "sourceText": "For the Concentration and Political Science Electives, all courses must be selected from courses numbered 200 or above (excluding POL 201), and at least 12 credits must be from courses numbered 300 or above."
+    },
+    {
+      "id": "political-science-ba.A-dept-credits",
+      "label": "A-dept-credits",
+      "title": "Political Science Department credit minimum for concentration and electives",
+      "rule": {
+        "type": "unparsed",
+        "text": "For the Concentration and Political Science Electives, at least 12 credits must be taken in courses offered by the Political Science Department at Stony Brook or cross-listed by the Department.",
+        "reason": "Credit minimum spanning two requirements that depends on departmental offering; no rule type covers it."
+      },
+      "sourceText": "For the Concentration and Political Science Electives, at least 12 credits must be taken in courses offered by the Political Science Department at Stony Brook or cross-listed by the Department."
+    },
+    {
+      "id": "political-science-ba.B",
+      "label": "B",
+      "title": "Study in Related Areas (6 credits)",
+      "rule": {
+        "sourceText": "Two courses numbered 300 or higher, offered by one of the related area course designations below. Note: Courses crosslisted with a political science course or included within a program of study do not count towards this requirement.",
+        "manualCheck": "Both courses must be offered by the same related-area designation. Courses crosslisted with a political science course or included within a program of study do not count.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "subjects": [
+            "AAS",
+            "AFS",
+            "ANT",
+            "BUS",
+            "ECO",
+            "GLI",
+            "HIS",
+            "JRN",
+            "PHI",
+            "PSY",
+            "SOC",
+            "WST"
+          ],
+          "minNumber": 300
+        }
+      },
+      "sourceText": "B. Study in Related Areas (6 credits): Two courses numbered 300 or higher, offered by one of the related area course designations below."
+    },
+    {
+      "id": "political-science-ba.C",
+      "label": "C",
+      "title": "Methodology Requirement",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "POL 201"
+          },
+          {
+            "type": "course",
+            "code": "AMS 102"
+          },
+          {
+            "type": "course",
+            "code": "AMS 110"
+          },
+          {
+            "type": "course",
+            "code": "BIO 211"
+          },
+          {
+            "type": "course",
+            "code": "BUS 215"
+          },
+          {
+            "type": "course",
+            "code": "ECO 320"
+          },
+          {
+            "type": "course",
+            "code": "PSY 201"
+          },
+          {
+            "type": "course",
+            "code": "SOC 202"
+          }
+        ]
+      },
+      "sourceText": "Majors must demonstrate competence in appropriate social science methodology by passing POL 201 - Introduction to Statistical Methods in Political Science with a grade of C or higher. We will accept the following equivalent courses for POL 201: AMS 102, AMS 110, BIO 211, BUS 215, ECO 320, PSY 201, or SOC 202. A course taken to fulfill the methodology requirement may not count toward fulfilling any other major requirement."
+    },
+    {
+      "id": "political-science-ba.D",
+      "label": "D",
+      "title": "Upper-Division Writing Requirement (0 credits)",
+      "rule": {
+        "type": "course",
+        "code": "POL 459"
+      },
+      "sourceText": "Political science majors can meet the upper division writing requirement by completing POL 459."
+    },
+    {
+      "id": "political-science-ba.su-limit",
+      "label": "Note 2",
+      "title": "Satisfactory/Unsatisfactory credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than six credits of courses with Satisfactory/Unsatisfactory grading may be applied to the major.",
+        "reason": "Program-wide credit cap across all major requirements; no rule type covers it."
+      },
+      "sourceText": "No more than six credits of courses with Satisfactory/Unsatisfactory grading may be applied to the major."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "political-science-ba.A-required",
+        "political-science-ba.A-concentration",
+        "political-science-ba.A-electives",
+        "political-science-ba.B",
+        "political-science-ba.C",
+        "political-science-ba.D"
+      ],
+      "sourceText": "All courses taken to fulfill major requirements must be passed with a letter grade of C or higher, except for those with a Satisfactory/Unsatisfactory grading scale which must be passed with an S."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "political-science-ba.C"
+      ],
+      "sourceText": "Majors must demonstrate competence in appropriate social science methodology by passing POL 201 - Introduction to Statistical Methods in Political Science with a grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "POL 100-level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "POL 100-level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "POL 100-level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "POL 201",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "POL 200-level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "POL 300-level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Introductory course in related area",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Introductory course in related area",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "POL Upper-division course from selected Program of Study",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "POL Upper-division course from selected Program of Study",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division course in related area",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "POL Upper-division course from selected Program of Study",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "POL Upper-division course from selected Program of Study",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division course in related area",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "POL Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "POL Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Electives, directed research, internship, or honors",
+          "credits": 15
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Discuss the program with the Director of Undergraduate Studies (Dr. Michael Peress, michael.peress@stonybrook.edu) or the Undergraduate Program Coordinator (Ashley Porcello). Students should fulfill the methodology requirement no later than the beginning of the junior year."
+    },
+    {
+      "topic": "other",
+      "text": "Concentration courses marked with * are crosslisted with another academic department; credit is earned by registering for either course but not both."
+    },
+    {
+      "topic": "other",
+      "text": "POL 475 and POL 476 may not be used toward the major. Transfer courses must have a grade of C or higher to be accepted toward the major."
+    },
+    {
+      "topic": "other",
+      "text": "Students may apply for the Political Science honors program with a 3.70 GPA in political science courses and a 3.40 cumulative GPA, through POL 495 and POL 496 Senior Honors Project in Political Science."
+    },
+    {
+      "topic": "other",
+      "text": "The Fast-Track BA/MA in Public Policy is a five-year program for eligible declared majors (60 credits completed, 3.0 minimum GPA, one or two courses remaining in the electives area and/or the American Government, Law, and Public Policy concentration). It is not evaluated here."
+    },
+    {
+      "topic": "sbc",
+      "text": "Students completing the Stony Brook Curriculum must complete a course satisfying the WRTD learning objective (for example POL 368 or POL 459) to graduate."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1526",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

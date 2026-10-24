@@ -1,0 +1,562 @@
+{
+  "id": "applied-mathematics-and-statistics-bs",
+  "name": "Applied Mathematics and Statistics, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Applied Mathematics and Statistics",
+  "approxCredits": 46,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "applied-mathematics-and-statistics-bs.1",
+      "label": "1",
+      "title": "Required courses in Applied Math and Statistics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 161"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 127"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 132"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 210"
+              },
+              {
+                "type": "course",
+                "code": "MAT 211"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 261"
+              },
+              {
+                "type": "course",
+                "code": "MAT 203"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "AMS 151 - Applied Calculus I; AMS 161 - Applied Calculus II; Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161 in major requirements or prerequisites: MAT 125, MAT 126, MAT 127 or MAT 131, MAT 132; AMS 210 - Applied Linear Algebra OR MAT 211 - Introduction to Linear Algebra; AMS 261 - Applied Calculus III OR MAT 203 - Calculus III with Applications"
+    },
+    {
+      "id": "applied-mathematics-and-statistics-bs.2",
+      "label": "2",
+      "title": "One AMS approved computing course",
+      "rule": {
+        "manualCheck": "The page says approved AMS courses 'may include' these; confirm with the department whether other computing courses are approved.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "AMS 325",
+            "CSE 101",
+            "CSE 114",
+            "ESG 111"
+          ]
+        }
+      },
+      "sourceText": "One AMS approved computing course; approved AMS courses may include AMS 325 - Computing and Programming Fundamentals in Applied Mathematics and Statistics; CSE 101 - Computer Science Principles; CSE 114 - Introduction to Object-Oriented Programming; ESG 111 - Programming for Engineers"
+    },
+    {
+      "id": "applied-mathematics-and-statistics-bs.3",
+      "label": "3",
+      "title": "Additional Requirements",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "applied-mathematics-and-statistics-bs.3.ams301",
+            "type": "course",
+            "code": "AMS 301"
+          },
+          {
+            "id": "applied-mathematics-and-statistics-bs.3.probability",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 310"
+              },
+              {
+                "type": "course",
+                "code": "AMS 311"
+              }
+            ]
+          },
+          {
+            "id": "applied-mathematics-and-statistics-bs.3.statistics",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 315"
+              },
+              {
+                "type": "course",
+                "code": "AMS 361"
+              },
+              {
+                "type": "course",
+                "code": "MAT 303"
+              }
+            ]
+          },
+          {
+            "manualCheck": "The 18 remaining credits must be AMS courses numbered 301 and above or approved non-AMS upper-division mathematically oriented courses. The page lists only typical non-AMS courses (ECO 321, ECO 348, CSE 302+ except CSE 312, MAT 310+), so approval of other courses must be confirmed with the department.",
+            "type": "choose",
+            "credits": 18,
+            "from": {
+              "courses": [
+                "ECO 321",
+                "ECO 348"
+              ],
+              "ranges": [
+                {
+                  "subject": "CSE",
+                  "from": 302,
+                  "to": 999
+                },
+                {
+                  "subject": "MAT",
+                  "from": 310,
+                  "to": 999
+                }
+              ],
+              "subjects": [
+                "AMS"
+              ],
+              "minNumber": 301,
+              "excludeCourses": [
+                "CSE 312"
+              ],
+              "excludeUsedBy": [
+                "applied-mathematics-and-statistics-bs.3.ams301",
+                "applied-mathematics-and-statistics-bs.3.probability",
+                "applied-mathematics-and-statistics-bs.3.statistics"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "maxFrom",
+                "from": {
+                  "courses": [
+                    "AMS 475",
+                    "AMS 476",
+                    "AMS 487",
+                    "AMS 488",
+                    "ECO 321",
+                    "ECO 348"
+                  ],
+                  "ranges": [
+                    {
+                      "subject": "CSE",
+                      "from": 302,
+                      "to": 999
+                    },
+                    {
+                      "subject": "MAT",
+                      "from": 310,
+                      "to": 999
+                    }
+                  ],
+                  "excludeCourses": [
+                    "CSE 312"
+                  ]
+                },
+                "maxCredits": 6
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "27 credits of AMS courses numbered 301 and above, or approved non-AMS upper-division mathematically oriented courses, subject to the following constraints: AMS 301 must be taken; Either AMS 310 (Survey of Probability and Statistics) or AMS 311 (Probability Theory) must be taken; Either AMS 315 or AMS 361 or MAT 303 must be taken; At most 6 of the remaining 18 credits can be counted from the following courses: AMS 475, AMS 476, AMS 487, AMS 488, non-AMS upper division mathematically oriented courses. Typical non-AMS upper division mathematically oriented courses are ECO 321, ECO 348, CSE designated courses numbered 302 and above (excluding 312), and MAT designated courses numbered 310 and above."
+    },
+    {
+      "id": "applied-mathematics-and-statistics-bs.4",
+      "label": "4",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Confirm that the student has completed a course with the WRTD designation.",
+        "type": "unparsed",
+        "text": "All degree candidates must demonstrate skill in written English at a level acceptable for Applied Mathematics and Statistics majors. AMS students must register for a course designated by the University as WRTD (e.g., AMS 300).",
+        "reason": "WRTD is a university course designation, and the page gives only an example course (AMS 300) rather than a complete list."
+      },
+      "sourceText": "Upper-Division Writing Requirement: All degree candidates must demonstrate skill in written English at a level acceptable for Applied Mathematics and Statistics majors. AMS students must register for a course designated by the University as WRTD (e.g., AMS 300)."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "applied-mathematics-and-statistics-bs.1",
+        "applied-mathematics-and-statistics-bs.2",
+        "applied-mathematics-and-statistics-bs.3"
+      ],
+      "sourceText": "All courses taken to satisfy requirements 1, 2, and 3 above must be taken for a letter grade and passed with a grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "applied-mathematics-and-statistics-bs.1",
+        "applied-mathematics-and-statistics-bs.2",
+        "applied-mathematics-and-statistics-bs.3"
+      ],
+      "sourceText": "All courses taken to satisfy requirements 1, 2, and 3 above must be taken for a letter grade and passed with a grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 151",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "AMS 161",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CSE 101",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 210",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 261",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 310",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "AMS 300 Level Elective (SBS+)",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 315",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "AMS UD Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "AMS UD Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "AMS UD Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "AMS UD Elective (WRTD)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 300",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "AMS UD Elective (EXP+)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Applications for major admission are reviewed twice per year and must be received by January 5 for Spring admission and June 5 for Fall admission. Admission requires either a grade of B- or better in calculus III (AMS 261 or MAT 203) and linear algebra (AMS 210 or MAT 211), or grades of C or better in both and a GPA of 2.8 or higher in these courses. At most one of the two courses may be repeated. Completed course evaluations are required for transferred courses used toward the major. AOI students must meet the requirements within one year of enrolling in the first course that applies toward major entry. Admission is competitive and contingent upon program capacity."
+    },
+    {
+      "topic": "advising",
+      "text": "Undergraduate Program Coordinator and Advisor: Amanda Sanger (ams_undergrad@stonybrook.edu). AMS majors may consider a double major or minor. Courses that apply toward both major requirements double count, and double majors must meet all AMS major requirements."
+    },
+    {
+      "topic": "other",
+      "text": "The AMS major covers the mathematical sciences topics tested in the first actuarial examination and part of the second. Students should see the Department's actuarial advisor for more information."
+    },
+    {
+      "topic": "other",
+      "text": "Accelerated BS/MS (MS in AMS), accelerated BS in AMS / MS in DAS, and accelerated BS/MPH programs exist. These are not evaluated here; see the undergraduate program director and the graduate catalog."
+    },
+    {
+      "topic": "sbc",
+      "text": "The following AMS courses satisfy SBS+: AMS 316, 335, 341, and 342. The following AMS courses satisfy EXP+: AMS 333, 394, 412, 475, and 487. The following AMS courses satisfy ESI and CER: AMS 315, 394, and 412. The following AMS courses satisfy WRTD: AMS 300, 318, and 333. Consult the department for appropriate courses."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1349",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

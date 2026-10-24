@@ -1,0 +1,804 @@
+{
+  "id": "environmental-studies-ba",
+  "name": "Environmental Studies, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Environmental Studies",
+  "approxCredits": 62,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "environmental-studies-ba.foundation",
+      "label": "foundation",
+      "title": "Foundation Courses (36 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 102"
+          },
+          {
+            "type": "course",
+            "code": "ANT 120"
+          },
+          {
+            "type": "course",
+            "code": "BIO 201"
+          },
+          {
+            "type": "course",
+            "code": "BIO 204"
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 131"
+              },
+              {
+                "type": "course",
+                "code": "CHE 133"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ECO 108"
+              },
+              {
+                "type": "course",
+                "code": "ECO 110"
+              },
+              {
+                "type": "course",
+                "code": "ECO 111"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ENS 101"
+              },
+              {
+                "type": "course",
+                "code": "SUS 111"
+              },
+              {
+                "type": "course",
+                "code": "MAR 104"
+              }
+            ]
+          },
+          {
+            "id": "environmental-studies-ba.foundation.physics",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ENS 119"
+              },
+              {
+                "type": "course",
+                "code": "PHY 119"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "manualCheck": "Catalog reads 'MAT 125 - Calculus A (or MAT 130 /MAT 125)'. Confirm whether MAT 130 is an accepted alternative; it is not modeled here.",
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "AMS 151"
+              }
+            ]
+          },
+          {
+            "type": "unparsed",
+            "text": "If the student does not place into MAT 125, MAT 131, or AMS 151 on the math placement examination, MAT 123 (or MAT 119 /MAT 123) is required.",
+            "reason": "Conditional on math placement result, which is not part of the transcript data"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHI 104"
+              },
+              {
+                "type": "course",
+                "code": "PHI 105"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "POL 102"
+          }
+        ]
+      },
+      "sourceText": "AMS 102 - Elements of Statistics 3 credits (see Note 5); ANT 120 - Introduction to Biological Anthropology 3 credits (formerly ANP 120); BIO 201 - Fundamentals of Biology: Organisms to Ecosystems 3 credits; BIO 204 - Fundamentals of Scientific Inquiry in the Biological Sciences I 2 credits; CHE 131 - General Chemistry IB 4 credits (See Note 4); CHE 133 - General Chemistry Laboratory I 1 credit (See Note 4); ECO 108 - Introduction to Economics 4 credits OR ECO 110 - Introduction to Microeconomics 3 credits OR ECO 111 - Introduction to Macroeconomics 3 credits; ENS 101 - Prospects for Planet Earth 3 credits OR SUS 111 - Introduction to Sustainability 3 credits OR MAR 104 - Oceanography 3 credits; ENS 119 - Physics for Environmental Studies 4 credits (see Note 1) OR PHY 119 - Physics for Environmental Studies 4 credits (see Note 1); MAT 125 - Calculus A 3 credits (or MAT 130 /MAT 125) OR MAT 131 - Calculus I 4 credits OR AMS 151 - Applied Calculus I 3 credits. Note: If students do not place into MAT 125 or MAT 131 or AMS 151 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123 ) is a required course for the major; PHI 104 - Moral Reasoning (II) 3 credits OR PHI 105 - Politics and Society (II) 3 credits; POL 102 - Introduction to American Government 3 credits"
+    },
+    {
+      "id": "environmental-studies-ba.core",
+      "label": "core",
+      "title": "Core Courses (14 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ATM 305"
+              },
+              {
+                "type": "course",
+                "code": "ENV 304"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ENS 311"
+              },
+              {
+                "type": "course",
+                "code": "BIO 386"
+              },
+              {
+                "type": "course",
+                "code": "SUS 322"
+              },
+              {
+                "type": "course",
+                "code": "SUS 324"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAR 340"
+              },
+              {
+                "type": "course",
+                "code": "ENS 312"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ENS 301"
+              },
+              {
+                "type": "course",
+                "code": "SUS 305"
+              }
+            ]
+          },
+          {
+            "manualCheck": "ENS 487 and ENS 488 are 0-6 credit courses; at least 2 credits are required. Credit toward the major requires approval of the research or internship topic by the SoMAS Director of Undergraduate Studies. Other 487- or 488-numbered courses with the listed designators may be equivalent.",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 351"
+              },
+              {
+                "type": "course",
+                "code": "SUS 352"
+              },
+              {
+                "type": "course",
+                "code": "ENS 487"
+              },
+              {
+                "type": "course",
+                "code": "ENS 488"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "ATM 305 - Global Atmospheric Change 3 credits OR ENV 304 - Global Environmental Change 3 credits; ENS 311 - Ecosystem Ecology and the Global Environment 3 credits * OR SUS 322 - Human Ecology 3 credits OR SUS 324 - Human Geography and the Environment 3 credits. Note: *ENS 311 is crosslisted with BIO 386. Either course will satisfy this requirement.; MAR 340 - Environmental Problems and Solutions 3 credits OR ENS 312 - Population, Technology, and the Environment 3 credits; ENS 301 - Contemporary Environmental Issues and Policies 3 credits OR SUS 305 - Collective Action and Advocacy 3 credits; One of the following courses: SUS 351 - Design and Implement a Research Project in Ecotoxicology 3 credits; SUS 352 - Conduct and Communicate a Research Project in Ecotoxicology 3 credits; ENS 487 - Independent Research in Environmental Studies 0-6 credits (at least 2 credits, see Notes 2 & 3); ENS 488 - Internship in Environmental Studies 0-6 credits (at least 2 credits, see Notes 2 & 3)"
+    },
+    {
+      "id": "environmental-studies-ba.concentration",
+      "label": "concentration",
+      "title": "Concentration (12 credits)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "environmental-studies-ba.concentration.conservation-biology",
+            "manualCheck": "The four courses must total at least 12 credits.",
+            "type": "choose",
+            "count": 4,
+            "from": {
+              "courses": [
+                "ANT 309",
+                "ANT 322",
+                "ANT 352",
+                "ANT 361",
+                "BIO 336",
+                "BIO 351",
+                "BIO 353",
+                "BIO 356",
+                "MAR 315",
+                "SUS 326",
+                "MAR 373",
+                "MAR 375",
+                "MAR 376",
+                "MAR 377"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "maxFrom",
+                "from": {
+                  "courses": [
+                    "MAR 373",
+                    "MAR 375",
+                    "MAR 376",
+                    "MAR 377"
+                  ]
+                },
+                "maxCourses": 2
+              }
+            ]
+          },
+          {
+            "id": "environmental-studies-ba.concentration.marine-ecology",
+            "manualCheck": "The four courses must total at least 12 credits.",
+            "type": "choose",
+            "count": 4,
+            "from": {
+              "courses": [
+                "BIO 319",
+                "BIO 351",
+                "BIO 352",
+                "BIO 353",
+                "BIO 354",
+                "BIO 371",
+                "BIO 385",
+                "EBH 359",
+                "ENV 316",
+                "MAR 301",
+                "MAR 302",
+                "MAR 303",
+                "MAR 304",
+                "MAR 305",
+                "MAR 315",
+                "MAR 320",
+                "MAR 333",
+                "MAR 334",
+                "MAR 336",
+                "MAR 346",
+                "MAR 349",
+                "MAR 351",
+                "MAR 352",
+                "MAR 354",
+                "MAR 370",
+                "MAR 373",
+                "MAR 375",
+                "MAR 376",
+                "MAR 377",
+                "MAR 380",
+                "MAR 385",
+                "MAR 386",
+                "MAR 388"
+              ]
+            }
+          },
+          {
+            "id": "environmental-studies-ba.concentration.law-policy",
+            "manualCheck": "The four courses must total at least 12 credits. AAS 352, ENS 333 and SUS 366 are crosslisted with courses in other departments; either option satisfies the requirement, but major credit cannot be received twice for both options. Crosslisted codes are not listed on the page.",
+            "type": "choose",
+            "count": 4,
+            "from": {
+              "courses": [
+                "AAS 352",
+                "ENS 333",
+                "ENV 316",
+                "GEO 313",
+                "HIS 302",
+                "MAR 336",
+                "MAR 392",
+                "MAR 393",
+                "MAR 394",
+                "PHI 364",
+                "PHI 375",
+                "POL 320",
+                "POL 351",
+                "POL 359",
+                "SOC 344",
+                "SUS 305",
+                "SUS 317",
+                "HIS 365",
+                "SUS 318",
+                "SUS 321",
+                "SUS 323",
+                "SUS 325",
+                "SUS 329",
+                "SUS 344",
+                "SUS 366",
+                "SUS 405"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Choose 4 courses with a 12 credit minimum from one of the following concentrations: Conservation Biology/Biological Anthropology (ANT 309, ANT 322, ANT 352, ANT 361, BIO 336, BIO 351, BIO 353, BIO 356, MAR 315, SUS 326; Up to two of the following: MAR 373, MAR 375, MAR 376, MAR 377); Marine Science, Marine or Terrestrial Ecology (BIO 319, BIO 351, BIO 352, BIO 353, BIO 354, BIO 371, BIO 385, EBH 359, ENV 316, MAR 301, MAR 302, MAR 303, MAR 304, MAR 305, MAR 315, MAR 320, MAR 333, MAR 334, MAR 336, MAR 346, MAR 349, MAR 351, MAR 352, MAR 354, MAR 370, MAR 373, MAR 375, MAR 376, MAR 377, MAR 380, MAR 385, MAR 386, MAR 388); Environmental Law, Waste Management, and Public Policy (AAS 352, ENS 333, ENV 316, GEO 313, HIS 302, MAR 336, MAR 392, MAR 393, MAR 394, PHI 364, PHI 375, POL 320, POL 351, POL 359, SOC 344, SUS 305, SUS 317 OR HIS 365, SUS 318, SUS 321, SUS 323, SUS 325, SUS 329, SUS 344, SUS 366, SUS 405)"
+    },
+    {
+      "id": "environmental-studies-ba.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "manualCheck": "0-credit course taken S/U. Completion with a grade of S also fulfills the WRTD requirement.",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAR 459"
+              },
+              {
+                "type": "course",
+                "code": "SUS 459"
+              }
+            ]
+          },
+          {
+            "type": "unparsed",
+            "text": "Enrollment in an approved advanced course that entails writing of either a term paper or a laboratory report.",
+            "reason": "Approved course list is maintained by the department and is not provided on the page"
+          }
+        ]
+      },
+      "sourceText": "The advanced writing component of the major in ENS requires registration in, and satisfactory completion of, the 0-credit MAR 459 or SUS 459 (S/U grading) along with enrollment in an approved advanced course that entails writing of either a term paper or a laboratory report. Completion of MAR 459 or SUS 459 with a grade of S will also result in fulfillment of the WRTD requirement."
+    },
+    {
+      "id": "environmental-studies-ba.grade-limit",
+      "label": "grade-limit",
+      "title": "Low-grade course limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "Of the courses applied to the major, no more than one course (4 credits) with a grade lower than C can be credited to the major.",
+        "reason": "Major-wide cap on courses below C has no rule type"
+      },
+      "sourceText": "Completion of the major requires approximately 62 credits. Of these, no more than one course (4 credits) with a grade lower than C can be credited to the major."
+    },
+    {
+      "id": "environmental-studies-ba.double-major",
+      "label": "double-major",
+      "title": "Double major overlap limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "Excluding SUS 305, no more than 6 credits of 300-400 level course credits can be applied between the Environmental Studies major and another major.",
+        "reason": "Cross-major credit limit has no rule type"
+      },
+      "sourceText": "Excluding SUS 305 - Collective Action and Advocacy , no more than 6 credits of 300-400 level course credits can be applied between the Environmental Studies major and another major."
+    }
+  ],
+  "policies": [],
+  "substitutions": [
+    {
+      "id": "environmental-studies-ba.sub.ams102",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "AMS 102"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 110"
+          },
+          {
+            "type": "course",
+            "code": "AMS 310"
+          },
+          {
+            "type": "course",
+            "code": "BIO 211"
+          },
+          {
+            "type": "course",
+            "code": "ECO 320"
+          },
+          {
+            "type": "course",
+            "code": "POL 201"
+          },
+          {
+            "type": "course",
+            "code": "PSY 201"
+          },
+          {
+            "type": "course",
+            "code": "SOC 202"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "AMS 110 , AMS 310 , BIO 211 , ECO 320 , POL 201 , PSY 201 , or SOC 202 may be substituted for AMS 102."
+    },
+    {
+      "id": "environmental-studies-ba.sub.che131",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 131"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "CHE 129 /CHE 130",
+        "reason": "Slash-separated pair; the page does not make clear whether CHE 129 and CHE 130 are alternatives or both are required"
+      },
+      "requiresApproval": false,
+      "sourceText": "CHE 129 /CHE 130 may be substituted for CHE 131 ."
+    },
+    {
+      "id": "environmental-studies-ba.sub.physics",
+      "replaces": {
+        "type": "rule",
+        "ruleId": "environmental-studies-ba.foundation.physics"
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "PHY 121, or PHY 125 + PHY 126 + PHY 133, or PHY 131 + PHY 133, or PHY 141 + PHY 133",
+        "reason": "Multi-course alternatives cannot be nested inside a substitution"
+      },
+      "requiresApproval": false,
+      "sourceText": "PHY 121 or PHY 125 /PHY 126 /PHY 133 or PHY 131 /PHY 133 or PHY 141 /PHY 133 may be substituted for PHY 119 /ENS 119 ."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SUS 111",
+          "alternatives": [
+            "ENS 101"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 125",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 133",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ANT 120",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHI 104",
+          "alternatives": [
+            "PHI 105"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 201",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 204",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "ECO 108",
+          "alternatives": [
+            "ECO 110",
+            "ECO 111"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ENS 119",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "POL 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ENV 304",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAR 340",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ENS Concentration Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ENS 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ENS 311",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ENS Concentration Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ENS 487",
+          "alternatives": [
+            "ENS 488"
+          ],
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "ENS Concentration Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "ENS Concentration Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students should contact the director of undergraduate studies to design and approve an acceptable course of study before declaring the major."
+    },
+    {
+      "topic": "advising",
+      "text": "Undergraduate Advisor: Nancy Black, nancy.black@stonybrook.edu, E2361 Melville Library, 631-632-9404."
+    },
+    {
+      "topic": "other",
+      "text": "Students may not pursue the ENS or COS minor in conjunction with the major."
+    },
+    {
+      "topic": "other",
+      "text": "Credit toward the major for ENS 487 and ENS 488 requires approval of the research or internship topic by the SoMAS Director of Undergraduate Studies. Two credits of a 487- or 488-numbered course with listed designators are required."
+    },
+    {
+      "topic": "other",
+      "text": "Environmental Studies Honors Program (optional, not modeled): eligibility requires a 3.50 GPA in all courses for the major by the end of the junior year; candidates must prepare an honors thesis and complete an oral examination; departmental honors require a GPA of 3.5 in all major courses through senior year and a recommendation by the undergraduate research committee."
+    },
+    {
+      "topic": "other",
+      "text": "Study abroad experiences focused on sustainability are offered in Cuba, Ireland, Jamaica, Madagascar, Tanzania, and the Turkana Basin (Kenya). Students should talk with the major director about how study abroad coursework can fulfill major requirements."
+    },
+    {
+      "topic": "other",
+      "text": "Students should discuss their plan with the director of undergraduate studies before declaring the major."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1451",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

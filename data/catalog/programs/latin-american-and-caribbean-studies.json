@@ -1,0 +1,215 @@
+{
+  "id": "latin-american-and-caribbean-studies",
+  "name": "Latin American and Caribbean Studies",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "latin-american-and-caribbean-studies.intro",
+      "label": "intro",
+      "title": "Introductory course",
+      "rule": {
+        "manualCheck": "HIS 214 and POL 214 are both listed as 'Modern Latin America' with no OR between them. They are treated here as alternatives (cross-listed equivalents). Confirm with the program office whether both are required.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "HUS 254"
+          },
+          {
+            "type": "course",
+            "code": "HUS 250"
+          },
+          {
+            "type": "course",
+            "code": "HIS 214"
+          },
+          {
+            "type": "course",
+            "code": "POL 214"
+          }
+        ]
+      },
+      "sourceText": "HUS 254 - Latin America Today 3 credits OR HUS 250 - Caribbean Cultures 3 credits OR HIS 214 - Modern Latin America 3 credits POL 214 - Modern Latin America 3 credits"
+    },
+    {
+      "id": "latin-american-and-caribbean-studies.literature",
+      "label": "literature",
+      "title": "One literature or culture course (Group A)",
+      "rule": {
+        "manualCheck": "Topics courses EGL 372, HUS 261, MUS 311 and SPN 405 may be used only when the topic is appropriate; confirm the topic with the director.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "AFH 339",
+            "ARH 329",
+            "AFH 368",
+            "EGL 368",
+            "AFH 385",
+            "HUF 385",
+            "ARH 326",
+            "EGL 375",
+            "EGL 376",
+            "HUS 254",
+            "HUS 261",
+            "HUS 271",
+            "HUS 272",
+            "HUS 290",
+            "JRN 390",
+            "LIN 240",
+            "SPN 392",
+            "SPN 410",
+            "SPN 415",
+            "SPN 420",
+            "SPN 435",
+            "EGL 372",
+            "MUS 311",
+            "SPN 405"
+          ],
+          "excludeUsedBy": [
+            "latin-american-and-caribbean-studies.intro"
+          ]
+        }
+      },
+      "sourceText": "One literature or culture course, to be chosen from those listed in Group A"
+    },
+    {
+      "id": "latin-american-and-caribbean-studies.upper-division",
+      "label": "upper-division",
+      "title": "Two additional upper-division courses (Groups A and B)",
+      "rule": {
+        "manualCheck": "Relevant special topics courses given in any department are acceptable with the approval of the director. Topics courses EGL 372, HUS 261, MUS 311 and SPN 405 may be used only when the topic is appropriate. WST 395 and WST 398 may be used only when the topic is appropriate. An expanded list of acceptable Group A and B courses is kept in the program office.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "ARH 326",
+            "ARH 329",
+            "AFH 339",
+            "AFH 368",
+            "EGL 368",
+            "AFH 385",
+            "HUF 385",
+            "EGL 372",
+            "EGL 375",
+            "EGL 376",
+            "HUS 261",
+            "HUS 271",
+            "HUS 272",
+            "HUS 290",
+            "JRN 390",
+            "MUS 311",
+            "SPN 392",
+            "SPN 405",
+            "SPN 410",
+            "SPN 415",
+            "SPN 420",
+            "SPN 435",
+            "AFH 329",
+            "AFH 330",
+            "AFS 350",
+            "HIS 350",
+            "ECO 335",
+            "SUS 316",
+            "HIS 380",
+            "HIS 389",
+            "POL 372",
+            "SOC 364",
+            "WST 395",
+            "WST 398"
+          ],
+          "minNumber": 300,
+          "excludeUsedBy": [
+            "latin-american-and-caribbean-studies.literature"
+          ]
+        }
+      },
+      "sourceText": "Two additional upper-division courses to be chosen from Groups A and B"
+    },
+    {
+      "id": "latin-american-and-caribbean-studies.capstone",
+      "label": "capstone",
+      "title": "Internship or independent research",
+      "rule": {
+        "manualCheck": "LAC 488 is listed as 0-6 credits; confirm the credits awarded so that the minor totals 18 credits.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "LAC 488"
+          },
+          {
+            "type": "course",
+            "code": "LAC 487"
+          }
+        ]
+      },
+      "sourceText": "LAC 488 - Internship 0-6 credits, OR LAC 487 - Independent Research in Latin American and Caribbean Studies 6 credits."
+    },
+    {
+      "id": "latin-american-and-caribbean-studies.total-credits",
+      "label": "total-credits",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 18 credits.",
+        "reason": "Program-wide credit total has no rule type that covers it."
+      },
+      "sourceText": "Completion of the minor requires 18 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "latin-american-and-caribbean-studies.intro",
+        "latin-american-and-caribbean-studies.literature",
+        "latin-american-and-caribbean-studies.upper-division",
+        "latin-american-and-caribbean-studies.capstone"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "latin-american-and-caribbean-studies.intro",
+        "latin-american-and-caribbean-studies.literature",
+        "latin-american-and-caribbean-studies.upper-division",
+        "latin-american-and-caribbean-studies.capstone"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "Relevant special topics given in any department are acceptable for the minor with the approval of the director."
+    },
+    {
+      "topic": "advising",
+      "text": "An expanded list of acceptable courses for Groups A and B is available in the program office."
+    },
+    {
+      "topic": "advising",
+      "text": "Program director: Karina Yager. Phone: (631) 632-7517. Email: lacs@stonybrook.edu."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1490",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

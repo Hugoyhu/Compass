@@ -1,0 +1,846 @@
+{
+  "id": "africana-studies-ba",
+  "name": "Africana Studies, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Africana Studies",
+  "approxCredits": 39,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "africana-studies-ba.1",
+      "label": "1",
+      "title": "Concentration (choose one)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "africana-studies-ba.1.interdisciplinary",
+            "sourceText": "Requirements for the Interdisciplinary Concentration in Africana Studies: Foundation Courses; Two courses from each of the following areas; Additional Requirements; Writing within the Discipline",
+            "type": "allOf",
+            "rules": [
+              {
+                "sourceText": "Foundation Courses: AFS 101 - Themes in the Black Experience I; AFS 102 - Themes in the Black Experience II",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AFS 101"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AFS 102"
+                  }
+                ]
+              },
+              {
+                "sourceText": "Two courses from Africana Studies in the Humanities",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "AFH 206",
+                    "AFH 249",
+                    "AFH 329",
+                    "AFH 330",
+                    "AFH 368",
+                    "AFH 382",
+                    "AFH 385",
+                    "AFH 391",
+                    "AFH 423"
+                  ]
+                }
+              },
+              {
+                "sourceText": "Two courses from Africana Studies in the Social Sciences",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "AFS 221",
+                    "AFS 239",
+                    "AFS 240",
+                    "AFS 277",
+                    "AFS 365",
+                    "AFS 372"
+                  ]
+                }
+              },
+              {
+                "sourceText": "Two courses from The African American Experience",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "AFS 300",
+                    "AFS 310",
+                    "AFS 319",
+                    "AFS 325",
+                    "AFS 339",
+                    "AFS 350",
+                    "AFS 360",
+                    "AFS 363",
+                    "AFS 370",
+                    "AFS 375",
+                    "AFS 392",
+                    "AFS 394"
+                  ]
+                }
+              },
+              {
+                "sourceText": "Two courses from The Global African Experience",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "AFH 379",
+                    "AFS 345",
+                    "AFS 337",
+                    "AFH 339",
+                    "AFS 381",
+                    "AFS 346",
+                    "AFS 393"
+                  ]
+                }
+              },
+              {
+                "type": "unparsed",
+                "text": "Of the eight area courses, at least two must be selected from 200-level courses and at least five must be upper-division courses at the 300 or 400 level.",
+                "reason": "Level counts that span the area choices cannot be expressed as per-area choose rules."
+              },
+              {
+                "sourceText": "Three credits in AFH 447 or AFS 447 Readings in Africana Studies or AFH 487 or AFS 487 Research in Africana Studies taken in the junior or senior year.",
+                "manualCheck": "Must be taken in the junior or senior year.",
+                "type": "choose",
+                "credits": 3,
+                "from": {
+                  "courses": [
+                    "AFH 447",
+                    "AFS 447",
+                    "AFH 487",
+                    "AFS 487"
+                  ]
+                }
+              },
+              {
+                "sourceText": "Two additional AFS or AFH courses at the 300 or 400 level, or two upper-division courses outside of the department (approval of the Director of Undergraduate Studies is necessary when taking courses outside of the department for major credit).",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "choose",
+                    "count": 2,
+                    "from": {
+                      "subjects": [
+                        "AFS",
+                        "AFH"
+                      ],
+                      "minNumber": 300,
+                      "excludeCourses": [
+                        "AFS 283",
+                        "AFS 475",
+                        "AFS 476",
+                        "AFS 488",
+                        "AFH 475",
+                        "AFH 476"
+                      ]
+                    }
+                  },
+                  {
+                    "type": "unparsed",
+                    "text": "Two upper-division courses outside the Department of Africana Studies, with approval of the Director of Undergraduate Studies",
+                    "reason": "Eligible outside courses are not enumerated on the page."
+                  }
+                ]
+              },
+              {
+                "sourceText": "Africana Studies Majors are required to enroll in AFS 459 - Write Effectively in Africana Studies, taken in conjunction with an upper-division AFS or AFH course.",
+                "manualCheck": "Must earn a grade of 'S' in AFS 459 to satisfy the WRTD requirement; co-register with an upper-division AFS or AFH course and inform the instructor in advance.",
+                "type": "course",
+                "code": "AFS 459"
+              }
+            ]
+          },
+          {
+            "id": "africana-studies-ba.1.human-rights",
+            "sourceText": "Requirements for the Concentration in Human Rights & Social Justice: Social Action Project; Internship Requirement; Foundation Courses; One course from each area; Five courses under area of specialization; 2 Research and EXP+ Courses at the 400-level; Writing within the Discipline",
+            "type": "allOf",
+            "rules": [
+              {
+                "manualCheck": "Confirm Social Action Project completion and topic approval by the Undergraduate Director.",
+                "type": "unparsed",
+                "text": "Social Action Project: the topic must be approved by the Undergraduate Director.",
+                "reason": "Project completion is not a course requirement."
+              },
+              {
+                "manualCheck": "Confirm internship completed in Long Island or Greater New York City.",
+                "type": "unparsed",
+                "text": "Internship Requirement: serve an internship in an organisation in Long Island or the Greater New York City area.",
+                "reason": "Internship completion is not a course requirement."
+              },
+              {
+                "sourceText": "Foundation Courses: AFS 101 - Themes in the Black Experience I; AFS 102 - Themes in the Black Experience II",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AFS 101"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AFS 102"
+                  }
+                ]
+              },
+              {
+                "sourceText": "One course from Africana Studies in the Humanities",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "AFH 206",
+                    "AFH 249",
+                    "AFH 329",
+                    "AFH 330",
+                    "AFH 368",
+                    "AFH 382",
+                    "AFH 385",
+                    "AFH 391",
+                    "AFH 423"
+                  ]
+                }
+              },
+              {
+                "sourceText": "One course from Africana Studies in the Social Sciences",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "AFS 221",
+                    "AFS 239",
+                    "AFS 240",
+                    "AFS 277",
+                    "AFS 365",
+                    "AFS 372"
+                  ]
+                }
+              },
+              {
+                "sourceText": "One course from The African American Experience",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "AFS 300",
+                    "AFS 310",
+                    "AFS 319",
+                    "AFS 325",
+                    "AFS 339",
+                    "AFS 350",
+                    "AFS 360",
+                    "AFS 363",
+                    "AFS 370",
+                    "AFS 375",
+                    "AFS 392",
+                    "AFS 394"
+                  ]
+                }
+              },
+              {
+                "sourceText": "One course from The Global African Experience",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "AFH 379",
+                    "AFS 345",
+                    "AFS 337",
+                    "AFH 339",
+                    "AFS 346"
+                  ]
+                }
+              },
+              {
+                "type": "unparsed",
+                "text": "Of the four area courses, two must be selected from 200-level courses and two must be upper-division courses at the 300 or 400 level.",
+                "reason": "Level counts that span the area choices cannot be expressed as per-area choose rules."
+              },
+              {
+                "sourceText": "Five courses under area of specialization. 3 of these courses must be from the Department of Africana Studies.",
+                "type": "choose",
+                "count": 5,
+                "from": {
+                  "courses": [
+                    "AFS 340",
+                    "AFS 325",
+                    "AFS 350",
+                    "AFS 373",
+                    "AFH 380",
+                    "AFS 382",
+                    "AFS 392",
+                    "ARH 328",
+                    "SOC 303",
+                    "SOC 309",
+                    "POL 310",
+                    "POL 325",
+                    "HWC 304",
+                    "HWC 361"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "minFrom",
+                    "from": {
+                      "courses": [
+                        "AFS 340",
+                        "AFS 325",
+                        "AFS 350",
+                        "AFS 373",
+                        "AFH 380",
+                        "AFS 382",
+                        "AFS 392"
+                      ]
+                    },
+                    "minCourses": 3
+                  }
+                ]
+              },
+              {
+                "sourceText": "2 Research and EXP+ Courses at the 400-level: AFS 477, AFS 487, AFH 487",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "AFS 477",
+                    "AFS 487",
+                    "AFH 487"
+                  ],
+                  "minNumber": 400
+                }
+              },
+              {
+                "sourceText": "Africana Studies Majors are required to enroll in AFS 459 - Write Effectively in Africana Studies, taken in conjunction with an upper-division AFS or AFH course.",
+                "manualCheck": "Must earn a grade of 'S' in AFS 459 to satisfy the WRTD requirement; co-register with an upper-division AFS or AFH course and inform the instructor in advance.",
+                "type": "course",
+                "code": "AFS 459"
+              }
+            ]
+          },
+          {
+            "id": "africana-studies-ba.1.health",
+            "sourceText": "Requirements for the Concentration in Health and Disease in Africa and the African Diaspora: Social Action Project; Internship Requirement; Foundation Courses; One course from each area; Five courses under area of specialization; 2 Research and EXP+ Courses at the 400-level; Writing within the Discipline",
+            "type": "allOf",
+            "rules": [
+              {
+                "manualCheck": "Confirm Social Action Project completion and topic approval by the Undergraduate Director.",
+                "type": "unparsed",
+                "text": "Social Action Project: the topic must be approved by the Undergraduate Director.",
+                "reason": "Project completion is not a course requirement."
+              },
+              {
+                "manualCheck": "Confirm internship completed in Long Island or Greater New York City.",
+                "type": "unparsed",
+                "text": "Internship Requirement: serve an internship in an organisation in Long Island or the Greater New York City area.",
+                "reason": "Internship completion is not a course requirement."
+              },
+              {
+                "sourceText": "Foundation Courses: AFS 101 - Themes in the Black Experience I; AFS 102 - Themes in the Black Experience II",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AFS 101"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AFS 102"
+                  }
+                ]
+              },
+              {
+                "sourceText": "One course from Africana Studies in the Humanities",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "AFH 206",
+                    "AFH 249",
+                    "AFH 329",
+                    "AFH 330",
+                    "AFH 368",
+                    "AFH 382",
+                    "AFH 385",
+                    "AFH 391",
+                    "AFH 423"
+                  ]
+                }
+              },
+              {
+                "sourceText": "One course from Africana Studies in the Social Sciences",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "AFS 221",
+                    "AFS 239",
+                    "AFS 240",
+                    "AFS 277",
+                    "AFS 365",
+                    "AFS 372"
+                  ]
+                }
+              },
+              {
+                "sourceText": "One course from The African American Experience",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "AFS 300",
+                    "AFS 310",
+                    "AFS 319",
+                    "AFS 325",
+                    "AFS 339",
+                    "AFS 350",
+                    "AFS 360",
+                    "AFS 363",
+                    "AFS 370",
+                    "AFS 375",
+                    "AFS 392",
+                    "AFS 394"
+                  ]
+                }
+              },
+              {
+                "sourceText": "One course from The Global African Experience",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "AFH 379",
+                    "AFS 345",
+                    "AFS 337",
+                    "AFH 339",
+                    "AFS 346"
+                  ]
+                }
+              },
+              {
+                "type": "unparsed",
+                "text": "Of the four area courses, two must be selected from 200-level courses and two must be upper-division courses at the 300 or 400 level.",
+                "reason": "Level counts that span the area choices cannot be expressed as per-area choose rules."
+              },
+              {
+                "sourceText": "Five courses under area of specialization. 3 of these courses must be from the Department of Africana Studies.",
+                "type": "choose",
+                "count": 5,
+                "from": {
+                  "courses": [
+                    "AFS 368",
+                    "AFS 381",
+                    "AFS 374",
+                    "SOC 200",
+                    "SOC 339",
+                    "SOC 393",
+                    "HIS 293",
+                    "WST 394"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "minFrom",
+                    "from": {
+                      "courses": [
+                        "AFS 368",
+                        "AFS 381",
+                        "AFS 374"
+                      ]
+                    },
+                    "minCourses": 3
+                  }
+                ]
+              },
+              {
+                "sourceText": "2 Research and EXP+ Courses at the 400-level: AFS 477, AFS 487, AFH 487",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "AFS 477",
+                    "AFS 487",
+                    "AFH 487"
+                  ],
+                  "minNumber": 400
+                }
+              },
+              {
+                "sourceText": "Africana Studies Majors are required to enroll in AFS 459 - Write Effectively in Africana Studies, taken in conjunction with an upper-division AFS or AFH course.",
+                "manualCheck": "Must earn a grade of 'S' in AFS 459 to satisfy the WRTD requirement; co-register with an upper-division AFS or AFH course and inform the instructor in advance.",
+                "type": "course",
+                "code": "AFS 459"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Students select from an Interdisciplinary concentration, a concentration in Human Rights and Social Justice, and a concentration in Health and Disease. All courses for the major, except those graded S/U, must be passed with a letter grade of C or higher."
+    },
+    {
+      "id": "africana-studies-ba.2",
+      "label": "2",
+      "title": "Total credits and upper-division credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires 39 credits, including at least 21 upper-division credits (from courses numbered 300 or higher).",
+        "reason": "Program-wide credit totals are not a rule type the engine can evaluate."
+      },
+      "sourceText": "Completion of the major requires 39 credits, including at least 21 upper-division credits (from courses numbered 300 or higher)."
+    },
+    {
+      "id": "africana-studies-ba.3",
+      "label": "3",
+      "title": "Directed readings and independent study limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "Only six credits of directed readings or independent study courses (courses numbered 447 and 487) may be used toward the major.",
+        "reason": "Program-wide credit cap across concentrations is not expressible as a single choose constraint."
+      },
+      "sourceText": "Only six credits of directed readings or independent study courses (courses numbered 447 and 487) may be used toward the major."
+    },
+    {
+      "id": "africana-studies-ba.4",
+      "label": "4",
+      "title": "Transfer student upper-division residency",
+      "rule": {
+        "type": "unparsed",
+        "text": "Transfer students must take at least 12 credits of upper-division Africana Studies courses in residence at Stony Brook to complete the AFS major.",
+        "reason": "Residency rule applies only to transfer students, which no policy type can condition on."
+      },
+      "sourceText": "Transfer students must take at least 12 credits of upper-division Africana Studies courses in residence at Stony Brook to complete the AFS major."
+    },
+    {
+      "id": "africana-studies-ba.5",
+      "label": "5",
+      "title": "200-level courses before junior year",
+      "rule": {
+        "type": "unparsed",
+        "text": "Students must take at least two 200-level courses in Africana Studies prior to beginning their junior year.",
+        "reason": "Timing rule based on class standing is not expressible as a course rule."
+      },
+      "sourceText": "Students must take at least two 200-level courses in Africana Studies prior to beginning their junior year."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "africana-studies-ba.1"
+      ],
+      "sourceText": "All courses for the major, except those graded S/U, must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AFS 101",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AFS 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Course from Area A",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Course from Area A",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "AFH 447/AFS 447/AFH 487 or AFS 487",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Course from Area B",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Course in related discipline",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Course from Area C",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Course from Area B",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Course in related discipline",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Course from Area C",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Course from Area D",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Course in related discipline",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AFS 459",
+          "credits": 0
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Course from Area D",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Course in related discipline",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "The concentration (Interdisciplinary, Human Rights & Social Justice, or Health & Disease) does not appear on the Stony Brook transcript; students should confirm their choice with an advisor."
+    },
+    {
+      "topic": "advising",
+      "text": "Courses in the related-discipline slots of the sample sequence may not be crosslisted with AFH or AFS. Courses crosslisted with another department may be taken under either designator for credit, but not repeated under the other."
+    },
+    {
+      "topic": "other",
+      "text": "AFS 283, AFS 475, AFS 476, AFS 488, AFH 475, and AFH 476 may not be used to fulfill major requirements. AFS 283 may be taken for S/U credit (Community Service with the BlackWorld newspaper option) but does not count toward the major."
+    },
+    {
+      "topic": "advising",
+      "text": "Students are recommended, but not required, to take AFS 491 - Interdisciplinary Seminar in Africana Studies."
+    },
+    {
+      "topic": "other",
+      "text": "Africana Studies Honors Program: departmental majors with a minimum G.P.A. of 3.33 in Africana Studies courses as specified in the major requirements and an overall G.P.A. of 3.0 may enroll at the beginning of their senior year. Not evaluated here."
+    },
+    {
+      "topic": "advising",
+      "text": "Students may pursue minors of particular interest: Anthropology (ANT), Economics, BA (ECO), English (EGL), Health, Medicine, and Society (HMS), History (HIS), Philosophy (PHI), Political Science (POL)."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1343",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

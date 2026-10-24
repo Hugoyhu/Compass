@@ -1,0 +1,119 @@
+{
+  "id": "mechanical-engineering",
+  "name": "Mechanical Engineering",
+  "kind": "minor",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "mechanical-engineering.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MEC 260"
+          },
+          {
+            "type": "course",
+            "code": "MEC 262"
+          },
+          {
+            "type": "course",
+            "code": "MEC 301"
+          },
+          {
+            "type": "course",
+            "code": "MEC 363"
+          }
+        ]
+      },
+      "sourceText": "Required Courses: MEC 260 - Engineering Statics 3 credits; MEC 262 - Engineering Dynamics 3 credits; MEC 301 - Thermodynamics 3 credits; MEC 363 - Mechanics of Solids 3 credits"
+    },
+    {
+      "id": "mechanical-engineering.electives",
+      "label": "electives",
+      "title": "Elective Courses (Choose 2)",
+      "rule": {
+        "manualCheck": "Other MEC electives not listed here require the approval of the undergraduate program director; the student should consult the program director before registering for elective courses.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "MEC 305",
+            "MEC 310",
+            "MEC 320",
+            "MEC 325",
+            "MEC 364",
+            "MEC 393",
+            "MEC 398",
+            "MEC 402",
+            "MEC 411",
+            "MEC 455"
+          ]
+        },
+        "constraints": []
+      },
+      "sourceText": "Elective Courses (Choose 2): MEC 305 - Heat and Mass Transfer 3 credits; MEC 310 - Introduction to Machine Design 3 credits; MEC 320 - Numerical Methods in Engineering Design and Analysis 3 credits; MEC 325 - Manufacturing Processes 3 credits; MEC 364 - Introduction to Fluid Mechanics 3 credits; MEC 393 - Engineering Fluid Mechanics 3 credits; MEC 398 - Thermodynamics II 3 credits; MEC 402 - Mechanical Vibrations 3 credits; MEC 411 - Control System Analysis and Design 4 credits; MEC 455 - Applied Stress Analysis 3 credits. Note: Other MEC electives require the approval of the undergraduate program director."
+    },
+    {
+      "id": "mechanical-engineering.total-credits",
+      "label": "total-credits",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 18-20 credits, of which 12-13 are from required courses and 6-7 from electives.",
+        "reason": "A program-wide credit range that no rule type covers; it is only partly implied by the two requirement groups."
+      },
+      "sourceText": "Completion of the minor requires 18-20 credits, of which 12-13 are from required courses and 6-7 from electives."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "mechanical-engineering.required-courses",
+        "mechanical-engineering.electives"
+      ],
+      "sourceText": "All courses must be taken for a letter grade"
+    },
+    {
+      "type": "minGpa",
+      "gpa": 2,
+      "appliesTo": [
+        "mechanical-engineering.required-courses",
+        "mechanical-engineering.electives"
+      ],
+      "sourceText": "a g.p.a. of 2.00 or higher is required for the six courses that constitute the minor."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Entry into this minor presupposes a background in mathematics and physics, represented by the prerequisite requirements for the courses listed below."
+    },
+    {
+      "topic": "advising",
+      "text": "A student who wishes to pursue this minor should consult with the undergraduate program director in the Department of Mechanical Engineering before registering for the elective courses."
+    },
+    {
+      "topic": "other",
+      "text": "No course substitutions or transfer courses are permitted for the MEC minor, i.e. students must take the MEC offering of these courses."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1550",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

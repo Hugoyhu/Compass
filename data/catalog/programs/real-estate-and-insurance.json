@@ -1,0 +1,103 @@
+{
+  "id": "real-estate-and-insurance",
+  "name": "Real Estate and Insurance",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "real-estate-and-insurance.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BUS 333"
+          },
+          {
+            "type": "course",
+            "code": "BUS 376"
+          }
+        ]
+      },
+      "sourceText": "Required Courses - BUS 333 - Introduction to the Business of Real Estate 3 credits - BUS 376 - Risk Management & Insurance 3 credits"
+    },
+    {
+      "id": "real-estate-and-insurance.pick-four-electives",
+      "label": "pick-four-electives",
+      "title": "Pick Four Electives",
+      "rule": {
+        "type": "choose",
+        "count": 4,
+        "from": {
+          "courses": [
+            "BUS 317",
+            "BUS 355",
+            "BUS 377",
+            "BUS 406",
+            "BUS 408",
+            "BUS 488"
+          ]
+        }
+      },
+      "sourceText": "Pick Four Electives - BUS 317 - Estate & Financial Planning 3 credits - BUS 355 - Investment Analysis 3 credits - BUS 377 - Risk Management & Insurance II 3 credits - BUS 406 - Real Estate Finance 3 credits - BUS 408 - Property & Casualty Insurance 3 credits - BUS 488 - Internship 0-3 credits"
+    },
+    {
+      "id": "real-estate-and-insurance.transfer-credit",
+      "label": "transfer-credit",
+      "title": "Transfer Credit Policy",
+      "rule": {
+        "type": "unparsed",
+        "text": "Students may apply a maximum of nine transfer credits toward the Real Estate and Insurance Minor.",
+        "reason": "No rule type caps transfer credits applied to a minor"
+      },
+      "sourceText": "Students may apply a maximum of nine transfer credits toward the Real Estate and Insurance Minor."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "real-estate-and-insurance.required-courses",
+        "real-estate-and-insurance.pick-four-electives"
+      ],
+      "sourceText": "All courses must be taken for a letter grade and passed with a grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "real-estate-and-insurance.required-courses",
+        "real-estate-and-insurance.pick-four-electives"
+      ],
+      "sourceText": "All courses must be taken for a letter grade and passed with a grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students may apply to the Real Estate and Insurance minor at any time during their academic career if their cumulative grade point average is 3.20 or higher."
+    },
+    {
+      "topic": "other",
+      "text": "Business and non-business majors may complete the Real Estate and Insurance minor."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1517",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

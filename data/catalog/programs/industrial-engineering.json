@@ -1,0 +1,120 @@
+{
+  "id": "industrial-engineering",
+  "name": "Industrial Engineering",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "industrial-engineering.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses (12 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "EST 280"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "EST 342"
+              },
+              {
+                "type": "course",
+                "code": "AMS 341"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "EST 392"
+          },
+          {
+            "type": "course",
+            "code": "AMS 310"
+          }
+        ]
+      },
+      "sourceText": "Required Courses (12 credits): EST 280 - Fundamentals of Industrial Engineering 3 credits; EST 342 - Industrial Engineering, Intro to Operations Research I 3 credits OR AMS 341 - Operations Research I: Deterministic Models 3 credits; EST 392 - Engineering Economics 3 credits; AMS 310 - Survey of Probability and Statistics 3 credits"
+    },
+    {
+      "id": "industrial-engineering.elective-courses",
+      "label": "elective-courses",
+      "title": "Elective Courses (6 credits)",
+      "rule": {
+        "manualCheck": "Other elective courses may be used with prior approval of the TSM Department.",
+        "type": "choose",
+        "credits": 6,
+        "from": {
+          "courses": [
+            "AMS 315",
+            "AMS 342",
+            "ESM 455",
+            "EST 305",
+            "EST 326",
+            "EST 391",
+            "EST 393",
+            "MEC 203",
+            "MEC 325"
+          ]
+        }
+      },
+      "sourceText": "Elective Courses (6 credits): AMS 315 - Data Analysis 3 credits; AMS 342 - Operations Research II: Stochastic Models 3 credits; ESM 455 - Materials and Processes in Manufacturing Design 3 credits; EST 305 - Applications Software for Information Management 3 credits; EST 326 - Management for Engineers 3 credits; EST 391 - Technology Assessment 3 credits; EST 393 - Project Management 3 credits; MEC 203 - Engineering Graphics and CAD 3 credits; MEC 325 - Manufacturing Processes 3 credits. Note: Other elective courses with prior approval of TSM Department."
+    },
+    {
+      "id": "industrial-engineering.major-overlap",
+      "label": "major-overlap",
+      "title": "Courses not used by the major or other minors",
+      "rule": {
+        "type": "unparsed",
+        "text": "The minor must include at least three courses (9 credits) that are not used to satisfy the requirements of the student's major(s) or other minors.",
+        "reason": "Cross-program course-overlap limit that no rule type covers"
+      },
+      "sourceText": "The minor must include at least three courses (9 credits) that are not used to satisfy the requirements of the student's major(s) or other minors."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "industrial-engineering.required-courses",
+        "industrial-engineering.elective-courses"
+      ],
+      "sourceText": "Each course taken to satisfy the requirements for the minor must be completed with a grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Admission to the Industrial Engineering minor requires completion of Calculus I and Calculus II (or equivalents) with a grade of C or higher, and a cumulative grade point average of 2.50 or higher."
+    },
+    {
+      "topic": "other",
+      "text": "The minor requires completion of six courses (18 credits). Some chosen courses have prerequisites that may not be met by the minor requirements; students who are not in majors that require these prerequisites must plan to take them in addition to the minor requirements."
+    },
+    {
+      "topic": "advising",
+      "text": "Undergraduate Program Coordinator and Advisor: Elizabeth Petersen, 231 Engineering, (631) 632-8381, tsm_advising@stonybrook.edu."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1475",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

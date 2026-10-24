@@ -1,0 +1,786 @@
+{
+  "id": "mathematics-bs",
+  "name": "Mathematics, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Mathematics",
+  "approxCredits": 40,
+  "allowCourseReuse": true,
+  "requirements": [
+    {
+      "id": "mathematics-bs.1",
+      "label": "1",
+      "title": "Single-variable Calculus",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "MAT 132"
+              }
+            ]
+          },
+          {
+            "manualCheck": "The catalog lists 'MAT 125 (or MAT 130 /MAT 125)'. The MAT 130 parenthetical is not modeled; MAT 130 is a one-credit course taken with MAT 125 or MAT 131.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 126"
+              },
+              {
+                "type": "course",
+                "code": "MAT 127"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 151"
+              },
+              {
+                "type": "course",
+                "code": "AMS 161"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "1. Single-variable Calculus: One of the following sequences: MAT 131 - Calculus I 4 credits; MAT 132 - Calculus II 4 credits; OR MAT 125 - Calculus A 3 credits (or MAT 130 /MAT 125); MAT 126 - Calculus B 3 credits; MAT 127 - Calculus C 3 credits; OR AMS 151 - Applied Calculus I 3 credits; AMS 161 - Applied Calculus II 3 credits. Note: Some or all of this requirement may be fulfilled by an appropriate score on the Mathematics Placement Exam, by AP credit, or by comparable means."
+    },
+    {
+      "id": "mathematics-bs.1a",
+      "label": "1a",
+      "title": "Placement-dependent MAT 123 requirement",
+      "rule": {
+        "type": "unparsed",
+        "text": "If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major.",
+        "reason": "Conditional on placement exam results, which a transcript does not show."
+      },
+      "sourceText": "If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major."
+    },
+    {
+      "id": "mathematics-bs.2",
+      "label": "2",
+      "title": "Multivariable Calculus, Linear Algebra, and Differential Equations",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 203"
+              },
+              {
+                "type": "course",
+                "code": "MAT 307"
+              },
+              {
+                "type": "course",
+                "code": "AMS 261"
+              }
+            ]
+          },
+          {
+            "id": "mathematics-bs.2.linalg",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 211"
+              },
+              {
+                "type": "course",
+                "code": "AMS 210"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 303"
+              },
+              {
+                "type": "course",
+                "code": "MAT 308"
+              },
+              {
+                "type": "course",
+                "code": "AMS 361"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "2. Multivariable Calculus, Linear Algebra, and Differential Equations: One course in multivariable calculus: MAT 203 - Calculus III with Applications 4 credits OR MAT 307 - Multivariable Calculus with Linear Algebra 4 credits OR AMS 261 - Applied Calculus III 4 credits. One course in introductory linear algebra: MAT 211 - Introduction to Linear Algebra 3 credits OR AMS 210 - Applied Linear Algebra 3 credits. One course in differential equations: MAT 303 - Calculus IV with Applications 4 credits OR MAT 308 - Differential Equations with Linear Algebra 4 credits OR AMS 361 - Applied Calculus IV: Differential Equations 4 credits. Note: Students who take both MAT 307 and MAT 308 do not need to take a separate course in linear algebra, since this material is included in those courses."
+    },
+    {
+      "id": "mathematics-bs.3",
+      "label": "3",
+      "title": "Preparation in the Language and Logic of Mathematics",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 200"
+          },
+          {
+            "type": "course",
+            "code": "MAT 250"
+          },
+          {
+            "type": "unparsed",
+            "text": "Passing the MAT 200 challenge examination",
+            "reason": "A challenge exam result is not a transcript course."
+          }
+        ]
+      },
+      "sourceText": "3. Preparation in the Language and Logic of Mathematics: This requirement can be met by either passing MAT 200 or MAT 250 or by passing the MAT 200 challenge examination. (Note: the writing intensive course MAT 200 is a requirement for students in the Secondary Teacher Education Program.)"
+    },
+    {
+      "id": "mathematics-bs.4",
+      "label": "4",
+      "title": "Computer Literacy",
+      "rule": {
+        "manualCheck": "MAE 330 is listed only for students graduating with the Secondary Teacher Education option.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "MAT 331",
+            "PHY 277",
+            "CSE 101",
+            "CSE 110",
+            "CSE 114",
+            "ESG 111",
+            "LIN 120",
+            "LIN 335",
+            "MAE 330"
+          ]
+        }
+      },
+      "sourceText": "4. Computer Literacy: Select one course below: MAT 331 - Computer-Assisted Mathematical Problem Solving 3 credits; PHY 277 - Computation for Physics and Astronomy 3 credits; CSE 101 - Computer Science Principles 4 credits; CSE 110 - Introduction to Computer Science 3 credits; CSE 114 - Introduction to Object-Oriented Programming 4 credits; ESG 111 - Programming for Engineers 3 credits; LIN 120 - Language and Technology 3 credits; LIN 335 - Computational Linguistics 3 credits; MAE 330 - Technology in Mathematics Education 3 credits (for students graduating with the Secondary Teacher Education option). Note: MAT 331 and MAE 330 may be used both here and in Requirement 8."
+    },
+    {
+      "id": "mathematics-bs.5",
+      "label": "5",
+      "title": "Advanced Linear Algebra Course",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 310"
+          },
+          {
+            "type": "course",
+            "code": "MAT 315"
+          }
+        ]
+      },
+      "sourceText": "5. Advanced Linear Algebra Course: MAT 310 - Linear Algebra 4 credits OR MAT 315 - Advanced Linear Algebra 4 credits"
+    },
+    {
+      "id": "mathematics-bs.6",
+      "label": "6",
+      "title": "A Course in Abstract Algebra",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 312"
+          },
+          {
+            "type": "course",
+            "code": "MAT 313"
+          }
+        ]
+      },
+      "sourceText": "6. A Course in Abstract Algebra: MAT 312 - Applied Algebra 3 credits OR MAT 313 - Abstract Algebra 3 credits"
+    },
+    {
+      "id": "mathematics-bs.7",
+      "label": "7",
+      "title": "Analysis",
+      "rule": {
+        "manualCheck": "Students in the Secondary Teacher option need only satisfy MAT 319 or MAT 320. Six credits of graduate MAT courses may be used in place of undergraduate courses in this requirement (not modeled).",
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 319"
+              },
+              {
+                "type": "course",
+                "code": "MAT 320"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MAT 342"
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "MAT 322",
+                "MAT 324",
+                "MAT 341"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "7. Analysis: Students not in the Secondary Teacher option must satisfy all three items below: 1. MAT 319 - Foundations of Analysis 4 credits OR MAT 320 - Introduction to Analysis 4 credits; 2. MAT 342 - Applied Complex Analysis 3 credits; 3. One more course in analysis, to chosen from MAT 322, MAT 324, MAT 341. Note: Secondary Teaching students need only satisfy item 1 above (MAT 319 or MAT 320)."
+    },
+    {
+      "id": "mathematics-bs.8",
+      "label": "8",
+      "title": "Four Mathematics-related courses beyond Requirements 5, 6, 7",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "choose",
+            "count": 4,
+            "from": {
+              "courses": [
+                "MAE 301",
+                "MAE 330",
+                "AST 346",
+                "AST 347",
+                "CHE 301",
+                "CHE 302",
+                "CHE 351",
+                "CHE 353",
+                "ECO 320",
+                "ECO 321",
+                "ECO 348",
+                "LIN 361",
+                "PHY 301",
+                "PHY 302",
+                "PHY 303",
+                "PHY 306",
+                "PHY 308",
+                "PHY 405",
+                "PHY 408",
+                "PHI 330",
+                "ESE 315",
+                "ESE 319",
+                "ESE 337"
+              ],
+              "ranges": [
+                {
+                  "subject": "MAT",
+                  "from": 310,
+                  "to": 999
+                },
+                {
+                  "subject": "AMS",
+                  "from": 301,
+                  "to": 999
+                },
+                {
+                  "subject": "CSE",
+                  "from": 301,
+                  "to": 999
+                }
+              ],
+              "excludeCourses": [
+                "MAT 475",
+                "AMS 361",
+                "AMS 475",
+                "CSE 475"
+              ],
+              "excludeUsedBy": [
+                "mathematics-bs.5",
+                "mathematics-bs.6",
+                "mathematics-bs.7"
+              ]
+            }
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "from": {
+              "ranges": [
+                {
+                  "subject": "MAT",
+                  "from": 310,
+                  "to": 999
+                }
+              ],
+              "excludeCourses": [
+                "MAT 475"
+              ],
+              "excludeUsedBy": [
+                "mathematics-bs.5",
+                "mathematics-bs.6",
+                "mathematics-bs.7"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "8. Four Mathematics-related courses beyond those taken to satisfy Requirements 5, 6, 7 (three will suffice if all of them are MAT courses), to be chosen from the following list. Note that MAE 330 and MAT 331 may be used to satisfy both requirement 4 as well as requirement 8. MAE 301 - Foundations of Secondary School Mathematics 3 credits; MAT courses numbered 310 or above except MAT 475; AMS courses numbered 301 or above except AMS 361 and AMS 475; CSE courses numbered 301 or above except CSE 475; AST 346; AST 347; CHE 301; CHE 302; CHE 351; CHE 353; ECO 320; ECO 321; ECO 348; LIN 361; PHY 301; PHY 302; PHY 303; PHY 306; PHY 308; PHY 405; PHY 408; PHI 330; ESE 315; ESE 319; ESE 337"
+    },
+    {
+      "id": "mathematics-bs.9",
+      "label": "9",
+      "title": "Writing Requirement",
+      "rule": {
+        "manualCheck": "For students following the Stony Brook Curriculum, the upper-division writing requirement is met by the WRTD objective plus MAT 319 or MAT 320 with a grade of C or better. The WRTD objective is not checked here.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 319"
+          },
+          {
+            "type": "course",
+            "code": "MAT 320"
+          }
+        ]
+      },
+      "sourceText": "9. Writing Requirement: Students following the Stony Brook Curriculum will fulfill the upper division writing requirement by completing the objectives for Writing within the Discipline (WRTD) and successful completion of MAT 319 or MAT 320 with a grade of C or better."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "mathematics-bs.1",
+        "mathematics-bs.1a",
+        "mathematics-bs.2",
+        "mathematics-bs.3",
+        "mathematics-bs.4",
+        "mathematics-bs.5",
+        "mathematics-bs.6",
+        "mathematics-bs.7",
+        "mathematics-bs.8",
+        "mathematics-bs.9"
+      ],
+      "sourceText": "All courses used to fulfill the requirements for the major must be taken for a letter grade and must be completed with a grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "mathematics-bs.1",
+        "mathematics-bs.1a",
+        "mathematics-bs.2",
+        "mathematics-bs.3",
+        "mathematics-bs.4",
+        "mathematics-bs.5",
+        "mathematics-bs.6",
+        "mathematics-bs.7",
+        "mathematics-bs.8",
+        "mathematics-bs.9"
+      ],
+      "sourceText": "All courses used to fulfill the requirements for the major must be taken for a letter grade and must be completed with a grade of C or higher."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "mathematics-bs.sub.linalg",
+      "replaces": {
+        "type": "rule",
+        "ruleId": "mathematics-bs.2.linalg"
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 307"
+          },
+          {
+            "type": "course",
+            "code": "MAT 308"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: Students who take both MAT 307 and MAT 308 do not need to take a separate course in linear algebra, since this material is included in those courses."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "anyOf",
+          "rules": [
+            {
+              "type": "course",
+              "code": "MAT 319"
+            },
+            {
+              "type": "course",
+              "code": "MAT 320"
+            }
+          ]
+        },
+        "sourceText": "Students following the Stony Brook Curriculum will fulfill the upper division writing requirement by completing the objectives for Writing within the Discipline (WRTD) and successful completion of MAT 319 or MAT 320 with a grade of C or better."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 131",
+          "alternatives": [
+            "MAT 125"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 132",
+          "alternatives": [
+            "MAT 126"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "MAT 200 or Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MAT 203",
+          "alternatives": [
+            "AMS 261"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 211",
+          "alternatives": [
+            "AMS 210"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MAT 303",
+          "alternatives": [
+            "AMS 361"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 331",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MAT 312",
+          "alternatives": [
+            "MAT 313"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 319",
+          "alternatives": [
+            "MAT 320"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 336",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MAT 322",
+          "alternatives": [
+            "MAT 341",
+            "MAT 342",
+            "MAT 324"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 310",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division MAT elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division MAT elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division MAT elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division MAT elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division MAT elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division MAT elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "The catalog describes two special options within the major: the Advanced Track option and the Secondary Teacher Education option. This record models only the regular mathematics major. Advanced Track requirements (its own list of 11 items, a suggested first-two-year sequence, and a prerequisite that Requirement 1 be satisfied before enrolling) are not modeled. The Secondary Teacher Education option is described under the Education and Teacher Certification entry and is not modeled. Students should confirm which option they are following with the Undergraduate Mathematics Office."
+    },
+    {
+      "topic": "other",
+      "text": "Mathematics Honors Program (open to junior and senior majors with at least two upper-division MAT courses at B or higher and a 3.00 GPA; seven MAT courses at a 3.50 GPA plus approval) is not modeled."
+    },
+    {
+      "topic": "other",
+      "text": "Requirement 7 allows six credits of graduate MAT courses in place of undergraduate courses. This is noted on Requirement 7 as a manual check and is not modeled."
+    },
+    {
+      "topic": "other",
+      "text": "Under special circumstances, a student may ask the director of undergraduate studies to allow substitution of an equivalent individual program for some or all requirements. This requires director approval and is not modeled."
+    },
+    {
+      "topic": "other",
+      "text": "Allowed course reuse: MAT 331 and MAE 330 may count toward both Requirement 4 and Requirement 8. Course reuse is enabled for this record because of this explicit exception. Requirements 8 excludes courses used for Requirements 5, 6, and 7."
+    },
+    {
+      "topic": "other",
+      "text": "AP credit: a score of 4 or 5 on the BC exam earns credit for MAT 131 and MAT 132 (8 credits). A score of 4 or 5 on the AB exam earns credit for MAT 131 (4 credits). A score of 3 on either exam earns 3 credits applicable toward graduation but not the major."
+    },
+    {
+      "topic": "advising",
+      "text": "Students with prior linear algebra or multivariable calculus should see an advisor in the Undergraduate Mathematics Office. A student with some linear algebra may skip MAT 211 and enroll directly in MAT 310."
+    },
+    {
+      "topic": "other",
+      "text": "Placement: the Mathematics Placement Examination determines starting level. Transfer mathematics courses are evaluated for the entry skill and QPS requirements independently of placement results. Students who place into MAT 123 are subject to the placement-dependent note in Requirement 1a."
+    },
+    {
+      "topic": "other",
+      "text": "Mathematics Learning Center offers tutorial help for 100-level courses, and more advanced students can also get assistance there."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1553",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

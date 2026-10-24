@@ -1,0 +1,228 @@
+{
+  "id": "mass-communication-bs",
+  "name": "Mass Communication, BS",
+  "kind": "major",
+  "degree": "Bachelor Science in Mass Communication",
+  "approxCredits": 120,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "mass-communication-bs.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses (24 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "JRN 101"
+          },
+          {
+            "type": "course",
+            "code": "COM 106"
+          },
+          {
+            "type": "course",
+            "code": "COM 120"
+          },
+          {
+            "type": "course",
+            "code": "COM 207"
+          },
+          {
+            "type": "course",
+            "code": "COM 208"
+          },
+          {
+            "type": "course",
+            "code": "COM 305"
+          },
+          {
+            "type": "course",
+            "code": "COM 415"
+          },
+          {
+            "type": "course",
+            "code": "COM 491"
+          }
+        ]
+      },
+      "sourceText": "Required Courses (24 credits): JRN 101 - News Literacy 3 credits; COM 106 - Introduction to Mass Media 3 credits; COM 120 - Fundamentals of Public Speaking 3 credits; COM 207 - Media Writing 3 credits; COM 208 - Mass Communication 3 credits; COM 305 - Mass Communication Law & Ethics 3 credits; COM 415 - Data Analysis and Storytelling 3 credits; COM 491 - Mass Communication Senior Project 3 credits"
+    },
+    {
+      "id": "mass-communication-bs.methods-theory",
+      "label": "methods-theory",
+      "title": "Paired methods and theory sequence (6 credits)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "COM 306"
+              },
+              {
+                "type": "course",
+                "code": "COM 307"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "COM 316"
+              },
+              {
+                "type": "course",
+                "code": "COM 317"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Choose one of the following paired methods and theory sequences (6 credits): COM 306 - Modes of Media Criticism 3 credits; COM 307 - Critical Media Theory 3 credits; OR COM 316 - Mass Communication Research Methods 3 credits; COM 317 - Mass Communication Theory 3 credits"
+    },
+    {
+      "id": "mass-communication-bs.electives",
+      "label": "electives",
+      "title": "Choose two electives (6 credits)",
+      "rule": {
+        "manualCheck": "The page lists the electives as 6 credits total; COM 487 and COM 494 are listed as 0-6 credits each, so confirm the credit total of the two chosen electives. Internship credits across all internships may not exceed 12.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "JRN 319",
+            "COM 346",
+            "JRN 363",
+            "COM 365",
+            "JRN 366",
+            "COM 399",
+            "JRN 413",
+            "JRN 433",
+            "COM 487",
+            "COM 494"
+          ],
+          "excludeUsedBy": [
+            "mass-communication-bs.required-courses",
+            "mass-communication-bs.methods-theory"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "COM 494"
+              ]
+            },
+            "maxCredits": 12
+          }
+        ]
+      },
+      "sourceText": "Choose two of the following electives (6 credits): JRN 319 - The Image of the Journalist in Popular Culture 3 credits; COM 346 - Race, Class, and Gender in Media 3 credits; JRN 363 - Magazine Writing 3 credits; COM 365 - Talking Science 3 credits; JRN 366 - Press & the Presidency 3 credits; COM 399 - Special Topics in Mass Communication 3 credits; JRN 413 - Journalisms of the Global South 3 credits; JRN 433 - Journalistic Book and Serial Narrative Production 3 credits; COM 487 - Independent Study 0-6 credits; COM 494 - Mass Communication Internship 0-6 credits. Students may enroll in multiple internships up to 12 credits each. The total number of credits from all internships combined may not exceed 12."
+    },
+    {
+      "id": "mass-communication-bs.concentration",
+      "label": "concentration",
+      "title": "Interdisciplinary Concentration (9 credits)",
+      "rule": {
+        "manualCheck": "The page requires a 9-credit interdisciplinary concentration of upper-division (300 or 400 level) classes but does not list the eligible courses; confirm the courses are interdisciplinary and outside the required and elective items.",
+        "type": "choose",
+        "credits": 9,
+        "from": {
+          "minNumber": 300,
+          "excludeUsedBy": [
+            "mass-communication-bs.required-courses",
+            "mass-communication-bs.methods-theory",
+            "mass-communication-bs.electives"
+          ]
+        }
+      },
+      "sourceText": "Interdisciplinary Concentration (9 credits): Students must complete a 9-credit interdisciplinary concentration of upper division classes (300 or 400 level)."
+    },
+    {
+      "id": "mass-communication-bs.min-cmm-credits",
+      "label": "min-cmm-credits",
+      "title": "Minimum mass communication credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires a minimum total of 36 mass communication credits.",
+        "reason": "Program-wide minimum credit rule; no rule type covers a minimum total of major credits."
+      },
+      "sourceText": "Completion of the major requires a minimum total of 36 mass communication credits."
+    },
+    {
+      "id": "mass-communication-bs.total-credits",
+      "label": "total-credits",
+      "title": "Total degree credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Mass Communication majors must satisfy all Stony Brook Curriculum (SBC) requirements and accrue a total of 120 credits.",
+        "reason": "Program-wide total credit rule; no rule type covers total degree credits."
+      },
+      "sourceText": "Mass Communication majors must satisfy all Stony Brook Curriculum (SBC) requirements and accrue a total of 120 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "mass-communication-bs.required-courses",
+        "mass-communication-bs.methods-theory"
+      ],
+      "sourceText": "Students must earn a letter grade of C or higher in all mass communication courses and Satisfactory or S in COM internships, independent studies and workshops for these to count toward the major."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "course",
+          "code": "COM 491"
+        },
+        "sourceText": "Successful completion of COM 491 - Mass Communication Senior Project will satisfy the SBC WRTD requirement as well as the Mass Communication major upper-division writing requirement."
+      }
+    ]
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "grading",
+      "text": "COM internships, independent studies and workshops must be completed with a Satisfactory (S) grade to count toward the major. The C-or-higher requirement applies to mass communication courses in the required and methods/theory items."
+    },
+    {
+      "topic": "advising",
+      "text": "All mass communication students should see a departmental advisor to plan their course programs."
+    },
+    {
+      "topic": "other",
+      "text": "Mass Communication (CMM) majors are not permitted to declare a second major or minor in Journalism (JRN). They may double major or minor in Communication (COM) as well as minor in Communication and Innovation (CBI). Double majors and minors cannot get double credit for the same elective."
+    },
+    {
+      "topic": "other",
+      "text": "Transfer courses will be evaluated individually for mass communication equivalency by the Undergraduate Director."
+    },
+    {
+      "topic": "sbc",
+      "text": "Upper-division writing requirement: successful completion of COM 491 - Mass Communication Senior Project satisfies both the SBC WRTD requirement and the major upper-division writing requirement."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1558",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,488 @@
+{
+  "id": "media-art-culture-ba",
+  "name": "Media/Art/Culture, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Media/Art/Culture",
+  "approxCredits": 36,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "media-art-culture-ba.1",
+      "label": "1",
+      "title": "Core Foundations Courses",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "ARS 225",
+            "ARS 281",
+            "ARH 207",
+            "ARH 208",
+            "ARH 210"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "courses": [
+                "ARS 225",
+                "ARS 281"
+              ]
+            },
+            "minCourses": 1
+          },
+          {
+            "type": "minFrom",
+            "from": {
+              "courses": [
+                "ARH 207",
+                "ARH 208",
+                "ARH 210"
+              ]
+            },
+            "minCourses": 1
+          }
+        ]
+      },
+      "sourceText": "At least three courses (9 credits) from amongst the following, with a minimum of one course from Art Practice and one course from Art History and Criticism: Art Practice Courses: ARS 225 - Introduction to Digital Art 3 credits; ARS 281 - Introductory Photography 3 credits. Art History and Criticism Courses: ARH 207 - Digital Media: History/Theory 3 credits; ARH 208 - History of Photography 3 credits; ARH 210 - The Art and Technology of Film 3 credits"
+    },
+    {
+      "id": "media-art-culture-ba.2",
+      "label": "2",
+      "title": "Elective Intermediate Courses",
+      "rule": {
+        "manualCheck": "Courses marked * require pre-approval by the Director of Undergraduate Studies and a faculty advisor. ARS/ARH topics courses at the 300 and 400 level may be added by petition to the Undergraduate Director. Outside-department courses (CCS, COM, EGL, FLM, JRN, MUS, SOC, THR) require petition to the Undergraduate Director and must be pertinent to the MAC major. Crosslisted courses may not be repeated under the other course number. CCS 381-394, CCS 395 and FLM 302 carry variable or 6 credits, so the count of 8 courses (24 credits) must be checked manually.",
+        "type": "choose",
+        "count": 8,
+        "from": {
+          "subjects": [
+            "ARS",
+            "ARH"
+          ],
+          "minNumber": 300,
+          "excludeCourses": [
+            "ARH 407",
+            "CCS 301",
+            "CCS 311",
+            "CCS 312",
+            "CCS 313",
+            "CCS 381",
+            "CCS 382",
+            "CCS 383",
+            "CCS 391",
+            "CCS 392",
+            "CCS 393",
+            "CCS 394",
+            "CCS 395",
+            "COM 407",
+            "EGL 303",
+            "EGL 325",
+            "EGL 351",
+            "EGL 389",
+            "EGL 394",
+            "FLM 301",
+            "FLM 302",
+            "FLM 320",
+            "JRN 319",
+            "MUS 314",
+            "MUS 341",
+            "MUS 344",
+            "MUS 437",
+            "SOC 315",
+            "SOC 330",
+            "SOC 395",
+            "THR 325",
+            "THR 355",
+            "THR 403"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "ARS"
+              ],
+              "minNumber": 300
+            },
+            "minCourses": 1
+          },
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "ARH"
+              ],
+              "minNumber": 300
+            },
+            "minCourses": 1
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "ARS 487",
+                "ARH 487"
+              ]
+            },
+            "maxCredits": 3
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "ARS 488",
+                "ARH 488"
+              ]
+            },
+            "maxCredits": 3
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "ARS 475",
+                "ARS 476",
+                "ARH 475",
+                "ARH 476"
+              ]
+            },
+            "maxCredits": 3
+          }
+        ]
+      },
+      "sourceText": "Eight upper division courses (300/400 level) total in either ARS or ARH, or approved courses from the below list - (24 credits), with at least one course (3 credits) from ARS and ARH. Art Practice Courses: ARS 317 - Interactive Media, Performance, and Installation; ARS 319 - Art + the Brain 3 credits; ARS 324 - Digital Arts: Design 3 credits; ARS 325 - Digital Arts: Print 3 credits; ARS 326 - Video Art: Narrative Forms 3 credits; ARS 327 - Digital Arts: Web Design and Culture 3 credits; ARS 328 - Digital Arts: Animation 3 credits; ARS 329 - Video Art: Experimental Forms 3 credits; ARS 381 - Color and Light Photography 3 credits; ARS 382 - Analog Black and White Photography 3 credits; ARS 384 - Art, Media and Technology 3 credits; ARS 390 - Topics in Studio Art 3 credits *; ARS 401 - Critical Issues Seminar 3 credits *; ARS 402 - Documentary Media Art 3 credits; ARS 425 - Advanced New Media Art 3 credits; ARS 475 - Undergraduate Teaching Practicum I 3 credits *; ARS 476 - Undergraduate Teaching Practicum II 3 credits *; ARS 481 - Advanced Photography 3 credits; ARS 487 - Advanced Directed Projects in Studio Theory and Practice 0-6 credits *; ARS 488 - Internship 0-6 credits *; ARS 491 - Special Topics in Studio Theory and Practice 3 credits *; ARS 492 - Special Topics in Studio Theory and Practice *; ARS 495 - Senior Honors Project in Studio Art 3 credits *. Art History and Criticism Courses: ARH 333 - Arts for the Public 3 credits; ARH 334 - Performance Art I: The European Avant-Garde 3 credits; ARH 336 - The Computer and the Arts 3 credits; ARH 344 - Performance Art II: World War II to the Present 3 credits; ARH 348 - Contemporary Art 3 credits; ARH 391 - Topics in Global Art 3 credits *; ARH 395 - Topics in Visual Culture 3 credits; ARH 397 - Topics in Photography 3 credits; ARH 398 - Topics in Film and Video Art 3 credits; ARH 400 - Seminar in Art History and Criticism 3 credits *; ARH 475 - Undergraduate Teaching Practicum I 3 credits *; ARH 476 - Undergraduate Teaching Practicum II 3 credits *; ARH 487 - Independent Reading and Research in Art 0-6 credits *; ARH 488 - Internship 0-6 credits *; ARH 495 - Senior Honors Project in Art History and Criticism 3 credits *. Approved Additional Courses (below list, by petition): CCS 301, CCS 311, CCS 312, CCS 313, CCS 381, CCS 382, CCS 383, CCS 391, CCS 392, CCS 393, CCS 394, CCS 395, COM 407, EGL 303, EGL 325, EGL 351, EGL 389, EGL 394, FLM 301, FLM 302, FLM 320, JRN 319, MUS 314 *, MUS 341, MUS 344, MUS 437, SOC 315, SOC 330, SOC 395, THR 325, THR 355, THR 403. No more than three credits from any internship (488) may be applied to the major. No more than three credits from any teaching practicum or independent research (ARS 475/ARS 476 or ARH 487/ARH 488) may be applied to the major. No more than three credits from ARH/ARS 487 may be applied to the major."
+    },
+    {
+      "id": "media-art-culture-ba.3",
+      "label": "3",
+      "title": "Advanced Capstone Class",
+      "rule": {
+        "type": "course",
+        "code": "ARH 407"
+      },
+      "sourceText": "Advanced Capstone Class- One course (3 credits): ARH 407 - Seminar in Media/Art/Culture 3 credits **"
+    },
+    {
+      "id": "media-art-culture-ba.total",
+      "label": "total",
+      "title": "Total major credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires 12 courses, or 36 credits in total.",
+        "reason": "No rule type checks a total course or credit count across the major's requirements"
+      },
+      "sourceText": "The Major in Media/Art/Culture leads to the Bachelor of Arts degree. Completion of the major requires 12 courses, or 36 credits in total."
+    },
+    {
+      "id": "media-art-culture-ba.grading",
+      "label": "grading",
+      "title": "Grading",
+      "rule": {
+        "type": "unparsed",
+        "text": "All courses for the major in Media/Art/Culture must be passed with a letter grade of C or higher, or a grade of S.",
+        "reason": "The minGrade policy cannot express the S (satisfactory) alternative to a C or higher"
+      },
+      "sourceText": "All courses for the major in Media/Art/Culture must be passed with a letter grade of C or higher, or a grade of S."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 225",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARH 207",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARH 208",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ARS 324",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ARH 336",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 326",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ARS 327",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARH 348",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ARH 391",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARH 395",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ARS 384",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ARH 407",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Minors of particular interest to students majoring in Media/Art/Culture: Studio Art, Digital Art, Art History. Contact the Director of Undergraduate Studies, Izumi Ashizawa, for advising."
+    },
+    {
+      "topic": "other",
+      "text": "Some upper-division courses require lower-level prerequisites. Enrollment in any course is contingent on the prerequisites stated in the undergraduate course catalog."
+    },
+    {
+      "topic": "other",
+      "text": "Courses marked with an asterisk (*) are crosslisted with another department. Students earn credit by registering for either listing but may not repeat the course under the other option."
+    },
+    {
+      "topic": "grading",
+      "text": "Students may also use an S grade to satisfy the major's grading requirement, per the grading rule above."
+    },
+    {
+      "topic": "sbc",
+      "text": "The SBC table lists optional major courses that can also satisfy SBC categories. It is informational only and is not evaluated here."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1547",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

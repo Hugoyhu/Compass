@@ -1,0 +1,728 @@
+{
+  "id": "marine-sciences-bs",
+  "name": "Marine Sciences, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Marine Sciences",
+  "approxCredits": 69,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "marine-sciences-bs.foundation",
+      "label": "Foundation Courses",
+      "title": "Foundation Courses (40 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 102"
+              },
+              {
+                "type": "course",
+                "code": "AMS 110"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ATM 201"
+          },
+          {
+            "type": "course",
+            "code": "BIO 201"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BIO 202"
+              },
+              {
+                "type": "course",
+                "code": "BIO 203"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CHE 131"
+          },
+          {
+            "type": "course",
+            "code": "CHE 133"
+          },
+          {
+            "type": "course",
+            "code": "CHE 132"
+          },
+          {
+            "type": "course",
+            "code": "CHE 134"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "GEO 122"
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "GEO 102"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GEO 112"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MAR 104"
+          },
+          {
+            "type": "course",
+            "code": "MAR 105"
+          },
+          {
+            "manualCheck": "The page layout lists MAT 130 (1 credit) between MAT 125 alternatives; confirm whether MAT 130 is an allowed alternative to MAT 125.",
+            "type": "course",
+            "code": "MAT 125"
+          },
+          {
+            "type": "course",
+            "code": "MAT 126"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ENS 119"
+              },
+              {
+                "type": "course",
+                "code": "PHY 119"
+              },
+              {
+                "type": "course",
+                "code": "PHY 121"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "AMS 102 - Elements of Statistics OR AMS 110 - Probability and Statistics in the Life Sciences; ATM 201 - Introduction to Climate and Climate Change; BIO 201 - Fundamentals of Biology: Organisms to Ecosystems; BIO 202 - Fundamentals of Biology: Molecular and Cellular Biology OR BIO 203 - Fundamentals of Biology: Cellular and Organ Physiology; CHE 131 - General Chemistry IB (see Note 1); CHE 133 - General Chemistry Laboratory I; CHE 132 - General Chemistry II (see Note 1); CHE 134 - General Chemistry Laboratory II; GEO 122 - Physical Geology OR GEO 102 - The Earth + GEO 112 - Physical Geology Laboratory; MAR 104 - Oceanography; MAR 105 - Introduction to Oceanography Laboratory; MAT 125 - Calculus A (see layout note re MAT 130); MAT 126 - Calculus B (see Note 2); ENS 119 - Physics for Environmental Studies OR PHY 119 - Physics for Environmental Studies OR PHY 121 - Physics for the Life Sciences I (see Note 3)"
+    },
+    {
+      "id": "marine-sciences-bs.core",
+      "label": "Core Courses",
+      "title": "Core Courses (20 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAR 349"
+          },
+          {
+            "type": "course",
+            "code": "MAR 351"
+          },
+          {
+            "type": "course",
+            "code": "MAR 352"
+          },
+          {
+            "type": "course",
+            "code": "MAR 354"
+          },
+          {
+            "type": "course",
+            "code": "ATM 320"
+          },
+          {
+            "type": "course",
+            "code": "GSS 313"
+          },
+          {
+            "type": "course",
+            "code": "GSS 314"
+          }
+        ]
+      },
+      "sourceText": "MAR 349 - Introduction to Biological Oceanography 4 credits; MAR 351 - Introduction to Ocean Chemistry 3 credits; MAR 352 - Introduction to Physical Oceanography 3 credits; MAR 354 - Introduction to Geological Oceanography 3 credits; ATM 320 - Problem Solving with Python 3 credits; GSS 313 - GIS Design and Application I 3 credits; GSS 314 - GIS Laboratory 1 credit"
+    },
+    {
+      "id": "marine-sciences-bs.focus-area",
+      "label": "Focus Area",
+      "title": "Focus Area (Choose one, 9 credits minimum)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "manualCheck": "Track pool simplified: the page's OR pairings (BIO 342+343 or BIO 351; MAR 301 or MAR 302) and the separate BIO 353 line are not enforced as groups. Other courses may be substituted with department approval.",
+            "type": "choose",
+            "credits": 9,
+            "from": {
+              "courses": [
+                "BIO 342",
+                "BIO 343",
+                "BIO 351",
+                "BIO 353",
+                "MAR 301",
+                "MAR 302",
+                "MAR 303",
+                "MAR 305",
+                "MAR 315",
+                "MAR 320",
+                "MAR 370",
+                "MAR 373",
+                "MAR 375",
+                "MAR 376",
+                "MAR 377",
+                "MAR 380",
+                "MAR 384",
+                "MAR 385",
+                "MAR 386",
+                "MAR 388",
+                "SUS 326",
+                "MAR 487",
+                "MAR 488"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "maxFrom",
+                "from": {
+                  "courses": [
+                    "MAR 487",
+                    "MAR 488"
+                  ]
+                },
+                "maxCredits": 3
+              }
+            ]
+          },
+          {
+            "manualCheck": "Track pool simplified: MAR 301 or MAR 302 is an OR pairing on the page and is not enforced as a group. Other courses may be substituted with department approval.",
+            "type": "choose",
+            "credits": 9,
+            "from": {
+              "courses": [
+                "CHE 321",
+                "ENV 320",
+                "MAR 301",
+                "MAR 302",
+                "MAR 308",
+                "MAR 336",
+                "MAR 340",
+                "MAR 384",
+                "MAR 392",
+                "MAR 393",
+                "MAR 394",
+                "MAR 487",
+                "MAR 488"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "maxFrom",
+                "from": {
+                  "courses": [
+                    "MAR 487",
+                    "MAR 488"
+                  ]
+                },
+                "maxCredits": 3
+              }
+            ]
+          },
+          {
+            "manualCheck": "Other courses may be substituted with department approval.",
+            "type": "choose",
+            "credits": 9,
+            "from": {
+              "courses": [
+                "ENV 316",
+                "GSS 325",
+                "GSS 354",
+                "MAR 304",
+                "MAR 333",
+                "MAR 334",
+                "MAR 487",
+                "MAR 488"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "maxFrom",
+                "from": {
+                  "courses": [
+                    "MAR 487",
+                    "MAR 488"
+                  ]
+                },
+                "maxCredits": 3
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Focus Area (Choose one, 9 credits minimum): Marine Ecology & Conservation: BIO 342 - Invertebrate Zoology 3 credits; BIO 343 - Invertebrate Zoology Laboratory 2 credits OR BIO 351 - Ecology 3 credits; BIO 353 - Marine Ecology 3 credits; MAR 301 - Environmental Microbiology 4 credits OR MAR 302 - Marine Microbiology and Microbial Ecology 3 credits; MAR 303; MAR 305; MAR 315; MAR 320; MAR 370; MAR 373; MAR 375; MAR 376; MAR 377; MAR 380; MAR 384; MAR 385; MAR 386; MAR 388; SUS 326; MAR 487 or MAR 488 (maximum of three credits for the major). Environmental Health: CHE 321 - Organic Chemistry I (see Note 4); ENV 320; MAR 301 OR MAR 302; MAR 308; MAR 336; MAR 340; MAR 384; MAR 392; MAR 393; MAR 394; MAR 487 or MAR 488 (maximum of three credits for the major). Coastal Processes: ENV 316; GSS 325; GSS 354; MAR 304; MAR 333; MAR 334; MAR 487 or MAR 488 (maximum of three credits for the major). Other courses may be substituted with department approval."
+    },
+    {
+      "id": "marine-sciences-bs.writing",
+      "label": "Upper-Division Writing Requirement",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "manualCheck": "0-credit, S/U graded. Completion with a grade of S also fulfills the WRTD requirement.",
+            "type": "course",
+            "code": "MAR 459"
+          },
+          {
+            "type": "unparsed",
+            "text": "Enrollment in and satisfactory completion of an approved advanced course that entails writing of either a term paper or a laboratory report",
+            "reason": "The list of preapproved courses is maintained on an external SoMAS web page, not on this catalog page"
+          }
+        ]
+      },
+      "sourceText": "The advanced writing component of the major in MAR requires registration in, and satisfactory completion of, the 0-credit MAR 459 (S/U grading) along with enrollment in an approved advanced course that entails writing of either a term paper or a laboratory report. Completion of MAR 459 with a grade of S will also result in fulfillment of the WRTD requirement."
+    },
+    {
+      "id": "marine-sciences-bs.math-placement",
+      "label": "math-placement-note",
+      "title": "Math placement condition",
+      "rule": {
+        "type": "unparsed",
+        "text": "If students do not place into MAT 125 or 131 on the basis of the math placement examination, MAT 123 (or MAT 119/MAT 123) is a required course for the major.",
+        "reason": "Conditional on placement examination results, which no rule type evaluates"
+      },
+      "sourceText": "If students do not place into MAT 125 or 131 on the basis of the math placement examination, MAT 123 (or MAT 119/MAT 123) is a required course for the major."
+    },
+    {
+      "id": "marine-sciences-bs.total-credits",
+      "label": "degree-credits",
+      "title": "Total credits and grade rule",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires a minimum of 69 credits. Of these, no more than one course (4 credits) with a grade lower than C can be credited to the major.",
+        "reason": "Program-wide total credit minimum and the one-course-below-C allowance have no rule type"
+      },
+      "sourceText": "The major in Marine Sciences leads to a Bachelor of Sciences degree. Completion of the major requires a minimum of 69 credits. Of these, no more than one course (4 credits) with a grade lower than C can be credited to the major."
+    }
+  ],
+  "policies": [],
+  "substitutions": [
+    {
+      "id": "marine-sciences-bs.sub.che-129-130",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 131"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "CHE 129 / CHE 130",
+        "reason": "The page does not state whether both courses or either course satisfies CHE 131"
+      },
+      "requiresApproval": false,
+      "sourceText": "CHE 129 /CHE 130 may be substituted for CHE 131."
+    },
+    {
+      "id": "marine-sciences-bs.sub.che-152",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 131",
+          "CHE 132"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "CHE 152"
+      },
+      "requiresApproval": false,
+      "sourceText": "CHE 152 may be substituted for CHE 131 +CHE 132."
+    },
+    {
+      "id": "marine-sciences-bs.sub.mat-131-132",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 125",
+          "MAT 126"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "MAT 131 and MAT 132, or MAT 141 and MAT 142, or MAT 171",
+        "reason": "Alternative course sets with multi-course groups cannot be expressed as a single substitution rule within the substitution schema"
+      },
+      "requiresApproval": false,
+      "sourceText": "MAT 131, MAT 132 or MAT 141, MAT 142 or MAT 171 may be substituted for MAT 125, MAT 126"
+    },
+    {
+      "id": "marine-sciences-bs.sub.physics-lab",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "ENS 119",
+          "PHY 119",
+          "PHY 121"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "The first semester of any calculus-based Physics with lab (examples: PHY 131 with PHY 133; PHY 141; PHY 142)",
+        "reason": "The note gives examples and the phrase 'any calculus-based Physics with lab' is not a fixed course list"
+      },
+      "requiresApproval": false,
+      "sourceText": "The first semester of any calculus-based Physics with lab can be substituted, such as PHY 131 /PHY 133 or PHY 141 or PHY 142."
+    },
+    {
+      "id": "marine-sciences-bs.sub.che-331",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 321"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "CHE 331"
+      },
+      "requiresApproval": false,
+      "sourceText": "CHE 331 may be substituted for CHE 321."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 122",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MAT 125",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAR 104",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MAT 126",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAR 105",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 201",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ATM 201",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GEO 112",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 202",
+          "alternatives": [
+            "BIO 203"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ENS 119",
+          "alternatives": [
+            "PHY 119"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MAR 351",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GSS 313",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GSS 314",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "MAR Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MAR 349",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "MAR 354",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "MAR Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAR 459",
+          "credits": 0
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MAR 352",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "MAR 305 or MAR Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ATM 320",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students should contact the director of undergraduate studies to design and approve an acceptable course of study before declaring the major."
+    },
+    {
+      "topic": "other",
+      "text": "MAR 487 and MAR 488 may count for a maximum of three credits toward the major."
+    },
+    {
+      "topic": "other",
+      "text": "Marine Sciences Honors Program: students with a 3.50 GPA in all courses for the major by the end of the junior year may apply to the SoMAS undergraduate director. Honors requires an honors thesis written as a scientific journal paper, an oral examination in May, a recommendation from the undergraduate research committee, and a GPA of 3.5 in major courses through senior year. Not evaluated here."
+    },
+    {
+      "topic": "other",
+      "text": "BS/MS program in Marine Sciences/MS in Marine and Atmospheric Sciences: effective Spring 2026, admission is temporarily suspended. Not evaluated here."
+    },
+    {
+      "topic": "sbc",
+      "text": "The SBC table lists major courses that can also satisfy SBC categories (e.g., MAR 459 for WRTD, ATM 320 for ESI). Per-course SBC tags are not encoded on the program."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1495",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

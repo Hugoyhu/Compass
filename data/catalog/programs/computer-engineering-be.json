@@ -1,0 +1,725 @@
+{
+  "id": "computer-engineering-be",
+  "name": "Computer Engineering, BE",
+  "kind": "major",
+  "degree": "Bachelor of Engineering in Computer Engineering",
+  "approxCredits": 110,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "computer-engineering-be.1",
+      "label": "1",
+      "title": "Mathematics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "computer-engineering-be.1.calculus",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 151"
+              },
+              {
+                "type": "course",
+                "code": "AMS 161"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 210"
+              },
+              {
+                "type": "course",
+                "code": "MAT 211"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 261"
+              },
+              {
+                "type": "course",
+                "code": "MAT 203"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 361"
+              },
+              {
+                "type": "course",
+                "code": "MAT 303"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "AMS 151 - Applied Calculus I 3 credits; AMS 161 - Applied Calculus II 3 credits; AMS 210 - Applied Linear Algebra 3 credits OR MAT 211 - Introduction to Linear Algebra 3 credits; AMS 261 - Applied Calculus III 4 credits OR MAT 203 - Calculus III with Applications 4 credits; AMS 361 - Applied Calculus IV: Differential Equations 4 credits OR MAT 303 - Calculus IV with Applications 4 credits. Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161 in major requirements or prerequisites: MAT 131 and MAT 132 or MAT 125, MAT 126 and MAT 127"
+    },
+    {
+      "id": "computer-engineering-be.2",
+      "label": "2",
+      "title": "Natural Sciences",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "computer-engineering-be.2.physics",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 127"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 142"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 131"
+              },
+              {
+                "type": "course",
+                "code": "CHE 152"
+              },
+              {
+                "type": "course",
+                "code": "BIO 202"
+              },
+              {
+                "type": "course",
+                "code": "BIO 203"
+              },
+              {
+                "type": "course",
+                "code": "ESG 198"
+              },
+              {
+                "type": "course",
+                "code": "PHY 251"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "PHY 131 - Classical Physics I 3 credits; PHY 133 - Classical Physics Laboratory I 1 credit; PHY 132 - Classical Physics II 3 credits; PHY 134 - Classical Physics Laboratory II 1 credit. Note: The physics course sequence PHY 125, PHY 126, PHY 127, PHY 133, PHY 134 or PHY 141, PHY 142, PHY 133, PHY 134 is accepted in lieu of PHY 131/PHY 133, PHY 132/PHY 134 (Students are advised to take PHY 127 before PHY 126). One course from: CHE 131 - General Chemistry IB 4 credits; CHE 152 - Molecular Science I 4 credits; BIO 202 - Fundamentals of Biology: Molecular and Cellular Biology 3 credits; BIO 203 - Fundamentals of Biology: Cellular and Organ Physiology 3 credits; ESG 198 - Fundamentals of Engineering Chemistry 3 credits; PHY 251 - Modern Physics 3 credits"
+    },
+    {
+      "id": "computer-engineering-be.3",
+      "label": "3",
+      "title": "Freshman Introduction to Computer Engineering",
+      "rule": {
+        "type": "course",
+        "code": "ESE 123"
+      },
+      "sourceText": "ESE 123 - Introduction to Electrical and Computer Engineering 4 credits"
+    },
+    {
+      "id": "computer-engineering-be.4",
+      "label": "4",
+      "title": "Engineering Topics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "computer-engineering-be.4.ese118",
+            "type": "course",
+            "code": "ESE 118"
+          },
+          {
+            "id": "computer-engineering-be.4.ese271",
+            "type": "course",
+            "code": "ESE 271"
+          },
+          {
+            "id": "computer-engineering-be.4.ese272",
+            "type": "course",
+            "code": "ESE 272"
+          },
+          {
+            "type": "course",
+            "code": "ESE 305"
+          },
+          {
+            "id": "computer-engineering-be.4.ese280",
+            "type": "course",
+            "code": "ESE 280"
+          },
+          {
+            "id": "computer-engineering-be.4.ese345",
+            "type": "course",
+            "code": "ESE 345"
+          },
+          {
+            "id": "computer-engineering-be.4.ese382",
+            "type": "course",
+            "code": "ESE 382"
+          },
+          {
+            "id": "computer-engineering-be.4.ese440",
+            "type": "course",
+            "code": "ESE 440"
+          },
+          {
+            "id": "computer-engineering-be.4.ese441",
+            "type": "course",
+            "code": "ESE 441"
+          }
+        ]
+      },
+      "sourceText": "Engineering Core Courses: ESE 118 - Digital Logic Design 4 credits; ESE 271 - Electrical Circuit Analysis 3 credits; ESE 272 - Electronics 4 credits; ESE 305 - Deterministic Signals and Systems 3 credits. Engineering Design: ESE 280 - Embedded Microcontroller Systems Design I 4 credits; ESE 345 - Computer Architecture 3 credits; ESE 382 - Digital Design Using VHDL and PLDs 4 credits; ESE 440 - Senior Design I 3 credits; ESE 441 - Senior Design II 3 credits. Note: ESE 440 and ESE 441 are engineering design projects that must be carried out at Stony Brook under the supervision of an Electrical and Computer Engineering faculty member."
+    },
+    {
+      "id": "computer-engineering-be.5",
+      "label": "5",
+      "title": "Discrete Mathematics and Probability and Statistics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ESE 122"
+          },
+          {
+            "type": "course",
+            "code": "ESE 306"
+          }
+        ]
+      },
+      "sourceText": "ESE 122 - Discrete Mathematics for Engineers 3 credits; ESE 306 - Random Signals and Systems 3 credits"
+    },
+    {
+      "id": "computer-engineering-be.6",
+      "label": "6",
+      "title": "Software",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "computer-engineering-be.6.ese124",
+            "type": "course",
+            "code": "ESE 124"
+          },
+          {
+            "id": "computer-engineering-be.6.ese224",
+            "type": "course",
+            "code": "ESE 224"
+          },
+          {
+            "type": "course",
+            "code": "ESE 333"
+          },
+          {
+            "type": "course",
+            "code": "ESE 344"
+          }
+        ]
+      },
+      "sourceText": "ESE 124 - Programming Fundamentals 4 credits; ESE 224 - Advanced Programming and Data Structures 4 credits; ESE 333 - Real-Time Operating Systems 3 credits; ESE 344 - Software Techniques for Engineers 3 credits"
+    },
+    {
+      "id": "computer-engineering-be.7",
+      "label": "7",
+      "title": "Computer Engineering Electives",
+      "rule": {
+        "manualCheck": "Acceptable electives are listed in the electrical and computer engineering undergraduate guide, not on this page. Students in the BEMS program or with a double major or minor in computer science should check that guide for the complete list. The Grading section also requires a grade of C or higher in five ESE electives; the audit cannot determine which five, so verify manually.",
+        "type": "choose",
+        "count": 7,
+        "from": {
+          "subjects": [
+            "ESE"
+          ],
+          "minNumber": 300
+        }
+      },
+      "sourceText": "Seven upper-level ESE courses. A list of acceptable electives can be found in the electrical and computer engineering undergraduate guide. For students in the BEMS program or with a double major or minor in computer science, please check the computer engineering undergraduate guide for a complete list of electives."
+    },
+    {
+      "id": "computer-engineering-be.8",
+      "label": "8",
+      "title": "Engineering Ethics",
+      "rule": {
+        "id": "computer-engineering-be.8.ese301",
+        "type": "course",
+        "code": "ESE 301"
+      },
+      "sourceText": "ESE 301 - Engineering Ethics and Societal Impact 2 credits"
+    },
+    {
+      "id": "computer-engineering-be.9",
+      "label": "9",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "id": "computer-engineering-be.9.ese300",
+        "manualCheck": "Must be registered for after completion of ESE 280.",
+        "type": "course",
+        "code": "ESE 300"
+      },
+      "sourceText": "All degree candidates must demonstrate skill in written English at a level acceptable for computer engineering majors. Students must register for the writing course ESE 300 after completion of ESE 280. ESE 300 - Technical Communication for Electrical and Computer Engineers 2 credits"
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "computer-engineering-be.1",
+        "computer-engineering-be.2",
+        "computer-engineering-be.3",
+        "computer-engineering-be.4",
+        "computer-engineering-be.5",
+        "computer-engineering-be.6",
+        "computer-engineering-be.7",
+        "computer-engineering-be.8",
+        "computer-engineering-be.9"
+      ],
+      "sourceText": "All courses taken to satisfy requirements 1 through 9 must be taken for a letter grade."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "computer-engineering-be.1.calculus",
+        "computer-engineering-be.2.physics",
+        "computer-engineering-be.4.ese118",
+        "computer-engineering-be.4.ese271",
+        "computer-engineering-be.4.ese272",
+        "computer-engineering-be.4.ese280",
+        "computer-engineering-be.4.ese345",
+        "computer-engineering-be.4.ese382",
+        "computer-engineering-be.4.ese440",
+        "computer-engineering-be.4.ese441",
+        "computer-engineering-be.6.ese124",
+        "computer-engineering-be.6.ese224",
+        "computer-engineering-be.8.ese301",
+        "computer-engineering-be.9.ese300"
+      ],
+      "sourceText": "A letter grade of C or higher is required in the following courses: AMS 151, AMS 161 OR MAT 125, MAT 126, MAT 127 OR MAT 131, MAT 132; PHY 131, PHY 133, PHY 132, PHY 134 OR PHY 125, PHY 126, PHY 127; ESE 118, ESE 124, ESE 224, ESE 271, ESE 272, ESE 280, ESE 300, ESE 301, ESE 345, ESE 382, ESE 440, ESE 441; Five ESE electives"
+    },
+    {
+      "type": "residencyRequired",
+      "appliesTo": [
+        "computer-engineering-be.4.ese440",
+        "computer-engineering-be.4.ese441"
+      ],
+      "sourceText": "Note: ESE 440 and ESE 441 are engineering design projects that must be carried out at Stony Brook under the supervision of an Electrical and Computer Engineering faculty member."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "computer-engineering-be.sub.calculus",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "AMS 151",
+          "AMS 161"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "MAT 131 and MAT 132, or MAT 125, MAT 126 and MAT 127",
+        "reason": "The substitute is a multi-course alternative sequence, which the substitution 'with' field cannot express as a single course, choose, or unparsed rule set"
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161 in major requirements or prerequisites: MAT 131 and MAT 132 or MAT 125, MAT 126 and MAT 127"
+    }
+  ],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "ESE 122",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 151",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 123",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "AMS 161",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 133",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "ESE 124",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESE 118",
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "ESE 280",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESE 271",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 224",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 210",
+          "alternatives": [
+            "MAT 211"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 272",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESE 344",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 382",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 361",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESE 305",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 345",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 333",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ESE Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "ESE Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 300",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "AMS 261",
+          "alternatives": [
+            "MAT 203"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "ESE Elective",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "ESE 306",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ESE 440",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ESE Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ESE Elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ESE 441",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ESE Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ESE Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESE 301",
+          "credits": 2
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Area of Interest and other CEAS students (excluding double major applicants) must have completed at least 10 credits of mathematics, physics, electrical and computer engineering, or computer science courses required for the major (excluding ESE 300 and ESE 301); earned a GPA of 3.2 or higher in applicable mathematics, physics, and engineering courses (excluding ESE 300 and ESE 301) with no more than one grade less than B-; not repeated any required course; and completed course evaluations for transferred courses used for the major. Apply by January 5 (Spring) or June 5 (Fall), no later than one year after first enrolling in a course applying toward the major. Non-CEAS students and double major applicants follow a separate, competitive process; admission is contingent on program capacity."
+    },
+    {
+      "topic": "other",
+      "text": "The Computer Engineering Honors Program (departmental honors) is optional and is not modeled here. It requires a cumulative GPA of 3.50 and a B or better in all major required courses (including math and physics) for admission and graduation, plus ESE 494 (1 credit, B or better, junior year), ESE 495 (3 credits, B or better), and an honors thesis approved by a two-faculty committee."
+    },
+    {
+      "topic": "other",
+      "text": "The accelerated five-year BE in Computer Engineering/MS in Electrical Engineering or Computer Engineering program is not modeled here. It substitutes two 500-level graduate courses for two 300-level electives, counting six graduate credits toward the undergraduate degree, and requires a major GPA of at least 3.30 to apply."
+    },
+    {
+      "topic": "sbc",
+      "text": "ESE 440 and ESE 441 partially satisfy ESI, CER, SPK, WRTD, SBS+, STEM+, and EXP+. ESE 301 satisfies STAS. One SBC must fulfill two objectives. These are per-course SBC tags and are not modeled as program rules."
+    },
+    {
+      "topic": "other",
+      "text": "Sample sequence footnotes: AMS 151 and AMS 161 may be replaced by MAT 131 and MAT 132, MAT 131 and MAT 171, MAT 125/126/127, MAT 141 and MAT 142, or MAT 141 and MAT 171. PHY 131 and PHY 132 may be replaced by PHY 125/126/127 or PHY 141 and PHY 142. CHE 152, ESG 198, BIO 202, BIO 203, or PHY 251 may be taken as the science course. The sample sequence's footnote markers were transcribed as printed; the grades in bold referenced by the source were not identifiable in the text and are not modeled."
+    },
+    {
+      "topic": "advising",
+      "text": "Students meet with faculty advisors on course selection, academic progress, and career preparation. Students are encouraged to consult the Electrical and Computer Engineering undergraduate guide for electives."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1408",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

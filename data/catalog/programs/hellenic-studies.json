@@ -1,0 +1,114 @@
+{
+  "id": "hellenic-studies",
+  "name": "Hellenic Studies",
+  "kind": "minor",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "hellenic-studies.credits",
+      "label": "credits",
+      "title": "Total credits for the minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21 credits.",
+        "reason": "No rule type expresses a program-wide total credit requirement drawn from an open pool of courses."
+      },
+      "sourceText": "Completion of the minor requires 21 credits."
+    },
+    {
+      "id": "hellenic-studies.upper-division",
+      "label": "upper-division",
+      "title": "Upper-division courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "Three of the courses at the upper-division level.",
+        "reason": "The page does not name the eligible upper-division pool. It counts courses toward the minor, not a fixed list, so it cannot be checked as a choose rule."
+      },
+      "sourceText": "At least nine of the 21 credits must be taken at Stony Brook, with three of the courses at the upper-division level."
+    },
+    {
+      "id": "hellenic-studies.greek-language",
+      "label": "greek-language",
+      "title": "Greek language courses",
+      "rule": {
+        "manualCheck": "Confirm whether the student has competency in Modern Greek. If not, the student must complete the intermediate-level Modern Greek courses (GRK 211 and GRK 212).",
+        "type": "unparsed",
+        "text": "Greek Language Courses offered: GRK 121 (Elementary Modern Greek I, 3 credits); GRK 122 (Elementary Modern Greek II, 3 credits); GRK 211 (Intermediate Modern Greek I, 3 credits); GRK 212 (Intermediate Modern Greek II, 3 credits); GRK 321 (Advanced Modern Greek I, 3 credits); GRK 322 (Advanced Modern Greek II, 3 credits). If students do not have competency in Modern Greek language, they are required to successfully complete the Modern Greek language courses at the Intermediate level.",
+        "reason": "The page lists the language courses as offered but does not state a required set. The intermediate-level requirement applies only to students without competency, which cannot be checked from a transcript."
+      },
+      "sourceText": "The Greek Language Courses offered are: GRK 121 - Elementary Modern Greek I 3 credits; GRK 122 - Elementary Modern Greek II 3 credits; GRK 211 - Intermediate Modern Greek I 3 credits; GRK 212 - Intermediate Modern Greek II 3 credits; GRK 321 - Advanced Modern Greek I 3 credits; GRK 322 - Advanced Modern Greek II 3 credits. If students do not have competency in Modern Greek language, they are required to successfully complete the Modern Greek language courses at the Intermediate level."
+    },
+    {
+      "id": "hellenic-studies.other-disciplines",
+      "label": "other-disciplines",
+      "title": "Courses in other disciplines",
+      "rule": {
+        "manualCheck": "Verify that each course counted from another discipline is relevant to Ancient Greece, Hellenic literature, history, or culture.",
+        "type": "unparsed",
+        "text": "Courses in other disciplines relevant to Ancient Greece, Hellenic literature, history and culture can be used to fulfill the minor requirements.",
+        "reason": "The page does not list the eligible courses, and relevance is a judgment, so the pool cannot be defined as a selector."
+      },
+      "sourceText": "Courses in other disciplines relevant to Ancient Greece, Hellenic literature, history and culture can be used to fulfill the minor requirements."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "hellenic-studies.credits",
+        "hellenic-studies.upper-division",
+        "hellenic-studies.greek-language",
+        "hellenic-studies.other-disciplines"
+      ],
+      "sourceText": "Courses offered for the minor must be taken for a letter grade."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "hellenic-studies.credits",
+        "hellenic-studies.upper-division",
+        "hellenic-studies.greek-language",
+        "hellenic-studies.other-disciplines"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 9,
+      "appliesTo": [
+        "hellenic-studies.credits"
+      ],
+      "sourceText": "At least nine of the 21 credits must be taken at Stony Brook, with three of the courses at the upper-division level."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students wishing to pursue a minor in Hellenic Studies must develop a specific plan for its completion in consultation with the advisor. Director of the Minor: Dr. Stella Tsirka, styliani-anna.tsirka@stonybrook.edu, (631) 444-3859, 1052 Humanities Building."
+    },
+    {
+      "topic": "other",
+      "text": "An example of an acceptable distribution: two 100-level courses; two 200-level courses; three 300-level courses, with the option of substituting one 400-level course for one of the three 300-level courses."
+    },
+    {
+      "topic": "other",
+      "text": "Students are strongly encouraged to participate in the Summer study abroad program in Greece."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1468",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

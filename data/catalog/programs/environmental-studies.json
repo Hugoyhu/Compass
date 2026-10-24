@@ -1,0 +1,206 @@
+{
+  "id": "environmental-studies",
+  "name": "Environmental Studies",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "environmental-studies.intro",
+      "label": "intro",
+      "title": "One introductory course",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "ATM 102",
+            "EST 102",
+            "BIO 113",
+            "BIO 201",
+            "GEO 101",
+            "GSS 105",
+            "MAR 101",
+            "MAR 104"
+          ]
+        }
+      },
+      "sourceText": "One introductory course chosen from the following: ATM 102 - Weather and Climate 3 credits; EST 102 - Weather and Climate 3 credits; BIO 113 - General Ecology 3 credits; BIO 201 - Fundamentals of Biology: Organisms to Ecosystems 3 credits; GEO 101 - Environmental Geology 3 credits; GSS 105 - Introduction to Maps and Mapping 3 credits; MAR 101 - Long Island Sound: Science and Use 3 credits; MAR 104 - Oceanography 3 credits"
+    },
+    {
+      "id": "environmental-studies.foundation",
+      "label": "foundation",
+      "title": "ENS 101 or SUS 111",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ENS 101"
+          },
+          {
+            "type": "course",
+            "code": "SUS 111"
+          }
+        ]
+      },
+      "sourceText": "ENS 101 - Prospects for Planet Earth 3 credits OR SUS 111 - Introduction to Sustainability 3 credits"
+    },
+    {
+      "id": "environmental-studies.ens301",
+      "label": "ens301",
+      "title": "ENS 301",
+      "rule": {
+        "type": "course",
+        "code": "ENS 301"
+      },
+      "sourceText": "ENS 301 - Contemporary Environmental Issues and Policies 3 credits"
+    },
+    {
+      "id": "environmental-studies.capstone",
+      "label": "capstone",
+      "title": "Research or internship capstone",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 351"
+              },
+              {
+                "type": "course",
+                "code": "SUS 352"
+              }
+            ]
+          },
+          {
+            "manualCheck": "Alternative may also be satisfied by research in any SBU department, which cannot be verified from a transcript. Research or internship in ANP, ANT, ATM, BIO, CHE, ECO, ENV, GEO, MAR, POL, or SUS is accepted only with permission of the faculty director. ENS 488 must be approved by the faculty director.",
+            "type": "choose",
+            "credits": 3,
+            "from": {
+              "courses": [
+                "ENS 487",
+                "ENS 488"
+              ]
+            },
+            "constraints": []
+          }
+        ]
+      },
+      "sourceText": "SUS 351 - Design and Implement a Research Project in Ecotoxicology 3 credits; SUS 352 - Conduct and Communicate a Research Project in Ecotoxicology 3 credits OR at least 3 credits of: ENS 487 - Independent Research in Environmental Studies 0-6 credits OR research in any SBU department OR ENS 488 - Internship in Environmental Studies 0-6 credits approved by the faculty director. Research or internship in ANP, ANT, ATM, BIO, CHE, ECO, ENV, GEO, MAR, POL, or SUS will be accepted with permission of the faculty director."
+    },
+    {
+      "id": "environmental-studies.advanced",
+      "label": "advanced",
+      "title": "Two advanced courses",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "ANT 361",
+            "ATM 397",
+            "BIO 351",
+            "BIO 353",
+            "CHE 310",
+            "ENV 316",
+            "GEO 304",
+            "GEO 315",
+            "GSS 355",
+            "SUS 311",
+            "SUS 317",
+            "SUS 318",
+            "SUS 325",
+            "SUS 326",
+            "SUS 343",
+            "SUS 366"
+          ],
+          "subjects": [
+            "ENS",
+            "MAR"
+          ],
+          "minNumber": 300,
+          "excludeUsedBy": [
+            "environmental-studies.ens301",
+            "environmental-studies.capstone"
+          ]
+        }
+      },
+      "sourceText": "Two advanced courses chosen from the following: ANT 361 - Primate Conservation 3 credits (formerly ANP 360); ATM 397 - Air Pollution and Global Warming 3 credits; BIO 351 - Ecology 3 credits; BIO 353 - Marine Ecology 3 credits; CHE 310 - Chemistry in Technology and the Environment 3 credits; ENV 316 - Coastal Zone Management 3 credits; GEO 304 - Energy, Mineral Resources, and the Environment 3 credits; GEO 315 - Groundwater Hydrology 3 credits; GSS 355 - Remote Sensing GIS Data 3 credits; SUS 311 - Disasters and Society: A Global Perspective 3 credits; SUS 317 - American Environmental History 3 credits; SUS 318 - American Environmental Politics 3 credits; SUS 325 - Environmental Writing and the Media 3 credits; SUS 326 - Conservation Genetics 3 credits; SUS 343 - Age of the Anthropocene 3 credits; SUS 366 - Philosophy of the Environment (III) 3 credits; Any upper division ENS or MAR course"
+    },
+    {
+      "id": "environmental-studies.credits",
+      "label": "credits",
+      "title": "Total credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 18 credits.",
+        "reason": "Program-wide total credit minimum is not a rule type the audit supports"
+      },
+      "sourceText": "Completion of the minor requires 18 credits."
+    },
+    {
+      "id": "environmental-studies.overlap",
+      "label": "overlap",
+      "title": "Limit on overlap with major or other minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than two courses applied to the minor can count toward the student’s major or other minor.",
+        "reason": "Cross-program overlap limit depends on the student's other program and cannot be evaluated within this minor"
+      },
+      "sourceText": "No more than two courses applied to the minor can count toward the student’s major or other minor."
+    },
+    {
+      "id": "environmental-studies.passnocredit",
+      "label": "passnocredit",
+      "title": "Pass/No Credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option.",
+        "reason": "Pass/No Credit limit is not a rule type the audit supports"
+      },
+      "sourceText": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "environmental-studies.ens301",
+        "environmental-studies.capstone",
+        "environmental-studies.advanced"
+      ],
+      "sourceText": "All upper-division courses required for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "The ENS minor takes approximately 4 semesters (fall/spring) to complete. Students are encouraged to declare before the start of their sophomore year but no later than the first semester of their junior year, depending on target graduation date. Students should consult the Faculty Director as soon as possible."
+    },
+    {
+      "topic": "other",
+      "text": "ANT 361 - Primate Conservation was formerly ANP 360."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1452",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "id": "globalization-studies-and-international-relations",
+  "name": "Globalization Studies and International Relations",
+  "kind": "minor",
+  "approxCredits": 24,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "globalization-studies-and-international-relations.A",
+      "label": "A",
+      "title": "Core Courses (9 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "GLI 211"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "courses": [
+                "GLI 320",
+                "GLI 330",
+                "GLI 340"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "A. Core Courses (9 credits) - Students must take the following Core Course: GLI 211 - Perspectives in Globalization Studies and International Relations 3 credits. Students must also take two courses out of the following options: GLI 320 - Global, Cultural, and Environmental Issues 3 credits; GLI 330 - Global, Political, and Economic Issues 3 credits; GLI 340 - Conflict Resolution, Coalition Building, and Peacemaking 3 credits"
+    },
+    {
+      "id": "globalization-studies-and-international-relations.B",
+      "label": "B",
+      "title": "Global Flows (6 credits)",
+      "rule": {
+        "manualCheck": "Confirm two courses are from a single Global Interaction section of the BA, at least one at the 300 or 400 level, and that they meet the Notes for All Areas of the Minor.",
+        "type": "unparsed",
+        "text": "Two courses must be taken from courses within one of the Global Interaction sections of the Globalization Studies and International Relations, BA. At least one course must be taken at the 300 or 400 level. Global Flows courses must meet the requirements listed in the Notes for All Areas of the Minor.",
+        "reason": "The eligible courses are defined by the Global Interaction sections of the BA program, which are not listed on this page."
+      },
+      "sourceText": "B. Global Flows (6 credits) - Two courses must be taken from courses within one of the Global Interaction sections of the Globalization Studies and International Relations, BA. At least one course must be taken at the 300 or 400 level. Global Flows courses must meet the requirements listed in the Notes for All Areas of the Minor."
+    },
+    {
+      "id": "globalization-studies-and-international-relations.C",
+      "label": "C",
+      "title": "Global Issues (6 credits)",
+      "rule": {
+        "manualCheck": "Confirm two courses are from a single Global Issues concentration of the BA, at least one at the 300 or 400 level, and that they meet the Notes for All Areas of the Minor.",
+        "type": "unparsed",
+        "text": "Two courses must be taken within one of the Global Issues concentrations of the Globalization Studies and International Relations, BA. At least one course must be taken at the 300 or 400 level. Global Issues courses must meet the requirements listed in the Notes for All Areas of the Minor.",
+        "reason": "The eligible courses are defined by the Global Issues concentrations of the BA program, which are not listed on this page."
+      },
+      "sourceText": "C. Global Issues (6 credits) - Two courses must be taken within one of the Global Issues concentrations of the Globalization Studies and International Relations, BA. At least one course must be taken at the 300 or 400 level. Global Issues courses must meet the requirements listed in the Notes for All Areas of the Minor."
+    },
+    {
+      "id": "globalization-studies-and-international-relations.D",
+      "label": "D",
+      "title": "Language Study (3 credits)",
+      "rule": {
+        "manualCheck": "Confirm the course is a 200-level or higher course in one non-English language and carries the LANG SBC designation, or that the student passed the language challenge exam.",
+        "type": "unparsed",
+        "text": "3 credits at the 200-level or above in one language other than English. Equivalent competency for credit may be demonstrated through a language challenge exam. Courses must include the LANG SBC designation to count towards the Language Study requirement.",
+        "reason": "The page does not list the eligible language subjects, and the rule needs a language-only pool that the selector cannot express."
+      },
+      "sourceText": "D. Language Study (3 credits) - 3 credits at the 200-level or above in one language other than English. Equivalent competency for credit may be demonstrated through a language challenge exam. Note for the Language Study minor requirement: Courses must include the LANG SBC designation to count towards the Language Study requirement."
+    },
+    {
+      "id": "globalization-studies-and-international-relations.completion",
+      "label": "Completion",
+      "title": "Minor completion and general rules",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "unparsed",
+            "text": "Completion of the minor requires 24 credits organized into the areas and requirements A through D.",
+            "reason": "Total-credit requirement across areas is not a rule type the selector supports."
+          },
+          {
+            "type": "unparsed",
+            "text": "No more than three credits of courses with Satisfactory/Unsatisfactory grading may be applied to the minor.",
+            "reason": "Caps credits by grading scale, which no rule type covers."
+          },
+          {
+            "type": "unparsed",
+            "text": "Courses with a Satisfactory/Unsatisfactory grading scale must be passed with an S.",
+            "reason": "Grade-scale exception to the C-or-higher minimum has no policy type."
+          },
+          {
+            "type": "unparsed",
+            "text": "Neither GLI 475 nor GLI 476 may be used toward the minor.",
+            "reason": "Course exclusion applies across pools whose courses are not all listed on this page."
+          },
+          {
+            "type": "unparsed",
+            "text": "Only transfer courses with a grade of C or higher may be accepted toward the minor.",
+            "reason": "Transfer-credit grade rule has no policy type."
+          }
+        ]
+      },
+      "sourceText": "Notes for All Areas of the Minor: No more than three credits of courses with Satisfactory/Unsatisfactory grading may be applied to the minor. Neither GLI 475 nor GLI 476 may be used toward the minor. Only transfer courses with a grade of C or higher may be accepted toward the minor. Completion of the minor requires 24 credits organized into the areas and requirements below. All courses required for the minor must be passed with a letter grade of C or higher, except for those with a Satisfactory/Unsatisfactory grading scale which must be passed with an S."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "globalization-studies-and-international-relations.A",
+        "globalization-studies-and-international-relations.B",
+        "globalization-studies-and-international-relations.C",
+        "globalization-studies-and-international-relations.D"
+      ],
+      "sourceText": "All courses required for the minor must be passed with a letter grade of C or higher, except for those with a Satisfactory/Unsatisfactory grading scale which must be passed with an S."
+    },
+    {
+      "type": "residencyRequired",
+      "appliesTo": [
+        "globalization-studies-and-international-relations.A"
+      ],
+      "sourceText": "All Core Courses must be taken at Stony Brook University"
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "LANG",
+        "rule": {
+          "type": "unparsed",
+          "text": "Courses must include the LANG SBC designation to count towards the Language Study requirement.",
+          "reason": "Per-course SBC tag is checked on the course record, not as a program rule that can be selected."
+        },
+        "sourceText": "Courses must include the LANG SBC designation to count towards the Language Study requirement."
+      }
+    ]
+  },
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "The minor is open to all undergraduates regardless of academic major or place of residence."
+    },
+    {
+      "topic": "advising",
+      "text": "Students should choose a Global Interaction Area and a Specialized Global Issue Track. Students should consult with the program advisor (gli@stonybrook.edu) as soon as possible and plan their course of study. Students are encouraged to declare the minor before the start of their sophomore year but no later than the first semester of their junior year. The minor takes approximately 4 semesters (fall/spring) to complete."
+    },
+    {
+      "topic": "other",
+      "text": "Students are strongly encouraged to participate in study abroad programs. With the approval of the program advisor, credits earned for courses taken abroad may count toward fulfillment of the minor. The minor is part of the Undergraduate Academy for Globalization Studies and International Relations, and students are encouraged to participate in its enrichment opportunities."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1465",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

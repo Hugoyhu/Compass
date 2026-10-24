@@ -1,0 +1,138 @@
+{
+  "id": "electrical-engineering",
+  "name": "Electrical Engineering",
+  "kind": "minor",
+  "approxCredits": 20,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "electrical-engineering.ese-123",
+      "label": "ese-123",
+      "title": "Introduction to Electrical and Computer Engineering",
+      "rule": {
+        "type": "course",
+        "code": "ESE 123"
+      },
+      "sourceText": "ESE 123 - Introduction to Electrical and Computer Engineering 4 credits"
+    },
+    {
+      "id": "electrical-engineering.ese-271",
+      "label": "ese-271",
+      "title": "Electrical Circuit Analysis",
+      "rule": {
+        "type": "course",
+        "code": "ESE 271"
+      },
+      "sourceText": "ESE 271 - Electrical Circuit Analysis 3 credits"
+    },
+    {
+      "id": "electrical-engineering.ese-electives",
+      "label": "ese-electives",
+      "title": "Additional ESE courses",
+      "rule": {
+        "manualCheck": "Page states four or five ESE courses for a total of at least 13 credits; verify the course count and that prerequisites and corequisites of each ESE course are met.",
+        "type": "choose",
+        "credits": 13,
+        "from": {
+          "subjects": [
+            "ESE"
+          ],
+          "excludeCourses": [
+            "ESE 111",
+            "ESE 121",
+            "ESE 122",
+            "ESE 124",
+            "ESE 188",
+            "ESE 201",
+            "ESE 300",
+            "ESE 301",
+            "ESE 324",
+            "ESE 440",
+            "ESE 441",
+            "ESE 475",
+            "ESE 476",
+            "ESE 488",
+            "ESE 499"
+          ],
+          "excludeUsedBy": [
+            "electrical-engineering.ese-123",
+            "electrical-engineering.ese-271"
+          ]
+        }
+      },
+      "sourceText": "Four or five ESE courses for a total of at least 13 credits."
+    },
+    {
+      "id": "electrical-engineering.upper-division-credits",
+      "label": "upper-division-credits",
+      "title": "Upper-division credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least nine credits must be in upper-division courses.",
+        "reason": "Program-wide upper-division credit minimum; no rule type covers a credit-level minimum across the minor."
+      },
+      "sourceText": "At least nine credits must be in upper-division courses."
+    },
+    {
+      "id": "electrical-engineering.total-credits",
+      "label": "total-credits",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 20 credits.",
+        "reason": "Program-wide total credit requirement; no rule type covers a total-credit minimum."
+      },
+      "sourceText": "Completion of the minor requires 20 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "electrical-engineering.ese-123",
+        "electrical-engineering.ese-271",
+        "electrical-engineering.ese-electives"
+      ],
+      "sourceText": "All courses for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "electrical-engineering.ese-123",
+        "electrical-engineering.ese-271",
+        "electrical-engineering.ese-electives"
+      ],
+      "sourceText": "All courses for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "A cumulative grade point average of 2.75 is required for admission to the minor. Students interested in the minor should apply as early as possible."
+    },
+    {
+      "topic": "advising",
+      "text": "Students seeking to complete the ESE minor must meet the relevant prerequisites and corequisites of each ESE course."
+    },
+    {
+      "topic": "other",
+      "text": "Students may not take ESE 111, ESE 121, ESE 122, ESE 124, ESE 188, ESE 201, ESE 300, ESE 301, ESE 324, ESE 440, ESE 441, ESE 475, ESE 476, ESE 488, or ESE 499 for credit toward the minor."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1429",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

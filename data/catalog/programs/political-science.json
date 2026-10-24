@@ -1,0 +1,179 @@
+{
+  "id": "political-science",
+  "name": "Political Science",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "political-science.A",
+      "label": "A",
+      "title": "Introductory Courses (6 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "POL 101",
+            "POL 102",
+            "POL 103",
+            "POL 201"
+          ]
+        }
+      },
+      "sourceText": "Two courses selected from the following: POL 101 - World Politics 3 credits; POL 102 - Introduction to American Government 3 credits; POL 103 - Introduction to Comparative Politics 3 credits; POL 201 - Introduction to Statistical Methods in Political Science 3 credits. We will accept the following equivalent courses for POL 201 : AMS 102 , AMS 110 , BIO 211 , BUS 215 , ECO 320 , PSY 201 , or SOC 202 ."
+    },
+    {
+      "id": "political-science.B",
+      "label": "B",
+      "title": "Concentration (9 credits)",
+      "rule": {
+        "type": "unparsed",
+        "text": "Three courses must be taken from courses in one of the Political Science, BA concentrations. Concentration courses must meet the requirements listed in the Notes for the Minor (numbered 200 or above, excluding POL 201; at least three courses across the concentration and electives numbered 300 or above).",
+        "reason": "The concentration course lists are defined in the major's concentrations, which are not included on this page."
+      },
+      "sourceText": "Three courses must be taken from courses in one of the Political Science, BA. Concentration courses must meet the requirements listed in the Notes for the Minor."
+    },
+    {
+      "id": "political-science.C",
+      "label": "C",
+      "title": "Political Science Electives (6 credits)",
+      "rule": {
+        "manualCheck": "Courses cross-listed with POL in other subjects are also eligible if numbered 200 or above; confirm cross-listed courses manually. POL 201, POL 475 and POL 476 are excluded.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "subjects": [
+            "POL"
+          ],
+          "minNumber": 200,
+          "excludeCourses": [
+            "POL 201",
+            "POL 475",
+            "POL 476"
+          ]
+        }
+      },
+      "sourceText": "Two courses must be taken from POL courses or courses that are crosslisted with POL. Political Science Elective courses must meet the requirements listed in the Notes for the Minor."
+    },
+    {
+      "id": "political-science.300-level-courses",
+      "label": "notes-6-300-level",
+      "title": "Three courses numbered 300 or above (Concentration and Electives)",
+      "rule": {
+        "type": "unparsed",
+        "text": "For the Concentration and Political Science Electives, at least three courses (9 credits) must be from courses numbered 300 or above.",
+        "reason": "Cross-requirement course-level minimum that no single rule type expresses."
+      },
+      "sourceText": "For the Concentration and Political Science Electives, all courses must be selected from courses numbered 200 or above (excluding POL 201), and at least three courses (9 credits) must be from courses numbered 300 or above."
+    },
+    {
+      "id": "political-science.residency-pol-credits",
+      "label": "notes-4-department-credits",
+      "title": "At least nine credits in Political Science Department courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least nine credits must be taken in courses offered by the Political Science Department at Stony Brook or cross-listed by the Department.",
+        "reason": "Minimum credit requirement across the minor that no rule type covers."
+      },
+      "sourceText": "At least nine credits must be taken in courses offered by the Political Science Department at Stony Brook or cross-listed by the Department."
+    },
+    {
+      "id": "political-science.su-limit",
+      "label": "notes-2-su-limit",
+      "title": "Satisfactory/Unsatisfactory credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than three credits of courses with Satisfactory/Unsatisfactory grading may be applied to the minor.",
+        "reason": "Credit cap on S/U-graded courses that no rule type covers."
+      },
+      "sourceText": "No more than three credits of courses with Satisfactory/Unsatisfactory grading may be applied to the minor."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "political-science.A",
+        "political-science.B",
+        "political-science.C"
+      ],
+      "sourceText": "All courses taken to fulfill minor requirements must be passed with a letter grade of C or higher, except for those with a Satisfactory/Unsatisfactory grading scale which must be passed with an S."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "political-science.sub.pol201-equivalents",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "POL 201"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 102"
+          },
+          {
+            "type": "course",
+            "code": "AMS 110"
+          },
+          {
+            "type": "course",
+            "code": "BIO 211"
+          },
+          {
+            "type": "course",
+            "code": "BUS 215"
+          },
+          {
+            "type": "course",
+            "code": "ECO 320"
+          },
+          {
+            "type": "course",
+            "code": "PSY 201"
+          },
+          {
+            "type": "course",
+            "code": "SOC 202"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "We will accept the following equivalent courses for POL 201 : AMS 102 , AMS 110 , BIO 211 , BUS 215 , ECO 320 , PSY 201 , or SOC 202 ."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "other",
+      "text": "POL 475 and POL 476 may not be used toward the minor."
+    },
+    {
+      "topic": "other",
+      "text": "Only transfer courses with a grade of C or higher may be accepted toward the minor."
+    },
+    {
+      "topic": "advising",
+      "text": "The minor is organized around one of the concentrations listed for the Political Science major; the concentration course lists are not included on this page."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1527",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

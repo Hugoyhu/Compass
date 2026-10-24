@@ -1,0 +1,710 @@
+{
+  "id": "astronomy-planetary-sciences-bs",
+  "name": "Astronomy/Planetary Sciences, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Astronomy/Planetary Sciences",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "astronomy-planetary-sciences-bs.required-astronomy",
+      "label": "required-astronomy",
+      "title": "Required Astronomy Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AST 203"
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "from": {
+              "courses": [
+                "AST 341",
+                "AST 346",
+                "AST 347",
+                "AST 390"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Required Astronomy Courses: AST 203 - Astronomy 4 credits. And three of these four courses: AST 341 - Stars and Radiation 3 credits; AST 346 - Galaxies 3 credits; AST 347 - Cosmology 3 credits; AST 390 - Special Topics in Astrophysics and Cosmology 3 credits"
+    },
+    {
+      "id": "astronomy-planetary-sciences-bs.additional-ast",
+      "label": "additional-ast",
+      "title": "Additional Requirements (AST courses)",
+      "rule": {
+        "manualCheck": "Page states these six credits must include AST 390 and PHY 408; verify that AST 390 and PHY 408 are counted within the six credits (PHY 408 is not an AST course and is not in the pool).",
+        "type": "choose",
+        "credits": 6,
+        "from": {
+          "courses": [
+            "AST 287",
+            "AST 447",
+            "AST 487"
+          ],
+          "subjects": [
+            "AST"
+          ],
+          "minNumber": 205,
+          "excludeCourses": [
+            "AST 248",
+            "AST 301",
+            "AST 389",
+            "AST 475"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "AST 287",
+                "AST 447",
+                "AST 487"
+              ]
+            },
+            "maxCredits": 3
+          }
+        ]
+      },
+      "sourceText": "At least six credits from additional AST courses numbered 205 or higher (except AST 248, AST 301, AST 389, and AST 475), including AST 390 and PHY 408. Up to three credits of AST 287, AST 447, and AST 487 may be used toward this requirement."
+    },
+    {
+      "id": "astronomy-planetary-sciences-bs.required-physics",
+      "label": "required-physics",
+      "title": "Required Physics Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 127"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 142"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "PHY 251"
+          },
+          {
+            "type": "course",
+            "code": "PHY 252"
+          },
+          {
+            "type": "course",
+            "code": "PHY 277"
+          },
+          {
+            "type": "course",
+            "code": "PHY 300"
+          },
+          {
+            "type": "course",
+            "code": "PHY 306"
+          }
+        ]
+      },
+      "sourceText": "Required Physics Courses: PHY 131 - Classical Physics I 3 credits (See Note 1); PHY 133 - Classical Physics Laboratory I 1 credit (See Note 1); PHY 132 - Classical Physics II 3 credits (See Note 1); PHY 134 - Classical Physics Laboratory II 1 credit (See Note 1); PHY 251 - Modern Physics 3 credits; PHY 252 - Modern Physics Laboratory 1 credit; PHY 277 - Computation for Physics and Astronomy 3 credits; PHY 300 - Waves and Optics 4 credits; PHY 306 - Thermodynamics, Kinetic Theory, and Statistical Mechanics 3 credits. Note 1: The following physics courses are alternatives to PHY 131/PHY 133 + labs PHY 132/PHY 134 (collectively called the PHY 131-Sequence): PHY 125, PHY 126, PHY 127, with labs PHY 133 and PHY 134 (collectively called the PHY 125-Sequence) or PHY 141/PHY 133 and PHY 142/PHY 134 (Collectively called the PHY 141-Sequence)."
+    },
+    {
+      "id": "astronomy-planetary-sciences-bs.astronomy-related",
+      "label": "astronomy-related",
+      "title": "Astronomy-Related Courses",
+      "rule": {
+        "manualCheck": "The page refers to a related-courses list for the physics major that is not reproduced here, and says courses required by a student's minor, second major, or master's degree are automatically included. Verify those courses are eligible. Only courses at the 300-level or above may be used; AST courses are excluded from the physics-major list.",
+        "type": "choose",
+        "credits": 8,
+        "from": {
+          "subjects": [
+            "PHY"
+          ],
+          "minNumber": 300,
+          "excludeUsedBy": [
+            "astronomy-planetary-sciences-bs.required-physics"
+          ]
+        }
+      },
+      "sourceText": "Eight credits of astronomy-related courses that complement an astronomy major's education are required. The intent is to add courses, especially in other quantitative sciences, which prepare the student for successful employment in research, education or industry. Any course beyond those required for the astronomy major that is required by the student's minor, second major or master's degree (for students in a combined degree program) is automatically included in the list of related courses. Additional related courses are listed under the related courses for the physics major (except the AST courses). Any course at the 300-level or above on this list may be used. In addition any physics course at the 300-level or above not required for the astronomy major may also be used."
+    },
+    {
+      "id": "astronomy-planetary-sciences-bs.math-placement",
+      "label": "math-placement",
+      "title": "Mathematics Placement Condition",
+      "rule": {
+        "type": "unparsed",
+        "text": "If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119/MAT 123) is a required course for the major.",
+        "reason": "Conditional on math placement result, which cannot be determined from a transcript; the alternative MAT 119/MAT 123 form is also not a single rule type."
+      },
+      "sourceText": "If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major."
+    },
+    {
+      "id": "astronomy-planetary-sciences-bs.math-calculus",
+      "label": "math-calculus",
+      "title": "Mathematics Requirements: Calculus",
+      "rule": {
+        "manualCheck": "Note 2 also allows MAT 125 to be taken as MAT 130/MAT 125, and says Mathematics Placement Examination equivalency is accepted without substituting other credits.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "MAT 132"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 126"
+              },
+              {
+                "type": "course",
+                "code": "MAT 127"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 141"
+              },
+              {
+                "type": "course",
+                "code": "MAT 142"
+              }
+            ]
+          },
+          {
+            "type": "unparsed",
+            "text": "MAT 171 (alternative beginning calculus sequence per Note 2)",
+            "reason": "Note 2 lists MAT 171 as an alternative beginning calculus course, but its exact pairing with MAT 127 or MAT 141/MAT 142 is ambiguous on the page."
+          }
+        ]
+      },
+      "sourceText": "Mathematics Requirements: MAT 131 - Calculus I 4 credits (See Note 2 below); MAT 132 - Calculus II 4 credits (See Note 2 below). Note 2: The following alternate beginning calculus sequences may be substituted for MAT 131, MAT 132 in major requirements or prerequisites: MAT 125 (or MAT 130/MAT 125), MAT 126, MAT 127 or MAT 141, MAT 142 or MAT 171. Equivalency for MAT courses achieved by earning the appropriate score on the Mathematics Placement Examination will be accepted as fulfillment of the requirement without the necessity of substituting other credits."
+    },
+    {
+      "id": "astronomy-planetary-sciences-bs.math-calc-3",
+      "label": "math-calc-3",
+      "title": "Calculus III (one of)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 203"
+          },
+          {
+            "type": "course",
+            "code": "AMS 261"
+          },
+          {
+            "type": "course",
+            "code": "MAT 307"
+          }
+        ]
+      },
+      "sourceText": "One of the following: MAT 203 - Calculus III with Applications 4 credits; AMS 261 - Applied Calculus III 4 credits; MAT 307 - Multivariable Calculus with Linear Algebra 4 credits"
+    },
+    {
+      "id": "astronomy-planetary-sciences-bs.math-calc-4",
+      "label": "math-calc-4",
+      "title": "Calculus IV / Differential Equations (one of)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 303"
+          },
+          {
+            "type": "course",
+            "code": "AMS 361"
+          },
+          {
+            "type": "course",
+            "code": "MAT 308"
+          }
+        ]
+      },
+      "sourceText": "One of the following: MAT 303 - Calculus IV with Applications 4 credits; AMS 361 - Applied Calculus IV: Differential Equations 4 credits; MAT 308 - Differential Equations with Linear Algebra 4 credits"
+    },
+    {
+      "id": "astronomy-planetary-sciences-bs.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Verify the student submitted two papers (term papers or independent research papers) to the Astronomy coordinator for Department evaluation by the end of the junior year and that the evaluation was satisfactory. Papers should follow journal-article form (abstract, introduction, main content, references); typical length about 10 pages double spaced plus references.",
+        "type": "course",
+        "code": "AST 459"
+      },
+      "sourceText": "Upper-Division Writing Requirement: Students are certified as satisfying the upper-division writing requirement by registering for the 0-credit AST 459 and completing writing projects within their major. All students majoring in Astronomy/ Planetary Sciences must submit two papers (term papers or independent research papers) to the Astronomy coordinator for Department evaluation by the end of the junior year. If this evaluation is satisfactory, the student will have fulfilled the upper-division writing requirement."
+    },
+    {
+      "id": "astronomy-planetary-sciences-bs.grade-exception",
+      "label": "grade-exception",
+      "title": "Grade exception for AST/PHY courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "Up to three astronomy or physics courses passed with a C- may be applied to the major; all other courses offered for the major must be passed with a letter grade of C or higher.",
+        "reason": "A cap on the number of C- grades accepted in AST/PHY courses cannot be expressed as a per-course grade minimum."
+      },
+      "sourceText": "The major in Astronomy leads to the Bachelor of Science degree. Up to three astronomy or physics courses passed with a C- may be applied to the major; all other courses offered for the major must be passed with a letter grade of C or higher. Completion of the major requires 63 to 66 credits."
+    },
+    {
+      "id": "astronomy-planetary-sciences-bs.program-credits",
+      "label": "program-credits",
+      "title": "Total major credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires 63 to 66 credits.",
+        "reason": "Total-credit range for the major is not a rule type supported by the schema."
+      },
+      "sourceText": "Completion of the major requires 63 to 66 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "astronomy-planetary-sciences-bs.required-astronomy",
+        "astronomy-planetary-sciences-bs.additional-ast",
+        "astronomy-planetary-sciences-bs.required-physics",
+        "astronomy-planetary-sciences-bs.astronomy-related",
+        "astronomy-planetary-sciences-bs.math-placement",
+        "astronomy-planetary-sciences-bs.math-calculus",
+        "astronomy-planetary-sciences-bs.math-calc-3",
+        "astronomy-planetary-sciences-bs.math-calc-4",
+        "astronomy-planetary-sciences-bs.writing"
+      ],
+      "sourceText": "Up to three astronomy or physics courses passed with a C- may be applied to the major; all other courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "astronomy-planetary-sciences-bs.required-astronomy",
+        "astronomy-planetary-sciences-bs.additional-ast",
+        "astronomy-planetary-sciences-bs.required-physics",
+        "astronomy-planetary-sciences-bs.astronomy-related",
+        "astronomy-planetary-sciences-bs.math-placement",
+        "astronomy-planetary-sciences-bs.math-calculus",
+        "astronomy-planetary-sciences-bs.math-calc-3",
+        "astronomy-planetary-sciences-bs.math-calc-4",
+        "astronomy-planetary-sciences-bs.writing"
+      ],
+      "sourceText": "All other courses offered for the major must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AST 100",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "alternatives": [
+            "PHY 141"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "MAT 131",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "alternatives": [
+            "PHY 142"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "MAT 132",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHY 251",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "MAT 203",
+          "alternatives": [
+            "MAT 307",
+            "AMS 261"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AST 205",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 277",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHY 306",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 303",
+          "alternatives": [
+            "MAT 308",
+            "AMS 361"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AST 200",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "AST 203",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AST 341",
+          "alternatives": [
+            "AST 443"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "MAT elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 303",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AST 390",
+          "alternatives": [
+            "AST 346"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 308",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 300",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AST 347",
+          "alternatives": [
+            "AST 443"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AST 346",
+          "alternatives": [
+            "AST 390"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "When the student declares the Astronomy major, the director of undergraduate studies assigns a faculty advisor who helps select courses. Students should consult frequently with their faculty advisors about progress and appropriate science courses."
+    },
+    {
+      "topic": "other",
+      "text": "Completion of the major requires 63 to 66 credits."
+    },
+    {
+      "topic": "other",
+      "text": "Astronomy/Planetary Sciences Honors Program (not evaluated): students with a cumulative GPA of 3.30 through the junior year in required major courses may apply for departmental honors. Honors requires an honors thesis completed while enrolled in AST 447 or AST 487, evaluation by a committee of the advisor and two other science faculty (one from outside Astronomy/Planetary Sciences), completion with distinction, and a minimum 3.30 GPA in all natural sciences and mathematics coursework."
+    },
+    {
+      "topic": "sbc",
+      "text": "The SBC table lists major courses that can also fulfill SBC learning objectives (for example, AST 459 for WRTD); per-course tags are not evaluated here. Students completing the Stony Brook Curriculum must complete a WRTD course to graduate."
+    },
+    {
+      "topic": "other",
+      "text": "The related-courses list for the physics major referenced in the astronomy-related requirement is not reproduced on this page."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1364",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "id": "chemistry",
+  "name": "Chemistry",
+  "kind": "minor",
+  "degree": "",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "chemistry.lecture-sequence",
+      "label": "lecture-sequence",
+      "title": "General Chemistry lecture sequence",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 129"
+              },
+              {
+                "type": "course",
+                "code": "CHE 132"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 131"
+              },
+              {
+                "type": "course",
+                "code": "CHE 132"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CHE 152"
+          }
+        ]
+      },
+      "sourceText": "General Chemistry lecture sequence: CHE 129 - General Chemistry IA 4 credits - CHE 132 - General Chemistry II Credits: 4 credits OR CHE 131 - General Chemistry IB 4 credits - CHE 132 - General Chemistry II Credits: 4 credits OR CHE 152 - Molecular Science I 4 credits"
+    },
+    {
+      "id": "chemistry.lab-sequence",
+      "label": "lab-sequence",
+      "title": "General Chemistry laboratory sequence",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 133"
+              },
+              {
+                "type": "course",
+                "code": "CHE 134"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CHE 154"
+          }
+        ]
+      },
+      "sourceText": "General Chemistry laboratory sequence: CHE 133 - General Chemistry Laboratory I 1 credit - CHE 134 - General Chemistry Laboratory II Credits: 1 credit OR CHE 154 - Molecular Science Laboratory I 2 credits"
+    },
+    {
+      "id": "chemistry.upper-division",
+      "label": "upper-division",
+      "title": "12 credits of CHE 300-level courses or CHE research",
+      "rule": {
+        "type": "choose",
+        "credits": 12,
+        "from": {
+          "courses": [
+            "CHE 487",
+            "CHE 495",
+            "CHE 496"
+          ],
+          "subjects": [
+            "CHE"
+          ],
+          "minNumber": 300
+        }
+      },
+      "sourceText": "12 credits of CHE 300-level courses or CHE research. Special restriction: A minimum of 9 upper division CHE credits must be earned in courses not required for the student's major. CHE 487 - Research in Chemistry 0-6 credits; CHE 495 - Senior Research 3 credits; CHE 496 - Senior Research 3 credits"
+    },
+    {
+      "id": "chemistry.major-overlap",
+      "label": "major-overlap",
+      "title": "Minimum upper-division CHE credits not used for the major",
+      "rule": {
+        "type": "unparsed",
+        "text": "A minimum of 9 upper division CHE credits must be earned in courses not used towards the student's major (page also says: not required for the student's major).",
+        "reason": "Cross-program exclusion against the student's major courses; no rule type compares against another program's requirements."
+      },
+      "sourceText": "A minimum of 9 upper division CHE credits must be earned in courses not used towards the student's major."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "chemistry.lecture-sequence",
+        "chemistry.lab-sequence",
+        "chemistry.upper-division"
+      ],
+      "sourceText": "All courses for the minor must be completed for a letter grade of C or better or S. P/NC grades are not acceptable in courses taken for the minor."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "chemistry.lecture-sequence",
+        "chemistry.lab-sequence",
+        "chemistry.upper-division"
+      ],
+      "sourceText": "All courses for the minor must be completed for a letter grade of C or better or S."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 8,
+      "appliesTo": [
+        "chemistry.upper-division"
+      ],
+      "sourceText": "All students must complete a minimum of 8 upper division credits in 300-level or chemistry research courses in residency at Stony Brook in order to qualify for the minor."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "grading",
+      "text": "The minor requires 18-22 credits in total. An S grade is accepted in place of a letter grade. P/NC grades are not acceptable for courses taken for the minor."
+    },
+    {
+      "topic": "other",
+      "text": "CHE 487 - Research in Chemistry is offered for 0-6 credits."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1392",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

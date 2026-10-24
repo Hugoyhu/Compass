@@ -1,0 +1,117 @@
+{
+  "id": "africana-studies",
+  "name": "Africana Studies",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "africana-studies.1",
+      "label": "1",
+      "title": "Themes in the Black Experience",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AFS 101"
+          },
+          {
+            "type": "course",
+            "code": "AFS 102"
+          }
+        ]
+      },
+      "sourceText": "Themes in the Black Experience: AFS 101 - Themes in the Black Experience I 3 credits; AFS 102 - Themes in the Black Experience II 3 credits"
+    },
+    {
+      "id": "africana-studies.2",
+      "label": "2",
+      "title": "One course from each area",
+      "rule": {
+        "type": "unparsed",
+        "text": "One course from each of the following areas: Africana Studies in the Humanities; Africana Studies in the Social Sciences; The African-American Experience; The Global African Experience. See the Africana Studies, BA page to review courses available in these areas.",
+        "reason": "The area course lists are on a different catalog page and are not included here, so one course per area cannot be checked against this page."
+      },
+      "sourceText": "One course from each of the following areas: Africana Studies in the Humanities; Africana Studies in the Social Sciences; The African-American Experience; The Global African Experience. See the Africana Studies, BA page to review courses available in these areas."
+    },
+    {
+      "id": "africana-studies.3",
+      "label": "3",
+      "title": "Additional Requirements",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "unparsed",
+            "text": "One additional upper-division course selected from one of the areas listed in requirement 2",
+            "reason": "The area course lists are on the Africana Studies, BA page and are not included here, so the upper-division course cannot be checked against them."
+          },
+          {
+            "manualCheck": "Must be taken in the junior or senior year.",
+            "type": "choose",
+            "credits": 3,
+            "from": {
+              "courses": [
+                "AFH 447",
+                "AFS 447",
+                "AFH 487",
+                "AFS 487"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "One additional upper-division course selected from one of the areas listed in requirement 2 OR Three credits in AFH 447 or AFS 447 Readings in Africana Studies or AFH 487 or AFS 487 Research in Africana Studies taken in the junior or senior year."
+    },
+    {
+      "id": "africana-studies.credits",
+      "label": "credits",
+      "title": "Minor credit totals",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21 credits, including 12 upper-division credits.",
+        "reason": "Program-wide credit totals and an upper-division credit minimum are not a rule type the engine supports."
+      },
+      "sourceText": "Completion of the minor requires 21 credits, including 12 upper-division credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "africana-studies.1",
+        "africana-studies.2",
+        "africana-studies.3"
+      ],
+      "sourceText": "All courses offered for the minor, except those graded S/U, must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "The minor is intended for students exploring the Black experience in relation to their own major field of study. Courses for the areas in requirement 2 are listed on the Africana Studies, BA page."
+    },
+    {
+      "topic": "grading",
+      "text": "Courses graded S/U are exempt from the letter grade of C or higher requirement."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1344",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

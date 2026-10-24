@@ -1,0 +1,98 @@
+{
+  "id": "journalism",
+  "name": "Journalism",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "journalism.1",
+      "label": "1",
+      "title": "Required Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "JRN 101"
+          },
+          {
+            "type": "course",
+            "code": "COM 106"
+          },
+          {
+            "type": "course",
+            "code": "JRN 116"
+          },
+          {
+            "type": "course",
+            "code": "COM 208"
+          }
+        ]
+      },
+      "sourceText": "The following courses (12 credits) are required of minors - JRN 101 - News Literacy 3 credits - COM 106 - Introduction to Mass Media 3 credits - JRN 116 - Introduction to Digital Journalism 3 credits - COM 208 - Mass Communication 3 credits"
+    },
+    {
+      "id": "journalism.2",
+      "label": "2",
+      "title": "Electives",
+      "rule": {
+        "manualCheck": "The page refers to the course offerings listed under the Journalism, BA program for the elective options. Confirm that each elective is a journalism course at the 300 level or above, and that the student has U3/U4 standing to enroll.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "subjects": [
+            "JRN"
+          ],
+          "minNumber": 300
+        }
+      },
+      "sourceText": "Three journalism electives (9 credits) at or above the 300 level are required. Please check the course offering from the Journalism, BA program for options. Electives require U3/U4 standing to enroll."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "journalism.1",
+        "journalism.2"
+      ],
+      "sourceText": "Students must earn a letter grade of C or higher in all journalism courses and Satisfactory or S in JRN internships, independent studies and workshops for these to count toward the minor."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "grading",
+      "text": "JRN internships, independent studies and workshops count toward the minor only with a grade of Satisfactory or S. Journalism courses require a letter grade of C or higher."
+    },
+    {
+      "topic": "advising",
+      "text": "Minors are welcome to take additional journalism courses, but should consult with the Undergraduate Director."
+    },
+    {
+      "topic": "other",
+      "text": "Transfer courses will be evaluated individually for journalism equivalency by the Undergraduate Director."
+    },
+    {
+      "topic": "advising",
+      "text": "Advising is available through SoCJ Undergraduate Advising (socjadvising@stonybrook.edu, (631) 632-7403)."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1486",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

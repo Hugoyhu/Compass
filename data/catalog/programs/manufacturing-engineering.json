@@ -1,0 +1,142 @@
+{
+  "id": "manufacturing-engineering",
+  "name": "Manufacturing Engineering",
+  "kind": "minor",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "manufacturing-engineering.track",
+      "label": "track",
+      "title": "Minor requirements by major track",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "manufacturing-engineering.track.esg",
+            "sourceText": "Requirements for students majoring in Engineering Science (ESG): ESM 455 - Materials and Processes in Manufacturing Design; ESM 488 - Cooperative Industrial Practice 0-6 credits; ESM 486 - Innovation and Entrepreneurship in Engineering; MEC 325 - Manufacturing Processes; Two courses chosen from: BUS 346, BUS 372, EST 392, ESM 336, BME 381, BME 404",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ESM 455"
+              },
+              {
+                "manualCheck": "Listed as 0-6 credits; confirm the credits applied toward the 18 to 24 credit total.",
+                "type": "course",
+                "code": "ESM 488"
+              },
+              {
+                "type": "course",
+                "code": "ESM 486"
+              },
+              {
+                "type": "course",
+                "code": "MEC 325"
+              },
+              {
+                "sourceText": "Two courses chosen from: BUS 346 - Operations Management; BUS 372 - Quality Management; EST 392 - Engineering Economics; ESM 336 - Electronic Materials; BME 381 - Nanofabrication in Biomedical Applications; BME 404 - Essentials of Tissue Engineering",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "BUS 346",
+                    "BUS 372",
+                    "EST 392",
+                    "ESM 336",
+                    "BME 381",
+                    "BME 404"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "manufacturing-engineering.track.other",
+            "sourceText": "Requirements for all other students: ESG 100 - Introduction to Engineering Science; ESG 316 - Engineering Science Design Methods; ESG 332 - Materials Science I: Structure and Properties of Materials; ESM 455 - Materials and Processes in Manufacturing Design; Two courses chosen from: ESG 201, ESM 336, ESM 339, ESM 488, ESM 335, ESM 450, ESM 486, MEC 325",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ESG 100"
+              },
+              {
+                "type": "course",
+                "code": "ESG 316"
+              },
+              {
+                "type": "course",
+                "code": "ESG 332"
+              },
+              {
+                "type": "course",
+                "code": "ESM 455"
+              },
+              {
+                "sourceText": "Two courses chosen from: ESG 201 - Learning from Engineering Disaster; ESM 336 - Electronic Materials; ESM 339 - Microfabrication and Thin Film Processing of Advanced Materials; ESM 488 - Cooperative Industrial Practice 0-6 credits; ESM 335 - Strength of Materials; ESM 450 - Engineering Systems Laboratory; ESM 486 - Innovation and Entrepreneurship in Engineering; MEC 325 - Manufacturing Processes",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "ESG 201",
+                    "ESM 336",
+                    "ESM 339",
+                    "ESM 488",
+                    "ESM 335",
+                    "ESM 450",
+                    "ESM 486",
+                    "MEC 325"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Requirements for students majoring in Engineering Science (ESG) and Requirements for all other students (see the track lists above)."
+    },
+    {
+      "id": "manufacturing-engineering.credits",
+      "label": "credits",
+      "title": "Minor credit range",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 18 to 24 credits.",
+        "reason": "A total credit range for the minor cannot be expressed as a course-selection rule; the page places it under the Engineering Science track only."
+      },
+      "sourceText": "Completion of the minor requires 18 to 24 credits."
+    },
+    {
+      "id": "manufacturing-engineering.cross-minor",
+      "label": "cross-minor",
+      "title": "No double use across engineering science minors",
+      "rule": {
+        "type": "unparsed",
+        "text": "Courses used to satisfy requirements of another minor in engineering science may not be used to satisfy requirements of another minor in engineering science.",
+        "reason": "Checking overlap requires the course lists of the other engineering science minors, which are not on this page."
+      },
+      "sourceText": "Courses used to satisfy requirements of another minor in engineering science may not be used to satisfy requirements of another minor in engineering science."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Engineering science, computer engineering, electrical engineering, mechanical engineering, and applied mathematics and statistics students can assemble a sequence of courses with 18 to 24 credits to satisfy the minor. The student's program must be approved by the undergraduate program director. Advising: Samantha Riccardi, esg_undergradadvising@stonybrook.edu, (631) 632-8381."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1494",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

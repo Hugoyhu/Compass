@@ -1,0 +1,190 @@
+{
+  "id": "health-medicine-and-society",
+  "name": "Health, Medicine, and Society",
+  "kind": "minor",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "health-medicine-and-society.1",
+      "label": "1",
+      "title": "Three Core Courses (9 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "SOC 105"
+          },
+          {
+            "type": "course",
+            "code": "SOC 200"
+          },
+          {
+            "type": "course",
+            "code": "SOC 201"
+          }
+        ]
+      },
+      "sourceText": "Three Core Courses (9 credits): SOC 105 - Introduction to Sociology 3 credits; SOC 200 - Medicine and Society 3 credits; SOC 201 - Research Methods in Sociology 3 credits"
+    },
+    {
+      "id": "health-medicine-and-society.2",
+      "label": "2",
+      "title": "Sociology Electives (6 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "SOC 247",
+            "SOC 248",
+            "SOC 310",
+            "SOC 339",
+            "SOC 340",
+            "SOC 344",
+            "SOC 337",
+            "SOC 393"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "SOC 393"
+              ]
+            },
+            "maxCredits": 6
+          }
+        ]
+      },
+      "sourceText": "Sociology Electives (6 credits): Students are required to choose two of the following Sociology electives: SOC 247 - Sociology of Gender 3 credits ^; SOC 248 - Social Problems in Global Perspective 3 credits; SOC 310 - Racism and Ethnic Relations 3 credits; SOC 339 - Sociology of Alcoholism and Drug Abuse 3 credits; SOC 340 - Sociology of Human Reproduction 3 credits; SOC 344 - Environmental Sociology 3 credits; SOC 337 - Social Deviance 3 credits; SOC 393 - Special Topics in Health, Medicine, and Social Change 3 credits *. Notes: *Up to 6 credits of SOC 393 may be applied to the minor."
+    },
+    {
+      "id": "health-medicine-and-society.3",
+      "label": "3",
+      "title": "Electives (6 credits)",
+      "rule": {
+        "manualCheck": "Substitutions may be permitted for other courses with medical components with permission of the Director of the minor. Courses marked ^ are crosslisted; students may not repeat a crosslisted course under the other department's number.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "AFS 306",
+            "AFS 368",
+            "AFS 374",
+            "AFS 381",
+            "ANT 260",
+            "ANT 359",
+            "BIO 358",
+            "BME 205",
+            "CLS 325",
+            "ECO 327",
+            "ENS 312",
+            "HIS 237",
+            "HIS 238",
+            "HIS 286",
+            "HIS 293",
+            "HIS 398",
+            "HPH 335",
+            "MEC 280",
+            "PSY 333",
+            "PSY 334",
+            "PSY 342",
+            "PSY 346",
+            "SUS 340",
+            "WST 394"
+          ]
+        }
+      },
+      "sourceText": "Electives (6 credits): Students are required to choose two courses from the following list: AFS 306 - Gender and Public Health in Africa 3 credits; AFS 368 - Health and Disease in Africa 3 credits ^; AFS 374 - Environment and Development in African History 3 credits ^; AFS 381 - AIDS, Race, and Gender in the Black Community 3 credits ^; ANT 260 - How We Eat 3 credits; ANT 359 - The Archaeology of Food 3 credits; BIO 358 - Biology and Human Social and Sexual Behavior 3 credits; BME 205 - Clinical Challenges of the 21st Century 3 credits; CLS 325 - The Latin and Greek Origins of Medicine 3 credits; ECO 327 - Health Economics 3 credits; ENS 312 - Population, Technology, and the Environment 3 credits; HIS 237 - Science, Technology, and Medicine in Western Civilization I 3 credits; HIS 238 - Science, Technology, and Medicine in Western Civilization II 3 credits; HIS 286 - The Global History of Human Health 3 credits; HIS 293 - Disease in American History 3 credits; HIS 398 - Topics in the History of Science, Medicine and Technology 3 credits; HPH 335 - Population Mental Health in the 21st Century: Climate Change, Trauma and Disparities 3 credits ^^; MEC 280 - Pollution and Human Health 3 credits; PSY 333 - Mood Disorders 3 credits; PSY 334 - Autism Spectrum Disorders 3 credits; PSY 342 - Psychology of Women's Health 3 credits; PSY 346 - Health Psychology 3 credits; SUS 340 - Ecological and Social Dimensions of Disease 3 credits; WST 394 - Special Topics in Medicine, Reproduction, and Gender 3 credits. Notes: **Substitutions may be permitted for other courses with medical components with permission of the Director of the minor. ^These courses are crosslisted with at least one other academic department. Students will earn credit toward this requirement by registering for either course, but may not repeat the course by enrolling a second time under the other option. ^^ For HPH 335 course information, please review the Health Sciences catalog."
+    },
+    {
+      "id": "health-medicine-and-society.upper-division",
+      "label": "upper-division",
+      "title": "Upper-division courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least three of the courses must be at the upper-division level.",
+        "reason": "Upper-division applies to a subset of courses across requirements 1 to 3 and cannot be assigned to one choose pool without double counting."
+      },
+      "sourceText": "At least three of the courses must be at the upper-division level."
+    },
+    {
+      "id": "health-medicine-and-society.major-overlap",
+      "label": "major-overlap",
+      "title": "Limit on courses shared with the major",
+      "rule": {
+        "manualCheck": "Confirm no more than three courses from the Sociology major course list are applied to this minor.",
+        "type": "unparsed",
+        "text": "Students may be Sociology Majors as well as choose to \"Minor\" in Health, Medicine, and Society; however, no more than three classes from the major course list may apply to the 21 credit requirement for the minor.",
+        "reason": "The Sociology major course list is not on this page, so overlap cannot be counted."
+      },
+      "sourceText": "Students may be Sociology Majors as well as choose to \"Minor\" in Health, Medicine, and Society; however, no more than three classes from the major course list may apply to the 21 credit requirement for the minor."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "health-medicine-and-society.1",
+        "health-medicine-and-society.2",
+        "health-medicine-and-society.3"
+      ],
+      "sourceText": "All courses for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "health-medicine-and-society.1",
+        "health-medicine-and-society.2",
+        "health-medicine-and-society.3"
+      ],
+      "sourceText": "All courses for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 9,
+      "appliesTo": [
+        "health-medicine-and-society.1",
+        "health-medicine-and-society.2",
+        "health-medicine-and-society.3"
+      ],
+      "sourceText": "At least nine of the 21 credits must be taken at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students may be Sociology Majors as well as choose to Minor in Health, Medicine, and Society; however, no more than three classes from the major course list may apply to the 21 credit requirement for the minor."
+    },
+    {
+      "topic": "other",
+      "text": "Courses marked ^ are crosslisted with at least one other academic department. Students earn credit by registering for either course but may not repeat the course by enrolling a second time under the other option."
+    },
+    {
+      "topic": "other",
+      "text": "HPH 335 course information is listed in the Health Sciences catalog."
+    },
+    {
+      "topic": "other",
+      "text": "Substitutions may be permitted for other courses with medical components with permission of the Director of the minor (Catherine Marrone)."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1467",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

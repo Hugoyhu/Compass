@@ -1,0 +1,94 @@
+{
+  "id": "asian-thought",
+  "name": "Asian Thought",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "asian-thought.minor-courses",
+      "label": "minor-courses",
+      "title": "Minor Courses",
+      "rule": {
+        "manualCheck": "At the discretion of the director of the minor, courses that cover religious topics in other fields (such as HIS and PHI) can also be counted. Confirm any such course with the program director.",
+        "type": "choose",
+        "count": 6,
+        "from": {
+          "courses": [
+            "AAS 102",
+            "AAS 212",
+            "AAS 236",
+            "AAS 240",
+            "AAS 256",
+            "AAS 260",
+            "AAS 280",
+            "AAS 287",
+            "AAS 300",
+            "AAS 326",
+            "AAS 366",
+            "AAS 368",
+            "AAS 380",
+            "AAS 382",
+            "AAS 387",
+            "AAS 391",
+            "AAS 444",
+            "AAS 447",
+            "AAS 459",
+            "AAS 472",
+            "AAS 475"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "AAS"
+              ],
+              "minNumber": 300
+            },
+            "minCourses": 3
+          }
+        ]
+      },
+      "sourceText": "The minor in Asian Thought consists of six courses (18 credits), at least three of which (nine credits) must be at the upper-division level. Courses that count toward the minor include the following: AAS 102 - Eastern Religions 3 credits *; AAS 212 - Asian and Asian American Studies Topics in the Humanities 3 credits; AAS 236 - Korean Religions 3 credits; AAS 240 - Confucianism and Daoism 3 credits *; AAS 256 - Hinduism 3 credits *; AAS 260 - Buddhism 3 credits *; AAS 280 - Islam 3 credits *; AAS 287 - Islam in China 3 credits *; AAS 300 - Intellectual History of East Asia 3 credits; AAS 326 - Indian Mythology 3 credits; AAS 366 - Feminine Spirituality 3 credits *; AAS 368 - Yoga: Theory and Praxis 3 credits; AAS 380 - Islamic Classics 3 credits *; AAS 382 - Japanese Buddhism 3 credits *; AAS 387 - Islam and Confucianism 3 credits *; AAS 391 - Humanities Topics in Asian and Asian American Studies 3 credits; AAS 444 - Experiential Learning 0 credit *; AAS 447 - Directed Readings in Asian and Asian American Studies 1-6 credits *; AAS 459 - Write Effectively in Asian and Asian American Studies 0 credit *; AAS 472 - Topics in Asian Philosophy (I) 3 credits; AAS 475 - Undergraduate Teaching Practicum I 3 credits, *. At the discretion of the director of the minor, courses that cover religious topics in other fields (such as HIS and PHI) can also be counted."
+    },
+    {
+      "id": "asian-thought.letter-grade",
+      "label": "letter-grade",
+      "title": "Letter-Grade Credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 12 credits must be taken for a letter grade.",
+        "reason": "No rule type expresses a minimum credit total that must be graded by letter across the minor."
+      },
+      "sourceText": "At least 12 credits must be taken for a letter grade."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "Courses marked with an asterisk (*) are crosslisted with another academic department. Students earn credit toward this requirement by registering for either listing, but may not repeat the course by enrolling a second time under the other option."
+    },
+    {
+      "topic": "other",
+      "text": "AAS 447 carries 1 to 6 credits, so the credit total for the minor depends on the credits taken for that course."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1576",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

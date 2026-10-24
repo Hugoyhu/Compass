@@ -1,0 +1,99 @@
+{
+  "id": "middle-eastern-studies",
+  "name": "Middle Eastern Studies",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "middle-eastern-studies.credits",
+      "label": "credits",
+      "title": "Minor credit total",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 18 credits chosen from courses on the Middle East or Muslim societies",
+        "reason": "The page does not list the eligible course pool. It describes courses on the Middle East or Muslim societies, and the student's individual program is designed with an advisor."
+      },
+      "sourceText": "Completion of the minor requires 18 credits chosen from courses on the Middle East or Muslim societies, of which at least nine credits must be upper-division."
+    },
+    {
+      "id": "middle-eastern-studies.upper-division",
+      "label": "upper-division",
+      "title": "Upper-division credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least nine credits of the 18 minor credits must be upper-division",
+        "reason": "Program-wide upper-division credit minimum. No rule type covers a credit minimum over an undefined course pool."
+      },
+      "sourceText": "of which at least nine credits must be upper-division."
+    },
+    {
+      "id": "middle-eastern-studies.approved-topic",
+      "label": "approved-topic",
+      "title": "Courses in the approved topic",
+      "rule": {
+        "manualCheck": "Verify that the 12 credits are in courses on the student's approved topic area.",
+        "type": "unparsed",
+        "text": "12 credits in courses on the student's approved topic",
+        "reason": "The topic is chosen by the student with the program and is not a fixed course list."
+      },
+      "sourceText": "12 credits in courses on the student's approved topic"
+    },
+    {
+      "id": "middle-eastern-studies.other-topics",
+      "label": "other-topics",
+      "title": "Courses from other minor topic areas",
+      "rule": {
+        "manualCheck": "Verify that the 6 credits are in courses from topic areas other than the approved topic.",
+        "type": "unparsed",
+        "text": "6 credits in courses from other minor topic areas in Middle Eastern studies",
+        "reason": "The page does not define the other topic areas as a fixed course list."
+      },
+      "sourceText": "6 credits in courses from other minor topic areas in Middle Eastern studies"
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "middle-eastern-studies.credits",
+        "middle-eastern-studies.upper-division",
+        "middle-eastern-studies.approved-topic",
+        "middle-eastern-studies.other-topics"
+      ],
+      "sourceText": "All courses offered for the minor must be taken for a letter grade."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "The minor is interdisciplinary. Students design an individual program of study centered on a particular area of concentration in consultation with an advisor. Director of the Minor: Robert Hoberman, Linguistics, Robert.Hoberman@stonybrook.edu, (631) 632-7776, S-213 Social and Behavioral Sciences."
+    },
+    {
+      "topic": "other",
+      "text": "Failure to obtain prior approval of the program may result in denial of credit for the minor."
+    },
+    {
+      "topic": "other",
+      "text": "Suggested sample programs (Near Eastern Religions, Ancient Near East, Middle Eastern Culture and Politics) are examples only. Students should consult an advisor about other possibilities, such as Islamic studies, Middle Eastern history, or Semitic languages and linguistics."
+    },
+    {
+      "topic": "other",
+      "text": "Besides the required courses, it is strongly recommended that students take a year of language related to their chosen topic area. The language courses listed in the sample programs are recommended but not required."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1544",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

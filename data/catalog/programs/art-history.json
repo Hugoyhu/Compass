@@ -1,0 +1,147 @@
+{
+  "id": "art-history",
+  "name": "Art History",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "art-history.lower-division",
+      "label": "lower-division",
+      "title": "Three 100- and/or 200-level ARH courses",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "ARH 106",
+            "ARH 107",
+            "ARH 201",
+            "ARH 202",
+            "ARH 203",
+            "ARH 204",
+            "ARH 205",
+            "ARH 206",
+            "ARH 207",
+            "ARH 208",
+            "ARH 209",
+            "ARH 210"
+          ]
+        }
+      },
+      "sourceText": "Three 100- and/or 200-level ARH courses selected from the following (9 credits): ARH 106 - Art & Science 3 credits; ARH 107 - Art and Medicine 3 credits; ARH 201 - Arts of Africa 3 credits; ARH 202 - Arts of the Ancient World 3 credits; ARH 203 - Arts of Asia 3 credits; ARH 204 - Arts of Europe and the Americas 3 credits; ARH 205 - Introduction to Architecture & Design 3 credits; ARH 206 - Modern Art 3 credits; ARH 207 - Digital Media: History/Theory 3 credits; ARH 208 - History of Photography 3 credits; ARH 209 - Arts of the United States 3 credits; ARH 210 - The Art and Technology of Film 3 credits"
+    },
+    {
+      "id": "art-history.upper-division",
+      "label": "upper-division",
+      "title": "Four 300-level and/or 400-level ARH courses",
+      "rule": {
+        "type": "choose",
+        "count": 4,
+        "from": {
+          "courses": [
+            "ARH 300",
+            "ARH 301",
+            "ARH 302",
+            "ARH 306",
+            "ARH 308",
+            "ARH 315",
+            "ARH 316",
+            "ARH 317",
+            "ARH 321",
+            "ARH 322",
+            "ARH 323",
+            "ARH 325",
+            "ARH 326",
+            "ARH 328",
+            "ARH 329",
+            "ARH 330",
+            "ARH 333",
+            "ARH 334",
+            "ARH 336",
+            "ARH 339",
+            "ARH 344",
+            "ARH 346",
+            "ARH 347",
+            "ARH 348",
+            "ARH 350",
+            "ARH 355",
+            "ARH 390",
+            "ARH 391",
+            "ARH 392",
+            "ARH 393",
+            "ARH 394",
+            "ARH 395",
+            "ARH 396",
+            "ARH 397",
+            "ARH 398",
+            "ARH 400"
+          ]
+        }
+      },
+      "sourceText": "Four 300-level and/or 400-level ARH courses selected from the following (12 credits): ARH 300 - Greek Art and Architecture 3 credits; ARH 301 - Roman Art and Architecture 3 credits; ARH 302 - Ancient Egyptian Art 3 credits; ARH 306 - Italian Renaissance Art 3 credits; ARH 308 - Writing About Art 3 credits; ARH 315 - Art of Spain and Colonial Latin America 3 credits; ARH 316 - Italian Baroque Art 3 credits; ARH 317 - Islamic Art 3 credits; ARH 321 - Women Artists, 1400-1750 3 credits; ARH 322 - American Art Since 1947 3 credits; ARH 323 - History and Methods of Art History 3 credits; ARH 325 - Ancient Middle Eastern Art 3 credits; ARH 326 - Arts of Ancient Mesoamerica 3 credits; ARH 328 - Exhibiting Africa 3 credits; ARH 329 - Arts of the African Diaspora 3 credits; ARH 330 - Public Art and Urban Design in New York City 3 credits; ARH 333 - Arts for the Public 3 credits; ARH 334 - Performance Art I: The European Avant-Garde 3 credits; ARH 336 - The Computer and the Arts 3 credits; ARH 339 - The Art and Science of Astronomy 3 credits; ARH 344 - Performance Art II: World War II to the Present 3 credits; ARH 346 - Art and Politics in the Age of Revolution 3 credits; ARH 347 - Avant-Garde Art: Realism, Impressionism, Post-Impressionism 3 credits; ARH 348 - Contemporary Art 3 credits; ARH 350 - Museum Studies 3 credits; ARH 355 - Modern and Contemporary Korean Art 3 credits; ARH 390 - Topics in European Art 3 credits; ARH 391 - Topics in Global Art 3 credits; ARH 392 - Topics in Modern Art 3 credits; ARH 393 - Topics in Middle Eastern Art 3 credits; ARH 394 - Topics in Asian Art 3 credits; ARH 395 - Topics in Visual Culture 3 credits; ARH 396 - Topics in American Art 3 credits; ARH 397 - Topics in Photography 3 credits; ARH 398 - Topics in Film and Video Art 3 credits; ARH 400 - Seminar in Art History and Criticism 3 credits"
+    },
+    {
+      "id": "art-history.credits",
+      "label": "credits",
+      "title": "Minor credit totals",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21 credits in art history, of which at least twelve credits must be in upper-division courses.",
+        "reason": "Program-wide credit minimums are not expressible with the available rule types"
+      },
+      "sourceText": "Completion of the minor requires 21 credits in art history, of which at least twelve credits must be in upper-division courses."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "art-history.lower-division",
+        "art-history.upper-division",
+        "art-history.credits"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "art-history.lower-division",
+        "art-history.upper-division",
+        "art-history.credits"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 6,
+      "appliesTo": [
+        "art-history.upper-division"
+      ],
+      "sourceText": "Art History transfer students must take at least 6 upper division ARH credits for the minor at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "The residency requirement of at least 6 upper-division ARH credits at Stony Brook applies to transfer students only. Transfer status cannot be checked from a transcript; confirm it with the department."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1356",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

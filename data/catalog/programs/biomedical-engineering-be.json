@@ -1,0 +1,716 @@
+{
+  "id": "biomedical-engineering-be",
+  "name": "Biomedical Engineering, BE",
+  "kind": "major",
+  "degree": "Bachelor of Engineering in Biomedical Engineering",
+  "approxCredits": 128,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "biomedical-engineering-be.1",
+      "label": "1",
+      "title": "Mathematics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "biomedical-engineering-be.1.calc",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 161"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 127"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 132"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 261"
+              },
+              {
+                "type": "course",
+                "code": "MAT 203"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 361"
+              },
+              {
+                "type": "course",
+                "code": "MAT 303"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "AMS 210"
+          },
+          {
+            "id": "biomedical-engineering-be.1.bme210",
+            "type": "course",
+            "code": "BME 210"
+          }
+        ]
+      },
+      "sourceText": "AMS 151 - Applied Calculus I; AMS 161 - Applied Calculus II; Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161: MAT 125, MAT 126, MAT 127 or MAT 131, MAT 132; AMS 261 - Applied Calculus III OR MAT 203 - Calculus III with Applications; AMS 361 - Applied Calculus IV: Differential Equations OR MAT 303 - Calculus IV with Applications; AMS 210 - Applied Linear Algebra; BME 210 - Applied Biostatistics"
+    },
+    {
+      "id": "biomedical-engineering-be.2",
+      "label": "2",
+      "title": "Natural Sciences",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "id": "biomedical-engineering-be.2.bio202",
+                "type": "course",
+                "code": "BIO 202"
+              },
+              {
+                "type": "course",
+                "code": "BIO 204"
+              }
+            ]
+          },
+          {
+            "id": "biomedical-engineering-be.2.che",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 132"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CHE 152"
+              }
+            ]
+          },
+          {
+            "id": "biomedical-engineering-be.2.phy",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 127"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 142"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "BIO 202 - Fundamentals of Biology: Molecular and Cellular Biology AND BIO 204 - Fundamentals of Scientific Inquiry in the Biological Sciences I; CHE 131 - General Chemistry IB, CHE 132 - General Chemistry II OR CHE 152 - Molecular Science I; PHY 131 - Classical Physics I, PHY 133 - Classical Physics Laboratory I, PHY 132 - Classical Physics II, PHY 134 - Classical Physics Laboratory II. Note: The following alternate physics course sequences may be substituted for PHY 131/PHY 133, PHY 132/PHY 134: PHY 125, PHY 126, PHY 127, PHY 133, PHY 134 Classical Physics A, B, C and Laboratories or PHY 141, PHY 142, PHY 133, PHY 134 Classical Physics I, II: Honors"
+    },
+    {
+      "id": "biomedical-engineering-be.3",
+      "label": "3",
+      "title": "Computers and Programming",
+      "rule": {
+        "type": "course",
+        "code": "BME 120"
+      },
+      "sourceText": "BME 120 - Programming Fundamentals in Biomedical Engineering 3 credits"
+    },
+    {
+      "id": "biomedical-engineering-be.4",
+      "label": "4",
+      "title": "Biomedical Engineering",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BME 100"
+          },
+          {
+            "type": "course",
+            "code": "BME 203"
+          },
+          {
+            "type": "course",
+            "code": "BME 260"
+          },
+          {
+            "type": "course",
+            "code": "BME 271"
+          },
+          {
+            "type": "course",
+            "code": "BME 353"
+          },
+          {
+            "type": "course",
+            "code": "BME 361"
+          },
+          {
+            "type": "course",
+            "code": "BME 402"
+          },
+          {
+            "type": "course",
+            "code": "BME 430"
+          },
+          {
+            "type": "course",
+            "code": "BME 440"
+          },
+          {
+            "type": "course",
+            "code": "BME 441"
+          }
+        ]
+      },
+      "sourceText": "BME 100 - Introduction to Biomedical Engineering; BME 203 - Emergent Biodesign; BME 260 - Statics and Dynamics in Biological Systems; BME 271 - Introduction to Electric Circuits and Bioelectricity; BME 353 - Introduction to Biomaterials; BME 361 - Data Science with Python; BME 402 - Contemporary Biotechnology; BME 430 - Quantitative Human Physiology; BME 440 - Biomedical Engineering Design; BME 441 - Senior Design Project in Biomedical Engineering"
+    },
+    {
+      "id": "biomedical-engineering-be.5",
+      "label": "5",
+      "title": "Technical Electives",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "biomedical-engineering-be.5.design",
+            "sourceText": "At least two of the following: BME 311, BME 312, BME 313, BME 314, BME 354, BME 381, BME 404, BME 420, BME 481 (BME Technical Design Courses)",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "courses": [
+                "BME 311",
+                "BME 312",
+                "BME 313",
+                "BME 314",
+                "BME 354",
+                "BME 381",
+                "BME 404",
+                "BME 420",
+                "BME 481"
+              ]
+            }
+          },
+          {
+            "id": "biomedical-engineering-be.5.electives",
+            "sourceText": "At least three of the following BME Technical Elective Courses: BME 301, BME 303, BME 304, BME 305, BME 310, BME 314, BME 340, BME 371, BME 404, BME 461",
+            "type": "choose",
+            "count": 3,
+            "from": {
+              "courses": [
+                "BME 301",
+                "BME 303",
+                "BME 304",
+                "BME 305",
+                "BME 310",
+                "BME 314",
+                "BME 340",
+                "BME 371",
+                "BME 404",
+                "BME 461"
+              ],
+              "excludeUsedBy": [
+                "biomedical-engineering-be.5.design"
+              ]
+            }
+          },
+          {
+            "type": "unparsed",
+            "text": "Biomedical engineering students must complete at least 30 credits of electives at the 300 or 400 level including at least two 3-credit design technical elective courses with a BME designation. Three technical elective courses must be BME courses (not BME 476, BME 488 or BME 499). BME 476, BME 488 and BME 499 may be taken as an additional technical elective for a total of 6 credits.",
+            "reason": "Total-credit, level, and BME-designation rule across pools cannot be checked by a single choose; BME 476, BME 488 and BME 499 are not in the listed pools."
+          },
+          {
+            "type": "unparsed",
+            "text": "Non BME Technical Electives: not more than five courses (15 credits) may be taken from the non-BME list (AMS 311, AMS 332, AMS 333, BIO 310, BIO 320, BIO 325, BIO 328, BIO 361, BIO 362, BIO 365, CHE 312, CHE 321, CHE 322, CHE 327, CHE 346, CHE 353, CSE 332, CSE 377, ESG 302, ESG 332, ESM 325, ESM 335, ESM 450, ESE 305, ESE 306, ESE 315, ESE 324, MEC 310, MEC 320, MEC 363, MEC 402, MEC 410, MEC 411, MEC 455). While more may be taken, they cannot replace the BME design plus BME technical elective courses.",
+            "reason": "A cap on a non-BME course pool with no stated required count cannot be expressed as a choose rule."
+          }
+        ]
+      },
+      "sourceText": "Biomedical engineering students must complete at least 30 credits of electives at the 300 or 400 level including at least two 3- credit design technical elective courses with a BME designation. Three technical elective courses must be BME courses (not BME 476, BME 488 or BME 499). BME 476, BME 488 and BME 499 may be taken as an additional technical elective for a total of 6 credits. BME Technical Design Courses: At least two of the following. BME Technical Elective Courses: At least three of the following. Non BME Technical Electives: Not more than five courses (15 credits) may be taken from this list (while more may be taken, they cannot replace the BME design plus BME technical elective courses)."
+    },
+    {
+      "id": "biomedical-engineering-be.6",
+      "label": "6",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "course",
+        "code": "BME 302"
+      },
+      "sourceText": "All degree candidates must demonstrate skill in written English at a level acceptable for engineering majors. BME 302 - Research Fundamentals and Communication 3 credits"
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "biomedical-engineering-be.1",
+        "biomedical-engineering-be.2",
+        "biomedical-engineering-be.3",
+        "biomedical-engineering-be.4",
+        "biomedical-engineering-be.5",
+        "biomedical-engineering-be.6"
+      ],
+      "sourceText": "All courses taken to satisfy 1 through 6 above must be taken for a letter grade."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "biomedical-engineering-be.1.calc",
+        "biomedical-engineering-be.1.bme210",
+        "biomedical-engineering-be.2.bio202",
+        "biomedical-engineering-be.2.che",
+        "biomedical-engineering-be.2.phy",
+        "biomedical-engineering-be.3",
+        "biomedical-engineering-be.4",
+        "biomedical-engineering-be.5.design",
+        "biomedical-engineering-be.5.electives",
+        "biomedical-engineering-be.6"
+      ],
+      "sourceText": "A grade of C or higher is required in the following courses: AMS 151, AMS 161 or equivalent; BIO 202; CHE 131, CHE 132 or equivalent; PHY 131/PHY 133, PHY 132/PHY 134 or equivalent; all BME courses."
+    },
+    {
+      "type": "minGpa",
+      "gpa": 2.5,
+      "appliesTo": [
+        "biomedical-engineering-be.3",
+        "biomedical-engineering-be.4",
+        "biomedical-engineering-be.5"
+      ],
+      "sourceText": "The grade point average for all required BME courses and all technical electives must be at least a 2.5 to graduate."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BME 100",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 151",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 133",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "BME 120",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 161",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 134",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BME 210",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 202",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 261",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "BIO 204",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "AMS 210",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BME 203",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BME 361",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 361",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "BME 260",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BME 271",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BME 302",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BME 353",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "BME Technical Elective 1 (design)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "BME Technical Elective 2 (design)",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BME 402",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BME 430",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "BME Technical Elective 3",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "BME Technical Elective 4",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BME 440",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "BME Technical Elective 5",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective 6",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective 7",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BME 441",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective 8",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective 9",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective 10",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "AOI and other CEAS students are admitted if they have completed AMS 161 and PHY 132/PHY 134 or equivalents; earned 10 or more credits of mathematics, physics and engineering courses taken at Stony Brook that satisfy the major's requirements; earned a GPA of at least 3.0 in major courses with no more than one grade below B-; repeated no more than two required courses; and submitted course evaluations for all transferred courses used toward the major. Applications are due January 5 (Spring) and June 5 (Fall). Non-CEAS students and double major applicants follow a separate, competitive process."
+    },
+    {
+      "topic": "advising",
+      "text": "The technical electives and additional courses are chosen in consultation with a faculty advisor."
+    },
+    {
+      "topic": "grading",
+      "text": "The curriculum culminates in a one-year design experience (BME 440 and BME 441)."
+    },
+    {
+      "topic": "other",
+      "text": "Honors Program in Biomedical Engineering: students may apply at the end of the sophomore year with a cumulative GPA of at least 3.50 and a B or better in all major required courses (including math and physics). Graduation with departmental honors requires a 3.50 GPA, BME 494 (1 credit seminar) and BME 495 (3-credit honors research project) with a B or better, and an approved honors thesis."
+    },
+    {
+      "topic": "other",
+      "text": "The accelerated BE/MS degree is a separate program with its own application through the BME Graduate Program Director during the junior year; it is not modeled here."
+    },
+    {
+      "topic": "sbc",
+      "text": "BME 440 partially satisfies the ESI, CER, SPK, WRTD, SBS+, STEM+ and EXP+ SBC categories, and BME 441 partially satisfies the same categories. For more information contact the CEAS Undergraduate Student Office. One SBC must fulfill two objectives."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1381",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "finance",
+  "name": "Finance",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "finance.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ACC 210"
+          },
+          {
+            "type": "course",
+            "code": "BUS 230"
+          },
+          {
+            "type": "course",
+            "code": "BUS 330"
+          }
+        ]
+      },
+      "sourceText": "Required Courses: ACC 210 - Financial Accounting 3 credits; BUS 230 - Personal Finance 3 credits; BUS 330 - Principles of Finance 3 credits"
+    },
+    {
+      "id": "finance.electives",
+      "label": "electives",
+      "title": "Electives",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "ACC 214",
+            "BUS 355",
+            "BUS 365",
+            "BUS 367"
+          ]
+        }
+      },
+      "sourceText": "Electives: Choose 3 courses (9 credits) from the below electives: ACC 214 - Managerial Cost Analysis and Applications 3 credits; BUS 355 - Investment Analysis 3 credits; BUS 365 - Financial Management 3 credits; BUS 367 - Python for Finance 3 credits"
+    },
+    {
+      "id": "finance.transfer-credit",
+      "label": "transfer-credit",
+      "title": "Transfer Credit Policy",
+      "rule": {
+        "type": "unparsed",
+        "text": "Students may apply a maximum of nine transfer credits toward the Finance Minor.",
+        "reason": "A cap on transfer credits toward the minor is not a rule type the audit engine evaluates"
+      },
+      "sourceText": "Transfer Credit Policy: Students may apply a maximum of nine transfer credits toward the Finance Minor."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "finance.required-courses",
+        "finance.electives"
+      ],
+      "sourceText": "All courses must be taken for a letter grade and passed with a grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "finance.required-courses",
+        "finance.electives"
+      ],
+      "sourceText": "All courses must be taken for a letter grade and passed with a grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students may apply to the finance minor at any time during their academic career provided that their cumulative grade point average is 3.20 or higher. This is available to non-business majors only."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1570",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

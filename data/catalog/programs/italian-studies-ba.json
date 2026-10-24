@@ -1,0 +1,478 @@
+{
+  "id": "italian-studies-ba",
+  "name": "Italian Studies, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Italian Studies",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "italian-studies-ba.concentration",
+      "label": "concentration",
+      "title": "Concentration A or Concentration B",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "italian-studies-ba.concentration.a",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ITL 211"
+              },
+              {
+                "type": "course",
+                "code": "ITL 212"
+              },
+              {
+                "type": "course",
+                "code": "ITL 311"
+              },
+              {
+                "type": "course",
+                "code": "ITL 312"
+              },
+              {
+                "type": "course",
+                "code": "ITL 395"
+              },
+              {
+                "type": "course",
+                "code": "ITL 396"
+              },
+              {
+                "type": "course",
+                "code": "ITL 411"
+              },
+              {
+                "type": "course",
+                "code": "ITL 412"
+              },
+              {
+                "manualCheck": "Up to three of these six courses may be relevant HUI courses substituted in consultation with the program coordinator. HUI courses are not listed in the pool, so the audit cannot verify them; confirm the substitution with the coordinator.",
+                "type": "choose",
+                "count": 6,
+                "from": {
+                  "subjects": [
+                    "ITL"
+                  ],
+                  "minNumber": 400,
+                  "maxNumber": 499
+                }
+              }
+            ]
+          },
+          {
+            "id": "italian-studies-ba.concentration.b",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ITL 211"
+              },
+              {
+                "type": "course",
+                "code": "ITL 212"
+              },
+              {
+                "type": "course",
+                "code": "ITL 311"
+              },
+              {
+                "type": "course",
+                "code": "ITL 312"
+              },
+              {
+                "type": "course",
+                "code": "ITL 395"
+              },
+              {
+                "type": "course",
+                "code": "ITL 396"
+              },
+              {
+                "type": "course",
+                "code": "ITL 411"
+              },
+              {
+                "type": "course",
+                "code": "ITL 412"
+              },
+              {
+                "manualCheck": "Chosen in consultation with the program coordinator. All four must be numbered 300 or higher.",
+                "type": "choose",
+                "count": 4,
+                "from": {
+                  "subjects": [
+                    "ITL",
+                    "HUI"
+                  ],
+                  "minNumber": 300
+                }
+              },
+              {
+                "manualCheck": "Verify the discipline is other than Italian, the courses were approved by the Department, and at least three are numbered 300 or higher.",
+                "type": "unparsed",
+                "text": "Four additional courses in a discipline other than Italian chosen in consultation with the program coordinator and approved by the Department, of which three must be numbered 300 or higher.",
+                "reason": "The pool is every course outside Italian, which cannot be expressed as a subject filter; the discipline also requires Department approval."
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Students must complete Concentration A or Concentration B. A. Concentration in Language and Literature. Required courses: ITL 211, ITL 212, ITL 311, ITL 312, ITL 395, ITL 396, ITL 411, ITL 412. Elective courses: Six additional ITL courses at the 400-level. In consultation with the program coordinator, up to three of these courses may be substituted with relevant HUI courses. B. Concentration in Italian and a Second Discipline. Required courses: ITL 211, ITL 212, ITL 311, ITL 312, ITL 395, ITL 396, ITL 411, ITL 412. Elective courses: Four additional ITL or HUI courses chosen in consultation with the program coordinator, of which 4 must be numbered 300 or higher; Four additional courses in a discipline other than Italian chosen in consultation with the program coordinator and approved by the Department, of which three must be numbered 300 or higher."
+    },
+    {
+      "id": "italian-studies-ba.uwr",
+      "label": "uwr",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Dossier of a minimum of two papers of at least three to five pages each, written in English, submitted to the ITL Program Coordinator before the end of the second semester of the junior year. A faculty committee judges it; an unsatisfactory dossier must be rewritten and resubmitted in the senior year.",
+        "type": "course",
+        "code": "ITL 459"
+      },
+      "sourceText": "To demonstrate proficiency in writing English, students majoring in Italian must register for the 0-credit ITL 459 and present a dossier of a minimum of two papers of at least three to five pages each. The dossier must be submitted before the end of the second semester of the junior year to the ITL Program Coordinator."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "italian-studies-ba.concentration",
+        "italian-studies-ba.uwr"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "italian-studies-ba.concentration",
+        "italian-studies-ba.uwr"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 18,
+      "appliesTo": [
+        "italian-studies-ba.concentration"
+      ],
+      "sourceText": "Transfer students must take at least 18 credits of the major language in residence at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ITL 211",
+          "alternatives": [
+            "ITL 201"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "HUI or ITL elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ITL 311",
+          "alternatives": [
+            "ITL 212"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ITL 395",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "HUI or ITL elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ITL 396",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ITL 411",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ITL Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ITL 412",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "HUI or ITL Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "ITL Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "HUI or ITL Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ITL 432",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "HUI or ITL Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ITL Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ITL Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ITL 495",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ITL Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students who have studied Italian previously are encouraged to take the Italian Placement Exam offered through the Language Learning Research Center. High school language study is not counted for college credit. Students should consult the ITL Program Coordinator if they believe they should be placed in a different level course."
+    },
+    {
+      "topic": "other",
+      "text": "Completion of the major requires 36-42 credits for Concentration A and 42-48 credits for Concentration B, depending on language placement."
+    },
+    {
+      "topic": "other",
+      "text": "Students opting for Concentration B must obtain Departmental approval for their program by submitting it in advance, after consultation with the advisor, to the director of undergraduate studies."
+    },
+    {
+      "topic": "other",
+      "text": "The residency requirement of at least 18 credits of the major language in residence at Stony Brook applies to transfer students only. The policy shown is not conditioned on transfer status, so check transfer students manually."
+    },
+    {
+      "topic": "advising",
+      "text": "All students should consult with the Coordinator of the Italian program."
+    },
+    {
+      "topic": "other",
+      "text": "Italian Honors Program (not evaluated): majors need a cumulative GPA of 3.00 and a 3.50 average in Italian through the junior year. Honors students write a senior thesis and enroll in ITL 495. Proposal deadlines are April 30 for fall and November 30 for spring."
+    },
+    {
+      "topic": "other",
+      "text": "Foreign Language Secondary Teacher Education Program (not evaluated): see the Education and Teacher Certification entry in the alphabetical listings of Approved Majors, Minors, and Programs."
+    },
+    {
+      "topic": "sbc",
+      "text": "Students completing the Stony Brook Curriculum must complete a course that satisfies the WRTD learning objective. The Upper Division Writing Requirement is consistent in most cases with the SBC learning outcomes for WRTD."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1480",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

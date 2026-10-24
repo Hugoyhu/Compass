@@ -1,0 +1,131 @@
+{
+  "id": "english",
+  "name": "English",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "english.required-204",
+      "label": "required-204",
+      "title": "Required Course: Literary Analysis and Argumentation",
+      "rule": {
+        "type": "course",
+        "code": "EGL 204"
+      },
+      "sourceText": "EGL 204 - Literary Analysis and Argumentation 3 credits"
+    },
+    {
+      "id": "english.200-level",
+      "label": "200-level",
+      "title": "Two 200-level English courses",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "subjects": [
+            "EGL"
+          ],
+          "minNumber": 200,
+          "maxNumber": 299
+        }
+      },
+      "sourceText": "Two 200-level English courses"
+    },
+    {
+      "id": "english.300-level",
+      "label": "300-level",
+      "title": "Two 300-level English courses",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "subjects": [
+            "EGL"
+          ],
+          "minNumber": 300,
+          "maxNumber": 399
+        }
+      },
+      "sourceText": "Two 300-level English courses"
+    },
+    {
+      "id": "english.100-300-level",
+      "label": "100-300-level",
+      "title": "One English course at the 100-300 level",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "subjects": [
+            "EGL"
+          ],
+          "minNumber": 100,
+          "maxNumber": 300
+        }
+      },
+      "sourceText": "One English course at the 100-300 level"
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "english.required-204",
+        "english.200-level",
+        "english.300-level",
+        "english.100-300-level"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "english.required-204",
+        "english.200-level",
+        "english.300-level",
+        "english.100-300-level"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyRequired",
+      "appliesTo": [
+        "english.required-204",
+        "english.300-level"
+      ],
+      "sourceText": "At minimum, EGL 204, an EGL survey, and a 300-level EGL course must be taken at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "Completion of the minor requires 18 credits."
+    },
+    {
+      "topic": "other",
+      "text": "The residency note requires EGL 204, an EGL survey, and a 300-level EGL course to be taken at Stony Brook. The page does not identify which courses count as an EGL survey, so the survey residency requirement must be checked manually."
+    },
+    {
+      "topic": "advising",
+      "text": "Undergraduate Advisor: Charles Edwards. Director of Undergraduate Studies: Justin Johnston."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1442",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

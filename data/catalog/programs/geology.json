@@ -1,0 +1,128 @@
+{
+  "id": "geology",
+  "name": "Geology",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 20,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "geology.intro",
+      "label": "intro",
+      "title": "Introductory Geology",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "GEO 103"
+              },
+              {
+                "type": "course",
+                "code": "GEO 113"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "GEO 122"
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "GEO 102"
+              },
+              {
+                "type": "course",
+                "code": "GEO 112"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "GEO 103 - The Earth Through Time 3 credits AND GEO 113 - Historical Geology Laboratory 1 credit; GEO 122 - Physical Geology 4 credits OR GEO 102 - The Earth 3 credits AND GEO 112 - Physical Geology Laboratory 1 credit"
+    },
+    {
+      "id": "geology.upper",
+      "label": "upper",
+      "title": "Additional Upper-Division Geology Courses",
+      "rule": {
+        "sourceText": "Twelve additional credits from among GEO courses numbered 300 or higher. Courses must be approved by a departmental advisor.",
+        "manualCheck": "Courses must be approved by a departmental advisor.",
+        "type": "choose",
+        "credits": 12,
+        "from": {
+          "subjects": [
+            "GEO"
+          ],
+          "minNumber": 300
+        }
+      },
+      "sourceText": "Twelve additional credits from among GEO courses numbered 300 or higher. Courses must be approved by a departmental advisor."
+    },
+    {
+      "id": "geology.total",
+      "label": "total",
+      "title": "Total Minor Credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 20 credits.",
+        "reason": "Program-wide credit total. The itemized requirements add to 16 credits (4 + 4 + 12), so the 20-credit total does not reconcile with the listed items and must be checked by an advisor."
+      },
+      "sourceText": "Completion of the minor requires 20 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "geology.intro",
+        "geology.upper"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "geology.intro",
+        "geology.upper"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students must have a departmental advisor approve courses used for the 12 upper-division credits. Major Advisor: Marine Frouin, Marine.Frouin@stonybrook.edu."
+    },
+    {
+      "topic": "other",
+      "text": "Students majoring in Earth and Space Sciences may declare the Geology Minor. However, these students cannot also follow a Geology concentration for the Earth and Space Sciences Major."
+    },
+    {
+      "topic": "other",
+      "text": "For students majoring in other areas who are interested in obtaining a fundamental understanding of the earth sciences, a minor concentration in Geology is available. The Geology minor acquaints students with earth materials, the origin and evolution of life on earth, and physical processes that have shaped the earth through time."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1461",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

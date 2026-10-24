@@ -1,0 +1,753 @@
+{
+  "id": "physics-bs",
+  "name": "Physics, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Physics",
+  "approxCredits": 65,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "physics-bs.physics",
+      "label": "physics",
+      "title": "Courses in Physics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHY 131"
+          },
+          {
+            "type": "course",
+            "code": "PHY 133"
+          },
+          {
+            "type": "course",
+            "code": "PHY 132"
+          },
+          {
+            "type": "course",
+            "code": "PHY 134"
+          },
+          {
+            "type": "course",
+            "code": "PHY 251"
+          },
+          {
+            "type": "course",
+            "code": "PHY 252"
+          },
+          {
+            "type": "course",
+            "code": "PHY 277"
+          },
+          {
+            "type": "course",
+            "code": "PHY 300"
+          },
+          {
+            "type": "course",
+            "code": "PHY 301"
+          },
+          {
+            "type": "course",
+            "code": "PHY 303"
+          },
+          {
+            "type": "course",
+            "code": "PHY 306"
+          },
+          {
+            "type": "course",
+            "code": "PHY 308"
+          },
+          {
+            "type": "course",
+            "code": "PHY 335"
+          },
+          {
+            "type": "course",
+            "code": "PHY 445"
+          }
+        ]
+      },
+      "sourceText": "PHY 131 - Classical Physics I 3 credits (See Note 1); PHY 133 - Classical Physics Laboratory I 1 credit (See Note 1); PHY 132 - Classical Physics II 3 credits (See Note 1); PHY 134 - Classical Physics Laboratory II 1 credit (See Note 1); PHY 251 - Modern Physics 3 credits; PHY 252 - Modern Physics Laboratory 1 credit; PHY 277 - Computation for Physics and Astronomy 3 credits; PHY 300 - Waves and Optics 4 credits; PHY 301 - Electromagnetic Theory I 3 credits; PHY 303 - Mechanics 3 credits; PHY 306 - Thermodynamics, Kinetic Theory, and Statistical Mechanics 3 credits; PHY 308 - Quantum Physics 3 credits; PHY 335 - Electronics and Instrumentation Laboratory 3 credits; PHY 445 - Senior Laboratory 3 credits"
+    },
+    {
+      "id": "physics-bs.calculus",
+      "label": "calculus",
+      "title": "Calculus sequence (one of the following)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 126"
+              },
+              {
+                "type": "course",
+                "code": "MAT 127"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "MAT 132"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 141"
+              },
+              {
+                "type": "course",
+                "code": "MAT 142"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MAT 171"
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 151"
+              },
+              {
+                "type": "course",
+                "code": "AMS 161"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "One of the following sequences: MAT 125 - Calculus A; MAT 126 - Calculus B; MAT 127 - Calculus C; OR MAT 131 - Calculus I; MAT 132 - Calculus II; OR MAT 141 - Honors Calculus I; MAT 142 - Honors Calculus II; OR MAT 171 - Accelerated Single Variable Calculus; OR AMS 151 - Applied Calculus I; AMS 161 - Applied Calculus II. Note: Equivalency for MAT courses achieved on the Mathematics Placement Examination is accepted as fulfillment of the corresponding requirements, as indicated in the Course Descriptions section of this Bulletin."
+    },
+    {
+      "id": "physics-bs.placement-math",
+      "label": "placement-math",
+      "title": "Placement-dependent MAT 123",
+      "rule": {
+        "manualCheck": "Check the math placement result. If the student did not place into MAT 125 or MAT 131, MAT 123 (or MAT 119 and MAT 123) is required.",
+        "type": "unparsed",
+        "text": "If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major.",
+        "reason": "Requirement depends on the placement examination result, which is not on a transcript."
+      },
+      "sourceText": "If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major."
+    },
+    {
+      "id": "physics-bs.math-multivariable",
+      "label": "math-multivariable",
+      "title": "Multivariable calculus (one of the following)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 203"
+          },
+          {
+            "type": "course",
+            "code": "AMS 261"
+          },
+          {
+            "type": "course",
+            "code": "MAT 307"
+          }
+        ]
+      },
+      "sourceText": "One of the following: MAT 203 - Calculus III with Applications 4 credits; OR AMS 261 - Applied Calculus III 4 credits; OR MAT 307 - Multivariable Calculus with Linear Algebra 4 credits"
+    },
+    {
+      "id": "physics-bs.math-diffeq",
+      "label": "math-diffeq",
+      "title": "Differential equations (one of the following)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 303"
+          },
+          {
+            "type": "course",
+            "code": "AMS 361"
+          },
+          {
+            "type": "course",
+            "code": "MAT 308"
+          }
+        ]
+      },
+      "sourceText": "One of the following: MAT 303 - Calculus IV with Applications 4 credits; OR AMS 361 - Applied Calculus IV: Differential Equations 4 credits; OR MAT 308 - Differential Equations with Linear Algebra 4 credits"
+    },
+    {
+      "id": "physics-bs.math-linear-algebra",
+      "label": "math-linear-algebra",
+      "title": "Linear algebra (one of the following)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 211"
+          },
+          {
+            "type": "course",
+            "code": "AMS 210"
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 307"
+              },
+              {
+                "type": "course",
+                "code": "MAT 308"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "One of the following: MAT 211 - Introduction to Linear Algebra 3 credits; OR AMS 210 - Applied Linear Algebra 3 credits; OR MAT 307 - Multivariable Calculus with Linear Algebra 4 credits AND MAT 308 - Differential Equations with Linear Algebra 4 credits"
+    },
+    {
+      "id": "physics-bs.related-fields",
+      "label": "related-fields",
+      "title": "Courses in Related Fields (12 credits)",
+      "rule": {
+        "manualCheck": "The catalog also allows unlisted courses: many 200- and 300-level courses in ESE, ESM, GEO, MAR, MEC, BME and other listed areas, other 300-level courses noted after several entries, courses required by a minor, second major or master's program, and any course the Director of Undergraduate Studies approves. These cannot be checked from the listed codes alone.",
+        "type": "choose",
+        "credits": 12,
+        "from": {
+          "courses": [
+            "AMS 102",
+            "AMS 110",
+            "AMS 301",
+            "AMS 303",
+            "AMS 310",
+            "AMS 311",
+            "AMS 315",
+            "AMS 332",
+            "AMS 335",
+            "AMS 345",
+            "AMS 351",
+            "AST 203",
+            "AST 205",
+            "AST 287",
+            "AST 341",
+            "AST 346",
+            "AST 347",
+            "AST 443",
+            "AST 447",
+            "AST 487",
+            "ATM 205",
+            "ATM 247",
+            "ATM 305",
+            "ATM 320",
+            "ATM 345",
+            "ATM 346",
+            "ATM 348",
+            "ATM 397",
+            "ATM 447",
+            "ATM 487",
+            "BIO 201",
+            "BIO 202",
+            "BIO 203",
+            "BIO 204",
+            "BIO 205",
+            "BIO 207",
+            "BIO 310",
+            "BIO 311",
+            "BIO 332",
+            "BME 100",
+            "BME 212",
+            "BME 260",
+            "CHE 131",
+            "CHE 132",
+            "CHE 133",
+            "CHE 134",
+            "CHE 152",
+            "CHE 154",
+            "CHE 301",
+            "CHE 302",
+            "CHE 321",
+            "CHE 322",
+            "CHE 351",
+            "CHE 375",
+            "CSE 110",
+            "CSE 130",
+            "CSE 150",
+            "CSE 230",
+            "ECO 303",
+            "ECO 305",
+            "ECO 310",
+            "ECO 321",
+            "ECO 355",
+            "ECO 373",
+            "ESG 302",
+            "EST 291",
+            "EST 320",
+            "EST 392",
+            "EST 393",
+            "EST 499",
+            "GEO 287",
+            "HBM 320",
+            "HBM 321",
+            "ISE 332",
+            "JRN 365",
+            "MAT 310",
+            "MAT 312",
+            "MAT 331",
+            "MAT 333",
+            "MAT 341",
+            "MAT 342",
+            "MAT 351",
+            "MAT 362",
+            "WSE 201",
+            "WSE 380",
+            "WSE 381",
+            "WSE 401"
+          ]
+        }
+      },
+      "sourceText": "Twelve credits of physics-related courses that complement a Physics major's education are required. ... Additional related courses are listed below, but they are not exclusive. If another course is of interest and should qualify under the above goals, consult the undergraduate program director to see if it can be included."
+    },
+    {
+      "id": "physics-bs.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Confirm the student completed a writing project within the major, approved by the supervisor and the undergraduate program director. Satisfaction is certified independently of the course grade and is best completed in the junior year.",
+        "type": "course",
+        "code": "PHY 459"
+      },
+      "sourceText": "Students are certified as satisfying the upper-division writing requirement by registering for the 0-credit PHY 459 and completing a writing project within their major."
+    },
+    {
+      "id": "physics-bs.residency-300",
+      "label": "residency-300",
+      "title": "Stony Brook residency for 300-level courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least four courses numbered 300 or above must be taken at Stony Brook.",
+        "reason": "Course-count residency for upper-level courses is not expressible with the available residency policies, which take credit minimums."
+      },
+      "sourceText": "At least four courses numbered 300 or above must be taken at Stony Brook."
+    },
+    {
+      "id": "physics-bs.c-minus-allowance",
+      "label": "c-minus-allowance",
+      "title": "C- allowance for lower-division courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "All courses used to satisfy the major requirements must be completed with a grade of C or higher, except that a maximum of three courses at the 100- or 200-level may be completed with a grade of C-.",
+        "reason": "The grade minimum policy cannot express a cap on the number of C- grades allowed at the 100- or 200-level."
+      },
+      "sourceText": "All courses used to satisfy the major requirements must be completed with a grade of C or higher, except that a maximum of three courses at the 100- or 200-level may be completed with a grade of C-."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "physics-bs.physics",
+        "physics-bs.calculus",
+        "physics-bs.placement-math",
+        "physics-bs.math-multivariable",
+        "physics-bs.math-diffeq",
+        "physics-bs.math-linear-algebra",
+        "physics-bs.related-fields"
+      ],
+      "sourceText": "All courses used to satisfy the major requirements must be completed with a grade of C or higher, except that a maximum of three courses at the 100- or 200-level may be completed with a grade of C-."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "physics-bs.sub.intro-sequence",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "PHY 131",
+          "PHY 133",
+          "PHY 132",
+          "PHY 134"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "Either PHY 125, PHY 126, PHY 127 with labs PHY 133 and PHY 134, or PHY 141/PHY 133 with PHY 142/PHY 134 (PHY 127 may be taken before PHY 126).",
+        "reason": "The substitute is one of two alternative course sets, which cannot be expressed as a single substitution with the allowed nested rule types."
+      },
+      "requiresApproval": false,
+      "sourceText": "The sequence PHY 125, PHY 126, PHY 127 with labs PHY 133 and PHY 134 or PHY 141/PHY 133, PHY 142/PHY 134 may substitute for PHY 131/PHY 133, PHY 132/PHY 134. PHY 127 may be taken before PHY 126."
+    },
+    {
+      "id": "physics-bs.sub.ast-443",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "PHY 445"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "AST 443"
+      },
+      "requiresApproval": false,
+      "sourceText": "AST 443 may substitute for PHY 445."
+    },
+    {
+      "id": "physics-bs.sub.bme-120",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "PHY 277"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "BME 120"
+      },
+      "condition": "PHY/BME double majors who graduate with a BE in Biomedical Engineering",
+      "requiresApproval": false,
+      "sourceText": "PHY/BME double majors who graduate with a BE in Biomedical Engineering may substitute BME 120 for PHY 277."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 133",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 134",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHY 251",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 252",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "PHY 277",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 307",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHY 300",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "MAT 308",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHY 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 303",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "PHY-related elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 341",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHY 306",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 308",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 335",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 342",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHY 487",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "PHY elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "PHY-related elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHY 445",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "PHY elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "PHY-related elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "PHY-related elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "grading",
+      "text": "All courses used to satisfy the major requirements must be completed with a grade of C or higher, except that a maximum of three courses at the 100- or 200-level may be completed with a grade of C-."
+    },
+    {
+      "topic": "other",
+      "text": "Completion of the major requires approximately 65 credits."
+    },
+    {
+      "topic": "other",
+      "text": "PHY/CSE double majors who graduate with a BS in Computer Science are exempt from PHY 277."
+    },
+    {
+      "topic": "other",
+      "text": "Physics Honors Program (not evaluated): to receive the BS in Physics with honors, a student must complete PHY 487 - Research (0-6 credits, at least 3 credits total), two other 400-level physics courses (three credits each, excluding PHY 475), and an overall GPA of at least 3.30 in all physics courses numbered 300 or higher."
+    },
+    {
+      "topic": "other",
+      "text": "Specialization in Optics (optional, not evaluated): PHY 302, PHY 452, at least three credits of PHY 487 (optics related), and one additional elective (PHY 405 or an approved course from another department). Listed on the official transcript."
+    },
+    {
+      "topic": "other",
+      "text": "The Physics Secondary Teacher Education Program is described under the Education and Teacher Certification entry in the alphabetical listings of Approved Majors, Minors, and Programs."
+    },
+    {
+      "topic": "advising",
+      "text": "Students should consult with the department advisor to ensure that their plan for completing the Upper Division Writing Requirement is consistent with university graduation requirements for General Education. Students who wish to pursue graduate study in physics should choose a program similar to the Research Program example in the catalog (not evaluated)."
+    },
+    {
+      "topic": "other",
+      "text": "The Introductory Physics Sequences are PHY 121/PHY 122 (for biological sciences and pre-medical/pre-health majors), PHY 131/PHY 133 with PHY 132/PHY 134, PHY 141/PHY 133 with PHY 142/PHY 134, and PHY 125, PHY 126, PHY 127 with PHY 133 and PHY 134. The two-semester sequences are for students prepared for a faster pace; PHY 141/142 is designed for the strongest physics and math preparation."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1530",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

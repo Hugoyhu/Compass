@@ -1,0 +1,223 @@
+{
+  "id": "environmental-humanities",
+  "name": "Environmental Humanities",
+  "kind": "minor",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "environmental-humanities.required-courses",
+      "label": "required-courses",
+      "title": "Required courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 111"
+              },
+              {
+                "type": "course",
+                "code": "ENS 101"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SUS 202"
+          },
+          {
+            "type": "course",
+            "code": "SUS 203"
+          }
+        ]
+      },
+      "sourceText": "Required courses (12 credits) - SUS 111 - Introduction to Sustainability 3 credits (formerly offered as SBC 111) - OR - ENS 101 - Prospects for Planet Earth 3 credits - SUS 202 - Introduction to Environmental Humanities 3 credits (formerly offered as EHM 202) - SUS 203 - Interpretation and Critical Analysis 3 credits (formerly offered as SBC 203)"
+    },
+    {
+      "id": "environmental-humanities.science-course",
+      "label": "science-course",
+      "title": "One of the following courses",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "ATM 201",
+            "BIO 113",
+            "BIO 115",
+            "ENV 115",
+            "MAR 101",
+            "MAR 104",
+            "SUS 118"
+          ]
+        }
+      },
+      "sourceText": "One of the following courses: ATM 201 - Introduction to Climate and Climate Change 3 credits; BIO 113 - General Ecology 3 credits; BIO 115 - Evolution and Society 3 credits; ENV 115 - Chemistry, Life, and Environment 3 credits (Note: CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115); MAR 101 - Long Island Sound: Science and Use 3 credits; MAR 104 - Oceanography 3 credits; SUS 118 - Intro to the Natural History of Long Island (formerly offered as EHM 118)"
+    },
+    {
+      "id": "environmental-humanities.electives-one",
+      "label": "electives-one",
+      "title": "Choose one of the following courses",
+      "rule": {
+        "manualCheck": "The C-or-higher minimum applies only to upper-division (300+) courses; SUS 117 is a 100-level course.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "GSS 317",
+            "SUS 117",
+            "SUS 329"
+          ]
+        }
+      },
+      "sourceText": "Choose one of the following courses: GSS 317 - Geospatial Narratives: Deep Mapping for Humanities and Social Sciences 3 credits; SUS 117 - Design Drawing 3 credits (formerly offered as SBC); SUS 329 - Environmental Film, Media, Arts 3 credits (formerly offered as EHM 325)"
+    },
+    {
+      "id": "environmental-humanities.electives-two",
+      "label": "electives-two",
+      "title": "Choose two of the following courses",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "AFS 374",
+            "SUS 374",
+            "ENS 333",
+            "SUS 309",
+            "SUS 314",
+            "SUS 315",
+            "SUS 317",
+            "SUS 318",
+            "SUS 320",
+            "SUS 321",
+            "SUS 323",
+            "SUS 325",
+            "SUS 328",
+            "SUS 343",
+            "SUS 350",
+            "SUS 386"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "onePerGroup",
+            "groups": [
+              [
+                "AFS 374",
+                "SUS 374"
+              ]
+            ]
+          }
+        ]
+      },
+      "sourceText": "Choose two of the following courses: AFS 374 - Environment and Development in African History 3 credits; SUS 374 - Environment and Development in African History 3 credits; ENS 333 - Environmental Law 3 credits; SUS 309 - Global Environmental Politics (formerly offered as SBC 309); SUS 314 - Civilizations and Collapse 3 credits (formerly offered as EHM 314); SUS 315 - Ethnographic Field Methods (formerly offered as EHM 315); SUS 317 - American Environmental History 3 credits (formerly offered as SBC 307); SUS 318 - American Environmental Politics 3 credits (formerly offered as SBC 308); SUS 320 - Utopia and Dystopia and the Environment in Literature and Culture 3 credits (formerly offered as EHM 321); SUS 321 - Ecology and Evolution in American Literature 3 credits (formerly offered as SBC 321); SUS 323 - Environmental Justice 3 credits (formerly offered as EHM 323); SUS 325 - Environmental Writing and the Media 3 credits (formerly offered as SBC 325); SUS 328 - Ecofeminism, Literature & Film 3 credits (formerly offered as EHM 322); SUS 343 - Age of the Anthropocene 3 credits; SUS 350 - Contemporary Topics in Sustainability 3 credits; SUS 386 - The Maya 3 credits (formerly offered as EHM 386)"
+    },
+    {
+      "id": "environmental-humanities.credit-overlap",
+      "label": "credit-overlap",
+      "title": "Credit overlap limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 12 credits applied to the minor may not be applied to any major or other minor.",
+        "reason": "No rule type expresses a minimum number of credits that may not be shared with a major or other minor."
+      },
+      "sourceText": "At least 12 credits applied to the minor may not be applied to any major or other minor."
+    },
+    {
+      "id": "environmental-humanities.pass-no-credit",
+      "label": "pass-no-credit",
+      "title": "Pass/No Credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option.",
+        "reason": "No rule type expresses a limit on Pass/No Credit courses."
+      },
+      "sourceText": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option."
+    },
+    {
+      "id": "environmental-humanities.total-credits",
+      "label": "total-credits",
+      "title": "Total credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21 credits.",
+        "reason": "Total credit requirement is not a rule type; the sum of the requirement groups is 21 credits."
+      },
+      "sourceText": "Completion of the minor requires 21 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "environmental-humanities.electives-one",
+        "environmental-humanities.electives-two"
+      ],
+      "sourceText": "All upper-division courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "environmental-humanities.sub.chem-science",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 115",
+          "ENV 115"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 129"
+          },
+          {
+            "type": "course",
+            "code": "CHE 131"
+          },
+          {
+            "type": "course",
+            "code": "CHE 152"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115"
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students should declare the Environmental Humanities minor no later than the middle of their junior year, at which time they should consult with the minor coordinator or undergraduate director and plan their course of study. Undergraduate Advisor: Nancy Black, E2361 Melville Library, (631) 632-9404."
+    },
+    {
+      "topic": "other",
+      "text": "Several listed courses are shown as formerly offered under other numbers (for example SBC 111, EHM 202, SBC 307). The requirements above use the current course numbers."
+    },
+    {
+      "topic": "other",
+      "text": "AFS 374 and SUS 374 are both listed as Environment and Development in African History; only one may count toward the electives."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1449",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

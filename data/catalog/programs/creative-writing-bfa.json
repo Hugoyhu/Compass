@@ -1,0 +1,507 @@
+{
+  "id": "creative-writing-bfa",
+  "name": "Creative Writing, BFA",
+  "kind": "major",
+  "degree": "Bachelor of Fine Art in Creative Writing",
+  "approxCredits": 60,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "creative-writing-bfa.intro",
+      "label": "intro",
+      "title": "Introductory courses required of all majors (9 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "creative-writing-bfa.intro.cwl190",
+            "type": "course",
+            "code": "CWL 190"
+          },
+          {
+            "type": "course",
+            "code": "CWL 202"
+          },
+          {
+            "id": "creative-writing-bfa.intro.cwl250",
+            "type": "course",
+            "code": "CWL 250"
+          }
+        ]
+      },
+      "sourceText": "Introductory courses required of all majors (9 credits) - CWL 190 - Introduction to Contemporary Literature 3 credits - CWL 202 - Introduction to Creative Writing: Writing Everything 3 credits - CWL 250 - Join the Conversation 3 credits"
+    },
+    {
+      "id": "creative-writing-bfa.workshops",
+      "label": "workshops",
+      "title": "Ten writing workshops (30-31 credits)",
+      "rule": {
+        "manualCheck": "CWL 510, 520, 530, 540, 550 (graduate workshops) and EGL 285, EGL 286, THR 325, THR 326 count only by special permission. Confirm permission before counting them. Graduate credits may not exceed 6 toward the undergraduate degree.",
+        "type": "choose",
+        "count": 10,
+        "from": {
+          "courses": [
+            "CWL 300",
+            "CWL 305",
+            "CWL 310",
+            "CWL 315",
+            "CWL 320",
+            "CWL 325",
+            "CWL 510",
+            "CWL 520",
+            "CWL 530",
+            "CWL 540",
+            "CWL 550",
+            "EGL 285",
+            "EGL 286",
+            "THR 325",
+            "THR 326"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "CWL 510",
+                "CWL 520",
+                "CWL 530",
+                "CWL 540",
+                "CWL 550"
+              ]
+            },
+            "maxCredits": 6
+          }
+        ]
+      },
+      "sourceText": "Ten writing workshops (30-31 credits) Students may repeat courses for credit. Majors must take at least 3 workshops outside their declared genre. - CWL 300 - Forms of Creative Nonfiction 3 credits - CWL 305 - Forms of Fiction 3 credits - CWL 310 - Forms of Poetry 3 credits - CWL 315 - Forms of Scriptwriting 3 credits - CWL 320 - Forms of Interdisciplinary Arts 3 credits - CWL 325 - Forms of Science Writing 3 credits - CWL 510, 520, 530, 540, 550 Forms of Fiction, Poetry, Scriptwriting, Creative Nonfiction, Professional and Scientific Writing (MFA faculty). By special permission, majors may take a graduate writing workshop, or may count credits earned in EGL 285, EGL 286, THR 325, or THR 326 toward this requirement. Note that a maximum of 6 graduate credits may be applied toward the undergraduate degree."
+    },
+    {
+      "id": "creative-writing-bfa.literature",
+      "label": "literature",
+      "title": "Two literature courses for writers (6 credits)",
+      "rule": {
+        "manualCheck": "Students may also petition to substitute other relevant courses from other departments. Petitioned courses require approval and are not listed here.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "CWL 330",
+            "CWL 335",
+            "CWL 340",
+            "AFH 205",
+            "AFH 329",
+            "AFH 330",
+            "AFH 368",
+            "AFH 382",
+            "AAS 321",
+            "AAS 322",
+            "EGL 224",
+            "HUF 318",
+            "HUS 271",
+            "UST 382"
+          ]
+        }
+      },
+      "sourceText": "Two literature courses for writers (6 credits) Students may repeat these courses for credit as the topics change. - CWL 330 - Topics in European Literature for Writers 3 credits - CWL 335 - Topics in American Literature for Writers 3 credits - CWL 340 - Topics in World Literature for Writers 3 credits Notes: Students may count credits earned in AFH 205, AFH 329, AFH 330, AFH 368 and AFH 382, AAS 321 and AAS 322, EGL 224, HUF 318, HUS 271, UST 382 toward this requirement. Students may also petition to substitute any other relevant courses from other departments."
+    },
+    {
+      "id": "creative-writing-bfa.capstone",
+      "label": "capstone",
+      "title": "Four \"Capstone Cluster\" courses (15 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CWL 390"
+          },
+          {
+            "type": "course",
+            "code": "CWL 450"
+          },
+          {
+            "type": "course",
+            "code": "CWL 487"
+          },
+          {
+            "type": "course",
+            "code": "CWL 499"
+          },
+          {
+            "type": "unparsed",
+            "text": "Capstone Cluster totals 15 credits (CWL 390 4 credits, CWL 450 3 credits, CWL 487 4 credits, CWL 499 1-6 credits)",
+            "reason": "The 15-credit total depends on the variable credits of CWL 499, which allOf cannot check"
+          }
+        ]
+      },
+      "sourceText": "Four \"Capstone Cluster\" courses (15 credits) These courses should be taken during the fall of Y4. - CWL 390 - The Ethics of the Creative Imagination 4 credits - CWL 450 - Senior Project 3 credits - CWL 487 - Mind the Gap: Independent Reading 4 credits - CWL 499 - Thesis 1-6 credits"
+    },
+    {
+      "id": "creative-writing-bfa.upper-division-writing",
+      "label": "upper-division-writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "unparsed",
+        "text": "The upper-division writing requirement is satisfied by satisfactory completion of CWL 300, CWL 305, CWL 310, CWL 315, CWL 320, or CWL 325 with a grade of C or better. These courses satisfy Requirement B for the major, ten required writing workshops.",
+        "reason": "These courses are the same workshop courses counted in the workshops requirement; the catalog states they satisfy both, which this engine cannot express without course reuse"
+      },
+      "sourceText": "Upper-Division Writing Requirement The upper-division writing requirement is satisfied by satisfactory completion of CWL 300, CWL 305, CWL 310, CWL 315, CWL 320, or CWL 325 with a grade of C or better. These courses satisfy Requirement B for the major, ten required writing workshops."
+    },
+    {
+      "id": "creative-writing-bfa.genre",
+      "label": "genre",
+      "title": "Genre specialization",
+      "rule": {
+        "type": "unparsed",
+        "text": "At the beginning of their third year, majors choose a genre in which to specialize: fiction, poetry, scriptwriting, or creative nonfiction.",
+        "reason": "Genre choice is a student declaration with no course list in the catalog"
+      },
+      "sourceText": "At the beginning of their third year, majors choose a genre in which to specialize: fiction, poetry, scriptwriting, or creative nonfiction."
+    },
+    {
+      "id": "creative-writing-bfa.outside-genre-workshops",
+      "label": "outside-genre-workshops",
+      "title": "Workshops outside declared genre",
+      "rule": {
+        "type": "unparsed",
+        "text": "Majors must take at least 3 workshops outside their declared genre.",
+        "reason": "Requires mapping workshops to genres and the student's declared genre, which the catalog does not supply as course data"
+      },
+      "sourceText": "Majors must take at least 3 workshops outside their declared genre."
+    },
+    {
+      "id": "creative-writing-bfa.total-credits",
+      "label": "total-credits",
+      "title": "Total credits for the major",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires at least 60 credits.",
+        "reason": "Program-wide credit minimum; no rule type covers total credits"
+      },
+      "sourceText": "Completion of the major requires at least 60 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "creative-writing-bfa.intro",
+        "creative-writing-bfa.workshops",
+        "creative-writing-bfa.literature",
+        "creative-writing-bfa.capstone",
+        "creative-writing-bfa.upper-division-writing"
+      ],
+      "sourceText": "Students must earn a C or better in all courses toward the major"
+    },
+    {
+      "type": "minGrade",
+      "grade": "B",
+      "appliesTo": [
+        "creative-writing-bfa.intro.cwl250"
+      ],
+      "sourceText": "a B or better in CWL 250, a course for majors only."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CWL 202",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CWL 190",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "CWL 300-325 workshop",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "CWL 300-325 workshop",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "CWL 300-325 workshop",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "CWL 300-325 workshop",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "CWL 300-325 workshop",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "CWL 330-340 literature",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CWL 250",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "CWL 300-325 workshop",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "CWL 330-340 literature",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "CWL 300-325 workshop",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "300-level Elective (outside of specialization)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CWL 390",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CWL 450",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CWL 487",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CWL 499",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "300-level Elective (outside of specialization)",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "300-level Elective (outside of specialization)",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CWL 499",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students apply to the Creative Writing major with a portfolio that includes a statement of purpose and ten to 15 pages of creative writing in any genre or genres. Students already at Stony Brook, or admitted as transfer students, apply with supplemental materials to the Program Director. Current students are advised to apply after completing CWL 190 and CWL 202 or the equivalent. See the department website for the application process and portfolio."
+    },
+    {
+      "topic": "advising",
+      "text": "Current Stony Brook students are encouraged to apply to the major in their first or second year. Transfer students already in their second year are strongly encouraged to apply along with their application to Stony Brook and should speak with the program director to plan a path through the 60-credit degree."
+    },
+    {
+      "topic": "grading",
+      "text": "Students must earn a C or better in all courses toward the major, and a B or better in CWL 250."
+    },
+    {
+      "topic": "other",
+      "text": "Students may repeat courses for credit in the workshop and literature requirements (the workshop and literature courses may be repeated as topics change)."
+    },
+    {
+      "topic": "other",
+      "text": "The Capstone Cluster courses should be taken during the fall of Y4."
+    },
+    {
+      "topic": "sbc",
+      "text": "Students completing the Stony Brook Curriculum must complete a course satisfying the WRTD learning objective. The Upper Division Writing Requirement is consistent in most cases with the SBC learning outcomes for WRTD. Students should consult the department advisor about General Education planning."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1415",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

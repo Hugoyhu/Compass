@@ -1,0 +1,132 @@
+{
+  "id": "classics",
+  "name": "Classics",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "classics.1",
+      "label": "1",
+      "title": "Group I",
+      "rule": {
+        "type": "choose",
+        "count": 5,
+        "from": {
+          "courses": [
+            "LAT 111",
+            "LAT 112",
+            "LAT 251",
+            "LAT 252",
+            "LAT 353",
+            "LAT 354",
+            "LAT 355",
+            "LAT 356",
+            "LAT 447"
+          ]
+        }
+      },
+      "sourceText": "The student must select at least five courses from group I. Group I: LAT 111 - Elementary Latin I 3 credits; LAT 112 - Elementary Latin II 3 credits; LAT 251 - Readings in Latin Literature I 3 credits; LAT 252 - Readings in Latin Literature II 3 credits; LAT 353 - Literature of the Roman Republic 3 credits; LAT 354 - Literature of the Roman Empire 3 credits; LAT 355 - Early Medieval Latin 3 credits; LAT 356 - Late Medieval Latin 3 credits; LAT 447 - Directed Readings in Latin 1-6 credits"
+    },
+    {
+      "id": "classics.2",
+      "label": "2",
+      "title": "Groups II through IV",
+      "rule": {
+        "manualCheck": "Substitutions may be permitted for other courses with classical content with permission of the CLS Program Coordinator. Verify any such substitution with the CLS Program Coordinator.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "CLS 113",
+            "CLL 215",
+            "CLS 225",
+            "CLL 315",
+            "CLS 325",
+            "CLS 447",
+            "ARH 300",
+            "ARH 301",
+            "PHI 200",
+            "PHI 300"
+          ]
+        }
+      },
+      "sourceText": "The student must select at least five courses from group I, and two courses from groups II through IV. Group II: CLS 113 - Greek and Latin Literature in Translation 3 credits; CLL 215 - Classical Mythology 3 credits; CLS 225 - The Classical Tradition 3 credits; CLL 315 - Gender, Sexuality, Race & Ethnicity in Ancient Greek and Roman Literature 3 credits; CLS 325 - The Latin and Greek Origins of Medicine 3 credits; CLS 447 - Directed Readings in Classics 1-6 credits. Group III: ARH 300 - Greek Art and Architecture 3 credits; ARH 301 - Roman Art and Architecture 3 credits. Group IV: PHI 200 - Introduction to Ancient Philosophy (I) 3 credits; PHI 300 - Ancient Philosophy (I) 3 credits"
+    },
+    {
+      "id": "classics.3",
+      "label": "3",
+      "title": "Upper-level credit requirement",
+      "rule": {
+        "type": "unparsed",
+        "text": "Nine credits in the minor must be from courses numbered 252 (see note) or above.",
+        "reason": "A minimum credit total from courses at or above a number level across the whole minor cannot be expressed with the item-level rule types."
+      },
+      "sourceText": "Nine credits in the minor must be from courses numbered 252 (see note) or above, for a total of 21 credits."
+    },
+    {
+      "id": "classics.4",
+      "label": "4",
+      "title": "Total credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21 credits.",
+        "reason": "Program-wide total credit requirement that no rule type covers."
+      },
+      "sourceText": "Completion of the minor requires 21 credits."
+    },
+    {
+      "id": "classics.5",
+      "label": "5",
+      "title": "Pass/No Credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one of the courses required for the minor may be taken under the Pass/No Credit option.",
+        "reason": "No policy type covers a limit on Pass/No Credit courses within the minor."
+      },
+      "sourceText": "No more than one of the courses required for the minor may be taken under the Pass/No Credit option."
+    },
+    {
+      "id": "classics.6",
+      "label": "6",
+      "title": "Group V (unreferenced)",
+      "rule": {
+        "type": "unparsed",
+        "text": "Group V: PHI 200 - Introduction to Ancient Philosophy (I) 3 credits; PHI 300 - Ancient Philosophy (I) 3 credits",
+        "reason": "A Group V heading is printed, but the minor requirement text only refers to groups I through IV, and Group V repeats the Group IV courses. How Group V counts toward the minor is not stated."
+      },
+      "sourceText": "Group V: PHI 200 - Introduction to Ancient Philosophy (I) 3 credits; PHI 300 - Ancient Philosophy (I) 3 credits"
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "The minor combines the study of Latin and Latin literature with courses in the history, culture and literature of ancient Greece and Rome. Students must complete a five-semester sequence in Latin language and literature. Students also choose at least two courses taught in English in which the philosophy, history, literature, art and culture of ancient Greece and Rome are studied."
+    },
+    {
+      "topic": "other",
+      "text": "Note on LAT 251 and LAT 252: these are advanced literature courses where students read, translate and analyze authentic ancient Latin literature. They are not equivalent to a 211-212 level course in the modern languages. In Latin, the full grammar is completed in LAT 111-LAT 112, at an accelerated pace."
+    },
+    {
+      "topic": "advising",
+      "text": "Contact the CLS Program Coordinator, Kathleen de Riesthal, for substitutions and program questions. Chair: Sophie Raynard-Leroy. Office: Humanities 2042, (631) 632-7440."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1399",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

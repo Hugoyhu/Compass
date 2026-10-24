@@ -1,0 +1,144 @@
+{
+  "id": "italian-american-studies",
+  "name": "Italian American Studies",
+  "kind": "minor",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "italian-american-studies.200-level-hui",
+      "label": "200-level-hui",
+      "title": "Two 200-level HUI courses",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "subjects": [
+            "HUI"
+          ],
+          "minNumber": 200,
+          "maxNumber": 299
+        }
+      },
+      "sourceText": "Two (2) 200-level HUI courses"
+    },
+    {
+      "id": "italian-american-studies.itl",
+      "label": "itl",
+      "title": "One Italian (ITL) course at any level",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "subjects": [
+            "ITL"
+          ]
+        }
+      },
+      "sourceText": "One (1) Italian (ITL) course at any level"
+    },
+    {
+      "id": "italian-american-studies.hui-390",
+      "label": "hui-390",
+      "title": "HUI 390",
+      "rule": {
+        "type": "course",
+        "code": "HUI 390"
+      },
+      "sourceText": "HUI 390 - Italian-American Studies in the Humanities 3 credits"
+    },
+    {
+      "id": "italian-american-studies.300-level-hui",
+      "label": "300-level-hui",
+      "title": "Two additional 300-level HUI courses",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "subjects": [
+            "HUI"
+          ],
+          "minNumber": 300,
+          "maxNumber": 399,
+          "excludeCourses": [
+            "HUI 390"
+          ]
+        }
+      },
+      "sourceText": "Two (2) additional HUI courses at the 300-level"
+    },
+    {
+      "id": "italian-american-studies.elective",
+      "label": "elective",
+      "title": "One elective course chosen with the approval of the Director of Italian American Studies",
+      "rule": {
+        "manualCheck": "Verify that the chosen elective was approved by the Director of Italian American Studies.",
+        "type": "unparsed",
+        "text": "One (1) elective course chosen with the approval of the Director of Italian American Studies. Examples include: ARH 204, CCS 325, GLI 330, HUI 331, ITL 311.",
+        "reason": "The examples are not a closed list and the elective requires director approval, so no fixed course pool can be defined."
+      },
+      "sourceText": "One (1) elective course chosen with the approval of the Director of Italian American Studies. Examples include: ARH 204 - Arts of Europe and the Americas 3 credits; CCS 325 - Culture in Context 3 credits; GLI 330 - Global, Political, and Economic Issues 3 credits; HUI 331 - Italian Literature 3 credits; ITL 311 - Italian Conversation and Composition 1 3 credits"
+    },
+    {
+      "id": "italian-american-studies.total-credits",
+      "label": "total-credits",
+      "title": "Minor total credit requirement",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21 credits.",
+        "reason": "Program-wide total credit rule that no rule type covers."
+      },
+      "sourceText": "Completion of the minor requires 21 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "italian-american-studies.200-level-hui",
+        "italian-american-studies.itl",
+        "italian-american-studies.hui-390",
+        "italian-american-studies.300-level-hui",
+        "italian-american-studies.elective"
+      ],
+      "sourceText": "All courses offered to for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "italian-american-studies.200-level-hui",
+        "italian-american-studies.itl",
+        "italian-american-studies.hui-390",
+        "italian-american-studies.300-level-hui",
+        "italian-american-studies.elective"
+      ],
+      "sourceText": "All courses offered to for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Under the direction of an advisor, students must establish an advising folder with the minor coordinator who supervises students in fulfilling the requirements. The page lists Loredana Polezzi as Coordinator of the Program and Kathleen de Riesthal as Director of Undergraduate Studies."
+    },
+    {
+      "topic": "other",
+      "text": "The minor may be combined with a major in Political Science, History, Psychology, Sociology, or other fields, as described on the program page."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1479",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

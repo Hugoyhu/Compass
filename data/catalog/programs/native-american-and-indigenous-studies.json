@@ -1,0 +1,158 @@
+{
+  "id": "native-american-and-indigenous-studies",
+  "name": "Native American and Indigenous Studies",
+  "kind": "minor",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "native-american-and-indigenous-studies.intro",
+      "label": "intro",
+      "title": "Introductory course",
+      "rule": {
+        "type": "course",
+        "code": "NAI 101"
+      },
+      "sourceText": "NAI 101 - Intro to Native American and Indigenous Studies 3 credits"
+    },
+    {
+      "id": "native-american-and-indigenous-studies.additional",
+      "label": "additional",
+      "title": "At least two additional NAI courses",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "subjects": [
+            "NAI"
+          ],
+          "excludeCourses": [
+            "NAI 101"
+          ],
+          "excludeUsedBy": [
+            "native-american-and-indigenous-studies.intro"
+          ]
+        }
+      },
+      "sourceText": "and at least two additional NAI courses (6 credits) such as: NAI 211 - Intro to Native Amer. Literature, Cultures & Art 3 credits; NAI 221 - Native American Peoples and Environmental Justice 3 credits"
+    },
+    {
+      "id": "native-american-and-indigenous-studies.electives",
+      "label": "electives",
+      "title": "Electives",
+      "rule": {
+        "manualCheck": "Other elective courses may be approved at the discretion of the Director of NAIS. LAN 111 and LAN 112 are listed as Algonquian topics; confirm the section is the Algonquian language.",
+        "type": "choose",
+        "count": 4,
+        "from": {
+          "courses": [
+            "ANT 102",
+            "ANT 203",
+            "ANT 230",
+            "EGL 376",
+            "EGL 378",
+            "EGL 379",
+            "HIS 213",
+            "HIS 314",
+            "HIS 338",
+            "HIS 385",
+            "HIS 386",
+            "HUS 150",
+            "LAN 111",
+            "LAN 112",
+            "SOC 110"
+          ],
+          "subjects": [
+            "NAI"
+          ],
+          "excludeCourses": [
+            "NAI 101"
+          ],
+          "excludeUsedBy": [
+            "native-american-and-indigenous-studies.additional"
+          ]
+        }
+      },
+      "sourceText": "Students are required to choose four electives from among NAI courses and related courses offered by other programs (12 credits). Topics will vary from semester to semester. Approved courses include: ANT 102 - What Makes Us Human? 3 credits; ANT 203 - Native Americans 3 credits; ANT 230 - Peoples of the World 3 credits; EGL 376 - The Literature of Imperialism 3 credits; EGL 378 - Contemporary Native American Fiction 3 credits; EGL 379 - Native American Texts and Contexts 3 credits; HIS 213 - Colonial Latin America 3 credits; HIS 314 - Indigenous-Settler Relations in the United States 3 credits; HIS 338 - Asian and Pacific Islanders in American History 3 credits; HIS 385 - Aztec Civilization 3 credits; HIS 386 - The Maya 3 credits; HUS 150 - Indigenous Cultures of Latin America 3 credits; LAN 111 - Uncommonly Taught Language (Elementary) I 3 credits, Algonquian; LAN 112 - Uncommonly Taught Language (Elementary) II 3 credits, Algonquian; SOC 110 - Fire Ecology,Climate Change,& Indigenous Knowledge 3 credits. Additional elective courses may be approved at the discretion of the Director of NAIS."
+    },
+    {
+      "id": "native-american-and-indigenous-studies.upper-division",
+      "label": "upper-division",
+      "title": "Upper-division course count",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least three of the courses must be at the upper-division level.",
+        "reason": "A minimum count of upper-division courses across the minor's requirements is not expressible with a single rule type."
+      },
+      "sourceText": "At least three of the courses must be at the upper-division level."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "native-american-and-indigenous-studies.intro",
+        "native-american-and-indigenous-studies.additional",
+        "native-american-and-indigenous-studies.electives",
+        "native-american-and-indigenous-studies.upper-division"
+      ],
+      "sourceText": "All courses for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "native-american-and-indigenous-studies.intro",
+        "native-american-and-indigenous-studies.additional",
+        "native-american-and-indigenous-studies.electives",
+        "native-american-and-indigenous-studies.upper-division"
+      ],
+      "sourceText": "All courses for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 9,
+      "appliesTo": [
+        "native-american-and-indigenous-studies.intro",
+        "native-american-and-indigenous-studies.additional",
+        "native-american-and-indigenous-studies.electives"
+      ],
+      "sourceText": "At least nine of the 21 credits must be taken at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "EXP+",
+        "rule": {
+          "type": "unparsed",
+          "text": "Experiential learning component of an NAI course or related course, or NAI 488",
+          "reason": "The page allows either an experiential component of a course or NAI 488, which is not a single course or pool rule"
+        },
+        "sourceText": "EXP+ (This SBC can be fulfilled through an experiential learning component of an NAI course or related course, or through NAI 488 ."
+      }
+    ]
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Initiative Director: Joseph M. Pierce, joseph.pierce@stonybrook.edu, Office: 1139 Humanities, Phone: (631) 632-7461. Website: https://www.stonybrook.edu/nais/"
+    },
+    {
+      "topic": "other",
+      "text": "Topics for courses will vary from semester to semester."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1565",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

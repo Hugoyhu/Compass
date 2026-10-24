@@ -1,0 +1,449 @@
+{
+  "id": "linguistics-ba",
+  "name": "Linguistics, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Linguistics",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "linguistics-ba.core",
+      "label": "core",
+      "title": "Core Linguistics Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "LIN 101"
+          },
+          {
+            "type": "course",
+            "code": "LIN 202"
+          },
+          {
+            "type": "course",
+            "code": "LIN 203"
+          },
+          {
+            "type": "course",
+            "code": "LIN 431"
+          }
+        ]
+      },
+      "sourceText": "LIN 101 - Human Language 3 credits; LIN 202 - Introduction to Phonetics and Phonology 4 credits; LIN 203 - Introduction to Syntax and Morphology 4 credits; LIN 431 - The Structure of an Uncommonly Taught Language 4 credits"
+    },
+    {
+      "id": "linguistics-ba.electives",
+      "label": "electives",
+      "title": "Eight Additional Linguistics Courses",
+      "rule": {
+        "type": "choose",
+        "count": 8,
+        "from": {
+          "subjects": [
+            "LIN"
+          ],
+          "excludeCourses": [
+            "LIN 344",
+            "LIN 444",
+            "LIN 449",
+            "LIN 450",
+            "LIN 451",
+            "LIN 452",
+            "LIN 454",
+            "LIN 475",
+            "LIN 476",
+            "LIN 488",
+            "LIN 495",
+            "LIN 496"
+          ],
+          "excludeUsedBy": [
+            "linguistics-ba.core",
+            "linguistics-ba.writing"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "LIN"
+              ],
+              "minNumber": 300,
+              "excludeCourses": [
+                "LIN 344",
+                "LIN 444",
+                "LIN 449",
+                "LIN 450",
+                "LIN 451",
+                "LIN 452",
+                "LIN 454",
+                "LIN 475",
+                "LIN 476",
+                "LIN 488",
+                "LIN 495",
+                "LIN 496"
+              ]
+            },
+            "minCourses": 6
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "LIN 355",
+                "LIN 356"
+              ]
+            },
+            "maxCourses": 2
+          }
+        ]
+      },
+      "sourceText": "Eight additional linguistics courses, of which 6 must be upper-division (LIN 355 and/or LIN 356 may be taken up to two times for this requirement. LIN 344, LIN 444, LIN 449, LIN 450, LIN 451, LIN 452, LIN 454, LIN 475, LIN 476, LIN 488, LIN 495 and LIN 496 may not be used for elective credit)"
+    },
+    {
+      "id": "linguistics-ba.writing",
+      "label": "writing",
+      "title": "Writing in Linguistics",
+      "rule": {
+        "manualCheck": "Must be completed in the junior or senior year.",
+        "type": "course",
+        "code": "LIN 405"
+      },
+      "sourceText": "LIN 405 - Writing in Linguistics 2 credits In the junior or senior year, students must successfully complete LIN 405, a two-credit course. LIN 405 satisfies the Stony Brook Curriculum (SBC) learning objective WRTD."
+    },
+    {
+      "id": "linguistics-ba.foreign-language",
+      "label": "foreign-language",
+      "title": "Foreign Language",
+      "rule": {
+        "manualCheck": "Confirm two semesters (or equivalent) of foreign language after DEC Entry Skill 3/LANG.",
+        "type": "unparsed",
+        "text": "Two semesters of foreign language, or the equivalent, after completing DEC Entry Skill 3/LANG, or the equivalent. These may be either in the same language with which the entry skill was met, or in one or two other languages.",
+        "reason": "Language-sequence requirement stated as a semester count with an entry-skill prerequisite and equivalency; no course pool is listed."
+      },
+      "sourceText": "Two semesters of foreign language, or the equivalent, after completing DEC Entry Skill 3/LANG, or the equivalent. These may be either in the same language with which the entry skill was met, or in one or two other languages."
+    },
+    {
+      "id": "linguistics-ba.credits",
+      "label": "credits",
+      "title": "Total Linguistics Credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires 41 credits in linguistics",
+        "reason": "Program-wide total credit rule that no rule type covers."
+      },
+      "sourceText": "Completion of the major requires 41 credits in linguistics and two semesters, or the equivalent, of a foreign language in addition to the University's language proficiency requirement."
+    },
+    {
+      "id": "linguistics-ba.outside-courses",
+      "label": "outside-courses",
+      "title": "Outside Linguistics-Related Courses",
+      "rule": {
+        "manualCheck": "Director of Undergraduate Studies must approve each outside course.",
+        "type": "unparsed",
+        "text": "Students may count up to two linguistics-related courses from other departments toward the Linguistics major, with prior permission of the Director of Undergraduate Studies.",
+        "reason": "Permission-based allowance for up to two outside courses; the eligible courses are not listed."
+      },
+      "sourceText": "Students may count up to two linguistics-related courses from other departments toward the Linguistics major, with prior permission of the Director of Undergraduate Studies."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "linguistics-ba.core",
+        "linguistics-ba.electives",
+        "linguistics-ba.writing"
+      ],
+      "sourceText": "All linguistics courses offered for the major must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "LIN 101",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Foreign language 111",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Foreign language 112",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "LIN 201",
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "LIN 307",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Foreign language 211",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "LIN 345",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "LIN 356",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "LIN 311",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Foreign language 212",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "LIN 330",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "LIN 301",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "LIN 405",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "LIN 431",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "LIN 425",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "LIN 426",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Honors: Linguistics majors with a 3.50 GPA in the major may graduate with departmental honors by submitting and presenting a senior thesis. A written thesis proposal must be submitted to a sponsoring faculty member in the semester before the senior year. LIN 495 and LIN 496 (two semesters, six credits total) are taken in addition to the major's credits. Honors are recommended if the thesis is accepted and the student keeps a 3.50 GPA in linguistics courses."
+    },
+    {
+      "topic": "other",
+      "text": "TESOL teacher certification track (optional, not modeled as a requirement): Requires LIN 101, LIN 202 and/or LIN 203 with a grade of C or higher, an overall GPA of 3.0 and a GPA in the major of 3.0 for admission. The track adds LIN 307, LIN 405, LIN 431, five additional 3-credit linguistics courses (four upper-division), two years of language study, LIN 375 with LIN 449, LIN 378 with LIN 450, LIN 451, LIN 452, LIN 454, PSY 327, CEF 347, SSE 350 and LIN 344. Students must maintain a 3.0 GPA overall and in the major, and TESOL-certification courses may not be taken Grade/Pass/No Credit. Consult the Director of TESOL Teacher Preparation and the Undergraduate Program Director."
+    },
+    {
+      "topic": "other",
+      "text": "Five-Year Accelerated BA/MA in TESOL and Five-Year Accelerated BA/MAT in Linguistics and French, Italian, or Spanish are separate programs and are not modeled here. The BA/MA requires a 3.0 overall GPA and 3.3 in linguistics courses, an essay, two faculty recommendations, and interviews, and applications are due in the second semester of the sophomore year."
+    },
+    {
+      "topic": "advising",
+      "text": "Many majors pursue a second major in a language or an adjacent field such as psychology or computer science. Students should consult the Director of Undergraduate Studies, Jenny Singleton."
+    },
+    {
+      "topic": "sbc",
+      "text": "LIN 405 satisfies the WRTD learning objective."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1491",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,597 @@
+{
+  "id": "economics-ba",
+  "name": "Economics, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Economics",
+  "approxCredits": 46,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "economics-ba.A.1",
+      "label": "A.1",
+      "title": "Introduction to Microeconomics",
+      "rule": {
+        "type": "course",
+        "code": "ECO 110"
+      },
+      "sourceText": "1. ECO 110 - Introduction to Microeconomics 3 credits"
+    },
+    {
+      "id": "economics-ba.A.2",
+      "label": "A.2",
+      "title": "Introduction to Macroeconomics",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ECO 111"
+          },
+          {
+            "manualCheck": "Accepted only for students who earned credit for ECO 108 prior to Summer 2025.",
+            "type": "course",
+            "code": "ECO 108"
+          }
+        ]
+      },
+      "sourceText": "2. ECO 111 - Introduction to Macroeconomics 3 credits. Note: This requirement may also be satisfied by students that earned credit for ECO 108 prior to Summer 2025"
+    },
+    {
+      "id": "economics-ba.A.3",
+      "label": "A.3",
+      "title": "Intermediate economics courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ECO 303"
+          },
+          {
+            "type": "course",
+            "code": "ECO 305"
+          },
+          {
+            "type": "course",
+            "code": "ECO 320"
+          },
+          {
+            "type": "course",
+            "code": "ECO 321"
+          }
+        ]
+      },
+      "sourceText": "3. Intermediate economics courses: ECO 303 - Intermediate Microeconomic Theory 4 credits; ECO 305 - Intermediate Macroeconomic Theory 4 credits; ECO 320 - Mathematical Statistics 4 credits; ECO 321 - Econometrics 4 credits"
+    },
+    {
+      "id": "economics-ba.A.4",
+      "label": "A.4",
+      "title": "Five additional economics electives at the 300 level and above",
+      "rule": {
+        "type": "choose",
+        "count": 5,
+        "from": {
+          "subjects": [
+            "ECO"
+          ],
+          "minNumber": 300,
+          "minCredits": 3,
+          "excludeCourses": [
+            "ECO 359",
+            "ECO 459"
+          ],
+          "excludeUsedBy": [
+            "economics-ba.A.3"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "courses": [
+                "ECO 310",
+                "ECO 322",
+                "ECO 323",
+                "ECO 324",
+                "ECO 326",
+                "ECO 329",
+                "ECO 348",
+                "ECO 351",
+                "ECO 352",
+                "ECO 354",
+                "ECO 355",
+                "ECO 357",
+                "ECO 360",
+                "ECO 362",
+                "ECO 383",
+                "ECO 386",
+                "ECO 389"
+              ]
+            },
+            "minCourses": 1
+          }
+        ]
+      },
+      "sourceText": "4. Five additional courses in economics at the 300 level and above, not including ECO 359 or ECO 459. Each of these must be taken for a minimum of three credits. One of the 5 electives must be a course from the following list: ECO 310, ECO 322, ECO 323, ECO 324, ECO 326, ECO 329, ECO 348, ECO 351, ECO 352, ECO 354, ECO 355, ECO 357, ECO 360, ECO 362, ECO 383, ECO 386, ECO 389"
+    },
+    {
+      "id": "economics-ba.A.5",
+      "label": "A.5",
+      "title": "One additional course",
+      "rule": {
+        "manualCheck": "Either an economics course (not ECO 359 or ECO 459) or a course from a list of pre-approved electives in other departments. The page does not list the other-department electives; confirm eligibility with the Economics department.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "subjects": [
+            "ECO"
+          ],
+          "minCredits": 3,
+          "excludeCourses": [
+            "ECO 359",
+            "ECO 459"
+          ],
+          "excludeUsedBy": [
+            "economics-ba.A.1",
+            "economics-ba.A.2",
+            "economics-ba.A.3",
+            "economics-ba.A.4"
+          ]
+        },
+        "constraints": []
+      },
+      "sourceText": "5. One additional course, either in economics (not including ECO 359 or ECO 459) or from a list of pre-approved electives in other departments, that carries a minimum of three credits."
+    },
+    {
+      "id": "economics-ba.A.note-400",
+      "label": "A.note-400",
+      "title": "Limit on 400-level courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than two 400-level courses will count toward fulfillment of the major.",
+        "reason": "A program-wide cap on 400-level courses across the major is not expressible as a per-requirement constraint."
+      },
+      "sourceText": "Note: No more than two 400-level courses will count toward fulfillment of the major."
+    },
+    {
+      "id": "economics-ba.A.note-transfer",
+      "label": "A.note-transfer",
+      "title": "Limit on economics courses taken elsewhere",
+      "rule": {
+        "type": "unparsed",
+        "text": "A maximum of four courses in economics taken at other institutions may be applied toward the major.",
+        "reason": "A transfer-course cap across the major is not a course-selection rule and cannot be expressed with the available rule types."
+      },
+      "sourceText": "A maximum of four courses in economics taken at other institutions may be applied toward the major."
+    },
+    {
+      "id": "economics-ba.B",
+      "label": "B",
+      "title": "Mathematics",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 125"
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 130"
+              },
+              {
+                "type": "course",
+                "code": "MAT 125"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "AMS 151"
+          },
+          {
+            "type": "unparsed",
+            "text": "Level 6 on the mathematics placement examination",
+            "reason": "Placement-exam result is not a course and cannot be checked from course records."
+          },
+          {
+            "type": "unparsed",
+            "text": "Any higher level calculus course (See Note 2)",
+            "reason": "Refers to a Note 2 that does not appear on this page; the qualifying courses are not listed."
+          }
+        ]
+      },
+      "sourceText": "MAT 125 - Calculus A 3 credits OR MAT 130 - Trigonometry and Logarithms 1 credit, MAT 125 - Calculus A Credits: 3 credits OR AMS 151 - Applied Calculus I 3 credits OR level 6 on the mathematics placement examination OR any higher level calculus course (See Note 2)"
+    },
+    {
+      "id": "economics-ba.B.note",
+      "label": "B.note",
+      "title": "Conditional prerequisite math course",
+      "rule": {
+        "type": "unparsed",
+        "text": "If students do not place into MAT 125 on the basis of the math placement examination, MAT 123 or MAT 119 /MAT 123 is a required course for the major.",
+        "reason": "Conditional on placement-exam results, which are not present in course records."
+      },
+      "sourceText": "Note: If students do not place into MAT 125 on the basis of the math placement examination, MAT 123 or MAT 119 /MAT 123 is a required course for the major."
+    },
+    {
+      "id": "economics-ba.C",
+      "label": "C",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "manualCheck": "ECO 359 is the WRTD certified class for most students.",
+            "type": "course",
+            "code": "ECO 359"
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "manualCheck": "Requires faculty member approval; ECO 487 is a variable-credit independent research course.",
+                "type": "course",
+                "code": "ECO 487"
+              },
+              {
+                "manualCheck": "0-credit WRTD class that must be taken in the same semester as ECO 487.",
+                "type": "course",
+                "code": "ECO 459"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "All students must do so by registering for the WRTD certified class ECO 359 unless they intend to complete a larger, more substantial, independent research project. Those seeking to complete a substantial independent research project should not register for ECO 359. They should instead seek a faculty member's approval to register for ECO 487 and obtain their WRTD certification by registering for the 0-credit ECO 459 class in the same semester."
+    },
+    {
+      "id": "economics-ba.credits",
+      "label": "Credits",
+      "title": "Minimum credits for the major",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires a minimum of 46 credits.",
+        "reason": "Program-wide credit minimum is not expressible with the available rule types."
+      },
+      "sourceText": "Completion of the major requires a minimum of 46 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "economics-ba.A.1",
+        "economics-ba.A.2",
+        "economics-ba.A.3",
+        "economics-ba.A.4",
+        "economics-ba.A.5",
+        "economics-ba.B",
+        "economics-ba.C"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "economics-ba.A.1",
+        "economics-ba.A.2",
+        "economics-ba.A.3",
+        "economics-ba.A.4",
+        "economics-ba.A.5",
+        "economics-ba.B",
+        "economics-ba.C"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ECO 110",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 122",
+          "alternatives": [
+            "MAT 123",
+            "AMS 151"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 125",
+          "alternatives": [
+            "AMS 151"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ECO 111",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ECO 303",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ECO 320",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ECO Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ECO 305",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ECO 321",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division ECO",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division ECO",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division ECO",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ECO Elective or other Approved Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division ECO",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ECO Elective or other Approved Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students are urged to consider enrolling in ECO 488 - Internship in Economics. Registration requires an internship offer (through the Career Center or otherwise) and permission of a faculty member; the permission and Career Center arrangement must be made before the start of the semester. The academic component runs alongside the work component."
+    },
+    {
+      "topic": "advising",
+      "text": "Independent research (ECO 487) should be formulated with the supervising faculty member before the start of the semester in which it is taken. Credit is variable (about four hours per week per credit)."
+    },
+    {
+      "topic": "advising",
+      "text": "Economics is a quantitative social science. Students planning graduate study or careers using economics should take additional mathematics and applied mathematics courses."
+    },
+    {
+      "topic": "advising",
+      "text": "Students who need to take MAP 103 cannot take ECO 110 or ECO 111 in their first semester of freshman year and must adjust their schedule."
+    },
+    {
+      "topic": "other",
+      "text": "Honors in Economics is available. Requirements include a 3.5 GPA in the five required courses with no less than a B in any one, a 3.50 GPA in five upper-division economics electives, six credits in economics at the 400 level, and an honors thesis evaluated by the Undergraduate Committee. The honors program is not evaluated here."
+    },
+    {
+      "topic": "other",
+      "text": "Double majors must fulfill the Economics upper-division writing requirement in addition to their other major's upper-division writing requirement."
+    },
+    {
+      "topic": "other",
+      "text": "Upper-division writing should generally be completed in the senior year, after most upper-division major requirements are done. ECO 459 may be used with a paper from another upper-division class only in exceptional cases, with instructor and student agreement, and with registration for ECO 459 in the same semester."
+    },
+    {
+      "topic": "other",
+      "text": "Students may consider Second Majors and Minors in Applied Mathematics and Statistics (AMS), Business (BUS, major only), and Computer Science (CSE)."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1421",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "russian-studies",
+  "name": "Russian Studies",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "russian-studies.language",
+      "label": "language",
+      "title": "Language study (6 credits)",
+      "rule": {
+        "manualCheck": "Placement depends on prior Russian study. Students without background take RUS 111-RUS 112 or RUS 101; students with prior study, including heritage speakers, take 6 credits of higher-level RUS courses after consulting the Russian Coordinator.",
+        "type": "choose",
+        "credits": 6,
+        "from": {
+          "subjects": [
+            "RUS"
+          ]
+        }
+      },
+      "sourceText": "Language study (6 credits) - All Russian minors must take at least 6 credits of Russian language (RUS) courses. Students without background in Russian language will take introductory Russian, either RUS 111 -RUS 112 (Elementary Russian I and II) or RUS 101 (Intensive Elementary Russian). Those with previous Russian language study, including heritage speakers, must take 6 credits of higher level Russian language courses. Consult the Russian Coordinator for appropriate placement."
+    },
+    {
+      "id": "russian-studies.electives",
+      "label": "electives",
+      "title": "Russian-focused electives (12 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "russian-studies.electives.core",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "HUR"
+              ]
+            }
+          },
+          {
+            "id": "russian-studies.electives.additional",
+            "manualCheck": "Courses from GLI, HIS, HUE, or LIN count only if relevant and approved by the Russian Coordinator, and at most one may be applied. Relevance and approval cannot be checked from a transcript.",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "HUR",
+                "RUS",
+                "GLI",
+                "HIS",
+                "HUE",
+                "LIN"
+              ],
+              "excludeUsedBy": [
+                "russian-studies.language",
+                "russian-studies.electives.core"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "maxFrom",
+                "from": {
+                  "subjects": [
+                    "GLI",
+                    "HIS",
+                    "HUE",
+                    "LIN"
+                  ]
+                },
+                "maxCourses": 1
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Russian-focused electives (12 credits) - Two electives selected from HUR courses; Two additional electives can be selected from either HUR or RUS courses not applied toward Language Study. One relevant course from another department (GLI, HIS, HUE, LIN) may be applied as an elective with permission of the Russian Coordinator."
+    },
+    {
+      "id": "russian-studies.total",
+      "label": "total",
+      "title": "Total credits and upper-division credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires at least 18 credits, and 9 of the 18 credits must be at the 300 level or above.",
+        "reason": "Program-wide credit total and upper-division credit minimum are not expressible as a single rule type."
+      },
+      "sourceText": "Completion of the minor requires at least 18 credits, and 9 of the 18 credits must be at the 300 level or above."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "russian-studies.language",
+        "russian-studies.electives",
+        "russian-studies.total"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "russian-studies.language",
+        "russian-studies.electives",
+        "russian-studies.total"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students without Russian background take RUS 111-RUS 112 or RUS 101. Heritage speakers and students with prior study are placed according to their mastery of spoken and written language. Consult the Russian Coordinator (Anna Geisherik, anna.geisherik@stonybrook.edu) for placement. As a rule of thumb, one year of high-school foreign-language study equals one college semester for non-native speakers."
+    },
+    {
+      "topic": "other",
+      "text": "The minor is flexible and may be combined with work in other disciplines. Director of Undergraduate Studies: Kathleen de Riesthal."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1519",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

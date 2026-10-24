@@ -1,0 +1,121 @@
+{
+  "id": "marine-sciences",
+  "name": "Marine Sciences",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "marine-sciences.intro",
+      "label": "intro",
+      "title": "Introductory Marine Sciences course",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAR 101"
+          },
+          {
+            "type": "course",
+            "code": "MAR 104"
+          }
+        ]
+      },
+      "sourceText": "MAR 101 - Long Island Sound: Science and Use 3 credits; OR; MAR 104 - Oceanography 3 credits"
+    },
+    {
+      "id": "marine-sciences.electives",
+      "label": "electives",
+      "title": "At least 15 credits from the following",
+      "rule": {
+        "type": "choose",
+        "credits": 15,
+        "from": {
+          "courses": [
+            "BIO 343",
+            "BIO 353"
+          ],
+          "subjects": [
+            "MAR"
+          ],
+          "minNumber": 300
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "MAR 487"
+              ]
+            },
+            "maxCredits": 3
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "MAR 488"
+              ]
+            },
+            "maxCredits": 3
+          }
+        ]
+      },
+      "sourceText": "At least 15 credits from the following: Upper-division MAR courses; BIO 343 - Invertebrate Zoology Laboratory 2 credits; BIO 353 - Marine Ecology 3 credits. Notes: No more than three credits each of MAR 487 and MAR 488 may be applied toward this requirement."
+    },
+    {
+      "id": "marine-sciences.overlap",
+      "label": "overlap",
+      "title": "Credits not shared with a major or other minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 12 credits applied to the minor may not be applied to any major or other minor.",
+        "reason": "Cross-program credit overlap limit has no rule type in the schema"
+      },
+      "sourceText": "At least 12 credits applied to the minor may not be applied to any major or other minor."
+    },
+    {
+      "id": "marine-sciences.pass-no-credit",
+      "label": "pass-no-credit",
+      "title": "Pass/No Credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one three-credit course may be taken under the Pass/No Credit option.",
+        "reason": "Pass/No Credit limit has no rule type in the schema"
+      },
+      "sourceText": "No more than one three-credit course may be taken under the Pass/No Credit option."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "marine-sciences.electives"
+      ],
+      "sourceText": "All upper-division courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Intended primarily for science majors; the minor assumes completion of basic courses in mathematics, physics, chemistry, biology, or geology. Undergraduate Advisor: Nancy Black, nancy.black@stonybrook.edu. Research opportunities are available through faculty or the SoMAS website (http://www.somas.stonybrook.edu)."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1497",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

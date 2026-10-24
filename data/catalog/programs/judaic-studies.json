@@ -1,0 +1,123 @@
+{
+  "id": "judaic-studies",
+  "name": "Judaic Studies",
+  "kind": "minor",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "judaic-studies.hebrew",
+      "label": "hebrew",
+      "title": "One year of Hebrew",
+      "rule": {
+        "type": "unparsed",
+        "text": "One year of Hebrew at a level appropriate to the student's previous background",
+        "reason": "The page names no specific Hebrew courses; the required level depends on the student's prior background and must be determined by the advisor."
+      },
+      "sourceText": "One year of Hebrew at a level appropriate to the student’s previous background"
+    },
+    {
+      "id": "judaic-studies.foundation",
+      "label": "foundation",
+      "title": "Two of the following",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "JDH 230",
+            "RLS 230",
+            "JDS 225",
+            "HIS 225",
+            "JDS 226",
+            "HIS 226"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "onePerGroup",
+            "groups": [
+              [
+                "JDH 230",
+                "RLS 230"
+              ],
+              [
+                "JDS 225",
+                "HIS 225"
+              ],
+              [
+                "JDS 226",
+                "HIS 226"
+              ]
+            ]
+          }
+        ]
+      },
+      "sourceText": "Two of the following: JDH 230 - Judaism; RLS 230 - Judaism; JDS 225 - Jewish History from Antiquity to the Middle Ages 3 credits; HIS 225 - Jewish History from Antiquity to the Middle Ages 3 credits; JDS 226 - Modern Jewish History: Dilemmas of Difference 3 credits; HIS 226 - Modern Jewish History: Dilemmas of Difference 3 credits"
+    },
+    {
+      "id": "judaic-studies.upper-division",
+      "label": "upper-division",
+      "title": "Three courses numbered 300 or higher approved in advance by the minor advisor",
+      "rule": {
+        "manualCheck": "Each course must be approved in advance by the Judaic Studies minor advisor. Courses from other departments may be used if judged appropriate to the student's field of concentration. Representative courses listed include ANT 310 - Ethnography, EGL 375 - Literature in English in Relation to Other Disciplines, and RLS 390 - Special Topics, plus appropriate topics from any directed readings course.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "minNumber": 300
+        }
+      },
+      "sourceText": "Three courses numbered 300 or higher approved in advance by the minor advisor. Requirement 3 may be satisfied by courses in the Judaic Studies program itself or by related courses in other programs, if the subject is judged appropriate for the student’s field of concentration. The following list of courses from other departments is meant to be representative and does not exclude the possibility of substituting others with the approval of the student’s advisor. Appropriate topics from any directed readings course and from the following: ANT 310 - Ethnography; EGL 375 - Literature in English in Relation to Other Disciplines; RLS 390 - Special Topics"
+    },
+    {
+      "id": "judaic-studies.credits",
+      "label": "credits",
+      "title": "Minimum credits for the minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires at least 21 credits. The student must construct a program of at least 21 credits fulfilling the requirements, with the approval of a Judaic Studies program advisor.",
+        "reason": "Program-wide credit minimum that no rule type covers."
+      },
+      "sourceText": "Completion of the minor requires at least 21 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "judaic-studies.hebrew",
+        "judaic-studies.foundation",
+        "judaic-studies.upper-division"
+      ],
+      "sourceText": "No more than one course offered for the minor may be taken under the Pass/No Credit option. All other courses for the minor must be taken for a letter grade."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students interested in enrolling in the minor must consult with the coordinator of the minor in Judaic Studies and select an advisor from the Judaic Studies program faculty."
+    },
+    {
+      "topic": "grading",
+      "text": "No more than one course offered for the minor may be taken under the Pass/No Credit option. The Pass/No Credit allowance is not modeled as a rule; the letter-grade policy applies to all other minor courses."
+    },
+    {
+      "topic": "advising",
+      "text": "With the approval of an advisor from the Judaic Studies program faculty, the student constructs a program of at least 21 credits. The advisor helps assure the program has a curricular focus; courses from other departments suiting that focus may be included."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1488",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

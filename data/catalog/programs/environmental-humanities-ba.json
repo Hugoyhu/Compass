@@ -1,0 +1,361 @@
+{
+  "id": "environmental-humanities-ba",
+  "name": "Environmental Humanities, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Environmental Humanities",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "environmental-humanities-ba.foundation",
+      "label": "foundation",
+      "title": "Required Foundation Courses for Major (30 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 102"
+              },
+              {
+                "type": "course",
+                "code": "ANT 102"
+              },
+              {
+                "type": "course",
+                "code": "GSS 105"
+              },
+              {
+                "type": "course",
+                "code": "POL 102"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 111"
+              },
+              {
+                "type": "course",
+                "code": "ENS 101"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 201"
+              },
+              {
+                "type": "course",
+                "code": "SUS 202"
+              },
+              {
+                "type": "course",
+                "code": "SUS 203"
+              }
+            ]
+          },
+          {
+            "sourceText": "Two of the following: ATM 201; BIO 113; BIO 115; CHE 115; ENV 115; GEO 102; MAR 101; MAR 104; SUS 118",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "courses": [
+                "ATM 201",
+                "BIO 113",
+                "BIO 115",
+                "CHE 115",
+                "ENV 115",
+                "GEO 102",
+                "MAR 101",
+                "MAR 104",
+                "SUS 118"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "AMS 102 - Elements of Statistics 3 credits; ANT 102 - What Makes Us Human? 3 credits; GSS 105 - Introduction to Maps and Mapping 3 credits; POL 102 - Introduction to American Government 3 credits; SUS 111 - Introduction to Sustainability 3 credits OR ENS 101 - Prospects for Planet Earth 3 credits; SUS 201 - Systems and Models 3 credits; SUS 202 - Introduction to Environmental Humanities 3 credits; SUS 203 - Interpretation and Critical Analysis 3 credits; Two of the following: ATM 201, BIO 113, BIO 115, CHE 115, ENV 115, GEO 102, MAR 101, MAR 104, SUS 118"
+    },
+    {
+      "id": "environmental-humanities-ba.core",
+      "label": "core",
+      "title": "Core Courses (12-13 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ENV 301"
+              },
+              {
+                "type": "course",
+                "code": "SUS 401"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "GSS 313"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GSS 314"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "GIS 317"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SUS 301"
+          },
+          {
+            "type": "course",
+            "code": "SUS 305"
+          }
+        ]
+      },
+      "sourceText": "ENV 301 - Sustainability of the Long Island Pine Barrens 3 credits OR SUS 401 - Integrative, Collaborative Systems Studies 3 credits; GSS 313 - GIS Design and Application I 3 credits; GSS 314 - GIS Laboratory 1 credit OR GIS 317 - Geospatial Narratives; SUS 301 - Technical Writing and Communication 3 credits; SUS 305 - Collective Action and Advocacy 3 credits"
+    },
+    {
+      "id": "environmental-humanities-ba.upper-division",
+      "label": "upper-division",
+      "title": "Upper-Division Course Groups (24 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "unparsed",
+            "text": "Group 1: Natural Sciences - ENV 304, GEO 313, MAR 340, MAR 392 (the page does not state how many of these are required)",
+            "reason": "The page lists Group 1 courses without a required count; the 24-credit heading does not say how many Group 1 courses to take."
+          },
+          {
+            "manualCheck": "Students must complete 21 credits from Groups 2, 3, and 4: one course from Group 2, one from Group 3, two from Group 4, and three from any of these groups. SUS 350 is listed in Groups 2, 3, and 4 but may be applied to only one. SUS 487, SUS 488, ANP 487 (independent study or research, in place of 3 credits in Groups 2-4) and the study abroad courses ANT 309, ANT 310, ANT 326, SUS 316 require permission of the faculty advisor. Other classes may be substituted with permission of the undergraduate director; no specific courses are named for that substitution.",
+            "type": "choose",
+            "credits": 21,
+            "from": {
+              "courses": [
+                "EGL 394",
+                "SUS 320",
+                "SUS 321",
+                "SUS 325",
+                "SUS 328",
+                "SUS 350",
+                "AAS 352",
+                "HIS 352",
+                "AFS 374",
+                "SUS 374",
+                "ENS 333",
+                "HIS 302",
+                "SOC 344",
+                "SUS 309",
+                "SUS 314",
+                "SUS 315",
+                "SUS 317",
+                "SUS 318",
+                "SUS 323",
+                "SUS 324",
+                "SUS 343",
+                "SUS 386",
+                "SUS 117",
+                "SUS 329",
+                "SUS 487",
+                "SUS 488",
+                "ANP 487",
+                "ANT 309",
+                "ANT 310",
+                "ANT 326",
+                "SUS 316"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "EGL 394",
+                    "SUS 320",
+                    "SUS 321",
+                    "SUS 325",
+                    "SUS 328",
+                    "SUS 350"
+                  ]
+                },
+                "minCourses": 1
+              },
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AAS 352",
+                    "HIS 352",
+                    "AFS 374",
+                    "SUS 374",
+                    "ENS 333",
+                    "HIS 302",
+                    "SOC 344",
+                    "SUS 309",
+                    "SUS 314",
+                    "SUS 315",
+                    "SUS 317",
+                    "SUS 318",
+                    "SUS 323",
+                    "SUS 324",
+                    "SUS 343",
+                    "SUS 350",
+                    "SUS 386"
+                  ]
+                },
+                "minCourses": 1
+              },
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "SUS 117",
+                    "SUS 329",
+                    "SUS 350"
+                  ]
+                },
+                "minCourses": 2
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Students are required to complete 21 credits total from the courses of Groups 2, 3, and 4. Select one course from each of Groups 2 and 3 and two courses from Group 4. The remaining three courses may be selected from any one area or spread across areas as is most relevant to the student. With the permission of the faculty advisor, students may do an independent study or research (SUS 487, SUS 488, or ANP 487) in place of 3 credits in groups 2, 3, or 4. Other classes may be substituted with permission of undergraduate director."
+    },
+    {
+      "id": "environmental-humanities-ba.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Registration in the 0-credit SUS 459 and approval of either a term paper or a laboratory report written for an advanced course in the appropriate major (including Readings and Research courses) are required. SUS 459 is completed with a grade of S. A list of preapproved courses is available through the department.",
+        "type": "course",
+        "code": "SUS 459"
+      },
+      "sourceText": "The advanced writing component of the major in EHM requires registration in the 0-credit SUS 459 and approval of either a term paper or a laboratory report written for an advanced course in the appropriate major at Stony Brook (including Readings and Research courses). Completion of SUS 459 with a grade of S will result in approval of the WRTD requirement."
+    },
+    {
+      "id": "environmental-humanities-ba.grades",
+      "label": "grades",
+      "title": "Grade limit for major courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one course (4 credits maximum) with a passing grade lower than C can be credited towards the major. Course taken with the Pass/NC option may not be applied to the major.",
+        "reason": "The cap on sub-C courses and the Pass/NC exclusion are not expressible with the available rule types."
+      },
+      "sourceText": "No more than one course (4 credits maximum) with a passing grade lower than C can be credited towards the major. Course taken with the Pass/NC option may not be applied to the major."
+    },
+    {
+      "id": "environmental-humanities-ba.double-majors",
+      "label": "double-majors",
+      "title": "Double Majors",
+      "rule": {
+        "type": "unparsed",
+        "text": "Excluding ENV 301, SUS 301, SUS 305, and SUS 401, no more than 6 credits of 300-400 level course credits can be applied to two majors within the School of Marine and Atmospheric Sciences.",
+        "reason": "A cross-major credit cap is not expressible with the available rule types."
+      },
+      "sourceText": "Excluding ENV 301 Sustainability of the Long Island Pine Barrens, SUS 301 Technical Writing and Communication, SUS 305 Collective Action and Advocacy, and SUS 401 Integrative, Collaborative Systems Studies, no more than 6 credits of 300-400 level course credits can be applied to two majors within the School of Marine and Atmospheric Sciences."
+    }
+  ],
+  "policies": [],
+  "substitutions": [
+    {
+      "id": "environmental-humanities-ba.sub.chem",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 115",
+          "ENV 115"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 129"
+          },
+          {
+            "type": "course",
+            "code": "CHE 131"
+          },
+          {
+            "type": "course",
+            "code": "CHE 152"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "course",
+          "code": "SUS 459"
+        },
+        "sourceText": "Completion of SUS 459 with a grade of S will result in approval of the WRTD requirement."
+      }
+    ]
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "Effective Spring 2023, students may not declare the major in Environmental Humanities. Students may instead enroll in the Environmental Humanities track in the Sustainability Studies, BA."
+    },
+    {
+      "topic": "advising",
+      "text": "Contact the director (David Taylor) or undergraduate advisor (Nancy Black) to plan the Upper Division Writing Requirement and study abroad coursework."
+    },
+    {
+      "topic": "other",
+      "text": "Study abroad experiences in Costa Rica, Madagascar, and the Turkana Basin (Kenya) are encouraged; discuss with the major director how study abroad coursework can fulfill requirements."
+    },
+    {
+      "topic": "other",
+      "text": "Several courses are listed with former designations (e.g., formerly offered as SBC 111, EHM 202); the page lists these as the current SUS course numbers."
+    },
+    {
+      "topic": "other",
+      "text": "The page's sample course sequence section contains only a heading and no course listing."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1448",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

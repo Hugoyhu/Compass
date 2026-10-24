@@ -1,0 +1,682 @@
+{
+  "id": "atmospheric-and-oceanic-sciences-bs",
+  "name": "Atmospheric and Oceanic Sciences, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Atmospheric and Oceanic Sciences",
+  "approxCredits": 65,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "atmospheric-and-oceanic-sciences-bs.core-math-chem-physics-cs",
+      "label": "core-math-chem-physics-cs",
+      "title": "Required Courses in Mathematics, Chemistry, Physics, and Computer Science",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 102"
+              },
+              {
+                "type": "course",
+                "code": "AMS 210"
+              }
+            ]
+          },
+          {
+            "manualCheck": "Page allows alternate beginning calculus sequences (MAT 125 or MAT 125/MAT 130, MAT 126, MAT 127 or MAT 141, MAT 142 or MAT 171 or AMS 151, AMS 161 or MAT 131, MAT 132) to be substituted for major requirements or prerequisites; verify the sequence manually. Placement-test equivalency is accepted.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "MAT 132"
+              },
+              {
+                "type": "unparsed",
+                "text": "If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major.",
+                "reason": "Conditional on math placement result, which a transcript cannot show"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 203"
+              },
+              {
+                "type": "course",
+                "code": "AMS 261"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CHE 131"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 127"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 142"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ESG 111"
+              },
+              {
+                "type": "course",
+                "code": "PHY 277"
+              },
+              {
+                "type": "course",
+                "code": "CSE 130"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "AMS 102 - Elements of Statistics OR AMS 210 - Applied Linear Algebra; MAT 131 - Calculus I; MAT 132 - Calculus II; If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major.; MAT 203 - Calculus III with Applications OR AMS 261 - Applied Calculus III; CHE 131 - General Chemistry IB (Note: CHE 129 /CHE 130 or CHE 152 may be substituted for CHE 131 ); PHY 125, PHY 126, PHY 133, PHY 127, PHY 134 OR PHY 131, PHY 133, PHY 132, PHY 134 OR PHY 141, PHY 133, PHY 142, PHY 134; ESG 111 - Programming for Engineers OR PHY 277 - Computation for Physics and Astronomy OR CSE 130 - Introduction to Programming in C"
+    },
+    {
+      "id": "atmospheric-and-oceanic-sciences-bs.dept-courses",
+      "label": "required-departmental-courses",
+      "title": "Required Departmental Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ATM 205"
+          },
+          {
+            "type": "course",
+            "code": "ATM 247"
+          },
+          {
+            "type": "course",
+            "code": "ATM 345"
+          },
+          {
+            "type": "course",
+            "code": "ATM 348"
+          },
+          {
+            "type": "course",
+            "code": "ATM 397"
+          },
+          {
+            "type": "course",
+            "code": "MAR 334"
+          },
+          {
+            "type": "course",
+            "code": "MAR 350"
+          }
+        ]
+      },
+      "sourceText": "ATM 205 - Introduction to Atmospheric Sciences; ATM 247 - Atmospheric Structure and Analysis; ATM 345 - Atmospheric Thermodynamics and Dynamics; ATM 348 - Atmospheric Physics; ATM 397 - Air Pollution and Global Warming; MAR 334 - Remote Sensing of the Environment; MAR 350 - Introduction to Ocean Physics"
+    },
+    {
+      "id": "atmospheric-and-oceanic-sciences-bs.track",
+      "label": "track",
+      "title": "Track requirements (Meteorology or Climate)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 303"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 361"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ATM 346"
+              },
+              {
+                "type": "course",
+                "code": "ATM 347"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 251"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ATM 320"
+                  }
+                ]
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ATM 365"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ATM 383"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ATM 201"
+              },
+              {
+                "type": "course",
+                "code": "ATM 305"
+              },
+              {
+                "type": "course",
+                "code": "ATM 320"
+              },
+              {
+                "type": "course",
+                "code": "GEO 313"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAR 340"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ENS 301"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Additional Requirements for the Meteorology Track: MAT 303 - Calculus IV with Applications OR AMS 361 - Applied Calculus IV: Differential Equations; ATM 346 - Advanced Atmospheric Dynamics; ATM 347 - Advanced Synoptic Meteorology and Weather Forecasting; PHY 251 - Modern Physics OR ATM 320 - Problem Solving with Python; ATM 365 - Tropical Meteorology OR ATM 383 - Doppler Weather Radar. Additional Requirements for the Climate Track: ATM 201 - Introduction to Climate and Climate Change; ATM 305 - Global Atmospheric Change; ATM 320 - Problem Solving with Python; GEO 313 - Understanding Water Resources for the 21st Century; MAR 340 - Environmental Problems and Solutions OR ENS 301 - Contemporary Environmental Issues and Policies"
+    },
+    {
+      "id": "atmospheric-and-oceanic-sciences-bs.upper-division-writing",
+      "label": "upper-division-writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAR 459"
+              },
+              {
+                "type": "course",
+                "code": "SUS 459"
+              }
+            ]
+          },
+          {
+            "type": "unparsed",
+            "text": "Enrollment in an approved advanced course that entails writing of either a term paper or a laboratory report, taken along with the 0-credit MAR 459 or SUS 459 (S/U grading)",
+            "reason": "Requires an approved-course list maintained outside the catalog page"
+          }
+        ]
+      },
+      "sourceText": "The advanced writing component of the major in ATM requires registration in, and satisfactory completion of the 0-credit MAR 459 or SUS 459 (S/U grading) along with enrollment in an approved advanced course that entails writing of either a term paper or a laboratory report. Completion of MAR 459 with a grade of S will also result in fulfillment of the WRTD requirement."
+    },
+    {
+      "id": "atmospheric-and-oceanic-sciences-bs.sub-c-limit",
+      "label": "sub-c-limit",
+      "title": "Limit on courses below C",
+      "rule": {
+        "type": "unparsed",
+        "text": "Of the approximately 65 credits, no more than one course (4 credits) with a grade lower than C can be credited to the major.",
+        "reason": "A cap on sub-C grades across the major is not expressible with the available policy types"
+      },
+      "sourceText": "Completion of the major requires approximately 65 credits. Of these, no more than one course (4 credits) with a grade lower than C can be credited to the major."
+    }
+  ],
+  "policies": [],
+  "substitutions": [
+    {
+      "id": "atmospheric-and-oceanic-sciences-bs.sub.chem-131",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 131"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "CHE 129 and CHE 130 together, or CHE 152, may be substituted for CHE 131",
+        "reason": "The substitute is an either/or pair of course groups, which a single substitution node cannot express"
+      },
+      "requiresApproval": false,
+      "sourceText": "CHE 131 - General Chemistry IB 4 credits (Note: CHE 129 /CHE 130 or CHE 152 may be substituted for CHE 131 )"
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "course",
+          "code": "MAR 459"
+        },
+        "sourceText": "Completion of MAR 459 with a grade of S will also result in fulfillment of the WRTD requirement."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 131",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "alternatives": [
+            "PHY 141"
+          ],
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 132",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "alternatives": [
+            "PHY 142"
+          ],
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ATM 205",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 203",
+          "alternatives": [
+            "AMS 261"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "PHY 277",
+          "alternatives": [
+            "ESG 111",
+            "CSE 130"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ATM 247",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 251",
+          "alternatives": [
+            "ATM 320"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 102",
+          "alternatives": [
+            "AMS 201"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ATM 345",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 303",
+          "alternatives": [
+            "AMS 361"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ATM 346",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ATM 348",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ATM 347",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAR 334",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ATM 397",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAR 350",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ATM 365",
+          "alternatives": [
+            "ATM 383"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ATM 447",
+          "alternatives": [
+            "ATM 487",
+            "ATM 488"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Admission to the BS/MS program in Atmospheric and Oceanic Sciences is temporarily suspended effective Spring 2026. The BS/MS program is not modeled here."
+    },
+    {
+      "topic": "advising",
+      "text": "Students should discuss their program with the undergraduate advisor, Nancy Black (E2361 Melville Library, (631) 632-9404, nancy.black@stonybrook.edu)."
+    },
+    {
+      "topic": "other",
+      "text": "Atmospheric Sciences Honors Program (3.50 GPA in major courses by end of junior year, honors thesis, and undergraduate research committee recommendation) is not modeled here."
+    },
+    {
+      "topic": "other",
+      "text": "Experiential Learning Courses (optional, 1-3 credits): ATM 387 (3 credits), ATM 447 (1-3 credits), and ATM 487 (0-6 credits) or ATM 488 (0-6 credits). These are optional and are not evaluated as requirements."
+    },
+    {
+      "topic": "other",
+      "text": "The sample sequence transcribed here is the Meteorology Track. The Oceanography Track sample sequence is not transcribed. The page shows 'PHY 132/124' in the sample sequence; 'PHY 124' may be a typo and is transcribed here as PHY 132 with alternative PHY 142."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1367",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

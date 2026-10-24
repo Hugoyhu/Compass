@@ -1,0 +1,603 @@
+{
+  "id": "art-studio-ba",
+  "name": "Art, Studio, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Studio Art",
+  "approxCredits": 57,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "art-studio-ba.foundation",
+      "label": "foundation",
+      "title": "Foundation courses",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "ARS 154",
+            "ARS 205",
+            "ARS 225"
+          ]
+        }
+      },
+      "sourceText": "Choose two of the following foundation courses: ARS 154 - Foundations: Drawing 3 credits; ARS 205 - Foundations: Idea and Form 3 credits; ARS 225 - Introduction to Digital Art 3 credits"
+    },
+    {
+      "id": "art-studio-ba.concentration",
+      "label": "concentration",
+      "title": "Area of Concentration (18 credits)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "manualCheck": "Track: Painting, Drawing, and Printmaking. Requires a minimum of four upper-division studio classes in this area. ARS 420, ARS 487, ARS 491, and ARS 495 count only when appropriate.",
+            "type": "choose",
+            "credits": 18,
+            "from": {
+              "courses": [
+                "ARS 255",
+                "ARS 274",
+                "ARS 350",
+                "ARS 351",
+                "ARS 352",
+                "ARS 355",
+                "ARS 359",
+                "ARS 374",
+                "ARS 375",
+                "ARS 452",
+                "ARS 471",
+                "ARS 472",
+                "ARS 420",
+                "ARS 487",
+                "ARS 491",
+                "ARS 495"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "ARS"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 4
+              }
+            ]
+          },
+          {
+            "manualCheck": "Track: Electronic Media and Photography. Requires a minimum of four upper-division studio classes in this area. ARS 420, ARS 487, ARS 491, and ARS 495 count only when appropriate.",
+            "type": "choose",
+            "credits": 18,
+            "from": {
+              "courses": [
+                "MUS 208",
+                "ARS 281",
+                "ARS 319",
+                "ARS 323",
+                "ARS 324",
+                "ARS 325",
+                "ARS 326",
+                "ARS 327",
+                "ARS 328",
+                "ARS 329",
+                "ARS 381",
+                "ARS 382",
+                "ARS 384",
+                "ARS 402",
+                "ARS 425",
+                "ARS 481",
+                "MUS 341",
+                "ARS 420",
+                "ARS 487",
+                "ARS 491",
+                "ARS 495"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "ARS"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 4
+              }
+            ]
+          },
+          {
+            "manualCheck": "Track: Sculpture and Ceramic Sculpture. Requires a minimum of four upper-division studio classes in this area. ARS 420, ARS 487, ARS 491, and ARS 495 count only when appropriate.",
+            "type": "choose",
+            "credits": 18,
+            "from": {
+              "courses": [
+                "ARS 256",
+                "ARS 264",
+                "ARS 364",
+                "ARS 365",
+                "ARS 366",
+                "ARS 465",
+                "ARS 466",
+                "ARS 420",
+                "ARS 487",
+                "ARS 491",
+                "ARS 495"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "ARS"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 4
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Area of Concentration (18 credits) including a minimum of four upper-division studio classes in one of the following (may include ARS 420, ARS 487, ARS 491, ARS 495 when appropriate): Painting, Drawing, and Printmaking; Electronic Media and Photography; Sculpture and Ceramic Sculpture"
+    },
+    {
+      "id": "art-studio-ba.electives",
+      "label": "electives",
+      "title": "Electives: seven additional studio classes",
+      "rule": {
+        "manualCheck": "ARS 487 and ARS 488 carry 0-6 credits each; confirm credit totals. Electives are chosen from any of the concentration areas.",
+        "type": "choose",
+        "count": 7,
+        "from": {
+          "courses": [
+            "ARS 255",
+            "ARS 274",
+            "ARS 350",
+            "ARS 351",
+            "ARS 352",
+            "ARS 355",
+            "ARS 359",
+            "ARS 374",
+            "ARS 375",
+            "ARS 452",
+            "ARS 471",
+            "ARS 472",
+            "MUS 208",
+            "ARS 281",
+            "ARS 319",
+            "ARS 323",
+            "ARS 324",
+            "ARS 325",
+            "ARS 326",
+            "ARS 327",
+            "ARS 328",
+            "ARS 329",
+            "ARS 381",
+            "ARS 382",
+            "ARS 384",
+            "ARS 402",
+            "ARS 425",
+            "ARS 481",
+            "MUS 341",
+            "ARS 256",
+            "ARS 264",
+            "ARS 364",
+            "ARS 365",
+            "ARS 366",
+            "ARS 465",
+            "ARS 466",
+            "ARS 105",
+            "ARS 390",
+            "ARS 401",
+            "ARS 403",
+            "ARH 407",
+            "ARS 420",
+            "ARS 475",
+            "ARS 476",
+            "ARS 487",
+            "ARS 488",
+            "ARS 491",
+            "ARS 495"
+          ]
+        }
+      },
+      "sourceText": "Electives: Seven additional studio classes. Chosen from any of the above areas of concentration. May include ARS 105, ARS 390, ARS 401, ARS 403, ARH 407, ARS 420, ARS 475, ARS 476, ARS 487, ARS 488, ARS 491, ARS 495"
+    },
+    {
+      "id": "art-studio-ba.art-history",
+      "label": "art-history",
+      "title": "Art History and Criticism courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ARH 206"
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "from": {
+              "subjects": [
+                "ARH"
+              ],
+              "excludeCourses": [
+                "ARH 206"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Art History and Criticism courses including: ARH 206 - Modern Art 3 credits; Three other ARH classes"
+    },
+    {
+      "id": "art-studio-ba.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing/WRTD Requirement",
+      "rule": {
+        "manualCheck": "The page lists WRTD courses with 'such as'. The SBC table also designates ARH 459, ARS 401, and ARH 459 as WRTD; confirm whether these also satisfy this requirement.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ARH 308"
+          },
+          {
+            "type": "course",
+            "code": "ARS 308"
+          },
+          {
+            "type": "course",
+            "code": "ARH 400"
+          },
+          {
+            "type": "course",
+            "code": "ARS 402"
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ARS 459"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "subjects": [
+                    "ARS"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Upper-Division Writing/WRTD Requirement: Students must demonstrate acceptable writing skills in the discipline before they graduate. This can be achieved by completing a course designated as WRTD, such as ARH 308, ARS 308, ARH 400, ARS 402 or ARS 459 (in conjunction with any 300- or 400- level ARS course)."
+    },
+    {
+      "id": "art-studio-ba.transfer-residency",
+      "label": "transfer-residency",
+      "title": "Studio Art transfer residency",
+      "rule": {
+        "type": "unparsed",
+        "text": "Studio Art transfer students must take at least 18 upper division ARS credits for the major at Stony Brook.",
+        "reason": "Transfer-specific residency minimum counted in upper-division ARS credits; no residency rule type filters by subject and level and applies only to transfer students."
+      },
+      "sourceText": "Studio Art transfer students must take at least 18 upper division ARS credits for the major at Stony Brook."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "art-studio-ba.foundation",
+        "art-studio-ba.concentration",
+        "art-studio-ba.electives",
+        "art-studio-ba.art-history",
+        "art-studio-ba.writing"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "art-studio-ba.foundation",
+        "art-studio-ba.concentration",
+        "art-studio-ba.electives",
+        "art-studio-ba.art-history",
+        "art-studio-ba.writing"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 154",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARH 202",
+          "alternatives": [
+            "ARH 204"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 225",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARH 206",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ARH 322",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARH 324",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 255",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ARS 350",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 351",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 352",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CDT 317",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ARS 364",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 366",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 381",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 326",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ARS 318",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 325",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 327",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division ARS",
+          "credits": 6
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division ARS",
+          "credits": 6
+        },
+        {
+          "kind": "placeholder",
+          "label": "Electives in other dept. or internship",
+          "credits": 6
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students should consult the department advisor to ensure their plan for completing the Upper Division Writing Requirement is consistent with university graduation requirements for General Education."
+    },
+    {
+      "topic": "sbc",
+      "text": "Students completing the Stony Brook Curriculum must complete a course that satisfies the WRTD learning objective to graduate."
+    },
+    {
+      "topic": "other",
+      "text": "Honors Program in Art (optional, not evaluated here): open to seniors with at least a 3.00 overall GPA and 3.50 in the major. Students enroll in ARH 495 or ARS 495 for the project semester. Honors are conferred if completed with distinction and a 3.50 GPA in all art courses taken in the senior year."
+    },
+    {
+      "topic": "other",
+      "text": "Minors of particular interest to Studio Art majors: Digital Arts (DIA), Art History (ARH)."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1358",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,807 @@
+{
+  "id": "biochemistry-bs",
+  "name": "Biochemistry, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Biochemistry",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "biochemistry-bs.related-fields",
+      "label": "related-fields",
+      "title": "Foundational Courses in Related Fields",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 129"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 130"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 132"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 132"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CHE 152"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 134"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CHE 154"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 321"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 322"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CHE 331"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHE 332"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 327"
+              },
+              {
+                "type": "course",
+                "code": "CHE 383"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 312"
+              },
+              {
+                "type": "course",
+                "code": "CHE 301"
+              }
+            ]
+          },
+          {
+            "id": "biochemistry-bs.related-fields.calculus",
+            "manualCheck": "Students who do not place into MAT 125 or MAT 131 on the math placement examination must also complete MAT 123 (or MAT 119 / MAT 123), which the page lists as a required course for the major.",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 127"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 132"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 161"
+                  }
+                ]
+              },
+              {
+                "type": "unparsed",
+                "text": "Level 9 on mathematics placement examination",
+                "reason": "Placement examination result cannot be verified from a transcript"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 121"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 122"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 127"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 142"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "General Chemistry Lecture Options: CHE 129, CHE 130, CHE 132 OR CHE 131, CHE 132 OR CHE 152. General Chemistry Laboratory Options: CHE 133, CHE 134 OR CHE 154. Organic Chemistry Lecture Options: CHE 321, CHE 322 OR CHE 331, CHE 332 (See Note 1). Organic Chemistry Laboratory Options: CHE 327 OR CHE 383. Physical Chemistry Options: CHE 312 OR CHE 301. Calculus Course Options: MAT 125, MAT 126, MAT 127 OR MAT 131, MAT 132 OR AMS 151, AMS 161 OR level 9 on mathematics placement examination. If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major. Physics Sequence Options: PHY 121, PHY 122 OR PHY 125, PHY 126, PHY 133, PHY 127, PHY 134 OR PHY 131, PHY 133, PHY 132, PHY 134 OR PHY 141, PHY 133, PHY 142, PHY 134."
+    },
+    {
+      "id": "biochemistry-bs.biology-foundations",
+      "label": "biology-foundations",
+      "title": "Foundational Courses in Biology",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BIO 201"
+          },
+          {
+            "type": "course",
+            "code": "BIO 202"
+          },
+          {
+            "type": "course",
+            "code": "BIO 203"
+          },
+          {
+            "type": "course",
+            "code": "BIO 204"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BIO 205"
+              },
+              {
+                "type": "course",
+                "code": "BIO 207"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "BIO 201 - Fundamentals of Biology: Organisms to Ecosystems; BIO 202 - Fundamentals of Biology: Molecular and Cellular Biology; BIO 203 - Fundamentals of Biology: Cellular and Organ Physiology; BIO 204 - Fundamentals of Scientific Inquiry in the Biological Sciences I; BIO 205 - Fundamentals of Scientific Inquiry in the Biological Sciences IIA OR BIO 207 - Fundamentals of Scientific Inquiry in the Biological Sciences IIB"
+    },
+    {
+      "id": "biochemistry-bs.advanced-biology",
+      "label": "advanced-biology",
+      "title": "Advanced Courses in Biology",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BIO 310"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BIO 320"
+              },
+              {
+                "type": "course",
+                "code": "BIO 321"
+              },
+              {
+                "type": "course",
+                "code": "EBH 302"
+              }
+            ]
+          },
+          {
+            "id": "biochemistry-bs.advanced-biology.bio361",
+            "manualCheck": "Requires a grade of C or higher in BIO 202 and in CHE 321 & CHE 322 (or CHE 331 & CHE 332) to enroll. BIO 361 must be taken before BIO 362.",
+            "type": "course",
+            "code": "BIO 361"
+          },
+          {
+            "id": "biochemistry-bs.advanced-biology.bio362",
+            "manualCheck": "Requires a grade of C or higher in BIO 202 and in CHE 321 & CHE 322 (or CHE 331 & CHE 332) to enroll. Must be taken after BIO 361.",
+            "type": "course",
+            "code": "BIO 362"
+          },
+          {
+            "type": "course",
+            "code": "BIO 365"
+          }
+        ]
+      },
+      "sourceText": "BIO 310 - Cell Biology; BIO 320 - General Genetics OR BIO 321 - Ecological Genetics (see Note 2) OR EBH 302 - Human Genetics (see Note 2); BIO 361 - Biochemistry I (see Note 3); BIO 362 - Biochemistry II (see Note 3); BIO 365 - Biochemistry Laboratory. Note 2: BIO 321 or EBH 302 cannot satisfy both the Advanced biology/chemistry elective and the biochemistry major Genetics requirement. One or the other, not both. Note 3: BIO 361 must be taken prior to BIO 362. A grade of C or higher in BIO 202, CHE 321 & CHE 322 or CHE 331 and CHE 332 are required to enroll in BIO 361 and BIO 362."
+    },
+    {
+      "id": "biochemistry-bs.electives",
+      "label": "electives",
+      "title": "Advanced Biology/Chemistry Electives",
+      "rule": {
+        "manualCheck": "Two additional courses, chosen after consultation with an advisor, totaling at least five credits. Every listed course is 3 credits, so two courses satisfy the credit total. BIO 321 and EBH 302 may not also count toward the genetics requirement.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "AMS 333",
+            "BIO 312",
+            "BIO 314",
+            "BIO 315",
+            "BIO 316",
+            "BIO 317",
+            "BIO 321",
+            "BIO 325",
+            "BIO 327",
+            "BIO 328",
+            "BIO 332",
+            "BIO 334",
+            "BIO 335",
+            "BIO 337",
+            "BIO 338",
+            "BIO 339",
+            "BIO 354",
+            "BIO 358",
+            "BIO 364",
+            "BIO 367",
+            "BME 304",
+            "CHE 346",
+            "EBH 302",
+            "EBH 380"
+          ],
+          "excludeUsedBy": [
+            "biochemistry-bs.advanced-biology"
+          ]
+        }
+      },
+      "sourceText": "Two additional courses, totaling at least five credits, chosen after consultation with an advisor from the following list: AMS 333; BIO 312; BIO 314; BIO 315; BIO 316; BIO 317; BIO 321 (see Note 2); BIO 325; BIO 327; BIO 328; BIO 332; BIO 334; BIO 335; BIO 337; BIO 338; BIO 339; BIO 354; BIO 358; BIO 364; BIO 367; BME 304; CHE 346; EBH 302 (see Note 2); EBH 380."
+    },
+    {
+      "id": "biochemistry-bs.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "manualCheck": "Co-register for BIO 459 with BIO 365 or an approved alternate advanced course in the same term. A BIO 365 lab report or term paper from the alternate course must be submitted to BIO 459 Brightspace Assignments and pass Program in Writing and Rhetoric review before the end of the term.",
+            "type": "course",
+            "code": "BIO 459"
+          }
+        ]
+      },
+      "sourceText": "To satisfy the Upper-Division Writing requirement for the major in Biochemistry, students must co-register for the 0-credit BIO 459 course with either BIO 365 (Biochemistry lab) or an alternate approved advanced course in biological sciences or chemistry (see below). Students MUST enroll in BIO 459 at the same time they are registering for the respective advanced course. To receive WRTD credit and a satisfactory grade in BIO 459, either a BIO 365 lab report or term paper from another approved advanced biology/chemistry course must be submitted for writing evaluation prior to the end of the term and pass the review process."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "biochemistry-bs.related-fields",
+        "biochemistry-bs.biology-foundations",
+        "biochemistry-bs.advanced-biology",
+        "biochemistry-bs.electives",
+        "biochemistry-bs.writing"
+      ],
+      "sourceText": "All courses offered for the major must be taken for a letter grade."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "biochemistry-bs.related-fields",
+        "biochemistry-bs.biology-foundations",
+        "biochemistry-bs.advanced-biology",
+        "biochemistry-bs.electives"
+      ],
+      "sourceText": "A minimum grade of C must be obtained in fulfilling all biochemistry major requirements in: Foundational Courses in Related Fields, Foundational Courses in Biology, Advanced Courses in Biology, and Advanced Biology/Chemistry electives (see below)."
+    },
+    {
+      "type": "residencyRequired",
+      "appliesTo": [
+        "biochemistry-bs.advanced-biology.bio361",
+        "biochemistry-bs.advanced-biology.bio362"
+      ],
+      "sourceText": "Among these requirements, Biochemistry I and II (BIO 361 and BIO 362) and a minimum of nine credits of additional advanced biology courses must be completed at Stony Brook University."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 9,
+      "appliesTo": [
+        "biochemistry-bs.advanced-biology",
+        "biochemistry-bs.electives"
+      ],
+      "sourceText": "Among these requirements, Biochemistry I and II (BIO 361 and BIO 362) and a minimum of nine credits of additional advanced biology courses must be completed at Stony Brook University. These advanced courses in biology include BIO 310, BIO 320 (or other approved Genetics), BIO 365, or approved \"Advanced Biology/Chemistry elective\" courses (see below)."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "course",
+          "code": "BIO 459"
+        },
+        "sourceText": "Satisfactory completion of BIO 459 will fulfill the Stony Brook Curriculum (SBC) \"Writing in the Discipline\" WRTD learning objectives."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 133",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MAT 125",
+          "alternatives": [
+            "MAT 131"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 201",
+          "alternatives": [
+            "BIO 202"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MAT 126",
+          "alternatives": [
+            "MAT 132"
+          ],
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 203",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 321",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "MAT 127",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 204",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "BIO 458",
+          "credits": 0
+        },
+        {
+          "kind": "placeholder",
+          "label": "Language 111",
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 201",
+          "alternatives": [
+            "BIO 202"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 322",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 327",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "BIO 205",
+          "alternatives": [
+            "BIO 207"
+          ],
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "Language 112",
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 361",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 121",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "BIO 365",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 459",
+          "credits": 0
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 362",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 320",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 122",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Biology Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or Biology Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 310",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 312",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Biology Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Contact the Biochemistry Director of Undergraduate Studies (Bernadette Holdener, biochem_ugpd@stonybrook.edu) for course combinations and approvals. Students may not declare a double major among biochemistry, biology, or pharmacology majors. Double majors or minors with Chemistry, Bioengineering, Marine Sciences, or Marine Vertebrate Biology should consult the Biochemistry director and the second program's director."
+    },
+    {
+      "topic": "other",
+      "text": "The major requires approximately 69 to 74 credits. Biochemistry I and II (BIO 361 and BIO 362) must be taken at Stony Brook, along with at least nine credits of additional advanced biology courses."
+    },
+    {
+      "topic": "other",
+      "text": "Prerequisite grades: a grade of C or higher in BIO 202, CHE 321 & CHE 322 or CHE 331 & CHE 332 is required to enroll in BIO 361 and BIO 362. BIO 361 must be taken before BIO 362."
+    },
+    {
+      "topic": "other",
+      "text": "CHE 301 has additional pre/co-requisites: MAT 203 or MAT 211 or AMS 210 or AMS 261; PHY 125, PHY 131/PHY 133, or PHY 141. CHE 312 is recommended for biochemistry majors."
+    },
+    {
+      "topic": "other",
+      "text": "Students who do not place into MAT 125 or MAT 131 on the math placement examination must complete MAT 123 (or MAT 119/MAT 123) as a required course for the major."
+    },
+    {
+      "topic": "other",
+      "text": "Alternate approved advanced courses for the writing requirement (co-registered with BIO 459) are: BIO 312, BIO 320, BIO 321, BIO 327, BIO 335, BIO 336, BIO 344, BIO 352, BIO 353, BIO 354, BIO 364, BIO 365, BIO 366, BIO 367, BIO 385, BIO 386, 400-level BIO or CHE readings or research courses with instructor permission, and EBH 302. Enrollment in upper-division labs other than BIO 365 is limited."
+    },
+    {
+      "topic": "other",
+      "text": "Biochemistry Honors requires a cumulative GPA of at least 3.50 in all courses required for the major and an acceptable thesis based on a laboratory research project. Students must contact the Biochemistry Honors Coordinator (Benjamin Martin) no later than the second week of classes in their last semester."
+    },
+    {
+      "topic": "other",
+      "text": "Accelerated programs not evaluated here: the 5-year BS/MS in Biochemistry and Cell Biology, the BS/MS in Chemistry, and the BS/MBA options."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1371",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

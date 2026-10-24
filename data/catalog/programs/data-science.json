@@ -1,0 +1,226 @@
+{
+  "id": "data-science",
+  "name": "Data Science",
+  "kind": "minor",
+  "degree": "Minor in Data Science",
+  "approxCredits": 23,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "data-science.linear-algebra",
+      "label": "linear-algebra",
+      "title": "Linear Algebra",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 210"
+          },
+          {
+            "type": "course",
+            "code": "MAT 211"
+          },
+          {
+            "type": "course",
+            "code": "MAT 308"
+          }
+        ]
+      },
+      "sourceText": "AMS 210 - Applied Linear Algebra 3 credits OR MAT 211 - Introduction to Linear Algebra 3 credits OR MAT 308 - Differential Equations with Linear Algebra 4 credits"
+    },
+    {
+      "id": "data-science.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 310"
+          },
+          {
+            "type": "course",
+            "code": "CSE 114"
+          },
+          {
+            "type": "course",
+            "code": "CSE 214"
+          },
+          {
+            "type": "course",
+            "code": "CSE 351"
+          }
+        ]
+      },
+      "sourceText": "AMS 310 - Survey of Probability and Statistics 3 credits; CSE 114 - Introduction to Object-Oriented Programming 4 credits; CSE 214 - Data Structures 4 credits; CSE 351 - Introduction to Data Science 3 credits"
+    },
+    {
+      "id": "data-science.technical-electives",
+      "label": "technical-electives",
+      "title": "Technical Electives",
+      "rule": {
+        "type": "choose",
+        "credits": 6,
+        "from": {
+          "courses": [
+            "AMS 301",
+            "AMS 311",
+            "AMS 315",
+            "CSE 357",
+            "AMS 316",
+            "AMS 317",
+            "AMS 326",
+            "AMS 341",
+            "AMS 345",
+            "CSE 355",
+            "AMS 380",
+            "AMS 394",
+            "AMS 412",
+            "AMS 487",
+            "AMS 488",
+            "CSE 305",
+            "ISE 305",
+            "CSE 327",
+            "CSE 332",
+            "CSE 337",
+            "CSE 352",
+            "CSE 353",
+            "CSE 354",
+            "CSE 373",
+            "CSE 487",
+            "CSE 488"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "AMS 487",
+                "AMS 488",
+                "CSE 487",
+                "CSE 488"
+              ]
+            },
+            "maxCredits": 3
+          },
+          {
+            "type": "onePerGroup",
+            "groups": [
+              [
+                "AMS 315",
+                "CSE 357"
+              ],
+              [
+                "CSE 305",
+                "ISE 305"
+              ],
+              [
+                "AMS 345",
+                "CSE 355"
+              ]
+            ]
+          }
+        ]
+      },
+      "sourceText": "At least six credits of the following courses. At most three credits of AMS 487, AMS 488, CSE 487 or CSE 488 may be used to satisfy the technical elective requirement. AMS 301; AMS 311; AMS 315 OR CSE 357; AMS 316; AMS 317; AMS 326; AMS 341; AMS 345 OR CSE 355; AMS 380; AMS 394; AMS 412; AMS 487; AMS 488; CSE 305 OR ISE 305; CSE 327; CSE 332; CSE 337; CSE 352; CSE 353; CSE 354; CSE 373; CSE 487; CSE 488. Notes: CSE 357 and AMS 315 may not both be taken to satisfy minor requirements. CSE 305 and ISE 305 may not both be taken to satisfy minor requirements. CSE 355 and AMS 345 may not both be taken to satisfy minor requirements."
+    },
+    {
+      "id": "data-science.credit-exclusivity",
+      "label": "credit-exclusivity",
+      "title": "Credits not shared with major or other minors",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 15 credits taken to satisfy the minor in Data Science may not also be used to satisfy a student's majors or other minors requirements.",
+        "reason": "Cross-program credit exclusivity between this minor and other programs cannot be evaluated within this program's rules."
+      },
+      "sourceText": "At least 15 credits taken to satisfy the minor in Data Science may not also be used to satisfy a student's majors or other minors requirements."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "data-science.linear-algebra",
+        "data-science.required-courses",
+        "data-science.technical-electives"
+      ],
+      "sourceText": "Each course taken to satisfy the requirements for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "data-science.linear-algebra",
+        "data-science.required-courses",
+        "data-science.technical-electives"
+      ],
+      "sourceText": "Each course taken to satisfy the requirements for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "data-science.sub.cse160-sequence",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CSE 114",
+          "CSE 214"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CSE 160"
+          },
+          {
+            "type": "course",
+            "code": "CSE 161"
+          },
+          {
+            "type": "course",
+            "code": "CSE 260"
+          },
+          {
+            "type": "course",
+            "code": "CSE 261"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "Students may substitute CSE 160, CSE 161, CSE 260, and CSE 261 for CSE 114 and CSE 214."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "To declare the minor, students must complete CSE 114 and either AMS 210 or AMS 310 with a GPA of 3.0 or higher in these courses. Priority is given to students with a cumulative GPA of 3.0 or higher. For students who have completed more than two courses applicable towards minor entry, the GPA is computed using the highest grades earned in two of the courses. At most one of the courses used to meet minor entry requirements may be repeated. Only courses transferred before matriculation can be used for DAS minor admission purposes. Admission is competitive and contingent upon program capacity."
+    },
+    {
+      "topic": "admission",
+      "text": "The minor is open to all students not majoring in Computer Science or Data Science, or minoring in Computer Science or Information Systems."
+    },
+    {
+      "topic": "advising",
+      "text": "Students who have declared the minor should see a Data Science Undergraduate Advisor to discuss a suitable selection of electives."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1916",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,969 @@
+{
+  "id": "history-ba",
+  "name": "History, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in History",
+  "approxCredits": 39,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "history-ba.A",
+      "label": "A",
+      "title": "Choose one European history survey course",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "HIS 101"
+          },
+          {
+            "type": "course",
+            "code": "HIS 102"
+          }
+        ]
+      },
+      "sourceText": "A. Choose one European history survey course: HIS 101 - Ancient Mesopotamia to Early Modern Europe 3 credits or HIS 102 - Modern European History, 18th c. to the Present 3 credits"
+    },
+    {
+      "id": "history-ba.B",
+      "label": "B",
+      "title": "Choose one United States history survey course",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "HIS 103"
+          },
+          {
+            "type": "course",
+            "code": "HIS 104"
+          }
+        ]
+      },
+      "sourceText": "B. Choose one United States history survey course: HIS 103 - American History to 1877 3 credits or HIS 104 - United States Since 1877 3 credits"
+    },
+    {
+      "id": "history-ba.C",
+      "label": "C",
+      "title": "One 100- or 200-level survey outside the U.S. or Europe",
+      "rule": {
+        "manualCheck": "Course must be a 100- or 200-level survey of a region or country outside the United States or Europe. The page does not list which HIS courses qualify, so confirm the course is non-U.S. and non-European.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "subjects": [
+            "HIS"
+          ],
+          "minNumber": 100,
+          "maxNumber": 299,
+          "excludeCourses": [
+            "HIS 101",
+            "HIS 102",
+            "HIS 103",
+            "HIS 104"
+          ],
+          "excludeUsedBy": [
+            "history-ba.A",
+            "history-ba.B"
+          ]
+        }
+      },
+      "sourceText": "C. Choose one 100- or 200-level survey course in a region or country outside the U.S. or Europe (3 credits)"
+    },
+    {
+      "id": "history-ba.D",
+      "label": "D",
+      "title": "Four additional HIS courses above the 100-level",
+      "rule": {
+        "type": "choose",
+        "count": 4,
+        "from": {
+          "subjects": [
+            "HIS"
+          ],
+          "minNumber": 200,
+          "excludeCourses": [
+            "HIS 447",
+            "HIS 487",
+            "HIS 488",
+            "HIS 495",
+            "HIS 496"
+          ],
+          "excludeUsedBy": [
+            "history-ba.A",
+            "history-ba.B",
+            "history-ba.C",
+            "history-ba.E",
+            "history-ba.F"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "HIS"
+              ],
+              "minNumber": 300,
+              "excludeCourses": [
+                "HIS 447",
+                "HIS 487",
+                "HIS 488",
+                "HIS 495",
+                "HIS 496"
+              ]
+            },
+            "minCourses": 3
+          }
+        ]
+      },
+      "sourceText": "D. Four additional HIS courses above the 100-level, with at least three at the 300-level (12 credits)"
+    },
+    {
+      "id": "history-ba.E",
+      "label": "E",
+      "title": "HIS 301 Reading and Writing History",
+      "rule": {
+        "manualCheck": "Must be taken prior to HIS 401.",
+        "type": "course",
+        "code": "HIS 301"
+      },
+      "sourceText": "E. HIS 301 - Reading and Writing History 3 credits (must be taken prior to HIS 401 )"
+    },
+    {
+      "id": "history-ba.F",
+      "label": "F",
+      "title": "HIS 401 Senior Colloquium",
+      "rule": {
+        "type": "course",
+        "code": "HIS 401"
+      },
+      "sourceText": "F. HIS 401 - Senior Colloquium 3 credits"
+    },
+    {
+      "id": "history-ba.thematic-cluster",
+      "label": "thematic-cluster",
+      "title": "Thematic Cluster",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "choose",
+            "count": 4,
+            "from": {
+              "courses": [
+                "HIS 201",
+                "HIS 202",
+                "HIS 203",
+                "HIS 206",
+                "HIS 210",
+                "HIS 212",
+                "HIS 213",
+                "HIS 214",
+                "HIS 218",
+                "HIS 219",
+                "HIS 220",
+                "HIS 223",
+                "HIS 225",
+                "HIS 226",
+                "HIS 227",
+                "HIS 229",
+                "HIS 235",
+                "HIS 236",
+                "HIS 247",
+                "HIS 256",
+                "HIS 261",
+                "HIS 262",
+                "HIS 263",
+                "HIS 264",
+                "HIS 273",
+                "HIS 274",
+                "HIS 285",
+                "HIS 303",
+                "HIS 304",
+                "HIS 308",
+                "HIS 312",
+                "HIS 315",
+                "HIS 318",
+                "HIS 320",
+                "HIS 327",
+                "HIS 328",
+                "HIS 334",
+                "HIS 336",
+                "HIS 337",
+                "HIS 344",
+                "HIS 351",
+                "HIS 353",
+                "HIS 373",
+                "HIS 379",
+                "HIS 383",
+                "HIS 385",
+                "HIS 386",
+                "HIS 387"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "HIS 303",
+                    "HIS 304",
+                    "HIS 308",
+                    "HIS 312",
+                    "HIS 315",
+                    "HIS 318",
+                    "HIS 320",
+                    "HIS 327",
+                    "HIS 328",
+                    "HIS 334",
+                    "HIS 336",
+                    "HIS 337",
+                    "HIS 344",
+                    "HIS 351",
+                    "HIS 353",
+                    "HIS 373",
+                    "HIS 379",
+                    "HIS 383",
+                    "HIS 385",
+                    "HIS 386",
+                    "HIS 387"
+                  ]
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 4,
+            "from": {
+              "courses": [
+                "HIS 201",
+                "HIS 202",
+                "HIS 203",
+                "HIS 206",
+                "HIS 210",
+                "HIS 212",
+                "HIS 213",
+                "HIS 214",
+                "HIS 215",
+                "HIS 216",
+                "HIS 218",
+                "HIS 219",
+                "HIS 221",
+                "HIS 227",
+                "HIS 229",
+                "HIS 230",
+                "HIS 235",
+                "HIS 236",
+                "HIS 239",
+                "HIS 241",
+                "HIS 247",
+                "HIS 248",
+                "HIS 249",
+                "HIS 250",
+                "HIS 251",
+                "HIS 256",
+                "HIS 263",
+                "HIS 264",
+                "HIS 265",
+                "HIS 266",
+                "HIS 273",
+                "HIS 274",
+                "HIS 281",
+                "HIS 283",
+                "HIS 287",
+                "HIS 288",
+                "HIS 289",
+                "HIS 293",
+                "HIS 302",
+                "HIS 303",
+                "HIS 308",
+                "HIS 312",
+                "HIS 314",
+                "HIS 315",
+                "HIS 320",
+                "HIS 323",
+                "HIS 325",
+                "HIS 332",
+                "HIS 337",
+                "HIS 338",
+                "HIS 344",
+                "HIS 348",
+                "HIS 351",
+                "HIS 352",
+                "HIS 353",
+                "HIS 356",
+                "HIS 361",
+                "HIS 362",
+                "HIS 364",
+                "HIS 365",
+                "HIS 366",
+                "HIS 373",
+                "HIS 379",
+                "HIS 381",
+                "HIS 383",
+                "HIS 385",
+                "HIS 386",
+                "HIS 387",
+                "HIS 389"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "HIS 302",
+                    "HIS 303",
+                    "HIS 308",
+                    "HIS 312",
+                    "HIS 314",
+                    "HIS 315",
+                    "HIS 320",
+                    "HIS 323",
+                    "HIS 325",
+                    "HIS 332",
+                    "HIS 337",
+                    "HIS 338",
+                    "HIS 344",
+                    "HIS 348",
+                    "HIS 351",
+                    "HIS 352",
+                    "HIS 353",
+                    "HIS 356",
+                    "HIS 361",
+                    "HIS 362",
+                    "HIS 364",
+                    "HIS 365",
+                    "HIS 366",
+                    "HIS 373",
+                    "HIS 379",
+                    "HIS 381",
+                    "HIS 383",
+                    "HIS 385",
+                    "HIS 386",
+                    "HIS 387",
+                    "HIS 389"
+                  ]
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 4,
+            "from": {
+              "courses": [
+                "HIS 206",
+                "HIS 212",
+                "HIS 215",
+                "HIS 221",
+                "HIS 237",
+                "HIS 238",
+                "HIS 239",
+                "HIS 264",
+                "HIS 266",
+                "HIS 281",
+                "HIS 286",
+                "HIS 293",
+                "HIS 295",
+                "HIS 302",
+                "HIS 304",
+                "HIS 314",
+                "HIS 329",
+                "HIS 352",
+                "HIS 364",
+                "HIS 365",
+                "HIS 368",
+                "HIS 381",
+                "HIS 385",
+                "HIS 386"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "HIS 302",
+                    "HIS 304",
+                    "HIS 314",
+                    "HIS 329",
+                    "HIS 352",
+                    "HIS 364",
+                    "HIS 365",
+                    "HIS 368",
+                    "HIS 381",
+                    "HIS 385",
+                    "HIS 386"
+                  ]
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 4,
+            "from": {
+              "courses": [
+                "HIS 201",
+                "HIS 210",
+                "HIS 214",
+                "HIS 216",
+                "HIS 223",
+                "HIS 226",
+                "HIS 230",
+                "HIS 241",
+                "HIS 248",
+                "HIS 249",
+                "HIS 250",
+                "HIS 251",
+                "HIS 261",
+                "HIS 263",
+                "HIS 265",
+                "HIS 274",
+                "HIS 277",
+                "HIS 280",
+                "HIS 282",
+                "HIS 283",
+                "HIS 286",
+                "HIS 287",
+                "HIS 288",
+                "HIS 289",
+                "HIS 295",
+                "HIS 318",
+                "HIS 323",
+                "HIS 325",
+                "HIS 328",
+                "HIS 329",
+                "HIS 331",
+                "HIS 332",
+                "HIS 334",
+                "HIS 338",
+                "HIS 339",
+                "HIS 348",
+                "HIS 350",
+                "HIS 352",
+                "HIS 360",
+                "HIS 361",
+                "HIS 362",
+                "HIS 366",
+                "HIS 369",
+                "HIS 370",
+                "HIS 371",
+                "HIS 374",
+                "HIS 379",
+                "HIS 389",
+                "HIS 391"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "HIS 318",
+                    "HIS 323",
+                    "HIS 325",
+                    "HIS 328",
+                    "HIS 329",
+                    "HIS 331",
+                    "HIS 332",
+                    "HIS 334",
+                    "HIS 338",
+                    "HIS 339",
+                    "HIS 348",
+                    "HIS 350",
+                    "HIS 352",
+                    "HIS 360",
+                    "HIS 361",
+                    "HIS 362",
+                    "HIS 366",
+                    "HIS 369",
+                    "HIS 370",
+                    "HIS 371",
+                    "HIS 374",
+                    "HIS 379",
+                    "HIS 389",
+                    "HIS 391"
+                  ]
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 4,
+            "from": {
+              "courses": [
+                "HIS 213",
+                "HIS 215",
+                "HIS 218",
+                "HIS 221",
+                "HIS 223",
+                "HIS 225",
+                "HIS 226",
+                "HIS 227",
+                "HIS 229",
+                "HIS 235",
+                "HIS 236",
+                "HIS 241",
+                "HIS 247",
+                "HIS 248",
+                "HIS 249",
+                "HIS 261",
+                "HIS 265",
+                "HIS 277",
+                "HIS 282",
+                "HIS 283",
+                "HIS 285",
+                "HIS 295",
+                "HIS 303",
+                "HIS 304",
+                "HIS 314",
+                "HIS 318",
+                "HIS 320",
+                "HIS 323",
+                "HIS 325",
+                "HIS 327",
+                "HIS 328",
+                "HIS 331",
+                "HIS 332",
+                "HIS 334",
+                "HIS 336",
+                "HIS 338",
+                "HIS 339",
+                "HIS 350",
+                "HIS 353",
+                "HIS 356",
+                "HIS 360",
+                "HIS 361",
+                "HIS 362",
+                "HIS 366",
+                "HIS 369",
+                "HIS 370",
+                "HIS 374",
+                "HIS 383",
+                "HIS 385",
+                "HIS 386",
+                "HIS 391"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "HIS 303",
+                    "HIS 304",
+                    "HIS 314",
+                    "HIS 318",
+                    "HIS 320",
+                    "HIS 323",
+                    "HIS 325",
+                    "HIS 327",
+                    "HIS 328",
+                    "HIS 331",
+                    "HIS 332",
+                    "HIS 334",
+                    "HIS 336",
+                    "HIS 338",
+                    "HIS 339",
+                    "HIS 350",
+                    "HIS 353",
+                    "HIS 356",
+                    "HIS 360",
+                    "HIS 361",
+                    "HIS 362",
+                    "HIS 366",
+                    "HIS 369",
+                    "HIS 370",
+                    "HIS 374",
+                    "HIS 383",
+                    "HIS 385",
+                    "HIS 386",
+                    "HIS 391"
+                  ]
+                },
+                "minCourses": 2
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "A thematic cluster of 4 courses at the 200-level or above (minimum 2 courses at the 300-level) selected from the following thematic clusters: Arts, Ideas & Culture; Empires, Violence & Global Connections; Health, Science & Environmental Change; Law, Politics & Social Justice; Race, Religion, Gender & Sexualities (12 credits)."
+    },
+    {
+      "id": "history-ba.upper-division-writing",
+      "label": "upper-division-writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "course",
+        "code": "HIS 401"
+      },
+      "sourceText": "Upper-Division Writing Requirement: Satisfactory completion of HIS 401 with a grade of C or better."
+    },
+    {
+      "id": "history-ba.residency",
+      "label": "residency",
+      "title": "Department residency for Requirements A and B",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 12 credits in Requirement A and B must be taken within the Department of History at Stony Brook.",
+        "reason": "As printed, Requirements A and B total only 6 credits, so a 12-credit residency minimum cannot be evaluated against them. Flagged for review."
+      },
+      "sourceText": "At least 12 credits in Requirement A and B must be taken within the Department of History at Stony Brook."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "history-ba.A",
+        "history-ba.B",
+        "history-ba.C",
+        "history-ba.D",
+        "history-ba.E",
+        "history-ba.F",
+        "history-ba.thematic-cluster",
+        "history-ba.upper-division-writing"
+      ],
+      "sourceText": "All courses must be taken for a letter grade."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "history-ba.A",
+        "history-ba.B",
+        "history-ba.C",
+        "history-ba.D",
+        "history-ba.E",
+        "history-ba.F",
+        "history-ba.thematic-cluster",
+        "history-ba.upper-division-writing"
+      ],
+      "sourceText": "No grade lower than C may be applied toward the major."
+    },
+    {
+      "type": "residencyRequired",
+      "appliesTo": [
+        "history-ba.residency"
+      ],
+      "sourceText": "At least 12 credits in Requirement A and B must be taken within the Department of History at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "HIS 101",
+          "alternatives": [
+            "HIS 103"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "HIS 102",
+          "alternatives": [
+            "HIS 104"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "HIS 200-level course outside of Europe or U.S.",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "HIS 200 elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "HIS 300 elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "HIS 300 elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "HIS 300 elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "HIS 301 or Theme Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "HIS Theme Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "HIS 301 or Theme Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "HIS Theme Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "HIS Theme Course or SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or other requirement",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or other requirement",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "HIS 301 or 401",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Theme Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or other requirement",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or other requirement",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or other requirement",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "HIS 401",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Theme Course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Theme Course or SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or other requirement",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC or other requirement",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students should consult the department advisor about completing the Upper Division Writing Requirement consistently with university General Education requirements. Students completing the Stony Brook Curriculum must complete a WRTD-satisfying course; the Upper Division Writing Requirement is consistent in most cases with WRTD outcomes."
+    },
+    {
+      "topic": "other",
+      "text": "HIS 447, HIS 487, HIS 488, HIS 495, and HIS 496 may not be used to satisfy major or minor requirements. These are excluded from Requirement D."
+    },
+    {
+      "topic": "other",
+      "text": "Thematic clusters: Arts, Ideas & Culture; Empires, Violence & Global Connections; Health, Science & Environmental Change; Law, Politics & Social Justice; Race, Religion, Gender & Sexualities. The thematic cluster is modeled as a choice of one cluster."
+    },
+    {
+      "topic": "grading",
+      "text": "No transferred course with a grade lower than C may be applied toward Requirement A."
+    },
+    {
+      "topic": "other",
+      "text": "History Honors Program (not modeled): majors with a minimum GPA of 3.50 in history courses and related disciplines may enroll at the beginning of their senior year, with faculty sponsorship, a proposal, and a two-reader honors paper review."
+    },
+    {
+      "topic": "other",
+      "text": "Specialized SBC table and per-course SBC tags are not modeled here; the SBC table lists optional major courses that can also satisfy SBC categories."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1469",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

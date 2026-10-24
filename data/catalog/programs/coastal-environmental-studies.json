@@ -1,0 +1,202 @@
+{
+  "id": "coastal-environmental-studies",
+  "name": "Coastal Environmental Studies",
+  "kind": "minor",
+  "degree": "",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "coastal-environmental-studies.intro",
+      "label": "intro",
+      "title": "Required two introductory courses (6-7 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 130"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "AMS 151"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 113"
+              },
+              {
+                "type": "course",
+                "code": "GEO 102"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Required two introductory courses (6-7 credits): MAT 125 - Calculus A 3 credits OR MAT 130 - Trigonometry and Logarithms 1 credit, MAT 125 - Calculus A Credits: 3 credits OR MAT 131 - Calculus I 4 credits OR AMS 151 - Applied Calculus I 3 credits; SUS 113 - Physical Geography Lecture 3 credits OR GEO 102 - The Earth 3 credits"
+    },
+    {
+      "id": "coastal-environmental-studies.advanced",
+      "label": "advanced",
+      "title": "Required advanced courses (10 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ENV 316"
+          },
+          {
+            "type": "course",
+            "code": "GSS 313"
+          },
+          {
+            "type": "course",
+            "code": "GSS 314"
+          },
+          {
+            "type": "course",
+            "code": "MAR 333"
+          }
+        ]
+      },
+      "sourceText": "Required advanced courses (10 credits): ENV 316 - Coastal Zone Management 3 credits; GSS 313 - GIS Design and Application I 3 credits; GSS 314 - GIS Laboratory 1 credit; MAR 333 - Coastal Oceanography 3 credits"
+    },
+    {
+      "id": "coastal-environmental-studies.electives",
+      "label": "electives",
+      "title": "Required two advanced elective courses (minimum 6 credits)",
+      "rule": {
+        "manualCheck": "Requires a minimum of 6 credits across the two chosen courses. ENV 487 is variable (0-6 credits) and MAR 303 is 4 credits, so verify the credit total rather than the course count alone.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "BIO 319",
+            "BIO 351",
+            "BIO 386",
+            "ENS 311",
+            "ENV 304",
+            "ENV 320",
+            "ENV 340",
+            "ENV 487",
+            "GEO 313",
+            "GEO 315",
+            "GSS 325",
+            "GSS 354",
+            "MAR 303",
+            "MAR 304",
+            "MAR 336",
+            "SUS 317",
+            "SUS 319"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "onePerGroup",
+            "groups": [
+              [
+                "BIO 386",
+                "ENS 311"
+              ]
+            ]
+          }
+        ]
+      },
+      "sourceText": "Required two advanced elective courses chosen from the following, for a minimum of 6 credits: BIO 319 - Landscape Ecology Laboratory 3 credits; BIO 351 - Ecology 3 credits; BIO 386 - Ecosystem Ecology and the Global Environment 3 credits OR ENS 311 - Ecosystem Ecology and the Global Environment 3 credits; ENV 304 - Global Environmental Change 3 credits; ENV 320 - Chemistry for Environmental Scientists 3 credits; ENV 340 - Contemporary Topics in Environmental Science 3 credits; ENV 487 - Research in Environmental Sciences 0-6 credits; GEO 313 - Understanding Water Resources for the 21st Century 3 credits; GEO 315 - Groundwater Hydrology 3 credits; GSS 325 - GIS Design & Applications II 3 credits; GSS 354 - Geospatial Science for the Coastal Zone 3 credits; MAR 303 - Long Island Marine Habitats 4 credits; MAR 304 - Waves, Tides, and Beaches 3 credits; MAR 336 - Marine Pollution 3 credits; SUS 317 - American Environmental History 3 credits; SUS 319 - Restoration Ecology 3 credits"
+    },
+    {
+      "id": "coastal-environmental-studies.non-overlap",
+      "label": "non-overlap",
+      "title": "Credits not shared with a major or other minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 12 credits applied to the minor may not be applied to any major or other minor.",
+        "reason": "Cross-program double-counting limit; no rule type checks credits shared with other programs."
+      },
+      "sourceText": "At least 12 credits applied to the minor may not be applied to any major or other minor."
+    },
+    {
+      "id": "coastal-environmental-studies.pass-no-credit",
+      "label": "pass-no-credit",
+      "title": "Pass/No Credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option.",
+        "reason": "No rule type or policy type expresses a Pass/No Credit course limit."
+      },
+      "sourceText": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option."
+    },
+    {
+      "id": "coastal-environmental-studies.credit-total",
+      "label": "credit-total",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 22 to 23 credits.",
+        "reason": "Program-wide credit total; no rule type expresses a total-credit range for the minor."
+      },
+      "sourceText": "Completion of the minor requires 22 to 23 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "coastal-environmental-studies.advanced",
+        "coastal-environmental-studies.electives"
+      ],
+      "sourceText": "All upper-division courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students should declare the minor no later than the middle of their sophomore year and consult with the minor coordinator or undergraduate director to plan their course of study. Undergraduate Advisor: Nancy Black, E2361 Melville Library, (631) 632-9404."
+    },
+    {
+      "topic": "other",
+      "text": "The page title is 'Coastal Environmental Studies' but the introduction refers to the 'Coastal Environmental Sciences minor'."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1403",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

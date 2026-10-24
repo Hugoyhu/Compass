@@ -1,0 +1,708 @@
+{
+  "id": "marine-vertebrate-biology-bs",
+  "name": "Marine Vertebrate Biology, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Marine Vertebrate Biology",
+  "approxCredits": 68,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "marine-vertebrate-biology-bs.foundation",
+      "label": "foundation",
+      "title": "Foundation Courses (43-46 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BIO 201"
+          },
+          {
+            "type": "course",
+            "code": "BIO 202"
+          },
+          {
+            "type": "course",
+            "code": "BIO 203"
+          },
+          {
+            "type": "course",
+            "code": "BIO 204"
+          },
+          {
+            "type": "course",
+            "code": "BIO 205"
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 131"
+              },
+              {
+                "type": "course",
+                "code": "CHE 133"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 132"
+              },
+              {
+                "type": "course",
+                "code": "CHE 134"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CHE 321"
+          },
+          {
+            "manualCheck": "Page layout is ambiguous: an 'OR' line appears between two copies of MAT 125. Confirm that the calculus requirement is MAT 125, MAT 130 and MAT 126.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 130"
+              },
+              {
+                "type": "course",
+                "code": "MAT 126"
+              }
+            ]
+          },
+          {
+            "manualCheck": "Page lists these physics options with OR and AND. Confirm the option structure. The page also allows MAR 352 to substitute for certain PHY 127/PHY 132/PHY 142 lab pairings and lists other two-semester physics sequences (PHY 125/126, PHY 127/134, PHY 131/133, PHY 132/134, PHY 141/133, PHY 142/134) in a note that is not modeled here.",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ENS 119"
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 119"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAR 352"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 121"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 122"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 121"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAR 352"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "manualCheck": "The page lists AMS 102 and AMS 110 with no OR between them. Confirm whether one or both are required.",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 102"
+              },
+              {
+                "type": "course",
+                "code": "AMS 110"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Foundation Courses (43-46 credits): BIO 201 - Fundamentals of Biology: Organisms to Ecosystems 3 credits; BIO 202 - Fundamentals of Biology: Molecular and Cellular Biology 3 credits; BIO 203 - Fundamentals of Biology: Cellular and Organ Physiology 3 credits; BIO 204 - Fundamentals of Scientific Inquiry in the Biological Sciences I 2 credits; BIO 205 - Fundamentals of Scientific Inquiry in the Biological Sciences IIA 2 credits (see Note 3); CHE 131 - General Chemistry IB 4 credits (see Note 4 and Note 6); CHE 133 - General Chemistry Laboratory I 1 credit (see Note 4 and Note 6); CHE 132 - General Chemistry II 4 credits (see Note 4 and Note 6); CHE 134 - General Chemistry Laboratory II 1 credit (see Note 4 and Note 6); CHE 321 - Organic Chemistry I 4 credits (see Note 5 and Note 6); MAT 125 - Calculus A 3 credits OR MAT 125 - Calculus A Credits: 3 credits MAT 130 - Trigonometry and Logarithms 1 credit, MAT 126 - Calculus B 3 credits; ENS 119 - Physics for Environmental Studies 4 credits PHY 119 - Physics for Environmental Studies 4 credits AND MAR 352 - Introduction to Physical Oceanography 3 credits OR PHY 121 - Physics for the Life Sciences I 4 credits PHY 122 - Physics for the Life Sciences II 4 credits OR PHY 121 - Physics for the Life Sciences I Credits: 4 credits MAR 352 - Introduction to Physical Oceanography Credits: 3 credits; AMS 102 - Elements of Statistics 3 credits; AMS 110 - Probability and Statistics in the Life Sciences 3 credits"
+    },
+    {
+      "id": "marine-vertebrate-biology-bs.zoology-core",
+      "label": "zoology-core",
+      "title": "Zoology and Marine Vertebrate Core (13 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAR 362"
+              },
+              {
+                "type": "course",
+                "code": "BIO 344"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BIO 354"
+              },
+              {
+                "type": "course",
+                "code": "BIO 320"
+              },
+              {
+                "type": "course",
+                "code": "BIO 321"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "courses": [
+                "MAR 370",
+                "MAR 373",
+                "MAR 376",
+                "MAR 377",
+                "MAR 380"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Zoology and Marine Vertebrate Core (13 credits): MAR 362 - Marine Vertebrate Biology 4 credits OR BIO 344 - Chordate Zoology 4 credits; BIO 354 - Evolution 3 credits OR BIO 320 - General Genetics 3 credits OR BIO 321 - Ecological Genetics 3 credits; Two of the following: MAR 370 - Marine Mammals 3 credits; MAR 373 - Marine Apex Predators: Ecology and Conservation 3 credits; MAR 376 - Biology and Conservation of Sea Turtles 3 credits; MAR 377 - Biology and Conservation of Seabirds 3 credits; MAR 380 - Ichthyology 3 credits"
+    },
+    {
+      "id": "marine-vertebrate-biology-bs.marine-biology",
+      "label": "marine-biology",
+      "title": "Marine Biology (12-16 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "marine-vertebrate-biology-bs.marine-biology.mar349-option",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAR 349"
+              },
+              {
+                "type": "course",
+                "code": "MAR 303"
+              },
+              {
+                "type": "course",
+                "code": "MAR 388"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 3,
+            "from": {
+              "courses": [
+                "BIO 328",
+                "BIO 342",
+                "BIO 351",
+                "BIO 353",
+                "EBH 359",
+                "MAR 301",
+                "MAR 302",
+                "MAR 303",
+                "MAR 305",
+                "MAR 315",
+                "MAR 375",
+                "MAR 384",
+                "MAR 385",
+                "MAR 386",
+                "MAR 388",
+                "MAR 394",
+                "MAR 487",
+                "MAR 488"
+              ],
+              "excludeUsedBy": [
+                "marine-vertebrate-biology-bs.marine-biology.mar349-option"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Marine Biology (12-16 credits): MAR 349 - Introduction to Biological Oceanography 4 credits OR MAR 303 - Long Island Marine Habitats 4 credits OR MAR 388 - Tropical Marine Ecology 4 credits; Three electives from below: BIO 328 - Mammalian Physiology 3 credits; BIO 342 - Invertebrate Zoology 3 credits; BIO 351 - Ecology 3 credits; BIO 353 - Marine Ecology 3 credits; EBH 359 - Behavioral Ecology 3 credits; MAR 301 - Environmental Microbiology 4 credits; MAR 302 - Marine Microbiology and Microbial Ecology 3 credits; MAR 303 - Long Island Marine Habitats 4 credits; MAR 305 - Experimental Marine Biology 3 credits; MAR 315 - Marine Conservation 3 credits; MAR 375 - Marine Mammal and Sea Turtle Rehabilitation 3 credits; MAR 384 - Diseases of Aquatic Organisms 3 credits; MAR 385 - Principles of Fishery Biology and Management 3 credits; MAR 386 - Ecosystem Science for Fisheries Management 3 credits; MAR 388 - Tropical Marine Ecology 4 credits; MAR 394 - Environmental Toxicology and Public Health 3 credits; MAR 487 - Research in Marine Sciences 0-6 credits; MAR 488 - Internship 0-6 credits. Notes: These courses can be used as electives if not used as an alternative to MAR 349. Other classes may be substituted with permission of undergraduate director"
+    },
+    {
+      "id": "marine-vertebrate-biology-bs.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Completion of MAR 459 or SUS 459 is graded S/U and must be an S. Enrollment in an approved advanced course that entails writing a term paper or laboratory report is required. Approved courses are listed at http://www.somas.stonybrook.edu/education/undergraduate/.",
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAR 459"
+              },
+              {
+                "type": "course",
+                "code": "SUS 459"
+              },
+              {
+                "type": "course",
+                "code": "BIO 459"
+              }
+            ]
+          },
+          {
+            "type": "unparsed",
+            "text": "Enrollment in an approved advanced course that entails writing of either a term paper or a laboratory report, alongside the 0-credit MAR 459 or SUS 459",
+            "reason": "The approved-course list is external to the page and cannot be checked from the catalog"
+          }
+        ]
+      },
+      "sourceText": "The advanced writing component of the major in MVB requires registration in, and satisfactory completion of, the 0-credit MAR 459 or SUS 459 (S/U grading) along with enrollment in an approved advanced course that entails writing of either a term paper or a laboratory report. Completion of MAR 459 or SUS 459 with a grade of S will also result in fulfillment of the WRTD requirement. A list of preapproved courses can be found at http://www.somas.stonybrook.edu/education/undergraduate/. Successful completion of BIO 459 will also be accepted for MVB majors."
+    },
+    {
+      "id": "marine-vertebrate-biology-bs.grade-limit",
+      "label": "grade-limit",
+      "title": "Limit on sub-C courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "Of these no more than one course (4 credits) with a passing grade lower than C can be credited to the major.",
+        "reason": "A cap on the number of sub-C courses counted toward the major has no rule type"
+      },
+      "sourceText": "Of these no more than one course (4 credits) with a passing grade lower than C can be credited to the major."
+    }
+  ],
+  "policies": [],
+  "substitutions": [
+    {
+      "id": "marine-vertebrate-biology-bs.sub.bio207",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "BIO 205"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "BIO 207"
+      },
+      "requiresApproval": false,
+      "sourceText": "BIO 207 may be substituted for BIO 205."
+    },
+    {
+      "id": "marine-vertebrate-biology-bs.sub.mat-calculus",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 125",
+          "MAT 126"
+        ]
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "MAT 131 and MAT 132, or MAT 141 and MAT 142, or MAT 171, or AMS 151 and AMS 161, may be substituted for MAT 125 and MAT 126",
+        "reason": "The substitution offers several alternative calculus sequences, and a substitution's replacement cannot be an allOf nested inside an anyOf"
+      },
+      "requiresApproval": false,
+      "sourceText": "MAT 131, MAT 132 or MAT 141, MAT 142 or MAT 171 or AMS 151, AMS 161 may be substituted for MAT 125, MAT 126."
+    },
+    {
+      "id": "marine-vertebrate-biology-bs.sub.che152",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 131",
+          "CHE 132"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "CHE 152"
+      },
+      "requiresApproval": false,
+      "sourceText": "CHE 152 may be substituted for CHE 131 +CHE 132."
+    },
+    {
+      "id": "marine-vertebrate-biology-bs.sub.che331",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 321"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "CHE 331"
+      },
+      "requiresApproval": false,
+      "sourceText": "CHE 331 may be substituted for CHE 321."
+    },
+    {
+      "id": "marine-vertebrate-biology-bs.sub.ant300",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAR 362",
+          "BIO 344"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ANT 300"
+          },
+          {
+            "type": "course",
+            "code": "HAN 200"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "ANT 300 (formerly ANP 300) Human Anatomy or HAN 200 Human Anatomy and Physiology for Health Science I may be substituted for MAR 362 or BIO 344."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 133",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MAT 125",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MAT 126",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 201",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 204",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "AMS 110",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 321",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 202",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 205",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "ENS 119",
+          "alternatives": [
+            "PHY 119"
+          ],
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 203",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 354",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "MAR Biology Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ANT 321",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "MAR Vertebrate Core Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "MAR Biology Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MAR 352",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "MAR Vertebrate Core Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 344",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "MAR Biology Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "All students should consult with the director of undergraduate studies to design and approve an acceptable course of study before declaring the major."
+    },
+    {
+      "topic": "other",
+      "text": "Unparsed or unmodeled alternatives in the source: (1) CHE 129/CHE 130 may be substituted for CHE 131. (2) CHE 152, CHE 154 and CHE 331 may be substituted for CHE 131/CHE 132/CHE 133/CHE 134/CHE 321. (3) Several two-semester physics sequences (PHY 125/PHY 126 with PHY 133, PHY 127/PHY 134, PHY 131/PHY 133, PHY 132/PHY 134, PHY 141/PHY 133, PHY 142/PHY 134) may substitute for the physics sequences in the Foundation Courses, and MAR 352 may substitute for PHY 127/PHY 134, PHY 132/PHY 134 or PHY 142/PHY 134. (4) Other classes may be substituted with permission of the undergraduate director."
+    },
+    {
+      "topic": "other",
+      "text": "The Marine Vertebrate Biology Honors Program requires a 3.50 GPA in all courses for the major by the end of the junior year, application to the SoMAS undergraduate director, an honors thesis, and a 3.5 GPA through senior year with a recommendation from the undergraduate research committee. This optional program is not modeled."
+    },
+    {
+      "topic": "other",
+      "text": "The BS/MS program in Marine Vertebrate Biology is temporarily suspended effective Spring 2026. Accelerated programs are not modeled."
+    },
+    {
+      "topic": "sbc",
+      "text": "The SBC table lists major courses that may also satisfy SBC categories (for example QPS: MAT 125, MAT 126; SNW: BIO 201, CHE 131, CHE 132; STEM+: BIO 202, BIO 203, CHE 321). Course-level SBC tags are stored on course records."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1560",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

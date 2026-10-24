@@ -1,0 +1,103 @@
+{
+  "id": "communication",
+  "name": "Communication",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "communication.required",
+      "label": "required",
+      "title": "Required Courses (6 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "COM 100"
+          },
+          {
+            "type": "course",
+            "code": "COM 120"
+          }
+        ]
+      },
+      "sourceText": "Required Courses (6 credits) - COM 100 - Introduction to Communication 3 credits - COM 120 - Fundamentals of Public Speaking 3 credits"
+    },
+    {
+      "id": "communication.choose-one",
+      "label": "choose-one",
+      "title": "Choose one of the following courses (3 credits)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "COM 202"
+          },
+          {
+            "type": "course",
+            "code": "COM 206"
+          }
+        ]
+      },
+      "sourceText": "Choose one of the following courses (3 credits) - COM 202 - Intercultural Communication 3 credits - COM 206 - Interpersonal Communication 3 credits"
+    },
+    {
+      "id": "communication.electives",
+      "label": "electives",
+      "title": "Electives",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "COM 314",
+            "COM 315",
+            "COM 351",
+            "COM 357",
+            "COM 358",
+            "COM 346",
+            "COM 365",
+            "COM 386",
+            "COM 400",
+            "COM 401",
+            "COM 402",
+            "COM 403",
+            "COM 404",
+            "COM 405",
+            "COM 406",
+            "COM 407",
+            "COM 415",
+            "COM 436"
+          ],
+          "minNumber": 300
+        }
+      },
+      "sourceText": "Choose three of the following electives at or above the 300 level (9 credits) - COM 314 - Communication Research 3 credits - COM 315 - Communication Theory 3 credits - COM 351 - Team Collaboration and Community Engagement 3 credits - COM 357 - Health Communication 3 credits - COM 358 - Nonverbal Communication 3 credits - COM 346 - Race, Class, and Gender in Media 3 credits - COM 365 - Talking Science 3 credits - COM 386 - Special Topics: Issues in Communication 3 credits - COM 400 - Advanced Communication Research 3 credits - COM 401 - Organizational Communication 3 credits - COM 402 - Crisis Communication 3 credits - COM 403 - Strategic Communication 3 credits - COM 404 - Communication for Social Change & Public Advocacy 3 credits - COM 405 - Political Communication 3 credits - COM 406 - Risk Communication 3 credits - COM 407 - Social Media Analytics 3 credits - COM 415 - Data Analysis and Storytelling 3 credits - COM 436 - Environmental Communication 3 credits"
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Visit SoCJ Undergraduate Advising for program resources and ways to connect with an advisor."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1406",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

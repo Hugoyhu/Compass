@@ -1,0 +1,837 @@
+{
+  "id": "engineering-chemistry-bs",
+  "name": "Engineering Chemistry, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Engineering Chemistry",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "engineering-chemistry-bs.calculus",
+      "label": "calculus",
+      "title": "Calculus I and II",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 131"
+          },
+          {
+            "type": "course",
+            "code": "MAT 132"
+          }
+        ]
+      },
+      "sourceText": "MAT 131 - Calculus I 4 credits (See note below) MAT 132 - Calculus II 4 credits (See note below)"
+    },
+    {
+      "id": "engineering-chemistry-bs.math-placement",
+      "label": "math-placement",
+      "title": "Remedial math if not placed into MAT 125 or MAT 131",
+      "rule": {
+        "type": "unparsed",
+        "text": "If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major.",
+        "reason": "Conditional on placement exam result, which cannot be checked from a transcript"
+      },
+      "sourceText": "If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major."
+    },
+    {
+      "id": "engineering-chemistry-bs.computing",
+      "label": "computing",
+      "title": "Computing course",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ESG 111"
+          },
+          {
+            "type": "course",
+            "code": "CHE 358"
+          },
+          {
+            "type": "unparsed",
+            "text": "equivalent computer course",
+            "reason": "Equivalent course is not named on the page"
+          }
+        ]
+      },
+      "sourceText": "ESG 111 - Programming for Engineers 3 credits OR CHE 358 - Computing in Chemistry 3 credits OR equivalent computer course"
+    },
+    {
+      "id": "engineering-chemistry-bs.general-chemistry",
+      "label": "general-chemistry",
+      "title": "General chemistry and laboratory",
+      "rule": {
+        "manualCheck": "Page lists CHE 132 as an alternative in two adjacent groups; confirm whether one CHE 132 may satisfy both (course reuse is not allowed for this major).",
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 129"
+              },
+              {
+                "type": "course",
+                "code": "CHE 130"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 132"
+              },
+              {
+                "type": "course",
+                "code": "CHE 131"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 132"
+              },
+              {
+                "type": "course",
+                "code": "CHE 152"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CHE 133"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 134"
+              },
+              {
+                "type": "course",
+                "code": "CHE 154"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "CHE 129 - General Chemistry IA 4 credits; CHE 130 - Problem Solving in General Chemistry 1 credit; CHE 132 - General Chemistry II 4 credits OR CHE 131 - General Chemistry IB 4 credits; CHE 132 General Chemistry II 4 credits OR CHE 152 - Molecular Science I 4 credits; CHE 133 - General Chemistry Laboratory I 1 credit; CHE 134 - General Chemistry Laboratory II 1 credit OR CHE 154 - Molecular Science Laboratory I 2 credits (CHE 199 - General Chemistry Laboratory for Engineers acceptable with permission)"
+    },
+    {
+      "id": "engineering-chemistry-bs.physics-1",
+      "label": "physics-1",
+      "title": "Classical Physics I and laboratory",
+      "rule": {
+        "manualCheck": "Page also lists the honors pair PHY 141 with PHY 133 in the physics sequence; verify the honors alternative.",
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHY 131"
+          },
+          {
+            "type": "course",
+            "code": "PHY 133"
+          }
+        ]
+      },
+      "sourceText": "PHY 131 - Classical Physics I 3 credits; PHY 133 - Classical Physics Laboratory I 1 credit"
+    },
+    {
+      "id": "engineering-chemistry-bs.physics-2",
+      "label": "physics-2",
+      "title": "Classical Physics II sequence",
+      "rule": {
+        "type": "unparsed",
+        "text": "PHY 132 - Classical Physics II 3 credits + PHY 134 - Classical Physics Laboratory II 1 credit, OR PHY 141 - Classical Physics I: Honors + PHY 133; PHY 142 - Classical Physics II: Honors + PHY 134, OR PHY 125 - Classical Physics A; PHY 126 - Classical Physics B + PHY 133; PHY 127 - Classical Physics C + PHY 134",
+        "reason": "The page's line grouping of the physics II alternatives is ambiguous and cannot be reliably transcribed into allOf/anyOf structure"
+      },
+      "sourceText": "PHY 132 - Classical Physics II 3 credits; PHY 134 - Classical Physics Laboratory II 1 credit OR PHY 141 - Classical Physics I: Honors 3 credits; PHY 142 - Classical Physics II: Honors 3 credits OR PHY 125 - Classical Physics A 3 credits; PHY 126 - Classical Physics B 3 credits; PHY 127 - Classical Physics C 3 credits; PHY 251 - Modern Physics 3 credits"
+    },
+    {
+      "id": "engineering-chemistry-bs.physics-modern",
+      "label": "physics-modern",
+      "title": "Modern physics or solid-state engineering course",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 251"
+              },
+              {
+                "type": "course",
+                "code": "PHY 252"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ESG 281"
+          }
+        ]
+      },
+      "sourceText": "PHY 251 - Modern Physics 3 credits; PHY 252 - Modern Physics Laboratory 1 credit OR ESG 281 - Engineering Introduction to the Solid State 3 credits"
+    },
+    {
+      "id": "engineering-chemistry-bs.calc-advanced",
+      "label": "calc-advanced",
+      "title": "Calculus III and IV",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 261"
+              },
+              {
+                "type": "course",
+                "code": "AMS 361"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 203"
+              },
+              {
+                "type": "course",
+                "code": "MAT 303"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "One of the following pairs of courses: AMS 261 - Applied Calculus III 4 credits AND AMS 361 - Applied Calculus IV: Differential Equations 4 credits OR MAT 203 - Calculus III with Applications 4 credits AND MAT 303 - Calculus IV with Applications 4 credits"
+    },
+    {
+      "id": "engineering-chemistry-bs.core-physical-chemistry",
+      "label": "core-physical-chemistry",
+      "title": "Physical chemistry",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 301"
+          },
+          {
+            "type": "course",
+            "code": "CHE 302"
+          }
+        ]
+      },
+      "sourceText": "CHE 301 - Physical Chemistry I 4 credits; CHE 302 - Physical Chemistry II 4 credits"
+    },
+    {
+      "id": "engineering-chemistry-bs.core-laboratory",
+      "label": "core-laboratory",
+      "title": "Solution chemistry and instrumentation laboratories",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 303"
+          },
+          {
+            "type": "course",
+            "code": "CHE 304"
+          }
+        ]
+      },
+      "sourceText": "CHE 303 - Solution Chemistry Laboratory 2 credits; CHE 304 - Chemical Instrumentation Laboratory 2 credits"
+    },
+    {
+      "id": "engineering-chemistry-bs.core-organic",
+      "label": "core-organic",
+      "title": "Organic chemistry",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 321"
+          },
+          {
+            "type": "course",
+            "code": "CHE 331"
+          }
+        ]
+      },
+      "sourceText": "CHE 321 - Organic Chemistry I 4 credits OR CHE 331 - Molecular Science II 4 credits"
+    },
+    {
+      "id": "engineering-chemistry-bs.core-materials",
+      "label": "core-materials",
+      "title": "Materials chemistry and materials science",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 378"
+          },
+          {
+            "type": "course",
+            "code": "ESM 325"
+          },
+          {
+            "type": "course",
+            "code": "ESG 332"
+          },
+          {
+            "type": "course",
+            "code": "ESG 333"
+          }
+        ]
+      },
+      "sourceText": "CHE 378 - Materials Chemistry 3 credits; ESM 325 - Diffraction Techniques and Structure of Solids 3 credits; ESG 332 - Materials Science I: Structure and Properties of Materials 3 credits; ESG 333 - Materials Science II: Electronic Properties 3 credits"
+    },
+    {
+      "id": "engineering-chemistry-bs.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "unparsed",
+        "text": "Take CHE 303 until a satisfactory grade is achieved",
+        "reason": "Repeat-until-satisfactory condition cannot be expressed as a course count; CHE 303 is already counted in core-laboratory"
+      },
+      "sourceText": "Each student majoring in Engineering Chemistry must take CHE 303 until a satisfactory grade is achieved. CHE 303 requires several papers which are evaluated for cogency, clarity, and mechanics, and satisfies the university Stony Brook Curriculum WRTD learning objective."
+    },
+    {
+      "id": "engineering-chemistry-bs.electives",
+      "label": "electives",
+      "title": "Technical and open electives",
+      "rule": {
+        "type": "unparsed",
+        "text": "Students make a selection of technical and open electives to total 120 credits.",
+        "reason": "Total-credit rule across the program is not expressible as a course selection"
+      },
+      "sourceText": "Students make a selection of technical and open electives to total 120 credits."
+    },
+    {
+      "id": "engineering-chemistry-bs.upper-division-residency",
+      "label": "upper-division-residency",
+      "title": "Upper-division residency in chemistry and materials science",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least six credits each of upper-division work in chemistry and in materials science and engineering must be taken at Stony Brook.",
+        "reason": "Per-subject-area residency minimum cannot be expressed with the residency policy types"
+      },
+      "sourceText": "At least six credits each of upper-division work in chemistry and in materials science and engineering must be taken at Stony Brook."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "engineering-chemistry-bs.calculus",
+        "engineering-chemistry-bs.computing",
+        "engineering-chemistry-bs.general-chemistry",
+        "engineering-chemistry-bs.physics-1",
+        "engineering-chemistry-bs.physics-modern",
+        "engineering-chemistry-bs.calc-advanced",
+        "engineering-chemistry-bs.core-physical-chemistry",
+        "engineering-chemistry-bs.core-laboratory",
+        "engineering-chemistry-bs.core-organic",
+        "engineering-chemistry-bs.core-materials"
+      ],
+      "sourceText": "The following courses are required and must be taken for a letter grade; G/P/NC grades are not acceptable."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "engineering-chemistry-bs.calculus",
+        "engineering-chemistry-bs.computing",
+        "engineering-chemistry-bs.general-chemistry",
+        "engineering-chemistry-bs.physics-1",
+        "engineering-chemistry-bs.physics-modern",
+        "engineering-chemistry-bs.calc-advanced",
+        "engineering-chemistry-bs.core-physical-chemistry",
+        "engineering-chemistry-bs.core-laboratory",
+        "engineering-chemistry-bs.core-organic",
+        "engineering-chemistry-bs.core-materials"
+      ],
+      "sourceText": "All of the courses used to fulfill the requirements of the major (CHE, MAT, ESG, PHY, etc.) must be passed with a grade of C or higher, with the exception of three courses, for which the grade may be C-. No transferred course with a grade lower than C may be used to fulfill any major requirement."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "engineering-chemistry-bs.sub.calc-alternate-141-142",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 131",
+          "MAT 132"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 141"
+          },
+          {
+            "type": "course",
+            "code": "MAT 142"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate calculus sequences may be substituted for MAT 131, MAT 132: MAT 141, MAT 142 or MAT 171 or MAT 125, MAT 126, MAT 127 or AMS 151, AMS 161."
+    },
+    {
+      "id": "engineering-chemistry-bs.sub.calc-alternate-171",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 131",
+          "MAT 132"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "MAT 171"
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate calculus sequences may be substituted for MAT 131, MAT 132: MAT 141, MAT 142 or MAT 171 or MAT 125, MAT 126, MAT 127 or AMS 151, AMS 161."
+    },
+    {
+      "id": "engineering-chemistry-bs.sub.calc-alternate-125-127",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 131",
+          "MAT 132"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 125"
+          },
+          {
+            "type": "course",
+            "code": "MAT 126"
+          },
+          {
+            "type": "course",
+            "code": "MAT 127"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate calculus sequences may be substituted for MAT 131, MAT 132: MAT 141, MAT 142 or MAT 171 or MAT 125, MAT 126, MAT 127 or AMS 151, AMS 161."
+    },
+    {
+      "id": "engineering-chemistry-bs.sub.calc-alternate-ams",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 131",
+          "MAT 132"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 151"
+          },
+          {
+            "type": "course",
+            "code": "AMS 161"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "The following alternate calculus sequences may be substituted for MAT 131, MAT 132: MAT 141, MAT 142 or MAT 171 or MAT 125, MAT 126, MAT 127 or AMS 151, AMS 161."
+    },
+    {
+      "id": "engineering-chemistry-bs.sub.mat-307-308",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 203",
+          "MAT 303"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 307"
+          },
+          {
+            "type": "course",
+            "code": "MAT 308"
+          }
+        ]
+      },
+      "condition": "Only after consultation with the Mathematics Department",
+      "requiresApproval": true,
+      "sourceText": "MAT 307 and MAT 308 may be substituted for MAT 203 and MAT 303, but only after consultation with the Mathematics Department."
+    },
+    {
+      "id": "engineering-chemistry-bs.sub.che-199",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 154"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "CHE 199"
+      },
+      "condition": "With permission",
+      "requiresApproval": true,
+      "sourceText": "CHE 199 - General Chemistry Laboratory for Engineers acceptable with permission"
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "manualCheck": "Must be taken until a satisfactory grade is achieved",
+          "type": "course",
+          "code": "CHE 303"
+        },
+        "sourceText": "CHE 303 requires several papers which are evaluated for cogency, clarity, and mechanics, and satisfies the university Stony Brook Curriculum WRTD learning objective."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 133",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MAT 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESG 111",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CHE 301",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 303",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "AMS 261",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 133",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CHE 302",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "AMS 361",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 134",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CHE 321",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 378",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ESG 281 or PHY 251/PHY 252",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ESG 332",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ESM 325",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 304",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ESG 333",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 495",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CHE 496",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "Completion of the major requires approximately 66 to 68 credits; electives total 120 credits for the degree."
+    },
+    {
+      "topic": "grading",
+      "text": "Three courses in the major may be passed with a grade of C-; the page does not identify which three, so the C minimum is applied to all major courses."
+    },
+    {
+      "topic": "sbc",
+      "text": "Students majoring in Engineering Chemistry must meet the SBC learning outcomes required of the College of Arts and Sciences, including completion of the LANG learning outcome."
+    },
+    {
+      "topic": "advising",
+      "text": "Director: Dale Drueckhammer (Chemistry). Student Affairs Coordinator: Katherine Hughes, 109 Chemistry."
+    },
+    {
+      "topic": "other",
+      "text": "ACS certification (optional) requires CHE 322 or CHE 332, CHE 346, CHE 375, laboratories CHE 383 or CHE 327 and CHE 328 or CHE 384, one of several CHE 487/495-496/357 research options or an off-campus research experience of at least 180 hours, plus the elective credits described on the page."
+    },
+    {
+      "topic": "other",
+      "text": "Optional Bachelor of Science/Master of Science in Chemistry and five-year Bachelor of Science in Chemistry/Master of Science in Materials Science programs are not evaluated here."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1434",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

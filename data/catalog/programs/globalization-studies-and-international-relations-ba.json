@@ -1,0 +1,1107 @@
+{
+  "id": "globalization-studies-and-international-relations-ba",
+  "name": "Globalization Studies and International Relations, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Globalization Studies and International Relations",
+  "approxCredits": 45,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "globalization-studies-and-international-relations-ba.A",
+      "label": "A",
+      "title": "Core Courses (15 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "GLI 211"
+          },
+          {
+            "type": "course",
+            "code": "GLI 320"
+          },
+          {
+            "type": "course",
+            "code": "GLI 330"
+          },
+          {
+            "type": "course",
+            "code": "GLI 340"
+          },
+          {
+            "type": "course",
+            "code": "GLI 450"
+          }
+        ]
+      },
+      "sourceText": "A. Core Courses (15 credits) - GLI 211 - Perspectives in Globalization Studies and International Relations 3 credits; GLI 320 - Global, Cultural, and Environmental Issues 3 credits; GLI 330 - Global, Political, and Economic Issues 3 credits; GLI 340 - Conflict Resolution, Coalition Building, and Peacemaking 3 credits; GLI 450 - Capstone Seminar in Globalization Studies and International Relations 3 credits"
+    },
+    {
+      "id": "globalization-studies-and-international-relations-ba.B",
+      "label": "B",
+      "title": "Language Study (9 credits)",
+      "rule": {
+        "manualCheck": "Confirm all 9 credits are in one non-English language, at the 200-level or above, and carry the LANG SBC designation; or confirm equivalent competency via a language challenge exam.",
+        "type": "unparsed",
+        "text": "9 credits at the 200-level or above in one language other than English. Equivalent competency for credit may be demonstrated through a language challenge exam. Courses must include the LANG SBC designation to count towards the Language Study requirement.",
+        "reason": "Language subjects are not enumerated on the page, so a single-language 200-level pool cannot be expressed as a course selector; the language challenge exam equivalency is also not a course rule."
+      },
+      "sourceText": "B. Language Study (9 credits) - 9 credits at the 200-level or above in one language other than English. Equivalent competency for credit may be demonstrated through a language challenge exam. Note for the Language Study major requirement: Courses must include the LANG SBC designation to count towards the Language Study requirement."
+    },
+    {
+      "id": "globalization-studies-and-international-relations-ba.C",
+      "label": "C",
+      "title": "Global Flows (9 credits)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "sourceText": "AFRICA AND AFRICAN DIASPORA",
+            "type": "choose",
+            "credits": 9,
+            "from": {
+              "courses": [
+                "AFS 221",
+                "AFS 306",
+                "AFS 319",
+                "AFS 340",
+                "AFS 346",
+                "HIS 368",
+                "AFS 374",
+                "AFS 383",
+                "AFH 329",
+                "AFH 330",
+                "ANT 250",
+                "ARH 329",
+                "HIS 221",
+                "HIS 350",
+                "HIS 369",
+                "POL 337",
+                "SOC 365"
+              ],
+              "excludeUsedBy": [
+                "globalization-studies-and-international-relations-ba.A",
+                "globalization-studies-and-international-relations-ba.B",
+                "globalization-studies-and-international-relations-ba.D"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AFS 306",
+                    "AFS 319",
+                    "AFS 340",
+                    "AFS 346",
+                    "HIS 368",
+                    "AFS 374",
+                    "AFS 383",
+                    "AFH 329",
+                    "AFH 330",
+                    "ARH 329",
+                    "HIS 350",
+                    "HIS 369",
+                    "POL 337",
+                    "SOC 365"
+                  ]
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "sourceText": "ASIA",
+            "type": "choose",
+            "credits": 9,
+            "from": {
+              "courses": [
+                "AAS 201",
+                "AAS 216",
+                "AAS 300",
+                "AAS 305",
+                "AAS 330",
+                "AAS 352",
+                "AAS 379",
+                "AAS 440",
+                "ARH 203",
+                "HIS 219",
+                "HIS 227",
+                "HIS 307",
+                "HIS 332",
+                "HIS 340",
+                "HIS 348",
+                "JPN 331",
+                "JPN 332",
+                "KOR 331",
+                "KOR 332"
+              ],
+              "ranges": [
+                {
+                  "subject": "RUS",
+                  "from": 300,
+                  "to": 499
+                }
+              ],
+              "excludeUsedBy": [
+                "globalization-studies-and-international-relations-ba.A",
+                "globalization-studies-and-international-relations-ba.B",
+                "globalization-studies-and-international-relations-ba.D"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AAS 300",
+                    "AAS 305",
+                    "AAS 330",
+                    "AAS 352",
+                    "AAS 379",
+                    "AAS 440",
+                    "HIS 307",
+                    "HIS 332",
+                    "HIS 340",
+                    "HIS 348",
+                    "JPN 331",
+                    "JPN 332",
+                    "KOR 331",
+                    "KOR 332"
+                  ],
+                  "ranges": [
+                    {
+                      "subject": "RUS",
+                      "from": 300,
+                      "to": 499
+                    }
+                  ]
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "sourceText": "EUROPE",
+            "type": "choose",
+            "credits": 9,
+            "from": {
+              "courses": [
+                "HIS 101",
+                "HIS 102",
+                "HIS 248",
+                "HIS 249",
+                "HIS 250",
+                "HIS 251",
+                "HIS 334",
+                "HIS 360",
+                "HIS 391",
+                "HIS 392",
+                "HIS 393",
+                "HUF 216",
+                "HUF 219",
+                "HUG 229",
+                "HUI 216",
+                "HUS 255",
+                "POL 309",
+                "SPN 415"
+              ],
+              "ranges": [
+                {
+                  "subject": "FRN",
+                  "from": 300,
+                  "to": 499
+                },
+                {
+                  "subject": "GER",
+                  "from": 300,
+                  "to": 499
+                },
+                {
+                  "subject": "ITL",
+                  "from": 300,
+                  "to": 499
+                },
+                {
+                  "subject": "RUS",
+                  "from": 300,
+                  "to": 499
+                },
+                {
+                  "subject": "SPN",
+                  "from": 300,
+                  "to": 499
+                }
+              ],
+              "excludeUsedBy": [
+                "globalization-studies-and-international-relations-ba.A",
+                "globalization-studies-and-international-relations-ba.B",
+                "globalization-studies-and-international-relations-ba.D"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "HIS 334",
+                    "HIS 360",
+                    "HIS 391",
+                    "HIS 392",
+                    "HIS 393",
+                    "POL 309",
+                    "SPN 415"
+                  ],
+                  "ranges": [
+                    {
+                      "subject": "FRN",
+                      "from": 300,
+                      "to": 499
+                    },
+                    {
+                      "subject": "GER",
+                      "from": 300,
+                      "to": 499
+                    },
+                    {
+                      "subject": "ITL",
+                      "from": 300,
+                      "to": 499
+                    },
+                    {
+                      "subject": "RUS",
+                      "from": 300,
+                      "to": 499
+                    },
+                    {
+                      "subject": "SPN",
+                      "from": 300,
+                      "to": 499
+                    }
+                  ]
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "sourceText": "THE AMERICAS",
+            "type": "choose",
+            "credits": 9,
+            "from": {
+              "courses": [
+                "AFH 339",
+                "AFH 368",
+                "HIS 213",
+                "HIS 214",
+                "HIS 216",
+                "HIS 380",
+                "HUS 254",
+                "HUS 261",
+                "HUS 290",
+                "LAC 200",
+                "SOC 364"
+              ],
+              "ranges": [
+                {
+                  "subject": "SPN",
+                  "from": 300,
+                  "to": 499
+                }
+              ],
+              "excludeUsedBy": [
+                "globalization-studies-and-international-relations-ba.A",
+                "globalization-studies-and-international-relations-ba.B",
+                "globalization-studies-and-international-relations-ba.D"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AFH 339",
+                    "AFH 368",
+                    "HIS 380",
+                    "SOC 364"
+                  ],
+                  "ranges": [
+                    {
+                      "subject": "SPN",
+                      "from": 300,
+                      "to": 499
+                    }
+                  ]
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "sourceText": "MIDDLE EAST: NORTH AFRICA AND SOUTH-WEST ASIA",
+            "type": "choose",
+            "credits": 9,
+            "from": {
+              "courses": [
+                "ARH 317",
+                "HIS 227",
+                "HIS 307"
+              ],
+              "excludeUsedBy": [
+                "globalization-studies-and-international-relations-ba.A",
+                "globalization-studies-and-international-relations-ba.B",
+                "globalization-studies-and-international-relations-ba.D"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "ARH 317",
+                    "HIS 307"
+                  ]
+                },
+                "minCourses": 2
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "C. Global Flows (9 credits). All 9 credits must be taken within one of the following options. At least 6 credits must be taken at the 300 or 400 level. Options: Africa and African Diaspora; Asia; Europe; The Americas; Middle East: North African and South-West Asia. Courses selected should be defined according to specific global flows; specific choice of courses is made through consultation with the program advisor or program director."
+    },
+    {
+      "id": "globalization-studies-and-international-relations-ba.C-note",
+      "label": "C-note",
+      "title": "Global Flows note: 12 credits within one Global Issues area",
+      "rule": {
+        "manualCheck": "Confirm with the program whether this note means the five Global Issues areas and the 12-credit requirement in D.",
+        "type": "unparsed",
+        "text": "Note for Global Flows major requirement: 12 credits must be taken within one of the six defined Global Issues areas.",
+        "reason": "Conflicts with the Global Issues requirement, which lists five areas and requires 12 credits within one of them; the page appears to contain a catalog error, so the rule cannot be evaluated as written."
+      },
+      "sourceText": "Note for Global Flows major requirement: 12 credits must be taken within one of the six defined Global Issues areas."
+    },
+    {
+      "id": "globalization-studies-and-international-relations-ba.D",
+      "label": "D",
+      "title": "Global Issues (12 credits)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "sourceText": "HUMAN, CULTURAL, AND BIOLOGICAL MIGRATION: GLOBAL DIASPORAS AND ETHNICITIES",
+            "manualCheck": "GLI 212, GLI 391 and GLI 392 count only when the topic is appropriate.",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "courses": [
+                "AAS 305",
+                "AFH 339",
+                "AFS 221",
+                "AFS 383",
+                "ANT 250",
+                "EGL 249",
+                "EGL 274",
+                "GLI 212",
+                "GLI 391",
+                "GLI 392",
+                "HIS 307",
+                "HIS 397",
+                "HUS 271",
+                "POL 310"
+              ],
+              "excludeUsedBy": [
+                "globalization-studies-and-international-relations-ba.A",
+                "globalization-studies-and-international-relations-ba.B",
+                "globalization-studies-and-international-relations-ba.C"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AAS 305",
+                    "AFH 339",
+                    "AFS 383",
+                    "GLI 391",
+                    "GLI 392",
+                    "HIS 307",
+                    "HIS 397",
+                    "POL 310"
+                  ]
+                },
+                "minCourses": 3
+              }
+            ]
+          },
+          {
+            "sourceText": "GLOBAL DEVELOPMENT AND SUSTAINABILITY: ENVIRONMENT, WELL-BEING, ECONOMY, AND POLICY",
+            "manualCheck": "GLI 212, GLI 391 and GLI 392 count only when the topic is appropriate.",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "courses": [
+                "AFS 306",
+                "AFS 368",
+                "AFS 374",
+                "ANT 361",
+                "ANT 350",
+                "ATM 201",
+                "ATM 237",
+                "ATM 305",
+                "ATM 397",
+                "BIO 103",
+                "BIO 113",
+                "BIO 353",
+                "BIO 385",
+                "BIO 386",
+                "ENS 101",
+                "ENS 301",
+                "ENS 311",
+                "ENS 312",
+                "ENV 304",
+                "EST 102",
+                "EST 201",
+                "EST 291",
+                "EST 330",
+                "GEO 101",
+                "GEO 104",
+                "GEO 105",
+                "GEO 311",
+                "GLI 212",
+                "GLI 391",
+                "GLI 392",
+                "HIS 286",
+                "HIS 302",
+                "MAR 315",
+                "MAR 340",
+                "MAR 394",
+                "MEC 280",
+                "PHI 366",
+                "PHY 237",
+                "SOC 344",
+                "SUS 343"
+              ],
+              "excludeUsedBy": [
+                "globalization-studies-and-international-relations-ba.A",
+                "globalization-studies-and-international-relations-ba.B",
+                "globalization-studies-and-international-relations-ba.C"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AFS 306",
+                    "AFS 368",
+                    "AFS 374",
+                    "ANT 361",
+                    "ANT 350",
+                    "ATM 305",
+                    "ATM 397",
+                    "BIO 353",
+                    "BIO 385",
+                    "BIO 386",
+                    "ENS 301",
+                    "ENS 311",
+                    "ENS 312",
+                    "ENV 304",
+                    "EST 330",
+                    "GEO 311",
+                    "GLI 391",
+                    "GLI 392",
+                    "HIS 302",
+                    "MAR 315",
+                    "MAR 340",
+                    "MAR 394",
+                    "PHI 366",
+                    "SOC 344",
+                    "SUS 343"
+                  ]
+                },
+                "minCourses": 3
+              }
+            ]
+          },
+          {
+            "sourceText": "CULTURAL AND POLITICAL REPRESENTATION: ART AND MEDIA IN A GLOBAL CONTEXT",
+            "manualCheck": "GLI 212, GLI 391 and GLI 392 count only when the topic is appropriate.",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "courses": [
+                "AAS 201",
+                "AAS 216",
+                "AAS 250",
+                "AAS 300",
+                "AAS 305",
+                "AAS 440",
+                "AFH 206",
+                "AFH 249",
+                "AFH 339",
+                "AFH 368",
+                "AFS 383",
+                "ANT 102",
+                "ANT 230",
+                "ANT 250",
+                "ARH 391",
+                "CCS 202",
+                "CCS 311",
+                "CCS 325",
+                "CCS 381",
+                "CCS 395",
+                "CLT 101",
+                "CLT 335",
+                "CLT 362",
+                "EGL 276",
+                "EGL 369",
+                "EGL 376",
+                "GLI 212",
+                "GLI 391",
+                "GLI 392",
+                "HIS 227",
+                "HIS 369",
+                "HIS 373",
+                "HUS 290",
+                "MUS 300",
+                "MUS 304",
+                "PHI 364",
+                "WST 301",
+                "WST 395"
+              ],
+              "excludeUsedBy": [
+                "globalization-studies-and-international-relations-ba.A",
+                "globalization-studies-and-international-relations-ba.B",
+                "globalization-studies-and-international-relations-ba.C"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AAS 300",
+                    "AAS 305",
+                    "AAS 440",
+                    "AFH 339",
+                    "AFH 368",
+                    "AFS 383",
+                    "ARH 391",
+                    "CCS 311",
+                    "CCS 325",
+                    "CCS 381",
+                    "CCS 395",
+                    "CLT 335",
+                    "CLT 362",
+                    "EGL 369",
+                    "EGL 376",
+                    "GLI 391",
+                    "GLI 392",
+                    "HIS 369",
+                    "HIS 373",
+                    "MUS 300",
+                    "MUS 304",
+                    "PHI 364",
+                    "WST 301",
+                    "WST 395"
+                  ]
+                },
+                "minCourses": 3
+              }
+            ]
+          },
+          {
+            "sourceText": "INEQUALITIES: GENDER, RACE, AND CLASS IN A GLOBAL CONTEXT",
+            "manualCheck": "GLI 212, GLI 391 and GLI 392 count only when the topic is appropriate.",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "courses": [
+                "AAS 250",
+                "AFH 206",
+                "AFH 249",
+                "AFH 339",
+                "AFH 368",
+                "AFS 319",
+                "AFS 340",
+                "ANT 102",
+                "ANT 230",
+                "CCS 311",
+                "EGL 249",
+                "EGL 274",
+                "EGL 276",
+                "EGL 369",
+                "EGL 376",
+                "GLI 212",
+                "GLI 391",
+                "GLI 392",
+                "HIS 332",
+                "HIS 348",
+                "HIS 397",
+                "MUS 304",
+                "WST 301",
+                "WST 395"
+              ],
+              "excludeUsedBy": [
+                "globalization-studies-and-international-relations-ba.A",
+                "globalization-studies-and-international-relations-ba.B",
+                "globalization-studies-and-international-relations-ba.C"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AFH 339",
+                    "AFH 368",
+                    "AFS 319",
+                    "AFS 340",
+                    "CCS 311",
+                    "EGL 369",
+                    "EGL 376",
+                    "GLI 391",
+                    "GLI 392",
+                    "HIS 332",
+                    "HIS 348",
+                    "HIS 397",
+                    "MUS 304",
+                    "WST 301",
+                    "WST 395"
+                  ]
+                },
+                "minCourses": 3
+              }
+            ]
+          },
+          {
+            "sourceText": "TRANSNATIONAL CORPORATIONS AND TRANSREGIONAL INSTITUTIONS: MARKETS, INSTITUTIONS, AND POLICIES",
+            "manualCheck": "GLI 212, GLI 391 and GLI 392 count only when the topic is appropriate.",
+            "type": "choose",
+            "credits": 12,
+            "from": {
+              "courses": [
+                "AAS 379",
+                "AFH 379",
+                "AFS 221",
+                "AFS 319",
+                "AFS 337",
+                "AFS 345",
+                "AFS 346",
+                "AFS 350",
+                "AFS 365",
+                "CSE 301",
+                "ECO 325",
+                "EST 201",
+                "GLI 212",
+                "GLI 391",
+                "GLI 392",
+                "HIS 281",
+                "HIS 300",
+                "HIS 307",
+                "HIS 332",
+                "HIS 348",
+                "HIS 381",
+                "HIS 397",
+                "PHI 367",
+                "PHI 377",
+                "POL 103",
+                "POL 311",
+                "POL 313",
+                "POL 374",
+                "SOC 105",
+                "SOC 248",
+                "SOC 348"
+              ],
+              "excludeUsedBy": [
+                "globalization-studies-and-international-relations-ba.A",
+                "globalization-studies-and-international-relations-ba.B",
+                "globalization-studies-and-international-relations-ba.C"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AAS 379",
+                    "AFH 379",
+                    "AFS 319",
+                    "AFS 337",
+                    "AFS 345",
+                    "AFS 346",
+                    "AFS 350",
+                    "AFS 365",
+                    "CSE 301",
+                    "ECO 325",
+                    "GLI 391",
+                    "GLI 392",
+                    "HIS 300",
+                    "HIS 307",
+                    "HIS 332",
+                    "HIS 348",
+                    "HIS 381",
+                    "HIS 397",
+                    "PHI 367",
+                    "PHI 377",
+                    "POL 311",
+                    "POL 313",
+                    "POL 374",
+                    "SOC 348"
+                  ]
+                },
+                "minCourses": 3
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "D. Global Issues (12 credits). Choice of one of five areas of coursework organized around a set of interrelated issues. At least 9 credits must be taken at the 300 or 400 level. 12 credits must be taken within one of the five defined Global Issues areas."
+    },
+    {
+      "id": "globalization-studies-and-international-relations-ba.E",
+      "label": "E",
+      "title": "Satisfactory/Unsatisfactory credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than six credits of courses with Satisfactory/Unsatisfactory grading may be applied to the major.",
+        "reason": "Program-wide credit cap on S/U courses is not a rule type that can be applied to the requirement pools."
+      },
+      "sourceText": "No more than six credits of courses with Satisfactory/Unsatisfactory grading may be applied to the major."
+    },
+    {
+      "id": "globalization-studies-and-international-relations-ba.F",
+      "label": "F",
+      "title": "Excluded courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "Neither GLI 475 nor GLI 476 may be used toward the major.",
+        "reason": "Program-wide course exclusion that is not attached to a single requirement pool."
+      },
+      "sourceText": "Neither GLI 475 nor GLI 476 may be used toward the major."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "globalization-studies-and-international-relations-ba.A",
+        "globalization-studies-and-international-relations-ba.B",
+        "globalization-studies-and-international-relations-ba.C",
+        "globalization-studies-and-international-relations-ba.D"
+      ],
+      "sourceText": "All courses taken to fulfill major requirements must be passed with a letter grade of C or higher, except for those with a Satisfactory/Unsatisfactory grading scale which must be passed with an S. Only transfer courses with a grade of C or higher may be accepted toward the major."
+    },
+    {
+      "type": "residencyRequired",
+      "appliesTo": [
+        "globalization-studies-and-international-relations-ba.A"
+      ],
+      "sourceText": "All Core Courses for the major must be taken at Stony Brook University. Transfer courses from other institutions will not be accepted."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GLI 211",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SPN 111",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SPN 112",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Global Issue I",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Global Interaction Area I",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GLI 320",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SPN 211",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "SPN 212",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Global Interaction Area II",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GLI 330",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Global Issue II",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "SPN 311",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Internship",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Global Interaction Area III",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Global Issue III",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GLI 340",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Global Issue IV",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GLI 450",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students are encouraged to either participate in a semester abroad study program, or to complete a semester-long internship in an institution, business, or government agency. Courses for Global Flows are selected through consultation with the program advisor or program director."
+    },
+    {
+      "topic": "grading",
+      "text": "Satisfactory/Unsatisfactory courses must be passed with an S, and no more than six S/U credits may be applied to the major."
+    },
+    {
+      "topic": "other",
+      "text": "Courses marked with * in Global Flows and Global Issues are crosslisted; students earn credit by registering for either course but may not repeat the course under the other option."
+    },
+    {
+      "topic": "other",
+      "text": "GLI 212, GLI 391 and GLI 392 count toward Global Issues only when the topic is appropriate."
+    },
+    {
+      "topic": "other",
+      "text": "Language Study may be satisfied by equivalent competency demonstrated through a language challenge exam."
+    },
+    {
+      "topic": "other",
+      "text": "Completed courses may count toward only one area of the major, even if they are listed in multiple areas."
+    },
+    {
+      "topic": "other",
+      "text": "The page lists minors of particular interest to majors, including Africana Studies, Asian and Asian American Studies, China Studies, English, Environmental Humanities, French Language and Literature, History, Italian Studies, Japanese Studies, Korean Studies, Latin American and Caribbean Studies, Middle Eastern Studies, Political Science, Russian Studies, South Asian Studies, Spanish Language and Literature, Sustainability Studies, Theatre Arts, Women's and Gender Studies, and Writing and Rhetoric."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1464",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

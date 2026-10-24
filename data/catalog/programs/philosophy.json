@@ -1,0 +1,92 @@
+{
+  "id": "philosophy",
+  "name": "Philosophy",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "philosophy.credits",
+      "label": "credits",
+      "title": "Total credits for the minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "The minor in Philosophy requires 18 credits.",
+        "reason": "The page does not list the courses or subject pool that count toward the minor, so the eligible credit pool cannot be defined."
+      },
+      "sourceText": "The minor in Philosophy requires 18 credits, which must include at least nine credits in upper-division courses."
+    },
+    {
+      "id": "philosophy.upper-division",
+      "label": "upper-division",
+      "title": "Upper-division credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least nine of the 18 credits must be in upper-division courses.",
+        "reason": "The page sets an upper-division credit floor, but no rule type expresses a credit minimum over an unspecified pool with a minNumber filter."
+      },
+      "sourceText": "The minor in Philosophy requires 18 credits, which must include at least nine credits in upper-division courses."
+    },
+    {
+      "id": "philosophy.100-level-limit",
+      "label": "100-level-limit",
+      "title": "Limit on 100-level courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one 100-level course can be counted toward satisfying the minor requirements.",
+        "reason": "The limit applies to an unspecified course pool, so it cannot be expressed as a maxFrom constraint without inventing the eligible subject."
+      },
+      "sourceText": "No more than one 100-level course can be counted toward satisfying the minor requirements."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "philosophy.credits",
+        "philosophy.upper-division",
+        "philosophy.100-level-limit"
+      ],
+      "sourceText": "Courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "philosophy.credits",
+        "philosophy.upper-division",
+        "philosophy.100-level-limit"
+      ],
+      "sourceText": "Courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "The minor must be approved by the director of undergraduate studies."
+    },
+    {
+      "topic": "advising",
+      "text": "Students anticipating a minor may select one of the following emphases: history of philosophy; logic, science, and technology; moral, political, and legal issues; literature and the arts. The page does not list the courses for each emphasis."
+    },
+    {
+      "topic": "other",
+      "text": "Alternatively, a student may design a minor in Philosophy tailored to his or her own interests, subject to approval by the director of undergraduate studies."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1534",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

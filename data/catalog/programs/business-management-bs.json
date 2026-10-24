@@ -1,0 +1,634 @@
+{
+  "id": "business-management-bs",
+  "name": "Business Management, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Business Management",
+  "approxCredits": 60,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "business-management-bs.core",
+      "label": "core",
+      "title": "Core Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "business-management-bs.core.bus117",
+            "type": "course",
+            "code": "BUS 117"
+          },
+          {
+            "type": "course",
+            "code": "ACC 210"
+          },
+          {
+            "type": "course",
+            "code": "ACC 214"
+          },
+          {
+            "id": "business-management-bs.core.bus215",
+            "type": "course",
+            "code": "BUS 215"
+          },
+          {
+            "id": "business-management-bs.core.bus220",
+            "type": "course",
+            "code": "BUS 220"
+          },
+          {
+            "id": "business-management-bs.core.bus301",
+            "type": "course",
+            "code": "BUS 301"
+          },
+          {
+            "id": "business-management-bs.core.bus326",
+            "type": "course",
+            "code": "BUS 326"
+          },
+          {
+            "id": "business-management-bs.core.bus330",
+            "type": "course",
+            "code": "BUS 330"
+          },
+          {
+            "id": "business-management-bs.core.bus340",
+            "type": "course",
+            "code": "BUS 340"
+          },
+          {
+            "id": "business-management-bs.core.bus346",
+            "type": "course",
+            "code": "BUS 346"
+          },
+          {
+            "id": "business-management-bs.core.bus348",
+            "type": "course",
+            "code": "BUS 348"
+          },
+          {
+            "id": "business-management-bs.core.bus441",
+            "type": "course",
+            "code": "BUS 441"
+          },
+          {
+            "id": "business-management-bs.core.bus447",
+            "type": "course",
+            "code": "BUS 447"
+          },
+          {
+            "id": "business-management-bs.core.eco110",
+            "type": "course",
+            "code": "ECO 110"
+          },
+          {
+            "id": "business-management-bs.core.eco111",
+            "type": "course",
+            "code": "ECO 111"
+          }
+        ]
+      },
+      "sourceText": "BUS 117 - Digital Tools for Business 3 credits; ACC 210 - Financial Accounting 3 credits; ACC 214 - Managerial Cost Analysis and Applications 3 credits; BUS 215 - Introduction to Business Statistics 3 credits; BUS 220 - Introduction to Decision Sciences 3 credits; BUS 301 - Business Communications 3 credits; BUS 326 - Organizational Behavior 3 credits; BUS 330 - Principles of Finance 3 credits; BUS 340 - Information Systems in Management 3 credits; BUS 346 - Operations Management 3 credits; BUS 348 - Principles of Marketing 3 credits; BUS 441 - Business Strategy 3 credits; BUS 447 - Business Ethics 3 credits; ECO 110 - Introduction to Microeconomics 3 credits; ECO 111 - Introduction to Macroeconomics 3 credits"
+    },
+    {
+      "id": "business-management-bs.calculus",
+      "label": "calculus",
+      "title": "Calculus with Applications or Precalculus",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "business-management-bs.calculus.mat122",
+            "type": "course",
+            "code": "MAT 122"
+          },
+          {
+            "type": "course",
+            "code": "MAT 123"
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 119"
+              },
+              {
+                "type": "course",
+                "code": "MAT 123"
+              }
+            ]
+          },
+          {
+            "type": "unparsed",
+            "text": "or a higher level calculus course",
+            "reason": "The page does not name the qualifying higher-level calculus courses"
+          }
+        ]
+      },
+      "sourceText": "MAT 122 - Overview of Calculus with Applications 3 credits OR MAT 123 - Precalculus 3 credits OR MAT 119 - Foundations for Precalculus 1 credit, AND MAT 123 - Precalculus Credits: 3 credits or a higher level calculus course"
+    },
+    {
+      "id": "business-management-bs.specialization",
+      "label": "specialization",
+      "title": "Area of Specialization",
+      "rule": {
+        "manualCheck": "Specialization must be chosen at the start of the junior year; details are available from the College of Business Office of Student Services.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ACC 310"
+              },
+              {
+                "type": "course",
+                "code": "ACC 311"
+              },
+              {
+                "manualCheck": "BUS 488 counts toward this choice only when taken for 3 credits.",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "ACC 313",
+                    "ACC 320",
+                    "ACC 400",
+                    "ACC 403",
+                    "BUS 488"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BUS 375"
+              },
+              {
+                "type": "choose",
+                "count": 3,
+                "from": {
+                  "courses": [
+                    "ACC 320",
+                    "BUS 338",
+                    "BUS 356",
+                    "BUS 379",
+                    "BUS 444"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BUS 355"
+              },
+              {
+                "type": "choose",
+                "count": 3,
+                "from": {
+                  "courses": [
+                    "BUS 317",
+                    "BUS 331",
+                    "BUS 332",
+                    "BUS 336",
+                    "BUS 356",
+                    "BUS 365",
+                    "BUS 366",
+                    "ECO 360",
+                    "BUS 367",
+                    "BUS 381",
+                    "ECO 383",
+                    "BUS 406",
+                    "BUS 488"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "onePerGroup",
+                    "groups": [
+                      [
+                        "BUS 366",
+                        "ECO 360"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BUS 358"
+              },
+              {
+                "type": "course",
+                "code": "BUS 359"
+              },
+              {
+                "type": "course",
+                "code": "BUS 448"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "BUS 302",
+                    "BUS 334",
+                    "BUS 357",
+                    "BUS 362",
+                    "BUS 363",
+                    "BUS 378",
+                    "BUS 395",
+                    "BUS 449",
+                    "BUS 488"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 4,
+            "from": {
+              "courses": [
+                "BUS 371",
+                "BUS 372",
+                "BUS 375",
+                "BUS 393",
+                "BUS 488"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Choose one specialization from the following areas: Accounting (Required courses: ACC 310, ACC 311; Select two from: ACC 313, ACC 320, ACC 400, ACC 403, BUS 488); AI for Business Innovation (Required: BUS 375; Select three from: ACC 320, BUS 338, BUS 356, BUS 379, BUS 444); Finance (Required: BUS 355; Select three from: BUS 317, BUS 331, BUS 332, BUS 336, BUS 356, BUS 365, BUS 366 OR ECO 360, BUS 367, BUS 381, ECO 383, BUS 406, BUS 488); Marketing (Required: BUS 358, BUS 359, BUS 448; Select one from: BUS 302, BUS 334, BUS 357, BUS 362, BUS 363, BUS 378, BUS 395, BUS 449, BUS 488); Operations Management (Select four from: BUS 371, BUS 372, BUS 375, BUS 393, BUS 488)"
+    },
+    {
+      "id": "business-management-bs.transfer-credit",
+      "label": "transfer-credit",
+      "title": "Transfer Credit Limit for the Business Major",
+      "rule": {
+        "type": "unparsed",
+        "text": "Students may apply a maximum of 21 transfer credits toward the Business Major. Of the total 21 credits, only 6 credits may used to fulfill an area of specialization.",
+        "reason": "Program-wide transfer credit limits with a specialization sub-cap are not expressible with the available rule types"
+      },
+      "sourceText": "Students may apply a maximum of 21 transfer credits toward the Business Major. Of the total 21 credits, only 6 credits may used to fulfill an area of specialization."
+    },
+    {
+      "id": "business-management-bs.total-credits",
+      "label": "total-credits",
+      "title": "Total Major Credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires 60 credits.",
+        "reason": "Program-wide total credit requirement is not expressible as a course rule"
+      },
+      "sourceText": "The major in Business Management leads to the Bachelor of Science degree. Completion of the major requires 60 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "business-management-bs.core",
+        "business-management-bs.calculus",
+        "business-management-bs.specialization"
+      ],
+      "sourceText": "All courses taken to satisfy the business management major requirements must be taken for a letter grade."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "business-management-bs.core.bus117",
+        "business-management-bs.core.bus215",
+        "business-management-bs.core.bus220",
+        "business-management-bs.core.bus301",
+        "business-management-bs.core.bus326",
+        "business-management-bs.core.bus330",
+        "business-management-bs.core.bus340",
+        "business-management-bs.core.bus346",
+        "business-management-bs.core.bus348",
+        "business-management-bs.core.bus441",
+        "business-management-bs.core.bus447",
+        "business-management-bs.core.eco110",
+        "business-management-bs.core.eco111",
+        "business-management-bs.calculus.mat122",
+        "business-management-bs.specialization"
+      ],
+      "sourceText": "All students accepted to the business management major must complete all BUS courses, ECO 110, ECO 111, and MAT 122 with a grade of C or higher in order to satisfy the requirements for the major."
+    },
+    {
+      "type": "residencyRequired",
+      "appliesTo": [
+        "business-management-bs.core.bus301"
+      ],
+      "sourceText": "BUS 301 contains the necessary writing components which satisfy the Upper Division Writing Requirement for the business major, and also satisfies the Stony Brook Curriculum learning objectives SPK and WRTD. This course must be taken at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "BUS 117",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 122",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC ARTS",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC HUM",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "ECO 110",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ACC 210",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC SNW",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC LANG",
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ECO 111",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BUS 215",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ACC 214",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC GLO",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC STAS",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BUS 330",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BUS 220",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BUS 348",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC USA",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC EXP+, SBS+ or HFA+",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "SBC EXP+, SBS+ or HFA+",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BUS 346",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BUS 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BUS 326",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BUS 340",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective (ESI)",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BUS 441",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BUS 447",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Qualified freshman and transfer students who indicated interest in the major on their applications are accepted directly into the major upon admission to the University. Students who did not apply, or were not accepted, may apply provided their cumulative GPA (including transfer coursework from other institutions) is 3.2 or higher. Applications go to the College of Business Office of Student Services."
+    },
+    {
+      "topic": "grading",
+      "text": "Many Business courses must be taken for a letter grade and do not offer a G/P/NC option. See the courses without G/P/NC option list."
+    },
+    {
+      "topic": "other",
+      "text": "BUS 475, BUS 476 (Undergraduate Teaching Practicum I, II) and BUS 487 (Independent Research) count toward the total University credit requirement but not toward the business major."
+    },
+    {
+      "topic": "other",
+      "text": "The Business Honors Program (BHP) is optional and not evaluated here. It requires BUS 380, BUS 495, and BUS 496, a cumulative GPA of 3.5 or higher, and an application."
+    },
+    {
+      "topic": "other",
+      "text": "The page's C-minimum grade rule lists BUS courses, ECO 110, ECO 111, and MAT 122. ACC courses are not named in that rule, so the minimum-grade policy on the specialization requirement may apply more broadly than the page states; confirm with the program office."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1385",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

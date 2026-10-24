@@ -1,0 +1,271 @@
+{
+  "id": "mathematics",
+  "name": "Mathematics",
+  "kind": "minor",
+  "degree": "Minor in Mathematics",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "mathematics.calculus",
+      "label": "calculus",
+      "title": "Calculus sequence (prerequisite; see manualCheck)",
+      "rule": {
+        "manualCheck": "The page states that single-variable calculus is not a requirement of the minor and is a prerequisite for some listed courses, yet these calculus options are printed in the requirement list. Confirm with the department whether these courses count toward the minor. The MAT 125 + MAT 130 alternative is garbled on the page (MAT 130 is followed by a trailing comma); it is modeled as an allOf of MAT 125 and MAT 130 as printed.",
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "MAT 132"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 130"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 126"
+              },
+              {
+                "type": "course",
+                "code": "MAT 127"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 151"
+              },
+              {
+                "type": "course",
+                "code": "AMS 161"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 141"
+              },
+              {
+                "type": "course",
+                "code": "MAT 142"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MAT 171"
+          }
+        ]
+      },
+      "sourceText": "MAT 131 - Calculus I 4 credits AND MAT 132 - Calculus II 4 credits OR MAT 125 - Calculus A 3 credits MAT 130 - Trigonometry and Logarithms 1 credit, MAT 125 - Calculus A Credits: 3 credits AND MAT 126 - Calculus B 3 credits AND MAT 127 - Calculus C 3 credits OR AMS 151 - Applied Calculus I 3 credits AND AMS 161 - Applied Calculus II 3 credits OR MAT141 AND MAT 142 OR MAT 171"
+    },
+    {
+      "id": "mathematics.linear-algebra",
+      "label": "linear-algebra",
+      "title": "Linear algebra",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 211"
+          },
+          {
+            "type": "course",
+            "code": "AMS 210"
+          },
+          {
+            "type": "course",
+            "code": "MAT 308"
+          }
+        ]
+      },
+      "sourceText": "MAT 211 - Introduction to Linear Algebra 3 credits OR AMS 210 - Applied Linear Algebra 3 credits OR MAT 308 - Differential Equations with Linear Algebra 4 credits"
+    },
+    {
+      "id": "mathematics.calculus-iii",
+      "label": "calculus-iii",
+      "title": "Calculus III",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 203"
+          },
+          {
+            "type": "course",
+            "code": "AMS 261"
+          },
+          {
+            "type": "course",
+            "code": "MAT 307"
+          }
+        ]
+      },
+      "sourceText": "MAT 203 - Calculus III with Applications 4 credits OR AMS 261 - Applied Calculus III 4 credits OR MAT 307 - Multivariable Calculus with Linear Algebra 4 credits"
+    },
+    {
+      "id": "mathematics.advanced-linear-algebra",
+      "label": "advanced-linear-algebra",
+      "title": "Advanced algebra / linear algebra",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 310"
+          },
+          {
+            "type": "course",
+            "code": "MAT 312"
+          },
+          {
+            "type": "course",
+            "code": "MAT 313"
+          },
+          {
+            "type": "course",
+            "code": "MAT 315"
+          }
+        ]
+      },
+      "sourceText": "MAT 310 - Linear Algebra 4 credits OR MAT 312 - Applied Algebra 3 credits OR MAT 313 - Abstract Algebra 3 credits OR MAT 315 - Advanced Linear Algebra 4 credits"
+    },
+    {
+      "id": "mathematics.analysis",
+      "label": "analysis",
+      "title": "Analysis",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 319"
+          },
+          {
+            "type": "course",
+            "code": "MAT 320"
+          },
+          {
+            "type": "course",
+            "code": "MAT 341"
+          },
+          {
+            "type": "course",
+            "code": "MAT 342"
+          }
+        ]
+      },
+      "sourceText": "MAT 319 - Foundations of Analysis 4 credits OR MAT 320 - Introduction to Analysis 4 credits OR MAT 341 - Applied Real Analysis 3 credits OR MAT 342 - Applied Complex Analysis 3 credits"
+    },
+    {
+      "id": "mathematics.electives",
+      "label": "electives",
+      "title": "Upper-division MAT electives",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "subjects": [
+            "MAT"
+          ],
+          "minNumber": 300,
+          "excludeCourses": [
+            "MAT 475"
+          ],
+          "excludeUsedBy": [
+            "mathematics.calculus",
+            "mathematics.linear-algebra",
+            "mathematics.calculus-iii",
+            "mathematics.advanced-linear-algebra",
+            "mathematics.analysis"
+          ]
+        }
+      },
+      "sourceText": "Three additional MAT courses numbered 300 or higher (excluding 475)"
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "mathematics.calculus",
+        "mathematics.linear-algebra",
+        "mathematics.calculus-iii",
+        "mathematics.advanced-linear-algebra",
+        "mathematics.analysis",
+        "mathematics.electives"
+      ],
+      "sourceText": "All courses used to fulfill the requirements for the minor must be passed with a letter grade of C or higher"
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "mathematics.calculus",
+        "mathematics.linear-algebra",
+        "mathematics.calculus-iii",
+        "mathematics.advanced-linear-algebra",
+        "mathematics.analysis",
+        "mathematics.electives"
+      ],
+      "sourceText": "All courses used to fulfill the requirements for the minor must be passed with a letter grade of C or higher"
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "other",
+      "text": "The minor is intended to emphasize upper-division work in mathematics. Single-variable calculus and MAT 200 - Logic, Language and Proof are prerequisites for some listed courses and are not included in the requirements as stated on the page."
+    },
+    {
+      "topic": "other",
+      "text": "Some or all of the requirements may be fulfilled by an appropriate score on the Mathematics Placement Exam, by AP credit, or by comparable means."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1555",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

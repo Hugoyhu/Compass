@@ -1,0 +1,889 @@
+{
+  "id": "biology-ba",
+  "name": "Biology, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Biology",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "biology-ba.chemistry",
+      "label": "chemistry",
+      "title": "Chemistry Sequence Lecture Options",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 129"
+              },
+              {
+                "type": "course",
+                "code": "CHE 130"
+              },
+              {
+                "type": "course",
+                "code": "CHE 132"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 131"
+              },
+              {
+                "type": "course",
+                "code": "CHE 132"
+              }
+            ]
+          },
+          {
+            "manualCheck": "The page lists CHE 152 alone as an option. Confirm whether a second lecture course is required with it.",
+            "type": "course",
+            "code": "CHE 152"
+          }
+        ]
+      },
+      "sourceText": "CHE 129 - General Chemistry IA; CHE 130 - Problem Solving in General Chemistry; CHE 132 - General Chemistry II OR CHE 131 - General Chemistry IB; CHE 132 - General Chemistry II OR CHE 152 - Molecular Science I"
+    },
+    {
+      "id": "biology-ba.chemistry-lab",
+      "label": "chemistry-lab",
+      "title": "Chemistry Sequence Laboratory Options",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 133"
+              },
+              {
+                "type": "course",
+                "code": "CHE 134"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CHE 154"
+          }
+        ]
+      },
+      "sourceText": "CHE 133 - General Chemistry Laboratory I; CHE 134 - General Chemistry Laboratory II OR CHE 154 - Molecular Science Laboratory I"
+    },
+    {
+      "id": "biology-ba.organic-chemistry",
+      "label": "organic-chemistry",
+      "title": "Organic Chemistry Lecture Options",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 321"
+              },
+              {
+                "type": "course",
+                "code": "CHE 322"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 321"
+              },
+              {
+                "type": "course",
+                "code": "CHE 326"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 331"
+              },
+              {
+                "type": "course",
+                "code": "CHE 332"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "CHE 321 - Organic Chemistry I; CHE 322 - Organic Chemistry IIA OR CHE 321 - Organic Chemistry I; CHE 326 - Organic Chemistry IIB OR CHE 331 - Molecular Science II; CHE 332 - Molecular Science III"
+    },
+    {
+      "id": "biology-ba.organic-chemistry-lab",
+      "label": "organic-chemistry-lab",
+      "title": "Organic Chemistry Laboratory Options",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 327"
+          },
+          {
+            "type": "course",
+            "code": "CHE 383"
+          }
+        ]
+      },
+      "sourceText": "CHE 327 - Organic Chemistry Laboratory OR CHE 383 - Introductory Synthetic and Spectroscopic Laboratory Techniques"
+    },
+    {
+      "id": "biology-ba.calculus",
+      "label": "calculus",
+      "title": "Calculus Course Options",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "manualCheck": "MAT 130 (1 credit) is listed with MAT 125 on the page. Confirm whether it is required alongside MAT 125.",
+            "type": "course",
+            "code": "MAT 125"
+          },
+          {
+            "type": "course",
+            "code": "MAT 131"
+          },
+          {
+            "type": "course",
+            "code": "MAT 141"
+          },
+          {
+            "type": "course",
+            "code": "MAT 171"
+          },
+          {
+            "type": "course",
+            "code": "AMS 151"
+          },
+          {
+            "type": "unparsed",
+            "text": "Level 6, 7, 8, or 9 on the Mathematics Placement Examination",
+            "reason": "Placement exam level is not a course and cannot be checked from a transcript"
+          }
+        ]
+      },
+      "sourceText": "MAT 125 - Calculus A OR MAT 130 - Trigonometry and Logarithms, MAT 125 - Calculus A OR MAT 131 - Calculus I OR MAT 141 - Analysis I OR MAT 171 - Accelerated Single Variable Calculus OR AMS 151 - Applied Calculus I OR Level 6, 7, 8, or 9 on the Mathematics Placement Examination."
+    },
+    {
+      "id": "biology-ba.physics",
+      "label": "physics",
+      "title": "Physics Sequence Options",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 121"
+              },
+              {
+                "type": "course",
+                "code": "PHY 122"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 125"
+              },
+              {
+                "type": "course",
+                "code": "PHY 126"
+              },
+              {
+                "type": "course",
+                "code": "PHY 127"
+              },
+              {
+                "type": "course",
+                "code": "PHY 133"
+              },
+              {
+                "type": "course",
+                "code": "PHY 134"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 131"
+              },
+              {
+                "type": "course",
+                "code": "PHY 132"
+              },
+              {
+                "type": "course",
+                "code": "PHY 133"
+              },
+              {
+                "type": "course",
+                "code": "PHY 134"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 141"
+              },
+              {
+                "type": "course",
+                "code": "PHY 142"
+              },
+              {
+                "type": "course",
+                "code": "PHY 133"
+              },
+              {
+                "type": "course",
+                "code": "PHY 134"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "PHY 121 - Physics for the Life Sciences I; PHY 122 - Physics for the Life Sciences II OR PHY 125, PHY 126, PHY 127, PHY 133, PHY 134 OR PHY 131, PHY 132, PHY 133, PHY 134 OR PHY 141 - Classical Physics I: Honors, PHY 142 - Classical Physics II: Honors"
+    },
+    {
+      "id": "biology-ba.statistics",
+      "label": "statistics",
+      "title": "Statistics Course Options",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BIO 211"
+          },
+          {
+            "type": "course",
+            "code": "AMS 110"
+          },
+          {
+            "type": "course",
+            "code": "AMS 310"
+          },
+          {
+            "type": "course",
+            "code": "EBH 230"
+          }
+        ]
+      },
+      "sourceText": "BIO 211 - Statistics and Data Analysis: A Conceptual Approach OR AMS 110 - Probability and Statistics in the Life Sciences OR AMS 310 - Survey of Probability and Statistics OR EBH 230 - Computer-based Biostatistics. Note: Students who transfer in AMS 102 from another institution with a grade of 'A' or higher will receive credit for the statistics course."
+    },
+    {
+      "id": "biology-ba.core",
+      "label": "core",
+      "title": "Core Courses in Biology",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BIO 201"
+          },
+          {
+            "type": "course",
+            "code": "BIO 202"
+          },
+          {
+            "type": "course",
+            "code": "BIO 203"
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BIO 204"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "BIO 205"
+                  },
+                  {
+                    "type": "course",
+                    "code": "BIO 207"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "BIO 201 - Fundamentals of Biology: Organisms to Ecosystems; BIO 202 - Fundamentals of Biology: Molecular and Cellular Biology; BIO 203 - Fundamentals of Biology: Cellular and Organ Physiology; BIO 204 - Fundamentals of Scientific Inquiry in the Biological Sciences I; BIO 205 - Fundamentals of Scientific Inquiry in the Biological Sciences IIA OR BIO 204; BIO 207 - Fundamentals of Scientific Inquiry in the Biological Sciences IIB"
+    },
+    {
+      "id": "biology-ba.advanced",
+      "label": "advanced",
+      "title": "Advanced Courses in Biology",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "BIO 320",
+            "BIO 321",
+            "BIO 354",
+            "EBH 302"
+          ]
+        }
+      },
+      "sourceText": "At least one of the following 3 credit upper division BIO courses: BIO 320 - General Genetics; BIO 321 - Ecological Genetics; BIO 354 - Evolution; EBH 302 - Human Genetics"
+    },
+    {
+      "id": "biology-ba.advanced-electives",
+      "label": "advanced-electives",
+      "title": "Advanced Biology Electives",
+      "rule": {
+        "manualCheck": "Research, readings, teaching practica and internship courses cannot be used. Verify that any course counted is not a research, reading, teaching practicum, or internship course beyond those listed.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "subjects": [
+            "BIO"
+          ],
+          "minNumber": 300,
+          "excludeCourses": [
+            "BIO 484",
+            "BIO 486",
+            "BIO 487",
+            "BIO 488",
+            "BIO 489"
+          ],
+          "excludeUsedBy": [
+            "biology-ba.advanced"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "BIO 320",
+                "BIO 321"
+              ]
+            },
+            "maxCourses": 1
+          }
+        ]
+      },
+      "sourceText": "Two additional upper division BIO courses. Research, readings, teaching practica and internship courses cannot be used to satisfy upper-division BIO course requirements. Students cannot take both BIO 320 and BIO 321 for biology major credit. Only one of these courses may be taken for biology major credit."
+    },
+    {
+      "id": "biology-ba.transfer-advanced",
+      "label": "transfer-advanced",
+      "title": "Advanced courses taken at Stony Brook",
+      "rule": {
+        "type": "unparsed",
+        "text": "Upper-division or upper-division equivalent courses taken elsewhere and transferred to Stony Brook can satisfy the requirement for BIO 320, BIO 321, BIO 354 or EBH 302 for the Biology BA; however, students must still take three advanced courses (300-level BIO courses) here at Stony Brook.",
+        "reason": "Requires a count of 300-level BIO courses taken at Stony Brook, which no rule type expresses"
+      },
+      "sourceText": "Upper-division or upper-division equivalent courses taken elsewhere and transferred to Stony Brook can satisfy the requirement for BIO 320, BIO 321, BIO 354 or EBH 302 for the Biology BA; however, students must still take three advanced courses (300-level BIO courses) here at Stony Brook."
+    },
+    {
+      "id": "biology-ba.minor",
+      "label": "minor",
+      "title": "Required minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of a required minor (18-24 credits) within the College of Arts and Sciences or the School of Communication and Journalism with no more than a 3-credit overlap with the major requirements for the BIO B.A. Approved minors are listed on Undergraduate Biology's website.",
+        "reason": "Minor list is maintained outside this page and overlap limit depends on the chosen minor"
+      },
+      "sourceText": "Completion of the B.A. major in Biology requires a minimum of 55 credits for the major, along with a required minor (18-24 credits). Completion of a Minor within the College of Arts and Sciences or the School of Communication and Journalism with no more than a 3-credit overlap with the major requirements for the BIO B.A. The list of approved minors for the Biology BA can be found on Undergraduate Biology's website."
+    },
+    {
+      "id": "biology-ba.upper-division-writing",
+      "label": "upper-division-writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BIO 459"
+          },
+          {
+            "manualCheck": "BIO 459 must be co-registered with an approved advanced course in the same term, and a lab report or term paper from that course must be submitted for writing evaluation.",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "BIO 312",
+                "BIO 320",
+                "BIO 321",
+                "BIO 327",
+                "BIO 335",
+                "BIO 336",
+                "BIO 344",
+                "BIO 352",
+                "BIO 353",
+                "BIO 354",
+                "BIO 364",
+                "BIO 365",
+                "BIO 366",
+                "BIO 367",
+                "BIO 385",
+                "BIO 386",
+                "EBH 302"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "In order to satisfy the Upper-Division Writing requirement for the major in Biology, students must co-register for the 0-credit BIO 459 course with an approved advanced course as listed below. Courses that routinely offer assignments that can satisfy the BIO 459 WRTD learning outcomes: BIO 312, BIO 320, BIO 321, BIO 327, BIO 335, BIO 336, BIO 344, BIO 352, BIO 353, BIO 354, BIO 364, BIO 365, BIO 366, BIO 367, BIO 385, BIO 386, EBH 302"
+    },
+    {
+      "id": "biology-ba.major-credits",
+      "label": "major-credits",
+      "title": "Minimum major credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the B.A. major in Biology requires a minimum of 55 credits for the major, along with a required minor (18-24 credits).",
+        "reason": "Program-wide minimum credit total that no rule type covers"
+      },
+      "sourceText": "Completion of the B.A. major in Biology requires a minimum of 55 credits for the major, along with a required minor (18-24 credits)."
+    },
+    {
+      "id": "biology-ba.sequence-grade",
+      "label": "sequence-grade",
+      "title": "C grade in one semester of each two-semester sequence",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least one semester of the two-semester sequences of required courses in general chemistry lecture, organic chemistry lecture, and physics lecture/lab must be passed with a letter grade of C or higher.",
+        "reason": "Requires one semester of each sequence at C or higher, which a per-course minGrade policy cannot express"
+      },
+      "sourceText": "At least one semester of the two-semester sequences of required courses in general chemistry lecture, organic chemistry lecture, and physics lecture/lab must be passed with a letter grade of C or higher."
+    },
+    {
+      "id": "biology-ba.math-remediation",
+      "label": "math-remediation",
+      "title": "Mathematics remediation course",
+      "rule": {
+        "type": "unparsed",
+        "text": "If students do not place into MAT 125 or higher on the basis of the math placement examination, MAT 123 (or MAT 119/MAT 123) is a required course for the major.",
+        "reason": "Conditional on placement exam results, which cannot be checked from a transcript"
+      },
+      "sourceText": "If students do not place into MAT 125 or higher on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major."
+    },
+    {
+      "id": "biology-ba.classical-physics-math",
+      "label": "classical-physics-math",
+      "title": "Calculus B-level math with Classical Physics",
+      "rule": {
+        "type": "unparsed",
+        "text": "If students select a Classical Physics option, a mathematics course at the level of Calculus B (AMS 161, MAT 126, MAT 132, MAT 142, or MAT 171) or higher is required for the major.",
+        "reason": "Conditional math requirement tied to the physics option chosen, with an open-ended 'or higher' level"
+      },
+      "sourceText": "If students select one of the Classical Physics options, then a mathematics course at the level of Calculus B (AMS 161, MAT 126, MAT 132, MAT 142, or MAT 171) or higher is required for the major."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "biology-ba.chemistry",
+        "biology-ba.chemistry-lab",
+        "biology-ba.organic-chemistry",
+        "biology-ba.organic-chemistry-lab",
+        "biology-ba.calculus",
+        "biology-ba.physics",
+        "biology-ba.statistics",
+        "biology-ba.core",
+        "biology-ba.advanced",
+        "biology-ba.advanced-electives"
+      ],
+      "sourceText": "All foundational courses in related fields must be taken for a letter grade; courses taken under the Pass/No Credit option will not count towards completion of the major, with the exception of the Spring 2020 semester. All core and advanced courses in biology must be taken for a letter grade and passed with a grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "biology-ba.core",
+        "biology-ba.advanced",
+        "biology-ba.advanced-electives",
+        "biology-ba.organic-chemistry-lab"
+      ],
+      "sourceText": "All core and advanced courses in biology must be taken for a letter grade and passed with a grade of C or higher. The organic chemistry lab must be passed with a C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "D",
+      "appliesTo": [
+        "biology-ba.statistics"
+      ],
+      "sourceText": "A letter grade of D or higher is accepted towards the statistics requirement for the following courses: AMS 110, AMS 310, BIO 211, or EBH 230."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "biology-ba.sub.ams102-statistics",
+      "replaces": {
+        "type": "rule",
+        "ruleId": "biology-ba.statistics"
+      },
+      "with": {
+        "type": "course",
+        "code": "AMS 102"
+      },
+      "condition": "Students who transfer in AMS 102 from another institution with a grade of A or higher",
+      "requiresApproval": false,
+      "sourceText": "Note: Students who transfer in AMS 102 from another institution with a grade of 'A' or higher will receive credit for the statistics course."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "course",
+          "code": "BIO 459"
+        },
+        "sourceText": "Registration: The Upper Division Writing Requirement for the Biology major is consistent with the University Graduation Requirements for General Education, and successful completion will satisfy the Stony Brook Curriculum (SBC) learning outcomes for \"Write Effectively within One's Discipline\" (WRTD)."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 133",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MAT 125",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 134",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "AMS 110",
+          "alternatives": [
+            "BIO 211"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "BIO 201",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CHE 321",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "BIO 202",
+          "alternatives": [
+            "BIO 203"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Course for minor",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CHE 322",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "CHE 327",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "BIO 202",
+          "alternatives": [
+            "BIO 203"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Course for minor",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "BIO 300 Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 204",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 121",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Course for minor",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "BIO 205",
+          "alternatives": [
+            "BIO 207"
+          ],
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "BIO 300 Elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 122",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division course for minor",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "BIO 300 Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division course for minor",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division course for minor",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Schedule advising appointments online through Navigate. Advisors: Rachel Pilero, Kayla McFadden, Allison Young. Office: Biology Learning Laboratories, Undergraduate Biology Office Suite, Rooms 104-112; phone (631) 632-8530."
+    },
+    {
+      "topic": "other",
+      "text": "The BA is for students who also pursue a non-overlapping minor; the BS (separate program) includes a specialization in place of that minor. Students in the Biology BA or BS may not declare a double major among Biology, Biochemistry, Pharmacology, Marine Sciences and Marine Vertebrate Biology. A double major in Biology and Human Evolutionary Biology requires a specific course combination set out in the EBH major requirements."
+    },
+    {
+      "topic": "grading",
+      "text": "Courses taken under the Pass/No Credit option will not count towards completion of the major, except for the Spring 2020 semester."
+    },
+    {
+      "topic": "other",
+      "text": "Honors in Biology or in Biology and Society (not evaluated): cumulative GPA of 3.50 or higher in all courses required for the major; an acceptable thesis from at least two semesters of approved research or internship courses (BIO 484, 486, 487, 488, 489, MAR 487, MAR 488, ATM 487, BME 499); an Honors Application submitted to the Undergraduate Biology office by the second week of the last semester; and faculty endorsement and two readers."
+    },
+    {
+      "topic": "other",
+      "text": "Secondary teacher education: see the Education and Teacher Certification entry in the alphabetical listings of Approved Majors, Minors, and Programs."
+    },
+    {
+      "topic": "other",
+      "text": "Most students majoring in biology prepare for professional study in the biological or health sciences. Some prepare for secondary school teaching, and others for technical positions in industry."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1375",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

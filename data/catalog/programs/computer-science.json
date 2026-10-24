@@ -1,0 +1,174 @@
+{
+  "id": "computer-science",
+  "name": "Computer Science",
+  "kind": "minor",
+  "degree": "",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "computer-science.required",
+      "label": "required",
+      "title": "Required Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CSE 114"
+          },
+          {
+            "type": "course",
+            "code": "CSE 214"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CSE 307"
+              },
+              {
+                "type": "course",
+                "code": "CSE 220"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "CSE 114 - Introduction to Object-Oriented Programming 4 credits; CSE 214 - Data Structures 4 credits; CSE 307 - Principles of Programming Languages 3 credits OR CSE 220 - Systems Fundamentals I 4 credits"
+    },
+    {
+      "id": "computer-science.additional",
+      "label": "additional",
+      "title": "Additional CSE Courses",
+      "rule": {
+        "manualCheck": "Confirm each chosen course is part of the CSE major, and that the three upper-division CSE courses total at least nine credits (the engine does not sum credits in minFrom). CSE 301 may not be used for the minor.",
+        "type": "choose",
+        "count": 4,
+        "from": {
+          "subjects": [
+            "CSE"
+          ],
+          "excludeCourses": [
+            "CSE 300",
+            "CSE 301",
+            "CSE 312",
+            "CSE 475",
+            "CSE 487",
+            "CSE 488"
+          ],
+          "excludeUsedBy": [
+            "computer-science.required"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "CSE"
+              ],
+              "minNumber": 300,
+              "excludeCourses": [
+                "CSE 300",
+                "CSE 301",
+                "CSE 312",
+                "CSE 475",
+                "CSE 487",
+                "CSE 488"
+              ],
+              "excludeUsedBy": [
+                "computer-science.required"
+              ]
+            },
+            "minCourses": 3
+          }
+        ]
+      },
+      "sourceText": "Four additional courses that are part of the CSE major, including three upper division CSE courses totaling at least nine credits (but excluding CSE 300, CSE 312, CSE 475, CSE 487, CSE 488). CSE 301 cannot be used as a technical elective for the minor."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "computer-science.required",
+        "computer-science.additional"
+      ],
+      "sourceText": "Each course taken to satisfy the requirements for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "computer-science.required",
+        "computer-science.additional"
+      ],
+      "sourceText": "Each course taken to satisfy the requirements for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "computer-science.sub.honors-sequence",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CSE 114",
+          "CSE 214",
+          "CSE 307"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CSE 160"
+          },
+          {
+            "type": "course",
+            "code": "CSE 161"
+          },
+          {
+            "type": "course",
+            "code": "CSE 260"
+          },
+          {
+            "type": "course",
+            "code": "CSE 261"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "Students may substitute CSE 160, CSE 161, CSE 260, and CSE 261 for CSE 114, CSE 214 and CSE 307"
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "The minor is open to students not majoring in Computer Science, Information Systems, or Data Science, or minoring in Information Systems. To declare, complete CSE 114 (or CSE 160) and either CSE 214 (or CSE 260) or CSE 113 (or CSE 150), each with a grade of B- or higher. Priority is given to students with a GPA of 3.20 or higher in these CSE courses and a cumulative GPA of 3.00 or higher. For students with more than two CSE courses applicable to minor entry, the CSE GPA uses the highest grades earned in two of CSE 113, CSE 114, and CSE 214. At most one entry course may be repeated. Only courses transferred before matriculation can be used for entry. Admission is competitive and contingent upon program capacity."
+    },
+    {
+      "topic": "other",
+      "text": "CSE 150 may substitute for CSE 113 for minor entry. CSE 113 does not appear in the minor's course requirements."
+    },
+    {
+      "topic": "advising",
+      "text": "Students who have declared the minor should see a Computer Science Undergraduate Advisor to discuss a suitable selection of Computer Science electives."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1412",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

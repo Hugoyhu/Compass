@@ -1,0 +1,235 @@
+{
+  "id": "ecosystems-and-human-impact",
+  "name": "Ecosystems and Human Impact",
+  "kind": "minor",
+  "degree": "",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "ecosystems-and-human-impact.required-courses",
+      "label": "required-courses",
+      "title": "Required courses (12-13 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "BIO 201"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 111"
+              },
+              {
+                "type": "course",
+                "code": "ENS 101"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SUS 201"
+          }
+        ]
+      },
+      "sourceText": "Required courses (12-13 credits): BIO 201 - Fundamentals of Biology: Organisms to Ecosystems 3 credits; SUS 111 - Introduction to Sustainability 3 credits OR ENS 101 - Prospects for Planet Earth 3 credits; SUS 201 - Systems and Models 3 credits"
+    },
+    {
+      "id": "ecosystems-and-human-impact.one-of-courses",
+      "label": "one-of-courses",
+      "title": "One of the following courses",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ANT 120"
+          },
+          {
+            "type": "course",
+            "code": "ENV 115"
+          },
+          {
+            "id": "ecosystems-and-human-impact.gis-or-gss",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "GIS 313"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GIS 314"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "GSS 317"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "One of the following courses: ANT 120 - Introduction to Biological Anthropology 3 credits (formerly ANP 120); ENV 115 - Chemistry, Life, and Environment 3 credits (Note: CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115); GIS 313 - GIS Design and Applications I + GIS 314 - GIS Design and Applications I Laboratory OR GSS 317 - Geospatial Narratives: Deep Mapping for Humanities and Social Sciences 3 credits"
+    },
+    {
+      "id": "ecosystems-and-human-impact.electives",
+      "label": "electives",
+      "title": "Electives (9 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "ANT 309",
+            "ANT 326",
+            "ANT 352",
+            "ANT 353",
+            "ANT 391",
+            "ANT 408",
+            "BIO 319",
+            "BIO 336",
+            "BIO 351",
+            "BIO 352",
+            "BIO 353",
+            "BIO 371",
+            "ENV 301",
+            "ENV 304",
+            "ATM 305",
+            "ENV 340",
+            "GEO 304",
+            "GEO 313",
+            "MAR 315",
+            "MAR 336",
+            "MAR 384",
+            "MAR 388",
+            "MAR 394",
+            "SUS 309",
+            "SUS 313",
+            "SUS 319",
+            "SUS 322",
+            "SUS 326",
+            "SUS 340",
+            "SUS 344",
+            "SUS 351",
+            "SUS 352"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "onePerGroup",
+            "groups": [
+              [
+                "ENV 304",
+                "ATM 305"
+              ]
+            ]
+          }
+        ]
+      },
+      "sourceText": "Electives (9 credits): Choose three of the following courses: ANT 309 *; ANT 326 *; ANT 352 *; ANT 353 *; ANT 391 *; ANT 408; BIO 319; BIO 336; BIO 351; BIO 352; BIO 353; BIO 371; ENV 301; ENV 304 OR ATM 305; ENV 340; GEO 304; GEO 313; MAR 315; MAR 336; MAR 384; MAR 388; MAR 394; SUS 309; SUS 313; SUS 319; SUS 322; SUS 326; SUS 340; SUS 344; SUS 351; SUS 352. * These courses are offered as part of the Madagascar Study Abroad Program."
+    },
+    {
+      "id": "ecosystems-and-human-impact.pass-no-credit-limit",
+      "label": "pass-no-credit-limit",
+      "title": "Pass/No Credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option.",
+        "reason": "No rule type limits Pass/No Credit courses by count within a program."
+      },
+      "sourceText": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option."
+    },
+    {
+      "id": "ecosystems-and-human-impact.credit-total",
+      "label": "credit-total",
+      "title": "Total credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21-22 credits.",
+        "reason": "No rule type expresses a program-wide credit range."
+      },
+      "sourceText": "Completion of the minor requires 21-22 credits."
+    },
+    {
+      "id": "ecosystems-and-human-impact.major-overlap",
+      "label": "major-overlap",
+      "title": "Credit overlap with majors and minors",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 12 credits applied to the minor may not be applied to any major or other minor.",
+        "reason": "Cross-program credit overlap limit has no rule type."
+      },
+      "sourceText": "At least 12 credits applied to the minor may not be applied to any major or other minor."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "ecosystems-and-human-impact.electives",
+        "ecosystems-and-human-impact.gis-or-gss"
+      ],
+      "sourceText": "All upper-division courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "ecosystems-and-human-impact.sub.chemistry-for-env115",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "ENV 115"
+        ]
+      },
+      "with": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "CHE 129",
+            "CHE 131",
+            "CHE 152"
+          ]
+        }
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115"
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students should declare the Ecosystems and Human Impact minor no later than the middle of their sophomore year, at which time they should consult with the minor coordinator or undergraduate director and plan their course of study for fulfillment of the requirements."
+    },
+    {
+      "topic": "advising",
+      "text": "Program Director: Sharon Pochron. Undergraduate Advisor: Nancy Black, (631) 632-9404."
+    },
+    {
+      "topic": "other",
+      "text": "Courses marked * are offered as part of the Madagascar Study Abroad Program. ANT 120, ANT 309, ANT 326, ANT 352, ANT 353, ANT 391, and ANT 408 carry former ANP numbers on the catalog page."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1424",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

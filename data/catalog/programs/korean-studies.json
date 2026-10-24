@@ -1,0 +1,152 @@
+{
+  "id": "korean-studies",
+  "name": "Korean Studies",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "korean-studies.1",
+      "label": "1",
+      "title": "Korea-focused courses",
+      "rule": {
+        "type": "choose",
+        "credits": 9,
+        "from": {
+          "courses": [
+            "KOR 331",
+            "KOR 332",
+            "KOR 426",
+            "AAS 217",
+            "AAS 247",
+            "HIS 247",
+            "AAS 321",
+            "AAS 323",
+            "AAS 324",
+            "AAS 337",
+            "HIS 337",
+            "AAS 400",
+            "ARH 355"
+          ]
+        }
+      },
+      "sourceText": "Korea-focused courses chosen from the following (9 credits) - KOR 331 - Social Science Topics in Korean Studies 3 credits; KOR 332 - Humanities Topics in Korean Studies 3 credits; KOR 426 - Structure of Korean 3 credits; AAS 217 - Introduction to Korean Culture 3 credits; AAS 247 - Modern Korea through Visual Culture 3 credits; HIS 247 - Modern Korea through Visual Culture 3 credits; AAS 321 - Korean Literature 3 credits; AAS 323 - Language and Society in South Korea 3 credits; AAS 324 - Language and Society in North Korea 3 credits; AAS 337 - History of Korea 3 credits; HIS 337 - History of Korea 3 credits; AAS 400 - Seminar in Korean Studies 3 credits; ARH 355 - Modern and Contemporary Korean Art 3 credits"
+    },
+    {
+      "id": "korean-studies.2",
+      "label": "2",
+      "title": "Korean Language and Korea-related courses",
+      "rule": {
+        "manualCheck": "AAS 340, HIS 340, AAS 344, AAS 385, AAS 391, AAS 392 and AAS 401 count only when the topic is appropriate (the page says 'appropriate topic only'); confirm topic eligibility.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "KOR 111",
+            "KOR 112",
+            "KOR 120",
+            "KOR 211",
+            "KOR 212",
+            "KOR 220",
+            "KOR 311",
+            "KOR 312",
+            "KOR 411",
+            "KOR 412",
+            "KOR 475",
+            "KOR 476",
+            "KOR 487",
+            "KOR 488",
+            "AAS 240",
+            "AAS 300",
+            "AAS 340",
+            "HIS 340",
+            "AAS 344",
+            "AAS 385",
+            "AAS 391",
+            "AAS 392",
+            "AAS 401",
+            "AAS 440",
+            "ARH 203"
+          ]
+        }
+      },
+      "sourceText": "Three courses chosen from Korean Language Courses: and/or Korea-related Courses: (9 credits) - Korean Language Courses: KOR 111 - Elementary Korean I 4 credits; KOR 112 - Elementary Korean II 4 credits; KOR 120 - Elementary Korean for Heritage Speakers 4 credits; KOR 211 - Intermediate Korean I 3 credits; KOR 212 - Intermediate Korean II 3 credits; KOR 220 - Intermediate Korean for Korean Speakers 3 credits; KOR 311 - Advanced Korean I 3 credits; KOR 312 - Advanced Korean II 3 credits; KOR 411 - Advanced Korean III 3 credits; KOR 412 - Advanced Korean IV 3 credits; Korea-related Courses: KOR 475 - Undergraduate Teaching Practicum I 3 credits; KOR 476 - Undergraduate Teaching Practicum II 3 credits; KOR 487 - Supervised Research in Korean Studies 6 credits; KOR 488 - Internship 0-6 credits; AAS 240 - Confucianism and Daoism 3 credits; AAS 300 - Intellectual History of East Asia 3 credits; AAS 340 - Topics in Asian History 3 credits (appropriate topic only); HIS 340 - Topics in Asian History 3 credits (appropriate topic only); AAS 344 - Learning of Asian Languages 3 credits (appropriate topic only); AAS 385 - Translation Studies of Asian Languages 3 credits (appropriate topic only); AAS 391 - Humanities Topics in Asian and Asian American Studies 3 credits (appropriate topic only); AAS 392 - Social Science Topics in Asian and Asian American Studies 3 credits (appropriate topic only); AAS 401 - Proseminar in Asian and Asian American Studies 3 credits (appropriate topic only); AAS 440 - Inter-Asia Cultural Studies 3 credits; ARH 203 - Arts of Asia 3 credits"
+    },
+    {
+      "id": "korean-studies.upper",
+      "label": "upper-division",
+      "title": "Upper-division credit requirement",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 9 credits must be taken in courses numbered 300 or higher.",
+        "reason": "Program-wide credit minimum across requirements 1 and 2; no rule type expresses a minimum-credit floor over the combined minor courses."
+      },
+      "sourceText": "Completion of the minor requires 18 credits. At least 9 credits must be taken in courses numbered 300 or higher."
+    },
+    {
+      "id": "korean-studies.transfer",
+      "label": "transfer",
+      "title": "Transfer and other-program credit",
+      "rule": {
+        "type": "unparsed",
+        "text": "Up to six credits taken in Korean Studies-related courses from other institutions and other programs may count for Korean courses with approval of the Director of the Program in Korean Studies.",
+        "reason": "Conditional credit allowance requiring director approval; it does not map to a specific course substitution."
+      },
+      "sourceText": "Up to six credits taken in Korean Studies-related courses from other institutions and other programs may count for Korean courses with approval of the Director of the Program in Korean Studies."
+    },
+    {
+      "id": "korean-studies.su",
+      "label": "S/U",
+      "title": "S/U credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "Only one course graded with the S/U credit option may be used toward the minor requirements.",
+        "reason": "Limit on S/U-graded courses across the minor; cannot be checked by the existing rule types and depends on transcript grading options."
+      },
+      "sourceText": "Only one course graded with the S/U credit option may be used toward the minor requirements."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "korean-studies.1",
+        "korean-studies.2"
+      ],
+      "sourceText": "All courses must be completed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "korean-studies.1",
+        "korean-studies.2"
+      ],
+      "sourceText": "All courses must be completed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students may be allowed to take more Category 1 courses than Category 2 courses if they wish. Consult with the program director about this option."
+    },
+    {
+      "topic": "other",
+      "text": "Director of the Minor: Heejeong Sohn. Office: N5520 Melville Library. Phone: (631) 632-7311."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1489",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

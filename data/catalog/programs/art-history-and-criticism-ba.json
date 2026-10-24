@@ -1,0 +1,513 @@
+{
+  "id": "art-history-and-criticism-ba",
+  "name": "Art History and Criticism, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Art History",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "art-history-and-criticism-ba.required-intro",
+      "label": "required-intro",
+      "title": "Required (3 credits)",
+      "rule": {
+        "type": "course",
+        "code": "ARH 206"
+      },
+      "sourceText": "Required (3 credits): ARH 206 - Modern Art 3 credits"
+    },
+    {
+      "id": "art-history-and-criticism-ba.foundations",
+      "label": "foundations",
+      "title": "Foundations (9 credits)",
+      "rule": {
+        "manualCheck": "Choose three courses with at least one from the Arts in Historical and Cultural Perspective category and at least one from the Media, Art, Culture, and Technology category. ARH 205 is listed in both categories and may satisfy only one of them in a given choice.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "ARH 107",
+            "ARH 201",
+            "ARH 202",
+            "ARH 203",
+            "ARH 204",
+            "ARH 205",
+            "ARH 209",
+            "ARH 106",
+            "ARH 207",
+            "ARH 208",
+            "ARH 210",
+            "EGL 220"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "courses": [
+                "ARH 107",
+                "ARH 201",
+                "ARH 202",
+                "ARH 203",
+                "ARH 204",
+                "ARH 205",
+                "ARH 209"
+              ]
+            },
+            "minCourses": 1
+          },
+          {
+            "type": "minFrom",
+            "from": {
+              "courses": [
+                "ARH 106",
+                "ARH 205",
+                "ARH 207",
+                "ARH 208",
+                "ARH 210",
+                "EGL 220"
+              ]
+            },
+            "minCourses": 1
+          }
+        ]
+      },
+      "sourceText": "Foundations (9 credits): Choose three courses from the following two categories, with at least one course selected from each category. Arts in Historical and Cultural Perspective: ARH 107, ARH 201, ARH 202, ARH 203, ARH 204, ARH 205, ARH 209. Media, Art, Culture, and Technology: ARH 106, ARH 205, ARH 207, ARH 208, ARH 210, EGL 220."
+    },
+    {
+      "id": "art-history-and-criticism-ba.advanced",
+      "label": "advanced",
+      "title": "Advanced (15 credits)",
+      "rule": {
+        "type": "choose",
+        "credits": 15,
+        "from": {
+          "courses": [
+            "ARH 300",
+            "ARH 301",
+            "ARH 302",
+            "ARH 306",
+            "ARH 308",
+            "ARH 315",
+            "ARH 316",
+            "ARH 317",
+            "ARH 321",
+            "ARH 322",
+            "ARH 323",
+            "ARH 325",
+            "ARH 326",
+            "ARH 328",
+            "ARH 329",
+            "ARH 330",
+            "ARH 333",
+            "ARH 334",
+            "ARH 336",
+            "ARH 339",
+            "ARH 344",
+            "ARH 346",
+            "ARH 347",
+            "ARH 348",
+            "ARH 350",
+            "ARH 355",
+            "ARH 390",
+            "ARH 391",
+            "ARH 392",
+            "ARH 393",
+            "ARH 394",
+            "ARH 395",
+            "ARH 396",
+            "ARH 397",
+            "ARH 398"
+          ]
+        }
+      },
+      "sourceText": "Advanced (15 credits): ARH 300 - Greek Art and Architecture; ARH 301 - Roman Art and Architecture; ARH 302 - Ancient Egyptian Art; ARH 306 - Italian Renaissance Art; ARH 308 - Writing About Art; ARH 315 - Art of Spain and Colonial Latin America; ARH 316 - Italian Baroque Art; ARH 317 - Islamic Art; ARH 321 - Women Artists, 1400-1750; ARH 322 - American Art Since 1947; ARH 323 - History and Methods of Art History; ARH 325 - Ancient Middle Eastern Art; ARH 326 - Arts of Ancient Mesoamerica; ARH 328 - Exhibiting Africa; ARH 329 - Arts of the African Diaspora; ARH 330 - Public Art and Urban Design in New York City; ARH 333 - Arts for the Public; ARH 334 - Performance Art I: The European Avant-Garde; ARH 336 - The Computer and the Arts; ARH 339 - The Art and Science of Astronomy; ARH 344 - Performance Art II: World War II to the Present; ARH 346 - Art and Politics in the Age of Revolution; ARH 347 - Avant-Garde Art: Realism, Impressionism, Post-Impressionism; ARH 348 - Contemporary Art; ARH 350 - Museum Studies; ARH 355 - Modern and Contemporary Korean Art; ARH 390 - Topics in European Art; ARH 391 - Topics in Global Art; ARH 392 - Topics in Modern Art; ARH 393 - Topics in Middle Eastern Art; ARH 394 - Topics in Asian Art; ARH 395 - Topics in Visual Culture; ARH 396 - Topics in American Art; ARH 397 - Topics in Photography; ARH 398 - Topics in Film and Video Art"
+    },
+    {
+      "id": "art-history-and-criticism-ba.required-seminar",
+      "label": "required-seminar",
+      "title": "Required (3 credits)",
+      "rule": {
+        "type": "course",
+        "code": "ARH 400"
+      },
+      "sourceText": "Required (3 credits): ARH 400 - Seminar in Art History and Criticism 3 credits"
+    },
+    {
+      "id": "art-history-and-criticism-ba.electives",
+      "label": "electives",
+      "title": "Electives (9 credits)",
+      "rule": {
+        "manualCheck": "Courses from other departments may count only with approval of the Undergraduate Program Director. Such courses are not identified by subject on this page.",
+        "type": "choose",
+        "credits": 9,
+        "from": {
+          "subjects": [
+            "ARH",
+            "ARS"
+          ],
+          "excludeUsedBy": [
+            "art-history-and-criticism-ba.required-intro",
+            "art-history-and-criticism-ba.foundations",
+            "art-history-and-criticism-ba.advanced",
+            "art-history-and-criticism-ba.required-seminar"
+          ]
+        }
+      },
+      "sourceText": "Electives (9 credits): Any additional ARH or ARS courses, including those listed above and: ARH 475 - Undergraduate Teaching Practicum I 3 credits; ARH 476 - Undergraduate Teaching Practicum II 3 credits; ARH 485 - Projects in Art History and Criticism in New York City 0-6 credits; ARH 487 - Independent Reading and Research in Art 0-6 credits; ARH 488 - Internship 0-6 credits; ARH 495 - Senior Honors Project in Art History and Criticism 3 credits; Courses from other departments with approval of the Undergraduate Program Director."
+    },
+    {
+      "id": "art-history-and-criticism-ba.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "unparsed",
+        "text": "ARH 308, ARH 400, or any ARH course certified WRTD.",
+        "reason": "Requires one course from ARH 308 or ARH 400, or any ARH course certified WRTD. The WRTD certification is an attribute that is not a course-code list, so it cannot be checked from codes alone."
+      },
+      "sourceText": "Upper-Division Writing Requirement: ARH 308, ARH 400, or any ARH course certified WRTD. The university requires that students demonstrate adequate writing skills in their major."
+    },
+    {
+      "id": "art-history-and-criticism-ba.transfer-residency",
+      "label": "transfer-residency",
+      "title": "Transfer student residency",
+      "rule": {
+        "type": "unparsed",
+        "text": "Transfer students must complete a minimum of 12 credits in section II and III at Stony Brook.",
+        "reason": "Sections II and III are not defined on this page, so the courses they cover cannot be identified."
+      },
+      "sourceText": "Transfer students must complete a minimum of 12 credits in section II and III at Stony Brook."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "art-history-and-criticism-ba.required-intro",
+        "art-history-and-criticism-ba.foundations",
+        "art-history-and-criticism-ba.advanced",
+        "art-history-and-criticism-ba.required-seminar",
+        "art-history-and-criticism-ba.electives",
+        "art-history-and-criticism-ba.writing"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "art-history-and-criticism-ba.required-intro",
+        "art-history-and-criticism-ba.foundations",
+        "art-history-and-criticism-ba.advanced",
+        "art-history-and-criticism-ba.required-seminar",
+        "art-history-and-criticism-ba.electives",
+        "art-history-and-criticism-ba.writing"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARH 202",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARH 204",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARH 206",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARS 154",
+          "alternatives": [
+            "ARS 205"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ARH 208",
+          "alternatives": [
+            "ARH 209"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARH 201",
+          "alternatives": [
+            "ARH 203"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Language",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "ARH 300-Level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ARH 300-Level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Language",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "ARH 300-Level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ARH 300-Level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Language or ARS",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "ARH 300-Level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ARH 300-Level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Language or elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "ARH 300-Level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ARH 400-Level",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ARH 308",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "ARH 300-Level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "ARH 400-Level",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students should consult the Director of Undergraduate Studies (Izumi Ashizawa) and the department advisor. Majors may specialize in an area or explore more broadly."
+    },
+    {
+      "topic": "advising",
+      "text": "Minors of particular interest to Art History majors: French (FRN) and Studio Art (ARS)."
+    },
+    {
+      "topic": "other",
+      "text": "Enrollment in any course is contingent on requirements stated in the bulletin, and upper-level courses often coordinate with specific lower-level prerequisites."
+    },
+    {
+      "topic": "sbc",
+      "text": "Students completing the Stony Brook Curriculum must complete a course that satisfies the WRTD learning objective to graduate. The Upper-Division Writing Requirement is consistent in most cases with the SBC learning outcomes for WRTD. Consult the department advisor on the writing plan."
+    },
+    {
+      "topic": "other",
+      "text": "The major leads to the Bachelor of Arts degree."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1355",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

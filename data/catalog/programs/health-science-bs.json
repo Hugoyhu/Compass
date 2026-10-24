@@ -1,0 +1,42 @@
+{
+  "id": "health-science-bs",
+  "name": "Health Science, BS",
+  "kind": "major",
+  "degree": "",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "health-science-bs.0",
+      "label": "0",
+      "title": "Program requirements not on this page",
+      "rule": {
+        "type": "unparsed",
+        "text": "Information and program requirements for the major in Health Science may be found in the Health Sciences Catalog.",
+        "reason": "The catalog page provides no requirement list; it refers to a separate Health Sciences Catalog."
+      },
+      "sourceText": "Information and program requirements for the major in Health Science may be found in the Health Sciences Catalog."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "This page does not list the Health Science major requirements. See the Health Sciences Catalog referenced on the page."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1571",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

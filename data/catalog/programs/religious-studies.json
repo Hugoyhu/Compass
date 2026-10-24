@@ -1,0 +1,103 @@
+{
+  "id": "religious-studies",
+  "name": "Religious Studies",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "religious-studies.courses",
+      "label": "courses",
+      "title": "Six courses from the Religious Studies list, at least three upper-division",
+      "rule": {
+        "manualCheck": "The page states the minor totals 18 credits, but several listed courses are 0-credit (RLS 444, RLS 459), variable-credit (RLS 447, 1-6 credits), or show no credit value (RLS 367). Verify the 18-credit total manually.",
+        "type": "choose",
+        "count": 6,
+        "from": {
+          "courses": [
+            "RLS 102",
+            "RLS 240",
+            "RLS 256",
+            "RLS 260",
+            "RLS 280",
+            "RLS 287",
+            "RLS 366",
+            "RLS 367",
+            "RLS 380",
+            "RLS 382",
+            "RLS 387",
+            "RLS 444",
+            "RLS 447",
+            "RLS 459",
+            "RLS 475"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "courses": [
+                "RLS 366",
+                "RLS 367",
+                "RLS 380",
+                "RLS 382",
+                "RLS 387",
+                "RLS 444",
+                "RLS 447",
+                "RLS 459",
+                "RLS 475"
+              ],
+              "minNumber": 300
+            },
+            "minCourses": 3
+          }
+        ]
+      },
+      "sourceText": "The minor in Religious Studies consists of six courses (18 credits), at least three of which (nine credits) must be at the upper-division level."
+    },
+    {
+      "id": "religious-studies.letter-grade",
+      "label": "letter-grade",
+      "title": "At least 12 credits for a letter grade",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 12 credits must be taken for a letter grade.",
+        "reason": "No grading-basis credit rule type exists for minors; this is a program-wide credit rule."
+      },
+      "sourceText": "At least 12 credits must be taken for a letter grade."
+    },
+    {
+      "id": "religious-studies.director-discretion",
+      "label": "director-discretion",
+      "title": "Director-approved religious-topic courses in other fields",
+      "rule": {
+        "type": "unparsed",
+        "text": "At the discretion of the director of the minor, courses that cover religious topics in other fields (such as AAS, HIS, and PHI) can also be counted.",
+        "reason": "The page names subjects only as examples and leaves eligibility to the director, so no course pool can be defined."
+      },
+      "sourceText": "At the discretion of the director of the minor, courses that cover religious topics in other fields (such as AAS, HIS, and PHI) can also be counted."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "More information and advising in regard to the minor in Religious Studies are available through the program director (William Chittick, 1046 Humanities, (631) 632-4030)."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1518",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

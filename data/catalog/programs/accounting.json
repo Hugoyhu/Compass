@@ -1,0 +1,119 @@
+{
+  "id": "accounting",
+  "name": "Accounting",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "accounting.required",
+      "label": "required",
+      "title": "Required Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ACC 210"
+          },
+          {
+            "type": "course",
+            "code": "ACC 214"
+          },
+          {
+            "type": "course",
+            "code": "ACC 310"
+          },
+          {
+            "type": "course",
+            "code": "ACC 311"
+          },
+          {
+            "type": "course",
+            "code": "ACC 400"
+          }
+        ]
+      },
+      "sourceText": "Required Courses - ACC 210 - Financial Accounting 3 credits; ACC 214 - Managerial Cost Analysis and Applications 3 credits; ACC 310 - Intermediate Accounting I 3 credits; ACC 311 - Federal Income Taxation I 3 credits; ACC 400 - External Auditing 3 credits"
+    },
+    {
+      "id": "accounting.elective",
+      "label": "elective",
+      "title": "Upper-division accounting elective",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "ACC 301",
+            "ACC 313",
+            "ACC 320",
+            "ACC 401",
+            "ACC 403"
+          ]
+        }
+      },
+      "sourceText": "Choose one upper-division accounting elective from the list below: ACC 301 - Governmental & Not-for-Profit Accounting and Reporting 3 credits; ACC 313 - Intermediate Accounting II 3 credits; ACC 320 - Artificial Intelligence in Accounting and Assurance 3 credits; ACC 401 - Intermediate Managerial Accounting & Data Analytics 3 credits; ACC 403 - Accounting Information Systems 3 credits"
+    },
+    {
+      "id": "accounting.transfer",
+      "label": "transfer",
+      "title": "Transfer credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "Students may apply a maximum of nine transfer credits toward the Accounting Minor.",
+        "reason": "No rule type expresses a program-wide cap on transfer credits toward a minor"
+      },
+      "sourceText": "Transfer Credit Policy: Students may apply a maximum of nine transfer credits toward the Accounting Minor."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "accounting.required",
+        "accounting.elective"
+      ],
+      "sourceText": "All courses must be taken for a letter grade and passed with a grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "accounting.required",
+        "accounting.elective"
+      ],
+      "sourceText": "All courses must be taken for a letter grade and passed with a grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students may apply to the accounting minor at any time during their academic career provided that their cumulative grade point average is 3.20 or higher."
+    },
+    {
+      "topic": "other",
+      "text": "Non-business majors may complete the accounting minor."
+    },
+    {
+      "topic": "other",
+      "text": "Completion of the minor requires 18 credits."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1342",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "id": "multidisciplinary-studies-ba",
+  "name": "Multidisciplinary Studies, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Multidisciplinary Studies",
+  "approxCredits": 45,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "multidisciplinary-studies-ba.total-credits",
+      "label": "total-credits",
+      "title": "Total credits for the major",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires 45 credits.",
+        "reason": "Program-wide credit total with no rule type that covers a total across student-chosen courses"
+      },
+      "sourceText": "Completion of the major requires 45 credits."
+    },
+    {
+      "id": "multidisciplinary-studies-ba.course-distribution",
+      "label": "course-distribution",
+      "title": "Course Distribution",
+      "rule": {
+        "manualCheck": "Verify that the courses come from two or three departments or areas, with 15 credits in each area (area C may be replaced by 15 additional credits from area A, B, or both), as approved in the student's Curricular Plan.",
+        "type": "unparsed",
+        "text": "Courses from two or three departments or areas are distributed as follows: 15 credits in department or area A; 15 credits in department or area B; 15 credits in department or area C (or 15 credits in additional courses from department or area A, B, or both).",
+        "reason": "The areas of concentration are chosen by the student in an approved Curricular Plan, so no fixed course pool exists to encode"
+      },
+      "sourceText": "Courses from two or three departments or areas are distributed as follows: 15 credits in department or area A; 15 credits in department or area B; 15 credits in department or area C (or 15 credits in additional courses from department or area A, B, or both)."
+    },
+    {
+      "id": "multidisciplinary-studies-ba.upper-division-writing",
+      "label": "upper-division-writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Confirm that the upper-division writing requirement is satisfied in one of the chosen distribution departments, that the department is in the College of Arts and Sciences, and that the student reported it to the MTD director by the start of the final semester.",
+        "type": "unparsed",
+        "text": "All students majoring in Multidisciplinary Studies must satisfy the upper-division writing requirement established in one of the two or three departments chosen for distribution of Multidisciplinary Studies major credit. The department must be within the College of Arts and Sciences. Students must report the department to the director of the Multidisciplinary Studies major by the start of their final semester.",
+        "reason": "The writing requirement is defined by each department's own major requirements and is not a fixed course list"
+      },
+      "sourceText": "All students majoring in Multidisciplinary Studies must satisfy the upper-division writing requirement established in one of the two or three departments chosen for distribution of Multidisciplinary Studies major credit. The department in which the upper-division writing requirement is satisfied must be a department within the College of Arts and Sciences. Students must report the department in which they will meet the upper-division writing requirement to the director of the Multidisciplinary Studies major by the start of their final semester."
+    },
+    {
+      "id": "multidisciplinary-studies-ba.upper-division-credits",
+      "label": "upper-division-credits",
+      "title": "Upper-division credits in the major",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 30 credits offered to fulfill major requirements must be in upper-division courses, that is, courses numbered 300 or higher.",
+        "reason": "Program-wide upper-division credit minimum that no rule type covers"
+      },
+      "sourceText": "At least 30 credits offered to fulfill major requirements must be in upper-division courses, that is, courses numbered 300 or higher."
+    },
+    {
+      "id": "multidisciplinary-studies-ba.area-upper-division-credits",
+      "label": "area-upper-division-credits",
+      "title": "Upper-division credits in areas A and B",
+      "rule": {
+        "type": "unparsed",
+        "text": "Of these, at least nine credits in concentration A and nine credits in concentration B must be in upper-division courses.",
+        "reason": "Per-concentration upper-division minimum that depends on the student's chosen areas, which no rule type covers"
+      },
+      "sourceText": "Of these, at least nine credits in concentration A and nine credits in concentration B must be in upper-division courses."
+    },
+    {
+      "id": "multidisciplinary-studies-ba.outside-cas-limit",
+      "label": "outside-cas-limit",
+      "title": "Limit on courses outside the College of Arts and Sciences",
+      "rule": {
+        "type": "unparsed",
+        "text": "A maximum of 15 credits may be used in courses from departments outside the College of Arts and Sciences such as business, computer science, or health sciences courses.",
+        "reason": "Program-wide credit cap based on college membership, which the rule types cannot express"
+      },
+      "sourceText": "A maximum of 15 credits may be used in courses from departments outside the College of Arts and Sciences such as business, computer science, or health sciences courses."
+    },
+    {
+      "id": "multidisciplinary-studies-ba.stony-brook-upper-division",
+      "label": "stony-brook-upper-division",
+      "title": "Upper-division credits taken at Stony Brook",
+      "rule": {
+        "type": "unparsed",
+        "text": "The 45 credits must include at least 15 upper-division credits taken at Stony Brook.",
+        "reason": "Residency requirement limited to upper-division credits; the residency policy types do not filter by course level"
+      },
+      "sourceText": "The 45 credits must include at least 15 upper-division credits taken at Stony Brook."
+    },
+    {
+      "id": "multidisciplinary-studies-ba.independent-study-limit",
+      "label": "independent-study-limit",
+      "title": "Independent study limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than six credits of independent study (including directed readings, research, and projects), with no more than three credits in a single concentration, will be accepted toward the major.",
+        "reason": "Credit caps on independent study, including a per-concentration sub-cap, are not expressible with the available constraint types"
+      },
+      "sourceText": "No more than six credits of independent study (including directed readings, research, and projects), with no more than three credits in a single concentration, will be accepted toward the major."
+    },
+    {
+      "id": "multidisciplinary-studies-ba.su-limit",
+      "label": "su-limit",
+      "title": "S/U graded course limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than three credits of S/U graded courses, including teaching practica and internships, will be accepted toward the major.",
+        "reason": "Program-wide credit cap on S/U-graded courses that no rule type covers"
+      },
+      "sourceText": "No more than three credits of S/U graded courses, including teaching practica and internships, will be accepted toward the major."
+    },
+    {
+      "id": "multidisciplinary-studies-ba.pass-no-credit",
+      "label": "pass-no-credit",
+      "title": "Pass/No Credit exclusion",
+      "rule": {
+        "type": "unparsed",
+        "text": "No courses taken under the Pass/No Credit option will be accepted toward the major.",
+        "reason": "Course-level exclusion of a grading option that has no dedicated rule type"
+      },
+      "sourceText": "No courses taken under the Pass/No Credit option will be accepted toward the major."
+    },
+    {
+      "id": "multidisciplinary-studies-ba.no-second-major",
+      "label": "no-second-major",
+      "title": "No second major",
+      "rule": {
+        "manualCheck": "Verify that the student has not declared a second major.",
+        "type": "unparsed",
+        "text": "Students in the Multidisciplinary Studies major may not declare a second major.",
+        "reason": "Enrollment restriction on the student's other declared majors, not a course rule"
+      },
+      "sourceText": "Students in the Multidisciplinary Studies major may not declare a second major."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "multidisciplinary-studies-ba.course-distribution",
+        "multidisciplinary-studies-ba.upper-division-writing",
+        "multidisciplinary-studies-ba.upper-division-credits",
+        "multidisciplinary-studies-ba.area-upper-division-credits",
+        "multidisciplinary-studies-ba.outside-cas-limit",
+        "multidisciplinary-studies-ba.stony-brook-upper-division",
+        "multidisciplinary-studies-ba.independent-study-limit",
+        "multidisciplinary-studies-ba.su-limit"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "multidisciplinary-studies-ba.course-distribution",
+        "multidisciplinary-studies-ba.upper-division-writing",
+        "multidisciplinary-studies-ba.upper-division-credits",
+        "multidisciplinary-studies-ba.area-upper-division-credits",
+        "multidisciplinary-studies-ba.outside-cas-limit",
+        "multidisciplinary-studies-ba.stony-brook-upper-division",
+        "multidisciplinary-studies-ba.independent-study-limit",
+        "multidisciplinary-studies-ba.su-limit"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "unparsed",
+          "text": "Students completing the Stony Brook Curriculum must complete a course that satisfies the \"Write Effectively within One's Discipline\" (WRTD) learning objective to graduate.",
+          "reason": "Program-specific SBC rule stated as narrative, not a course selection"
+        },
+        "sourceText": "Students completing the Stony Brook Curriculum (SBC) must complete a course that satisfies the \"Write Effectively within One's Discipline\" (WRTD) learning objective to graduate. The Upper Division Writing Requirement is consistent in most cases with the SBC learning outcomes for WRTD."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Lower-division Area A course (3-4 credits)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Lower-division Area B course (3-4 credits)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Lower-division Area C course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Lower-division Area B course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Lower-division Area C course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Area A course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Area A course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Area B course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Area C course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Area A course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Area B course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Area C course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Area A course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Area B course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division Area C course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students seeking admission must write a Curricular Plan stating the two or three areas of concentration that satisfy the Course Distribution requirement and explaining how the selection serves their intellectual, professional, or personal goals. Courses not bearing the designator of the corresponding department or program must be justified in the Curricular Plan. Upon acceptance of the Plan by an MTD advisor, the student is admitted to the major. Changes in areas of concentration or additional courses require a revised Curricular Plan approved by a program advisor."
+    },
+    {
+      "topic": "advising",
+      "text": "Students must see one of the MTD advisors to plan their individual program. Program Advisor: Catherine Marrone, Sociology. Program Coordinator: Diane West. Email: mtdmajor@stonybrook.edu."
+    },
+    {
+      "topic": "other",
+      "text": "The Multidisciplinary Studies major offers no courses of its own. An academic minor may also fulfill one of the student's areas."
+    },
+    {
+      "topic": "other",
+      "text": "Multidisciplinary Studies Honors Program (optional): open to majors with a cumulative GPA of 3.00 and a GPA of 3.50 in MTD areas of concentration. Requires a faculty mentor from one of the areas, an honors thesis, a proposal submitted by the start of the semester before graduation that includes two research courses or seminars, and an examining committee. An acceptable thesis satisfies the upper-division writing requirement. Honors are conferred if the thesis has sufficient merit and the other elements of the plan and GPA levels are met."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1545",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "id": "film-and-screen-studies",
+  "name": "Film and Screen Studies",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "film-and-screen-studies.core",
+      "label": "core",
+      "title": "One Core Course (3 credits)",
+      "rule": {
+        "type": "course",
+        "code": "EGL 220"
+      },
+      "sourceText": "One Core Course (3 credits): EGL 220 - Critical Approaches to the Cinema 3 credits"
+    },
+    {
+      "id": "film-and-screen-studies.survey",
+      "label": "survey",
+      "title": "One of the following courses (3 credits)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CCS 200"
+          },
+          {
+            "type": "course",
+            "code": "CCS 202"
+          },
+          {
+            "type": "course",
+            "code": "CCS 203"
+          }
+        ]
+      },
+      "sourceText": "One of the following courses (3 credits): CCS 200 - Media History 3 credits; CCS 202 - Film Genres 3 credits; CCS 203 - Cinema History 3 credits"
+    },
+    {
+      "id": "film-and-screen-studies.topics",
+      "label": "topics",
+      "title": "Three of the following courses (9 credits)",
+      "rule": {
+        "manualCheck": "EGL 303, EGL 390, EGL 393, EGL 394, and SPN 405 count only when the topic is film- or screen media-related. Confirm the topic for each of these courses.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "ARH 398",
+            "ARS 326",
+            "ARS 329",
+            "ARS 425",
+            "CCS 301",
+            "CCS 311",
+            "CCS 312",
+            "CCS 313",
+            "CCS 381",
+            "CCS 382",
+            "CCS 391",
+            "CCS 392",
+            "CCS 393",
+            "CCS 394",
+            "CCS 401",
+            "CLT 335",
+            "EGL 303",
+            "EGL 325",
+            "THR 325",
+            "EGL 390",
+            "EGL 393",
+            "EGL 394",
+            "HUI 338",
+            "HUS 290",
+            "SPN 405",
+            "SPN 420",
+            "SUS 328",
+            "THR 403"
+          ]
+        }
+      },
+      "sourceText": "Three of the following courses (9 credits): ARH 398 - Topics in Film and Video Art 3 credits; ARS 326 - Video Art: Narrative Forms 3 credits; ARS 329 - Video Art: Experimental Forms 3 credits; ARS 425 - Advanced New Media Art 3 credits; CCS 301 - Cinema and Media Theory 3 credits; CCS 311 - Gender and Genre in Film 3 credits; CCS 312 - Cinema and the Ancient World 3 credits; CCS 313 - Television Studies 3 credits; CCS 381 - Topics in Cinema Studies 6 credits; CCS 382 - Topics in Media and Popular Culture 6 credits; CCS 391 - Topics in Contemporary African Cinema and Cultural Studies 6 credits; CCS 392 - Topics in American Cinema and Cultural Studies 6 credits; CCS 393 - Topics in European Cinema and Cultural Studies 6 credits; CCS 394 - Topics in Asian Cinema and Cultural Studies 6 credits; CCS 401 - Senior Seminar in Cinema & Cultural Studies 3 credits; CLT 335 - Interdisciplinary Study of Film 3 credits; EGL 303 - Genre or Media 3 credits (when topic is film- or screen media-related); EGL 325 - Screenwriting 3 credits; THR 325 - Screenwriting 3 credits; EGL 390 - Topics in American or Anglophone Literary History 3 credits (when topic is film- or screen media-related); EGL 393 - Topics in Literary and Cultural Studies (when topic is film- or screen media-related); EGL 394 - Topics in Literary and Cultural Studies of Science and Technology 3 credits (when topic is film- or screen media-related); HUI 338 - Images of Italian Americans in Film 3 credits; HUS 290 - Latin American Cinema 3 credits (formerly offered as HUS 390); SPN 405 - Issues in Hispanic Cultural Studies 3 credits (when topic is film- or screen media-related); SPN 420 - Topics in Spanish and Latin American Cinema 3 credits; SUS 328 - Ecofeminism, Literature & Film 3 credits; THR 403 - Media: Theory and Criticism 3 credits"
+    },
+    {
+      "id": "film-and-screen-studies.elective",
+      "label": "elective",
+      "title": "One elective course (3 credits)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "EGL 121",
+                "EGL 194"
+              ]
+            }
+          },
+          {
+            "manualCheck": "A 200-level film course requires approval of the Undergraduate Studies Director.",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "ARH 210",
+                "AAS 222",
+                "AAS 232",
+                "HUF 211",
+                "HUR 241"
+              ]
+            }
+          },
+          {
+            "manualCheck": "A 300- or 400-level course from the topics list, when not used to apply to the topics requirement. EGL 303, EGL 390, EGL 393, EGL 394, and SPN 405 count only when the topic is film- or screen media-related.",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "ARH 398",
+                "ARS 326",
+                "ARS 329",
+                "ARS 425",
+                "CCS 301",
+                "CCS 311",
+                "CCS 312",
+                "CCS 313",
+                "CCS 381",
+                "CCS 382",
+                "CCS 391",
+                "CCS 392",
+                "CCS 393",
+                "CCS 394",
+                "CCS 401",
+                "CLT 335",
+                "EGL 303",
+                "EGL 325",
+                "THR 325",
+                "EGL 390",
+                "EGL 393",
+                "EGL 394",
+                "HUI 338",
+                "HUS 290",
+                "SPN 405",
+                "SPN 420",
+                "SUS 328",
+                "THR 403"
+              ],
+              "minNumber": 300,
+              "excludeUsedBy": [
+                "film-and-screen-studies.topics"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "One elective course (3 credits) chosen from the following: EGL 121 - Global Film Traditions 3 credits; EGL 194 - Film: Mastering the Movies 3 credits. A 200-level film course, such as (with approval of Undergraduate Studies Director): ARH 210 - The Art and Technology of Film 3 credits OR AAS 222 - Indian Cinemas and Cultures 3 credits OR AAS 232 - Introduction to Asian American Fiction and Film 3 credits OR HUF 211 - French Cinema 3 credits OR HUR 241 - Russian and Post-Soviet Cinema 3 credits. 300- or 400-level course: A 300- or 400-level course listed in section C, when not used to apply to the 9 required credits of section C."
+    },
+    {
+      "id": "film-and-screen-studies.total-credits",
+      "label": "total-credits",
+      "title": "Total credits and upper-division courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 18 credits, with at least three courses at the upper-division level.",
+        "reason": "No rule type covers a program-wide total credit requirement or a minimum count of upper-division courses."
+      },
+      "sourceText": "Completion of the minor requires 18 credits, with at least three courses at the upper-division level."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "film-and-screen-studies.core",
+        "film-and-screen-studies.survey",
+        "film-and-screen-studies.topics",
+        "film-and-screen-studies.elective"
+      ],
+      "sourceText": "All courses for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "film-and-screen-studies.core",
+        "film-and-screen-studies.survey",
+        "film-and-screen-studies.topics",
+        "film-and-screen-studies.elective"
+      ],
+      "sourceText": "All courses for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "HUS 290 is listed as formerly offered as HUS 390."
+    },
+    {
+      "topic": "other",
+      "text": "EGL 303, EGL 390, EGL 393, EGL 394, and SPN 405 count toward the program only when the topic is film- or screen media-related."
+    },
+    {
+      "topic": "advising",
+      "text": "A 200-level film course from the elective list requires approval of the Undergraduate Studies Director. Students are encouraged to consult the Undergraduate Advisor, Charles Edwards."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1454",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

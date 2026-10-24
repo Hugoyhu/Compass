@@ -1,0 +1,185 @@
+{
+  "id": "materials-science",
+  "name": "Materials Science",
+  "kind": "minor",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "materials-science.track",
+      "label": "track",
+      "title": "Minor Requirements (B.S. or B.E. version)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "materials-science.bs",
+            "sourceText": "For students with majors leading to the B.S. degree: Six courses are required: ESM 150 - Materials of the Modern World 3 credits; Two of the following (ESG 332, ESG 333, ESM 339); Two of the following (ESM 325, ESM 335, ESM 453, ESM 455, the course not completed for Requirement 2); One of the following (ESG 487, ESM 488, ESM 499, ESM 475)",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ESM 150"
+              },
+              {
+                "id": "materials-science.bs-core",
+                "sourceText": "Two of the following: ESG 332 - Materials Science I: Structure and Properties of Materials 3 credits; ESG 333 - Materials Science II: Electronic Properties 3 credits; ESM 339 - Microfabrication and Thin Film Processing of Advanced Materials 4 credits",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "ESG 332",
+                    "ESG 333",
+                    "ESM 339"
+                  ]
+                }
+              },
+              {
+                "id": "materials-science.bs-elective",
+                "sourceText": "Two of the following: ESM 325 - Diffraction Techniques and Structure of Solids 3 credits; ESM 335 - Strength of Materials 3 credits; ESM 453 - Biomaterials 3 credits; ESM 455 - Materials and Processes in Manufacturing Design 3 credits; The course not completed for Requirement 2 (ESG 332, ESG 333, ESM 339)",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "ESM 325",
+                    "ESM 335",
+                    "ESM 453",
+                    "ESM 455",
+                    "ESG 332",
+                    "ESG 333",
+                    "ESM 339"
+                  ],
+                  "excludeUsedBy": [
+                    "materials-science.bs-core"
+                  ]
+                }
+              },
+              {
+                "sourceText": "One of the following: ESG 487 - Cooperative Research in Technological Solutions 0-3 credits; ESM 488 - Cooperative Industrial Practice 0-6 credits; ESM 499 - Research in Materials Science 0-4 credits; ESM 475 - Undergraduate Teaching Practicum 3 credits",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ESG 487"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ESM 488"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ESM 499"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ESM 475"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "materials-science.be",
+            "sourceText": "For students with majors leading to the B.E. degree: Four of the following (ESM 325, ESM 453, ESM 469, CHE 301, CHE 302, CHE 351); One of the following (ESM 475, ESG 487, ESM 488, ESM 499)",
+            "type": "allOf",
+            "rules": [
+              {
+                "sourceText": "Four of the following: ESM 325 - Diffraction Techniques and Structure of Solids 3 credits; ESM 453 - Biomaterials 3 credits; ESM 469 - Polymer Engineering 3 credits; CHE 301 - Physical Chemistry I 4 credits; CHE 302 - Physical Chemistry II 4 credits; CHE 351 - Quantum Chemistry 3 credits",
+                "type": "choose",
+                "count": 4,
+                "from": {
+                  "courses": [
+                    "ESM 325",
+                    "ESM 453",
+                    "ESM 469",
+                    "CHE 301",
+                    "CHE 302",
+                    "CHE 351"
+                  ]
+                }
+              },
+              {
+                "sourceText": "One of the following: ESM 475 - Undergraduate Teaching Practicum 3 credits; ESG 487 - Cooperative Research in Technological Solutions 0-3 credits; ESM 488 - Cooperative Industrial Practice 0-6 credits; ESM 499 - Research in Materials Science 0-4 credits",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "ESM 475"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ESG 487"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ESM 488"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ESM 499"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "There are two versions of the minor: one for students enrolled in B.S. degree programs (e.g., physics and chemistry) and one for those enrolled in B.E. degree programs. For students with majors leading to the B.S. degree: Six courses are required... For students with majors leading to the B.E. degree: Four of the following... One of the following..."
+    },
+    {
+      "id": "materials-science.non-esm-limit",
+      "label": "non-esm-limit",
+      "title": "Limit on non-ESM courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than two non-ESM courses may count toward the minor.",
+        "reason": "Program-wide limit on non-ESM courses across all minor items; no rule type applies it across the whole minor, so it must be checked manually."
+      },
+      "sourceText": "No more than two non-ESM courses may count toward the minor."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "materials-science.track"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "materials-science.track"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "There are two versions of the minor: one for students enrolled in B.S. degree programs and one for those enrolled in B.E. degree programs. B.E. students should see the faculty advisor in their engineering major for approval before declaring the materials science minor."
+    },
+    {
+      "topic": "other",
+      "text": "ESG core courses cannot be used to meet requirements for both the ESG major and the ESM minor."
+    },
+    {
+      "topic": "other",
+      "text": "Students may use ESG 332 toward the minor in Materials Science only if it is not a required course in the student's major."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1557",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

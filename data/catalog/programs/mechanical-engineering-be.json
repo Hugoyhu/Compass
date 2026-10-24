@@ -1,0 +1,856 @@
+{
+  "id": "mechanical-engineering-be",
+  "name": "Mechanical Engineering, BE",
+  "kind": "major",
+  "degree": "Bachelor of Engineering in Mechanical Engineering",
+  "approxCredits": 107,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "mechanical-engineering-be.calculus-i-ii",
+      "label": "calculus-i-ii",
+      "title": "Calculus I and II",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 131"
+          },
+          {
+            "type": "course",
+            "code": "MAT 132"
+          }
+        ]
+      },
+      "sourceText": "MAT 131 - Calculus I 4 credits; MAT 132 - Calculus II 4 credits. Note: The following alternate calculus course sequences may be substituted for MAT 131, MAT 132 in major requirements or prerequisites: MAT 125, MAT 126, MAT 127 or AMS 151, AMS 161"
+    },
+    {
+      "id": "mechanical-engineering-be.calculus-iii",
+      "label": "calculus-iii",
+      "title": "Calculus III",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 261"
+          },
+          {
+            "type": "course",
+            "code": "MAT 203"
+          }
+        ]
+      },
+      "sourceText": "AMS 261 - Applied Calculus III 4 credits OR MAT 203 - Calculus III with Applications 4 credits"
+    },
+    {
+      "id": "mechanical-engineering-be.calculus-iv",
+      "label": "calculus-iv",
+      "title": "Calculus IV: Differential Equations",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 361"
+          },
+          {
+            "type": "course",
+            "code": "MAT 303"
+          }
+        ]
+      },
+      "sourceText": "AMS 361 - Applied Calculus IV: Differential Equations 4 credits OR MAT 303 - Calculus IV with Applications 4 credits"
+    },
+    {
+      "id": "mechanical-engineering-be.linear-algebra",
+      "label": "linear-algebra",
+      "title": "Linear Algebra",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 210"
+          },
+          {
+            "type": "course",
+            "code": "MAT 211"
+          }
+        ]
+      },
+      "sourceText": "AMS 210 - Applied Linear Algebra 3 credits OR MAT 211 - Introduction to Linear Algebra 3 credits"
+    },
+    {
+      "id": "mechanical-engineering-be.physics",
+      "label": "physics",
+      "title": "Classical Physics and Laboratories",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHY 131"
+          },
+          {
+            "type": "course",
+            "code": "PHY 133"
+          },
+          {
+            "type": "course",
+            "code": "PHY 132"
+          },
+          {
+            "type": "course",
+            "code": "PHY 134"
+          }
+        ]
+      },
+      "sourceText": "PHY 131 - Classical Physics I 3 credits; PHY 133 - Classical Physics Laboratory I 1 credit; PHY 132 - Classical Physics II 3 credits; PHY 134 - Classical Physics Laboratory II 1 credit. Note: The following alternate physics course sequences may be substituted for PHY 131/PHY 133, PHY 132/PHY 134: PHY 125, PHY 126, PHY 127, PHY 133, PHY 134, Classical Physics A, B, C and Laboratories or PHY 141, PHY 142, PHY 133, PHY 134 Classical Physics I, II: Honors"
+    },
+    {
+      "id": "mechanical-engineering-be.chemistry",
+      "label": "chemistry",
+      "title": "Chemistry (one of)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 131"
+          },
+          {
+            "type": "course",
+            "code": "ESG 198"
+          },
+          {
+            "type": "course",
+            "code": "CHE 152"
+          }
+        ]
+      },
+      "sourceText": "CHE 131 - General Chemistry IB 4 credits OR ESG 198 - Fundamentals of Engineering Chemistry 3 credits OR CHE 152 - Molecular Science I 4 credits"
+    },
+    {
+      "id": "mechanical-engineering-be.basic-science",
+      "label": "basic-science",
+      "title": "Basic science elective",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 251"
+              },
+              {
+                "type": "course",
+                "code": "PHY 252"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ESG 281"
+          },
+          {
+            "type": "course",
+            "code": "PHY 300"
+          },
+          {
+            "type": "course",
+            "code": "CHE 132"
+          },
+          {
+            "type": "course",
+            "code": "BIO 202"
+          },
+          {
+            "type": "course",
+            "code": "BIO 203"
+          },
+          {
+            "type": "course",
+            "code": "GEO 310"
+          },
+          {
+            "type": "course",
+            "code": "AST 203"
+          },
+          {
+            "type": "course",
+            "code": "AST 205"
+          },
+          {
+            "type": "course",
+            "code": "ATM 205"
+          }
+        ]
+      },
+      "sourceText": "A basic science elective to be selected from the following list of courses: PHY 251 - Modern Physics 3 credits AND PHY 252 - Modern Physics Laboratory 1 credit; ESG 281 - Engineering Introduction to the Solid State 3 credits; PHY 300 - Waves and Optics 4 credits; CHE 132 - General Chemistry II 4 credits; BIO 202 - Fundamentals of Biology: Molecular and Cellular Biology 3 credits; BIO 203 - Fundamentals of Biology: Cellular and Organ Physiology 3 credits; GEO 310 - Introduction to Geophysics 3 credits; AST 203 - Astronomy 4 credits; AST 205 - Introduction to Planetary Sciences 3 credits; ATM 205 - Introduction to Atmospheric Sciences 3 credits"
+    },
+    {
+      "id": "mechanical-engineering-be.laboratories",
+      "label": "laboratories",
+      "title": "Laboratories",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MEC 316"
+          },
+          {
+            "type": "course",
+            "code": "MEC 317"
+          }
+        ]
+      },
+      "sourceText": "MEC 316 - Instrumentation and Solid Mechanics Laboratory 2 credits; MEC 317 - Thermal Sciences and Fluid Mechanics Laboratory 2 credits"
+    },
+    {
+      "id": "mechanical-engineering-be.mechanical-engineering",
+      "label": "mechanical-engineering",
+      "title": "Mechanical Engineering",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MEC 101"
+          },
+          {
+            "type": "course",
+            "code": "MEC 102"
+          },
+          {
+            "type": "course",
+            "code": "MEC 203"
+          },
+          {
+            "type": "course",
+            "code": "MEC 220"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MEC 225"
+              },
+              {
+                "type": "course",
+                "code": "MEC 226"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MEC 260"
+          },
+          {
+            "type": "course",
+            "code": "MEC 262"
+          },
+          {
+            "type": "course",
+            "code": "MEC 301"
+          },
+          {
+            "type": "course",
+            "code": "MEC 305"
+          },
+          {
+            "type": "course",
+            "code": "MEC 325"
+          },
+          {
+            "type": "course",
+            "code": "MEC 363"
+          },
+          {
+            "type": "course",
+            "code": "MEC 364"
+          }
+        ]
+      },
+      "sourceText": "MEC 101 - Freshman Design Innovation 3 credits; MEC 102 - Engineering Computing and Problem Solving 2 credits; MEC 203 - Engineering Graphics and CAD 3 credits; MEC 220 - Practical Electronics for Mechanical Engineers 3 credits; One of: MEC 225 - Fundamentals of Machining Practices 1 credit OR MEC 226 - Modern Machining Practices 1 credit; MEC 260 - Engineering Statics 3 credits; MEC 262 - Engineering Dynamics 3 credits; MEC 301 - Thermodynamics 3 credits; MEC 305 - Heat and Mass Transfer 3 credits; MEC 325 - Manufacturing Processes 3 credits; MEC 363 - Mechanics of Solids 3 credits; MEC 364 - Introduction to Fluid Mechanics 3 credits"
+    },
+    {
+      "id": "mechanical-engineering-be.materials-science",
+      "label": "materials-science",
+      "title": "Materials Science",
+      "rule": {
+        "type": "course",
+        "code": "ESG 332"
+      },
+      "sourceText": "ESG 332 - Materials Science I: Structure and Properties of Materials 3 credits"
+    },
+    {
+      "id": "mechanical-engineering-be.engineering-design",
+      "label": "engineering-design",
+      "title": "Engineering Design",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MEC 310"
+          },
+          {
+            "type": "course",
+            "code": "MEC 320"
+          },
+          {
+            "type": "course",
+            "code": "MEC 410"
+          },
+          {
+            "type": "course",
+            "code": "MEC 411"
+          },
+          {
+            "type": "course",
+            "code": "MEC 422"
+          },
+          {
+            "type": "course",
+            "code": "MEC 440"
+          },
+          {
+            "id": "mechanical-engineering-be.engineering-design.mec441",
+            "type": "course",
+            "code": "MEC 441"
+          }
+        ]
+      },
+      "sourceText": "MEC 310 - Introduction to Machine Design 3 credits; MEC 320 - Numerical Methods in Engineering Design and Analysis 3 credits; MEC 410 - Design of Machine Elements 3 credits; MEC 411 - Control System Analysis and Design 4 credits; MEC 422 - Thermal System Design 3 credits; MEC 440 - Mechanical Engineering Design I 3 credits; MEC 441 - Mechanical Engineering Design II 3 credits"
+    },
+    {
+      "id": "mechanical-engineering-be.engineering-economics",
+      "label": "engineering-economics",
+      "title": "Engineering Economics",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "EST 392"
+          },
+          {
+            "type": "course",
+            "code": "ECO 110"
+          },
+          {
+            "type": "course",
+            "code": "ECO 111"
+          }
+        ]
+      },
+      "sourceText": "EST 392 - Engineering Economics 3 credits OR ECO 110 - Introduction to Microeconomics 3 credits OR ECO 111 - Introduction to Macroeconomics 3 credits"
+    },
+    {
+      "id": "mechanical-engineering-be.technical-electives",
+      "label": "technical-electives",
+      "title": "Technical Electives",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "mechanical-engineering-be.technical-electives.mec",
+            "manualCheck": "Each MEC technical elective must appear on the Department's approved technical elective list in the Undergraduate Guide.",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "MEC"
+              ]
+            }
+          },
+          {
+            "type": "unparsed",
+            "text": "One technical elective selected from courses offered by any department of the College of Engineering and Applied Sciences, including MEC; approved list in the Department's Undergraduate Guide",
+            "reason": "CEAS department subjects are not enumerated on the page; the approved list is in an external guide"
+          }
+        ]
+      },
+      "sourceText": "Three technical elective courses are required, two mechanical engineering (MEC) courses and one selected from courses offered by any department of the College of Engineering and Applied Sciences, including MEC. A list of approved technical elective courses may be found in the Department's Undergraduate Guide."
+    },
+    {
+      "id": "mechanical-engineering-be.upper-division-writing",
+      "label": "upper-division-writing",
+      "title": "Upper-Division Writing and Engineering Ethics",
+      "rule": {
+        "type": "course",
+        "code": "MEC 300"
+      },
+      "sourceText": "MEC 300 - Professional Conduct for Engineers 2 credits"
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "mechanical-engineering-be.engineering-design.mec441"
+      ],
+      "sourceText": "A minimum grade of \"C\" in MEC 441 is required for the B.E. degree."
+    },
+    {
+      "type": "minGpa",
+      "gpa": 2,
+      "appliesTo": [
+        "mechanical-engineering-be.mechanical-engineering",
+        "mechanical-engineering-be.laboratories",
+        "mechanical-engineering-be.engineering-design",
+        "mechanical-engineering-be.technical-electives",
+        "mechanical-engineering-be.upper-division-writing"
+      ],
+      "sourceText": "The grade point average of all required MEC courses and all technical electives must be at least 2.00. When a course is repeated, the higher grade will be used in calculating this average."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "mechanical-engineering-be.sub.calc-125-127",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 131",
+          "MAT 132"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 125"
+          },
+          {
+            "type": "course",
+            "code": "MAT 126"
+          },
+          {
+            "type": "course",
+            "code": "MAT 127"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: The following alternate calculus course sequences may be substituted for MAT 131, MAT 132 in major requirements or prerequisites: MAT 125, MAT 126, MAT 127 or AMS 151, AMS 161"
+    },
+    {
+      "id": "mechanical-engineering-be.sub.calc-ams",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 131",
+          "MAT 132"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 151"
+          },
+          {
+            "type": "course",
+            "code": "AMS 161"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: The following alternate calculus course sequences may be substituted for MAT 131, MAT 132 in major requirements or prerequisites: MAT 125, MAT 126, MAT 127 or AMS 151, AMS 161"
+    },
+    {
+      "id": "mechanical-engineering-be.sub.physics-125-127",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "PHY 131",
+          "PHY 132"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHY 125"
+          },
+          {
+            "type": "course",
+            "code": "PHY 126"
+          },
+          {
+            "type": "course",
+            "code": "PHY 127"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: The following alternate physics course sequences may be substituted for PHY 131/PHY 133, PHY 132/PHY 134: PHY 125, PHY 126, PHY 127, PHY 133, PHY 134, Classical Physics A, B, C and Laboratories or PHY 141, PHY 142, PHY 133, PHY 134 Classical Physics I, II: Honors"
+    },
+    {
+      "id": "mechanical-engineering-be.sub.physics-honors",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "PHY 131",
+          "PHY 132"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHY 141"
+          },
+          {
+            "type": "course",
+            "code": "PHY 142"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: The following alternate physics course sequences may be substituted for PHY 131/PHY 133, PHY 132/PHY 134: PHY 125, PHY 126, PHY 127, PHY 133, PHY 134, Classical Physics A, B, C and Laboratories or PHY 141, PHY 142, PHY 133, PHY 134 Classical Physics I, II: Honors"
+    }
+  ],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "PHY 131",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 133",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "AMS 210",
+          "alternatives": [
+            "MAT 211"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 102",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "MAT 132",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "PHY 132",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHY 134",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MAT 203",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ESG 198",
+          "alternatives": [
+            "CHE 131",
+            "CHE 152"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 203",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 220",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 260",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MAT 303",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Basic Science Elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 262",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 363",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EST 392",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ESG 332",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 225",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MEC 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 310",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 316",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "MEC 364",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 300",
+          "credits": 2
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MEC 305",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 317",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "MEC 320",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "MEC 325",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 410",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MEC 411",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "MEC 422",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MEC 440",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective 1",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MEC 441",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective 2",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective 3",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Area of Interest and other CEAS students (excluding double major applicants) are admitted if they: have completed PHY 131 or PHY 126 or PHY 127 or equivalents; have one MEC course required for the major taken at Stony Brook; have 10 or more credits of mathematics, physics, and engineering courses taken at Stony Brook that satisfy the major's requirements; have a major GPA of at least 3.2 with no more than one grade below B-; and have not repeated any course required for the major. Requirements must be completed within one year of enrolling in the first course that applies toward major entry. Applications are due January 5 (Spring) and June 5 (Fall). Non-CEAS students and double major applicants follow a separate, competitive process contingent on program capacity."
+    },
+    {
+      "topic": "grading",
+      "text": "When a course is repeated, the higher grade is used in calculating the required MEC course and technical elective GPA."
+    },
+    {
+      "topic": "sbc",
+      "text": "Per the sample sequence footnote, MEC 440 and MEC 441 partially satisfy the ESI, CER, SPK, WRTD, SBS+, STEM+, and EXP+ SBC categories. Contact the CEAS Undergraduate Student Office for more information."
+    },
+    {
+      "topic": "other",
+      "text": "The sample sequence footnote lists GEO 312 (Structure and Properties of Materials) as a basic science elective option; it does not appear in the Natural Sciences list above."
+    },
+    {
+      "topic": "other",
+      "text": "The accelerated B.E./M.S. program in mechanical engineering allows up to six graduate credits taken as an undergraduate to count toward both degrees. It is not modeled here; see the Graduate Catalog for requirements."
+    },
+    {
+      "topic": "advising",
+      "text": "Completion of the major requires approximately 107 credits. Students should contact the undergraduate program coordinator and advisor for advising."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1549",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

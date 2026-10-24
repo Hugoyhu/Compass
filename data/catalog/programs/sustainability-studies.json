@@ -1,0 +1,276 @@
+{
+  "id": "sustainability-studies",
+  "name": "Sustainability Studies",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "sustainability-studies.intro",
+      "label": "intro",
+      "title": "Required introductory courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "SUS 111"
+              },
+              {
+                "type": "course",
+                "code": "ENS 101"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ECO 108"
+              },
+              {
+                "type": "course",
+                "code": "ECO 110"
+              },
+              {
+                "type": "course",
+                "code": "ECO 111"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Required introductory courses: SUS 111 - Introduction to Sustainability 3 credits OR ENS 101 - Prospects for Planet Earth 3 credits; ECO 108 - Introduction to Economics 4 credits OR ECO 110 - Introduction to Microeconomics 3 credits OR ECO 111 - Introduction to Macroeconomics 3 credits"
+    },
+    {
+      "id": "sustainability-studies.foundation",
+      "label": "foundation",
+      "title": "And one of the following four courses",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHI 104"
+          },
+          {
+            "type": "course",
+            "code": "SUS 115"
+          },
+          {
+            "type": "course",
+            "code": "POL 102"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 115"
+              },
+              {
+                "type": "course",
+                "code": "ENV 115"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "And one of the following four courses: PHI 104 - Moral Reasoning (II) 3 credits; SUS 115 - Introduction to Human Demography 3 credits; POL 102 - Introduction to American Government 3 credits; CHE 115 - Chemistry, Life, and Environment 3 credits OR ENV 115 - Chemistry, Life, and Environment 3 credits. Note: CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115"
+    },
+    {
+      "id": "sustainability-studies.electives",
+      "label": "electives",
+      "title": "Required three courses from the following",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "EDP 303",
+            "ENS 311",
+            "ENS 312",
+            "ENS 333",
+            "ENV 301",
+            "ENV 310",
+            "SUS 316",
+            "ENV 340",
+            "GSS 317",
+            "SUS 305",
+            "SUS 306",
+            "SUS 307",
+            "SUS 311",
+            "SUS 317",
+            "SUS 318",
+            "SUS 321",
+            "SUS 322",
+            "SUS 323",
+            "SUS 324",
+            "SUS 340",
+            "SUS 343",
+            "SUS 344",
+            "SUS 350",
+            "SUS 366",
+            "SUS 401"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "ENV 310",
+                "SUS 316"
+              ]
+            },
+            "maxCourses": 1
+          }
+        ]
+      },
+      "sourceText": "Required three courses from the following: EDP 303 - Spatial Economics 3 credits; ENS 311 - Ecosystem Ecology and the Global Environment 3 credits; ENS 312 - Population, Technology, and the Environment 3 credits; ENS 333 - Environmental Law 3 credits; ENV 301 - Sustainability of the Long Island Pine Barrens 3 credits; ENV 310 - Sustainability and Renewable Energy - Costa Rica 4 credits OR SUS 316 - Cuba and Sustainability 3 credits; ENV 340 - Contemporary Topics in Environmental Science 3 credits *; GSS 317 - Geospatial Narratives: Deep Mapping for Humanities and Social Sciences 3 credits; SUS 305 - Collective Action and Advocacy 3 credits; SUS 306 - Business and Sustainability 3 credits; SUS 307 - Environmental Economics and Management 3 credits; SUS 311 - Disasters and Society: A Global Perspective 3 credits; SUS 317 - American Environmental History 3 credits; SUS 318 - American Environmental Politics 3 credits; SUS 321 - Ecology and Evolution in American Literature 3 credits; SUS 322 - Human Ecology 3 credits; SUS 323 - Environmental Justice 3 credits; SUS 324 - Human Geography and the Environment 3 credits; SUS 340 - Ecological and Social Dimensions of Disease 3 credits; SUS 343 - Age of the Anthropocene 3 credits; SUS 344 - Sustainable Natural Resources 3 credits; SUS 350 - Contemporary Topics in Sustainability 3 credits *; SUS 366 - Philosophy of the Environment (III) 3 credits; SUS 401 - Integrative, Collaborative Systems Studies 3 credits"
+    },
+    {
+      "id": "sustainability-studies.credit-overlap",
+      "label": "credit-overlap",
+      "title": "Minor credits may not overlap with a major or other minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 12 credits applied to the minor may not be applied to any major or other minor.",
+        "reason": "Cross-program credit overlap limit has no rule type that can count credits across programs"
+      },
+      "sourceText": "At least 12 credits applied to the minor may not be applied to any major or other minor."
+    },
+    {
+      "id": "sustainability-studies.pass-no-credit",
+      "label": "pass-no-credit",
+      "title": "Pass/No Credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option.",
+        "reason": "No grading-option rule type exists for limiting Pass/No Credit courses"
+      },
+      "sourceText": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "sustainability-studies.electives"
+      ],
+      "sourceText": "All upper-division courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "sustainability-studies.sub.che-129",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 115",
+          "ENV 115"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "CHE 129"
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115"
+    },
+    {
+      "id": "sustainability-studies.sub.che-131",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 115",
+          "ENV 115"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "CHE 131"
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115"
+    },
+    {
+      "id": "sustainability-studies.sub.che-152",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 115",
+          "ENV 115"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "CHE 152"
+      },
+      "requiresApproval": false,
+      "sourceText": "Note: CHE 129, CHE 131, or CHE 152 may be substituted for CHE 115/ENV 115"
+    },
+    {
+      "id": "sustainability-studies.sub.internship",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "SUS 350",
+          "ENV 340"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "SUS 488"
+      },
+      "requiresApproval": false,
+      "sourceText": "*An Internship with significant practical experience [SUS 488 - Internship in Sustainability Studies ] or an approved research project [SUS 487 - Research in Sustainability ] may be substituted for SUS 350 or ENV 340."
+    },
+    {
+      "id": "sustainability-studies.sub.research",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "SUS 350",
+          "ENV 340"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "SUS 487"
+      },
+      "requiresApproval": true,
+      "sourceText": "*An Internship with significant practical experience [SUS 488 - Internship in Sustainability Studies ] or an approved research project [SUS 487 - Research in Sustainability ] may be substituted for SUS 350 or ENV 340."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students should declare the Sustainability Studies minor no later than the middle of their sophomore year, at which time they should consult with the minor coordinator or undergraduate director and plan their course of study for fulfillment of the requirements."
+    },
+    {
+      "topic": "other",
+      "text": "An Internship with significant practical experience (SUS 488) or an approved research project (SUS 487) may be substituted for SUS 350 or ENV 340."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1509",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

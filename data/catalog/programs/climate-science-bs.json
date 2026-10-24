@@ -1,0 +1,784 @@
+{
+  "id": "climate-science-bs",
+  "name": "Climate Science, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Climate Science",
+  "approxCredits": 65,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "climate-science-bs.I",
+      "label": "I",
+      "title": "Foundation Courses (19-23 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 102"
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "MAT 132"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CHE 131"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ENS 119"
+              },
+              {
+                "type": "course",
+                "code": "PHY 119"
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ENS 101"
+              },
+              {
+                "type": "course",
+                "code": "SUS 111"
+              },
+              {
+                "type": "course",
+                "code": "ECO 108"
+              },
+              {
+                "type": "course",
+                "code": "ECO 110"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "AMS 102 - Elements of Statistics 3 credits (see Note 1); MAT 131 - Calculus I 4 credits AND MAT 132 - Calculus II 4 credits (see Note 2); CHE 131 - General Chemistry IB 4 credits (see Note 3); ENS 119 - Physics for Environmental Studies 4 credits OR PHY 119 - Physics for Environmental Studies 4 credits (see Note 4); ENS 101 - Prospects for Planet Earth 3 credits OR SUS 111 - Introduction to Sustainability 3 credits OR ECO 108 - Introduction to Economics 4 credits OR ECO 110 - Introduction to Microeconomics 3 credits"
+    },
+    {
+      "id": "climate-science-bs.II.A",
+      "label": "II.A",
+      "title": "Basics of Climate Science (15 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ATM 201"
+          },
+          {
+            "type": "course",
+            "code": "ATM 205"
+          },
+          {
+            "type": "course",
+            "code": "ATM 305"
+          },
+          {
+            "type": "course",
+            "code": "ATM 397"
+          },
+          {
+            "type": "course",
+            "code": "MAR 333"
+          }
+        ]
+      },
+      "sourceText": "ATM 201 - Introduction to Climate and Climate Change 3 credits; ATM 205 - Introduction to Atmospheric Sciences 3 credits; ATM 305 - Global Atmospheric Change 3 credits; ATM 397 - Air Pollution and Global Warming 3 credits; MAR 333 - Coastal Oceanography 3 credits"
+    },
+    {
+      "id": "climate-science-bs.II.B",
+      "label": "II.B",
+      "title": "Sustainable Climate Change (15 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 5,
+        "from": {
+          "courses": [
+            "EDP 302",
+            "ENS 301",
+            "ENV 304",
+            "ENV 316",
+            "SUS 200",
+            "SUS 206",
+            "SUS 305",
+            "SUS 307",
+            "SUS 317",
+            "SUS 323",
+            "SUS 343",
+            "SUS 366",
+            "PHI 366"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "onePerGroup",
+            "groups": [
+              [
+                "SUS 366",
+                "PHI 366"
+              ]
+            ]
+          }
+        ]
+      },
+      "sourceText": "Five courses from the choices below: EDP 302 - Sustainable Planning and Development 3 credits; ENS 301 - Contemporary Environmental Issues and Policies 3 credits; ENV 304 - Global Environmental Change 3 credits; ENV 316 - Coastal Zone Management 3 credits; SUS 200 - Human Settlement: History and Future 3 credits; SUS 206 - Economics and Sustainability 3 credits; SUS 305 - Collective Action and Advocacy 3 credits; SUS 307 - Environmental Economics and Management 3 credits; SUS 317 - American Environmental History 3 credits; SUS 323 - Environmental Justice 3 credits; SUS 343 - Age of the Anthropocene 3 credits; SUS 366 - Philosophy of the Environment (III) 3 credits OR PHI 366 - Philosophy of the Environment (III) 3 credits"
+    },
+    {
+      "id": "climate-science-bs.II.C",
+      "label": "II.C",
+      "title": "Problem Solving Skills (16 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ATM 320"
+          },
+          {
+            "type": "course",
+            "code": "GSS 313"
+          },
+          {
+            "type": "course",
+            "code": "GSS 314"
+          },
+          {
+            "type": "course",
+            "code": "MAR 334"
+          },
+          {
+            "manualCheck": "Capstone topic must be climate-related and approved by the Division Director. ATM 487, MAR 487 and SUS 487 are 0-6 credits; ATM 488 and MAR 488 are 0-6 credits; SUS 488 is 0-12 credits.",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "ATM 387",
+                "ATM 487",
+                "ATM 488",
+                "MAR 487",
+                "MAR 488",
+                "SUS 487",
+                "SUS 488"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "ATM 320 - Problem Solving with Python 3 credits; GSS 313 - GIS Design and Application I 3 credits; GSS 314 - GIS Laboratory 1 credit; MAR 334 - Remote Sensing of the Environment 3 credits; Capstone Project (one of the following, research and internship topics should be climate-related and must be approved by the Divison Director): ATM 387 - Weather and Climate Data Analysis 3 credits; ATM 487 - Senior Research in Atmospheric Sciences 0-6 credits; ATM 488 - Internship 0-6 credits; MAR 487 - Research in Marine Sciences 0-6 credits; MAR 488 - Internship 0-6 credits; SUS 487 - Research in Sustainability 0-6 credits; SUS 488 - Internship in Sustainability Studies 0-12 credits"
+    },
+    {
+      "id": "climate-science-bs.II.D",
+      "label": "II.D",
+      "title": "Upper Division Writing Requirement",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAR 459"
+              },
+              {
+                "type": "course",
+                "code": "SUS 459"
+              }
+            ]
+          },
+          {
+            "manualCheck": "Confirm the course is on the department's preapproved list of advanced writing courses.",
+            "type": "unparsed",
+            "text": "Enrollment in an approved advanced course that entails writing of either a term paper or a laboratory report",
+            "reason": "The approved course list is available only from the department, so the course cannot be checked against a fixed list."
+          }
+        ]
+      },
+      "sourceText": "The advanced writing component of the major in Climate Science requires registration in, and satisfactory completion of the 0-credit MAR 459 or SUS 459 (S/U grading) along with enrollment in an approved advanced course that entails writing of either a term paper or a laboratory report. Completion of MAR 459 with a grade of S will also result in fulfillment of the WRTD requirement. A list of preapproved courses can be obtained through the department."
+    },
+    {
+      "id": "climate-science-bs.credits-total",
+      "label": "credits-total",
+      "title": "Minimum total credits for the major",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the Climate Science major requires a minimum of 65 credits.",
+        "reason": "Program-wide minimum credit total is not covered by any rule type."
+      },
+      "sourceText": "Completion of the Climate Science major requires a minimum of 65 credits."
+    },
+    {
+      "id": "climate-science-bs.pass-grade-limit",
+      "label": "pass-grade-limit",
+      "title": "Limit on P or sub-C grades",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one course (4 credits) with a P or a passing grade below C can be credited to the major.",
+        "reason": "Program-wide cap on P or below-C credit is not covered by any rule type."
+      },
+      "sourceText": "Of these, no more than one course (4 credits) with a P or a passing grade below C can be credited to the major."
+    }
+  ],
+  "policies": [],
+  "substitutions": [
+    {
+      "id": "climate-science-bs.sub.ams102-ams110",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "AMS 102"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "AMS 110"
+      },
+      "requiresApproval": false,
+      "sourceText": "AMS 110, AMS 310, ECO 320, POL 201, PSY 201, or SOC 202 may be substituted for AMS 102."
+    },
+    {
+      "id": "climate-science-bs.sub.ams102-ams310",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "AMS 102"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "AMS 310"
+      },
+      "requiresApproval": false,
+      "sourceText": "AMS 110, AMS 310, ECO 320, POL 201, PSY 201, or SOC 202 may be substituted for AMS 102."
+    },
+    {
+      "id": "climate-science-bs.sub.ams102-eco320",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "AMS 102"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "ECO 320"
+      },
+      "requiresApproval": false,
+      "sourceText": "AMS 110, AMS 310, ECO 320, POL 201, PSY 201, or SOC 202 may be substituted for AMS 102."
+    },
+    {
+      "id": "climate-science-bs.sub.ams102-pol201",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "AMS 102"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "POL 201"
+      },
+      "requiresApproval": false,
+      "sourceText": "AMS 110, AMS 310, ECO 320, POL 201, PSY 201, or SOC 202 may be substituted for AMS 102."
+    },
+    {
+      "id": "climate-science-bs.sub.ams102-psy201",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "AMS 102"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "PSY 201"
+      },
+      "requiresApproval": false,
+      "sourceText": "AMS 110, AMS 310, ECO 320, POL 201, PSY 201, or SOC 202 may be substituted for AMS 102."
+    },
+    {
+      "id": "climate-science-bs.sub.ams102-soc202",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "AMS 102"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "SOC 202"
+      },
+      "requiresApproval": false,
+      "sourceText": "AMS 110, AMS 310, ECO 320, POL 201, PSY 201, or SOC 202 may be substituted for AMS 102."
+    },
+    {
+      "id": "climate-science-bs.sub.mat131-132-ams151-161",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 131",
+          "MAT 132"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "AMS 151"
+          },
+          {
+            "type": "course",
+            "code": "AMS 161"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "AMS 151 /AMS 161 or MAT 125 /MAT 126 /MAT 127 may be substituted for MAT 131/MAT 132."
+    },
+    {
+      "id": "climate-science-bs.sub.mat131-132-mat125-127",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 131",
+          "MAT 132"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 125"
+          },
+          {
+            "type": "course",
+            "code": "MAT 126"
+          },
+          {
+            "type": "course",
+            "code": "MAT 127"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "AMS 151 /AMS 161 or MAT 125 /MAT 126 /MAT 127 may be substituted for MAT 131/MAT 132."
+    },
+    {
+      "id": "climate-science-bs.sub.che131-che129-che130",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 131"
+        ]
+      },
+      "with": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CHE 129"
+          },
+          {
+            "type": "course",
+            "code": "CHE 130"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "CHE 129 /CHE 130 or CHE 152 may be substituted for CHE 131."
+    },
+    {
+      "id": "climate-science-bs.sub.che131-che152",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CHE 131"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "CHE 152"
+      },
+      "requiresApproval": false,
+      "sourceText": "CHE 129 /CHE 130 or CHE 152 may be substituted for CHE 131."
+    },
+    {
+      "id": "climate-science-bs.sub.phy-ens119-121",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "ENS 119",
+          "PHY 119"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "PHY 121"
+      },
+      "requiresApproval": false,
+      "sourceText": "PHY 121, PHY 125, PHY 131, or PHY 141 may be substituted for ENS 119/PHY 119."
+    },
+    {
+      "id": "climate-science-bs.sub.phy-ens119-125",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "ENS 119",
+          "PHY 119"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "PHY 125"
+      },
+      "requiresApproval": false,
+      "sourceText": "PHY 121, PHY 125, PHY 131, or PHY 141 may be substituted for ENS 119/PHY 119."
+    },
+    {
+      "id": "climate-science-bs.sub.phy-ens119-131",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "ENS 119",
+          "PHY 119"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "PHY 131"
+      },
+      "requiresApproval": false,
+      "sourceText": "PHY 121, PHY 125, PHY 131, or PHY 141 may be substituted for ENS 119/PHY 119."
+    },
+    {
+      "id": "climate-science-bs.sub.phy-ens119-141",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "ENS 119",
+          "PHY 119"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "PHY 141"
+      },
+      "requiresApproval": false,
+      "sourceText": "PHY 121, PHY 125, PHY 131, or PHY 141 may be substituted for ENS 119/PHY 119."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "course",
+          "code": "MAR 459"
+        },
+        "sourceText": "Completion of MAR 459 with a grade of S will also result in fulfillment of the WRTD requirement."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CHE 131",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "MAT 131",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 132",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "One of: NES 101, SUS 101, ECO 108, ECO 110",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ENS 119",
+          "alternatives": [
+            "PHY 119"
+          ],
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ATM 201",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ATM 205",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Sust. Change Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AMS 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Sust. Change Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "GSS 313",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "GSS 314",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MAR 303",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Sust. Change Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ATM 305",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ANT 320",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Sust. Change Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MAR 334",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Sust. Change Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Capstone Project 1",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ATM 397",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Capstone Project 2",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Undergraduate Advisor: Nancy Black, E2361 Melville Library, (631) 632-9404, nancy.black@stonybrook.edu. Director of Undergraduate Studies: Edmund Kar-Man Chang."
+    },
+    {
+      "topic": "other",
+      "text": "Climate Sciences Honors Program (not evaluated): eligibility requires a 3.50 GPA in all courses for the major by the end of the junior year; apply to the SoMAS undergraduate director. Honors requires a research thesis, an oral examination, and a recommendation of the undergraduate research committee; the thesis must be submitted before the end of the graduating semester."
+    },
+    {
+      "topic": "other",
+      "text": "Capstone topics should be climate-related and must be approved by the Division Director."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1566",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

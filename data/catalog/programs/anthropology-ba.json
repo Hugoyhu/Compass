@@ -1,0 +1,524 @@
+{
+  "id": "anthropology-ba",
+  "name": "Anthropology, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Anthropology",
+  "approxCredits": 39,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "anthropology-ba.1",
+      "label": "1",
+      "title": "Core concepts (minimum 18 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "ANT 102"
+          },
+          {
+            "type": "course",
+            "code": "ANT 104"
+          },
+          {
+            "type": "course",
+            "code": "ANT 120"
+          },
+          {
+            "id": "anthropology-ba.1.core-electives",
+            "type": "choose",
+            "count": 3,
+            "from": {
+              "courses": [
+                "ANT 101",
+                "ANT 103",
+                "ANT 200",
+                "ANT 201",
+                "ANT 202",
+                "ANT 225",
+                "ANT 230",
+                "ANT 250",
+                "ANT 277",
+                "ANT 300",
+                "ANT 303",
+                "ANT 304",
+                "ANT 305",
+                "ANT 306",
+                "ANT 355",
+                "ANT 377",
+                "ANT 403",
+                "EBH 200",
+                "EBH 214",
+                "EBH 302",
+                "EBH 316",
+                "EBH 359",
+                "EBH 362",
+                "EBH 404"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Students take the following three (3) courses (9 credits): ANT 102 - What Makes Us Human? 3 credits; ANT 104 - Introduction to Archaeology 3 credits; ANT 120 - Introduction to Biological Anthropology 3 credits. Students also take at least three (3) of the following approved \"Core Concept\" courses for a minimum of 9 credits: ANT 101 - Human Biology 3 credits; ANT 103 - Archaeology for a Better World 3 credits; ANT 200 - Contemporary and Historical Perspectives on Insular Southeast Asia 3 credits; ANT 201 - Human Evolution 3 credits; ANT 202 - People and Pups: Dog Behavior and Human-Canine Relationships 3 credits; ANT 225 - Anthropology of Global Inequality 3 credits; ANT 230 - Peoples of the World 3 credits; ANT 250 - African Cultures Today 3 credits; ANT 277 - The Origins of Art 3 credits; ANT 300 - Human Anatomy 4 credits; ANT 303 - Earth and Life Through Time: Vertebrate Paleontology & Paleoecology (with emphasis on the Turkana Basin) 3 credits *; ANT 304 - Ecology: Linking People and Nature (with emphasis on the Turkana Basin) 3 credits *; ANT 305 - Culture and Language of Madagascar 3 credits *; ANT 306 - Human Evolution (and evidence from the Turkana Basin) 3 credits *; ANT 355 - Ancient African Civilizations 3 credits; ANT 377 - Animal Tool Use 3 credits; ANT 403 - Seminar in Anthropology 3 credits; EBH 200 - The Evolution of Human Behavior 3 credits; EBH 214 - The Evolution of the Human Mind 3 credits; EBH 302 - Human Genetics 3 credits; EBH 316 - The Evolution of the Human Brain 3 credits; EBH 359 - Behavioral Ecology 3 credits; EBH 362 - Evolution of Social Complexity 3 credits; EBH 404 - Evolution of Parenting 3 credits. *study abroad courses"
+    },
+    {
+      "id": "anthropology-ba.2",
+      "label": "2",
+      "title": "Connections (minimum 12 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 4,
+        "from": {
+          "courses": [
+            "ANT 203",
+            "ANT 208",
+            "ANT 210",
+            "ANT 215",
+            "ANT 220",
+            "ANT 222",
+            "ANT 255",
+            "ANT 260",
+            "ANT 268",
+            "ANT 273",
+            "ANT 290",
+            "ANT 307",
+            "ANT 309",
+            "ANT 310",
+            "ANT 311",
+            "ANT 317",
+            "ANT 326",
+            "ANT 350",
+            "ANT 351",
+            "ANT 357",
+            "ANT 360",
+            "ANT 361",
+            "ANT 371",
+            "ANT 379",
+            "ANT 381",
+            "ANT 391",
+            "ANT 407",
+            "ANT 408",
+            "EBH 325",
+            "EBH 331",
+            "EBH 391",
+            "EBH 405"
+          ],
+          "excludeUsedBy": [
+            "anthropology-ba.1"
+          ]
+        }
+      },
+      "sourceText": "Students take four (4) of the following approved \"Connections\" courses for a minimum of 12 credits: ANT 203 - Native Americans 3 credits; ANT 208 - Zombiology: What the Walking Dead Can Teach Us About Real Humans 3 credits; ANT 210 - Sunken Cities and Pirates: The World of Underwater Archaeology 3 credits; ANT 215 - Climate and Culture 3 credits; ANT 220 - Controversies in Human Biology and Behavior 3 credits; ANT 222 - Greek and Roman Mythology through Art & Technology 3 credits; ANT 255 - Forensic Anthropology 3 credits; ANT 260 - How We Eat 3 credits; ANT 268 - Archaeology of Human Origins 3 credits; ANT 273 - The Unstoppable Species? 3 credits; ANT 290 - Science and Technology in Ancient Society 3 credits; ANT 309 - Comparing Ecosystems in Madagascar 3 credits *; ANT 307 - Prehistoric Archaeology of Africa (with emphasis on the Turkana Basin) 3 credits *; ANT 310 - Environments, Ecosystems and Evolution: Evidence from the Turkana Basin 3 credits *; ANT 311 - Immersion in Another Culture 3 credits *; ANT 317 - Climate Change and Human Evolution 3 credits; ANT 326 - Lemurs of Madagascar 3 credits *; ANT 350 - Medical Anthropology 3 credits; ANT 351 - Comparative Religion 3 credits; ANT 357 - Origins of Agriculture 3 credits; ANT 361 - Primate Conservation 3 credits; ANT 360 - Ancient Mesopotamia 3 credits; ANT 371 - Ancient China 3 credits; ANT 379 - Cultural Diversity in China 3 credits; ANT 381 - Applied Anthropology 3 credits; ANT 391 - Topics in Anthropology 3 credits; ANT 407 - Building Bones: Bone Development and Evolution 3 credits; ANT 408 - Pastoralism Under Pressure: Savannas, Societies, and Sustainability in East Africa 3 credits; EBH 325 - Evolution of Sex 3 credits; EBH 331 - Hormones and Behavior 3 credits; EBH 391 - Topics in Human Evolutionary Biology 3 credits; EBH 405 - Life History and Development 3 credits. * study abroad courses"
+    },
+    {
+      "id": "anthropology-ba.3",
+      "label": "3",
+      "title": "Critical thinking and research (minimum 9 credits)",
+      "rule": {
+        "manualCheck": "ANT 321 (3-6 credits), ANT 399 (3-12 credits) and ANT 487 (0-6 credits) are variable-credit; confirm the 9-credit minimum is met by the credits actually earned.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "ANT 308",
+            "ANT 320",
+            "ANT 321",
+            "ANT 322",
+            "ANT 352",
+            "ANT 353",
+            "ANT 359",
+            "ANT 363",
+            "ANT 387",
+            "ANT 399",
+            "ANT 402",
+            "ANT 404",
+            "ANT 406",
+            "ANT 410",
+            "ANT 411",
+            "ANT 415",
+            "ANT 416",
+            "ANT 418",
+            "ANT 419",
+            "ANT 487",
+            "ANT 496",
+            "EBH 204",
+            "EBH 230",
+            "EBH 381",
+            "EBH 401"
+          ],
+          "excludeUsedBy": [
+            "anthropology-ba.1",
+            "anthropology-ba.2"
+          ]
+        }
+      },
+      "sourceText": "Students take three (3) of the following approved \"Critical thinking and research\" courses for a minimum of 9 credits: ANT 308 - Human Origins: Eval Turkana Basin's Fossil Record 3 credits *; ANT 320 - Historical Archaeology 3 credits; ANT 322 - Primate Evolution 3 credits; ANT 321 - Archaeological Field Methods 3-6 credits; ANT 352 - Methods in Studying Primates 3 credits *; ANT 353 - Biodiversity Assessment Methods for Tropical Field Research 3 credits *; ANT 359 - The Archaeology of Food 3 credits; ANT 363 - Approaches in Archaeology 3 credits; ANT 387 - Independent Research Project in Madagascar 3 credits *; ANT 399 - Advanced Field Research in the Turkana Basin 3-12 credits *; ANT 402 - Problems in Anthropology 3 credits; ANT 404 - Human Osteology 3 credits; ANT 406 - Pseudoscience and Anthropology 3 credits; ANT 410 - Ethnobotany and Paleoethnobotany 3 credits; ANT 411 - Comparative Primate Anatomy 4 credits; ANT 415 - Ethnoarchaeology 3 credits; ANT 416 - Research Design in Archaeology 3 credits; ANT 418 - Stone Tools in Human Evolution 3 credits; ANT 419 - Zooarchaeology 3 credits; ANT 487 - Independent Research in Anthropology 0-6 credits; ANT 496 - Senior Honors Project in Anthropology II 3 credits; EBH 204 - Research Skills 3 credits; EBH 230 - Computer-based Biostatistics 4 credits; EBH 381 - Genomics Laboratory 3 credits; EBH 401 - Seminar in Evolutionary Biology of Humans 3 credits. * study abroad courses"
+    },
+    {
+      "id": "anthropology-ba.4",
+      "label": "4",
+      "title": "Communication (Written, 0-credit)",
+      "rule": {
+        "manualCheck": "Student must submit a multi-page paper completed during a 300-level or higher Writing Intensive ANT/EBH course with a grade of C or higher; eligible courses are listed by the Director of Undergraduate Studies.",
+        "type": "course",
+        "code": "ANT 459"
+      },
+      "sourceText": "Students register for the 0-credit ANT 459, and submit a paper completed during a 300-level or higher \"Writing Intensive\" ANT/EBH course that earned a grade of C or higher. Students should contact the Director of Undergraduate Studies for a current list of eligible courses. ANT 459 - Write Effectively in Anthropology 0 credit"
+    },
+    {
+      "id": "anthropology-ba.5",
+      "label": "5",
+      "title": "Communication (Oral, 0-credit)",
+      "rule": {
+        "manualCheck": "Student must document an oral presentation completed during a 300-level or higher Speaking Intensive ANT/EBH course with a grade of C or higher; eligible courses are listed by the Director of Undergraduate Studies.",
+        "type": "course",
+        "code": "ANT 458"
+      },
+      "sourceText": "Students register for the 0-credit ANT 458 and document their delivery of an oral presentation completed during a 300-level or higher \"Speaking Intensive\" ANT/EBH course that earned a grade of C or higher. Students should contact the Director of Undergraduate Studies for a current list of eligible courses. ANT 458 - Speak Effectively Before an Audience 0 credit"
+    },
+    {
+      "id": "anthropology-ba.credits",
+      "label": "credits",
+      "title": "Total credits and upper-division level requirements",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires 39 credits. Of the courses used to fulfill the program learning outcomes, at least 18 credits must be from upper-division courses (300 or 400-level) and at least 6 additional credits must be from 400-level courses.",
+        "reason": "No rule type expresses total program credits or minimum credits by course level across the learning outcome items."
+      },
+      "sourceText": "Completion of the major requires 39 credits. Of the courses used to fulfill the program learning outcomes described below, at least 18 credits must be from upper-division courses (300 or 400-level) and at least 6 additional credits must be from 400-level courses."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "anthropology-ba.1",
+        "anthropology-ba.2",
+        "anthropology-ba.3",
+        "anthropology-ba.4",
+        "anthropology-ba.5"
+      ],
+      "sourceText": "All major courses (including transfer credits) must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "anthropology-ba.1",
+        "anthropology-ba.2",
+        "anthropology-ba.3",
+        "anthropology-ba.4",
+        "anthropology-ba.5"
+      ],
+      "sourceText": "All major courses (including transfer credits) must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ANT 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ANT 120",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ANT 104",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ANT 277",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ANT 360",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EBH 359",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ANT 260",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ANT 300",
+          "credits": 4
+        },
+        {
+          "kind": "course",
+          "code": "ANT 350",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ANT 321",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ANT 408",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ANT 415",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "ANT 418",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "ANT 458",
+          "credits": 0
+        },
+        {
+          "kind": "course",
+          "code": "ANT 459",
+          "credits": 0
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "The Advanced Anthropological Study option (an optional emphasis requiring an approved minor or three additional courses, plus 3 credits of research or reading) is not modeled here. Students must meet with the Director of Undergraduate Studies to declare the option."
+    },
+    {
+      "topic": "advising",
+      "text": "The Anthropology Honors Program (cumulative GPA 3.00, major GPA 3.50, and a one-year honors thesis via ANT 495 and ANT 496) is not modeled here. Students should contact the Director of Undergraduate Studies, Lisa Hildebrand (AnthropologyDUS@stonybrook.edu)."
+    },
+    {
+      "topic": "advising",
+      "text": "Contact the Director of Undergraduate Studies for the current list of eligible Writing Intensive and Speaking Intensive ANT/EBH courses for items 4 and 5."
+    },
+    {
+      "topic": "other",
+      "text": "Courses marked * are study abroad courses (Kenya, Madagascar, and other areas)."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1346",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

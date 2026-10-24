@@ -1,0 +1,201 @@
+{
+  "id": "music-and-technology",
+  "name": "Music and Technology",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 20,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "music-and-technology.basics",
+      "label": "basics",
+      "title": "Basics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MUS 119"
+              },
+              {
+                "type": "course",
+                "code": "MUS 130"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MUS 208"
+          }
+        ]
+      },
+      "sourceText": "Basics: MUS 119 - The Elements of Music 3 credits OR MUS 130 - Sound Structures 3 credits; MUS 208 - Introduction to Music Technology 3 credits"
+    },
+    {
+      "id": "music-and-technology.general",
+      "label": "general",
+      "title": "General",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "MUS 101",
+                "MUS 105"
+              ]
+            }
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "MUS 314",
+                "MUS 320",
+                "MUS 303",
+                "MUS 304",
+                "MUS 306",
+                "MUS 307",
+                "MUS 308",
+                "MUS 309",
+                "MUS 310",
+                "MUS 311",
+                "MUS 313"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "General: One course chosen from the following: MUS 101 - Introduction to Western Classical Music 3 credits; MUS 105 - Music Cultures of the World 3 credits; and one from the following: MUS 314 - Music, Gender, and Sexuality 3 credits; MUS 320 - U.S. Popular Music 3 credits; MUS 303 - Music in the Age of Beethoven 3 credits; MUS 304 - American Music 3 credits; MUS 306 - The Music and Culture of Hip-Hop 3 credits; MUS 307 - Imaginative Worlds of Opera 3 credits; MUS 308 - History of Jazz 3 credits; MUS 309 - Music Since 1900 3 credits; MUS 310 - Music and Culture in the 1960's 3 credits; MUS 311 - Topics in Ethnomusicology 3 credits; MUS 313 - Hearing Politics 3 credits"
+    },
+    {
+      "id": "music-and-technology.specific",
+      "label": "specific",
+      "title": "Specific",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MUS 340"
+              },
+              {
+                "type": "course",
+                "code": "MUS 341"
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "courses": [
+                "MUS 300",
+                "MUS 344",
+                "MUS 437"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Specific: MUS 340 - Timbre and Technology 3 credits OR MUS 341 - Sound Design 3 credits; Two courses chosen from the following: MUS 300 - Music, Technology, and Digital Culture 3 credits; MUS 344 - Audio Engineering 3 credits; MUS 437 - Electronic Music 3 credits"
+    },
+    {
+      "id": "music-and-technology.performance",
+      "label": "performance",
+      "title": "Performance",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "courses": [
+                "MUS 261",
+                "MUS 262",
+                "MUS 263",
+                "MUS 264",
+                "MUS 267",
+                "MUS 268",
+                "MUS 271",
+                "MUS 391"
+              ]
+            }
+          },
+          {
+            "type": "unparsed",
+            "text": "In lieu of two semesters (2 credits) of performance ensemble, a student may take an additional course from #2 or #3 above or MUS 315",
+            "reason": "Substitution refers to other requirement items and an extra course that is not a single pool; cannot be expressed as one choose rule"
+          }
+        ]
+      },
+      "sourceText": "Performance: two semesters of one or more of the following: MUS 261 - Stony Brook Chorale 1 credit; MUS 262 - University Orchestra 1 credit; MUS 263 - University Wind Ensemble 0-1 credit; MUS 264 - Big Band Jazz Ensemble 1 credit; MUS 267 - Small Jazz Ensemble Level 1 6 credits.; MUS 268 - Spirit of Stony Brook Athletic Band 0-2 credits; MUS 271 - Camerata Singers 1 credit; MUS 391 - Chamber Music 1 credit. Notes: (all of the above are by audition only - please note that most instrumental lessons require a co-requisite of an ensemble - please see course descriptions). In lieu of two semesters (2 credits) of performance ensemble, a student may take an additional course from #2 or #3 above or MUS 315."
+    },
+    {
+      "id": "music-and-technology.music-majors",
+      "label": "music-majors",
+      "title": "Requirement for Music majors",
+      "rule": {
+        "type": "unparsed",
+        "text": "If a Music major wants to also do a minor in Music and Technology he/she must undertake a relevant independent project under faculty supervision, taken as a 3 credit CDT 487 Independent Project.",
+        "reason": "Conditional on the student being a Music major; the audit cannot determine major status from the rule set"
+      },
+      "sourceText": "For Music Majors: If a Music major wants to also do a minor in Music and Technology he/she must undertake a relevant independent project under faculty supervision, taken as a 3 credit CDT 487 Independent Project."
+    },
+    {
+      "id": "music-and-technology.credits",
+      "label": "credits",
+      "title": "Minimum credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "This track requires a minimum of 20 credits.",
+        "reason": "Program-wide minimum credit rule not covered by any rule type"
+      },
+      "sourceText": "This track requires a minimum of 20 credits."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students in other majors with interdisciplinary interests will find this minor valuable as preparation for further studies in the arts and culture. The minor is less rigorous than the music major and is not intended to prepare students for advanced study or professional work in music."
+    },
+    {
+      "topic": "other",
+      "text": "Students well-versed in music notation and basic theory (demonstrated by the MUS 119 challenge examination) should take MUS 130 - Sound Structures."
+    },
+    {
+      "topic": "other",
+      "text": "Performance courses are by audition only. Most instrumental lessons require a co-requisite of an ensemble; see course descriptions."
+    },
+    {
+      "topic": "other",
+      "text": "MUS 267 is listed with 6 credits in the catalog text, as printed."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1541",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,582 @@
+{
+  "id": "music-ba",
+  "name": "Music, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Music",
+  "approxCredits": 63,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "music-ba.theory",
+      "label": "theory",
+      "title": "Theory",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MUS 121"
+          },
+          {
+            "type": "course",
+            "code": "MUS 122"
+          },
+          {
+            "type": "course",
+            "code": "MUS 141"
+          },
+          {
+            "type": "course",
+            "code": "MUS 142"
+          },
+          {
+            "type": "course",
+            "code": "MUS 220"
+          },
+          {
+            "type": "course",
+            "code": "MUS 221"
+          },
+          {
+            "type": "course",
+            "code": "MUS 321"
+          },
+          {
+            "type": "course",
+            "code": "MUS 322"
+          },
+          {
+            "type": "course",
+            "code": "MUS 323"
+          },
+          {
+            "type": "course",
+            "code": "MUS 331"
+          },
+          {
+            "type": "course",
+            "code": "MUS 421"
+          },
+          {
+            "type": "course",
+            "code": "MUS 422"
+          }
+        ]
+      },
+      "sourceText": "Theory: MUS 121 - Musicianship I 2 credits; MUS 122 - Beginning Keyboard 1 credit; MUS 141 - Keyboard Harmony A 1 credit; MUS 142 - Keyboard Harmony B 1 credit; MUS 220 - Musicianship II 2 credits; MUS 221 - Musicianship III 2 credits; MUS 321 - Tonal Harmony I 3 credits; MUS 322 - Tonal Harmony II 3 credits; MUS 323 - Techniques of Music, 1880 to the Present 3 credits; MUS 331 - Musicianship IV 2 credits; MUS 421 - Analysis of Tonal Music 3 credits; MUS 422 - Analysis of Post-Tonal Music 3 credits"
+    },
+    {
+      "id": "music-ba.history",
+      "label": "history-and-literature",
+      "title": "History and Literature",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MUS 130"
+          },
+          {
+            "type": "course",
+            "code": "MUS 350"
+          },
+          {
+            "type": "course",
+            "code": "MUS 351"
+          },
+          {
+            "type": "course",
+            "code": "MUS 352"
+          }
+        ]
+      },
+      "sourceText": "History and Literature: MUS 130 - Sound Structures 3 credits; MUS 350 - Western Classical Music Before 1750 4 credits; MUS 351 - Western Classical Music 1750 to 1900 4 credits; MUS 352 - Western Classical Music from 1900 to the Present 4 credits"
+    },
+    {
+      "id": "music-ba.history-electives",
+      "label": "additional-history-and-electives",
+      "title": "Two additional music history courses, or one additional history course plus one other elective",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "ranges": [
+                    {
+                      "subject": "MUS",
+                      "from": 450,
+                      "to": 451
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "ranges": [
+                    {
+                      "subject": "MUS",
+                      "from": 450,
+                      "to": 451
+                    }
+                  ]
+                }
+              },
+              {
+                "manualCheck": "MUS 487 projects used for this elective must be approved by the Undergraduate Studies Committee one semester before the course is undertaken. Such projects may include a lecture-recital or full recital with researched program notes. MUS 487 is 0-6 credits.",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "MUS 432",
+                    "MUS 434",
+                    "MUS 439",
+                    "MUS 487"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Two additional music history courses numbered 450 or 451 (each semester a different topic will be offered) or one additional history course numbered 450 or 451 plus one other elective selected from the following: MUS 432 - Counterpoint; MUS 434 - Orchestration; MUS 439 - Advanced Composition 3 credits; MUS 487 - Independent Project 0-6 credits. All 487 projects which are to used to fulfill the elective requirement must be approved by the Undergraduate Studies Committee one semester before the course is to be undertaken. Such projects may include a lecture-recital or full recital with researched program notes."
+    },
+    {
+      "id": "music-ba.individual-instrument",
+      "label": "individual-instrument",
+      "title": "Study of Individual Instrument or Voice",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "manualCheck": "Minimum of four semesters from the Performance Study series MUS 161-MUS 187 (2 credits each) or Advanced Performance Study series MUS 361-MUS 387 (4 credits each). Confirm the actual course numbers in the series.",
+            "type": "choose",
+            "count": 4,
+            "from": {
+              "ranges": [
+                {
+                  "subject": "MUS",
+                  "from": 161,
+                  "to": 187
+                },
+                {
+                  "subject": "MUS",
+                  "from": 361,
+                  "to": 387
+                }
+              ]
+            }
+          },
+          {
+            "manualCheck": "Verify ensemble co-registration for each semester of individual instruction.",
+            "type": "unparsed",
+            "text": "Mandatory co-registration in a performance ensemble for each semester of lessons. Instrumentalists should enroll in MUS 262 - University Orchestra, MUS 263 - University Wind Ensemble, or MUS 264 - Big Band Jazz Ensemble. Singers should enroll in MUS 261 - Stony Brook Chorale. Pianists and guitarists should enroll in MUS 391 - Chamber Music.",
+            "reason": "Co-registration must match each semester of lessons, which the audit's course-selection rules cannot tie to individual semesters."
+          }
+        ]
+      },
+      "sourceText": "Study of Individual Instrument or Voice: a. A minimum of four semesters from courses in the series MUS 161-MUS 187 Performance Study (2 credits each) or MUS 361-MUS 387 Advanced Performance Study (4 credits each). b. Mandatory co-registration in a performance ensemble for each semester of lessons. Instrumentalists should enroll in MUS 262 - University Orchestra, MUS 263 - University Wind Ensemble, or MUS 264 - Big Band Jazz Ensemble. Singers should enroll in MUS 261 - Stony Brook Chorale. Pianists and guitarists should enroll in MUS 391 - Chamber Music."
+    },
+    {
+      "id": "music-ba.performance-credit-cap",
+      "label": "performance-credit-cap",
+      "title": "Individual instruction credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than 30 credits of individual instruction in instrument or voice may be included in the 120 credits required for the B.A. degree.",
+        "reason": "This is a degree-wide cap on individual instruction credits, not a major course-selection rule."
+      },
+      "sourceText": "Note: No more than 30 credits of individual instruction in instrument or voice may be included in the 120 credits required for the B.A. degree."
+    },
+    {
+      "id": "music-ba.total-credits",
+      "label": "total-credits",
+      "title": "Major credit total",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires 63 credits.",
+        "reason": "A major-wide credit total is not covered by any available rule type."
+      },
+      "sourceText": "Completion of the major requires 63 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "music-ba.theory",
+        "music-ba.history",
+        "music-ba.history-electives",
+        "music-ba.individual-instrument"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "music-ba.theory",
+        "music-ba.history",
+        "music-ba.history-electives",
+        "music-ba.individual-instrument"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MUS 121",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "MUS 122",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MUS 130",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MUS 321",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Performance Study",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "Ensemble (1-2 credits)",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MUS 220",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "MUS 141",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MUS 322",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MUS 350",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Performance Study",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "Ensemble (1-2 credits)",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MUS 221",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "MUS 142",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MUS 323",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MUS 351",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Performance Study",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "Ensemble (1-2 credits)",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MUS 331",
+          "credits": 2
+        },
+        {
+          "kind": "course",
+          "code": "MUS 421",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "MUS 352",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Performance Study",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "Ensemble (1-2 credits)",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "MUS 422",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MUS 450",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Performance Study (2-4 credits)",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "Ensemble (1-2 credits)",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 6
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Performance Study (2-4 credits)",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "Ensemble (1-2 credits)",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-Division Music Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 9
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Performance Study (2-4 credits)",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "Ensemble (1-2 credits)",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Performance Study (2-4 credits)",
+          "credits": 2
+        },
+        {
+          "kind": "placeholder",
+          "label": "Ensemble (1-2 credits)",
+          "credits": 1
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-Division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-Division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MUS 459",
+          "credits": 0
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Any student wishing to major in Music must pass an audition in voice or instrument and a musicianship examination that tests aural skills and musical literacy (elementary theory, interval recognition, simple melodic, harmonic, and rhythmic dictation, and sight singing). The undergraduate musicianship examination is given four times each year: the first or second day of each semester, in February, and at the end of April. Auditions are held in the General and Scholarship Auditions in February of each year and during the first week of classes. Students should consult the Department office or contact the director of undergraduate studies to sign up for the undergraduate musicianship examination and to make an appointment for an audition."
+    },
+    {
+      "topic": "advising",
+      "text": "The department offers a Bachelor of Arts degree in Music with no specific tracks in performance, history, composition, or theory. Students are encouraged to select electives that reflect their individual interests and potential careers."
+    },
+    {
+      "topic": "advising",
+      "text": "Students who intend to continue their studies beyond the B.A. degree are advised that most graduate music programs require a reading knowledge of French or German, often both. (For this purpose, but not for the entry skill in foreign language requirement, language courses may be taken under the Pass/No Credit option.)"
+    },
+    {
+      "topic": "other",
+      "text": "Music Honors Program: candidates must be nominated by a faculty sponsor and maintain at least a 3.00 cumulative GPA and a 3.50 GPA in music to be eligible; after entering, a 3.50 GPA in music must be maintained. Students register for MUS 495 and complete a project with a speaking component, reviewed by an evaluating committee. Guidelines are available from the director of undergraduate studies."
+    },
+    {
+      "topic": "sbc",
+      "text": "The SBC table lists major courses that can also satisfy SBC requirements; it is per-course information and is not evaluated here. Note 5: DIV requirements apply to freshmen who matriculate in Fall 2019 or later, transfer students who matriculate in Spring 2020 or later, and students who rematriculate in Fall 2019 or later."
+    },
+    {
+      "topic": "other",
+      "text": "Sample sequence footnote: Students may take another history class, 450, or any of the following: 439, 491, 432, 434, or 437."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1538",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

@@ -1,0 +1,601 @@
+{
+  "id": "womens-and-gender-studies-ba",
+  "name": "Women’s and Gender Studies, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Women’s and Gender Studies",
+  "approxCredits": 36,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "womens-and-gender-studies-ba.core",
+      "label": "core",
+      "title": "Core Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "WST 102"
+              },
+              {
+                "type": "course",
+                "code": "WST 103"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "WST 291"
+          },
+          {
+            "type": "course",
+            "code": "WST 301"
+          },
+          {
+            "type": "course",
+            "code": "WST 305"
+          },
+          {
+            "type": "course",
+            "code": "WST 408"
+          }
+        ]
+      },
+      "sourceText": "Core Courses: WST 102 - Introduction to Women’s and Gender Studies in the Social Sciences OR WST 103 - Gender, Culture, and Difference; WST 291 - Introduction to Feminist Theory; WST 301 - Histories of Feminism; WST 305 - Feminist Theories in Context; WST 408 - Senior Research Seminar for Women’s and Gender Studies Majors"
+    },
+    {
+      "id": "womens-and-gender-studies-ba.focused",
+      "label": "focused",
+      "title": "Focused Studies",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "womens-and-gender-studies-ba.focused.global",
+            "manualCheck": "Category is WST 395 (Topics in Global Feminism) or approved replacements; per the replacement list, only courses listed under the WST 395 heading may fill this slot. WST 391 and similar topics must match the department’s approved topic lists.",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "WST 395",
+                "JPN 332",
+                "SOC 391",
+                "SOC 394",
+                "WST 334",
+                "WST 360",
+                "WST 350",
+                "AFS 350",
+                "WST 382",
+                "AFH 382",
+                "EGL 382"
+              ]
+            }
+          },
+          {
+            "id": "womens-and-gender-studies-ba.focused.race",
+            "manualCheck": "Category is WST 398 (Topics in Gender, Race, and Ethnicity) or approved replacements; only courses listed under the WST 398 heading may fill this slot.",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "WST 398",
+                "HIS 300",
+                "HIS 396",
+                "WST 372",
+                "EGL 372",
+                "WST 237",
+                "HUI 237",
+                "WST 391",
+                "HUI 390",
+                "EGL 369"
+              ],
+              "excludeUsedBy": [
+                "womens-and-gender-studies-ba.focused.global"
+              ]
+            }
+          },
+          {
+            "id": "womens-and-gender-studies-ba.focused.sexuality",
+            "manualCheck": "Category is WST 399 (Topics in Gender and Sexuality) or approved replacements; only courses listed under the WST 399 heading may fill this slot. WST 394 counts only with the approved topic “Psychology of Reproduction”; confirm topic.",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "WST 399",
+                "CCS 325",
+                "EGL 390",
+                "SOC 391",
+                "WST 111",
+                "WST 112",
+                "WST 394",
+                "WST 381",
+                "AFS 381",
+                "WST 390",
+                "WST 374",
+                "HIS 374",
+                "WST 340",
+                "SOC 340"
+              ],
+              "excludeUsedBy": [
+                "womens-and-gender-studies-ba.focused.global",
+                "womens-and-gender-studies-ba.focused.race"
+              ]
+            }
+          },
+          {
+            "manualCheck": "Confirm at least two of the focused-studies courses are WST topics courses taught by WGSS faculty or affiliated instructors.",
+            "type": "unparsed",
+            "text": "At least two WST topics courses (taught by WGSS faculty or affiliated instructors) must be used in satisfying Requirement B.",
+            "reason": "Requires counting WST topics courses across the focused-studies slots and checking instructor affiliation, which the rule types cannot express or verify from a transcript."
+          }
+        ]
+      },
+      "sourceText": "One course in each of the following categories (see Note 1): WST 395 - Topics in Global Feminism (or approved other course); WST 398 - Topics in Gender, Race, and Ethnicity (or approved other course); WST 399 - Topics in Gender and Sexuality (or approved other course). Notes: At least two WST topics courses (taught by WGSS faculty or affiliated instructors) must be used in satisfying Requirement B."
+    },
+    {
+      "id": "womens-and-gender-studies-ba.electives",
+      "label": "electives",
+      "title": "Electives (12 credits)",
+      "rule": {
+        "manualCheck": "Several listed courses count only with the approved topics noted in the catalog (e.g., AAS 392 “Caste & Gender in Hindu Law”; ARH 391 “Images of Women in Visual Culture”; SOC 391 approved topics; HIS 393 approved topics). Other courses may qualify if at least half their content addresses women, gender, and/or sexuality, subject to approval by the Undergraduate Program Director. Availability depends on departments.",
+        "type": "choose",
+        "credits": 12,
+        "from": {
+          "courses": [
+            "AAS 331",
+            "AAS 372",
+            "AAS 392",
+            "AFH 382",
+            "AFS 345",
+            "AFS 350",
+            "AFS 370",
+            "AFS 381",
+            "ARH 391",
+            "BIO 358",
+            "CCS 311",
+            "CLL 315",
+            "CLT 122",
+            "CLT 123",
+            "CLT 301",
+            "EGL 276",
+            "EGL 362",
+            "EGL 367",
+            "EGL 371",
+            "EGL 372",
+            "EUR 390",
+            "HIS 336",
+            "HIS 360",
+            "HIS 340",
+            "HIS 392",
+            "HIS 393",
+            "HIS 396",
+            "HIS 401",
+            "HUI 231",
+            "HUI 235",
+            "HUI 237",
+            "MUS 314",
+            "PHI 284",
+            "PHI 384",
+            "POL 330",
+            "POL 347",
+            "PSY 347",
+            "PSY 349",
+            "RLS 366",
+            "SOC 247",
+            "SOC 304",
+            "SOC 340",
+            "SOC 371",
+            "SOC 390",
+            "SOC 391",
+            "SOC 394",
+            "SOC 395",
+            "SPN 410"
+          ],
+          "subjects": [
+            "WST"
+          ],
+          "excludeUsedBy": [
+            "womens-and-gender-studies-ba.core",
+            "womens-and-gender-studies-ba.focused.global",
+            "womens-and-gender-studies-ba.focused.race",
+            "womens-and-gender-studies-ba.focused.sexuality"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "WST 447",
+                "WST 487"
+              ]
+            },
+            "maxCredits": 6
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "WST 475"
+              ]
+            },
+            "maxCredits": 3
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "WST 488"
+              ]
+            },
+            "maxCredits": 6
+          }
+        ]
+      },
+      "sourceText": "Electives (12 credits): Any non-required WST Courses; AAS 331; AAS 372; AAS 392 (approved topic: “Caste & Gender in Hindu Law”); AFH 382; AFS 345; AFS 350; AFS 370; AFS 381; ARH 391 (approved topic: “Images of Women in Visual Culture”); BIO 358; CCS 311; CLL 315; CLT 122; CLT 123; CLT 301 (approved topic: “Queer Modernities”); EGL 276; EGL 362; EGL 367; EGL 371; EGL 372; EUR 390; HIS 336; HIS 360; HIS 340; HIS 392; HIS 393; HIS 396; HIS 401; HUI 231; HUI 235; HUI 237; MUS 314; PHI 284; PHI 384; POL 330; POL 347; PSY 347; PSY 349; RLS 366; SOC 247; SOC 304; SOC 340; SOC 371; SOC 390; SOC 391; SOC 394; SOC 395; SPN 410. No more than six credits from WST 447 and WST 487 may be applied toward the major. No more than 3 credits of WST 475 may be counted towards a WST Major. No more than 6 credits of WST 488 may be counted towards a WST Major."
+    },
+    {
+      "id": "womens-and-gender-studies-ba.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Confirm ten typewritten pages of upper-division writing from an approved course, judged satisfactory by the instructor; normally completed through WST 408.",
+        "type": "unparsed",
+        "text": "Present to the director of undergraduate studies a minimum of ten typewritten pages of formal writing, prepared for an upper-division course listed above as acceptable for the major requirements, judged by the course instructor to be satisfactory for the upper-division writing requirement in Women’s and Gender Studies. Normally met through WST 408.",
+        "reason": "Requires a page count and instructor judgment that cannot be checked from a transcript."
+      },
+      "sourceText": "Students must present to the director of undergraduate studies a minimum of ten typewritten pages of formal writing, prepared for an upper-division course listed above as acceptable for the major requirements. This written work must have been judged by the course instructor to be satisfactory for the upper-division writing requirement in the field of Women’s and Gender Studies. Normally this requirement is met through the work in WST 408."
+    },
+    {
+      "id": "womens-and-gender-studies-ba.upper-division-credits",
+      "label": "upper-division-credits",
+      "title": "Upper-division credit minimum",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 18 credits must be in courses numbered 300 or higher.",
+        "reason": "Program-wide credit-level minimum that no rule type covers across all major requirements."
+      },
+      "sourceText": "At least 18 credits must be in courses numbered 300 or higher."
+    },
+    {
+      "id": "womens-and-gender-studies-ba.lower-division-limit",
+      "label": "lower-division-limit",
+      "title": "100-level course limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than two 100-level courses may be applied toward major requirements.",
+        "reason": "Program-wide cap on course level that no rule type covers across all major requirements."
+      },
+      "sourceText": "No more than two 100-level courses may be applied toward major requirements."
+    },
+    {
+      "id": "womens-and-gender-studies-ba.pnc-limit",
+      "label": "pnc-limit",
+      "title": "Pass/No Credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than three credits offered for the major may be taken Pass/No Credit or Satisfactory/Unsatisfactory.",
+        "reason": "Program-wide cap on Pass/No Credit credits that no rule type covers."
+      },
+      "sourceText": "No more than three credits offered for the major may be taken Pass/No Credit or Satisfactory/Unsatisfactory."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "womens-and-gender-studies-ba.core",
+        "womens-and-gender-studies-ba.focused",
+        "womens-and-gender-studies-ba.electives"
+      ],
+      "sourceText": "All other courses for the major must be passed with a letter grade of C or higher. No transferred course with a grade lower than C may be applied toward major requirements."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "WST 102",
+          "alternatives": [
+            "WST 103"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Major Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "WST 291",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Major elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "WST 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "WST 395",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "WST 399",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "WST 305",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "WST 398",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Major elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Major elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "WST 408",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Major elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students wishing to complete the major should consult the Department and establish an advising folder by the beginning of the junior year."
+    },
+    {
+      "topic": "grading",
+      "text": "Courses transferred with a grade lower than C may not be applied toward major requirements. Up to three credits may be taken Pass/No Credit or Satisfactory/Unsatisfactory."
+    },
+    {
+      "topic": "other",
+      "text": "Honors program: students with a 3.50 GPA in the WaGS major and a 3.00 overall GPA may enroll before the end of the junior year. Honors students take WST 495 and WST 496 in lieu of WST 408 and complete 39 credits for the major. Honors is conferred with distinction and a 3.50 GPA in all senior-year WST courses. Not modeled here."
+    },
+    {
+      "topic": "other",
+      "text": "Optional specializations in Gender, Sexuality, and Public Health and in Gender and Social Change (18 credits each, including a 3-credit internship) are not required for the major and are not modeled here."
+    },
+    {
+      "topic": "other",
+      "text": "Accelerated and combined Women’s and Gender Studies B.A. and Master of Public Health options are available; see the program director. Not modeled here."
+    },
+    {
+      "topic": "sbc",
+      "text": "Students completing the Stony Brook Curriculum must complete a course satisfying the WRTD learning objective; the Upper Division Writing Requirement is consistent in most cases with WRTD."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1501",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

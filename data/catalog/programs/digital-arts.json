@@ -1,0 +1,406 @@
+{
+  "id": "digital-arts",
+  "name": "Digital Arts",
+  "kind": "minor",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "digital-arts.core",
+      "label": "Core A",
+      "title": "Core Course",
+      "rule": {
+        "type": "course",
+        "code": "ARS 225"
+      },
+      "sourceText": "1 Core \"A\"; Core Courses: ARS 225 - Introduction to Digital Art 3 credits"
+    },
+    {
+      "id": "digital-arts.foundations",
+      "label": "Foundations B",
+      "title": "Foundations Course",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "ARS 205",
+            "ARH 207"
+          ]
+        }
+      },
+      "sourceText": "1 Foundations Course \"B\"; Foundations: ARS 205 - Foundations: Idea and Form 3 credits; ARH 207 - Digital Media: History/Theory 3 credits"
+    },
+    {
+      "id": "digital-arts.intermediate",
+      "label": "Intermediate C",
+      "title": "Intermediate Production Course",
+      "rule": {
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "ARS 319",
+            "ARS 324",
+            "ARS 325",
+            "ARS 326",
+            "ARS 327",
+            "ARS 328",
+            "ARS 329",
+            "ARS 384",
+            "ARS 425",
+            "ARS 317",
+            "MUS 340",
+            "MUS 341"
+          ]
+        }
+      },
+      "sourceText": "1 Intermediate Course \"C\"; Intermediate Production Courses: ARS 319 - Art + the Brain 3 credits; ARS 324 - Digital Arts: Design 3 credits; ARS 325 - Digital Arts: Print 3 credits; ARS 326 - Video Art: Narrative Forms 3 credits; ARS 327 - Digital Arts: Web Design and Culture 3 credits; ARS 328 - Digital Arts: Animation 3 credits; ARS 329 - Video Art: Experimental Forms 3 credits; ARS 384 - Art, Media and Technology 3 credits; ARS 425 - Advanced New Media Art 3 credits; ARS 317 - Interactive Media, Performance, and Installation; MUS 340 - Timbre and Technology 3 credits; MUS 341 - Sound Design 3 credits"
+    },
+    {
+      "id": "digital-arts.additional-production",
+      "label": "Additional Production C or D",
+      "title": "Additional Production Course",
+      "rule": {
+        "manualCheck": "Pre-approval is required for 487 projects and 488 internships. ARS 492 applies to approved topics only. ISE 488 applies to approved internships only. ARS 317 has no credit value stated on the page.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "ARS 319",
+            "ARS 324",
+            "ARS 325",
+            "ARS 326",
+            "ARS 327",
+            "ARS 328",
+            "ARS 329",
+            "ARS 384",
+            "ARS 425",
+            "ARS 317",
+            "MUS 340",
+            "MUS 341",
+            "ARS 281",
+            "ARS 381",
+            "ARS 481",
+            "ARS 390",
+            "ARS 491",
+            "ARS 492",
+            "ARS 402",
+            "ARS 487",
+            "ARS 488",
+            "MUS 488",
+            "THR 488",
+            "CCS 488",
+            "CSE 488",
+            "ISE 488",
+            "CSE 102",
+            "ISE 102",
+            "CSE 114",
+            "CSE 214",
+            "CSE 325",
+            "CSE 334",
+            "CSE 364",
+            "CSE 380",
+            "CSE 381",
+            "ESE 123",
+            "ESE 124",
+            "EST 205",
+            "ISE 108",
+            "ISE 208",
+            "ISE 332",
+            "ISE 340",
+            "EST 310",
+            "MUS 344"
+          ],
+          "excludeUsedBy": [
+            "digital-arts.core",
+            "digital-arts.foundations",
+            "digital-arts.intermediate"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "ARS 487"
+              ]
+            },
+            "maxCredits": 3
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "ARS 488"
+              ]
+            },
+            "maxCredits": 6
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "MUS 488"
+              ]
+            },
+            "maxCredits": 6
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "THR 488"
+              ]
+            },
+            "maxCredits": 6
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "CCS 488"
+              ]
+            },
+            "maxCredits": 6
+          }
+        ]
+      },
+      "sourceText": "1 Additional Production Courses \"C or D\"; Other Production Courses (listed under Other Production Courses, with Intermediate Production Courses as category C)"
+    },
+    {
+      "id": "digital-arts.electives",
+      "label": "Additional Elective 2 C, D or E",
+      "title": "Additional Elective Courses",
+      "rule": {
+        "manualCheck": "Pre-approval is required for 487 projects, 488 internships, and the topics courses ARS 390, ARS 491, ARS 492, ARH 308, and ARH 400 (ARH 490 is also listed in the page's pre-approval note). ISE 488 applies to approved internships only and ARS 492 to approved topics only.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "ARS 319",
+            "ARS 324",
+            "ARS 325",
+            "ARS 326",
+            "ARS 327",
+            "ARS 328",
+            "ARS 329",
+            "ARS 384",
+            "ARS 425",
+            "ARS 317",
+            "MUS 340",
+            "MUS 341",
+            "ARS 281",
+            "ARS 381",
+            "ARS 481",
+            "ARS 390",
+            "ARS 491",
+            "ARS 492",
+            "ARS 402",
+            "ARS 487",
+            "ARS 488",
+            "MUS 488",
+            "THR 488",
+            "CCS 488",
+            "CSE 488",
+            "ISE 488",
+            "CSE 102",
+            "ISE 102",
+            "CSE 114",
+            "CSE 214",
+            "CSE 325",
+            "CSE 334",
+            "CSE 364",
+            "CSE 380",
+            "CSE 381",
+            "ESE 123",
+            "ESE 124",
+            "EST 205",
+            "ISE 108",
+            "ISE 208",
+            "ISE 332",
+            "ISE 340",
+            "EST 310",
+            "MUS 344",
+            "ARH 208",
+            "ARH 210",
+            "ARH 308",
+            "ARH 322",
+            "ARH 333",
+            "ARH 336",
+            "ARH 344",
+            "ARH 348",
+            "ARH 400",
+            "CCS 301",
+            "CCS 311",
+            "CCS 313",
+            "CCS 391",
+            "CCS 392",
+            "CCS 393",
+            "CCS 394",
+            "CCS 395",
+            "CCS 401",
+            "CSE 301",
+            "ESE 201",
+            "ESG 100",
+            "MUS 300",
+            "THR 277",
+            "THR 403"
+          ],
+          "excludeUsedBy": [
+            "digital-arts.core",
+            "digital-arts.foundations",
+            "digital-arts.intermediate",
+            "digital-arts.additional-production"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "ARS 487"
+              ]
+            },
+            "maxCredits": 3
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "ARS 488"
+              ]
+            },
+            "maxCredits": 6
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "MUS 488"
+              ]
+            },
+            "maxCredits": 6
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "THR 488"
+              ]
+            },
+            "maxCredits": 6
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "CCS 488"
+              ]
+            },
+            "maxCredits": 6
+          }
+        ]
+      },
+      "sourceText": "2 Additional Elective Courses \"C,D or E\"; Notes: No more than six credits from any internship (488) may be applied to the minor. No more than three credits from ARS 487 may be applied to the minor."
+    },
+    {
+      "id": "digital-arts.theory-culture",
+      "label": "Theory & Culture E",
+      "title": "Theory and Culture Course",
+      "rule": {
+        "manualCheck": "ARH 308 applies to approved topics only; ARH 400 requires pre-approval.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "ARH 208",
+            "ARH 210",
+            "ARH 308",
+            "ARH 322",
+            "ARH 333",
+            "ARH 336",
+            "ARH 344",
+            "ARH 348",
+            "ARH 400",
+            "CCS 301",
+            "CCS 311",
+            "CCS 313",
+            "CCS 391",
+            "CCS 392",
+            "CCS 393",
+            "CCS 394",
+            "CCS 395",
+            "CCS 401",
+            "CSE 301",
+            "ESE 201",
+            "ESG 100",
+            "EST 310",
+            "ISE 340",
+            "MUS 300",
+            "THR 277",
+            "THR 403"
+          ],
+          "excludeUsedBy": [
+            "digital-arts.core",
+            "digital-arts.foundations",
+            "digital-arts.intermediate",
+            "digital-arts.additional-production",
+            "digital-arts.electives"
+          ]
+        }
+      },
+      "sourceText": "1 Theory & Culture Course \"E\"; Theory and Culture Courses: ARH 208 - History of Photography 3 credits; ARH 210 - The Art and Technology of Film 3 credits; ARH 308 - Writing About Art 3 credits (approved topics only); ARH 322; ARH 333; ARH 336; ARH 344; ARH 348; ARH 400; CCS 301; CCS 311; CCS 313; CCS 391-394; CCS 395; CCS 401; CSE 301; ESE 201; ESG 100; EST 310; ISE 340; MUS 300; THR 277; THR 403"
+    },
+    {
+      "id": "digital-arts.credit-rules",
+      "label": "Credit rules",
+      "title": "Minor credit total and upper-division credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21 credits. Nine or more credits for the minor must be upper division.",
+        "reason": "Program-wide credit total and upper-division credit minimum are not expressible with the available rule types."
+      },
+      "sourceText": "Completion of the minor requires 21 credits. Nine or more credits for the minor must be upper division."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "digital-arts.core",
+        "digital-arts.foundations",
+        "digital-arts.intermediate",
+        "digital-arts.additional-production",
+        "digital-arts.electives",
+        "digital-arts.theory-culture"
+      ],
+      "sourceText": "All letter-graded courses for the minor in Digital Arts must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Program Advisor: Izumi Ashizawa, Izumi.Ashizawa@stonybrook.edu. Pre-approval is required for appropriate 487 projects and 488 internships, and for topics courses (ARS 390, ARS 491, ARS 492, ARH 308, ARH 400, ARH 490)."
+    },
+    {
+      "topic": "other",
+      "text": "No more than six credits from any internship (488) may be applied to the minor. No more than three credits from ARS 487 may be applied to the minor."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1418",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

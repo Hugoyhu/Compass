@@ -1,0 +1,137 @@
+{
+  "id": "professional-writing",
+  "name": "Professional Writing",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "professional-writing.required",
+      "label": "required",
+      "title": "Required Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "WRT 102"
+          },
+          {
+            "type": "course",
+            "code": "WRT 200"
+          },
+          {
+            "type": "course",
+            "code": "WRT 201"
+          },
+          {
+            "type": "course",
+            "code": "WRT 304"
+          }
+        ]
+      },
+      "sourceText": "Required Courses: WRT 102 - Intermediate Writing Workshop 3 credits, WRT 200 - The Rhetoric of Grammar and Style 3 credits; WRT 201 - Principles of Professional Writing 3 credits; WRT 304 - Writing for Your Profession 3 credits"
+    },
+    {
+      "id": "professional-writing.electives",
+      "label": "electives",
+      "title": "Elective Courses (choose any three)",
+      "rule": {
+        "manualCheck": "WRT 301 counts only when offered with topic \"Technical Communications\". WRT 302 counts only when offered with a relevant topic such as \"Writing for the Social Sciences,\" \"Writing for the New Media,\" \"Communicating Across Cultures and Contexts,\" \"Rhetoric and Culture,\" \"Visual Rhetoric,\" \"Global Literacies,\" \"Feminist Rhetorics,\" \"Fiction Writing,\" \"Creative Nonfiction,\" \"Playwriting,\" or \"Practice of Editing and Publishing\". WRT 377 topic is not specified on the page. WRT 487 and WRT 488 carry 0-6 credits each.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "WRT 300",
+            "WRT 301",
+            "WRT 302",
+            "WRT 303",
+            "WRT 305",
+            "WRT 306",
+            "WRT 307",
+            "WRT 319",
+            "WRT 320",
+            "WRT 321",
+            "WRT 375",
+            "WRT 376",
+            "WRT 377",
+            "WRT 380",
+            "WRT 381",
+            "WRT 382",
+            "WRT 487",
+            "WRT 488"
+          ],
+          "excludeUsedBy": [
+            "professional-writing.required"
+          ]
+        }
+      },
+      "sourceText": "Elective Courses (choose any three): WRT 300 - Theories and Methods in Rhetoric and Writing 3 credits; WRT 301 - Writing in the Disciplines: Special Topics 3 credits when offered with topic \"Technical Communications\"; WRT 302 - Critical Writing Seminar: Special Topics 3 credits when offered with a relevant topic, such as \"Writing for the Social Sciences,\" \"Writing for the New Media,\" \"Communicating Across Cultures and Contexts,\" \"Rhetoric and Culture,\" \"Visual Rhetoric\", \"Global Literacies,\" \"Feminist Rhetorics,\" \"Fiction Writing,\" \"Creative Nonfiction,\" \"Playwriting,\" and \"Practice of Editing and Publishing\"; WRT 303 - The Personal Essay 3 credits; WRT 305 - Writing for the Health Professions 3 credits; WRT 306 - Tutor Training 3 credits; WRT 307 - Rhetoric of Science, Technology, and Medicine 3 credits; WRT 319 - Nonprofit Business Writing 3 credits; WRT 320 - Rhetoric and Culture 3 credits; WRT 321 - Rhetoric of Social Movements 3 credits; WRT 375 - Technical Communication 3 credits; WRT 376 - Digital Rhetorics 3 credits; WRT 377 - Special Topics in Digital Writing 3 credits; WRT 380 - Advanced Research Writing: Theories, Methods, Practices 3 credits; WRT 381 - Advanced Analytic and Argumentative Writing 3 credits; WRT 382 - Grant Writing 3 credits; WRT 487 - Independent Project 0-6 credits; WRT 488 - Internship 0-6 credits"
+    },
+    {
+      "id": "professional-writing.total-credits",
+      "label": "total-credits",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21 credits.",
+        "reason": "Program-wide total credit requirement is not covered by a rule type; the audit should check the 21-credit total."
+      },
+      "sourceText": "Completion of the minor requires 21 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "professional-writing.required",
+        "professional-writing.electives"
+      ],
+      "sourceText": "Courses taken for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "professional-writing.required",
+        "professional-writing.electives"
+      ],
+      "sourceText": "Courses taken for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 15,
+      "appliesTo": [
+        "professional-writing.required",
+        "professional-writing.electives"
+      ],
+      "sourceText": "At least 15 of the 21 credits must be taken at Stony Brook University."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Transfer credits are awarded by permission of the Program in Writing and Rhetoric's Undergraduate Program Director."
+    },
+    {
+      "topic": "advising",
+      "text": "Students are encouraged to complete an experientially-based project under a Program in Writing and Rhetoric faculty member's mentorship."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1525",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

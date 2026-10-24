@@ -1,0 +1,701 @@
+{
+  "id": "education-and-teacher-certification",
+  "name": "Education and Teacher Certification",
+  "kind": "major",
+  "degree": "Teacher certification in addition to a departmental or interdisciplinary major (no separate degree stated)",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "education-and-teacher-certification.language",
+      "label": "language",
+      "title": "Language other than English",
+      "rule": {
+        "type": "unparsed",
+        "text": "One year of a language other than English at the college level on a transcript of record with grades of \"C\" or better. May be met through American Sign Language as well as foreign languages. Some majors have more extensive language requirements.",
+        "reason": "Language study is described by level and grade, not by a fixed course list, so it cannot be matched to specific course codes."
+      },
+      "sourceText": "All teacher candidates must have one year of a language other than English at the college level on a transcript of record with grades of \"C\" or better. This requirement may be met through the study of American Sign Language as well as foreign languages. Please note that some majors have more extensive language requirements."
+    },
+    {
+      "id": "education-and-teacher-certification.content-credits",
+      "label": "content-credits",
+      "title": "Content field credits",
+      "rule": {
+        "manualCheck": "Verify with the program director for the certification content area that at least 36 content-field credits are completed.",
+        "type": "unparsed",
+        "text": "Complete all requirements of the chosen academic major, with a minimum of 36 credits in the content field required for teacher certification.",
+        "reason": "The content field is defined by each academic department and is not listed by course in this catalog section."
+      },
+      "sourceText": "Students must complete all requirements of their chosen academic major, with a minimum of 36 credits in the content field required for teacher certification. Stony Brook requirements exceed NYSED requirements in most instances."
+    },
+    {
+      "id": "education-and-teacher-certification.fieldwork-student-teaching",
+      "label": "fieldwork-student-teaching",
+      "title": "Fieldwork and student teaching",
+      "rule": {
+        "manualCheck": "Confirm 100 fieldwork hours and 75 days of supervised student teaching, with the listed experience areas, through the program coordinator.",
+        "type": "unparsed",
+        "text": "100 hours of fieldwork prior to student teaching, with specific experiences in high-needs districts, ethnic and cultural diversity, inclusion of students with special needs, integration of technology in the curriculum, literacy across all curricula, and other selected topics. Then 75 days of supervised student teaching.",
+        "reason": "Hours and days of fieldwork and student teaching are not expressible as course counts; the required experiences are not course-coded."
+      },
+      "sourceText": "Students must complete all pedagogy credits in the professional study of education (credits vary according to the specific certification program) including foundation and literacy courses, and 100 hours of fieldwork prior to student teaching with specific experiences dealing with areas related to high-needs districts, ethnic and cultural diversity, inclusion of students with special needs, integration of technology in the curriculum, literacy across all curricula, and other selected topics. Students must complete 75 days of supervised student teaching."
+    },
+    {
+      "id": "education-and-teacher-certification.certification-track",
+      "label": "certification-track",
+      "title": "Teacher certification program (choose one)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "education-and-teacher-certification.certification-track.english",
+            "sourceText": "English Secondary Teacher Education Program: Requirements for Initial Certification",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "unparsed",
+                "text": "All requirements for the major in English with a minimum of 36 credits in the cognate field, including specific course content areas required for accreditation. See Program Director for details.",
+                "reason": "Content requirements are defined by the English department and are not listed by course here."
+              },
+              {
+                "type": "unparsed",
+                "text": "A 3.00 grade point average.",
+                "reason": "Admission-level GPA threshold; not a course rule."
+              },
+              {
+                "manualCheck": "Writing sample is reviewed by the program.",
+                "type": "unparsed",
+                "text": "A writing sample that best reflects the candidate's good writing skills.",
+                "reason": "Admission document, not a course rule."
+              },
+              {
+                "id": "education-and-teacher-certification.certification-track.english.professional",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PSY 327"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 350"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CEF 347"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EGL 440"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EGL 441"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EGL 449"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EGL 450"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 344"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EGL 451"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EGL 452"
+                  },
+                  {
+                    "type": "course",
+                    "code": "EGL 454"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "education-and-teacher-certification.certification-track.foreign-languages",
+            "sourceText": "Foreign Languages Secondary Teacher Education Program: Requirements for Initial Certification in Any of the Languages",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "unparsed",
+                "text": "Completion of the requirements for the major in Asian and Asian American Studies, French, Italian, or Spanish.",
+                "reason": "Major content is defined by the department and is not listed by course here."
+              },
+              {
+                "type": "unparsed",
+                "text": "Students must complete 36 credit hours of courses in the language to be eligible for certification. Courses taught in English will not satisfy the language requirement for certification purposes.",
+                "reason": "Credit pool is language coursework, not a fixed course list; English-taught courses are excluded."
+              },
+              {
+                "manualCheck": "Verify OPI rating of Advanced-Low (ACTFL 1999 Speaking guidelines) before student teaching.",
+                "type": "unparsed",
+                "text": "Prior to student teaching, an official ACTFL OPI with a minimum spoken proficiency rating of Advanced-Low.",
+                "reason": "Proficiency test result, not a course."
+              },
+              {
+                "id": "education-and-teacher-certification.certification-track.foreign-languages.professional",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PSY 327"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 350"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CEF 347"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FLA 339"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FLA 340"
+                  },
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "LIN 344"
+                      },
+                      {
+                        "type": "course",
+                        "code": "FLA 440"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "FLA 449"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FLA 450"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FLA 451"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FLA 452"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FLA 454"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "education-and-teacher-certification.certification-track.mathematics",
+            "sourceText": "Mathematics Secondary Teacher Education Program: Requirements for Initial Certification",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "unparsed",
+                "text": "Completion of either the mathematics or the applied mathematics and statistics major.",
+                "reason": "Major content is defined by the mathematics department and is not listed in this section."
+              },
+              {
+                "id": "education-and-teacher-certification.certification-track.mathematics.content",
+                "sourceText": "Completion of, or exemption from, the following courses: MAT 200; MAT 312 OR MAT 313; MAT 319 OR MAT 320; MAT 336; MAT 360; AMS 310",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 200"
+                  },
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "MAT 312"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT 313"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "MAT 319"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT 320"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 336"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 360"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 310"
+                  }
+                ]
+              },
+              {
+                "id": "education-and-teacher-certification.certification-track.mathematics.professional",
+                "sourceText": "Professional educational requirements: MAE 301, MAE 302, MAE 311, MAE 312, MAE 447, PSY 327, SSE 350, CEF 347, LIN 344, MAE 451, MAE 452, MAE 454",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAE 301"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAE 302"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAE 311"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAE 312"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAE 447"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PSY 327"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 350"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CEF 347"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 344"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAE 451"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAE 452"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAE 454"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "education-and-teacher-certification.certification-track.sciences",
+            "sourceText": "Science Secondary Teacher Education Program: Requirements for Initial Certification in any of the Sciences",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "unparsed",
+                "text": "Completion of the requirements for the biology, chemistry, earth and space science or physics major.",
+                "reason": "Major content is defined by each science department and is not listed in this section."
+              },
+              {
+                "id": "education-and-teacher-certification.certification-track.sciences.professional",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PSY 327"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 350"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 344"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CEF 347"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SCI 410"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SCI 449"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SCI 420"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SCI 450"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SCI 451"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SCI 452"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SCI 454"
+                  }
+                ]
+              },
+              {
+                "manualCheck": "Verify supporting competencies against the course list for the student's science major.",
+                "type": "unparsed",
+                "text": "Supporting science competencies in each science other than the major (biology, chemistry, earth and space science, physics), as listed by major in the program section, which the program advisor may modify individually.",
+                "reason": "Supporting course lists vary by major and include many alternative course combinations and advisor discretion."
+              }
+            ]
+          },
+          {
+            "id": "education-and-teacher-certification.certification-track.social-studies",
+            "sourceText": "Social Studies Secondary Teacher Education Program: Requirements for Initial Certification",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "unparsed",
+                "text": "A major in one of the following social science departments: Africana Studies, Anthropology, Economics, History, Political Science, or Sociology.",
+                "reason": "Major selection is not a course list."
+              },
+              {
+                "manualCheck": "Consult the Program Director; some interdisciplinary courses (e.g., Africana Studies and Women's Studies) may not count as social science for certification.",
+                "type": "unparsed",
+                "text": "A minimum of 48 credits in the social sciences, including courses in the departments mentioned above but excluding psychology, linguistics and multidisciplinary studies. Program-specific requirements must be satisfied within these 48 credits.",
+                "reason": "Credit pool is defined by department classification and program-specific sub-requirements, not by a fixed course list."
+              },
+              {
+                "id": "education-and-teacher-certification.certification-track.social-studies.professional",
+                "sourceText": "Professional educational requirements: PSY 327, SSE 350, CEF 347, LIN 344, SSE 397, SSE 398, SSE 449, SSE 450, SSE 451, SSE 452, SSE 454",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PSY 327"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 350"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CEF 347"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 344"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 397"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 398"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 449"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 450"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 451"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 452"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 454"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "education-and-teacher-certification.certification-track.tesol",
+            "sourceText": "Teaching English to Speakers of Other Languages (TESOL) Pre-K-12 Teacher Education Program: Requirements for Initial Certification",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "unparsed",
+                "text": "Completion of all requirements for the major in Linguistics.",
+                "reason": "Major content is defined by the Linguistics department and is not listed in this section."
+              },
+              {
+                "type": "unparsed",
+                "text": "A 3.00 g.p.a. in the major and a 3.00 overall g.p.a. Exceptions are at the discretion of the program director.",
+                "reason": "GPA thresholds on separate scopes (major and overall) are not expressible as a single policy."
+              },
+              {
+                "type": "unparsed",
+                "text": "Two years of college-level study of a language or languages other than English. Completion of Skill 3/LANG SBC Basic Foreign Language Competence satisfies the first year.",
+                "reason": "Language study is described by level, not by a fixed course list."
+              },
+              {
+                "id": "education-and-teacher-certification.certification-track.tesol.linguistics",
+                "sourceText": "Linguistics and foundations courses: LIN 101, LIN 201, LIN 311, LIN 301, LIN 307, LIN 405, LIN 431, plus one additional 3 credit upper division linguistics course",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "LIN 101"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 201"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 311"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 301"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 307"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 405"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 431"
+                  },
+                  {
+                    "type": "choose",
+                    "count": 1,
+                    "from": {
+                      "subjects": [
+                        "LIN"
+                      ],
+                      "minNumber": 300,
+                      "minCredits": 3,
+                      "excludeCourses": [
+                        "LIN 101",
+                        "LIN 201",
+                        "LIN 301",
+                        "LIN 307",
+                        "LIN 311",
+                        "LIN 405",
+                        "LIN 431"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "education-and-teacher-certification.certification-track.tesol.professional",
+                "sourceText": "Professional educational requirements: PSY 327, SSE 350, CEF 347, LIN 344, LIN 375, LIN 378, LIN 449, LIN 450, LIN 451, LIN 452, LIN 454",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PSY 327"
+                  },
+                  {
+                    "type": "course",
+                    "code": "SSE 350"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CEF 347"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 344"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 375"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 378"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 449"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 450"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 451"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 452"
+                  },
+                  {
+                    "type": "course",
+                    "code": "LIN 454"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Teacher certification programs: English Secondary; Foreign Languages Secondary; Mathematics Secondary; Science Secondary (Biology, Chemistry, Earth Sciences, Physics); Social Studies Secondary; TESOL Pre-K-12. Each program lists its own initial certification requirements, including professional educational requirements."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "education-and-teacher-certification.language"
+      ],
+      "sourceText": "All teacher candidates must have one year of a language other than English at the college level on a transcript of record with grades of \"C\" or better."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "education-and-teacher-certification.certification-track.mathematics.content",
+        "education-and-teacher-certification.certification-track.mathematics.professional"
+      ],
+      "sourceText": "To be eligible to student teach, students must have: a grade of C or higher but with a minimum g.p.a. of 2.75 total in: all courses required for the MAT or AMS major; AMS 310; MAT 336; MAE 301, MAE 302, MAE 311, MAE 312, MAE 447; PSY 327, SSE 350; LIN 344."
+    },
+    {
+      "type": "minGpa",
+      "gpa": 2.75,
+      "appliesTo": [
+        "education-and-teacher-certification.certification-track.mathematics.content",
+        "education-and-teacher-certification.certification-track.mathematics.professional"
+      ],
+      "sourceText": "a minimum cumulative g.p.a. of 2.75 in all of the mathematics courses listed above, or by permission of the program director."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "education-and-teacher-certification.sub.mat364-for-mat360",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "MAT 360"
+        ]
+      },
+      "with": {
+        "type": "course",
+        "code": "MAT 364"
+      },
+      "condition": "Well-prepared student, with permission of the Director of Mathematics Education",
+      "requiresApproval": true,
+      "sourceText": "With the permission of the Director of Mathematics Education, a well-prepared student may substitute MAT 364 for MAT 360."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students must formally apply for admission to one of the six teacher certification programs with the appropriate application, supporting documentation, and declaration of major form. An essay of 500-750 words on a topic germane to education is required. Interviews and writing samples may also be required. Registration in methods and other certification courses requires admission to D-TALE. Submitting the application by the end of the sophomore year is recommended."
+    },
+    {
+      "topic": "admission",
+      "text": "Mathematics: apply during the second semester of sophomore year or first semester of junior year; applicants need grades of C or higher with an average of at least B in calculus, linear algebra and MAT 200 coursework, and an overall GPA of 3.00. Only open to Mathematics or Applied Mathematics and Statistics majors."
+    },
+    {
+      "topic": "admission",
+      "text": "TESOL: must major in Linguistics with a 3.00 overall GPA and 3.00 in the major. Application due April 15 (Fall) and November 15 (Spring). Foreign Languages, Sciences and Social Studies programs are each open only to students in specified majors."
+    },
+    {
+      "topic": "grading",
+      "text": "Courses taken for Pass/No Credit may not be used to satisfy the preparation in professional education component of any Teacher Education Program. Social Studies: Pass/No Credit courses may not be used toward the 48-credit social science requirement."
+    },
+    {
+      "topic": "grading",
+      "text": "Students should maintain a cumulative GPA of 3.00 to remain in good standing. Professional education courses may only be repeated once. A grade below C in certain methodology courses, the student teaching seminar, foundations or literacy courses requires repetition or satisfactory completion before advancing."
+    },
+    {
+      "topic": "grading",
+      "text": "Students must complete all courses required for the major, cognate fields, and professional licensure before student teaching. Foreign Languages, Mathematics and Social Studies require a 3.00 GPA for student teaching, with exceptions at the discretion of the program director."
+    },
+    {
+      "topic": "advising",
+      "text": "Spanish: choose SPN 462, SPN 463 or SPN 465 in satisfying major Requirement A.5. Consult departmental teacher education advisors for content requirements."
+    },
+    {
+      "topic": "advising",
+      "text": "French/Italian and Chinese/Japanese/Korean secondary programs have no separate course list on this page; students should consult the appropriate departmental advisors."
+    },
+    {
+      "topic": "advising",
+      "text": "Science: students must have declared a major in biology, chemistry, earth and space science or physics, added the teacher preparation option, and completed at least four science laboratory courses before taking SCI 410 / SCI 449."
+    },
+    {
+      "topic": "other",
+      "text": "General Science (grades 7-12) extension: 18 semester hours in two or more sciences other than the primary licensed science. Optional extension; not a separate requirement."
+    },
+    {
+      "topic": "other",
+      "text": "Certification is not automatic. After the program, students must apply to NYSED via TEACH, complete child abuse, substance abuse, school violence, DASA and fingerprinting requirements, pass NYSTCE exams, and submit a FERPA Release Form to the Teacher Certification Office."
+    },
+    {
+      "topic": "other",
+      "text": "Combined bachelor's/master's teacher preparation programs allow up to 15 graduate credits shared with the undergraduate degree (8 for BA/MA in TESOL, 12 for BA/MA in English, 6 for BA in History with the M.A. in History). Accelerated degree programs leading to certification are not offered. Options are not evaluated here."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1499",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

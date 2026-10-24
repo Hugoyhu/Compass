@@ -1,0 +1,158 @@
+{
+  "id": "womens-and-gender-studies",
+  "name": "Women’s and Gender Studies",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "womens-and-gender-studies.intro",
+      "label": "intro",
+      "title": "Introductory course",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "WST 102"
+          },
+          {
+            "type": "course",
+            "code": "WST 103"
+          }
+        ]
+      },
+      "sourceText": "WST 102 - Introduction to Women’s and Gender Studies in the Social Sciences 3 credits OR WST 103 - Gender, Culture, and Difference 3 credits"
+    },
+    {
+      "id": "womens-and-gender-studies.theory",
+      "label": "theory",
+      "title": "Feminist theory or history course",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "WST 291"
+          },
+          {
+            "type": "course",
+            "code": "WST 301"
+          }
+        ]
+      },
+      "sourceText": "WST 291 - Introduction to Feminist Theory 3 credits OR WST 301 - Histories of Feminism 3 credits"
+    },
+    {
+      "id": "womens-and-gender-studies.senior-seminar",
+      "label": "senior-seminar",
+      "title": "Senior research seminar",
+      "rule": {
+        "type": "course",
+        "code": "WST 407"
+      },
+      "sourceText": "WST 407 - Senior Research Seminar for Women’s and Gender Studies Minors 3 credits"
+    },
+    {
+      "id": "womens-and-gender-studies.electives",
+      "label": "electives",
+      "title": "Electives",
+      "rule": {
+        "manualCheck": "Electives are drawn from WST courses or their crosslisted equivalents, and from the list in WST major requirement C. That major list is not on this page, so the audit cannot check it. Recommended options: WST 390, 391, 392, 394, 395, 396, 397, 398, 399 (recommended, not required).",
+        "type": "choose",
+        "credits": 12,
+        "from": {
+          "subjects": [
+            "WST"
+          ],
+          "excludeUsedBy": [
+            "womens-and-gender-studies.intro",
+            "womens-and-gender-studies.theory",
+            "womens-and-gender-studies.senior-seminar"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "WST 488"
+              ]
+            },
+            "maxCredits": 3
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "WST 475"
+              ]
+            },
+            "maxCredits": 3
+          }
+        ]
+      },
+      "sourceText": "Twelve credits chosen from among WST courses (or their crosslisted equivalents) and the list in WST major requirement C above. At least six of these credits must be numbered 300 or above. It is strongly recommended that these courses be chosen from among the following options: WST 390, WST 391, WST 392, WST 394, WST 395, WST 396, WST 397, WST 398, WST 399. No more than 3 credits of WST 488 - Internship may be counted towards a WST Minor. No more than 3 credits of WST 475 - Undergraduate Teaching Practicum I may be counted towards a WST Minor"
+    },
+    {
+      "id": "womens-and-gender-studies.electives-300-level",
+      "label": "electives-300-level",
+      "title": "Upper-level credit requirement for electives",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least six of the elective credits must be numbered 300 or above.",
+        "reason": "The rule is stated in credits, and the schema's minFrom counts courses, not credits, so it cannot be expressed exactly."
+      },
+      "sourceText": "At least six of these credits must be numbered 300 or above."
+    },
+    {
+      "id": "womens-and-gender-studies.grading",
+      "label": "grading",
+      "title": "Grading option limits",
+      "rule": {
+        "type": "unparsed",
+        "text": "The GPNC Option can be used for only one course (no more than three credits) offered for the minor, and no more than 6 credits may be taken for S/U. At least 15 credits must be graded with a letter grade.",
+        "reason": "No rule type covers grading-option limits or minimum letter-graded credits for a program."
+      },
+      "sourceText": "The GPNC Option can be used for only one course (no more than three credits) offered for the minor, and no more than 6 credits may be taken for S/U. At least 15 credits must be graded with a letter grade."
+    },
+    {
+      "id": "womens-and-gender-studies.total-credits",
+      "label": "total-credits",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21 credits.",
+        "reason": "Program-wide total credit rule that no rule type covers."
+      },
+      "sourceText": "Completion of the minor requires 21 credits."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students wishing to complete the major or minor should consult the Department and establish an advising folder by the beginning of the junior year."
+    },
+    {
+      "topic": "other",
+      "text": "Double majors combining Women’s and Gender Studies with another field are not uncommon."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1502",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

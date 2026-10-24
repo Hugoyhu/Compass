@@ -1,0 +1,607 @@
+{
+  "id": "french-ba",
+  "name": "French, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in French Language and Literature",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "french-ba.concentration",
+      "label": "concentration",
+      "title": "Concentration A or Concentration B",
+      "rule": {
+        "id": "french-ba.concentration.choice",
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "french-ba.concentration.a",
+            "sourceText": "Concentration A: Language courses: FRN 211, FRN 212, FRN 311, FRN 312, FRN 313, FRN 411, FRN 412. Literature courses: FRN 395, FRN 396. Elective courses: 15 additional credits in FRN courses beyond FRN 395, FRN 396, of which 12 credits must be in literature (Two courses from among HUF 211, HUF 216, HUF 219, and HUL 324 are also acceptable)",
+            "type": "allOf",
+            "rules": [
+              {
+                "id": "french-ba.concentration.a.language",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "FRN 211"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 212"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 311"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 312"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 313"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 411"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 412"
+                  }
+                ]
+              },
+              {
+                "id": "french-ba.concentration.a.literature",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "FRN 395"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 396"
+                  }
+                ]
+              },
+              {
+                "id": "french-ba.concentration.a.electives",
+                "manualCheck": "Of the 15 elective credits, 12 must be in literature. The page does not identify which FRN courses are literature, so verify this manually.",
+                "type": "choose",
+                "credits": 15,
+                "from": {
+                  "courses": [
+                    "HUF 211",
+                    "HUF 216",
+                    "HUF 219",
+                    "HUL 324"
+                  ],
+                  "subjects": [
+                    "FRN"
+                  ],
+                  "excludeCourses": [
+                    "FRN 211",
+                    "FRN 212",
+                    "FRN 311",
+                    "FRN 312",
+                    "FRN 313",
+                    "FRN 411",
+                    "FRN 412",
+                    "FRN 395",
+                    "FRN 396",
+                    "FRN 475",
+                    "FRN 476"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "HUF 211",
+                        "HUF 216",
+                        "HUF 219",
+                        "HUL 324"
+                      ]
+                    },
+                    "maxCourses": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "french-ba.concentration.b",
+            "sourceText": "Concentration B: FRN 211, FRN 212, FRN 311, FRN 312, FRN 313; FRN 395, FRN 396; FRN 411, FRN 412; One course in French literature numbered 300 or higher; FRN 441 OR HUF 216 OR HUF 219; One additional FRN or HUF course (Please note that no more than two HUF courses in total may count for the major or minor.). Elective courses: 12 additional credits (nine of which must be 300-level or higher) to be chosen with the help of the designated advisor and approved by the Department. Students must choose a sequence of four courses in a department or program other than French (FRN or HUF).",
+            "type": "allOf",
+            "rules": [
+              {
+                "id": "french-ba.concentration.b.required",
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "FRN 211"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 212"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 311"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 312"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 313"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 395"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 396"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 411"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 412"
+                  }
+                ]
+              },
+              {
+                "id": "french-ba.concentration.b.literature-300",
+                "manualCheck": "Must be a course in French literature; the page does not identify which FRN courses are literature.",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "subjects": [
+                    "FRN"
+                  ],
+                  "minNumber": 300,
+                  "excludeCourses": [
+                    "FRN 395",
+                    "FRN 396",
+                    "FRN 411",
+                    "FRN 412",
+                    "FRN 475",
+                    "FRN 476"
+                  ]
+                }
+              },
+              {
+                "id": "french-ba.concentration.b.civilization",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "FRN 441"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HUF 216"
+                  },
+                  {
+                    "type": "course",
+                    "code": "HUF 219"
+                  }
+                ]
+              },
+              {
+                "id": "french-ba.concentration.b.additional-frn-huf",
+                "manualCheck": "No more than two HUF courses in total may count for the major or minor.",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "subjects": [
+                    "FRN",
+                    "HUF"
+                  ],
+                  "excludeCourses": [
+                    "FRN 475",
+                    "FRN 476"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "subjects": [
+                        "HUF"
+                      ]
+                    },
+                    "maxCourses": 2
+                  }
+                ]
+              },
+              {
+                "id": "french-ba.concentration.b.electives",
+                "type": "unparsed",
+                "text": "12 additional credits (nine of which must be 300-level or higher) to be chosen with the help of the designated advisor and approved by the Department.",
+                "reason": "The page does not list an eligible course pool for these credits; the choice is made with advisor approval."
+              },
+              {
+                "id": "french-ba.concentration.b.second-discipline",
+                "type": "unparsed",
+                "text": "Students must choose a sequence of four courses in a department or program other than French (FRN or HUF).",
+                "reason": "The page does not name the disciplines or courses; the sequence is advisor-approved."
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Students must complete Concentration A or Concentration B. Concentration A: Concentration in Language and Literature. Concentration B: Concentration in French and a Second Discipline."
+    },
+    {
+      "id": "french-ba.writing",
+      "label": "writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Present a dossier of a minimum of two papers of at least three to five pages each, submitted to the FRN Program Coordinator before the second semester of the junior year. Papers may be research papers written in English for any Stony Brook course, graded papers preferred; otherwise translate two FRN paper from French to English.",
+        "type": "course",
+        "code": "FRN 459"
+      },
+      "sourceText": "To demonstrate proficiency in writing English, students majoring in French must register for the 0-credit FRN 459 and present a dossier of a minimum of two papers of at least three to five pages each. The dossier must be submitted before the second semester of the junior year to the FRN Program Coordinator."
+    },
+    {
+      "id": "french-ba.credits",
+      "label": "credits",
+      "title": "Total credits for the major",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires 36-42 credits for Concentration A (all in FRN or HUF) or 42-48 credits for Concentration B (30 credits of FRN and HUF, and 12 credits of a non-FRN discipline), depending on language placement.",
+        "reason": "Total credit ranges that depend on placement cannot be expressed as a single rule type."
+      },
+      "sourceText": "Completion of the major requires 36-42 credits for Concentration A (all in FRN or HUF) or 42-48 credits for Concentration B (30 credits of FRN and HUF, and 12 credits of a non-FRN discipline), depending on language placement. See here for placement exam information."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "french-ba.concentration",
+        "french-ba.writing"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "french-ba.concentration",
+        "french-ba.writing"
+      ],
+      "sourceText": "All courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 18,
+      "appliesTo": [
+        "french-ba.concentration"
+      ],
+      "sourceText": "Transfer students must take at least 18 credits of French in residence at Stony Brook."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "FRN 211",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "FRN 212",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "FRN 311",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "FRN 312",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "FRN 395",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "FRN 411",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "One 300-level literature course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "FRN 396",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "FRN 412",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "FRN 441 or one 300-level literature course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "FRN 413",
+          "alternatives": [
+            "FRN 410"
+          ],
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "One or two 300-level literature courses",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 0
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "FRN 441",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "One 300-level literature course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students who have studied French previously are encouraged to take the French Placement Exam offered through the Language Learning Research Center. High school language study is not counted for college credit. Students should consult the FRN Program Coordinator if they believe they should be placed in a different level course."
+    },
+    {
+      "topic": "other",
+      "text": "FRN 475/FRN 476 (Undergraduate Teaching Practicum) may not count for the major or minor."
+    },
+    {
+      "topic": "other",
+      "text": "Concentration A provides preparation for graduate study in literature. Both concentrations provide background for law, government, international relations, business, banking, hotel management, or translation and interpretation. Students interested in teaching French in secondary schools may choose either concentration, but must have 36 credits in FRN before the State of New York will certify them. Foreign language education students are also highly encouraged to study more than one foreign language."
+    },
+    {
+      "topic": "other",
+      "text": "All students should consult with the Director of the French Program. Transfer students must take at least 18 credits of French in residence at Stony Brook; this applies to transfer students only."
+    },
+    {
+      "topic": "other",
+      "text": "Optional honors program (not modeled): majors with a cumulative GPA of 3.00 and an average of 3.50 in French through the junior year may write a senior thesis by enrolling in FRN 495. Deadlines: April 30 for fall, November 30 for spring. Consult the Director of Undergraduate Studies."
+    },
+    {
+      "topic": "other",
+      "text": "The Foreign Language Secondary Teacher Education Program is a separate program; see the Education and Teacher Certification entry (not modeled)."
+    },
+    {
+      "topic": "sbc",
+      "text": "Students completing the Stony Brook Curriculum must complete a course satisfying the WRTD learning objective. The Upper Division Writing Requirement is consistent in most cases with the SBC learning outcomes for WRTD."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1456",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

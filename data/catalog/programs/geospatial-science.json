@@ -1,0 +1,170 @@
+{
+  "id": "geospatial-science",
+  "name": "Geospatial Science",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "geospatial-science.required-courses",
+      "label": "required-courses",
+      "title": "Required courses (9-10 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "geospatial-science.required-courses.gss105",
+            "type": "course",
+            "code": "GSS 105"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "id": "geospatial-science.required-courses.gss313",
+                    "type": "course",
+                    "code": "GSS 313"
+                  },
+                  {
+                    "type": "course",
+                    "code": "GSS 314"
+                  }
+                ]
+              },
+              {
+                "id": "geospatial-science.required-courses.gss317",
+                "type": "course",
+                "code": "GSS 317"
+              }
+            ]
+          },
+          {
+            "id": "geospatial-science.required-courses.gss325",
+            "type": "course",
+            "code": "GSS 325"
+          }
+        ]
+      },
+      "sourceText": "Required courses (9-10 credits): GSS 105 - Introduction to Maps and Mapping 3 credits; GSS 313 - GIS Design and Application I 3 credits OR GSS 317 - Geospatial Narratives: Deep Mapping for Humanities and Social Sciences 3 credits; GSS 314 - GIS Laboratory 1 credit (for students enrolling in GSS 313); GSS 325 - GIS Design & Applications II 3 credits"
+    },
+    {
+      "id": "geospatial-science.electives",
+      "label": "electives",
+      "title": "Elective courses (select 9 credits)",
+      "rule": {
+        "manualCheck": "The page lists GSS 355, MAR 334, and GEO 347 as OR alternatives in one group. Verify whether more than one of these may count toward the 9 elective credits. GSS 475 (0-3 credits), GSS 487 (0-6 credits), and GSS 488 (0-12 credits) carry variable credit.",
+        "type": "choose",
+        "credits": 9,
+        "from": {
+          "courses": [
+            "GSS 309",
+            "GSS 323",
+            "GSS 326",
+            "GSS 350",
+            "GSS 354",
+            "GSS 355",
+            "MAR 334",
+            "GEO 347",
+            "GSS 360",
+            "GSS 390",
+            "GSS 475",
+            "GSS 487",
+            "GSS 488",
+            "ATM 320",
+            "BIO 319"
+          ],
+          "excludeUsedBy": [
+            "geospatial-science.required-courses"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "GSS 487",
+                "GSS 488"
+              ]
+            },
+            "maxCredits": 6
+          }
+        ]
+      },
+      "sourceText": "Elective courses (select 9 credits from the following): GSS 309 - GIS and Cartography 3 credits; GSS 323 - GIS Database and Design 3 credits; GSS 326 - GIS Project Management 3 credits; GSS 350 - Applied Spatial Data Analysis 3 credits; GSS 354 - Geospatial Science for the Coastal Zone 3 credits; GSS 355 - Remote Sensing GIS Data 3 credits OR MAR 334 - Remote Sensing of the Environment 3 credits OR GEO 347 - Remote Sensing 3 credits; GSS 360 - LiDAR Remote Sensing 3 credits; GSS 390 - Topics in Geospatial Science 6 credits; GSS 475 - Undergraduate Teaching Practicum 0-3 credits; GSS 487 - Geospatial Science Research 0-6 credits; GSS 488 - Geospatial Science Internship 0-12 credits; ATM 320 - Problem Solving with Python 3 credits; BIO 319 - Landscape Ecology Laboratory 3 credits. Note: A maximum of six credits total of GSS 487 Geospatial Science Research and/or GSS 488 Geospatial Science Internship may be applied to the minor."
+    },
+    {
+      "id": "geospatial-science.total-credits",
+      "label": "total-credits",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 18-19 credits.",
+        "reason": "A total credit range across the minor is not a rule type the engine evaluates directly"
+      },
+      "sourceText": "Completion of the minor requires 18-19 credits."
+    },
+    {
+      "id": "geospatial-science.unique-credits",
+      "label": "unique-credits",
+      "title": "Credits not shared with a major or other minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 12 credits applied to the minor may not be applied to any major or other minor.",
+        "reason": "Cross-program credit sharing limit is not expressible with the available course-reuse rules"
+      },
+      "sourceText": "At least 12 credits applied to the minor may not be applied to any major or other minor."
+    },
+    {
+      "id": "geospatial-science.pass-no-credit",
+      "label": "pass-no-credit",
+      "title": "Pass/No Credit limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option.",
+        "reason": "No grading-option limit rule type exists for counting P/NC courses"
+      },
+      "sourceText": "No more than one three-credit course in the minor may be taken under the Pass/No Credit option."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "geospatial-science.required-courses.gss313",
+        "geospatial-science.required-courses.gss317",
+        "geospatial-science.required-courses.gss325",
+        "geospatial-science.electives"
+      ],
+      "sourceText": "All upper-division courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Undergraduate Advisor: Nancy Black, nancy.black@stonybrook.edu, (631) 632-9404, E2361 Melville Library. Director: Sung Gheel Jang, Sunggheel.jang@stonybrook.edu."
+    },
+    {
+      "topic": "other",
+      "text": "The page also describes the minor as the Minor in Geospatial Analysis. GSS 314 is required only for students enrolling in GSS 313."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1463",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

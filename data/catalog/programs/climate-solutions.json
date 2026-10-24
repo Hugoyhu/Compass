@@ -1,0 +1,228 @@
+{
+  "id": "climate-solutions",
+  "name": "Climate Solutions",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "climate-solutions.core",
+      "label": "core",
+      "title": "Required core courses (9 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "ATM 201"
+              },
+              {
+                "type": "course",
+                "code": "ATM 237"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SUS 323"
+          },
+          {
+            "type": "course",
+            "code": "CME 491"
+          }
+        ]
+      },
+      "sourceText": "Required core courses (9 credits): ATM 201 - Introduction to Climate and Climate Change 3 credits OR ATM 237 - World Climate and Atmosphere 3 credits; SUS 323 - Environmental Justice 3 credits; CME 491 - Sustainable Future through Renewable Energy 3 credits"
+    },
+    {
+      "id": "climate-solutions.electives",
+      "label": "electives",
+      "title": "Elective courses (6 credits), one course from each of 2 different paths",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "ATM 305",
+            "BIO 319",
+            "BIO 336",
+            "BIO 351",
+            "BIO 385",
+            "BIO 386",
+            "ENS 311",
+            "GSS 313",
+            "GSS 314",
+            "SUS 322",
+            "SUS 326",
+            "SUS 340",
+            "SUS 343",
+            "CIV 355",
+            "CIV 407",
+            "CIV 422",
+            "CIV 423",
+            "CIV 424",
+            "EST 391",
+            "COM 351",
+            "COM 365",
+            "COM 436",
+            "ECO 335",
+            "ECO 373",
+            "EGL 317",
+            "EGL 319",
+            "SUS 321",
+            "EGL 372",
+            "GLI 320",
+            "HIS 365",
+            "JRN 438",
+            "POL 371",
+            "SOC 344",
+            "SUS 307",
+            "SUS 311",
+            "SUS 317",
+            "SUS 318",
+            "SUS 362",
+            "SUS 366",
+            "PHI 366"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "onePerGroup",
+            "groups": [
+              [
+                "ATM 305",
+                "BIO 319",
+                "BIO 336",
+                "BIO 351",
+                "BIO 385",
+                "BIO 386",
+                "ENS 311",
+                "GSS 313",
+                "GSS 314",
+                "SUS 322",
+                "SUS 326",
+                "SUS 340",
+                "SUS 343"
+              ],
+              [
+                "CIV 355",
+                "CIV 407",
+                "CIV 422",
+                "CIV 423",
+                "CIV 424",
+                "EST 391"
+              ],
+              [
+                "COM 351",
+                "COM 365",
+                "COM 436",
+                "ECO 335",
+                "ECO 373",
+                "EGL 317",
+                "EGL 319",
+                "SUS 321",
+                "EGL 372",
+                "GLI 320",
+                "HIS 365",
+                "JRN 438",
+                "POL 371",
+                "SOC 344",
+                "SUS 307",
+                "SUS 311",
+                "SUS 317",
+                "SUS 318",
+                "SUS 362",
+                "SUS 366",
+                "PHI 366"
+              ]
+            ]
+          }
+        ]
+      },
+      "sourceText": "Elective courses (6 credits) Select 1 course from each of 2 different paths. Natural Sciences Path: ATM 305 - Global Atmospheric Change 3 credits; BIO 319 - Landscape Ecology Laboratory 3 credits; BIO 336 - Conservation Biology 3 credits; BIO 351 - Ecology 3 credits; BIO 385 - Plant Ecology 3 credits; BIO 386 - Ecosystem Ecology and the Global Environment 3 credits; ENS 311 - Ecosystem Ecology and the Global Environment 3 credits; GSS 313 - GIS Design and Application I 3 credits; GSS 314 - GIS Laboratory 1 credit; SUS 322 - Human Ecology 3 credits; SUS 326 - Conservation Genetics 3 credits; SUS 340 - Ecological and Social Dimensions of Disease 3 credits; SUS 343 - Age of the Anthropocene 3 credits. Engineering Path: CIV 355 - Introduction to Data Science and AI for Civil Engineering 3 credits; CIV 407 - Transportation Economics 3 credits; CIV 422 - Introduction to Coastal Engineering 3 credits; CIV 423 - Coastal Engineering Planning and Design 3 credits; CIV 424 - Stormwater Management & Design 3 credits; EST 391 - Technology Assessment 3 credits. Social Sciences and Humanities Path: COM 351 - Team Collaboration and Community Engagement 3 credits; COM 365 - Talking Science 3 credits; COM 436 - Environmental Communication 3 credits; ECO 335 - Economic Development 3 credits; ECO 373 - Economics of Environment and Natural Resources 3 credits; EGL 317 - Energy Humanities and Literature 3 credits; EGL 319 - Ecology and Evolution in American Literature 3 credits; SUS 321 - Ecology and Evolution in American Literature 3 credits; EGL 372 - Topics in Women and Literature 3 credits; GLI 320 - Global, Cultural, and Environmental Issues 3 credits; HIS 365 - Environmental History of North America 3 credits; JRN 438 - Weathercasting & Environmental Reporting 3 credits; POL 371 - Politics of Climate Change 3 credits; SOC 344 - Environmental Sociology 3 credits; SUS 307 - Environmental Economics and Management 3 credits; SUS 311 - Disasters and Society: A Global Perspective 3 credits; SUS 317 - American Environmental History 3 credits; SUS 318 - American Environmental Politics 3 credits; SUS 362 - Resilient Communities 3 credits; SUS 366 - Philosophy of the Environment (III) 3 credits; PHI 366 - Philosophy of the Environment (III) 3 credits"
+    },
+    {
+      "id": "climate-solutions.capstone",
+      "label": "capstone",
+      "title": "Capstone (3 credits)",
+      "rule": {
+        "manualCheck": "Confirm the internship or research project is a 487/488-type course or similar and was approved in advance by the Climate Solutions Minor Director or Steering Committee.",
+        "type": "unparsed",
+        "text": "Internship (488 course, or similar) or independent research with a faculty mentor (487 course, or similar), which must be approved in advance by the Climate Solutions Minor Director or Steering Committee.",
+        "reason": "\"488 course, or similar\" and \"487 course, or similar\" name no fixed course list, so the eligible courses cannot be enumerated."
+      },
+      "sourceText": "Capstone (3 credits): Internship (488 course, or similar) or independent research with a faculty mentor (487 course, or similar), which must be approved in advance by the Climate Solutions Minor Director or Steering Committee."
+    },
+    {
+      "id": "climate-solutions.overlap-credits",
+      "label": "overlap-credits",
+      "title": "Credits not shared with another major or minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least 12 credits applied to the minor may not be applied to any major or other minor.",
+        "reason": "Cross-program credit limits cannot be checked against other programs' requirements by this rule set."
+      },
+      "sourceText": "At least 12 credits applied to the minor may not be applied to any major or other minor."
+    },
+    {
+      "id": "climate-solutions.overlap-electives",
+      "label": "overlap-electives",
+      "title": "Limit on shared electives",
+      "rule": {
+        "type": "unparsed",
+        "text": "Of the 6 credits that could be also applied to another major or minor, no more than one course can be from the electives list below.",
+        "reason": "Cross-program overlap limit depends on another program's requirements, which this rule set cannot evaluate."
+      },
+      "sourceText": "Of the 6 credits that could be also applied to another major or minor, no more than one course can be from the electives list below."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "climate-solutions.core",
+        "climate-solutions.electives",
+        "climate-solutions.capstone"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "climate-solutions.core",
+        "climate-solutions.electives",
+        "climate-solutions.capstone"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Director: Sara Hamideh (sara.hamideh@stonybrook.edu). Undergraduate Advisor: Nancy Black, (631) 632-9404, E2361 Melville Library."
+    },
+    {
+      "topic": "other",
+      "text": "Completion of the minor requires 18 credits in total."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1400",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

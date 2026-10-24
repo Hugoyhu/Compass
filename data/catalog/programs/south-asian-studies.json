@@ -1,0 +1,143 @@
+{
+  "id": "south-asian-studies",
+  "name": "South Asian Studies",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "south-asian-studies.1",
+      "label": "1",
+      "title": "Lower-division courses (9 credits)",
+      "rule": {
+        "manualCheck": "AAS 211 and AAS 212 count only for the appropriate topic. Courses listed with '/' are alternatives (e.g., AAS 250 / LIN 250); count only one course from each such pair. Courses not listed may be counted at the discretion of the director of the minor, if they have a substantial component relating to South Asian Studies; this cannot be checked automatically.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "AAS 110",
+            "AAS 201",
+            "AAS 209",
+            "AAS 211",
+            "AAS 212",
+            "AAS 218",
+            "AAS 222",
+            "AAS 250",
+            "LIN 250",
+            "AAS 256",
+            "RLS 256",
+            "AAS 260",
+            "RLS 260",
+            "AAS 280",
+            "RLS 280",
+            "ARH 203",
+            "HIN 111",
+            "HIN 112",
+            "HIN 211",
+            "HIN 212",
+            "HIS 227",
+            "SKT 111",
+            "SKT 112"
+          ]
+        }
+      },
+      "sourceText": "Lower-division courses (9 credits): AAS 110 - Appreciating Indian Music 3 credits; AAS 201 - Introduction to the Civilization of the Indian Subcontinent 3 credits; AAS 209 - Indian Classical Dance: Bharatanatyam 3 credits; AAS 211 - Asian and Asian American Studies Topics in the Social Sciences 3 credits (appropriate topic only); AAS 212 - Asian and Asian American Studies Topics in the Humanities 3 credits (appropriate topic only); AAS 218 - Ancient, Medieval, & Early Modern South Asia 3 credits; AAS 222 - Indian Cinemas and Cultures 3 credits; AAS 250 - Languages and Cultures of Asian Americans 3 credits / LIN 250 - Languages and Cultures of Asian Americans 3 credits; AAS 256 - Hinduism 3 credits / RLS 256 - Hinduism 3 credits; AAS 260 - Buddhism 3 credits / RLS 260 - Buddhism 3 credits; AAS 280 - Islam 3 credits / RLS 280 - Islam 3 credits; ARH 203 - Arts of Asia 3 credits; HIN 111 - Elementary Hindi I 3 credits; HIN 112 - Elementary Hindi II 3 credits; HIN 211 - Intermediate Hindi I 3 credits; HIN 212 - Intermediate Hindi II 3 credits; HIS 227 - Islamic Civilization & Muslim Societies 3 credits; SKT 111 - Elementary Sanskrit I 4 credits; SKT 112 - Elementary Sanskrit II 4 credits"
+    },
+    {
+      "id": "south-asian-studies.2",
+      "label": "2",
+      "title": "Upper Division Courses (9 credits)",
+      "rule": {
+        "manualCheck": "AAS 340 / HIS 340 (Topics in Asian History), ANT 311, HIS 300, and LIN 431 count only for the appropriate topic. Courses listed with '/' are alternatives (e.g., AAS 380 / RLS 380; AAS 472 / PHI 472); count only one course from each such pair. AAS 447 carries 1-6 credits and AAS 487 carries 0-3 credits, so credit totals must be verified. Courses not listed may be counted at the discretion of the director of the minor, if they have a substantial component relating to South Asian Studies; this cannot be checked automatically.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "AAS 320",
+            "AAS 326",
+            "AAS 327",
+            "AAS 330",
+            "AAS 334",
+            "AAS 338",
+            "AAS 340",
+            "HIS 340",
+            "AAS 368",
+            "AAS 380",
+            "RLS 380",
+            "AAS 391",
+            "AAS 392",
+            "AAS 401",
+            "AAS 447",
+            "AAS 472",
+            "PHI 472",
+            "AAS 473",
+            "AAS 487",
+            "ANT 311",
+            "EGL 373",
+            "EGL 374",
+            "HIS 300",
+            "HIS 302",
+            "HIS 332",
+            "HIS 348",
+            "LIN 431",
+            "THR 313"
+          ]
+        }
+      },
+      "sourceText": "Upper Division Courses (9 credits): AAS 320 - Literature of India 3 credits; AAS 326 - Indian Mythology 3 credits; AAS 327 - Great Epics of India: Ramayana and Mahabharata 3 credits; AAS 330 - Language and Society in South Asia 3 credits; AAS 334 - English in Asia 3 credits; AAS 338 - Contemporary India: History, Politics, and Diplomacy 3 credits; AAS 340 - Topics in Asian History 3 credits / (appropriate topic only); HIS 340 - Topics in Asian History 3 credits (appropriate topic only); AAS 368 - Yoga: Theory and Praxis 3 credits; AAS 380 - Islamic Classics 3 credits / RLS 380 - Islamic Classics 3 credits; AAS 391 - Humanities Topics in Asian and Asian American Studies 3 credits; AAS 392 - Social Science Topics in Asian and Asian American Studies 3 credits; AAS 401 - Proseminar in Asian and Asian American Studies 3 credits; AAS 447 - Directed Readings in Asian and Asian American Studies 1-6 credits; AAS 472 - Topics in Asian Philosophy (I) 3 credits / PHI 472 - Topics in Asian Philosophy (I) 3 credits; AAS 473 - Orientalism 3 credits; AAS 487 - Supervised Research in Asian and Asian American Studies 0-3 credits; ANT 311 - Immersion in Another Culture 3 credits (appropriate topic only); EGL 373 - Literature in English from Non-Western Cultures 3 credits; EGL 374 - English Literature in Relation to Other Literatures 3 credits; HIS 300 - Topics in Global History 3 credits (appropriate topic only); HIS 302 - Environmental History in Global Perspective 3 credits; HIS 332 - Postcolonial South Asia 3 credits; HIS 348 - Colonial South Asia 3 credits; LIN 431 - The Structure of an Uncommonly Taught Language 4 credits (appropriate topic only); THR 313 - Asian Theatre and Drama 3 credits"
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "south-asian-studies.1",
+        "south-asian-studies.2"
+      ],
+      "sourceText": "All courses must be completed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "south-asian-studies.1",
+        "south-asian-studies.2"
+      ],
+      "sourceText": "All courses must be completed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "The minor consists of six courses (18 credits): three lower-division (nine credits) and three upper-division (nine credits). With the approval of the director of the minor, the student constructs a coherent and individualized program of study."
+    },
+    {
+      "topic": "other",
+      "text": "Other minors of particular interest to students minoring in South Asian Studies: Anthropology (ANT), China Studies (CNS), International Studies (INT), Japanese Studies (JNH), Korean Studies (KOR), Religious Studies (RLS)."
+    },
+    {
+      "topic": "other",
+      "text": "The Center for India Studies (telephone: 631-632-9742), located in E-5350 Melville Library, offers a reference library, lectures and performing arts programs, publications, and internship opportunities for students minoring in South Asian Studies. Visit http://www.sunysb.edu/india for details."
+    },
+    {
+      "topic": "other",
+      "text": "Students may also earn academic credits through Study Abroad in India opportunities."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1514",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

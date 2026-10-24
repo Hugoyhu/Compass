@@ -1,0 +1,199 @@
+{
+  "id": "black-heritage-studies",
+  "name": "Black Heritage Studies",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "black-heritage-studies.language-or-themes",
+      "label": "language-or-themes",
+      "title": "Swahili sequence or Themes in the Black Experience sequence",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "KSW 111"
+              },
+              {
+                "type": "course",
+                "code": "KSW 112"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AFS 101"
+              },
+              {
+                "type": "course",
+                "code": "AFS 102"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "KSW 111 - Beginning Swahili I; KSW 112 - Beginning Swahili II; OR; AFS 101 - Themes in the Black Experience I 3 credits; AFS 102 - Themes in the Black Experience II 3 credits"
+    },
+    {
+      "id": "black-heritage-studies.electives",
+      "label": "electives",
+      "title": "Four elective courses",
+      "rule": {
+        "type": "choose",
+        "count": 4,
+        "from": {
+          "courses": [
+            "AFH 206",
+            "AFH 329",
+            "HUF 318",
+            "AFH 330",
+            "AFH 382",
+            "EGL 382",
+            "WST 382",
+            "AFH 391",
+            "AFH 423",
+            "AFS 221",
+            "HIS 221",
+            "AFS 277",
+            "HIS 277",
+            "AFS 365",
+            "SOC 365",
+            "AFS 300",
+            "AFS 375",
+            "AFH 379",
+            "PHI 379",
+            "AFS 345",
+            "WST 345",
+            "AFS 337",
+            "POL 337",
+            "AFS 346",
+            "HIS 346",
+            "AFS 340",
+            "AFS 350",
+            "AFS 373",
+            "AFS 381",
+            "ANT 250",
+            "ANT 307",
+            "ANT 355",
+            "SOC 310",
+            "HIS 282",
+            "AFS 325",
+            "HIS 325",
+            "HIS 339",
+            "HIS 366",
+            "HIS 374"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "onePerGroup",
+            "groups": [
+              [
+                "AFH 329",
+                "HUF 318"
+              ],
+              [
+                "AFH 382",
+                "EGL 382",
+                "WST 382"
+              ],
+              [
+                "AFS 221",
+                "HIS 221"
+              ],
+              [
+                "AFS 277",
+                "HIS 277"
+              ],
+              [
+                "AFS 365",
+                "SOC 365"
+              ],
+              [
+                "AFH 379",
+                "PHI 379"
+              ],
+              [
+                "AFS 345",
+                "WST 345"
+              ],
+              [
+                "AFS 337",
+                "POL 337"
+              ],
+              [
+                "AFS 346",
+                "HIS 346"
+              ],
+              [
+                "AFS 325",
+                "HIS 325"
+              ]
+            ]
+          }
+        ]
+      },
+      "sourceText": "Four elective courses chosen from the list below. AFH 206 - Great Books of the Black Experience 3 credits; AFH 329 - Pan-African Literature I 3 credits; HUF 318 - Pan-African Literature I 3 credits; AFH 330 - Pan-African Literature II 3 credits; AFH 382 - Black Women's Literature of the African Diaspora 3 credits; EGL 382 - Black Women's Literature of the African Diaspora 3 credits; WST 382 - Black Women's Literature of the African Diaspora 3 credits; AFH 391 - Topics in Africana Studies 3 credits; AFH 423 - Africana Literature in French 3 credits; AFS 221 - Introduction to Modern African History 3 credits; HIS 221 - Introduction to Modern African History 3 credits; AFS 277 - The Modern Color Line 3 credits; HIS 277 - The Modern Color Line 3 credits; AFS 365 - Global Africa 3 credits; SOC 365 - Global Africa 3 credits; AFS 300 - Blacks in the City 3 credits; AFS 375 - Slavery 3 credits; AFH 379 - Philosophy of Race (III) 3 credits; PHI 379 - Philosophy of Race (III) 3 credits; AFS 345 - Culture and Gender: Women in Africa and the Caribbean 3 credits; WST 345 - Culture and Gender: Women in Africa and the Caribbean; AFS 337 - The Politics of Africa 3 credits; POL 337 - The Politics of Africa 3 credits; AFS 346 - Political and Social History of Africa 3 credits; HIS 346 - Political and Social History of Africa; AFS 340 - Human Rights and Africa 3 credits; AFS 350 - Black Women and Social Change: A Cross-Cultural Perspective 3 credits; AFS 373 - Sexualities: African and Caribbean Perspectives 3 credits; AFS 381 - AIDS, Race, and Gender in the Black Community 3 credits; ANT 250 - African Cultures Today 3 credits; ANT 307 - Prehistoric Archaeology of Africa (with emphasis on the Turkana Basin) 3 credits; ANT 355 - Ancient African Civilizations 3 credits; SOC 365 - Global Africa Credits: 3 credits; SOC 310 - Racism and Ethnic Relations 3 credits; HIS 282 - African American History Since 1877 3 credits; AFS 325 - Civil Rights and Black Power 3 credits; HIS 325 - Civil Rights and Black Power 3 credits; HIS 339 - Recent African American History 3 credits; HIS 366 - Carceral Studies: Histories of Policing, Prisons, and Surveillance 3 credits; HIS 374 - Surveillance State: A History of U.S. Domestic Spying 3 credits"
+    },
+    {
+      "id": "black-heritage-studies.credits",
+      "label": "credits",
+      "title": "Minimum credits and upper-division credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the Black Heritage Studies Minor requires a minimum of 18 credits, with at least 9 upper division credits.",
+        "reason": "Program-wide credit total and upper-division credit minimum cannot be expressed with the available rule types."
+      },
+      "sourceText": "Completion of the Black Heritage Studies Minor requires a minimum of 18 credits, with at least 9 upper division credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "black-heritage-studies.language-or-themes",
+        "black-heritage-studies.electives"
+      ],
+      "sourceText": "All courses offered for the minor, except those graded S/U must be passed with a letter grade C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "grading",
+      "text": "Courses graded S/U are excepted from the letter grade C or higher requirement."
+    },
+    {
+      "topic": "other",
+      "text": "The Black Heritage Studies minor combines history, anthropology, and archeology, the study of an African language, and studies abroad."
+    },
+    {
+      "topic": "other",
+      "text": "SOC 365 - Global Africa appears twice in the elective list; it is modeled once, grouped with AFS 365."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1384",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

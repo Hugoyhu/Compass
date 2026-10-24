@@ -1,0 +1,172 @@
+{
+  "id": "optics",
+  "name": "Optics",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "optics.basic-courses",
+      "label": "basic-courses",
+      "title": "Basic courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 142"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 251"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 252"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ESG 281"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "PHY 300"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "PHY 301"
+              },
+              {
+                "type": "course",
+                "code": "ESE 319"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Basic courses: PHY 132 - Classical Physics II 3 credits; PHY 134 - Classical Physics Laboratory II 1 credit; OR PHY 142 - Classical Physics II: Honors 3 credits; PHY 134 - Classical Physics Laboratory II Credits: 1 credit; PHY 251 - Modern Physics 3 credits; PHY 252 - Modern Physics Laboratory 1 credit; OR ESG 281 - Engineering Introduction to the Solid State 3 credits; PHY 300 - Waves and Optics 4 credits; PHY 301 - Electromagnetic Theory I 3 credits; OR ESE 319 - Electromagnetic Waves and Transmission Lines 3 credits"
+    },
+    {
+      "id": "optics.electives",
+      "label": "electives",
+      "title": "Advanced electives",
+      "rule": {
+        "manualCheck": "Courses marked * (ESE 441, ESE 499, ESM 499, ESG 441, MEC 441, MEC 442, MEC 499, PHY 487) may be used only if the research project is in optics. Each such course must be taken for three credits, and the student must obtain written approval of the Department of Physics and Astronomy for the research proposal before starting research.",
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "ESE 358",
+            "ESE 441",
+            "ESE 499",
+            "ESM 499",
+            "ESG 441",
+            "MEC 441",
+            "MEC 442",
+            "MEC 499",
+            "PHY 302",
+            "PHY 452",
+            "PHY 487"
+          ]
+        }
+      },
+      "sourceText": "At least two of the following: ESE 358 - Computer Vision 3 credits; ESE 441 - Senior Design II 3 credits *; ESE 499 - Research in Electrical Sciences 0-3 credits *; ESM 499 - Research in Materials Science 0-4 credits *; ESG 441 - Capstone Engineering Design II 3 credits *; MEC 441 - Mechanical Engineering Design II 3 credits *; MEC 442 - Introduction to Experimental Stress Analysis 3 credits *; MEC 499 - Research in Mechanical Engineering 0-3 credits *; PHY 302 - Electromagnetic Theory II 3 credits; PHY 452 - Atomic Physics and Lasers 3 credits; PHY 487 - Research 0-6 credits *. Notes: *These courses may be used if the research project is in optics. Each such course must be taken for three credits and the student must obtain written approval of the Department of Physics and Astronomy for his or her research proposal before starting research."
+    },
+    {
+      "id": "optics.credits",
+      "label": "credits",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the minor requires 21 credits.",
+        "reason": "Program-wide total credit requirement is not covered by any rule type."
+      },
+      "sourceText": "Completion of the minor requires 21 credits."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "optics.basic-courses",
+        "optics.electives"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "optics.basic-courses",
+        "optics.electives"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "The minor is intended for students outside the physics major. After learning the basic principles of optics in PHY 300, students may pursue further courses in the Department of Physics and Astronomy or the College of Engineering and Applied Sciences."
+    },
+    {
+      "topic": "other",
+      "text": "Starred research and design courses count toward the electives only if the project is in optics, and they must be taken for three credits with prior written departmental approval of the research proposal."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1536",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

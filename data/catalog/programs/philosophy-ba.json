@@ -1,0 +1,442 @@
+{
+  "id": "philosophy-ba",
+  "name": "Philosophy, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Philosophy",
+  "approxCredits": 36,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "philosophy-ba.logic",
+      "label": "logic",
+      "title": "Logic course",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHI 108"
+          },
+          {
+            "type": "course",
+            "code": "PHI 220"
+          }
+        ]
+      },
+      "sourceText": "PHI 108 - Logical and Critical Reasoning (II) 3 credits OR PHI 220 - Introduction to Symbolic Logic (II) 3 credits (Students who expect to pursue graduate study in Philosophy should choose PHI 220)"
+    },
+    {
+      "id": "philosophy-ba.survey",
+      "label": "survey",
+      "title": "Ancient and modern philosophy",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHI 300"
+          },
+          {
+            "type": "course",
+            "code": "PHI 306"
+          }
+        ]
+      },
+      "sourceText": "PHI 300 - Ancient Philosophy (I) 3 credits AND PHI 306 - Modern Philosophy (I) 3 credits"
+    },
+    {
+      "id": "philosophy-ba.junior-seminar",
+      "label": "junior-seminar",
+      "title": "Junior Seminar",
+      "rule": {
+        "type": "course",
+        "code": "PHI 395"
+      },
+      "sourceText": "PHI 395 - Junior Seminar 3 credits"
+    },
+    {
+      "id": "philosophy-ba.great-philosophers",
+      "label": "great-philosophers",
+      "title": "Individual Systems of the Great Philosophers or Analysis of Philosophic Texts",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHI 401"
+          },
+          {
+            "type": "course",
+            "code": "PHI 402"
+          }
+        ]
+      },
+      "sourceText": "PHI 401 - Individual Systems of the Great Philosophers (I) 3 credits OR PHI 402 - Analysis of Philosophic Texts (I) 3 credits"
+    },
+    {
+      "id": "philosophy-ba.electives",
+      "label": "electives",
+      "title": "Additional Philosophy coursework",
+      "rule": {
+        "type": "choose",
+        "credits": 21,
+        "from": {
+          "subjects": [
+            "PHI"
+          ],
+          "excludeUsedBy": [
+            "philosophy-ba.logic",
+            "philosophy-ba.survey",
+            "philosophy-ba.junior-seminar",
+            "philosophy-ba.great-philosophers"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "subjects": [
+                "PHI"
+              ],
+              "minNumber": 100,
+              "maxNumber": 199
+            },
+            "maxCourses": 2
+          }
+        ]
+      },
+      "sourceText": "21 additional credits of Philosophy coursework. Note that no more than two 100-level philosophy courses may be used to satisfy major requirements."
+    },
+    {
+      "id": "philosophy-ba.100-level-cap",
+      "label": "100-level-cap",
+      "title": "Program-wide limit on 100-level philosophy courses",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than two 100-level philosophy courses may be used to satisfy major requirements.",
+        "reason": "Program-wide cap that applies across all major requirements, not only the electives item; cannot be checked by a single requirement."
+      },
+      "sourceText": "No more than two 100-level philosophy courses may be used to satisfy major requirements."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "philosophy-ba.logic",
+        "philosophy-ba.survey",
+        "philosophy-ba.junior-seminar",
+        "philosophy-ba.great-philosophers",
+        "philosophy-ba.electives"
+      ],
+      "sourceText": "Courses offered for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "philosophy-ba.logic",
+        "philosophy-ba.survey",
+        "philosophy-ba.junior-seminar",
+        "philosophy-ba.great-philosophers",
+        "philosophy-ba.electives"
+      ],
+      "sourceText": "Courses offered for the major must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHI 100",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHI 116",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHI 220",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHI 264",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "PHI elective, 200-level or above",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHI 300",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "PHI elective, 200-level or above",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHI 306",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHI 395",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHI 368",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "PHI 401",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "PHI 372",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "PHI elective, 200-level or above",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Upper-division elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "The Honors program is not modeled. Students must be a junior or senior in the major with an overall GPA of at least 3.00 and a philosophy GPA of 3.50, plan a program with a faculty advisor and the director of undergraduate studies before the first semester of senior year, complete three 300-level or higher courses including PHI 495 (honors thesis), and pass an oral examination."
+    },
+    {
+      "topic": "advising",
+      "text": "Undergraduate Research tracks are occasionally offered in Philosophy (seven courses over three years). Details are available from the Undergraduate Office. These tracks are not modeled."
+    },
+    {
+      "topic": "advising",
+      "text": "Students who would like to study abroad for a semester should consult the director of undergraduate studies. With the Department's permission, Philosophy majors may use credits from other study abroad programs to satisfy major requirements. This is not modeled as a substitution."
+    },
+    {
+      "topic": "other",
+      "text": "The major requires approximately 36 credits in total. Philosophy course descriptions are general and topics can vary between sections; see the department website for current details."
+    },
+    {
+      "topic": "sbc",
+      "text": "The SBC table lists optional major courses that can also satisfy SBC categories. These are per-course tags and are not modeled here."
+    },
+    {
+      "topic": "other",
+      "text": "The sample sequence lists PHI 395 and PHI 459 together in one 3-credit slot; only PHI 395 is transcribed as a course slot."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1533",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

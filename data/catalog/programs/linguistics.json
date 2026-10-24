@@ -1,0 +1,152 @@
+{
+  "id": "linguistics",
+  "name": "Linguistics",
+  "kind": "minor",
+  "degree": "",
+  "approxCredits": 20,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "linguistics.core",
+      "label": "core",
+      "title": "Required introductory linguistics courses",
+      "rule": {
+        "manualCheck": "One of the courses required for the minor may be taken for Pass/No Credit. The page does not say which one, so the student must identify it.",
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "LIN 101"
+          },
+          {
+            "type": "course",
+            "code": "LIN 202"
+          },
+          {
+            "type": "course",
+            "code": "LIN 203"
+          }
+        ]
+      },
+      "sourceText": "LIN 101 - Human Language 3 credits; LIN 202 - Introduction to Phonetics and Phonology 4 credits; LIN 203 - Introduction to Syntax and Morphology 4 credits"
+    },
+    {
+      "id": "linguistics.electives",
+      "label": "electives",
+      "title": "Three additional linguistics courses, two upper-division",
+      "rule": {
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "subjects": [
+            "LIN"
+          ],
+          "excludeCourses": [
+            "LIN 344",
+            "LIN 444",
+            "LIN 449",
+            "LIN 450",
+            "LIN 451",
+            "LIN 452",
+            "LIN 454",
+            "LIN 475",
+            "LIN 476",
+            "LIN 488",
+            "LIN 495",
+            "LIN 496"
+          ],
+          "excludeUsedBy": [
+            "linguistics.core"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "LIN"
+              ],
+              "minNumber": 300,
+              "excludeCourses": [
+                "LIN 344",
+                "LIN 444",
+                "LIN 449",
+                "LIN 450",
+                "LIN 451",
+                "LIN 452",
+                "LIN 454",
+                "LIN 475",
+                "LIN 476",
+                "LIN 488",
+                "LIN 495",
+                "LIN 496"
+              ],
+              "excludeUsedBy": [
+                "linguistics.core"
+              ]
+            },
+            "minCourses": 2
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "LIN 355",
+                "LIN 356"
+              ]
+            },
+            "maxCourses": 2
+          }
+        ]
+      },
+      "sourceText": "Three additional linguistics courses, of which 2 must be upper-division (LIN 355 and/or LIN 356 may be taken up to two times for this requirement. LIN 344, LIN 444, LIN 449, LIN 450, LIN 451, LIN 452, LIN 454, LIN 475, LIN 476, LIN 488, LIN 495, and LIN 496 may not be used for elective credit)"
+    },
+    {
+      "id": "linguistics.outside-course",
+      "label": "outside-course",
+      "title": "Department-approved course from another department",
+      "rule": {
+        "type": "unparsed",
+        "text": "With department approval, a maximum of one 3 credit course taken in another department may be applied as a LIN minor elective.",
+        "reason": "This is an approval-based exception that cannot be checked from a transcript and has no course pool stated on the page."
+      },
+      "sourceText": "With department approval, a maximum of one 3 credit course taken in another department may be applied as a LIN minor elective."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "linguistics.core",
+        "linguistics.electives"
+      ],
+      "sourceText": "One of the courses required for the minor may be taken for Pass/No Credit. All other courses must be passed with C or better."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Linguistics minors that are closely integrated with students' majors are strongly encouraged. Fields with special affinities include anthropology, psychology, English, foreign languages, philosophy, and computer science."
+    },
+    {
+      "topic": "grading",
+      "text": "One of the courses required for the minor may be taken for Pass/No Credit. All other courses must be passed with C or better."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1492",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

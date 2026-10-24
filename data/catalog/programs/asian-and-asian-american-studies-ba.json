@@ -1,0 +1,745 @@
+{
+  "id": "asian-and-asian-american-studies-ba",
+  "name": "Asian and Asian American Studies, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Asian and Asian American Studies",
+  "approxCredits": 39,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "asian-and-asian-american-studies-ba.A",
+      "label": "A",
+      "title": "Language Proficiency (6 credits)",
+      "rule": {
+        "manualCheck": "Verify at least six credits of college study of an Asian language at the intermediate level or above.",
+        "type": "unparsed",
+        "text": "Majors are required to take at least six credits (or the equivalent of one year) of college study of an Asian language at the intermediate level or above.",
+        "reason": "The page does not list the language courses that qualify, so they cannot be matched to a course pool."
+      },
+      "sourceText": "A. Language Proficiency (6 credits) Majors are required to take at least six credits (or the equivalent of one year) of college study of an Asian language at the intermediate level or above. Students who already have a pre-established language proficiency in an Asian language can be exempt from this requirement with approval of the Undergraduate Program Director, and in that case, they should take two additional AAS courses at 200-level or above."
+    },
+    {
+      "id": "asian-and-asian-american-studies-ba.B",
+      "label": "B",
+      "title": "Core Courses (9 credits)",
+      "rule": {
+        "manualCheck": "Students may substitute courses not listed with Undergraduate Program Director approval.",
+        "type": "choose",
+        "count": 3,
+        "from": {
+          "courses": [
+            "AAS 102",
+            "AAS 201",
+            "AAS 216",
+            "AAS 217",
+            "AAS 220",
+            "AAS 232"
+          ]
+        }
+      },
+      "sourceText": "B. Core Courses (9 credits) Majors are required to take three of the core courses to AAS major: AAS 102 - Eastern Religions 3 credits; AAS 201 - Introduction to the Civilization of the Indian Subcontinent 3 credits; AAS 216 - Introduction to Japanese Studies 3 credits; AAS 217 - Introduction to Korean Culture 3 credits; AAS 220 - China: Language and Culture 3 credits; AAS 232 - Introduction to Asian American Fiction and Film 3 credits. Note: Students may substitute courses not listed, with Undergraduate Program Director approval."
+    },
+    {
+      "id": "asian-and-asian-american-studies-ba.C",
+      "label": "C",
+      "title": "Areas of Focus (15 credits)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "asian-and-asian-american-studies-ba.C.1",
+            "manualCheck": "Area 1 (Asian Philosophy and Religions): courses are listed as 'include but are not limited to'. At least nine of the fifteen credits must be upper-division. Students may substitute courses not listed under the chosen area with Undergraduate Program Director approval. The student should choose one area only.",
+            "type": "choose",
+            "credits": 15,
+            "from": {
+              "courses": [
+                "AAS 212",
+                "AAS 236",
+                "AAS 240",
+                "AAS 256",
+                "AAS 260",
+                "AAS 280",
+                "AAS 300",
+                "AAS 326",
+                "AAS 366",
+                "AAS 368",
+                "AAS 380",
+                "AAS 382",
+                "AAS 387",
+                "AAS 391",
+                "AAS 472",
+                "AAS 473"
+              ],
+              "excludeUsedBy": [
+                "asian-and-asian-american-studies-ba.B"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AAS 212",
+                    "AAS 236",
+                    "AAS 240",
+                    "AAS 256",
+                    "AAS 260",
+                    "AAS 280",
+                    "AAS 300",
+                    "AAS 326",
+                    "AAS 366",
+                    "AAS 368",
+                    "AAS 380",
+                    "AAS 382",
+                    "AAS 387",
+                    "AAS 391",
+                    "AAS 472",
+                    "AAS 473"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 3
+              }
+            ]
+          },
+          {
+            "id": "asian-and-asian-american-studies-ba.C.2",
+            "manualCheck": "Area 2 (Literatures, Arts, and Cultures of Asia and Asian America): courses are listed as 'include but are not limited to'. At least nine of the fifteen credits must be upper-division. Students may substitute courses not listed under the chosen area with Undergraduate Program Director approval. The student should choose one area only.",
+            "type": "choose",
+            "credits": 15,
+            "from": {
+              "courses": [
+                "AAS 110",
+                "AAS 212",
+                "AAS 217",
+                "AAS 232",
+                "AAS 237",
+                "AAS 238",
+                "AAS 247",
+                "AAS 250",
+                "AAS 305",
+                "AAS 320",
+                "AAS 321",
+                "AAS 322",
+                "AAS 327",
+                "AAS 391",
+                "AAS 394",
+                "AAS 440"
+              ],
+              "excludeUsedBy": [
+                "asian-and-asian-american-studies-ba.B"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AAS 110",
+                    "AAS 212",
+                    "AAS 217",
+                    "AAS 232",
+                    "AAS 237",
+                    "AAS 238",
+                    "AAS 247",
+                    "AAS 250",
+                    "AAS 305",
+                    "AAS 320",
+                    "AAS 321",
+                    "AAS 322",
+                    "AAS 327",
+                    "AAS 391",
+                    "AAS 394",
+                    "AAS 440"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 3
+              }
+            ]
+          },
+          {
+            "id": "asian-and-asian-american-studies-ba.C.3",
+            "manualCheck": "Area 3 (Society and Contemporary Issues): courses are listed as 'include but are not limited to'. At least nine of the fifteen credits must be upper-division. Students may substitute courses not listed under the chosen area with Undergraduate Program Director approval. The student should choose one area only.",
+            "type": "choose",
+            "credits": 15,
+            "from": {
+              "courses": [
+                "AAS 211",
+                "AAS 219",
+                "AAS 223",
+                "AAS 232",
+                "AAS 238",
+                "AAS 247",
+                "AAS 305",
+                "AAS 328",
+                "AAS 333",
+                "AAS 336",
+                "AAS 338",
+                "AAS 339",
+                "AAS 343",
+                "AAS 351",
+                "AAS 352",
+                "AAS 353",
+                "AAS 370",
+                "AAS 372",
+                "AAS 379",
+                "AAS 392",
+                "AAS 473"
+              ],
+              "excludeUsedBy": [
+                "asian-and-asian-american-studies-ba.B"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AAS 211",
+                    "AAS 219",
+                    "AAS 223",
+                    "AAS 232",
+                    "AAS 238",
+                    "AAS 247",
+                    "AAS 305",
+                    "AAS 328",
+                    "AAS 333",
+                    "AAS 336",
+                    "AAS 338",
+                    "AAS 339",
+                    "AAS 343",
+                    "AAS 351",
+                    "AAS 352",
+                    "AAS 353",
+                    "AAS 370",
+                    "AAS 372",
+                    "AAS 379",
+                    "AAS 392",
+                    "AAS 473"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 3
+              }
+            ]
+          },
+          {
+            "id": "asian-and-asian-american-studies-ba.C.4",
+            "manualCheck": "Area 4 (Region and Language): courses are listed as 'include but are not limited to'. At least nine of the fifteen credits must be upper-division. Students may substitute courses not listed under the chosen area with Undergraduate Program Director approval. The student should choose one area only.",
+            "type": "choose",
+            "credits": 15,
+            "from": {
+              "courses": [
+                "AAS 211",
+                "AAS 212",
+                "AAS 219",
+                "AAS 228",
+                "AAS 237",
+                "AAS 247",
+                "AAS 250",
+                "AAS 320",
+                "AAS 321",
+                "AAS 322",
+                "AAS 323",
+                "AAS 324",
+                "AAS 326",
+                "AAS 327",
+                "AAS 330",
+                "AAS 333",
+                "AAS 336",
+                "AAS 337",
+                "AAS 338",
+                "AAS 339",
+                "AAS 343",
+                "AAS 344",
+                "AAS 351",
+                "AAS 352",
+                "AAS 353",
+                "AAS 370",
+                "AAS 371",
+                "AAS 372",
+                "AAS 379",
+                "AAS 385",
+                "AAS 391",
+                "AAS 392",
+                "AAS 400",
+                "CHI 426",
+                "JPN 426",
+                "KOR 426"
+              ],
+              "excludeUsedBy": [
+                "asian-and-asian-american-studies-ba.B"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "courses": [
+                    "AAS 211",
+                    "AAS 212",
+                    "AAS 219",
+                    "AAS 228",
+                    "AAS 237",
+                    "AAS 247",
+                    "AAS 250",
+                    "AAS 320",
+                    "AAS 321",
+                    "AAS 322",
+                    "AAS 323",
+                    "AAS 324",
+                    "AAS 326",
+                    "AAS 327",
+                    "AAS 330",
+                    "AAS 333",
+                    "AAS 336",
+                    "AAS 337",
+                    "AAS 338",
+                    "AAS 339",
+                    "AAS 343",
+                    "AAS 344",
+                    "AAS 351",
+                    "AAS 352",
+                    "AAS 353",
+                    "AAS 370",
+                    "AAS 371",
+                    "AAS 372",
+                    "AAS 379",
+                    "AAS 385",
+                    "AAS 391",
+                    "AAS 392",
+                    "AAS 400",
+                    "CHI 426",
+                    "JPN 426",
+                    "KOR 426"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 3
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "C. Areas of Focus (15 credits) Majors are required to take fifteen credits from one area of focus, including at least nine credits from upper-division courses. Students are encouraged to construct their own analytic focus within the major in consultation with the Undergraduate Program Director. Note: Students may substitute courses not listed under their chosen Area of Focus with Undergraduate Program Director approval. (Areas 1-4 as listed on the page.)"
+    },
+    {
+      "id": "asian-and-asian-american-studies-ba.D",
+      "label": "D",
+      "title": "Electives (6 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "subjects": [
+            "AAS"
+          ],
+          "excludeUsedBy": [
+            "asian-and-asian-american-studies-ba.B",
+            "asian-and-asian-american-studies-ba.C",
+            "asian-and-asian-american-studies-ba.E"
+          ]
+        }
+      },
+      "sourceText": "D. Electives (6 credits) Majors are required to take two electives in AAS to meet the total credit and upper-division credit requirements."
+    },
+    {
+      "id": "asian-and-asian-american-studies-ba.E",
+      "label": "E",
+      "title": "Proseminar (3 credits)",
+      "rule": {
+        "type": "course",
+        "code": "AAS 401"
+      },
+      "sourceText": "E. Proseminar (3 credits) Majors are required to take the following course: AAS 401 - Proseminar in Asian and Asian American Studies 3 credits"
+    },
+    {
+      "id": "asian-and-asian-american-studies-ba.F",
+      "label": "F",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "Confirm AAS 401 is completed with a research proposal or paper of at least ten pages.",
+        "type": "unparsed",
+        "text": "Students with a major in AAS are required to fulfill their Upper-Division Writing Requirement by successfully completing AAS 401, which is certified WRTD. This proseminar in research design, required all undergraduate majors in AAS, culminates in a research proposal or research paper of at least ten-pages in length.",
+        "reason": "The writing requirement is satisfied by AAS 401, which is already applied under item E. It is not a separate course slot and cannot be counted twice."
+      },
+      "sourceText": "F. Upper-Division Writing Requirement Students with a major in AAS are required to fulfill their Upper-Division Writing Requirement by successfully completing AAS 401, which is certified WRTD. This proseminar in research design, required all undergraduate majors in AAS, culminates in a research proposal or research paper of at least ten-pages in length. Students are encouraged to complete this requirement as soon as they attain U3 or U4 status."
+    },
+    {
+      "id": "asian-and-asian-american-studies-ba.total-credits",
+      "label": "total-credits",
+      "title": "Total Credits and Upper-Division Credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the major requires 39 credits, including at least 21 upper-division credits.",
+        "reason": "Program-wide credit total and upper-division minimum cannot be expressed with the available rule types."
+      },
+      "sourceText": "The major in Asian and Asian American Studies leads to the Bachelor of Arts degree. No more than 3 credits with a grade of P (Pass) or S (Satisfactory) may be applied to the major. All other courses for the major must be passed with a letter grade of C or higher. Completion of the major requires 39 credits, including at least 21 upper-division credits."
+    },
+    {
+      "id": "asian-and-asian-american-studies-ba.pass-no-credit",
+      "label": "pass-no-credit",
+      "title": "Pass/Satisfactory Credit Limit",
+      "rule": {
+        "type": "unparsed",
+        "text": "No more than 3 credits with a grade of P (Pass) or S (Satisfactory) may be applied to the major.",
+        "reason": "A program-wide cap on P/S credits has no matching rule type."
+      },
+      "sourceText": "No more than 3 credits with a grade of P (Pass) or S (Satisfactory) may be applied to the major."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "asian-and-asian-american-studies-ba.A",
+        "asian-and-asian-american-studies-ba.B",
+        "asian-and-asian-american-studies-ba.C",
+        "asian-and-asian-american-studies-ba.D",
+        "asian-and-asian-american-studies-ba.E"
+      ],
+      "sourceText": "All other courses for the major must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 12,
+      "appliesTo": [
+        "asian-and-asian-american-studies-ba.total-credits"
+      ],
+      "sourceText": "At least 12 of the upper-division credits must be taken at Stony Brook University."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "asian-and-asian-american-studies-ba.sub.language-exemption",
+      "replaces": {
+        "type": "rule",
+        "ruleId": "asian-and-asian-american-studies-ba.A"
+      },
+      "with": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "subjects": [
+            "AAS"
+          ],
+          "minNumber": 200,
+          "excludeUsedBy": [
+            "asian-and-asian-american-studies-ba.B",
+            "asian-and-asian-american-studies-ba.C",
+            "asian-and-asian-american-studies-ba.E"
+          ]
+        }
+      },
+      "condition": "Students who already have a pre-established language proficiency in an Asian language",
+      "requiresApproval": true,
+      "sourceText": "Students who already have a pre-established language proficiency in an Asian language can be exempt from this requirement with approval of the Undergraduate Program Director, and in that case, they should take two additional AAS courses at 200-level or above."
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elementary Asian language I",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Core courses: 1st course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elementary Asian language II",
+          "credits": 4
+        },
+        {
+          "kind": "placeholder",
+          "label": "Core courses: 2nd course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Intermediate Asian language I",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Core courses: 3rd course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Intermediate Asian language II",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Concentration: 1st course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Concentration: 2nd course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Concentration: 3rd course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Concentration: 4th course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "AAS 401",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Concentration: 5th course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "One upper-division elective in AAS",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "One upper-division elective in AAS",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students may gain first-hand experience of Asian cultures through Study Abroad. Stony Brook offers a summer program in China, Japan, India and Korea and academic year programs in China, Japan, and Korea."
+    },
+    {
+      "topic": "other",
+      "text": "Asian & Asian American Studies Honors Program (not evaluated): majors need an overall GPA of 3.00 and an AAS GPA of 3.50 through the junior year. Students write a senior thesis with a faculty advisor, submit a proposal to the Undergraduate Program Director (deadline April 30 for spring, November 30 for fall), and enroll in AAS 495 for the thesis semester."
+    },
+    {
+      "topic": "other",
+      "text": "Accelerated BA/MA in Global Asias (not evaluated): requires the AAS major, at least U2 standing, and a 3.0 GPA minimum; up to nine graduate credits may count toward undergraduate requirements."
+    },
+    {
+      "topic": "other",
+      "text": "Accelerated BA-Teacher Education/MA (not evaluated): requires the Asian and Asian American Studies major with Teacher Certification, at least U2 standing, and a 3.0 GPA minimum. Chinese, Japanese, and Korean Secondary Teacher Education is listed under the Education and Teacher Certification entry."
+    },
+    {
+      "topic": "other",
+      "text": "Acceptable courses for the major may include, but are not limited to, courses with the following designators: ANT, ARH, CCS, CHI, CLT, ENG, HIN, HIS, JPN, KOR, LIN, PHI, POL, RLS, SKT, SOC, THR."
+    },
+    {
+      "topic": "other",
+      "text": "Minors of particular interest to AAS majors include Anthropology, Asian American Studies, Asian Thought, China Studies, Globalization Studies and International Relations, Health Medicine and Society, History, Japanese Studies, Journalism, Korean Studies, Linguistics, Philosophy, Political Science, South Asian Studies, and Women's and Gender Studies."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1361",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

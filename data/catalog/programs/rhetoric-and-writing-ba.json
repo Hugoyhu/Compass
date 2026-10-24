@@ -1,0 +1,134 @@
+{
+  "id": "rhetoric-and-writing-ba",
+  "name": "Rhetoric and Writing, BA",
+  "kind": "major",
+  "degree": "Bachelor of Arts in Rhetoric and Writing",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "rhetoric-and-writing-ba.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses (33 Credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "COM 100"
+          },
+          {
+            "type": "course",
+            "code": "WRT 102"
+          },
+          {
+            "type": "course",
+            "code": "COM 120"
+          },
+          {
+            "type": "course",
+            "code": "WRT 200"
+          },
+          {
+            "type": "course",
+            "code": "WRT 201"
+          },
+          {
+            "type": "course",
+            "code": "COM 202"
+          },
+          {
+            "type": "course",
+            "code": "COM 206"
+          },
+          {
+            "type": "course",
+            "code": "WRT 300"
+          },
+          {
+            "type": "course",
+            "code": "WRT 380"
+          },
+          {
+            "type": "course",
+            "code": "WRT 381"
+          },
+          {
+            "type": "course",
+            "code": "WRT 490"
+          }
+        ]
+      },
+      "sourceText": "Required Courses (33 Credits): COM 100 - Introduction to Communication 3 credits; WRT 102 - Intermediate Writing Workshop 3 credits; COM 120 - Fundamentals of Public Speaking 3 credits; WRT 200 - The Rhetoric of Grammar and Style 3 credits; WRT 201 - Principles of Professional Writing 3 credits; COM 202 - Intercultural Communication 3 credits; COM 206 - Interpersonal Communication 3 credits; WRT 300 - Theories and Methods in Rhetoric and Writing 3 credits; WRT 380 - Advanced Research Writing: Theories, Methods, Practices 3 credits; WRT 381 - Advanced Analytic and Argumentative Writing 3 credits; WRT 490 - Rhetoric and Writing Senior Project 3 credits"
+    },
+    {
+      "id": "rhetoric-and-writing-ba.electives",
+      "label": "electives",
+      "title": "Electives (12 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 4,
+        "from": {
+          "courses": [
+            "WRT 301",
+            "WRT 302",
+            "WRT 303",
+            "WRT 304",
+            "WRT 305",
+            "WRT 320",
+            "WRT 321",
+            "WRT 375",
+            "WRT 376",
+            "WRT 377",
+            "WRT 382",
+            "COM 346",
+            "COM 351",
+            "COM 357",
+            "COM 358",
+            "COM 386",
+            "COM 401",
+            "COM 402",
+            "COM 403",
+            "COM 404",
+            "COM 405",
+            "COM 406",
+            "COM 415",
+            "COM 434",
+            "COM 436",
+            "COM 487",
+            "COM 496"
+          ]
+        }
+      },
+      "sourceText": "Electives (12 credits): Choose four of the following: WRT 301 - Writing in the Disciplines: Special Topics 3 credits; WRT 302 - Critical Writing Seminar: Special Topics 3 credits; WRT 303 - The Personal Essay 3 credits; WRT 304 - Writing for Your Profession 3 credits; WRT 305 - Writing for the Health Professions 3 credits; WRT 320 - Rhetoric and Culture 3 credits; WRT 321 - Rhetoric of Social Movements 3 credits; WRT 375 - Technical Communication 3 credits; WRT 376 - Digital Rhetorics 3 credits; WRT 377 - Special Topics in Digital Writing 3 credits; WRT 382 - Grant Writing 3 credits; COM 346 - Race, Class, and Gender in Media 3 credits; COM 351 - Team Collaboration and Community Engagement 3 credits; COM 357 - Health Communication 3 credits; COM 358 - Nonverbal Communication 3 credits; COM 386 - Special Topics: Issues in Communication 3 credits; COM 401 - Organizational Communication 3 credits; COM 402 - Crisis Communication 3 credits; COM 403 - Strategic Communication 3 credits; COM 404 - Communication for Social Change & Public Advocacy 3 credits; COM 405 - Political Communication 3 credits; COM 406 - Risk Communication 3 credits; COM 415 - Data Analysis and Storytelling 3 credits; COM 434 - Argumentation and Persuasion 3 credits; COM 436 - Environmental Communication 3 credits; COM 487 - Independent Study 0-6 credits; COM 496 - Communication Internship 1-6 credits"
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "other",
+      "text": "This degree is jointly offered by the Department of Writing and Rhetoric and the School of Communication and Journalism."
+    },
+    {
+      "topic": "advising",
+      "text": "Contact the Undergraduate Program Director, Patricia Medved (patricia.medved@stonybrook.edu), or the Writing and Rhetoric Office (Humanities 2005, (631) 632-7390)."
+    },
+    {
+      "topic": "sbc",
+      "text": "The SBC table lists major courses that may also fulfill SBC categories. Course-level SBC tags are maintained on course records and are not evaluated here. The LANG exemptions in Note 4 apply only to the listed other majors."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1567",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

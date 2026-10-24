@@ -1,0 +1,457 @@
+{
+  "id": "electrical-engineering-online-bs",
+  "name": "Electrical Engineering Online, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Electrical Engineering",
+  "approxCredits": 66,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "electrical-engineering-online-bs.mathematics",
+      "label": "mathematics",
+      "title": "Mathematics",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MAT 131"
+          },
+          {
+            "type": "course",
+            "code": "MAT 132"
+          },
+          {
+            "type": "course",
+            "code": "MAT 203"
+          },
+          {
+            "type": "course",
+            "code": "MAT 303"
+          },
+          {
+            "type": "course",
+            "code": "MAT 211"
+          }
+        ]
+      },
+      "sourceText": "Mathematics* - MAT 131 - Calculus I 4 credits; MAT 132 - Calculus II 4 credits; MAT 203 - Calculus III with Applications 4 credits; MAT 303 - Calculus IV with Applications 4 credits; MAT 211 - Introduction to Linear Algebra 3 credits"
+    },
+    {
+      "id": "electrical-engineering-online-bs.natural-sciences",
+      "label": "natural-sciences",
+      "title": "Natural Sciences",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "PHY 131"
+          },
+          {
+            "type": "course",
+            "code": "PHY 133"
+          },
+          {
+            "type": "course",
+            "code": "PHY 132"
+          },
+          {
+            "type": "course",
+            "code": "PHY 134"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CHE 131"
+              },
+              {
+                "type": "course",
+                "code": "PHY 251"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Natural Sciences* - PHY 131 - Classical Physics I 3 credits; PHY 133 - Classical Physics Laboratory I 1 credit; PHY 132 - Classical Physics II 3 credits; PHY 134 - Classical Physics Laboratory II 1 credit; CHE 131 - General Chemistry IB 4 credits OR PHY 251 - Modern Physics 3 credits"
+    },
+    {
+      "id": "electrical-engineering-online-bs.required-courses",
+      "label": "required-courses",
+      "title": "Required Courses",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "EEO 124"
+              },
+              {
+                "type": "unparsed",
+                "text": "C++ Programming for Engineers",
+                "reason": "Alternative to EEO 124 is given by course title only, with no course code"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "EEO 218"
+          },
+          {
+            "type": "course",
+            "code": "EEO 219"
+          },
+          {
+            "type": "course",
+            "code": "EEO 224"
+          },
+          {
+            "type": "course",
+            "code": "EEO 271"
+          },
+          {
+            "type": "course",
+            "code": "EEO 301"
+          },
+          {
+            "type": "course",
+            "code": "EEO 306"
+          },
+          {
+            "type": "course",
+            "code": "EEO 311"
+          },
+          {
+            "type": "course",
+            "code": "EEO 315"
+          },
+          {
+            "type": "course",
+            "code": "EEO 319"
+          },
+          {
+            "type": "course",
+            "code": "EEO 331"
+          },
+          {
+            "type": "course",
+            "code": "EEO 352"
+          },
+          {
+            "type": "course",
+            "code": "EEO 353"
+          }
+        ]
+      },
+      "sourceText": "Required Courses: EEO 124 - C Programming for Electrical Engineers 3 credits* OR C++ Programming for Engineers*; EEO 218 - Digital Logic Design 3 credits*; EEO 219 - Digital Logic Design Laboratory 1 credit*; EEO 224 - Object Oriented Programming for Electrical and Computer Engineers 3 credits*; EEO 271 - Electrical Circuit Analysis 3 credits*; EEO 301 - Signals and Systems 3 credits; EEO 306 - Random Signals and Systems 3 credits; EEO 311 - Electronics Circuits II 3 credits; EEO 315 - Electronics Circuits I 3 credits; EEO 319 - Electromagnetic Waves and Transmission Lines 3 credits; EEO 331 - Semiconductor Devices 3 credits; EEO 352 - Electronics Laboratory I 3 credits; EEO 353 - Electronics Laboratory II 3 credits"
+    },
+    {
+      "id": "electrical-engineering-online-bs.technical-electives",
+      "label": "technical-electives",
+      "title": "Technical Electives (12 credits)",
+      "rule": {
+        "type": "choose",
+        "count": 4,
+        "from": {
+          "courses": [
+            "EEO 303",
+            "EEO 304",
+            "EEO 314",
+            "EEO 316",
+            "EEO 346",
+            "EEO 366",
+            "EEO 388",
+            "EEO 414",
+            "EEO 425",
+            "EEO 470",
+            "EEO 482"
+          ]
+        }
+      },
+      "sourceText": "Technical Electives (12 credits) Four courses selected from the following: EEO 303 - Digital Signal Processing 3 credits; EEO 304 - Electronic Instrumentation and Operational Amplifiers 3 credits; EEO 314 - Mos Transistor Modeling 3 credits; EEO 316 - Integrated Electronic Devices and Circuits 3 credits; EEO 346 - Computer Communications 3 credits; EEO 366 - Design using Programmable Mixed-Signal Systems-on-Chip 4 credits; EEO 388 - Foundations of Machine Learning 3 credits; EEO 414 - Fundamentals of Low Noise Electronics for Sensors 3 credits; EEO 425 - Electric Machinery and Energy Conversion 3 credits; EEO 470 - Renewable Distributed Generation and Storage 3 credits; EEO 482 - Power Systems Engineering I 3 credits"
+    },
+    {
+      "id": "electrical-engineering-online-bs.open-electives",
+      "label": "open-electives",
+      "title": "Open Electives (6 credits)",
+      "rule": {
+        "manualCheck": "Advisor must approve the selected open elective courses.",
+        "type": "unparsed",
+        "text": "Open Electives (6 credits): Courses selected in consultation with the program advisor.",
+        "reason": "The page sets 6 credits but gives no course pool; selection is by advisor consultation"
+      },
+      "sourceText": "Open Electives (6 credits) Courses selected in consultation with the program advisor."
+    },
+    {
+      "id": "electrical-engineering-online-bs.design",
+      "label": "design",
+      "title": "Design",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "EEO 440"
+          },
+          {
+            "type": "course",
+            "code": "EEO 441"
+          }
+        ]
+      },
+      "sourceText": "Design - EEO 440 - Engineering Design I 3 credits; EEO 441 - Engineering Design II 3 credits. Note: EEO 440 and EEO 441 are engineering design project courses that must be carried out under the supervision of an Electrical and Computer Engineering faculty member."
+    },
+    {
+      "id": "electrical-engineering-online-bs.upper-division-writing",
+      "label": "upper-division-writing",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "type": "course",
+        "code": "EEO 300"
+      },
+      "sourceText": "Upper-Division Writing Requirement: EEO 300 - Technical Communication for Electrical Engineers 3 credits"
+    },
+    {
+      "id": "electrical-engineering-online-bs.engineering-ethics",
+      "label": "engineering-ethics",
+      "title": "Engineering Ethics",
+      "rule": {
+        "type": "course",
+        "code": "EEO 302"
+      },
+      "sourceText": "Engineering Ethics - EEO 302 - Engineering Ethics and Societal Impact 3 credits"
+    },
+    {
+      "id": "electrical-engineering-online-bs.eeo-residency",
+      "label": "eeo-residency",
+      "title": "EEO Residency Requirement",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least seven EEO required courses or technical electives (excluding EEO 300, EEO 302, EEO 440 and EEO 441) must be earned in Stony Brook EEO courses.",
+        "reason": "Residency is stated as a count of courses, which the policy types (credit-based) cannot express"
+      },
+      "sourceText": "EEO Residency Requirement: In addition to the University residence and upper division requirements, the following courses must be earned in Stony Brook EEO courses: EEO 440 and EEO 441; At least seven EEO required courses or technical electives (excluding EEO 300, EEO 302, EEO 440 and EEO 441)."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "electrical-engineering-online-bs.mathematics",
+        "electrical-engineering-online-bs.natural-sciences",
+        "electrical-engineering-online-bs.required-courses",
+        "electrical-engineering-online-bs.technical-electives",
+        "electrical-engineering-online-bs.open-electives",
+        "electrical-engineering-online-bs.design",
+        "electrical-engineering-online-bs.upper-division-writing",
+        "electrical-engineering-online-bs.engineering-ethics"
+      ],
+      "sourceText": "All courses taken for the major must be taken for a letter grade."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "electrical-engineering-online-bs.mathematics",
+        "electrical-engineering-online-bs.natural-sciences",
+        "electrical-engineering-online-bs.required-courses",
+        "electrical-engineering-online-bs.technical-electives",
+        "electrical-engineering-online-bs.open-electives",
+        "electrical-engineering-online-bs.design",
+        "electrical-engineering-online-bs.upper-division-writing",
+        "electrical-engineering-online-bs.engineering-ethics"
+      ],
+      "sourceText": "A grade of C or higher is required in all courses."
+    },
+    {
+      "type": "residencyRequired",
+      "appliesTo": [
+        "electrical-engineering-online-bs.design"
+      ],
+      "sourceText": "EEO Residency Requirement: the following courses must be earned in Stony Brook EEO courses: EEO 440 and EEO 441."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EEO 302",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EEO 301",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EEO 315",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EEO 352",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "MAT 211",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "Open Elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EEO 306",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EEO 311",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EEO 353",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EEO 224",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EEO 440",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EEO 319",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Open Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EEO 441",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EEO 331",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Technical Elective",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EEO 300",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Upper-division transfer admission: qualified transfer students not currently matriculated at Stony Brook who have completed the required prerequisite courses may apply through the SUNY application. Minimum requirements: a 3.0 cumulative GPA in College Calculus I, College Calculus II, College Calculus III, and Introduction to Differential Equations, with no grade below C, from regionally accredited institutions or recognized by the Program on Noncollegiate Sponsored Instruction of the State of New York; and a minimum grade of C in an English composition course judged equivalent to WRT 102."
+    },
+    {
+      "topic": "admission",
+      "text": "Acceptance into the major: applications are reviewed twice per year and must be received by January 5 (Spring admission) or June 5 (Fall admission). Requirements: at least 9 credits of mathematics, physics, and electrical engineering online courses required for the major (excluding EEO 300 and EEO 302), and a GPA of 3.00 or higher in all mathematics, physics, and engineering courses (excluding EEO 300 and EEO 302) applicable to major requirements with no more than one grade less than C. These must be completed no later than one year after enrolling in the first course that applies toward major entry."
+    },
+    {
+      "topic": "admission",
+      "text": "Students pursuing a Bachelor of Engineering may not apply for a double major in the Electrical Engineering Online program. Students with a minor in Electrical Engineering may not pursue the Electrical Engineering Online program."
+    },
+    {
+      "topic": "other",
+      "text": "Requirements and courses marked with an (*) are typically completed via transfer credit prior to matriculation."
+    },
+    {
+      "topic": "other",
+      "text": "The major requires approximately 66 credits. Students must also complete the Stony Brook Curriculum general degree requirements."
+    },
+    {
+      "topic": "advising",
+      "text": "MAT 211 is not available online. Refer to the transfer database for the most current evaluations."
+    },
+    {
+      "topic": "advising",
+      "text": "Open Electives should be selected in consultation with the program advisor."
+    },
+    {
+      "topic": "sbc",
+      "text": "EEO 440 and EEO 441 partially satisfy the following SBC categories: ESI, CER, SPK, WRTD, SBS+, STEM+, EXP+. For more information contact the CEAS Undergraduate Student Office."
+    },
+    {
+      "topic": "other",
+      "text": "Students are responsible for completing the general education requirements published in the Bulletin in effect at the start of their first semester of matriculation (or rematriculation). The DIV learning objective applies to certain student groups as stated in the catalog SBC note."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1431",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

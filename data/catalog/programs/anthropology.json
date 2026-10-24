@@ -1,0 +1,151 @@
+{
+  "id": "anthropology",
+  "name": "Anthropology",
+  "kind": "minor",
+  "approxCredits": 21,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "anthropology.1",
+      "label": "1",
+      "title": "Core Concept courses (12 credits)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "anthropology.1.a",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "courses": [
+                "ANT 102",
+                "ANT 104",
+                "ANT 120"
+              ]
+            }
+          },
+          {
+            "id": "anthropology.1.b",
+            "type": "unparsed",
+            "text": "Two additional courses selected from the \"Core Concept\" list on the Anthropology Major page",
+            "reason": "The Core Concept list is on the Anthropology Major page, which is not included here"
+          }
+        ]
+      },
+      "sourceText": "1. \"Core Concept\" courses (12 credits) a. Two courses chosen from the following i. ANT 102 - What Makes Us Human? 3 credits ii. ANT 104 - Introduction to Archaeology 3 credits iii. ANT 120 - Introduction to Biological Anthropology 3 credits b. Two additional courses selected from the \"Core Concept\" list on the Anthropology Major page"
+    },
+    {
+      "id": "anthropology.2",
+      "label": "2",
+      "title": "Connections courses (6 credits)",
+      "rule": {
+        "manualCheck": "Verify two Connections courses against the Anthropology Major page list",
+        "type": "unparsed",
+        "text": "Two courses from the \"Connections\" list on the Anthropology Major page (6 credits)",
+        "reason": "The Connections list is on the Anthropology Major page, which is not included here"
+      },
+      "sourceText": "2. Two courses from the \"Connections\" list on the Anthropology Major page (6 credits)"
+    },
+    {
+      "id": "anthropology.3",
+      "label": "3",
+      "title": "Critical thinking and research course (3 credits)",
+      "rule": {
+        "manualCheck": "Verify one course against the Anthropology Major page list",
+        "type": "unparsed",
+        "text": "One course from the \"Critical thinking and research\" list on the Anthropology Major page (3 credits)",
+        "reason": "The Critical thinking and research list is on the Anthropology Major page, which is not included here"
+      },
+      "sourceText": "3. One course from the \"Critical thinking and research\" list on the Anthropology Major page (3 credits)"
+    },
+    {
+      "id": "anthropology.total",
+      "label": "total",
+      "title": "Total minor credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "Completion of the ANT minor requires 21 credits.",
+        "reason": "No rule type expresses a total-credit minimum for the minor"
+      },
+      "sourceText": "Completion of the ANT minor requires 21 credits."
+    },
+    {
+      "id": "anthropology.upper-division",
+      "label": "upper-division",
+      "title": "Upper-division credits",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least nine credits must be in 300 or 400 level courses.",
+        "reason": "A cross-cutting upper-division credit minimum across the minor's requirements is not expressible with the available rule types"
+      },
+      "sourceText": "At least nine credits must be in 300 or 400 level courses."
+    },
+    {
+      "id": "anthropology.excluded",
+      "label": "excluded",
+      "title": "Courses that do not count toward the minor",
+      "rule": {
+        "type": "unparsed",
+        "text": "ANT 475, ANT 476, and ANT 488 do not count toward the minor requirements.",
+        "reason": "Exclusion of specific courses from all minor requirements is not expressible as a pool exclusion because no single pool covers the minor"
+      },
+      "sourceText": "ANT 475 , 476 , and 488 do not count toward the minor requirements."
+    },
+    {
+      "id": "anthropology.research-cap",
+      "label": "research-cap",
+      "title": "Research and reading credit cap",
+      "rule": {
+        "type": "unparsed",
+        "text": "A maximum of 3 research or reading credits can be applied (ANT 399, ANT 447, ANT 487).",
+        "reason": "A credit cap across these courses applies to the whole minor and is not attached to a single requirement"
+      },
+      "sourceText": "A maximum of 3 research or reading credits can be applied (ANT 399 , ANT 447 , ANT 487 )."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "anthropology.1",
+        "anthropology.2",
+        "anthropology.3"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "anthropology.1",
+        "anthropology.2",
+        "anthropology.3"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher. No transfer credits with a grade lower than C may be applied to the minor requirements."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "other",
+      "text": "No transfer credits with a grade lower than C may be applied to the minor requirements."
+    },
+    {
+      "topic": "other",
+      "text": "Students majoring in Human Evolutionary Biology (EBH) may have a maximum of nine (9) credits of overlap between EBH major coursework and ANT minor coursework."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1347",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

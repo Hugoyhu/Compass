@@ -1,0 +1,185 @@
+{
+  "id": "music",
+  "name": "Music",
+  "kind": "minor",
+  "degree": "Minor in Music, general studies",
+  "approxCredits": 20,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "music.theory",
+      "label": "theory",
+      "title": "Theory",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MUS 119"
+              },
+              {
+                "type": "course",
+                "code": "MUS 130"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MUS 315"
+          },
+          {
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MUS 316"
+              },
+              {
+                "type": "course",
+                "code": "MUS 340"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Theory: MUS 119 - The Elements of Music 3 credits OR MUS 130 - Sound Structures 3 credits; MUS 315 - The Structural Principles of Music I 3 credits; MUS 316 - The Structural Principles of Music II 3 credits OR MUS 340 - Timbre and Technology 3 credits. Notes: Students well-versed in music notation and basic theory (as demonstrated by the MUS 119 challenge examination) should take MUS 130 - Sound Structures"
+    },
+    {
+      "id": "music.history",
+      "label": "history",
+      "title": "History",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "MUS 101"
+          },
+          {
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "courses": [
+                "MUS 105",
+                "MUS 301",
+                "MUS 314",
+                "MUS 319",
+                "MUS 323"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "History: MUS 101 - Introduction to Western Classical Music 3 credits; Two courses chosen from the following: MUS 105 - Music Cultures of the World 3 credits; MUS 301; MUS 314 - Music, Gender, and Sexuality 3 credits; MUS 319; MUS 323 - Techniques of Music, 1880 to the Present 3 credits"
+    },
+    {
+      "id": "music.performance",
+      "label": "performance",
+      "title": "Performance",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "manualCheck": "Two semesters of one or more of the listed ensembles.",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "courses": [
+                "MUS 261",
+                "MUS 262",
+                "MUS 263",
+                "MUS 264",
+                "MUS 266",
+                "MUS 267",
+                "MUS 268",
+                "MUS 269",
+                "MUS 270",
+                "MUS 271",
+                "MUS 391"
+              ]
+            }
+          },
+          {
+            "manualCheck": "Private lessons alternative; available only with permission of the director of undergraduate studies after not passing the ensemble audition. Ensemble corequisite is waived for students fulfilling the requirement this way. Number of semesters of lessons required is not stated explicitly on the page.",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "ranges": [
+                {
+                  "subject": "MUS",
+                  "from": 161,
+                  "to": 187
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Performance: Two semesters of one or more of the following: MUS 261 - Stony Brook Chorale 1 credit; MUS 262 - University Orchestra 1 credit; MUS 263 - University Wind Ensemble 0-1 credit; MUS 264 - Big Band Jazz Ensemble 1 credit; MUS 266 - Guitar Workshop 1 credit; MUS 267 - Small Jazz Ensemble Level 1 6 credits.; MUS 268 - Spirit of Stony Brook Athletic Band 0-2 credits; MUS 269 - Intro to African Drumming; MUS 270 - Advanced African Drumming; MUS 271 - Camerata Singers 1 credit; MUS 391 - Chamber Music 1 credit. A Note on the Performance Requirement: With the permission of the director of undergraduate studies, students who do not pass the audition for one of the ensembles may fulfill the performance requirement through private lessons (MUS 161 -MUS 187 )."
+    },
+    {
+      "id": "music.upper-division-credits",
+      "label": "upper-division-credits",
+      "title": "Upper-division credits in Requirements 2 or 3",
+      "rule": {
+        "type": "unparsed",
+        "text": "At least three credits from Requirement 2 or 3 in either track must be upper division.",
+        "reason": "Program-wide upper-division credit rule referencing tracks that the page does not list; no rule type covers this."
+      },
+      "sourceText": "At least three credits from Requirement 2 or 3 in either track must be upper division."
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "music.theory",
+        "music.history",
+        "music.performance"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "music.theory",
+        "music.history",
+        "music.performance"
+      ],
+      "sourceText": "All courses offered for the minor must be passed with a letter grade of C or higher."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "advising",
+      "text": "Students well-versed in music notation and basic theory (as demonstrated by the MUS 119 challenge examination) should take MUS 130 - Sound Structures."
+    },
+    {
+      "topic": "other",
+      "text": "With the permission of the director of undergraduate studies, students who do not pass the ensemble audition may fulfill the performance requirement through private lessons (MUS 161 - MUS 187). The ensemble corequisite for private lessons is waived for these students."
+    },
+    {
+      "topic": "other",
+      "text": "The page lists the minor as requiring 20 credits. The page refers to 'either track' in the upper-division rule but does not describe separate tracks."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1539",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

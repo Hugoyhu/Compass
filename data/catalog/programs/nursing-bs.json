@@ -1,0 +1,42 @@
+{
+  "id": "nursing-bs",
+  "name": "Nursing, BS",
+  "kind": "major",
+  "degree": "",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "nursing-bs.unparsed",
+      "label": "unparsed",
+      "title": "Program requirements not on page",
+      "rule": {
+        "type": "unparsed",
+        "text": "Information and program requirements for the majors in Nursing may be found in the Health Sciences Catalog under Baccalaureate Programs.",
+        "reason": "The page refers to the Health Sciences Catalog and states no requirements of its own; the requirements could not be read from this page."
+      },
+      "sourceText": "Information and program requirements for the majors in Nursing may be found in the Health Sciences Catalog under Baccalaureate Programs."
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "Program requirements for Nursing, BS are published in the Health Sciences Catalog under Baccalaureate Programs, not on this page. Degree awarded and sample sequence were not stated on this page."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1575",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

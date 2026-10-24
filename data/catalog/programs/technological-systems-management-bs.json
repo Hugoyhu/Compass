@@ -1,0 +1,852 @@
+{
+  "id": "technological-systems-management-bs",
+  "name": "Technological Systems Management, BS",
+  "kind": "major",
+  "degree": "Bachelor of Science in Technological Systems Management",
+  "approxCredits": 79,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "technological-systems-management-bs.A",
+      "label": "A",
+      "title": "Mathematics",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "AMS 151"
+              },
+              {
+                "type": "course",
+                "code": "AMS 161"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 126"
+              },
+              {
+                "type": "course",
+                "code": "MAT 127"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "MAT 132"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "AMS 151 - Applied Calculus I 3 credits; AMS 161 - Applied Calculus II 3 credits. Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161: MAT 125, MAT 126, MAT 127, or MAT 131, MAT 132."
+    },
+    {
+      "id": "technological-systems-management-bs.B",
+      "label": "B",
+      "title": "Natural Sciences",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "technological-systems-management-bs.B.first",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "BIO 201",
+                "CHE 131",
+                "GEO 304",
+                "GEO 311",
+                "GEO 313",
+                "GEO 315",
+                "PHY 131",
+                "PHY 141"
+              ]
+            }
+          },
+          {
+            "manualCheck": "Any other natural science course may be used with permission of the department.",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "BIO 201",
+                "CHE 131",
+                "GEO 304",
+                "GEO 311",
+                "GEO 313",
+                "GEO 315",
+                "PHY 131",
+                "PHY 141",
+                "BIO 202",
+                "BIO 203",
+                "CHE 132",
+                "ENS 101",
+                "EST 102",
+                "GEO 101",
+                "GEO 102",
+                "MAR 104",
+                "PHY 132",
+                "PHY 125",
+                "PHY 126",
+                "PHY 127",
+                "PHY 142"
+              ],
+              "excludeUsedBy": [
+                "technological-systems-management-bs.B.first"
+              ]
+            }
+          }
+        ]
+      },
+      "sourceText": "Select at least one of the following natural science courses: BIO 201; CHE 131; GEO 304; GEO 311; GEO 313; GEO 315; PHY 131; PHY 141. One additional natural science course selected from above or the following list: BIO 202; BIO 203; CHE 132; ENS 101; EST 102; GEO 101; GEO 102; MAR 104; PHY 132; PHY 125; PHY 126; PHY 127; PHY 142. Note: or any other natural science course with permission of the department."
+    },
+    {
+      "id": "technological-systems-management-bs.C",
+      "label": "C",
+      "title": "Study in Related Areas: Specialization",
+      "rule": {
+        "id": "technological-systems-management-bs.C.specialization",
+        "type": "anyOf",
+        "rules": [
+          {
+            "manualCheck": "Confirm the seven courses come from one area or department, have at least 21 credits and at least three 300/400-level courses totaling at least nine credits, do not overlap requirements A, B, D or E, and that specialization course options have prior approval.",
+            "type": "unparsed",
+            "text": "A cluster of seven related courses, totaling at least 21 credits, in one area of natural science, engineering, applied science, or environmental studies from a single department or program, or in the department defined specialization of Information and Communication Technologies for Development. At least three courses, totaling at least nine credits, must be at the 300 or 400 level.",
+            "reason": "The eligible course pool for a general specialization is open-ended and not enumerated on the page."
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CSE 101"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 103"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CSE 114"
+              },
+              {
+                "type": "course",
+                "code": "CSE 214"
+              },
+              {
+                "type": "course",
+                "code": "ISE 218"
+              },
+              {
+                "manualCheck": "CSE 390, CSE 391 and CSE 392 special topics require prior approval.",
+                "type": "choose",
+                "count": 3,
+                "from": {
+                  "courses": [
+                    "ISE 305",
+                    "CSE 310",
+                    "ISE 316",
+                    "CSE 337",
+                    "CSE 373",
+                    "CSE 390",
+                    "CSE 391",
+                    "CSE 392"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "CSE 390",
+                        "CSE 391",
+                        "CSE 392"
+                      ]
+                    },
+                    "maxCourses": 2
+                  },
+                  {
+                    "type": "onePerGroup",
+                    "groups": [
+                      [
+                        "CSE 310",
+                        "ISE 316"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "CSE 101"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSE 103"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CSE 114"
+              },
+              {
+                "type": "course",
+                "code": "CSE 214"
+              },
+              {
+                "type": "course",
+                "code": "ISE 218"
+              },
+              {
+                "manualCheck": "CSE 390, CSE 391 and CSE 392 special topics require prior approval.",
+                "type": "choose",
+                "count": 3,
+                "from": {
+                  "courses": [
+                    "ISE 305",
+                    "CSE 310",
+                    "ISE 316",
+                    "ISE 321",
+                    "ISE 331",
+                    "CSE 390",
+                    "CSE 391",
+                    "CSE 392"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "CSE 390",
+                        "CSE 391",
+                        "CSE 392"
+                      ]
+                    },
+                    "maxCourses": 2
+                  },
+                  {
+                    "type": "onePerGroup",
+                    "groups": [
+                      [
+                        "CSE 310",
+                        "ISE 316"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "A cluster of seven related courses, totaling at least 21 credits*, in one area of natural science, engineering, applied science, or environmental studies from a single department or program, or in the department defined specialization of Information and Communication Technologies for Development. At least three courses, totaling at least nine credits, must be at the 300 or 400 level. Specializations in the areas of Computer Science and Information Systems are slightly different. *Note: All 21 credits must be unique without any overlap in requirements: A, B, D or E and specialization course options require prior approval. Specialization in Computer Science: CSE 101 OR CSE 103; CSE 114; CSE 214; ISE 218; select three from ISE 305; CSE 310 OR ISE 316; CSE 337; CSE 373; up to two of CSE 390-CSE 391-CSE 392 with prior approval. Specialization in Information Systems: CSE 101 OR CSE 103; CSE 114; CSE 214; ISE 218; select three from ISE 305; CSE 310 OR ISE 316; ISE 321; ISE 331; up to two of CSE 390-CSE 391-CSE 392 with prior approval."
+    },
+    {
+      "id": "technological-systems-management-bs.D",
+      "label": "D",
+      "title": "Technological Systems Management",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "id": "technological-systems-management-bs.D.required",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "EST 194"
+              },
+              {
+                "type": "course",
+                "code": "EST 202"
+              },
+              {
+                "type": "course",
+                "code": "EST 304"
+              },
+              {
+                "type": "course",
+                "code": "EST 331"
+              },
+              {
+                "type": "course",
+                "code": "EST 391"
+              },
+              {
+                "type": "course",
+                "code": "EST 392"
+              },
+              {
+                "type": "course",
+                "code": "EST 393"
+              },
+              {
+                "type": "course",
+                "code": "EST 440"
+              },
+              {
+                "type": "course",
+                "code": "EST 441"
+              }
+            ]
+          },
+          {
+            "id": "technological-systems-management-bs.D.skills",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "EST 110",
+                "EST 240",
+                "EST 291",
+                "EST 305",
+                "EST 325",
+                "EST 326",
+                "EST 339",
+                "EST 342",
+                "EST 344",
+                "EST 364"
+              ]
+            }
+          },
+          {
+            "id": "technological-systems-management-bs.D.design",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "courses": [
+                "EST 100",
+                "EST 205",
+                "EST 207",
+                "EST 209",
+                "EST 221",
+                "EST 310",
+                "EST 323",
+                "EST 327"
+              ]
+            }
+          },
+          {
+            "id": "technological-systems-management-bs.D.electives",
+            "manualCheck": "Other 300/400-level courses in the area of specialization are allowed with the approval of the TSM advisor or undergraduate program director. Elective options may not be offered each term.",
+            "type": "choose",
+            "count": 3,
+            "from": {
+              "courses": [
+                "EST 100",
+                "EST 106",
+                "EST 110",
+                "EST 201",
+                "EST 204",
+                "EST 205",
+                "EST 207",
+                "EST 209",
+                "EST 221",
+                "EST 230",
+                "EST 240",
+                "EST 280",
+                "EST 291",
+                "EST 305",
+                "EST 310",
+                "EST 320",
+                "EST 323",
+                "EST 325",
+                "EST 326",
+                "EST 327",
+                "EST 339",
+                "EST 342",
+                "EST 364",
+                "EST 371",
+                "EST 372",
+                "EST 389",
+                "EST 475",
+                "EST 488",
+                "EST 499"
+              ],
+              "excludeUsedBy": [
+                "technological-systems-management-bs.D.required",
+                "technological-systems-management-bs.D.skills",
+                "technological-systems-management-bs.D.design"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "maxFrom",
+                "from": {
+                  "courses": [
+                    "EST 475",
+                    "EST 488",
+                    "EST 499"
+                  ]
+                },
+                "maxCredits": 3
+              },
+              {
+                "type": "maxFrom",
+                "from": {
+                  "subjects": [
+                    "EST"
+                  ],
+                  "maxNumber": 299
+                },
+                "maxCourses": 2
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Required courses (11): EST 194; EST 202; EST 304; EST 331; EST 391; EST 392; EST 393; EST 440; EST 441; one skills-information course: EST 110; EST 240; EST 291; EST 305; EST 325; EST 326; EST 339; EST 342; EST 344; EST 364; one design course: EST 100; EST 205; EST 207; EST 209; EST 221; EST 310; EST 323; EST 327. Electives (3): EST 100; EST 106; EST 110; EST 201; EST 204; EST 205; EST 207; EST 209; EST 221; EST 230; EST 240; EST 280; EST 291; EST 305; EST 310; EST 320; EST 323; EST 325; EST 326; EST 327; EST 339; EST 342; EST 364; EST 371; EST 372; EST 389; EST 475; EST 488; EST 499; Other 300/400 level courses in the area of specialization are allowed upon the approval of the TSM advisor. Please note: At most 3 credits of the 3 electives can be counted from the following courses: EST 475, EST 488 and EST 499. Students may take other 300 or 400 level courses in their area of specialization with the approval of the undergraduate program director/advisor. Only two courses below the 300 level may be used in the major elective category unless permission is received from the department. Elective course options may not be offered each term."
+    },
+    {
+      "id": "technological-systems-management-bs.E",
+      "label": "E",
+      "title": "Upper-Division Writing Requirement",
+      "rule": {
+        "manualCheck": "EST 440 and EST 441 are also listed under item D; they satisfy both items.",
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "EST 440"
+          },
+          {
+            "type": "course",
+            "code": "EST 441"
+          }
+        ]
+      },
+      "sourceText": "All degree candidates must demonstrate skill in written English at a level acceptable for Technological Systems Management majors. To satisfy this requirement, Technological Systems Management majors must complete EST 440 and EST 441 with a grade of C or higher. Successful completion of these two courses also satisfies the university WRTD requirement."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "technological-systems-management-bs.A",
+        "technological-systems-management-bs.B",
+        "technological-systems-management-bs.C",
+        "technological-systems-management-bs.D"
+      ],
+      "sourceText": "All courses taken to satisfy requirements A through D above must be taken for a letter grade."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "technological-systems-management-bs.A",
+        "technological-systems-management-bs.B",
+        "technological-systems-management-bs.C",
+        "technological-systems-management-bs.D"
+      ],
+      "sourceText": "A grade of C or higher is required in all."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "technological-systems-management-bs.E"
+      ],
+      "sourceText": "To satisfy this requirement, Technological Systems Management majors must complete EST 440 and EST 441 with a grade of C or higher."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "technological-systems-management-bs.sub.double-major-specialization",
+      "replaces": {
+        "type": "rule",
+        "ruleId": "technological-systems-management-bs.C.specialization"
+      },
+      "with": {
+        "type": "unparsed",
+        "text": "The first major serves as the specialization",
+        "reason": "The specialization is another completed major, not a course list on this page."
+      },
+      "condition": "Students with a major in natural science, engineering, applied science, or environmental studies who pursue Technological Systems Management as a second major",
+      "requiresApproval": false,
+      "sourceText": "(For those students who have a major in one of those areas and who pursue Technological Systems Management as a second major, the first major will serve as the specialization.)"
+    },
+    {
+      "id": "technological-systems-management-bs.sub.cse-special-topics",
+      "replaces": {
+        "type": "courses",
+        "courses": [
+          "CSE 101",
+          "CSE 103"
+        ]
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CSE 190"
+          },
+          {
+            "type": "course",
+            "code": "CSE 191"
+          },
+          {
+            "type": "course",
+            "code": "CSE 192"
+          }
+        ]
+      },
+      "condition": "Students with demonstrated programming experience",
+      "requiresApproval": true,
+      "sourceText": "Students with demonstrated programming experience may substitute a course from the special topics sequence CSE 190, CSE 191, CSE 192, for CSE 101 or CSE 103, with permission of the Computer Science Department Undergraduate Committee and with prior approval."
+    }
+  ],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "LANG",
+        "reason": "CEAS majors are exempt from the LANG learning objective."
+      }
+    ],
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "allOf",
+          "rules": [
+            {
+              "type": "course",
+              "code": "EST 440"
+            },
+            {
+              "type": "course",
+              "code": "EST 441"
+            }
+          ]
+        },
+        "sourceText": "Successful completion of these two courses also satisfies the university WRTD requirement."
+      }
+    ]
+  },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 101",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EST 202",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 151",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Natural Science 1 (SNW)",
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "First Year Seminar 102",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "WRT 102",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EST 194",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "AMS 161",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Natural Science 2 (SNW)",
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "EST Design",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EST 304",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "placeholder",
+          "label": "EST Skills - Info",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EST Spec. Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EST 331",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EST 391",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EST Spec. Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EST 392",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "EST 393",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course (300-400)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EST 440",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "EST Spec. Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course (300-400)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "SBC",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "EST 441",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Specialization course (300-400)",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        },
+        {
+          "kind": "placeholder",
+          "label": "Elective",
+          "credits": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students admitted to the major must have Calculus I and Calculus II (or equivalents) and the natural sciences requirement completed with grades of C or higher, a cumulative GPA of 2.80, and completed course evaluations for all transferred courses used for the major. Applications for AOI and other CEAS students are due January 5 (Spring) and June 5 (Fall) and must be made within one year of the first course that applies toward major entry. Non-CEAS students and double major applicants are admitted through a competitive process contingent on program capacity."
+    },
+    {
+      "topic": "advising",
+      "text": "Students must complete a specialization. Contact the undergraduate program coordinator and advisor, Elizabeth Petersen (tsm_advising@stonybrook.edu), for advising."
+    },
+    {
+      "topic": "other",
+      "text": "The Computer Science and Information Systems specializations are mutually exclusive; a student may not specialize in both."
+    },
+    {
+      "topic": "other",
+      "text": "Applications for major admission follow the process stated in the Admission Requirements section. Intellectual honesty violations ('Q' grade) may cause applications to be tabled."
+    },
+    {
+      "topic": "other",
+      "text": "An accelerated BS/MS program in Technological Systems Management exists; see the department website. It is not evaluated here."
+    },
+    {
+      "topic": "sbc",
+      "text": "EST 440 and EST 441 partially fulfill the ESI, CER, SPK, WRTD, SBS+, STEM+ and EXP+ SBC categories. Contact the CEAS Undergraduate Student Office for more information."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1506",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

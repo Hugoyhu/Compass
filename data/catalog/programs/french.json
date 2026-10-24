@@ -1,0 +1,249 @@
+{
+  "id": "french",
+  "name": "French",
+  "kind": "minor",
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "french.1",
+      "label": "1",
+      "title": "Area of emphasis (choose one)",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "french.1.language",
+            "sourceText": "Emphasis on Language. Required courses: FRN 211, FRN 212, FRN 311, FRN 312, FRN 313, FRN 395 OR FRN 396, FRN 410, FRN 411, FRN 412.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "FRN 211"
+              },
+              {
+                "type": "course",
+                "code": "FRN 212"
+              },
+              {
+                "id": "french.1.language.frn311",
+                "type": "course",
+                "code": "FRN 311"
+              },
+              {
+                "id": "french.1.language.frn312",
+                "type": "course",
+                "code": "FRN 312"
+              },
+              {
+                "id": "french.1.language.frn313",
+                "type": "course",
+                "code": "FRN 313"
+              },
+              {
+                "id": "french.1.language.readings",
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "FRN 395"
+                  },
+                  {
+                    "type": "course",
+                    "code": "FRN 396"
+                  }
+                ]
+              },
+              {
+                "id": "french.1.language.frn410",
+                "type": "course",
+                "code": "FRN 410"
+              },
+              {
+                "id": "french.1.language.frn411",
+                "type": "course",
+                "code": "FRN 411"
+              },
+              {
+                "id": "french.1.language.frn412",
+                "type": "course",
+                "code": "FRN 412"
+              }
+            ]
+          },
+          {
+            "id": "french.1.literature",
+            "sourceText": "Emphasis on Literature. Required courses: FRN 211, FRN 212, FRN 311, FRN 312, FRN 395, FRN 396. Electives: three literature courses at the 300 level.",
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "FRN 211"
+              },
+              {
+                "type": "course",
+                "code": "FRN 212"
+              },
+              {
+                "id": "french.1.literature.frn311",
+                "type": "course",
+                "code": "FRN 311"
+              },
+              {
+                "id": "french.1.literature.frn312",
+                "type": "course",
+                "code": "FRN 312"
+              },
+              {
+                "id": "french.1.literature.frn395",
+                "type": "course",
+                "code": "FRN 395"
+              },
+              {
+                "id": "french.1.literature.frn396",
+                "type": "course",
+                "code": "FRN 396"
+              },
+              {
+                "id": "french.1.literature.electives",
+                "manualCheck": "Three literature courses at the 300 level; confirm each chosen course is a French literature course.",
+                "type": "choose",
+                "count": 3,
+                "from": {
+                  "subjects": [
+                    "FRN"
+                  ],
+                  "minNumber": 300,
+                  "excludeCourses": [
+                    "FRN 311",
+                    "FRN 312",
+                    "FRN 395",
+                    "FRN 396",
+                    "FRN 313",
+                    "FRN 410",
+                    "FRN 411",
+                    "FRN 412"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "french.1.francophone",
+            "sourceText": "Emphasis on Francophone Studies (Studies of the French-speaking World). 9 credits of FRN beyond the FRN 101/FRN 111/FRN 112 level (i.e. beyond [LANG]); 15 credits in Francophone-related course work, approved by the advisor. These could be courses in HUF, AFS, CWL, PHI, etc. All courses must relate to the French-speaking world, and all courses must be approved by the French advisor prior to enrollment.",
+            "type": "allOf",
+            "rules": [
+              {
+                "id": "french.1.francophone.frn",
+                "type": "choose",
+                "credits": 9,
+                "from": {
+                  "subjects": [
+                    "FRN"
+                  ],
+                  "minNumber": 113
+                }
+              },
+              {
+                "id": "french.1.francophone.related",
+                "manualCheck": "Advisor must approve each course as relating to the French-speaking world before enrollment.",
+                "type": "unparsed",
+                "text": "15 credits in Francophone-related course work (examples: HUF, AFS, CWL, PHI, etc.), all relating to the French-speaking world and approved by the French advisor prior to enrollment",
+                "reason": "The list of eligible subjects is open-ended and each course requires advisor approval"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText": "Students must complete A. Emphasis on Language; B. Emphasis on Literature; or C. Emphasis on Francophone Studies. Choose one of the three following areas of emphasis."
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "french.1"
+      ],
+      "sourceText": "All courses offered for the minor must be taken for a letter grade, excluding those graded S/U."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "french.1.language.frn311",
+        "french.1.language.frn312",
+        "french.1.language.frn313",
+        "french.1.language.readings",
+        "french.1.language.frn410",
+        "french.1.language.frn411",
+        "french.1.language.frn412",
+        "french.1.literature.frn311",
+        "french.1.literature.frn312",
+        "french.1.literature.frn395",
+        "french.1.literature.frn396",
+        "french.1.literature.electives"
+      ],
+      "sourceText": "All upper-division courses offered for the minor must be passed with a grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 6,
+      "appliesTo": [
+        "french.1"
+      ],
+      "sourceText": "Transfer students must take at least six credits of French beyond the 100-level in residence at Stony Brook."
+    }
+  ],
+  "substitutions": [
+    {
+      "id": "french.sub.frn410",
+      "replaces": {
+        "type": "rule",
+        "ruleId": "french.1.language.frn410"
+      },
+      "with": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "FRN 441"
+          },
+          {
+            "type": "course",
+            "code": "HUL 324"
+          },
+          {
+            "type": "unparsed",
+            "text": "A French literature course",
+            "reason": "The page does not list which French literature courses qualify"
+          }
+        ]
+      },
+      "requiresApproval": false,
+      "sourceText": "A French literature course or FRN 441 or HUL 324 may be substituted for FRN 410"
+    }
+  ],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "admission",
+      "text": "Students who have studied French previously are encouraged to take the French Placement Exam offered through the Language Learning Research Center. High school language study is not counted for college credit. Students who believe they should be placed in a different level course should consult the FRN Program Coordinator."
+    },
+    {
+      "topic": "other",
+      "text": "Completion of the minor requires 21-27 credits, depending on language placement."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1458",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}

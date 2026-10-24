@@ -1,0 +1,109 @@
+{
+  "id": "writing-and-rhetoric",
+  "name": "Writing and Rhetoric",
+  "kind": "minor",
+  "approxCredits": 18,
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "writing-and-rhetoric.required",
+      "label": "required",
+      "title": "Required Course",
+      "rule": {
+        "type": "course",
+        "code": "WRT 102"
+      },
+      "sourceText": "Required Course: WRT 102 - Intermediate Writing Workshop 3 credits"
+    },
+    {
+      "id": "writing-and-rhetoric.electives",
+      "label": "electives",
+      "title": "Elective Courses (choose any five)",
+      "rule": {
+        "manualCheck": "WRT 302 counts only when the topic is one of: Fiction Writing, Women Writing, Writing About Film, Environmental Writing, Writing for the New Media, Life Writing & Story Telling, Faith, Literature, and Writing. The page also allows a Writing Intensive course from any other discipline on campus with the permission of the Undergraduate Program Director for the Program in Writing and Rhetoric; that option is not in the course list and must be checked manually. WRT 487 and WRT 488 are listed as 0-6 credits. The page does not state a cap on them.",
+        "type": "choose",
+        "count": 5,
+        "from": {
+          "courses": [
+            "WRT 200",
+            "WRT 201",
+            "WRT 300",
+            "WRT 301",
+            "WRT 302",
+            "WRT 303",
+            "WRT 304",
+            "WRT 305",
+            "WRT 306",
+            "WRT 307",
+            "WRT 319",
+            "WRT 320",
+            "WRT 321",
+            "WRT 375",
+            "WRT 376",
+            "WRT 377",
+            "WRT 380",
+            "WRT 381",
+            "WRT 382",
+            "WRT 392",
+            "WRT 487",
+            "WRT 488"
+          ]
+        }
+      },
+      "sourceText": "Elective Courses (choose any five): WRT 200 - The Rhetoric of Grammar and Style 3 credits; WRT 201 - Principles of Professional Writing 3 credits; WRT 300 - Theories and Methods in Rhetoric and Writing 3 credits; WRT 301 - Writing in the Disciplines: Special Topics 3 credits; WRT 302 - Critical Writing Seminar: Special Topics 3 credits (with the following topics: Fiction Writing, Women Writing, Writing About Film, Environmental Writing, Writing for the New Media, Life Writing & Story Telling, Faith, Literature, and Writing); WRT 303 - The Personal Essay 3 credits; WRT 304 - Writing for Your Profession 3 credits; WRT 305 - Writing for the Health Professions 3 credits; WRT 306 - Tutor Training 3 credits; WRT 307 - Rhetoric of Science, Technology, and Medicine 3 credits; WRT 319 - Nonprofit Business Writing 3 credits; WRT 320 - Rhetoric and Culture 3 credits; WRT 321 - Rhetoric of Social Movements 3 credits; WRT 375 - Technical Communication 3 credits; WRT 376 - Digital Rhetorics 3 credits; WRT 377 - Special Topics in Digital Writing 3 credits; WRT 380 - Advanced Research Writing: Theories, Methods, Practices 3 credits; WRT 381 - Advanced Analytic and Argumentative Writing 3 credits; WRT 382 - Grant Writing 3 credits; WRT 392 - Theories and Methods of Mentoring Writers 3 credits; WRT 487 - Independent Project 0-6 credits; WRT 488 - Internship 0-6 credits; A Writing Intensive course from any other discipline on campus with the permission of the Undergraduate Program Director for the Program in Writing and Rhetoric"
+    }
+  ],
+  "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "writing-and-rhetoric.required",
+        "writing-and-rhetoric.electives"
+      ],
+      "sourceText": "Courses taken for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "writing-and-rhetoric.required",
+        "writing-and-rhetoric.electives"
+      ],
+      "sourceText": "Courses taken for the minor must be passed with a letter grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 12,
+      "appliesTo": [
+        "writing-and-rhetoric.required",
+        "writing-and-rhetoric.electives"
+      ],
+      "sourceText": "At least 12 of the 18 credits must be taken at Stony Brook University."
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "sampleSequence": [],
+  "notes": [
+    {
+      "topic": "other",
+      "text": "Completion of the writing and rhetoric minor requires 18 credits. Transfer credits are awarded solely by permission of the Program in Writing and Rhetoric Director."
+    },
+    {
+      "topic": "advising",
+      "text": "Only a selection of elective courses are offered each semester."
+    }
+  ],
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1500",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "claude-haiku-5-5"
+  }
+}
