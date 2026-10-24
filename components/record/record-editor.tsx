@@ -6,6 +6,7 @@ import { clearRecord, loadSampleRecord, saveRecord } from "@/app/actions/record"
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { kindLabel, kindsIn } from "@/lib/domain/program-kinds";
 import { cn } from "@/lib/utils";
 import { MAX_PROGRAMS, type CourseAttempt, type CreditSource, type Grade, type StudentRecord, type TermId } from "@/lib/domain/types";
 import {
@@ -183,13 +184,13 @@ export function RecordEditor({
               <Input value={draft.name} maxLength={80} onChange={(e) => update({ name: e.target.value })} />
             </label>
             <div className="space-y-1.5">
-              <span className="text-xs font-medium">Majors and minors</span>
+              <span className="text-xs font-medium">Programs</span>
               {draft.programIds.length > 0 && (
                 <ul className="divide-y rounded-lg border text-sm">
                   {draft.programIds.map((id) => (
                     <li key={id} className="flex items-center gap-2 py-1 pr-1 pl-3">
                       <span className="min-w-0 flex-1 truncate">{programsById.get(id)?.name ?? id}</span>
-                      <span className="text-xs text-muted-foreground capitalize">{programsById.get(id)?.kind}</span>
+                      <span className="text-xs text-muted-foreground">{kindLabel(programsById.get(id)?.kind ?? "")}</span>
                       <Button
                         variant="ghost"
                         size="icon-sm"
@@ -204,30 +205,23 @@ export function RecordEditor({
               )}
               {draft.programIds.length < MAX_PROGRAMS && (
                 <select
-                  aria-label="Add a major or minor"
+                  aria-label="Add a program"
                   className={selectClassName}
                   value=""
                   onChange={(e) => e.target.value && update({ programIds: [...draft.programIds, e.target.value] })}
                 >
                   <option value="">Add…</option>
-                  <optgroup label="Majors">
-                    {available
-                      .filter((p) => p.kind === "major")
-                      .map((p) => (
-                        <option key={p.id} value={p.id}>
-                          {p.name}
-                        </option>
-                      ))}
-                  </optgroup>
-                  <optgroup label="Minors">
-                    {available
-                      .filter((p) => p.kind === "minor")
-                      .map((p) => (
-                        <option key={p.id} value={p.id}>
-                          {p.name}
-                        </option>
-                      ))}
-                  </optgroup>
+                  {kindsIn(available).map((kind) => (
+                    <optgroup key={kind} label={kindLabel(kind, true)}>
+                      {available
+                        .filter((p) => p.kind === kind)
+                        .map((p) => (
+                          <option key={p.id} value={p.id}>
+                            {p.name}
+                          </option>
+                        ))}
+                    </optgroup>
+                  ))}
                 </select>
               )}
             </div>

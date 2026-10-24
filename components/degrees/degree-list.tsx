@@ -6,6 +6,7 @@ import { ChevronRight, Search } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { kindLabel, kindsIn } from "@/lib/domain/program-kinds";
 import type { ProgramSummary } from "@/lib/services/degrees";
 
 type KindFilter = "all" | "mine" | ProgramSummary["kind"];
@@ -23,11 +24,7 @@ export function DegreeList({ programs, mine }: { programs: ProgramSummary[]; min
       (activeKind === "all" || (activeKind === "mine" ? mine.includes(p.id) : p.kind === activeKind)) &&
       terms.every((t) => p.name.toLowerCase().includes(t) || p.degree?.toLowerCase().includes(t)),
   );
-  const counts = {
-    all: programs.length,
-    major: programs.filter((p) => p.kind === "major").length,
-    minor: programs.filter((p) => p.kind === "minor").length,
-  };
+  const kinds = kindsIn(programs);
 
   return (
     <div className="space-y-4">
@@ -39,15 +36,18 @@ export function DegreeList({ programs, mine }: { programs: ProgramSummary[]; min
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search"
-            aria-label="Search majors and minors"
+            aria-label="Search programs"
             className="pl-8"
           />
         </div>
         <Tabs value={activeKind} onValueChange={(v) => setKind(v as KindFilter)}>
           <TabsList>
-            <TabsTrigger value="all">All ({counts.all})</TabsTrigger>
-            <TabsTrigger value="major">Majors ({counts.major})</TabsTrigger>
-            <TabsTrigger value="minor">Minors ({counts.minor})</TabsTrigger>
+            <TabsTrigger value="all">All ({programs.length})</TabsTrigger>
+            {kinds.map((k) => (
+              <TabsTrigger key={k} value={k}>
+                {kindLabel(k, true)} ({programs.filter((p) => p.kind === k).length})
+              </TabsTrigger>
+            ))}
             {mine.length > 0 && <TabsTrigger value="mine">Mine ({mine.length})</TabsTrigger>}
           </TabsList>
         </Tabs>
@@ -71,8 +71,8 @@ export function DegreeList({ programs, mine }: { programs: ProgramSummary[]; min
                   </p>
                 </div>
                 {mine.includes(p.id) && <Badge className="font-normal">Added</Badge>}
-                <Badge variant="outline" className="hidden font-normal capitalize sm:inline-flex">
-                  {p.kind}
+                <Badge variant="outline" className="hidden font-normal sm:inline-flex">
+                  {kindLabel(p.kind)}
                 </Badge>
                 <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
               </Link>

@@ -10,6 +10,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { ProgramDefinition, ProgramPolicy, Rule, Substitution } from "@/lib/domain/catalog/program";
+import { kindLabel } from "@/lib/domain/program-kinds";
 import { itemNumber, NOTE_TOPICS, POLICY_TITLES, requirementHeading } from "@/lib/engine/describe";
 import { getProgramDetail, listProgramIds, type ProgramDetail } from "@/lib/services/degrees";
 import { getStudentRecord } from "@/lib/student/store";
@@ -52,7 +53,7 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
         <div className="space-y-1">
           <h2 className="text-2xl font-semibold tracking-tight">{program.name}</h2>
           <p className="text-sm text-muted-foreground">
-            {[program.degree ?? (program.kind === "minor" ? "Minor" : "Major"), program.approxCredits && `${program.approxCredits} credits`]
+            {[program.degree ?? kindLabel(program.kind), program.approxCredits && `${program.approxCredits} credits`]
               .filter(Boolean)
               .join(" · ")}
           </p>
