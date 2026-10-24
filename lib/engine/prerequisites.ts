@@ -131,6 +131,15 @@ export function formatPrereq(expr: Prereq | undefined): string {
   return fmt(expr, false);
 }
 
+/**
+ * The one course that must be taken in the same term, e.g. CSE 161 for CSE 160.
+ * Null when there is none or the catalog lists alternatives ("MUS 262 or MUS 263").
+ */
+export function pairedCorequisite(course: Pick<CourseRecord, "corequisiteText">): CourseCode | null {
+  const codes = course.corequisiteText?.match(/[A-Z]{3,4} \d{3}/g) ?? [];
+  return codes.length === 1 ? codes[0] : null;
+}
+
 /** Catalog credit value used for planning: the maximum of a variable range. */
 export function plannedCredits(course: Pick<CourseRecord, "credits">): number {
   return course.credits.max;

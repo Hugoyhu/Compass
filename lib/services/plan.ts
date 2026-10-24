@@ -6,7 +6,7 @@ import { getRepository } from "@/lib/data/repository";
 import type { Section } from "@/lib/domain/catalog/offering";
 import { nextRegularTerm, nextTerm } from "@/lib/domain/terms";
 import type { CourseCode, StudentRecord, TermId } from "@/lib/domain/types";
-import { checkPlan, type PlanContext } from "@/lib/engine/plan";
+import { checkPlan, minTermCredits, type PlanContext } from "@/lib/engine/plan";
 
 /** Main-campus sections per course (SUNY Korea sections don't count as offerings here). */
 export function countMainCampusSections(sections: Section[]): Map<CourseCode, number> {
@@ -51,6 +51,7 @@ export async function getPlanView(student: StudentRecord) {
     terms,
     projection: { ...projection, countsByCourse: undefined },
     hasPrograms: student.programIds.length > 0,
+    minCredits: minTermCredits(student),
     courses: ctx.courses.map((c) => ({ code: c.code, title: c.title })),
     // Terms that can be added: the next two years, not already in the plan.
     termOptions: upcomingTerms(student, 8).filter((t) => !planned.has(t)),
