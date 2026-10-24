@@ -459,16 +459,38 @@ function evaluationOrder(requirements: ProgramRequirement[]): ProgramRequirement
   return order;
 }
 
-/** Substitutions that need no approval and have no eligibility condition apply automatically. */
-function applySubstitutions(program: ProgramDefinition, attempts: Map<CourseCode, Attempt>) {
+/** Course codes a rule requires outright: every course leaf not under an anyOf or choose. */
+export function mandatoryCourses(rule: Rule): CourseCode[] {
+  if (rule.type === "course") return [rule.code];
+  if (rule.type === "allOf") return rule.rules.flatMap(mandatoryCourses);
+  return [];
+}
+
+/** The courses a substitution puts in place, when it is a plain course or list of courses. */
+export function substitutionCourses(sub: ProgramDefinition["substitutions"][number]): CourseCode[] {
+  if (sub.with.type === "course") return [sub.with.code];
+  if (sub.with.type === "allOf" && sub.with.rules.every((r) => r.type === "course")) {
+    return sub.with.rules.map((r) => (r.type === "course" ? r.code : ""));
+  }
+  return [];
+}
+
+/**
+ * Whether a substitution applies without an advisor. One with an eligibility
+ * condition ("Students pursuing Honors") counts when another of the student's
+ * programs requires its courses, e.g. the Honors CS program requiring CSE 350.
+ */
+export function substitutionEligible(sub: ProgramDefinition["substitutions"][number], requiredElsewhere: Set<CourseCode>): boolean {
+  if (sub.requiresApproval || sub.replaces.type !== "courses") return false;
+  const codes = substitutionCourses(sub);
+  return codes.length > 0 && (!sub.condition || codes.every((c) => requiredElsewhere.has(c)));
+}
+
+/** Eligible course-for-course substitutions apply once all their courses are taken or in progress. */
+function applySubstitutions(program: ProgramDefinition, attempts: Map<CourseCode, Attempt>, requiredElsewhere: Set<CourseCode>) {
   for (const sub of program.substitutions) {
-    if (sub.requiresApproval || sub.condition || sub.replaces.type !== "courses") continue;
-    const withCodes =
-      sub.with.type === "course"
-        ? [sub.with.code]
-        : sub.with.type === "allOf" && sub.with.rules.every((r) => r.type === "course")
-          ? sub.with.rules.map((r) => (r.type === "course" ? r.code : ""))
-          : [];
+    if (!substitutionEligible(sub, requiredElsewhere) || sub.replaces.type !== "courses") continue;
+    const withCodes = substitutionCourses(sub);
     const taken = withCodes.map((code) => attempts.get(code));
     if (withCodes.length === 0 || taken.some((a) => !a)) continue;
     const status = taken.every((a) => a!.status === "completed") ? "completed" : "in-progress";
@@ -549,9 +571,11 @@ export function auditProgram(
   program: ProgramDefinition,
   student: StudentRecord,
   catalog: Map<CourseCode, CourseRecord>,
+  /** Courses the student's other programs require outright. */
+  requiredElsewhere: Set<CourseCode> = new Set(),
 ): ProgramAudit {
   const attempts: Map<CourseCode, Attempt> = bestAttempts(student.attempts);
-  applySubstitutions(program, attempts);
+  applySubstitutions(program, attempts, requiredElsewhere);
 
   const ctx: Ctx = {
     catalog,
@@ -682,6 +706,13 @@ export function summarizeCredits(
   return { required: rules.totalCredits, earned, inProgress, bySource, upperDivision, standing: standingFor(earned) };
 }
 
+/** Courses that the other enrolled programs require outright. */
+export function requiredByOthers(program: ProgramDefinition, enrolled: ProgramDefinition[]): Set<CourseCode> {
+  return new Set(
+    enrolled.filter((p) => p !== program).flatMap((p) => p.requirements.flatMap((r) => mandatoryCourses(r.rule))),
+  );
+}
+
 export function runDegreeAudit({
   student,
   programs,
@@ -698,7 +729,7 @@ export function runDegreeAudit({
   const catalog = new Map(courses.map((c) => [c.code, c]));
   const enrolled = programs.filter((p) => student.programIds.includes(p.id));
   return {
-    programs: enrolled.map((p) => auditProgram(p, student, catalog)),
+    programs: enrolled.map((p) => auditProgram(p, student, catalog, requiredByOthers(p, enrolled))),
     sbc: auditSbc(student, catalog, sbcCategories, enrolled),
     credits: summarizeCredits(student, catalog, creditRules),
   };

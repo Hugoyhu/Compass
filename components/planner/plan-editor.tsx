@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState, useTransition } from "react";
 import { Loader2, MoreHorizontal, Plus, TriangleAlert, X } from "lucide-react";
-import { generatePlanAction, savePlan } from "@/app/actions/plan";
+import { generatePlanAction, savePlan, setMinTermCredits } from "@/app/actions/plan";
 import { Alert, AlertAction, AlertTitle } from "@/components/ui/alert";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -23,6 +23,7 @@ import type { PlanView } from "@/lib/services/plan";
 import { cn } from "@/lib/utils";
 
 const ELECTIVE_CREDITS = 3;
+const MIN_CREDIT_OPTIONS = [0, 3, 6, 9, 12, 13, 14, 15, 16, 17, 18, 19];
 
 function toPlan(terms: CheckedTerm[]): PlannedTerm[] {
   return terms.map((t) => ({
@@ -75,6 +76,20 @@ export function PlanEditor({ view }: { view: PlanView }) {
               {error}
             </p>
           )}
+          <label className="flex items-center gap-1.5 text-xs text-muted-foreground">
+            Min credits / term
+            <select
+              className={cn(selectClassName, "h-7 w-16")}
+              value={view.minCredits}
+              onChange={(e) => run(() => setMinTermCredits(Number(e.target.value)))}
+            >
+              {MIN_CREDIT_OPTIONS.map((n) => (
+                <option key={n} value={n}>
+                  {n}
+                </option>
+              ))}
+            </select>
+          </label>
           {plan.length > 0 && (
             <Button variant="ghost" size="sm" onClick={() => confirm("Clear your plan?") && save([])}>
               Clear
