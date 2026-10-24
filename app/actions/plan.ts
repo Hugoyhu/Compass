@@ -30,3 +30,11 @@ export async function generatePlanAction(): Promise<SaveResult> {
   const plan = generatePlan(await planContext({ ...record, plan: [] }));
   return saveRecord({ ...record, plan });
 }
+
+/** Sets the fewest credits the student wants in a fall or spring term. */
+export async function setMinTermCredits(credits: number): Promise<SaveResult> {
+  if (!Number.isInteger(credits) || credits < 0 || credits > 19) return { ok: false, error: "Choose 0 to 19 credits" };
+  const record = await getStudentRecord();
+  if (!record) return { ok: false, error: "Add your courses first" };
+  return saveRecord({ ...record, minTermCredits: credits });
+}
