@@ -1,3 +1,4 @@
+import type { ProgramDefinition } from "@/lib/domain/catalog/program";
 import { formatTerm, makeTerm, termOrdinal } from "@/lib/domain/terms";
 import type { CourseAttempt, CreditSource, Grade, Season, TermId } from "@/lib/domain/types";
 
