@@ -55,6 +55,12 @@ export interface SemesterProposal {
 const KIND_WEIGHT: Record<NeedKind, number> = { required: 30, sbc: 20, elective: 10 };
 /** Enough to prefer a confirmed course among similar options, not to outrank a more important need. */
 const CONFIRMED_BONUS = 5;
+/**
+ * Per course level above the student's standing (a 400-level course for a U1
+ * student is three levels above), so senior courses whose standing
+ * prerequisite the catalog doesn't state still wait for later terms.
+ */
+const LEVEL_PENALTY = 5;
 
 /**
  * Courses a program lets the student replace with ones another of their programs
@@ -128,11 +134,15 @@ export function primarySubject(program: ProgramDefinition): string {
   return [...counts.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? "";
 }
 
-/** How many not-yet-taken courses list this course as a prerequisite. */
-function unlockCounts(courses: CourseRecord[], taken: Set<CourseCode>): Map<CourseCode, number> {
+/**
+ * How many not-yet-taken courses the student still needs list this course as a
+ * prerequisite. Counting every course in the catalog would favor popular intro
+ * courses (BIO 201 is a prerequisite for dozens) over required ones.
+ */
+function unlockCounts(courses: CourseRecord[], taken: Set<CourseCode>, needed: Set<CourseCode>): Map<CourseCode, number> {
   const counts = new Map<CourseCode, number>();
   for (const course of courses) {
-    if (taken.has(course.code)) continue;
+    if (taken.has(course.code) || !needed.has(course.code)) continue;
     for (const code of new Set(referencedCourses(course.prerequisites))) {
       counts.set(code, (counts.get(code) ?? 0) + 1);
     }
@@ -167,6 +177,7 @@ export function proposeNextSemester({
   sectionCounts,
   targetCredits = 15,
   maxCredits = 18,
+  pickForSbc = true,
 }: {
   audit: DegreeAudit;
   student: StudentRecord;
@@ -176,13 +187,18 @@ export function proposeNextSemester({
   sectionCounts: Map<CourseCode, number> | null;
   targetCredits?: number;
   maxCredits?: number;
+  /**
+   * False to pick only courses a program needs, or SBC courses they require;
+   * SBCs then just break ties between them.
+   */
+  pickForSbc?: boolean;
 }): SemesterProposal {
   const retakes = new Set(audit.programs.flatMap((p) => p.retakes));
   const taken = new Set(usableAttempts(student.attempts).map((a) => a.code).filter((code) => !retakes.has(code)));
 
   const prereqsFor = prerequisiteChecker(audit, student);
+  const standingLevel = Number(standingFor(audit.credits.earned + audit.credits.inProgress).slice(1));
 
-  const unlocks = unlockCounts(courses, taken);
   // The catalog's sample sequence names the usual choice (e.g. "CSE 416 or CSE 356" lists 416 first).
   const recommended = new Set(
     audit.programs.flatMap((p) =>
@@ -190,13 +206,17 @@ export function proposeNextSemester({
     ),
   );
   const { needs, review, replaced } = needsFrom(audit, courses);
+  const programNeeds = needs.filter((n) => n.kind !== "sbc");
+  const unlocks = unlockCounts(courses, taken, new Set(programNeeds.flatMap((n) => [...n.options])));
   const sectionsFor = (c: CourseRecord) => (sectionCounts ? (sectionCounts.get(c.code) ?? null) : null);
   const isEligible = (c: CourseRecord) => !taken.has(c.code) && !replaced.has(c.code) && prereqsFor(c).met;
   let candidates = courses.filter(isEligible);
 
   const score = (c: CourseRecord) => {
-    const weights = needs
-      .filter((n) => n.remaining > 0 && n.options.has(c.code))
+    const matching = needs.filter((n) => n.remaining > 0 && n.options.has(c.code));
+    // Without SBC picks, an SBC course still counts when a needed course requires it (WRT 102 for CSE 300).
+    if (!pickForSbc && !matching.some((n) => n.kind !== "sbc") && !unlocks.get(c.code)) return 0;
+    const weights = matching
       .map((n) => KIND_WEIGHT[n.kind])
       .sort((a, b) => b - a);
     if (weights.length === 0) return 0;
@@ -208,6 +228,7 @@ export function proposeNextSemester({
       (unlocks.get(c.code) ?? 0) * 2 +
       (recommended.has(c.code) ? 1 : 0) +
       (sectionsFor(c) ? CONFIRMED_BONUS : 0) -
+      Math.max(0, Math.floor(Number(c.code.split(" ")[1]) / 100) - standingLevel) * LEVEL_PENALTY -
       Number(c.code.split(" ")[1]) / 1000
     );
   };
@@ -254,7 +275,7 @@ export function proposeNextSemester({
   }
 
   const deferred = [
-    ...needs
+    ...(pickForSbc ? needs : programNeeds)
       .filter((n) => n.remaining > 0)
       .map((n) => {
         const options = courses.filter((c) => n.options.has(c.code) && !taken.has(c.code));

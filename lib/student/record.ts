@@ -9,7 +9,7 @@
  */
 import { z } from "zod";
 import { CourseCodeSchema, LetterGradeSchema, SbcCodeSchema } from "@/lib/domain/catalog/common";
-import { MAX_PROGRAMS, type CourseAttempt, type CreditSource, type PlannedTerm, type StudentRecord, type TermId } from "@/lib/domain/types";
+import { MAX_PROGRAMS, type CourseAttempt, type CreditSource, type PlannedTerm, type SbcCode, type StudentRecord, type TermId } from "@/lib/domain/types";
 
 export const TermIdSchema = z.string().regex(/^\d{4}-(FA|WI|SP|SU)$/) as unknown as z.ZodType<TermId>;
 export const GradeSchema = z.union([LetterGradeSchema, z.enum(["P", "T", "NC", "W", "I"])]);
@@ -32,6 +32,7 @@ export const MAX_PLAN_TERMS = 16;
 export const PlanItemSchema = z.union([
   z.strictObject({ code: CourseCodeSchema }),
   z.strictObject({ elective: z.number().min(0).max(12) }),
+  z.strictObject({ sbc: SbcCodeSchema }),
 ]);
 
 export const PlannedTermSchema = z.object({
@@ -90,15 +91,28 @@ function unpack(p: PackedAttempt): CourseAttempt {
   };
 }
 
-/** A plan term as [term, items], where an item is a course code or an elective's credits. */
+/**
+ * A plan term as [term, items], where an item is a course code, an elective's
+ * credits, or "SBC:<code>" for an SBC placeholder.
+ */
 type PackedTerm = [string, (string | number)[]];
+const SBC_PREFIX = "SBC:";
 
 function packTerm(t: PlannedTerm): PackedTerm {
-  return [t.term, t.items.map((i) => ("code" in i ? i.code : i.elective))];
+  return [t.term, t.items.map((i) => ("code" in i ? i.code : "sbc" in i ? SBC_PREFIX + i.sbc : i.elective))];
 }
 
 function unpackTerm([term, items]: PackedTerm): PlannedTerm {
-  return { term: term as TermId, items: items.map((i) => (typeof i === "number" ? { elective: i } : { code: i })) };
+  return {
+    term: term as TermId,
+    items: items.map((i) =>
+      typeof i === "number"
+        ? { elective: i }
+        : i.startsWith(SBC_PREFIX)
+          ? { sbc: i.slice(SBC_PREFIX.length) as SbcCode }
+          : { code: i },
+    ),
+  };
 }
 
 /** Encodes a record into cookie-sized chunks. Throws if it won't fit. */
