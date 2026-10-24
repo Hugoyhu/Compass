@@ -1,0 +1,497 @@
+Worker 1 groups: A, 0
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_01 --letters A,0 --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Fall 2026 --headless
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group A (1/2)…
+  [A] 13 subjects have no active courses.
+  [A] Found 760 course entries.
+  [A] Skipping 253 courses numbered above 499; 507 left.
+    [A 1/507] Opening AAS 102 — Eastern Religions
+      Fall 2026: not listed for this course. Available terms: Summer 2026, Winter 2027
+    [A 2/507] Opening AAS 103 — Introduction to East Asian Popular Culture
+      Fall 2026: found 1 class sections.
+    [A 3/507] Opening AAS 110 — Appreciating Indian Music
+      Fall 2026: found 1 class sections.
+    [A 4/507] Opening AAS 201 — Introduction to the Civilization of the Indian Subcontinent
+      Fall 2026: found 1 class sections.
+    [A 5/507] Opening AAS 209 — Indian Classical Dance: Bharatanatyam
+      No View Class Sections button; course has no sections.
+    [A 6/507] Opening AAS 210 — Formations of Asian American Identity
+      Fall 2026: found 1 class sections.
+    [A 7/507] Opening AAS 211 — Asian and Asian American Studies Topics in the Social Sciences
+      Fall 2026: not listed for this course. Available terms: Summer 2026, Winter 2027
+    [A 8/507] Opening AAS 212 — Asian and Asian American Studies Topics in the Humanities
+      Fall 2026: found 1 class sections.
+    [A 9/507] Opening AAS 214 — Culture and Communication for Korean I
+      No View Class Sections button; course has no sections.
+    [A 10/507] Opening AAS 215 — Classical Performing Arts of India
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (A 10/507) · 10 scraped, 0 already done, 0 failed · 12.3 pages/min · 48s elapsed · ~40m30s left in A
+    [A 11/507] Opening AAS 216 — Introduction to Japanese Studies
+      Fall 2026: found 1 class sections.
+    [A 12/507] Opening AAS 217 — Introduction to Korean Culture
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 13/507] Opening AAS 218 — Ancient, Medieval, & Early Modern South Asia
+      No View Class Sections button; course has no sections.
+    [A 14/507] Opening AAS 219 — Japan in the Age of Courtier and Samurai
+      Fall 2026: found 1 class sections.
+    [A 15/507] Opening AAS 220 — China: Language and Culture
+      Fall 2026: found 1 class sections.
+    [A 16/507] Opening AAS 222 — Indian Cinemas and Cultures
+      No View Class Sections button; course has no sections.
+    [A 17/507] Opening AAS 223 — China: Society and Civilization
+      Fall 2026: found 1 class sections.
+    [A 18/507] Opening AAS 228 — China: History and Geography
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+    [A 19/507] Opening AAS 232 — Introduction to Asian American Fiction and Film
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 20/507] Opening AAS 236 — Korean Religions
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (A 20/507) · 20 scraped, 0 already done, 0 failed · 15.3 pages/min · 1m18s elapsed · ~31m47s left in A
+    [A 21/507] Opening AAS 237 — Introduction to Japanese Literature
+      Fall 2026: found 1 class sections.
+    [A 22/507] Opening AAS 238 — Korean American Literature
+      No View Class Sections button; course has no sections.
+    [A 23/507] Opening AAS 240 — Confucianism and Daoism
+      No View Class Sections button; course has no sections.
+    [A 24/507] Opening AAS 247 — Modern Korea through Visual Culture
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 25/507] Opening AAS 250 — Languages and Cultures of Asian Americans
+      No View Class Sections button; course has no sections.
+    [A 26/507] Opening AAS 256 — Hinduism
+      Fall 2026: found 1 class sections.
+    [A 27/507] Opening AAS 260 — Buddhism
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026, Winter 2027
+    [A 28/507] Opening AAS 280 — Islam
+      No View Class Sections button; course has no sections.
+    [A 29/507] Opening AAS 287 — Islam in China
+      No View Class Sections button; course has no sections.
+    [A 30/507] Opening AAS 300 — Intellectual History of East Asia
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (A 30/507) · 30 scraped, 0 already done, 0 failed · 17.7 pages/min · 1m41s elapsed · ~26m58s left in A
+    [A 31/507] Opening AAS (301) — Humanities Topics in Korean Studies ** available as of 01/01/2027
+      Fall 2026: found 1 class sections.
+    [A 32/507] Opening AAS 305 — The Pacific, Travel & Empire
+      Fall 2026: found 1 class sections.
+    [A 33/507] Opening AAS 311 — Asian American Studies: Theories and Methods
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 34/507] Opening AAS 314 — Culture and Communication for Korean II
+      No View Class Sections button; course has no sections.
+    [A 35/507] Opening AAS 320 — Literature of India
+      No View Class Sections button; course has no sections.
+    [A 36/507] Opening AAS 321 — Korean Literature
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 37/507] Opening AAS 322 — Literature of Japan
+      No View Class Sections button; course has no sections.
+    [A 38/507] Opening AAS 323 — Language and Society in South Korea
+      Fall 2026: found 1 class sections.
+    [A 39/507] Opening AAS 324 — Language and Society in North Korea
+      No View Class Sections button; course has no sections.
+    [A 40/507] Opening AAS 326 — Indian Mythology
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+  Progress: group 1/2 (A 40/507) · 40 scraped, 0 already done, 0 failed · 18.5 pages/min · 2m10s elapsed · ~25m17s left in A
+    [A 41/507] Opening AAS 327 — Great Epics of India: Ramayana and Mahabharata
+      Fall 2026: found 1 class sections.
+    [A 42/507] Opening AAS 328 — Race, Humor and Asian America
+      Fall 2026: found 1 class sections.
+    [A 43/507] Opening AAS 330 — Language and Society in South Asia
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 44/507] Opening AAS 331 — Japanese Literature in the Feminine Domain
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [A 45/507] Opening AAS 332 — Japanese Literature in the Meiji Era
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [A 46/507] Opening AAS 333 — The Unending Korean War
+      Fall 2026: found 1 class sections.
+    [A 47/507] Opening AAS 334 — English in Asia
+      No View Class Sections button; course has no sections.
+    [A 48/507] Opening AAS 336 — Asian and Pacific Islanders in American History
+      No View Class Sections button; course has no sections.
+    [A 49/507] Opening AAS 337 — History of Korea
+      Fall 2026: found 1 class sections.
+    [A 50/507] Opening AAS 338 — Contemporary India: History, Politics, and Diplomacy
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (A 50/507) · 50 scraped, 0 already done, 0 failed · 19.5 pages/min · 2m33s elapsed · ~23m22s left in A
+    Pausing 5s after 50 detail pages…
+    [A 51/507] Opening AAS 339 — Contemporary China: History, Politics, and Diplomacy
+      No View Class Sections button; course has no sections.
+    [A 52/507] Opening AAS 340 — Topics in Asian History
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+    [A 53/507] Opening AAS (342) — Exploration of Korean Philosophy ** available as of 01/01/2027
+      No View Class Sections button; course has no sections.
+    [A 54/507] Opening AAS 343 — Modern Japan
+      No View Class Sections button; course has no sections.
+    [A 55/507] Opening AAS 344 — Learning of Asian Languages
+      No View Class Sections button; course has no sections.
+    [A 56/507] Opening AAS 351 — Revolutionary China: Politics, Culture, and Power
+      No View Class Sections button; course has no sections.
+    [A 57/507] Opening AAS 352 — Environmental History of China
+      Fall 2026: found 1 class sections.
+    [A 58/507] Opening AAS 353 — Postwar Japan
+      No View Class Sections button; course has no sections.
+    [A 59/507] Opening AAS 358 — China's Lang, Media, Pop Culture in Global Context
+      No View Class Sections button; course has no sections.
+    [A 60/507] Opening AAS 360 — Chinese Sociolinguistics
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (A 60/507) · 60 scraped, 0 already done, 0 failed · 20.0 pages/min · 3m00s elapsed · ~22m22s left in A
+    [A 61/507] Opening AAS 366 — Feminine Spirituality
+      No View Class Sections button; course has no sections.
+    [A 62/507] Opening AAS 368 — Yoga: Theory and Praxis
+      No View Class Sections button; course has no sections.
+    [A 63/507] Opening AAS 370 — Intercultural Communication
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 64/507] Opening AAS 371 — Ancient China
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [A 65/507] Opening AAS 372 — Family, Marriage, and Kinship in China
+      No View Class Sections button; course has no sections.
+    [A 66/507] Opening AAS 374 — Accent and Language Justice
+      No View Class Sections button; course has no sections.
+    [A 67/507] Opening AAS 379 — Cultural Diversity in China
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 68/507] Opening AAS 380 — Islamic Classics
+      No View Class Sections button; course has no sections.
+    [A 69/507] Opening AAS 382 — Japanese Buddhism
+      No View Class Sections button; course has no sections.
+    [A 70/507] Opening AAS 385 — Translation Studies of Asian Languages
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (A 70/507) · 70 scraped, 0 already done, 0 failed · 21.0 pages/min · 3m20s elapsed · ~20m49s left in A
+    [A 71/507] Opening AAS 387 — Islam and Confucianism
+      No View Class Sections button; course has no sections.
+    [A 72/507] Opening AAS 391 — Humanities Topics in Asian and Asian American Studies
+      Fall 2026: found 1 class sections.
+    [A 73/507] Opening AAS 392 — Social Science Topics in Asian and Asian American Studies
+      Fall 2026: found 1 class sections.
+    [A 74/507] Opening AAS 394 — Topics in Asian Art
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+    [A 75/507] Opening AAS 396 — Topics in Sinophone Literature and Culture
+      No View Class Sections button; course has no sections.
+    [A 76/507] Opening AAS 400 — Seminar in Korean Studies
+      No View Class Sections button; course has no sections.
+    [A 77/507] Opening AAS 401 — Proseminar in Asian and Asian American Studies
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 78/507] Opening AAS 421 — Language and Reality
+      No View Class Sections button; course has no sections.
+    [A 79/507] Opening AAS 422 — Freedom and Creativity
+      No View Class Sections button; course has no sections.
+    [A 80/507] Opening AAS 440 — Inter-Asia Cultural Studies
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (A 80/507) · 80 scraped, 0 already done, 0 failed · 21.7 pages/min · 3m41s elapsed · ~19m40s left in A
+    [A 81/507] Opening AAS 444 — Experiential Learning
+      Fall 2026: found 1 class sections.
+    [A 82/507] Opening AAS 447 — Directed Readings in Asian and Asian American Studies
+      Fall 2026: found 18 class sections.
+    [A 83/507] Opening AAS 458 — Speak Effectively Before an Audience
+      Fall 2026: found 1 class sections.
+    [A 84/507] Opening AAS 459 — Write Effectively in Asian and Asian American Studies
+      Fall 2026: found 14 class sections.
+    [A 85/507] Opening AAS 472 — Topics in Asian Philosophy (I)
+      Fall 2026: found 4 class sections.
+    [A 86/507] Opening AAS 473 — Orientalism
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 87/507] Opening AAS 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 25 class sections.
+    [A 88/507] Opening AAS 476 — Undergraduate Teaching Practicum II
+      Fall 2026: found 19 class sections.
+    [A 89/507] Opening AAS 487 — Supervised Research in Asian and Asian American Studies
+      Fall 2026: found 16 class sections.
+    [A 90/507] Opening AAS 488 — Internship
+      Fall 2026: found 18 class sections.
+  Progress: group 1/2 (A 90/507) · 90 scraped, 0 already done, 0 failed · 18.7 pages/min · 4m49s elapsed · ~22m21s left in A
+    [A 91/507] Opening AAS 495 — Senior Honors Project in AAS
+      Fall 2026: found 3 class sections.
+    [A 92/507] Opening ACC 210 — Financial Accounting
+      Fall 2026: found 9 class sections.
+    [A 93/507] Opening ACC 214 — Managerial Cost Analysis and Applications
+      Fall 2026: found 7 class sections.
+    [A 94/507] Opening ACC 301 — Governmental & Not-for-Profit Accounting and Reporting
+      Fall 2026: found 1 class sections.
+    [A 95/507] Opening ACC 310 — Intermediate Accounting I
+      Fall 2026: found 4 class sections.
+    [A 96/507] Opening ACC 311 — Federal Income Taxation I
+      Fall 2026: found 1 class sections.
+    [A 97/507] Opening ACC 313 — Intermediate Accounting II
+      Fall 2026: found 1 class sections.
+    [A 98/507] Opening ACC 320 — Artificial Intelligence in Accounting and Assurance
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 99/507] Opening ACC 400 — External Auditing
+      Fall 2026: found 2 class sections.
+    [A 100/507] Opening ACC 401 — Intermediate Managerial Accounting & Data Analytics
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (A 100/507) · 100 scraped, 0 already done, 0 failed · 17.9 pages/min · 5m36s elapsed · ~22m47s left in A
+    Pausing 5s after 100 detail pages…
+    [A 101/507] Opening ACC 402 — Advanced Accounting
+      Fall 2026: found 1 class sections.
+    [A 102/507] Opening ACC 403 — Accounting Information Systems
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 103/507] Opening ADV 101 — Advising 101: Transfer Seminar
+      Fall 2026: found 21 class sections.
+    [A 104/507] Opening ADV 201 — Preparing for Medical School
+      No View Class Sections button; course has no sections.
+    [A 105/507] Opening ADV 202 — Academic Success Seminar
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [A 106/507] Opening ADV 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 1 class sections.
+    [A 107/507] Opening ADV 476 — Undergraduate Teaching Practicum II
+      Fall 2026: found 1 class sections.
+    [A 108/507] Opening ADV (488) — Undergraduate Advising Services Internship ** available as of 01/01/2027
+      Fall 2026: found 1 class sections.
+    [A 109/507] Opening ADV 488 — Academic and Transfer Advising Services Internship
+      Fall 2026: found 1 class sections.
+    [A 110/507] Opening AFH 101 — The Wonders of the Black World
+      Fall 2026: found 2 class sections.
+  Progress: group 1/2 (A 110/507) · 110 scraped, 0 already done, 0 failed · 17.7 pages/min · 6m12s elapsed · ~22m23s left in A
+    [A 111/507] Opening AFH 200TRG — Africana Elective-HUM/G
+      No View Class Sections button; course has no sections.
+    [A 112/507] Opening AFH 205 — Contemporary African Literature
+      No View Class Sections button; course has no sections.
+    [A 113/507] Opening AFH 206 — Great Books of the Black Experience
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 114/507] Opening AFH 215 — Hip Hop and the Intellectual Tradition
+      No View Class Sections button; course has no sections.
+    [A 115/507] Opening AFH 249 — African-American Literature and Music in the 19th and 20th Centuries
+      Fall 2026: found 1 class sections.
+    [A 116/507] Opening AFH 282 — Contemporary Caribbean Women's Literature
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 117/507] Opening AFH 329 — Pan-African Literature I
+      No View Class Sections button; course has no sections.
+    [A 118/507] Opening AFH 330 — Pan-African Literature II
+      No View Class Sections button; course has no sections.
+    [A 119/507] Opening AFH 339 — Arts of the African Diaspora
+      No View Class Sections button; course has no sections.
+    [A 120/507] Opening AFH 368 — Caribbean and American Connections in Literature
+      Fall 2026: not listed for this course. Available terms: Summer 2026, Winter 2027
+  Progress: group 1/2 (A 120/507) · 120 scraped, 0 already done, 0 failed · 18.1 pages/min · 6m38s elapsed · ~21m23s left in A
+    [A 121/507] Opening AFH 379 — Philosophy of Race (III)
+      No View Class Sections button; course has no sections.
+    [A 122/507] Opening AFH 380 — African American and Caribbean Theatre
+      No View Class Sections button; course has no sections.
+    [A 123/507] Opening AFH 382 — Black Women's Literature of the African Diaspora
+      No View Class Sections button; course has no sections.
+    [A 124/507] Opening AFH 385 — French Caribbean Literature
+      No View Class Sections button; course has no sections.
+    [A 125/507] Opening AFH 390 — Topics in Africana Studies
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026, Winter 2027
+    [A 126/507] Opening AFH 391 — Topics in Africana Studies
+      No View Class Sections button; course has no sections.
+    [A 127/507] Opening AFH 423 — Africana Literature in French
+      No View Class Sections button; course has no sections.
+    [A 128/507] Opening AFH 444 — Experiential Learning
+      No View Class Sections button; course has no sections.
+    [A 129/507] Opening AFH 447 — Readings in Africana Studies
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [A 130/507] Opening AFH 475 — Undergraduate Teaching Practicum I
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (A 130/507) · 130 scraped, 0 already done, 0 failed · 18.6 pages/min · 6m58s elapsed · ~20m13s left in A
+    [A 131/507] Opening AFH 476 — Undergraduate Teaching Practicum II
+      No View Class Sections button; course has no sections.
+    [A 132/507] Opening AFH 487 — Research in Africana Studies
+      No View Class Sections button; course has no sections.
+    [A 133/507] Opening AFS 101 — Themes in the Black Experience I
+      Fall 2026: found 1 class sections.
+    [A 134/507] Opening AFS 102 — Themes in the Black Experience II
+      Fall 2026: found 1 class sections.
+    [A 135/507] Opening AFS 221 — Introduction to Modern African History
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [A 136/507] Opening AFS 223 — Regional History of Africa
+      Fall 2026: found 1 class sections.
+    [A 137/507] Opening AFS 239 — Introduction to the Caribbean Experience
+      No View Class Sections button; course has no sections.
+    [A 138/507] Opening AFS 240 — Issues in Caribbean Society
+      No View Class Sections button; course has no sections.
+    [A 139/507] Opening AFS 277 — The Modern Color Line
+      Fall 2026: found 1 class sections.
+    [A 140/507] Opening AFS 283 — Community Service
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (A 140/507) · 140 scraped, 0 already done, 0 failed · 18.6 pages/min · 7m31s elapsed · ~19m43s left in A
+    [A 141/507] Opening AFS 300 — Blacks in the City
+      No View Class Sections button; course has no sections.
+    [A 142/507] Opening AFS 306 — Gender and Public Health in Africa
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 143/507] Opening AFS 308 — Women Islam and Political Change in Africa
+      No View Class Sections button; course has no sections.
+    [A 144/507] Opening AFS 310 — American Attitudes Toward Race
+      No View Class Sections button; course has no sections.
+    [A 145/507] Opening AFS 319 — The Politics of Race
+      Fall 2026: found 1 class sections.
+    [A 146/507] Opening AFS 320 — Black Popular Culture and the Terrain
+      No View Class Sections button; course has no sections.
+    [A 147/507] Opening AFS 325 — Civil Rights and Black Power
+      No View Class Sections button; course has no sections.
+    [A 148/507] Opening AFS 337 — The Politics of Africa
+      Fall 2026: found 1 class sections.
+    [A 149/507] Opening AFS 339 — Recent African American History
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [A 150/507] Opening AFS 340 — Human Rights and Africa
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+  Progress: group 1/2 (A 150/507) · 150 scraped, 0 already done, 0 failed · 19.0 pages/min · 7m53s elapsed · ~18m46s left in A
+    Pausing 5s after 150 detail pages…
+    [A 151/507] Opening AFS 345 — Culture and Gender: Women in Africa and the Caribbean
+      No View Class Sections button; course has no sections.
+    [A 152/507] Opening AFS 346 — Political and Social History of Africa
+      No View Class Sections button; course has no sections.
+    [A 153/507] Opening AFS 350 — Black Women and Social Change: A Cross-Cultural Perspective
+      No View Class Sections button; course has no sections.
+    [A 154/507] Opening AFS 355 — Ancient African Civilizations
+      No View Class Sections button; course has no sections.
+    [A 155/507] Opening AFS 360 — African-American Social Commentary
+      No View Class Sections button; course has no sections.
+    [A 156/507] Opening AFS 363 — The Black Experience in Mass Media
+      Fall 2026: found 1 class sections.
+    [A 157/507] Opening AFS 365 — Global Africa
+      No View Class Sections button; course has no sections.
+    [A 158/507] Opening AFS 368 — Health and Disease in Africa
+      No View Class Sections button; course has no sections.
+    [A 159/507] Opening AFS 369 — Religion and Politics in Africa
+      No View Class Sections button; course has no sections.
+    [A 160/507] Opening AFS 370 — The African-American Family
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026, Winter 2027
+  Progress: group 1/2 (A 160/507) · 160 scraped, 0 already done, 0 failed · 19.3 pages/min · 8m16s elapsed · ~17m57s left in A
+    [A 161/507] Opening AFS 372 — African-American Political Thought
+      No View Class Sections button; course has no sections.
+    [A 162/507] Opening AFS 373 — Sexualities: African and Caribbean Perspectives
+      No View Class Sections button; course has no sections.
+    [A 163/507] Opening AFS 374 — Environment and Development in African History
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [A 164/507] Opening AFS 375 — Slavery
+      Fall 2026: found 1 class sections.
+    [A 165/507] Opening AFS 381 — AIDS, Race, and Gender in the Black Community
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [A 166/507] Opening AFS 382 — Race, Ethnicity and the Environment
+      No View Class Sections button; course has no sections.
+    [A 167/507] Opening AFS 383 — The Global African Diaspora in Comparative Perspective
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+    [A 168/507] Opening AFS 392 — The Black Power Movement
+      No View Class Sections button; course has no sections.
+    [A 169/507] Opening AFS 393 — The Caribbean Immigrants in the United States: Dreams and Realities
+      No View Class Sections button; course has no sections.
+    [A 170/507] Opening AFS 394 — Black Nationalism in America
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (A 170/507) · 170 scraped, 0 already done, 0 failed · 19.8 pages/min · 8m36s elapsed · ~17m03s left in A
+    [A 171/507] Opening AFS 396 — Topics in African-American History
+      No View Class Sections button; course has no sections.
+    [A 172/507] Opening AFS 410 — Computers and Technology in Africa
+      No View Class Sections button; course has no sections.
+    [A 173/507] Opening AFS 421 — Topics in Africana Studies
+      No View Class Sections button; course has no sections.
+    [A 174/507] Opening AFS 422 — Topics in Africana Studies
+      No View Class Sections button; course has no sections.
+    [A 175/507] Opening AFS 444 — Experiential Learning
+      No View Class Sections button; course has no sections.
+    [A 176/507] Opening AFS 447 — Readings in Africana Studies
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [A 177/507] Opening AFS 459 — Write Effectively in Africana Studies
+      Fall 2026: found 3 class sections.
+    [A 178/507] Opening AFS 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 6 class sections.
+    [A 179/507] Opening AFS 476 — Undergraduate Teaching Practicum II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 180/507] Opening AFS 477 — Qualitative & Mixed Methods
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (A 180/507) · 180 scraped, 0 already done, 0 failed · 19.7 pages/min · 9m08s elapsed · ~16m36s left in A
+    [A 181/507] Opening AFS 487 — Research in Africana Studies
+      Fall 2026: found 1 class sections.
+    [A 182/507] Opening AFS 488 — Internship
+      Fall 2026: found 1 class sections.
+    [A 183/507] Opening AFS 491 — Interdisciplinary Seminar in Africana Studies
+      No View Class Sections button; course has no sections.
+    [A 184/507] Opening AIM 100 — EOP Pre-Freshman Summer Academic Bridge
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [A 185/507] Opening AIM 101 — EOP Pre-Freshman Summer Support Bridge
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [A 186/507] Opening AIM 102 — Expository Writing
+      No View Class Sections button; course has no sections.
+    [A 187/507] Opening AIM 104 — Literary Analysis and Critical Reasoning
+      Fall 2026: found 5 class sections.
+    [A 188/507] Opening ALQ 111 — Elementary Algonquian I
+      Fall 2026: found 2 class sections.
+    [A 189/507] Opening ALQ 112 — Elementary Algonquian II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 190/507] Opening ALQ 211 — Intermediate Algonquian I
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (A 190/507) · 190 scraped, 0 already done, 0 failed · 19.0 pages/min · 9m58s elapsed · ~16m39s left in A
+    [A 191/507] Opening ALQ (212) — Intermediate Algonquian II ** available as of 01/01/2027
+      No View Class Sections button; course has no sections.
+    [A 192/507] Opening AMR 101 — Local and Global: National Boundaries and World-Systems
+      No View Class Sections button; course has no sections.
+    [A 193/507] Opening AMR 102 — Making American Identities
+      No View Class Sections button; course has no sections.
+    [A 194/507] Opening AMR 301 — Ethnicity and Race in American History
+      No View Class Sections button; course has no sections.
+    [A 195/507] Opening AMR 390 — Humanities Topics in American Studies
+      No View Class Sections button; course has no sections.
+    [A 196/507] Opening AMR 392 — Social and Behavioral Sciences Topics in American Studies
+      No View Class Sections button; course has no sections.
+    [A 197/507] Opening AMR 395 — Topics in American Studies
+      No View Class Sections button; course has no sections.
+    [A 198/507] Opening AMR 397 — Topics in American Studies
+      No View Class Sections button; course has no sections.
+    [A 199/507] Opening AMR 401 — Senior Seminar in American Studies
+      No View Class Sections button; course has no sections.
+    [A 200/507] Opening AMR 444 — Experiential Learning
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (A 200/507) · 200 scraped, 0 already done, 0 failed · 19.4 pages/min · 10m17s elapsed · ~15m48s left in A
+    Pausing 5s after 200 detail pages…
+    [A 201/507] Opening AMR 447 — Directed Readings in American Studies
+      No View Class Sections button; course has no sections.
+    [A 202/507] Opening AMR 458 — Speak Effectively Before an Audience
+      No View Class Sections button; course has no sections.
+    [A 203/507] Opening AMR 475 — Undergraduate Teaching Practicum I
+      No View Class Sections button; course has no sections.
+    [A 204/507] Opening AMR 476 — Undergraduate Teaching Practicum II
+      No View Class Sections button; course has no sections.
+    [A 205/507] Opening AMR 487 — Independent Research
+      No View Class Sections button; course has no sections.
+    [A 206/507] Opening AMR 488 — Internship
+      No View Class Sections button; course has no sections.
+    [A 207/507] Opening AMR 495 — Senior Honors Project in American Studies
+      No View Class Sections button; course has no sections.
+    [A 208/507] Opening AMS 102 — Elements of Statistics
+      Fall 2026: found 2 class sections.
+    [A 209/507] Opening AMS 103 — Applied Mathematics in Modern Technology
+      Fall 2026: found 1 class sections.
+    [A 210/507] Opening AMS 104 — Spreadsheet Technology and Applications
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (A 210/507) · 210 scraped, 0 already done, 0 failed · 19.2 pages/min · 10m55s elapsed · ~15m27s left in A
+    [A 211/507] Opening AMS 110 — Probability and Statistics in the Life Sciences
+      Fall 2026: found 2 class sections.
+    [A 212/507] Opening AMS 151 — Applied Calculus I
+      Fall 2026: found 3 class sections.
+    [A 213/507] Opening AMS 161 — Applied Calculus II
+      Fall 2026: found 6 class sections.
+    [A 214/507] Opening AMS 210 — Applied Linear Algebra
+      Fall 2026: found 7 class sections.
+    [A 215/507] Opening AMS 261 — Applied Calculus III
+      Fall 2026: found 11 class sections.
+    [A 216/507] Opening AMS 300 — Writing in Applied Mathematics
+      Fall 2026: found 1 class sections.
+    [A 217/507] Opening AMS 301 — Finite Mathematical Structures
+      Fall 2026: found 3 class sections.
+    [A 218/507] Opening AMS 303 — Graph Theory
+      Fall 2026: found 1 class sections.
+    [A 219/507] Opening AMS 310 — Survey of Probability and Statistics
+      Fall 2026: found 4 class sections.
+    [A 220/507] Opening AMS 311 — Probability Theory
+      Fall 2026: found 3 class sections.
+  Progress: group 1/2 (A 220/507) · 220 scraped, 0 already done, 0 failed · 18.2 pages/min · 12m05s elapsed · ~15m45s left in A
+    [A 221/507] Opening AMS 313 — Communicating with Data
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 222/507] Opening AMS 315 — Data Analysis
+      Fall 2026: found 1 class sections.
+    [A 223/507] Opening AMS 316 — Introduction to Time Series Analysis
+      Fall 2026: found 1 class sections.
+    [A 224/507] Opening AMS 317 — Introduction to Linear Regression Analysis
+      Fall 2026: found 2 class sections.
+    [A 225/507] Opening AMS 318 — Financial Mathematics
+      Fall 2026: found 1 class sections.
+    [A 226/507] Opening AMS 320 — Introduction to Quantitative Finance
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 227/507] Opening AMS 325 — Computing and Programming Fundamentals in Applied Mathematics and Statistics
+      Fall 2026: found 3 class sections.
+    [A 228/507] Opening AMS 326 — Numerical Analysis
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [A 229/507] Opening AMS 332 — Computational Modeling of Physiological Systems
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [A 230/507] Opening AMS 333 — Mathematical Biology
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (A 230/507) · 230 scraped, 0 already done, 0 failed · 18.1 pages/min · 12m42s elapsed · ~15m18s left in A

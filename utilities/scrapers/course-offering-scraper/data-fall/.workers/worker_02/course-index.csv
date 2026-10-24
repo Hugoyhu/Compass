@@ -1,0 +1,203 @@
+﻿subject,course_number,course_code,title,source_file,source_group_index
+BCP,111,BCP 111,"American Drug Use and Abuse: Biomedical, Socio-economic and Political Factors",index_B.html,4
+BCP,201,BCP 201,Introduction to Pharmacology: Drug Use & Its Molecular Basis,index_B.html,4
+BCP,400,BCP 400,Writing in Pharmacology,index_B.html,4
+BCP,401,BCP 401,Principles of Pharmacology,index_B.html,4
+BCP,402,BCP 402,Advanced Pharmacology,index_B.html,4
+BCP,403,BCP 403,Principles of Pharmacology Laboratory,index_B.html,4
+BCP,404,BCP 404,Advanced Pharmacology Laboratory,index_B.html,4
+BCP,405,BCP 405,Pharmacology to Pharmacy: Practical Clinical Aspects for Non-Clinicians (Didactic),index_B.html,4
+BCP,406,BCP 406,Pharmacology Colloquium,index_B.html,4
+BCP,444,BCP 444,Experiential Learning,index_B.html,4
+BCP,475,BCP 475,Undergraduate Teaching Practicum in Pharmacology,index_B.html,4
+BCP,480,BCP 480,Introduction to Research Topics in Pharmacology,index_B.html,4
+BCP,487,BCP 487,Research in Pharmacology,index_B.html,4
+BCP,488,BCP 488,Internship,index_B.html,4
+BIO,103,BIO 103,Introduction to Biotechnology,index_B.html,10
+BIO,113,BIO 113,General Ecology,index_B.html,10
+BIO,114,BIO 114,Dinosaur Paleontology,index_B.html,10
+BIO,115,BIO 115,Evolution and Society,index_B.html,10
+BIO,201,BIO 201,Fundamentals of Biology: Organisms to Ecosystems,index_B.html,10
+BIO,202,BIO 202,Fundamentals of Biology: Molecular and Cellular Biology,index_B.html,10
+BIO,203,BIO 203,Fundamentals of Biology: Cellular and Organ Physiology,index_B.html,10
+BIO,204,BIO 204,Fundamentals of Scientific Inquiry in the Biological Sciences I,index_B.html,10
+BIO,205,BIO 205,Fundamentals of Scientific Inquiry in the Biological Sciences IIA,index_B.html,10
+BIO,207,BIO 207,Fundamentals of Scientific Inquiry in the Biological Sciences IIB,index_B.html,10
+BIO,208,BIO 208,"Cells, Brains, Minds",index_B.html,10
+BIO,209,BIO 209,Fundamentals of Scientific Inquiry in the Biological Sciences IIC,index_B.html,10
+BIO,211,BIO 211,Statistics and Data Analysis: A Conceptual Approach,index_B.html,10
+BIO,231,BIO 231,"Cannabis: History, Culture, Science & Medicinal Uses",index_B.html,10
+BIO,299,BIO 299,Advanced Microbiology for Nursing & Allied Health,index_B.html,10
+BIO,310,BIO 310,Cell Biology,index_B.html,10
+BIO,312,BIO 312,Bioinformatics and Computational Biology,index_B.html,10
+BIO,314,BIO 314,Cancer Biology,index_B.html,10
+BIO,315,BIO 315,Microbiology,index_B.html,10
+BIO,316,BIO 316,Molecular Immunology,index_B.html,10
+BIO,317,BIO 317,Principles of Cellular Signaling,index_B.html,10
+BIO,319,BIO 319,Landscape Ecology Laboratory,index_B.html,10
+BIO,320,BIO 320,General Genetics,index_B.html,10
+BIO,321,BIO 321,Ecological Genetics,index_B.html,10
+BIO,325,BIO 325,Animal Development,index_B.html,10
+BIO,327,BIO 327,Developmental Genetics Laboratory,index_B.html,10
+BIO,328,BIO 328,Mammalian Physiology,index_B.html,10
+BIO,332,BIO 332,Computational Modeling of Physiological Systems,index_B.html,10
+BIO,333,BIO 333,Neurotechnology,index_B.html,10
+BIO,334,BIO 334,Principles of Neurobiology,index_B.html,10
+BIO,335,BIO 335,Neurobiology Laboratory,index_B.html,10
+BIO,336,BIO 336,Conservation Biology,index_B.html,10
+BIO,337,BIO 337,Neurotransmission and Neuromodulation: Implications for Brain Function,index_B.html,10
+BIO,338,BIO 338,From Synapse to Circuit: Self-organization of the Brain,index_B.html,10
+BIO,339,BIO 339,Neurobiology of Disease,index_B.html,10
+BIO,341,BIO 341,Plant Diversity,index_B.html,10
+BIO,342,BIO 342,Invertebrate Zoology,index_B.html,10
+BIO,343,BIO 343,Invertebrate Zoology Laboratory,index_B.html,10
+BIO,344,BIO 344,Chordate Zoology,index_B.html,10
+BIO,347,BIO 347,Introduction to Neural Computation,index_B.html,10
+BIO,348,BIO 348,Herpetology,index_B.html,10
+BIO,351,BIO 351,Ecology,index_B.html,10
+BIO,352,BIO 352,Ecology Laboratory,index_B.html,10
+BIO,353,BIO 353,Marine Ecology,index_B.html,10
+BIO,354,BIO 354,Evolution,index_B.html,10
+BIO,356,BIO 356,Population and Community Ecology Computer Laboratory,index_B.html,10
+BIO,357,BIO 357,Urban Microbial Ecology & the Microbiome of the Built Environment,index_B.html,10
+BIO,358,BIO 358,Biology and Human Social and Sexual Behavior,index_B.html,10
+BIO,361,BIO 361,Biochemistry I,index_B.html,10
+BIO,362,BIO 362,Biochemistry II,index_B.html,10
+BIO,364,BIO 364,Laboratory Techniques in Cancer Biology,index_B.html,10
+BIO,365,BIO 365,Biochemistry Laboratory,index_B.html,10
+BIO,366,BIO 366,Molecular Microbiology Laboratory,index_B.html,10
+BIO,367,BIO 367,Molecular Diversity Laboratory,index_B.html,10
+BIO,368,BIO 368,Food Microbiology,index_B.html,10
+BIO,369,BIO 369,Animal Nutrition,index_B.html,10
+BIO,371,BIO 371,Restoration of Aquatic Ecosystems,index_B.html,10
+BIO,383,BIO 383,Paleobiology,index_B.html,10
+BIO,384,BIO 384,Intermediate Statistics,index_B.html,10
+BIO,385,BIO 385,Plant Ecology,index_B.html,10
+BIO,386,BIO 386,Ecosystem Ecology and the Global Environment,index_B.html,10
+BIO,387,BIO 387,Biogeography,index_B.html,10
+BIO,444,BIO 444,Experiential Learning,index_B.html,10
+BIO,446,BIO 446,Readings in Neurobiology and Physiology,index_B.html,10
+BIO,447,BIO 447,"Readings in Molecular, Cellular, and Developmental Biology",index_B.html,10
+BIO,449,BIO 449,Readings in Ecology and Evolution,index_B.html,10
+BIO,458,BIO 458,Speak Effectively Before an Audience,index_B.html,10
+BIO,459,BIO 459,Write Effectively in Biology,index_B.html,10
+BIO,475,BIO 475,Undergraduate Teaching Practicum in College Biology I,index_B.html,10
+BIO,476,BIO 476,Undergraduate Teaching Practicum in College Biology II,index_B.html,10
+BIO,477,BIO 477,Undergraduate Teaching Practicum in College Biology III,index_B.html,10
+BIO,484,BIO 484,Research in Biology and Society,index_B.html,10
+BIO,486,BIO 486,Research in Neurobiology and Physiology,index_B.html,10
+BIO,487,BIO 487,"Research in Molecular, Cellular, and Developmental Biology",index_B.html,10
+BIO,488,BIO 488,Internship in Biological Sciences,index_B.html,10
+BIO,489,BIO 489,Research in Ecology and Evolution,index_B.html,10
+BME,100,BME 100,Introduction to Biomedical Engineering,index_B.html,13
+BME,120,BME 120,Programming Fundamentals in Biomedical Engineering,index_B.html,13
+BME,200,BME 200,Bioengineering in Extreme Environments,index_B.html,13
+BME,203,BME 203,Emergent Biodesign,index_B.html,13
+BME,205,BME 205,Clinical Challenges of the 21st Century,index_B.html,13
+BME,206,BME 206,Science Fiction or Inclusive Bioengineering Solutions,index_B.html,13
+BME,210,BME 210,Applied Biostatistics,index_B.html,13
+BME,212,BME 212,Biomedical Engineering Research Fundamentals,index_B.html,13
+BME,260,BME 260,Statics and Dynamics in Biological Systems,index_B.html,13
+BME,271,BME 271,Introduction to Electric Circuits and Bioelectricity,index_B.html,13
+BME,300,BME 300,Writing in Biomedical Engineering,index_B.html,13
+BME,301,BME 301,Bioelectricity,index_B.html,13
+BME,302,BME 302,Research Fundamentals and Communication,index_B.html,13
+BME,303,BME 303,Biomechanics,index_B.html,13
+BME,304,BME 304,Genetic Engineering,index_B.html,13
+BME,305,BME 305,Biofluids,index_B.html,13
+BME,310,BME 310,Introduction to Biomedical Optics and Ultrasound,index_B.html,13
+BME,311,BME 311,Fundamentals of Macro to Molecular Bioimaging,index_B.html,13
+BME,312,BME 312,LabVIEW Programming in Engineering,index_B.html,13
+BME,313,BME 313,Bioinstrumentation,index_B.html,13
+BME,314,BME 314,Embedded Technologies in Medical Devices,index_B.html,13
+BME,340,BME 340,Clinical Insights for Healthcare Device Innovation & Entrepreneurship,index_B.html,13
+BME,353,BME 353,Introduction to Biomaterials,index_B.html,13
+BME,354,BME 354,Advanced Biomaterials,index_B.html,13
+BME,361,BME 361,Data Science with Python,index_B.html,13
+BME,(362),BME (362),Deep Learning in Medical Imaging ** available as of 01/01/2027,index_B.html,13
+BME,371,BME 371,Biological Microfluidics,index_B.html,13
+BME,381,BME 381,Nanofabrication in Biomedical Applications,index_B.html,13
+BME,402,BME 402,Contemporary Biotechnology,index_B.html,13
+BME,404,BME 404,Essentials of Tissue Engineering,index_B.html,13
+BME,420,BME 420,Computational Biomechanics,index_B.html,13
+BME,430,BME 430,Quantitative Human Physiology,index_B.html,13
+BME,440,BME 440,Biomedical Engineering Design,index_B.html,13
+BME,441,BME 441,Senior Design Project in Biomedical Engineering,index_B.html,13
+BME,444,BME 444,Experiential Learning,index_B.html,13
+BME,461,BME 461,Biosystems Analysis,index_B.html,13
+BME,475,BME 475,Undergraduate Teaching Practicum,index_B.html,13
+BME,476,BME 476,Undergrad Teaching Practicum II,index_B.html,13
+BME,481,BME 481,Biosensors,index_B.html,13
+BME,488,BME 488,Biomedical Engineering Internship,index_B.html,13
+BME,494,BME 494,Honors Seminar on Research,index_B.html,13
+BME,495,BME 495,Honors Independent Research,index_B.html,13
+BME,499,BME 499,Research in Biomedical Engineering,index_B.html,13
+BUS,115,BUS 115,Introduction to Business,index_B.html,20
+BUS,117,BUS 117,Digital Tools for Business,index_B.html,20
+BUS,215,BUS 215,Introduction to Business Statistics,index_B.html,20
+BUS,220,BUS 220,Introduction to Decision Sciences,index_B.html,20
+BUS,230,BUS 230,Personal Finance,index_B.html,20
+BUS,294,BUS 294,Principles of Management,index_B.html,20
+BUS,300,BUS 300,Writing for Business Management,index_B.html,20
+BUS,301,BUS 301,Business Communications,index_B.html,20
+BUS,302,BUS 302,Social Media Marketing Strategy,index_B.html,20
+BUS,317,BUS 317,Estate & Financial Planning,index_B.html,20
+BUS,325,BUS 325,Legal Environment of Business,index_B.html,20
+BUS,326,BUS 326,Organizational Behavior,index_B.html,20
+BUS,330,BUS 330,Principles of Finance,index_B.html,20
+BUS,331,BUS 331,International Finance,index_B.html,20
+BUS,332,BUS 332,Entrepreneurial Finance,index_B.html,20
+BUS,333,BUS 333,Introduction to the Business of Real Estate,index_B.html,20
+BUS,334,BUS 334,Integrated Marketing Communications,index_B.html,20
+BUS,336,BUS 336,Mergers & Acquisitions,index_B.html,20
+BUS,337,BUS 337,Entrepreneurship Compared Across Countries,index_B.html,20
+BUS,338,BUS 338,Data Visualization and Storytelling,index_B.html,20
+BUS,340,BUS 340,Information Systems in Management,index_B.html,20
+BUS,346,BUS 346,Operations Management,index_B.html,20
+BUS,348,BUS 348,Principles of Marketing,index_B.html,20
+BUS,351,BUS 351,Human Resource Management,index_B.html,20
+BUS,353,BUS 353,Entrepreneurship,index_B.html,20
+BUS,354,BUS 354,Understanding Business Agreements,index_B.html,20
+BUS,355,BUS 355,Investment Analysis,index_B.html,20
+BUS,356,BUS 356,"Financial Analysis, AI, Excel",index_B.html,20
+BUS,357,BUS 357,Principles of Sales,index_B.html,20
+BUS,358,BUS 358,Marketing Research,index_B.html,20
+BUS,358TRC,BUS 358TRC,Marketing Research,index_B.html,20
+BUS,359,BUS 359,Consumer Behavior,index_B.html,20
+BUS,361,BUS 361,Retail Management,index_B.html,20
+BUS,362,BUS 362,Principles of International Marketing,index_B.html,20
+BUS,363,BUS 363,Brand Management,index_B.html,20
+BUS,365,BUS 365,Financial Management,index_B.html,20
+BUS,366,BUS 366,Money and Financial Institutions,index_B.html,20
+BUS,367,BUS 367,Python for Finance,index_B.html,20
+BUS,371,BUS 371,Supply Chain Management,index_B.html,20
+BUS,372,BUS 372,Quality Management,index_B.html,20
+BUS,375,BUS 375,Introduction to Artificial Intelligence,index_B.html,20
+BUS,376,BUS 376,Risk Management & Insurance,index_B.html,20
+BUS,377,BUS 377,Risk Management & Insurance II,index_B.html,20
+BUS,378,BUS 378,"Marketing Ethics, Public Policy, and Social Change",index_B.html,20
+BUS,379,BUS 379,Machine Learning and Artificial Intelligence,index_B.html,20
+BUS,380,BUS 380,Honors: Emerging Topics in Business,index_B.html,20
+BUS,381,BUS 381,Blockchain & Digital Assets,index_B.html,20
+BUS,383,BUS 383,Social Entrepreneurship,index_B.html,20
+BUS,390,BUS 390,Special Topics in Business Management,index_B.html,20
+BUS,391,BUS 391,Management of Sports Organizations,index_B.html,20
+BUS,393,BUS 393,Principles of Project Management,index_B.html,20
+BUS,395,BUS 395,Marketing Analytics,index_B.html,20
+BUS,399,BUS 399,Intellectual Property Strategy,index_B.html,20
+BUS,401,BUS 401,Negotiation Workshop,index_B.html,20
+BUS,406,BUS 406,Real Estate Finance,index_B.html,20
+BUS,408,BUS 408,Property & Casualty Insurance,index_B.html,20
+BUS,440,BUS 440,International Management,index_B.html,20
+BUS,441,BUS 441,Business Strategy,index_B.html,20
+BUS,444,BUS 444,Artificial Intelligence Strategy for Business,index_B.html,20
+BUS,446,BUS 446,Ethics: Critical Thinking through Film,index_B.html,20
+BUS,447,BUS 447,Business Ethics,index_B.html,20
+BUS,448,BUS 448,Marketing Strategy,index_B.html,20
+BUS,449,BUS 449,Marketing in Action,index_B.html,20
+BUS,475,BUS 475,Undergraduate Teaching Practicum I,index_B.html,20
+BUS,476,BUS 476,Undergraduate Teaching Practicum II,index_B.html,20
+BUS,487,BUS 487,Independent Research,index_B.html,20
+BUS,488,BUS 488,Internship,index_B.html,20
+BUS,495,BUS 495,Business Honors Program Thesis,index_B.html,20
+BUS,496,BUS 496,Business Honors Program Thesis,index_B.html,20

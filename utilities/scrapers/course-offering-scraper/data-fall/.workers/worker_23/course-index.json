@@ -1,0 +1,842 @@
+[
+  {
+    "subject": "WAE",
+    "course_number": "190",
+    "course_code": "WAE 190",
+    "title": "Intermediate Writing Academic English",
+    "source_file": "index_W.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "WAE",
+    "course_number": "192",
+    "course_code": "WAE 192",
+    "title": "High Intermediate Writing Academic English",
+    "source_file": "index_W.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "WAE",
+    "course_number": "194",
+    "course_code": "WAE 194",
+    "title": "Advanced Writing Academic English",
+    "source_file": "index_W.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "WRT",
+    "course_number": "101",
+    "course_code": "WRT 101",
+    "title": "Introductory Writing Workshop",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "102",
+    "course_code": "WRT 102",
+    "title": "Intermediate Writing Workshop",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "200",
+    "course_code": "WRT 200",
+    "title": "The Rhetoric of Grammar and Style",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "201",
+    "course_code": "WRT 201",
+    "title": "Principles of Professional Writing",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "240",
+    "course_code": "WRT 240",
+    "title": "Introduction to Writing Studies",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "300",
+    "course_code": "WRT 300",
+    "title": "Theories and Methods in Rhetoric and Writing",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "301",
+    "course_code": "WRT 301",
+    "title": "Writing in the Disciplines: Special Topics",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "302",
+    "course_code": "WRT 302",
+    "title": "Critical Writing Seminar: Special Topics",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "303",
+    "course_code": "WRT 303",
+    "title": "The Personal Essay",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "304",
+    "course_code": "WRT 304",
+    "title": "Writing for Your Profession",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "305",
+    "course_code": "WRT 305",
+    "title": "Writing for the Health Professions",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "306",
+    "course_code": "WRT 306",
+    "title": "Tutor Training",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "307",
+    "course_code": "WRT 307",
+    "title": "Rhetoric of Science, Technology, and Medicine",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "319",
+    "course_code": "WRT 319",
+    "title": "Nonprofit Business Writing",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "320",
+    "course_code": "WRT 320",
+    "title": "Rhetoric and Culture",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "321",
+    "course_code": "WRT 321",
+    "title": "Rhetoric of Social Movements",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "(350)",
+    "course_code": "WRT (350)",
+    "title": "Environmental Writing and Rhetoric ** available as of 01/01/2027",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "375",
+    "course_code": "WRT 375",
+    "title": "Technical Communication",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "376",
+    "course_code": "WRT 376",
+    "title": "Digital Rhetorics",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "377",
+    "course_code": "WRT 377",
+    "title": "Special Topics in Digital Writing",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "380",
+    "course_code": "WRT 380",
+    "title": "Advanced Research Writing: Theories, Methods, Practices",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "381",
+    "course_code": "WRT 381",
+    "title": "Advanced Analytic and Argumentative Writing",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "382",
+    "course_code": "WRT 382",
+    "title": "Grant Writing",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "392",
+    "course_code": "WRT 392",
+    "title": "Theories and Methods of Mentoring Writers",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "444",
+    "course_code": "WRT 444",
+    "title": "Experiential Learning",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "458",
+    "course_code": "WRT 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "459",
+    "course_code": "WRT 459",
+    "title": "Write Effectively in a Discipline",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "487",
+    "course_code": "WRT 487",
+    "title": "Independent Project",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "488",
+    "course_code": "WRT 488",
+    "title": "Internship",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WRT",
+    "course_number": "490",
+    "course_code": "WRT 490",
+    "title": "Rhetoric and Writing Senior Project",
+    "source_file": "index_W.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "WSE",
+    "course_number": "101",
+    "course_code": "WSE 101",
+    "title": "Introduction to WISE and Stony Brook",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "105",
+    "course_code": "WSE 105",
+    "title": "Opportunities in STEM and Beyond",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "201",
+    "course_code": "WSE 201",
+    "title": "Society and Gender in STEM",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "205",
+    "course_code": "WSE 205",
+    "title": "Career Planning in STEM",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "275",
+    "course_code": "WSE 275",
+    "title": "University Honors Fellows Seminar",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "276",
+    "course_code": "WSE 276",
+    "title": "University Honors Fellows Practicum",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "380",
+    "course_code": "WSE 380",
+    "title": "Research and Discovery in STEM",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "381",
+    "course_code": "WSE 381",
+    "title": "Service-Learning in STEM",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "401",
+    "course_code": "WSE 401",
+    "title": "Women's Leadership in STEM",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "405",
+    "course_code": "WSE 405",
+    "title": "Life Design in STEM",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "475",
+    "course_code": "WSE 475",
+    "title": "Teaching Practicum",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "477",
+    "course_code": "WSE 477",
+    "title": "Mentoring/Leadership Practicum",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "487",
+    "course_code": "WSE 487",
+    "title": "Research Practicum",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "488",
+    "course_code": "WSE 488",
+    "title": "Internship Practicum",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "495",
+    "course_code": "WSE 495",
+    "title": "WISE Honors Project/Thesis I",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WSE",
+    "course_number": "496",
+    "course_code": "WSE 496",
+    "title": "WISE Honors Project/Thesis II",
+    "source_file": "index_W.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "WST",
+    "course_number": "102",
+    "course_code": "WST 102",
+    "title": "Introduction to Women's and Gender Studies in the Social Sciences",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "103",
+    "course_code": "WST 103",
+    "title": "Gender, Culture, and Difference",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "111",
+    "course_code": "WST 111",
+    "title": "Introduction to Queer Studies in the Humanities",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "112",
+    "course_code": "WST 112",
+    "title": "Introduction to Queer Studies in the Social Sciences",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "210",
+    "course_code": "WST 210",
+    "title": "Contemporary Issues in Women's and Gender Studies",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "237",
+    "course_code": "WST 237",
+    "title": "Images of Italian-American Women",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "247",
+    "course_code": "WST 247",
+    "title": "Sociology of Gender",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "276",
+    "course_code": "WST 276",
+    "title": "Feminism: Literature and Cultural Contexts",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "282",
+    "course_code": "WST 282",
+    "title": "Contemporary Caribbean Women's Literature",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "284",
+    "course_code": "WST 284",
+    "title": "Introduction to Feminist Theory (III)",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "287",
+    "course_code": "WST 287",
+    "title": "Research in Women's and Gender Studies",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "291",
+    "course_code": "WST 291",
+    "title": "Introduction to Feminist Theory",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "301",
+    "course_code": "WST 301",
+    "title": "Histories of Feminism",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "305",
+    "course_code": "WST 305",
+    "title": "Feminist Theories in Context",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "310",
+    "course_code": "WST 310",
+    "title": "Contemporary Feminist Issues",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "314",
+    "course_code": "WST 314",
+    "title": "Music, Gender, and Sexuality",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "315",
+    "course_code": "WST 315",
+    "title": "Gender, Sexuality, Race & Ethnicity in Ancient Greek and Roman Literature",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "320",
+    "course_code": "WST 320",
+    "title": "Women in Judaism",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "323",
+    "course_code": "WST 323",
+    "title": "Women of Color in the U.S.",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "330",
+    "course_code": "WST 330",
+    "title": "Gender Issues in the Law",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "331",
+    "course_code": "WST 331",
+    "title": "Japanese Literature in the Feminine Domain",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "334",
+    "course_code": "WST 334",
+    "title": "Women and Gender in Modern European History",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "340",
+    "course_code": "WST 340",
+    "title": "Sociology of Human Reproduction",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "347",
+    "course_code": "WST 347",
+    "title": "Women and Politics",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "350",
+    "course_code": "WST 350",
+    "title": "Black Women and Social Change: A Cross-Cultural Perspective",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "360",
+    "course_code": "WST 360",
+    "title": "Women and Gender in Pre-Modern European History",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "371",
+    "course_code": "WST 371",
+    "title": "Gender and Work",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "372",
+    "course_code": "WST 372",
+    "title": "Topics in Women and Literature",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "374",
+    "course_code": "WST 374",
+    "title": "Historical Perspectives on Gender Orientation",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "377",
+    "course_code": "WST 377",
+    "title": "Psychology of Women",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "381",
+    "course_code": "WST 381",
+    "title": "AIDS, Race, and Gender in the Black Community",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "382",
+    "course_code": "WST 382",
+    "title": "Black Women's Literature of the African Diaspora",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "384",
+    "course_code": "WST 384",
+    "title": "Advanced Topics in Feminist Philosophy (III)",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "390",
+    "course_code": "WST 390",
+    "title": "Special Topics in Women's and Gender Studies in the Humanities",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "391",
+    "course_code": "WST 391",
+    "title": "Special Topics in Women's and Gender Studies in the Humanities",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "392",
+    "course_code": "WST 392",
+    "title": "Special Topics in Women and Science",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "394",
+    "course_code": "WST 394",
+    "title": "Special Topics in Medicine, Reproduction, and Gender",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "395",
+    "course_code": "WST 395",
+    "title": "Topics in Global Feminism",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "396",
+    "course_code": "WST 396",
+    "title": "Special Topics in the History of American Women",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "397",
+    "course_code": "WST 397",
+    "title": "Social Sciences Topics in Women's and Gender Studies",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "398",
+    "course_code": "WST 398",
+    "title": "Topics in Gender, Race, and Ethnicity",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "399",
+    "course_code": "WST 399",
+    "title": "Topics in Gender and Sexuality",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "401",
+    "course_code": "WST 401",
+    "title": "Seminar in Women's and Gender Studies",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "402",
+    "course_code": "WST 402",
+    "title": "Seminar in Women's and Gender Studies",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "407",
+    "course_code": "WST 407",
+    "title": "Senior Research Seminar for Women's and Gender Studies Minors",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "408",
+    "course_code": "WST 408",
+    "title": "Senior Research Seminar for Women's and Gender Studies Majors",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "444",
+    "course_code": "WST 444",
+    "title": "Experiential Learning",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "447",
+    "course_code": "WST 447",
+    "title": "Directed Readings in Women's and Gender Studies",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "458",
+    "course_code": "WST 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "459",
+    "course_code": "WST 459",
+    "title": "Write Effectively in Women's Studies",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "475",
+    "course_code": "WST 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "476",
+    "course_code": "WST 476",
+    "title": "Undergraduate Teaching Practicum in Women's and Gender Studies II",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "487",
+    "course_code": "WST 487",
+    "title": "Independent Project in Women's and Gender Studies",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "488",
+    "course_code": "WST 488",
+    "title": "Internship",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "495",
+    "course_code": "WST 495",
+    "title": "Senior Honors Project in Women's and Gender Studies",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "WST",
+    "course_number": "496",
+    "course_code": "WST 496",
+    "title": "Senior Honors Project in Women's and Gender Studies",
+    "source_file": "index_W.html",
+    "source_group_index": 8
+  }
+]

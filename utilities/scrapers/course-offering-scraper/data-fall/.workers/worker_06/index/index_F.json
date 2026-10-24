@@ -1,0 +1,474 @@
+[
+  {
+    "subject": "FLA",
+    "course_number": "307",
+    "course_code": "FLA 307",
+    "title": "Critical Pedagogy",
+    "source_file": "index_F.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "FLA",
+    "course_number": "320",
+    "course_code": "FLA 320",
+    "title": "Pedagogy in Practice",
+    "source_file": "index_F.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "FLA",
+    "course_number": "339",
+    "course_code": "FLA 339",
+    "title": "Methods and Materials in the Teaching of Foreign Languages",
+    "source_file": "index_F.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "FLA",
+    "course_number": "340",
+    "course_code": "FLA 340",
+    "title": "Curriculum Development and Micro-Teaching",
+    "source_file": "index_F.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "FLA",
+    "course_number": "400",
+    "course_code": "FLA 400",
+    "title": "Experiential Learning, Speak Effectively, Practice Critical and Ethical Reasoning",
+    "source_file": "index_F.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "FLA",
+    "course_number": "439",
+    "course_code": "FLA 439",
+    "title": "Technology Literacy for Foreign Language Teachers",
+    "source_file": "index_F.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "FLA",
+    "course_number": "440",
+    "course_code": "FLA 440",
+    "title": "Foreign Language Acquisition Research",
+    "source_file": "index_F.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "FLA",
+    "course_number": "449",
+    "course_code": "FLA 449",
+    "title": "Field Experience, Grades 7-12",
+    "source_file": "index_F.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "FLA",
+    "course_number": "450",
+    "course_code": "FLA 450",
+    "title": "Field Experience, Grades 7-12",
+    "source_file": "index_F.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "FLA",
+    "course_number": "451",
+    "course_code": "FLA 451",
+    "title": "Supervised Student Teaching: Middle School Level Grades 7-9",
+    "source_file": "index_F.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "FLA",
+    "course_number": "452",
+    "course_code": "FLA 452",
+    "title": "Supervised Student Teaching: High School Grades 10-12",
+    "source_file": "index_F.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "FLA",
+    "course_number": "454",
+    "course_code": "FLA 454",
+    "title": "Student Teaching Seminar",
+    "source_file": "index_F.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "FLM",
+    "course_number": "101",
+    "course_code": "FLM 101",
+    "title": "Introduction to Filmmaking and Television: Visual Storytelling",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "102",
+    "course_code": "FLM 102",
+    "title": "Introduction to Film and Television Composition: How Films and TV Shows Say What They Mean",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "201",
+    "course_code": "FLM 201",
+    "title": "Visual Storytelling Across the DIsciplines",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "203",
+    "course_code": "FLM 203",
+    "title": "Podcasting: Audio Storytelling Skills for Filmmakers",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "215",
+    "course_code": "FLM 215",
+    "title": "Scriptwriting for Film and Television",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "220",
+    "course_code": "FLM 220",
+    "title": "Documentary Filmmaking",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "221",
+    "course_code": "FLM 221",
+    "title": "Fiction Filmmaking",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "(223)",
+    "course_code": "FLM (223)",
+    "title": "Acting for Film ** available as of 01/01/2027",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "301",
+    "course_code": "FLM 301",
+    "title": "The Filmmaker's Toolbox: Cinematography, Sound and Editing",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "302",
+    "course_code": "FLM 302",
+    "title": "Producing Practices for Film and Television: Producing and Directing",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "304",
+    "course_code": "FLM 304",
+    "title": "Launching Your Podcast/Advanced Production Class",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "310",
+    "course_code": "FLM 310",
+    "title": "Story Analysis for Filmmakers and Television Writers",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "320",
+    "course_code": "FLM 320",
+    "title": "Topics in Film for Filmmakers and Television Writers",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "402",
+    "course_code": "FLM 402",
+    "title": "Capstone Project",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "475",
+    "course_code": "FLM 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "488",
+    "course_code": "FLM 488",
+    "title": "Internship",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FLM",
+    "course_number": "499",
+    "course_code": "FLM 499",
+    "title": "Independent Project",
+    "source_file": "index_F.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "FRN",
+    "course_number": "101",
+    "course_code": "FRN 101",
+    "title": "Intensive Elementary French",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "111",
+    "course_code": "FRN 111",
+    "title": "Elementary French I",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "112",
+    "course_code": "FRN 112",
+    "title": "Elementary French II",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "201",
+    "course_code": "FRN 201",
+    "title": "Intensive Intermediate French",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "211",
+    "course_code": "FRN 211",
+    "title": "Intermediate French 1",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "212",
+    "course_code": "FRN 212",
+    "title": "Intermediate French 2",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "311",
+    "course_code": "FRN 311",
+    "title": "Conversation",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "312",
+    "course_code": "FRN 312",
+    "title": "Composition",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "313",
+    "course_code": "FRN 313",
+    "title": "French Vocabulary through Popular Culture",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "395",
+    "course_code": "FRN 395",
+    "title": "Readings in French Literature I: Analysis and Interpretation",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "396",
+    "course_code": "FRN 396",
+    "title": "Readings in French Literature II: Analysis and Interpretation",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "410",
+    "course_code": "FRN 410",
+    "title": "Business French",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "411",
+    "course_code": "FRN 411",
+    "title": "Phonetics and Diction",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "412",
+    "course_code": "FRN 412",
+    "title": "Stylistics",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "413",
+    "course_code": "FRN 413",
+    "title": "Advanced French Conversation",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "423",
+    "course_code": "FRN 423",
+    "title": "Africana Literature in French",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "433",
+    "course_code": "FRN 433",
+    "title": "Studies in 17th-Century Literature",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "434",
+    "course_code": "FRN 434",
+    "title": "Studies in 18th-Century Literature",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "435",
+    "course_code": "FRN 435",
+    "title": "Studies in 19th-Century Literature",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "436",
+    "course_code": "FRN 436",
+    "title": "Studies in 20th-Century Literature",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "438",
+    "course_code": "FRN 438",
+    "title": "Francophone cultures",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "441",
+    "course_code": "FRN 441",
+    "title": "French Civilization",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "442",
+    "course_code": "FRN 442",
+    "title": "Free Seminar",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "444",
+    "course_code": "FRN 444",
+    "title": "Experiential Learning",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "447",
+    "course_code": "FRN 447",
+    "title": "Directed Readings in French",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "459",
+    "course_code": "FRN 459",
+    "title": "Write Effectively in French",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "475",
+    "course_code": "FRN 475",
+    "title": "Undergraduate Teaching Practicum in French I",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "476",
+    "course_code": "FRN 476",
+    "title": "Undergraduate Teaching Practicum in French II",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "488",
+    "course_code": "FRN 488",
+    "title": "Internship",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "FRN",
+    "course_number": "495",
+    "course_code": "FRN 495",
+    "title": "Senior Honors Project in French",
+    "source_file": "index_F.html",
+    "source_group_index": 8
+  }
+]

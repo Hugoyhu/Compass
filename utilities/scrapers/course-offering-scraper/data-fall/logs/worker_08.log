@@ -1,0 +1,363 @@
+Worker 8 groups: H, 7
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_08 --letters H,7 --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Fall 2026 --headless
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group H (1/2)…
+  [H] 39 subjects have no active courses.
+  [H] Found 1582 course entries.
+  [H] Skipping 973 courses numbered above 499; 609 left.
+    [H 1/609] Opening HAD 210 — Introduction to Clinical Laboratory Sciences
+      Fall 2026: found 1 class sections.
+    [H 2/609] Opening HAD 304 — Introd to Forensic Science
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 3/609] Opening HAD 310 — Pathology
+      Fall 2026: found 1 class sections.
+    [H 4/609] Opening HAD 313 — Clinical Biochemistry I
+      Fall 2026: found 1 class sections.
+    [H 5/609] Opening HAD 315 — Hematology I
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 6/609] Opening HAD 316 — General Microbiology
+      No View Class Sections button; course has no sections.
+    [H 7/609] Opening HAD 324 — Pathology
+      No View Class Sections button; course has no sections.
+    [H 8/609] Opening HAD 330 — Foundations in Phlebotomy
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 9/609] Opening HAD 331 — Introduction to Biochemistry for CLS
+      Fall 2026: found 1 class sections.
+    [H 10/609] Opening HAD 335 — Medical Ethics in Health Care for CLS
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+  Progress: group 1/2 (H 10/609) · 10 scraped, 0 already done, 0 failed · 8.0 pages/min · 1m14s elapsed · ~1h14m left in H
+    [H 11/609] Opening HAD 340 — Foundations in Clinical Laboratory Sciences
+      Fall 2026: found 1 class sections.
+    [H 12/609] Opening HAD 350 — Systems Physiology
+      No View Class Sections button; course has no sections.
+    [H 13/609] Opening HAD 351 — Research Literacy and Design
+      Fall 2026: found 1 class sections.
+    [H 14/609] Opening HAD 363 — Computer Applications in Clinical Laboratory Sciences
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 15/609] Opening HAD 380 — Clinical and Medical Microbiology I
+      Fall 2026: found 2 class sections.
+    [H 16/609] Opening HAD 381 — Clinical and Medical Microbiology II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 17/609] Opening HAD 390 — Independent Study in Diagnostic Technologies
+      Fall 2026: found 1 class sections.
+    [H 18/609] Opening HAD 397 — Clinical Microbiology Practicum
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 19/609] Opening HAD 398 — Clinical Hematology I Practicum
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 20/609] Opening HAD 399 — Clinical Continuation
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+  Progress: group 1/2 (H 20/609) · 20 scraped, 0 already done, 0 failed · 10.5 pages/min · 1m53s elapsed · ~55m53s left in H
+    [H 21/609] Opening HAD 403 — Medical Molecular Biology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 22/609] Opening HAD 411 — Clinical Biochemistry II
+      Fall 2026: found 1 class sections.
+    [H 23/609] Opening HAD 412 — Clinical Biochemistry III
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 24/609] Opening HAD 414 — Coagulation, Urinalysis and Body Fluids
+      Fall 2026: found 3 class sections.
+    [H 25/609] Opening HAD 415 — Applied Immunology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 26/609] Opening HAD 416 — Immunohematology
+      Fall 2026: found 3 class sections.
+    [H 27/609] Opening HAD 425 — Parasitology/Mycology
+      Fall 2026: found 2 class sections.
+    [H 28/609] Opening HAD 432 — Pharmacology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 29/609] Opening HAD 440 — Forensic Sciences Clinical
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 30/609] Opening HAD 445 — Selected Topics in Toxicology
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 30/609) · 30 scraped, 0 already done, 0 failed · 12.0 pages/min · 2m30s elapsed · ~48m26s left in H
+    [H 31/609] Opening HAD 460 — Clinical Laboratory Quality Management
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 32/609] Opening HAD 468 — Laboratory Information Systems Internship
+      No View Class Sections button; course has no sections.
+    [H 33/609] Opening HAD 490 — Independent Study/ Clinical Laboratory Sciences
+      Fall 2026: found 1 class sections.
+    [H 34/609] Opening HAD 492 — Research Tutorial
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 35/609] Opening HAD 493 — Advanced Seminar in Clinical Laboratory Sciences
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 36/609] Opening HAD 494 — Clinical Chemistry Practicum
+      Fall 2026: found 1 class sections.
+    [H 37/609] Opening HAD 496 — Histocompatibility Practicum
+      No View Class Sections button; course has no sections.
+    [H 38/609] Opening HAD 497 — Immunohematology Practicum
+      Fall 2026: found 1 class sections.
+    [H 39/609] Opening HAD 498 — Coagulation and Urinalysis Practicum
+      Fall 2026: found 1 class sections.
+    [H 40/609] Opening HAL 205 — Introduction to Athletic Training
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (H 40/609) · 40 scraped, 0 already done, 0 failed · 11.8 pages/min · 3m23s elapsed · ~48m11s left in H
+    [H 41/609] Opening HAL 376 — Introduction to Nutrition
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026, Winter 2027
+    [H 42/609] Opening HAN 200 — Human Anatomy and Physiology for Health Science I
+      Fall 2026: found 4 class sections.
+    [H 43/609] Opening HAN 202 — Human Anatomy and Physiology for Health Science II
+      Fall 2026: found 4 class sections.
+    [H 44/609] Opening HAN 251 — Research Methods in Health Science
+      Fall 2026: found 1 class sections.
+    [H 45/609] Opening HAN 300 — Health Care Issues
+      Fall 2026: found 7 class sections.
+    [H 46/609] Opening HAN 311 — Kinesiology
+      Fall 2026: found 2 class sections.
+    [H 47/609] Opening HAN 312 — Human Anatomy, Health and Medical Language
+      Fall 2026: found 2 class sections.
+    [H 48/609] Opening HAN 333 — Communication Skills
+      Fall 2026: found 7 class sections.
+    [H 49/609] Opening HAN 335 — Professional Ethics
+      Fall 2026: found 7 class sections.
+    [H 50/609] Opening HAN 364 — Issues in Health Care Informatics
+      Fall 2026: found 7 class sections.
+  Progress: group 1/2 (H 50/609) · 50 scraped, 0 already done, 0 failed · 11.3 pages/min · 4m26s elapsed · ~49m34s left in H
+    Pausing 5s after 50 detail pages…
+    [H 51/609] Opening HAN 383 — Scholarly Writing in Health Science
+      Fall 2026: found 14 class sections.
+    [H 52/609] Opening HAN 395 — Radiation Physics in Medicine
+      Fall 2026: found 1 class sections.
+    [H 53/609] Opening HAN 401 — Radiobiology and Health Physics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 54/609] Opening HAN 402 — Radiographic Anatomy and Pathology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 55/609] Opening HAN 404 — Radiology Instrumentation
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 56/609] Opening HAN 405 — Radiographic Technique
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 57/609] Opening HAN 406 — Radiologic Procedures and Positioning I
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 58/609] Opening HAN 416 — Special Issues in Emergency Care and Resuscitation
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 59/609] Opening HAN 417 — Cardiac Emergencies
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 60/609] Opening HAN 424 — Pathophysiology for Healthcare Professionals
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 60/609) · 60 scraped, 0 already done, 0 failed · 11.7 pages/min · 5m08s elapsed · ~47m06s left in H
+    [H 61/609] Opening HAN 432 — Introduction to Health Care Management
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 62/609] Opening HAN 433 — Statistics for Healthcare Management
+      No View Class Sections button; course has no sections.
+    [H 63/609] Opening HAN 434 — Corporate Compliance and Regulation
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 64/609] Opening HAN 435 — Sales and Marketing in Health Care
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 65/609] Opening HAN 436 — Continuous Quality Improvement in Health Care
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 66/609] Opening HAN 440 — Introduction to Community Health Education
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 67/609] Opening HAN 441 — Internship in Health Science
+      Fall 2026: found 1 class sections.
+    [H 68/609] Opening HAN 443 — Aging and Disability
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 69/609] Opening HAN 444 — Disability and Popular Culture
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 70/609] Opening HAN 446 — Disability Health and Community
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (H 70/609) · 70 scraped, 0 already done, 0 failed · 12.2 pages/min · 5m43s elapsed · ~44m06s left in H
+    [H 71/609] Opening HAN 447 — Children with Disability
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 72/609] Opening HAN 448 — Disability and Employment
+      No View Class Sections button; course has no sections.
+    [H 73/609] Opening HAN 449 — Project in Disability Studies
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 74/609] Opening HAN 450 — Introduction to Public Health
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 75/609] Opening HAN 452 — Epidemiology and Biostatistics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 76/609] Opening HAN 455 — Health Literacy for Public Health
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 77/609] Opening HAN 456 — Behavioral and Social Aspects of Health
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 78/609] Opening HAN 457 — First Aid and Injury Care
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 79/609] Opening HAN 458 — Strength and Conditioning for Hlthcare Pract
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 80/609] Opening HAN 459 — Introduction to Sports Medicine
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (H 80/609) · 80 scraped, 0 already done, 0 failed · 12.7 pages/min · 6m17s elapsed · ~41m38s left in H
+    [H 81/609] Opening HAN 461 — Introduction to Nutrition
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 82/609] Opening HAN 462 — Developing Health Information Systems
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 83/609] Opening HAN 464 — Health Information Systems Management
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 84/609] Opening HAN 466 — Applied Health Care Informatics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 85/609] Opening HAN 467 — Utilization and Outcomes Research Methods
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 86/609] Opening HAN 470 — Occupational Health and Safety Engineering
+      No View Class Sections button; course has no sections.
+    [H 87/609] Opening HAN 471 — Trauma and Trauma Systems
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 88/609] Opening HAN 472 — Emergency Response to Hazardous Materials and Terrorism
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 89/609] Opening HAN 474 — Industrial Hygiene
+      No View Class Sections button; course has no sections.
+    [H 90/609] Opening HAN 475 — Fundamentals of Environmental Health
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 90/609) · 90 scraped, 0 already done, 0 failed · 13.1 pages/min · 6m52s elapsed · ~39m37s left in H
+    [H 91/609] Opening HAN 476 — Hazardous Materials, Emergency Response and Environmental Auditing
+      No View Class Sections button; course has no sections.
+    [H 92/609] Opening HAN 477 — Medical Emergencies
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 93/609] Opening HAN 478 — Internship in Environmental Health
+      No View Class Sections button; course has no sections.
+    [H 94/609] Opening HAN 481 — Introduction to Anesthesia
+      No View Class Sections button; course has no sections.
+    [H 95/609] Opening HAN 482 — Introduction to Pathology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 96/609] Opening HAN 483 — Cardiopulmonary Physiology for Anesthesia Technology
+      No View Class Sections button; course has no sections.
+    [H 97/609] Opening HAN 485 — Clinical Monitoring
+      No View Class Sections button; course has no sections.
+    [H 98/609] Opening HAN 486 — Principles and Practice of Radiation Therapy
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 99/609] Opening HAN 487 — Introduction to Treatment Planning
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 100/609] Opening HAN 489 — Pharmacology for Anesthesia Technology
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 100/609) · 100 scraped, 0 already done, 0 failed · 13.5 pages/min · 7m24s elapsed · ~37m41s left in H
+    Pausing 5s after 100 detail pages…
+    [H 101/609] Opening HAN 492 — Radiation Oncology/Medical Physics II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 102/609] Opening HAN 497 — Healthcare in Tanzania: A cultural exchange
+      No View Class Sections button; course has no sections.
+    [H 103/609] Opening HAN 498 — International Seminar
+      No View Class Sections button; course has no sections.
+    [H 104/609] Opening HAN 499 — Health Science Teaching Practicum
+      Fall 2026: found 5 class sections.
+    [H 105/609] Opening HAO 313 — Introduction to Occupational Therapy
+      Fall 2026: found 1 class sections.
+    [H 106/609] Opening HAS 190 — Introduction to the Health Professions
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 107/609] Opening HAS 300 — Issues in Health Care
+      No View Class Sections button; course has no sections.
+    [H 108/609] Opening HAS 310 — Applied Phonetics of English
+      No View Class Sections button; course has no sections.
+    [H 109/609] Opening HAS 311 — Speech and Language Development
+      No View Class Sections button; course has no sections.
+    [H 110/609] Opening HAS 312 — Anatomy and Physiology of the Speech, Language, and Hearing Mechanism
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 110/609) · 110 scraped, 0 already done, 0 failed · 13.5 pages/min · 8m08s elapsed · ~36m56s left in H
+    [H 111/609] Opening HAS 313 — Speech Science
+      No View Class Sections button; course has no sections.
+    [H 112/609] Opening HAS 314 — Guided Observations in Speech-Language Pathology
+      No View Class Sections button; course has no sections.
+    [H 113/609] Opening HAS 332 — Management Concepts for Health Professionals
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 114/609] Opening HAS 335 — Medical Ethics
+      No View Class Sections button; course has no sections.
+    [H 115/609] Opening HAS 350 — Introduction to Statistics
+      No View Class Sections button; course has no sections.
+    [H 116/609] Opening HAS 351 — Research Literacy/Research Design
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 117/609] Opening HAS 355 — Integrative Systems Physiology
+      Fall 2026: found 1 class sections.
+    [H 118/609] Opening HAS 360 — Beyond Limitations: Introduction to Adaptive Sports
+      No View Class Sections button; course has no sections.
+    [H 119/609] Opening HAS 363 — Computer Literacy for Health Professionals
+      No View Class Sections button; course has no sections.
+    [H 120/609] Opening HAS 391 — Readings in Health
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+  Progress: group 1/2 (H 120/609) · 120 scraped, 0 already done, 0 failed · 13.8 pages/min · 8m41s elapsed · ~35m23s left in H
+    [H 121/609] Opening HAS 399 — Independent Study in Health
+      Fall 2026: found 1 class sections.
+    [H 122/609] Opening HAS 490 — Research Tutorial
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 123/609] Opening HAT 210 — Introduction to Respiratory Care
+      Fall 2026: found 1 class sections.
+    [H 124/609] Opening HAT 304 — Cardiopulmonary Physiology
+      Fall 2026: found 1 class sections.
+    [H 125/609] Opening HAT 306 — Patient Evaluation
+      No View Class Sections button; course has no sections.
+    [H 126/609] Opening HAT 315 — Pharmacology
+      No View Class Sections button; course has no sections.
+    [H 127/609] Opening HAT 320 — Cardiovascular Diagnosis and Treatment I
+      No View Class Sections button; course has no sections.
+    [H 128/609] Opening HAT 330 — Cardiopulmonary Pathology
+      Fall 2026: found 1 class sections.
+    [H 129/609] Opening HAT 331 — Respiratory Care Principles, Therapies, and Applications
+      Fall 2026: found 3 class sections.
+    [H 130/609] Opening HAT 332 — Respiratory Care Assessment and Intervention
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (H 130/609) · 130 scraped, 0 already done, 0 failed · 13.9 pages/min · 9m23s elapsed · ~34m34s left in H
+    [H 131/609] Opening HAT 333 — Pulmonary Diagnostic Testing and Rehabilitation
+      Fall 2026: found 3 class sections.
+    [H 132/609] Opening HAT 335 — Medical Ethics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 133/609] Opening HAT 350 — Basic Respiratory Care Clinical
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 134/609] Opening HAT 353 — Pulmonary Diagnostic Clinical
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 135/609] Opening HAT (410) — Teaching and Leadership in Healthcare ** available as of 05/20/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 136/609] Opening HAT 410 — Introduction to Clinical Education
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 137/609] Opening HAT 411 — Clinical Teaching in Respiratory Care
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 138/609] Opening HAT (415) — Innovative Critical Care Techniques in Respiratory Care ** available as of 05/20/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 139/609] Opening HAT 415 — Respiratory Care Techniques IV
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 140/609] Opening HAT 420 — Cardiovascular Diagnosis and Treatment II
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (H 140/609) · 140 scraped, 0 already done, 0 failed · 14.0 pages/min · 10m01s elapsed · ~33m35s left in H
+    [H 141/609] Opening HAT (431) — Adult Mechanical Ventilation ** available as of 05/20/2027
+      Fall 2026: found 3 class sections.
+    [H 142/609] Opening HAT 431 — Respiratory Care Techniques III
+      Fall 2026: found 3 class sections.
+    [H 143/609] Opening HAT (432) — Neonatal & Pediatric Clinical Management ** available as of 05/20/2027
+      Fall 2026: found 3 class sections.
+    [H 144/609] Opening HAT 432 — Perinatal Respiratory Care
+      Fall 2026: found 3 class sections.
+    [H 145/609] Opening HAT 450 — Critical Care Clinical
+      Fall 2026: found 1 class sections.
+    [H 146/609] Opening HAT (451) — Neonatal/Pediatric Clinical ** available as of 05/20/2027
+      Fall 2026: found 1 class sections.
+    [H 147/609] Opening HAT 451 — Perinatal Care Clinical
+      Fall 2026: found 1 class sections.
+    [H 148/609] Opening HAT (470) — Sleep Diagnostics and Therapeutics ** available as of 05/20/2027
+      Fall 2026: found 3 class sections.
+    [H 149/609] Opening HAT 470 — Polysomnographic Technology I
+      Fall 2026: found 3 class sections.
+    [H 150/609] Opening HAT 471 — Polysomnographic Technology II
+      Fall 2026: found 2 class sections.
+  Progress: group 1/2 (H 150/609) · 150 scraped, 0 already done, 0 failed · 14.0 pages/min · 10m42s elapsed · ~32m45s left in H
+    Pausing 5s after 150 detail pages…
+    [H 151/609] Opening HAT (475) — Sleep Diagnostics and Therapeutics Clinical ** available as of 05/20/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 152/609] Opening HAT 475 — Polysomnographic Technology I Clinical
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 153/609] Opening HAT 476 — Polysomnographic Technology II Clinical
+      Fall 2026: found 1 class sections.
+    [H 154/609] Opening HAT 482 — Physiologic Monitoring Clinical
+      Fall 2026: found 1 class sections.
+    [H 155/609] Opening HAT 487 — Cardiopulmonary Rehabilitation Clinical
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 156/609] Opening HAT 490 — Independent Study
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 157/609] Opening HAT 494 — Respiratory Care Board Review
+      No View Class Sections button; course has no sections.
+    [H 158/609] Opening HAT 499 — Clinical Continuation
+      Fall 2026: found 2 class sections.
+    [H 159/609] Opening HAY 313 — Introduction to Physical Therapy
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 160/609] Opening HBA 325 — Anatomical/Bio Illustration
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+  Progress: group 1/2 (H 160/609) · 160 scraped, 0 already done, 0 failed · 13.9 pages/min · 11m30s elapsed · ~32m18s left in H
+    [H 161/609] Opening HBA 398 — Research Project in Anatomical Sciences
+      Fall 2026: found 1 class sections.
+    [H 162/609] Opening HBA 399 — Research Project in Anatomical Sciences
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 163/609] Opening HBA 461 — Regional Human Anatomy for Respiratory Therapists
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 164/609] Opening HBC 331 — Introductory Biochemistry
+      No View Class Sections button; course has no sections.
+    [H 165/609] Opening HBH 330 — Fundamentals of Pharmacology I
+      No View Class Sections button; course has no sections.
+    [H 166/609] Opening HBH 331 — Fundamentals of Pharmacology II
+      No View Class Sections button; course has no sections.
+    [H 167/609] Opening HBH 333 — Principles of Pharmacology
+      No View Class Sections button; course has no sections.

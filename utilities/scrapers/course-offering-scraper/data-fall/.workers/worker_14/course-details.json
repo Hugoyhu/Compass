@@ -1,0 +1,156 @@
+[
+  {
+    "course_code": "NAI 101",
+    "title": "Intro to Native American and Indigenous Studies",
+    "career": "Undergraduate",
+    "credits_range": "3.00",
+    "grading_basis": "Student Option",
+    "course_component": "Seminar",
+    "component_requirement": "Required",
+    "campus": "WEST",
+    "academic_group": "Arts & Sciences, College of",
+    "academic_organization": "Hispanic Languages and Lit",
+    "scheduling_status": null,
+    "description": "An introduction to the conceptual frameworks of the interdisciplinary field of Native American and Indigenous Studies, and to the histories, social organizations, political issues and cultural expressions of Indigenous peoples, with an emphasis on Turtle Island (North America).",
+    "prerequisite_related_text": [],
+    "page_text": "Browse Course Catalog Course Detail Return to Browse Course Catalog NAI 101 - Intro to Native American and Indigenous Studies Course Detail Career Undergraduate Units 3.00 Grading Basis Student Option Seminar Required Course Components Campus WEST Academic Group Arts & Sciences, College of Academic Organization Hispanic Languages and Lit Enrollment Information Course Attribute DIV Respect Diversity & Foster Inclusiveness USA Understand the History of the United States Description An introduction to the conceptual frameworks of the interdisciplinary field of Native American and Indigenous Studies, and to the histories, social organizations, political issues and cultural expressions of Indigenous peoples, with an emphasis on Turtle Island (North America). Return to Browse Course Catalog t Help test Browse Course Catalog test",
+    "source_file": "NAI_101_Intro_to_Native_American_and_Indigenous_Studies.html",
+    "source_page": "SSS_CRSE_OFFER_DTL",
+    "catalog_subject": "NAI",
+    "catalog_course_number": "101",
+    "catalog_course_code": "NAI 101",
+    "catalog_title": "Intro to Native American and Indigenous Studies",
+    "raw_detail_file": "raw/details/NAI_101_Intro_to_Native_American_and_Indigenous_Studies.html",
+    "class_sections_term": "Fall 2026",
+    "class_sections": [
+      {
+        "term": "Fall 2026",
+        "requested_term": "Fall 2026",
+        "section": "S01-SEM",
+        "class_number": "95076",
+        "session": "A",
+        "status": null,
+        "meetings": [
+          {
+            "days": "MoWe",
+            "start": "11:00AM",
+            "end": "12:20PM",
+            "room": "STALLER CTR 3216 WESTCAMPUS",
+            "instructor": "Courtney Leonard",
+            "dates": "08/24/2026 - 12/17/2026"
+          }
+        ],
+        "raw_sections_file": "raw/details/NAI_101_Intro_to_Native_American_and_Indigenous_Studies_sections_Fall_2026.html",
+        "course_code": "NAI 101",
+        "course_title": "Intro to Native American and Indigenous Studies"
+      }
+    ],
+    "class_sections_status": "ok"
+  },
+  {
+    "course_code": "NAI 211",
+    "title": "Intro to Native Amer. Literature, Cultures & Art",
+    "career": "Undergraduate",
+    "credits_range": "3.00",
+    "grading_basis": "Student Option",
+    "course_component": "Lecture",
+    "component_requirement": "Required",
+    "campus": "WEST",
+    "academic_group": "Arts & Sciences, College of",
+    "academic_organization": "Hispanic Languages and Lit",
+    "scheduling_status": null,
+    "description": "An overview of Native American and Indigenous Studies, with special focus on its intersections with arts and humanities disciplines including history; art history and criticism; literary and cultural studies; museum studies; performance studies; and digital humanities.",
+    "prerequisite_related_text": [
+      "Browse Course Catalog Course Detail Return to Browse Course Catalog NAI 211 - Intro to Native Amer. Literature, Cultures & Art Course Detail Career Undergraduate Units 3.00 Grading Basis Student Option Lecture Required Course Components Campus WEST Academic Group Arts & Sciences, College of Academic Organization Hispanic Languages and Lit Enrollment Information Enrollment Requirement Advisory Pre- or Corequisite: NAI 101 Course Attribute ARTS Explore & Understand the Fine & Perf. Arts HUM Use Critical Analysis & Methods of Humanities SPK Speak Effectively before an Audience Description An overview of Native American and Indigenous Studies, with special focus on its intersections with arts and humanities disciplines including history; art history and criticism; literary and cultural studies; museum studies; performance studies; and digital humanities. Return to Browse Course Catalog t Help test Browse Course Catalog test"
+    ],
+    "page_text": "Browse Course Catalog Course Detail Return to Browse Course Catalog NAI 211 - Intro to Native Amer. Literature, Cultures & Art Course Detail Career Undergraduate Units 3.00 Grading Basis Student Option Lecture Required Course Components Campus WEST Academic Group Arts & Sciences, College of Academic Organization Hispanic Languages and Lit Enrollment Information Enrollment Requirement Advisory Pre- or Corequisite: NAI 101 Course Attribute ARTS Explore & Understand the Fine & Perf. Arts HUM Use Critical Analysis & Methods of Humanities SPK Speak Effectively before an Audience Description An overview of Native American and Indigenous Studies, with special focus on its intersections with arts and humanities disciplines including history; art history and criticism; literary and cultural studies; museum studies; performance studies; and digital humanities. Return to Browse Course Catalog t Help test Browse Course Catalog test",
+    "source_file": "NAI_211_Intro_to_Native_Amer._Literature_Cultures_Art.html",
+    "source_page": "SSS_CRSE_OFFER_DTL",
+    "catalog_subject": "NAI",
+    "catalog_course_number": "211",
+    "catalog_course_code": "NAI 211",
+    "catalog_title": "Intro to Native Amer. Literature, Cultures & Art",
+    "raw_detail_file": "raw/details/NAI_211_Intro_to_Native_Amer._Literature_Cultures_Art.html",
+    "class_sections_term": "Fall 2026",
+    "class_sections": [
+      {
+        "term": "Fall 2026",
+        "requested_term": "Fall 2026",
+        "section": "01-LEC",
+        "class_number": "94972",
+        "session": "A",
+        "status": null,
+        "meetings": [
+          {
+            "days": "TuTh",
+            "start": "10:00AM",
+            "end": "11:20AM",
+            "room": "SOCBEHAV SCI N109 WESTCAMPUS",
+            "instructor": "Victoria Quezada",
+            "dates": "08/24/2026 - 12/17/2026"
+          }
+        ],
+        "raw_sections_file": "raw/details/NAI_211_Intro_to_Native_Amer._Literature_Cultures_Art_sections_Fall_2026.html",
+        "course_code": "NAI 211",
+        "course_title": "Intro to Native Amer. Literature, Cultures & Art"
+      }
+    ],
+    "class_sections_status": "ok"
+  },
+  {
+    "course_code": "NAI 221",
+    "title": "Native American Peoples and Environmental Justice",
+    "career": "Undergraduate",
+    "credits_range": "3.00",
+    "grading_basis": "Student Option",
+    "course_component": "Seminar",
+    "component_requirement": "Required",
+    "campus": null,
+    "academic_group": "Arts & Sciences, College of",
+    "academic_organization": "Hispanic Languages and Lit",
+    "scheduling_status": null,
+    "description": "An interdisciplinary overview of Native American and Indigenous Studies in relation to historical and contemporary issues of environmental justice.",
+    "prerequisite_related_text": [
+      "Browse Course Catalog Course Detail Return to Browse Course Catalog NAI 221 - Native American Peoples and Environmental Justice Course Detail Career Undergraduate Units 3.00 Grading Basis Student Option Seminar Required Course Components Academic Group Arts & Sciences, College of Academic Organization Hispanic Languages and Lit Enrollment Information Enrollment Requirement Advisory Pre- or Corequisite: NAI 101 Course Attribute DIV Respect Diversity & Foster Inclusiveness STAS Explore Interconnectedness Description An interdisciplinary overview of Native American and Indigenous Studies in relation to historical and contemporary issues of environmental justice. Return to Browse Course Catalog t Help test Browse Course Catalog test"
+    ],
+    "page_text": "Browse Course Catalog Course Detail Return to Browse Course Catalog NAI 221 - Native American Peoples and Environmental Justice Course Detail Career Undergraduate Units 3.00 Grading Basis Student Option Seminar Required Course Components Academic Group Arts & Sciences, College of Academic Organization Hispanic Languages and Lit Enrollment Information Enrollment Requirement Advisory Pre- or Corequisite: NAI 101 Course Attribute DIV Respect Diversity & Foster Inclusiveness STAS Explore Interconnectedness Description An interdisciplinary overview of Native American and Indigenous Studies in relation to historical and contemporary issues of environmental justice. Return to Browse Course Catalog t Help test Browse Course Catalog test",
+    "source_file": "NAI_221_Native_American_Peoples_and_Environmental_Justice.html",
+    "source_page": "SSS_CRSE_OFFER_DTL",
+    "catalog_subject": "NAI",
+    "catalog_course_number": "221",
+    "catalog_course_code": "NAI 221",
+    "catalog_title": "Native American Peoples and Environmental Justice",
+    "raw_detail_file": "raw/details/NAI_221_Native_American_Peoples_and_Environmental_Justice.html",
+    "class_sections_term": "Fall 2026",
+    "class_sections": [],
+    "class_sections_status": "term-unavailable"
+  },
+  {
+    "course_code": "NAI 488",
+    "title": "Internship",
+    "career": "Undergraduate",
+    "credits_range": "0.00 - 6.00",
+    "grading_basis": "Satisfactory/Unsatisfactory",
+    "course_component": "Tutorial",
+    "component_requirement": "Required",
+    "campus": "WEST",
+    "academic_group": "Arts & Sciences, College of",
+    "academic_organization": "Hispanic Languages and Lit",
+    "scheduling_status": null,
+    "description": "Participation in local, tribal, state, and national public and private organizations related to indigenous peoples and/or Native American and Indigenous Studies. May be repeated up to a limit of 12 credits.",
+    "prerequisite_related_text": [
+      "Browse Course Catalog Course Detail Return to Browse Course Catalog NAI 488 - Internship Course Detail Career Undergraduate Units 0.00 - 6.00 Grading Basis Satisfactory/Unsatisfactory Tutorial Required Course Components Campus WEST Academic Group Arts & Sciences, College of Academic Organization Hispanic Languages and Lit Enrollment Information Add Consent Department Consent Required Enrollment Requirement Prerequisite: Permission of Director of NAI Minor Course Attribute EXP+ Experiential Learning Description Participation in local, tribal, state, and national public and private organizations related to indigenous peoples and/or Native American and Indigenous Studies. May be repeated up to a limit of 12 credits. Return to Browse Course Catalog t Help test Browse Course Catalog test"
+    ],
+    "page_text": "Browse Course Catalog Course Detail Return to Browse Course Catalog NAI 488 - Internship Course Detail Career Undergraduate Units 0.00 - 6.00 Grading Basis Satisfactory/Unsatisfactory Tutorial Required Course Components Campus WEST Academic Group Arts & Sciences, College of Academic Organization Hispanic Languages and Lit Enrollment Information Add Consent Department Consent Required Enrollment Requirement Prerequisite: Permission of Director of NAI Minor Course Attribute EXP+ Experiential Learning Description Participation in local, tribal, state, and national public and private organizations related to indigenous peoples and/or Native American and Indigenous Studies. May be repeated up to a limit of 12 credits. Return to Browse Course Catalog t Help test Browse Course Catalog test",
+    "source_file": "NAI_488_Internship.html",
+    "source_page": "SSS_CRSE_OFFER_DTL",
+    "catalog_subject": "NAI",
+    "catalog_course_number": "488",
+    "catalog_course_code": "NAI 488",
+    "catalog_title": "Internship",
+    "raw_detail_file": "raw/details/NAI_488_Internship.html",
+    "class_sections_term": "Fall 2026",
+    "class_sections": [],
+    "class_sections_status": "term-unavailable"
+  }
+]

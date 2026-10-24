@@ -1,0 +1,2354 @@
+[
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "30-LEC",
+    "class_number": "91100",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWeFr",
+        "start": "11:00AM",
+        "end": "11:55AM",
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Jean Graham, Christopher Kane",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/IAE_101_Digital_Intelligence_sections_Fall_2026.html",
+    "course_code": "IAE 101",
+    "course_title": "Digital Intelligence"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "S01-SEM",
+    "class_number": "96828",
+    "session": "IAP",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Kelly Haller",
+        "dates": "09/07/2026 - 12/19/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/IAP_100_Global_Experience_Seminar_sections_Fall_2026.html",
+    "course_code": "IAP 100",
+    "course_title": "Global Experience Seminar"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "S02-SEM",
+    "class_number": "96829",
+    "session": "IAP",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Margaret Hartofilis",
+        "dates": "09/07/2026 - 12/19/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/IAP_100_Global_Experience_Seminar_sections_Fall_2026.html",
+    "course_code": "IAP 100",
+    "course_title": "Global Experience Seminar"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "S03-SEM",
+    "class_number": "96830",
+    "session": "IAP",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Jeanine Guilbeault-Leite",
+        "dates": "09/07/2026 - 12/19/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/IAP_100_Global_Experience_Seminar_sections_Fall_2026.html",
+    "course_code": "IAP 100",
+    "course_title": "Global Experience Seminar"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "S04-SEM",
+    "class_number": "96831",
+    "session": "IAP",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Jeanine Guilbeault-Leite",
+        "dates": "09/07/2026 - 12/19/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/IAP_100_Global_Experience_Seminar_sections_Fall_2026.html",
+    "course_code": "IAP 100",
+    "course_title": "Global Experience Seminar"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "S05-SEM",
+    "class_number": "96832",
+    "session": "IAP",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Alison Eassa",
+        "dates": "09/07/2026 - 12/19/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/IAP_100_Global_Experience_Seminar_sections_Fall_2026.html",
+    "course_code": "IAP 100",
+    "course_title": "Global Experience Seminar"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "91123",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/IAP_390_Rethinking_America_Traditions_and_Trends_sections_Fall_2026.html",
+    "course_code": "IAP 390",
+    "course_title": "Rethinking America: Traditions and Trends"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "02-LEC",
+    "class_number": "91308",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/IAP_390_Rethinking_America_Traditions_and_Trends_sections_Fall_2026.html",
+    "course_code": "IAP 390",
+    "course_title": "Rethinking America: Traditions and Trends"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "03-LEC",
+    "class_number": "93305",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "5:00PM",
+        "end": "6:20PM",
+        "room": "SOCBEHAV SCI N118 WESTCAMPUS",
+        "instructor": "Pamela Selzer",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/IAP_390_Rethinking_America_Traditions_and_Trends_sections_Fall_2026.html",
+    "course_code": "IAP 390",
+    "course_title": "Rethinking America: Traditions and Trends"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T01-TUT",
+    "class_number": "90973",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Mariam Isack",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/IAP_488_Internship_sections_Fall_2026.html",
+    "course_code": "IAP 488",
+    "course_title": "Internship"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T02-TUT",
+    "class_number": "91019",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/IAP_488_Internship_sections_Fall_2026.html",
+    "course_code": "IAP 488",
+    "course_title": "Internship"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "02-LEC",
+    "class_number": "91880",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "6:30PM",
+        "end": "7:50PM",
+        "room": "HUMANITIES 1003 WESTCAMPUS",
+        "instructor": "Ali Raza",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_218_Fundamentals_of_Information_Technology_sections_Fall_2026.html",
+    "course_code": "ISE 218",
+    "course_title": "Fundamentals of Information Technology"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "88932",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "6:30PM",
+        "end": "7:50PM",
+        "room": "HUMANITIES 1023 WESTCAMPUS",
+        "instructor": "Howard Gunston",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_300_Technical_Communications_sections_Fall_2026.html",
+    "course_code": "ISE 300",
+    "course_title": "Technical Communications"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "02-LEC",
+    "class_number": "88933",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "MELVILLE LBR N4072 WESTCAMPUS",
+        "instructor": "Kimberly Towers-Kubik",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_300_Technical_Communications_sections_Fall_2026.html",
+    "course_code": "ISE 300",
+    "course_title": "Technical Communications"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "03-LEC",
+    "class_number": "87449",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "MELVILLE LBR N4072 WESTCAMPUS",
+        "instructor": "Patricia Medved",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_300_Technical_Communications_sections_Fall_2026.html",
+    "course_code": "ISE 300",
+    "course_title": "Technical Communications"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "04-LEC",
+    "class_number": "89223",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "12:30PM",
+        "end": "1:50PM",
+        "room": "COMPUTER SCI 2311 WESTCAMPUS",
+        "instructor": "Jennifer Albanese",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_300_Technical_Communications_sections_Fall_2026.html",
+    "course_code": "ISE 300",
+    "course_title": "Technical Communications"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "05-LEC",
+    "class_number": "89471",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "COMPUTER SCI 2311 WESTCAMPUS",
+        "instructor": "Sara Santos",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_300_Technical_Communications_sections_Fall_2026.html",
+    "course_code": "ISE 300",
+    "course_title": "Technical Communications"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "88914",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "12:30PM",
+        "end": "1:50PM",
+        "room": "JAVITS LECTR 110 WESTCAMPUS",
+        "instructor": "Praveen Tripathi",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_305_Database_Design_and_Practice_sections_Fall_2026.html",
+    "course_code": "ISE 305",
+    "course_title": "Database Design and Practice"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "87453",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "9:30AM",
+        "end": "10:50AM",
+        "room": "STALLER CTR M0113 WESTCAMPUS",
+        "instructor": "Lazlo Stepback",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_312_Social_Legal_and_Ethical_Issues_in_Computing_sections_Fall_2026.html",
+    "course_code": "ISE 312",
+    "course_title": "Social, Legal, and Ethical Issues in Computing"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "02-LEC",
+    "class_number": "89769",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "8:00AM",
+        "end": "9:20AM",
+        "room": "COMPUTER SCI 2120 WESTCAMPUS",
+        "instructor": "William Conway",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_312_Social_Legal_and_Ethical_Issues_in_Computing_sections_Fall_2026.html",
+    "course_code": "ISE 312",
+    "course_title": "Social, Legal, and Ethical Issues in Computing"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "03-LEC",
+    "class_number": "93033",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "6:30PM",
+        "end": "7:50PM",
+        "room": "FREY HALL 317 WESTCAMPUS",
+        "instructor": "Lazlo Stepback",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_312_Social_Legal_and_Ethical_Issues_in_Computing_sections_Fall_2026.html",
+    "course_code": "ISE 312",
+    "course_title": "Social, Legal, and Ethical Issues in Computing"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "87447",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "HUMANITIES 3018 WESTCAMPUS",
+        "instructor": "Jalaa Hoblos",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_321_Introduction_to_Network_Administration_sections_Fall_2026.html",
+    "course_code": "ISE 321",
+    "course_title": "Introduction to Network Administration"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "95218",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "6:30PM",
+        "end": "7:50PM",
+        "room": "FREY HALL 301 WESTCAMPUS",
+        "instructor": "Klaus Mueller",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_332_Introduction_to_Visualization_sections_Fall_2026.html",
+    "course_code": "ISE 332",
+    "course_title": "Introduction to Visualization"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "89645",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "COMPUTER SCI 2205 WESTCAMPUS",
+        "instructor": "Anthony Scarlatos",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_333_User_Interface_Development_sections_Fall_2026.html",
+    "course_code": "ISE 333",
+    "course_title": "User Interface Development"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "87491",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "COMPUTER SCI 2205 WESTCAMPUS",
+        "instructor": "Anthony Scarlatos",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_334_Introduction_to_Multimedia_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 334",
+    "course_title": "Introduction to Multimedia Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "89619",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "8:00AM",
+        "end": "9:20AM",
+        "room": "HUMANITIES 1003 WESTCAMPUS",
+        "instructor": "Abid Malik",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_337_Scripting_Languages_sections_Fall_2026.html",
+    "course_code": "ISE 337",
+    "course_title": "Scripting Languages"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "88900",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "9:30AM",
+        "end": "10:50AM",
+        "room": "COMPUTER SCI 2205 WESTCAMPUS",
+        "instructor": "Lori Scarlatos",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_340_Design_of_Computer_Games_sections_Fall_2026.html",
+    "course_code": "ISE 340",
+    "course_title": "Design of Computer Games"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "92772",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "8:00PM",
+        "end": "9:20PM",
+        "room": "EARTH&SPACE 131 WESTCAMPUS",
+        "instructor": "Ali Raza",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_391_Special_Topics_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 391",
+    "course_title": "Special Topics in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T01-TUT",
+    "class_number": "87821",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Praveen Tripathi",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T02-TUT",
+    "class_number": "87822",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Ahmad Esmaili",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T03-TUT",
+    "class_number": "87823",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Paul Fodor",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T04-TUT",
+    "class_number": "87824",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Sondra Charbadze",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T05-TUT",
+    "class_number": "87825",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Ali Raza",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T06-TUT",
+    "class_number": "87826",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Kevin McDonnell",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T07-TUT",
+    "class_number": "87827",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T08-TUT",
+    "class_number": "87828",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T09-TUT",
+    "class_number": "87492",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Kimberly Towers-Kubik",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T10-TUT",
+    "class_number": "87829",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T11-TUT",
+    "class_number": "87830",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T12-TUT",
+    "class_number": "87831",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T13-TUT",
+    "class_number": "87832",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T14-TUT",
+    "class_number": "87833",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T15-TUT",
+    "class_number": "87493",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T16-TUT",
+    "class_number": "87834",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T17-TUT",
+    "class_number": "87835",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T18-TUT",
+    "class_number": "87836",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T19-TUT",
+    "class_number": "87837",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T20-TUT",
+    "class_number": "87838",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T21-TUT",
+    "class_number": "87839",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T22-TUT",
+    "class_number": "87840",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T23-TUT",
+    "class_number": "87841",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T24-TUT",
+    "class_number": "87842",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T25-TUT",
+    "class_number": "87843",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T26-TUT",
+    "class_number": "87494",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T27-TUT",
+    "class_number": "87844",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T28-TUT",
+    "class_number": "87845",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T29-TUT",
+    "class_number": "87495",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T30-TUT",
+    "class_number": "87846",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T31-TUT",
+    "class_number": "87496",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T32-TUT",
+    "class_number": "87847",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T33-TUT",
+    "class_number": "87497",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T34-TUT",
+    "class_number": "87848",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T35-TUT",
+    "class_number": "87849",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T36-TUT",
+    "class_number": "87850",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T37-TUT",
+    "class_number": "87851",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T38-TUT",
+    "class_number": "88375",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T39-TUT",
+    "class_number": "88376",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T40-TUT",
+    "class_number": "88377",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T41-TUT",
+    "class_number": "88378",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T42-TUT",
+    "class_number": "88379",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_475_Undergraduate_Teaching_Practicum_sections_Fall_2026.html",
+    "course_code": "ISE 475",
+    "course_title": "Undergraduate Teaching Practicum"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T01-TUT",
+    "class_number": "87498",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Paola Cascante Bonilla",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T02-TUT",
+    "class_number": "87857",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Klaus Mueller",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T03-TUT",
+    "class_number": "87499",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Michail Polychronakis",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T04-TUT",
+    "class_number": "87858",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Shan Lin",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T05-TUT",
+    "class_number": "87859",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Anthony Scarlatos",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T06-TUT",
+    "class_number": "87500",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Tengfei Ma",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T07-TUT",
+    "class_number": "87860",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Robert Kelly",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T08-TUT",
+    "class_number": "87861",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Paul Fodor",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T09-TUT",
+    "class_number": "87862",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T10-TUT",
+    "class_number": "87863",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T11-TUT",
+    "class_number": "87864",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T12-TUT",
+    "class_number": "87865",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T13-TUT",
+    "class_number": "88362",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T14-TUT",
+    "class_number": "88363",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T15-TUT",
+    "class_number": "88364",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T16-TUT",
+    "class_number": "88365",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T17-TUT",
+    "class_number": "88366",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T18-TUT",
+    "class_number": "88367",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T19-TUT",
+    "class_number": "88368",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T20-TUT",
+    "class_number": "88369",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_487_Research_in_Information_Systems_sections_Fall_2026.html",
+    "course_code": "ISE 487",
+    "course_title": "Research in Information Systems"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T01-TUT",
+    "class_number": "87501",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Ahmad Esmaili",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ISE_488_Information_Systems_Internship_sections_Fall_2026.html",
+    "course_code": "ISE 488",
+    "course_title": "Information Systems Internship"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "85331",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "9:30AM",
+        "end": "10:50AM",
+        "room": "PHYSICS P113 WESTCAMPUS",
+        "instructor": "Mary Jane Dempsey",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_111_Elementary_Italian_I_sections_Fall_2026.html",
+    "course_code": "ITL 111",
+    "course_title": "Elementary Italian I"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "02-LEC",
+    "class_number": "86044",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "MELVILLE LBR N3074 WESTCAMPUS",
+        "instructor": "Michele Giua",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_111_Elementary_Italian_I_sections_Fall_2026.html",
+    "course_code": "ITL 111",
+    "course_title": "Elementary Italian I"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "03-LEC",
+    "class_number": "85895",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "MELVILLE LBR N3074 WESTCAMPUS",
+        "instructor": "Michele Giua",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_111_Elementary_Italian_I_sections_Fall_2026.html",
+    "course_code": "ITL 111",
+    "course_title": "Elementary Italian I"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "04-LEC",
+    "class_number": "86720",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "5:00PM",
+        "end": "6:20PM",
+        "room": "MELVILLE LBR N3074 WESTCAMPUS",
+        "instructor": "Michele Giua",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_111_Elementary_Italian_I_sections_Fall_2026.html",
+    "course_code": "ITL 111",
+    "course_title": "Elementary Italian I"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "R01-REC",
+    "class_number": "85332",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Mary Jane Dempsey",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_111_Elementary_Italian_I_sections_Fall_2026.html",
+    "course_code": "ITL 111",
+    "course_title": "Elementary Italian I"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "R02-REC",
+    "class_number": "86045",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Michele Giua",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_111_Elementary_Italian_I_sections_Fall_2026.html",
+    "course_code": "ITL 111",
+    "course_title": "Elementary Italian I"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "R03-REC",
+    "class_number": "85896",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Michele Giua",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_111_Elementary_Italian_I_sections_Fall_2026.html",
+    "course_code": "ITL 111",
+    "course_title": "Elementary Italian I"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "R04-REC",
+    "class_number": "86721",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Michele Giua",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_111_Elementary_Italian_I_sections_Fall_2026.html",
+    "course_code": "ITL 111",
+    "course_title": "Elementary Italian I"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "86500",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "9:30AM",
+        "end": "10:50AM",
+        "room": "LGT ENGR LAB 154 WESTCAMPUS",
+        "instructor": "Stella Raimondo",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_112_Elementary_Italian_II_sections_Fall_2026.html",
+    "course_code": "ITL 112",
+    "course_title": "Elementary Italian II"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "R01-REC",
+    "class_number": "86499",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Stella Raimondo",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_112_Elementary_Italian_II_sections_Fall_2026.html",
+    "course_code": "ITL 112",
+    "course_title": "Elementary Italian II"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "85330",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "HUMANITIES 2128 WESTCAMPUS",
+        "instructor": "Mary Jane Dempsey",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_211_Intermediate_Italian_1_sections_Fall_2026.html",
+    "course_code": "ITL 211",
+    "course_title": "Intermediate Italian 1"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "01-LEC",
+    "class_number": "93807",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "HUMANITIES 2128 WESTCAMPUS",
+        "instructor": "Mary Jane Dempsey",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_311_Italian_Conversation_and_Composition_1_sections_Fall_2026.html",
+    "course_code": "ITL 311",
+    "course_title": "Italian Conversation and Composition 1"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "S01-SEM",
+    "class_number": "93928",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "HUMANITIES 3015 WESTCAMPUS",
+        "instructor": "Loredana Polezzi",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_441_Topic_Seminar_sections_Fall_2026.html",
+    "course_code": "ITL 441",
+    "course_title": "Topic Seminar"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T01-TUT",
+    "class_number": "85956",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_444_Experiential_Learning_sections_Fall_2026.html",
+    "course_code": "ITL 444",
+    "course_title": "Experiential Learning"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T01-TUT",
+    "class_number": "82018",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_447_Directed_Readings_in_Italian_sections_Fall_2026.html",
+    "course_code": "ITL 447",
+    "course_title": "Directed Readings in Italian"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T02-TUT",
+    "class_number": "82019",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Giuseppe Gazzola",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_447_Directed_Readings_in_Italian_sections_Fall_2026.html",
+    "course_code": "ITL 447",
+    "course_title": "Directed Readings in Italian"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T03-TUT",
+    "class_number": "82020",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Loredana Polezzi",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_447_Directed_Readings_in_Italian_sections_Fall_2026.html",
+    "course_code": "ITL 447",
+    "course_title": "Directed Readings in Italian"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T01-TUT",
+    "class_number": "85924",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Giuseppe Gazzola",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_459_Write_Effectively_in_Italian_sections_Fall_2026.html",
+    "course_code": "ITL 459",
+    "course_title": "Write Effectively in Italian"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T01-TUT",
+    "class_number": "84335",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Giuseppe Gazzola",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_475_Undergraduate_Teaching_Practicum_I_in_Italian_sections_Fall_2026.html",
+    "course_code": "ITL 475",
+    "course_title": "Undergraduate Teaching Practicum I (in Italian)"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T01-TUT",
+    "class_number": "85022",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_488_Internship_sections_Fall_2026.html",
+    "course_code": "ITL 488",
+    "course_title": "Internship"
+  },
+  {
+    "term": "Fall 2026",
+    "requested_term": "Fall 2026",
+    "section": "T01-TUT",
+    "class_number": "85023",
+    "session": "A",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "08/24/2026 - 12/17/2026"
+      }
+    ],
+    "raw_sections_file": "raw/details/ITL_495_Senior_Honors_Project_in_Italian_sections_Fall_2026.html",
+    "course_code": "ITL 495",
+    "course_title": "Senior Honors Project in Italian"
+  }
+]
