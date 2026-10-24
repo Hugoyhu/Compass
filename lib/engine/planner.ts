@@ -67,7 +67,7 @@ const LEVEL_PENALTY = 5;
  * requires anyway: for an Honors CS student, CSE 114/214/307 (replaced by the
  * CSE 160/161/260/261 sequence). Planning both tracks would duplicate work.
  */
-function replacedByOtherPrograms(audit: DegreeAudit): Set<CourseCode> {
+export function replacedByOtherPrograms(audit: DegreeAudit): Set<CourseCode> {
   const enrolled = audit.programs.map((p) => p.program);
   const replaced = new Set<CourseCode>();
   for (const program of enrolled) {
