@@ -31,13 +31,21 @@ The default now processes the alphabet buttons in this order: `A B ... Z 0 1 ...
 python scrape_catalog.py --output semesteros-data
 ```
 
-To also collect section/class-number and meeting information for a specific term, such as Spring 2027:
+To also collect section/class-number and meeting information, name a term, several, or `all` (every term PeopleSoft lists for each course):
 
 ```bash
-python scrape_catalog.py --sections-term "Spring 2027" --output semesteros-data
+python scrape_catalog.py --sections-term all --output data
 ```
 
-The section step is term-specific. Choose the term you want; do not treat one term's sections as proof of future offerings. For the first full run, it is sensible to test a few courses with `--max-details 3` first.
+Each section's `term` comes from its meeting dates (Jan–Apr Spring, May–Jul Summer, Aug–Dec Fall); `requested_term` is the dropdown term it was captured under. Each course detail gets a `class_sections_status`: `ok`, `none` (the term lists no sections), `no-sections-button` (the course has no sections at all), `term-unavailable`, `term-mismatch` (PeopleSoft kept showing another term's grid even after a retry), or `error`. Courses with `error` are retried on the next resumed run.
+
+To re-scrape specific courses, for example to fill gaps reported by the importer:
+
+```bash
+python scrape_catalog.py --courses "CSE 214,HIS 101" --sections-term all --output data
+```
+
+For the first full run, it is sensible to test a few courses with `--max-details 3` first.
 
 Useful options:
 
@@ -47,7 +55,8 @@ Useful options:
 - `--letters C,0,1` — selected groups.
 - `--max-details 3` — smoke test; `0` means no limit.
 - `--index-only` — collect course index pages only, no course detail pages.
-- `--sections-term "Spring 2027"` — also scrape sections for the chosen term.
+- `--sections-term "Spring 2027"` — also scrape sections: one term, a comma-separated list, or `all`.
+- `--courses "CSE 214,HIS 101"` — only open these courses (re-scraped even when resuming); visits only their letters.
 - `--headless` — hide the browser after the visible UI flow has been verified.
 - `--no-resume` — revisit details even if they were collected before. Normally, reruns resume and avoid duplicate course/section rows.
 - `--output PATH` — choose the output directory.
@@ -101,6 +110,8 @@ npm run import:courses -- --no-model # rules only, no API calls
 
 ## Data-quality and usage cautions
 
+- How the scraper copes with PeopleSoft: every control posts the page back to the server, so the scraper waits for that response and then for the expected result (rows, a grid, a note), never for a fixed delay. Expand All doesn't reliably open every subject group (it once returned nothing for all of H), so groups it leaves collapsed are opened one by one. A course without a View Class Sections button is skipped immediately. Each section grid is checked against the requested term by its meeting dates, and retried once if PeopleSoft shows a stale grid.
+
 - A missing prerequisite field means **unknown**, not “no prerequisite.”
 - A catalog course entry is not proof that it is offered in a given term.
 - Numeric catalog buttons are processed after A–Z because the PeopleSoft UI exposes `0` through `9` separately. Empty groups are saved as empty per-group index files and recorded in the run log.
@@ -112,17 +123,17 @@ npm run import:courses -- --no-model # rules only, no API calls
 
 ## Parallel scraping (multiple independent browser sessions)
 
-The default run is sequential. To parallelize across alphabet/numeric groups, use `--workers`. Each worker launches its own scraper process and isolated browser session, then merges the outputs. Start with 4 workers; up to 13 are supported, but higher concurrency may trigger PeopleSoft timeouts or throttling.
+The default run is sequential. To parallelize across alphabet/numeric groups, use `--workers`. Each worker launches its own scraper process and isolated browser session, then merges the outputs. Start with 4 workers; up to 26 are supported, but higher concurrency may trigger PeopleSoft timeouts or throttling.
 
 ```bash
 # Recommended first parallel run
 python scrape_catalog.py --workers 4 --output semesteros-data
 
-# Request 13 independent browser workers
-python scrape_catalog.py --workers 13 --output semesteros-data
+# Request 26 independent browser workers
+python scrape_catalog.py --workers 26 --output semesteros-data
 
 # Parallel run including term-specific class sections
 python scrape_catalog.py --workers 4 --sections-term "Spring 2027" --output semesteros-data
 ```
 
-Parallel mode partitions the requested letter/digit groups between workers, gives each worker its own output directory and browser session, merges JSONL/JSON data, and writes one final export. Worker logs are retained in `semesteros-data/logs/`. `--max-details` is intentionally disallowed with multiple workers because it is designed for a single-worker smoke test. Resume mode is supported by seeding workers with existing detail/section JSONL files. For the first run, test with 2–4 workers before requesting 13.
+Parallel mode partitions the requested letter/digit groups between workers, gives each worker its own output directory and browser session, merges JSONL/JSON data, and writes one final export. Worker logs are retained in `semesteros-data/logs/`. `--max-details` is intentionally disallowed with multiple workers because it is designed for a single-worker smoke test. Resume mode is supported by seeding workers with existing detail/section JSONL files. For the first run, test with 2–4 workers before requesting more.

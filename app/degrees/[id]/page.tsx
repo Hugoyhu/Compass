@@ -53,7 +53,7 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
         <div className="space-y-1">
           <h2 className="text-2xl font-semibold tracking-tight">{program.name}</h2>
           <p className="text-sm text-muted-foreground">
-            {[program.degree ?? kindLabel(program.kind), program.approxCredits && `${program.approxCredits} credits`]
+            {[program.degree ?? { major: "Major", minor: "Minor", program: "Special program" }[program.kind], program.approxCredits && `${program.approxCredits} credits`]
               .filter(Boolean)
               .join(" · ")}
           </p>

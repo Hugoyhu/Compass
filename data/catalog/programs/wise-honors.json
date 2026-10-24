@@ -1,0 +1,138 @@
+{
+  "id": "wise-honors",
+  "name": "WISE Honors Program",
+  "kind": "program",
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1580",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "hand"
+  },
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "wise-honors.1",
+      "label": "1",
+      "title": "Introduction to WISE",
+      "sourceText": "Students will take WSE 101 and WSE 105 in the first year. Receive an “S” (Satisfactory) grade in WSE 101",
+      "rule": {
+        "type": "course",
+        "code": "WSE 101",
+        "manualCheck": "Requires a grade of S (Satisfactory)."
+      }
+    },
+    {
+      "id": "wise-honors.2",
+      "label": "2",
+      "title": "Course sequence",
+      "sourceText": "First Year WSE 101, WSE 105; Second Year WSE 380, WSE 205; Third Year WSE 381, WSE 201; Fourth Year WSE 401, WSE 405. Those entering as sophomores must take WSE 101 and WSE 105 or substitute equivalent courses.",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "WSE 105"
+          },
+          {
+            "type": "course",
+            "code": "WSE 205"
+          },
+          {
+            "type": "course",
+            "code": "WSE 380"
+          },
+          {
+            "type": "course",
+            "code": "WSE 381"
+          },
+          {
+            "type": "course",
+            "code": "WSE 201"
+          },
+          {
+            "type": "course",
+            "code": "WSE 401"
+          },
+          {
+            "type": "course",
+            "code": "WSE 405"
+          }
+        ],
+        "manualCheck": "Students who enter after their first semester follow a modified course program."
+      }
+    },
+    {
+      "id": "wise-honors.3",
+      "label": "3",
+      "title": "WSE Practicum",
+      "sourceText": "Students are required to participate in a 2-credit practicum experience by enrolling into one of the following courses: (WSE 475/WSE 477/WSE 487/WSE 488). Students must complete the WSE Practicum Permission Request form and maintain departmental approval prior to their enrollment. Courses under a different designator may be considered in lieu of WSE Practicum.",
+      "rule": {
+        "type": "choose",
+        "credits": 2,
+        "from": {
+          "courses": [
+            "WSE 475",
+            "WSE 477",
+            "WSE 487",
+            "WSE 488"
+          ]
+        },
+        "manualCheck": "Needs a WSE Practicum Permission Request and departmental approval. A course under another designator may be approved instead."
+      }
+    },
+    {
+      "id": "wise-honors.4",
+      "label": "4",
+      "title": "Senior Thesis or Design Project",
+      "sourceText": "Thesis or Design Project WSE 495, WSE 496 ... students must earn a grade of C or higher. These rules apply to students doing their theses or projects under the WSE designator or under a departmental designator. Students must obtain WISE Honors departmental approval for registration under a designator other than WSE.",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "WSE 495"
+          },
+          {
+            "type": "course",
+            "code": "WSE 496"
+          }
+        ],
+        "manualCheck": "A project under a departmental designator needs WISE Honors approval. A letter of intent is due before the add/drop deadline; the thesis is presented at the University Honors Programs Senior Symposium."
+      }
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "wise-honors.2",
+        "wise-honors.3",
+        "wise-honors.4"
+      ],
+      "sourceText": "pass all of the courses of the WISE Honors curriculum with a C or higher grade including a Senior Thesis or Design Project"
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "sbc",
+      "text": "WISE courses fulfill GLO (WSE 105 and WSE 201), HUM and DIV (WSE 201), TECH (WSE 380), SBS (WSE 381), STAS (WSE 401), and ESI, EXP+, CER, SPK, and WRTD (WSE 495/496). Students also complete ARTS, QPS, SNW, USA, and WRT, and advanced studies in two of HFA+, SBS+, and STEM+. Students who leave WISE Honors must complete all remaining SBC requirements."
+    },
+    {
+      "topic": "other",
+      "text": "To stay in WISE Honors and receive the transcript notation: enroll in and maintain a STEM major, an S in WSE 101, a C or higher in all WISE courses, and a cumulative GPA of at least 3.0. A WSE course with a grade of C- or lower may be repeated on request."
+    },
+    {
+      "topic": "admission",
+      "text": "Transfer students, first-year students, and sophomores not initially in WISE Honors can apply."
+    }
+  ]
+}

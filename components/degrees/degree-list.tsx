@@ -24,7 +24,12 @@ export function DegreeList({ programs, mine }: { programs: ProgramSummary[]; min
       (activeKind === "all" || (activeKind === "mine" ? mine.includes(p.id) : p.kind === activeKind)) &&
       terms.every((t) => p.name.toLowerCase().includes(t) || p.degree?.toLowerCase().includes(t)),
   );
-  const kinds = kindsIn(programs);
+  const counts = {
+    all: programs.length,
+    major: programs.filter((p) => p.kind === "major").length,
+    minor: programs.filter((p) => p.kind === "minor").length,
+    program: programs.filter((p) => p.kind === "program").length,
+  };
 
   return (
     <div className="space-y-4">
@@ -36,19 +41,16 @@ export function DegreeList({ programs, mine }: { programs: ProgramSummary[]; min
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search"
-            aria-label="Search programs"
+            aria-label="Search majors, minors, and programs"
             className="pl-8"
           />
         </div>
         <Tabs value={activeKind} onValueChange={(v) => setKind(v as KindFilter)}>
           <TabsList>
-            <TabsTrigger value="all">All ({programs.length})</TabsTrigger>
-            {kinds.map((k) => (
-              <TabsTrigger key={k} value={k}>
-                {kindLabel(k, true)} ({programs.filter((p) => p.kind === k).length})
-              </TabsTrigger>
-            ))}
-            {mine.length > 0 && <TabsTrigger value="mine">Mine ({mine.length})</TabsTrigger>}
+            <TabsTrigger value="all">All ({counts.all})</TabsTrigger>
+            <TabsTrigger value="major">Majors ({counts.major})</TabsTrigger>
+            <TabsTrigger value="minor">Minors ({counts.minor})</TabsTrigger>
+            <TabsTrigger value="program">Programs ({counts.program})</TabsTrigger>
           </TabsList>
         </Tabs>
       </div>

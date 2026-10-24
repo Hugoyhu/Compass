@@ -1,0 +1,219 @@
+{
+  "id": "honors-college",
+  "name": "The Honors College",
+  "kind": "program",
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1578",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "hand"
+  },
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "honors-college.1",
+      "label": "1",
+      "title": "Introduction to the Honors College",
+      "sourceText": "Students take HON 101, 105, 106, 200 in the first year. Receive an “S” (Satisfactory) grade in HON 101",
+      "rule": {
+        "type": "course",
+        "code": "HON 101",
+        "manualCheck": "Requires a grade of S (Satisfactory)."
+      }
+    },
+    {
+      "id": "honors-college.2",
+      "label": "2",
+      "title": "First-year Honors courses",
+      "sourceText": "Honors College students who enter as first-year students must take HON 101, HON 105, HON 106, HON 200 ... Students take HON 101, 105, 106, 200 in the first year. (Those entering as sophomores, for example, must take HON 105 and 106 or substitute equivalent courses.)",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "HON 105"
+          },
+          {
+            "type": "course",
+            "code": "HON 106"
+          },
+          {
+            "type": "course",
+            "code": "HON 200"
+          }
+        ],
+        "manualCheck": "Students who enter after their first semester follow a modified course program set by the Honors College."
+      }
+    },
+    {
+      "id": "honors-college.3",
+      "label": "3",
+      "title": "Second- and third-year Honors courses",
+      "sourceText": "HON 205 and 305, as well as two core Honors seminars, should be completed in years two and three.",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "HON 205"
+          },
+          {
+            "type": "course",
+            "code": "HON 305"
+          }
+        ]
+      }
+    },
+    {
+      "id": "honors-college.4",
+      "label": "4",
+      "title": "Two core Honors seminars",
+      "sourceText": "two core Honors seminars (HON 201, HON 301, or HON 401) ... Students may substitute one of their two required Honors core seminars (201, 301, or 401) with one of the following: HON 300 (Special Topics); HON 310 (Honors Experiences); or a pre-approved departmental course plus Honors Course Contract. Students must obtain Honors College approval in advance of taking the substitution course.",
+      "rule": {
+        "type": "choose",
+        "count": 2,
+        "from": {
+          "courses": [
+            "HON 201",
+            "HON 301",
+            "HON 401",
+            "HON 300",
+            "HON 310"
+          ]
+        },
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "courses": [
+                "HON 300",
+                "HON 310"
+              ]
+            },
+            "maxCourses": 1
+          }
+        ],
+        "manualCheck": "A substitute for one core seminar (HON 300, HON 310, or a departmental course with an Honors Course Contract) needs Honors College approval in advance."
+      }
+    },
+    {
+      "id": "honors-college.5",
+      "label": "5",
+      "title": "Senior Project or Thesis",
+      "sourceText": "Students must complete a Senior Project or Thesis. Those enrolled in HON 495 and 496 will follow the project guidelines ... select students can complete their Senior Project through a two-semester, course-based Social Analysis and Impact Capstone ... Fourth Year HON 490/491 or HON 495/496",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "HON 495"
+              },
+              {
+                "type": "course",
+                "code": "HON 496"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "HON 490"
+              },
+              {
+                "type": "course",
+                "code": "HON 491"
+              }
+            ],
+            "manualCheck": "The Social Analysis and Impact Capstone is by application."
+          }
+        ],
+        "manualCheck": "A departmental honors project may substitute with Honors College approval. A letter of intent is due by the last day of classes of junior year; the thesis is presented at the University Honors Senior Symposium."
+      }
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "honors-college.2",
+        "honors-college.3",
+        "honors-college.4",
+        "honors-college.5"
+      ],
+      "sourceText": "pass all required Honors College courses with a C or higher, including the Senior Honors Project or Thesis"
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [
+      {
+        "category": "HUM",
+        "reason": "Satisfied by completing the Honors College curriculum"
+      },
+      {
+        "category": "SBS",
+        "reason": "Satisfied by completing the Honors College curriculum"
+      },
+      {
+        "category": "CER",
+        "reason": "Satisfied by completing the Honors College curriculum"
+      },
+      {
+        "category": "ARTS",
+        "reason": "Satisfied by completing the Honors College curriculum"
+      },
+      {
+        "category": "STAS",
+        "reason": "Satisfied by completing the Honors College curriculum"
+      },
+      {
+        "category": "GLO",
+        "reason": "Satisfied by completing the Honors College curriculum"
+      },
+      {
+        "category": "ESI",
+        "reason": "Satisfied by completing the Honors College curriculum"
+      },
+      {
+        "category": "SPK",
+        "reason": "Satisfied by completing the Honors College curriculum"
+      },
+      {
+        "category": "WRTD",
+        "reason": "Satisfied by completing the Honors College curriculum"
+      },
+      {
+        "category": "EXP+",
+        "reason": "Satisfied by completing the Honors College curriculum"
+      }
+    ],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "sbc",
+      "text": "Honors College students still complete WRT, QPS, LANG, SNW, TECH, and USA, and advanced studies in at least two of STEM+, SBS+, and HFA+. Those upper-tier courses must be passed with a C or higher and carry at least 3 credits; they may overlap with major requirements."
+    },
+    {
+      "topic": "grading",
+      "text": "To stay in the Honors College and receive the transcript notation: an S in HON 101, a C or higher in all required Honors courses, and a cumulative GPA of at least 3.0. An HON course with a grade of C- or lower may be repeated toward Honors requirements."
+    },
+    {
+      "topic": "other",
+      "text": "These are the requirements for students entering in Fall 2025 or later. Students who entered earlier follow the prior curriculum (HON 105, 106, 201, 301, 401, 495, 496, plus HON 101 and topics courses); see the catalog."
+    },
+    {
+      "topic": "admission",
+      "text": "Admission is selective and mostly for entering first-year students; students enrolled in college for more than a year are not typically admitted."
+    }
+  ]
+}
