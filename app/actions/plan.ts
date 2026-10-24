@@ -23,11 +23,11 @@ export async function savePlan(input: unknown): Promise<SaveResult> {
   return saveRecord({ ...record, plan });
 }
 
-/** Replaces the plan with a generated one through graduation. */
+/** Fills the empty semesters of a four-year plan, keeping the terms already planned. */
 export async function generatePlanAction(): Promise<SaveResult> {
   const record = await getStudentRecord();
   if (!record) return { ok: false, error: "Add your courses first" };
-  const plan = generatePlan(await planContext({ ...record, plan: [] }));
+  const plan = generatePlan(await planContext(record));
   return saveRecord({ ...record, plan });
 }
 
