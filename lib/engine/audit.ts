@@ -152,7 +152,7 @@ export interface DegreeAudit {
 // Shared helpers
 // ---------------------------------------------------------------------------
 
-const GRADE_POINTS: Record<LetterGrade, number> = {
+export const GRADE_POINTS: Record<LetterGrade, number> = {
   A: 4,
   "A-": 3.67,
   "B+": 3.33,

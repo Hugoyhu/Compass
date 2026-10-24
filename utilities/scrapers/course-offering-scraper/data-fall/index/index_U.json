@@ -1,0 +1,26 @@
+[
+  {
+    "subject": "UKR",
+    "course_number": "101",
+    "course_code": "UKR 101",
+    "title": "Intensive Elementary Ukrainian",
+    "source_file": "index_U.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "UKR",
+    "course_number": "111",
+    "course_code": "UKR 111",
+    "title": "Elementary Ukrainian I",
+    "source_file": "index_U.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "UKR",
+    "course_number": "112",
+    "course_code": "UKR 112",
+    "title": "Elementary Ukrainian II",
+    "source_file": "index_U.html",
+    "source_group_index": 2
+  }
+]

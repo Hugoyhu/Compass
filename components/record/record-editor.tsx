@@ -2,13 +2,30 @@
 
 import { useMemo, useState, useTransition } from "react";
 import { Loader2, Plus, Trash2, X } from "lucide-react";
-import { clearRecord, loadSampleRecord, saveRecord } from "@/app/actions/record";
+import {
+  clearRecord,
+  saveRecord,
+} from "@/app/actions/record";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { kindLabel, kindsIn } from "@/lib/domain/program-kinds";
 import { cn } from "@/lib/utils";
-import { MAX_PROGRAMS, type CourseAttempt, type CreditSource, type Grade, type StudentRecord, type TermId } from "@/lib/domain/types";
+import {
+  MAX_PROGRAMS,
+  type CourseAttempt,
+  type CreditSource,
+  type Grade,
+  type StudentRecord,
+  type TermId,
+} from "@/lib/domain/types";
 import {
   DEFAULT_CURRENT_TERM,
   GRADE_OPTIONS,
@@ -45,9 +62,15 @@ export function RecordEditor({
 }) {
   const [draft, setDraft] = useState<StudentRecord>(record ?? EMPTY_RECORD);
   const [dirty, setDirty] = useState(false);
-  const [message, setMessage] = useState<{ kind: "ok" | "error"; text: string } | null>(null);
+  const [message, setMessage] = useState<{
+    kind: "ok" | "error";
+    text: string;
+  } | null>(null);
   const [pending, startTransition] = useTransition();
-  const catalog = useMemo(() => new Map(courses.map((c) => [c.code, c])), [courses]);
+  const catalog = useMemo(
+    () => new Map(courses.map((c) => [c.code, c])),
+    [courses],
+  );
 
   function update(next: Partial<StudentRecord>) {
     setDraft((d) => ({ ...d, ...next }));
@@ -56,11 +79,18 @@ export function RecordEditor({
   }
 
   function updateAttempt(index: number, patch: Partial<CourseAttempt>) {
-    update({ attempts: draft.attempts.map((a, i) => (i === index ? { ...a, ...patch } : a)) });
+    update({
+      attempts: draft.attempts.map((a, i) =>
+        i === index ? { ...a, ...patch } : a,
+      ),
+    });
   }
 
   function persist(next: StudentRecord) {
-    const toSave = { ...next, entryTerm: entryTermFor(next.attempts, next.currentTerm) };
+    const toSave = {
+      ...next,
+      entryTerm: entryTermFor(next.attempts, next.currentTerm),
+    };
     startTransition(async () => {
       const result = await saveRecord(toSave);
       if (result.ok) {
@@ -73,16 +103,28 @@ export function RecordEditor({
     });
   }
 
-  function applyTranscript({ draft: transcript, attempts, mode }: ReviewedTranscript) {
+  function applyTranscript({
+    draft: transcript,
+    attempts,
+    mode,
+  }: ReviewedTranscript) {
     const existing = mode === "merge" ? draft.attempts : [];
     const seen = new Set(existing.map(attemptKey));
-    const merged = [...existing, ...attempts.filter((a) => !seen.has(attemptKey(a)))];
+    const merged = [
+      ...existing,
+      ...attempts.filter((a) => !seen.has(attemptKey(a))),
+    ];
     const programId = matchProgram(transcript.plan, programs);
     persist({
       ...draft,
       name: draft.name || transcript.studentName || "",
       currentTerm: transcript.currentTerm ?? draft.currentTerm,
-      programIds: draft.programIds.length > 0 ? draft.programIds : programId ? [programId] : [],
+      programIds:
+        draft.programIds.length > 0
+          ? draft.programIds
+          : programId
+            ? [programId]
+            : [],
       attempts: merged,
     });
   }
@@ -90,33 +132,53 @@ export function RecordEditor({
   const programsById = new Map(programs.map((p) => [p.id, p]));
   const available = programs.filter((p) => !draft.programIds.includes(p.id));
   const totalCredits = draft.attempts
-    .filter((a) => a.status === "completed" && a.grade && !["F", "NC", "W", "I"].includes(a.grade))
-    .reduce((sum, a) => sum + (a.credits ?? catalog.get(a.code)?.credits ?? 0), 0);
+    .filter(
+      (a) =>
+        a.status === "completed" &&
+        a.grade &&
+        !["F", "NC", "W", "I"].includes(a.grade),
+    )
+    .reduce(
+      (sum, a) => sum + (a.credits ?? catalog.get(a.code)?.credits ?? 0),
+      0,
+    );
 
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       <div className="space-y-6 lg:col-span-2">
-        <TranscriptUpload hasCourses={draft.attempts.length > 0} onApply={applyTranscript} />
+        <TranscriptUpload
+          hasCourses={draft.attempts.length > 0}
+          onApply={applyTranscript}
+        />
         <Card>
           <CardHeader>
             <CardTitle>Courses</CardTitle>
-            <CardDescription>
-              {totalCredits} credits earned
-            </CardDescription>
+            <CardDescription>{totalCredits} credits earned</CardDescription>
           </CardHeader>
           <CardContent className="space-y-5">
             {draft.attempts.length === 0 && (
               <p className="text-sm text-muted-foreground">No courses yet.</p>
             )}
             {groupAttempts(draft.attempts).map((group) => (
-              <section key={group.key} className="space-y-1.5" aria-label={group.label}>
-                <h3 className="text-xs font-medium text-muted-foreground">{group.label}</h3>
+              <section
+                key={group.key}
+                className="space-y-1.5"
+                aria-label={group.label}
+              >
+                <h3 className="text-xs font-medium text-muted-foreground">
+                  {group.label}
+                </h3>
                 <ul className="divide-y rounded-lg border">
                   {group.items.map(({ attempt, index }) => {
                     const known = catalog.get(attempt.code);
                     return (
-                      <li key={`${attemptKey(attempt)}-${index}`} className="flex items-center gap-2 px-3 py-1.5 text-sm">
-                        <span className="w-20 shrink-0 font-mono text-xs">{attempt.code}</span>
+                      <li
+                        key={`${attemptKey(attempt)}-${index}`}
+                        className="flex items-center gap-2 px-3 py-1.5 text-sm"
+                      >
+                        <span className="w-20 shrink-0 font-mono text-xs">
+                          {attempt.code}
+                        </span>
                         <span className="min-w-0 flex-1 truncate">
                           {known?.title ?? attempt.title ?? "Unknown course"}
                         </span>
@@ -126,14 +188,26 @@ export function RecordEditor({
                         <select
                           aria-label={`Grade for ${attempt.code}`}
                           className={cn(selectClassName, "w-32 shrink-0")}
-                          value={attempt.status === "in-progress" ? "in-progress" : (attempt.grade ?? "")}
+                          value={
+                            attempt.status === "in-progress"
+                              ? "in-progress"
+                              : (attempt.grade ?? "")
+                          }
                           onChange={(e) =>
                             e.target.value === "in-progress"
-                              ? updateAttempt(index, { status: "in-progress", grade: undefined })
-                              : updateAttempt(index, { status: "completed", grade: e.target.value as Grade })
+                              ? updateAttempt(index, {
+                                  status: "in-progress",
+                                  grade: undefined,
+                                })
+                              : updateAttempt(index, {
+                                  status: "completed",
+                                  grade: e.target.value as Grade,
+                                })
                           }
                         >
-                          {attempt.source === "sbu" && <option value="in-progress">In progress</option>}
+                          {attempt.source === "sbu" && (
+                            <option value="in-progress">In progress</option>
+                          )}
                           {GRADE_OPTIONS.map((g) => (
                             <option key={g} value={g}>
                               {g === "T" ? "T (credit)" : g}
@@ -144,7 +218,13 @@ export function RecordEditor({
                           variant="ghost"
                           size="icon-sm"
                           aria-label={`Remove ${attempt.code}`}
-                          onClick={() => update({ attempts: draft.attempts.filter((_, i) => i !== index) })}
+                          onClick={() =>
+                            update({
+                              attempts: draft.attempts.filter(
+                                (_, i) => i !== index,
+                              ),
+                            })
+                          }
                         >
                           <Trash2 />
                         </Button>
@@ -157,7 +237,9 @@ export function RecordEditor({
             <AddCourseForm
               courses={courses}
               currentTerm={draft.currentTerm}
-              onAdd={(attempt) => update({ attempts: [...draft.attempts, attempt] })}
+              onAdd={(attempt) =>
+                update({ attempts: [...draft.attempts, attempt] })
+              }
             />
           </CardContent>
           <CardFooter className="flex-wrap items-center gap-3 border-t bg-muted/30 py-3">
@@ -166,7 +248,10 @@ export function RecordEditor({
               Save changes
             </Button>
             {message && (
-              <p role="status" className={`text-sm ${message.kind === "error" ? "text-destructive" : "text-muted-foreground"}`}>
+              <p
+                role="status"
+                className={`text-sm ${message.kind === "error" ? "text-destructive" : "text-muted-foreground"}`}
+              >
                 {message.text}
               </p>
             )}
@@ -182,21 +267,38 @@ export function RecordEditor({
           <CardContent className="space-y-4">
             <label className="block space-y-1.5">
               <span className="text-xs font-medium">Name</span>
-              <Input value={draft.name} maxLength={80} onChange={(e) => update({ name: e.target.value })} />
+              <Input
+                value={draft.name}
+                maxLength={80}
+                onChange={(e) => update({ name: e.target.value })}
+              />
             </label>
             <div className="space-y-1.5">
               <span className="text-xs font-medium">Programs</span>
               {draft.programIds.length > 0 && (
                 <ul className="divide-y rounded-lg border text-sm">
                   {draft.programIds.map((id) => (
-                    <li key={id} className="flex items-center gap-2 py-1 pr-1 pl-3">
-                      <span className="min-w-0 flex-1 truncate">{programsById.get(id)?.name ?? id}</span>
-                      <span className="text-xs text-muted-foreground">{kindLabel(programsById.get(id)?.kind ?? "")}</span>
+                    <li
+                      key={id}
+                      className="flex items-center gap-2 py-1 pr-1 pl-3"
+                    >
+                      <span className="min-w-0 flex-1 truncate">
+                        {programsById.get(id)?.name ?? id}
+                      </span>
+                      <span className="text-xs text-muted-foreground">
+                        {kindLabel(programsById.get(id)?.kind ?? "")}
+                      </span>
                       <Button
                         variant="ghost"
                         size="icon-sm"
                         aria-label={`Remove ${programsById.get(id)?.name ?? id}`}
-                        onClick={() => update({ programIds: draft.programIds.filter((p) => p !== id) })}
+                        onClick={() =>
+                          update({
+                            programIds: draft.programIds.filter(
+                              (p) => p !== id,
+                            ),
+                          })
+                        }
                       >
                         <X />
                       </Button>
@@ -209,7 +311,12 @@ export function RecordEditor({
                   aria-label="Add a program"
                   className={selectClassName}
                   value=""
-                  onChange={(e) => e.target.value && update({ programIds: [...draft.programIds, e.target.value] })}
+                  onChange={(e) =>
+                    e.target.value &&
+                    update({
+                      programIds: [...draft.programIds, e.target.value],
+                    })
+                  }
                 >
                   <option value="">Add…</option>
                   {kindsIn(available).map((kind) => (
@@ -231,7 +338,9 @@ export function RecordEditor({
               <select
                 className={selectClassName}
                 value={draft.currentTerm}
-                onChange={(e) => update({ currentTerm: e.target.value as TermId })}
+                onChange={(e) =>
+                  update({ currentTerm: e.target.value as TermId })
+                }
               >
                 {TERM_OPTIONS.map((t) => (
                   <option key={t.value} value={t.value}>
@@ -242,7 +351,11 @@ export function RecordEditor({
             </label>
           </CardContent>
           <CardFooter className="border-t bg-muted/30 py-3">
-            <Button size="sm" onClick={() => persist(draft)} disabled={!dirty || pending}>
+            <Button
+              size="sm"
+              onClick={() => persist(draft)}
+              disabled={!dirty || pending}
+            >
               Save profile
             </Button>
           </CardFooter>
@@ -253,18 +366,18 @@ export function RecordEditor({
             <CardTitle>Start over</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-wrap gap-2">
-            <form action={loadSampleRecord}>
-              <Button type="submit" variant="outline" size="sm">
-                Load sample student
-              </Button>
-            </form>
             <form
               action={clearRecord}
               onSubmit={(e) => {
                 if (!confirm("Delete all of your courses?")) e.preventDefault();
               }}
             >
-              <Button type="submit" variant="ghost" size="sm" className="text-destructive">
+              <Button
+                type="submit"
+                variant="ghost"
+                size="sm"
+                className="text-destructive"
+              >
                 Delete all courses
               </Button>
             </form>
@@ -292,7 +405,9 @@ function AddCourseForm({
 
   function submit(e: React.FormEvent) {
     e.preventDefault();
-    const normalized = code.toUpperCase().replace(/^([A-Z]{3,4})\s*(\d{3}).*$/, "$1 $2");
+    const normalized = code
+      .toUpperCase()
+      .replace(/^([A-Z]{3,4})\s*(\d{3}).*$/, "$1 $2");
     if (!/^[A-Z]{3,4} \d{3}$/.test(normalized)) {
       setError("Use a code like CSE 214.");
       return;
@@ -312,14 +427,18 @@ function AddCourseForm({
   }
 
   return (
-    <form onSubmit={submit} className="space-y-2 rounded-lg border border-dashed p-3" aria-label="Add a course">
+    <form
+      onSubmit={submit}
+      className="space-y-2 rounded-lg border border-dashed p-3"
+      aria-label="Add a course"
+    >
       <p className="text-xs font-medium">Add a course</p>
       <div className="grid gap-2 sm:grid-cols-[1fr_auto_auto_auto_auto]">
         <Input
           list="catalog-courses"
           value={code}
           onChange={(e) => setCode(e.target.value)}
-          placeholder="CSE 214"
+          placeholder="Course code"
           aria-label="Course code"
         />
         <datalist id="catalog-courses">
@@ -329,21 +448,38 @@ function AddCourseForm({
             </option>
           ))}
         </datalist>
-        <select aria-label="Credit type" className={selectClassName} value={source} onChange={(e) => setSource(e.target.value as CreditSource)}>
+        <select
+          aria-label="Credit type"
+          className={selectClassName}
+          value={source}
+          onChange={(e) => setSource(e.target.value as CreditSource)}
+        >
           {(Object.keys(SOURCE_LABELS) as CreditSource[]).map((s) => (
             <option key={s} value={s}>
               {SOURCE_LABELS[s]}
             </option>
           ))}
         </select>
-        <select aria-label="Term" className={selectClassName} value={term} onChange={(e) => setTerm(e.target.value as TermId)} disabled={source !== "sbu"}>
+        <select
+          aria-label="Term"
+          className={selectClassName}
+          value={term}
+          onChange={(e) => setTerm(e.target.value as TermId)}
+          disabled={source !== "sbu"}
+        >
           {TERM_OPTIONS.map((t) => (
             <option key={t.value} value={t.value}>
               {t.label}
             </option>
           ))}
         </select>
-        <select aria-label="Grade" className={selectClassName} value={grade} onChange={(e) => setGrade(e.target.value)} disabled={source !== "sbu"}>
+        <select
+          aria-label="Grade"
+          className={selectClassName}
+          value={grade}
+          onChange={(e) => setGrade(e.target.value)}
+          disabled={source !== "sbu"}
+        >
           <option value="in-progress">In progress</option>
           {GRADE_OPTIONS.filter((g) => g !== "T").map((g) => (
             <option key={g} value={g}>

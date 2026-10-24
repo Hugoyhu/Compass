@@ -53,6 +53,32 @@ const ELECTIVE_CREDITS = 3;
 export const SBC_PLACEHOLDER_CREDITS = 3;
 /** The most credits the generator plans in a term. */
 const GENERATED_MAX_CREDITS = 18;
+/** Courses a minor or other non-major program gets per generated term, so programs spread out. */
+const NON_MAJOR_COURSES_PER_TERM = 2;
+
+const YEAR_WORDS: Record<string, number> = { first: 1, freshman: 1, second: 2, sophomore: 2, third: 3, junior: 3, fourth: 4, senior: 4 };
+
+/**
+ * The earliest academic year a requirement's title allows: "Second- and
+ * third-year Honors courses" → 2, "Senior Project" → 4. Titles without year
+ * words allow any year.
+ */
+export function earliestYear(title: string): number {
+  if (!/year|freshman|sophomore|junior|senior/i.test(title)) return 1;
+  const years = [...title.toLowerCase().matchAll(/\b(first|second|third|fourth|freshman|sophomore|junior|senior)\b/g)].map((m) => YEAR_WORDS[m[1]]);
+  return years.length ? Math.min(...years) : 1;
+}
+
+/** The student's academic year in a term: fall and spring semesters since entry, two per year. */
+function academicYear(student: StudentRecord, term: TermId): number {
+  let t = student.entryTerm.endsWith("FA") || student.entryTerm.endsWith("SP") ? student.entryTerm : nextRegularTerm(student.entryTerm);
+  let index = 0;
+  while (termOrdinal(t) < termOrdinal(term)) {
+    t = nextRegularTerm(t);
+    index++;
+  }
+  return Math.floor(index / 2) + 1;
+}
 
 export interface PlanContext {
   student: StudentRecord;
@@ -202,11 +228,15 @@ export function generatePlan(ctx: PlanContext): PlannedTerm[] {
     const before = plan.filter((t) => termOrdinal(t.term) < termOrdinal(term));
     const studentBefore = withPlan(student, before);
     const auditBefore = audit(ctx, studentBefore);
-    // Electives and SBC placeholders planned earlier count toward standing too.
+    // Electives and SBC placeholders planned earlier count toward standing, while
+    // AP credit does not advance the student's class level.
     const placeholderCreditsBefore = electiveCredits(before);
     const prereqsMet = prerequisiteChecker(auditBefore, studentBefore, placeholderCreditsBefore);
+    // Course level follows college experience: AP credit raises standing but doesn't make a first-year student a
+    // sophomore. Transfer credit does count, so a transfer junior can take 300-level courses right away.
+    const { earned, inProgress, bySource } = auditBefore.credits;
     const standing = Number(
-      standingFor(auditBefore.credits.earned + auditBefore.credits.inProgress + placeholderCreditsBefore).slice(1),
+      standingFor(earned + inProgress - bySource.ap + placeholderCreditsBefore).slice(1),
     );
 
     const creditsLeft = planned.credits.required - planned.credits.earned - planned.credits.inProgress - electiveCredits(plan);
@@ -214,7 +244,7 @@ export function generatePlan(ctx: PlanContext): PlannedTerm[] {
     const workLeft = openCourseCount(planned) * ELECTIVE_CREDITS;
     const target = Math.min(maxCredits, Math.max(minCredits, Math.ceil(creditsLeft / termsLeft), Math.ceil(workLeft / termsLeft)));
 
-    const items = pickProgramCourses(ctx, plan, planned, term, target, maxCredits, (c) => prereqsMet(c).met, standing, termsLeft);
+    const items = pickProgramCourses(ctx, plan, planned, term, target, maxCredits, (c) => prereqsMet(c).met, standing, academicYear(student, term), termsLeft);
     const madeProgress = items.length > 0 || creditsLeft > 0;
     let credits = items.reduce((s, item) => s + itemCredits(item), 0);
 
@@ -288,8 +318,10 @@ function pickProgramCourses(
   target: number,
   maxCredits: number,
   prereqsMet: (course: CourseRecord) => boolean,
-  /** Class standing before the term, 1 (U1) to 4 (U4). */
+  /** Class standing before the term, 1 (U1) to 4 (U4), not counting AP credit. */
   standing: number,
+  /** The student's academic year in this term, from their entry term. */
+  year: number,
   /** Terms left to fill, this one included. */
   termsLeft: number,
 ): PlanItem[] {
@@ -366,6 +398,9 @@ function pickProgramCourses(
 
   interface Candidate {
     course: CourseRecord;
+    programId: string;
+    /** Minors and other non-major programs take a limited number of courses per term. */
+    capped: boolean;
     /** The requirement item it fills; an item takes at most `limit` courses this term. */
     key: string;
     limit: number;
@@ -382,10 +417,21 @@ function pickProgramCourses(
     );
     const elsewhere = requiredElsewhere(p);
     p.requirements.forEach((r, requirementIndex) => {
-      // Requirements awaiting an advisor still get their listed courses planned.
-      if (isDone(r.status)) return;
-      const add = (course: CourseRecord, key: string, limit: number, alternatives: CourseCode[] = []) =>
-        candidates.push({ course, key, limit, alternatives, rank: [level(course), programIndex, requirementIndex, Number(course.code.split(" ")[1])] });
+      if (isDone(r.status) || isReview(r.status)) return;
+      // "Second- and third-year Honors courses" wait for year 2.
+      if (year < earliestYear(r.requirement.title)) return;
+      // Required courses before electives; then level; then requirement order across programs, so a second major
+      // isn't starved by the first. A chain-starting course ranks ahead within its level (added below).
+      const add = (course: CourseRecord, key: string, limit: number, alternatives: CourseCode[] = [], elective = false) =>
+        candidates.push({
+          course,
+          programId: p.program.id,
+          capped: p.program.kind !== "major",
+          key,
+          limit,
+          alternatives,
+          rank: [elective ? 1 : 0, level(course), requirementIndex, programIndex, Number(course.code.split(" ")[1])],
+        });
 
       r.missing.forEach((item, index) => {
         const key = `${r.requirement.id}#${index}`;
@@ -418,7 +464,7 @@ function pickProgramCourses(
               return x[0] - y[0] || x[1] - y[1] || level(a) - level(b);
             })
             .slice(0, remaining)
-            .forEach((c) => add(c, key, remaining));
+            .forEach((c) => add(c, key, remaining, [], true));
         }
       });
     });
@@ -445,16 +491,20 @@ function pickProgramCourses(
   };
   for (const c of candidates) {
     const depth = chainDepth(c.course.code);
+    // After elective/level: courses that unlock longer chains of needed courses first (AMS 310 before AMS 303).
+    c.rank.splice(2, 0, -Math.min(depth, 3));
     c.rank.unshift(depth > 0 && depth >= termsLeft - 1 ? 0 : 1);
   }
   candidates.sort((a, b) => compareRanks(a.rank, b.rank));
 
   const pickedFor = new Map<string, number>();
+  const pickedByProgram = new Map<string, number>();
   let credits = 0;
   for (const candidate of candidates) {
     if (credits >= target) break;
-    const { course, key, limit, alternatives } = candidate;
+    const { course, key, limit, alternatives, programId, capped } = candidate;
     if ((pickedFor.get(key) ?? 0) >= limit || alternatives.some((c) => c !== course.code && onItsWay(c)) || !usable(course)) continue;
+    if (capped && (pickedByProgram.get(programId) ?? 0) >= NON_MAJOR_COURSES_PER_TERM) continue;
     // A lecture and its lab go into the same term.
     const pairCode = pairedCorequisite(course);
     const pair = pairCode ? catalog.get(pairCode) : undefined;
@@ -463,6 +513,7 @@ function pickProgramCourses(
     if (credits + groupCredits > maxCredits) continue;
     picked.push(...group);
     pickedFor.set(key, (pickedFor.get(key) ?? 0) + 1);
+    pickedByProgram.set(programId, (pickedByProgram.get(programId) ?? 0) + 1);
     credits += groupCredits;
   }
   return picked.map((c) => ({ code: c.code }));

@@ -1,10 +1,9 @@
 /**
- * Assembles the Semester Planner: the student's plan, checked term by term,
- * and what it completes. Also builds the context the plan actions need.
+ * Builds the context the plan checks need: the student, the catalog, and what each term offers.
  */
 import { getRepository } from "@/lib/data/repository";
 import type { Section } from "@/lib/domain/catalog/offering";
-import { nextRegularTerm, nextTerm, parseTerm } from "@/lib/domain/terms";
+import { nextRegularTerm, parseTerm } from "@/lib/domain/terms";
 import type { CourseCode, Season, StudentRecord, TermId } from "@/lib/domain/types";
 import { choicesIn } from "@/lib/engine/describe";
 import { checkPlan, minTermCredits, type PlanContext } from "@/lib/engine/plan";
@@ -12,19 +11,21 @@ import { checkPlan, minTermCredits, type PlanContext } from "@/lib/engine/plan";
 /** A season's schedule counts as complete when it lists at least this share of the fullest term's courses. */
 const COMPLETE_SCHEDULE_SHARE = 0.5;
 
+function upcomingTerms(student: StudentRecord, count: number): TermId[] {
+  const terms: TermId[] = [];
+  let term = nextRegularTerm(student.currentTerm);
+  for (let i = 0; i < count; i++) {
+    terms.push(term);
+    term = nextRegularTerm(term);
+  }
+  return terms;
+}
+
 /** Main-campus sections per course (SUNY Korea sections don't count as offerings here). */
 export function countMainCampusSections(sections: Section[]): Map<CourseCode, number> {
   const counts = new Map<CourseCode, number>();
   for (const s of sections) if (s.campus === "main") counts.set(s.code, (counts.get(s.code) ?? 0) + 1);
   return counts;
-}
-
-/** Terms a plan can start from: everything after the current term. */
-function upcomingTerms(student: StudentRecord, count: number): TermId[] {
-  const terms: TermId[] = [];
-  let term = student.currentTerm;
-  for (let i = 0; i < count; i++) terms.push((term = nextTerm(term)));
-  return terms;
 }
 
 export async function planContext(student: StudentRecord): Promise<PlanContext> {
@@ -69,7 +70,6 @@ async function offeredBySeason(): Promise<Partial<Record<Season, Set<CourseCode>
   }
   return offered;
 }
-
 export async function getPlanView(student: StudentRecord) {
   const ctx = await planContext(student);
   const { terms, projection } = checkPlan(ctx, student.plan);
