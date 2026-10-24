@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getCurrentUser } from "@/lib/auth/session";
 import { getRepository } from "@/lib/data/repository";
 import { getStudentRecord } from "@/lib/student/store";
 import { SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar";
@@ -6,11 +7,12 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 /** Sidebar footer showing whose record is loaded. Reads cookies: render inside <Suspense>. */
 export async function SidebarStudent() {
-  const record = await getStudentRecord();
+  const [record, user] = await Promise.all([getStudentRecord(), getCurrentUser()]);
   const programs = record ? await getRepository().listPrograms() : [];
   const major = programs.find((p) => record?.programIds.includes(p.id));
-  const name = record?.name || (record ? "Your record" : "No record yet");
-  const initials = record?.name ? record.name.split(/\s+/).map((part) => part[0]).join("").slice(0, 2) : "?";
+  const name = record?.name || user?.username || (record ? "Your record" : "No record yet");
+  const displayName = record?.name || user?.username;
+  const initials = displayName ? displayName.split(/\s+/).map((part) => part[0]).join("").slice(0, 2) : "?";
 
   return (
     <SidebarMenu>

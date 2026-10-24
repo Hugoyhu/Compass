@@ -73,6 +73,13 @@ function makeCourseSchema(prereq: z.ZodType<Prereq>) {
     prerequisiteText: z.string().optional(),
     prerequisites: prereq.optional(),
     corequisiteText: z.string().optional(),
+    advisoryText: z
+      .string()
+      .optional()
+      .describe("Advisory prerequisites or corequisites: recommended, never enforced"),
+    sbcMinGrade: LetterGradeSchema.optional().describe(
+      'Lowest grade that still satisfies the course\'s SBC categories, e.g. "A through C" → "C"',
+    ),
     equivalents: z
       .array(CourseCodeSchema)
       .describe('"Not for credit in addition to X" and cross-listings: courses that cannot both count'),

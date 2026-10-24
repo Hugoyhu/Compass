@@ -1,0 +1,6530 @@
+[
+  {
+    "subject": "EAS",
+    "course_number": "101",
+    "course_code": "EAS 101",
+    "title": "Engineering and Applied Sciences",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 0
+  },
+  {
+    "subject": "EAS",
+    "course_number": "310",
+    "course_code": "EAS 310",
+    "title": "Global Design Engineering Innovation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 0
+  },
+  {
+    "subject": "EAS",
+    "course_number": "312",
+    "course_code": "EAS 312",
+    "title": "Engineering for the Developing World",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 0
+  },
+  {
+    "subject": "EBH",
+    "course_number": "200",
+    "course_code": "EBH 200",
+    "title": "The Evolution of Human Behavior",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "204",
+    "course_code": "EBH 204",
+    "title": "Research Skills",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "214",
+    "course_code": "EBH 214",
+    "title": "The Evolution of the Human Mind",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "230",
+    "course_code": "EBH 230",
+    "title": "Computer-based Biostatistics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "302",
+    "course_code": "EBH 302",
+    "title": "Human Genetics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "316",
+    "course_code": "EBH 316",
+    "title": "The Evolution of the Human Brain",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "325",
+    "course_code": "EBH 325",
+    "title": "Evolution of Sex",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "331",
+    "course_code": "EBH 331",
+    "title": "Hormones and Behavior",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "359",
+    "course_code": "EBH 359",
+    "title": "Behavioral Ecology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "362",
+    "course_code": "EBH 362",
+    "title": "Evolution of Social Complexity",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "370",
+    "course_code": "EBH 370",
+    "title": "Advanced Human Genetics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "380",
+    "course_code": "EBH 380",
+    "title": "Genomics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "381",
+    "course_code": "EBH 381",
+    "title": "Genomics Laboratory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "391",
+    "course_code": "EBH 391",
+    "title": "Topics in Human Evolutionary Biology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "401",
+    "course_code": "EBH 401",
+    "title": "Seminar in Evolutionary Biology of Humans",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "404",
+    "course_code": "EBH 404",
+    "title": "Evolution of Parenting",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "405",
+    "course_code": "EBH 405",
+    "title": "Life History and Development",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "444",
+    "course_code": "EBH 444",
+    "title": "Experiential Learning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "447",
+    "course_code": "EBH 447",
+    "title": "Readings in Human Evolutionary Biology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "458",
+    "course_code": "EBH 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "459",
+    "course_code": "EBH 459",
+    "title": "Write Effectively in Human Evolutionary Biology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "475",
+    "course_code": "EBH 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "476",
+    "course_code": "EBH 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "487",
+    "course_code": "EBH 487",
+    "title": "Independent Research in Human Evolutionary Biology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "488",
+    "course_code": "EBH 488",
+    "title": "Internship in Human Evolutionary Biology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "495",
+    "course_code": "EBH 495",
+    "title": "Senior Honors Project in Human Evolutionary Biology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "EBH",
+    "course_number": "496",
+    "course_code": "EBH 496",
+    "title": "Senior Honors Project in Human Evolutionary Biology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 1
+  },
+  {
+    "subject": "ECO",
+    "course_number": "SBS/AP",
+    "course_code": "ECO SBS/AP",
+    "title": "AP Microeconomics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "108",
+    "course_code": "ECO 108",
+    "title": "Introduction to Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "110",
+    "course_code": "ECO 110",
+    "title": "Introduction to Microeconomics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "111",
+    "course_code": "ECO 111",
+    "title": "Introduction to Macroeconomics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "303",
+    "course_code": "ECO 303",
+    "title": "Intermediate Microeconomic Theory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "305",
+    "course_code": "ECO 305",
+    "title": "Intermediate Macroeconomic Theory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "310",
+    "course_code": "ECO 310",
+    "title": "Basic Computational Methods in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "320",
+    "course_code": "ECO 320",
+    "title": "Mathematical Statistics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "321",
+    "course_code": "ECO 321",
+    "title": "Econometrics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "322",
+    "course_code": "ECO 322",
+    "title": "Data Science and Machine Learning in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "323",
+    "course_code": "ECO 323",
+    "title": "Applied Microeconomics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "324",
+    "course_code": "ECO 324",
+    "title": "Empirical Industrial Organization",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "325",
+    "course_code": "ECO 325",
+    "title": "International Trade",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "326",
+    "course_code": "ECO 326",
+    "title": "Industrial Organization",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "327",
+    "course_code": "ECO 327",
+    "title": "Health Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "329",
+    "course_code": "ECO 329",
+    "title": "Urban Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "334",
+    "course_code": "ECO 334",
+    "title": "Demographic Economics of Developing Countries",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "335",
+    "course_code": "ECO 335",
+    "title": "Economic Development",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "337",
+    "course_code": "ECO 337",
+    "title": "Labor Theory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "348",
+    "course_code": "ECO 348",
+    "title": "Analysis for Managerial Decision Making",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "351",
+    "course_code": "ECO 351",
+    "title": "Special Topics in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "352",
+    "course_code": "ECO 352",
+    "title": "Special Topics in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "354",
+    "course_code": "ECO 354",
+    "title": "Special Topics in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "355",
+    "course_code": "ECO 355",
+    "title": "Game Theory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "356",
+    "course_code": "ECO 356",
+    "title": "Special Topics in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "357",
+    "course_code": "ECO 357",
+    "title": "Special Topics in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "359",
+    "course_code": "ECO 359",
+    "title": "Reading and Writing in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "360",
+    "course_code": "ECO 360",
+    "title": "Money and Banking",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "362",
+    "course_code": "ECO 362",
+    "title": "Financial Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "364",
+    "course_code": "ECO 364",
+    "title": "Thinking Strategically",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "373",
+    "course_code": "ECO 373",
+    "title": "Economics of Environment and Natural Resources",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "383",
+    "course_code": "ECO 383",
+    "title": "Public Finance",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "385",
+    "course_code": "ECO 385",
+    "title": "U.S. Economic History",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "386",
+    "course_code": "ECO 386",
+    "title": "International Finance",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "389",
+    "course_code": "ECO 389",
+    "title": "Corporate Finance",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "444",
+    "course_code": "ECO 444",
+    "title": "Experiential Learning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "459",
+    "course_code": "ECO 459",
+    "title": "Write Effectively in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "475",
+    "course_code": "ECO 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "476",
+    "course_code": "ECO 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "487",
+    "course_code": "ECO 487",
+    "title": "Independent Research in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "488",
+    "course_code": "ECO 488",
+    "title": "Internship in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "500",
+    "course_code": "ECO 500",
+    "title": "Microeconomics I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "501",
+    "course_code": "ECO 501",
+    "title": "Microeconomics II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "510",
+    "course_code": "ECO 510",
+    "title": "Macroeconomics I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "511",
+    "course_code": "ECO 511",
+    "title": "Macroeconomics II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "520",
+    "course_code": "ECO 520",
+    "title": "Mathematical Statistics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "521",
+    "course_code": "ECO 521",
+    "title": "Econometrics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "522",
+    "course_code": "ECO 522",
+    "title": "Applied Econometrics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "531",
+    "course_code": "ECO 531",
+    "title": "Introduction to Computational Methods in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "590",
+    "course_code": "ECO 590",
+    "title": "Mathematical Foundations of Contemporary Economic Theory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "597",
+    "course_code": "ECO 597",
+    "title": "Masters Project in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "599",
+    "course_code": "ECO 599",
+    "title": "Research in Special Topics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "604",
+    "course_code": "ECO 604",
+    "title": "Game Theory I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "605",
+    "course_code": "ECO 605",
+    "title": "Game Theory II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "606",
+    "course_code": "ECO 606",
+    "title": "Advanced Topics in Strategic Behavior in Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "609",
+    "course_code": "ECO 609",
+    "title": "Research Methods in Economic Theory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "610",
+    "course_code": "ECO 610",
+    "title": "Special Topics: Advanced Macroeconomics Theory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "612",
+    "course_code": "ECO 612",
+    "title": "Computational Economics and Dynamic Modeling",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "613",
+    "course_code": "ECO 613",
+    "title": "Computational Macroeconomics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "615",
+    "course_code": "ECO 615",
+    "title": "Advanced Macroeconomics workshop",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "623",
+    "course_code": "ECO 623",
+    "title": "Introduction to Computational",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "629",
+    "course_code": "ECO 629",
+    "title": "Studies in Quantitative Methods",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "636",
+    "course_code": "ECO 636",
+    "title": "Industrial Organization I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "637",
+    "course_code": "ECO 637",
+    "title": "Industrial Organization II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "640",
+    "course_code": "ECO 640",
+    "title": "Labor Economics I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "641",
+    "course_code": "ECO 641",
+    "title": "Labor Economics II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "642",
+    "course_code": "ECO 642",
+    "title": "Demographic Economics I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "643",
+    "course_code": "ECO 643",
+    "title": "Demographic Economics II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "645",
+    "course_code": "ECO 645",
+    "title": "Health Economics I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "646",
+    "course_code": "ECO 646",
+    "title": "Health Economics II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "647",
+    "course_code": "ECO 647",
+    "title": "Research Methods in Applied Microeconomics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "648",
+    "course_code": "ECO 648",
+    "title": "Advanced Topics in Empirical Microeconomics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "690",
+    "course_code": "ECO 690",
+    "title": "Seminar in Applied Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "695",
+    "course_code": "ECO 695",
+    "title": "Research Workshop",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "698",
+    "course_code": "ECO 698",
+    "title": "Practicum in Teaching",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "699",
+    "course_code": "ECO 699",
+    "title": "Dissertation Research on Campus",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "700",
+    "course_code": "ECO 700",
+    "title": "Dissertation Research off Campus - Domestic",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "701",
+    "course_code": "ECO 701",
+    "title": "Dissertation Research off Campus - International",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "ECO",
+    "course_number": "800",
+    "course_code": "ECO 800",
+    "title": "Summer Research",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 4
+  },
+  {
+    "subject": "EDL",
+    "course_number": "501",
+    "course_code": "EDL 501",
+    "title": "Educational Leadership Theory I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "502",
+    "course_code": "EDL 502",
+    "title": "Educational Leadership Theory II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "503",
+    "course_code": "EDL 503",
+    "title": "Educational Leadership Practice",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "515",
+    "course_code": "EDL 515",
+    "title": "School District Leadership",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "520",
+    "course_code": "EDL 520",
+    "title": "School Finance",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "525",
+    "course_code": "EDL 525",
+    "title": "Managerial Accounting for the School Business Official",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "528",
+    "course_code": "EDL 528",
+    "title": "School Law",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "541",
+    "course_code": "EDL 541",
+    "title": "School Building Leadership",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "555",
+    "course_code": "EDL 555",
+    "title": "Supervision of Instruction",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "565",
+    "course_code": "EDL 565",
+    "title": "Internship in School District Business Leader",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "566",
+    "course_code": "EDL 566",
+    "title": "Internship Seminar for School District Business Leader",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "571",
+    "course_code": "EDL 571",
+    "title": "School Business Administration",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "572",
+    "course_code": "EDL 572",
+    "title": "School Personnel Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "585",
+    "course_code": "EDL 585",
+    "title": "Internship: Educational Leadership - School District/Building Leader Certifications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "586",
+    "course_code": "EDL 586",
+    "title": "Internship Seminar:Education Leadership - School District/Building Leader Certifications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDL",
+    "course_number": "595",
+    "course_code": "EDL 595",
+    "title": "Educational Leadership Research Project Seminar",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 5
+  },
+  {
+    "subject": "EDP",
+    "course_number": "301",
+    "course_code": "EDP 301",
+    "title": "Urban Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 6
+  },
+  {
+    "subject": "EDP",
+    "course_number": "302",
+    "course_code": "EDP 302",
+    "title": "Sustainable Planning and Development",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 6
+  },
+  {
+    "subject": "EDP",
+    "course_number": "303",
+    "course_code": "EDP 303",
+    "title": "Spatial Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 6
+  },
+  {
+    "subject": "EDP",
+    "course_number": "305",
+    "course_code": "EDP 305",
+    "title": "Risk Assessment and Sustainable Development",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 6
+  },
+  {
+    "subject": "EDP",
+    "course_number": "307",
+    "course_code": "EDP 307",
+    "title": "Theories and Design of Urban Settlements",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 6
+  },
+  {
+    "subject": "EDP",
+    "course_number": "309",
+    "course_code": "EDP 309",
+    "title": "Planning: Policies and Regulations",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 6
+  },
+  {
+    "subject": "EDP",
+    "course_number": "404",
+    "course_code": "EDP 404",
+    "title": "Environmental Design Project",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 6
+  },
+  {
+    "subject": "EDP",
+    "course_number": "444",
+    "course_code": "EDP 444",
+    "title": "Experiential Learning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 6
+  },
+  {
+    "subject": "EDP",
+    "course_number": "487",
+    "course_code": "EDP 487",
+    "title": "Research in Environmental Design, Policy, & Planning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 6
+  },
+  {
+    "subject": "EDP",
+    "course_number": "488",
+    "course_code": "EDP 488",
+    "title": "Internship in Environmental Design, Policy, & Planning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 6
+  },
+  {
+    "subject": "EDT",
+    "course_number": "531",
+    "course_code": "EDT 531",
+    "title": "Innovative and Advanced Technologies in Education: Foundations",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 7
+  },
+  {
+    "subject": "EDT",
+    "course_number": "532",
+    "course_code": "EDT 532",
+    "title": "Innovative and Advanced Technologies in Education: Educational Best Practices",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 7
+  },
+  {
+    "subject": "EDT",
+    "course_number": "533",
+    "course_code": "EDT 533",
+    "title": "Innovative and Advanced Technologies in Education: Curriculum Integration",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 7
+  },
+  {
+    "subject": "EDT",
+    "course_number": "541",
+    "course_code": "EDT 541",
+    "title": "Digital Wellness, AI, and the Ethics of a Connected World",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 7
+  },
+  {
+    "subject": "EDT",
+    "course_number": "544",
+    "course_code": "EDT 544",
+    "title": "Inclusive Technology Integration in Education",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 7
+  },
+  {
+    "subject": "EDT",
+    "course_number": "550",
+    "course_code": "EDT 550",
+    "title": "Integrating Computational Thinking in Classrooms",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 7
+  },
+  {
+    "subject": "EDT",
+    "course_number": "551",
+    "course_code": "EDT 551",
+    "title": "Teaching and Learning Programming",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 7
+  },
+  {
+    "subject": "EDT",
+    "course_number": "552",
+    "course_code": "EDT 552",
+    "title": "Infusing the Big Ideas of Computer Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 7
+  },
+  {
+    "subject": "EDT",
+    "course_number": "553",
+    "course_code": "EDT 553",
+    "title": "Teaching and Learning AP Computer Science A",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 7
+  },
+  {
+    "subject": "EDT",
+    "course_number": "554",
+    "course_code": "EDT 554",
+    "title": "Curriculum Design for Computer Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 7
+  },
+  {
+    "subject": "EEL",
+    "course_number": "111",
+    "course_code": "EEL 111",
+    "title": "Elementary Selected East European Language I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 8
+  },
+  {
+    "subject": "EEL",
+    "course_number": "112",
+    "course_code": "EEL 112",
+    "title": "Elementary Selected East European Language II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 8
+  },
+  {
+    "subject": "EEO",
+    "course_number": "124",
+    "course_code": "EEO 124",
+    "title": "C Programming for Electrical Engineers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "218",
+    "course_code": "EEO 218",
+    "title": "Digital Logic Design",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "219",
+    "course_code": "EEO 219",
+    "title": "Digital Logic Design Laboratory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "224",
+    "course_code": "EEO 224",
+    "title": "Object Oriented Programming for Electrical and Computer Engineers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "271",
+    "course_code": "EEO 271",
+    "title": "Electrical Circuit Analysis",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "300",
+    "course_code": "EEO 300",
+    "title": "Technical Communication for Electrical Engineers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "301",
+    "course_code": "EEO 301",
+    "title": "Signals and Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "302",
+    "course_code": "EEO 302",
+    "title": "Engineering Ethics and Societal Impact",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "303",
+    "course_code": "EEO 303",
+    "title": "Digital Signal Processing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "304",
+    "course_code": "EEO 304",
+    "title": "Electronic Instrumentation and Operational Amplifiers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "306",
+    "course_code": "EEO 306",
+    "title": "Random Signals and Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "311",
+    "course_code": "EEO 311",
+    "title": "Electronics Circuits II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "314",
+    "course_code": "EEO 314",
+    "title": "Mos Transistor Modeling",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "315",
+    "course_code": "EEO 315",
+    "title": "Electronics Circuits I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "316",
+    "course_code": "EEO 316",
+    "title": "Integrated Electronic Devices and Circuits",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "319",
+    "course_code": "EEO 319",
+    "title": "Electromagnetic Waves and Transmission Lines",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "331",
+    "course_code": "EEO 331",
+    "title": "Semiconductor Devices",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "346",
+    "course_code": "EEO 346",
+    "title": "Computer Communications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "352",
+    "course_code": "EEO 352",
+    "title": "Electronics Laboratory I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "353",
+    "course_code": "EEO 353",
+    "title": "Electronics Laboratory II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "366",
+    "course_code": "EEO 366",
+    "title": "Design using Programmable Mixed-Signal Systems-on-Chip",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "388",
+    "course_code": "EEO 388",
+    "title": "Foundations of Machine Learning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "414",
+    "course_code": "EEO 414",
+    "title": "Fundamentals of Low Noise Electronics for Sensors",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "425",
+    "course_code": "EEO 425",
+    "title": "Electric Machinery and Energy Conversion",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "440",
+    "course_code": "EEO 440",
+    "title": "Engineering Design I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "441",
+    "course_code": "EEO 441",
+    "title": "Engineering Design II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "470",
+    "course_code": "EEO 470",
+    "title": "Renewable Distributed Generation and Storage",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "475",
+    "course_code": "EEO 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "482",
+    "course_code": "EEO 482",
+    "title": "Power Systems Engineering I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "488",
+    "course_code": "EEO 488",
+    "title": "Internship in Electrical Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EEO",
+    "course_number": "499",
+    "course_code": "EEO 499",
+    "title": "Research in Electrical Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 9
+  },
+  {
+    "subject": "EGL",
+    "course_number": "111",
+    "course_code": "EGL 111",
+    "title": "World Literature: Ancient",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "112",
+    "course_code": "EGL 112",
+    "title": "World Literature: Modern and Contemporary",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "121",
+    "course_code": "EGL 121",
+    "title": "Global Film Traditions",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "130",
+    "course_code": "EGL 130",
+    "title": "Literature, Science and Technology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "135",
+    "course_code": "EGL 135",
+    "title": "Literature, Film, and the Environment",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "140",
+    "course_code": "EGL 140",
+    "title": "Shakespeare in Performance",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "150",
+    "course_code": "EGL 150",
+    "title": "Can Literature Save Your Life?",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "191",
+    "course_code": "EGL 191",
+    "title": "Poetry: The Art of Verse",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "192",
+    "course_code": "EGL 192",
+    "title": "Fiction: The Art of the Story",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "193",
+    "course_code": "EGL 193",
+    "title": "Drama: Character on Stage and Page",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "194",
+    "course_code": "EGL 194",
+    "title": "Film: Mastering the Movies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "204",
+    "course_code": "EGL 204",
+    "title": "Literary Analysis and Argumentation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "205",
+    "course_code": "EGL 205",
+    "title": "Survey of British Literature I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "206",
+    "course_code": "EGL 206",
+    "title": "Survey of British Literature II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "207",
+    "course_code": "EGL 207",
+    "title": "History of the English Language",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "208",
+    "course_code": "EGL 208",
+    "title": "Critical Theories and Pedagogies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "210",
+    "course_code": "EGL 210",
+    "title": "Literature, Medicine, and Ethics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "212",
+    "course_code": "EGL 212",
+    "title": "Literature in the Data Age",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "217",
+    "course_code": "EGL 217",
+    "title": "American Literature I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "218",
+    "course_code": "EGL 218",
+    "title": "American Literature II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "220",
+    "course_code": "EGL 220",
+    "title": "Critical Approaches to the Cinema",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "224",
+    "course_code": "EGL 224",
+    "title": "20th-Century Literatures in English",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "226",
+    "course_code": "EGL 226",
+    "title": "20th-Century American Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "231",
+    "course_code": "EGL 231",
+    "title": "Saints and Fools",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "232",
+    "course_code": "EGL 232",
+    "title": "Rebels and Tyrants",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "243",
+    "course_code": "EGL 243",
+    "title": "Shakespeare: The Major Works",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "249",
+    "course_code": "EGL 249",
+    "title": "African-American Literature and Music in the 19th and 20th Centuries",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "250",
+    "course_code": "EGL 250",
+    "title": "Introduction to English Studies for STEM Majors",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "260",
+    "course_code": "EGL 260",
+    "title": "World Mythology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "261",
+    "course_code": "EGL 261",
+    "title": "The Bible as Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "266",
+    "course_code": "EGL 266",
+    "title": "The 20th-Century Novel",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "272",
+    "course_code": "EGL 272",
+    "title": "American Narratives of Race and Justice",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "274",
+    "course_code": "EGL 274",
+    "title": "African-American Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "276",
+    "course_code": "EGL 276",
+    "title": "Feminism: Literature and Cultural Contexts",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "285",
+    "course_code": "EGL 285",
+    "title": "Writing Workshop: Fiction",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "286",
+    "course_code": "EGL 286",
+    "title": "Writing Workshop: Poetry",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "290",
+    "course_code": "EGL 290",
+    "title": "What is Public Health? A Humanities Approach",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "300",
+    "course_code": "EGL 300",
+    "title": "Old English Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "301",
+    "course_code": "EGL 301",
+    "title": "Authors, Periods, Topics, or Genres, with Intensive Writing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "303",
+    "course_code": "EGL 303",
+    "title": "Genre or Media",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "304",
+    "course_code": "EGL 304",
+    "title": "Renaissance Literature in English",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "305",
+    "course_code": "EGL 305",
+    "title": "The Pacific, Travel & Empire",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "307",
+    "course_code": "EGL 307",
+    "title": "Graphic Narratives",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "308",
+    "course_code": "EGL 308",
+    "title": "Single Author",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "309",
+    "course_code": "EGL 309",
+    "title": "Interdisciplinary Study of Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "311",
+    "course_code": "EGL 311",
+    "title": "Introduction to Literary Theory and Criticism",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "317",
+    "course_code": "EGL 317",
+    "title": "Energy Humanities and Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "319",
+    "course_code": "EGL 319",
+    "title": "Ecology and Evolution in American Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "320",
+    "course_code": "EGL 320",
+    "title": "Modern and Contemporary Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "325",
+    "course_code": "EGL 325",
+    "title": "Screenwriting",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "328",
+    "course_code": "EGL 328",
+    "title": "Documentary Theatre Creation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "330",
+    "course_code": "EGL 330",
+    "title": "Public Humanities Workshop",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "333",
+    "course_code": "EGL 333",
+    "title": "The Italian-American Experience in Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "344",
+    "course_code": "EGL 344",
+    "title": "Shakespeare and Music",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "345",
+    "course_code": "EGL 345",
+    "title": "Shakespeare I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "346",
+    "course_code": "EGL 346",
+    "title": "Shakespeare II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "351",
+    "course_code": "EGL 351",
+    "title": "Documentary Cinema: History, Theory, Practice",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "353",
+    "course_code": "EGL 353",
+    "title": "Law and Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "358",
+    "course_code": "EGL 358",
+    "title": "Nation and Migration in Transnational Cinema",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "360",
+    "course_code": "EGL 360",
+    "title": "Young Adult Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "361",
+    "course_code": "EGL 361",
+    "title": "Poetry in English",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "362",
+    "course_code": "EGL 362",
+    "title": "Drama in English",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "364",
+    "course_code": "EGL 364",
+    "title": "Prose in English",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "367",
+    "course_code": "EGL 367",
+    "title": "Contemporary African-American Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "368",
+    "course_code": "EGL 368",
+    "title": "Caribbean and American Connections in Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "369",
+    "course_code": "EGL 369",
+    "title": "Topics in Race and Ethnicity in American Literatures and Cultures",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "370",
+    "course_code": "EGL 370",
+    "title": "Literature and Ethics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "371",
+    "course_code": "EGL 371",
+    "title": "Topics in Gender Studies in Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "372",
+    "course_code": "EGL 372",
+    "title": "Topics in Women and Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "373",
+    "course_code": "EGL 373",
+    "title": "Literature in English from Non-Western Cultures",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "374",
+    "course_code": "EGL 374",
+    "title": "English Literature in Relation to Other Literatures",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "376",
+    "course_code": "EGL 376",
+    "title": "The Literature of Imperialism",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "378",
+    "course_code": "EGL 378",
+    "title": "Contemporary Native American Fiction",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "379",
+    "course_code": "EGL 379",
+    "title": "Native American Texts and Contexts",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "380",
+    "course_code": "EGL 380",
+    "title": "Senior Seminar",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "381",
+    "course_code": "EGL 381",
+    "title": "Advanced Analytic and Argumentative Writing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "382",
+    "course_code": "EGL 382",
+    "title": "Black Women's Literature of the African Diaspora",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "(383)",
+    "course_code": "EGL (383)",
+    "title": "Writing Workshop: Creative Nonfiction ** available as of 01/01/2027",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "385",
+    "course_code": "EGL 385",
+    "title": "Advanced Fiction Workshop",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "386",
+    "course_code": "EGL 386",
+    "title": "Advanced Poetry Workshop",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "387",
+    "course_code": "EGL 387",
+    "title": "Playwriting",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "389",
+    "course_code": "EGL 389",
+    "title": "Science Fiction",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "390",
+    "course_code": "EGL 390",
+    "title": "Topics in American or Anglophone Literary History",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "391",
+    "course_code": "EGL 391",
+    "title": "Topics in British Literary History Pre-1800",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "392",
+    "course_code": "EGL 392",
+    "title": "Topics in British Literary History After 1750",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "394",
+    "course_code": "EGL 394",
+    "title": "Topics in Literary and Cultural Studies of Science and Technology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "395",
+    "course_code": "EGL 395",
+    "title": "Topics in Literary and Cultural Studies of Europe",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "397",
+    "course_code": "EGL 397",
+    "title": "Topics in Literary and Cultural Studies in Asia, Africa, and Latin America",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "399",
+    "course_code": "EGL 399",
+    "title": "Topics in American Literary and Cultural Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "400",
+    "course_code": "EGL 400",
+    "title": "Experiential Learning, Speak Effectively, Practice Critical and Ethical Reasoning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "440",
+    "course_code": "EGL 440",
+    "title": "Performance and Technology in Teaching Literature and Composition",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "441",
+    "course_code": "EGL 441",
+    "title": "Methods of Instruction in Literature and Composition",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "444",
+    "course_code": "EGL 444",
+    "title": "Experiential Learning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "449",
+    "course_code": "EGL 449",
+    "title": "Field Experience, Grades 7-12",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "450",
+    "course_code": "EGL 450",
+    "title": "Field Experience, Grades 7-12",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "451",
+    "course_code": "EGL 451",
+    "title": "Supervised Student Teaching - English; Middle Level Grades 7-9",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "452",
+    "course_code": "EGL 452",
+    "title": "Supervised Student Teaching - English; High School Grades 10-12",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "454",
+    "course_code": "EGL 454",
+    "title": "Student Teaching Seminar",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "458",
+    "course_code": "EGL 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "475",
+    "course_code": "EGL 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "476",
+    "course_code": "EGL 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "487",
+    "course_code": "EGL 487",
+    "title": "Independent Project",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "488",
+    "course_code": "EGL 488",
+    "title": "Internship",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "491",
+    "course_code": "EGL 491",
+    "title": "Honors Seminar: Critical, Literary or Media History",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "492",
+    "course_code": "EGL 492",
+    "title": "Honors Seminar: Theories and Methods",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "494",
+    "course_code": "EGL 494",
+    "title": "Honors Practicum: Research",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "496",
+    "course_code": "EGL 496",
+    "title": "Senior Honors Project",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "501",
+    "course_code": "EGL 501",
+    "title": "Studies in Chaucer",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "502",
+    "course_code": "EGL 502",
+    "title": "Studies in Shakespeare",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "503",
+    "course_code": "EGL 503",
+    "title": "Studies in Milton",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "505",
+    "course_code": "EGL 505",
+    "title": "Studies in Genre",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "506",
+    "course_code": "EGL 506",
+    "title": "Studies in Literary Theory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "508",
+    "course_code": "EGL 508",
+    "title": "Critical Theories and Pedagogies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "509",
+    "course_code": "EGL 509",
+    "title": "Studies in Language and Linguistics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "510",
+    "course_code": "EGL 510",
+    "title": "Old English Language and Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "515",
+    "course_code": "EGL 515",
+    "title": "Middle English Language and Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "520",
+    "course_code": "EGL 520",
+    "title": "Studies in the Renaissance",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "525",
+    "course_code": "EGL 525",
+    "title": "17th-Century Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "530",
+    "course_code": "EGL 530",
+    "title": "Studies in Restoration Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "535",
+    "course_code": "EGL 535",
+    "title": "Studies in Neoclassicism",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "540",
+    "course_code": "EGL 540",
+    "title": "Studies in Romanticism",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "545",
+    "course_code": "EGL 545",
+    "title": "Studies in Victorian Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "547",
+    "course_code": "EGL 547",
+    "title": "Late 19th-Century British Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "550",
+    "course_code": "EGL 550",
+    "title": "20th-Century British Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "555",
+    "course_code": "EGL 555",
+    "title": "Studies in Irish Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "560",
+    "course_code": "EGL 560",
+    "title": "Studies in Early American Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "565",
+    "course_code": "EGL 565",
+    "title": "19th-Century American Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "570",
+    "course_code": "EGL 570",
+    "title": "20th-Century American Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "575",
+    "course_code": "EGL 575",
+    "title": "British and American Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "582",
+    "course_code": "EGL 582",
+    "title": "Drama Workshop",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "584",
+    "course_code": "EGL 584",
+    "title": "Topics in Genre Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "585",
+    "course_code": "EGL 585",
+    "title": "Topics in Cultural Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "586",
+    "course_code": "EGL 586",
+    "title": "Topics in Gender Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "587",
+    "course_code": "EGL 587",
+    "title": "Topics in Race, Ethnic, or Diaspora Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "588",
+    "course_code": "EGL 588",
+    "title": "Writing Workshop",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "(592)",
+    "course_code": "EGL (592)",
+    "title": "Writing Pedagogies ** available as of 01/01/2027",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "592",
+    "course_code": "EGL 592",
+    "title": "Problems in Teaching Writing or Composition",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "594",
+    "course_code": "EGL 594",
+    "title": "Contexts of Literary Study",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "597",
+    "course_code": "EGL 597",
+    "title": "Practicum in Methods of Research",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "598",
+    "course_code": "EGL 598",
+    "title": "Thesis Research",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "599",
+    "course_code": "EGL 599",
+    "title": "Independent Study",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "600",
+    "course_code": "EGL 600",
+    "title": "Proseminar: The Discipline of Literary Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "601",
+    "course_code": "EGL 601",
+    "title": "Problems in History and Structure of the English Language",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "602",
+    "course_code": "EGL 602",
+    "title": "Problems in Bibliography, Editing, and Textual Criticism",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "603",
+    "course_code": "EGL 603",
+    "title": "Problems in Literary Theory and Criticism",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "604",
+    "course_code": "EGL 604",
+    "title": "Problems in Literary Analysis",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "605",
+    "course_code": "EGL 605",
+    "title": "Problems in Convention and Genre",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "606",
+    "course_code": "EGL 606",
+    "title": "Period and Tradition",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "607",
+    "course_code": "EGL 607",
+    "title": "Individual Authors",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "608",
+    "course_code": "EGL 608",
+    "title": "Problems in the Relationship of Literature to Other Disciplines",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "611",
+    "course_code": "EGL 611",
+    "title": "Critical Theory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "612",
+    "course_code": "EGL 612",
+    "title": "Theories in Composition",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "613",
+    "course_code": "EGL 613",
+    "title": "Research in Composition",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "614",
+    "course_code": "EGL 614",
+    "title": "Topics in Composition and Writing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "615",
+    "course_code": "EGL 615",
+    "title": "Independent Study",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "620",
+    "course_code": "EGL 620",
+    "title": "Literary Studies Research and Writing Seminar",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "688",
+    "course_code": "EGL 688",
+    "title": "Experiential Learning/Internship",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "690",
+    "course_code": "EGL 690",
+    "title": "Directed Readings",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "695",
+    "course_code": "EGL 695",
+    "title": "Methods of Teaching English",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "697",
+    "course_code": "EGL 697",
+    "title": "Practicum in Teaching English Literature",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "699",
+    "course_code": "EGL 699",
+    "title": "Dissertation Research on Campus",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "700",
+    "course_code": "EGL 700",
+    "title": "Dissertation Research off Campus - Domestic",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "701",
+    "course_code": "EGL 701",
+    "title": "Dissertation Research off Campus - International",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EGL",
+    "course_number": "800",
+    "course_code": "EGL 800",
+    "title": "SUMMER RESEARCH",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 12
+  },
+  {
+    "subject": "EHM",
+    "course_number": "501",
+    "course_code": "EHM 501",
+    "title": "Environmental Humanities & Ecoliteracy",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 14
+  },
+  {
+    "subject": "EHM",
+    "course_number": "502",
+    "course_code": "EHM 502",
+    "title": "Environmental Media, Film, Writing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 14
+  },
+  {
+    "subject": "EHM",
+    "course_number": "503",
+    "course_code": "EHM 503",
+    "title": "Ecofeminism",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 14
+  },
+  {
+    "subject": "EHM",
+    "course_number": "505",
+    "course_code": "EHM 505",
+    "title": "Environmental Narrative Nonfiction",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 14
+  },
+  {
+    "subject": "EHM",
+    "course_number": "560",
+    "course_code": "EHM 560",
+    "title": "Topics in Sustainability and Study Abroad",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 14
+  },
+  {
+    "subject": "EMP",
+    "course_number": "501",
+    "course_code": "EMP 501",
+    "title": "Leadership",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "502",
+    "course_code": "EMP 502",
+    "title": "Engineering Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "504",
+    "course_code": "EMP 504",
+    "title": "Quantitative Methods in Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "506",
+    "course_code": "EMP 506",
+    "title": "Strategic Technology Analysis",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "507",
+    "course_code": "EMP 507",
+    "title": "Research and Special Topics in Global Industrial Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "509",
+    "course_code": "EMP 509",
+    "title": "Enterprise Information and Knowledge Systems Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "511",
+    "course_code": "EMP 511",
+    "title": "Starting a Business Venture",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "517",
+    "course_code": "EMP 517",
+    "title": "Quality and Value Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "518",
+    "course_code": "EMP 518",
+    "title": "Project Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "521",
+    "course_code": "EMP 521",
+    "title": "Developing New Products",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "522",
+    "course_code": "EMP 522",
+    "title": "Strategic Marketing: Planning and Process",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "523",
+    "course_code": "EMP 523",
+    "title": "International Business and Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "524",
+    "course_code": "EMP 524",
+    "title": "Modern Transportation Systems and Logistics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "525",
+    "course_code": "EMP 525",
+    "title": "Technology Assessment for Emerging Technologies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "530",
+    "course_code": "EMP 530",
+    "title": "Intro of Big Data & Data Science for Technological Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "531",
+    "course_code": "EMP 531",
+    "title": "Data Mining for Technological Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "(532)",
+    "course_code": "EMP (532)",
+    "title": "Responsible AI and Social Computing ** available as of 01/01/2027",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "532",
+    "course_code": "EMP 532",
+    "title": "Big Data Systems for Technology Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "EMP",
+    "course_number": "572",
+    "course_code": "EMP 572",
+    "title": "Special Topics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ENS",
+    "course_number": "101",
+    "course_code": "ENS 101",
+    "title": "Prospects for Planet Earth",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 17
+  },
+  {
+    "subject": "ENS",
+    "course_number": "119",
+    "course_code": "ENS 119",
+    "title": "Physics for Environmental Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 17
+  },
+  {
+    "subject": "ENS",
+    "course_number": "301",
+    "course_code": "ENS 301",
+    "title": "Contemporary Environmental Issues and Policies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 17
+  },
+  {
+    "subject": "ENS",
+    "course_number": "311",
+    "course_code": "ENS 311",
+    "title": "Ecosystem Ecology and the Global Environment",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 17
+  },
+  {
+    "subject": "ENS",
+    "course_number": "312",
+    "course_code": "ENS 312",
+    "title": "Population, Technology, and the Environment",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 17
+  },
+  {
+    "subject": "ENS",
+    "course_number": "333",
+    "course_code": "ENS 333",
+    "title": "Environmental Law",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 17
+  },
+  {
+    "subject": "ENS",
+    "course_number": "339",
+    "course_code": "ENS 339",
+    "title": "Economics of Coastal and Marine Ecosystems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 17
+  },
+  {
+    "subject": "ENS",
+    "course_number": "395",
+    "course_code": "ENS 395",
+    "title": "Topics in Environmental Sciences",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 17
+  },
+  {
+    "subject": "ENS",
+    "course_number": "443",
+    "course_code": "ENS 443",
+    "title": "Environmental Problem Solving",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 17
+  },
+  {
+    "subject": "ENS",
+    "course_number": "447",
+    "course_code": "ENS 447",
+    "title": "Readings in Environmental Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 17
+  },
+  {
+    "subject": "ENS",
+    "course_number": "487",
+    "course_code": "ENS 487",
+    "title": "Independent Research in Environmental Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 17
+  },
+  {
+    "subject": "ENS",
+    "course_number": "488",
+    "course_code": "ENS 488",
+    "title": "Internship in Environmental Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 17
+  },
+  {
+    "subject": "ENV",
+    "course_number": "115",
+    "course_code": "ENV 115",
+    "title": "Chemistry, Life, and Environment",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 18
+  },
+  {
+    "subject": "ENV",
+    "course_number": "301",
+    "course_code": "ENV 301",
+    "title": "Sustainability of the Long Island Pine Barrens",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 18
+  },
+  {
+    "subject": "ENV",
+    "course_number": "304",
+    "course_code": "ENV 304",
+    "title": "Global Environmental Change",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 18
+  },
+  {
+    "subject": "ENV",
+    "course_number": "310",
+    "course_code": "ENV 310",
+    "title": "Sustainability and Renewable Energy - Costa Rica",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 18
+  },
+  {
+    "subject": "ENV",
+    "course_number": "315",
+    "course_code": "ENV 315",
+    "title": "Principles and Applications of Groundwater Hydrology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 18
+  },
+  {
+    "subject": "ENV",
+    "course_number": "316",
+    "course_code": "ENV 316",
+    "title": "Coastal Zone Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 18
+  },
+  {
+    "subject": "ENV",
+    "course_number": "320",
+    "course_code": "ENV 320",
+    "title": "Chemistry for Environmental Scientists",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 18
+  },
+  {
+    "subject": "ENV",
+    "course_number": "339",
+    "course_code": "ENV 339",
+    "title": "Economics of Coastal and Marine Ecosystems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 18
+  },
+  {
+    "subject": "ENV",
+    "course_number": "340",
+    "course_code": "ENV 340",
+    "title": "Contemporary Topics in Environmental Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 18
+  },
+  {
+    "subject": "ENV",
+    "course_number": "444",
+    "course_code": "ENV 444",
+    "title": "Experiential Learning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 18
+  },
+  {
+    "subject": "ENV",
+    "course_number": "487",
+    "course_code": "ENV 487",
+    "title": "Research in Environmental Sciences",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 18
+  },
+  {
+    "subject": "ENV",
+    "course_number": "488",
+    "course_code": "ENV 488",
+    "title": "Internship in Coastal Environmental Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 18
+  },
+  {
+    "subject": "ESE",
+    "course_number": "111",
+    "course_code": "ESE 111",
+    "title": "Making with Arduino: Hardware and Programming",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "118",
+    "course_code": "ESE 118",
+    "title": "Digital Logic Design",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "121",
+    "course_code": "ESE 121",
+    "title": "Introduction to Audio Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "122",
+    "course_code": "ESE 122",
+    "title": "Discrete Mathematics for Engineers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "123",
+    "course_code": "ESE 123",
+    "title": "Introduction to Electrical and Computer Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "124",
+    "course_code": "ESE 124",
+    "title": "Programming Fundamentals",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "188",
+    "course_code": "ESE 188",
+    "title": "Understanding Machine Learning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "201",
+    "course_code": "ESE 201",
+    "title": "Engineering and Technology Entrepreneurship",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "202",
+    "course_code": "ESE 202",
+    "title": "Humanistic Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "224",
+    "course_code": "ESE 224",
+    "title": "Advanced Programming and Data Structures",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "271",
+    "course_code": "ESE 271",
+    "title": "Electrical Circuit Analysis",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "272",
+    "course_code": "ESE 272",
+    "title": "Electronics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "273",
+    "course_code": "ESE 273",
+    "title": "Microelectronic Circuits",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "280",
+    "course_code": "ESE 280",
+    "title": "Embedded Microcontroller Systems Design I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "290",
+    "course_code": "ESE 290",
+    "title": "Transitional Study",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "300",
+    "course_code": "ESE 300",
+    "title": "Technical Communication for Electrical and Computer Engineers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "301",
+    "course_code": "ESE 301",
+    "title": "Engineering Ethics and Societal Impact",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "304",
+    "course_code": "ESE 304",
+    "title": "Applications of Operational Amplifiers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "305",
+    "course_code": "ESE 305",
+    "title": "Deterministic Signals and Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "306",
+    "course_code": "ESE 306",
+    "title": "Random Signals and Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "308",
+    "course_code": "ESE 308",
+    "title": "Quantum Optics for Engineers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "315",
+    "course_code": "ESE 315",
+    "title": "Control System Design",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "319",
+    "course_code": "ESE 319",
+    "title": "Electromagnetic Waves and Transmission Lines",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "323",
+    "course_code": "ESE 323",
+    "title": "Modern Circuit Board Design and Prototyping",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "324",
+    "course_code": "ESE 324",
+    "title": "Advanced Electronics Laboratory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "325",
+    "course_code": "ESE 325",
+    "title": "Modern Sensors",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "326",
+    "course_code": "ESE 326",
+    "title": "Fundamental Algorithms for Automated Electronic Design",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "327",
+    "course_code": "ESE 327",
+    "title": "Fundamental Algorithms for Machine Learning Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "330",
+    "course_code": "ESE 330",
+    "title": "Integrated Electronics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "331",
+    "course_code": "ESE 331",
+    "title": "Semiconductor Devices",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "332",
+    "course_code": "ESE 332",
+    "title": "Quantum Mechanics for Engineers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "333",
+    "course_code": "ESE 333",
+    "title": "Real-Time Operating Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "334",
+    "course_code": "ESE 334",
+    "title": "Introduction to Nanoelectronic Devices",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "335",
+    "course_code": "ESE 335",
+    "title": "Offshore Wind Power System Analysis and Control",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "337",
+    "course_code": "ESE 337",
+    "title": "Digital Signal Processing: Theory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "342",
+    "course_code": "ESE 342",
+    "title": "Communication Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "343",
+    "course_code": "ESE 343",
+    "title": "Mobile Cloud Computing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "344",
+    "course_code": "ESE 344",
+    "title": "Software Techniques for Engineers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "345",
+    "course_code": "ESE 345",
+    "title": "Computer Architecture",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "346",
+    "course_code": "ESE 346",
+    "title": "Computer Communications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "347",
+    "course_code": "ESE 347",
+    "title": "Digital Signal Processing: Implementation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "350",
+    "course_code": "ESE 350",
+    "title": "Electric Power Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "351",
+    "course_code": "ESE 351",
+    "title": "Power Electronics Devices Circuits and Applications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "352",
+    "course_code": "ESE 352",
+    "title": "Electromechanical Energy Converters",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "355",
+    "course_code": "ESE 355",
+    "title": "VLSI System Design",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "356",
+    "course_code": "ESE 356",
+    "title": "Digital System Specification and Modeling",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "358",
+    "course_code": "ESE 358",
+    "title": "Computer Vision",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "360",
+    "course_code": "ESE 360",
+    "title": "Network Security Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "366",
+    "course_code": "ESE 366",
+    "title": "Design using Programmable Mixed-Signal Systems-on-Chip",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "375",
+    "course_code": "ESE 375",
+    "title": "Architectures for Digital Signal Processing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "381",
+    "course_code": "ESE 381",
+    "title": "Embedded Microprocessor Systems Design II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "382",
+    "course_code": "ESE 382",
+    "title": "Digital Design Using VHDL and PLDs",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "388",
+    "course_code": "ESE 388",
+    "title": "Foundations of Machine Learning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "411",
+    "course_code": "ESE 411",
+    "title": "Analog Integrated Circuits",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "412",
+    "course_code": "ESE 412",
+    "title": "Lightwave Devices",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "413",
+    "course_code": "ESE 413",
+    "title": "Introduction to Photovoltaics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "414",
+    "course_code": "ESE 414",
+    "title": "Fundamentals of Low Noise Electronics for Sensors",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "431",
+    "course_code": "ESE 431",
+    "title": "HVDC Grids",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "435",
+    "course_code": "ESE 435",
+    "title": "Power System Analysis",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "440",
+    "course_code": "ESE 440",
+    "title": "Senior Design I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "441",
+    "course_code": "ESE 441",
+    "title": "Senior Design II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "442",
+    "course_code": "ESE 442",
+    "title": "Recent Advances in Communications and Wireless Networks",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "451",
+    "course_code": "ESE 451",
+    "title": "Power Electronics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "452",
+    "course_code": "ESE 452",
+    "title": "Advanced Power Electronics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "457",
+    "course_code": "ESE 457",
+    "title": "Fundamentals of Digital Image Processing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "462",
+    "course_code": "ESE 462",
+    "title": "AI Driven Smart Grids",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "475",
+    "course_code": "ESE 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "476",
+    "course_code": "ESE 476",
+    "title": "Instructional Laboratory Development Practicum",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "481",
+    "course_code": "ESE 481",
+    "title": "Design of Secure IoT Embedded Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "488",
+    "course_code": "ESE 488",
+    "title": "Internship in Electrical/Computer Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "494",
+    "course_code": "ESE 494",
+    "title": "Honors Seminar on Research",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "495",
+    "course_code": "ESE 495",
+    "title": "Honors Research Project",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "499",
+    "course_code": "ESE 499",
+    "title": "Research in Electrical Sciences",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "500",
+    "course_code": "ESE 500",
+    "title": "Introduction to Engineering Education",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "501",
+    "course_code": "ESE 501",
+    "title": "System Specification and Modeling",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "502",
+    "course_code": "ESE 502",
+    "title": "Linear Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "503",
+    "course_code": "ESE 503",
+    "title": "Stochastic Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "505",
+    "course_code": "ESE 505",
+    "title": "Wireless Communications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "506",
+    "course_code": "ESE 506",
+    "title": "Wireless Network",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "507",
+    "course_code": "ESE 507",
+    "title": "Advanced Digital System Design and Generation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "508",
+    "course_code": "ESE 508",
+    "title": "Quantum Optics for Engineers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "509",
+    "course_code": "ESE 509",
+    "title": "Modern Energy Technologies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "511",
+    "course_code": "ESE 511",
+    "title": "Solid-State Electronics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "512",
+    "course_code": "ESE 512",
+    "title": "Introduction to Quantum Systems Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "513",
+    "course_code": "ESE 513",
+    "title": "Introduction to Photovoltaics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "514",
+    "course_code": "ESE 514",
+    "title": "MOSTransistor Modeling",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "515",
+    "course_code": "ESE 515",
+    "title": "Quantum Electronics I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "516",
+    "course_code": "ESE 516",
+    "title": "Integrated Electronic Devices and Circuits I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "517",
+    "course_code": "ESE 517",
+    "title": "Integrated Electronic Devices and Circuits II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "518",
+    "course_code": "ESE 518",
+    "title": "Fundamentals of Low-Noise Electronics for Sensors",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "519",
+    "course_code": "ESE 519",
+    "title": "Semiconductor Lasers and Photodetectors",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "520",
+    "course_code": "ESE 520",
+    "title": "Applied Electromagnetics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "521",
+    "course_code": "ESE 521",
+    "title": "Cyber-Physical Security for Power Grids with Inverter-Based Resources",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "522",
+    "course_code": "ESE 522",
+    "title": "Fiber Optic Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "523",
+    "course_code": "ESE 523",
+    "title": "Quantum Computing and Applications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "525",
+    "course_code": "ESE 525",
+    "title": "Moden Sensors in Artificial Intelligence Applications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "528",
+    "course_code": "ESE 528",
+    "title": "Communication Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "530",
+    "course_code": "ESE 530",
+    "title": "Computer-Aided Design",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "531",
+    "course_code": "ESE 531",
+    "title": "Statistical Learning and Inference",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "532",
+    "course_code": "ESE 532",
+    "title": "Theory of Digital Communication",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "533",
+    "course_code": "ESE 533",
+    "title": "Convex Optimization and Engineering Applications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "534",
+    "course_code": "ESE 534",
+    "title": "Cyber Physical Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "535",
+    "course_code": "ESE 535",
+    "title": "Power System Operation, Markets & Planning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "536",
+    "course_code": "ESE 536",
+    "title": "Switching and Routing in Parallel and Distributed Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "537",
+    "course_code": "ESE 537",
+    "title": "Mobile Sensing Systems & Applications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "538",
+    "course_code": "ESE 538",
+    "title": "Nanoelectronics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "539",
+    "course_code": "ESE 539",
+    "title": "Power Electronics and Motor Drives",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "540",
+    "course_code": "ESE 540",
+    "title": "Reliability Theory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "542",
+    "course_code": "ESE 542",
+    "title": "Product Design Concept Development and Optimization",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "543",
+    "course_code": "ESE 543",
+    "title": "Mobile Cloud Computing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "544",
+    "course_code": "ESE 544",
+    "title": "Network Security Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "545",
+    "course_code": "ESE 545",
+    "title": "Computer Architecture",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "546",
+    "course_code": "ESE 546",
+    "title": "Networking Algorithms and Analysis",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "547",
+    "course_code": "ESE 547",
+    "title": "Digital Signal Processing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "548",
+    "course_code": "ESE 548",
+    "title": "Computer Networks",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "549",
+    "course_code": "ESE 549",
+    "title": "Advanced VLSI System Testing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "550",
+    "course_code": "ESE 550",
+    "title": "Network Management and Planning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "551",
+    "course_code": "ESE 551",
+    "title": "Electronics and Radiation Effects",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "552",
+    "course_code": "ESE 552",
+    "title": "Interconnection Networks",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "554",
+    "course_code": "ESE 554",
+    "title": "Computational Models for Computer Engineers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "555",
+    "course_code": "ESE 555",
+    "title": "Advanced VLSI Systems Design",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "556",
+    "course_code": "ESE 556",
+    "title": "VLSI Physical and Logic Design Automation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "558",
+    "course_code": "ESE 558",
+    "title": "Digital Image Processing I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "559",
+    "course_code": "ESE 559",
+    "title": "EMI in Power Electronics Converters: Generation, Propagation and Mitigation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "561",
+    "course_code": "ESE 561",
+    "title": "Theory of Artificial Intelligence",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "562",
+    "course_code": "ESE 562",
+    "title": "AI Driven Smart Grids",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "563",
+    "course_code": "ESE 563",
+    "title": "Fundamentals of Robotics I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "(564)",
+    "course_code": "ESE (564)",
+    "title": "Robotic Intelligence ** available as of 01/01/2027",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "564",
+    "course_code": "ESE 564",
+    "title": "Artificial Intelligence for Robotics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "565",
+    "course_code": "ESE 565",
+    "title": "Parallel Processing Architectures",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "566",
+    "course_code": "ESE 566",
+    "title": "Hardware-Software Co-Design of Embedded Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "567",
+    "course_code": "ESE 567",
+    "title": "Next-Generation Grid Technologies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "568",
+    "course_code": "ESE 568",
+    "title": "Computer and Robot Vision",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "569",
+    "course_code": "ESE 569",
+    "title": "Translational Bioinformatics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "571",
+    "course_code": "ESE 571",
+    "title": "Digitalization of Modern Power Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "575",
+    "course_code": "ESE 575",
+    "title": "Advanced VLSI Signal Processing Architecture",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "576",
+    "course_code": "ESE 576",
+    "title": "Power System Dynamics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "577",
+    "course_code": "ESE 577",
+    "title": "Deep Learning Algorithms and Software",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "578",
+    "course_code": "ESE 578",
+    "title": "Quantum-Engineered Power Grids",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "582",
+    "course_code": "ESE 582",
+    "title": "Representation Learning for Time Series Data",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "585",
+    "course_code": "ESE 585",
+    "title": "Nanoscale Integrated Circuit Design",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "586",
+    "course_code": "ESE 586",
+    "title": "Micro Grids",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "587",
+    "course_code": "ESE 587",
+    "title": "Hardware Architectures for Deep Learning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "588",
+    "course_code": "ESE 588",
+    "title": "Fundamentals of Machine Learning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "589",
+    "course_code": "ESE 589",
+    "title": "Learning Systems for Engineering Applications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "590",
+    "course_code": "ESE 590",
+    "title": "Practical Machine Learning and Artificial Intelligence",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "591",
+    "course_code": "ESE 591",
+    "title": "Industrial Project in OEMS Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "592",
+    "course_code": "ESE 592",
+    "title": "Distributed Computation, Control and Learning Over Networks",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "593",
+    "course_code": "ESE 593",
+    "title": "High Power RF Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "595",
+    "course_code": "ESE 595",
+    "title": "Advanced Data Analytics in Modern Energy Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "597",
+    "course_code": "ESE 597",
+    "title": "Practicum in Engineering - Internship",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "599",
+    "course_code": "ESE 599",
+    "title": "Research Master's students",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "670",
+    "course_code": "ESE 670",
+    "title": "Topics in Electrical Sciences",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "691",
+    "course_code": "ESE 691",
+    "title": "Seminar in Electrical Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "697",
+    "course_code": "ESE 697",
+    "title": "Ph.D. Practicum in Teaching",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "698",
+    "course_code": "ESE 698",
+    "title": "Practicum in Teaching",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "699",
+    "course_code": "ESE 699",
+    "title": "Dissertation Research on Campus",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "700",
+    "course_code": "ESE 700",
+    "title": "Dissertation Research off Campus - Domestic",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "701",
+    "course_code": "ESE 701",
+    "title": "Dissertation Research off Campus - International",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESE",
+    "course_number": "800",
+    "course_code": "ESE 800",
+    "title": "FULL TIME SUMMER RESEARCH",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 25
+  },
+  {
+    "subject": "ESG",
+    "course_number": "100",
+    "course_code": "ESG 100",
+    "title": "Introduction to Engineering Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "111",
+    "course_code": "ESG 111",
+    "title": "Programming for Engineers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "198",
+    "course_code": "ESG 198",
+    "title": "Fundamentals of Engineering Chemistry",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "199",
+    "course_code": "ESG 199",
+    "title": "Introduction to Undergraduate Research",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "201",
+    "course_code": "ESG 201",
+    "title": "Learning from Engineering Disaster",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "281",
+    "course_code": "ESG 281",
+    "title": "Engineering Introduction to the Solid State",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "300",
+    "course_code": "ESG 300",
+    "title": "Writing in Engineering Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "302",
+    "course_code": "ESG 302",
+    "title": "Thermodynamics of Materials",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "312",
+    "course_code": "ESG 312",
+    "title": "Engineering Laboratory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "316",
+    "course_code": "ESG 316",
+    "title": "Engineering Science Design Methods",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "332",
+    "course_code": "ESG 332",
+    "title": "Materials Science I: Structure and Properties of Materials",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "333",
+    "course_code": "ESG 333",
+    "title": "Materials Science II: Electronic Properties",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "375",
+    "course_code": "ESG 375",
+    "title": "Fundamentals of Professional Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "420",
+    "course_code": "ESG 420",
+    "title": "Fluid Flow, Heat & Mass Transport",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "440",
+    "course_code": "ESG 440",
+    "title": "Capstone Engineering Design I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "441",
+    "course_code": "ESG 441",
+    "title": "Capstone Engineering Design II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESG",
+    "course_number": "487",
+    "course_code": "ESG 487",
+    "title": "Cooperative Research in Technological Solutions",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ESL",
+    "course_number": "593",
+    "course_code": "ESL 593",
+    "title": "Advanced Composition",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ESM",
+    "course_number": "121",
+    "course_code": "ESM 121",
+    "title": "Better Planet By Design",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "150",
+    "course_code": "ESM 150",
+    "title": "Materials of the Modern World",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "212",
+    "course_code": "ESM 212",
+    "title": "Introduction to Environmental Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "213",
+    "course_code": "ESM 213",
+    "title": "Introduction to Nanotechnology Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "299",
+    "course_code": "ESM 299",
+    "title": "Directed Research in Materials Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "325",
+    "course_code": "ESM 325",
+    "title": "Diffraction Techniques and Structure of Solids",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "335",
+    "course_code": "ESM 335",
+    "title": "Strength of Materials",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "336",
+    "course_code": "ESM 336",
+    "title": "Electronic Materials",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "339",
+    "course_code": "ESM 339",
+    "title": "Microfabrication and Thin Film Processing of Advanced Materials",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "378",
+    "course_code": "ESM 378",
+    "title": "Materials Chemistry",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "400",
+    "course_code": "ESM 400",
+    "title": "Research and Nanotechnology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "450",
+    "course_code": "ESM 450",
+    "title": "Engineering Systems Laboratory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "453",
+    "course_code": "ESM 453",
+    "title": "Biomaterials",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "455",
+    "course_code": "ESM 455",
+    "title": "Materials and Processes in Manufacturing Design",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "460",
+    "course_code": "ESM 460",
+    "title": "Advanced Engineering Laboratory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "469",
+    "course_code": "ESM 469",
+    "title": "Polymer Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "475",
+    "course_code": "ESM 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "486",
+    "course_code": "ESM 486",
+    "title": "Innovation and Entrepreneurship in Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "488",
+    "course_code": "ESM 488",
+    "title": "Cooperative Industrial Practice",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "499",
+    "course_code": "ESM 499",
+    "title": "Research in Materials Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "501",
+    "course_code": "ESM 501",
+    "title": "Teaching and Mentoring Techniques",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "502",
+    "course_code": "ESM 502",
+    "title": "Scanning Electron Microscopy Skills",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "503",
+    "course_code": "ESM 503",
+    "title": "Electron Diffraction",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "508",
+    "course_code": "ESM 508",
+    "title": "Impact of Materials on Environment",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "511",
+    "course_code": "ESM 511",
+    "title": "Thermodynamics of Solids",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "512",
+    "course_code": "ESM 512",
+    "title": "Structure of Materials",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "513",
+    "course_code": "ESM 513",
+    "title": "Strength of Materials",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "514",
+    "course_code": "ESM 514",
+    "title": "Technical Writing for Materials Scientist",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "519",
+    "course_code": "ESM 519",
+    "title": "Electrochemistry and Electrochemical Materials Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "521",
+    "course_code": "ESM 521",
+    "title": "Kinetics of Materials",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "522",
+    "course_code": "ESM 522",
+    "title": "Imperfections in Crystals",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "523",
+    "course_code": "ESM 523",
+    "title": "Solid-State Electronics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "531",
+    "course_code": "ESM 531",
+    "title": "Phase Transformations",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "532",
+    "course_code": "ESM 532",
+    "title": "Materials Processing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "533",
+    "course_code": "ESM 533",
+    "title": "Polymeric Materials",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "534",
+    "course_code": "ESM 534",
+    "title": "Advanced Laboratory",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "537",
+    "course_code": "ESM 537",
+    "title": "Cellular Interactions",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "542",
+    "course_code": "ESM 542",
+    "title": "Modern Electron Microscopy",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "550",
+    "course_code": "ESM 550",
+    "title": "Introduction to Homeland Security",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "553",
+    "course_code": "ESM 553",
+    "title": "Nuclear Safeguards and Security",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "554",
+    "course_code": "ESM 554",
+    "title": "Chemical & Biological Weapons: Safeguards and Security",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "555",
+    "course_code": "ESM 555",
+    "title": "Synchrotron X-ray Analysis: Introduction to Advanced Techniques",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "560",
+    "course_code": "ESM 560",
+    "title": "Risk Assessment, Regulation, and Homeland Security",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "561",
+    "course_code": "ESM 561",
+    "title": "Crystal Growth Technology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "562",
+    "course_code": "ESM 562",
+    "title": "Traditional Fossil Fuels",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "566",
+    "course_code": "ESM 566",
+    "title": "Fuel Combustion",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "569",
+    "course_code": "ESM 569",
+    "title": "Biofuels",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "575",
+    "course_code": "ESM 575",
+    "title": "The Material World",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "595",
+    "course_code": "ESM 595",
+    "title": "ESM MS Project Course",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "599",
+    "course_code": "ESM 599",
+    "title": "Research",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "604",
+    "course_code": "ESM 604",
+    "title": "Seminar in Ultrasonic Methods and Internal Friction in Solids",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "608",
+    "course_code": "ESM 608",
+    "title": "Seminar in Catalysis",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "614",
+    "course_code": "ESM 614",
+    "title": "Seminar in Diffusion in Solids",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "694",
+    "course_code": "ESM 694",
+    "title": "Directed Studies in Materials Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "695",
+    "course_code": "ESM 695",
+    "title": "Graduate Internship",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "696",
+    "course_code": "ESM 696",
+    "title": "Special Topics in Materials Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "697",
+    "course_code": "ESM 697",
+    "title": "Materials Science Colloquium",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "698",
+    "course_code": "ESM 698",
+    "title": "Practicum in Teaching",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "699",
+    "course_code": "ESM 699",
+    "title": "Dissertation Research on Campus",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "700",
+    "course_code": "ESM 700",
+    "title": "Dissertation Research off Campus - Domestic",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "701",
+    "course_code": "ESM 701",
+    "title": "Dissertation Research off Campus - International",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESM",
+    "course_number": "800",
+    "course_code": "ESM 800",
+    "title": "FULL TIME SUMMER RSH",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 29
+  },
+  {
+    "subject": "ESS",
+    "course_number": "501",
+    "course_code": "ESS 501",
+    "title": "Foundations of Earth Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "511",
+    "course_code": "ESS 511",
+    "title": "Pine Barrens Sustainability",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "522",
+    "course_code": "ESS 522",
+    "title": "The Planets",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "523",
+    "course_code": "ESS 523",
+    "title": "Collisions in the Solar System",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "524",
+    "course_code": "ESS 524",
+    "title": "The Universe",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "532",
+    "course_code": "ESS 532",
+    "title": "Atmospheric Fundamentals",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "533",
+    "course_code": "ESS 533",
+    "title": "Global Climate",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "534",
+    "course_code": "ESS 534",
+    "title": "Air Pollution and Control",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "536",
+    "course_code": "ESS 536",
+    "title": "Principles of Weather Analysis and Forecasting",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "541",
+    "course_code": "ESS 541",
+    "title": "Earth's Surficial Environment",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "542",
+    "course_code": "ESS 542",
+    "title": "Tectonic Environment",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "543",
+    "course_code": "ESS 543",
+    "title": "Rocks and Minerals",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "544",
+    "course_code": "ESS 544",
+    "title": "Geology of New York",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "585",
+    "course_code": "ESS 585",
+    "title": "Directed Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "589",
+    "course_code": "ESS 589",
+    "title": "Research for Earth Science Teachers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "600",
+    "course_code": "ESS 600",
+    "title": "Independent Research",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "601",
+    "course_code": "ESS 601",
+    "title": "Topics in Earth and Space Sciences",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "ESS",
+    "course_number": "610",
+    "course_code": "ESS 610",
+    "title": "Capstone Project in Earth and Space Sciences",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 30
+  },
+  {
+    "subject": "EST",
+    "course_number": "100",
+    "course_code": "EST 100",
+    "title": "The Digital Generation: Mastering Multimedia Tools That Shape Our World",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "102",
+    "course_code": "EST 102",
+    "title": "Weather and Climate",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "104",
+    "course_code": "EST 104",
+    "title": "Projects in Technology and Society",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "105",
+    "course_code": "EST 105",
+    "title": "The Digital Generation: Leveraging Technology to Build 21st Century Skills",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "106",
+    "course_code": "EST 106",
+    "title": "The Digital Generation: Creating a Professional Web Presence",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "110",
+    "course_code": "EST 110",
+    "title": "The Digital Generation: Investigating AI Ethics, Social Impact and Real-World Applications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "192",
+    "course_code": "EST 192",
+    "title": "Introduction to Modern Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "194",
+    "course_code": "EST 194",
+    "title": "Decision-making",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "200",
+    "course_code": "EST 200",
+    "title": "Cultural Technologies and Society",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "201",
+    "course_code": "EST 201",
+    "title": "Technological Trends in Society",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "202",
+    "course_code": "EST 202",
+    "title": "Introduction to Science, Technology, and Society Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "203",
+    "course_code": "EST 203",
+    "title": "Technology in the City",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "204",
+    "course_code": "EST 204",
+    "title": "Modern Digital Technology and Innovation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "205",
+    "course_code": "EST 205",
+    "title": "Introduction to Technological Design: Innovation and Design Thinking",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "207",
+    "course_code": "EST 207",
+    "title": "Interaction Design",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "208",
+    "course_code": "EST 208",
+    "title": "Technology, Policy, and Society: AI's Role in Global Challenges Intro to Artificial Intelligence",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "209",
+    "course_code": "EST 209",
+    "title": "Introduction to Italian Design: Theory and Practice",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "210",
+    "course_code": "EST 210",
+    "title": "Emerging Technologies in Atypical Operations",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "(221)",
+    "course_code": "EST (221)",
+    "title": "Multimedia Systems and AI, An Introduction ** available as of 01/01/2027",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "221",
+    "course_code": "EST 221",
+    "title": "Multimedia for Online Content Platforms",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "230",
+    "course_code": "EST 230",
+    "title": "Information and Communications Technology for Sustainable Development",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "240",
+    "course_code": "EST 240",
+    "title": "Visual Rhetoric and Information Technology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "280",
+    "course_code": "EST 280",
+    "title": "Fundamentals of Industrial Engineering",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "291",
+    "course_code": "EST 291",
+    "title": "Energy, Environment, and People",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "304",
+    "course_code": "EST 304",
+    "title": "Communication for Engineers and Scientists",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "305",
+    "course_code": "EST 305",
+    "title": "Applications Software for Information Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "306",
+    "course_code": "EST 306",
+    "title": "Cloud Computing Applications",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "310",
+    "course_code": "EST 310",
+    "title": "Design of Computer Games",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "320",
+    "course_code": "EST 320",
+    "title": "Communication Technology Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "323",
+    "course_code": "EST 323",
+    "title": "Human-Computer Interaction",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "325",
+    "course_code": "EST 325",
+    "title": "Technology in the Workplace",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "326",
+    "course_code": "EST 326",
+    "title": "Management for Engineers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "327",
+    "course_code": "EST 327",
+    "title": "Systems Engineering Management, Elements of Product Design and Development",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "330",
+    "course_code": "EST 330",
+    "title": "AI and Climate Change: Technologies for a Sustainable Future",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "331",
+    "course_code": "EST 331",
+    "title": "Ethics in Engineering and AI Technologies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "339",
+    "course_code": "EST 339",
+    "title": "Benevolent Computing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "341",
+    "course_code": "EST 341",
+    "title": "Waste Treatment Technologies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "342",
+    "course_code": "EST 342",
+    "title": "Industrial Engineering, Intro to Operations Research I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "344",
+    "course_code": "EST 344",
+    "title": "Technical Writing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "364",
+    "course_code": "EST 364",
+    "title": "How to Build a Startup",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "(371)",
+    "course_code": "EST (371)",
+    "title": "Data Science for Technology and Society ** available as of 01/01/2027",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "371",
+    "course_code": "EST 371",
+    "title": "Introduction to Responsible AI and Data Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "372",
+    "course_code": "EST 372",
+    "title": "The Mobile Revolution in Development",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "388",
+    "course_code": "EST 388",
+    "title": "Special Topics in Technological Systems Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "389",
+    "course_code": "EST 389",
+    "title": "Special Topics in Technological Systems Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "391",
+    "course_code": "EST 391",
+    "title": "Technology Assessment",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "392",
+    "course_code": "EST 392",
+    "title": "Engineering Economics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "393",
+    "course_code": "EST 393",
+    "title": "Project Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "440",
+    "course_code": "EST 440",
+    "title": "Interdisciplinary Research Methods",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "441",
+    "course_code": "EST 441",
+    "title": "Interdisciplinary Senior Project",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "475",
+    "course_code": "EST 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "488",
+    "course_code": "EST 488",
+    "title": "Internship in Technology and Society",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "499",
+    "course_code": "EST 499",
+    "title": "Research in Technology and Society",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "500",
+    "course_code": "EST 500",
+    "title": "Foundations of Educational Technology for Administrators",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "501",
+    "course_code": "EST 501",
+    "title": "Educational Technology Integration for Administrators",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "502",
+    "course_code": "EST 502",
+    "title": "Ethical Decisions in Engineering, Computer Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "508",
+    "course_code": "EST 508",
+    "title": "Projects in Global Operations Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "510",
+    "course_code": "EST 510",
+    "title": "Fundamentals of Technology in Higher Education",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "511",
+    "course_code": "EST 511",
+    "title": "Infusing Technology into Higher Education Curriculum",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "516",
+    "course_code": "EST 516",
+    "title": "Science for Society I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "517",
+    "course_code": "EST 517",
+    "title": "Science for Society II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "519",
+    "course_code": "EST 519",
+    "title": "Systems Engineering Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "521",
+    "course_code": "EST 521",
+    "title": "The Social and Global Impact of Technology in Education",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "522",
+    "course_code": "EST 522",
+    "title": "Integrating Educational Technology into Social Studies and Language Arts",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "523",
+    "course_code": "EST 523",
+    "title": "Integrating Educational Technology into Mathematics and Science",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "524",
+    "course_code": "EST 524",
+    "title": "The Role of Educational Technology Specialist",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "529",
+    "course_code": "EST 529",
+    "title": "Supporting Common Core Standards Using Educational Technology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "530",
+    "course_code": "EST 530",
+    "title": "Internet Electronic Commerce",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "532",
+    "course_code": "EST 532",
+    "title": "Programming and Data Structures for Educators",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "533",
+    "course_code": "EST 533",
+    "title": "Principles of Cybersecurity for Educators",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "534",
+    "course_code": "EST 534",
+    "title": "The Lean Launch Pad: Turning a great idea into a great company",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "535",
+    "course_code": "EST 535",
+    "title": "Electric Power Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "536",
+    "course_code": "EST 536",
+    "title": "Resilience in Urban Environments",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "540",
+    "course_code": "EST 540",
+    "title": "Environmental Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "541",
+    "course_code": "EST 541",
+    "title": "Long Island's Groundwater",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "542",
+    "course_code": "EST 542",
+    "title": "Water and Wastewater Engineering Practices",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "546",
+    "course_code": "EST 546",
+    "title": "Integrating Technology, Policy and Financing Instruments to Catalyze Climate Finance",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "547",
+    "course_code": "EST 547",
+    "title": "Advanced Problems in Integrated Planning: Theory, Practice, and Analytical Tools",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "551",
+    "course_code": "EST 551",
+    "title": "The Atom and Environmental Radiation in the Nuclear Age",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "553",
+    "course_code": "EST 553",
+    "title": "Nuclear Security",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "554",
+    "course_code": "EST 554",
+    "title": "Chemical & Biological Weapons: Safeguards and Security",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "555",
+    "course_code": "EST 555",
+    "title": "Preventing Weapons Proliferation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "556",
+    "course_code": "EST 556",
+    "title": "Nuclear Nonproliferation & International Safeguards",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "557",
+    "course_code": "EST 557",
+    "title": "Nuclear Energy-The Nuclear Fuel Cycle & Technologies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "558",
+    "course_code": "EST 558",
+    "title": "Digital Technologies in Disaster Risk Reduction",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "559",
+    "course_code": "EST 559",
+    "title": "Mobile Revolution in Disaster Risk Reduction",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "560",
+    "course_code": "EST 560",
+    "title": "Risk Assessment, Regulation, and Homeland Security",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "561",
+    "course_code": "EST 561",
+    "title": "Sensing Technologies for Disaster Risk Reduction",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "562",
+    "course_code": "EST 562",
+    "title": "Decision Support Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "563",
+    "course_code": "EST 563",
+    "title": "Computer Literacy for Educators",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "565",
+    "course_code": "EST 565",
+    "title": "Foundations of Technology in Education",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "567",
+    "course_code": "EST 567",
+    "title": "The Internet, Social Networking and Collaborative Environments",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "568",
+    "course_code": "EST 568",
+    "title": "Networked Communication Technologies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "569",
+    "course_code": "EST 569",
+    "title": "Technology in the City",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "570",
+    "course_code": "EST 570",
+    "title": "Educational Technology Lesson Development",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "571",
+    "course_code": "EST 571",
+    "title": "Educational Technology Research Methods",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "572",
+    "course_code": "EST 572",
+    "title": "Intelligent Computing",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "573",
+    "course_code": "EST 573",
+    "title": "Interactive Multimedia Curriculum Design and Development",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "574",
+    "course_code": "EST 574",
+    "title": "Distance Learning and Virtual Environments",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "575",
+    "course_code": "EST 575",
+    "title": "Developing Grants and Managing Projects",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "576",
+    "course_code": "EST 576",
+    "title": "Geographic Information Systems in Education and Research",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "577",
+    "course_code": "EST 577",
+    "title": "Environmental Information Systems (EIS)",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "578",
+    "course_code": "EST 578",
+    "title": "Interactive Multimedia Curriculum Design and Development",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "579",
+    "course_code": "EST 579",
+    "title": "Educational Games",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "580",
+    "course_code": "EST 580",
+    "title": "Advanced Technology assessment: Business, Government and Strategy",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "581",
+    "course_code": "EST 581",
+    "title": "Decision-making in Technology Settings",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "582",
+    "course_code": "EST 582",
+    "title": "Socio-Technological Systems",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "583",
+    "course_code": "EST 583",
+    "title": "National Energy Decision Making",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "585",
+    "course_code": "EST 585",
+    "title": "Assessment of Technology in Learning Environments",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "590",
+    "course_code": "EST 590",
+    "title": "Seminar for MS, TSM Students",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "591",
+    "course_code": "EST 591",
+    "title": "Independent Study in Technology and Society",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "592",
+    "course_code": "EST 592",
+    "title": "Sustainable Energy: Technologies, Systems, Markets, and Policies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "593",
+    "course_code": "EST 593",
+    "title": "Risk Assessment and Hazard Management",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "594",
+    "course_code": "EST 594",
+    "title": "Diagnosis of Environmental Disputes",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "595",
+    "course_code": "EST 595",
+    "title": "Principles of Environmental Systems Analysis",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "597",
+    "course_code": "EST 597",
+    "title": "Waste Management: Systems and Principles",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "598",
+    "course_code": "EST 598",
+    "title": "Master's Project in Technology and Society",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "599",
+    "course_code": "EST 599",
+    "title": "Special Projects and Topics",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "600",
+    "course_code": "EST 600",
+    "title": "Technology, Policy, and Innovation: Theory and Practice",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "601",
+    "course_code": "EST 601",
+    "title": "Grand Challenges in Energy and Environmental Policy",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "602",
+    "course_code": "EST 602",
+    "title": "Energy, Technology and Society: Energy Nexus Research Frontiers",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "603",
+    "course_code": "EST 603",
+    "title": "Energy Systems Analysis",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "604",
+    "course_code": "EST 604",
+    "title": "AI's Role in Grand Challenges",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "605",
+    "course_code": "EST 605",
+    "title": "Economics and Public Policy",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "606",
+    "course_code": "EST 606",
+    "title": "The Economics of Technology, Policy, and Innovation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "607",
+    "course_code": "EST 607",
+    "title": "Energy and Environmental Economics and Markets",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "610",
+    "course_code": "EST 610",
+    "title": "Data Analysis for Technology, Policy and Innovation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "620",
+    "course_code": "EST 620",
+    "title": "Decision Making in Socio-Technological and Global Contexts",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "625",
+    "course_code": "EST 625",
+    "title": "Advanced Theory and Practice in Technology and Policy",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "650",
+    "course_code": "EST 650",
+    "title": "Directed Study",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "680",
+    "course_code": "EST 680",
+    "title": "Teaching, Learning, and Technology",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "688",
+    "course_code": "EST 688",
+    "title": "Internship in Research",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "690",
+    "course_code": "EST 690",
+    "title": "Seminar in Theory Building",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "691",
+    "course_code": "EST 691",
+    "title": "Seminar on Innovation, Invention, and Diffusion",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "692",
+    "course_code": "EST 692",
+    "title": "Research Seminar",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "694",
+    "course_code": "EST 694",
+    "title": "Energy and Buildings: Technology, Policy, and Behavior",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "695",
+    "course_code": "EST 695",
+    "title": "Topics in Technology, Policy, and Innovation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "696",
+    "course_code": "EST 696",
+    "title": "Advanced Topics in Technology, Policy and Innovation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "697",
+    "course_code": "EST 697",
+    "title": "Directed Study",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "698",
+    "course_code": "EST 698",
+    "title": "Practicum in Teaching",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "699",
+    "course_code": "EST 699",
+    "title": "Dissertation Research on Campus",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "700",
+    "course_code": "EST 700",
+    "title": "Dissertation Research Off Campus - Domestic",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "701",
+    "course_code": "EST 701",
+    "title": "Dissertation Research Off Campus - International",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EST",
+    "course_number": "800",
+    "course_code": "EST 800",
+    "title": "Summer Research",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 31
+  },
+  {
+    "subject": "EUR",
+    "course_number": "101",
+    "course_code": "EUR 101",
+    "title": "Foundations of European Culture",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "201",
+    "course_code": "EUR 201",
+    "title": "Development of European Culture",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "300TRG",
+    "course_code": "EUR 300TRG",
+    "title": "European Studies Elective",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "390",
+    "course_code": "EUR 390",
+    "title": "Special Topics in European Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "401",
+    "course_code": "EUR 401",
+    "title": "Senior Research Seminar in European Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "444",
+    "course_code": "EUR 444",
+    "title": "Experiential Learning",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "447",
+    "course_code": "EUR 447",
+    "title": "Directed Readings in European Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "458",
+    "course_code": "EUR 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "459",
+    "course_code": "EUR 459",
+    "title": "Write Effectively in European Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "475",
+    "course_code": "EUR 475",
+    "title": "Undergraduate Teaching Practicum in European Studies I",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "476",
+    "course_code": "EUR 476",
+    "title": "Undergraduate Teaching Practicum in European Studies II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "487",
+    "course_code": "EUR 487",
+    "title": "Independent Project in European Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "488",
+    "course_code": "EUR 488",
+    "title": "Internship in European Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "495",
+    "course_code": "EUR 495",
+    "title": "Senior Honors Project in European Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "501",
+    "course_code": "EUR 501",
+    "title": "Historical and Cultural Frameworks of Europe",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "502",
+    "course_code": "EUR 502",
+    "title": "Methods of Research and Theories of Interpretation",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "503",
+    "course_code": "EUR 503",
+    "title": "Perceptions and Inventions of Europe",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "504",
+    "course_code": "EUR 504",
+    "title": "European Arts, Poetics, Culture",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "571",
+    "course_code": "EUR 571",
+    "title": "Special Topics In European Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "581",
+    "course_code": "EUR 581",
+    "title": "Independent Individual Studies",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EUR",
+    "course_number": "599",
+    "course_code": "EUR 599",
+    "title": "Thesis Research",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 34
+  },
+  {
+    "subject": "EXT",
+    "course_number": "288",
+    "course_code": "EXT 288",
+    "title": "Externship: Applied Learning for Career Readiness",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 35
+  },
+  {
+    "subject": "EXT",
+    "course_number": "488",
+    "course_code": "EXT 488",
+    "title": "Externship: Applied Learning for Career Readiness II",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 35
+  },
+  {
+    "subject": "EXT",
+    "course_number": "588",
+    "course_code": "EXT 588",
+    "title": "Grad Externship",
+    "source_file": "Pasted text.txt",
+    "source_group_index": 35
+  }
+]

@@ -232,7 +232,7 @@ export function RecordEditor({
         <Card size="sm">
           <CardHeader>
             <CardTitle>Start over</CardTitle>
-            <CardDescription>Your record is stored only in this browser.</CardDescription>
+            <CardDescription>Replace your courses with the sample student, or delete them.</CardDescription>
           </CardHeader>
           <CardContent className="flex flex-wrap gap-2">
             <form action={loadSampleRecord}>
@@ -243,7 +243,7 @@ export function RecordEditor({
             <form
               action={clearRecord}
               onSubmit={(e) => {
-                if (!confirm("Delete all courses from this browser?")) e.preventDefault();
+                if (!confirm("Delete all of your courses?")) e.preventDefault();
               }}
             >
               <Button type="submit" variant="ghost" size="sm" className="text-destructive">

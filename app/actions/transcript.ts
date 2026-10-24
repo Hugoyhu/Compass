@@ -1,23 +1,11 @@
 "use server";
 
 import Anthropic from "@anthropic-ai/sdk";
-import { headers } from "next/headers";
+import { clientIp, rateLimited } from "@/lib/rate-limit";
 import { extractTranscript, normalizeTranscript, type TranscriptDraft } from "@/lib/transcript/extract";
 
 const MAX_BYTES = 4 * 1024 * 1024;
-const RATE_LIMIT = { requests: 8, windowMs: 60 * 60 * 1000 };
-
-// Best-effort, per server instance. A public demo spends real API credits, so
-// pair this with a spend limit on the API key in the Anthropic Console.
-const recentRequests = new Map<string, number[]>();
-
-function rateLimited(key: string): boolean {
-  const now = Date.now();
-  const recent = (recentRequests.get(key) ?? []).filter((t) => now - t < RATE_LIMIT.windowMs);
-  if (recent.length >= RATE_LIMIT.requests) return true;
-  recentRequests.set(key, [...recent, now]);
-  return false;
-}
+const UPLOADS_PER_HOUR = 8;
 
 export type ExtractResult = { ok: true; draft: TranscriptDraft } | { ok: false; error: string };
 
@@ -33,9 +21,8 @@ export async function extractTranscriptAction(formData: FormData): Promise<Extra
   const bytes = Buffer.from(await file.arrayBuffer());
   if (bytes.subarray(0, 5).toString("latin1") !== "%PDF-") return { ok: false, error: "That file isn't a PDF." };
 
-  const requestHeaders = await headers();
-  const visitor = requestHeaders.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "local";
-  if (rateLimited(visitor)) return { ok: false, error: "Too many uploads. Please try again in an hour." };
+  // A public demo spends real API credits: pair this with a spend limit on the key in the Anthropic Console.
+  if (rateLimited(`transcript:${await clientIp()}`, UPLOADS_PER_HOUR, 60 * 60 * 1000)) return { ok: false, error: "Too many uploads. Please try again in an hour." };
 
   if (!process.env.ANTHROPIC_API_KEY) {
     return { ok: false, error: "Transcript reading isn't configured on this server (missing ANTHROPIC_API_KEY)." };

@@ -58,6 +58,8 @@ export interface PrereqContext {
   standing: "U1" | "U2" | "U3" | "U4";
   /** Program policy, e.g. "C or higher in prerequisites for CSE courses". */
   defaultMinGrade?: LetterGrade;
+  /** Subject codes of the student's majors (e.g. ["CSE"]), to check "CSE major" restrictions. */
+  majorSubjects?: string[];
 }
 
 export interface PrereqResult {
@@ -78,7 +80,11 @@ export function evaluatePrereq(expr: Prereq | undefined, ctx: PrereqContext): Pr
     }
     case "standing":
       return { met: ctx.standing >= expr.level, unverifiable: [] };
-    case "program":
+    case "program": {
+      // "CSE, ISE or DAS major" is met when it names the student's major subject.
+      const named = /major/i.test(expr.text) && ctx.majorSubjects?.some((s) => new RegExp(`\\b${s}\\b`).test(expr.text));
+      return { met: true, unverifiable: named ? [] : [expr.text] };
+    }
     case "permission":
     case "unparsed":
       // Assume met so planning can proceed, but surface the condition.

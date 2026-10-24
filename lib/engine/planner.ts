@@ -1,12 +1,16 @@
 /**
  * Next-semester proposal: a deliberately simple greedy heuristic, not an
  * optimizer. It picks eligible courses (prerequisites met assuming current
- * in-progress courses are passed, typically offered that season) that close
- * the most important open requirements, then fills to a target credit load.
+ * in-progress courses are passed) that close the most important open
+ * requirements, then fills to a target credit load.
+ *
+ * Offering data is incomplete, so a course with no known section in the term
+ * is "unconfirmed", never excluded. Confirmed courses rank slightly higher.
  */
 import type { CourseRecord } from "@/lib/domain/catalog/course";
+import type { ProgramDefinition, Rule } from "@/lib/domain/catalog/program";
 import type { CourseCode, LetterGrade, StudentRecord, TermId } from "@/lib/domain/types";
-import { nextRegularTerm, parseTerm } from "@/lib/domain/terms";
+import { nextRegularTerm } from "@/lib/domain/terms";
 import { matchesSelector, type DegreeAudit } from "./audit";
 import {
   buildCompletionIndex,
@@ -34,6 +38,8 @@ export interface ProposedCourse {
   checks: string[];
   /** True when this retakes a course whose earlier grade didn't count. */
   retake: boolean;
+  /** Main-campus sections known for the term; null when unknown. */
+  sections: number | null;
 }
 
 export interface SemesterProposal {
@@ -45,7 +51,8 @@ export interface SemesterProposal {
 }
 
 const KIND_WEIGHT: Record<NeedKind, number> = { required: 30, sbc: 20, elective: 10 };
-const DEFAULT_SEASONS = ["Fall", "Spring"];
+/** Enough to prefer a confirmed course among similar options, not to outrank a more important need. */
+const CONFIRMED_BONUS = 5;
 
 function needsFrom(audit: DegreeAudit, courses: CourseRecord[]): { needs: Need[]; review: string[] } {
   const needs: Need[] = [];
@@ -87,6 +94,18 @@ function needsFrom(audit: DegreeAudit, courses: CourseRecord[]): { needs: Need[]
   return { needs, review };
 }
 
+/** The most common subject among a program's course rules, e.g. "CSE" for the CS BS. */
+function primarySubject(program: ProgramDefinition): string {
+  const counts = new Map<string, number>();
+  const visit = (rule: Rule) => {
+    if (rule.type === "course") counts.set(rule.code.split(" ")[0], (counts.get(rule.code.split(" ")[0]) ?? 0) + 1);
+    if (rule.type === "allOf" || rule.type === "anyOf") rule.rules.forEach(visit);
+    if (rule.type === "choose") rule.from.subjects?.forEach((s) => counts.set(s, (counts.get(s) ?? 0) + 1));
+  };
+  program.requirements.forEach((r) => visit(r.rule));
+  return [...counts.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? "";
+}
+
 /** How many not-yet-taken courses list this course as a prerequisite. */
 function unlockCounts(courses: CourseRecord[], taken: Set<CourseCode>): Map<CourseCode, number> {
   const counts = new Map<CourseCode, number>();
@@ -104,6 +123,7 @@ export function proposeNextSemester({
   student,
   courses,
   term,
+  sectionCounts,
   targetCredits = 15,
   maxCredits = 18,
 }: {
@@ -111,10 +131,11 @@ export function proposeNextSemester({
   student: StudentRecord;
   courses: CourseRecord[];
   term: TermId;
+  /** Main-campus sections per course in `term`; null when the term has no offering data. */
+  sectionCounts: Map<CourseCode, number> | null;
   targetCredits?: number;
   maxCredits?: number;
 }): SemesterProposal {
-  const { season } = parseTerm(term);
   const retakes = new Set(audit.programs.flatMap((p) => p.retakes));
   const taken = new Set(usableAttempts(student.attempts).map((a) => a.code).filter((code) => !retakes.has(code)));
 
@@ -126,9 +147,10 @@ export function proposeNextSemester({
     }
   }
   const index = buildCompletionIndex(student.attempts, { includeInProgress: true });
+  const majorSubjects = audit.programs.filter((p) => p.program.kind === "major").map((p) => primarySubject(p.program));
   const standing = standingFor(audit.credits.earned + audit.credits.inProgress);
   const prereqsFor = (c: CourseRecord) =>
-    evaluatePrereq(c.prerequisites, { index, standing, defaultMinGrade: prereqGrades.get(c.code.split(" ")[0]) });
+    evaluatePrereq(c.prerequisites, { index, standing, majorSubjects, defaultMinGrade: prereqGrades.get(c.code.split(" ")[0]) });
 
   const unlocks = unlockCounts(courses, taken);
   // The catalog's sample sequence names the usual choice (e.g. "CSE 416 or CSE 356" lists 416 first).
@@ -138,8 +160,8 @@ export function proposeNextSemester({
     ),
   );
   const { needs, review } = needsFrom(audit, courses);
-  const offered = (c: CourseRecord) => (c.typicallyOffered ?? DEFAULT_SEASONS).includes(season);
-  const isEligible = (c: CourseRecord) => !taken.has(c.code) && offered(c) && prereqsFor(c).met;
+  const sectionsFor = (c: CourseRecord) => (sectionCounts ? (sectionCounts.get(c.code) ?? null) : null);
+  const isEligible = (c: CourseRecord) => !taken.has(c.code) && prereqsFor(c).met;
   let candidates = courses.filter(isEligible);
 
   const score = (c: CourseRecord) => {
@@ -154,7 +176,8 @@ export function proposeNextSemester({
       primary +
       rest.reduce((s, w) => s + w / 5, 0) +
       (unlocks.get(c.code) ?? 0) * 2 +
-      (recommended.has(c.code) ? 1 : 0) -
+      (recommended.has(c.code) ? 1 : 0) +
+      (sectionsFor(c) ? CONFIRMED_BONUS : 0) -
       Number(c.code.split(" ")[1]) / 1000
     );
   };
@@ -180,6 +203,7 @@ export function proposeNextSemester({
       fills: fills.map((n) => ({ requirementId: n.requirementId, title: n.title, kind: n.kind })),
       checks: prereqsFor(best.c).unverifiable,
       retake: retakes.has(best.c.code),
+      sections: sectionsFor(best.c),
     });
     total += plannedCredits(best.c);
     candidates = candidates.filter((c) => c.code !== best.c.code);
@@ -192,11 +216,9 @@ export function proposeNextSemester({
         const options = courses.filter((c) => n.options.has(c.code) && !taken.has(c.code));
         const reason = options.some(isEligible)
           ? "Credit load reached"
-          : options.some((c) => !prereqsFor(c).met)
-            ? "Prerequisites not yet met"
-            : options.length === 0
-              ? "No matching courses in the catalog data"
-              : `Not typically offered in ${season}`;
+          : options.length === 0
+            ? "No matching courses in the catalog data"
+            : "Prerequisites not yet met";
         return { title: n.title, reason };
       }),
     ...review.map((text) => ({ title: text, reason: "Needs advisor review" })),

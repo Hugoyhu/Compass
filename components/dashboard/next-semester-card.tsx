@@ -24,7 +24,7 @@ export function NextSemesterCard({ proposal }: { proposal: SemesterProposal }) {
           <p className="text-sm text-muted-foreground">No eligible courses found for this term.</p>
         ) : (
           <ul className="space-y-3">
-            {proposal.courses.map(({ course, fills, checks, retake }) => (
+            {proposal.courses.map(({ course, fills, checks, retake, sections }) => (
               <li key={course.code} className="flex items-start justify-between gap-3">
                 <div className="min-w-0 space-y-1">
                   <p className="font-medium">
@@ -45,6 +45,11 @@ export function NextSemesterCard({ proposal }: { proposal: SemesterProposal }) {
                       </Badge>
                     ))}
                   </div>
+                  <p className="text-xs text-muted-foreground">
+                    {sections
+                      ? `${sections} ${sections === 1 ? "section" : "sections"} scheduled for ${formatTerm(proposal.term)}`
+                      : `${formatTerm(proposal.term)} sections not confirmed yet`}
+                  </p>
                   {checks.map((check) => (
                     <p key={check} className="flex items-center gap-1 text-xs text-muted-foreground">
                       <ShieldQuestion className="size-3.5 shrink-0" aria-hidden />

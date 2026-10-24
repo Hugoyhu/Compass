@@ -8,7 +8,15 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { navItemFor } from "./nav";
 
-export function SiteHeader({ sourceLabel, disclaimer }: { sourceLabel: string; disclaimer: string }) {
+export function SiteHeader({
+  sourceLabel,
+  disclaimer,
+  account,
+}: {
+  sourceLabel: string;
+  disclaimer: string;
+  account: React.ReactNode;
+}) {
   const item = navItemFor(usePathname());
 
   return (
@@ -16,7 +24,7 @@ export function SiteHeader({ sourceLabel, disclaimer }: { sourceLabel: string; d
       <SidebarTrigger className="-ml-1" />
       <Separator orientation="vertical" className="mx-1 h-4 self-center" />
       <h1 className="text-sm font-medium">{item?.title ?? "Compass"}</h1>
-      <div className="ml-auto">
+      <div className="ml-auto flex items-center gap-2">
         <Tooltip>
           <TooltipTrigger
             render={
@@ -30,6 +38,7 @@ export function SiteHeader({ sourceLabel, disclaimer }: { sourceLabel: string; d
             {disclaimer}
           </TooltipContent>
         </Tooltip>
+        {account}
       </div>
     </header>
   );

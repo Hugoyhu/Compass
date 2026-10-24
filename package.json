@@ -12,9 +12,12 @@
     "scrape:programs:extract": "tsx --tsconfig tsconfig.json utilities/scrapers/major-minor/extract.ts",
     "scrape:programs:eval": "tsx --tsconfig tsconfig.json utilities/scrapers/major-minor/eval.ts",
     "scrape:programs:run": "tsx --tsconfig tsconfig.json utilities/scrapers/major-minor/run.ts",
+    "import:courses": "tsx --tsconfig tsconfig.json utilities/scrapers/course-offering-scraper/import-courses.ts",
     "fixtures:transcript": "\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --no-pdf-header-footer --print-to-pdf=tests/fixtures/transcript/sample-transcript.pdf tests/fixtures/transcript/sample-transcript.html",
     "test:transcript": "tsx --tsconfig tsconfig.json scripts/test-transcript.ts",
-    "test:smoke": "tsx --tsconfig tsconfig.json scripts/smoke-test.ts"
+    "test:smoke": "tsx --tsconfig tsconfig.json scripts/smoke-test.ts",
+    "db:migrate": "tsx --tsconfig tsconfig.json scripts/db-migrate.ts",
+    "db:load": "tsx --tsconfig tsconfig.json scripts/db-load.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.3.0",
@@ -23,6 +26,7 @@
     "cn": "^0.5.0",
     "lucide-react": "^1.61.0",
     "next": "16.4.3",
+    "postgres": "^3.4.9",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "shadcn": "^4.22.1",

@@ -13,7 +13,8 @@ export default function RecordPage() {
       <div className="space-y-1">
         <h2 className="text-2xl font-semibold tracking-tight">My courses</h2>
         <p className="text-sm text-muted-foreground">
-          Courses you&apos;ve completed or are taking, plus AP and transfer credit. Stored only in this browser.
+          Courses you&apos;ve completed or are taking, plus AP and transfer credit. Saved to your account when you&apos;re
+          signed in, otherwise in this browser.
         </p>
       </div>
       <Suspense fallback={<Skeleton className="h-96" />}>

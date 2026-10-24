@@ -60,8 +60,9 @@ export function GetStarted() {
       </div>
       <Card size="sm" className="bg-muted/40">
         <CardContent className="text-xs text-muted-foreground">
-          Your record is stored only in this browser, as cookies. There are no accounts and no server database.
-          Transcript uploads are sent to Anthropic&apos;s API to read the course list; the file isn&apos;t kept.
+          Without an account, your record is stored only in this browser. Create an account (just a username and
+          password) to keep it across devices. Transcript uploads are sent to Anthropic&apos;s API to read the course
+          list; the file isn&apos;t kept.
         </CardContent>
       </Card>
     </div>

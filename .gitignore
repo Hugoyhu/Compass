@@ -45,4 +45,6 @@ CLAUDE.md
 /data/raw/
 /utilities/scrapers/*/eval-output/
 /utilities/scrapers/major-minor/last-run.json
+/utilities/scrapers/course-offering-scraper/data/
+/utilities/scrapers/course-offering-scraper/__pycache__/
 /utilities/scrapers/major-minor/HANDOFF.md

@@ -5,6 +5,7 @@
  */
 import { getRepository } from "@/lib/data/repository";
 import type { CourseRecord } from "@/lib/domain/catalog/course";
+import type { Section } from "@/lib/domain/catalog/offering";
 import { nextRegularTerm } from "@/lib/domain/terms";
 import type { StudentRecord } from "@/lib/domain/types";
 import { runDegreeAudit } from "@/lib/engine/audit";
@@ -29,7 +30,9 @@ export async function getStudentView(student: StudentRecord) {
 
   const audit = runDegreeAudit({ student, programs, courses, sbcCategories, creditRules });
   const nextTerm = nextRegularTerm(student.currentTerm);
-  const proposal = proposeNextSemester({ audit, student, courses, term: nextTerm });
+  const sections = await repo.listSections(nextTerm);
+  const sectionCounts = sections && countMainCampusSections(sections);
+  const proposal = proposeNextSemester({ audit, student, courses, term: nextTerm, sectionCounts });
   const graduation = estimateGraduationTerm(audit, student.currentTerm);
 
   const catalog = new Map(courses.map((c) => [c.code, c]));
@@ -60,6 +63,13 @@ export async function getStudentView(student: StudentRecord) {
 }
 
 export type StudentView = Awaited<ReturnType<typeof getStudentView>>;
+
+/** Main-campus sections per course (SUNY Korea sections don't count as offerings here). */
+function countMainCampusSections(sections: Section[]): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const s of sections) if (s.campus === "main") counts.set(s.code, (counts.get(s.code) ?? 0) + 1);
+  return counts;
+}
 
 /** Options for the course editor: catalog courses and selectable programs. */
 export async function getEditorOptions() {

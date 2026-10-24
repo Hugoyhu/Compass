@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Suspense } from "react";
+import { AccountMenu } from "@/components/app-shell/account-menu";
 import { AppSidebar } from "@/components/app-shell/app-sidebar";
 import { SidebarStudent, SidebarStudentSkeleton } from "@/components/app-shell/sidebar-student";
 import { SiteHeader } from "@/components/app-shell/site-header";
@@ -40,7 +41,15 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
               }
             />
             <SidebarInset>
-              <SiteHeader sourceLabel={source.label} disclaimer={source.disclaimer} />
+              <SiteHeader
+                sourceLabel={source.label}
+                disclaimer={source.disclaimer}
+                account={
+                  <Suspense fallback={null}>
+                    <AccountMenu />
+                  </Suspense>
+                }
+              />
               {children}
             </SidebarInset>
           </SidebarProvider>

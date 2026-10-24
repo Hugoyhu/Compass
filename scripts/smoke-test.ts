@@ -7,9 +7,10 @@
  * Uses your installed Google Chrome via playwright-core. The upload step
  * sends the fictional fixture transcript to the Claude API (well under a cent).
  */
-import { mkdirSync } from "node:fs";
+import { existsSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { chromium, type Page } from "playwright-core";
+import postgres from "postgres";
 
 const BASE = process.env.BASE_URL ?? "http://localhost:3000";
 const FIXTURE = path.resolve("tests/fixtures/transcript/sample-transcript.pdf");
@@ -80,6 +81,57 @@ async function main() {
     await page.goto(BASE);
     await page.getByRole("heading", { name: "Plan your Stony Brook degree" }).waitFor();
     check(true, "Clearing the record returns to onboarding");
+
+    // 5. Accounts: a guest record moves into a new account and survives sign-out/sign-in.
+    await page.goto(`${BASE}/signup`);
+    await page.waitForLoadState("networkidle");
+    if (await page.getByText("Accounts aren't available").isVisible()) {
+      console.log("- Accounts aren't configured on this server; skipping account checks");
+    } else {
+      const username = `smoketest-${Date.now().toString(36)}`;
+      const password = "correct horse battery";
+      await page.goto(BASE);
+      await page.getByRole("button", { name: "Load sample student" }).click();
+      await page.getByRole("heading", { name: /Welcome back, Alex/ }).waitFor();
+
+      await page.goto(`${BASE}/signup`);
+      await page.waitForLoadState("networkidle");
+      await page.getByLabel("Username").fill(username);
+      await page.getByLabel("Password", { exact: true }).fill(password);
+      await page.getByLabel("Confirm password").fill(password);
+      await page.getByRole("button", { name: "Create account" }).click();
+      await page.getByRole("heading", { name: /Welcome back, Alex/ }).waitFor();
+      check(await page.getByText(username).first().isVisible(), "Sign-up moves the guest record into the new account");
+      await shot(page, "7-signed-in");
+
+      await page.getByRole("button", { name: "Sign out" }).click();
+      await page.getByRole("heading", { name: "Plan your Stony Brook degree" }).waitFor();
+      check(true, "Signing out shows onboarding (the guest copy was moved, not left behind)");
+
+      await page.goto(`${BASE}/login`);
+      await page.waitForLoadState("networkidle");
+      await page.getByLabel("Username").fill(username);
+      await page.getByLabel("Password").fill("wrong password");
+      await page.getByRole("button", { name: "Sign in" }).click();
+      await page.getByText("Incorrect username or password.").waitFor();
+      check(true, "A wrong password is rejected");
+      await page.getByLabel("Password").fill(password);
+      await page.getByRole("button", { name: "Sign in" }).click();
+      await page.getByRole("heading", { name: /Welcome back, Alex/ }).waitFor();
+      check(true, "Signing back in restores the record from the database");
+
+      await page.goto(`${BASE}/progress`);
+      await page.getByRole("heading", { name: "Computer Science, BS" }).waitFor();
+      check(true, "Degree progress works for a signed-in account");
+
+      // Remove the throwaway account (its sessions and record cascade).
+      if (process.env.DATABASE_URL || existsSync(".env")) {
+        if (!process.env.DATABASE_URL) process.loadEnvFile(".env");
+        const sql = postgres(process.env.DATABASE_URL!, { max: 1, prepare: false });
+        await sql`delete from users where username = ${username}`;
+        await sql.end();
+      }
+    }
   } finally {
     await browser.close();
   }

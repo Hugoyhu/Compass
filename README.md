@@ -29,9 +29,40 @@ npm run test:smoke         # browser smoke test; needs `npm run dev` running and
 
 Transcript upload calls the Claude API. Put `ANTHROPIC_API_KEY=...` in `.env` at the repo root locally (it's gitignored), and set the same variable in your hosting provider for deployments. Without it the app works, but uploads show a "not configured" message. A public deployment spends real credits on uploads. They're rate-limited per visitor, but also set a spend limit on the key in the Anthropic Console.
 
+## Database and accounts
+
+Postgres, currently hosted on Tiger Data. Everything is plain PostgreSQL, so the same code and migrations run on Supabase or any Postgres.
+
+```bash
+npm run db:migrate   # apply db/migrations/*.sql (add -- --tiger for Tiger-only extras, when they exist)
+npm run db:load      # load data/catalog into the database; rerun whenever the JSON changes
+```
+
+Environment variables (`.env` locally, the host's settings in production):
+
+| Variable | Purpose |
+| --- | --- |
+| `DATABASE_URL` | Postgres connection string. Without it the app runs guest-only and reads the catalog from files. |
+| `DATA_SOURCE` | `postgres` to read the catalog from the database; `files` (default) to read `data/catalog/` directly. |
+| `DATABASE_PREPARE` | `true` only for direct connections that support prepared statements; leave unset for poolers. |
+| `ANTHROPIC_API_KEY` | Transcript reading. |
+
+- **The JSON files in `data/catalog/` stay the source of truth.** The database is a loaded copy, so moving providers means running migrate and load against the new database, then changing `DATABASE_URL`.
+- **Catalog reads are cached** (`use cache`, one hour), so pages don't query the database on every request. After `db:load`, a running deployment picks up the new data within the hour, or immediately on redeploy (restart `npm run dev` locally). Building with `DATA_SOURCE=postgres` needs the database to be reachable.
+- **Section data is incomplete**, because the scraper timed out on some courses. The planner treats a course with a section in the target term as "confirmed" and anything else as "unconfirmed", never "not offered".
+- **Accounts** use a username and password; there's no email and no password reset. Passwords are hashed with scrypt. Sessions are random tokens in an httpOnly cookie, and only a SHA-256 hash of each token is stored. Every Server Action re-checks the session, and sign-in and sign-up are rate-limited.
+- **Signing up or signing in** moves a guest's browser record into the account, if the account doesn't already have one.
+
+### Moving to Supabase later
+
+1. Create a Supabase project and copy its pooled connection string.
+2. Run `npm run db:migrate` and `npm run db:load` with that `DATABASE_URL`. Skip `--tiger`.
+3. Change `DATABASE_URL` locally and in the host, then redeploy.
+4. Accounts and records live in the `users`, `sessions`, `student_profiles`, and `course_attempts` tables. Copy them with `pg_dump`/`psql` if existing users should come along. Supabase Auth could replace `lib/auth/` later without touching pages.
+
 ## Student records
 
-- **Storage:** each visitor's record (courses, grades, AP/transfer credit, major, current term) is stored only in their browser, as compact cookies split into chunks. There are no accounts and no server database. Cookies are sent with each request, so server components run the audit with the visitor's data.
+- **Storage:** a signed-in student's record (courses, grades, AP/transfer credit, major, current term) is stored in the database. A guest's record is stored only in their browser, as compact cookies split into chunks. Either way, server components run the audit with the visitor's data.
 - **My Courses** (`/record`): add, edit, and remove courses, choose a major, upload a transcript, load the sample student, or clear the record.
 - **Transcript upload:** Claude Haiku 5.5 reads the PDF and transcribes course rows into a small flat schema (structured outputs). Plain code then interprets them: AP code suffixes, grades, terms, in-progress detection, printed SBC tags. The student reviews every course before saving. The PDF isn't stored, and ID numbers are never extracted. The fictional fixture in `tests/fixtures/transcript/` mirrors the real layout; never commit real transcripts.
 
@@ -103,4 +134,5 @@ lib/
 | My Courses + transcript upload | Done |
 | Degree progress page | Done: full audit, program rules, SBC, catalog text |
 | Semester planner | Placeholder (next-semester proposal already exists) |
-| Real course catalog (`courses.json`) | Not started; demo course data until then |
+| Database (Tiger Data) and accounts | Done |
+| Real course catalog and term sections | Done (PeopleSoft import); some subjects and sections missing, see the scraper's `import-report.md` |
