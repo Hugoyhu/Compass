@@ -136,7 +136,7 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <h2 className="text-2xl font-semibold tracking-tight">Schedule Builder</h2>
+        <h2 className="text-5xl font-bold tracking-tight md:text-6xl">Schedule Builder</h2>
         <div className="flex items-center gap-3">
           <span className="text-sm text-muted-foreground tabular-nums">
             {pickedCourses.size} {pickedCourses.size === 1 ? "course" : "courses"} · {credits} credits
@@ -178,7 +178,7 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
               className="pl-8"
             />
           </div>
-          <div className="min-h-0 flex-1 space-y-2 overflow-y-auto rounded-lg border p-2 max-lg:max-h-96" onMouseLeave={() => setHovered(null)}>
+          <div className="min-h-0 flex-1 divide-y overflow-y-auto border-y-2 border-foreground max-lg:max-h-96" onMouseLeave={() => setHovered(null)}>
             {results.slice(0, MAX_RESULTS).map((entry) => (
               <SectionResult
                 ratings={view.ratings}
@@ -190,10 +190,10 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
                 onToggle={toggle}
               />
             ))}
-            {results.length === 0 && <p className="p-2 text-sm text-muted-foreground">No matching sections.</p>}
+            {results.length === 0 && <p className="py-3 text-sm text-muted-foreground">No matching sections.</p>}
             {results.length > MAX_RESULTS && (
-              <p className="p-2 text-xs text-muted-foreground">
-                Showing {MAX_RESULTS} of {results.length} sections. Search to narrow them down.
+              <p className="py-3 text-xs text-muted-foreground">
+                {MAX_RESULTS} of {results.length} shown
               </p>
             )}
           </div>
@@ -210,7 +210,7 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
             onExpand={expand}
           />
           {hover && !hover.section.days.length && (
-            <p className="text-xs text-muted-foreground">This section has no set meeting time.</p>
+            <p className="text-xs text-muted-foreground">No set meeting time</p>
           )}
           {hoverConflicts.length > 0 && (
             <p className="text-xs text-destructive">
@@ -305,8 +305,8 @@ function SectionResult({
       onBlur={() => onHover(null)}
       aria-pressed={isSelected}
       className={cn(
-        "flex w-full items-start gap-2 rounded-lg border bg-card px-3 py-2 text-left text-xs transition-colors hover:bg-muted/60 focus-visible:bg-muted/60 focus-visible:outline-none",
-        isSelected && "border-primary/40 bg-primary/10",
+        "flex w-full items-start gap-2 py-3 pr-1 text-left text-xs transition-colors hover:bg-muted focus-visible:bg-muted focus-visible:outline-none",
+        isSelected && "border-l-4 border-primary pl-3",
       )}
     >
       <span className="min-w-0 flex-1">

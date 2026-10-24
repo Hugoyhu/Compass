@@ -154,10 +154,11 @@ export function AlternativePath({ layout, ctx }: { layout: SubstitutionLayout; c
         )}
       </p>
       <RuleTree rule={sub.with} ctx={ctx} />
-      <p className="text-muted-foreground">
-        {elsewhere.length > 0 && `Also covers ${elsewhere.join(", ")} in ${covered.size === 1 ? "another requirement" : "other requirements"}. `}
-        Taking or planning any of these courses switches your audit to this path.
-      </p>
+      {elsewhere.length > 0 && (
+        <p className="text-muted-foreground">
+          Also covers {elsewhere.join(", ")} in {covered.size === 1 ? "another requirement" : "other requirements"}.
+        </p>
+      )}
       <CatalogText text={sub.sourceText} />
     </div>
   );

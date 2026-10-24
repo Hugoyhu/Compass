@@ -1,9 +1,6 @@
 import { cn } from "@/lib/utils";
 
-/**
- * Two-part meter: solid fill for completed work, lighter step of the same
- * hue for in-progress work, on a pale track of that hue.
- */
+/** Two-part meter: black for completed work, red for work in progress, on a gray track. */
 export function ProgressMeter({
   completed,
   inProgress = 0,
@@ -25,10 +22,10 @@ export function ProgressMeter({
       aria-valuemin={0}
       aria-valuemax={100}
       aria-valuenow={Math.round(completed * 100)}
-      className={cn("flex h-1.5 w-full gap-0.5 overflow-hidden rounded-full bg-primary/12", className)}
+      className={cn("flex h-2 w-full overflow-hidden bg-foreground/10", className)}
     >
-      {completed > 0 && <div className="h-full rounded-full bg-primary" style={{ width: pct(completed) }} />}
-      {inProgress > 0 && <div className="h-full rounded-full bg-primary/40" style={{ width: pct(inProgress) }} />}
+      {completed > 0 && <div className="h-full bg-foreground" style={{ width: pct(completed) }} />}
+      {inProgress > 0 && <div className="h-full bg-primary" style={{ width: pct(inProgress) }} />}
     </div>
   );
 }

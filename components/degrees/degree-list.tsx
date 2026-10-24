@@ -58,7 +58,7 @@ export function DegreeList({ programs, mine }: { programs: ProgramSummary[]; min
           No matches
         </p>
       ) : (
-        <ul className="divide-y rounded-lg border">
+        <ul className="divide-y border-y">
           {matches.map((p) => (
             <li key={p.id}>
               <Link href={`/degrees/${p.id}`} className="flex items-center gap-3 px-3 py-2.5 hover:bg-muted/50 focus-visible:bg-muted/50 focus-visible:outline-none">

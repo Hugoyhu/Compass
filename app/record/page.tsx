@@ -9,8 +9,8 @@ export const metadata: Metadata = { title: "My Courses" };
 
 export default function RecordPage() {
   return (
-    <main className="mx-auto w-full max-w-7xl space-y-6 p-4 md:p-6">
-      <h2 className="text-2xl font-semibold tracking-tight">My courses</h2>
+    <main className="mx-auto w-full max-w-7xl space-y-10 px-4 py-8 md:px-8 md:py-12">
+      <h2 className="text-5xl font-bold tracking-tight md:text-6xl">My courses</h2>
       <Suspense fallback={<Skeleton className="h-96" />}>
         <Editor />
       </Suspense>

@@ -127,12 +127,12 @@ export function CourseList({
       {matches.length === 0 ? (
         <p className="rounded-lg border border-dashed p-6 text-center text-sm text-muted-foreground">No matches</p>
       ) : (
-        <ul className="divide-y rounded-lg border">
+        <ul className="divide-y border-y">
           {matches.slice(0, shown).map((c) => (
             <li key={c.code}>
               <Link
                 href={`/courses/${slugFor(c.code)}`}
-                className="flex items-center gap-3 px-3 py-2 hover:bg-muted/50 focus-visible:bg-muted/50 focus-visible:outline-none"
+                className="flex items-center gap-3 py-2.5 hover:bg-muted/50 focus-visible:bg-muted/50 focus-visible:outline-none"
               >
                 <span className="w-18 shrink-0 font-mono text-xs">{c.code}</span>
                 <span className="min-w-0 flex-1 truncate text-sm">{c.title}</span>

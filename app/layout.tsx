@@ -1,21 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Archivo } from "next/font/google";
 import { Suspense } from "react";
 import { AccountMenu } from "@/components/app-shell/account-menu";
-import { AppSidebar } from "@/components/app-shell/app-sidebar";
-import { SidebarStudent, SidebarStudentSkeleton } from "@/components/app-shell/sidebar-student";
 import { SiteHeader } from "@/components/app-shell/site-header";
-import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-mono",
+const grotesk = Archivo({
+  variable: "--font-grotesk",
   subsets: ["latin"],
 });
 
@@ -26,28 +18,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html lang="en" className={`${grotesk.variable} h-full antialiased`}>
       <body className="min-h-full">
         <TooltipProvider>
-          <SidebarProvider>
-            <AppSidebar
-              footer={
-                <Suspense fallback={<SidebarStudentSkeleton />}>
-                  <SidebarStudent />
-                </Suspense>
-              }
-            />
-            <SidebarInset>
-              <SiteHeader
-                account={
-                  <Suspense fallback={null}>
-                    <AccountMenu />
-                  </Suspense>
-                }
-              />
-              {children}
-            </SidebarInset>
-          </SidebarProvider>
+          <SiteHeader
+            account={
+              <Suspense fallback={null}>
+                <AccountMenu />
+              </Suspense>
+            }
+          />
+          {children}
         </TooltipProvider>
       </body>
     </html>

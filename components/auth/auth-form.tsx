@@ -13,9 +13,9 @@ export function AuthForm({ mode, hasGuestRecord }: { mode: "sign-in" | "sign-up"
   const signingUp = mode === "sign-up";
 
   return (
-    <Card className="mx-auto w-full max-w-sm">
+    <Card className="w-full max-w-sm">
       <CardHeader>
-        <CardTitle className="text-lg">{signingUp ? "Create an account" : "Sign in"}</CardTitle>
+        <CardTitle className="text-4xl">{signingUp ? "Create an account" : "Sign in"}</CardTitle>
         {hasGuestRecord && <CardDescription>Courses saved in this browser will move to your account.</CardDescription>}
       </CardHeader>
       <form action={action}>
@@ -57,12 +57,12 @@ export function AuthForm({ mode, hasGuestRecord }: { mode: "sign-in" | "sign-up"
             </p>
           )}
         </CardContent>
-        <CardFooter className="mt-4 flex-col items-stretch gap-3 border-t bg-muted/30 py-3">
+        <CardFooter className="mt-4 flex-col items-stretch gap-3 py-3">
           <Button type="submit" disabled={pending}>
             {pending && <Loader2 className="animate-spin" />}
             {signingUp ? "Create account" : "Sign in"}
           </Button>
-          <p className="text-center text-xs text-muted-foreground">
+          <p className="text-xs text-muted-foreground">
             {signingUp ? "Have an account? " : "No account? "}
             <Link href={signingUp ? "/login" : "/signup"} className="font-medium text-foreground underline-offset-4 hover:underline">
               {signingUp ? "Sign in" : "Create one"}

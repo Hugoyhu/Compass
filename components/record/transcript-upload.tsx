@@ -77,7 +77,7 @@ export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean;
           {groupAttempts(draft.attempts).map((group) => (
             <div key={group.key} className="space-y-1">
               <p className="text-xs font-medium text-muted-foreground">{group.label}</p>
-              <ul className="divide-y rounded-lg border">
+              <ul className="divide-y border-y">
                 {group.items.map(({ attempt, index }) => (
                   <li key={index}>
                     <label className="flex cursor-pointer items-center gap-3 px-3 py-2 text-sm has-[:not(:checked)]:opacity-50">
@@ -110,7 +110,7 @@ export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean;
             </div>
           ))}
         </CardContent>
-        <CardFooter className="flex-wrap gap-2 border-t bg-muted/30 py-3">
+        <CardFooter className="flex-wrap gap-2 py-3">
           <Button onClick={() => apply("replace")} disabled={included === 0}>
             {hasCourses ? `Replace my courses (${included})` : `Save ${included} courses`}
           </Button>
@@ -133,7 +133,7 @@ export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean;
         <FileUp className="size-5 shrink-0 text-primary" aria-hidden />
         <div className="min-w-0 flex-1 space-y-0.5">
           <p className="font-medium">Upload a transcript</p>
-          <p className="text-xs text-muted-foreground">Unofficial transcript PDF from SOLAR. Read by Claude, not stored.</p>
+          <p className="text-xs text-muted-foreground">SOLAR unofficial transcript (PDF). Not stored.</p>
           {error && (
             <p role="alert" className="text-sm text-destructive">
               {error}
