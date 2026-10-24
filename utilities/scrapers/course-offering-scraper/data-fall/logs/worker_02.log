@@ -1,0 +1,457 @@
+Worker 2 groups: B, 1
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_02 --letters B,1 --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Fall 2026 --headless
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group B (1/2)…
+  [B] 9 subjects have no active courses.
+  [B] Found 431 course entries.
+  [B] Skipping 229 courses numbered above 499; 202 left.
+    [B 1/202] Opening BCP 111 — American Drug Use and Abuse: Biomedical, Socio-economic and Political Factors
+      No View Class Sections button; course has no sections.
+    [B 2/202] Opening BCP 201 — Introduction to Pharmacology: Drug Use & Its Molecular Basis
+      No View Class Sections button; course has no sections.
+    [B 3/202] Opening BCP 400 — Writing in Pharmacology
+      No View Class Sections button; course has no sections.
+    [B 4/202] Opening BCP 401 — Principles of Pharmacology
+      Fall 2026: found 2 class sections.
+    [B 5/202] Opening BCP 402 — Advanced Pharmacology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 6/202] Opening BCP 403 — Principles of Pharmacology Laboratory
+      No View Class Sections button; course has no sections.
+    [B 7/202] Opening BCP 404 — Advanced Pharmacology Laboratory
+      No View Class Sections button; course has no sections.
+    [B 8/202] Opening BCP 405 — Pharmacology to Pharmacy: Practical Clinical Aspects for Non-Clinicians (Didactic)
+      No View Class Sections button; course has no sections.
+    [B 9/202] Opening BCP 406 — Pharmacology Colloquium
+      No View Class Sections button; course has no sections.
+    [B 10/202] Opening BCP 444 — Experiential Learning
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (B 10/202) · 10 scraped, 0 already done, 0 failed · 28s elapsed
+    [B 11/202] Opening BCP 475 — Undergraduate Teaching Practicum in Pharmacology
+      No View Class Sections button; course has no sections.
+    [B 12/202] Opening BCP 480 — Introduction to Research Topics in Pharmacology
+      No View Class Sections button; course has no sections.
+    [B 13/202] Opening BCP 487 — Research in Pharmacology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 14/202] Opening BCP 488 — Internship
+      No View Class Sections button; course has no sections.
+    [B 15/202] Opening BIO 103 — Introduction to Biotechnology
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [B 16/202] Opening BIO 113 — General Ecology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 17/202] Opening BIO 114 — Dinosaur Paleontology
+      No View Class Sections button; course has no sections.
+    [B 18/202] Opening BIO 115 — Evolution and Society
+      Fall 2026: found 2 class sections.
+    [B 19/202] Opening BIO 201 — Fundamentals of Biology: Organisms to Ecosystems
+      Fall 2026: found 8 class sections.
+    [B 20/202] Opening BIO 202 — Fundamentals of Biology: Molecular and Cellular Biology
+      Fall 2026: found 2 class sections.
+  Progress: group 1/2 (B 20/202) · 20 scraped, 0 already done, 0 failed · 22.7 pages/min · 52s elapsed · ~8m00s left in B
+    [B 21/202] Opening BIO 203 — Fundamentals of Biology: Cellular and Organ Physiology
+      Fall 2026: found 2 class sections.
+    [B 22/202] Opening BIO 204 — Fundamentals of Scientific Inquiry in the Biological Sciences I
+      Fall 2026: found 48 class sections.
+    [B 23/202] Opening BIO 205 — Fundamentals of Scientific Inquiry in the Biological Sciences IIA
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 24/202] Opening BIO 207 — Fundamentals of Scientific Inquiry in the Biological Sciences IIB
+      Fall 2026: found 9 class sections.
+    [B 25/202] Opening BIO 208 — Cells, Brains, Minds
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 26/202] Opening BIO 209 — Fundamentals of Scientific Inquiry in the Biological Sciences IIC
+      No View Class Sections button; course has no sections.
+    [B 27/202] Opening BIO 211 — Statistics and Data Analysis: A Conceptual Approach
+      Fall 2026: found 2 class sections.
+    [B 28/202] Opening BIO 231 — Cannabis: History, Culture, Science & Medicinal Uses
+      No View Class Sections button; course has no sections.
+    [B 29/202] Opening BIO 299 — Advanced Microbiology for Nursing & Allied Health
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [B 30/202] Opening BIO 310 — Cell Biology
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+  Progress: group 1/2 (B 30/202) · 30 scraped, 0 already done, 0 failed · 18.4 pages/min · 1m37s elapsed · ~9m21s left in B
+    [B 31/202] Opening BIO 312 — Bioinformatics and Computational Biology
+      Fall 2026: found 5 class sections.
+    [B 32/202] Opening BIO 314 — Cancer Biology
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [B 33/202] Opening BIO 315 — Microbiology
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [B 34/202] Opening BIO 316 — Molecular Immunology
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [B 35/202] Opening BIO 317 — Principles of Cellular Signaling
+      Fall 2026: found 1 class sections.
+    [B 36/202] Opening BIO 319 — Landscape Ecology Laboratory
+      Fall 2026: found 7 class sections.
+    [B 37/202] Opening BIO 320 — General Genetics
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [B 38/202] Opening BIO 321 — Ecological Genetics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 39/202] Opening BIO 325 — Animal Development
+      Fall 2026: found 1 class sections.
+    [B 40/202] Opening BIO 327 — Developmental Genetics Laboratory
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (B 40/202) · 40 scraped, 0 already done, 0 failed · 19.0 pages/min · 2m06s elapsed · ~8m31s left in B
+    [B 41/202] Opening BIO 328 — Mammalian Physiology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 42/202] Opening BIO 332 — Computational Modeling of Physiological Systems
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 43/202] Opening BIO 333 — Neurotechnology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 44/202] Opening BIO 334 — Principles of Neurobiology
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [B 45/202] Opening BIO 335 — Neurobiology Laboratory
+      Fall 2026: found 11 class sections.
+    [B 46/202] Opening BIO 336 — Conservation Biology
+      Fall 2026: found 1 class sections.
+    [B 47/202] Opening BIO 337 — Neurotransmission and Neuromodulation: Implications for Brain Function
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 48/202] Opening BIO 338 — From Synapse to Circuit: Self-organization of the Brain
+      No View Class Sections button; course has no sections.
+    [B 49/202] Opening BIO 339 — Neurobiology of Disease
+      Fall 2026: found 1 class sections.
+    [B 50/202] Opening BIO 341 — Plant Diversity
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (B 50/202) · 50 scraped, 0 already done, 0 failed · 20.4 pages/min · 2m27s elapsed · ~7m27s left in B
+    Pausing 5s after 50 detail pages…
+    [B 51/202] Opening BIO 342 — Invertebrate Zoology
+      Fall 2026: found 1 class sections.
+    [B 52/202] Opening BIO 343 — Invertebrate Zoology Laboratory
+      Fall 2026: found 3 class sections.
+    [B 53/202] Opening BIO 344 — Chordate Zoology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 54/202] Opening BIO 347 — Introduction to Neural Computation
+      Fall 2026: found 1 class sections.
+    [B 55/202] Opening BIO 348 — Herpetology
+      No View Class Sections button; course has no sections.
+    [B 56/202] Opening BIO 351 — Ecology
+      Fall 2026: found 1 class sections.
+    [B 57/202] Opening BIO 352 — Ecology Laboratory
+      Fall 2026: found 3 class sections.
+    [B 58/202] Opening BIO 353 — Marine Ecology
+      Fall 2026: found 1 class sections.
+    [B 59/202] Opening BIO 354 — Evolution
+      Fall 2026: found 2 class sections.
+    [B 60/202] Opening BIO 356 — Population and Community Ecology Computer Laboratory
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+  Progress: group 1/2 (B 60/202) · 60 scraped, 0 already done, 0 failed · 19.8 pages/min · 3m01s elapsed · ~7m09s left in B
+    [B 61/202] Opening BIO 357 — Urban Microbial Ecology & the Microbiome of the Built Environment
+      Fall 2026: found 2 class sections.
+    [B 62/202] Opening BIO 358 — Biology and Human Social and Sexual Behavior
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [B 63/202] Opening BIO 361 — Biochemistry I
+      Fall 2026: found 1 class sections.
+    [B 64/202] Opening BIO 362 — Biochemistry II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 65/202] Opening BIO 364 — Laboratory Techniques in Cancer Biology
+      Fall 2026: found 5 class sections.
+    [B 66/202] Opening BIO 365 — Biochemistry Laboratory
+      Fall 2026: found 21 class sections.
+    [B 67/202] Opening BIO 366 — Molecular Microbiology Laboratory
+      Fall 2026: found 7 class sections.
+    [B 68/202] Opening BIO 367 — Molecular Diversity Laboratory
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 69/202] Opening BIO 368 — Food Microbiology
+      No View Class Sections button; course has no sections.
+    [B 70/202] Opening BIO 369 — Animal Nutrition
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (B 70/202) · 70 scraped, 0 already done, 0 failed · 19.9 pages/min · 3m30s elapsed · ~6m37s left in B
+    [B 71/202] Opening BIO 371 — Restoration of Aquatic Ecosystems
+      No View Class Sections button; course has no sections.
+    [B 72/202] Opening BIO 383 — Paleobiology
+      No View Class Sections button; course has no sections.
+    [B 73/202] Opening BIO 384 — Intermediate Statistics
+      No View Class Sections button; course has no sections.
+    [B 74/202] Opening BIO 385 — Plant Ecology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 75/202] Opening BIO 386 — Ecosystem Ecology and the Global Environment
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 76/202] Opening BIO 387 — Biogeography
+      No View Class Sections button; course has no sections.
+    [B 77/202] Opening BIO 444 — Experiential Learning
+      Fall 2026: found 1 class sections.
+    [B 78/202] Opening BIO 446 — Readings in Neurobiology and Physiology
+      Fall 2026: found 5 class sections.
+    [B 79/202] Opening BIO 447 — Readings in Molecular, Cellular, and Developmental Biology
+      Fall 2026: found 5 class sections.
+    [B 80/202] Opening BIO 449 — Readings in Ecology and Evolution
+      Fall 2026: found 5 class sections.
+  Progress: group 1/2 (B 80/202) · 80 scraped, 0 already done, 0 failed · 19.1 pages/min · 4m11s elapsed · ~6m22s left in B
+    [B 81/202] Opening BIO 458 — Speak Effectively Before an Audience
+      Fall 2026: found 2 class sections.
+    [B 82/202] Opening BIO 459 — Write Effectively in Biology
+      Fall 2026: found 1 class sections.
+    [B 83/202] Opening BIO 475 — Undergraduate Teaching Practicum in College Biology I
+      Fall 2026: found 16 class sections.
+    [B 84/202] Opening BIO 476 — Undergraduate Teaching Practicum in College Biology II
+      Fall 2026: found 13 class sections.
+    [B 85/202] Opening BIO 477 — Undergraduate Teaching Practicum in College Biology III
+      Fall 2026: found 12 class sections.
+    [B 86/202] Opening BIO 484 — Research in Biology and Society
+      Fall 2026: found 6 class sections.
+    [B 87/202] Opening BIO 486 — Research in Neurobiology and Physiology
+      Fall 2026: found 50 class sections.
+    [B 88/202] Opening BIO 487 — Research in Molecular, Cellular, and Developmental Biology
+      Fall 2026: grid shows ['Summer 2026']; retrying.
+      Fall 2026: found 76 class sections.
+    [B 89/202] Opening BIO 488 — Internship in Biological Sciences
+      Fall 2026: found 10 class sections.
+    [B 90/202] Opening BIO 489 — Research in Ecology and Evolution
+      Fall 2026: found 20 class sections.
+  Progress: group 1/2 (B 90/202) · 90 scraped, 0 already done, 0 failed · 14.5 pages/min · 6m12s elapsed · ~7m43s left in B
+    [B 91/202] Opening BME 100 — Introduction to Biomedical Engineering
+      Fall 2026: found 1 class sections.
+    [B 92/202] Opening BME 120 — Programming Fundamentals in Biomedical Engineering
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 93/202] Opening BME 200 — Bioengineering in Extreme Environments
+      Fall 2026: found 1 class sections.
+    [B 94/202] Opening BME 203 — Emergent Biodesign
+      Fall 2026: found 1 class sections.
+    [B 95/202] Opening BME 205 — Clinical Challenges of the 21st Century
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026, Winter 2027
+    [B 96/202] Opening BME 206 — Science Fiction or Inclusive Bioengineering Solutions
+      No View Class Sections button; course has no sections.
+    [B 97/202] Opening BME 210 — Applied Biostatistics
+      No View Class Sections button; course has no sections.
+    [B 98/202] Opening BME 212 — Biomedical Engineering Research Fundamentals
+      Fall 2026: found 3 class sections.
+    [B 99/202] Opening BME 260 — Statics and Dynamics in Biological Systems
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 100/202] Opening BME 271 — Introduction to Electric Circuits and Bioelectricity
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (B 100/202) · 100 scraped, 0 already done, 0 failed · 15.2 pages/min · 6m33s elapsed · ~6m41s left in B
+    Pausing 5s after 100 detail pages…
+    [B 101/202] Opening BME 300 — Writing in Biomedical Engineering
+      Fall 2026: found 13 class sections.
+    [B 102/202] Opening BME 301 — Bioelectricity
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 103/202] Opening BME 302 — Research Fundamentals and Communication
+      No View Class Sections button; course has no sections.
+    [B 104/202] Opening BME 303 — Biomechanics
+      Fall 2026: found 1 class sections.
+    [B 105/202] Opening BME 304 — Genetic Engineering
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 106/202] Opening BME 305 — Biofluids
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 107/202] Opening BME 310 — Introduction to Biomedical Optics and Ultrasound
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 108/202] Opening BME 311 — Fundamentals of Macro to Molecular Bioimaging
+      Fall 2026: found 1 class sections.
+    [B 109/202] Opening BME 312 — LabVIEW Programming in Engineering
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 110/202] Opening BME 313 — Bioinstrumentation
+      Fall 2026: found 2 class sections.
+  Progress: group 1/2 (B 110/202) · 110 scraped, 0 already done, 0 failed · 15.3 pages/min · 7m10s elapsed · ~6m00s left in B
+    [B 111/202] Opening BME 314 — Embedded Technologies in Medical Devices
+      No View Class Sections button; course has no sections.
+    [B 112/202] Opening BME 340 — Clinical Insights for Healthcare Device Innovation & Entrepreneurship
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 113/202] Opening BME 353 — Introduction to Biomaterials
+      Fall 2026: found 1 class sections.
+    [B 114/202] Opening BME 354 — Advanced Biomaterials
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 115/202] Opening BME 361 — Data Science with Python
+      Fall 2026: found 1 class sections.
+    [B 116/202] Opening BME (362) — Deep Learning in Medical Imaging ** available as of 01/01/2027
+      No View Class Sections button; course has no sections.
+    [B 117/202] Opening BME 371 — Biological Microfluidics
+      Fall 2026: found 1 class sections.
+    [B 118/202] Opening BME 381 — Nanofabrication in Biomedical Applications
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 119/202] Opening BME 402 — Contemporary Biotechnology
+      Fall 2026: found 1 class sections.
+    [B 120/202] Opening BME 404 — Essentials of Tissue Engineering
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (B 120/202) · 120 scraped, 0 already done, 0 failed · 16.0 pages/min · 7m30s elapsed · ~5m08s left in B
+    [B 121/202] Opening BME 420 — Computational Biomechanics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 122/202] Opening BME 430 — Quantitative Human Physiology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 123/202] Opening BME 440 — Biomedical Engineering Design
+      Fall 2026: found 1 class sections.
+    [B 124/202] Opening BME 441 — Senior Design Project in Biomedical Engineering
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 125/202] Opening BME 444 — Experiential Learning
+      No View Class Sections button; course has no sections.
+    [B 126/202] Opening BME 461 — Biosystems Analysis
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 127/202] Opening BME 475 — Undergraduate Teaching Practicum
+      Fall 2026: found 4 class sections.
+    [B 128/202] Opening BME 476 — Undergrad Teaching Practicum II
+      Fall 2026: found 1 class sections.
+    [B 129/202] Opening BME 481 — Biosensors
+      No View Class Sections button; course has no sections.
+    [B 130/202] Opening BME 488 — Biomedical Engineering Internship
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (B 130/202) · 130 scraped, 0 already done, 0 failed · 16.2 pages/min · 8m01s elapsed · ~4m26s left in B
+    [B 131/202] Opening BME 494 — Honors Seminar on Research
+      Fall 2026: found 1 class sections.
+    [B 132/202] Opening BME 495 — Honors Independent Research
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 133/202] Opening BME 499 — Research in Biomedical Engineering
+      Fall 2026: found 21 class sections.
+    [B 134/202] Opening BUS 115 — Introduction to Business
+      Fall 2026: found 1 class sections.
+    [B 135/202] Opening BUS 117 — Digital Tools for Business
+      Fall 2026: found 2 class sections.
+    [B 136/202] Opening BUS 215 — Introduction to Business Statistics
+      Fall 2026: found 8 class sections.
+    [B 137/202] Opening BUS 220 — Introduction to Decision Sciences
+      Fall 2026: found 7 class sections.
+    [B 138/202] Opening BUS 230 — Personal Finance
+      Fall 2026: found 1 class sections.
+    [B 139/202] Opening BUS 294 — Principles of Management
+      No View Class Sections button; course has no sections.
+    [B 140/202] Opening BUS 300 — Writing for Business Management
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (B 140/202) · 140 scraped, 0 already done, 0 failed · 16.0 pages/min · 8m45s elapsed · ~3m52s left in B
+    [B 141/202] Opening BUS 301 — Business Communications
+      Fall 2026: found 13 class sections.
+    [B 142/202] Opening BUS 302 — Social Media Marketing Strategy
+      Fall 2026: found 4 class sections.
+    [B 143/202] Opening BUS 317 — Estate & Financial Planning
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026, Winter 2027
+    [B 144/202] Opening BUS 325 — Legal Environment of Business
+      Fall 2026: found 1 class sections.
+    [B 145/202] Opening BUS 326 — Organizational Behavior
+      Fall 2026: found 6 class sections.
+    [B 146/202] Opening BUS 330 — Principles of Finance
+      Fall 2026: found 6 class sections.
+    [B 147/202] Opening BUS 331 — International Finance
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 148/202] Opening BUS 332 — Entrepreneurial Finance
+      No View Class Sections button; course has no sections.
+    [B 149/202] Opening BUS 333 — Introduction to the Business of Real Estate
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 150/202] Opening BUS 334 — Integrated Marketing Communications
+      Fall 2026: found 3 class sections.
+  Progress: group 1/2 (B 150/202) · 150 scraped, 0 already done, 0 failed · 15.9 pages/min · 9m24s elapsed · ~3m15s left in B
+    Pausing 5s after 150 detail pages…
+    [B 151/202] Opening BUS 336 — Mergers & Acquisitions
+      Fall 2026: found 1 class sections.
+    [B 152/202] Opening BUS 337 — Entrepreneurship Compared Across Countries
+      No View Class Sections button; course has no sections.
+    [B 153/202] Opening BUS 338 — Data Visualization and Storytelling
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 154/202] Opening BUS 340 — Information Systems in Management
+      Fall 2026: found 6 class sections.
+    [B 155/202] Opening BUS 346 — Operations Management
+      Fall 2026: found 6 class sections.
+    [B 156/202] Opening BUS 348 — Principles of Marketing
+      Fall 2026: found 7 class sections.
+    [B 157/202] Opening BUS 351 — Human Resource Management
+      No View Class Sections button; course has no sections.
+    [B 158/202] Opening BUS 353 — Entrepreneurship
+      Fall 2026: found 3 class sections.
+    [B 159/202] Opening BUS 354 — Understanding Business Agreements
+      No View Class Sections button; course has no sections.
+    [B 160/202] Opening BUS 355 — Investment Analysis
+      Fall 2026: found 4 class sections.
+  Progress: group 1/2 (B 160/202) · 160 scraped, 0 already done, 0 failed · 15.8 pages/min · 10m08s elapsed · ~2m39s left in B
+    [B 161/202] Opening BUS 356 — Financial Analysis, AI, Excel
+      Fall 2026: found 1 class sections.
+    [B 162/202] Opening BUS 357 — Principles of Sales
+      Fall 2026: found 1 class sections.
+    [B 163/202] Opening BUS 358 — Marketing Research
+      Fall 2026: found 3 class sections.
+    [B 164/202] Opening BUS 358TRC — Marketing Research
+      No View Class Sections button; course has no sections.
+    [B 165/202] Opening BUS 359 — Consumer Behavior
+      Fall 2026: found 4 class sections.
+    [B 166/202] Opening BUS 361 — Retail Management
+      No View Class Sections button; course has no sections.
+    [B 167/202] Opening BUS 362 — Principles of International Marketing
+      No View Class Sections button; course has no sections.
+    [B 168/202] Opening BUS 363 — Brand Management
+      Fall 2026: found 2 class sections.
+    [B 169/202] Opening BUS 365 — Financial Management
+      Fall 2026: found 4 class sections.
+    [B 170/202] Opening BUS 366 — Money and Financial Institutions
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (B 170/202) · 170 scraped, 0 already done, 0 failed · 15.7 pages/min · 10m49s elapsed · ~2m02s left in B
+    [B 171/202] Opening BUS 367 — Python for Finance
+      Fall 2026: found 1 class sections.
+    [B 172/202] Opening BUS 371 — Supply Chain Management
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 173/202] Opening BUS 372 — Quality Management
+      Fall 2026: found 1 class sections.
+    [B 174/202] Opening BUS 375 — Introduction to Artificial Intelligence
+      Fall 2026: found 1 class sections.
+    [B 175/202] Opening BUS 376 — Risk Management & Insurance
+      Fall 2026: found 1 class sections.
+    [B 176/202] Opening BUS 377 — Risk Management & Insurance II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 177/202] Opening BUS 378 — Marketing Ethics, Public Policy, and Social Change
+      No View Class Sections button; course has no sections.
+    [B 178/202] Opening BUS 379 — Machine Learning and Artificial Intelligence
+      No View Class Sections button; course has no sections.
+    [B 179/202] Opening BUS 380 — Honors: Emerging Topics in Business
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 180/202] Opening BUS 381 — Blockchain & Digital Assets
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (B 180/202) · 180 scraped, 0 already done, 0 failed · 16.1 pages/min · 11m10s elapsed · ~1m21s left in B
+    [B 181/202] Opening BUS 383 — Social Entrepreneurship
+      Fall 2026: found 1 class sections.
+    [B 182/202] Opening BUS 390 — Special Topics in Business Management
+      No View Class Sections button; course has no sections.
+    [B 183/202] Opening BUS 391 — Management of Sports Organizations
+      No View Class Sections button; course has no sections.
+    [B 184/202] Opening BUS 393 — Principles of Project Management
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [B 185/202] Opening BUS 395 — Marketing Analytics
+      Fall 2026: found 1 class sections.
+    [B 186/202] Opening BUS 399 — Intellectual Property Strategy
+      No View Class Sections button; course has no sections.
+    [B 187/202] Opening BUS 401 — Negotiation Workshop
+      No View Class Sections button; course has no sections.
+    [B 188/202] Opening BUS 406 — Real Estate Finance
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 189/202] Opening BUS 408 — Property & Casualty Insurance
+      Fall 2026: found 1 class sections.
+    [B 190/202] Opening BUS 440 — International Management
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (B 190/202) · 190 scraped, 0 already done, 0 failed · 16.5 pages/min · 11m29s elapsed · ~43s left in B
+    [B 191/202] Opening BUS 441 — Business Strategy
+      Fall 2026: found 4 class sections.
+    [B 192/202] Opening BUS 444 — Artificial Intelligence Strategy for Business
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [B 193/202] Opening BUS 446 — Ethics: Critical Thinking through Film
+      No View Class Sections button; course has no sections.
+    [B 194/202] Opening BUS 447 — Business Ethics
+      Fall 2026: found 7 class sections.
+    [B 195/202] Opening BUS 448 — Marketing Strategy
+      Fall 2026: found 2 class sections.
+    [B 196/202] Opening BUS 449 — Marketing in Action
+      No View Class Sections button; course has no sections.
+    [B 197/202] Opening BUS 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 37 class sections.
+    [B 198/202] Opening BUS 476 — Undergraduate Teaching Practicum II
+      Fall 2026: found 14 class sections.
+    [B 199/202] Opening BUS 487 — Independent Research
+      Fall 2026: found 9 class sections.
+    [B 200/202] Opening BUS 488 — Internship
+      Fall 2026: found 26 class sections.
+  Progress: group 1/2 (B 200/202) · 200 scraped, 0 already done, 0 failed · 16.1 pages/min · 12m26s elapsed · ~7s left in B
+    Pausing 5s after 200 detail pages…
+    [B 201/202] Opening BUS 495 — Business Honors Program Thesis
+      Fall 2026: found 10 class sections.
+    [B 202/202] Opening BUS 496 — Business Honors Program Thesis
+      Fall 2026: found 4 class sections.
+  Progress: group 2/2 (B 202/202) · 202 scraped, 0 already done, 0 failed · 15.9 pages/min · 12m42s elapsed
+
+Processing subject-code group 1 (2/2)…
+  [1] Letter has no subject groups.
+Exported index: 202 records (JSON + CSV)
+Exported details: 202 records (JSONL + JSON + CSV)
+Exported sections: 644 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_02/semesteros-export.zip
+
+Done in 12m43s: 202 scraped, 0 already done, 0 failed, 229 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_02/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_02/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_02/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_02/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_02/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_02/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_02/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_02/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.

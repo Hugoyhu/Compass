@@ -1,0 +1,4058 @@
+[
+  {
+    "subject": "AAS",
+    "course_number": "102",
+    "course_code": "AAS 102",
+    "title": "Eastern Religions",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "103",
+    "course_code": "AAS 103",
+    "title": "Introduction to East Asian Popular Culture",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "110",
+    "course_code": "AAS 110",
+    "title": "Appreciating Indian Music",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "201",
+    "course_code": "AAS 201",
+    "title": "Introduction to the Civilization of the Indian Subcontinent",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "209",
+    "course_code": "AAS 209",
+    "title": "Indian Classical Dance: Bharatanatyam",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "210",
+    "course_code": "AAS 210",
+    "title": "Formations of Asian American Identity",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "211",
+    "course_code": "AAS 211",
+    "title": "Asian and Asian American Studies Topics in the Social Sciences",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "212",
+    "course_code": "AAS 212",
+    "title": "Asian and Asian American Studies Topics in the Humanities",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "214",
+    "course_code": "AAS 214",
+    "title": "Culture and Communication for Korean I",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "215",
+    "course_code": "AAS 215",
+    "title": "Classical Performing Arts of India",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "216",
+    "course_code": "AAS 216",
+    "title": "Introduction to Japanese Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "217",
+    "course_code": "AAS 217",
+    "title": "Introduction to Korean Culture",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "218",
+    "course_code": "AAS 218",
+    "title": "Ancient, Medieval, & Early Modern South Asia",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "219",
+    "course_code": "AAS 219",
+    "title": "Japan in the Age of Courtier and Samurai",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "220",
+    "course_code": "AAS 220",
+    "title": "China: Language and Culture",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "222",
+    "course_code": "AAS 222",
+    "title": "Indian Cinemas and Cultures",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "223",
+    "course_code": "AAS 223",
+    "title": "China: Society and Civilization",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "228",
+    "course_code": "AAS 228",
+    "title": "China: History and Geography",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "232",
+    "course_code": "AAS 232",
+    "title": "Introduction to Asian American Fiction and Film",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "236",
+    "course_code": "AAS 236",
+    "title": "Korean Religions",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "237",
+    "course_code": "AAS 237",
+    "title": "Introduction to Japanese Literature",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "238",
+    "course_code": "AAS 238",
+    "title": "Korean American Literature",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "240",
+    "course_code": "AAS 240",
+    "title": "Confucianism and Daoism",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "247",
+    "course_code": "AAS 247",
+    "title": "Modern Korea through Visual Culture",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "250",
+    "course_code": "AAS 250",
+    "title": "Languages and Cultures of Asian Americans",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "256",
+    "course_code": "AAS 256",
+    "title": "Hinduism",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "260",
+    "course_code": "AAS 260",
+    "title": "Buddhism",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "280",
+    "course_code": "AAS 280",
+    "title": "Islam",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "287",
+    "course_code": "AAS 287",
+    "title": "Islam in China",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "300",
+    "course_code": "AAS 300",
+    "title": "Intellectual History of East Asia",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "(301)",
+    "course_code": "AAS (301)",
+    "title": "Humanities Topics in Korean Studies ** available as of 01/01/2027",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "305",
+    "course_code": "AAS 305",
+    "title": "The Pacific, Travel & Empire",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "311",
+    "course_code": "AAS 311",
+    "title": "Asian American Studies: Theories and Methods",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "314",
+    "course_code": "AAS 314",
+    "title": "Culture and Communication for Korean II",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "320",
+    "course_code": "AAS 320",
+    "title": "Literature of India",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "321",
+    "course_code": "AAS 321",
+    "title": "Korean Literature",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "322",
+    "course_code": "AAS 322",
+    "title": "Literature of Japan",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "323",
+    "course_code": "AAS 323",
+    "title": "Language and Society in South Korea",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "324",
+    "course_code": "AAS 324",
+    "title": "Language and Society in North Korea",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "326",
+    "course_code": "AAS 326",
+    "title": "Indian Mythology",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "327",
+    "course_code": "AAS 327",
+    "title": "Great Epics of India: Ramayana and Mahabharata",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "328",
+    "course_code": "AAS 328",
+    "title": "Race, Humor and Asian America",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "330",
+    "course_code": "AAS 330",
+    "title": "Language and Society in South Asia",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "331",
+    "course_code": "AAS 331",
+    "title": "Japanese Literature in the Feminine Domain",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "332",
+    "course_code": "AAS 332",
+    "title": "Japanese Literature in the Meiji Era",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "333",
+    "course_code": "AAS 333",
+    "title": "The Unending Korean War",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "334",
+    "course_code": "AAS 334",
+    "title": "English in Asia",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "336",
+    "course_code": "AAS 336",
+    "title": "Asian and Pacific Islanders in American History",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "337",
+    "course_code": "AAS 337",
+    "title": "History of Korea",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "338",
+    "course_code": "AAS 338",
+    "title": "Contemporary India: History, Politics, and Diplomacy",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "339",
+    "course_code": "AAS 339",
+    "title": "Contemporary China: History, Politics, and Diplomacy",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "340",
+    "course_code": "AAS 340",
+    "title": "Topics in Asian History",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "(342)",
+    "course_code": "AAS (342)",
+    "title": "Exploration of Korean Philosophy ** available as of 01/01/2027",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "343",
+    "course_code": "AAS 343",
+    "title": "Modern Japan",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "344",
+    "course_code": "AAS 344",
+    "title": "Learning of Asian Languages",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "351",
+    "course_code": "AAS 351",
+    "title": "Revolutionary China: Politics, Culture, and Power",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "352",
+    "course_code": "AAS 352",
+    "title": "Environmental History of China",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "353",
+    "course_code": "AAS 353",
+    "title": "Postwar Japan",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "358",
+    "course_code": "AAS 358",
+    "title": "China's Lang, Media, Pop Culture in Global Context",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "360",
+    "course_code": "AAS 360",
+    "title": "Chinese Sociolinguistics",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "366",
+    "course_code": "AAS 366",
+    "title": "Feminine Spirituality",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "368",
+    "course_code": "AAS 368",
+    "title": "Yoga: Theory and Praxis",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "370",
+    "course_code": "AAS 370",
+    "title": "Intercultural Communication",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "371",
+    "course_code": "AAS 371",
+    "title": "Ancient China",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "372",
+    "course_code": "AAS 372",
+    "title": "Family, Marriage, and Kinship in China",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "374",
+    "course_code": "AAS 374",
+    "title": "Accent and Language Justice",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "379",
+    "course_code": "AAS 379",
+    "title": "Cultural Diversity in China",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "380",
+    "course_code": "AAS 380",
+    "title": "Islamic Classics",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "382",
+    "course_code": "AAS 382",
+    "title": "Japanese Buddhism",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "385",
+    "course_code": "AAS 385",
+    "title": "Translation Studies of Asian Languages",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "387",
+    "course_code": "AAS 387",
+    "title": "Islam and Confucianism",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "391",
+    "course_code": "AAS 391",
+    "title": "Humanities Topics in Asian and Asian American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "392",
+    "course_code": "AAS 392",
+    "title": "Social Science Topics in Asian and Asian American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "394",
+    "course_code": "AAS 394",
+    "title": "Topics in Asian Art",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "396",
+    "course_code": "AAS 396",
+    "title": "Topics in Sinophone Literature and Culture",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "400",
+    "course_code": "AAS 400",
+    "title": "Seminar in Korean Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "401",
+    "course_code": "AAS 401",
+    "title": "Proseminar in Asian and Asian American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "421",
+    "course_code": "AAS 421",
+    "title": "Language and Reality",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "422",
+    "course_code": "AAS 422",
+    "title": "Freedom and Creativity",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "440",
+    "course_code": "AAS 440",
+    "title": "Inter-Asia Cultural Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "444",
+    "course_code": "AAS 444",
+    "title": "Experiential Learning",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "447",
+    "course_code": "AAS 447",
+    "title": "Directed Readings in Asian and Asian American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "458",
+    "course_code": "AAS 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "459",
+    "course_code": "AAS 459",
+    "title": "Write Effectively in Asian and Asian American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "472",
+    "course_code": "AAS 472",
+    "title": "Topics in Asian Philosophy (I)",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "473",
+    "course_code": "AAS 473",
+    "title": "Orientalism",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "475",
+    "course_code": "AAS 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "476",
+    "course_code": "AAS 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "487",
+    "course_code": "AAS 487",
+    "title": "Supervised Research in Asian and Asian American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "488",
+    "course_code": "AAS 488",
+    "title": "Internship",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "AAS",
+    "course_number": "495",
+    "course_code": "AAS 495",
+    "title": "Senior Honors Project in AAS",
+    "source_file": "index_A.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "ACC",
+    "course_number": "210",
+    "course_code": "ACC 210",
+    "title": "Financial Accounting",
+    "source_file": "index_A.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "ACC",
+    "course_number": "214",
+    "course_code": "ACC 214",
+    "title": "Managerial Cost Analysis and Applications",
+    "source_file": "index_A.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "ACC",
+    "course_number": "301",
+    "course_code": "ACC 301",
+    "title": "Governmental & Not-for-Profit Accounting and Reporting",
+    "source_file": "index_A.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "ACC",
+    "course_number": "310",
+    "course_code": "ACC 310",
+    "title": "Intermediate Accounting I",
+    "source_file": "index_A.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "ACC",
+    "course_number": "311",
+    "course_code": "ACC 311",
+    "title": "Federal Income Taxation I",
+    "source_file": "index_A.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "ACC",
+    "course_number": "313",
+    "course_code": "ACC 313",
+    "title": "Intermediate Accounting II",
+    "source_file": "index_A.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "ACC",
+    "course_number": "320",
+    "course_code": "ACC 320",
+    "title": "Artificial Intelligence in Accounting and Assurance",
+    "source_file": "index_A.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "ACC",
+    "course_number": "400",
+    "course_code": "ACC 400",
+    "title": "External Auditing",
+    "source_file": "index_A.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "ACC",
+    "course_number": "401",
+    "course_code": "ACC 401",
+    "title": "Intermediate Managerial Accounting & Data Analytics",
+    "source_file": "index_A.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "ACC",
+    "course_number": "402",
+    "course_code": "ACC 402",
+    "title": "Advanced Accounting",
+    "source_file": "index_A.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "ACC",
+    "course_number": "403",
+    "course_code": "ACC 403",
+    "title": "Accounting Information Systems",
+    "source_file": "index_A.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "ADV",
+    "course_number": "101",
+    "course_code": "ADV 101",
+    "title": "Advising 101: Transfer Seminar",
+    "source_file": "index_A.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "ADV",
+    "course_number": "201",
+    "course_code": "ADV 201",
+    "title": "Preparing for Medical School",
+    "source_file": "index_A.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "ADV",
+    "course_number": "202",
+    "course_code": "ADV 202",
+    "title": "Academic Success Seminar",
+    "source_file": "index_A.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "ADV",
+    "course_number": "475",
+    "course_code": "ADV 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_A.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "ADV",
+    "course_number": "476",
+    "course_code": "ADV 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_A.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "ADV",
+    "course_number": "(488)",
+    "course_code": "ADV (488)",
+    "title": "Undergraduate Advising Services Internship ** available as of 01/01/2027",
+    "source_file": "index_A.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "ADV",
+    "course_number": "488",
+    "course_code": "ADV 488",
+    "title": "Academic and Transfer Advising Services Internship",
+    "source_file": "index_A.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "AFH",
+    "course_number": "101",
+    "course_code": "AFH 101",
+    "title": "The Wonders of the Black World",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "200TRG",
+    "course_code": "AFH 200TRG",
+    "title": "Africana Elective-HUM/G",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "205",
+    "course_code": "AFH 205",
+    "title": "Contemporary African Literature",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "206",
+    "course_code": "AFH 206",
+    "title": "Great Books of the Black Experience",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "215",
+    "course_code": "AFH 215",
+    "title": "Hip Hop and the Intellectual Tradition",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "249",
+    "course_code": "AFH 249",
+    "title": "African-American Literature and Music in the 19th and 20th Centuries",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "282",
+    "course_code": "AFH 282",
+    "title": "Contemporary Caribbean Women's Literature",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "329",
+    "course_code": "AFH 329",
+    "title": "Pan-African Literature I",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "330",
+    "course_code": "AFH 330",
+    "title": "Pan-African Literature II",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "339",
+    "course_code": "AFH 339",
+    "title": "Arts of the African Diaspora",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "368",
+    "course_code": "AFH 368",
+    "title": "Caribbean and American Connections in Literature",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "379",
+    "course_code": "AFH 379",
+    "title": "Philosophy of Race (III)",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "380",
+    "course_code": "AFH 380",
+    "title": "African American and Caribbean Theatre",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "382",
+    "course_code": "AFH 382",
+    "title": "Black Women's Literature of the African Diaspora",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "385",
+    "course_code": "AFH 385",
+    "title": "French Caribbean Literature",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "390",
+    "course_code": "AFH 390",
+    "title": "Topics in Africana Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "391",
+    "course_code": "AFH 391",
+    "title": "Topics in Africana Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "423",
+    "course_code": "AFH 423",
+    "title": "Africana Literature in French",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "444",
+    "course_code": "AFH 444",
+    "title": "Experiential Learning",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "447",
+    "course_code": "AFH 447",
+    "title": "Readings in Africana Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "475",
+    "course_code": "AFH 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "476",
+    "course_code": "AFH 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFH",
+    "course_number": "487",
+    "course_code": "AFH 487",
+    "title": "Research in Africana Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "AFS",
+    "course_number": "101",
+    "course_code": "AFS 101",
+    "title": "Themes in the Black Experience I",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "102",
+    "course_code": "AFS 102",
+    "title": "Themes in the Black Experience II",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "221",
+    "course_code": "AFS 221",
+    "title": "Introduction to Modern African History",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "223",
+    "course_code": "AFS 223",
+    "title": "Regional History of Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "239",
+    "course_code": "AFS 239",
+    "title": "Introduction to the Caribbean Experience",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "240",
+    "course_code": "AFS 240",
+    "title": "Issues in Caribbean Society",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "277",
+    "course_code": "AFS 277",
+    "title": "The Modern Color Line",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "283",
+    "course_code": "AFS 283",
+    "title": "Community Service",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "300",
+    "course_code": "AFS 300",
+    "title": "Blacks in the City",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "306",
+    "course_code": "AFS 306",
+    "title": "Gender and Public Health in Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "308",
+    "course_code": "AFS 308",
+    "title": "Women Islam and Political Change in Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "310",
+    "course_code": "AFS 310",
+    "title": "American Attitudes Toward Race",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "319",
+    "course_code": "AFS 319",
+    "title": "The Politics of Race",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "320",
+    "course_code": "AFS 320",
+    "title": "Black Popular Culture and the Terrain",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "325",
+    "course_code": "AFS 325",
+    "title": "Civil Rights and Black Power",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "337",
+    "course_code": "AFS 337",
+    "title": "The Politics of Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "339",
+    "course_code": "AFS 339",
+    "title": "Recent African American History",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "340",
+    "course_code": "AFS 340",
+    "title": "Human Rights and Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "345",
+    "course_code": "AFS 345",
+    "title": "Culture and Gender: Women in Africa and the Caribbean",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "346",
+    "course_code": "AFS 346",
+    "title": "Political and Social History of Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "350",
+    "course_code": "AFS 350",
+    "title": "Black Women and Social Change: A Cross-Cultural Perspective",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "355",
+    "course_code": "AFS 355",
+    "title": "Ancient African Civilizations",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "360",
+    "course_code": "AFS 360",
+    "title": "African-American Social Commentary",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "363",
+    "course_code": "AFS 363",
+    "title": "The Black Experience in Mass Media",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "365",
+    "course_code": "AFS 365",
+    "title": "Global Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "368",
+    "course_code": "AFS 368",
+    "title": "Health and Disease in Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "369",
+    "course_code": "AFS 369",
+    "title": "Religion and Politics in Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "370",
+    "course_code": "AFS 370",
+    "title": "The African-American Family",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "372",
+    "course_code": "AFS 372",
+    "title": "African-American Political Thought",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "373",
+    "course_code": "AFS 373",
+    "title": "Sexualities: African and Caribbean Perspectives",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "374",
+    "course_code": "AFS 374",
+    "title": "Environment and Development in African History",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "375",
+    "course_code": "AFS 375",
+    "title": "Slavery",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "381",
+    "course_code": "AFS 381",
+    "title": "AIDS, Race, and Gender in the Black Community",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "382",
+    "course_code": "AFS 382",
+    "title": "Race, Ethnicity and the Environment",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "383",
+    "course_code": "AFS 383",
+    "title": "The Global African Diaspora in Comparative Perspective",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "392",
+    "course_code": "AFS 392",
+    "title": "The Black Power Movement",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "393",
+    "course_code": "AFS 393",
+    "title": "The Caribbean Immigrants in the United States: Dreams and Realities",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "394",
+    "course_code": "AFS 394",
+    "title": "Black Nationalism in America",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "396",
+    "course_code": "AFS 396",
+    "title": "Topics in African-American History",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "410",
+    "course_code": "AFS 410",
+    "title": "Computers and Technology in Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "421",
+    "course_code": "AFS 421",
+    "title": "Topics in Africana Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "422",
+    "course_code": "AFS 422",
+    "title": "Topics in Africana Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "444",
+    "course_code": "AFS 444",
+    "title": "Experiential Learning",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "447",
+    "course_code": "AFS 447",
+    "title": "Readings in Africana Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "459",
+    "course_code": "AFS 459",
+    "title": "Write Effectively in Africana Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "475",
+    "course_code": "AFS 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "476",
+    "course_code": "AFS 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "477",
+    "course_code": "AFS 477",
+    "title": "Qualitative & Mixed Methods",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "487",
+    "course_code": "AFS 487",
+    "title": "Research in Africana Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "488",
+    "course_code": "AFS 488",
+    "title": "Internship",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AFS",
+    "course_number": "491",
+    "course_code": "AFS 491",
+    "title": "Interdisciplinary Seminar in Africana Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "AIM",
+    "course_number": "100",
+    "course_code": "AIM 100",
+    "title": "EOP Pre-Freshman Summer Academic Bridge",
+    "source_file": "index_A.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "AIM",
+    "course_number": "101",
+    "course_code": "AIM 101",
+    "title": "EOP Pre-Freshman Summer Support Bridge",
+    "source_file": "index_A.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "AIM",
+    "course_number": "102",
+    "course_code": "AIM 102",
+    "title": "Expository Writing",
+    "source_file": "index_A.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "AIM",
+    "course_number": "104",
+    "course_code": "AIM 104",
+    "title": "Literary Analysis and Critical Reasoning",
+    "source_file": "index_A.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "ALQ",
+    "course_number": "111",
+    "course_code": "ALQ 111",
+    "title": "Elementary Algonquian I",
+    "source_file": "index_A.html",
+    "source_group_index": 10
+  },
+  {
+    "subject": "ALQ",
+    "course_number": "112",
+    "course_code": "ALQ 112",
+    "title": "Elementary Algonquian II",
+    "source_file": "index_A.html",
+    "source_group_index": 10
+  },
+  {
+    "subject": "ALQ",
+    "course_number": "211",
+    "course_code": "ALQ 211",
+    "title": "Intermediate Algonquian I",
+    "source_file": "index_A.html",
+    "source_group_index": 10
+  },
+  {
+    "subject": "ALQ",
+    "course_number": "(212)",
+    "course_code": "ALQ (212)",
+    "title": "Intermediate Algonquian II ** available as of 01/01/2027",
+    "source_file": "index_A.html",
+    "source_group_index": 10
+  },
+  {
+    "subject": "AMR",
+    "course_number": "101",
+    "course_code": "AMR 101",
+    "title": "Local and Global: National Boundaries and World-Systems",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "102",
+    "course_code": "AMR 102",
+    "title": "Making American Identities",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "301",
+    "course_code": "AMR 301",
+    "title": "Ethnicity and Race in American History",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "390",
+    "course_code": "AMR 390",
+    "title": "Humanities Topics in American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "392",
+    "course_code": "AMR 392",
+    "title": "Social and Behavioral Sciences Topics in American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "395",
+    "course_code": "AMR 395",
+    "title": "Topics in American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "397",
+    "course_code": "AMR 397",
+    "title": "Topics in American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "401",
+    "course_code": "AMR 401",
+    "title": "Senior Seminar in American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "444",
+    "course_code": "AMR 444",
+    "title": "Experiential Learning",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "447",
+    "course_code": "AMR 447",
+    "title": "Directed Readings in American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "458",
+    "course_code": "AMR 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "475",
+    "course_code": "AMR 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "476",
+    "course_code": "AMR 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "487",
+    "course_code": "AMR 487",
+    "title": "Independent Research",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "488",
+    "course_code": "AMR 488",
+    "title": "Internship",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMR",
+    "course_number": "495",
+    "course_code": "AMR 495",
+    "title": "Senior Honors Project in American Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 11
+  },
+  {
+    "subject": "AMS",
+    "course_number": "102",
+    "course_code": "AMS 102",
+    "title": "Elements of Statistics",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "103",
+    "course_code": "AMS 103",
+    "title": "Applied Mathematics in Modern Technology",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "104",
+    "course_code": "AMS 104",
+    "title": "Spreadsheet Technology and Applications",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "110",
+    "course_code": "AMS 110",
+    "title": "Probability and Statistics in the Life Sciences",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "151",
+    "course_code": "AMS 151",
+    "title": "Applied Calculus I",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "161",
+    "course_code": "AMS 161",
+    "title": "Applied Calculus II",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "210",
+    "course_code": "AMS 210",
+    "title": "Applied Linear Algebra",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "261",
+    "course_code": "AMS 261",
+    "title": "Applied Calculus III",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "300",
+    "course_code": "AMS 300",
+    "title": "Writing in Applied Mathematics",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "301",
+    "course_code": "AMS 301",
+    "title": "Finite Mathematical Structures",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "303",
+    "course_code": "AMS 303",
+    "title": "Graph Theory",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "310",
+    "course_code": "AMS 310",
+    "title": "Survey of Probability and Statistics",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "311",
+    "course_code": "AMS 311",
+    "title": "Probability Theory",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "313",
+    "course_code": "AMS 313",
+    "title": "Communicating with Data",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "315",
+    "course_code": "AMS 315",
+    "title": "Data Analysis",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "316",
+    "course_code": "AMS 316",
+    "title": "Introduction to Time Series Analysis",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "317",
+    "course_code": "AMS 317",
+    "title": "Introduction to Linear Regression Analysis",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "318",
+    "course_code": "AMS 318",
+    "title": "Financial Mathematics",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "320",
+    "course_code": "AMS 320",
+    "title": "Introduction to Quantitative Finance",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "325",
+    "course_code": "AMS 325",
+    "title": "Computing and Programming Fundamentals in Applied Mathematics and Statistics",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "326",
+    "course_code": "AMS 326",
+    "title": "Numerical Analysis",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "332",
+    "course_code": "AMS 332",
+    "title": "Computational Modeling of Physiological Systems",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "333",
+    "course_code": "AMS 333",
+    "title": "Mathematical Biology",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "335",
+    "course_code": "AMS 335",
+    "title": "Game Theory",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "341",
+    "course_code": "AMS 341",
+    "title": "Operations Research I: Deterministic Models",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "342",
+    "course_code": "AMS 342",
+    "title": "Operations Research II: Stochastic Models",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "345",
+    "course_code": "AMS 345",
+    "title": "Computational Geometry",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "351",
+    "course_code": "AMS 351",
+    "title": "Applied Algebra",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "361",
+    "course_code": "AMS 361",
+    "title": "Applied Calculus IV: Differential Equations",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "380",
+    "course_code": "AMS 380",
+    "title": "Data Mining",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "394",
+    "course_code": "AMS 394",
+    "title": "Statistical Laboratory",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "412",
+    "course_code": "AMS 412",
+    "title": "Mathematical Statistics",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "420",
+    "course_code": "AMS 420",
+    "title": "Investment Science Foundations",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "441",
+    "course_code": "AMS 441",
+    "title": "Business Enterprise",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "458",
+    "course_code": "AMS 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "459",
+    "course_code": "AMS 459",
+    "title": "Write Effectively in Applied Mathematics",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "475",
+    "course_code": "AMS 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "476",
+    "course_code": "AMS 476",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "487",
+    "course_code": "AMS 487",
+    "title": "Research in Applied Mathematics and Statistics",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "488",
+    "course_code": "AMS 488",
+    "title": "Internship in Applied Mathematics and Statistics",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "AMS",
+    "course_number": "492",
+    "course_code": "AMS 492",
+    "title": "Topics in Applied Mathematics",
+    "source_file": "index_A.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "ANT",
+    "course_number": "101",
+    "course_code": "ANT 101",
+    "title": "Human Biology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "102",
+    "course_code": "ANT 102",
+    "title": "What Makes Us Human?",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "103",
+    "course_code": "ANT 103",
+    "title": "Archaeology for a Better World",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "104",
+    "course_code": "ANT 104",
+    "title": "Introduction to Archaeology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "120",
+    "course_code": "ANT 120",
+    "title": "Introduction to Biological Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "200",
+    "course_code": "ANT 200",
+    "title": "Contemp & Hist Perspectives-Insular Southeast Asia",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "201",
+    "course_code": "ANT 201",
+    "title": "Human Evolution",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "202",
+    "course_code": "ANT 202",
+    "title": "People P ups: Dog Behavior & Human-Canine Relationships",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "203",
+    "course_code": "ANT 203",
+    "title": "Native Americans",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "208",
+    "course_code": "ANT 208",
+    "title": "Zombiology: What the Walking Dead Can Teach Us About Real Humans",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "210",
+    "course_code": "ANT 210",
+    "title": "Sunken Cities and Pirates: The World of Underwater Archaeology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "(212)",
+    "course_code": "ANT (212)",
+    "title": "Beast: Curious science of human-animal coexistence ** available as of 01/01/2027",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "215",
+    "course_code": "ANT 215",
+    "title": "Climate and Culture",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "220",
+    "course_code": "ANT 220",
+    "title": "Controversies in Human Biology and Behavior",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "222",
+    "course_code": "ANT 222",
+    "title": "Greek and Roman Mythology through Art & Technology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "225",
+    "course_code": "ANT 225",
+    "title": "Anthropology of Global Inequality",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "230",
+    "course_code": "ANT 230",
+    "title": "Peoples of the World",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "250",
+    "course_code": "ANT 250",
+    "title": "African Cultures Today",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "255",
+    "course_code": "ANT 255",
+    "title": "Forensic Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "260",
+    "course_code": "ANT 260",
+    "title": "How We Eat",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "268",
+    "course_code": "ANT 268",
+    "title": "Archaeology of Human Origins",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "273",
+    "course_code": "ANT 273",
+    "title": "The Unstoppable Human Species",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "277",
+    "course_code": "ANT 277",
+    "title": "The Origins of Art",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "290",
+    "course_code": "ANT 290",
+    "title": "Science and Technology in Ancient Society",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "300",
+    "course_code": "ANT 300",
+    "title": "Human Anatomy",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "303",
+    "course_code": "ANT 303",
+    "title": "Earth & Life Through Time: Vertebrate Paleontology & Paleoecology (emphasis on Turkana Basin)",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "304",
+    "course_code": "ANT 304",
+    "title": "Ecology: Linking People and Nature (with emphasis on the Turkana Basin)",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "305",
+    "course_code": "ANT 305",
+    "title": "Culture and Language of Madagascar",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "306",
+    "course_code": "ANT 306",
+    "title": "Human Evolution (and evidence from the Turkana Basin)",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "307",
+    "course_code": "ANT 307",
+    "title": "Prehistoric Archaeology of Africa (with emphasis on the Turkana Basin)",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "308",
+    "course_code": "ANT 308",
+    "title": "Human Origins: Eval Turkana Basin's Fossil Record",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "309",
+    "course_code": "ANT 309",
+    "title": "Comparing Ecosystems in Madagascar",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "310",
+    "course_code": "ANT 310",
+    "title": "Environments, Ecosystems and Evolution: Evidence from the Turkana Basin",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "311",
+    "course_code": "ANT 311",
+    "title": "Immersion in Another Culture",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "317",
+    "course_code": "ANT 317",
+    "title": "Climate Change and Human Evolution",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "320",
+    "course_code": "ANT 320",
+    "title": "Historical Archaeology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "321",
+    "course_code": "ANT 321",
+    "title": "Archaeological Field Methods",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "322",
+    "course_code": "ANT 322",
+    "title": "Primate Evolution",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "325",
+    "course_code": "ANT 325",
+    "title": "Conservation and Indigenous Knowledges",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "326",
+    "course_code": "ANT 326",
+    "title": "Lemurs of Madagascar",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "350",
+    "course_code": "ANT 350",
+    "title": "Medical Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "351",
+    "course_code": "ANT 351",
+    "title": "Comparative Religion",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "352",
+    "course_code": "ANT 352",
+    "title": "Methods in Studying Primates",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "353",
+    "course_code": "ANT 353",
+    "title": "Biodiversity Assessment Methods for Tropical Field Research",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "355",
+    "course_code": "ANT 355",
+    "title": "Ancient African Civilizations",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "357",
+    "course_code": "ANT 357",
+    "title": "Origins of Agriculture",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "359",
+    "course_code": "ANT 359",
+    "title": "The Archaeology of Food",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "360",
+    "course_code": "ANT 360",
+    "title": "Ancient Mesopotamia",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "361",
+    "course_code": "ANT 361",
+    "title": "Primate Conservation",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "363",
+    "course_code": "ANT 363",
+    "title": "Approaches in Archaeology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "371",
+    "course_code": "ANT 371",
+    "title": "Ancient China",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "377",
+    "course_code": "ANT 377",
+    "title": "Animal Tool Use",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "379",
+    "course_code": "ANT 379",
+    "title": "Cultural Diversity in China",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "381",
+    "course_code": "ANT 381",
+    "title": "Applied Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "387",
+    "course_code": "ANT 387",
+    "title": "Independent Research Project in Madagascar",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "391",
+    "course_code": "ANT 391",
+    "title": "Topics in Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "399",
+    "course_code": "ANT 399",
+    "title": "Advanced Field Research in the Turkana Basin",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "402",
+    "course_code": "ANT 402",
+    "title": "Problems in Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "403",
+    "course_code": "ANT 403",
+    "title": "Seminar in Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "404",
+    "course_code": "ANT 404",
+    "title": "Human Osteology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "406",
+    "course_code": "ANT 406",
+    "title": "Pseudoscience and Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "407",
+    "course_code": "ANT 407",
+    "title": "Building Bones: Bone Development and Evolution",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "408",
+    "course_code": "ANT 408",
+    "title": "Pastoralism Under Pressure: Savannas, Societies, and Sustainability in East Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "410",
+    "course_code": "ANT 410",
+    "title": "Ethnobotany and Paleoethnobotany",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "411",
+    "course_code": "ANT 411",
+    "title": "Comparative Primate Anatomy",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "415",
+    "course_code": "ANT 415",
+    "title": "Ethnoarchaeology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "416",
+    "course_code": "ANT 416",
+    "title": "Research Design in Archaeology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "418",
+    "course_code": "ANT 418",
+    "title": "Stone Tools in Human Evolution",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "419",
+    "course_code": "ANT 419",
+    "title": "Zooarchaeology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "423",
+    "course_code": "ANT 423",
+    "title": "Ethical and Responsible Research in Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "444",
+    "course_code": "ANT 444",
+    "title": "Experiential Learning",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "447",
+    "course_code": "ANT 447",
+    "title": "Readings in Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "458",
+    "course_code": "ANT 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "459",
+    "course_code": "ANT 459",
+    "title": "Write Effectively in Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "475",
+    "course_code": "ANT 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "476",
+    "course_code": "ANT 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "487",
+    "course_code": "ANT 487",
+    "title": "Independent Research in Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "488",
+    "course_code": "ANT 488",
+    "title": "Internship in Anthropology",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "489",
+    "course_code": "ANT 489",
+    "title": "Independent Research in Anthropology II",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "495",
+    "course_code": "ANT 495",
+    "title": "Senior Honors Project in Anthropology I",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ANT",
+    "course_number": "496",
+    "course_code": "ANT 496",
+    "title": "Senior Honors Project in Anthropology II",
+    "source_file": "index_A.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "ARB",
+    "course_number": "101",
+    "course_code": "ARB 101",
+    "title": "Intensive Elementary Arabic",
+    "source_file": "index_A.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "ARB",
+    "course_number": "111",
+    "course_code": "ARB 111",
+    "title": "Elementary Arabic I",
+    "source_file": "index_A.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "ARB",
+    "course_number": "112",
+    "course_code": "ARB 112",
+    "title": "Elementary Arabic II",
+    "source_file": "index_A.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "ARB",
+    "course_number": "201",
+    "course_code": "ARB 201",
+    "title": "Intensive Intermediate Arabic",
+    "source_file": "index_A.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "ARB",
+    "course_number": "211",
+    "course_code": "ARB 211",
+    "title": "Intermediate Arabic I",
+    "source_file": "index_A.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "ARB",
+    "course_number": "212",
+    "course_code": "ARB 212",
+    "title": "Intermediate Arabic II",
+    "source_file": "index_A.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "ARB",
+    "course_number": "311",
+    "course_code": "ARB 311",
+    "title": "Arabic Conversation",
+    "source_file": "index_A.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "ARB",
+    "course_number": "444",
+    "course_code": "ARB 444",
+    "title": "Experiential Learning",
+    "source_file": "index_A.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "ARB",
+    "course_number": "447",
+    "course_code": "ARB 447",
+    "title": "Directed Readings in Arabic",
+    "source_file": "index_A.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "ARB",
+    "course_number": "475",
+    "course_code": "ARB 475",
+    "title": "Undergraduate Teaching Practicum I (in Arabic)",
+    "source_file": "index_A.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "ARB",
+    "course_number": "476",
+    "course_code": "ARB 476",
+    "title": "Undergraduate Teaching Practicum II (in Arabic)",
+    "source_file": "index_A.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "ARB",
+    "course_number": "488",
+    "course_code": "ARB 488",
+    "title": "Internship",
+    "source_file": "index_A.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "ARH",
+    "course_number": "1XX",
+    "course_code": "ARH 1XX",
+    "title": "Need Art Hist Dept Eval-HFA+/K",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "106",
+    "course_code": "ARH 106",
+    "title": "Art & Science",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "107",
+    "course_code": "ARH 107",
+    "title": "Art and Medicine",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "115",
+    "course_code": "ARH 115",
+    "title": "Imaging: From Camera to Computer",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "201",
+    "course_code": "ARH 201",
+    "title": "Arts of Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "202",
+    "course_code": "ARH 202",
+    "title": "Arts of the Ancient World",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "203",
+    "course_code": "ARH 203",
+    "title": "Arts of Asia",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "204",
+    "course_code": "ARH 204",
+    "title": "Arts of Europe and the Americas",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "205",
+    "course_code": "ARH 205",
+    "title": "Introduction to Architecture & Design",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "206",
+    "course_code": "ARH 206",
+    "title": "Modern Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "207",
+    "course_code": "ARH 207",
+    "title": "Digital Media: History/Theory",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "208",
+    "course_code": "ARH 208",
+    "title": "History of Photography",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "209",
+    "course_code": "ARH 209",
+    "title": "Arts of the United States",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "210",
+    "course_code": "ARH 210",
+    "title": "The Art and Technology of Film",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "(240)",
+    "course_code": "ARH (240)",
+    "title": "Art and Ecology ** available as of 01/01/2027",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "299",
+    "course_code": "ARH 299",
+    "title": "Gallery Management Workshop",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "300",
+    "course_code": "ARH 300",
+    "title": "Greek Art and Architecture",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "301",
+    "course_code": "ARH 301",
+    "title": "Roman Art and Architecture",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "302",
+    "course_code": "ARH 302",
+    "title": "Ancient Egyptian Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "306",
+    "course_code": "ARH 306",
+    "title": "Italian Renaissance Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "308",
+    "course_code": "ARH 308",
+    "title": "Writing About Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "315",
+    "course_code": "ARH 315",
+    "title": "Art of Spain and Colonial Latin America",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "316",
+    "course_code": "ARH 316",
+    "title": "Italian Baroque Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "317",
+    "course_code": "ARH 317",
+    "title": "Islamic Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "321",
+    "course_code": "ARH 321",
+    "title": "Women Artists, 1400-1750",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "322",
+    "course_code": "ARH 322",
+    "title": "American Art Since 1947",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "323",
+    "course_code": "ARH 323",
+    "title": "History and Methods of Art History",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "325",
+    "course_code": "ARH 325",
+    "title": "Ancient Middle Eastern Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "326",
+    "course_code": "ARH 326",
+    "title": "Arts of Ancient Mesoamerica",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "328",
+    "course_code": "ARH 328",
+    "title": "Exhibiting Africa",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "329",
+    "course_code": "ARH 329",
+    "title": "Arts of the African Diaspora",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "330",
+    "course_code": "ARH 330",
+    "title": "Public Art and Urban Design in New York City",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "333",
+    "course_code": "ARH 333",
+    "title": "Arts for the Public",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "334",
+    "course_code": "ARH 334",
+    "title": "Performance Art I: The European Avant-Garde",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "336",
+    "course_code": "ARH 336",
+    "title": "The Computer and the Arts",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "339",
+    "course_code": "ARH 339",
+    "title": "The Art and Science of Astronomy",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "344",
+    "course_code": "ARH 344",
+    "title": "Performance Art II: World War II to the Present",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "346",
+    "course_code": "ARH 346",
+    "title": "Art and Politics in the Age of Revolution",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "347",
+    "course_code": "ARH 347",
+    "title": "Avant-Garde Art: Realism, Impressionism, Post-Impressionism",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "348",
+    "course_code": "ARH 348",
+    "title": "Contemporary Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "350",
+    "course_code": "ARH 350",
+    "title": "Museum Studies",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "355",
+    "course_code": "ARH 355",
+    "title": "Modern and Contemporary Korean Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "390",
+    "course_code": "ARH 390",
+    "title": "Topics in European Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "391",
+    "course_code": "ARH 391",
+    "title": "Topics in Global Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "392",
+    "course_code": "ARH 392",
+    "title": "Topics in Modern Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "393",
+    "course_code": "ARH 393",
+    "title": "Topics in Middle Eastern Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "394",
+    "course_code": "ARH 394",
+    "title": "Topics in Asian Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "395",
+    "course_code": "ARH 395",
+    "title": "Topics in Visual Culture",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "396",
+    "course_code": "ARH 396",
+    "title": "Topics in American Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "397",
+    "course_code": "ARH 397",
+    "title": "Topics in Photography",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "398",
+    "course_code": "ARH 398",
+    "title": "Topics in Film and Video Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "400",
+    "course_code": "ARH 400",
+    "title": "Seminar in Art History and Criticism",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "407",
+    "course_code": "ARH 407",
+    "title": "Seminar in Media/Art/Culture",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "444",
+    "course_code": "ARH 444",
+    "title": "Experiential Learning",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "458",
+    "course_code": "ARH 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "459",
+    "course_code": "ARH 459",
+    "title": "Write Effectively in Art History",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "475",
+    "course_code": "ARH 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "476",
+    "course_code": "ARH 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "485",
+    "course_code": "ARH 485",
+    "title": "Projects in Art History and Criticism in New York City",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "487",
+    "course_code": "ARH 487",
+    "title": "Independent Reading and Research in Art",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "488",
+    "course_code": "ARH 488",
+    "title": "Internship",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARH",
+    "course_number": "495",
+    "course_code": "ARH 495",
+    "title": "Senior Honors Project in Art History and Criticism",
+    "source_file": "index_A.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "ARS",
+    "course_number": "105",
+    "course_code": "ARS 105",
+    "title": "The Creative Process",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "115",
+    "course_code": "ARS 115",
+    "title": "Imaging: From Camera to Computer",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "154",
+    "course_code": "ARS 154",
+    "title": "Foundations: Drawing",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "205",
+    "course_code": "ARS 205",
+    "title": "Foundations: Idea and Form",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "225",
+    "course_code": "ARS 225",
+    "title": "Introduction to Digital Art",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "255",
+    "course_code": "ARS 255",
+    "title": "Introductory Painting",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "256",
+    "course_code": "ARS 256",
+    "title": "Introductory Sculpture",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "264",
+    "course_code": "ARS 264",
+    "title": "Introductory Ceramics",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "274",
+    "course_code": "ARS 274",
+    "title": "Introductory Printmaking",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "281",
+    "course_code": "ARS 281",
+    "title": "Introductory Photography",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "299",
+    "course_code": "ARS 299",
+    "title": "Studio Management Workshop",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "308",
+    "course_code": "ARS 308",
+    "title": "Writing About Art",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "319",
+    "course_code": "ARS 319",
+    "title": "Art + the Brain",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "(320)",
+    "course_code": "ARS (320)",
+    "title": "Art + Biology ** available as of 01/01/2027",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "323",
+    "course_code": "ARS 323",
+    "title": "Mechatronic Arts: Phys Computing & Digital Fab",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "324",
+    "course_code": "ARS 324",
+    "title": "Digital Arts: Design",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "325",
+    "course_code": "ARS 325",
+    "title": "Digital Arts: Print",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "326",
+    "course_code": "ARS 326",
+    "title": "Video Art: Narrative Forms",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "327",
+    "course_code": "ARS 327",
+    "title": "Digital Arts: Web Design and Culture",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "328",
+    "course_code": "ARS 328",
+    "title": "Digital Arts: Animation",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "329",
+    "course_code": "ARS 329",
+    "title": "Video Art: Experimental Forms",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "350",
+    "course_code": "ARS 350",
+    "title": "Life Drawing and Painting",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "351",
+    "course_code": "ARS 351",
+    "title": "Painting II: Theory and Practice",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "352",
+    "course_code": "ARS 352",
+    "title": "Painting III: Theory and Practice",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "355",
+    "course_code": "ARS 355",
+    "title": "Anatomical/Bio Illustration",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "359",
+    "course_code": "ARS 359",
+    "title": "Theory and Practice of Conceptual Drawing",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "364",
+    "course_code": "ARS 364",
+    "title": "Advanced Theory and Practice of Ceramics",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "365",
+    "course_code": "ARS 365",
+    "title": "Theories and Practice of Sculpture: Welding, Construction, and Intermedia",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "366",
+    "course_code": "ARS 366",
+    "title": "Theory and Practice of Sculpture: Modeling, Casting, and Carving",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "374",
+    "course_code": "ARS 374",
+    "title": "Theory and Practice of Printmaking: Intaglio Processes",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "375",
+    "course_code": "ARS 375",
+    "title": "Theory and Practice of Printmaking: Lithography",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "381",
+    "course_code": "ARS 381",
+    "title": "Color and Light Photography",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "382",
+    "course_code": "ARS 382",
+    "title": "Analog Black and White Photography",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "384",
+    "course_code": "ARS 384",
+    "title": "Art, Media and Technology",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "(385)",
+    "course_code": "ARS (385)",
+    "title": "Sound Art and New Media: Theories and Practices of Listening ** available as of 01/01/2027",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "390",
+    "course_code": "ARS 390",
+    "title": "Topics in Studio Art",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "401",
+    "course_code": "ARS 401",
+    "title": "Critical Issues Seminar",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "402",
+    "course_code": "ARS 402",
+    "title": "Documentary Media Art",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "403",
+    "course_code": "ARS 403",
+    "title": "Socially Engaged Art",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "404",
+    "course_code": "ARS 404",
+    "title": "Art in the Age of Anthropocene",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "420",
+    "course_code": "ARS 420",
+    "title": "Studio Art Senior Seminar",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "425",
+    "course_code": "ARS 425",
+    "title": "Advanced New Media Art",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "444",
+    "course_code": "ARS 444",
+    "title": "Experiential Learning",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "445",
+    "course_code": "ARS 445",
+    "title": "Advanced Drawing",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "452",
+    "course_code": "ARS 452",
+    "title": "Advanced Theory and Practice of Painting",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "458",
+    "course_code": "ARS 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "459",
+    "course_code": "ARS 459",
+    "title": "Write Effectively in Studio Art",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "465",
+    "course_code": "ARS 465",
+    "title": "Advanced Theory and Practice of Sculpture: Welding, Construction, and Inter-media",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "466",
+    "course_code": "ARS 466",
+    "title": "Advanced Theory and Practice of Sculpture: Installation, Site Specific and Public Art",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "471",
+    "course_code": "ARS 471",
+    "title": "Advanced Theory and Practice of Printmaking: Intaglio Processes",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "472",
+    "course_code": "ARS 472",
+    "title": "Advanced Theory and Practice of Printmaking: Lithography",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "475",
+    "course_code": "ARS 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "476",
+    "course_code": "ARS 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "481",
+    "course_code": "ARS 481",
+    "title": "Advanced Photography",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "487",
+    "course_code": "ARS 487",
+    "title": "Advanced Directed Projects in Studio Theory and Practice",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "488",
+    "course_code": "ARS 488",
+    "title": "Internship",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "491",
+    "course_code": "ARS 491",
+    "title": "Special Topics in Studio Theory and Practice",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ARS",
+    "course_number": "495",
+    "course_code": "ARS 495",
+    "title": "Senior Honors Project in Studio Art",
+    "source_file": "index_A.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "ASC",
+    "course_number": "101",
+    "course_code": "ASC 101",
+    "title": "Practicing Engaging Presentations",
+    "source_file": "index_A.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "AST",
+    "course_number": "100",
+    "course_code": "AST 100",
+    "title": "Astronomy Today",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "101",
+    "course_code": "AST 101",
+    "title": "Introduction to Astronomy",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "105",
+    "course_code": "AST 105",
+    "title": "Introduction to the Solar System",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "112",
+    "course_code": "AST 112",
+    "title": "Astronomy Laboratory",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "200",
+    "course_code": "AST 200",
+    "title": "Current Astronomical Research at Stony Brook",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "203",
+    "course_code": "AST 203",
+    "title": "Astronomy",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "205",
+    "course_code": "AST 205",
+    "title": "Introduction to Planetary Sciences",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "248",
+    "course_code": "AST 248",
+    "title": "The Search for Life in the Universe",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "287",
+    "course_code": "AST 287",
+    "title": "Introductory Research in Astronomy",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "301",
+    "course_code": "AST 301",
+    "title": "Collisions in the Solar System",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "341",
+    "course_code": "AST 341",
+    "title": "Stars and Radiation",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "345",
+    "course_code": "AST 345",
+    "title": "Undergraduate Research in Astronomy",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "346",
+    "course_code": "AST 346",
+    "title": "Galaxies",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "347",
+    "course_code": "AST 347",
+    "title": "Cosmology",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "389",
+    "course_code": "AST 389",
+    "title": "Science Fiction",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "390",
+    "course_code": "AST 390",
+    "title": "Special Topics in Astrophysics and Cosmology",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "443",
+    "course_code": "AST 443",
+    "title": "Observational Techniques in Astronomy",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "444",
+    "course_code": "AST 444",
+    "title": "Experiential Learning",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "447",
+    "course_code": "AST 447",
+    "title": "Senior Tutorial in Astronomy",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "458",
+    "course_code": "AST 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "459",
+    "course_code": "AST 459",
+    "title": "Write Effectively in Astronomy/Planetary Sciences",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "475",
+    "course_code": "AST 475",
+    "title": "Teaching Practicum in Astronomy",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "AST",
+    "course_number": "487",
+    "course_code": "AST 487",
+    "title": "Senior Research in Astronomy",
+    "source_file": "index_A.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "ATM",
+    "course_number": "102",
+    "course_code": "ATM 102",
+    "title": "Weather and Climate",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "103",
+    "course_code": "ATM 103",
+    "title": "Extreme Weather",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "(104)",
+    "course_code": "ATM (104)",
+    "title": "Climate Impacts ** available as of 01/01/2027",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "201",
+    "course_code": "ATM 201",
+    "title": "Introduction to Climate and Climate Change",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "205",
+    "course_code": "ATM 205",
+    "title": "Introduction to Atmospheric Sciences",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "237",
+    "course_code": "ATM 237",
+    "title": "World Climate and Atmosphere",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "247",
+    "course_code": "ATM 247",
+    "title": "Atmospheric Structure and Analysis",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "305",
+    "course_code": "ATM 305",
+    "title": "Global Atmospheric Change",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "320",
+    "course_code": "ATM 320",
+    "title": "Problem Solving with Python",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "345",
+    "course_code": "ATM 345",
+    "title": "Atmospheric Thermodynamics and Dynamics",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "346",
+    "course_code": "ATM 346",
+    "title": "Advanced Atmospheric Dynamics",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "347",
+    "course_code": "ATM 347",
+    "title": "Advanced Synoptic Meteorology and Weather Forecasting",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "348",
+    "course_code": "ATM 348",
+    "title": "Atmospheric Physics",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "365",
+    "course_code": "ATM 365",
+    "title": "Tropical Meteorology",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "383",
+    "course_code": "ATM 383",
+    "title": "Doppler Weather Radar",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "387",
+    "course_code": "ATM 387",
+    "title": "Weather and Climate Data Analysis",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "397",
+    "course_code": "ATM 397",
+    "title": "Air Pollution and Global Warming",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "437",
+    "course_code": "ATM 437",
+    "title": "Forecasting Practicum",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "444",
+    "course_code": "ATM 444",
+    "title": "Experiential Learning",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "447",
+    "course_code": "ATM 447",
+    "title": "Senior Tutorial in Atmospheric Sciences",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "487",
+    "course_code": "ATM 487",
+    "title": "Senior Research in Atmospheric Sciences",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  },
+  {
+    "subject": "ATM",
+    "course_number": "488",
+    "course_code": "ATM 488",
+    "title": "Internship",
+    "source_file": "index_A.html",
+    "source_group_index": 27
+  }
+]

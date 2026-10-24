@@ -1,0 +1,193 @@
+Worker 9 groups: I, 8
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_09 --letters I,8 --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Fall 2026 --headless
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group I (1/2)…
+  [I] 13 subjects have no active courses.
+  [I] Found 106 course entries.
+  [I] Skipping 28 courses numbered above 499; 78 left.
+    [I 1/78] Opening IAE 101 — Digital Intelligence
+      Fall 2026: found 1 class sections.
+    [I 2/78] Opening IAP 100 — Global Experience Seminar
+      Fall 2026: found 5 class sections.
+    [I 3/78] Opening IAP 390 — Rethinking America: Traditions and Trends
+      Fall 2026: found 3 class sections.
+    [I 4/78] Opening IAP 391 — American Society and Culture
+      No View Class Sections button; course has no sections.
+    [I 5/78] Opening IAP 444 — Global Service Learning
+      No View Class Sections button; course has no sections.
+    [I 6/78] Opening IAP 488 — Internship
+      Fall 2026: found 2 class sections.
+    [I 7/78] Opening IEC 101 — INTENS EGL BEGINNER
+      No View Class Sections button; course has no sections.
+    [I 8/78] Opening IEC 102 — Intensive EGL Integrated Skills - Low Intermediate
+      No View Class Sections button; course has no sections.
+    [I 9/78] Opening IEC 103 — Intensive EGL Integrated Skills -High Intermediate
+      No View Class Sections button; course has no sections.
+    [I 10/78] Opening IEC 104 — Intensive EGL Integrated Skills - Advanced
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (I 10/78) · 10 scraped, 0 already done, 0 failed · 17.6 pages/min · 34s elapsed · ~3m51s left in I
+    [I 11/78] Opening IEC 106 — Intensive English Advanced
+      No View Class Sections button; course has no sections.
+    [I 12/78] Opening INT 201 — Democracy and Capitalism
+      No View Class Sections button; course has no sections.
+    [I 13/78] Opening INT 401 — Global Social Problems
+      No View Class Sections button; course has no sections.
+    [I 14/78] Opening INT 487 — Independent Study in International Studies
+      No View Class Sections button; course has no sections.
+    [I 15/78] Opening ISE 102 — Introduction to Web Design and Programming
+      No View Class Sections button; course has no sections.
+    [I 16/78] Opening ISE 108 — Introduction to Programming
+      No View Class Sections button; course has no sections.
+    [I 17/78] Opening ISE 208 — Intermediate Programming
+      No View Class Sections button; course has no sections.
+    [I 18/78] Opening ISE 218 — Fundamentals of Information Technology
+      Fall 2026: found 1 class sections.
+    [I 19/78] Opening ISE 300 — Technical Communications
+      Fall 2026: found 5 class sections.
+    [I 20/78] Opening ISE 301 — History of Computing
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (I 20/78) · 20 scraped, 0 already done, 0 failed · 21.7 pages/min · 55s elapsed · ~2m40s left in I
+    [I 21/78] Opening ISE 305 — Database Design and Practice
+      Fall 2026: found 1 class sections.
+    [I 22/78] Opening ISE 311 — Systems Administration
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [I 23/78] Opening ISE 312 — Social, Legal, and Ethical Issues in Computing
+      Fall 2026: found 3 class sections.
+    [I 24/78] Opening ISE 316 — Introduction to Networking
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [I 25/78] Opening ISE 317 — Computer Networking II
+      No View Class Sections button; course has no sections.
+    [I 26/78] Opening ISE 320 — Information Management
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [I 27/78] Opening ISE 321 — Introduction to Network Administration
+      Fall 2026: found 1 class sections.
+    [I 28/78] Opening ISE 323 — Human-Computer Interaction
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [I 29/78] Opening ISE 325 — Computers and Sculpture
+      No View Class Sections button; course has no sections.
+    [I 30/78] Opening ISE 331 — Fundamentals of Computer Security
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (I 30/78) · 30 scraped, 0 already done, 0 failed · 24.5 pages/min · 1m13s elapsed · ~1m57s left in I
+    [I 31/78] Opening ISE 332 — Introduction to Visualization
+      Fall 2026: found 1 class sections.
+    [I 32/78] Opening ISE 333 — User Interface Development
+      Fall 2026: found 1 class sections.
+    [I 33/78] Opening ISE 334 — Introduction to Multimedia Systems
+      Fall 2026: found 1 class sections.
+    [I 34/78] Opening ISE 337 — Scripting Languages
+      Fall 2026: found 1 class sections.
+    [I 35/78] Opening ISE 339 — Benevolent Computing
+      No View Class Sections button; course has no sections.
+    [I 36/78] Opening ISE 340 — Design of Computer Games
+      Fall 2026: found 1 class sections.
+    [I 37/78] Opening ISE 364 — Advanced Multimedia Techniques
+      No View Class Sections button; course has no sections.
+    [I 38/78] Opening ISE 369 — Introduction to Political Informatics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [I 39/78] Opening ISE 377 — Introduction to Medical Imaging
+      No View Class Sections button; course has no sections.
+    [I 40/78] Opening ISE 378 — Introduction to Robotics
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (I 40/78) · 40 scraped, 0 already done, 0 failed · 26.0 pages/min · 1m32s elapsed · ~1m27s left in I
+    [I 41/78] Opening ISE 390 — Special Topics in Information Systems
+      No View Class Sections button; course has no sections.
+    [I 42/78] Opening ISE 391 — Special Topics in Information Systems
+      Fall 2026: found 1 class sections.
+    [I 43/78] Opening ISE 392 — Special Topics in Information Systems
+      No View Class Sections button; course has no sections.
+    [I 44/78] Opening ISE 393 — Special Topics in Information Systems
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [I 45/78] Opening ISE 475 — Undergraduate Teaching Practicum
+      Fall 2026: grid shows ['Summer 2026']; retrying.
+      Fall 2026: found 42 class sections.
+    [I 46/78] Opening ISE 487 — Research in Information Systems
+      Fall 2026: found 20 class sections.
+    [I 47/78] Opening ISE 488 — Information Systems Internship
+      Fall 2026: found 1 class sections.
+    [I 48/78] Opening ITL 101 — Intensive Elementary Italian
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [I 49/78] Opening ITL 111 — Elementary Italian I
+      Fall 2026: found 8 class sections.
+    [I 50/78] Opening ITL 112 — Elementary Italian II
+      Fall 2026: found 2 class sections.
+  Progress: group 1/2 (I 50/78) · 50 scraped, 0 already done, 0 failed · 21.5 pages/min · 2m19s elapsed · ~1m18s left in I
+    Pausing 5s after 50 detail pages…
+    [I 51/78] Opening ITL 201 — Intensive Intermediate Italian
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [I 52/78] Opening ITL 211 — Intermediate Italian 1
+      Fall 2026: found 1 class sections.
+    [I 53/78] Opening ITL 212 — Intermediate Italian 2
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [I 54/78] Opening ITL 311 — Italian Conversation and Composition 1
+      Fall 2026: found 1 class sections.
+    [I 55/78] Opening ITL 312 — Italian Conversation and Composition 2
+      No View Class Sections button; course has no sections.
+    [I 56/78] Opening ITL 313 — Italian Vocabulary
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [I 57/78] Opening ITL 395 — Italian Literature and Culture
+      No View Class Sections button; course has no sections.
+    [I 58/78] Opening ITL 396 — Literature and Visual Cultures in Italy
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [I 59/78] Opening ITL 410 — Business Italian
+      No View Class Sections button; course has no sections.
+    [I 60/78] Opening ITL 411 — Advanced Conversation and Composition
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (I 60/78) · 60 scraped, 0 already done, 0 failed · 21.6 pages/min · 2m46s elapsed · ~50s left in I
+    [I 61/78] Opening ITL 412 — Advanced Conversation and Syntax
+      No View Class Sections button; course has no sections.
+    [I 62/78] Opening ITL 424 — History of the Italian Language
+      No View Class Sections button; course has no sections.
+    [I 63/78] Opening ITL 425 — Italian and Its Dialects
+      No View Class Sections button; course has no sections.
+    [I 64/78] Opening ITL 426 — Italian Linguistics
+      No View Class Sections button; course has no sections.
+    [I 65/78] Opening ITL 431 — Studies in 13th- and 14th-Century Literature
+      No View Class Sections button; course has no sections.
+    [I 66/78] Opening ITL 432 — Studies in 15th- and 16th-Century Literature
+      No View Class Sections button; course has no sections.
+    [I 67/78] Opening ITL 434 — Studies in 19th-Century Literature
+      No View Class Sections button; course has no sections.
+    [I 68/78] Opening ITL 435 — Studies in Contemporary Literature
+      No View Class Sections button; course has no sections.
+    [I 69/78] Opening ITL 436 — Special Topics in Italian Cinema
+      No View Class Sections button; course has no sections.
+    [I 70/78] Opening ITL 440 — The Italian Scene
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (I 70/78) · 70 scraped, 0 already done, 0 failed · 23.2 pages/min · 3m01s elapsed · ~20s left in I
+    [I 71/78] Opening ITL 441 — Topic Seminar
+      Fall 2026: found 1 class sections.
+    [I 72/78] Opening ITL 444 — Experiential Learning
+      Fall 2026: found 1 class sections.
+    [I 73/78] Opening ITL 447 — Directed Readings in Italian
+      Fall 2026: found 3 class sections.
+    [I 74/78] Opening ITL 459 — Write Effectively in Italian
+      Fall 2026: found 1 class sections.
+    [I 75/78] Opening ITL 475 — Undergraduate Teaching Practicum I (in Italian)
+      Fall 2026: found 1 class sections.
+    [I 76/78] Opening ITL 476 — Undergraduate Teaching Practicum in Italian II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [I 77/78] Opening ITL 488 — Internship
+      Fall 2026: found 1 class sections.
+    [I 78/78] Opening ITL 495 — Senior Honors Project in Italian
+      Fall 2026: found 1 class sections.
+  Progress: group 2/2 (I 78/78) · 78 scraped, 0 already done, 0 failed · 21.8 pages/min · 3m34s elapsed
+
+Processing subject-code group 8 (2/2)…
+  [8] Letter has no subject groups.
+Exported index: 78 records (JSON + CSV)
+Exported details: 78 records (JSONL + JSON + CSV)
+Exported sections: 112 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_09/semesteros-export.zip
+
+Done in 3m34s: 78 scraped, 0 already done, 0 failed, 28 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_09/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_09/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_09/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_09/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_09/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_09/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_09/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_09/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.

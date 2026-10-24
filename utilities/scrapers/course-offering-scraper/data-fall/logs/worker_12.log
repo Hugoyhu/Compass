@@ -1,0 +1,227 @@
+Worker 12 groups: L
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_12 --letters L --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Fall 2026 --headless
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group L (1/1)…
+  [L] 6 subjects have no active courses.
+  [L] Found 160 course entries.
+  [L] Skipping 64 courses numbered above 499; 96 left.
+    [L 1/96] Opening LAC 200 — Introduction to Latin American and Caribbean Societies
+      No View Class Sections button; course has no sections.
+    [L 2/96] Opening LAC 487 — Independent Research in Latin American and Caribbean Studies
+      Fall 2026: found 1 class sections.
+    [L 3/96] Opening LAC 488 — Internship
+      Fall 2026: found 1 class sections.
+    [L 4/96] Opening LAN 111 — Uncommonly Taught Language (Elementary) I
+      No View Class Sections button; course has no sections.
+    [L 5/96] Opening LAN 112 — Uncommonly Taught Language (Elementary) II
+      No View Class Sections button; course has no sections.
+    [L 6/96] Opening LAN 211 — Uncommonly Taught Language (Intermediate) I
+      No View Class Sections button; course has no sections.
+    [L 7/96] Opening LAN 212 — Uncommonly Taught Language (Intermediate) II
+      No View Class Sections button; course has no sections.
+    [L 8/96] Opening LAN 447 — Directed Readings in Uncommonly Taught Languages
+      Fall 2026: found 1 class sections.
+    [L 9/96] Opening LAN 475 — Practicum in Language Teaching I
+      Fall 2026: found 2 class sections.
+    [L 10/96] Opening LAN 476 — Practicum in Language Teaching II
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (L 10/96) · 10 scraped, 0 already done, 0 failed · 18.4 pages/min · 32s elapsed · ~4m39s left in L
+    [L 11/96] Opening LAT 111 — Elementary Latin I
+      Fall 2026: found 3 class sections.
+    [L 12/96] Opening LAT 112 — Elementary Latin II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [L 13/96] Opening LAT 251 — Readings in Latin Literature I
+      Fall 2026: found 1 class sections.
+    [L 14/96] Opening LAT 252 — Readings in Latin Literature II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [L 15/96] Opening LAT 353 — Literature of the Roman Republic
+      No View Class Sections button; course has no sections.
+    [L 16/96] Opening LAT 354 — Literature of the Roman Empire
+      No View Class Sections button; course has no sections.
+    [L 17/96] Opening LAT 355 — Early Medieval Latin
+      No View Class Sections button; course has no sections.
+    [L 18/96] Opening LAT 356 — Late Medieval Latin
+      No View Class Sections button; course has no sections.
+    [L 19/96] Opening LAT 447 — Directed Readings in Latin
+      Fall 2026: found 2 class sections.
+    [L 20/96] Opening LAT 475 — Undergraduate Teaching Practicum
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (L 20/96) · 20 scraped, 0 already done, 0 failed · 23.8 pages/min · 50s elapsed · ~3m11s left in L
+    [L 21/96] Opening LBR 210 — Critical Information Literacy
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [L 22/96] Opening LBR 211 — Critical Data and AI Literacies
+      Fall 2026: found 1 class sections.
+    [L 23/96] Opening LBR 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 1 class sections.
+    [L 24/96] Opening LCR 487 — Directed Research in Community Service Learning
+      No View Class Sections button; course has no sections.
+    [L 25/96] Opening LDR 210 — Principles of Leadership
+      No View Class Sections button; course has no sections.
+    [L 26/96] Opening LDR 310 — Case Studies in Leadership
+      No View Class Sections button; course has no sections.
+    [L 27/96] Opening LDR 410 — Leadership Exploration and Practicum
+      No View Class Sections button; course has no sections.
+    [L 28/96] Opening LDR 488 — Internship in Leadership Development
+      No View Class Sections button; course has no sections.
+    [L 29/96] Opening LHD 305 — HIV Reduction in the Campus Context
+      No View Class Sections button; course has no sections.
+    [L 30/96] Opening LHD 306 — HIV Reduction in the Campus Context
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (L 30/96) · 30 scraped, 0 already done, 0 failed · 27.2 pages/min · 1m06s elapsed · ~2m25s left in L
+    [L 31/96] Opening LHD 307 — Laboratory in HIV Reduction in the Campus Context
+      No View Class Sections button; course has no sections.
+    [L 32/96] Opening LHD 308 — Laboratory in HIV Reduction in the Campus Context
+      No View Class Sections button; course has no sections.
+    [L 33/96] Opening LHD 487 — Independent Study in Human Sexual and Gender Development
+      No View Class Sections button; course has no sections.
+    [L 34/96] Opening LHW 102 — Introductory Seminar to the Health Professions
+      No View Class Sections button; course has no sections.
+    [L 35/96] Opening LHW 301 — Issues in Health and Wellness
+      No View Class Sections button; course has no sections.
+    [L 36/96] Opening LHW 488 — Internship in Health and Wellness
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [L 37/96] Opening LIA 487 — Independent Research in Interdisciplinary Arts
+      No View Class Sections button; course has no sections.
+    [L 38/96] Opening LIA 488 — Internship in Arts Management
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [L 39/96] Opening LIN 101 — Human Language
+      Fall 2026: found 7 class sections.
+    [L 40/96] Opening LIN 110 — The Anatomy of English Words
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (L 40/96) · 40 scraped, 0 already done, 0 failed · 25.8 pages/min · 1m33s elapsed · ~2m10s left in L
+    [L 41/96] Opening LIN 120 — Language and Technology
+      Fall 2026: found 4 class sections.
+    [L 42/96] Opening LIN 200 — Language in the United States
+      Fall 2026: found 1 class sections.
+    [L 43/96] Opening LIN 201 — Phonetics
+      No View Class Sections button; course has no sections.
+    [L 44/96] Opening LIN 202 — Introduction to Phonetics and Phonology
+      Fall 2026: found 3 class sections.
+    [L 45/96] Opening LIN 203 — Introduction to Syntax and Morphology
+      Fall 2026: found 3 class sections.
+    [L 46/96] Opening LIN 230 — Languages of the World
+      No View Class Sections button; course has no sections.
+    [L 47/96] Opening LIN 235 — Signed Languages & Deaf Communities
+      Fall 2026: found 1 class sections.
+    [L 48/96] Opening LIN 240 — Spanish in the U.S.
+      No View Class Sections button; course has no sections.
+    [L 49/96] Opening LIN 250 — Languages and Cultures of Asian Americans
+      No View Class Sections button; course has no sections.
+    [L 50/96] Opening LIN 260 — Language and Mind
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (L 50/96) · 50 scraped, 0 already done, 0 failed · 25.6 pages/min · 1m57s elapsed · ~1m47s left in L
+    Pausing 5s after 50 detail pages…
+    [L 51/96] Opening LIN 270 — Language and Politics
+      No View Class Sections button; course has no sections.
+    [L 52/96] Opening LIN 280 — Language in Social Media
+      No View Class Sections button; course has no sections.
+    [L 53/96] Opening LIN 301 — Phonology
+      Fall 2026: found 3 class sections.
+    [L 54/96] Opening LIN 307 — Sociolinguistics
+      Fall 2026: found 1 class sections.
+    [L 55/96] Opening LIN 308 — Language Variation and Change
+      No View Class Sections button; course has no sections.
+    [L 56/96] Opening LIN 311 — Syntax
+      No View Class Sections button; course has no sections.
+    [L 57/96] Opening LIN 320 — English Grammar
+      Fall 2026: found 1 class sections.
+    [L 58/96] Opening LIN 321 — Morphology and Word Formation
+      No View Class Sections button; course has no sections.
+    [L 59/96] Opening LIN 324 — Romance Linguistics
+      No View Class Sections button; course has no sections.
+    [L 60/96] Opening LIN 330 — Language Acquisition
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (L 60/96) · 60 scraped, 0 already done, 0 failed · 24.1 pages/min · 2m29s elapsed · ~1m29s left in L
+    [L 61/96] Opening LIN 334 — Basic Programming Techniques: Computational Ling
+      Fall 2026: found 1 class sections.
+    [L 62/96] Opening LIN 335 — Computational Linguistics
+      No View Class Sections button; course has no sections.
+    [L 63/96] Opening LIN 340 — Historical Linguistics
+      No View Class Sections button; course has no sections.
+    [L 64/96] Opening LIN 341 — Bilingualism
+      Fall 2026: found 1 class sections.
+    [L 65/96] Opening LIN 344 — Literacy Development
+      Fall 2026: found 1 class sections.
+    [L 66/96] Opening LIN 345 — Writing Systems of the World
+      No View Class Sections button; course has no sections.
+    [L 67/96] Opening LIN 346 — Language and Meaning
+      No View Class Sections button; course has no sections.
+    [L 68/96] Opening LIN 347 — Pragmatics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [L 69/96] Opening LIN 350 — Experimental Phonetics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [L 70/96] Opening LIN 355 — Language and Life in a Selected Area of the World
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/1 (L 70/96) · 70 scraped, 0 already done, 0 failed · 24.4 pages/min · 2m52s elapsed · ~1m03s left in L
+    [L 71/96] Opening LIN 356 — Topics in Language and Life in Europe
+      No View Class Sections button; course has no sections.
+    [L 72/96] Opening LIN 361 — Mathematical Methods in Linguistics
+      Fall 2026: found 1 class sections.
+    [L 73/96] Opening LIN 370 — Intercultural Communication
+      No View Class Sections button; course has no sections.
+    [L 74/96] Opening LIN 375 — TESOL Pedagogy: Theory and Practice
+      Fall 2026: found 1 class sections.
+    [L 75/96] Opening LIN 378 — Content-Based Language and Literacy Development
+      Fall 2026: found 1 class sections.
+    [L 76/96] Opening LIN 380 — Anatomy and Physiology of Speech and Hearing
+      Fall 2026: found 1 class sections.
+    [L 77/96] Opening LIN 381 — Language and Speech Disorders
+      Fall 2026: found 1 class sections.
+    [L 78/96] Opening LIN 382 — Audiology
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [L 79/96] Opening LIN 405 — Writing in Linguistics
+      Fall 2026: found 1 class sections.
+    [L 80/96] Opening LIN 425 — Special Topics in Linguistics
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (L 80/96) · 80 scraped, 0 already done, 0 failed · 23.2 pages/min · 3m27s elapsed · ~41s left in L
+    [L 81/96] Opening LIN 426 — Special Topics in Linguistics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [L 82/96] Opening LIN 427 — Special Topics in Linguistics
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [L 83/96] Opening LIN 431 — The Structure of an Uncommonly Taught Language
+      Fall 2026: found 3 class sections.
+    [L 84/96] Opening LIN 444 — Experiential Learning
+      Fall 2026: found 20 class sections.
+    [L 85/96] Opening LIN 447 — Directed Readings in Linguistics
+      Fall 2026: found 20 class sections.
+    [L 86/96] Opening LIN 449 — Field Experience, Grades N-12
+      Fall 2026: found 1 class sections.
+    [L 87/96] Opening LIN 450 — Field Experience, Grades N-12
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [L 88/96] Opening LIN 451 — Supervised Teaching -- English as a Second Language: Primary Grades N-6
+      Fall 2026: found 1 class sections.
+    [L 89/96] Opening LIN 452 — Supervised Student Teaching in English as a Second Language: Secondary Grades 7-12
+      Fall 2026: found 1 class sections.
+    [L 90/96] Opening LIN 454 — Managing Instruction, Assessment, and Resources
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (L 90/96) · 90 scraped, 0 already done, 0 failed · 23.4 pages/min · 3m50s elapsed · ~15s left in L
+    [L 91/96] Opening LIN 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 22 class sections.
+    [L 92/96] Opening LIN 476 — Undergraduate Teaching Practicum II
+      Fall 2026: found 22 class sections.
+    [L 93/96] Opening LIN 487 — Directed Research in Linguistics
+      Fall 2026: found 20 class sections.
+    [L 94/96] Opening LIN 488 — Internship
+      Fall 2026: found 20 class sections.
+    [L 95/96] Opening LIN 495 — Senior Honors Project in Linguistics
+      Fall 2026: found 21 class sections.
+    [L 96/96] Opening LIN 496 — Senior Honors Project in Linguistics
+      Fall 2026: found 21 class sections.
+  Progress: group 1/1 (L 96/96) · 96 scraped, 0 already done, 0 failed · 22.5 pages/min · 4m15s elapsed
+Exported index: 96 records (JSON + CSV)
+Exported details: 96 records (JSONL + JSON + CSV)
+Exported sections: 224 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_12/semesteros-export.zip
+
+Done in 4m15s: 96 scraped, 0 already done, 0 failed, 64 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_12/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_12/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_12/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_12/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_12/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_12/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_12/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_12/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.

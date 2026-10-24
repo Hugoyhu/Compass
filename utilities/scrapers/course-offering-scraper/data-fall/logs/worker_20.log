@@ -1,0 +1,196 @@
+Worker 20 groups: T
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_20 --letters T --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Fall 2026 --headless
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group T (1/1)…
+  [T] 6 subjects have no active courses.
+  [T] Found 212 course entries.
+  [T] Skipping 131 courses numbered above 499; 81 left.
+    [T 1/81] Opening THR 100 — Performing and Performance
+      No View Class Sections button; course has no sections.
+    [T 2/81] Opening THR 101 — Introduction to Theatre Arts
+      No View Class Sections button; course has no sections.
+    [T 3/81] Opening THR 103 — Introduction to Theatre Design
+      Fall 2026: found 1 class sections.
+    [T 4/81] Opening THR 104 — Play Analysis
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [T 5/81] Opening THR 105 — Acting I
+      Fall 2026: found 2 class sections.
+    [T 6/81] Opening THR 107 — The Broadway Musical
+      Fall 2026: found 1 class sections.
+    [T 7/81] Opening THR 110 — Public Speaking
+      No View Class Sections button; course has no sections.
+    [T 8/81] Opening THR 111 — Shop Safety
+      No View Class Sections button; course has no sections.
+    [T 9/81] Opening THR 115 — Stagecraft
+      Fall 2026: found 5 class sections.
+    [T 10/81] Opening THR 117 — Media: Analysis and Culture
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (T 10/81) · 10 scraped, 0 already done, 0 failed · 19.4 pages/min · 30s elapsed · ~3m40s left in T
+    [T 11/81] Opening THR 200 — Theatre Practicum I
+      No View Class Sections button; course has no sections.
+    [T 12/81] Opening THR 201 — Theatre History I: Greeks to Moliere
+      No View Class Sections button; course has no sections.
+    [T 13/81] Opening THR 202 — Theatre History II: Restoration to the 20th Century
+      No View Class Sections button; course has no sections.
+    [T 14/81] Opening THR 205 — Acting II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [T 15/81] Opening THR 207 — The Theatre of Baseball
+      No View Class Sections button; course has no sections.
+    [T 16/81] Opening THR 214 — Theatre in New York
+      No View Class Sections button; course has no sections.
+    [T 17/81] Opening THR 215 — Introduction to Design
+      No View Class Sections button; course has no sections.
+    [T 18/81] Opening THR 216 — Introduction to Visual Interpretation
+      Fall 2026: found 1 class sections.
+    [T 19/81] Opening THR 224 — Experimental Studio
+      No View Class Sections button; course has no sections.
+    [T 20/81] Opening THR 230 — Voice for the Actor
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (T 20/81) · 20 scraped, 0 already done, 0 failed · 25.9 pages/min · 46s elapsed · ~2m21s left in T
+    [T 21/81] Opening THR 232 — Improvisation
+      No View Class Sections button; course has no sections.
+    [T 22/81] Opening THR 245 — Movement for Actors
+      No View Class Sections button; course has no sections.
+    [T 23/81] Opening THR 246 — Stage Lighting
+      No View Class Sections button; course has no sections.
+    [T 24/81] Opening THR 277 — The Media Industry
+      No View Class Sections button; course has no sections.
+    [T 25/81] Opening THR 291 — Marketing for the Arts and Performing Arts
+      No View Class Sections button; course has no sections.
+    [T 26/81] Opening THR 298 — Student Media Leadership
+      Fall 2026: found 1 class sections.
+    [T 27/81] Opening THR 300 — Theatre Practicum II
+      No View Class Sections button; course has no sections.
+    [T 28/81] Opening THR 301 — Stage Management Laboratory
+      No View Class Sections button; course has no sections.
+    [T 29/81] Opening THR 303 — Costume Crafts Laboratory
+      No View Class Sections button; course has no sections.
+    [T 30/81] Opening THR 304 — Arts Marketing
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (T 30/81) · 30 scraped, 0 already done, 0 failed · 29.5 pages/min · 1m01s elapsed · ~1m43s left in T
+    [T 31/81] Opening THR 305 — Lighting and Sound Laboratory
+      No View Class Sections button; course has no sections.
+    [T 32/81] Opening THR 306 — Stagecraft Laboratory
+      Fall 2026: found 1 class sections.
+    [T 33/81] Opening THR 307 — Performance Laboratory
+      No View Class Sections button; course has no sections.
+    [T 34/81] Opening THR 308 — Prevention Through the Arts
+      No View Class Sections button; course has no sections.
+    [T 35/81] Opening THR 309 — Prevention Through the Arts II
+      No View Class Sections button; course has no sections.
+    [T 36/81] Opening THR 312 — American Theatre and Drama
+      Fall 2026: found 1 class sections.
+    [T 37/81] Opening THR 313 — Asian Theatre and Drama
+      Fall 2026: not listed for this course. Available terms: Summer 2026, Winter 2027
+    [T 38/81] Opening THR 315 — Topics in Theatre History & Theory: The Classical Age
+      No View Class Sections button; course has no sections.
+    [T 39/81] Opening THR 316 — Topics in Theatre History & Theory: The Modern Era
+      No View Class Sections button; course has no sections.
+    [T 40/81] Opening THR 319 — AIDS Drama, 1980s & 90s
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (T 40/81) · 40 scraped, 0 already done, 0 failed · 30.7 pages/min · 1m18s elapsed · ~1m20s left in T
+    [T 41/81] Opening THR 320 — Production I
+      No View Class Sections button; course has no sections.
+    [T 42/81] Opening THR 321 — Production II
+      No View Class Sections button; course has no sections.
+    [T 43/81] Opening THR 322 — Acting III
+      No View Class Sections button; course has no sections.
+    [T 44/81] Opening THR 323 — Costume Design
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [T 45/81] Opening THR 325 — Screenwriting
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [T 46/81] Opening THR 326 — Playwriting
+      Fall 2026: found 1 class sections.
+    [T 47/81] Opening THR 328 — Documentary Theatre Creation
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [T 48/81] Opening THR 334 — Performance Art I: The European Avant-Garde
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [T 49/81] Opening THR 335 — The Musicals of Stephen Sondheim
+      No View Class Sections button; course has no sections.
+    [T 50/81] Opening THR 336 — Stage Management
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (T 50/81) · 50 scraped, 0 already done, 0 failed · 31.4 pages/min · 1m35s elapsed · ~59s left in T
+    Pausing 5s after 50 detail pages…
+    [T 51/81] Opening THR 337 — Advanced Technical Theatre
+      Fall 2026: found 1 class sections.
+    [T 52/81] Opening THR 344 — Performance Art II: World War II to the Present
+      Fall 2026: found 1 class sections.
+    [T 53/81] Opening THR 346 — Lighting Design
+      No View Class Sections button; course has no sections.
+    [T 54/81] Opening THR 351 — Special Topics in Performance
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [T 55/81] Opening THR 352 — Special Topics in Performance
+      No View Class Sections button; course has no sections.
+    [T 56/81] Opening THR 354 — Topics in Theatre
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [T 57/81] Opening THR 355 — Media and Production Design for Theatre
+      Fall 2026: found 1 class sections.
+    [T 58/81] Opening THR 356 — Scene Design
+      No View Class Sections button; course has no sections.
+    [T 59/81] Opening THR 380 — Creative Process in Theatre I
+      No View Class Sections button; course has no sections.
+    [T 60/81] Opening THR 381 — Creative Process in Theatre II
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (T 60/81) · 60 scraped, 0 already done, 0 failed · 30.2 pages/min · 1m59s elapsed · ~41s left in T
+    [T 61/81] Opening THR 401 — Senior Seminar
+      No View Class Sections button; course has no sections.
+    [T 62/81] Opening THR 403 — Media: Theory and Criticism
+      No View Class Sections button; course has no sections.
+    [T 63/81] Opening THR 406 — Eastern Styles in Acting
+      No View Class Sections button; course has no sections.
+    [T 64/81] Opening THR 438 — Directing I
+      No View Class Sections button; course has no sections.
+    [T 65/81] Opening THR 439 — Directing II
+      No View Class Sections button; course has no sections.
+    [T 66/81] Opening THR 444 — Experiential Learning
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [T 67/81] Opening THR 447 — Readings In Theatre Arts
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [T 68/81] Opening THR 458 — Speak Effectively Before an Audience
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [T 69/81] Opening THR 459 — Write Effectively in Theatre Arts
+      No View Class Sections button; course has no sections.
+    [T 70/81] Opening THR 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 4 class sections.
+  Progress: group 1/1 (T 70/81) · 70 scraped, 0 already done, 0 failed · 31.0 pages/min · 2m15s elapsed · ~21s left in T
+    [T 71/81] Opening THR 476 — Undergraduate Teaching Practicum II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [T 72/81] Opening THR 480 — Projects in Media
+      Fall 2026: found 2 class sections.
+    [T 73/81] Opening THR 483 — Projects in Theatrical Design
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [T 74/81] Opening THR 484 — Projects in Theater
+      No View Class Sections button; course has no sections.
+    [T 75/81] Opening THR 487 — Independent Research
+      Fall 2026: found 4 class sections.
+    [T 76/81] Opening THR 488 — Internship
+      Fall 2026: found 1 class sections.
+    [T 77/81] Opening TRK 101 — Intensive Elementary Turkish
+      No View Class Sections button; course has no sections.
+    [T 78/81] Opening TRK 111 — Elementary Turkish I
+      No View Class Sections button; course has no sections.
+    [T 79/81] Opening TRK 112 — Elementary Turkish II
+      No View Class Sections button; course has no sections.
+    [T 80/81] Opening TVW 220 — Advanced TV Writing
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/1 (T 80/81) · 80 scraped, 0 already done, 0 failed · 28.1 pages/min · 2m50s elapsed · ~2s left in T
+    [T 81/81] Opening TVW 221 — The Writers Room
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (T 81/81) · 81 scraped, 0 already done, 0 failed · 28.0 pages/min · 2m53s elapsed
+Exported index: 81 records (JSON + CSV)
+Exported details: 81 records (JSONL + JSON + CSV)
+Exported sections: 29 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_20/semesteros-export.zip
+
+Done in 2m53s: 81 scraped, 0 already done, 0 failed, 131 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_20/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_20/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_20/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_20/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_20/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_20/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_20/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_20/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.

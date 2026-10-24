@@ -1,0 +1,4874 @@
+[
+  {
+    "subject": "HAD",
+    "course_number": "210",
+    "course_code": "HAD 210",
+    "title": "Introduction to Clinical Laboratory Sciences",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "304",
+    "course_code": "HAD 304",
+    "title": "Introd to Forensic Science",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "310",
+    "course_code": "HAD 310",
+    "title": "Pathology",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "313",
+    "course_code": "HAD 313",
+    "title": "Clinical Biochemistry I",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "315",
+    "course_code": "HAD 315",
+    "title": "Hematology I",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "316",
+    "course_code": "HAD 316",
+    "title": "General Microbiology",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "324",
+    "course_code": "HAD 324",
+    "title": "Pathology",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "330",
+    "course_code": "HAD 330",
+    "title": "Foundations in Phlebotomy",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "331",
+    "course_code": "HAD 331",
+    "title": "Introduction to Biochemistry for CLS",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "335",
+    "course_code": "HAD 335",
+    "title": "Medical Ethics in Health Care for CLS",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "340",
+    "course_code": "HAD 340",
+    "title": "Foundations in Clinical Laboratory Sciences",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "350",
+    "course_code": "HAD 350",
+    "title": "Systems Physiology",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "351",
+    "course_code": "HAD 351",
+    "title": "Research Literacy and Design",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "363",
+    "course_code": "HAD 363",
+    "title": "Computer Applications in Clinical Laboratory Sciences",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "380",
+    "course_code": "HAD 380",
+    "title": "Clinical and Medical Microbiology I",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "381",
+    "course_code": "HAD 381",
+    "title": "Clinical and Medical Microbiology II",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "390",
+    "course_code": "HAD 390",
+    "title": "Independent Study in Diagnostic Technologies",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "397",
+    "course_code": "HAD 397",
+    "title": "Clinical Microbiology Practicum",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "398",
+    "course_code": "HAD 398",
+    "title": "Clinical Hematology I Practicum",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "399",
+    "course_code": "HAD 399",
+    "title": "Clinical Continuation",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "403",
+    "course_code": "HAD 403",
+    "title": "Medical Molecular Biology",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "411",
+    "course_code": "HAD 411",
+    "title": "Clinical Biochemistry II",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "412",
+    "course_code": "HAD 412",
+    "title": "Clinical Biochemistry III",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "414",
+    "course_code": "HAD 414",
+    "title": "Coagulation, Urinalysis and Body Fluids",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "415",
+    "course_code": "HAD 415",
+    "title": "Applied Immunology",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "416",
+    "course_code": "HAD 416",
+    "title": "Immunohematology",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "425",
+    "course_code": "HAD 425",
+    "title": "Parasitology/Mycology",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "432",
+    "course_code": "HAD 432",
+    "title": "Pharmacology",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "440",
+    "course_code": "HAD 440",
+    "title": "Forensic Sciences Clinical",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "445",
+    "course_code": "HAD 445",
+    "title": "Selected Topics in Toxicology",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "460",
+    "course_code": "HAD 460",
+    "title": "Clinical Laboratory Quality Management",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "468",
+    "course_code": "HAD 468",
+    "title": "Laboratory Information Systems Internship",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "490",
+    "course_code": "HAD 490",
+    "title": "Independent Study/ Clinical Laboratory Sciences",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "492",
+    "course_code": "HAD 492",
+    "title": "Research Tutorial",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "493",
+    "course_code": "HAD 493",
+    "title": "Advanced Seminar in Clinical Laboratory Sciences",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "494",
+    "course_code": "HAD 494",
+    "title": "Clinical Chemistry Practicum",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "496",
+    "course_code": "HAD 496",
+    "title": "Histocompatibility Practicum",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "497",
+    "course_code": "HAD 497",
+    "title": "Immunohematology Practicum",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAD",
+    "course_number": "498",
+    "course_code": "HAD 498",
+    "title": "Coagulation and Urinalysis Practicum",
+    "source_file": "index_H.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "HAL",
+    "course_number": "205",
+    "course_code": "HAL 205",
+    "title": "Introduction to Athletic Training",
+    "source_file": "index_H.html",
+    "source_group_index": 4
+  },
+  {
+    "subject": "HAL",
+    "course_number": "376",
+    "course_code": "HAL 376",
+    "title": "Introduction to Nutrition",
+    "source_file": "index_H.html",
+    "source_group_index": 4
+  },
+  {
+    "subject": "HAN",
+    "course_number": "200",
+    "course_code": "HAN 200",
+    "title": "Human Anatomy and Physiology for Health Science I",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "202",
+    "course_code": "HAN 202",
+    "title": "Human Anatomy and Physiology for Health Science II",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "251",
+    "course_code": "HAN 251",
+    "title": "Research Methods in Health Science",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "300",
+    "course_code": "HAN 300",
+    "title": "Health Care Issues",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "311",
+    "course_code": "HAN 311",
+    "title": "Kinesiology",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "312",
+    "course_code": "HAN 312",
+    "title": "Human Anatomy, Health and Medical Language",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "333",
+    "course_code": "HAN 333",
+    "title": "Communication Skills",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "335",
+    "course_code": "HAN 335",
+    "title": "Professional Ethics",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "364",
+    "course_code": "HAN 364",
+    "title": "Issues in Health Care Informatics",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "383",
+    "course_code": "HAN 383",
+    "title": "Scholarly Writing in Health Science",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "395",
+    "course_code": "HAN 395",
+    "title": "Radiation Physics in Medicine",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "401",
+    "course_code": "HAN 401",
+    "title": "Radiobiology and Health Physics",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "402",
+    "course_code": "HAN 402",
+    "title": "Radiographic Anatomy and Pathology",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "404",
+    "course_code": "HAN 404",
+    "title": "Radiology Instrumentation",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "405",
+    "course_code": "HAN 405",
+    "title": "Radiographic Technique",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "406",
+    "course_code": "HAN 406",
+    "title": "Radiologic Procedures and Positioning I",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "416",
+    "course_code": "HAN 416",
+    "title": "Special Issues in Emergency Care and Resuscitation",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "417",
+    "course_code": "HAN 417",
+    "title": "Cardiac Emergencies",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "424",
+    "course_code": "HAN 424",
+    "title": "Pathophysiology for Healthcare Professionals",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "432",
+    "course_code": "HAN 432",
+    "title": "Introduction to Health Care Management",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "433",
+    "course_code": "HAN 433",
+    "title": "Statistics for Healthcare Management",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "434",
+    "course_code": "HAN 434",
+    "title": "Corporate Compliance and Regulation",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "435",
+    "course_code": "HAN 435",
+    "title": "Sales and Marketing in Health Care",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "436",
+    "course_code": "HAN 436",
+    "title": "Continuous Quality Improvement in Health Care",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "440",
+    "course_code": "HAN 440",
+    "title": "Introduction to Community Health Education",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "441",
+    "course_code": "HAN 441",
+    "title": "Internship in Health Science",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "443",
+    "course_code": "HAN 443",
+    "title": "Aging and Disability",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "444",
+    "course_code": "HAN 444",
+    "title": "Disability and Popular Culture",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "446",
+    "course_code": "HAN 446",
+    "title": "Disability Health and Community",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "447",
+    "course_code": "HAN 447",
+    "title": "Children with Disability",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "448",
+    "course_code": "HAN 448",
+    "title": "Disability and Employment",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "449",
+    "course_code": "HAN 449",
+    "title": "Project in Disability Studies",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "450",
+    "course_code": "HAN 450",
+    "title": "Introduction to Public Health",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "452",
+    "course_code": "HAN 452",
+    "title": "Epidemiology and Biostatistics",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "455",
+    "course_code": "HAN 455",
+    "title": "Health Literacy for Public Health",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "456",
+    "course_code": "HAN 456",
+    "title": "Behavioral and Social Aspects of Health",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "457",
+    "course_code": "HAN 457",
+    "title": "First Aid and Injury Care",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "458",
+    "course_code": "HAN 458",
+    "title": "Strength and Conditioning for Hlthcare Pract",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "459",
+    "course_code": "HAN 459",
+    "title": "Introduction to Sports Medicine",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "461",
+    "course_code": "HAN 461",
+    "title": "Introduction to Nutrition",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "462",
+    "course_code": "HAN 462",
+    "title": "Developing Health Information Systems",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "464",
+    "course_code": "HAN 464",
+    "title": "Health Information Systems Management",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "466",
+    "course_code": "HAN 466",
+    "title": "Applied Health Care Informatics",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "467",
+    "course_code": "HAN 467",
+    "title": "Utilization and Outcomes Research Methods",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "470",
+    "course_code": "HAN 470",
+    "title": "Occupational Health and Safety Engineering",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "471",
+    "course_code": "HAN 471",
+    "title": "Trauma and Trauma Systems",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "472",
+    "course_code": "HAN 472",
+    "title": "Emergency Response to Hazardous Materials and Terrorism",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "474",
+    "course_code": "HAN 474",
+    "title": "Industrial Hygiene",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "475",
+    "course_code": "HAN 475",
+    "title": "Fundamentals of Environmental Health",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "476",
+    "course_code": "HAN 476",
+    "title": "Hazardous Materials, Emergency Response and Environmental Auditing",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "477",
+    "course_code": "HAN 477",
+    "title": "Medical Emergencies",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "478",
+    "course_code": "HAN 478",
+    "title": "Internship in Environmental Health",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "481",
+    "course_code": "HAN 481",
+    "title": "Introduction to Anesthesia",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "482",
+    "course_code": "HAN 482",
+    "title": "Introduction to Pathology",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "483",
+    "course_code": "HAN 483",
+    "title": "Cardiopulmonary Physiology for Anesthesia Technology",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "485",
+    "course_code": "HAN 485",
+    "title": "Clinical Monitoring",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "486",
+    "course_code": "HAN 486",
+    "title": "Principles and Practice of Radiation Therapy",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "487",
+    "course_code": "HAN 487",
+    "title": "Introduction to Treatment Planning",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "489",
+    "course_code": "HAN 489",
+    "title": "Pharmacology for Anesthesia Technology",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "492",
+    "course_code": "HAN 492",
+    "title": "Radiation Oncology/Medical Physics II",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "497",
+    "course_code": "HAN 497",
+    "title": "Healthcare in Tanzania: A cultural exchange",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "498",
+    "course_code": "HAN 498",
+    "title": "International Seminar",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAN",
+    "course_number": "499",
+    "course_code": "HAN 499",
+    "title": "Health Science Teaching Practicum",
+    "source_file": "index_H.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "HAO",
+    "course_number": "313",
+    "course_code": "HAO 313",
+    "title": "Introduction to Occupational Therapy",
+    "source_file": "index_H.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "HAS",
+    "course_number": "190",
+    "course_code": "HAS 190",
+    "title": "Introduction to the Health Professions",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "300",
+    "course_code": "HAS 300",
+    "title": "Issues in Health Care",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "310",
+    "course_code": "HAS 310",
+    "title": "Applied Phonetics of English",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "311",
+    "course_code": "HAS 311",
+    "title": "Speech and Language Development",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "312",
+    "course_code": "HAS 312",
+    "title": "Anatomy and Physiology of the Speech, Language, and Hearing Mechanism",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "313",
+    "course_code": "HAS 313",
+    "title": "Speech Science",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "314",
+    "course_code": "HAS 314",
+    "title": "Guided Observations in Speech-Language Pathology",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "332",
+    "course_code": "HAS 332",
+    "title": "Management Concepts for Health Professionals",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "335",
+    "course_code": "HAS 335",
+    "title": "Medical Ethics",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "350",
+    "course_code": "HAS 350",
+    "title": "Introduction to Statistics",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "351",
+    "course_code": "HAS 351",
+    "title": "Research Literacy/Research Design",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "355",
+    "course_code": "HAS 355",
+    "title": "Integrative Systems Physiology",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "360",
+    "course_code": "HAS 360",
+    "title": "Beyond Limitations: Introduction to Adaptive Sports",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "363",
+    "course_code": "HAS 363",
+    "title": "Computer Literacy for Health Professionals",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "391",
+    "course_code": "HAS 391",
+    "title": "Readings in Health",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "399",
+    "course_code": "HAS 399",
+    "title": "Independent Study in Health",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAS",
+    "course_number": "490",
+    "course_code": "HAS 490",
+    "title": "Research Tutorial",
+    "source_file": "index_H.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "HAT",
+    "course_number": "210",
+    "course_code": "HAT 210",
+    "title": "Introduction to Respiratory Care",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "304",
+    "course_code": "HAT 304",
+    "title": "Cardiopulmonary Physiology",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "306",
+    "course_code": "HAT 306",
+    "title": "Patient Evaluation",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "315",
+    "course_code": "HAT 315",
+    "title": "Pharmacology",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "320",
+    "course_code": "HAT 320",
+    "title": "Cardiovascular Diagnosis and Treatment I",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "330",
+    "course_code": "HAT 330",
+    "title": "Cardiopulmonary Pathology",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "331",
+    "course_code": "HAT 331",
+    "title": "Respiratory Care Principles, Therapies, and Applications",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "332",
+    "course_code": "HAT 332",
+    "title": "Respiratory Care Assessment and Intervention",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "333",
+    "course_code": "HAT 333",
+    "title": "Pulmonary Diagnostic Testing and Rehabilitation",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "335",
+    "course_code": "HAT 335",
+    "title": "Medical Ethics",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "350",
+    "course_code": "HAT 350",
+    "title": "Basic Respiratory Care Clinical",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "353",
+    "course_code": "HAT 353",
+    "title": "Pulmonary Diagnostic Clinical",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "(410)",
+    "course_code": "HAT (410)",
+    "title": "Teaching and Leadership in Healthcare ** available as of 05/20/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "410",
+    "course_code": "HAT 410",
+    "title": "Introduction to Clinical Education",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "411",
+    "course_code": "HAT 411",
+    "title": "Clinical Teaching in Respiratory Care",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "(415)",
+    "course_code": "HAT (415)",
+    "title": "Innovative Critical Care Techniques in Respiratory Care ** available as of 05/20/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "415",
+    "course_code": "HAT 415",
+    "title": "Respiratory Care Techniques IV",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "420",
+    "course_code": "HAT 420",
+    "title": "Cardiovascular Diagnosis and Treatment II",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "(431)",
+    "course_code": "HAT (431)",
+    "title": "Adult Mechanical Ventilation ** available as of 05/20/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "431",
+    "course_code": "HAT 431",
+    "title": "Respiratory Care Techniques III",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "(432)",
+    "course_code": "HAT (432)",
+    "title": "Neonatal & Pediatric Clinical Management ** available as of 05/20/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "432",
+    "course_code": "HAT 432",
+    "title": "Perinatal Respiratory Care",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "450",
+    "course_code": "HAT 450",
+    "title": "Critical Care Clinical",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "(451)",
+    "course_code": "HAT (451)",
+    "title": "Neonatal/Pediatric Clinical ** available as of 05/20/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "451",
+    "course_code": "HAT 451",
+    "title": "Perinatal Care Clinical",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "(470)",
+    "course_code": "HAT (470)",
+    "title": "Sleep Diagnostics and Therapeutics ** available as of 05/20/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "470",
+    "course_code": "HAT 470",
+    "title": "Polysomnographic Technology I",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "471",
+    "course_code": "HAT 471",
+    "title": "Polysomnographic Technology II",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "(475)",
+    "course_code": "HAT (475)",
+    "title": "Sleep Diagnostics and Therapeutics Clinical ** available as of 05/20/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "475",
+    "course_code": "HAT 475",
+    "title": "Polysomnographic Technology I Clinical",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "476",
+    "course_code": "HAT 476",
+    "title": "Polysomnographic Technology II Clinical",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "482",
+    "course_code": "HAT 482",
+    "title": "Physiologic Monitoring Clinical",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "487",
+    "course_code": "HAT 487",
+    "title": "Cardiopulmonary Rehabilitation Clinical",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "490",
+    "course_code": "HAT 490",
+    "title": "Independent Study",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "494",
+    "course_code": "HAT 494",
+    "title": "Respiratory Care Board Review",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAT",
+    "course_number": "499",
+    "course_code": "HAT 499",
+    "title": "Clinical Continuation",
+    "source_file": "index_H.html",
+    "source_group_index": 9
+  },
+  {
+    "subject": "HAY",
+    "course_number": "313",
+    "course_code": "HAY 313",
+    "title": "Introduction to Physical Therapy",
+    "source_file": "index_H.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "HBA",
+    "course_number": "325",
+    "course_code": "HBA 325",
+    "title": "Anatomical/Bio Illustration",
+    "source_file": "index_H.html",
+    "source_group_index": 13
+  },
+  {
+    "subject": "HBA",
+    "course_number": "398",
+    "course_code": "HBA 398",
+    "title": "Research Project in Anatomical Sciences",
+    "source_file": "index_H.html",
+    "source_group_index": 13
+  },
+  {
+    "subject": "HBA",
+    "course_number": "399",
+    "course_code": "HBA 399",
+    "title": "Research Project in Anatomical Sciences",
+    "source_file": "index_H.html",
+    "source_group_index": 13
+  },
+  {
+    "subject": "HBA",
+    "course_number": "461",
+    "course_code": "HBA 461",
+    "title": "Regional Human Anatomy for Respiratory Therapists",
+    "source_file": "index_H.html",
+    "source_group_index": 13
+  },
+  {
+    "subject": "HBC",
+    "course_number": "331",
+    "course_code": "HBC 331",
+    "title": "Introductory Biochemistry",
+    "source_file": "index_H.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "HBH",
+    "course_number": "330",
+    "course_code": "HBH 330",
+    "title": "Fundamentals of Pharmacology I",
+    "source_file": "index_H.html",
+    "source_group_index": 16
+  },
+  {
+    "subject": "HBH",
+    "course_number": "331",
+    "course_code": "HBH 331",
+    "title": "Fundamentals of Pharmacology II",
+    "source_file": "index_H.html",
+    "source_group_index": 16
+  },
+  {
+    "subject": "HBH",
+    "course_number": "333",
+    "course_code": "HBH 333",
+    "title": "Principles of Pharmacology",
+    "source_file": "index_H.html",
+    "source_group_index": 16
+  },
+  {
+    "subject": "HBH",
+    "course_number": "396",
+    "course_code": "HBH 396",
+    "title": "Research Project in Pharmacology",
+    "source_file": "index_H.html",
+    "source_group_index": 16
+  },
+  {
+    "subject": "HBH",
+    "course_number": "398",
+    "course_code": "HBH 398",
+    "title": "Research Project in Pharmacology",
+    "source_file": "index_H.html",
+    "source_group_index": 16
+  },
+  {
+    "subject": "HBH",
+    "course_number": "399",
+    "course_code": "HBH 399",
+    "title": "Research Project in Pharmacology",
+    "source_file": "index_H.html",
+    "source_group_index": 16
+  },
+  {
+    "subject": "HBI",
+    "course_number": "398",
+    "course_code": "HBI 398",
+    "title": "Research Projects in Biomedical Sciences",
+    "source_file": "index_H.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "HBM",
+    "course_number": "320",
+    "course_code": "HBM 320",
+    "title": "General Microbiology",
+    "source_file": "index_H.html",
+    "source_group_index": 18
+  },
+  {
+    "subject": "HBM",
+    "course_number": "321",
+    "course_code": "HBM 321",
+    "title": "General Microbiology Laboratory",
+    "source_file": "index_H.html",
+    "source_group_index": 18
+  },
+  {
+    "subject": "HBM",
+    "course_number": "398",
+    "course_code": "HBM 398",
+    "title": "Research Project in Microbiology",
+    "source_file": "index_H.html",
+    "source_group_index": 18
+  },
+  {
+    "subject": "HBM",
+    "course_number": "399",
+    "course_code": "HBM 399",
+    "title": "Research Project in Microbiology",
+    "source_file": "index_H.html",
+    "source_group_index": 18
+  },
+  {
+    "subject": "HBP",
+    "course_number": "393",
+    "course_code": "HBP 393",
+    "title": "Special Topics from Pathology Literature",
+    "source_file": "index_H.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "HBP",
+    "course_number": "394",
+    "course_code": "HBP 394",
+    "title": "Special Topics from Pathology Literature",
+    "source_file": "index_H.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "HBP",
+    "course_number": "398",
+    "course_code": "HBP 398",
+    "title": "Research Project in Pathology",
+    "source_file": "index_H.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "HBP",
+    "course_number": "399",
+    "course_code": "HBP 399",
+    "title": "Research Project in Pathology",
+    "source_file": "index_H.html",
+    "source_group_index": 21
+  },
+  {
+    "subject": "HBW",
+    "course_number": "101",
+    "course_code": "HBW 101",
+    "title": "Intensive Elementary Hebrew",
+    "source_file": "index_H.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "HBW",
+    "course_number": "111",
+    "course_code": "HBW 111",
+    "title": "Elementary Hebrew I",
+    "source_file": "index_H.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "HBW",
+    "course_number": "112",
+    "course_code": "HBW 112",
+    "title": "Elementary Hebrew II",
+    "source_file": "index_H.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "HBW",
+    "course_number": "211",
+    "course_code": "HBW 211",
+    "title": "Intermediate Hebrew I",
+    "source_file": "index_H.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "HBW",
+    "course_number": "212",
+    "course_code": "HBW 212",
+    "title": "Intermediate Hebrew II",
+    "source_file": "index_H.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "HBW",
+    "course_number": "311",
+    "course_code": "HBW 311",
+    "title": "Advanced Hebrew I",
+    "source_file": "index_H.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "HBW",
+    "course_number": "312",
+    "course_code": "HBW 312",
+    "title": "Advanced Hebrew II",
+    "source_file": "index_H.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "HBW",
+    "course_number": "405",
+    "course_code": "HBW 405",
+    "title": "Studies in Hebrew Literature",
+    "source_file": "index_H.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "HBW",
+    "course_number": "415",
+    "course_code": "HBW 415",
+    "title": "The History of the Hebrew Language",
+    "source_file": "index_H.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "HBW",
+    "course_number": "447",
+    "course_code": "HBW 447",
+    "title": "Directed Readings in Hebrew",
+    "source_file": "index_H.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "HBW",
+    "course_number": "475",
+    "course_code": "HBW 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_H.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "HBW",
+    "course_number": "476",
+    "course_code": "HBW 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_H.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "HBY",
+    "course_number": "350",
+    "course_code": "HBY 350",
+    "title": "Physiology",
+    "source_file": "index_H.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "HBY",
+    "course_number": "390",
+    "course_code": "HBY 390",
+    "title": "Topics in Physiology",
+    "source_file": "index_H.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "HBY",
+    "course_number": "393",
+    "course_code": "HBY 393",
+    "title": "Special Topics from Physiology and Biophysics Literature",
+    "source_file": "index_H.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "HBY",
+    "course_number": "394",
+    "course_code": "HBY 394",
+    "title": "Special Topics from Physiology and Biophysics Literature",
+    "source_file": "index_H.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "HBY",
+    "course_number": "398",
+    "course_code": "HBY 398",
+    "title": "Research Project in Physiology and Biophysics",
+    "source_file": "index_H.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "HBY",
+    "course_number": "399",
+    "course_code": "HBY 399",
+    "title": "Research Project in Physiology and Biophysics",
+    "source_file": "index_H.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "HD",
+    "course_number": "495",
+    "course_code": "HD 495",
+    "title": "Research Fellowship for Entering Dental Students",
+    "source_file": "index_H.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "HDG",
+    "course_number": "299",
+    "course_code": "HDG 299",
+    "title": "Introduction to Research in General Dentistry",
+    "source_file": "index_H.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "HDG",
+    "course_number": "399",
+    "course_code": "HDG 399",
+    "title": "Supervised Research in General Dentistry",
+    "source_file": "index_H.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "HDG",
+    "course_number": "499",
+    "course_code": "HDG 499",
+    "title": "Independent Research in General Dentistry",
+    "source_file": "index_H.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "HDH",
+    "course_number": "301",
+    "course_code": "HDH 301",
+    "title": "Independent Readings and Research",
+    "source_file": "index_H.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "HDO",
+    "course_number": "320",
+    "course_code": "HDO 320",
+    "title": "Research: Oral Biology and Pathology",
+    "source_file": "index_H.html",
+    "source_group_index": 33
+  },
+  {
+    "subject": "HDO",
+    "course_number": "321",
+    "course_code": "HDO 321",
+    "title": "Oral Biology Research II",
+    "source_file": "index_H.html",
+    "source_group_index": 33
+  },
+  {
+    "subject": "HDO",
+    "course_number": "322",
+    "course_code": "HDO 322",
+    "title": "Summer Research: Oral Biology Pathology",
+    "source_file": "index_H.html",
+    "source_group_index": 33
+  },
+  {
+    "subject": "HDO",
+    "course_number": "420",
+    "course_code": "HDO 420",
+    "title": "Oral Biology Research III",
+    "source_file": "index_H.html",
+    "source_group_index": 33
+  },
+  {
+    "subject": "HDO",
+    "course_number": "421",
+    "course_code": "HDO 421",
+    "title": "Oral Biology Research IV",
+    "source_file": "index_H.html",
+    "source_group_index": 33
+  },
+  {
+    "subject": "HDO",
+    "course_number": "422",
+    "course_code": "HDO 422",
+    "title": "Summer Research Oral Biology and Pathology",
+    "source_file": "index_H.html",
+    "source_group_index": 33
+  },
+  {
+    "subject": "HDP",
+    "course_number": "320",
+    "course_code": "HDP 320",
+    "title": "Introduction to Periodontal Research",
+    "source_file": "index_H.html",
+    "source_group_index": 34
+  },
+  {
+    "subject": "HDP",
+    "course_number": "321",
+    "course_code": "HDP 321",
+    "title": "Introduction to Periodontal Research",
+    "source_file": "index_H.html",
+    "source_group_index": 34
+  },
+  {
+    "subject": "HDP",
+    "course_number": "322",
+    "course_code": "HDP 322",
+    "title": "Introduction to Periodontal Research",
+    "source_file": "index_H.html",
+    "source_group_index": 34
+  },
+  {
+    "subject": "HDP",
+    "course_number": "420",
+    "course_code": "HDP 420",
+    "title": "Research in the Biology and Pathology of Periodontium",
+    "source_file": "index_H.html",
+    "source_group_index": 34
+  },
+  {
+    "subject": "HDP",
+    "course_number": "421",
+    "course_code": "HDP 421",
+    "title": "Research in the Biology and Pathology of Periodontium",
+    "source_file": "index_H.html",
+    "source_group_index": 34
+  },
+  {
+    "subject": "HDP",
+    "course_number": "422",
+    "course_code": "HDP 422",
+    "title": "Research in the Biology and Pathology of Periodontium",
+    "source_file": "index_H.html",
+    "source_group_index": 34
+  },
+  {
+    "subject": "HIN",
+    "course_number": "111",
+    "course_code": "HIN 111",
+    "title": "Elementary Hindi I",
+    "source_file": "index_H.html",
+    "source_group_index": 48
+  },
+  {
+    "subject": "HIN",
+    "course_number": "112",
+    "course_code": "HIN 112",
+    "title": "Elementary Hindi II",
+    "source_file": "index_H.html",
+    "source_group_index": 48
+  },
+  {
+    "subject": "HIN",
+    "course_number": "211",
+    "course_code": "HIN 211",
+    "title": "Intermediate Hindi I",
+    "source_file": "index_H.html",
+    "source_group_index": 48
+  },
+  {
+    "subject": "HIN",
+    "course_number": "212",
+    "course_code": "HIN 212",
+    "title": "Intermediate Hindi II",
+    "source_file": "index_H.html",
+    "source_group_index": 48
+  },
+  {
+    "subject": "HIN",
+    "course_number": "311",
+    "course_code": "HIN 311",
+    "title": "Hindi Conversation and Composition I",
+    "source_file": "index_H.html",
+    "source_group_index": 48
+  },
+  {
+    "subject": "HIN",
+    "course_number": "312",
+    "course_code": "HIN 312",
+    "title": "Hindi Conversation and Composition II",
+    "source_file": "index_H.html",
+    "source_group_index": 48
+  },
+  {
+    "subject": "HIS",
+    "course_number": "100",
+    "course_code": "HIS 100",
+    "title": "The Ancient World",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "101",
+    "course_code": "HIS 101",
+    "title": "Ancient Mesopotamia to Early Modern Europe",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "102",
+    "course_code": "HIS 102",
+    "title": "Modern European History, 18th c. to the Present",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "103",
+    "course_code": "HIS 103",
+    "title": "American History to 1877",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "104",
+    "course_code": "HIS 104",
+    "title": "United States Since 1877",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "113",
+    "course_code": "HIS 113",
+    "title": "America in the Atlantic World",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "116",
+    "course_code": "HIS 116",
+    "title": "Women as a Force in US History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "201",
+    "course_code": "HIS 201",
+    "title": "The Ancient Near East",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "202",
+    "course_code": "HIS 202",
+    "title": "Ancient Greece",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "203",
+    "course_code": "HIS 203",
+    "title": "Ancient Rome",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "206",
+    "course_code": "HIS 206",
+    "title": "Europe in the Age of Discovery, 1348-1789",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "(209)",
+    "course_code": "HIS (209)",
+    "title": "Early and Imperial Russian History ** available as of 01/01/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "210",
+    "course_code": "HIS 210",
+    "title": "Soviet Russia",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "212",
+    "course_code": "HIS 212",
+    "title": "Ancient History of Mesoamerica",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "213",
+    "course_code": "HIS 213",
+    "title": "Colonial Latin America",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "214",
+    "course_code": "HIS 214",
+    "title": "Modern Latin America",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "215",
+    "course_code": "HIS 215",
+    "title": "Long Island History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "216",
+    "course_code": "HIS 216",
+    "title": "History of U.S.-Latin American Relations",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "218",
+    "course_code": "HIS 218",
+    "title": "Ancient, Medieval, & Early Modern South Asia",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "219",
+    "course_code": "HIS 219",
+    "title": "Introduction to Chinese History and Civilization",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "220",
+    "course_code": "HIS 220",
+    "title": "Japan in the Age of Courtier and Samurai",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "221",
+    "course_code": "HIS 221",
+    "title": "Introduction to Modern African History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "223",
+    "course_code": "HIS 223",
+    "title": "Regional History of Africa",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "225",
+    "course_code": "HIS 225",
+    "title": "Jewish History from Antiquity to the Middle Ages",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "226",
+    "course_code": "HIS 226",
+    "title": "Modern Jewish History: Dilemmas of Difference",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "227",
+    "course_code": "HIS 227",
+    "title": "Islamic Civilization & Muslim Societies",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "229",
+    "course_code": "HIS 229",
+    "title": "Victorian Britain",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "230",
+    "course_code": "HIS 230",
+    "title": "Britain since 1688: Four Nations in the World",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "235",
+    "course_code": "HIS 235",
+    "title": "The Heirs of Rome: The Early Medieval World, 300-1000",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "236",
+    "course_code": "HIS 236",
+    "title": "The World of the Later Middle Ages, 1000-1500",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "237",
+    "course_code": "HIS 237",
+    "title": "Science, Technology, and Medicine in Western Civilization I",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "238",
+    "course_code": "HIS 238",
+    "title": "Science, Technology, and Medicine in Western Civilization II",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "239",
+    "course_code": "HIS 239",
+    "title": "From Columbus to Darwin: Investigating Nature, Medicine, and Science in the Americas",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "241",
+    "course_code": "HIS 241",
+    "title": "Nazi Genocide and the Holocaust",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "247",
+    "course_code": "HIS 247",
+    "title": "Modern Korea through Visual Culture",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "248",
+    "course_code": "HIS 248",
+    "title": "Modern Europe, 1815-1914",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "249",
+    "course_code": "HIS 249",
+    "title": "Modern Europe, 1914-1945",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "250",
+    "course_code": "HIS 250",
+    "title": "The Second World War, 1939-1945",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "251",
+    "course_code": "HIS 251",
+    "title": "Europe Since 1945",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "256",
+    "course_code": "HIS 256",
+    "title": "Tacos to Telenovelas: Latin American Popular Culture",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "261",
+    "course_code": "HIS 261",
+    "title": "Change and Reform in the United States, 1877-1919",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "262",
+    "course_code": "HIS 262",
+    "title": "American Colonial Society",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "263",
+    "course_code": "HIS 263",
+    "title": "Age of the American Revolution",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "264",
+    "course_code": "HIS 264",
+    "title": "The Early Republic",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "265",
+    "course_code": "HIS 265",
+    "title": "Civil War and Reconstruction",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "266",
+    "course_code": "HIS 266",
+    "title": "History of the United States West",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "273",
+    "course_code": "HIS 273",
+    "title": "U.S. History, 1900-1945",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "274",
+    "course_code": "HIS 274",
+    "title": "U.S. History, 1945-2000",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "277",
+    "course_code": "HIS 277",
+    "title": "The Modern Color Line",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "280",
+    "course_code": "HIS 280",
+    "title": "The History of the U.S. Working Class",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "281",
+    "course_code": "HIS 281",
+    "title": "Global History and Geography",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "282",
+    "course_code": "HIS 282",
+    "title": "African American History Since 1877",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "283",
+    "course_code": "HIS 283",
+    "title": "The History of Latinos in the United States",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "285",
+    "course_code": "HIS 285",
+    "title": "Games, Burlesques, and Spectacles: Popular Culture in 19th-Century America",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "286",
+    "course_code": "HIS 286",
+    "title": "The Global History of Human Health",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "287",
+    "course_code": "HIS 287",
+    "title": "Crime and Criminal Justice in the U.S.",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "288",
+    "course_code": "HIS 288",
+    "title": "Wealth and Inequality in Early America",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "289",
+    "course_code": "HIS 289",
+    "title": "Wealth and Inequality in America's Corporate Age",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "293",
+    "course_code": "HIS 293",
+    "title": "Disease in American History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "295",
+    "course_code": "HIS 295",
+    "title": "History of North American Cities and Suburbs",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "300",
+    "course_code": "HIS 300",
+    "title": "Topics in Global History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "301",
+    "course_code": "HIS 301",
+    "title": "Reading and Writing History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "302",
+    "course_code": "HIS 302",
+    "title": "Environmental History in Global Perspective",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "303",
+    "course_code": "HIS 303",
+    "title": "The Crusades and Medieval Society",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "304",
+    "course_code": "HIS 304",
+    "title": "Religion, Magic and Witchcraft in Early Modern Europe",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "307",
+    "course_code": "HIS 307",
+    "title": "Silk Roads and Spice Routes: Travel, Exploration and Discovery in the Premodern World",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "308",
+    "course_code": "HIS 308",
+    "title": "Britain and France in the Age of Revolution",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "309",
+    "course_code": "HIS 309",
+    "title": "Victorian Britain and Monsters: A Peculiar History of Empire",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "310",
+    "course_code": "HIS 310",
+    "title": "Britain Since 1945: Postcolonial Disruptions",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "312",
+    "course_code": "HIS 312",
+    "title": "From Empire to Third Reich: Germany, 1890-1945",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "314",
+    "course_code": "HIS 314",
+    "title": "Indigenous-Settler Relations in the United States",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "315",
+    "course_code": "HIS 315",
+    "title": "Nazi Empire",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "318",
+    "course_code": "HIS 318",
+    "title": "Modern European Intellectual History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "320",
+    "course_code": "HIS 320",
+    "title": "Latino New York",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "323",
+    "course_code": "HIS 323",
+    "title": "Women of Color in the U.S.",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "325",
+    "course_code": "HIS 325",
+    "title": "Civil Rights and Black Power",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "327",
+    "course_code": "HIS 327",
+    "title": "The Arts as History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "328",
+    "course_code": "HIS 328",
+    "title": "History of New York City",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "329",
+    "course_code": "HIS 329",
+    "title": "Environmental Disasters",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "330",
+    "course_code": "HIS 330",
+    "title": "European Intellectual History, 1870-1945",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "331",
+    "course_code": "HIS 331",
+    "title": "Immigration in American History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "332",
+    "course_code": "HIS 332",
+    "title": "Postcolonial South Asia",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "334",
+    "course_code": "HIS 334",
+    "title": "Women and Gender in Pre-Modern European History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "336",
+    "course_code": "HIS 336",
+    "title": "Women and Gender in Modern European History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "337",
+    "course_code": "HIS 337",
+    "title": "History of Korea",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "338",
+    "course_code": "HIS 338",
+    "title": "Asian and Pacific Islanders in American History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "339",
+    "course_code": "HIS 339",
+    "title": "Recent African American History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "340",
+    "course_code": "HIS 340",
+    "title": "Topics in Asian History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "342",
+    "course_code": "HIS 342",
+    "title": "Cold War Sciences",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "344",
+    "course_code": "HIS 344",
+    "title": "Modern Japan",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "348",
+    "course_code": "HIS 348",
+    "title": "Colonial South Asia",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "350",
+    "course_code": "HIS 350",
+    "title": "Topics in African History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "351",
+    "course_code": "HIS 351",
+    "title": "Revolutionary China: Politics, Culture, and Power",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "352",
+    "course_code": "HIS 352",
+    "title": "Environmental History of China",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "353",
+    "course_code": "HIS 353",
+    "title": "Postwar Japan",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "354",
+    "course_code": "HIS 354",
+    "title": "Environment and Climate Justice: History and Practice",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "356",
+    "course_code": "HIS 356",
+    "title": "Zionism, Israel, and the Middle East",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "359",
+    "course_code": "HIS 359",
+    "title": "Ideologies of Capitalism",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "360",
+    "course_code": "HIS 360",
+    "title": "Changing Families: US History to 1860",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "361",
+    "course_code": "HIS 361",
+    "title": "Slavery and Freedom in the Making of the Atlantic",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "362",
+    "course_code": "HIS 362",
+    "title": "Unsettled Decade: The Sixties",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "363",
+    "course_code": "HIS 363",
+    "title": "Topics in American History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "364",
+    "course_code": "HIS 364",
+    "title": "Oceans Past: World History from a Maritime Perspective",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "365",
+    "course_code": "HIS 365",
+    "title": "Environmental History of North America",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "366",
+    "course_code": "HIS 366",
+    "title": "Carceral Studies: Histories of Policing, Prisons, and Surveillance",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "367",
+    "course_code": "HIS 367",
+    "title": "Technologies of Capitalism",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "368",
+    "course_code": "HIS 368",
+    "title": "Health and Disease in Africa",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "369",
+    "course_code": "HIS 369",
+    "title": "Religion and Politics in Africa",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "370",
+    "course_code": "HIS 370",
+    "title": "US Social History from 1860 to 1940",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "371",
+    "course_code": "HIS 371",
+    "title": "Law and Society in American History, 1620-1877",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "373",
+    "course_code": "HIS 373",
+    "title": "Global 1960s",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "374",
+    "course_code": "HIS 374",
+    "title": "Surveillance State: A History of U.S. Domestic Spying",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "379",
+    "course_code": "HIS 379",
+    "title": "Rebels & Revolutionaries: 1960s Latin America",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "380",
+    "course_code": "HIS 380",
+    "title": "Topics in Latin-American History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "381",
+    "course_code": "HIS 381",
+    "title": "Chocolate, Coffee & Cocaine: Global Commodities",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "383",
+    "course_code": "HIS 383",
+    "title": "The World of Jane Austen; Jane Austen in the World",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "385",
+    "course_code": "HIS 385",
+    "title": "Aztec Civilization",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "386",
+    "course_code": "HIS 386",
+    "title": "The Maya",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "387",
+    "course_code": "HIS 387",
+    "title": "Cuba: Island of Consequence",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "389",
+    "course_code": "HIS 389",
+    "title": "Mexico: From Revolutions to Cartels, 1810-2020",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "390",
+    "course_code": "HIS 390",
+    "title": "Topics in Ancient History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "391",
+    "course_code": "HIS 391",
+    "title": "Topics in Ancient and Medieval Europe",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "392",
+    "course_code": "HIS 392",
+    "title": "Topics in Early Modern Europe",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "393",
+    "course_code": "HIS 393",
+    "title": "Topics in Modern European History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "396",
+    "course_code": "HIS 396",
+    "title": "Topics in U.S. History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "397",
+    "course_code": "HIS 397",
+    "title": "Topics in History of U.S. Immigration and Ethnicity",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "398",
+    "course_code": "HIS 398",
+    "title": "Topics in the History of Science, Medicine and Technology",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "399",
+    "course_code": "HIS 399",
+    "title": "Topics in U.S. History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "401",
+    "course_code": "HIS 401",
+    "title": "Senior Colloquium",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "444",
+    "course_code": "HIS 444",
+    "title": "Experiential Learning",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "447",
+    "course_code": "HIS 447",
+    "title": "Independent Readings in History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "487",
+    "course_code": "HIS 487",
+    "title": "Supervised Research",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "488",
+    "course_code": "HIS 488",
+    "title": "Internship",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "495",
+    "course_code": "HIS 495",
+    "title": "Senior Honors Project in History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HIS",
+    "course_number": "496",
+    "course_code": "HIS 496",
+    "title": "Senior Honors Project in History",
+    "source_file": "index_H.html",
+    "source_group_index": 49
+  },
+  {
+    "subject": "HMC",
+    "course_number": "331",
+    "course_code": "HMC 331",
+    "title": "Legal and Ethical Issues in Health Care",
+    "source_file": "index_H.html",
+    "source_group_index": 53
+  },
+  {
+    "subject": "HMC",
+    "course_number": "361",
+    "course_code": "HMC 361",
+    "title": "Literature and Medicine",
+    "source_file": "index_H.html",
+    "source_group_index": 53
+  },
+  {
+    "subject": "HMC",
+    "course_number": "487",
+    "course_code": "HMC 487",
+    "title": "Independent Study",
+    "source_file": "index_H.html",
+    "source_group_index": 53
+  },
+  {
+    "subject": "HMF",
+    "course_number": "88",
+    "course_code": "HMF 88",
+    "title": "Continuing Dietetic Internship Program",
+    "source_file": "index_H.html",
+    "source_group_index": 54
+  },
+  {
+    "subject": "HMH",
+    "course_number": "401",
+    "course_code": "HMH 401",
+    "title": "INTRO MEDICAL PHYS",
+    "source_file": "index_H.html",
+    "source_group_index": 55
+  },
+  {
+    "subject": "HMO",
+    "course_number": "401",
+    "course_code": "HMO 401",
+    "title": "RESEARCH IN PERINATA",
+    "source_file": "index_H.html",
+    "source_group_index": 59
+  },
+  {
+    "subject": "HMO",
+    "course_number": "402",
+    "course_code": "HMO 402",
+    "title": "RSH PRJ IN OB/GYN",
+    "source_file": "index_H.html",
+    "source_group_index": 59
+  },
+  {
+    "subject": "HMO",
+    "course_number": "490",
+    "course_code": "HMO 490",
+    "title": "IND STUDY CYTOGENET",
+    "source_file": "index_H.html",
+    "source_group_index": 59
+  },
+  {
+    "subject": "HMO",
+    "course_number": "492",
+    "course_code": "HMO 492",
+    "title": "IND STUDY REP BIO",
+    "source_file": "index_H.html",
+    "source_group_index": 59
+  },
+  {
+    "subject": "HMP",
+    "course_number": "425",
+    "course_code": "HMP 425",
+    "title": "INDEP RES NEUROPSYCH",
+    "source_file": "index_H.html",
+    "source_group_index": 60
+  },
+  {
+    "subject": "HMP",
+    "course_number": "430",
+    "course_code": "HMP 430",
+    "title": "INDEPENDENT STUDY",
+    "source_file": "index_H.html",
+    "source_group_index": 60
+  },
+  {
+    "subject": "HNC",
+    "course_number": "1",
+    "course_code": "HNC 1",
+    "title": "Clinical Practice Portfolio",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "2",
+    "course_code": "HNC 2",
+    "title": "RN Bachelor Prog Advanced Placement Credits",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "299",
+    "course_code": "HNC 299",
+    "title": "Introduction to Professional Trends in Nursing",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "300",
+    "course_code": "HNC 300",
+    "title": "Health Care Informatics",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "304",
+    "course_code": "HNC 304",
+    "title": "Social Justice in Health Care",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "305",
+    "course_code": "HNC 305",
+    "title": "Healing and the Arts",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "310",
+    "course_code": "HNC 310",
+    "title": "Pathophysiology",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "333",
+    "course_code": "HNC 333",
+    "title": "Fundamentals of Pharmacology",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "340",
+    "course_code": "HNC 340",
+    "title": "Novice to Expert",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "350",
+    "course_code": "HNC 350",
+    "title": "Professional Role Development in Nursing",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "351",
+    "course_code": "HNC 351",
+    "title": "Role Development for Professional Advancement",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "360",
+    "course_code": "HNC 360",
+    "title": "Statistical Methods for Health Care Research",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "367",
+    "course_code": "HNC 367",
+    "title": "Introduction to Health Care Policy",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "369",
+    "course_code": "HNC 369",
+    "title": "Ethical and Legal Issues in Health Care Policy",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "370",
+    "course_code": "HNC 370",
+    "title": "Health Assessment",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "382",
+    "course_code": "HNC 382",
+    "title": "Continuing Course Work",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "440",
+    "course_code": "HNC 440",
+    "title": "Nursing Research: Appraising Evidence for Pract",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "452",
+    "course_code": "HNC 452",
+    "title": "Preparation for Professional Licensure",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "462",
+    "course_code": "HNC 462",
+    "title": "Clinical Immersion in Emergency Nursing",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "469",
+    "course_code": "HNC 469",
+    "title": "Population Health Nursing",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "470",
+    "course_code": "HNC 470",
+    "title": "Nursing Ldrship Practicum: A Capstone Experience",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "471",
+    "course_code": "HNC 471",
+    "title": "Nrsng Ldrshp Practicum: A Cap Exp for BS/MS Stdnts",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "479",
+    "course_code": "HNC 479",
+    "title": "Transitioning to Baccalaureate Nursing Practice",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "480",
+    "course_code": "HNC 480",
+    "title": "Clinical Immersion in Operative Nursing",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "481",
+    "course_code": "HNC 481",
+    "title": "Clinical Immersion: Undergraduate",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "482",
+    "course_code": "HNC 482",
+    "title": "Directed Studies",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "483",
+    "course_code": "HNC 483",
+    "title": "Clinical Immersion in Perioperative Nursing II",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "489",
+    "course_code": "HNC 489",
+    "title": "Global Immersion: Undergraduate",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "490",
+    "course_code": "HNC 490",
+    "title": "Professional & Ethical Communication in Digital Era",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "491",
+    "course_code": "HNC 491",
+    "title": "Patient & Family Centered Care:Partners HealthCare",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "492",
+    "course_code": "HNC 492",
+    "title": "Complementary and Alternative Therapies",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "493",
+    "course_code": "HNC 493",
+    "title": "End of Life Care of the Adult Patient",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "495",
+    "course_code": "HNC 495",
+    "title": "Palliative, Hospice and End of Life Care",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "496",
+    "course_code": "HNC 496",
+    "title": "Working Together: Interprofessnl Conversations-Cultural Diversity, Patient Safety, and Quality Care",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "497",
+    "course_code": "HNC 497",
+    "title": "Genetics and Genomics",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNC",
+    "course_number": "499",
+    "course_code": "HNC 499",
+    "title": "Epidemiology: Population Based",
+    "source_file": "index_H.html",
+    "source_group_index": 62
+  },
+  {
+    "subject": "HNI",
+    "course_number": "1",
+    "course_code": "HNI 1",
+    "title": "Military Medical Skills Experience Portfolio",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "290",
+    "course_code": "HNI 290",
+    "title": "Introduction to Nursing",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "301",
+    "course_code": "HNI 301",
+    "title": "Mathematics for Health Care",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "304",
+    "course_code": "HNI 304",
+    "title": "Social Justice in Health Care",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "305",
+    "course_code": "HNI 305",
+    "title": "Healing and the Arts",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "307",
+    "course_code": "HNI 307",
+    "title": "Disability from the Inside Out",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "310",
+    "course_code": "HNI 310",
+    "title": "Pathophysiology",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "314",
+    "course_code": "HNI 314",
+    "title": "Transitional Leadership: Military Veteran to Nurse",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "333",
+    "course_code": "HNI 333",
+    "title": "Fundamentals of Pharmacology",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "350",
+    "course_code": "HNI 350",
+    "title": "Professional Role Development in Nursing",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "367",
+    "course_code": "HNI 367",
+    "title": "Introduction to Health Care Policy",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "370",
+    "course_code": "HNI 370",
+    "title": "Health Assessment",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "373",
+    "course_code": "HNI 373",
+    "title": "Psychosocial Mental Health Nursing",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "376",
+    "course_code": "HNI 376",
+    "title": "Nursing Student Internship",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "377",
+    "course_code": "HNI 377",
+    "title": "Principles and Applications of Nursing Interventions I",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "378",
+    "course_code": "HNI 378",
+    "title": "Principles and Applications of Nursing Interventions II",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "382",
+    "course_code": "HNI 382",
+    "title": "Continuing Course Work",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "389",
+    "course_code": "HNI 389",
+    "title": "Cultural Immersion: Undergraduate",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "440",
+    "course_code": "HNI 440",
+    "title": "Nursing Research: Appraising Evidence for Pract",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "452",
+    "course_code": "HNI 452",
+    "title": "Preparation for Professional Licensure",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "455",
+    "course_code": "HNI 455",
+    "title": "Adult and Gerontological Health Nursing I",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "456",
+    "course_code": "HNI 456",
+    "title": "Adult and Gerontological Health Nursing II",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "463",
+    "course_code": "HNI 463",
+    "title": "Sexual, Reproductive and Perinatal Health",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "464",
+    "course_code": "HNI 464",
+    "title": "Child and Adolescent Health Nursing",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "469",
+    "course_code": "HNI 469",
+    "title": "Population Health Nursing",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "474",
+    "course_code": "HNI 474",
+    "title": "Capstone Nursing Practicum",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "479",
+    "course_code": "HNI 479",
+    "title": "Transitioning to Baccalaureate Nursing Practice",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "481",
+    "course_code": "HNI 481",
+    "title": "Clinical Immersion: Undergraduate",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "482",
+    "course_code": "HNI 482",
+    "title": "Directed Studies",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "484",
+    "course_code": "HNI 484",
+    "title": "Clinical Immersion:Psychiatric-Mental Hlth Nursing",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "485",
+    "course_code": "HNI 485",
+    "title": "Clinical Immersion:Critical Care Nursing",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "489",
+    "course_code": "HNI 489",
+    "title": "Global Immersion: Undergraduate",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "491",
+    "course_code": "HNI 491",
+    "title": "Patient and Family Centered Care: Partners on Health Care",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "492",
+    "course_code": "HNI 492",
+    "title": "Complementary and Alternative Therapies",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HNI",
+    "course_number": "493",
+    "course_code": "HNI 493",
+    "title": "End of Life Care of the Adult Patient",
+    "source_file": "index_H.html",
+    "source_group_index": 67
+  },
+  {
+    "subject": "HON",
+    "course_number": "101",
+    "course_code": "HON 101",
+    "title": "Introduction to Honors College and Stony Brook",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "105",
+    "course_code": "HON 105",
+    "title": "Exploration of Human Knowledge",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "106",
+    "course_code": "HON 106",
+    "title": "Exploration of Human Experience",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "110",
+    "course_code": "HON 110",
+    "title": "Honors Topics",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "111",
+    "course_code": "HON 111",
+    "title": "Honors Topics",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "112",
+    "course_code": "HON 112",
+    "title": "Honors Topics",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "113",
+    "course_code": "HON 113",
+    "title": "Honors Topics",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "114",
+    "course_code": "HON 114",
+    "title": "Honors Topics",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "115",
+    "course_code": "HON 115",
+    "title": "Honors Topics",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "116",
+    "course_code": "HON 116",
+    "title": "Honors Topics",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "117",
+    "course_code": "HON 117",
+    "title": "Honors Topics",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "118",
+    "course_code": "HON 118",
+    "title": "Honors Topics",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "119",
+    "course_code": "HON 119",
+    "title": "Honors Topics",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "120",
+    "course_code": "HON 120",
+    "title": "Honors Topics",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "200",
+    "course_code": "HON 200",
+    "title": "Multiple Disciplinary Approaches",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "201",
+    "course_code": "HON 201",
+    "title": "The Arts and Society",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "205",
+    "course_code": "HON 205",
+    "title": "Ideas Lab I",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "275",
+    "course_code": "HON 275",
+    "title": "University Honors Fellows Seminar",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "276",
+    "course_code": "HON 276",
+    "title": "University Honors Fellows Practicum",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "300",
+    "course_code": "HON 300",
+    "title": "Honors Special Topics",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "301",
+    "course_code": "HON 301",
+    "title": "Science, Engineering, Medicine, and Society",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "305",
+    "course_code": "HON 305",
+    "title": "Ideas Lab II",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "310",
+    "course_code": "HON 310",
+    "title": "Honors Experiences",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "401",
+    "course_code": "HON 401",
+    "title": "Global Issues",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "475",
+    "course_code": "HON 475",
+    "title": "Honors College Teaching Practicum",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "490",
+    "course_code": "HON 490",
+    "title": "Social Analysis Capstone",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "491",
+    "course_code": "HON 491",
+    "title": "Social Impact Capstone",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "495",
+    "course_code": "HON 495",
+    "title": "Honors College Senior Project/Thesis I",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HON",
+    "course_number": "496",
+    "course_code": "HON 496",
+    "title": "Honors College Senior Project/Thesis II",
+    "source_file": "index_H.html",
+    "source_group_index": 70
+  },
+  {
+    "subject": "HPH",
+    "course_number": "201",
+    "course_code": "HPH 201",
+    "title": "What is Public Health? A Humanities Approach",
+    "source_file": "index_H.html",
+    "source_group_index": 73
+  },
+  {
+    "subject": "HPH",
+    "course_number": "(312)",
+    "course_code": "HPH (312)",
+    "title": "Infectious Diseases and Vaccines ** available as of 01/01/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 73
+  },
+  {
+    "subject": "HPH",
+    "course_number": "335",
+    "course_code": "HPH 335",
+    "title": "Population Mental Health in the 21st Century: Climate Change, Trauma, and Disparities",
+    "source_file": "index_H.html",
+    "source_group_index": 73
+  },
+  {
+    "subject": "HRJ",
+    "course_number": "204",
+    "course_code": "HRJ 204",
+    "title": "Foundations of Human Rights",
+    "source_file": "index_H.html",
+    "source_group_index": 75
+  },
+  {
+    "subject": "HRJ",
+    "course_number": "248",
+    "course_code": "HRJ 248",
+    "title": "Global Accountability: Human Rights Law and Governance",
+    "source_file": "index_H.html",
+    "source_group_index": 75
+  },
+  {
+    "subject": "HRJ",
+    "course_number": "301",
+    "course_code": "HRJ 301",
+    "title": "Human Rights Stewardship: Ethics, Communication, and Advocacy",
+    "source_file": "index_H.html",
+    "source_group_index": 75
+  },
+  {
+    "subject": "HRJ",
+    "course_number": "310",
+    "course_code": "HRJ 310",
+    "title": "Policy Practice: Politics and Economics of Human Rights",
+    "source_file": "index_H.html",
+    "source_group_index": 75
+  },
+  {
+    "subject": "HRJ",
+    "course_number": "480",
+    "course_code": "HRJ 480",
+    "title": "Retrospective Seminar in Human Rights & Justice",
+    "source_file": "index_H.html",
+    "source_group_index": 75
+  },
+  {
+    "subject": "HTM",
+    "course_number": "39",
+    "course_code": "HTM 39",
+    "title": "Radiologic Technology Program",
+    "source_file": "index_H.html",
+    "source_group_index": 81
+  },
+  {
+    "subject": "HTM",
+    "course_number": "49",
+    "course_code": "HTM 49",
+    "title": "Radiation Therapy Program",
+    "source_file": "index_H.html",
+    "source_group_index": 81
+  },
+  {
+    "subject": "HTM",
+    "course_number": "59",
+    "course_code": "HTM 59",
+    "title": "Nuclear Medicine Technology Program",
+    "source_file": "index_H.html",
+    "source_group_index": 81
+  },
+  {
+    "subject": "HTM",
+    "course_number": "69",
+    "course_code": "HTM 69",
+    "title": "Medical Dosimetry Program",
+    "source_file": "index_H.html",
+    "source_group_index": 81
+  },
+  {
+    "subject": "HTM",
+    "course_number": "79",
+    "course_code": "HTM 79",
+    "title": "EMT-Paramedic Program",
+    "source_file": "index_H.html",
+    "source_group_index": 81
+  },
+  {
+    "subject": "HTM",
+    "course_number": "98",
+    "course_code": "HTM 98",
+    "title": "Clinical Continuation",
+    "source_file": "index_H.html",
+    "source_group_index": 81
+  },
+  {
+    "subject": "HTM",
+    "course_number": "99",
+    "course_code": "HTM 99",
+    "title": "Anesthesia Technology Program",
+    "source_file": "index_H.html",
+    "source_group_index": 81
+  },
+  {
+    "subject": "HUE",
+    "course_number": "220",
+    "course_code": "HUE 220",
+    "title": "Modern Ukraine",
+    "source_file": "index_H.html",
+    "source_group_index": 83
+  },
+  {
+    "subject": "HUE",
+    "course_number": "269",
+    "course_code": "HUE 269",
+    "title": "Topics in Contemporary Slavic Culture",
+    "source_file": "index_H.html",
+    "source_group_index": 83
+  },
+  {
+    "subject": "HUE",
+    "course_number": "392",
+    "course_code": "HUE 392",
+    "title": "Topics in Slavic Studies",
+    "source_file": "index_H.html",
+    "source_group_index": 83
+  },
+  {
+    "subject": "HUE",
+    "course_number": "487",
+    "course_code": "HUE 487",
+    "title": "Independent Research",
+    "source_file": "index_H.html",
+    "source_group_index": 83
+  },
+  {
+    "subject": "HUF",
+    "course_number": "211",
+    "course_code": "HUF 211",
+    "title": "French Cinema",
+    "source_file": "index_H.html",
+    "source_group_index": 84
+  },
+  {
+    "subject": "HUF",
+    "course_number": "216",
+    "course_code": "HUF 216",
+    "title": "French Civilization through the Ages",
+    "source_file": "index_H.html",
+    "source_group_index": 84
+  },
+  {
+    "subject": "HUF",
+    "course_number": "219",
+    "course_code": "HUF 219",
+    "title": "Modern France",
+    "source_file": "index_H.html",
+    "source_group_index": 84
+  },
+  {
+    "subject": "HUF",
+    "course_number": "311",
+    "course_code": "HUF 311",
+    "title": "French Literature",
+    "source_file": "index_H.html",
+    "source_group_index": 84
+  },
+  {
+    "subject": "HUF",
+    "course_number": "318",
+    "course_code": "HUF 318",
+    "title": "Pan-African Literature I",
+    "source_file": "index_H.html",
+    "source_group_index": 84
+  },
+  {
+    "subject": "HUF",
+    "course_number": "319",
+    "course_code": "HUF 319",
+    "title": "Women of the Middle East",
+    "source_file": "index_H.html",
+    "source_group_index": 84
+  },
+  {
+    "subject": "HUF",
+    "course_number": "320",
+    "course_code": "HUF 320",
+    "title": "Transnational Issues in the Francophone World",
+    "source_file": "index_H.html",
+    "source_group_index": 84
+  },
+  {
+    "subject": "HUF",
+    "course_number": "385",
+    "course_code": "HUF 385",
+    "title": "French Caribbean Literature",
+    "source_file": "index_H.html",
+    "source_group_index": 84
+  },
+  {
+    "subject": "HUF",
+    "course_number": "390",
+    "course_code": "HUF 390",
+    "title": "Topics in Francophone Studies",
+    "source_file": "index_H.html",
+    "source_group_index": 84
+  },
+  {
+    "subject": "HUF",
+    "course_number": "475",
+    "course_code": "HUF 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_H.html",
+    "source_group_index": 84
+  },
+  {
+    "subject": "HUG",
+    "course_number": "221",
+    "course_code": "HUG 221",
+    "title": "German Cinema Since 1945",
+    "source_file": "index_H.html",
+    "source_group_index": 85
+  },
+  {
+    "subject": "HUG",
+    "course_number": "229",
+    "course_code": "HUG 229",
+    "title": "Germany Today",
+    "source_file": "index_H.html",
+    "source_group_index": 85
+  },
+  {
+    "subject": "HUG",
+    "course_number": "321",
+    "course_code": "HUG 321",
+    "title": "Topics in the Literature of Germany",
+    "source_file": "index_H.html",
+    "source_group_index": 85
+  },
+  {
+    "subject": "HUI",
+    "course_number": "216",
+    "course_code": "HUI 216",
+    "title": "Italian Civilization Through the Ages",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "231",
+    "course_code": "HUI 231",
+    "title": "Italian Cinema",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "234",
+    "course_code": "HUI 234",
+    "title": "Introduction to 20th-Century Drama",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "235",
+    "course_code": "HUI 235",
+    "title": "Love and Tragedy in Early Italian Literature",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "236",
+    "course_code": "HUI 236",
+    "title": "The Italian-American Scene",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "237",
+    "course_code": "HUI 237",
+    "title": "Images of Italian-American Women",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "239",
+    "course_code": "HUI 239",
+    "title": "Transnational Italies",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "306",
+    "course_code": "HUI 306",
+    "title": "Italian Renaissance Art",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "331",
+    "course_code": "HUI 331",
+    "title": "Italian Literature",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "333",
+    "course_code": "HUI 333",
+    "title": "The Italian-American Experience in Literature",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "336",
+    "course_code": "HUI 336",
+    "title": "Italian Americans and Ethnic Relations",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "338",
+    "course_code": "HUI 338",
+    "title": "Images of Italian Americans in Film",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "358",
+    "course_code": "HUI 358",
+    "title": "Nation and Migration in Transnational Cinema",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "390",
+    "course_code": "HUI 390",
+    "title": "Italian-American Studies in the Humanities",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "392",
+    "course_code": "HUI 392",
+    "title": "Italian-American Studies in the Social and Behavioral Sciences",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "447",
+    "course_code": "HUI 447",
+    "title": "Directed Readings in Italian Studies",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "475",
+    "course_code": "HUI 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUI",
+    "course_number": "476",
+    "course_code": "HUI 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_H.html",
+    "source_group_index": 86
+  },
+  {
+    "subject": "HUL",
+    "course_number": "324",
+    "course_code": "HUL 324",
+    "title": "Romance Linguistics",
+    "source_file": "index_H.html",
+    "source_group_index": 87
+  },
+  {
+    "subject": "HUR",
+    "course_number": "141",
+    "course_code": "HUR 141",
+    "title": "The Age of Empire",
+    "source_file": "index_H.html",
+    "source_group_index": 90
+  },
+  {
+    "subject": "HUR",
+    "course_number": "142",
+    "course_code": "HUR 142",
+    "title": "Culture and Revolution",
+    "source_file": "index_H.html",
+    "source_group_index": 90
+  },
+  {
+    "subject": "HUR",
+    "course_number": "231",
+    "course_code": "HUR 231",
+    "title": "Saints and Fools",
+    "source_file": "index_H.html",
+    "source_group_index": 90
+  },
+  {
+    "subject": "HUR",
+    "course_number": "232",
+    "course_code": "HUR 232",
+    "title": "Rebels and Tyrants",
+    "source_file": "index_H.html",
+    "source_group_index": 90
+  },
+  {
+    "subject": "HUR",
+    "course_number": "235",
+    "course_code": "HUR 235",
+    "title": "Crime and Punishment in World Literature",
+    "source_file": "index_H.html",
+    "source_group_index": 90
+  },
+  {
+    "subject": "HUR",
+    "course_number": "241",
+    "course_code": "HUR 241",
+    "title": "Russian and Post-Soviet Cinema",
+    "source_file": "index_H.html",
+    "source_group_index": 90
+  },
+  {
+    "subject": "HUR",
+    "course_number": "249",
+    "course_code": "HUR 249",
+    "title": "Russia Today",
+    "source_file": "index_H.html",
+    "source_group_index": 90
+  },
+  {
+    "subject": "HUR",
+    "course_number": "341",
+    "course_code": "HUR 341",
+    "title": "Russian Literature and the West",
+    "source_file": "index_H.html",
+    "source_group_index": 90
+  },
+  {
+    "subject": "HUR",
+    "course_number": "393",
+    "course_code": "HUR 393",
+    "title": "Literary Analysis of Russian Texts",
+    "source_file": "index_H.html",
+    "source_group_index": 90
+  },
+  {
+    "subject": "HUR",
+    "course_number": "475",
+    "course_code": "HUR 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_H.html",
+    "source_group_index": 90
+  },
+  {
+    "subject": "HUR",
+    "course_number": "476",
+    "course_code": "HUR 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_H.html",
+    "source_group_index": 90
+  },
+  {
+    "subject": "HUS",
+    "course_number": "150",
+    "course_code": "HUS 150",
+    "title": "Indigenous Cultures of Latin America",
+    "source_file": "index_H.html",
+    "source_group_index": 91
+  },
+  {
+    "subject": "HUS",
+    "course_number": "201",
+    "course_code": "HUS 201",
+    "title": "The Hispanic World through Visual Cultures",
+    "source_file": "index_H.html",
+    "source_group_index": 91
+  },
+  {
+    "subject": "HUS",
+    "course_number": "221",
+    "course_code": "HUS 221",
+    "title": "Disabled Bodies, National Politics",
+    "source_file": "index_H.html",
+    "source_group_index": 91
+  },
+  {
+    "subject": "HUS",
+    "course_number": "250",
+    "course_code": "HUS 250",
+    "title": "Caribbean Cultures",
+    "source_file": "index_H.html",
+    "source_group_index": 91
+  },
+  {
+    "subject": "HUS",
+    "course_number": "254",
+    "course_code": "HUS 254",
+    "title": "Latin America Today",
+    "source_file": "index_H.html",
+    "source_group_index": 91
+  },
+  {
+    "subject": "HUS",
+    "course_number": "255",
+    "course_code": "HUS 255",
+    "title": "Modern Spain",
+    "source_file": "index_H.html",
+    "source_group_index": 91
+  },
+  {
+    "subject": "HUS",
+    "course_number": "261",
+    "course_code": "HUS 261",
+    "title": "Latin American Literature in a Global Context",
+    "source_file": "index_H.html",
+    "source_group_index": 91
+  },
+  {
+    "subject": "HUS",
+    "course_number": "271",
+    "course_code": "HUS 271",
+    "title": "United States Latino Literature and Culture",
+    "source_file": "index_H.html",
+    "source_group_index": 91
+  },
+  {
+    "subject": "HUS",
+    "course_number": "272",
+    "course_code": "HUS 272",
+    "title": "Science, Technology, and the Environment in Latin America",
+    "source_file": "index_H.html",
+    "source_group_index": 91
+  },
+  {
+    "subject": "HUS",
+    "course_number": "290",
+    "course_code": "HUS 290",
+    "title": "Latin American Cinema",
+    "source_file": "index_H.html",
+    "source_group_index": 91
+  },
+  {
+    "subject": "HUS",
+    "course_number": "475",
+    "course_code": "HUS 475",
+    "title": "Undergraduate Teaching Practicum in Hispanic Cultures",
+    "source_file": "index_H.html",
+    "source_group_index": 91
+  },
+  {
+    "subject": "HWC",
+    "course_number": "210",
+    "course_code": "HWC 210",
+    "title": "Exploring Careers in Social Work",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "220",
+    "course_code": "HWC 220",
+    "title": "Introduction to the Social Work Profession",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "271",
+    "course_code": "HWC 271",
+    "title": "Democracy, Inequality, and Social Change",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "300",
+    "course_code": "HWC 300",
+    "title": "Introduction to Social Work Areas of Practice",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "304",
+    "course_code": "HWC 304",
+    "title": "Foundations of Human Rights and Social Justice",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "305",
+    "course_code": "HWC 305",
+    "title": "Practice Processes in Social Work I",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "308",
+    "course_code": "HWC 308",
+    "title": "Human Behavior and the Environment I",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "309",
+    "course_code": "HWC 309",
+    "title": "Human Behavior and the Environment II",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "310",
+    "course_code": "HWC 310",
+    "title": "Policy Practice:Politics&Economics-Human Rights S W",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "311",
+    "course_code": "HWC 311",
+    "title": "Social Welfare Policy I",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "312",
+    "course_code": "HWC 312",
+    "title": "Social Welfare Policy II",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "317",
+    "course_code": "HWC 317",
+    "title": "Issues in Death and Dying; Loss and Separation",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "320",
+    "course_code": "HWC 320",
+    "title": "Aspects of Aging",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "321",
+    "course_code": "HWC 321",
+    "title": "Ethnic Sensitive Social Work Practice",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "(323)",
+    "course_code": "HWC (323)",
+    "title": "Growing Old in America: The Soc Conditions Policy ** available as of 01/01/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "323",
+    "course_code": "HWC 323",
+    "title": "Growing Old in America: The Social Conditions Policy and Practice Implications",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "(324)",
+    "course_code": "HWC (324)",
+    "title": "Mdels of Chnge - Trlblzrs/Gd Trblemkrs/Chnge Agnts ** available as of 01/01/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "324",
+    "course_code": "HWC 324",
+    "title": "Models of Change - Trailblazers, 'Good' Troublemakers, & Change Agents",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "325",
+    "course_code": "HWC 325",
+    "title": "Food Justice I: Advocacy Practice for Food Rights",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "326",
+    "course_code": "HWC 326",
+    "title": "Crisis Intervention: Opportunities for Change",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "329",
+    "course_code": "HWC 329",
+    "title": "Resiliency, Wellness and Self-Care",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "330",
+    "course_code": "HWC 330",
+    "title": "Case Management in Human Services",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "339",
+    "course_code": "HWC 339",
+    "title": "Ancestral Health Practices",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "340",
+    "course_code": "HWC 340",
+    "title": "Social Issues, Human Rights and Popular Culture",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "343",
+    "course_code": "HWC 343",
+    "title": "Working w/ Children of Alcoholics & Sbstnce Abusrs",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "344",
+    "course_code": "HWC 344",
+    "title": "Overview of Substance Abuse",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "345",
+    "course_code": "HWC 345",
+    "title": "Social Work and Human Rights",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "349",
+    "course_code": "HWC 349",
+    "title": "Overview of Social Work with Special Populations",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "(361)",
+    "course_code": "HWC (361)",
+    "title": "Anti-Rcist Prct: Undrstndng Whte Frgility/Blck Rge ** available as of 01/01/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "361",
+    "course_code": "HWC 361",
+    "title": "Anti-Racist Practice: Understanding White Fragility and Black Rage",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "362",
+    "course_code": "HWC 362",
+    "title": "Implications of Child Abuse and Maltreatment",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "363",
+    "course_code": "HWC 363",
+    "title": "Homelessness, Politics and Public Health",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "364",
+    "course_code": "HWC 364",
+    "title": "The Impact of Sexual Assault",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "369",
+    "course_code": "HWC 369",
+    "title": "Youth and Violence",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "375",
+    "course_code": "HWC 375",
+    "title": "Child Welfare: An Overview",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "379",
+    "course_code": "HWC 379",
+    "title": "Special Topics in Social Welfare",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "380",
+    "course_code": "HWC 380",
+    "title": "Overview of Family Violence",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "390",
+    "course_code": "HWC 390",
+    "title": "HIV / AIDS",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "395",
+    "course_code": "HWC 395",
+    "title": "Independent Study",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "(396A)",
+    "course_code": "HWC (396A)",
+    "title": "Commnity Learning & Prof Preparation Year I Part A ** available as of 01/01/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "396A",
+    "course_code": "HWC 396A",
+    "title": "Community Learning and Professional Preparation Year I Part A",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "(396B)",
+    "course_code": "HWC (396B)",
+    "title": "Commnity Learning & Prof Preparation Year I Part B ** available as of 01/01/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "396B",
+    "course_code": "HWC 396B",
+    "title": "Community Learning and Professional Preparation Year I Part B",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "399",
+    "course_code": "HWC 399",
+    "title": "Maintenance of Matriculation",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "401",
+    "course_code": "HWC 401",
+    "title": "Professional Practicum in Social Work I",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "(402)",
+    "course_code": "HWC (402)",
+    "title": "Professional Practicum in Social Work Education II ** available as of 01/01/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "402",
+    "course_code": "HWC 402",
+    "title": "Professional Practicum in Social Work II",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "406",
+    "course_code": "HWC 406",
+    "title": "Practice Processes in Social Work II",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "407",
+    "course_code": "HWC 407",
+    "title": "Practice Processes in Social Work III",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "413",
+    "course_code": "HWC 413",
+    "title": "Research in Social Work I",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "414",
+    "course_code": "HWC 414",
+    "title": "Research in Social Work II",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "415",
+    "course_code": "HWC 415",
+    "title": "Integrating Seminar I",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "416",
+    "course_code": "HWC 416",
+    "title": "Integrating Seminar II",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "427",
+    "course_code": "HWC 427",
+    "title": "SW in the Political Process: Campaign School",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "442",
+    "course_code": "HWC 442",
+    "title": "School Social Work: An Overview",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "445",
+    "course_code": "HWC 445",
+    "title": "Social Work and Human Rights",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "451",
+    "course_code": "HWC 451",
+    "title": "Law and Social Change",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "454",
+    "course_code": "HWC 454",
+    "title": "Legislative Advocacy for Social Workers",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "(461)",
+    "course_code": "HWC (461)",
+    "title": "Anti-Rcist Prct: Undrstndng Whte Frgility/Blck Rge ** available as of 01/01/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "461",
+    "course_code": "HWC 461",
+    "title": "Anti-Racist Social Work: Understanding White Fragility and Black Rage",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "477",
+    "course_code": "HWC 477",
+    "title": "Program Evaluation",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "479",
+    "course_code": "HWC 479",
+    "title": "Special Topics in Social Welfare",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "(494)",
+    "course_code": "HWC (494)",
+    "title": "Continuation of Prof Social Work Practicum Exp ** available as of 01/01/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "494",
+    "course_code": "HWC 494",
+    "title": "Continuation of Field Work Experience",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "495",
+    "course_code": "HWC 495",
+    "title": "Independent Study",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "(497A)",
+    "course_code": "HWC (497A)",
+    "title": "Commnity Learning & Prof Preparation Yr II Part A ** available as of 01/01/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "497A",
+    "course_code": "HWC 497A",
+    "title": "Community Learning and Professional Preparation Year II Part A",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "(497B)",
+    "course_code": "HWC (497B)",
+    "title": "Commnity Learning & Prof Preparation Yr II Part B ** available as of 01/01/2027",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "497B",
+    "course_code": "HWC 497B",
+    "title": "Community Learning and Professional Preparation Year II Part B",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  },
+  {
+    "subject": "HWC",
+    "course_number": "499",
+    "course_code": "HWC 499",
+    "title": "Integrative Capstone-Generalist SW Knowledge P ract",
+    "source_file": "index_H.html",
+    "source_group_index": 92
+  }
+]

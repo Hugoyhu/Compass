@@ -1,0 +1,505 @@
+Worker 5 groups: E, 4
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_05 --letters E,4 --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Fall 2026 --headless
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group E (1/2)…
+  [E] 15 subjects have no active courses.
+  [E] Found 816 course entries.
+  [E] Skipping 392 courses numbered above 499; 424 left.
+    [E 1/424] Opening EAS 101 — Engineering and Applied Sciences
+      No View Class Sections button; course has no sections.
+    [E 2/424] Opening EAS 310 — Global Design Engineering Innovation
+      No View Class Sections button; course has no sections.
+    [E 3/424] Opening EAS 312 — Engineering for the Developing World
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [E 4/424] Opening EBH 200 — The Evolution of Human Behavior
+      Fall 2026: found 1 class sections.
+    [E 5/424] Opening EBH 204 — Research Skills
+      No View Class Sections button; course has no sections.
+    [E 6/424] Opening EBH 214 — The Evolution of the Human Mind
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 7/424] Opening EBH 230 — Computer-based Biostatistics
+      Fall 2026: found 2 class sections.
+    [E 8/424] Opening EBH 302 — Human Genetics
+      Fall 2026: found 1 class sections.
+    [E 9/424] Opening EBH 316 — The Evolution of the Human Brain
+      Fall 2026: found 1 class sections.
+    [E 10/424] Opening EBH 325 — Evolution of Sex
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (E 10/424) · 10 scraped, 0 already done, 0 failed · 14.7 pages/min · 40s elapsed · ~28m13s left in E
+    [E 11/424] Opening EBH 331 — Hormones and Behavior
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 12/424] Opening EBH 359 — Behavioral Ecology
+      No View Class Sections button; course has no sections.
+    [E 13/424] Opening EBH 362 — Evolution of Social Complexity
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 14/424] Opening EBH 370 — Advanced Human Genetics
+      No View Class Sections button; course has no sections.
+    [E 15/424] Opening EBH 380 — Genomics
+      No View Class Sections button; course has no sections.
+    [E 16/424] Opening EBH 381 — Genomics Laboratory
+      No View Class Sections button; course has no sections.
+    [E 17/424] Opening EBH 391 — Topics in Human Evolutionary Biology
+      No View Class Sections button; course has no sections.
+    [E 18/424] Opening EBH 401 — Seminar in Evolutionary Biology of Humans
+      No View Class Sections button; course has no sections.
+    [E 19/424] Opening EBH 404 — Evolution of Parenting
+      No View Class Sections button; course has no sections.
+    [E 20/424] Opening EBH 405 — Life History and Development
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (E 20/424) · 20 scraped, 0 already done, 0 failed · 19.7 pages/min · 1m00s elapsed · ~20m29s left in E
+    [E 21/424] Opening EBH 444 — Experiential Learning
+      Fall 2026: found 11 class sections.
+    [E 22/424] Opening EBH 447 — Readings in Human Evolutionary Biology
+      Fall 2026: found 11 class sections.
+    [E 23/424] Opening EBH 458 — Speak Effectively Before an Audience
+      Fall 2026: found 11 class sections.
+    [E 24/424] Opening EBH 459 — Write Effectively in Human Evolutionary Biology
+      Fall 2026: found 1 class sections.
+    [E 25/424] Opening EBH 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 11 class sections.
+    [E 26/424] Opening EBH 476 — Undergraduate Teaching Practicum II
+      Fall 2026: found 11 class sections.
+    [E 27/424] Opening EBH 487 — Independent Research in Human Evolutionary Biology
+      Fall 2026: found 11 class sections.
+    [E 28/424] Opening EBH 488 — Internship in Human Evolutionary Biology
+      Fall 2026: found 11 class sections.
+    [E 29/424] Opening EBH 495 — Senior Honors Project in Human Evolutionary Biology
+      Fall 2026: found 11 class sections.
+    [E 30/424] Opening EBH 496 — Senior Honors Project in Human Evolutionary Biology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (E 30/424) · 30 scraped, 0 already done, 0 failed · 17.2 pages/min · 1m44s elapsed · ~22m52s left in E
+    [E 31/424] Opening ECO SBS/AP — AP Microeconomics
+      No View Class Sections button; course has no sections.
+    [E 32/424] Opening ECO 108 — Introduction to Economics
+      No View Class Sections button; course has no sections.
+    [E 33/424] Opening ECO 110 — Introduction to Microeconomics
+      Fall 2026: found 20 class sections.
+    [E 34/424] Opening ECO 111 — Introduction to Macroeconomics
+      Fall 2026: found 16 class sections.
+    [E 35/424] Opening ECO 303 — Intermediate Microeconomic Theory
+      Fall 2026: found 9 class sections.
+    [E 36/424] Opening ECO 305 — Intermediate Macroeconomic Theory
+      Fall 2026: found 9 class sections.
+    [E 37/424] Opening ECO 310 — Basic Computational Methods in Economics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 38/424] Opening ECO 320 — Mathematical Statistics
+      Fall 2026: found 6 class sections.
+    [E 39/424] Opening ECO 321 — Econometrics
+      Fall 2026: found 6 class sections.
+    [E 40/424] Opening ECO 322 — Data Science and Machine Learning in Economics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (E 40/424) · 40 scraped, 0 already done, 0 failed · 17.7 pages/min · 2m15s elapsed · ~21m38s left in E
+    [E 41/424] Opening ECO 323 — Applied Microeconomics
+      Fall 2026: found 3 class sections.
+    [E 42/424] Opening ECO 324 — Empirical Industrial Organization
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 43/424] Opening ECO 325 — International Trade
+      Fall 2026: found 1 class sections.
+    [E 44/424] Opening ECO 326 — Industrial Organization
+      Fall 2026: found 1 class sections.
+    [E 45/424] Opening ECO 327 — Health Economics
+      Fall 2026: not listed for this course. Available terms: Summer 2026, Winter 2027
+    [E 46/424] Opening ECO 329 — Urban Economics
+      No View Class Sections button; course has no sections.
+    [E 47/424] Opening ECO 334 — Demographic Economics of Developing Countries
+      No View Class Sections button; course has no sections.
+    [E 48/424] Opening ECO 335 — Economic Development
+      Fall 2026: found 1 class sections.
+    [E 49/424] Opening ECO 337 — Labor Theory
+      Fall 2026: found 1 class sections.
+    [E 50/424] Opening ECO 348 — Analysis for Managerial Decision Making
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (E 50/424) · 50 scraped, 0 already done, 0 failed · 17.7 pages/min · 2m49s elapsed · ~21m10s left in E
+    Pausing 5s after 50 detail pages…
+    [E 51/424] Opening ECO 351 — Special Topics in Economics
+      Fall 2026: found 1 class sections.
+    [E 52/424] Opening ECO 352 — Special Topics in Economics
+      No View Class Sections button; course has no sections.
+    [E 53/424] Opening ECO 354 — Special Topics in Economics
+      No View Class Sections button; course has no sections.
+    [E 54/424] Opening ECO 355 — Game Theory
+      Fall 2026: found 1 class sections.
+    [E 55/424] Opening ECO 356 — Special Topics in Economics
+      No View Class Sections button; course has no sections.
+    [E 56/424] Opening ECO 357 — Special Topics in Economics
+      No View Class Sections button; course has no sections.
+    [E 57/424] Opening ECO 359 — Reading and Writing in Economics
+      Fall 2026: found 2 class sections.
+    [E 58/424] Opening ECO 360 — Money and Banking
+      Fall 2026: found 1 class sections.
+    [E 59/424] Opening ECO 362 — Financial Economics
+      No View Class Sections button; course has no sections.
+    [E 60/424] Opening ECO 364 — Thinking Strategically
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (E 60/424) · 60 scraped, 0 already done, 0 failed · 16.5 pages/min · 3m38s elapsed · ~22m04s left in E
+    [E 61/424] Opening ECO 373 — Economics of Environment and Natural Resources
+      Fall 2026: not listed for this course. Available terms: Summer 2026, Winter 2027
+    [E 62/424] Opening ECO 383 — Public Finance
+      Fall 2026: found 1 class sections.
+    [E 63/424] Opening ECO 385 — U.S. Economic History
+      No View Class Sections button; course has no sections.
+    [E 64/424] Opening ECO 386 — International Finance
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [E 65/424] Opening ECO 389 — Corporate Finance
+      Fall 2026: not listed for this course. Available terms: Summer 2026, Winter 2027
+    [E 66/424] Opening ECO 444 — Experiential Learning
+      No View Class Sections button; course has no sections.
+    [E 67/424] Opening ECO 459 — Write Effectively in Economics
+      Fall 2026: found 14 class sections.
+    [E 68/424] Opening ECO 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 24 class sections.
+    [E 69/424] Opening ECO 476 — Undergraduate Teaching Practicum II
+      Fall 2026: found 23 class sections.
+    [E 70/424] Opening ECO 487 — Independent Research in Economics
+      Fall 2026: found 20 class sections.
+  Progress: group 1/2 (E 70/424) · 70 scraped, 0 already done, 0 failed · 16.5 pages/min · 4m13s elapsed · ~21m23s left in E
+    [E 71/424] Opening ECO 488 — Internship in Economics
+      Fall 2026: found 20 class sections.
+    [E 72/424] Opening EDP 301 — Urban Systems
+      Fall 2026: found 1 class sections.
+    [E 73/424] Opening EDP 302 — Sustainable Planning and Development
+      Fall 2026: found 1 class sections.
+    [E 74/424] Opening EDP 303 — Spatial Economics
+      No View Class Sections button; course has no sections.
+    [E 75/424] Opening EDP 305 — Risk Assessment and Sustainable Development
+      No View Class Sections button; course has no sections.
+    [E 76/424] Opening EDP 307 — Theories and Design of Urban Settlements
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 77/424] Opening EDP 309 — Planning: Policies and Regulations
+      No View Class Sections button; course has no sections.
+    [E 78/424] Opening EDP 404 — Environmental Design Project
+      No View Class Sections button; course has no sections.
+    [E 79/424] Opening EDP 444 — Experiential Learning
+      No View Class Sections button; course has no sections.
+    [E 80/424] Opening EDP 487 — Research in Environmental Design, Policy, & Planning
+      Fall 2026: found 3 class sections.
+  Progress: group 1/2 (E 80/424) · 80 scraped, 0 already done, 0 failed · 16.6 pages/min · 4m48s elapsed · ~20m40s left in E
+    [E 81/424] Opening EDP 488 — Internship in Environmental Design, Policy, & Planning
+      Fall 2026: found 3 class sections.
+    [E 82/424] Opening EEL 111 — Elementary Selected East European Language I
+      No View Class Sections button; course has no sections.
+    [E 83/424] Opening EEL 112 — Elementary Selected East European Language II
+      No View Class Sections button; course has no sections.
+    [E 84/424] Opening EEO 124 — C Programming for Electrical Engineers
+      Fall 2026: found 1 class sections.
+    [E 85/424] Opening EEO 218 — Digital Logic Design
+      Fall 2026: found 1 class sections.
+    [E 86/424] Opening EEO 219 — Digital Logic Design Laboratory
+      Fall 2026: found 1 class sections.
+    [E 87/424] Opening EEO 224 — Object Oriented Programming for Electrical and Computer Engineers
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [E 88/424] Opening EEO 271 — Electrical Circuit Analysis
+      Fall 2026: found 1 class sections.
+    [E 89/424] Opening EEO 300 — Technical Communication for Electrical Engineers
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 90/424] Opening EEO 301 — Signals and Systems
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (E 90/424) · 90 scraped, 0 already done, 0 failed · 15.7 pages/min · 5m42s elapsed · ~21m12s left in E
+    [E 91/424] Opening EEO 302 — Engineering Ethics and Societal Impact
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 92/424] Opening EEO 303 — Digital Signal Processing
+      No View Class Sections button; course has no sections.
+    [E 93/424] Opening EEO 304 — Electronic Instrumentation and Operational Amplifiers
+      No View Class Sections button; course has no sections.
+    [E 94/424] Opening EEO 306 — Random Signals and Systems
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [E 95/424] Opening EEO 311 — Electronics Circuits II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 96/424] Opening EEO 314 — Mos Transistor Modeling
+      No View Class Sections button; course has no sections.
+    [E 97/424] Opening EEO 315 — Electronics Circuits I
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [E 98/424] Opening EEO 316 — Integrated Electronic Devices and Circuits
+      No View Class Sections button; course has no sections.
+    [E 99/424] Opening EEO 319 — Electromagnetic Waves and Transmission Lines
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 100/424] Opening EEO 331 — Semiconductor Devices
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (E 100/424) · 100 scraped, 0 already done, 0 failed · 16.2 pages/min · 6m09s elapsed · ~19m57s left in E
+    Pausing 5s after 100 detail pages…
+    [E 101/424] Opening EEO 346 — Computer Communications
+      Fall 2026: found 1 class sections.
+    [E 102/424] Opening EEO 352 — Electronics Laboratory I
+      Fall 2026: found 1 class sections.
+    [E 103/424] Opening EEO 353 — Electronics Laboratory II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 104/424] Opening EEO 366 — Design using Programmable Mixed-Signal Systems-on-Chip
+      No View Class Sections button; course has no sections.
+    [E 105/424] Opening EEO 388 — Foundations of Machine Learning
+      Fall 2026: found 1 class sections.
+    [E 106/424] Opening EEO 414 — Fundamentals of Low Noise Electronics for Sensors
+      No View Class Sections button; course has no sections.
+    [E 107/424] Opening EEO 425 — Electric Machinery and Energy Conversion
+      Fall 2026: found 1 class sections.
+    [E 108/424] Opening EEO 440 — Engineering Design I
+      Fall 2026: found 1 class sections.
+    [E 109/424] Opening EEO 441 — Engineering Design II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 110/424] Opening EEO 470 — Renewable Distributed Generation and Storage
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (E 110/424) · 110 scraped, 0 already done, 0 failed · 16.3 pages/min · 6m44s elapsed · ~19m15s left in E
+    [E 111/424] Opening EEO 475 — Undergraduate Teaching Practicum
+      No View Class Sections button; course has no sections.
+    [E 112/424] Opening EEO 482 — Power Systems Engineering I
+      No View Class Sections button; course has no sections.
+    [E 113/424] Opening EEO 488 — Internship in Electrical Engineering
+      Fall 2026: found 1 class sections.
+    [E 114/424] Opening EEO 499 — Research in Electrical Engineering
+      No View Class Sections button; course has no sections.
+    [E 115/424] Opening EGL 111 — World Literature: Ancient
+      Fall 2026: found 1 class sections.
+    [E 116/424] Opening EGL 112 — World Literature: Modern and Contemporary
+      Fall 2026: found 2 class sections.
+    [E 117/424] Opening EGL 121 — Global Film Traditions
+      Fall 2026: found 2 class sections.
+    [E 118/424] Opening EGL 130 — Literature, Science and Technology
+      Fall 2026: found 3 class sections.
+    [E 119/424] Opening EGL 135 — Literature, Film, and the Environment
+      Fall 2026: found 2 class sections.
+    [E 120/424] Opening EGL 140 — Shakespeare in Performance
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (E 120/424) · 120 scraped, 0 already done, 0 failed · 16.2 pages/min · 7m24s elapsed · ~18m46s left in E
+    [E 121/424] Opening EGL 150 — Can Literature Save Your Life?
+      No View Class Sections button; course has no sections.
+    [E 122/424] Opening EGL 191 — Poetry: The Art of Verse
+      Fall 2026: found 1 class sections.
+    [E 123/424] Opening EGL 192 — Fiction: The Art of the Story
+      Fall 2026: found 2 class sections.
+    [E 124/424] Opening EGL 193 — Drama: Character on Stage and Page
+      Fall 2026: found 1 class sections.
+    [E 125/424] Opening EGL 194 — Film: Mastering the Movies
+      No View Class Sections button; course has no sections.
+    [E 126/424] Opening EGL 204 — Literary Analysis and Argumentation
+      Fall 2026: found 3 class sections.
+    [E 127/424] Opening EGL 205 — Survey of British Literature I
+      Fall 2026: found 1 class sections.
+    [E 128/424] Opening EGL 206 — Survey of British Literature II
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [E 129/424] Opening EGL 207 — History of the English Language
+      No View Class Sections button; course has no sections.
+    [E 130/424] Opening EGL 208 — Critical Theories and Pedagogies
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (E 130/424) · 130 scraped, 0 already done, 0 failed · 16.4 pages/min · 7m54s elapsed · ~17m53s left in E
+    [E 131/424] Opening EGL 210 — Literature, Medicine, and Ethics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 132/424] Opening EGL 212 — Literature in the Data Age
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 133/424] Opening EGL 217 — American Literature I
+      Fall 2026: found 1 class sections.
+    [E 134/424] Opening EGL 218 — American Literature II
+      Fall 2026: found 1 class sections.
+    [E 135/424] Opening EGL 220 — Critical Approaches to the Cinema
+      Fall 2026: found 2 class sections.
+    [E 136/424] Opening EGL 224 — 20th-Century Literatures in English
+      Fall 2026: found 1 class sections.
+    [E 137/424] Opening EGL 226 — 20th-Century American Literature
+      No View Class Sections button; course has no sections.
+    [E 138/424] Opening EGL 231 — Saints and Fools
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 139/424] Opening EGL 232 — Rebels and Tyrants
+      No View Class Sections button; course has no sections.
+    [E 140/424] Opening EGL 243 — Shakespeare: The Major Works
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (E 140/424) · 140 scraped, 0 already done, 0 failed · 16.7 pages/min · 8m22s elapsed · ~17m00s left in E
+    [E 141/424] Opening EGL 249 — African-American Literature and Music in the 19th and 20th Centuries
+      No View Class Sections button; course has no sections.
+    [E 142/424] Opening EGL 250 — Introduction to English Studies for STEM Majors
+      No View Class Sections button; course has no sections.
+    [E 143/424] Opening EGL 260 — World Mythology
+      No View Class Sections button; course has no sections.
+    [E 144/424] Opening EGL 261 — The Bible as Literature
+      No View Class Sections button; course has no sections.
+    [E 145/424] Opening EGL 266 — The 20th-Century Novel
+      No View Class Sections button; course has no sections.
+    [E 146/424] Opening EGL 272 — American Narratives of Race and Justice
+      No View Class Sections button; course has no sections.
+    [E 147/424] Opening EGL 274 — African-American Literature
+      No View Class Sections button; course has no sections.
+    [E 148/424] Opening EGL 276 — Feminism: Literature and Cultural Contexts
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 149/424] Opening EGL 285 — Writing Workshop: Fiction
+      Fall 2026: found 1 class sections.
+    [E 150/424] Opening EGL 286 — Writing Workshop: Poetry
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (E 150/424) · 150 scraped, 0 already done, 0 failed · 17.1 pages/min · 8m45s elapsed · ~15m59s left in E
+    Pausing 5s after 150 detail pages…
+    [E 151/424] Opening EGL 290 — What is Public Health? A Humanities Approach
+      No View Class Sections button; course has no sections.
+    [E 152/424] Opening EGL 300 — Old English Literature
+      No View Class Sections button; course has no sections.
+    [E 153/424] Opening EGL 301 — Authors, Periods, Topics, or Genres, with Intensive Writing
+      Fall 2026: found 2 class sections.
+    [E 154/424] Opening EGL 303 — Genre or Media
+      Fall 2026: found 2 class sections.
+    [E 155/424] Opening EGL 304 — Renaissance Literature in English
+      No View Class Sections button; course has no sections.
+    [E 156/424] Opening EGL 305 — The Pacific, Travel & Empire
+      No View Class Sections button; course has no sections.
+    [E 157/424] Opening EGL 307 — Graphic Narratives
+      No View Class Sections button; course has no sections.
+    [E 158/424] Opening EGL 308 — Single Author
+      Fall 2026: found 2 class sections.
+    [E 159/424] Opening EGL 309 — Interdisciplinary Study of Literature
+      No View Class Sections button; course has no sections.
+    [E 160/424] Opening EGL 311 — Introduction to Literary Theory and Criticism
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (E 160/424) · 160 scraped, 0 already done, 0 failed · 17.0 pages/min · 9m24s elapsed · ~15m30s left in E
+    [E 161/424] Opening EGL 317 — Energy Humanities and Literature
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [E 162/424] Opening EGL 319 — Ecology and Evolution in American Literature
+      No View Class Sections button; course has no sections.
+    [E 163/424] Opening EGL 320 — Modern and Contemporary Literature
+      No View Class Sections button; course has no sections.
+    [E 164/424] Opening EGL 325 — Screenwriting
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 165/424] Opening EGL 328 — Documentary Theatre Creation
+      No View Class Sections button; course has no sections.
+    [E 166/424] Opening EGL 330 — Public Humanities Workshop
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 167/424] Opening EGL 333 — The Italian-American Experience in Literature
+      No View Class Sections button; course has no sections.
+    [E 168/424] Opening EGL 344 — Shakespeare and Music
+      No View Class Sections button; course has no sections.
+    [E 169/424] Opening EGL 345 — Shakespeare I
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 170/424] Opening EGL 346 — Shakespeare II
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (E 170/424) · 170 scraped, 0 already done, 0 failed · 17.4 pages/min · 9m46s elapsed · ~14m36s left in E
+    [E 171/424] Opening EGL 351 — Documentary Cinema: History, Theory, Practice
+      No View Class Sections button; course has no sections.
+    [E 172/424] Opening EGL 353 — Law and Literature
+      No View Class Sections button; course has no sections.
+    [E 173/424] Opening EGL 358 — Nation and Migration in Transnational Cinema
+      Fall 2026: found 2 class sections.
+    [E 174/424] Opening EGL 360 — Young Adult Literature
+      Fall 2026: found 1 class sections.
+    [E 175/424] Opening EGL 361 — Poetry in English
+      No View Class Sections button; course has no sections.
+    [E 176/424] Opening EGL 362 — Drama in English
+      No View Class Sections button; course has no sections.
+    [E 177/424] Opening EGL 364 — Prose in English
+      No View Class Sections button; course has no sections.
+    [E 178/424] Opening EGL 367 — Contemporary African-American Literature
+      No View Class Sections button; course has no sections.
+    [E 179/424] Opening EGL 368 — Caribbean and American Connections in Literature
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [E 180/424] Opening EGL 369 — Topics in Race and Ethnicity in American Literatures and Cultures
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (E 180/424) · 180 scraped, 0 already done, 0 failed · 17.7 pages/min · 10m08s elapsed · ~13m44s left in E
+    [E 181/424] Opening EGL 370 — Literature and Ethics
+      No View Class Sections button; course has no sections.
+    [E 182/424] Opening EGL 371 — Topics in Gender Studies in Literature
+      No View Class Sections button; course has no sections.
+    [E 183/424] Opening EGL 372 — Topics in Women and Literature
+      Fall 2026: found 1 class sections.
+    [E 184/424] Opening EGL 373 — Literature in English from Non-Western Cultures
+      Fall 2026: found 1 class sections.
+    [E 185/424] Opening EGL 374 — English Literature in Relation to Other Literatures
+      No View Class Sections button; course has no sections.
+    [E 186/424] Opening EGL 376 — The Literature of Imperialism
+      No View Class Sections button; course has no sections.
+    [E 187/424] Opening EGL 378 — Contemporary Native American Fiction
+      No View Class Sections button; course has no sections.
+    [E 188/424] Opening EGL 379 — Native American Texts and Contexts
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 189/424] Opening EGL 380 — Senior Seminar
+      Fall 2026: found 2 class sections.
+    [E 190/424] Opening EGL 381 — Advanced Analytic and Argumentative Writing
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (E 190/424) · 190 scraped, 0 already done, 0 failed · 17.9 pages/min · 10m36s elapsed · ~13m03s left in E
+    [E 191/424] Opening EGL 382 — Black Women's Literature of the African Diaspora
+      No View Class Sections button; course has no sections.
+    [E 192/424] Opening EGL (383) — Writing Workshop: Creative Nonfiction ** available as of 01/01/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 193/424] Opening EGL 385 — Advanced Fiction Workshop
+      No View Class Sections button; course has no sections.
+    [E 194/424] Opening EGL 386 — Advanced Poetry Workshop
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 195/424] Opening EGL 387 — Playwriting
+      Fall 2026: found 1 class sections.
+    [E 196/424] Opening EGL 389 — Science Fiction
+      No View Class Sections button; course has no sections.
+    [E 197/424] Opening EGL 390 — Topics in American or Anglophone Literary History
+      No View Class Sections button; course has no sections.
+    [E 198/424] Opening EGL 391 — Topics in British Literary History Pre-1800
+      No View Class Sections button; course has no sections.
+    [E 199/424] Opening EGL 392 — Topics in British Literary History After 1750
+      No View Class Sections button; course has no sections.
+    [E 200/424] Opening EGL 394 — Topics in Literary and Cultural Studies of Science and Technology
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (E 200/424) · 200 scraped, 0 already done, 0 failed · 18.2 pages/min · 10m58s elapsed · ~12m17s left in E
+    Pausing 5s after 200 detail pages…
+    [E 201/424] Opening EGL 395 — Topics in Literary and Cultural Studies of Europe
+      No View Class Sections button; course has no sections.
+    [E 202/424] Opening EGL 397 — Topics in Literary and Cultural Studies in Asia, Africa, and Latin America
+      No View Class Sections button; course has no sections.
+    [E 203/424] Opening EGL 399 — Topics in American Literary and Cultural Studies
+      No View Class Sections button; course has no sections.
+    [E 204/424] Opening EGL 400 — Experiential Learning, Speak Effectively, Practice Critical and Ethical Reasoning
+      No View Class Sections button; course has no sections.
+    [E 205/424] Opening EGL 440 — Performance and Technology in Teaching Literature and Composition
+      Fall 2026: found 1 class sections.
+    [E 206/424] Opening EGL 441 — Methods of Instruction in Literature and Composition
+      Fall 2026: found 1 class sections.
+    [E 207/424] Opening EGL 444 — Experiential Learning
+      Fall 2026: found 1 class sections.
+    [E 208/424] Opening EGL 449 — Field Experience, Grades 7-12
+      Fall 2026: found 1 class sections.
+    [E 209/424] Opening EGL 450 — Field Experience, Grades 7-12
+      Fall 2026: found 1 class sections.
+    [E 210/424] Opening EGL 451 — Supervised Student Teaching - English; Middle Level Grades 7-9
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (E 210/424) · 210 scraped, 0 already done, 0 failed · 18.2 pages/min · 11m34s elapsed · ~11m47s left in E
+    [E 211/424] Opening EGL 452 — Supervised Student Teaching - English; High School Grades 10-12
+      Fall 2026: found 1 class sections.
+    [E 212/424] Opening EGL 454 — Student Teaching Seminar
+      Fall 2026: found 1 class sections.
+    [E 213/424] Opening EGL 458 — Speak Effectively Before an Audience
+      Fall 2026: found 1 class sections.
+    [E 214/424] Opening EGL 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 2 class sections.
+    [E 215/424] Opening EGL 476 — Undergraduate Teaching Practicum II
+      Fall 2026: found 1 class sections.
+    [E 216/424] Opening EGL 487 — Independent Project
+      Fall 2026: found 24 class sections.
+    [E 217/424] Opening EGL 488 — Internship
+      Fall 2026: found 3 class sections.
+    [E 218/424] Opening EGL 491 — Honors Seminar: Critical, Literary or Media History
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 219/424] Opening EGL 492 — Honors Seminar: Theories and Methods
+      Fall 2026: found 1 class sections.
+    [E 220/424] Opening EGL 494 — Honors Practicum: Research
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (E 220/424) · 220 scraped, 0 already done, 0 failed · 17.9 pages/min · 12m18s elapsed · ~11m24s left in E
+    [E 221/424] Opening EGL 496 — Senior Honors Project
+      Fall 2026: found 5 class sections.
+    [E 222/424] Opening ENS 101 — Prospects for Planet Earth
+      Fall 2026: found 1 class sections.
+    [E 223/424] Opening ENS 119 — Physics for Environmental Studies
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 224/424] Opening ENS 301 — Contemporary Environmental Issues and Policies
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 225/424] Opening ENS 311 — Ecosystem Ecology and the Global Environment
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 226/424] Opening ENS 312 — Population, Technology, and the Environment
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [E 227/424] Opening ENS 333 — Environmental Law
+      Fall 2026: found 1 class sections.
+    [E 228/424] Opening ENS 339 — Economics of Coastal and Marine Ecosystems
+      No View Class Sections button; course has no sections.
+    [E 229/424] Opening ENS 395 — Topics in Environmental Sciences
+      No View Class Sections button; course has no sections.
+    [E 230/424] Opening ENS 443 — Environmental Problem Solving
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (E 230/424) · 230 scraped, 0 already done, 0 failed · 18.1 pages/min · 12m43s elapsed · ~10m43s left in E
+    [E 231/424] Opening ENS 447 — Readings in Environmental Studies
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [E 232/424] Opening ENS 487 — Independent Research in Environmental Studies
+      Fall 2026: found 54 class sections.
+    [E 233/424] Opening ENS 488 — Internship in Environmental Studies
+      Fall 2026: found 57 class sections.
+    [E 234/424] Opening ENV 115 — Chemistry, Life, and Environment
+      Fall 2026: not listed for this course. Available terms: Spring 2027
