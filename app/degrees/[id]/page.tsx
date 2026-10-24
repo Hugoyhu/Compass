@@ -3,14 +3,17 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { ArrowLeft, ArrowLeftRight, ExternalLink } from "lucide-react";
+import { ProgramToggle } from "@/components/degrees/program-toggle";
 import { RuleTree, type RuleContext } from "@/components/degrees/rule-tree";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { ProgramDefinition, ProgramPolicy, Rule, Substitution } from "@/lib/domain/catalog/program";
+import { kindLabel } from "@/lib/domain/program-kinds";
 import { itemNumber, NOTE_TOPICS, POLICY_TITLES, requirementHeading } from "@/lib/engine/describe";
 import { getProgramDetail, listProgramIds, type ProgramDetail } from "@/lib/services/degrees";
+import { getStudentRecord } from "@/lib/student/store";
 
 export async function generateStaticParams() {
   return (await listProgramIds()).map((id) => ({ id }));
@@ -60,6 +63,9 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
             Catalog page
             <ExternalLink />
           </a>
+          <Suspense fallback={null}>
+            <AddProgram programId={program.id} />
+          </Suspense>
         </div>
       </div>
 
@@ -178,6 +184,12 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
       </div>
     </>
   );
+}
+
+/** Reads the visitor's record, so it renders inside its own Suspense boundary. */
+async function AddProgram({ programId }: { programId: string }) {
+  const record = await getStudentRecord();
+  return <ProgramToggle programId={programId} added={record?.programIds.includes(programId) ?? false} />;
 }
 
 function SampleSequence({ detail }: { detail: ProgramDetail }) {

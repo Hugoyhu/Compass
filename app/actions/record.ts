@@ -4,10 +4,12 @@ import { refresh } from "next/cache";
 import { z } from "zod";
 import { getCurrentUser } from "@/lib/auth/session";
 import { getRepository } from "@/lib/data/repository";
-import type { StudentRecord } from "@/lib/domain/types";
+import { MAX_PROGRAMS, type StudentRecord } from "@/lib/domain/types";
 import { clearAccountRecord, saveAccountRecord } from "@/lib/student/account-records";
 import { clearGuestRecord, writeGuestRecord } from "@/lib/student/guest-records";
 import { StudentRecordSchema } from "@/lib/student/record";
+import { getStudentRecord } from "@/lib/student/store";
+import { DEFAULT_CURRENT_TERM } from "@/components/record/options";
 
 export type SaveResult = { ok: true } | { ok: false; error: string };
 
@@ -35,6 +37,29 @@ export async function saveRecord(input: unknown): Promise<SaveResult> {
   } catch (error) {
     return { ok: false, error: (error as Error).message };
   }
+}
+
+/** Adds a program to the visitor's record, starting a record if they have none. */
+export async function addProgram(programId: string): Promise<SaveResult> {
+  const programs = await getRepository().listPrograms();
+  if (!programs.some((p) => p.id === programId)) return { ok: false, error: "Unknown program" };
+  const record = (await getStudentRecord()) ?? {
+    id: "browser",
+    name: "",
+    entryTerm: DEFAULT_CURRENT_TERM,
+    currentTerm: DEFAULT_CURRENT_TERM,
+    programIds: [],
+    attempts: [],
+  };
+  if (record.programIds.includes(programId)) return { ok: true };
+  if (record.programIds.length >= MAX_PROGRAMS) return { ok: false, error: `You can add up to ${MAX_PROGRAMS} programs` };
+  return saveRecord({ ...record, programIds: [...record.programIds, programId] });
+}
+
+export async function removeProgram(programId: string): Promise<SaveResult> {
+  const record = await getStudentRecord();
+  if (!record?.programIds.includes(programId)) return { ok: true };
+  return saveRecord({ ...record, programIds: record.programIds.filter((id) => id !== programId) });
 }
 
 /** Replaces the visitor's record with the fictional sample student. */

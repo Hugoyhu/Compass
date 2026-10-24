@@ -6,19 +6,22 @@ import { ChevronRight, Search } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { kindLabel, kindsIn } from "@/lib/domain/program-kinds";
 import type { ProgramSummary } from "@/lib/services/degrees";
 
-type KindFilter = "all" | ProgramSummary["kind"];
+type KindFilter = "all" | "mine" | ProgramSummary["kind"];
 
-export function DegreeList({ programs }: { programs: ProgramSummary[] }) {
+export function DegreeList({ programs, mine }: { programs: ProgramSummary[]; mine: string[] }) {
   const [query, setQuery] = useState("");
   const [kind, setKind] = useState<KindFilter>("all");
+  // Removing your last program hides the "Mine" tab; fall back to everything.
+  const activeKind = kind === "mine" && mine.length === 0 ? "all" : kind;
   const deferredQuery = useDeferredValue(query);
 
   const terms = deferredQuery.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const matches = programs.filter(
     (p) =>
-      (kind === "all" || p.kind === kind) &&
+      (activeKind === "all" || (activeKind === "mine" ? mine.includes(p.id) : p.kind === activeKind)) &&
       terms.every((t) => p.name.toLowerCase().includes(t) || p.degree?.toLowerCase().includes(t)),
   );
   const counts = {
@@ -42,7 +45,7 @@ export function DegreeList({ programs }: { programs: ProgramSummary[] }) {
             className="pl-8"
           />
         </div>
-        <Tabs value={kind} onValueChange={(v) => setKind(v as KindFilter)}>
+        <Tabs value={activeKind} onValueChange={(v) => setKind(v as KindFilter)}>
           <TabsList>
             <TabsTrigger value="all">All ({counts.all})</TabsTrigger>
             <TabsTrigger value="major">Majors ({counts.major})</TabsTrigger>
@@ -69,8 +72,9 @@ export function DegreeList({ programs }: { programs: ProgramSummary[] }) {
                       .join(" · ")}
                   </p>
                 </div>
-                <Badge variant="outline" className="hidden font-normal capitalize sm:inline-flex">
-                  {p.kind}
+                {mine.includes(p.id) && <Badge className="font-normal">Added</Badge>}
+                <Badge variant="outline" className="hidden font-normal sm:inline-flex">
+                  {kindLabel(p.kind)}
                 </Badge>
                 <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
               </Link>
