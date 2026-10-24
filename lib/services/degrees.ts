@@ -5,6 +5,8 @@
  */
 import { getRepository } from "@/lib/data/repository";
 import type { ProgramDefinition, Rule } from "@/lib/domain/catalog/program";
+import { buildProgramOptions } from "@/lib/engine/program-options";
+import { buildTypicalPath } from "@/lib/engine/typical-path";
 
 export interface ProgramSummary {
   id: string;
@@ -83,7 +85,10 @@ export async function courseInfoFor(codes: Iterable<string>): Promise<Record<str
 export async function getProgramDetail(id: string) {
   const program = (await getRepository().listPrograms()).find((p) => p.id === id);
   if (!program) return null;
-  return { program, courseInfo: await courseInfoFor(programCourseCodes(program)) };
+  const courses = await getRepository().listCourses();
+  const path = buildTypicalPath(program, courses);
+  const options = buildProgramOptions(program, courses);
+  return { program, courseInfo: await courseInfoFor(programCourseCodes(program)), path, options };
 }
 
 export type ProgramDetail = NonNullable<Awaited<ReturnType<typeof getProgramDetail>>>;

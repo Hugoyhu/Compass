@@ -3,14 +3,15 @@
 import { useMemo, useState, useTransition } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { Check, Plus, Search, X } from "lucide-react";
-import { saveSchedule } from "@/app/actions/schedule";
+import { getScheduleCourseDetail, saveSchedule } from "@/app/actions/schedule";
+import { CourseDialog, type CourseDetail } from "@/components/planner/course-dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { selectClassName } from "@/components/record/options";
 import { DAY_LABELS, formatDays, formatMinutes, formatRange } from "@/lib/domain/meeting-format";
 import { formatTerm } from "@/lib/domain/terms";
 import type { TermId } from "@/lib/domain/types";
-import type { ScheduleCourse, ScheduleSection, ScheduleView } from "@/lib/services/schedule";
+import type { InstructorRating, ScheduleCourse, ScheduleSection, ScheduleView } from "@/lib/services/schedule";
 import { cn } from "@/lib/utils";
 
 const HOUR_HEIGHT = 68;
@@ -67,6 +68,8 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
   const [selected, setSelectedState] = useState(() => initialSelected.filter((id) => sectionIndex.has(id)));
   const [, startTransition] = useTransition();
   const [saveError, setSaveError] = useState<string | null>(null);
+  // The course expanded into a dialog; `detail` is undefined until its catalog entry loads.
+  const [expanded, setExpanded] = useState<{ code: string; detail?: CourseDetail | null } | null>(null);
 
   const picked = selected.flatMap((id) => sectionIndex.get(id) ?? []);
   const hover = hovered ? sectionIndex.get(hovered) : undefined;
@@ -79,6 +82,11 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
       const result = await saveSchedule(view.term, next);
       setSaveError(result.ok ? null : result.error);
     });
+  }
+
+  function expand(code: string) {
+    setExpanded({ code });
+    void getScheduleCourseDetail(code).then((detail) => setExpanded((current) => (current?.code === code ? { code, detail } : current)));
   }
 
   function toggle(id: string) {
@@ -99,10 +107,16 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
     const entries: Entry[] = view.courses.flatMap((course) => course.sections.map((section) => ({ course, section })));
     if (!words.length) return entries;
     return entries.filter(({ course, section }) => {
-      const haystack = `${course.code} ${course.title} ${section.label} ${section.instructor}`.toLowerCase();
+      const haystack = `${course.code} ${course.title} ${section.label} ${section.instructors.join(" ")}`.toLowerCase();
       return words.every((w) => haystack.includes(w));
     });
   }, [query, view.courses]);
+
+  /** The picked sections of a course, for the dialog; null once none are left. */
+  function sectionsOf(code: string) {
+    const mine = picked.filter((p) => p.course.code === code);
+    return mine.length ? { course: mine[0].course, sections: mine.map((p) => p.section) } : null;
+  }
 
   const hoverConflicts = hover && !hoverIsPicked
     ? picked.filter((p) => p.section.id !== hover.section.id && conflicts(p.section, hover.section))
@@ -167,6 +181,7 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
           <div className="min-h-0 flex-1 space-y-2 overflow-y-auto rounded-lg border p-2 max-lg:max-h-96" onMouseLeave={() => setHovered(null)}>
             {results.slice(0, MAX_RESULTS).map((entry) => (
               <SectionResult
+                ratings={view.ratings}
                 key={entry.section.id}
                 entry={entry}
                 isSelected={selected.includes(entry.section.id)}
@@ -186,11 +201,13 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
 
         <section className="min-w-0 space-y-3">
           <WeekGrid
+            ratings={view.ratings}
             hours={hours}
             picked={picked}
             hover={hover && !hoverIsPicked ? hover : undefined}
             hoverConflicts={hoverConflicts.length > 0}
             onRemove={toggle}
+            onExpand={expand}
           />
           {hover && !hover.section.days.length && (
             <p className="text-xs text-muted-foreground">This section has no set meeting time.</p>
@@ -206,9 +223,9 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
               <ul className="space-y-1">
                 {unscheduled.map(({ course, section }) => (
                   <li key={section.id} className="flex items-center justify-between gap-2">
-                    <span>
+                    <button type="button" className="text-left underline-offset-4 hover:underline" onClick={() => expand(course.code)}>
                       {course.code} · {section.label}
-                    </span>
+                    </button>
                     <button type="button" aria-label={`Remove ${course.code} ${section.label}`} onClick={() => toggle(section.id)}>
                       <X className="size-4 text-muted-foreground hover:text-foreground" />
                     </button>
@@ -219,18 +236,61 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
           )}
         </section>
       </div>
+
+      {expanded && sectionsOf(expanded.code) && (
+        <CourseDialog
+          course={sectionsOf(expanded.code)!.course}
+          picked={sectionsOf(expanded.code)!.sections}
+          ratings={view.ratings}
+          detail={expanded.detail}
+          onClose={() => setExpanded(null)}
+        />
+      )}
     </div>
+  );
+}
+
+type Ratings = Record<string, InstructorRating>;
+
+/** Rating color: green for 4 and up, amber from 3, red below. */
+function ratingTone(rating: number): string {
+  return rating >= 4 ? "text-emerald-600 dark:text-emerald-400" : rating >= 3 ? "text-amber-600 dark:text-amber-400" : "text-red-600 dark:text-red-400";
+}
+
+/** Instructor names, each followed by its Rate My Professors rating when one matches. */
+function Instructors({ names, ratings, className, rated }: { names: string[]; ratings: Ratings; className?: string; rated?: boolean }) {
+  if (names.length === 0) return null;
+  return (
+    <p className={className}>
+      {names.map((name, i) => {
+        const r = ratings[name];
+        return (
+          <span key={name}>
+            {i > 0 && ", "}
+            {name}
+            {r && (
+              <span className={cn("tabular-nums", rated && ratingTone(r.rating))} title={`Rate My Professors: ${r.rating}/5 from ${r.numRatings} ratings, difficulty ${r.difficulty}/5`}>
+                {" "}
+                ★{r.rating.toFixed(1)} ({r.numRatings})
+              </span>
+            )}
+          </span>
+        );
+      })}
+    </p>
   );
 }
 
 function SectionResult({
   entry: { course, section },
+  ratings,
   isSelected,
   clashes,
   onHover,
   onToggle,
 }: {
   entry: Entry;
+  ratings: Ratings;
   isSelected: boolean;
   clashes: boolean;
   onHover: (id: string | null) => void;
@@ -258,9 +318,7 @@ function SectionResult({
         <span className="block text-muted-foreground">
           {section.days.length ? `${formatDays(section.days)} ${formatRange(section)}` : "TBA"}
         </span>
-        {section.instructor && section.instructor !== "TBA" && (
-          <span className="block truncate text-muted-foreground">{section.instructor}</span>
-        )}
+        <Instructors names={section.instructors} ratings={ratings} className="truncate text-muted-foreground" rated />
         {section.room && section.room !== "TBA" && <span className="block truncate text-muted-foreground">{section.room}</span>}
         {clashes && <span className="text-destructive">Time conflict</span>}
       </span>
@@ -270,17 +328,21 @@ function SectionResult({
 }
 
 function WeekGrid({
+  ratings,
   hours,
   picked,
   hover,
   hoverConflicts,
   onRemove,
+  onExpand,
 }: {
+  ratings: Ratings;
   hours: number[];
   picked: Entry[];
   hover: Entry | undefined;
   hoverConflicts: boolean;
   onRemove: (id: string) => void;
+  onExpand: (code: string) => void;
 }) {
   const top = hours[0] * 60;
   const place = (b: Block) => ({
@@ -313,7 +375,7 @@ function WeekGrid({
               .flatMap(blocksFor)
               .filter((b) => b.day === day)
               .map((b) => (
-                <ClassBlock key={b.key} block={b} style={place(b)} title={picked.find((p) => p.section.id === b.section.id)?.course.title ?? ""} onRemove={onRemove} />
+                <ClassBlock key={b.key} block={b} ratings={ratings} style={place(b)} title={picked.find((p) => p.section.id === b.section.id)?.course.title ?? ""} onRemove={onRemove} onExpand={onExpand} />
               ))}
             {hover &&
               blocksFor(hover)
@@ -333,7 +395,7 @@ function WeekGrid({
                     </p>
                     <p className="tabular-nums">{formatRange(b.section)}</p>
                     {b.section.room && b.section.room !== "TBA" && <p className="truncate">{b.section.room}</p>}
-                    {b.section.instructor && b.section.instructor !== "TBA" && <p className="truncate">{b.section.instructor}</p>}
+                    <Instructors names={b.section.instructors} ratings={ratings} className="truncate" />
                   </div>
                 ))}
           </div>
@@ -345,20 +407,28 @@ function WeekGrid({
 
 function ClassBlock({
   block,
+  ratings,
   style,
   title,
   onRemove,
+  onExpand,
 }: {
   block: Block;
+  ratings: Ratings;
   style: { top: number; height: number };
   title: string;
   onRemove: (id: string) => void;
+  onExpand: (code: string) => void;
 }) {
   const hue = hueFor(block.code);
   const { section } = block;
   return (
     <div
-      className="group absolute inset-x-0.5 overflow-hidden rounded-md border px-1.5 py-1 text-[11px] leading-tight"
+      role="button"
+      tabIndex={0}
+      onClick={() => onExpand(block.code)}
+      onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && (e.preventDefault(), onExpand(block.code))}
+      className="group absolute inset-x-0.5 cursor-pointer overflow-hidden rounded-md border px-1.5 py-1 text-[11px] leading-tight"
       style={{
         ...style,
         background: `oklch(0.92 0.06 ${hue} / 0.9)`,
@@ -370,7 +440,10 @@ function ClassBlock({
       <button
         type="button"
         aria-label={`Remove ${block.code} ${section.label}`}
-        onClick={() => onRemove(section.id)}
+        onClick={(e) => {
+          e.stopPropagation();
+          onRemove(section.id);
+        }}
         className="absolute top-0.5 right-0.5 hidden rounded p-0.5 hover:bg-black/10 group-hover:block focus-visible:block"
       >
         <X className="size-3" />
@@ -381,7 +454,7 @@ function ClassBlock({
       </p>
       <p className="tabular-nums">{formatRange(section)}</p>
       {section.room && section.room !== "TBA" && <p className="truncate">{section.room}</p>}
-      {section.instructor && section.instructor !== "TBA" && <p className="truncate">{section.instructor}</p>}
+      <Instructors names={section.instructors} ratings={ratings} className="truncate" />
     </div>
   );
 }

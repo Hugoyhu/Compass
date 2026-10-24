@@ -6,6 +6,7 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { z } from "zod";
 import { CourseRecordSchema, type CourseRecord } from "@/lib/domain/catalog/course";
+import { ProfessorRatingsFileSchema, type ProfessorRating } from "@/lib/domain/catalog/professor";
 import { OfferingTermSchema, type OfferingTerm } from "@/lib/domain/catalog/offering";
 import { ProgramDefinitionSchema, type ProgramDefinition } from "@/lib/domain/catalog/program";
 
@@ -59,4 +60,14 @@ export function loadOfferingFiles(): OfferingTerm[] {
     else console.warn(`[catalog] Skipping invalid offerings file ${file}`);
   }
   return terms;
+}
+
+/** Professor ratings from professors.json; none when the file hasn't been scraped yet. */
+export function loadProfessorRatings(): ProfessorRating[] {
+  const file = path.join(CATALOG_DIR, "professors.json");
+  if (!existsSync(file)) return [];
+  const parsed = ProfessorRatingsFileSchema.safeParse(JSON.parse(readFileSync(file, "utf8")));
+  if (parsed.success) return parsed.data.professors;
+  console.warn("[catalog] data/catalog/professors.json is invalid; run npm run scrape:ratings");
+  return [];
 }

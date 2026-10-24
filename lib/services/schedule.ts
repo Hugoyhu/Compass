@@ -7,6 +7,7 @@ import { getRepository } from "@/lib/data/repository";
 import type { Section } from "@/lib/domain/catalog/offering";
 import { nextRegularTerm, parseTerm } from "@/lib/domain/terms";
 import type { TermId } from "@/lib/domain/types";
+import { buildRatingIndex, instructorNames } from "@/lib/engine/professors";
 import { readSchedule } from "@/lib/student/schedule";
 
 /** Weekdays the grid shows; PeopleSoft writes them as two-letter codes ("MoWe"). */
@@ -27,10 +28,21 @@ export interface ScheduleSection {
   start: number;
   end: number;
   room: string;
-  instructor: string;
+  /** Names the schedule lists; ratings for them are in the view's `ratings`, by name. */
+  instructors: string[];
   /** ISO dates, so half-term sections don't conflict with sections of the other half. */
   from: string;
   to: string;
+}
+
+/** A professor's Rate My Professors summary. */
+export interface InstructorRating {
+  id: number;
+  rating: number;
+  difficulty: number;
+  numRatings: number;
+  /** 0–100, or null when too few ratings answered it. */
+  wouldTakeAgain: number | null;
 }
 
 export interface ScheduleCourse {
@@ -69,7 +81,7 @@ function toScheduleSection(s: Section): ScheduleSection {
     start: timed ? start : 0,
     end: timed ? end : 0,
     room: meeting?.room.replace(/\s*WESTCAMPUS$/, "") ?? "",
-    instructor: meeting?.instructor ?? "",
+    instructors: meeting ? instructorNames(meeting.instructor) : [],
     from: meeting?.startDate ?? "",
     to: meeting?.endDate ?? "",
   };
@@ -77,7 +89,11 @@ function toScheduleSection(s: Section): ScheduleSection {
 
 export async function getScheduleView(requested?: string) {
   const repo = getRepository();
-  const [courses, offeringTerms] = await Promise.all([repo.listCourses(), repo.listOfferingTerms()]);
+  const [courses, offeringTerms, professors] = await Promise.all([
+    repo.listCourses(),
+    repo.listOfferingTerms(),
+    repo.listProfessorRatings(),
+  ]);
   const byTerm = await Promise.all(
     offeringTerms.map(async (term) => ({ term, sections: (await repo.listSections(term)) ?? [] })),
   );
@@ -89,7 +105,7 @@ export async function getScheduleView(requested?: string) {
   const terms = counts.filter((t) => t.count >= fullest * COMPLETE_SCHEDULE_SHARE).map((t) => t.term);
 
   const term: TermId | undefined = terms.find((t) => t === requested) ?? terms.filter((t) => parseTerm(t).season !== "Summer").at(-1) ?? terms.at(-1);
-  if (!term) return { terms, term: null, courses: [] as ScheduleCourse[] };
+  if (!term) return { terms, term: null, courses: [] as ScheduleCourse[], ratings: {} as Record<string, InstructorRating> };
 
   const info = new Map(courses.map((c) => [c.code, c]));
   const grouped = new Map<string, ScheduleCourse>();
@@ -102,7 +118,20 @@ export async function getScheduleView(requested?: string) {
     }
     course.sections.push(toScheduleSection(s));
   }
-  return { terms, term, courses: [...grouped.values()].sort((a, b) => a.code.localeCompare(b.code, "en", { numeric: true })) };
+  const find = buildRatingIndex(professors);
+  const ratings: Record<string, InstructorRating> = {};
+  for (const course of grouped.values()) {
+    for (const name of course.sections.flatMap((s) => s.instructors)) {
+      const match = ratings[name] ? null : find(name);
+      if (match) ratings[name] = { id: match.id, rating: match.rating, difficulty: match.difficulty, numRatings: match.numRatings, wouldTakeAgain: match.wouldTakeAgain };
+    }
+  }
+  return {
+    terms,
+    term,
+    courses: [...grouped.values()].sort((a, b) => a.code.localeCompare(b.code, "en", { numeric: true })),
+    ratings,
+  };
 }
 
 /**

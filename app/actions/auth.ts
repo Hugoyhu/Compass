@@ -8,6 +8,7 @@ import { requireSql } from "@/lib/db/client";
 import { clientIp, rateLimited } from "@/lib/rate-limit";
 import { loadAccountRecord, saveAccountRecord } from "@/lib/student/account-records";
 import { clearGuestRecord, readGuestRecord } from "@/lib/student/guest-records";
+import { adoptGuestSchedule } from "@/lib/student/schedule";
 
 export type AuthState = { error?: string; username?: string };
 
@@ -25,8 +26,9 @@ function safeNext(value: FormDataEntryValue | null): string {
   return next.startsWith("/") && !next.startsWith("//") ? next : "/";
 }
 
-/** Moves a signed-out visitor's cookie record into their account if the account has none. */
+/** Moves a signed-out visitor's cookie record and schedule into their account if it has none. */
 async function adoptGuestRecord(userId: string) {
+  await adoptGuestSchedule(userId);
   const guest = await readGuestRecord();
   if (!guest) return;
   if (!(await loadAccountRecord(userId))) await saveAccountRecord(userId, { ...guest, id: userId });

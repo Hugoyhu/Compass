@@ -64,6 +64,7 @@ Real catalog data lives in `data/catalog/` and is validated against the Zod sche
 
 - `programs/*.json`: one `ProgramDefinition` per major. `cse-bs.json` is hand-encoded from the Fall 2026 Undergraduate Catalog and is the reference answer for automated extraction.
 - `courses.json`: an array of `CourseRecord`, written by `npm run import:courses`.
+- `professors.json`: Rate My Professors ratings, written by `npm run scrape:ratings` and matched to instructors by name in the Schedule Builder. Optional; without it no ratings show.
 
 The app loads every valid file in `programs/` at startup; invalid files are skipped with a warning. Without a valid `courses.json` the app starts with no courses and logs a warning.
 
