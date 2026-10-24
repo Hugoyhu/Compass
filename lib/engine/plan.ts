@@ -12,11 +12,19 @@ import type { CourseAttempt, CourseCode, PlannedTerm, SbcCategory, StudentRecord
 import { DEEPER_UNDERSTANDING, runDegreeAudit, summarizeCredits, type DegreeAudit, type SbcResult } from "./audit";
 import { requirementHeading } from "./describe";
 import { primarySubject, proposeNextSemester } from "./planner";
-import { buildCompletionIndex, evaluatePrereq, formatPrereq, plannedCredits, standingFor, usableAttempts } from "./prerequisites";
+import {
+  buildCompletionIndex,
+  evaluatePrereq,
+  formatPrereq,
+  pairedCorequisite,
+  plannedCredits,
+  standingFor,
+  usableAttempts,
+} from "./prerequisites";
 
 /** Above this, Stony Brook requires approval for the term's load. */
 export const MAX_TERM_CREDITS = 19;
-/** Below this, a fall or spring term is part-time. */
+/** Below this, a fall or spring term is part-time; the default minimum per term. */
 export const FULL_TIME_CREDITS = 12;
 const ELECTIVE_CREDITS = 3;
 
@@ -72,12 +80,20 @@ function openCount(a: DegreeAudit): number {
   return a.programs.flatMap((p) => p.requirements).filter((r) => !isDone(r.status) && !isReview(r.status)).length + openSbc(a).length;
 }
 
+/** The student's minimum credits for a fall or spring term. */
+export function minTermCredits(student: StudentRecord): number {
+  return student.minTermCredits ?? FULL_TIME_CREDITS;
+}
+
 /**
  * Fills fall and spring terms after the current one, a term at a time, with the
  * next-semester proposal given everything planned before it. Free electives top
- * up each term once requirement courses run out, until the credit total is met.
+ * up each term once requirement courses run out, until the credit total is met,
+ * and every term to at least the student's minimum, including the last.
  */
 export function generatePlan(ctx: PlanContext, { maxTerms = 8, targetCredits = 15 } = {}): PlannedTerm[] {
+  const minCredits = minTermCredits(ctx.student);
+  targetCredits = Math.max(targetCredits, minCredits);
   const plan: PlannedTerm[] = [];
   let term = nextRegularTerm(ctx.student.currentTerm);
   for (let i = 0; i < maxTerms; i++) {
@@ -99,10 +115,15 @@ export function generatePlan(ctx: PlanContext, { maxTerms = 8, targetCredits = 1
     let credits = proposal.totalCredits;
     let left = creditsLeft - credits;
     // Top up to the target, going over it (to the usual 18-credit cap) rather than under.
-    while (credits < targetCredits && credits + ELECTIVE_CREDITS <= 18 && left > 0) {
+    while (credits < targetCredits && credits + ELECTIVE_CREDITS <= Math.max(18, minCredits) && left > 0) {
       items.push({ elective: ELECTIVE_CREDITS });
       credits += ELECTIVE_CREDITS;
       left -= ELECTIVE_CREDITS;
+    }
+    // Never under the minimum, even when that means credits beyond the degree total.
+    while (credits < minCredits && credits + ELECTIVE_CREDITS <= MAX_TERM_CREDITS) {
+      items.push({ elective: ELECTIVE_CREDITS });
+      credits += ELECTIVE_CREDITS;
     }
     if (items.length === 0) break;
     plan.push({ term, items });
@@ -155,6 +176,7 @@ export function checkPlan(ctx: PlanContext, plan: PlannedTerm[]): { terms: Check
   const majorSubjects = base.programs.filter((p) => p.program.kind === "major").map((p) => primarySubject(p.program));
 
   const projection = projectPlan(ctx, plan);
+  const minCredits = minTermCredits(ctx.student);
   const seen = new Set<CourseCode>();
   let creditsBefore = base.credits.earned + base.credits.inProgress;
 
@@ -179,6 +201,8 @@ export function checkPlan(ctx: PlanContext, plan: PlannedTerm[]): { terms: Check
       if (!prereqs.met && !concurrentlyMet(course?.prerequisites, sameTerm)) {
         problems.push(`Prerequisites: ${formatPrereq(course?.prerequisites)}`);
       }
+      const pair = course && pairedCorequisite(course);
+      if (pair && !sameTerm.has(pair) && !index.has(pair)) problems.push(`Take with ${pair}`);
       return {
         code: item.code,
         title: course?.title ?? "",
@@ -192,10 +216,11 @@ export function checkPlan(ctx: PlanContext, plan: PlannedTerm[]): { terms: Check
 
     const credits = items.reduce((s, i) => s + i.credits, 0);
     creditsBefore += credits;
+    // The minimum is for fall and spring; summer and winter sessions are usually lighter.
     const regular = t.term.endsWith("FA") || t.term.endsWith("SP");
     const problems = [
       ...(credits > MAX_TERM_CREDITS ? [`Over ${MAX_TERM_CREDITS} credits needs approval`] : []),
-      ...(regular && credits > 0 && credits < FULL_TIME_CREDITS ? [`Under ${FULL_TIME_CREDITS} credits is part-time`] : []),
+      ...(regular && credits < minCredits ? [`Under your ${minCredits}-credit minimum`] : []),
     ];
     return { term: t.term, credits, items, problems };
   });
