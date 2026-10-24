@@ -47,7 +47,7 @@ async function Progress({ searchParams }: Pick<PageProps<"/progress">, "searchPa
     return (
       <Alert>
         <Info />
-        <AlertTitle>No majors or minors added</AlertTitle>
+        <AlertTitle>No programs added</AlertTitle>
         <AlertAction>
           <Link href="/degrees" className={buttonVariants({ size: "sm" })}>
             Browse programs

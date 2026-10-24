@@ -54,7 +54,7 @@ async function Dashboard() {
       {programs.length === 0 && (
         <Alert>
           <GraduationCap />
-          <AlertTitle>No majors or minors added</AlertTitle>
+          <AlertTitle>No programs added</AlertTitle>
           <AlertAction>
             <Link href="/degrees" className={buttonVariants({ size: "sm" })}>
               Browse programs

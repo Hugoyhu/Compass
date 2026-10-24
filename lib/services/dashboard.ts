@@ -8,6 +8,7 @@ import type { CourseRecord } from "@/lib/domain/catalog/course";
 import type { Section } from "@/lib/domain/catalog/offering";
 import { nextRegularTerm } from "@/lib/domain/terms";
 import type { StudentRecord } from "@/lib/domain/types";
+import { kindOrder } from "@/lib/domain/program-kinds";
 import { runDegreeAudit } from "@/lib/engine/audit";
 import { estimateGraduationTerm, proposeNextSemester } from "@/lib/engine/planner";
 
@@ -49,9 +50,9 @@ export async function getStudentView(student: StudentRecord) {
       credits: attempt.credits ?? catalog.get(attempt.code)?.credits.max ?? 0,
     }));
 
-  // Majors first, then in the order the student added them.
+  // Majors, then minors, then other programs; within a kind, in the order the student added them.
   const order = (p: (typeof audit.programs)[number]) =>
-    (p.program.kind === "major" ? 0 : 100) + student.programIds.indexOf(p.program.id);
+    kindOrder(p.program.kind) * 100 + student.programIds.indexOf(p.program.id);
   const enrolled = [...audit.programs].sort((a, b) => order(a) - order(b));
 
   return {

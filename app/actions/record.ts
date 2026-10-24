@@ -39,7 +39,7 @@ export async function saveRecord(input: unknown): Promise<SaveResult> {
   }
 }
 
-/** Adds a major or minor to the visitor's record, starting a record if they have none. */
+/** Adds a program to the visitor's record, starting a record if they have none. */
 export async function addProgram(programId: string): Promise<SaveResult> {
   const programs = await getRepository().listPrograms();
   if (!programs.some((p) => p.id === programId)) return { ok: false, error: "Unknown program" };
