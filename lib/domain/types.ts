@@ -57,6 +57,11 @@ export interface StudentRecord {
   plan: PlannedTerm[];
   /** The fewest credits the student wants in a fall or spring term; defaults to full time (12). */
   minTermCredits?: number;
+  /**
+   * Declared concentrations, specializations, and tracks: a choice rule's id
+   * → the id of the chosen alternative.
+   */
+  choices?: Record<string, string>;
 }
 
 // ---------------------------------------------------------------------------

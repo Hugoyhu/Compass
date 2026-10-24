@@ -65,7 +65,9 @@
                 },
                 "minCourses": 4
               }
-            ]
+            ],
+            "id": "art-studio-ba.concentration.painting-drawing-and-printmaking",
+            "label": "Painting, Drawing, and Printmaking"
           },
           {
             "manualCheck": "Track: Electronic Media and Photography. Requires a minimum of four upper-division studio classes in this area. ARS 420, ARS 487, ARS 491, and ARS 495 count only when appropriate.",
@@ -107,7 +109,9 @@
                 },
                 "minCourses": 4
               }
-            ]
+            ],
+            "id": "art-studio-ba.concentration.electronic-media-and-photography",
+            "label": "Electronic Media and Photography"
           },
           {
             "manualCheck": "Track: Sculpture and Ceramic Sculpture. Requires a minimum of four upper-division studio classes in this area. ARS 420, ARS 487, ARS 491, and ARS 495 count only when appropriate.",
@@ -139,9 +143,13 @@
                 },
                 "minCourses": 4
               }
-            ]
+            ],
+            "id": "art-studio-ba.concentration.sculpture-and-ceramic-sculpture",
+            "label": "Sculpture and Ceramic Sculpture"
           }
-        ]
+        ],
+        "id": "art-studio-ba.concentration.choice",
+        "choice": "concentration"
       },
       "sourceText": "Area of Concentration (18 credits) including a minimum of four upper-division studio classes in one of the following (may include ARS 420, ARS 487, ARS 491, ARS 495 when appropriate): Painting, Drawing, and Printmaking; Electronic Media and Photography; Sculpture and Ceramic Sculpture"
     },

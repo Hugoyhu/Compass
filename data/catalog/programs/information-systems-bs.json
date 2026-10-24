@@ -234,7 +234,8 @@
                   ]
                 }
               }
-            ]
+            ],
+            "label": "Business and Economics"
           },
           {
             "id": "information-systems-bs.specialization.financial-is",
@@ -272,7 +273,8 @@
                   ]
                 }
               }
-            ]
+            ],
+            "label": "Financial Information Systems"
           },
           {
             "id": "information-systems-bs.specialization.health-informatics",
@@ -309,7 +311,8 @@
                   ]
                 }
               }
-            ]
+            ],
+            "label": "Health Informatics"
           },
           {
             "id": "information-systems-bs.specialization.system-network-admin",
@@ -392,7 +395,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "System and Network Administration"
           },
           {
             "id": "information-systems-bs.specialization.technological-systems-mgmt",
@@ -439,15 +443,19 @@
                   ]
                 }
               }
-            ]
+            ],
+            "label": "Technological Systems Management"
           },
           {
             "id": "information-systems-bs.specialization.other",
             "type": "unparsed",
             "text": "Specialization in Other Application Areas: design a specialization of six to eight courses in another application area in consultation with the ISE undergraduate director before the courses for the specialization are completed.",
-            "reason": "The page does not list the courses; the specialization is designed with the undergraduate director."
+            "reason": "The page does not list the courses; the specialization is designed with the undergraduate director.",
+            "label": "Other Application Area"
           }
-        ]
+        ],
+        "id": "information-systems-bs.specialization.choice",
+        "choice": "specialization"
       },
       "sourceText": "Students must complete a specialization in one of the application areas listed below, or else design a specialization of six to eight courses in another application area in consultation with the ISE undergraduate director before the courses for the specialization are completed."
     }
