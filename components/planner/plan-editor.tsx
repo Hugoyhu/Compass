@@ -356,7 +356,7 @@ function AddCourse({ courses, onAdd }: { courses: PlanView["courses"]; onAdd: (i
           list="plan-courses"
           value={code}
           onChange={(e) => setCode(e.target.value)}
-          placeholder="CSE 214"
+          placeholder="Course code"
           aria-label="Course code"
           className="h-7 text-sm"
         />
