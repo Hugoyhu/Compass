@@ -406,7 +406,9 @@
                 "text": "Bioengineering minor (BNG) tracks: Biomaterials/Biomechanics (BME 260, BME 303, and BME 353 or BME 381); Calculus III (AMS 261 or MAT 203); Bioelectricity (BME 271, BME 301, and BME 311 or BME 313 or BME 481); Linear Algebra (AMS 210 or MAT 211); Molecular/Cellular (BME 304, BME 381); PICK TWO of BME 404, BME 402, BME 371; One advanced biology lecture course; One advanced biology laboratory course. Student must be accepted into the Bioengineering minor.",
                 "reason": "Requires track-by-track minor checks and admission to the minor, which the rule types cannot express"
               }
-            ]
+            ],
+            "id": "biology-bs.specialization.bioengineering",
+            "label": "Bioengineering"
           },
           {
             "type": "allOf",
@@ -453,7 +455,9 @@
                 "text": "Two additional advanced BIO lecture courses including at least one from Area I, Area II, or Area IV (or the listed other-department courses accepted in those areas); one additional advanced BIO laboratory course from any area; additional advanced BIO lecture, laboratory, reading, or independent research courses as needed for a minimum of 20 credits of advanced biology coursework.",
                 "reason": "Area-restricted course pools for the additional requirements are not expressible as a single pool"
               }
-            ]
+            ],
+            "id": "biology-bs.specialization.developmental-genetics",
+            "label": "Developmental Genetics"
           },
           {
             "type": "allOf",
@@ -471,7 +475,9 @@
                 "text": "One additional advanced BIO lecture course and one advanced BIO laboratory course from Area III or Area IV (or listed other-department courses in those areas); two additional advanced BIO lecture courses including at least one from Area I or Area II; one advanced BIO laboratory course from Area I, II, or III; additional advanced BIO courses as needed for a minimum of 20 credits. A 4-credit Lecture with Laboratory course may satisfy both the lecture and lab requirement.",
                 "reason": "Area-restricted course pools for the additional requirements are not expressible as a single pool"
               }
-            ]
+            ],
+            "id": "biology-bs.specialization.ecology-and-evolution",
+            "label": "Ecology and Evolution"
           },
           {
             "type": "allOf",
@@ -485,7 +491,9 @@
                 "text": "One advanced BIO laboratory course from Area IV (or listed other-department lab courses in that area); two additional advanced BIO courses from Area IV (at most one Environmental Biology course from other departments); two additional advanced BIO lecture courses including at least one from Area I or Area II; one advanced BIO laboratory course from Area I, II, or III; additional advanced BIO courses as needed for a minimum of 20 credits.",
                 "reason": "Area-restricted and count-limited course pools are not expressible as a single pool"
               }
-            ]
+            ],
+            "id": "biology-bs.specialization.environmental-biology",
+            "label": "Environmental Biology"
           },
           {
             "type": "allOf",
@@ -495,7 +503,9 @@
                 "text": "At least one advanced BIO lecture course in each of Area I, Area II, Area III, and Area IV (or listed other-department courses in these areas); two advanced BIO laboratory courses from two different areas; a second advanced BIO lecture course in one of the four areas; additional advanced BIO courses as needed for a minimum of 20 credits.",
                 "reason": "Requires coverage across four areas, which the rule types cannot express"
               }
-            ]
+            ],
+            "id": "biology-bs.specialization.interdisciplinary-biology",
+            "label": "Interdisciplinary Biology"
           },
           {
             "type": "allOf",
@@ -531,7 +541,9 @@
                 "text": "Two additional advanced BIO lecture courses including at least one from Area I, Area III, or Area IV (or listed other-department courses in these areas); one additional advanced BIO laboratory course from Area I, III, or IV; additional advanced BIO courses as needed for a minimum of 20 credits.",
                 "reason": "Area-restricted course pools for the additional requirements are not expressible as a single pool"
               }
-            ]
+            ],
+            "id": "biology-bs.specialization.neuroscience",
+            "label": "Neuroscience"
           },
           {
             "type": "allOf",
@@ -589,9 +601,13 @@
                 "text": "Two additional advanced BIO lecture courses, including at least one from Area III or Area IV (or listed other-department courses in these areas); one additional advanced BIO laboratory course from any area; additional advanced BIO courses as needed for a minimum of 20 credits.",
                 "reason": "Area-restricted course pools for the additional requirements are not expressible as a single pool"
               }
-            ]
+            ],
+            "id": "biology-bs.specialization.quantitative-biology-and-bioinformatics",
+            "label": "Quantitative Biology and Bioinformatics"
           }
-        ]
+        ],
+        "id": "biology-bs.specialization.choice",
+        "choice": "specialization"
       },
       "sourceText": "DECLARING A SPECIALIZATION IS REQUIRED TO COMPLETE THE BIOLOGY BS. The 7 Specializations are: Bioengineering, Developmental Genetics, Ecology and Evolution, Environmental Biology, Interdisciplinary Biology, Neuroscience, and Quantitative Biology and Bioinformatics."
     },

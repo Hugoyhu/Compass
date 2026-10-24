@@ -6,6 +6,7 @@ import { getRepository } from "@/lib/data/repository";
 import type { Section } from "@/lib/domain/catalog/offering";
 import { nextRegularTerm, nextTerm, parseTerm } from "@/lib/domain/terms";
 import type { CourseCode, Season, StudentRecord, TermId } from "@/lib/domain/types";
+import { choicesIn } from "@/lib/engine/describe";
 import { checkPlan, minTermCredits, type PlanContext } from "@/lib/engine/plan";
 
 /** A season's schedule counts as complete when it lists at least this share of the fullest term's courses. */
@@ -77,6 +78,16 @@ export async function getPlanView(student: StudentRecord) {
     terms,
     projection: { ...projection, countsByCourse: undefined },
     hasPrograms: student.programIds.length > 0,
+    // Concentrations (and specializations, tracks) not yet declared; until then the plan follows the closest one.
+    undeclared: ctx.programs
+      .filter((p) => student.programIds.includes(p.id))
+      .flatMap((p) =>
+        p.requirements.flatMap((r) =>
+          choicesIn(r.rule)
+            .filter((c) => !student.choices?.[c.id])
+            .map((c) => ({ program: p.name, kind: c.kind, href: `/progress?program=${p.id}#${r.id}` })),
+        ),
+      ),
     minCredits: minTermCredits(student),
     courses: ctx.courses.map((c) => ({ code: c.code, title: c.title })),
     sbcCategories: ctx.sbcCategories,

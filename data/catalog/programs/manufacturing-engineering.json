@@ -48,7 +48,8 @@
                   ]
                 }
               }
-            ]
+            ],
+            "label": "Engineering Science majors"
           },
           {
             "id": "manufacturing-engineering.track.other",
@@ -88,9 +89,12 @@
                   ]
                 }
               }
-            ]
+            ],
+            "label": "All other majors"
           }
-        ]
+        ],
+        "id": "manufacturing-engineering.track.choice",
+        "choice": "track"
       },
       "sourceText": "Requirements for students majoring in Engineering Science (ESG) and Requirements for all other students (see the track lists above)."
     },

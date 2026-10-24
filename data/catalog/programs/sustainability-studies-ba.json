@@ -286,7 +286,9 @@
                   ]
                 }
               }
-            ]
+            ],
+            "id": "sustainability-studies-ba.D.ecosystems-and-human-impact",
+            "label": "Ecosystems and Human Impact"
           },
           {
             "sourceText": "2. Environmental Humanities: Required Foundation Track Courses: ANT 102 - What Makes Us Human?; GSS 105 - Introduction to Maps and Mapping; MAR 104 - Oceanography; PHI 104 OR PHI 105; SUS 202 - Introduction to Environmental Humanities; SUS 203 - Interpretation and Critical Analysis. Upper Division Track Electives: Seven courses (at least 21 credits) from the choices below.",
@@ -356,7 +358,9 @@
                   ]
                 }
               }
-            ]
+            ],
+            "id": "sustainability-studies-ba.D.environmental-humanities",
+            "label": "Environmental Humanities"
           },
           {
             "sourceText": "3. Societies, Economics, and Governance: Required Foundation Track Courses: BIO 201; ECO 108 OR ECO 110 OR ECO 111; MAT 125 OR MAT 130 + MAT 125 OR MAT 131 OR AMS 151; POL 102 - Introduction to American Government; SUS 115 OR SUS 204; SUS 200 - Human Settlement: History and Future; SUS 206 - Economics and Sustainability. Upper Division Track Electives: Six courses (at least 18 credits) from the choices below. Note: If students do not place into MAT 125 or MAT 131 or AMS 151 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123 ) is a required course for the major.",
@@ -484,9 +488,13 @@
                   ]
                 }
               }
-            ]
+            ],
+            "id": "sustainability-studies-ba.D.societies-economics-and-governance",
+            "label": "Societies, Economics, and Governance"
           }
-        ]
+        ],
+        "id": "sustainability-studies-ba.D.choice",
+        "choice": "track"
       },
       "sourceText": "D. Tracks (Choose one, 39-40 credits): 1. Ecosystems and Human Impact; 2. Environmental Humanities; 3. Societies, Economics, and Governance"
     },

@@ -1,4 +1,4 @@
-import type { CourseSelector, ProgramDefinition, ProgramPolicy, Rule, Substitution } from "@/lib/domain/catalog/program";
+import type { ChoiceKind, CourseSelector, ProgramDefinition, ProgramPolicy, Rule, Substitution } from "@/lib/domain/catalog/program";
 import type { MissingItem, PolicyStatus, RequirementResult, RequirementStatus } from "./audit";
 
 export const STATUS_LABELS: Record<RequirementStatus | "exempt" | "not-required", string> = {
@@ -178,4 +178,25 @@ export function attachSubstitutions(
     targets.forEach(({ id }) => byRequirement.set(id, [...(byRequirement.get(id) ?? []), sub]));
   }
   return { byRequirement, unattached };
+}
+
+export interface ProgramChoice {
+  /** The choice rule's id, the key in StudentRecord.choices. */
+  id: string;
+  kind: ChoiceKind;
+  options: { id: string; label: string }[];
+}
+
+/** Concentrations, specializations, and tracks a rule asks the student to choose. */
+export function choicesIn(rule: Rule): ProgramChoice[] {
+  if (rule.type === "anyOf" && rule.choice && rule.id) {
+    return [
+      {
+        id: rule.id,
+        kind: rule.choice,
+        options: rule.rules.flatMap((alt, i) => (alt.id ? [{ id: alt.id, label: alt.label ?? `Option ${i + 1}` }] : [])),
+      },
+    ];
+  }
+  return rule.type === "allOf" || rule.type === "anyOf" ? rule.rules.flatMap(choicesIn) : [];
 }
