@@ -19,6 +19,7 @@ export const seedStudent: StudentRecord = {
   entryTerm: "2024-FA",
   currentTerm: "2026-FA",
   programIds: ["cse-bs"],
+  plan: [],
   attempts: [
     // AP credit
     { code: "MAT 131", source: "ap", grade: "T", status: "completed", origin: "AP Calculus BC" },

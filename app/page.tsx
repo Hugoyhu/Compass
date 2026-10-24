@@ -31,7 +31,7 @@ async function Dashboard() {
   const record = await getStudentRecord();
   if (!record) return <GetStarted />;
 
-  const { student, audit, programs, major, proposal, graduation, currentCourses } = await getStudentView(record);
+  const { student, audit, programs, major, proposal, graduation, plan, currentCourses } = await getStudentView(record);
   const firstName = student.name.split(" ")[0];
   const outstanding = programs.map((p) => ({
     programId: p.program.id,
@@ -101,9 +101,13 @@ async function Dashboard() {
           </StatTile>
           <StatTile
             icon={CalendarCheck}
-            label="Estimated graduation"
-            value={formatTerm(graduation.term)}
-            detail={`${graduation.semestersRemaining} more ${graduation.semestersRemaining === 1 ? "semester" : "semesters"}`}
+            label={plan?.graduation ? "Graduation" : "Estimated graduation"}
+            value={formatTerm(plan?.graduation ?? graduation.term)}
+            detail={
+              plan?.graduation
+                ? "From your plan"
+                : `${graduation.semestersRemaining} more ${graduation.semestersRemaining === 1 ? "semester" : "semesters"}`
+            }
           />
         </div>
       </section>
@@ -114,7 +118,7 @@ async function Dashboard() {
             <OutstandingRequirementsCard groups={outstanding} />
           </div>
           <div className="lg:col-span-2">
-            <NextSemesterCard proposal={proposal} />
+            <NextSemesterCard proposal={proposal} planned={plan?.firstTerm} />
           </div>
         </section>
       )}

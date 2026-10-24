@@ -50,6 +50,7 @@ export async function addProgram(programId: string): Promise<SaveResult> {
     currentTerm: DEFAULT_CURRENT_TERM,
     programIds: [],
     attempts: [],
+    plan: [],
   };
   if (record.programIds.includes(programId)) return { ok: true };
   if (record.programIds.length >= MAX_PROGRAMS) return { ok: false, error: `You can add up to ${MAX_PROGRAMS} programs` };

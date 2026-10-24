@@ -34,3 +34,15 @@ export function termOrdinal(term: TermId): number {
   const { season, year } = parseTerm(term);
   return year * 4 + order[season];
 }
+
+/** The term right after this one, including Winter and Summer sessions. */
+export function nextTerm(term: TermId): TermId {
+  const { season, year } = parseTerm(term);
+  const next: Record<Season, [Season, number]> = {
+    Winter: ["Spring", year],
+    Spring: ["Summer", year],
+    Summer: ["Fall", year],
+    Fall: ["Winter", year + 1],
+  };
+  return makeTerm(...next[season]);
+}
