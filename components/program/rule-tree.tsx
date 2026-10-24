@@ -320,8 +320,10 @@ function describeConstraint(k: ChooseConstraint, ctx: RuleContext): string {
         .join(" or ");
       return `At most ${limit} from ${describePool(k.from, ctx)}.`;
     }
-    case "minFrom":
-      return `At least ${k.minCourses} from ${describePool(k.from, ctx)}.`;
+    case "minFrom": {
+      const also = k.countUsedBy?.length ? `, counting courses used for ${[...new Set(k.countUsedBy.map((id) => ctx.refs[id] ?? id))].join(", ")}` : "";
+      return `At least ${k.minCourses} from ${describePool(k.from, ctx)}${also}.`;
+    }
     case "onePerGroup":
       return `No more than one of each: ${k.groups.map((g) => g.join(" / ")).join("; ")}.`;
     case "notEquivalentTo":
