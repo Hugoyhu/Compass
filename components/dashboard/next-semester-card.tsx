@@ -94,10 +94,11 @@ function PlannedTermCard({ term }: { term: CheckedTerm }) {
         ) : (
           <ul className="space-y-3">
             {term.items.map((item, i) => (
-              <li key={`${item.code ?? "elective"}-${i}`} className="flex items-start justify-between gap-3">
+              <li key={`${item.code ?? item.sbc ?? "elective"}-${i}`} className="flex items-start justify-between gap-3">
                 <div className="min-w-0 space-y-1">
                   <p className={item.code ? "font-medium" : "text-muted-foreground italic"}>
                     {item.code && <span className="font-mono text-xs text-muted-foreground">{item.code} </span>}
+                    {item.sbc && <span className="font-mono text-xs not-italic">SBC {item.sbc} </span>}
                     {item.title}
                   </p>
                   {item.counts.length > 0 && (
