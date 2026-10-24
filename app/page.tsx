@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Suspense } from "react";
-import { CalendarCheck, GraduationCap, Layers, ListChecks } from "lucide-react";
+import { CalendarCheck, GraduationCap, Layers, ListChecks, Star } from "lucide-react";
 import { ProgressMeter } from "@/components/audit/progress-meter";
 import { CurrentTermCard } from "@/components/dashboard/current-term-card";
 import { DegreeProgressCard } from "@/components/dashboard/degree-progress-card";
@@ -31,7 +31,7 @@ async function Dashboard() {
   const record = await getStudentRecord();
   if (!record) return <GetStarted />;
 
-  const { student, audit, programs, major, proposal, graduation, plan, currentCourses } = await getStudentView(record);
+  const { student, audit, programs, major, nextSemester, graduation, plan, currentCourses, gpa } = await getStudentView(record);
   const firstName = student.name.split(" ")[0];
   const outstanding = programs.map((p) => ({
     programId: p.program.id,
@@ -67,7 +67,7 @@ async function Dashboard() {
         <div className="lg:col-span-2">
           <DegreeProgressCard credits={audit.credits} />
         </div>
-        <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
           {major && (
             <StatTile
               icon={ListChecks}
@@ -100,6 +100,12 @@ async function Dashboard() {
             />
           </StatTile>
           <StatTile
+            icon={Star}
+            label="GPA"
+            value={gpa.credits > 0 ? gpa.value.toFixed(2) : "0.0"}
+            detail={gpa.credits > 0 ? `Out of 4.0 · ${gpa.credits} Stony Brook credits` : "No graded Stony Brook courses yet"}
+          />
+          <StatTile
             icon={CalendarCheck}
             label={plan?.graduation ? "Graduation" : "Estimated graduation"}
             value={formatTerm(plan?.graduation ?? graduation.term)}
@@ -118,7 +124,7 @@ async function Dashboard() {
             <OutstandingRequirementsCard groups={outstanding} />
           </div>
           <div className="lg:col-span-2">
-            <NextSemesterCard proposal={proposal} planned={plan?.firstTerm} />
+            <NextSemesterCard schedule={nextSemester} />
           </div>
         </section>
       )}

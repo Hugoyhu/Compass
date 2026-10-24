@@ -1,0 +1,1318 @@
+Worker 8 groups: H, 7
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_08 --letters H,7 --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Fall 2026 --headless
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group H (1/2)…
+  [H] 39 subjects have no active courses.
+  [H] Found 1582 course entries.
+  [H] Skipping 973 courses numbered above 499; 609 left.
+    [H 1/609] Opening HAD 210 — Introduction to Clinical Laboratory Sciences
+      Fall 2026: found 1 class sections.
+    [H 2/609] Opening HAD 304 — Introd to Forensic Science
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 3/609] Opening HAD 310 — Pathology
+      Fall 2026: found 1 class sections.
+    [H 4/609] Opening HAD 313 — Clinical Biochemistry I
+      Fall 2026: found 1 class sections.
+    [H 5/609] Opening HAD 315 — Hematology I
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 6/609] Opening HAD 316 — General Microbiology
+      No View Class Sections button; course has no sections.
+    [H 7/609] Opening HAD 324 — Pathology
+      No View Class Sections button; course has no sections.
+    [H 8/609] Opening HAD 330 — Foundations in Phlebotomy
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 9/609] Opening HAD 331 — Introduction to Biochemistry for CLS
+      Fall 2026: found 1 class sections.
+    [H 10/609] Opening HAD 335 — Medical Ethics in Health Care for CLS
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+  Progress: group 1/2 (H 10/609) · 10 scraped, 0 already done, 0 failed · 8.0 pages/min · 1m14s elapsed · ~1h14m left in H
+    [H 11/609] Opening HAD 340 — Foundations in Clinical Laboratory Sciences
+      Fall 2026: found 1 class sections.
+    [H 12/609] Opening HAD 350 — Systems Physiology
+      No View Class Sections button; course has no sections.
+    [H 13/609] Opening HAD 351 — Research Literacy and Design
+      Fall 2026: found 1 class sections.
+    [H 14/609] Opening HAD 363 — Computer Applications in Clinical Laboratory Sciences
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 15/609] Opening HAD 380 — Clinical and Medical Microbiology I
+      Fall 2026: found 2 class sections.
+    [H 16/609] Opening HAD 381 — Clinical and Medical Microbiology II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 17/609] Opening HAD 390 — Independent Study in Diagnostic Technologies
+      Fall 2026: found 1 class sections.
+    [H 18/609] Opening HAD 397 — Clinical Microbiology Practicum
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 19/609] Opening HAD 398 — Clinical Hematology I Practicum
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 20/609] Opening HAD 399 — Clinical Continuation
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+  Progress: group 1/2 (H 20/609) · 20 scraped, 0 already done, 0 failed · 10.5 pages/min · 1m53s elapsed · ~55m53s left in H
+    [H 21/609] Opening HAD 403 — Medical Molecular Biology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 22/609] Opening HAD 411 — Clinical Biochemistry II
+      Fall 2026: found 1 class sections.
+    [H 23/609] Opening HAD 412 — Clinical Biochemistry III
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 24/609] Opening HAD 414 — Coagulation, Urinalysis and Body Fluids
+      Fall 2026: found 3 class sections.
+    [H 25/609] Opening HAD 415 — Applied Immunology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 26/609] Opening HAD 416 — Immunohematology
+      Fall 2026: found 3 class sections.
+    [H 27/609] Opening HAD 425 — Parasitology/Mycology
+      Fall 2026: found 2 class sections.
+    [H 28/609] Opening HAD 432 — Pharmacology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 29/609] Opening HAD 440 — Forensic Sciences Clinical
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 30/609] Opening HAD 445 — Selected Topics in Toxicology
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 30/609) · 30 scraped, 0 already done, 0 failed · 12.0 pages/min · 2m30s elapsed · ~48m26s left in H
+    [H 31/609] Opening HAD 460 — Clinical Laboratory Quality Management
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 32/609] Opening HAD 468 — Laboratory Information Systems Internship
+      No View Class Sections button; course has no sections.
+    [H 33/609] Opening HAD 490 — Independent Study/ Clinical Laboratory Sciences
+      Fall 2026: found 1 class sections.
+    [H 34/609] Opening HAD 492 — Research Tutorial
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 35/609] Opening HAD 493 — Advanced Seminar in Clinical Laboratory Sciences
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 36/609] Opening HAD 494 — Clinical Chemistry Practicum
+      Fall 2026: found 1 class sections.
+    [H 37/609] Opening HAD 496 — Histocompatibility Practicum
+      No View Class Sections button; course has no sections.
+    [H 38/609] Opening HAD 497 — Immunohematology Practicum
+      Fall 2026: found 1 class sections.
+    [H 39/609] Opening HAD 498 — Coagulation and Urinalysis Practicum
+      Fall 2026: found 1 class sections.
+    [H 40/609] Opening HAL 205 — Introduction to Athletic Training
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (H 40/609) · 40 scraped, 0 already done, 0 failed · 11.8 pages/min · 3m23s elapsed · ~48m11s left in H
+    [H 41/609] Opening HAL 376 — Introduction to Nutrition
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026, Winter 2027
+    [H 42/609] Opening HAN 200 — Human Anatomy and Physiology for Health Science I
+      Fall 2026: found 4 class sections.
+    [H 43/609] Opening HAN 202 — Human Anatomy and Physiology for Health Science II
+      Fall 2026: found 4 class sections.
+    [H 44/609] Opening HAN 251 — Research Methods in Health Science
+      Fall 2026: found 1 class sections.
+    [H 45/609] Opening HAN 300 — Health Care Issues
+      Fall 2026: found 7 class sections.
+    [H 46/609] Opening HAN 311 — Kinesiology
+      Fall 2026: found 2 class sections.
+    [H 47/609] Opening HAN 312 — Human Anatomy, Health and Medical Language
+      Fall 2026: found 2 class sections.
+    [H 48/609] Opening HAN 333 — Communication Skills
+      Fall 2026: found 7 class sections.
+    [H 49/609] Opening HAN 335 — Professional Ethics
+      Fall 2026: found 7 class sections.
+    [H 50/609] Opening HAN 364 — Issues in Health Care Informatics
+      Fall 2026: found 7 class sections.
+  Progress: group 1/2 (H 50/609) · 50 scraped, 0 already done, 0 failed · 11.3 pages/min · 4m26s elapsed · ~49m34s left in H
+    Pausing 5s after 50 detail pages…
+    [H 51/609] Opening HAN 383 — Scholarly Writing in Health Science
+      Fall 2026: found 14 class sections.
+    [H 52/609] Opening HAN 395 — Radiation Physics in Medicine
+      Fall 2026: found 1 class sections.
+    [H 53/609] Opening HAN 401 — Radiobiology and Health Physics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 54/609] Opening HAN 402 — Radiographic Anatomy and Pathology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 55/609] Opening HAN 404 — Radiology Instrumentation
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 56/609] Opening HAN 405 — Radiographic Technique
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 57/609] Opening HAN 406 — Radiologic Procedures and Positioning I
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 58/609] Opening HAN 416 — Special Issues in Emergency Care and Resuscitation
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 59/609] Opening HAN 417 — Cardiac Emergencies
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 60/609] Opening HAN 424 — Pathophysiology for Healthcare Professionals
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 60/609) · 60 scraped, 0 already done, 0 failed · 11.7 pages/min · 5m08s elapsed · ~47m06s left in H
+    [H 61/609] Opening HAN 432 — Introduction to Health Care Management
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 62/609] Opening HAN 433 — Statistics for Healthcare Management
+      No View Class Sections button; course has no sections.
+    [H 63/609] Opening HAN 434 — Corporate Compliance and Regulation
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 64/609] Opening HAN 435 — Sales and Marketing in Health Care
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 65/609] Opening HAN 436 — Continuous Quality Improvement in Health Care
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 66/609] Opening HAN 440 — Introduction to Community Health Education
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 67/609] Opening HAN 441 — Internship in Health Science
+      Fall 2026: found 1 class sections.
+    [H 68/609] Opening HAN 443 — Aging and Disability
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 69/609] Opening HAN 444 — Disability and Popular Culture
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 70/609] Opening HAN 446 — Disability Health and Community
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (H 70/609) · 70 scraped, 0 already done, 0 failed · 12.2 pages/min · 5m43s elapsed · ~44m06s left in H
+    [H 71/609] Opening HAN 447 — Children with Disability
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 72/609] Opening HAN 448 — Disability and Employment
+      No View Class Sections button; course has no sections.
+    [H 73/609] Opening HAN 449 — Project in Disability Studies
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 74/609] Opening HAN 450 — Introduction to Public Health
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 75/609] Opening HAN 452 — Epidemiology and Biostatistics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 76/609] Opening HAN 455 — Health Literacy for Public Health
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 77/609] Opening HAN 456 — Behavioral and Social Aspects of Health
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 78/609] Opening HAN 457 — First Aid and Injury Care
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 79/609] Opening HAN 458 — Strength and Conditioning for Hlthcare Pract
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 80/609] Opening HAN 459 — Introduction to Sports Medicine
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (H 80/609) · 80 scraped, 0 already done, 0 failed · 12.7 pages/min · 6m17s elapsed · ~41m38s left in H
+    [H 81/609] Opening HAN 461 — Introduction to Nutrition
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 82/609] Opening HAN 462 — Developing Health Information Systems
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 83/609] Opening HAN 464 — Health Information Systems Management
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 84/609] Opening HAN 466 — Applied Health Care Informatics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 85/609] Opening HAN 467 — Utilization and Outcomes Research Methods
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 86/609] Opening HAN 470 — Occupational Health and Safety Engineering
+      No View Class Sections button; course has no sections.
+    [H 87/609] Opening HAN 471 — Trauma and Trauma Systems
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 88/609] Opening HAN 472 — Emergency Response to Hazardous Materials and Terrorism
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 89/609] Opening HAN 474 — Industrial Hygiene
+      No View Class Sections button; course has no sections.
+    [H 90/609] Opening HAN 475 — Fundamentals of Environmental Health
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 90/609) · 90 scraped, 0 already done, 0 failed · 13.1 pages/min · 6m52s elapsed · ~39m37s left in H
+    [H 91/609] Opening HAN 476 — Hazardous Materials, Emergency Response and Environmental Auditing
+      No View Class Sections button; course has no sections.
+    [H 92/609] Opening HAN 477 — Medical Emergencies
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 93/609] Opening HAN 478 — Internship in Environmental Health
+      No View Class Sections button; course has no sections.
+    [H 94/609] Opening HAN 481 — Introduction to Anesthesia
+      No View Class Sections button; course has no sections.
+    [H 95/609] Opening HAN 482 — Introduction to Pathology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 96/609] Opening HAN 483 — Cardiopulmonary Physiology for Anesthesia Technology
+      No View Class Sections button; course has no sections.
+    [H 97/609] Opening HAN 485 — Clinical Monitoring
+      No View Class Sections button; course has no sections.
+    [H 98/609] Opening HAN 486 — Principles and Practice of Radiation Therapy
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 99/609] Opening HAN 487 — Introduction to Treatment Planning
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 100/609] Opening HAN 489 — Pharmacology for Anesthesia Technology
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 100/609) · 100 scraped, 0 already done, 0 failed · 13.5 pages/min · 7m24s elapsed · ~37m41s left in H
+    Pausing 5s after 100 detail pages…
+    [H 101/609] Opening HAN 492 — Radiation Oncology/Medical Physics II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 102/609] Opening HAN 497 — Healthcare in Tanzania: A cultural exchange
+      No View Class Sections button; course has no sections.
+    [H 103/609] Opening HAN 498 — International Seminar
+      No View Class Sections button; course has no sections.
+    [H 104/609] Opening HAN 499 — Health Science Teaching Practicum
+      Fall 2026: found 5 class sections.
+    [H 105/609] Opening HAO 313 — Introduction to Occupational Therapy
+      Fall 2026: found 1 class sections.
+    [H 106/609] Opening HAS 190 — Introduction to the Health Professions
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 107/609] Opening HAS 300 — Issues in Health Care
+      No View Class Sections button; course has no sections.
+    [H 108/609] Opening HAS 310 — Applied Phonetics of English
+      No View Class Sections button; course has no sections.
+    [H 109/609] Opening HAS 311 — Speech and Language Development
+      No View Class Sections button; course has no sections.
+    [H 110/609] Opening HAS 312 — Anatomy and Physiology of the Speech, Language, and Hearing Mechanism
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 110/609) · 110 scraped, 0 already done, 0 failed · 13.5 pages/min · 8m08s elapsed · ~36m56s left in H
+    [H 111/609] Opening HAS 313 — Speech Science
+      No View Class Sections button; course has no sections.
+    [H 112/609] Opening HAS 314 — Guided Observations in Speech-Language Pathology
+      No View Class Sections button; course has no sections.
+    [H 113/609] Opening HAS 332 — Management Concepts for Health Professionals
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 114/609] Opening HAS 335 — Medical Ethics
+      No View Class Sections button; course has no sections.
+    [H 115/609] Opening HAS 350 — Introduction to Statistics
+      No View Class Sections button; course has no sections.
+    [H 116/609] Opening HAS 351 — Research Literacy/Research Design
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 117/609] Opening HAS 355 — Integrative Systems Physiology
+      Fall 2026: found 1 class sections.
+    [H 118/609] Opening HAS 360 — Beyond Limitations: Introduction to Adaptive Sports
+      No View Class Sections button; course has no sections.
+    [H 119/609] Opening HAS 363 — Computer Literacy for Health Professionals
+      No View Class Sections button; course has no sections.
+    [H 120/609] Opening HAS 391 — Readings in Health
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+  Progress: group 1/2 (H 120/609) · 120 scraped, 0 already done, 0 failed · 13.8 pages/min · 8m41s elapsed · ~35m23s left in H
+    [H 121/609] Opening HAS 399 — Independent Study in Health
+      Fall 2026: found 1 class sections.
+    [H 122/609] Opening HAS 490 — Research Tutorial
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 123/609] Opening HAT 210 — Introduction to Respiratory Care
+      Fall 2026: found 1 class sections.
+    [H 124/609] Opening HAT 304 — Cardiopulmonary Physiology
+      Fall 2026: found 1 class sections.
+    [H 125/609] Opening HAT 306 — Patient Evaluation
+      No View Class Sections button; course has no sections.
+    [H 126/609] Opening HAT 315 — Pharmacology
+      No View Class Sections button; course has no sections.
+    [H 127/609] Opening HAT 320 — Cardiovascular Diagnosis and Treatment I
+      No View Class Sections button; course has no sections.
+    [H 128/609] Opening HAT 330 — Cardiopulmonary Pathology
+      Fall 2026: found 1 class sections.
+    [H 129/609] Opening HAT 331 — Respiratory Care Principles, Therapies, and Applications
+      Fall 2026: found 3 class sections.
+    [H 130/609] Opening HAT 332 — Respiratory Care Assessment and Intervention
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (H 130/609) · 130 scraped, 0 already done, 0 failed · 13.9 pages/min · 9m23s elapsed · ~34m34s left in H
+    [H 131/609] Opening HAT 333 — Pulmonary Diagnostic Testing and Rehabilitation
+      Fall 2026: found 3 class sections.
+    [H 132/609] Opening HAT 335 — Medical Ethics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 133/609] Opening HAT 350 — Basic Respiratory Care Clinical
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 134/609] Opening HAT 353 — Pulmonary Diagnostic Clinical
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 135/609] Opening HAT (410) — Teaching and Leadership in Healthcare ** available as of 05/20/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 136/609] Opening HAT 410 — Introduction to Clinical Education
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 137/609] Opening HAT 411 — Clinical Teaching in Respiratory Care
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 138/609] Opening HAT (415) — Innovative Critical Care Techniques in Respiratory Care ** available as of 05/20/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 139/609] Opening HAT 415 — Respiratory Care Techniques IV
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 140/609] Opening HAT 420 — Cardiovascular Diagnosis and Treatment II
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (H 140/609) · 140 scraped, 0 already done, 0 failed · 14.0 pages/min · 10m01s elapsed · ~33m35s left in H
+    [H 141/609] Opening HAT (431) — Adult Mechanical Ventilation ** available as of 05/20/2027
+      Fall 2026: found 3 class sections.
+    [H 142/609] Opening HAT 431 — Respiratory Care Techniques III
+      Fall 2026: found 3 class sections.
+    [H 143/609] Opening HAT (432) — Neonatal & Pediatric Clinical Management ** available as of 05/20/2027
+      Fall 2026: found 3 class sections.
+    [H 144/609] Opening HAT 432 — Perinatal Respiratory Care
+      Fall 2026: found 3 class sections.
+    [H 145/609] Opening HAT 450 — Critical Care Clinical
+      Fall 2026: found 1 class sections.
+    [H 146/609] Opening HAT (451) — Neonatal/Pediatric Clinical ** available as of 05/20/2027
+      Fall 2026: found 1 class sections.
+    [H 147/609] Opening HAT 451 — Perinatal Care Clinical
+      Fall 2026: found 1 class sections.
+    [H 148/609] Opening HAT (470) — Sleep Diagnostics and Therapeutics ** available as of 05/20/2027
+      Fall 2026: found 3 class sections.
+    [H 149/609] Opening HAT 470 — Polysomnographic Technology I
+      Fall 2026: found 3 class sections.
+    [H 150/609] Opening HAT 471 — Polysomnographic Technology II
+      Fall 2026: found 2 class sections.
+  Progress: group 1/2 (H 150/609) · 150 scraped, 0 already done, 0 failed · 14.0 pages/min · 10m42s elapsed · ~32m45s left in H
+    Pausing 5s after 150 detail pages…
+    [H 151/609] Opening HAT (475) — Sleep Diagnostics and Therapeutics Clinical ** available as of 05/20/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 152/609] Opening HAT 475 — Polysomnographic Technology I Clinical
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 153/609] Opening HAT 476 — Polysomnographic Technology II Clinical
+      Fall 2026: found 1 class sections.
+    [H 154/609] Opening HAT 482 — Physiologic Monitoring Clinical
+      Fall 2026: found 1 class sections.
+    [H 155/609] Opening HAT 487 — Cardiopulmonary Rehabilitation Clinical
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 156/609] Opening HAT 490 — Independent Study
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 157/609] Opening HAT 494 — Respiratory Care Board Review
+      No View Class Sections button; course has no sections.
+    [H 158/609] Opening HAT 499 — Clinical Continuation
+      Fall 2026: found 2 class sections.
+    [H 159/609] Opening HAY 313 — Introduction to Physical Therapy
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 160/609] Opening HBA 325 — Anatomical/Bio Illustration
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+  Progress: group 1/2 (H 160/609) · 160 scraped, 0 already done, 0 failed · 13.9 pages/min · 11m30s elapsed · ~32m18s left in H
+    [H 161/609] Opening HBA 398 — Research Project in Anatomical Sciences
+      Fall 2026: found 1 class sections.
+    [H 162/609] Opening HBA 399 — Research Project in Anatomical Sciences
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 163/609] Opening HBA 461 — Regional Human Anatomy for Respiratory Therapists
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 164/609] Opening HBC 331 — Introductory Biochemistry
+      No View Class Sections button; course has no sections.
+    [H 165/609] Opening HBH 330 — Fundamentals of Pharmacology I
+      No View Class Sections button; course has no sections.
+    [H 166/609] Opening HBH 331 — Fundamentals of Pharmacology II
+      No View Class Sections button; course has no sections.
+    [H 167/609] Opening HBH 333 — Principles of Pharmacology
+      No View Class Sections button; course has no sections.
+    [H 168/609] Opening HBH 396 — Research Project in Pharmacology
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 169/609] Opening HBH 398 — Research Project in Pharmacology
+      Fall 2026: found 1 class sections.
+    [H 170/609] Opening HBH 399 — Research Project in Pharmacology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (H 170/609) · 170 scraped, 0 already done, 0 failed · 14.1 pages/min · 12m05s elapsed · ~31m14s left in H
+    [H 171/609] Opening HBI 398 — Research Projects in Biomedical Sciences
+      No View Class Sections button; course has no sections.
+    [H 172/609] Opening HBM 320 — General Microbiology
+      No View Class Sections button; course has no sections.
+    [H 173/609] Opening HBM 321 — General Microbiology Laboratory
+      No View Class Sections button; course has no sections.
+    [H 174/609] Opening HBM 398 — Research Project in Microbiology
+      Fall 2026: found 1 class sections.
+    [H 175/609] Opening HBM 399 — Research Project in Microbiology
+      No View Class Sections button; course has no sections.
+    [H 176/609] Opening HBP 393 — Special Topics from Pathology Literature
+      Fall 2026: found 1 class sections.
+    [H 177/609] Opening HBP 394 — Special Topics from Pathology Literature
+      No View Class Sections button; course has no sections.
+    [H 178/609] Opening HBP 398 — Research Project in Pathology
+      Fall 2026: found 1 class sections.
+    [H 179/609] Opening HBP 399 — Research Project in Pathology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 180/609] Opening HBW 101 — Intensive Elementary Hebrew
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 180/609) · 180 scraped, 0 already done, 0 failed · 14.2 pages/min · 12m41s elapsed · ~30m15s left in H
+    [H 181/609] Opening HBW 111 — Elementary Hebrew I
+      No View Class Sections button; course has no sections.
+    [H 182/609] Opening HBW 112 — Elementary Hebrew II
+      No View Class Sections button; course has no sections.
+    [H 183/609] Opening HBW 211 — Intermediate Hebrew I
+      No View Class Sections button; course has no sections.
+    [H 184/609] Opening HBW 212 — Intermediate Hebrew II
+      No View Class Sections button; course has no sections.
+    [H 185/609] Opening HBW 311 — Advanced Hebrew I
+      No View Class Sections button; course has no sections.
+    [H 186/609] Opening HBW 312 — Advanced Hebrew II
+      No View Class Sections button; course has no sections.
+    [H 187/609] Opening HBW 405 — Studies in Hebrew Literature
+      No View Class Sections button; course has no sections.
+    [H 188/609] Opening HBW 415 — The History of the Hebrew Language
+      No View Class Sections button; course has no sections.
+    [H 189/609] Opening HBW 447 — Directed Readings in Hebrew
+      No View Class Sections button; course has no sections.
+    [H 190/609] Opening HBW 475 — Undergraduate Teaching Practicum I
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 190/609) · 190 scraped, 0 already done, 0 failed · 14.4 pages/min · 13m10s elapsed · ~29m02s left in H
+    [H 191/609] Opening HBW 476 — Undergraduate Teaching Practicum II
+      No View Class Sections button; course has no sections.
+    [H 192/609] Opening HBY 350 — Physiology
+      No View Class Sections button; course has no sections.
+    [H 193/609] Opening HBY 390 — Topics in Physiology
+      No View Class Sections button; course has no sections.
+    [H 194/609] Opening HBY 393 — Special Topics from Physiology and Biophysics Literature
+      Fall 2026: found 1 class sections.
+    [H 195/609] Opening HBY 394 — Special Topics from Physiology and Biophysics Literature
+      No View Class Sections button; course has no sections.
+    [H 196/609] Opening HBY 398 — Research Project in Physiology and Biophysics
+      Fall 2026: found 2 class sections.
+    [H 197/609] Opening HBY 399 — Research Project in Physiology and Biophysics
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 198/609] Opening HD 495 — Research Fellowship for Entering Dental Students
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 199/609] Opening HDG 299 — Introduction to Research in General Dentistry
+      Fall 2026: found 5 class sections.
+    [H 200/609] Opening HDG 399 — Supervised Research in General Dentistry
+      Fall 2026: found 4 class sections.
+  Progress: group 1/2 (H 200/609) · 200 scraped, 0 already done, 0 failed · 14.3 pages/min · 13m59s elapsed · ~28m36s left in H
+    Pausing 5s after 200 detail pages…
+    [H 201/609] Opening HDG 499 — Independent Research in General Dentistry
+      Fall 2026: found 4 class sections.
+    [H 202/609] Opening HDH 301 — Independent Readings and Research
+      No View Class Sections button; course has no sections.
+    [H 203/609] Opening HDO 320 — Research: Oral Biology and Pathology
+      Fall 2026: found 14 class sections.
+    [H 204/609] Opening HDO 321 — Oral Biology Research II
+      Fall 2026: found 14 class sections.
+    [H 205/609] Opening HDO 322 — Summer Research: Oral Biology Pathology
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 206/609] Opening HDO 420 — Oral Biology Research III
+      Fall 2026: found 14 class sections.
+    [H 207/609] Opening HDO 421 — Oral Biology Research IV
+      Fall 2026: found 14 class sections.
+    [H 208/609] Opening HDO 422 — Summer Research Oral Biology and Pathology
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 209/609] Opening HDP 320 — Introduction to Periodontal Research
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 210/609] Opening HDP 321 — Introduction to Periodontal Research
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 210/609) · 210 scraped, 0 already done, 0 failed · 14.2 pages/min · 14m46s elapsed · ~28m05s left in H
+    [H 211/609] Opening HDP 322 — Introduction to Periodontal Research
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 212/609] Opening HDP 420 — Research in the Biology and Pathology of Periodontium
+      Fall 2026: found 1 class sections.
+    [H 213/609] Opening HDP 421 — Research in the Biology and Pathology of Periodontium
+      No View Class Sections button; course has no sections.
+    [H 214/609] Opening HDP 422 — Research in the Biology and Pathology of Periodontium
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 215/609] Opening HIN 111 — Elementary Hindi I
+      Fall 2026: found 1 class sections.
+    [H 216/609] Opening HIN 112 — Elementary Hindi II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 217/609] Opening HIN 211 — Intermediate Hindi I
+      Fall 2026: found 1 class sections.
+    [H 218/609] Opening HIN 212 — Intermediate Hindi II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 219/609] Opening HIN 311 — Hindi Conversation and Composition I
+      No View Class Sections button; course has no sections.
+    [H 220/609] Opening HIN 312 — Hindi Conversation and Composition II
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 220/609) · 220 scraped, 0 already done, 0 failed · 14.3 pages/min · 15m22s elapsed · ~27m10s left in H
+    [H 221/609] Opening HIS 100 — The Ancient World
+      No View Class Sections button; course has no sections.
+    [H 222/609] Opening HIS 101 — Ancient Mesopotamia to Early Modern Europe
+      Fall 2026: found 5 class sections.
+    [H 223/609] Opening HIS 102 — Modern European History, 18th c. to the Present
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 224/609] Opening HIS 103 — American History to 1877
+      Fall 2026: found 15 class sections.
+    [H 225/609] Opening HIS 104 — United States Since 1877
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 226/609] Opening HIS 113 — America in the Atlantic World
+      No View Class Sections button; course has no sections.
+    [H 227/609] Opening HIS 116 — Women as a Force in US History
+      No View Class Sections button; course has no sections.
+    [H 228/609] Opening HIS 201 — The Ancient Near East
+      No View Class Sections button; course has no sections.
+    [H 229/609] Opening HIS 202 — Ancient Greece
+      No View Class Sections button; course has no sections.
+    [H 230/609] Opening HIS 203 — Ancient Rome
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 230/609) · 230 scraped, 0 already done, 0 failed · 14.2 pages/min · 16m08s elapsed · ~26m35s left in H
+    [H 231/609] Opening HIS 206 — Europe in the Age of Discovery, 1348-1789
+      No View Class Sections button; course has no sections.
+    [H 232/609] Opening HIS (209) — Early and Imperial Russian History ** available as of 01/01/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 233/609] Opening HIS 210 — Soviet Russia
+      Fall 2026: found 1 class sections.
+    [H 234/609] Opening HIS 212 — Ancient History of Mesoamerica
+      No View Class Sections button; course has no sections.
+    [H 235/609] Opening HIS 213 — Colonial Latin America
+      No View Class Sections button; course has no sections.
+    [H 236/609] Opening HIS 214 — Modern Latin America
+      Fall 2026: found 1 class sections.
+    [H 237/609] Opening HIS 215 — Long Island History
+      No View Class Sections button; course has no sections.
+    [H 238/609] Opening HIS 216 — History of U.S.-Latin American Relations
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 239/609] Opening HIS 218 — Ancient, Medieval, & Early Modern South Asia
+      No View Class Sections button; course has no sections.
+    [H 240/609] Opening HIS 219 — Introduction to Chinese History and Civilization
+      Fall 2026: found 3 class sections.
+  Progress: group 1/2 (H 240/609) · 240 scraped, 0 already done, 0 failed · 14.2 pages/min · 16m55s elapsed · ~26m01s left in H
+    [H 241/609] Opening HIS 220 — Japan in the Age of Courtier and Samurai
+      Fall 2026: found 1 class sections.
+    [H 242/609] Opening HIS 221 — Introduction to Modern African History
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 243/609] Opening HIS 223 — Regional History of Africa
+      Fall 2026: found 1 class sections.
+    [H 244/609] Opening HIS 225 — Jewish History from Antiquity to the Middle Ages
+      No View Class Sections button; course has no sections.
+    [H 245/609] Opening HIS 226 — Modern Jewish History: Dilemmas of Difference
+      No View Class Sections button; course has no sections.
+    [H 246/609] Opening HIS 227 — Islamic Civilization & Muslim Societies
+      No View Class Sections button; course has no sections.
+    [H 247/609] Opening HIS 229 — Victorian Britain
+      No View Class Sections button; course has no sections.
+    [H 248/609] Opening HIS 230 — Britain since 1688: Four Nations in the World
+      No View Class Sections button; course has no sections.
+    [H 249/609] Opening HIS 235 — The Heirs of Rome: The Early Medieval World, 300-1000
+      Fall 2026: found 1 class sections.
+    [H 250/609] Opening HIS 236 — The World of the Later Middle Ages, 1000-1500
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (H 250/609) · 250 scraped, 0 already done, 0 failed · 14.3 pages/min · 17m32s elapsed · ~25m10s left in H
+    Pausing 5s after 250 detail pages…
+    [H 251/609] Opening HIS 237 — Science, Technology, and Medicine in Western Civilization I
+      Fall 2026: found 2 class sections.
+    [H 252/609] Opening HIS 238 — Science, Technology, and Medicine in Western Civilization II
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Winter 2027
+    [H 253/609] Opening HIS 239 — From Columbus to Darwin: Investigating Nature, Medicine, and Science in the Americas
+      No View Class Sections button; course has no sections.
+    [H 254/609] Opening HIS 241 — Nazi Genocide and the Holocaust
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 255/609] Opening HIS 247 — Modern Korea through Visual Culture
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 256/609] Opening HIS 248 — Modern Europe, 1815-1914
+      No View Class Sections button; course has no sections.
+    [H 257/609] Opening HIS 249 — Modern Europe, 1914-1945
+      No View Class Sections button; course has no sections.
+    [H 258/609] Opening HIS 250 — The Second World War, 1939-1945
+      No View Class Sections button; course has no sections.
+    [H 259/609] Opening HIS 251 — Europe Since 1945
+      No View Class Sections button; course has no sections.
+    [H 260/609] Opening HIS 256 — Tacos to Telenovelas: Latin American Popular Culture
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 260/609) · 260 scraped, 0 already done, 0 failed · 14.3 pages/min · 18m11s elapsed · ~24m24s left in H
+    [H 261/609] Opening HIS 261 — Change and Reform in the United States, 1877-1919
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 262/609] Opening HIS 262 — American Colonial Society
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 263/609] Opening HIS 263 — Age of the American Revolution
+      Fall 2026: found 2 class sections.
+    [H 264/609] Opening HIS 264 — The Early Republic
+      Fall 2026: found 1 class sections.
+    [H 265/609] Opening HIS 265 — Civil War and Reconstruction
+      No View Class Sections button; course has no sections.
+    [H 266/609] Opening HIS 266 — History of the United States West
+      No View Class Sections button; course has no sections.
+    [H 267/609] Opening HIS 273 — U.S. History, 1900-1945
+      No View Class Sections button; course has no sections.
+    [H 268/609] Opening HIS 274 — U.S. History, 1945-2000
+      No View Class Sections button; course has no sections.
+    [H 269/609] Opening HIS 277 — The Modern Color Line
+      Fall 2026: found 1 class sections.
+    [H 270/609] Opening HIS 280 — The History of the U.S. Working Class
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 270/609) · 270 scraped, 0 already done, 0 failed · 14.4 pages/min · 18m45s elapsed · ~23m32s left in H
+    [H 271/609] Opening HIS 281 — Global History and Geography
+      No View Class Sections button; course has no sections.
+    [H 272/609] Opening HIS 282 — African American History Since 1877
+      No View Class Sections button; course has no sections.
+    [H 273/609] Opening HIS 283 — The History of Latinos in the United States
+      No View Class Sections button; course has no sections.
+    [H 274/609] Opening HIS 285 — Games, Burlesques, and Spectacles: Popular Culture in 19th-Century America
+      No View Class Sections button; course has no sections.
+    [H 275/609] Opening HIS 286 — The Global History of Human Health
+      No View Class Sections button; course has no sections.
+    [H 276/609] Opening HIS 287 — Crime and Criminal Justice in the U.S.
+      No View Class Sections button; course has no sections.
+    [H 277/609] Opening HIS 288 — Wealth and Inequality in Early America
+      No View Class Sections button; course has no sections.
+    [H 278/609] Opening HIS 289 — Wealth and Inequality in America's Corporate Age
+      Fall 2026: found 1 class sections.
+    [H 279/609] Opening HIS 293 — Disease in American History
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 280/609] Opening HIS 295 — History of North American Cities and Suburbs
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 280/609) · 280 scraped, 0 already done, 0 failed · 14.5 pages/min · 19m15s elapsed · ~22m37s left in H
+    [H 281/609] Opening HIS 300 — Topics in Global History
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 282/609] Opening HIS 301 — Reading and Writing History
+      Fall 2026: found 3 class sections.
+    [H 283/609] Opening HIS 302 — Environmental History in Global Perspective
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 284/609] Opening HIS 303 — The Crusades and Medieval Society
+      Fall 2026: found 1 class sections.
+    [H 285/609] Opening HIS 304 — Religion, Magic and Witchcraft in Early Modern Europe
+      No View Class Sections button; course has no sections.
+    [H 286/609] Opening HIS 307 — Silk Roads and Spice Routes: Travel, Exploration and Discovery in the Premodern World
+      No View Class Sections button; course has no sections.
+    [H 287/609] Opening HIS 308 — Britain and France in the Age of Revolution
+      No View Class Sections button; course has no sections.
+    [H 288/609] Opening HIS 309 — Victorian Britain and Monsters: A Peculiar History of Empire
+      No View Class Sections button; course has no sections.
+    [H 289/609] Opening HIS 310 — Britain Since 1945: Postcolonial Disruptions
+      Fall 2026: found 1 class sections.
+    [H 290/609] Opening HIS 312 — From Empire to Third Reich: Germany, 1890-1945
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (H 290/609) · 290 scraped, 0 already done, 0 failed · 14.6 pages/min · 19m48s elapsed · ~21m47s left in H
+    [H 291/609] Opening HIS 314 — Indigenous-Settler Relations in the United States
+      No View Class Sections button; course has no sections.
+    [H 292/609] Opening HIS 315 — Nazi Empire
+      No View Class Sections button; course has no sections.
+    [H 293/609] Opening HIS 318 — Modern European Intellectual History
+      No View Class Sections button; course has no sections.
+    [H 294/609] Opening HIS 320 — Latino New York
+      No View Class Sections button; course has no sections.
+    [H 295/609] Opening HIS 323 — Women of Color in the U.S.
+      No View Class Sections button; course has no sections.
+    [H 296/609] Opening HIS 325 — Civil Rights and Black Power
+      No View Class Sections button; course has no sections.
+    [H 297/609] Opening HIS 327 — The Arts as History
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 298/609] Opening HIS 328 — History of New York City
+      Fall 2026: found 1 class sections.
+    [H 299/609] Opening HIS 329 — Environmental Disasters
+      No View Class Sections button; course has no sections.
+    [H 300/609] Opening HIS 330 — European Intellectual History, 1870-1945
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 300/609) · 300 scraped, 0 already done, 0 failed · 14.8 pages/min · 20m18s elapsed · ~20m54s left in H
+    Pausing 5s after 300 detail pages…
+    [H 301/609] Opening HIS 331 — Immigration in American History
+      No View Class Sections button; course has no sections.
+    [H 302/609] Opening HIS 332 — Postcolonial South Asia
+      No View Class Sections button; course has no sections.
+    [H 303/609] Opening HIS 334 — Women and Gender in Pre-Modern European History
+      No View Class Sections button; course has no sections.
+    [H 304/609] Opening HIS 336 — Women and Gender in Modern European History
+      No View Class Sections button; course has no sections.
+    [H 305/609] Opening HIS 337 — History of Korea
+      Fall 2026: found 1 class sections.
+    [H 306/609] Opening HIS 338 — Asian and Pacific Islanders in American History
+      No View Class Sections button; course has no sections.
+    [H 307/609] Opening HIS 339 — Recent African American History
+      No View Class Sections button; course has no sections.
+    [H 308/609] Opening HIS 340 — Topics in Asian History
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026, Winter 2027
+    [H 309/609] Opening HIS 342 — Cold War Sciences
+      No View Class Sections button; course has no sections.
+    [H 310/609] Opening HIS 344 — Modern Japan
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 310/609) · 310 scraped, 0 already done, 0 failed · 14.8 pages/min · 20m54s elapsed · ~20m10s left in H
+    [H 311/609] Opening HIS 348 — Colonial South Asia
+      No View Class Sections button; course has no sections.
+    [H 312/609] Opening HIS 350 — Topics in African History
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+    [H 313/609] Opening HIS 351 — Revolutionary China: Politics, Culture, and Power
+      No View Class Sections button; course has no sections.
+    [H 314/609] Opening HIS 352 — Environmental History of China
+      Fall 2026: found 1 class sections.
+    [H 315/609] Opening HIS 353 — Postwar Japan
+      No View Class Sections button; course has no sections.
+    [H 316/609] Opening HIS 354 — Environment and Climate Justice: History and Practice
+      No View Class Sections button; course has no sections.
+    [H 317/609] Opening HIS 356 — Zionism, Israel, and the Middle East
+      No View Class Sections button; course has no sections.
+    [H 318/609] Opening HIS 359 — Ideologies of Capitalism
+      No View Class Sections button; course has no sections.
+    [H 319/609] Opening HIS 360 — Changing Families: US History to 1860
+      No View Class Sections button; course has no sections.
+    [H 320/609] Opening HIS 361 — Slavery and Freedom in the Making of the Atlantic
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 320/609) · 320 scraped, 0 already done, 0 failed · 14.9 pages/min · 21m25s elapsed · ~19m21s left in H
+    [H 321/609] Opening HIS 362 — Unsettled Decade: The Sixties
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 322/609] Opening HIS 363 — Topics in American History
+      Fall 2026: found 1 class sections.
+    [H 323/609] Opening HIS 364 — Oceans Past: World History from a Maritime Perspective
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 324/609] Opening HIS 365 — Environmental History of North America
+      No View Class Sections button; course has no sections.
+    [H 325/609] Opening HIS 366 — Carceral Studies: Histories of Policing, Prisons, and Surveillance
+      No View Class Sections button; course has no sections.
+    [H 326/609] Opening HIS 367 — Technologies of Capitalism
+      No View Class Sections button; course has no sections.
+    [H 327/609] Opening HIS 368 — Health and Disease in Africa
+      No View Class Sections button; course has no sections.
+    [H 328/609] Opening HIS 369 — Religion and Politics in Africa
+      No View Class Sections button; course has no sections.
+    [H 329/609] Opening HIS 370 — US Social History from 1860 to 1940
+      Fall 2026: found 4 class sections.
+    [H 330/609] Opening HIS 371 — Law and Society in American History, 1620-1877
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 330/609) · 330 scraped, 0 already done, 0 failed · 15.0 pages/min · 21m57s elapsed · ~18m33s left in H
+    [H 331/609] Opening HIS 373 — Global 1960s
+      No View Class Sections button; course has no sections.
+    [H 332/609] Opening HIS 374 — Surveillance State: A History of U.S. Domestic Spying
+      No View Class Sections button; course has no sections.
+    [H 333/609] Opening HIS 379 — Rebels & Revolutionaries: 1960s Latin America
+      No View Class Sections button; course has no sections.
+    [H 334/609] Opening HIS 380 — Topics in Latin-American History
+      Fall 2026: found 2 class sections.
+    [H 335/609] Opening HIS 381 — Chocolate, Coffee & Cocaine: Global Commodities
+      No View Class Sections button; course has no sections.
+    [H 336/609] Opening HIS 383 — The World of Jane Austen; Jane Austen in the World
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 337/609] Opening HIS 385 — Aztec Civilization
+      No View Class Sections button; course has no sections.
+    [H 338/609] Opening HIS 386 — The Maya
+      No View Class Sections button; course has no sections.
+    [H 339/609] Opening HIS 387 — Cuba: Island of Consequence
+      No View Class Sections button; course has no sections.
+    [H 340/609] Opening HIS 389 — Mexico: From Revolutions to Cartels, 1810-2020
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 340/609) · 340 scraped, 0 already done, 0 failed · 15.1 pages/min · 22m30s elapsed · ~17m48s left in H
+    [H 341/609] Opening HIS 390 — Topics in Ancient History
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 342/609] Opening HIS 391 — Topics in Ancient and Medieval Europe
+      No View Class Sections button; course has no sections.
+    [H 343/609] Opening HIS 392 — Topics in Early Modern Europe
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+    [H 344/609] Opening HIS 393 — Topics in Modern European History
+      Fall 2026: found 2 class sections.
+    [H 345/609] Opening HIS 396 — Topics in U.S. History
+      Fall 2026: found 1 class sections.
+    [H 346/609] Opening HIS 397 — Topics in History of U.S. Immigration and Ethnicity
+      No View Class Sections button; course has no sections.
+    [H 347/609] Opening HIS 398 — Topics in the History of Science, Medicine and Technology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 348/609] Opening HIS 399 — Topics in U.S. History
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+    [H 349/609] Opening HIS 401 — Senior Colloquium
+      Fall 2026: found 3 class sections.
+    [H 350/609] Opening HIS 444 — Experiential Learning
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (H 350/609) · 350 scraped, 0 already done, 0 failed · 15.0 pages/min · 23m17s elapsed · ~17m13s left in H
+    Pausing 5s after 350 detail pages…
+    [H 351/609] Opening HIS 447 — Independent Readings in History
+      Fall 2026: found 5 class sections.
+    [H 352/609] Opening HIS 487 — Supervised Research
+      Fall 2026: found 5 class sections.
+    [H 353/609] Opening HIS 488 — Internship
+      Fall 2026: found 5 class sections.
+    [H 354/609] Opening HIS 495 — Senior Honors Project in History
+      Fall 2026: found 26 class sections.
+    [H 355/609] Opening HIS 496 — Senior Honors Project in History
+      Fall 2026: found 26 class sections.
+    [H 356/609] Opening HMC 331 — Legal and Ethical Issues in Health Care
+      No View Class Sections button; course has no sections.
+    [H 357/609] Opening HMC 361 — Literature and Medicine
+      No View Class Sections button; course has no sections.
+    [H 358/609] Opening HMC 487 — Independent Study
+      No View Class Sections button; course has no sections.
+    [H 359/609] Opening HMF 88 — Continuing Dietetic Internship Program
+      Fall 2026: found 1 class sections.
+    [H 360/609] Opening HMH 401 — INTRO MEDICAL PHYS
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 360/609) · 360 scraped, 0 already done, 0 failed · 14.7 pages/min · 24m27s elapsed · ~16m54s left in H
+    [H 361/609] Opening HMO 401 — RESEARCH IN PERINATA
+      No View Class Sections button; course has no sections.
+    [H 362/609] Opening HMO 402 — RSH PRJ IN OB/GYN
+      No View Class Sections button; course has no sections.
+    [H 363/609] Opening HMO 490 — IND STUDY CYTOGENET
+      No View Class Sections button; course has no sections.
+    [H 364/609] Opening HMO 492 — IND STUDY REP BIO
+      No View Class Sections button; course has no sections.
+    [H 365/609] Opening HMP 425 — INDEP RES NEUROPSYCH
+      No View Class Sections button; course has no sections.
+    [H 366/609] Opening HMP 430 — INDEPENDENT STUDY
+      No View Class Sections button; course has no sections.
+    [H 367/609] Opening HNC 1 — Clinical Practice Portfolio
+      No View Class Sections button; course has no sections.
+    [H 368/609] Opening HNC 2 — RN Bachelor Prog Advanced Placement Credits
+      No View Class Sections button; course has no sections.
+    [H 369/609] Opening HNC 299 — Introduction to Professional Trends in Nursing
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 370/609] Opening HNC 300 — Health Care Informatics
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+  Progress: group 1/2 (H 370/609) · 370 scraped, 0 already done, 0 failed · 14.8 pages/min · 24m56s elapsed · ~16m06s left in H
+    [H 371/609] Opening HNC 304 — Social Justice in Health Care
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+    [H 372/609] Opening HNC 305 — Healing and the Arts
+      No View Class Sections button; course has no sections.
+    [H 373/609] Opening HNC 310 — Pathophysiology
+      Fall 2026: found 1 class sections.
+    [H 374/609] Opening HNC 333 — Fundamentals of Pharmacology
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 375/609] Opening HNC 340 — Novice to Expert
+      No View Class Sections button; course has no sections.
+    [H 376/609] Opening HNC 350 — Professional Role Development in Nursing
+      No View Class Sections button; course has no sections.
+    [H 377/609] Opening HNC 351 — Role Development for Professional Advancement
+      Fall 2026: found 1 class sections.
+    [H 378/609] Opening HNC 360 — Statistical Methods for Health Care Research
+      Fall 2026: found 1 class sections.
+    [H 379/609] Opening HNC 367 — Introduction to Health Care Policy
+      No View Class Sections button; course has no sections.
+    [H 380/609] Opening HNC 369 — Ethical and Legal Issues in Health Care Policy
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 380/609) · 380 scraped, 0 already done, 0 failed · 14.9 pages/min · 25m30s elapsed · ~15m22s left in H
+    [H 381/609] Opening HNC 370 — Health Assessment
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 382/609] Opening HNC 382 — Continuing Course Work
+      No View Class Sections button; course has no sections.
+    [H 383/609] Opening HNC 440 — Nursing Research: Appraising Evidence for Pract
+      Fall 2026: found 1 class sections.
+    [H 384/609] Opening HNC 452 — Preparation for Professional Licensure
+      No View Class Sections button; course has no sections.
+    [H 385/609] Opening HNC 462 — Clinical Immersion in Emergency Nursing
+      No View Class Sections button; course has no sections.
+    [H 386/609] Opening HNC 469 — Population Health Nursing
+      Fall 2026: found 4 class sections.
+    [H 387/609] Opening HNC 470 — Nursing Ldrship Practicum: A Capstone Experience
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 388/609] Opening HNC 471 — Nrsng Ldrshp Practicum: A Cap Exp for BS/MS Stdnts
+      No View Class Sections button; course has no sections.
+    [H 389/609] Opening HNC 479 — Transitioning to Baccalaureate Nursing Practice
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 390/609] Opening HNC 480 — Clinical Immersion in Operative Nursing
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 390/609) · 390 scraped, 0 already done, 0 failed · 15.0 pages/min · 26m00s elapsed · ~14m36s left in H
+    [H 391/609] Opening HNC 481 — Clinical Immersion: Undergraduate
+      No View Class Sections button; course has no sections.
+    [H 392/609] Opening HNC 482 — Directed Studies
+      No View Class Sections button; course has no sections.
+    [H 393/609] Opening HNC 483 — Clinical Immersion in Perioperative Nursing II
+      No View Class Sections button; course has no sections.
+    [H 394/609] Opening HNC 489 — Global Immersion: Undergraduate
+      No View Class Sections button; course has no sections.
+    [H 395/609] Opening HNC 490 — Professional & Ethical Communication in Digital Era
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 396/609] Opening HNC 491 — Patient & Family Centered Care:Partners HealthCare
+      No View Class Sections button; course has no sections.
+    [H 397/609] Opening HNC 492 — Complementary and Alternative Therapies
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 398/609] Opening HNC 493 — End of Life Care of the Adult Patient
+      No View Class Sections button; course has no sections.
+    [H 399/609] Opening HNC 495 — Palliative, Hospice and End of Life Care
+      No View Class Sections button; course has no sections.
+    [H 400/609] Opening HNC 496 — Working Together: Interprofessnl Conversations-Cultural Diversity, Patient Safety, and Quality Care
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 400/609) · 400 scraped, 0 already done, 0 failed · 15.1 pages/min · 26m29s elapsed · ~13m50s left in H
+    Pausing 5s after 400 detail pages…
+    [H 401/609] Opening HNC 497 — Genetics and Genomics
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 402/609] Opening HNC 499 — Epidemiology: Population Based
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 403/609] Opening HNI 1 — Military Medical Skills Experience Portfolio
+      No View Class Sections button; course has no sections.
+    [H 404/609] Opening HNI 290 — Introduction to Nursing
+      Fall 2026: found 1 class sections.
+    [H 405/609] Opening HNI 301 — Mathematics for Health Care
+      Fall 2026: found 1 class sections.
+    [H 406/609] Opening HNI 304 — Social Justice in Health Care
+      Fall 2026: not listed for this course. Available terms: Summer 2026, Winter 2027
+    [H 407/609] Opening HNI 305 — Healing and the Arts
+      Fall 2026: not listed for this course. Available terms: Summer 2026, Winter 2027
+    [H 408/609] Opening HNI 307 — Disability from the Inside Out
+      No View Class Sections button; course has no sections.
+    [H 409/609] Opening HNI 310 — Pathophysiology
+      Fall 2026: found 1 class sections.
+    [H 410/609] Opening HNI 314 — Transitional Leadership: Military Veteran to Nurse
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 410/609) · 410 scraped, 0 already done, 0 failed · 15.0 pages/min · 27m19s elapsed · ~13m15s left in H
+    [H 411/609] Opening HNI 333 — Fundamentals of Pharmacology
+      Fall 2026: found 1 class sections.
+    [H 412/609] Opening HNI 350 — Professional Role Development in Nursing
+      Fall 2026: found 1 class sections.
+    [H 413/609] Opening HNI 367 — Introduction to Health Care Policy
+      No View Class Sections button; course has no sections.
+    [H 414/609] Opening HNI 370 — Health Assessment
+      Fall 2026: found 2 class sections.
+    [H 415/609] Opening HNI 373 — Psychosocial Mental Health Nursing
+      Fall 2026: found 2 class sections.
+    [H 416/609] Opening HNI 376 — Nursing Student Internship
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 417/609] Opening HNI 377 — Principles and Applications of Nursing Interventions I
+      Fall 2026: found 2 class sections.
+    [H 418/609] Opening HNI 378 — Principles and Applications of Nursing Interventions II
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 419/609] Opening HNI 382 — Continuing Course Work
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 420/609] Opening HNI 389 — Cultural Immersion: Undergraduate
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+  Progress: group 1/2 (H 420/609) · 420 scraped, 0 already done, 0 failed · 14.9 pages/min · 28m16s elapsed · ~12m43s left in H
+    [H 421/609] Opening HNI 440 — Nursing Research: Appraising Evidence for Pract
+      Fall 2026: found 2 class sections.
+    [H 422/609] Opening HNI 452 — Preparation for Professional Licensure
+      No View Class Sections button; course has no sections.
+    [H 423/609] Opening HNI 455 — Adult and Gerontological Health Nursing I
+      Fall 2026: found 2 class sections.
+    [H 424/609] Opening HNI 456 — Adult and Gerontological Health Nursing II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 425/609] Opening HNI 463 — Sexual, Reproductive and Perinatal Health
+      Fall 2026: found 2 class sections.
+    [H 426/609] Opening HNI 464 — Child and Adolescent Health Nursing
+      Fall 2026: found 2 class sections.
+    [H 427/609] Opening HNI 469 — Population Health Nursing
+      Fall 2026: found 2 class sections.
+    [H 428/609] Opening HNI 474 — Capstone Nursing Practicum
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 429/609] Opening HNI 479 — Transitioning to Baccalaureate Nursing Practice
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 430/609] Opening HNI 481 — Clinical Immersion: Undergraduate
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (H 430/609) · 430 scraped, 0 already done, 0 failed · 14.9 pages/min · 28m54s elapsed · ~12m01s left in H
+    [H 431/609] Opening HNI 482 — Directed Studies
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Winter 2027
+    [H 432/609] Opening HNI 484 — Clinical Immersion:Psychiatric-Mental Hlth Nursing
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+    [H 433/609] Opening HNI 485 — Clinical Immersion:Critical Care Nursing
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+    [H 434/609] Opening HNI 489 — Global Immersion: Undergraduate
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 435/609] Opening HNI 491 — Patient and Family Centered Care: Partners on Health Care
+      No View Class Sections button; course has no sections.
+    [H 436/609] Opening HNI 492 — Complementary and Alternative Therapies
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 437/609] Opening HNI 493 — End of Life Care of the Adult Patient
+      No View Class Sections button; course has no sections.
+    [H 438/609] Opening HON 101 — Introduction to Honors College and Stony Brook
+      Fall 2026: found 9 class sections.
+    [H 439/609] Opening HON 105 — Exploration of Human Knowledge
+      Fall 2026: found 7 class sections.
+    [H 440/609] Opening HON 106 — Exploration of Human Experience
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (H 440/609) · 440 scraped, 0 already done, 0 failed · 14.9 pages/min · 29m28s elapsed · ~11m19s left in H
+    [H 441/609] Opening HON 110 — Honors Topics
+      Fall 2026: found 1 class sections.
+    [H 442/609] Opening HON 111 — Honors Topics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 443/609] Opening HON 112 — Honors Topics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 444/609] Opening HON 113 — Honors Topics
+      No View Class Sections button; course has no sections.
+    [H 445/609] Opening HON 114 — Honors Topics
+      No View Class Sections button; course has no sections.
+    [H 446/609] Opening HON 115 — Honors Topics
+      No View Class Sections button; course has no sections.
+    [H 447/609] Opening HON 116 — Honors Topics
+      No View Class Sections button; course has no sections.
+    [H 448/609] Opening HON 117 — Honors Topics
+      Fall 2026: found 1 class sections.
+    [H 449/609] Opening HON 118 — Honors Topics
+      No View Class Sections button; course has no sections.
+    [H 450/609] Opening HON 119 — Honors Topics
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 450/609) · 450 scraped, 0 already done, 0 failed · 15.0 pages/min · 30m03s elapsed · ~10m37s left in H
+    Pausing 5s after 450 detail pages…
+    [H 451/609] Opening HON 120 — Honors Topics
+      No View Class Sections button; course has no sections.
+    [H 452/609] Opening HON 200 — Multiple Disciplinary Approaches
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 453/609] Opening HON 201 — The Arts and Society
+      Fall 2026: found 2 class sections.
+    [H 454/609] Opening HON 205 — Ideas Lab I
+      Fall 2026: found 3 class sections.
+    [H 455/609] Opening HON 275 — University Honors Fellows Seminar
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 456/609] Opening HON 276 — University Honors Fellows Practicum
+      No View Class Sections button; course has no sections.
+    [H 457/609] Opening HON 300 — Honors Special Topics
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 458/609] Opening HON 301 — Science, Engineering, Medicine, and Society
+      Fall 2026: found 2 class sections.
+    [H 459/609] Opening HON 305 — Ideas Lab II
+      Fall 2026: found 1 class sections.
+    [H 460/609] Opening HON 310 — Honors Experiences
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 460/609) · 460 scraped, 0 already done, 0 failed · 15.0 pages/min · 30m44s elapsed · ~9m57s left in H
+    [H 461/609] Opening HON 401 — Global Issues
+      Fall 2026: found 2 class sections.
+    [H 462/609] Opening HON 475 — Honors College Teaching Practicum
+      Fall 2026: found 10 class sections.
+    [H 463/609] Opening HON 490 — Social Analysis Capstone
+      Fall 2026: found 1 class sections.
+    [H 464/609] Opening HON 491 — Social Impact Capstone
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 465/609] Opening HON 495 — Honors College Senior Project/Thesis I
+      Fall 2026: found 60 class sections.
+    [H 466/609] Opening HON 496 — Honors College Senior Project/Thesis II
+      Fall 2026: found 20 class sections.
+    [H 467/609] Opening HPH 201 — What is Public Health? A Humanities Approach
+      No View Class Sections button; course has no sections.
+    [H 468/609] Opening HPH (312) — Infectious Diseases and Vaccines ** available as of 01/01/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 469/609] Opening HPH 335 — Population Mental Health in the 21st Century: Climate Change, Trauma, and Disparities
+      No View Class Sections button; course has no sections.
+    [H 470/609] Opening HRJ 204 — Foundations of Human Rights
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (H 470/609) · 470 scraped, 0 already done, 0 failed · 14.8 pages/min · 31m46s elapsed · ~9m23s left in H
+    [H 471/609] Opening HRJ 248 — Global Accountability: Human Rights Law and Governance
+      No View Class Sections button; course has no sections.
+    [H 472/609] Opening HRJ 301 — Human Rights Stewardship: Ethics, Communication, and Advocacy
+      No View Class Sections button; course has no sections.
+    [H 473/609] Opening HRJ 310 — Policy Practice: Politics and Economics of Human Rights
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 474/609] Opening HRJ 480 — Retrospective Seminar in Human Rights & Justice
+      No View Class Sections button; course has no sections.
+    [H 475/609] Opening HTM 39 — Radiologic Technology Program
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 476/609] Opening HTM 49 — Radiation Therapy Program
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 477/609] Opening HTM 59 — Nuclear Medicine Technology Program
+      No View Class Sections button; course has no sections.
+    [H 478/609] Opening HTM 69 — Medical Dosimetry Program
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 479/609] Opening HTM 79 — EMT-Paramedic Program
+      Fall 2026: found 6 class sections.
+    [H 480/609] Opening HTM 98 — Clinical Continuation
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 480/609) · 480 scraped, 0 already done, 0 failed · 14.8 pages/min · 32m19s elapsed · ~8m41s left in H
+    [H 481/609] Opening HTM 99 — Anesthesia Technology Program
+      No View Class Sections button; course has no sections.
+    [H 482/609] Opening HUE 220 — Modern Ukraine
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 483/609] Opening HUE 269 — Topics in Contemporary Slavic Culture
+      No View Class Sections button; course has no sections.
+    [H 484/609] Opening HUE 392 — Topics in Slavic Studies
+      No View Class Sections button; course has no sections.
+    [H 485/609] Opening HUE 487 — Independent Research
+      Fall 2026: found 1 class sections.
+    [H 486/609] Opening HUF 211 — French Cinema
+      Fall 2026: found 2 class sections.
+    [H 487/609] Opening HUF 216 — French Civilization through the Ages
+      No View Class Sections button; course has no sections.
+    [H 488/609] Opening HUF 219 — Modern France
+      No View Class Sections button; course has no sections.
+    [H 489/609] Opening HUF 311 — French Literature
+      Fall 2026: found 1 class sections.
+    [H 490/609] Opening HUF 318 — Pan-African Literature I
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 490/609) · 490 scraped, 0 already done, 0 failed · 14.8 pages/min · 32m59s elapsed · ~8m00s left in H
+    [H 491/609] Opening HUF 319 — Women of the Middle East
+      No View Class Sections button; course has no sections.
+    [H 492/609] Opening HUF 320 — Transnational Issues in the Francophone World
+      Fall 2026: found 1 class sections.
+    [H 493/609] Opening HUF 385 — French Caribbean Literature
+      No View Class Sections button; course has no sections.
+    [H 494/609] Opening HUF 390 — Topics in Francophone Studies
+      Fall 2026: found 1 class sections.
+    [H 495/609] Opening HUF 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 1 class sections.
+    [H 496/609] Opening HUG 221 — German Cinema Since 1945
+      No View Class Sections button; course has no sections.
+    [H 497/609] Opening HUG 229 — Germany Today
+      No View Class Sections button; course has no sections.
+    [H 498/609] Opening HUG 321 — Topics in the Literature of Germany
+      No View Class Sections button; course has no sections.
+    [H 499/609] Opening HUI 216 — Italian Civilization Through the Ages
+      No View Class Sections button; course has no sections.
+    [H 500/609] Opening HUI 231 — Italian Cinema
+      Fall 2026: not listed for this course. Available terms: Summer 2026, Winter 2027
+  Progress: group 1/2 (H 500/609) · 500 scraped, 0 already done, 0 failed · 14.9 pages/min · 33m34s elapsed · ~7m19s left in H
+    Pausing 5s after 500 detail pages…
+    [H 501/609] Opening HUI 234 — Introduction to 20th-Century Drama
+      No View Class Sections button; course has no sections.
+    [H 502/609] Opening HUI 235 — Love and Tragedy in Early Italian Literature
+      No View Class Sections button; course has no sections.
+    [H 503/609] Opening HUI 236 — The Italian-American Scene
+      Fall 2026: found 1 class sections.
+    [H 504/609] Opening HUI 237 — Images of Italian-American Women
+      No View Class Sections button; course has no sections.
+    [H 505/609] Opening HUI 239 — Transnational Italies
+      No View Class Sections button; course has no sections.
+    [H 506/609] Opening HUI 306 — Italian Renaissance Art
+      No View Class Sections button; course has no sections.
+    [H 507/609] Opening HUI 331 — Italian Literature
+      No View Class Sections button; course has no sections.
+    [H 508/609] Opening HUI 333 — The Italian-American Experience in Literature
+      No View Class Sections button; course has no sections.
+    [H 509/609] Opening HUI 336 — Italian Americans and Ethnic Relations
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 510/609] Opening HUI 338 — Images of Italian Americans in Film
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 510/609) · 510 scraped, 0 already done, 0 failed · 14.9 pages/min · 34m10s elapsed · ~6m37s left in H
+    [H 511/609] Opening HUI 358 — Nation and Migration in Transnational Cinema
+      Fall 2026: found 2 class sections.
+    [H 512/609] Opening HUI 390 — Italian-American Studies in the Humanities
+      No View Class Sections button; course has no sections.
+    [H 513/609] Opening HUI 392 — Italian-American Studies in the Social and Behavioral Sciences
+      No View Class Sections button; course has no sections.
+    [H 514/609] Opening HUI 447 — Directed Readings in Italian Studies
+      Fall 2026: found 2 class sections.
+    [H 515/609] Opening HUI 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 3 class sections.
+    [H 516/609] Opening HUI 476 — Undergraduate Teaching Practicum II
+      Fall 2026: found 1 class sections.
+    [H 517/609] Opening HUL 324 — Romance Linguistics
+      No View Class Sections button; course has no sections.
+    [H 518/609] Opening HUR 141 — The Age of Empire
+      Fall 2026: found 1 class sections.
+    [H 519/609] Opening HUR 142 — Culture and Revolution
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 520/609] Opening HUR 231 — Saints and Fools
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (H 520/609) · 520 scraped, 0 already done, 0 failed · 15.0 pages/min · 34m45s elapsed · ~5m56s left in H
+    [H 521/609] Opening HUR 232 — Rebels and Tyrants
+      No View Class Sections button; course has no sections.
+    [H 522/609] Opening HUR 235 — Crime and Punishment in World Literature
+      No View Class Sections button; course has no sections.
+    [H 523/609] Opening HUR 241 — Russian and Post-Soviet Cinema
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 524/609] Opening HUR 249 — Russia Today
+      No View Class Sections button; course has no sections.
+    [H 525/609] Opening HUR 341 — Russian Literature and the West
+      Fall 2026: found 1 class sections.
+    [H 526/609] Opening HUR 393 — Literary Analysis of Russian Texts
+      No View Class Sections button; course has no sections.
+    [H 527/609] Opening HUR 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 1 class sections.
+    [H 528/609] Opening HUR 476 — Undergraduate Teaching Practicum II
+      Fall 2026: found 1 class sections.
+    [H 529/609] Opening HUS 150 — Indigenous Cultures of Latin America
+      Fall 2026: found 1 class sections.
+    [H 530/609] Opening HUS 201 — The Hispanic World through Visual Cultures
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (H 530/609) · 530 scraped, 0 already done, 0 failed · 15.0 pages/min · 35m18s elapsed · ~5m15s left in H
+    [H 531/609] Opening HUS 221 — Disabled Bodies, National Politics
+      No View Class Sections button; course has no sections.
+    [H 532/609] Opening HUS 250 — Caribbean Cultures
+      No View Class Sections button; course has no sections.
+    [H 533/609] Opening HUS 254 — Latin America Today
+      Fall 2026: found 1 class sections.
+    [H 534/609] Opening HUS 255 — Modern Spain
+      No View Class Sections button; course has no sections.
+    [H 535/609] Opening HUS 261 — Latin American Literature in a Global Context
+      No View Class Sections button; course has no sections.
+    [H 536/609] Opening HUS 271 — United States Latino Literature and Culture
+      No View Class Sections button; course has no sections.
+    [H 537/609] Opening HUS 272 — Science, Technology, and the Environment in Latin America
+      No View Class Sections button; course has no sections.
+    [H 538/609] Opening HUS 290 — Latin American Cinema
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 539/609] Opening HUS 475 — Undergraduate Teaching Practicum in Hispanic Cultures
+      Fall 2026: found 1 class sections.
+    [H 540/609] Opening HWC 210 — Exploring Careers in Social Work
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (H 540/609) · 540 scraped, 0 already done, 0 failed · 15.1 pages/min · 35m52s elapsed · ~4m35s left in H
+    [H 541/609] Opening HWC 220 — Introduction to the Social Work Profession
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [H 542/609] Opening HWC 271 — Democracy, Inequality, and Social Change
+      No View Class Sections button; course has no sections.
+    [H 543/609] Opening HWC 300 — Introduction to Social Work Areas of Practice
+      Fall 2026: found 3 class sections.
+    [H 544/609] Opening HWC 304 — Foundations of Human Rights and Social Justice
+      Fall 2026: found 3 class sections.
+    [H 545/609] Opening HWC 305 — Practice Processes in Social Work I
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 546/609] Opening HWC 308 — Human Behavior and the Environment I
+      Fall 2026: found 2 class sections.
+    [H 547/609] Opening HWC 309 — Human Behavior and the Environment II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 548/609] Opening HWC 310 — Policy Practice:Politics&Economics-Human Rights S W
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 549/609] Opening HWC 311 — Social Welfare Policy I
+      Fall 2026: found 2 class sections.
+    [H 550/609] Opening HWC 312 — Social Welfare Policy II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (H 550/609) · 550 scraped, 0 already done, 0 failed · 15.1 pages/min · 36m28s elapsed · ~3m54s left in H
+    Pausing 5s after 550 detail pages…
+    [H 551/609] Opening HWC 317 — Issues in Death and Dying; Loss and Separation
+      No View Class Sections button; course has no sections.
+    [H 552/609] Opening HWC 320 — Aspects of Aging
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 553/609] Opening HWC 321 — Ethnic Sensitive Social Work Practice
+      No View Class Sections button; course has no sections.
+    [H 554/609] Opening HWC (323) — Growing Old in America: The Soc Conditions Policy ** available as of 01/01/2027
+      No View Class Sections button; course has no sections.
+    [H 555/609] Opening HWC 323 — Growing Old in America: The Social Conditions Policy and Practice Implications
+      No View Class Sections button; course has no sections.
+    [H 556/609] Opening HWC (324) — Mdels of Chnge - Trlblzrs/Gd Trblemkrs/Chnge Agnts ** available as of 01/01/2027
+      No View Class Sections button; course has no sections.
+    [H 557/609] Opening HWC 324 — Models of Change - Trailblazers, 'Good' Troublemakers, & Change Agents
+      No View Class Sections button; course has no sections.
+    [H 558/609] Opening HWC 325 — Food Justice I: Advocacy Practice for Food Rights
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+    [H 559/609] Opening HWC 326 — Crisis Intervention: Opportunities for Change
+      No View Class Sections button; course has no sections.
+    [H 560/609] Opening HWC 329 — Resiliency, Wellness and Self-Care
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 560/609) · 560 scraped, 0 already done, 0 failed · 15.1 pages/min · 37m04s elapsed · ~3m14s left in H
+    [H 561/609] Opening HWC 330 — Case Management in Human Services
+      No View Class Sections button; course has no sections.
+    [H 562/609] Opening HWC 339 — Ancestral Health Practices
+      No View Class Sections button; course has no sections.
+    [H 563/609] Opening HWC 340 — Social Issues, Human Rights and Popular Culture
+      No View Class Sections button; course has no sections.
+    [H 564/609] Opening HWC 343 — Working w/ Children of Alcoholics & Sbstnce Abusrs
+      No View Class Sections button; course has no sections.
+    [H 565/609] Opening HWC 344 — Overview of Substance Abuse
+      No View Class Sections button; course has no sections.
+    [H 566/609] Opening HWC 345 — Social Work and Human Rights
+      No View Class Sections button; course has no sections.
+    [H 567/609] Opening HWC 349 — Overview of Social Work with Special Populations
+      No View Class Sections button; course has no sections.
+    [H 568/609] Opening HWC (361) — Anti-Rcist Prct: Undrstndng Whte Frgility/Blck Rge ** available as of 01/01/2027
+      No View Class Sections button; course has no sections.
+    [H 569/609] Opening HWC 361 — Anti-Racist Practice: Understanding White Fragility and Black Rage
+      No View Class Sections button; course has no sections.
+    [H 570/609] Opening HWC 362 — Implications of Child Abuse and Maltreatment
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 570/609) · 570 scraped, 0 already done, 0 failed · 15.2 pages/min · 37m36s elapsed · ~2m34s left in H
+    [H 571/609] Opening HWC 363 — Homelessness, Politics and Public Health
+      No View Class Sections button; course has no sections.
+    [H 572/609] Opening HWC 364 — The Impact of Sexual Assault
+      No View Class Sections button; course has no sections.
+    [H 573/609] Opening HWC 369 — Youth and Violence
+      No View Class Sections button; course has no sections.
+    [H 574/609] Opening HWC 375 — Child Welfare: An Overview
+      No View Class Sections button; course has no sections.
+    [H 575/609] Opening HWC 379 — Special Topics in Social Welfare
+      Fall 2026: found 4 class sections.
+    [H 576/609] Opening HWC 380 — Overview of Family Violence
+      No View Class Sections button; course has no sections.
+    [H 577/609] Opening HWC 390 — HIV / AIDS
+      No View Class Sections button; course has no sections.
+    [H 578/609] Opening HWC 395 — Independent Study
+      Fall 2026: found 3 class sections.
+    [H 579/609] Opening HWC (396A) — Commnity Learning & Prof Preparation Year I Part A ** available as of 01/01/2027
+      Fall 2026: found 1 class sections.
+    [H 580/609] Opening HWC 396A — Community Learning and Professional Preparation Year I Part A
+      Fall 2026: found 1 class sections.
+  Progress: group 1/2 (H 580/609) · 580 scraped, 0 already done, 0 failed · 15.2 pages/min · 38m13s elapsed · ~1m54s left in H
+    [H 581/609] Opening HWC (396B) — Commnity Learning & Prof Preparation Year I Part B ** available as of 01/01/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 582/609] Opening HWC 396B — Community Learning and Professional Preparation Year I Part B
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 583/609] Opening HWC 399 — Maintenance of Matriculation
+      No View Class Sections button; course has no sections.
+    [H 584/609] Opening HWC 401 — Professional Practicum in Social Work I
+      Fall 2026: found 1 class sections.
+    [H 585/609] Opening HWC (402) — Professional Practicum in Social Work Education II ** available as of 01/01/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 586/609] Opening HWC 402 — Professional Practicum in Social Work II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 587/609] Opening HWC 406 — Practice Processes in Social Work II
+      Fall 2026: found 3 class sections.
+    [H 588/609] Opening HWC 407 — Practice Processes in Social Work III
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 589/609] Opening HWC 413 — Research in Social Work I
+      Fall 2026: found 2 class sections.
+    [H 590/609] Opening HWC 414 — Research in Social Work II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/2 (H 590/609) · 590 scraped, 0 already done, 0 failed · 15.2 pages/min · 38m47s elapsed · ~1m14s left in H
+    [H 591/609] Opening HWC 415 — Integrating Seminar I
+      Fall 2026: found 3 class sections.
+    [H 592/609] Opening HWC 416 — Integrating Seminar II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 593/609] Opening HWC 427 — SW in the Political Process: Campaign School
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 594/609] Opening HWC 442 — School Social Work: An Overview
+      No View Class Sections button; course has no sections.
+    [H 595/609] Opening HWC 445 — Social Work and Human Rights
+      Fall 2026: found 1 class sections.
+    [H 596/609] Opening HWC 451 — Law and Social Change
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [H 597/609] Opening HWC 454 — Legislative Advocacy for Social Workers
+      No View Class Sections button; course has no sections.
+    [H 598/609] Opening HWC (461) — Anti-Rcist Prct: Undrstndng Whte Frgility/Blck Rge ** available as of 01/01/2027
+      Fall 2026: found 1 class sections.
+    [H 599/609] Opening HWC 461 — Anti-Racist Social Work: Understanding White Fragility and Black Rage
+      Fall 2026: found 1 class sections.
+    [H 600/609] Opening HWC 477 — Program Evaluation
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (H 600/609) · 600 scraped, 0 already done, 0 failed · 15.3 pages/min · 39m20s elapsed · ~35s left in H
+    Pausing 5s after 600 detail pages…
+    [H 601/609] Opening HWC 479 — Special Topics in Social Welfare
+      Fall 2026: found 2 class sections.
+    [H 602/609] Opening HWC (494) — Continuation of Prof Social Work Practicum Exp ** available as of 01/01/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 603/609] Opening HWC 494 — Continuation of Field Work Experience
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 604/609] Opening HWC 495 — Independent Study
+      Fall 2026: found 3 class sections.
+    [H 605/609] Opening HWC (497A) — Commnity Learning & Prof Preparation Yr II Part A ** available as of 01/01/2027
+      Fall 2026: found 1 class sections.
+    [H 606/609] Opening HWC 497A — Community Learning and Professional Preparation Year II Part A
+      Fall 2026: found 1 class sections.
+    [H 607/609] Opening HWC (497B) — Commnity Learning & Prof Preparation Yr II Part B ** available as of 01/01/2027
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 608/609] Opening HWC 497B — Community Learning and Professional Preparation Year II Part B
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [H 609/609] Opening HWC 499 — Integrative Capstone-Generalist SW Knowledge P ract
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 2/2 (H 609/609) · 609 scraped, 0 already done, 0 failed · 15.2 pages/min · 40m04s elapsed
+
+Processing subject-code group 7 (2/2)…
+  [7] Letter has no subject groups.
+Exported index: 609 records (JSON + CSV)
+Exported details: 609 records (JSONL + JSON + CSV)
+Exported sections: 550 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_08/semesteros-export.zip
+
+Done in 40m06s: 609 scraped, 0 already done, 0 failed, 973 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_08/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_08/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_08/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_08/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_08/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_08/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_08/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_08/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.

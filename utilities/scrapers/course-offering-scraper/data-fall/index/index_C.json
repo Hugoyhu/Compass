@@ -1,0 +1,2978 @@
+[
+  {
+    "subject": "CAR",
+    "course_number": "151",
+    "course_code": "CAR 151",
+    "title": "Career & Life Design I: Introduction",
+    "source_file": "index_C.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "CAR",
+    "course_number": "251",
+    "course_code": "CAR 251",
+    "title": "Career & Life Design II - Employability Skills",
+    "source_file": "index_C.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "CAR",
+    "course_number": "351",
+    "course_code": "CAR 351",
+    "title": "Career & Life Design III: Special Topics",
+    "source_file": "index_C.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "CAR",
+    "course_number": "444",
+    "course_code": "CAR 444",
+    "title": "Experiential Learning",
+    "source_file": "index_C.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "CAR",
+    "course_number": "451",
+    "course_code": "CAR 451",
+    "title": "Career & Life Design IV - After College Transitions",
+    "source_file": "index_C.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "CAR",
+    "course_number": "475",
+    "course_code": "CAR 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_C.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "CAR",
+    "course_number": "476",
+    "course_code": "CAR 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_C.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "CCS",
+    "course_number": "200",
+    "course_code": "CCS 200",
+    "title": "Media History",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "202",
+    "course_code": "CCS 202",
+    "title": "Film Genres",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "203",
+    "course_code": "CCS 203",
+    "title": "Cinema History",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "204",
+    "course_code": "CCS 204",
+    "title": "The Stony Brook Film Festival: Films and Contexts",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "301",
+    "course_code": "CCS 301",
+    "title": "Cinema and Media Theory",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "311",
+    "course_code": "CCS 311",
+    "title": "Gender and Genre in Film",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "312",
+    "course_code": "CCS 312",
+    "title": "Cinema and the Ancient World",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "313",
+    "course_code": "CCS 313",
+    "title": "Television Studies",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "325",
+    "course_code": "CCS 325",
+    "title": "Culture in Context",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "381",
+    "course_code": "CCS 381",
+    "title": "Topics in Cinema Studies",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "382",
+    "course_code": "CCS 382",
+    "title": "Topics in Media and Popular Culture",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "383",
+    "course_code": "CCS 383",
+    "title": "Topics in Game Studies",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "391",
+    "course_code": "CCS 391",
+    "title": "Topics in Contemporary African Cinema and Cultural Studies",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "392",
+    "course_code": "CCS 392",
+    "title": "Topics in American Cinema and Cultural Studies",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "393",
+    "course_code": "CCS 393",
+    "title": "Topics in European Cinema and Cultural Studies",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "394",
+    "course_code": "CCS 394",
+    "title": "Topics in Asian Cinema and Cultural Studies",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "395",
+    "course_code": "CCS 395",
+    "title": "Topics in Digital Technology and Culture",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "401",
+    "course_code": "CCS 401",
+    "title": "Senior Seminar in Cinema & Cultural Studies",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "444",
+    "course_code": "CCS 444",
+    "title": "Experiential Learning",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "458",
+    "course_code": "CCS 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "459",
+    "course_code": "CCS 459",
+    "title": "Write Effectively in Cinema and Cultural Studies",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "475",
+    "course_code": "CCS 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "476",
+    "course_code": "CCS 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "487",
+    "course_code": "CCS 487",
+    "title": "Independent Research in Cinema and Cultural Studies",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "488",
+    "course_code": "CCS 488",
+    "title": "Internship",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CCS",
+    "course_number": "495",
+    "course_code": "CCS 495",
+    "title": "Senior Honors Project in Cinema and Cultural Studies",
+    "source_file": "index_C.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "CDS",
+    "course_number": "101",
+    "course_code": "CDS 101",
+    "title": "Energy, Climate, and Society",
+    "source_file": "index_C.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "CDS",
+    "course_number": "102",
+    "course_code": "CDS 102",
+    "title": "Climate Ethics",
+    "source_file": "index_C.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "CDS",
+    "course_number": "(201)",
+    "course_code": "CDS (201)",
+    "title": "Demons to Think With ** available as of 01/01/2027",
+    "source_file": "index_C.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "CDS",
+    "course_number": "222",
+    "course_code": "CDS 222",
+    "title": "AI Ecologies",
+    "source_file": "index_C.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "CDS",
+    "course_number": "(301)",
+    "course_code": "CDS (301)",
+    "title": "AI and Consciousness: The Close Encounter ** available as of 01/01/2027",
+    "source_file": "index_C.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "CEF",
+    "course_number": "347",
+    "course_code": "CEF 347",
+    "title": "Introduction to Special Education",
+    "source_file": "index_C.html",
+    "source_group_index": 10
+  },
+  {
+    "subject": "CHE",
+    "course_number": "115",
+    "course_code": "CHE 115",
+    "title": "Chemistry, Life, and Environment",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "129",
+    "course_code": "CHE 129",
+    "title": "General Chemistry IA",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "130",
+    "course_code": "CHE 130",
+    "title": "Problem Solving in General Chemistry",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "131",
+    "course_code": "CHE 131",
+    "title": "General Chemistry IB",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "132",
+    "course_code": "CHE 132",
+    "title": "General Chemistry II",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "133",
+    "course_code": "CHE 133",
+    "title": "General Chemistry Laboratory I",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "134",
+    "course_code": "CHE 134",
+    "title": "General Chemistry Laboratory II",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "152",
+    "course_code": "CHE 152",
+    "title": "Molecular Science I",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "154",
+    "course_code": "CHE 154",
+    "title": "Molecular Science Laboratory I",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "301",
+    "course_code": "CHE 301",
+    "title": "Physical Chemistry I",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "302",
+    "course_code": "CHE 302",
+    "title": "Physical Chemistry II",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "303",
+    "course_code": "CHE 303",
+    "title": "Solution Chemistry Laboratory",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "304",
+    "course_code": "CHE 304",
+    "title": "Chemical Instrumentation Laboratory",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "310",
+    "course_code": "CHE 310",
+    "title": "Chemistry in Technology and the Environment",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "311",
+    "course_code": "CHE 311",
+    "title": "Environmental Chemistry Lab",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "312",
+    "course_code": "CHE 312",
+    "title": "Physical Chemistry for the Life Sciences",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "321",
+    "course_code": "CHE 321",
+    "title": "Organic Chemistry I",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "322",
+    "course_code": "CHE 322",
+    "title": "Organic Chemistry IIA",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "327",
+    "course_code": "CHE 327",
+    "title": "Organic Chemistry Laboratory",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "328",
+    "course_code": "CHE 328",
+    "title": "Synthetic and Spectroscopic Laboratory Techniques",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "331",
+    "course_code": "CHE 331",
+    "title": "Molecular Science II",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "332",
+    "course_code": "CHE 332",
+    "title": "Molecular Science III",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "345",
+    "course_code": "CHE 345",
+    "title": "Structure and Reactivity in Organic Chemistry",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "346",
+    "course_code": "CHE 346",
+    "title": "Biomolecular Structure and Reactivity",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "348",
+    "course_code": "CHE 348",
+    "title": "Reaction Mechanisms in Organic Chemistry",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "351",
+    "course_code": "CHE 351",
+    "title": "Quantum Chemistry",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "353",
+    "course_code": "CHE 353",
+    "title": "Chemical Thermodynamics",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "357",
+    "course_code": "CHE 357",
+    "title": "Molecular Structure and Spectroscopy Laboratory",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "358",
+    "course_code": "CHE 358",
+    "title": "Computing in Chemistry",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "361",
+    "course_code": "CHE 361",
+    "title": "Nuclear Chemistry",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "362",
+    "course_code": "CHE 362",
+    "title": "Nuclear Chemistry Laboratory",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "375",
+    "course_code": "CHE 375",
+    "title": "Inorganic Chemistry I",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "376",
+    "course_code": "CHE 376",
+    "title": "Inorganic Chemistry II",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "377",
+    "course_code": "CHE 377",
+    "title": "Inorganic Chemistry Laboratory",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "378",
+    "course_code": "CHE 378",
+    "title": "Materials Chemistry",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "379",
+    "course_code": "CHE 379",
+    "title": "Electrochemistry and Electrochemical Materials Science",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "383",
+    "course_code": "CHE 383",
+    "title": "Introductory Synthetic and Spectroscopic Laboratory Techniques",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "384",
+    "course_code": "CHE 384",
+    "title": "Intermediate Synthetic and Spectroscopic Laboratory Techniques",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "385",
+    "course_code": "CHE 385",
+    "title": "Tools of Chemistry",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "444",
+    "course_code": "CHE 444",
+    "title": "Experiential Learning",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "459",
+    "course_code": "CHE 459",
+    "title": "Write Effectively in Chemistry",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "461",
+    "course_code": "CHE 461",
+    "title": "Selected Topics in Chemistry",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "475",
+    "course_code": "CHE 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "476",
+    "course_code": "CHE 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "477",
+    "course_code": "CHE 477",
+    "title": "Undergraduate Teaching Practicum III",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "487",
+    "course_code": "CHE 487",
+    "title": "Research in Chemistry",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "488",
+    "course_code": "CHE 488",
+    "title": "Internship",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "495",
+    "course_code": "CHE 495",
+    "title": "Senior Research",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHE",
+    "course_number": "496",
+    "course_code": "CHE 496",
+    "title": "Senior Research",
+    "source_file": "index_C.html",
+    "source_group_index": 29
+  },
+  {
+    "subject": "CHI",
+    "course_number": "101",
+    "course_code": "CHI 101",
+    "title": "Intensive Elementary Chinese",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "111",
+    "course_code": "CHI 111",
+    "title": "Elementary Chinese I",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "112",
+    "course_code": "CHI 112",
+    "title": "Elementary Chinese II",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "120",
+    "course_code": "CHI 120",
+    "title": "Elementary Chinese for Heritage Speakers",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "201",
+    "course_code": "CHI 201",
+    "title": "Intensive Intermediate Chinese",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "211",
+    "course_code": "CHI 211",
+    "title": "Intermediate Chinese I",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "212",
+    "course_code": "CHI 212",
+    "title": "Intermediate Chinese II",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "220",
+    "course_code": "CHI 220",
+    "title": "Intermediate Chinese for Heritage Speakers",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "311",
+    "course_code": "CHI 311",
+    "title": "Advanced Chinese I",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "312",
+    "course_code": "CHI 312",
+    "title": "Advanced Chinese II",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "320",
+    "course_code": "CHI 320",
+    "title": "Advanced Chinese for Heritage Speakers",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "410",
+    "course_code": "CHI 410",
+    "title": "Business Chinese",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "411",
+    "course_code": "CHI 411",
+    "title": "Readings in Journalistic Chinese",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "412",
+    "course_code": "CHI 412",
+    "title": "Readings in Classical Chinese",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "421",
+    "course_code": "CHI 421",
+    "title": "Chinese Poetry and Short Stories",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "422",
+    "course_code": "CHI 422",
+    "title": "Chinese Lyric Prose and Plays",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "426",
+    "course_code": "CHI 426",
+    "title": "Structure of Mandarin Chinese",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "444",
+    "course_code": "CHI 444",
+    "title": "Experiential Learning",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "447",
+    "course_code": "CHI 447",
+    "title": "Directed Readings in Chinese",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "475",
+    "course_code": "CHI 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "476",
+    "course_code": "CHI 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CHI",
+    "course_number": "487",
+    "course_code": "CHI 487",
+    "title": "Supervised Research in Chinese",
+    "source_file": "index_C.html",
+    "source_group_index": 30
+  },
+  {
+    "subject": "CIS",
+    "course_number": "101",
+    "course_code": "CIS 101",
+    "title": "Pop-Up: Climate Change and You",
+    "source_file": "index_C.html",
+    "source_group_index": 31
+  },
+  {
+    "subject": "CIS",
+    "course_number": "102",
+    "course_code": "CIS 102",
+    "title": "Pop Up: AI and You",
+    "source_file": "index_C.html",
+    "source_group_index": 31
+  },
+  {
+    "subject": "CIV",
+    "course_number": "101",
+    "course_code": "CIV 101",
+    "title": "Introduction to Civil Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "203",
+    "course_code": "CIV 203",
+    "title": "Autocad Basics",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "210",
+    "course_code": "CIV 210",
+    "title": "Land Surveying",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "220",
+    "course_code": "CIV 220",
+    "title": "Civil and Environmental Infrastructure Systems",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "260",
+    "course_code": "CIV 260",
+    "title": "Engineering Mechanics",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "300",
+    "course_code": "CIV 300",
+    "title": "Technical Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "301",
+    "course_code": "CIV 301",
+    "title": "Probability and Statistics for Civil and Environmental Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "305",
+    "course_code": "CIV 305",
+    "title": "Transportation Systems Analysis I",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "306",
+    "course_code": "CIV 306",
+    "title": "Transportation Systems Analysis II",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "310",
+    "course_code": "CIV 310",
+    "title": "Structural Analysis",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "312",
+    "course_code": "CIV 312",
+    "title": "Steel and Reinforced Concrete Design I",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "320",
+    "course_code": "CIV 320",
+    "title": "Water Supply and Wastewater Treatment Design",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "330",
+    "course_code": "CIV 330",
+    "title": "Introduction to Geotechnical Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "340",
+    "course_code": "CIV 340",
+    "title": "Civil Engineering Materials Laboratory",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "341",
+    "course_code": "CIV 341",
+    "title": "Geotechnical Engineering Laboratory",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "342",
+    "course_code": "CIV 342",
+    "title": "Civil Engineering Hydraulics Laboratory",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "350",
+    "course_code": "CIV 350",
+    "title": "Numerical Analysis for Civil Engineers",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "355",
+    "course_code": "CIV 355",
+    "title": "Introduction to Data Science and AI for Civil Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "364",
+    "course_code": "CIV 364",
+    "title": "Fluid Mechanics for Civil Engineers",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "393",
+    "course_code": "CIV 393",
+    "title": "Construction Engineering, Management, and Technology",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "394",
+    "course_code": "CIV 394",
+    "title": "Sustainability of Building and Infrastructure Systems",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "402",
+    "course_code": "CIV 402",
+    "title": "Introduction to Transportation Planning",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "407",
+    "course_code": "CIV 407",
+    "title": "Transportation Economics",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "410",
+    "course_code": "CIV 410",
+    "title": "Principles of Foundation Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "411",
+    "course_code": "CIV 411",
+    "title": "Advanced Structural Analysis",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "412",
+    "course_code": "CIV 412",
+    "title": "Steel and Reinforced Concrete Design II",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "414",
+    "course_code": "CIV 414",
+    "title": "Advanced Construction Materials",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "418",
+    "course_code": "CIV 418",
+    "title": "Subsurface Infrastructure",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "420",
+    "course_code": "CIV 420",
+    "title": "Hydraulics",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "422",
+    "course_code": "CIV 422",
+    "title": "Introduction to Coastal Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "423",
+    "course_code": "CIV 423",
+    "title": "Coastal Engineering Planning and Design",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "424",
+    "course_code": "CIV 424",
+    "title": "Stormwater Management & Design",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "426",
+    "course_code": "CIV 426",
+    "title": "Introduction to Environmental Biotechnology",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "432",
+    "course_code": "CIV 432",
+    "title": "Vibration Mechanics",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "436",
+    "course_code": "CIV 436",
+    "title": "Prestressed Concrete Design",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "440",
+    "course_code": "CIV 440",
+    "title": "Senior Design I",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "441",
+    "course_code": "CIV 441",
+    "title": "Senior Design II",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "(445)",
+    "course_code": "CIV (445)",
+    "title": "Environmental Fluid Mechanics ** available as of 01/01/2027",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "(446)",
+    "course_code": "CIV (446)",
+    "title": "Environmental Aquatic Chemistry ** available as of 01/01/2027",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "(455)",
+    "course_code": "CIV (455)",
+    "title": "Renewable Energy Systems ** available as of 01/01/2027",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "475",
+    "course_code": "CIV 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "476",
+    "course_code": "CIV 476",
+    "title": "Instructional Laboratory Development Practicum",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "488",
+    "course_code": "CIV 488",
+    "title": "Civil Engineering Internship",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "491",
+    "course_code": "CIV 491",
+    "title": "Topics in Civil Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CIV",
+    "course_number": "499",
+    "course_code": "CIV 499",
+    "title": "Independent Research",
+    "source_file": "index_C.html",
+    "source_group_index": 32
+  },
+  {
+    "subject": "CLL",
+    "course_number": "215",
+    "course_code": "CLL 215",
+    "title": "Classical Mythology",
+    "source_file": "index_C.html",
+    "source_group_index": 34
+  },
+  {
+    "subject": "CLL",
+    "course_number": "315",
+    "course_code": "CLL 315",
+    "title": "Gender, Sexuality, Race & Ethnicity in Ancient Greek and Roman Literature",
+    "source_file": "index_C.html",
+    "source_group_index": 34
+  },
+  {
+    "subject": "CLL",
+    "course_number": "444",
+    "course_code": "CLL 444",
+    "title": "Experiential Learning",
+    "source_file": "index_C.html",
+    "source_group_index": 34
+  },
+  {
+    "subject": "CLS",
+    "course_number": "113",
+    "course_code": "CLS 113",
+    "title": "Greek and Latin Literature in Translation",
+    "source_file": "index_C.html",
+    "source_group_index": 36
+  },
+  {
+    "subject": "CLS",
+    "course_number": "225",
+    "course_code": "CLS 225",
+    "title": "The Classical Tradition",
+    "source_file": "index_C.html",
+    "source_group_index": 36
+  },
+  {
+    "subject": "CLS",
+    "course_number": "325",
+    "course_code": "CLS 325",
+    "title": "The Latin and Greek Origins of Medicine",
+    "source_file": "index_C.html",
+    "source_group_index": 36
+  },
+  {
+    "subject": "CLS",
+    "course_number": "444",
+    "course_code": "CLS 444",
+    "title": "Experiential Learning",
+    "source_file": "index_C.html",
+    "source_group_index": 36
+  },
+  {
+    "subject": "CLS",
+    "course_number": "447",
+    "course_code": "CLS 447",
+    "title": "Directed Readings in Classics",
+    "source_file": "index_C.html",
+    "source_group_index": 36
+  },
+  {
+    "subject": "CLS",
+    "course_number": "475",
+    "course_code": "CLS 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "index_C.html",
+    "source_group_index": 36
+  },
+  {
+    "subject": "CLT",
+    "course_number": "101",
+    "course_code": "CLT 101",
+    "title": "Introduction to World Literatures",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "109",
+    "course_code": "CLT 109",
+    "title": "Philosophy and Literature in Social Context (III)",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "121",
+    "course_code": "CLT 121",
+    "title": "Death and Afterlife in Literature",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "122",
+    "course_code": "CLT 122",
+    "title": "Images of Women in Literature",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "123",
+    "course_code": "CLT 123",
+    "title": "Sexuality in Literature",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "220",
+    "course_code": "CLT 220",
+    "title": "Literature Beyond European Traditions",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "221",
+    "course_code": "CLT 221",
+    "title": "Cross-Cultural Encounters",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "235",
+    "course_code": "CLT 235",
+    "title": "American Pluralism in Film and Literature",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "266",
+    "course_code": "CLT 266",
+    "title": "The 20th-Century Novel",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "301",
+    "course_code": "CLT 301",
+    "title": "Theory of Literature",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "330",
+    "course_code": "CLT 330",
+    "title": "Literary Genres",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "334",
+    "course_code": "CLT 334",
+    "title": "Other Literary Genres",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "335",
+    "course_code": "CLT 335",
+    "title": "Interdisciplinary Study of Film",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "361",
+    "course_code": "CLT 361",
+    "title": "Literature and Society",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "362",
+    "course_code": "CLT 362",
+    "title": "Literature and Ideas",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "371",
+    "course_code": "CLT 371",
+    "title": "Literature and Justice (III)",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "393",
+    "course_code": "CLT 393",
+    "title": "European Comparative Literature",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "394",
+    "course_code": "CLT 394",
+    "title": "Asian Comparative Literature",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "444",
+    "course_code": "CLT 444",
+    "title": "Experiential Learning",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "458",
+    "course_code": "CLT 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "459",
+    "course_code": "CLT 459",
+    "title": "Write Effectively in Comparative Literature",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "475",
+    "course_code": "CLT 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "476",
+    "course_code": "CLT 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "487",
+    "course_code": "CLT 487",
+    "title": "Independent Reading and Research",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CLT",
+    "course_number": "495",
+    "course_code": "CLT 495",
+    "title": "Comparative Literature Honors Project",
+    "source_file": "index_C.html",
+    "source_group_index": 37
+  },
+  {
+    "subject": "CME",
+    "course_number": "101",
+    "course_code": "CME 101",
+    "title": "Introduction to Chemical and Molecular Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "160",
+    "course_code": "CME 160",
+    "title": "Introduction to Nanoscience and Nanotechnology",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "199",
+    "course_code": "CME 199",
+    "title": "Introduction to Undergraduate Research",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "201",
+    "course_code": "CME 201",
+    "title": "Sustainable Energy - Evaluating the Options",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "222",
+    "course_code": "CME 222",
+    "title": "Introduction to STEM Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "233",
+    "course_code": "CME 233",
+    "title": "Ethics and Business Practices for Engineers",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "240",
+    "course_code": "CME 240",
+    "title": "Introduction to Food Technology",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "300",
+    "course_code": "CME 300",
+    "title": "Writing in Chemical and Molecular Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "304",
+    "course_code": "CME 304",
+    "title": "Chemical Engineering Thermodynamics I",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "310",
+    "course_code": "CME 310",
+    "title": "Chemical Engineering Laboratory I: Unit Operation Fundamentals",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "312",
+    "course_code": "CME 312",
+    "title": "Material and Energy Balance",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "314",
+    "course_code": "CME 314",
+    "title": "Chemical Engineering Thermodynamics II",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "315",
+    "course_code": "CME 315",
+    "title": "Numerical Methods for Chemical Engineering Analysis",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "318",
+    "course_code": "CME 318",
+    "title": "Chemical Engineering Fluid Mechanics",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "320",
+    "course_code": "CME 320",
+    "title": "Chemical Engineering Lab II: Unit Operation",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "321",
+    "course_code": "CME 321",
+    "title": "Introduction To Working In The Good Manufacturing Practice (GMP) Environment",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "322",
+    "course_code": "CME 322",
+    "title": "Chemical Engineering Heat and Mass Transfer",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "323",
+    "course_code": "CME 323",
+    "title": "Reaction Engineering and Chemical Kinetics",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "350",
+    "course_code": "CME 350",
+    "title": "Comparative Energy Technologies",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "355",
+    "course_code": "CME 355",
+    "title": "Chemical Process Safety",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "360",
+    "course_code": "CME 360",
+    "title": "Nanomaterials and Applications",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "369",
+    "course_code": "CME 369",
+    "title": "Polymer Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "371",
+    "course_code": "CME 371",
+    "title": "Biomaterials",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "372",
+    "course_code": "CME 372",
+    "title": "Colloids, Micelles and Emulsion Science",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "375",
+    "course_code": "CME 375",
+    "title": "Fundamentals of Industrial Corrosion and Corrosion Protection",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "401",
+    "course_code": "CME 401",
+    "title": "Separation Technologies",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "405",
+    "course_code": "CME 405",
+    "title": "Process Control in Engineering Design",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "410",
+    "course_code": "CME 410",
+    "title": "Chemical Engineering Laboratory III: Instrumentation, Material Design and Characterization",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "420",
+    "course_code": "CME 420",
+    "title": "Chemical Engineering Laboratory IV: Senior Thesis",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "425",
+    "course_code": "CME 425",
+    "title": "Introduction to Catalysis",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "427",
+    "course_code": "CME 427",
+    "title": "Molecular Modeling for Chemical Engineers",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "440",
+    "course_code": "CME 440",
+    "title": "Process Engineering and Design I",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "441",
+    "course_code": "CME 441",
+    "title": "Process Engineering and Design II",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "460",
+    "course_code": "CME 460",
+    "title": "Nanomaterials: Synthesis, Processing and Characterization",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "470",
+    "course_code": "CME 470",
+    "title": "Polymer Synthesis: Theory and Practice, Fundamentals, Methods, Experiments",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "475",
+    "course_code": "CME 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "480",
+    "course_code": "CME 480",
+    "title": "Cellular Biology for Chemical Engineers",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "481",
+    "course_code": "CME 481",
+    "title": "Advanced Cell Biology for Chemical Engineers",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "488",
+    "course_code": "CME 488",
+    "title": "Industrial Internship in Chemical Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "490",
+    "course_code": "CME 490",
+    "title": "Preparation for the Chemical Engineering/Fundamentals of Engineering Examination",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "491",
+    "course_code": "CME 491",
+    "title": "Sustainable Future through Renewable Energy",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "CME",
+    "course_number": "499",
+    "course_code": "CME 499",
+    "title": "Research in Chemical Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 38
+  },
+  {
+    "subject": "COM",
+    "course_number": "100",
+    "course_code": "COM 100",
+    "title": "Introduction to Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "106",
+    "course_code": "COM 106",
+    "title": "Introduction to Mass Media",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "107",
+    "course_code": "COM 107",
+    "title": "AI and Creativity",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "114",
+    "course_code": "COM 114",
+    "title": "Understanding and Communicating About a Changing Environment",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "120",
+    "course_code": "COM 120",
+    "title": "Fundamentals of Public Speaking",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "202",
+    "course_code": "COM 202",
+    "title": "Intercultural Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "206",
+    "course_code": "COM 206",
+    "title": "Interpersonal Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "207",
+    "course_code": "COM 207",
+    "title": "Media Writing",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "208",
+    "course_code": "COM 208",
+    "title": "Mass Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "210",
+    "course_code": "COM 210",
+    "title": "Responsible Media Making",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "225",
+    "course_code": "COM 225",
+    "title": "Introduction to Video Production",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "305",
+    "course_code": "COM 305",
+    "title": "Mass Communication Law & Ethics",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "306",
+    "course_code": "COM 306",
+    "title": "Modes of Media Criticism",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "307",
+    "course_code": "COM 307",
+    "title": "Critical Media Theory",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "314",
+    "course_code": "COM 314",
+    "title": "Communication Research",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "315",
+    "course_code": "COM 315",
+    "title": "Communication Theory",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "316",
+    "course_code": "COM 316",
+    "title": "Mass Communication Research Methods",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "317",
+    "course_code": "COM 317",
+    "title": "Mass Communication Theory",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "346",
+    "course_code": "COM 346",
+    "title": "Race, Class, and Gender in Media",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "351",
+    "course_code": "COM 351",
+    "title": "Team Collaboration and Community Engagement",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "357",
+    "course_code": "COM 357",
+    "title": "Health Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "358",
+    "course_code": "COM 358",
+    "title": "Nonverbal Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "365",
+    "course_code": "COM 365",
+    "title": "Talking Science",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "386",
+    "course_code": "COM 386",
+    "title": "Special Topics: Issues in Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "387",
+    "course_code": "COM 387",
+    "title": "Special Topics in Audience Analysis",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "391",
+    "course_code": "COM 391",
+    "title": "Studio Production",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "399",
+    "course_code": "COM 399",
+    "title": "Special Topics in Mass Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "400",
+    "course_code": "COM 400",
+    "title": "Advanced Communication Research",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "401",
+    "course_code": "COM 401",
+    "title": "Organizational Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "402",
+    "course_code": "COM 402",
+    "title": "Crisis Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "403",
+    "course_code": "COM 403",
+    "title": "Strategic Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "404",
+    "course_code": "COM 404",
+    "title": "Communication for Social Change & Public Advocacy",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "405",
+    "course_code": "COM 405",
+    "title": "Political Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "406",
+    "course_code": "COM 406",
+    "title": "Risk Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "407",
+    "course_code": "COM 407",
+    "title": "Social Media Analytics",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "409",
+    "course_code": "COM 409",
+    "title": "Public Relations",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "414",
+    "course_code": "COM 414",
+    "title": "Studies in Visual Culture",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "415",
+    "course_code": "COM 415",
+    "title": "Data Analysis and Storytelling",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "434",
+    "course_code": "COM 434",
+    "title": "Argumentation and Persuasion",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "435",
+    "course_code": "COM 435",
+    "title": "Science Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "436",
+    "course_code": "COM 436",
+    "title": "Environmental Communication",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "475",
+    "course_code": "COM 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "476",
+    "course_code": "COM 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "487",
+    "course_code": "COM 487",
+    "title": "Independent Study",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "491",
+    "course_code": "COM 491",
+    "title": "Mass Communication Senior Project",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "494",
+    "course_code": "COM 494",
+    "title": "Mass Communication Internship",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "495",
+    "course_code": "COM 495",
+    "title": "Communication Senior Project",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "COM",
+    "course_number": "496",
+    "course_code": "COM 496",
+    "title": "Communication Internship",
+    "source_file": "index_C.html",
+    "source_group_index": 41
+  },
+  {
+    "subject": "CSE",
+    "course_number": "101",
+    "course_code": "CSE 101",
+    "title": "Computer Science Principles",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "102",
+    "course_code": "CSE 102",
+    "title": "Introduction to Web Design and Programming",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "103",
+    "course_code": "CSE 103",
+    "title": "Data Science Principles",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "110",
+    "course_code": "CSE 110",
+    "title": "Introduction to Computer Science",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "113",
+    "course_code": "CSE 113",
+    "title": "Foundations of Computer Science I",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "114",
+    "course_code": "CSE 114",
+    "title": "Introduction to Object-Oriented Programming",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "130",
+    "course_code": "CSE 130",
+    "title": "Introduction to Programming in C",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "150",
+    "course_code": "CSE 150",
+    "title": "Foundations of Computer Science: Honors",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "160",
+    "course_code": "CSE 160",
+    "title": "Computer Science A: Honors",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "161",
+    "course_code": "CSE 161",
+    "title": "Laboratory for Computer Science A: Honors",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "190",
+    "course_code": "CSE 190",
+    "title": "Special Topics in Practice and Applications of Computer Science",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "191",
+    "course_code": "CSE 191",
+    "title": "Special Topics in Practice and Applications for Computer Science",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "192",
+    "course_code": "CSE 192",
+    "title": "Special Topics in Practice and Applications for Computer Science",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "213",
+    "course_code": "CSE 213",
+    "title": "Foundations of Computer Science II",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "214",
+    "course_code": "CSE 214",
+    "title": "Data Structures",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "216",
+    "course_code": "CSE 216",
+    "title": "Programming Abstractions",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "220",
+    "course_code": "CSE 220",
+    "title": "Systems Fundamentals I",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "230",
+    "course_code": "CSE 230",
+    "title": "Intermediate Programming in C and C++",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "260",
+    "course_code": "CSE 260",
+    "title": "Computer Science B: Honors",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "261",
+    "course_code": "CSE 261",
+    "title": "Laboratory for Computer Science B: Honors",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "300",
+    "course_code": "CSE 300",
+    "title": "Technical Communications",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "301",
+    "course_code": "CSE 301",
+    "title": "History of Computing",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "303",
+    "course_code": "CSE 303",
+    "title": "Introduction to the Theory of Computation",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "304",
+    "course_code": "CSE 304",
+    "title": "Compiler Design",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "305",
+    "course_code": "CSE 305",
+    "title": "Principles of Database Systems",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "306",
+    "course_code": "CSE 306",
+    "title": "Operating Systems",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "307",
+    "course_code": "CSE 307",
+    "title": "Principles of Programming Languages",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "310",
+    "course_code": "CSE 310",
+    "title": "Computer Networks",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "311",
+    "course_code": "CSE 311",
+    "title": "Systems Administration",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "312",
+    "course_code": "CSE 312",
+    "title": "Social, Legal, and Ethical Issues in Computing",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "316",
+    "course_code": "CSE 316",
+    "title": "Fundamentals of Software Development",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "320",
+    "course_code": "CSE 320",
+    "title": "Systems Fundamentals II",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "323",
+    "course_code": "CSE 323",
+    "title": "Human-Computer Interaction",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "325",
+    "course_code": "CSE 325",
+    "title": "Computers and Sculpture",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "327",
+    "course_code": "CSE 327",
+    "title": "Fundamentals of Computer Vision",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "328",
+    "course_code": "CSE 328",
+    "title": "Fundamentals of Computer Graphics",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "(330)",
+    "course_code": "CSE (330)",
+    "title": "Introduction to Quantum Computing ** available as of 01/01/2027",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "331",
+    "course_code": "CSE 331",
+    "title": "Computer Security Fundamentals",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "332",
+    "course_code": "CSE 332",
+    "title": "Introduction to Visualization",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "333",
+    "course_code": "CSE 333",
+    "title": "User Interface Development",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "334",
+    "course_code": "CSE 334",
+    "title": "Introduction to Multimedia Systems",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "336",
+    "course_code": "CSE 336",
+    "title": "Internet Programming",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "337",
+    "course_code": "CSE 337",
+    "title": "Scripting Languages",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "350",
+    "course_code": "CSE 350",
+    "title": "Theory of Computation: Honors",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "351",
+    "course_code": "CSE 351",
+    "title": "Introduction to Data Science",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "352",
+    "course_code": "CSE 352",
+    "title": "Artificial Intelligence",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "353",
+    "course_code": "CSE 353",
+    "title": "Machine Learning",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "354",
+    "course_code": "CSE 354",
+    "title": "Natural Language Processing",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "355",
+    "course_code": "CSE 355",
+    "title": "Computational Geometry",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "356",
+    "course_code": "CSE 356",
+    "title": "Cloud Computing",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "357",
+    "course_code": "CSE 357",
+    "title": "Statistical Methods for Data Science",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "360",
+    "course_code": "CSE 360",
+    "title": "Software Security",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "361",
+    "course_code": "CSE 361",
+    "title": "Web Security",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "362",
+    "course_code": "CSE 362",
+    "title": "Mobile Security",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "363",
+    "course_code": "CSE 363",
+    "title": "Offensive Security",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "364",
+    "course_code": "CSE 364",
+    "title": "Advanced Multimedia Techniques",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "366",
+    "course_code": "CSE 366",
+    "title": "Introduction to Virtual Reality",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "370",
+    "course_code": "CSE 370",
+    "title": "Wireless and Mobile Networking",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "371",
+    "course_code": "CSE 371",
+    "title": "Logic",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "373",
+    "course_code": "CSE 373",
+    "title": "Analysis of Algorithms",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "(374)",
+    "course_code": "CSE (374)",
+    "title": "Storage Systems ** available as of 01/01/2027",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "376",
+    "course_code": "CSE 376",
+    "title": "Advanced Systems Programming in UNIX/C",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "377",
+    "course_code": "CSE 377",
+    "title": "Introduction to Medical Imaging",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "378",
+    "course_code": "CSE 378",
+    "title": "Introduction to Robotics",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "380",
+    "course_code": "CSE 380",
+    "title": "2D Game Programming",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "381",
+    "course_code": "CSE 381",
+    "title": "3D Game Programming",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "385",
+    "course_code": "CSE 385",
+    "title": "Analysis of Algorithms: Honors",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "390",
+    "course_code": "CSE 390",
+    "title": "Special Topics in Computer Science",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "416",
+    "course_code": "CSE 416",
+    "title": "Software Engineering",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "475",
+    "course_code": "CSE 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "487",
+    "course_code": "CSE 487",
+    "title": "Research in Computer Science",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "488",
+    "course_code": "CSE 488",
+    "title": "Internship in Computer Science",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "495",
+    "course_code": "CSE 495",
+    "title": "Senior Honors Research Project I",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CSE",
+    "course_number": "496",
+    "course_code": "CSE 496",
+    "title": "Senior Honors Research Project II",
+    "source_file": "index_C.html",
+    "source_group_index": 47
+  },
+  {
+    "subject": "CWL",
+    "course_number": "190",
+    "course_code": "CWL 190",
+    "title": "Introduction to Contemporary Literature",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "202",
+    "course_code": "CWL 202",
+    "title": "Introduction to Creative Writing: Writing Everything",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "250",
+    "course_code": "CWL 250",
+    "title": "Join the Conversation",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "300",
+    "course_code": "CWL 300",
+    "title": "Forms of Creative Nonfiction",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "305",
+    "course_code": "CWL 305",
+    "title": "Forms of Fiction",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "310",
+    "course_code": "CWL 310",
+    "title": "Forms of Poetry",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "315",
+    "course_code": "CWL 315",
+    "title": "Forms of Scriptwriting",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "320",
+    "course_code": "CWL 320",
+    "title": "Forms of Interdisciplinary Arts",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "325",
+    "course_code": "CWL 325",
+    "title": "Forms of Science Writing",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "330",
+    "course_code": "CWL 330",
+    "title": "Topics in European Literature for Writers",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "335",
+    "course_code": "CWL 335",
+    "title": "Topics in American Literature for Writers",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "340",
+    "course_code": "CWL 340",
+    "title": "Topics in World Literature for Writers",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "390",
+    "course_code": "CWL 390",
+    "title": "The Ethics of the Creative Imagination",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "444",
+    "course_code": "CWL 444",
+    "title": "Experiential Learning",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "450",
+    "course_code": "CWL 450",
+    "title": "Senior Project",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "487",
+    "course_code": "CWL 487",
+    "title": "Mind the Gap: Independent Reading",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  },
+  {
+    "subject": "CWL",
+    "course_number": "499",
+    "course_code": "CWL 499",
+    "title": "Thesis",
+    "source_file": "index_C.html",
+    "source_group_index": 51
+  }
+]

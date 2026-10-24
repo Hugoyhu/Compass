@@ -1,0 +1,666 @@
+Worker 13 groups: M
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_13 --letters M --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Fall 2026 --headless
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group M (1/1)…
+  [M] 12 subjects have no active courses.
+  [M] Found 762 course entries.
+  [M] Skipping 460 courses numbered above 499; 302 left.
+    [M 1/302] Opening MAE 301 — Foundations of Secondary School Mathematics
+      Fall 2026: found 1 class sections.
+    [M 2/302] Opening MAE 302 — Methods and Materials for Teaching Secondary School Mathematics
+      Fall 2026: found 1 class sections.
+    [M 3/302] Opening MAE 311 — Introduction to Methods of Teaching Secondary School Mathematics
+      Fall 2026: found 1 class sections.
+    [M 4/302] Opening MAE 312 — Micro-Teaching
+      Fall 2026: found 1 class sections.
+    [M 5/302] Opening MAE 330 — Technology in Mathematics Education
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [M 6/302] Opening MAE 400 — Experiential Learning, Speak Effectively, Practice Critical and Ethical Reasoning
+      Fall 2026: found 1 class sections.
+    [M 7/302] Opening MAE 401 — Respect Diversity and Foster Inclusiveness (DIV) for BS/MA in Teaching only
+      Fall 2026: found 1 class sections.
+    [M 8/302] Opening MAE 447 — Directed Readings in Mathematics Education
+      Fall 2026: found 1 class sections.
+    [M 9/302] Opening MAE 451 — Supervised Teaching - Middle School Level Grades 7-9
+      Fall 2026: found 1 class sections.
+    [M 10/302] Opening MAE 452 — Supervised Teaching - High School Grades 10-12
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (M 10/302) · 10 scraped, 0 already done, 0 failed · 15.6 pages/min · 38s elapsed · ~18m41s left in M
+    [M 11/302] Opening MAE 454 — Student Teaching Seminar
+      Fall 2026: found 1 class sections.
+    [M 12/302] Opening MAP 101 — Fundamentals of Arithmetic and Algebra
+      Fall 2026: found 3 class sections.
+    [M 13/302] Opening MAP 102 — Proficiency Algebra Review
+      No View Class Sections button; course has no sections.
+    [M 14/302] Opening MAP 103 — Proficiency Algebra
+      Fall 2026: found 14 class sections.
+    [M 15/302] Opening MAP 104 — Overview of Math Fundamentals
+      Fall 2026: found 3 class sections.
+    [M 16/302] Opening MAR 101 — Long Island Sound: Science and Use
+      No View Class Sections button; course has no sections.
+    [M 17/302] Opening MAR 102 — Introduction to SCUBA Diving
+      Fall 2026: found 2 class sections.
+    [M 18/302] Opening MAR 104 — Oceanography
+      Fall 2026: found 1 class sections.
+    [M 19/302] Opening MAR 105 — Introduction to Oceanography Laboratory
+      Fall 2026: found 1 class sections.
+    [M 20/302] Opening MAR 106 — Life in Our Ocean
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+  Progress: group 1/1 (M 20/302) · 20 scraped, 0 already done, 0 failed · 16.2 pages/min · 1m14s elapsed · ~17m26s left in M
+    [M 21/302] Opening MAR 107 — Marine Organisms in Changing Oceans
+      Fall 2026: found 1 class sections.
+    [M 22/302] Opening MAR 110 — Shark Biology & Conservation
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [M 23/302] Opening MAR 201 — The Jaws Effect
+      No View Class Sections button; course has no sections.
+    [M 24/302] Opening MAR 301 — Environmental Microbiology
+      Fall 2026: found 3 class sections.
+    [M 25/302] Opening MAR 302 — Marine Microbiology and Microbial Ecology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 26/302] Opening MAR 303 — Long Island Marine Habitats
+      Fall 2026: found 4 class sections.
+    [M 27/302] Opening MAR 304 — Waves, Tides, and Beaches
+      Fall 2026: found 1 class sections.
+    [M 28/302] Opening MAR 305 — Experimental Marine Biology
+      Fall 2026: found 3 class sections.
+    [M 29/302] Opening MAR 306 — Introduction to Scientific Diving
+      Fall 2026: found 2 class sections.
+    [M 30/302] Opening MAR 308 — Environmental Instrumental Analysis
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/1 (M 30/302) · 30 scraped, 0 already done, 0 failed · 17.7 pages/min · 1m41s elapsed · ~15m19s left in M
+    [M 31/302] Opening MAR 315 — Marine Conservation
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 32/302] Opening MAR 318 — Engineering Geology and Coastal Processes
+      No View Class Sections button; course has no sections.
+    [M 33/302] Opening MAR 320 — Limnology
+      No View Class Sections button; course has no sections.
+    [M 34/302] Opening MAR 333 — Coastal Oceanography
+      Fall 2026: found 1 class sections.
+    [M 35/302] Opening MAR 334 — Remote Sensing of the Environment
+      Fall 2026: found 2 class sections.
+    [M 36/302] Opening MAR 336 — Marine Pollution
+      Fall 2026: found 1 class sections.
+    [M 37/302] Opening MAR 340 — Environmental Problems and Solutions
+      Fall 2026: found 1 class sections.
+    [M 38/302] Opening MAR 346 — Marine Sedimentology
+      No View Class Sections button; course has no sections.
+    [M 39/302] Opening MAR 349 — Introduction to Biological Oceanography
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 40/302] Opening MAR 350 — Introduction to Ocean Physics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/1 (M 40/302) · 40 scraped, 0 already done, 0 failed · 19.2 pages/min · 2m04s elapsed · ~13m36s left in M
+    [M 41/302] Opening MAR 351 — Introduction to Ocean Chemistry
+      Fall 2026: found 2 class sections.
+    [M 42/302] Opening MAR 352 — Introduction to Physical Oceanography
+      No View Class Sections button; course has no sections.
+    [M 43/302] Opening MAR 354 — Introduction to Geological Oceanography
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 44/302] Opening MAR 355 — Coastal Cultural Experience
+      No View Class Sections button; course has no sections.
+    [M 45/302] Opening MAR 356 — Maritime Traditions of New England
+      Fall 2026: found 1 class sections.
+    [M 46/302] Opening MAR 357 — Unsinkable Technologies: History of Maritime Science and Technology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 47/302] Opening MAR 362 — Marine Vertebrate Biology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 48/302] Opening MAR 365 — Bioacoustics
+      No View Class Sections button; course has no sections.
+    [M 49/302] Opening MAR 370 — Marine Mammals
+      Fall 2026: found 1 class sections.
+    [M 50/302] Opening MAR 373 — Marine Apex Predators: Ecology and Conservation
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+  Progress: group 1/1 (M 50/302) · 50 scraped, 0 already done, 0 failed · 20.3 pages/min · 2m27s elapsed · ~12m25s left in M
+    Pausing 5s after 50 detail pages…
+    [M 51/302] Opening MAR 375 — Marine Mammal and Sea Turtle Rehabilitation
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 52/302] Opening MAR 376 — Biology and Conservation of Sea Turtles
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 53/302] Opening MAR 377 — Biology and Conservation of Seabirds
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 54/302] Opening MAR 380 — Ichthyology
+      Fall 2026: found 2 class sections.
+    [M 55/302] Opening MAR 382 — Introduction to Next Generation Sequencing and its applications across fields
+      No View Class Sections button; course has no sections.
+    [M 56/302] Opening MAR 384 — Diseases of Aquatic Organisms
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 57/302] Opening MAR 385 — Principles of Fishery Biology and Management
+      No View Class Sections button; course has no sections.
+    [M 58/302] Opening MAR 386 — Ecosystem Science for Fisheries Management
+      Fall 2026: found 1 class sections.
+    [M 59/302] Opening MAR 388 — Tropical Marine Ecology
+      Fall 2026: not listed for this course. Available terms: Winter 2027
+    [M 60/302] Opening MAR 389 — Coral Biology and Conservation - Red Sea Program
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (M 60/302) · 60 scraped, 0 already done, 0 failed · 20.6 pages/min · 2m54s elapsed · ~11m44s left in M
+    [M 61/302] Opening MAR 390 — Aquaculture
+      No View Class Sections button; course has no sections.
+    [M 62/302] Opening MAR 392 — Waste Management Issues
+      Fall 2026: found 1 class sections.
+    [M 63/302] Opening MAR 393 — Waste Treatment Technologies
+      No View Class Sections button; course has no sections.
+    [M 64/302] Opening MAR 394 — Environmental Toxicology and Public Health
+      No View Class Sections button; course has no sections.
+    [M 65/302] Opening MAR 395 — Topics in Marine Environmental Sciences
+      Fall 2026: found 1 class sections.
+    [M 66/302] Opening MAR 447 — Readings in Marine Science
+      Fall 2026: found 3 class sections.
+    [M 67/302] Opening MAR 458 — Speak Effectively Before an Audience
+      Fall 2026: found 57 class sections.
+    [M 68/302] Opening MAR 459 — Write Effectively in ATM, ENS, MAR and MVB
+      Fall 2026: found 57 class sections.
+    [M 69/302] Opening MAR 475 — Undergraduate Teaching Practicum
+      Fall 2026: found 56 class sections.
+    [M 70/302] Opening MAR 487 — Research in Marine Sciences
+      Fall 2026: found 58 class sections.
+  Progress: group 1/1 (M 70/302) · 70 scraped, 0 already done, 0 failed · 16.5 pages/min · 4m14s elapsed · ~14m04s left in M
+    [M 71/302] Opening MAR 488 — Internship
+      Fall 2026: found 56 class sections.
+    [M 72/302] Opening MAT 118 — Mathematical Thinking
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026, Winter 2027
+    [M 73/302] Opening MAT 119 — Foundations for Precalculus
+      Fall 2026: found 8 class sections.
+    [M 74/302] Opening MAT 122 — Overview of Calculus with Applications
+      Fall 2026: found 4 class sections.
+    [M 75/302] Opening MAT 123 — Precalculus
+      Fall 2026: found 104 class sections.
+    [M 76/302] Opening MAT 125 — Calculus A
+      Fall 2026: grid shows ['Summer 2026']; retrying.
+      Fall 2026: found 100 class sections.
+    [M 77/302] Opening MAT 126 — Calculus B
+      Fall 2026: found 51 class sections.
+    [M 78/302] Opening MAT 127 — Calculus C
+      Fall 2026: found 3 class sections.
+    [M 79/302] Opening MAT 130 — Trigonometry and Logarithms
+      Fall 2026: found 4 class sections.
+    [M 80/302] Opening MAT 131 — Calculus I
+      Fall 2026: found 26 class sections.
+  Progress: group 1/1 (M 80/302) · 80 scraped, 0 already done, 0 failed · 12.7 pages/min · 6m17s elapsed · ~17m27s left in M
+    [M 81/302] Opening MAT 132 — Calculus II
+      Fall 2026: found 24 class sections.
+    [M 82/302] Opening MAT 200 — Logic, Language and Proof
+      Fall 2026: found 6 class sections.
+    [M 83/302] Opening MAT 203 — Calculus III with Applications
+      Fall 2026: found 9 class sections.
+    [M 84/302] Opening MAT 211 — Introduction to Linear Algebra
+      Fall 2026: found 4 class sections.
+    [M 85/302] Opening MAT 250 — Introduction to Advanced Mathematics
+      Fall 2026: found 1 class sections.
+    [M 86/302] Opening MAT 260 — Problem Solving in Mathematics
+      No View Class Sections button; course has no sections.
+    [M 87/302] Opening MAT 303 — Calculus IV with Applications
+      Fall 2026: found 5 class sections.
+    [M 88/302] Opening MAT 307 — Multivariable Calculus with Linear Algebra
+      Fall 2026: found 3 class sections.
+    [M 89/302] Opening MAT 308 — Differential Equations with Linear Algebra
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 90/302] Opening MAT 310 — Linear Algebra
+      Fall 2026: found 4 class sections.
+  Progress: group 1/1 (M 90/302) · 90 scraped, 0 already done, 0 failed · 12.4 pages/min · 7m16s elapsed · ~17m07s left in M
+    [M 91/302] Opening MAT 311 — Number Theory
+      Fall 2026: found 1 class sections.
+    [M 92/302] Opening MAT 312 — Applied Algebra
+      Fall 2026: found 4 class sections.
+    [M 93/302] Opening MAT 313 — Abstract Algebra
+      Fall 2026: found 1 class sections.
+    [M 94/302] Opening MAT 314 — Abstract Algebra II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 95/302] Opening MAT 315 — Advanced Linear Algebra
+      Fall 2026: found 2 class sections.
+    [M 96/302] Opening MAT 319 — Foundations of Analysis
+      Fall 2026: found 4 class sections.
+    [M 97/302] Opening MAT 320 — Introduction to Analysis
+      Fall 2026: found 2 class sections.
+    [M 98/302] Opening MAT 322 — Analysis in Several Dimensions
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 99/302] Opening MAT 324 — Real Analysis
+      Fall 2026: found 1 class sections.
+    [M 100/302] Opening MAT 331 — Computer-Assisted Mathematical Problem Solving
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (M 100/302) · 100 scraped, 0 already done, 0 failed · 12.9 pages/min · 7m46s elapsed · ~15m43s left in M
+    Pausing 5s after 100 detail pages…
+    [M 101/302] Opening MAT 336 — History of Mathematics
+      Fall 2026: found 3 class sections.
+    [M 102/302] Opening MAT 341 — Applied Real Analysis
+      Fall 2026: found 2 class sections.
+    [M 103/302] Opening MAT 342 — Applied Complex Analysis
+      Fall 2026: found 2 class sections.
+    [M 104/302] Opening MAT 344 — Complex Analysis
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 105/302] Opening MAT 351 — Differential Equations: Dynamics and Chaos
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 106/302] Opening MAT 355 — Markov Chains and Mixing Times
+      No View Class Sections button; course has no sections.
+    [M 107/302] Opening MAT 360 — Geometric Structures
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 108/302] Opening MAT 362 — Differential Geometry of Surfaces
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 109/302] Opening MAT 364 — Topology and Geometry
+      Fall 2026: found 1 class sections.
+    [M 110/302] Opening MAT 371 — Logic
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (M 110/302) · 110 scraped, 0 already done, 0 failed · 13.1 pages/min · 8m25s elapsed · ~14m42s left in M
+    [M 111/302] Opening MAT 373 — Analysis of Algorithms
+      Fall 2026: found 1 class sections.
+    [M 112/302] Opening MAT 401 — Seminar in Mathematics
+      Fall 2026: found 1 class sections.
+    [M 113/302] Opening MAT 402 — Seminar in Mathematics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 114/302] Opening MAT 444 — Experiential Learning
+      Fall 2026: found 2 class sections.
+    [M 115/302] Opening MAT 458 — Speak Effectively Before an Audience
+      Fall 2026: found 1 class sections.
+    [M 116/302] Opening MAT 459 — Write Effectively in Mathematics
+      Fall 2026: found 4 class sections.
+    [M 117/302] Opening MAT 464 — Foundations of Topology
+      Fall 2026: found 1 class sections.
+    [M 118/302] Opening MAT 475 — Undergraduate Teaching Practicum
+      Fall 2026: found 1 class sections.
+    [M 119/302] Opening MAT 487 — Independent Study in Special Topics
+      Fall 2026: found 43 class sections.
+    [M 120/302] Opening MAT 495 — Honors Thesis
+      Fall 2026: found 43 class sections.
+  Progress: group 1/1 (M 120/302) · 120 scraped, 0 already done, 0 failed · 13.0 pages/min · 9m13s elapsed · ~14m00s left in M
+    [M 121/302] Opening MDA 117 — Media: Analysis and Culture
+      No View Class Sections button; course has no sections.
+    [M 122/302] Opening MDA 277 — The Media Industry
+      No View Class Sections button; course has no sections.
+    [M 123/302] Opening MDA 480 — Projects in Media
+      No View Class Sections button; course has no sections.
+    [M 124/302] Opening MDA 488 — Internship
+      No View Class Sections button; course has no sections.
+    [M 125/302] Opening MEC 100 — Introduction to Mechanical Engineering
+      No View Class Sections button; course has no sections.
+    [M 126/302] Opening MEC 101 — Freshman Design Innovation
+      Fall 2026: found 3 class sections.
+    [M 127/302] Opening MEC 102 — Engineering Computing and Problem Solving
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 128/302] Opening MEC 104 — Practical Science of Things
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [M 129/302] Opening MEC 105 — Everyday Science and Engineering
+      Fall 2026: found 1 class sections.
+    [M 130/302] Opening MEC 203 — Engineering Graphics and CAD
+      Fall 2026: found 2 class sections.
+  Progress: group 1/1 (M 130/302) · 130 scraped, 0 already done, 0 failed · 13.4 pages/min · 9m41s elapsed · ~12m48s left in M
+    [M 131/302] Opening MEC 220 — Practical Electronics for Mechanical Engineers
+      Fall 2026: found 1 class sections.
+    [M 132/302] Opening MEC 225 — Fundamentals of Machining Practices
+      Fall 2026: found 8 class sections.
+    [M 133/302] Opening MEC 226 — Modern Machining Practices
+      Fall 2026: found 1 class sections.
+    [M 134/302] Opening MEC 260 — Engineering Statics
+      Fall 2026: found 5 class sections.
+    [M 135/302] Opening MEC 262 — Engineering Dynamics
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [M 136/302] Opening MEC 280 — Pollution and Human Health
+      No View Class Sections button; course has no sections.
+    [M 137/302] Opening MEC 300 — Professional Conduct for Engineers
+      Fall 2026: found 1 class sections.
+    [M 138/302] Opening MEC 301 — Thermodynamics
+      Fall 2026: found 2 class sections.
+    [M 139/302] Opening MEC 305 — Heat and Mass Transfer
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 140/302] Opening MEC 310 — Introduction to Machine Design
+      Fall 2026: found 2 class sections.
+  Progress: group 1/1 (M 140/302) · 140 scraped, 0 already done, 0 failed · 13.5 pages/min · 10m23s elapsed · ~12m01s left in M
+    [M 141/302] Opening MEC 316 — Instrumentation and Solid Mechanics Laboratory
+      Fall 2026: found 3 class sections.
+    [M 142/302] Opening MEC 317 — Thermal Sciences and Fluid Mechanics Laboratory
+      Fall 2026: found 2 class sections.
+    [M 143/302] Opening MEC 320 — Numerical Methods in Engineering Design and Analysis
+      Fall 2026: found 1 class sections.
+    [M 144/302] Opening MEC 325 — Manufacturing Processes
+      Fall 2026: found 2 class sections.
+    [M 145/302] Opening MEC 363 — Mechanics of Solids
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [M 146/302] Opening MEC 364 — Introduction to Fluid Mechanics
+      Fall 2026: found 5 class sections.
+    [M 147/302] Opening MEC 393 — Engineering Fluid Mechanics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 148/302] Opening MEC 398 — Thermodynamics II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 149/302] Opening MEC 402 — Mechanical Vibrations
+      Fall 2026: found 1 class sections.
+    [M 150/302] Opening MEC 410 — Design of Machine Elements
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+  Progress: group 1/1 (M 150/302) · 150 scraped, 0 already done, 0 failed · 13.9 pages/min · 10m49s elapsed · ~10m58s left in M
+    Pausing 5s after 150 detail pages…
+    [M 151/302] Opening MEC 411 — Control System Analysis and Design
+      Fall 2026: found 5 class sections.
+    [M 152/302] Opening MEC 422 — Thermal System Design
+      Fall 2026: found 2 class sections.
+    [M 153/302] Opening MEC 423 — Internal Combustion Engines
+      Fall 2026: found 1 class sections.
+    [M 154/302] Opening MEC 440 — Mechanical Engineering Design I
+      Fall 2026: found 2 class sections.
+    [M 155/302] Opening MEC 441 — Mechanical Engineering Design II
+      Fall 2026: found 2 class sections.
+    [M 156/302] Opening MEC 442 — Introduction to Experimental Stress Analysis
+      No View Class Sections button; course has no sections.
+    [M 157/302] Opening MEC 450 — Mechatronics
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 158/302] Opening MEC 455 — Applied Stress Analysis
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 159/302] Opening MEC 456 — Introduction to Engineering Mechanics of Composites
+      Fall 2026: found 1 class sections.
+    [M 160/302] Opening MEC 457 — Engineering Composites Fabrication and Characterization
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (M 160/302) · 160 scraped, 0 already done, 0 failed · 14.1 pages/min · 11m19s elapsed · ~10m03s left in M
+    [M 161/302] Opening MEC 464 — Fundamentals of Aerodynamics
+      No View Class Sections button; course has no sections.
+    [M 162/302] Opening MEC 465 — Aerospace Propulsion
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 163/302] Opening MEC 470 — Introduction to Tribology
+      No View Class Sections button; course has no sections.
+    [M 164/302] Opening MEC 475 — Undergraduate Teaching Practicum
+      Fall 2026: found 5 class sections.
+    [M 165/302] Opening MEC 488 — Mechanical Engineering Internship
+      Fall 2026: found 2 class sections.
+    [M 166/302] Opening MEC 491 — Topics in Mechanical Engineering
+      Fall 2026: found 1 class sections.
+    [M 167/302] Opening MEC 492 — Topics in Mechanical Engineering
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 168/302] Opening MEC 495 — Professional Engineering Seminar
+      No View Class Sections button; course has no sections.
+    [M 169/302] Opening MEC 499 — Research in Mechanical Engineering
+      Fall 2026: found 28 class sections.
+    [M 170/302] Opening MSL 101 — Introduction to the Army
+      Fall 2026: found 2 class sections.
+  Progress: group 1/1 (M 170/302) · 170 scraped, 0 already done, 0 failed · 14.2 pages/min · 11m56s elapsed · ~9m16s left in M
+    [M 171/302] Opening MSL 102 — Foundations of Agile and Adaptive Leadership
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 172/302] Opening MSL 201 — Leadership and Decision Making
+      Fall 2026: found 2 class sections.
+    [M 173/302] Opening MSL 202 — Army Doctrine and Team Development
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 174/302] Opening MSL 301 — Training Management and Warfighting Functions
+      Fall 2026: found 2 class sections.
+    [M 175/302] Opening MSL 302 — Applied Leadership in Small Unit Operations
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 176/302] Opening MSL 401 — The Army Officer
+      Fall 2026: found 2 class sections.
+    [M 177/302] Opening MSL 402 — Company Grade Leadership
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 178/302] Opening MUS 101 — Introduction to Western Classical Music
+      Fall 2026: found 5 class sections.
+    [M 179/302] Opening MUS 103 — Introduction to Music and the Cinema
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026, Winter 2027
+    [M 180/302] Opening MUS 105 — Music Cultures of the World
+      Fall 2026: found 2 class sections.
+  Progress: group 1/1 (M 180/302) · 180 scraped, 0 already done, 0 failed · 14.5 pages/min · 12m26s elapsed · ~8m26s left in M
+    [M 181/302] Opening MUS 106 — Introduction to African American Music
+      Fall 2026: found 1 class sections.
+    [M 182/302] Opening MUS 109 — Rock, Popular Music, and Society
+      Fall 2026: found 1 class sections.
+    [M 183/302] Opening MUS 119 — The Elements of Music
+      Fall 2026: found 10 class sections.
+    [M 184/302] Opening MUS 120 — Elementary Musicianship
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 185/302] Opening MUS 121 — Musicianship I
+      Fall 2026: found 1 class sections.
+    [M 186/302] Opening MUS 122 — Beginning Keyboard
+      Fall 2026: found 1 class sections.
+    [M 187/302] Opening MUS 123 — Elementary Guitar
+      Fall 2026: found 1 class sections.
+    [M 188/302] Opening MUS 130 — Sound Structures
+      Fall 2026: found 2 class sections.
+    [M 189/302] Opening MUS 141 — Keyboard Harmony A
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 190/302] Opening MUS 142 — Keyboard Harmony B
+      Fall 2026: found 2 class sections.
+  Progress: group 1/1 (M 190/302) · 190 scraped, 0 already done, 0 failed · 14.5 pages/min · 13m08s elapsed · ~7m44s left in M
+    [M 191/302] Opening MUS 161 — Piano
+      Fall 2026: found 1 class sections.
+    [M 192/302] Opening MUS 163 — Harpsichord
+      Fall 2026: found 1 class sections.
+    [M 193/302] Opening MUS 165 — Violin
+      Fall 2026: found 1 class sections.
+    [M 194/302] Opening MUS 166 — Viola
+      Fall 2026: found 2 class sections.
+    [M 195/302] Opening MUS 167 — Cello
+      Fall 2026: found 1 class sections.
+    [M 196/302] Opening MUS 168 — String Bass
+      Fall 2026: found 1 class sections.
+    [M 197/302] Opening MUS 169 — Classical Guitar
+      Fall 2026: found 1 class sections.
+    [M 198/302] Opening MUS 170 — Flute
+      Fall 2026: found 1 class sections.
+    [M 199/302] Opening MUS 171 — Oboe
+      Fall 2026: found 1 class sections.
+    [M 200/302] Opening MUS 172 — Clarinet
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (M 200/302) · 200 scraped, 0 already done, 0 failed · 14.7 pages/min · 13m35s elapsed · ~6m56s left in M
+    Pausing 5s after 200 detail pages…
+    [M 201/302] Opening MUS 173 — Bassoon
+      Fall 2026: found 1 class sections.
+    [M 202/302] Opening MUS 175 — Horn
+      Fall 2026: found 1 class sections.
+    [M 203/302] Opening MUS 176 — Trumpet
+      Fall 2026: found 1 class sections.
+    [M 204/302] Opening MUS 177 — Trombone
+      Fall 2026: found 1 class sections.
+    [M 205/302] Opening MUS 178 — Saxophone
+      Fall 2026: found 1 class sections.
+    [M 206/302] Opening MUS 180 — Percussion
+      Fall 2026: found 1 class sections.
+    [M 207/302] Opening MUS 182 — Voice
+      Fall 2026: found 2 class sections.
+    [M 208/302] Opening MUS (185) — Individual Jazz Study ** available as of 01/01/2027
+      No View Class Sections button; course has no sections.
+    [M 209/302] Opening MUS 187 — Other Instruments
+      Fall 2026: found 1 class sections.
+    [M 210/302] Opening MUS 189 — Introduction to Jazz Improvisation
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (M 210/302) · 210 scraped, 0 already done, 0 failed · 14.8 pages/min · 14m09s elapsed · ~6m11s left in M
+    [M 211/302] Opening MUS 205 — Creative Coding - Multimedia Interactions
+      Fall 2026: found 1 class sections.
+    [M 212/302] Opening MUS 207 — Introduction to Music Performers and Performance
+      No View Class Sections button; course has no sections.
+    [M 213/302] Opening MUS 208 — Introduction to Music Technology
+      Fall 2026: found 2 class sections.
+    [M 214/302] Opening MUS 210 — Introduction to Music Histories and Cultures
+      No View Class Sections button; course has no sections.
+    [M 215/302] Opening MUS 220 — Musicianship II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 216/302] Opening MUS 221 — Musicianship III
+      Fall 2026: found 1 class sections.
+    [M 217/302] Opening MUS 235 — Introduction to African Drumming
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 218/302] Opening MUS 261 — Stony Brook Chorale
+      Fall 2026: found 1 class sections.
+    [M 219/302] Opening MUS 262 — University Orchestra
+      Fall 2026: found 1 class sections.
+    [M 220/302] Opening MUS 263 — University Wind Ensemble
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (M 220/302) · 220 scraped, 0 already done, 0 failed · 15.1 pages/min · 14m34s elapsed · ~5m25s left in M
+    [M 221/302] Opening MUS 264 — Big Band Jazz Ensemble
+      Fall 2026: found 1 class sections.
+    [M 222/302] Opening MUS 265 — Workshop in Performance
+      Fall 2026: found 5 class sections.
+    [M 223/302] Opening MUS 266 — Guitar Workshop
+      Fall 2026: found 1 class sections.
+    [M 224/302] Opening MUS 267 — Small Jazz Ensemble Level 1
+      Fall 2026: found 1 class sections.
+    [M 225/302] Opening MUS 268 — Spirit of Stony Brook Athletic Band
+      Fall 2026: found 1 class sections.
+    [M 226/302] Opening MUS 271 — Camerata Singers
+      Fall 2026: found 1 class sections.
+    [M 227/302] Opening MUS 289 — Small Jazz Ensemble Level 2
+      Fall 2026: found 1 class sections.
+    [M 228/302] Opening MUS 290 — Vocal Repertory
+      Fall 2026: found 1 class sections.
+    [M 229/302] Opening MUS 300 — Music, Technology, and Digital Culture
+      Fall 2026: not listed for this course. Available terms: Spring 2027, Summer 2026
+    [M 230/302] Opening MUS 301 — Shakespeare and Music
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (M 230/302) · 230 scraped, 0 already done, 0 failed · 15.3 pages/min · 14m59s elapsed · ~4m41s left in M
+    [M 231/302] Opening MUS 302 — Music in the Age of Bach
+      No View Class Sections button; course has no sections.
+    [M 232/302] Opening MUS 303 — Music in the Age of Beethoven
+      No View Class Sections button; course has no sections.
+    [M 233/302] Opening MUS 304 — American Music
+      No View Class Sections button; course has no sections.
+    [M 234/302] Opening MUS 306 — The Music and Culture of Hip-Hop
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 235/302] Opening MUS 307 — Imaginative Worlds of Opera
+      No View Class Sections button; course has no sections.
+    [M 236/302] Opening MUS 308 — History of Jazz
+      Fall 2026: found 1 class sections.
+    [M 237/302] Opening MUS 309 — Music Since 1900
+      Fall 2026: found 1 class sections.
+    [M 238/302] Opening MUS 310 — Music and Culture in the 1960's
+      No View Class Sections button; course has no sections.
+    [M 239/302] Opening MUS 311 — Topics in Ethnomusicology
+      Fall 2026: found 1 class sections.
+    [M 240/302] Opening MUS 313 — Hearing Politics
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (M 240/302) · 240 scraped, 0 already done, 0 failed · 15.6 pages/min · 15m24s elapsed · ~3m58s left in M
+    [M 241/302] Opening MUS 314 — Music, Gender, and Sexuality
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 242/302] Opening MUS 315 — The Structural Principles of Music I
+      Fall 2026: found 1 class sections.
+    [M 243/302] Opening MUS 316 — The Structural Principles of Music II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 244/302] Opening MUS 317 — Music in China
+      No View Class Sections button; course has no sections.
+    [M 245/302] Opening MUS 320 — U.S. Popular Music
+      Fall 2026: not listed for this course. Available terms: Summer 2026
+    [M 246/302] Opening MUS 321 — Tonal Harmony I
+      Fall 2026: found 1 class sections.
+    [M 247/302] Opening MUS 322 — Tonal Harmony II
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 248/302] Opening MUS 323 — Techniques of Music, 1880 to the Present
+      Fall 2026: found 1 class sections.
+    [M 249/302] Opening MUS 324 — Harmonic Foundations of American Popular Music I
+      No View Class Sections button; course has no sections.
+    [M 250/302] Opening MUS 325 — Harmonic Foundations of American Popular Music II
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (M 250/302) · 250 scraped, 0 already done, 0 failed · 15.8 pages/min · 15m47s elapsed · ~3m17s left in M
+    Pausing 5s after 250 detail pages…
+    [M 251/302] Opening MUS 331 — Musicianship IV
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 252/302] Opening MUS 335 — Advanced African Drumming
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 253/302] Opening MUS 339 — Composition
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 254/302] Opening MUS 340 — Timbre and Technology
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 255/302] Opening MUS 341 — Sound Design
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 256/302] Opening MUS 344 — Audio Engineering
+      Fall 2026: found 1 class sections.
+    [M 257/302] Opening MUS 350 — Western Classical Music Before 1750
+      No View Class Sections button; course has no sections.
+    [M 258/302] Opening MUS 351 — Western Classical Music 1750 to 1900
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 259/302] Opening MUS 352 — Western Classical Music from 1900 to the Present
+      Fall 2026: found 2 class sections.
+    [M 260/302] Opening MUS 353 — Contemporary Music Practices
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (M 260/302) · 260 scraped, 0 already done, 0 failed · 16.0 pages/min · 16m17s elapsed · ~2m37s left in M
+    [M 261/302] Opening MUS 361 — Piano
+      Fall 2026: found 2 class sections.
+    [M 262/302] Opening MUS 362 — Piano Pedagogy
+      Fall 2026: found 1 class sections.
+    [M 263/302] Opening MUS 363 — Harpsichord
+      Fall 2026: found 1 class sections.
+    [M 264/302] Opening MUS 365 — Violin
+      Fall 2026: found 5 class sections.
+    [M 265/302] Opening MUS 366 — Viola
+      Fall 2026: found 2 class sections.
+    [M 266/302] Opening MUS 367 — Cello
+      Fall 2026: found 1 class sections.
+    [M 267/302] Opening MUS 368 — String Bass
+      Fall 2026: found 1 class sections.
+    [M 268/302] Opening MUS 369 — Classical Guitar
+      Fall 2026: found 1 class sections.
+    [M 269/302] Opening MUS 370 — Flute
+      Fall 2026: found 1 class sections.
+    [M 270/302] Opening MUS 371 — Oboe
+      Fall 2026: found 1 class sections.
+  Progress: group 1/1 (M 270/302) · 270 scraped, 0 already done, 0 failed · 16.1 pages/min · 16m46s elapsed · ~1m59s left in M
+    [M 271/302] Opening MUS 372 — Clarinet
+      Fall 2026: found 1 class sections.
+    [M 272/302] Opening MUS 373 — Bassoon
+      Fall 2026: found 1 class sections.
+    [M 273/302] Opening MUS 375 — Horn
+      Fall 2026: found 1 class sections.
+    [M 274/302] Opening MUS 376 — Trumpet
+      Fall 2026: found 1 class sections.
+    [M 275/302] Opening MUS 377 — Trombone
+      Fall 2026: found 1 class sections.
+    [M 276/302] Opening MUS 378 — Saxophone
+      Fall 2026: found 1 class sections.
+    [M 277/302] Opening MUS 380 — Percussion
+      Fall 2026: found 1 class sections.
+    [M 278/302] Opening MUS 382 — Voice
+      Fall 2026: found 2 class sections.
+    [M 279/302] Opening MUS 387 — Other Instruments
+      Fall 2026: found 2 class sections.
+    [M 280/302] Opening MUS 388 — Fundamentals of Accompanying
+      Fall 2026: found 2 class sections.
+  Progress: group 1/1 (M 280/302) · 280 scraped, 0 already done, 0 failed · 16.2 pages/min · 17m15s elapsed · ~1m21s left in M
+    [M 281/302] Opening MUS 390 — Advanced Accompanying
+      Fall 2026: found 1 class sections.
+    [M 282/302] Opening MUS 391 — Chamber Music
+      Fall 2026: found 1 class sections.
+    [M 283/302] Opening MUS 421 — Analysis of Tonal Music
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 284/302] Opening MUS 422 — Analysis of Post-Tonal Music
+      Fall 2026: found 1 class sections.
+    [M 285/302] Opening MUS 437 — Electronic Music
+      No View Class Sections button; course has no sections.
+    [M 286/302] Opening MUS 439 — Advanced Composition
+      Fall 2026: found 7 class sections.
+    [M 287/302] Opening MUS 444 — Experiential Learning
+      Fall 2026: found 1 class sections.
+    [M 288/302] Opening MUS 450 — Seminar in the History of Music
+      Fall 2026: found 1 class sections.
+    [M 289/302] Opening MUS 451 — Senior Seminar in Ethnography of Music
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 290/302] Opening MUS 458 — Speak Effectively Before an Audience
+      Fall 2026: found 2 class sections.
+  Progress: group 1/1 (M 290/302) · 290 scraped, 0 already done, 0 failed · 16.4 pages/min · 17m41s elapsed · ~43s left in M
+    [M 291/302] Opening MUS 459 — Write Effectively in Music
+      Fall 2026: found 1 class sections.
+    [M 292/302] Opening MUS 475 — Undergraduate Teaching Practicum I
+      Fall 2026: found 1 class sections.
+    [M 293/302] Opening MUS 476 — Undergraduate Teaching Practicum II
+      Fall 2026: found 1 class sections.
+    [M 294/302] Opening MUS 487 — Independent Project
+      Fall 2026: found 26 class sections.
+    [M 295/302] Opening MUS 488 — Internship
+      Fall 2026: found 2 class sections.
+    [M 296/302] Opening MUS 491 — Conducting
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+    [M 297/302] Opening MUS 495 — Senior Honors Project in Music
+      Fall 2026: found 2 class sections.
+    [M 298/302] Opening MVL 141 — The Legend of King Arthur
+      No View Class Sections button; course has no sections.
+    [M 299/302] Opening MVL 241 — Heroes and Warriors
+      No View Class Sections button; course has no sections.
+    [M 300/302] Opening MVL 447 — Independent Readings and Research
+      Fall 2026: not listed for this course. Available terms: Spring 2027
+  Progress: group 1/1 (M 300/302) · 300 scraped, 0 already done, 0 failed · 16.4 pages/min · 18m19s elapsed · ~7s left in M
+    Pausing 5s after 300 detail pages…
+    [M 301/302] Opening MVL 475 — Undergraduate Teaching Practicum I
+      No View Class Sections button; course has no sections.
+    [M 302/302] Opening MVL 476 — Undergraduate Teaching Practicum II
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (M 302/302) · 302 scraped, 0 already done, 0 failed · 16.3 pages/min · 18m28s elapsed
+Exported index: 302 records (JSON + CSV)
+Exported details: 302 records (JSONL + JSON + CSV)
+Exported sections: 1075 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_13/semesteros-export.zip
+
+Done in 18m29s: 302 scraped, 0 already done, 0 failed, 460 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_13/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_13/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_13/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_13/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_13/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_13/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_13/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fall/.workers/worker_13/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.
