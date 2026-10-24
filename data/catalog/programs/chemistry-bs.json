@@ -80,7 +80,9 @@
           },
           {
             "type": "course",
-            "code": "CHE 303"
+            "code": "CHE 303",
+            "id": "chemistry-bs.core.che303",
+            "manualCheck": "CHE 303 also satisfies the upper-division writing requirement for the major (CHE 303, CHE 304 or CHE 384 with a satisfactory grade); no separate course is needed."
           },
           {
             "type": "course",
@@ -130,36 +132,170 @@
             "code": "CHE 385"
           },
           {
-            "type": "course",
-            "code": "MAT 131"
+            "id": "chemistry-bs.core.calculus",
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 132"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 127"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 142"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT 171"
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 161"
+                  }
+                ]
+              }
+            ],
+            "sourceText": "MAT 131, MAT 132 (alternate sequences may be substituted: MAT 125 (or MAT 130/MAT 125), MAT 126, MAT 127 or MAT 141, MAT 142 or MAT 171 or AMS 151, AMS 161)"
           },
           {
-            "type": "course",
-            "code": "MAT 132"
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 203"
+              },
+              {
+                "type": "course",
+                "code": "AMS 210"
+              },
+              {
+                "type": "course",
+                "code": "MAT 211"
+              },
+              {
+                "type": "course",
+                "code": "AMS 261"
+              }
+            ],
+            "sourceText": "MAT 203 (AMS 210 or MAT 211 or AMS 261 may be substituted)"
           },
           {
-            "type": "course",
-            "code": "MAT 203"
-          },
-          {
-            "type": "course",
-            "code": "PHY 131"
-          },
-          {
-            "type": "course",
-            "code": "PHY 133"
-          },
-          {
-            "type": "course",
-            "code": "PHY 132"
-          },
-          {
-            "type": "course",
-            "code": "PHY 134"
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 142"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "PHY 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 133"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 127"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY 134"
+                  }
+                ]
+              }
+            ],
+            "sourceText": "PHY 131, PHY 133, PHY 132, PHY 134 (alternates: PHY 141/PHY 133, PHY 142/PHY 134 or PHY 125, PHY 126/PHY 133, PHY 127/PHY 134)"
           }
         ]
       },
-      "sourceText": "CHE 131 - General Chemistry IB OR CHE 129 - General Chemistry IA AND CHE 130 - Problem Solving in General Chemistry; CHE 132 - General Chemistry II OR CHE 152 - Molecular Science I; CHE 133 - General Chemistry Laboratory I, CHE 134 - General Chemistry Laboratory II OR CHE 154 - Molecular Science Laboratory I; CHE 301 - Physical Chemistry I; CHE 302 - Physical Chemistry II; CHE 303 - Solution Chemistry Laboratory; CHE 321 - Organic Chemistry I; CHE 322 - Organic Chemistry IIA OR CHE 331 - Molecular Science II and CHE 332 - Molecular Science III; CHE 375 - Inorganic Chemistry I; CHE 327 - Organic Chemistry Laboratory OR CHE 383 - Introductory Synthetic and Spectroscopic Laboratory Techniques; CHE 385 - Tools of Chemistry; MAT 131 - Calculus I; MAT 132 - Calculus II; MAT 203 - Calculus III with Applications (See note 1 for possible substitutions); PHY 131 - Classical Physics I; PHY 133 - Classical Physics Laboratory I; PHY 132 - Classical Physics II; PHY 134 - Classical Physics Laboratory II (See note 2 for possible substitutions)"
+      "sourceText": "CHE 131 - General Chemistry IB OR CHE 129 - General Chemistry IA AND CHE 130 - Problem Solving in General Chemistry; CHE 132 - General Chemistry II OR CHE 152 - Molecular Science I; CHE 133 - General Chemistry Laboratory I, CHE 134 - General Chemistry Laboratory II OR CHE 154 - Molecular Science Laboratory I; CHE 301 - Physical Chemistry I; CHE 302 - Physical Chemistry II; CHE 303 - Solution Chemistry Laboratory; CHE 321 - Organic Chemistry I; CHE 322 - Organic Chemistry IIA OR CHE 331 - Molecular Science II and CHE 332 - Molecular Science III; CHE 375 - Inorganic Chemistry I; CHE 327 - Organic Chemistry Laboratory OR CHE 383 - Introductory Synthetic and Spectroscopic Laboratory Techniques; CHE 385 - Tools of Chemistry; MAT 131 - Calculus I; MAT 132 - Calculus II; MAT 203 - Calculus III with Applications (See note 1 for possible substitutions); PHY 131 - Classical Physics I; PHY 133 - Classical Physics Laboratory I; PHY 132 - Classical Physics II; PHY 134 - Classical Physics Laboratory II (See note 2 for possible substitutions) Note: the alternate calculus, linear algebra and physics sequences are built into this requirement."
     },
     {
       "id": "chemistry-bs.area",
@@ -245,7 +381,9 @@
                   ]
                 }
               }
-            ]
+            ],
+            "id": "chemistry-bs.area.option.chemical-science",
+            "label": "Chemical Science"
           },
           {
             "type": "allOf",
@@ -312,7 +450,9 @@
                   ]
                 }
               }
-            ]
+            ],
+            "id": "chemistry-bs.area.option.biological-chemistry",
+            "label": "Biological Chemistry"
           },
           {
             "type": "allOf",
@@ -339,9 +479,9 @@
                 "code": "CHE 357"
               },
               {
-                "manualCheck": "Page lists these as OR alternatives, but note 6 states the Chemical Physics option requires two math courses in addition to Calculus I and II.",
+                "manualCheck": "The page lists these as OR alternatives (MAT 203 in the core is a further math course). Note 6 reportedly asks for two math courses beyond Calculus I and II; confirm with the department.",
                 "type": "choose",
-                "count": 2,
+                "count": 1,
                 "from": {
                   "courses": [
                     "AMS 210",
@@ -375,7 +515,9 @@
                   ]
                 }
               }
-            ]
+            ],
+            "id": "chemistry-bs.area.option.chemical-physics",
+            "label": "Chemical Physics"
           },
           {
             "type": "allOf",
@@ -435,7 +577,9 @@
                 "type": "course",
                 "code": "ATM 397"
               }
-            ]
+            ],
+            "id": "chemistry-bs.area.option.environmental-chemistry",
+            "label": "Environmental Chemistry"
           },
           {
             "type": "allOf",
@@ -472,57 +616,15 @@
                   ]
                 }
               }
-            ]
+            ],
+            "id": "chemistry-bs.area.option.marine-atmospheric-chemistry",
+            "label": "Marine and Atmospheric Chemistry"
           }
-        ]
+        ],
+        "id": "chemistry-bs.area.option",
+        "choice": "track"
       },
       "sourceText": "One of the following options: Chemical Science Option (CHE 304; CHE 357 OR CHE 377; CHE 328 OR CHE 384; CHE 487 - Research in Chemistry 0-6 credits OR CHE 495 - Senior Research 3 credits, CHE 496 - Senior Research 3 credits (see note 3); two electives from CHE 345, CHE 461, CHE 346, CHE 348, CHE 351, CHE 353, CHE 358, CHE 376, CHE 377, CHE 378, PHY 251, ESG 281). Biological Chemistry Option (CHE 328 OR CHE 384; BIO 202; CHE 346, CHE 461 (recommended) OR BIO 361; BIO 310 OR BIO 362; one organic or inorganic chemistry elective from CHE 345, CHE 461, CHE 346, CHE 348, CHE 376, CHE 377, CHE 378, CHE 495, CHE 496). Chemical Physics Option (CHE 304; CHE 351 OR CHE 353; CHE 357; AMS 210 OR MAT 211 OR AMS 261 OR MAT 303 (see note 6); PHY 251; PHY 252; one elective from CHE 358, PHY 277, PHY 300, PHY 307, PHY 301, PHY 303, PHY 306). Environmental Chemistry Option (CHE 304; CHE 310; CHE 357 OR CHE 377 OR CHE 311; CHE 328 OR CHE 384; BIO 201 OR BIO 113; ATM 397 (see note 6 for possible substitutions)). Marine and Atmospheric Chemistry Option (ATM 205; MAR 308; MAR 333; MAR 351; two electives from MAR 301, MAR 302, MAR 334, MAR 336, MAR 394, ATM 305, ATM 345, ATM 397)."
-    },
-    {
-      "id": "chemistry-bs.writing",
-      "label": "writing",
-      "title": "Upper-Division Writing Requirement",
-      "rule": {
-        "manualCheck": "CHE 303 is also a core requirement. Confirm the writing course is counted once, since reuse is not allowed.",
-        "type": "anyOf",
-        "rules": [
-          {
-            "type": "course",
-            "code": "CHE 303"
-          },
-          {
-            "type": "course",
-            "code": "CHE 304"
-          },
-          {
-            "type": "course",
-            "code": "CHE 384"
-          }
-        ]
-      },
-      "sourceText": "Each student majoring in Chemistry must use CHE 303, CHE 304, or CHE 384 to satisfy the writing requirement for the Chemistry major (a satisfactory grade is required)."
-    },
-    {
-      "id": "chemistry-bs.grade-exception",
-      "label": "grade-exception",
-      "title": "Grade exception for three major courses",
-      "rule": {
-        "type": "unparsed",
-        "text": "Three courses used for the major may be passed with a grade of C- (courses not identified on the page).",
-        "reason": "The page does not identify which three courses may carry a C- grade, so the exception cannot be applied exactly."
-      },
-      "sourceText": "All of the courses used to fulfill the requirements of the major (CHE, MAT, PHY, BIO, etc.) must be passed with a letter grade of C or higher, with the exception of three courses, for which the grade may be C-."
-    },
-    {
-      "id": "chemistry-bs.upper-division-residency",
-      "label": "upper-division-residency",
-      "title": "Upper-division chemistry residency",
-      "rule": {
-        "type": "unparsed",
-        "text": "At least 12 credits of upper-division work in chemistry must be taken at Stony Brook, in at least two of the major subdisciplines (inorganic, physical, and organic chemistry).",
-        "reason": "Residency is limited to upper-division chemistry credits spread across subdisciplines, which no residency rule type expresses."
-      },
-      "sourceText": "At least 12 credits of upper-division work in chemistry must be taken at Stony Brook; these must be taken in at least two of the major subdisciplines (inorganic, physical, and organic chemistry)."
     }
   ],
   "policies": [
@@ -530,88 +632,30 @@
       "type": "letterGradeRequired",
       "appliesTo": [
         "chemistry-bs.core",
-        "chemistry-bs.area",
-        "chemistry-bs.writing"
+        "chemistry-bs.area"
       ],
       "sourceText": "All of the courses used to fulfill the requirements of the major (CHE, MAT, PHY, BIO, etc.) must be passed with a letter grade of C or higher... G/P/NC grades are not acceptable in courses taken for the major."
     },
     {
       "type": "minGrade",
-      "grade": "C",
+      "grade": "C-",
       "appliesTo": [
         "chemistry-bs.core",
-        "chemistry-bs.area",
-        "chemistry-bs.writing"
+        "chemistry-bs.area"
       ],
-      "sourceText": "All of the courses used to fulfill the requirements of the major must be passed with a letter grade of C or higher, with the exception of three courses, for which the grade may be C-. No transferred course with a grade lower than C may be used to fulfill any major requirement."
-    }
-  ],
-  "substitutions": [
-    {
-      "id": "chemistry-bs.sub.math-131-132",
-      "replaces": {
-        "type": "courses",
-        "courses": [
-          "MAT 131",
-          "MAT 132"
-        ]
-      },
-      "with": {
-        "type": "unparsed",
-        "text": "MAT 125 (or MAT 130/MAT 125), MAT 126, MAT 127 or MAT 141, MAT 142 or MAT 171 or AMS 151, AMS 161 for MAT 131, MAT 132",
-        "reason": "The alternate sequence wording is ambiguous about which courses combine into each alternative."
-      },
-      "requiresApproval": false,
-      "sourceText": "The following alternate sequences may be substituted for major requirements or prerequisites: MAT 125 (or MAT 130 /MAT 125), MAT 126, MAT 127 or MAT 141, MAT 142 or MAT 171 or AMS 151, AMS 161 for MAT 131, MAT 132."
+      "sourceText": "All of the courses used to fulfill the requirements of the major (CHE, MAT, PHY, BIO, etc.) must be passed with a letter grade of C or higher, with the exception of three courses, for which the grade may be C-. No transferred course with a grade lower than C may be used to fulfill any major requirement."
     },
     {
-      "id": "chemistry-bs.sub.math-203",
-      "replaces": {
-        "type": "courses",
-        "courses": [
-          "MAT 203"
-        ]
-      },
-      "with": {
-        "type": "anyOf",
-        "rules": [
-          {
-            "type": "course",
-            "code": "AMS 210"
-          },
-          {
-            "type": "course",
-            "code": "MAT 211"
-          },
-          {
-            "type": "course",
-            "code": "AMS 261"
-          }
-        ]
-      },
-      "requiresApproval": false,
-      "sourceText": "AMS 210 or MAT 211 or AMS 261 for MAT 203."
-    },
-    {
-      "id": "chemistry-bs.sub.physics",
-      "replaces": {
-        "type": "courses",
-        "courses": [
-          "PHY 131",
-          "PHY 132",
-          "PHY 133",
-          "PHY 134"
-        ]
-      },
-      "with": {
-        "type": "unparsed",
-        "text": "PHY 141/PHY 133, PHY 142/PHY 134 or PHY 125, PHY 126/PHY 133, PHY 127/PHY 134 for PHY 131/PHY 133, PHY 132/PHY 134",
-        "reason": "The alternate physics pairings are ambiguous for the PHY 132/PHY 134 slot and the PHY 125 alternative."
-      },
-      "requiresApproval": false,
-      "sourceText": "The following alternate sequences may be substituted for physics requirements or prerequisites: PHY 141 /PHY 133, PHY 142 /PHY 134 or PHY 125, PHY 126 /PHY 133, PHY 127 /PHY 134 for PHY 131 /PHY 133, PHY 132 /PHY 134."
+      "type": "residencyCredits",
+      "minCredits": 12,
+      "appliesTo": [
+        "chemistry-bs.core",
+        "chemistry-bs.area"
+      ],
+      "sourceText": "At least 12 credits of upper-division work in chemistry must be taken at Stony Brook; these must be taken in at least two of the major subdisciplines (inorganic, physical, and organic chemistry)."
     }
   ],
+  "substitutions": [],
   "sbc": {
     "exemptions": [],
     "fulfillment": [
@@ -946,6 +990,18 @@
     {
       "topic": "other",
       "text": "The page lists a 66-credit minimum for the major."
+    },
+    {
+      "topic": "grading",
+      "text": "Policy is set to C- as the floor because three major courses may be C-; at most three courses may be below C, and no transferred course below C may be used. Confirm this yourself."
+    },
+    {
+      "topic": "other",
+      "text": "The upper-division writing requirement is met by CHE 303 (required in the core), CHE 304 or CHE 384 with a satisfactory grade; it is satisfied by CHE 303 and has no separate course."
+    },
+    {
+      "topic": "other",
+      "text": "At least 12 credits of upper-division work in chemistry must be taken at Stony Brook; these must be taken in at least two of the major subdisciplines (inorganic, physical, and organic chemistry)."
     }
   ],
   "source": {
@@ -954,7 +1010,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

@@ -10,6 +10,7 @@
       "label": "chemistry",
       "title": "Chemistry Sequence Lecture Options",
       "rule": {
+        "manualCheck": "At least one semester of the two-semester general chemistry lecture sequence must be passed with a letter grade of C or higher.",
         "type": "anyOf",
         "rules": [
           {
@@ -43,7 +44,6 @@
             ]
           },
           {
-            "manualCheck": "The page lists CHE 152 alone as an option. Confirm whether a second lecture course is required with it.",
             "type": "course",
             "code": "CHE 152"
           }
@@ -84,6 +84,7 @@
       "label": "organic-chemistry",
       "title": "Organic Chemistry Lecture Options",
       "rule": {
+        "manualCheck": "At least one semester of the two-semester organic chemistry lecture sequence must be passed with a letter grade of C or higher.",
         "type": "anyOf",
         "rules": [
           {
@@ -153,10 +154,10 @@
       "label": "calculus",
       "title": "Calculus Course Options",
       "rule": {
+        "manualCheck": "Level 6, 7, 8 or 9 on the Mathematics Placement Examination also satisfies this requirement; the audit cannot see placement scores, so confirm it yourself if you are using that option. Students who do not place into MAT 125 or higher must first take MAT 123 (or MAT 119/MAT 123), which is then required for the major.",
         "type": "anyOf",
         "rules": [
           {
-            "manualCheck": "MAT 130 (1 credit) is listed with MAT 125 on the page. Confirm whether it is required alongside MAT 125.",
             "type": "course",
             "code": "MAT 125"
           },
@@ -175,11 +176,6 @@
           {
             "type": "course",
             "code": "AMS 151"
-          },
-          {
-            "type": "unparsed",
-            "text": "Level 6, 7, 8, or 9 on the Mathematics Placement Examination",
-            "reason": "Placement exam level is not a course and cannot be checked from a transcript"
           }
         ]
       },
@@ -190,6 +186,7 @@
       "label": "physics",
       "title": "Physics Sequence Options",
       "rule": {
+        "manualCheck": "At least one semester of the physics lecture/lab sequence must be passed with a letter grade of C or higher. The page lists no laboratory courses with the PHY 141/PHY 142 option; confirm with the department whether PHY 133/134 are also needed.",
         "type": "anyOf",
         "rules": [
           {
@@ -206,6 +203,7 @@
             ]
           },
           {
+            "manualCheck": "With a Classical Physics option, a math course at the level of Calculus B (AMS 161, MAT 126, MAT 132, MAT 142, MAT 171) or higher is also required for the major. MAT 171 counts at that level but is already used by the calculus requirement, so confirm it yourself if that is your route.",
             "type": "allOf",
             "rules": [
               {
@@ -227,10 +225,32 @@
               {
                 "type": "course",
                 "code": "PHY 134"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 161"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 142"
+                  }
+                ]
               }
             ]
           },
           {
+            "manualCheck": "With a Classical Physics option, a math course at the level of Calculus B (AMS 161, MAT 126, MAT 132, MAT 142, MAT 171) or higher is also required for the major. MAT 171 counts at that level but is already used by the calculus requirement, so confirm it yourself if that is your route.",
             "type": "allOf",
             "rules": [
               {
@@ -248,10 +268,32 @@
               {
                 "type": "course",
                 "code": "PHY 134"
+              },
+              {
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 161"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 142"
+                  }
+                ]
               }
             ]
           },
           {
+            "manualCheck": "With a Classical Physics option, a math course at the level of Calculus B (AMS 161, MAT 126, MAT 132, MAT 142, MAT 171) or higher is also required for the major. MAT 171 counts at that level but is already used by the calculus requirement, so confirm it yourself if that is your route.",
             "type": "allOf",
             "rules": [
               {
@@ -263,12 +305,25 @@
                 "code": "PHY 142"
               },
               {
-                "type": "course",
-                "code": "PHY 133"
-              },
-              {
-                "type": "course",
-                "code": "PHY 134"
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 161"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 132"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 142"
+                  }
+                ]
               }
             ]
           }
@@ -323,24 +378,19 @@
             "code": "BIO 203"
           },
           {
-            "type": "allOf",
+            "type": "course",
+            "code": "BIO 204"
+          },
+          {
+            "type": "anyOf",
             "rules": [
               {
                 "type": "course",
-                "code": "BIO 204"
+                "code": "BIO 205"
               },
               {
-                "type": "anyOf",
-                "rules": [
-                  {
-                    "type": "course",
-                    "code": "BIO 205"
-                  },
-                  {
-                    "type": "course",
-                    "code": "BIO 207"
-                  }
-                ]
+                "type": "course",
+                "code": "BIO 207"
               }
             ]
           }
@@ -354,43 +404,30 @@
       "title": "Advanced Courses in Biology",
       "rule": {
         "type": "choose",
-        "count": 1,
+        "count": 3,
         "from": {
           "courses": [
-            "BIO 320",
-            "BIO 321",
-            "BIO 354",
             "EBH 302"
-          ]
-        }
-      },
-      "sourceText": "At least one of the following 3 credit upper division BIO courses: BIO 320 - General Genetics; BIO 321 - Ecological Genetics; BIO 354 - Evolution; EBH 302 - Human Genetics"
-    },
-    {
-      "id": "biology-ba.advanced-electives",
-      "label": "advanced-electives",
-      "title": "Advanced Biology Electives",
-      "rule": {
-        "manualCheck": "Research, readings, teaching practica and internship courses cannot be used. Verify that any course counted is not a research, reading, teaching practicum, or internship course beyond those listed.",
-        "type": "choose",
-        "count": 2,
-        "from": {
+          ],
           "subjects": [
             "BIO"
           ],
           "minNumber": 300,
-          "excludeCourses": [
-            "BIO 484",
-            "BIO 486",
-            "BIO 487",
-            "BIO 488",
-            "BIO 489"
-          ],
-          "excludeUsedBy": [
-            "biology-ba.advanced"
-          ]
+          "maxNumber": 399
         },
         "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "courses": [
+                "BIO 320",
+                "BIO 321",
+                "BIO 354",
+                "EBH 302"
+              ]
+            },
+            "minCourses": 1
+          },
           {
             "type": "maxFrom",
             "from": {
@@ -403,114 +440,18 @@
           }
         ]
       },
-      "sourceText": "Two additional upper division BIO courses. Research, readings, teaching practica and internship courses cannot be used to satisfy upper-division BIO course requirements. Students cannot take both BIO 320 and BIO 321 for biology major credit. Only one of these courses may be taken for biology major credit."
-    },
-    {
-      "id": "biology-ba.transfer-advanced",
-      "label": "transfer-advanced",
-      "title": "Advanced courses taken at Stony Brook",
-      "rule": {
-        "type": "unparsed",
-        "text": "Upper-division or upper-division equivalent courses taken elsewhere and transferred to Stony Brook can satisfy the requirement for BIO 320, BIO 321, BIO 354 or EBH 302 for the Biology BA; however, students must still take three advanced courses (300-level BIO courses) here at Stony Brook.",
-        "reason": "Requires a count of 300-level BIO courses taken at Stony Brook, which no rule type expresses"
-      },
-      "sourceText": "Upper-division or upper-division equivalent courses taken elsewhere and transferred to Stony Brook can satisfy the requirement for BIO 320, BIO 321, BIO 354 or EBH 302 for the Biology BA; however, students must still take three advanced courses (300-level BIO courses) here at Stony Brook."
-    },
-    {
-      "id": "biology-ba.minor",
-      "label": "minor",
-      "title": "Required minor",
-      "rule": {
-        "type": "unparsed",
-        "text": "Completion of a required minor (18-24 credits) within the College of Arts and Sciences or the School of Communication and Journalism with no more than a 3-credit overlap with the major requirements for the BIO B.A. Approved minors are listed on Undergraduate Biology's website.",
-        "reason": "Minor list is maintained outside this page and overlap limit depends on the chosen minor"
-      },
-      "sourceText": "Completion of the B.A. major in Biology requires a minimum of 55 credits for the major, along with a required minor (18-24 credits). Completion of a Minor within the College of Arts and Sciences or the School of Communication and Journalism with no more than a 3-credit overlap with the major requirements for the BIO B.A. The list of approved minors for the Biology BA can be found on Undergraduate Biology's website."
+      "sourceText": "At least one of the following 3 credit upper division BIO courses: BIO 320 - General Genetics; BIO 321 - Ecological Genetics; BIO 354 - Evolution; EBH 302 - Human Genetics Two additional upper division BIO courses. Research, readings, teaching practica and internship courses cannot be used to satisfy upper-division BIO course requirements. Students cannot take both BIO 320 and BIO 321 for biology major credit. Only one of these courses may be taken for biology major credit."
     },
     {
       "id": "biology-ba.upper-division-writing",
       "label": "upper-division-writing",
       "title": "Upper-Division Writing Requirement",
       "rule": {
-        "type": "allOf",
-        "rules": [
-          {
-            "type": "course",
-            "code": "BIO 459"
-          },
-          {
-            "manualCheck": "BIO 459 must be co-registered with an approved advanced course in the same term, and a lab report or term paper from that course must be submitted for writing evaluation.",
-            "type": "choose",
-            "count": 1,
-            "from": {
-              "courses": [
-                "BIO 312",
-                "BIO 320",
-                "BIO 321",
-                "BIO 327",
-                "BIO 335",
-                "BIO 336",
-                "BIO 344",
-                "BIO 352",
-                "BIO 353",
-                "BIO 354",
-                "BIO 364",
-                "BIO 365",
-                "BIO 366",
-                "BIO 367",
-                "BIO 385",
-                "BIO 386",
-                "EBH 302"
-              ]
-            }
-          }
-        ]
+        "manualCheck": "BIO 459 must be co-registered with an approved advanced course (BIO 312, 320, 321, 327, 335, 336, 344, 352, 353, 354, 364, 365, 366, 367, 385, 386 or EBH 302), and a lab report or term paper from that course must be submitted.",
+        "type": "course",
+        "code": "BIO 459"
       },
       "sourceText": "In order to satisfy the Upper-Division Writing requirement for the major in Biology, students must co-register for the 0-credit BIO 459 course with an approved advanced course as listed below. Courses that routinely offer assignments that can satisfy the BIO 459 WRTD learning outcomes: BIO 312, BIO 320, BIO 321, BIO 327, BIO 335, BIO 336, BIO 344, BIO 352, BIO 353, BIO 354, BIO 364, BIO 365, BIO 366, BIO 367, BIO 385, BIO 386, EBH 302"
-    },
-    {
-      "id": "biology-ba.major-credits",
-      "label": "major-credits",
-      "title": "Minimum major credits",
-      "rule": {
-        "type": "unparsed",
-        "text": "Completion of the B.A. major in Biology requires a minimum of 55 credits for the major, along with a required minor (18-24 credits).",
-        "reason": "Program-wide minimum credit total that no rule type covers"
-      },
-      "sourceText": "Completion of the B.A. major in Biology requires a minimum of 55 credits for the major, along with a required minor (18-24 credits)."
-    },
-    {
-      "id": "biology-ba.sequence-grade",
-      "label": "sequence-grade",
-      "title": "C grade in one semester of each two-semester sequence",
-      "rule": {
-        "type": "unparsed",
-        "text": "At least one semester of the two-semester sequences of required courses in general chemistry lecture, organic chemistry lecture, and physics lecture/lab must be passed with a letter grade of C or higher.",
-        "reason": "Requires one semester of each sequence at C or higher, which a per-course minGrade policy cannot express"
-      },
-      "sourceText": "At least one semester of the two-semester sequences of required courses in general chemistry lecture, organic chemistry lecture, and physics lecture/lab must be passed with a letter grade of C or higher."
-    },
-    {
-      "id": "biology-ba.math-remediation",
-      "label": "math-remediation",
-      "title": "Mathematics remediation course",
-      "rule": {
-        "type": "unparsed",
-        "text": "If students do not place into MAT 125 or higher on the basis of the math placement examination, MAT 123 (or MAT 119/MAT 123) is a required course for the major.",
-        "reason": "Conditional on placement exam results, which cannot be checked from a transcript"
-      },
-      "sourceText": "If students do not place into MAT 125 or higher on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major."
-    },
-    {
-      "id": "biology-ba.classical-physics-math",
-      "label": "classical-physics-math",
-      "title": "Calculus B-level math with Classical Physics",
-      "rule": {
-        "type": "unparsed",
-        "text": "If students select a Classical Physics option, a mathematics course at the level of Calculus B (AMS 161, MAT 126, MAT 132, MAT 142, or MAT 171) or higher is required for the major.",
-        "reason": "Conditional math requirement tied to the physics option chosen, with an open-ended 'or higher' level"
-      },
-      "sourceText": "If students select one of the Classical Physics options, then a mathematics course at the level of Calculus B (AMS 161, MAT 126, MAT 132, MAT 142, or MAT 171) or higher is required for the major."
     }
   ],
   "policies": [
@@ -525,8 +466,7 @@
         "biology-ba.physics",
         "biology-ba.statistics",
         "biology-ba.core",
-        "biology-ba.advanced",
-        "biology-ba.advanced-electives"
+        "biology-ba.advanced"
       ],
       "sourceText": "All foundational courses in related fields must be taken for a letter grade; courses taken under the Pass/No Credit option will not count towards completion of the major, with the exception of the Spring 2020 semester. All core and advanced courses in biology must be taken for a letter grade and passed with a grade of C or higher."
     },
@@ -536,7 +476,6 @@
       "appliesTo": [
         "biology-ba.core",
         "biology-ba.advanced",
-        "biology-ba.advanced-electives",
         "biology-ba.organic-chemistry-lab"
       ],
       "sourceText": "All core and advanced courses in biology must be taken for a letter grade and passed with a grade of C or higher. The organic chemistry lab must be passed with a C or higher."
@@ -548,6 +487,14 @@
         "biology-ba.statistics"
       ],
       "sourceText": "A letter grade of D or higher is accepted towards the statistics requirement for the following courses: AMS 110, AMS 310, BIO 211, or EBH 230."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 9,
+      "appliesTo": [
+        "biology-ba.advanced"
+      ],
+      "sourceText": "Upper-division or upper-division equivalent courses taken elsewhere and transferred to Stony Brook can satisfy the requirement for BIO 320, BIO 321, BIO 354 or EBH 302 for the Biology BA; however, students must still take three advanced courses (300-level BIO courses) here at Stony Brook."
     }
   ],
   "substitutions": [
@@ -875,6 +822,14 @@
     {
       "topic": "other",
       "text": "Most students majoring in biology prepare for professional study in the biological or health sciences. Some prepare for secondary school teaching, and others for technical positions in industry."
+    },
+    {
+      "topic": "other",
+      "text": "The BA major requires at least 55 credits, plus the required minor (18-24 credits). Research, readings, teaching practica and internship courses cannot be used for the advanced biology courses. At least one semester of each two-semester sequence in general chemistry lecture, organic chemistry lecture and physics must be passed with a C or higher (flagged for confirmation on those requirements)."
+    },
+    {
+      "topic": "other",
+      "text": "Complete a minor (18-24 credits) within the College of Arts and Sciences or the School of Communication and Journalism, with no more than a 3-credit overlap with the BA major requirements. Approved minors are listed on Undergraduate Biology's website."
     }
   ],
   "source": {
@@ -883,7 +838,9 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
-  }
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
+  },
+  "approxCredits": 55
 }

@@ -6,17 +6,6 @@
   "allowCourseReuse": false,
   "requirements": [
     {
-      "id": "psychology-ba.credits",
-      "label": "credits",
-      "title": "Total credit requirements for the major",
-      "rule": {
-        "type": "unparsed",
-        "text": "Completion of the major for either a B.S. or a B.A. in Psychology requires 58 to 67 credits, including 34 to 35 credits in psychology and 24 to 32 credits of courses outside the Department.",
-        "reason": "Program-wide credit totals are not a rule type this engine can evaluate."
-      },
-      "sourceText": "Completion of the major for either a B.S. or a B.A. in Psychology requires 58 to 67 credits. For both degree programs, 34 to 35 credits in psychology to be distributed as follows... In addition to the 34 to 35 credits in psychology, students must also complete 24 to 32 credits of courses outside the Department."
-    },
-    {
       "id": "psychology-ba.core-program",
       "label": "core-program",
       "title": "Core Program",
@@ -62,14 +51,9 @@
               {
                 "type": "course",
                 "code": "SOC 202"
-              },
-              {
-                "manualCheck": "Confirm the department approved this statistics course.",
-                "type": "unparsed",
-                "text": "Another statistics course approved by the department",
-                "reason": "Department approval of a statistics course is not checkable from catalog data"
               }
-            ]
+            ],
+            "manualCheck": "Another statistics course approved by the department also satisfies this requirement; confirm approval yourself."
           },
           {
             "type": "course",
@@ -150,7 +134,8 @@
                 "PSY 487",
                 "PSY 488",
                 "PSY 495",
-                "PSY 496"
+                "PSY 496",
+                "PSY 459"
               ],
               "excludeUsedBy": [
                 "psychology-ba.survey-courses"
@@ -170,7 +155,8 @@
                 }
               ],
               "excludeCourses": [
-                "PSY 310"
+                "PSY 310",
+                "PSY 459"
               ]
             }
           }
@@ -183,51 +169,28 @@
       "label": "outside-math",
       "title": "Outside courses: Mathematics",
       "rule": {
-        "manualCheck": "Page lists 'MAT 123 (or MAT 119 /MAT 123)' and 'MAT 125 (or MAT 130 /MAT 125)'; these alternate pairings are not modeled. Students passing the Mathematics Placement Exam at Level 4 or above are not required to complete this category. PSY 201 does not satisfy this category.",
-        "type": "anyOf",
-        "rules": [
-          {
-            "type": "course",
-            "code": "MAT 118"
-          },
-          {
-            "type": "course",
-            "code": "MAT 122"
-          },
-          {
-            "type": "course",
-            "code": "MAT 123"
-          },
-          {
-            "type": "course",
-            "code": "MAT 125"
-          },
-          {
-            "type": "course",
-            "code": "MAT 126"
-          },
-          {
-            "type": "course",
-            "code": "MAT 131"
-          },
-          {
-            "type": "course",
-            "code": "MAT 132"
-          },
-          {
-            "type": "course",
-            "code": "AMS 103"
-          },
-          {
-            "type": "course",
-            "code": "AMS 104"
-          },
-          {
-            "type": "unparsed",
-            "text": "Any higher AMS, CSE, or MAT course approved by the department",
-            "reason": "Department approval is not checkable from catalog data"
-          }
-        ]
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "MAT 118",
+            "MAT 122",
+            "MAT 123",
+            "MAT 125",
+            "MAT 126",
+            "MAT 131",
+            "MAT 132",
+            "AMS 103",
+            "AMS 104"
+          ],
+          "subjects": [
+            "AMS",
+            "CSE",
+            "MAT"
+          ],
+          "minNumber": 200
+        },
+        "manualCheck": "Page lists 'MAT 123 (or MAT 119 /MAT 123)' and 'MAT 125 (or MAT 130 /MAT 125)'; these alternate pairings are not modeled. Students passing the Mathematics Placement Exam at Level 4 or above are not required to complete this category. PSY 201 does not satisfy this category. Courses numbered 200 or above in AMS, CSE or MAT count as the department-approved higher courses; confirm approval."
       },
       "sourceText": "1. Mathematics: Choose one from the following: MAT 118 - Mathematical Thinking 3 credits; MAT 122 - Overview of Calculus with Applications 3 credits; MAT 123 - Precalculus 3 credits (or MAT 119 /MAT 123); MAT 125 - Calculus A 3 credits (or MAT 130 /MAT 125); MAT 126 - Calculus B 3 credits; MAT 131 - Calculus I 4 credits; MAT 132 - Calculus II 4 credits; AMS 103 - Applied Mathematics in Modern Technology 3 credits; AMS 104 - Spreadsheet Technology and Applications 3 credits; Any higher AMS, CSE, or MAT course approved by the department. Note: PSY 201 (or equivalent introductory statistics course) does not satisfy this requirement. Students who pass the Mathematics Placement Exam at Level 4 or above are not required to complete a course in this category."
     },
@@ -613,18 +576,71 @@
             "label": "Women's, Gender, and Sexuality Studies"
           },
           {
-            "type": "unparsed",
-            "text": "Marketing (MKT): requires BUS 348 and BUS 448; one elective from BUS 334, BUS 302, or BUS 378; and another elective from BUS 359, BUS 358, or independent study in research BUS 487.",
-            "reason": "Marketing concentration has its own required and elective structure that is not modeled as a 12-credit subject pool.",
             "id": "psychology-ba.outside-concentration.marketing",
-            "label": "Marketing"
+            "label": "Marketing",
+            "type": "allOf",
+            "sourceText": "Marketing (MKT): requires BUS 348 and BUS 448; one elective from BUS 334, BUS 302, or BUS 378; and another elective from BUS 359, BUS 358, or independent study in research BUS 487.",
+            "rules": [
+              {
+                "type": "course",
+                "code": "BUS 348"
+              },
+              {
+                "type": "course",
+                "code": "BUS 448"
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "BUS 334",
+                    "BUS 302",
+                    "BUS 378"
+                  ]
+                }
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "BUS 359",
+                    "BUS 358",
+                    "BUS 487"
+                  ]
+                }
+              }
+            ]
           },
           {
-            "type": "unparsed",
-            "text": "Writing: requires WRT 305 or WRT 380 plus three other upper-division writing courses.",
-            "reason": "Writing concentration has its own required and elective structure that is not modeled as a 12-credit subject pool.",
             "id": "psychology-ba.outside-concentration.writing",
-            "label": "Writing"
+            "label": "Writing",
+            "type": "allOf",
+            "sourceText": "Writing: requires WRT 305 or WRT 380 plus three other upper-division writing courses.",
+            "rules": [
+              {
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "WRT 305",
+                    "WRT 380"
+                  ]
+                }
+              },
+              {
+                "type": "choose",
+                "count": 3,
+                "from": {
+                  "subjects": [
+                    "WRT"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 499
+                }
+              }
+            ]
           }
         ],
         "id": "psychology-ba.outside-concentration.choice",
@@ -960,6 +976,10 @@
   ],
   "notes": [
     {
+      "topic": "other",
+      "text": "Completion of the major for either a B.S. or a B.A. in Psychology requires 58 to 67 credits, including 34 to 35 credits in psychology and 24 to 32 credits of courses outside the Department. This total is not audited separately; it follows from the requirements below."
+    },
+    {
       "topic": "advising",
       "text": "Students interested in a Psychology major should meet with a Psychology Department Undergraduate Advisor (Room B-109). Additional meetings should be scheduled periodically to review progress toward Department requirements. Students are also strongly encouraged to become research assistants (PSY 273) if planning graduate school."
     },
@@ -986,7 +1006,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

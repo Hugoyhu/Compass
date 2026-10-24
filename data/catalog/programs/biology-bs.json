@@ -84,6 +84,7 @@
       "label": "organic-lecture",
       "title": "Organic chemistry lecture options",
       "rule": {
+        "manualCheck": "At least one semester of the two-semester organic chemistry lecture sequence must be passed with a letter grade of C or higher.",
         "type": "anyOf",
         "rules": [
           {
@@ -153,7 +154,6 @@
       "label": "calculus",
       "title": "Calculus sequence options",
       "rule": {
-        "manualCheck": "Confirm placement exam level 8 or 9 if the student claims that option. The page lists MAT 130 inside the first calculus option, as printed.",
         "type": "anyOf",
         "rules": [
           {
@@ -211,33 +211,18 @@
                 "code": "AMS 161"
               }
             ]
-          },
-          {
-            "type": "unparsed",
-            "text": "Level 8 or 9 on the Mathematics Placement Examination",
-            "reason": "Placement exam score is not a course and cannot be checked from a transcript"
           }
-        ]
+        ],
+        "manualCheck": "Level 8 or 9 on the Mathematics Placement Examination also satisfies this requirement; the audit cannot see placement scores, so confirm it yourself if you are using that option. The page lists MAT 130 inside the first option as printed (MAT 125 and MAT 126 alone also qualify). At least one semester of this two-semester sequence must be passed with a C or higher."
       },
       "sourceText": "Calculus Sequence Options: MAT 125, MAT 130, MAT 126 OR MAT 125, MAT 126 OR MAT 131, MAT 132 OR AMS 151, AMS 161 OR Level 8 or 9 on the Mathematics Placement Examination."
-    },
-    {
-      "id": "biology-bs.calculus-bioengineering",
-      "label": "calculus-bioengineering",
-      "title": "Calculus sequence for Bioengineering Specialization",
-      "rule": {
-        "type": "unparsed",
-        "text": "For Bioengineering Specialization ONLY: MAT 125, MAT 126, MAT 127 OR MAT 131, MAT 132 OR AMS 151, AMS 161",
-        "reason": "Applies only within the Bioengineering specialization and is not a separate program item; the specialization text states differential equations but lists no course"
-      },
-      "sourceText": "For Bioengineering Specialization ONLY: MAT 125 - Calculus A; MAT 126 - Calculus B; MAT 127 - Calculus C OR MAT 131 - Calculus I; MAT 132 - Calculus II OR AMS 151 - Applied Calculus I; AMS 161 - Applied Calculus II"
     },
     {
       "id": "biology-bs.physics",
       "label": "physics",
       "title": "Physics sequence options",
       "rule": {
-        "manualCheck": "The page lists no laboratory courses with the PHY 141/PHY 142 Honors option. The Bioengineering minor text implies PHY 133 and PHY 134 also apply, so confirm with the department.",
+        "manualCheck": "At least one semester of the physics lecture/lab sequence must be passed with a letter grade of C or higher. The Physics for Life Sciences sequence (PHY 121/122) is not accepted for the Bioengineering Specialization. The page lists no laboratory courses with the PHY 141/PHY 142 option; confirm with the department whether PHY 133/134 are also needed.",
         "type": "anyOf",
         "rules": [
           {
@@ -402,18 +387,193 @@
                 "code": "BME 120"
               },
               {
-                "type": "unparsed",
-                "text": "Bioengineering minor (BNG) tracks: Biomaterials/Biomechanics (BME 260, BME 303, and BME 353 or BME 381); Calculus III (AMS 261 or MAT 203); Bioelectricity (BME 271, BME 301, and BME 311 or BME 313 or BME 481); Linear Algebra (AMS 210 or MAT 211); Molecular/Cellular (BME 304, BME 381); PICK TWO of BME 404, BME 402, BME 371; One advanced biology lecture course; One advanced biology laboratory course. Student must be accepted into the Bioengineering minor.",
-                "reason": "Requires track-by-track minor checks and admission to the minor, which the rule types cannot express"
+                "type": "anyOf",
+                "rules": [
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "BME 260"
+                      },
+                      {
+                        "type": "course",
+                        "code": "BME 303"
+                      },
+                      {
+                        "type": "anyOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "BME 353"
+                          },
+                          {
+                            "type": "course",
+                            "code": "BME 381"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "anyOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "AMS 261"
+                          },
+                          {
+                            "type": "course",
+                            "code": "MAT 203"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "BME 271"
+                      },
+                      {
+                        "type": "course",
+                        "code": "BME 301"
+                      },
+                      {
+                        "type": "anyOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "BME 311"
+                          },
+                          {
+                            "type": "course",
+                            "code": "BME 313"
+                          },
+                          {
+                            "type": "course",
+                            "code": "BME 481"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "anyOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "AMS 210"
+                          },
+                          {
+                            "type": "course",
+                            "code": "MAT 211"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "BME 304"
+                      },
+                      {
+                        "type": "course",
+                        "code": "BME 381"
+                      },
+                      {
+                        "type": "choose",
+                        "count": 2,
+                        "from": {
+                          "courses": [
+                            "BME 404",
+                            "BME 402",
+                            "BME 371"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "biology-bs.specialization.bioengineering.lecture",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "EBH 302",
+                    "EBH 380",
+                    "EBH 316",
+                    "BCP 401",
+                    "NEU 517",
+                    "NEU 547"
+                  ],
+                  "subjects": [
+                    "BIO"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 399,
+                  "excludeCourses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "BIO 320",
+                        "BIO 321"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
+              },
+              {
+                "id": "biology-bs.specialization.bioengineering.lab",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367",
+                    "BIO 341",
+                    "BIO 344",
+                    "BIO 371"
+                  ]
+                }
               }
             ],
             "id": "biology-bs.specialization.bioengineering",
-            "label": "Bioengineering"
+            "label": "Bioengineering",
+            "manualCheck": "Requires acceptance into the Bioengineering minor (BNG); priority goes to students with a 3.00 GPA or higher. The Bioengineering Specialization also requires calculus as MAT 125, MAT 126, MAT 127 OR MAT 131, MAT 132 OR AMS 151, AMS 161 (MAT 127 is the extra course on the MAT 125/126 route), and the Physics for Life Sciences sequence is not accepted. Complete one track (Biomaterials/Biomechanics with Calculus III; Bioelectricity with Linear Algebra; or Molecular/Cellular). ",
+            "sourceText": "Bioengineering minor (BNG) tracks: Biomaterials/Biomechanics (BME 260, BME 303, and BME 353 or BME 381); Calculus III (AMS 261 or MAT 203); Bioelectricity (BME 271, BME 301, and BME 311 or BME 313 or BME 481); Linear Algebra (AMS 210 or MAT 211); Molecular/Cellular (BME 304, BME 381); PICK TWO of BME 404, BME 402, BME 371; One advanced biology lecture course; One advanced biology laboratory course. Student must be accepted into the Bioengineering minor."
           },
           {
             "type": "allOf",
             "rules": [
               {
+                "id": "biology-bs.specialization.developmental-genetics.genetics",
                 "type": "anyOf",
                 "rules": [
                   {
@@ -427,14 +587,17 @@
                 ]
               },
               {
+                "id": "biology-bs.specialization.developmental-genetics.bio325",
                 "type": "course",
                 "code": "BIO 325"
               },
               {
+                "id": "biology-bs.specialization.developmental-genetics.bio327",
                 "type": "course",
                 "code": "BIO 327"
               },
               {
+                "id": "biology-bs.specialization.developmental-genetics.pick1",
                 "type": "choose",
                 "count": 1,
                 "from": {
@@ -451,74 +614,322 @@
                 }
               },
               {
-                "type": "unparsed",
-                "text": "Two additional advanced BIO lecture courses including at least one from Area I, Area II, or Area IV (or the listed other-department courses accepted in those areas); one additional advanced BIO laboratory course from any area; additional advanced BIO lecture, laboratory, reading, or independent research courses as needed for a minimum of 20 credits of advanced biology coursework.",
-                "reason": "Area-restricted course pools for the additional requirements are not expressible as a single pool"
+                "id": "biology-bs.specialization.developmental-genetics.lab",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367",
+                    "BIO 341",
+                    "BIO 344",
+                    "BIO 371"
+                  ]
+                }
+              },
+              {
+                "id": "biology-bs.specialization.developmental-genetics.lecture",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "EBH 302",
+                    "EBH 380",
+                    "EBH 316",
+                    "BCP 401",
+                    "NEU 517",
+                    "NEU 547"
+                  ],
+                  "subjects": [
+                    "BIO"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 399,
+                  "excludeCourses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367",
+                    "BIO 320",
+                    "BIO 321"
+                  ]
+                }
               }
             ],
             "id": "biology-bs.specialization.developmental-genetics",
-            "label": "Developmental Genetics"
+            "label": "Developmental Genetics",
+            "manualCheck": "At least one of the two additional lecture courses must be from Area I, II or IV. Area restrictions (which advanced courses fall in Areas I-IV) are not part of the extracted catalog text and are not checked; confirm them with a Biology advisor. Advanced biology coursework must total at least 20 credits (standard program: 5 advanced BIO lecture and 2 advanced BIO laboratory courses); BIO 320 and BIO 321 cannot both count; research, readings, teaching practica and internships are not counted here.",
+            "sourceText": "Two additional advanced BIO lecture courses including at least one from Area I, Area II, or Area IV (or the listed other-department courses accepted in those areas); one additional advanced BIO laboratory course from any area; additional advanced BIO lecture, laboratory, reading, or independent research courses as needed for a minimum of 20 credits of advanced biology coursework."
           },
           {
             "type": "allOf",
             "rules": [
               {
+                "id": "biology-bs.specialization.ecology-and-evolution.bio351",
                 "type": "course",
                 "code": "BIO 351"
               },
               {
+                "id": "biology-bs.specialization.ecology-and-evolution.bio354",
                 "type": "course",
                 "code": "BIO 354"
               },
               {
-                "type": "unparsed",
-                "text": "One additional advanced BIO lecture course and one advanced BIO laboratory course from Area III or Area IV (or listed other-department courses in those areas); two additional advanced BIO lecture courses including at least one from Area I or Area II; one advanced BIO laboratory course from Area I, II, or III; additional advanced BIO courses as needed for a minimum of 20 credits. A 4-credit Lecture with Laboratory course may satisfy both the lecture and lab requirement.",
-                "reason": "Area-restricted course pools for the additional requirements are not expressible as a single pool"
+                "id": "biology-bs.specialization.ecology-and-evolution.lab",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367",
+                    "BIO 341",
+                    "BIO 344",
+                    "BIO 371"
+                  ]
+                }
+              },
+              {
+                "id": "biology-bs.specialization.ecology-and-evolution.lecture",
+                "type": "choose",
+                "count": 3,
+                "from": {
+                  "courses": [
+                    "EBH 302",
+                    "EBH 380",
+                    "EBH 316",
+                    "BCP 401",
+                    "NEU 517",
+                    "NEU 547"
+                  ],
+                  "subjects": [
+                    "BIO"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 399,
+                  "excludeCourses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "BIO 320",
+                        "BIO 321"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
               }
             ],
             "id": "biology-bs.specialization.ecology-and-evolution",
-            "label": "Ecology and Evolution"
+            "label": "Ecology and Evolution",
+            "manualCheck": "One additional lecture and one laboratory from Area III or IV; two more lectures, at least one from Area I or II; one more laboratory from Area I, II or III. A 4-credit lecture-with-laboratory course may satisfy both a lecture and a laboratory requirement, but is counted once here. Area restrictions (which advanced courses fall in Areas I-IV) are not part of the extracted catalog text and are not checked; confirm them with a Biology advisor. Advanced biology coursework must total at least 20 credits (standard program: 5 advanced BIO lecture and 2 advanced BIO laboratory courses); BIO 320 and BIO 321 cannot both count; research, readings, teaching practica and internships are not counted here.",
+            "sourceText": "One additional advanced BIO lecture course and one advanced BIO laboratory course from Area III or Area IV (or listed other-department courses in those areas); two additional advanced BIO lecture courses including at least one from Area I or Area II; one advanced BIO laboratory course from Area I, II, or III; additional advanced BIO courses as needed for a minimum of 20 credits. A 4-credit Lecture with Laboratory course may satisfy both the lecture and lab requirement."
           },
           {
             "type": "allOf",
             "rules": [
               {
+                "id": "biology-bs.specialization.environmental-biology.bio351",
                 "type": "course",
                 "code": "BIO 351"
               },
               {
-                "type": "unparsed",
-                "text": "One advanced BIO laboratory course from Area IV (or listed other-department lab courses in that area); two additional advanced BIO courses from Area IV (at most one Environmental Biology course from other departments); two additional advanced BIO lecture courses including at least one from Area I or Area II; one advanced BIO laboratory course from Area I, II, or III; additional advanced BIO courses as needed for a minimum of 20 credits.",
-                "reason": "Area-restricted and count-limited course pools are not expressible as a single pool"
+                "id": "biology-bs.specialization.environmental-biology.lab",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367",
+                    "BIO 341",
+                    "BIO 344",
+                    "BIO 371"
+                  ]
+                }
+              },
+              {
+                "id": "biology-bs.specialization.environmental-biology.lecture",
+                "type": "choose",
+                "count": 4,
+                "from": {
+                  "courses": [
+                    "EBH 302",
+                    "EBH 380",
+                    "EBH 316",
+                    "BCP 401",
+                    "NEU 517",
+                    "NEU 547"
+                  ],
+                  "subjects": [
+                    "BIO"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 399,
+                  "excludeCourses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "BIO 320",
+                        "BIO 321"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
               }
             ],
             "id": "biology-bs.specialization.environmental-biology",
-            "label": "Environmental Biology"
+            "label": "Environmental Biology",
+            "manualCheck": "One laboratory and two additional courses from Area IV (at most one Environmental Biology course from another department); two more lectures, at least one from Area I or II; one laboratory from Area I, II or III. Area restrictions (which advanced courses fall in Areas I-IV) are not part of the extracted catalog text and are not checked; confirm them with a Biology advisor. Advanced biology coursework must total at least 20 credits (standard program: 5 advanced BIO lecture and 2 advanced BIO laboratory courses); BIO 320 and BIO 321 cannot both count; research, readings, teaching practica and internships are not counted here.",
+            "sourceText": "One advanced BIO laboratory course from Area IV (or listed other-department lab courses in that area); two additional advanced BIO courses from Area IV (at most one Environmental Biology course from other departments); two additional advanced BIO lecture courses including at least one from Area I or Area II; one advanced BIO laboratory course from Area I, II, or III; additional advanced BIO courses as needed for a minimum of 20 credits."
           },
           {
             "type": "allOf",
             "rules": [
               {
-                "type": "unparsed",
-                "text": "At least one advanced BIO lecture course in each of Area I, Area II, Area III, and Area IV (or listed other-department courses in these areas); two advanced BIO laboratory courses from two different areas; a second advanced BIO lecture course in one of the four areas; additional advanced BIO courses as needed for a minimum of 20 credits.",
-                "reason": "Requires coverage across four areas, which the rule types cannot express"
+                "id": "biology-bs.specialization.interdisciplinary-biology.lecture",
+                "type": "choose",
+                "count": 5,
+                "from": {
+                  "courses": [
+                    "EBH 302",
+                    "EBH 380",
+                    "EBH 316",
+                    "BCP 401",
+                    "NEU 517",
+                    "NEU 547"
+                  ],
+                  "subjects": [
+                    "BIO"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 399,
+                  "excludeCourses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "BIO 320",
+                        "BIO 321"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
+              },
+              {
+                "id": "biology-bs.specialization.interdisciplinary-biology.lab",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367",
+                    "BIO 341",
+                    "BIO 344",
+                    "BIO 371"
+                  ]
+                }
               }
             ],
             "id": "biology-bs.specialization.interdisciplinary-biology",
-            "label": "Interdisciplinary Biology"
+            "label": "Interdisciplinary Biology",
+            "manualCheck": "At least one lecture in each of Areas I, II, III and IV, a second lecture in one of those areas, and two laboratories from two different areas. Area restrictions (which advanced courses fall in Areas I-IV) are not part of the extracted catalog text and are not checked; confirm them with a Biology advisor. Advanced biology coursework must total at least 20 credits (standard program: 5 advanced BIO lecture and 2 advanced BIO laboratory courses); BIO 320 and BIO 321 cannot both count; research, readings, teaching practica and internships are not counted here.",
+            "sourceText": "At least one advanced BIO lecture course in each of Area I, Area II, Area III, and Area IV (or listed other-department courses in these areas); two advanced BIO laboratory courses from two different areas; a second advanced BIO lecture course in one of the four areas; additional advanced BIO courses as needed for a minimum of 20 credits."
           },
           {
             "type": "allOf",
             "rules": [
               {
+                "id": "biology-bs.specialization.neuroscience.bio334",
                 "type": "course",
                 "code": "BIO 334"
               },
               {
+                "id": "biology-bs.specialization.neuroscience.bio335",
                 "type": "course",
                 "code": "BIO 335"
               },
               {
+                "id": "biology-bs.specialization.neuroscience.pick2",
                 "type": "choose",
                 "count": 2,
                 "from": {
@@ -537,51 +948,96 @@
                 }
               },
               {
-                "type": "unparsed",
-                "text": "Two additional advanced BIO lecture courses including at least one from Area I, Area III, or Area IV (or listed other-department courses in these areas); one additional advanced BIO laboratory course from Area I, III, or IV; additional advanced BIO courses as needed for a minimum of 20 credits.",
-                "reason": "Area-restricted course pools for the additional requirements are not expressible as a single pool"
+                "id": "biology-bs.specialization.neuroscience.lecture",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "EBH 302",
+                    "EBH 380",
+                    "EBH 316",
+                    "BCP 401",
+                    "NEU 517",
+                    "NEU 547"
+                  ],
+                  "subjects": [
+                    "BIO"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 399,
+                  "excludeCourses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "BIO 320",
+                        "BIO 321"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
+              },
+              {
+                "id": "biology-bs.specialization.neuroscience.lab",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367",
+                    "BIO 341",
+                    "BIO 344",
+                    "BIO 371"
+                  ]
+                }
               }
             ],
             "id": "biology-bs.specialization.neuroscience",
-            "label": "Neuroscience"
+            "label": "Neuroscience",
+            "manualCheck": "Two additional lectures, at least one from Area I, III or IV; one laboratory from Area I, III or IV. Area restrictions (which advanced courses fall in Areas I-IV) are not part of the extracted catalog text and are not checked; confirm them with a Biology advisor. Advanced biology coursework must total at least 20 credits (standard program: 5 advanced BIO lecture and 2 advanced BIO laboratory courses); BIO 320 and BIO 321 cannot both count; research, readings, teaching practica and internships are not counted here.",
+            "sourceText": "Two additional advanced BIO lecture courses including at least one from Area I, Area III, or Area IV (or listed other-department courses in these areas); one additional advanced BIO laboratory course from Area I, III, or IV; additional advanced BIO courses as needed for a minimum of 20 credits."
           },
           {
             "type": "allOf",
             "rules": [
               {
-                "type": "anyOf",
-                "rules": [
-                  {
-                    "type": "course",
-                    "code": "MAT 127"
-                  },
-                  {
-                    "type": "course",
-                    "code": "MAT 132"
-                  },
-                  {
-                    "type": "course",
-                    "code": "MAT 142"
-                  },
-                  {
-                    "type": "course",
-                    "code": "AMS 161"
-                  }
-                ]
-              },
-              {
                 "type": "course",
                 "code": "AMS 333"
               },
               {
+                "id": "biology-bs.specialization.quantitative-biology-and-bioinformatics.bio332",
                 "type": "course",
                 "code": "BIO 332"
               },
               {
+                "id": "biology-bs.specialization.quantitative-biology-and-bioinformatics.bio312",
                 "type": "course",
                 "code": "BIO 312"
               },
               {
+                "id": "biology-bs.specialization.quantitative-biology-and-bioinformatics.pick1",
                 "type": "choose",
                 "count": 1,
                 "from": {
@@ -597,63 +1053,82 @@
                 }
               },
               {
-                "type": "unparsed",
-                "text": "Two additional advanced BIO lecture courses, including at least one from Area III or Area IV (or listed other-department courses in these areas); one additional advanced BIO laboratory course from any area; additional advanced BIO courses as needed for a minimum of 20 credits.",
-                "reason": "Area-restricted course pools for the additional requirements are not expressible as a single pool"
+                "id": "biology-bs.specialization.quantitative-biology-and-bioinformatics.lecture",
+                "type": "choose",
+                "count": 2,
+                "from": {
+                  "courses": [
+                    "EBH 302",
+                    "EBH 380",
+                    "EBH 316",
+                    "BCP 401",
+                    "NEU 517",
+                    "NEU 547"
+                  ],
+                  "subjects": [
+                    "BIO"
+                  ],
+                  "minNumber": 300,
+                  "maxNumber": 399,
+                  "excludeCourses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367"
+                  ]
+                },
+                "constraints": [
+                  {
+                    "type": "maxFrom",
+                    "from": {
+                      "courses": [
+                        "BIO 320",
+                        "BIO 321"
+                      ]
+                    },
+                    "maxCourses": 1
+                  }
+                ]
+              },
+              {
+                "id": "biology-bs.specialization.quantitative-biology-and-bioinformatics.lab",
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "courses": [
+                    "BIO 319",
+                    "BIO 327",
+                    "BIO 335",
+                    "BIO 343",
+                    "BIO 352",
+                    "BIO 356",
+                    "BIO 364",
+                    "BIO 365",
+                    "BIO 366",
+                    "BIO 367",
+                    "BIO 341",
+                    "BIO 344",
+                    "BIO 371"
+                  ]
+                }
               }
             ],
             "id": "biology-bs.specialization.quantitative-biology-and-bioinformatics",
-            "label": "Quantitative Biology and Bioinformatics"
+            "label": "Quantitative Biology and Bioinformatics",
+            "manualCheck": "Also requires calculus through MAT 127, MAT 132, MAT 142 or AMS 161 (the second-semester level); this is checked through the calculus requirement above, so students on the MAT 125/126 route must also take MAT 127. Two additional lectures, at least one from Area III or IV; one laboratory from any area. Area restrictions (which advanced courses fall in Areas I-IV) are not part of the extracted catalog text and are not checked; confirm them with a Biology advisor. Advanced biology coursework must total at least 20 credits (standard program: 5 advanced BIO lecture and 2 advanced BIO laboratory courses); BIO 320 and BIO 321 cannot both count; research, readings, teaching practica and internships are not counted here.",
+            "sourceText": "Two additional advanced BIO lecture courses, including at least one from Area III or Area IV (or listed other-department courses in these areas); one additional advanced BIO laboratory course from any area; additional advanced BIO courses as needed for a minimum of 20 credits."
           }
         ],
         "id": "biology-bs.specialization.choice",
         "choice": "specialization"
       },
       "sourceText": "DECLARING A SPECIALIZATION IS REQUIRED TO COMPLETE THE BIOLOGY BS. The 7 Specializations are: Bioengineering, Developmental Genetics, Ecology and Evolution, Environmental Biology, Interdisciplinary Biology, Neuroscience, and Quantitative Biology and Bioinformatics."
-    },
-    {
-      "id": "biology-bs.advanced-credits",
-      "label": "advanced-credits",
-      "title": "Minimum advanced biology credits",
-      "rule": {
-        "type": "unparsed",
-        "text": "A minimum of 20 credits of advanced biology coursework (standard program: 5 advanced BIO lecture courses and 2 advanced BIO laboratory courses). Students cannot take both BIO 320 and BIO 321 for biology major credit.",
-        "reason": "Program-wide advanced credit minimum across the specialization's course pools cannot be checked by a single rule"
-      },
-      "sourceText": "The standard program of study includes 5 advanced BIO lecture courses and 2 advanced BIO laboratory courses for a total of 20 advanced BIO credits. Students cannot take both BIO 320 and BIO 321 for biology major credit."
-    },
-    {
-      "id": "biology-bs.total-credits",
-      "label": "total-credits",
-      "title": "Minimum total major credits",
-      "rule": {
-        "type": "unparsed",
-        "text": "Completion of the B.S. major in Biology requires a minimum of 70 credits.",
-        "reason": "Program-wide total credit minimum is not a rule type"
-      },
-      "sourceText": "Completion of the B.S. major in Biology requires a minimum of 70 credits, including foundational courses in chemistry, mathematics and physics."
-    },
-    {
-      "id": "biology-bs.grade-sequences",
-      "label": "grade-sequences",
-      "title": "Passing grade in two-semester sequences",
-      "rule": {
-        "type": "unparsed",
-        "text": "At least one semester of the two-semester sequences of required courses in calculus, organic chemistry lecture, and physics lecture/lab must be passed with a letter grade of C or higher.",
-        "reason": "Requires a sequence-level grade check across several requirements"
-      },
-      "sourceText": "At least one semester of the two-semester sequences of required courses in calculus, organic chemistry lecture, and physics lecture/lab must be passed with a letter grade of C or higher."
-    },
-    {
-      "id": "biology-bs.transfer-residency",
-      "label": "transfer-residency",
-      "title": "Transfer student Stony Brook credit minimum",
-      "rule": {
-        "type": "unparsed",
-        "text": "Transfer students must take at least 15 credits of required core and advanced biology at Stony Brook in courses for majors at the 200 level or higher. At least 12 of the 15 credits must be in BIO-designator courses. Both advanced laboratory experiences must be taken at Stony Brook.",
-        "reason": "Applies only to transfer students and combines several residency conditions"
-      },
-      "sourceText": "Transfer students must take at least 15 credits of required core and advanced biology at Stony Brook in courses for majors at the 200 level or higher. At least 12 of the 15 credits must be in BIO-designator courses. Both of the two advanced laboratory experiences must be taken at Stony Brook."
     },
     {
       "id": "biology-bs.upper-division-writing",
@@ -685,7 +1160,33 @@
       "type": "letterGradeRequired",
       "appliesTo": [
         "biology-bs.core",
-        "biology-bs.specialization"
+        "biology-bs.specialization.bioengineering.lecture",
+        "biology-bs.specialization.bioengineering.lab",
+        "biology-bs.specialization.developmental-genetics.genetics",
+        "biology-bs.specialization.developmental-genetics.bio325",
+        "biology-bs.specialization.developmental-genetics.bio327",
+        "biology-bs.specialization.developmental-genetics.pick1",
+        "biology-bs.specialization.developmental-genetics.lab",
+        "biology-bs.specialization.developmental-genetics.lecture",
+        "biology-bs.specialization.ecology-and-evolution.bio351",
+        "biology-bs.specialization.ecology-and-evolution.bio354",
+        "biology-bs.specialization.ecology-and-evolution.lab",
+        "biology-bs.specialization.ecology-and-evolution.lecture",
+        "biology-bs.specialization.environmental-biology.bio351",
+        "biology-bs.specialization.environmental-biology.lab",
+        "biology-bs.specialization.environmental-biology.lecture",
+        "biology-bs.specialization.interdisciplinary-biology.lecture",
+        "biology-bs.specialization.interdisciplinary-biology.lab",
+        "biology-bs.specialization.neuroscience.bio334",
+        "biology-bs.specialization.neuroscience.bio335",
+        "biology-bs.specialization.neuroscience.pick2",
+        "biology-bs.specialization.neuroscience.lecture",
+        "biology-bs.specialization.neuroscience.lab",
+        "biology-bs.specialization.quantitative-biology-and-bioinformatics.bio332",
+        "biology-bs.specialization.quantitative-biology-and-bioinformatics.bio312",
+        "biology-bs.specialization.quantitative-biology-and-bioinformatics.pick1",
+        "biology-bs.specialization.quantitative-biology-and-bioinformatics.lecture",
+        "biology-bs.specialization.quantitative-biology-and-bioinformatics.lab"
       ],
       "sourceText": "All core and advanced courses in biology, including advanced courses in biology from other departments, must be taken for a letter grade and passed with a grade of C or higher with the exception of 400 level Reading and Research courses that are graded on an S/U basis."
     },
@@ -694,7 +1195,33 @@
       "grade": "C",
       "appliesTo": [
         "biology-bs.core",
-        "biology-bs.specialization"
+        "biology-bs.specialization.bioengineering.lecture",
+        "biology-bs.specialization.bioengineering.lab",
+        "biology-bs.specialization.developmental-genetics.genetics",
+        "biology-bs.specialization.developmental-genetics.bio325",
+        "biology-bs.specialization.developmental-genetics.bio327",
+        "biology-bs.specialization.developmental-genetics.pick1",
+        "biology-bs.specialization.developmental-genetics.lab",
+        "biology-bs.specialization.developmental-genetics.lecture",
+        "biology-bs.specialization.ecology-and-evolution.bio351",
+        "biology-bs.specialization.ecology-and-evolution.bio354",
+        "biology-bs.specialization.ecology-and-evolution.lab",
+        "biology-bs.specialization.ecology-and-evolution.lecture",
+        "biology-bs.specialization.environmental-biology.bio351",
+        "biology-bs.specialization.environmental-biology.lab",
+        "biology-bs.specialization.environmental-biology.lecture",
+        "biology-bs.specialization.interdisciplinary-biology.lecture",
+        "biology-bs.specialization.interdisciplinary-biology.lab",
+        "biology-bs.specialization.neuroscience.bio334",
+        "biology-bs.specialization.neuroscience.bio335",
+        "biology-bs.specialization.neuroscience.pick2",
+        "biology-bs.specialization.neuroscience.lecture",
+        "biology-bs.specialization.neuroscience.lab",
+        "biology-bs.specialization.quantitative-biology-and-bioinformatics.bio332",
+        "biology-bs.specialization.quantitative-biology-and-bioinformatics.bio312",
+        "biology-bs.specialization.quantitative-biology-and-bioinformatics.pick1",
+        "biology-bs.specialization.quantitative-biology-and-bioinformatics.lecture",
+        "biology-bs.specialization.quantitative-biology-and-bioinformatics.lab"
       ],
       "sourceText": "All core and advanced courses in biology, including advanced courses in biology from other departments, must be taken for a letter grade and passed with a grade of C or higher with the exception of 400 level Reading and Research courses that are graded on an S/U basis."
     },
@@ -713,9 +1240,33 @@
         "biology-bs.statistics"
       ],
       "sourceText": "A letter grade of D or higher is accepted towards the statistics requirement for the following courses: AMS 110, AMS 310, BIO 211, or EBH 230."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 15,
+      "appliesTo": [
+        "biology-bs.core",
+        "biology-bs.specialization"
+      ],
+      "sourceText": "Transfer students must take at least 15 credits of required core and advanced biology at Stony Brook in courses for majors at the 200 level or higher. At least 12 of the 15 credits must be in BIO-designator courses. Both of the two advanced laboratory experiences must be taken at Stony Brook."
     }
   ],
-  "substitutions": [],
+  "substitutions": [
+    {
+      "id": "biology-bs.sub.ams102-statistics",
+      "replaces": {
+        "type": "rule",
+        "ruleId": "biology-bs.statistics"
+      },
+      "with": {
+        "type": "course",
+        "code": "AMS 102"
+      },
+      "condition": "Students who transfer in AMS 102 from another institution with a grade of A or higher",
+      "requiresApproval": false,
+      "sourceText": "Students who transfer in AMS 102 with a grade of A or higher receive credit for the statistics course."
+    }
+  ],
   "sbc": {
     "exemptions": [],
     "fulfillment": [
@@ -1056,6 +1607,14 @@
     {
       "topic": "sbc",
       "text": "Students responsible for DIV learning objective per Note 5 of the SBC table; SBC table lists courses that may fulfill SBC categories but per-course tags are not evaluated here."
+    },
+    {
+      "topic": "other",
+      "text": "Transfer students: at least 12 of the 15 Stony Brook credits must be in BIO-designator courses, and both advanced laboratory experiences must be taken at Stony Brook (the 15-credit minimum is checked; the BIO-designator and laboratory parts are not)."
+    },
+    {
+      "topic": "other",
+      "text": "The major requires at least 70 credits including the chemistry, mathematics and physics foundation, and at least 20 credits of advanced biology coursework (standard program: 5 advanced BIO lecture courses and 2 advanced BIO laboratory courses). These totals are not checked as separate requirements. At least one semester of each two-semester sequence in calculus, organic chemistry lecture and physics must be passed with a C or higher (flagged for confirmation on those requirements)."
     }
   ],
   "source": {
@@ -1064,7 +1623,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }
