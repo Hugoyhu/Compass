@@ -20266,5 +20266,377 @@
    "text": "BlO 201"
   },
   "model": "claude-haiku-5-5"
+ },
+ "Pre- or corequiste: one AAS or KOR course at the 200 level or higher": {
+  "tree": {
+   "type": "unparsed",
+   "text": "one AAS or KOR course at the 200 level or higher"
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS Program": {
+  "tree": {
+   "type": "program",
+   "text": "Admission to Undergraduate CLS Program"
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS program (HHCZB only)": {
+  "tree": {
+   "type": "program",
+   "text": "Admission to Undergraduate CLS program (HHCZB only)"
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS Program; HAD 380": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Admission to Undergraduate CLS Program"
+    },
+    {
+     "type": "course",
+     "code": "HAD 380"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "HAD 381, HAD 425": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "course",
+     "code": "HAD 381"
+    },
+    {
+     "type": "course",
+     "code": "HAD 425"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS Program Pre- or Corerequisite: HAD 315": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Admission to Undergraduate CLS Program"
+    },
+    {
+     "type": "course",
+     "code": "HAD 315",
+     "concurrentAllowed": true
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate Health Sciences Program": {
+  "tree": {
+   "type": "program",
+   "text": "Admission to Undergraduate Health Sciences Program"
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS Program; HAD 313": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Admission to Undergraduate CLS Program"
+    },
+    {
+     "type": "course",
+     "code": "HAD 313"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS Program; HAD 313 and HAD 411": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Admission to Undergraduate CLS Program"
+    },
+    {
+     "type": "course",
+     "code": "HAD 313"
+    },
+    {
+     "type": "course",
+     "code": "HAD 411"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS Program; HAD 315 and HAD 398": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Admission to Undergraduate CLS Program"
+    },
+    {
+     "type": "course",
+     "code": "HAD 315"
+    },
+    {
+     "type": "course",
+     "code": "HAD 398"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS Program (HHCZB, HAEBS, or HAHBS students only)": {
+  "tree": {
+   "type": "program",
+   "text": "Admission to Undergraduate CLS Program (HHCZB, HAEBS, or HAHBS students only)"
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS Program; HAD 304; Instructor Consent Required": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Admission to Undergraduate CLS Program"
+    },
+    {
+     "type": "course",
+     "code": "HAD 304"
+    },
+    {
+     "type": "permission",
+     "text": "Instructor Consent Required"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS Program; HAD 331 and HAD 432; Department Consent Required": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Admission to Undergraduate CLS Program"
+    },
+    {
+     "type": "course",
+     "code": "HAD 331"
+    },
+    {
+     "type": "course",
+     "code": "HAD 432"
+    },
+    {
+     "type": "permission",
+     "text": "Department Consent Required"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS Program; HAD 363; Additional Prerequisite Track Courses Required; Instructor Consent Required": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Admission to Undergraduate CLS Program"
+    },
+    {
+     "type": "course",
+     "code": "HAD 363"
+    },
+    {
+     "type": "unparsed",
+     "text": "Additional Prerequisite Track Courses Required"
+    },
+    {
+     "type": "permission",
+     "text": "Instructor Consent Required"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS Program; Instructor Consent Required": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Admission to Undergraduate CLS Program"
+    },
+    {
+     "type": "permission",
+     "text": "Instructor Consent Required"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Admission to Undergraduate CLS Program; Program Consent Required": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Admission to Undergraduate CLS Program"
+    },
+    {
+     "type": "permission",
+     "text": "Program Consent Required"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "one natural science course; Sophomore Standing": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "unparsed",
+     "text": "one natural science course"
+    },
+    {
+     "type": "standing",
+     "level": "U2"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Advancement to Health Science Senior Year Curriculum - HANBS": {
+  "tree": {
+   "type": "program",
+   "text": "Advancement to Health Science Senior Year Curriculum - HANBS"
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Prereq: Adv to HANBS Senior Year; Pre-req courses with the minimum grade of C: 4 credits BIO/w lab; 4 credits CHEM/w lab; 4 credits PHY /w lab; 3 credits of Statistics; 8 credits of HAN 200/202 or equivalent; HAN 312 (minimum grade B); and Dept Consent": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Adv to HANBS Senior Year"
+    },
+    {
+     "type": "unparsed",
+     "text": "4 credits BIO/w lab"
+    },
+    {
+     "type": "unparsed",
+     "text": "4 credits CHEM/w lab"
+    },
+    {
+     "type": "unparsed",
+     "text": "4 credits PHY /w lab"
+    },
+    {
+     "type": "unparsed",
+     "text": "3 credits of Statistics"
+    },
+    {
+     "type": "unparsed",
+     "text": "8 credits of HAN 200/202 or equivalent"
+    },
+    {
+     "type": "course",
+     "code": "HAN 312",
+     "minGrade": "B"
+    },
+    {
+     "type": "permission",
+     "text": "Dept Consent"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Advancement to Health Science Senior Year Curriculum - HANBS; HAN 251; WRT 102": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Advancement to Health Science Senior Year Curriculum - HANBS"
+    },
+    {
+     "type": "course",
+     "code": "HAN 251"
+    },
+    {
+     "type": "course",
+     "code": "WRT 102"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "Advancement to Health Science Senior Year Curriculum - HANBS; HAN 395": {
+  "tree": {
+   "type": "and",
+   "of": [
+    {
+     "type": "program",
+     "text": "Advancement to Health Science Senior Year Curriculum - HANBS"
+    },
+    {
+     "type": "course",
+     "code": "HAN 395"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "C or Better HAN 311": {
+  "tree": {
+   "type": "course",
+   "code": "HAN 311",
+   "minGrade": "C"
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "ITl 311; ITL 312; HUL 324; or permission of instructor": {
+  "tree": {
+   "type": "unparsed",
+   "text": "ITl 311; ITL 312; HUL 324; or permission of instructor"
+  },
+  "model": "claude-haiku-5-5"
+ },
+ "C or better in UKR 111 or placement into 112.": {
+  "tree": {
+   "type": "or",
+   "of": [
+    {
+     "type": "course",
+     "code": "UKR 111",
+     "minGrade": "C"
+    },
+    {
+     "type": "unparsed",
+     "text": "placement into 112"
+    }
+   ]
+  },
+  "model": "claude-haiku-5-5"
  }
 }

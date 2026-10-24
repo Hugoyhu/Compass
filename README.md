@@ -53,13 +53,6 @@ Environment variables (`.env` locally, the host's settings in production):
 - **Accounts** use a username and password; there's no email and no password reset. Passwords are hashed with scrypt. Sessions are random tokens in an httpOnly cookie, and only a SHA-256 hash of each token is stored. Every Server Action re-checks the session, and sign-in and sign-up are rate-limited.
 - **Signing up or signing in** moves a guest's browser record into the account, if the account doesn't already have one.
 
-### Moving to Supabase later
-
-1. Create a Supabase project and copy its pooled connection string.
-2. Run `npm run db:migrate` and `npm run db:load` with that `DATABASE_URL`. Skip `--tiger`.
-3. Change `DATABASE_URL` locally and in the host, then redeploy.
-4. Accounts and records live in the `users`, `sessions`, `student_profiles`, and `course_attempts` tables. Copy them with `pg_dump`/`psql` if existing users should come along. Supabase Auth could replace `lib/auth/` later without touching pages.
-
 ## Student records
 
 - **Storage:** a signed-in student's record (courses, grades, AP/transfer credit, major, current term) is stored in the database. A guest's record is stored only in their browser, as compact cookies split into chunks. Either way, server components run the audit with the visitor's data.

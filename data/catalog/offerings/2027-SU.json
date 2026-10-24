@@ -1,0 +1,86 @@
+{
+ "term": "2027-SU",
+ "source": {
+  "catalog": "Stony Brook PeopleSoft class search",
+  "url": "https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL",
+  "fetchedAt": "2026-10-24"
+ },
+ "sections": [
+  {
+   "code": "HAD 397",
+   "section": "C02",
+   "component": "CLN",
+   "classNumber": "53999",
+   "session": "L",
+   "campus": "main",
+   "meetings": [
+    {
+     "days": "TBA",
+     "start": "TBA",
+     "end": "",
+     "room": "OFFCAMPUS OFFCAMPUS",
+     "instructor": "Jeannie Guglielmo, Afrinash Ahamad",
+     "startDate": "2027-05-24",
+     "endDate": "2027-07-24"
+    }
+   ]
+  },
+  {
+   "code": "HAD 398",
+   "section": "C02",
+   "component": "CLN",
+   "classNumber": "54000",
+   "session": "L",
+   "campus": "main",
+   "meetings": [
+    {
+     "days": "TBA",
+     "start": "TBA",
+     "end": "",
+     "room": "OFFCAMPUS OFFCAMPUS",
+     "instructor": "Jeannie Guglielmo, Afrinash Ahamad",
+     "startDate": "2027-05-24",
+     "endDate": "2027-07-24"
+    }
+   ]
+  },
+  {
+   "code": "HAD 398",
+   "section": "C04",
+   "component": "CLN",
+   "classNumber": "54001",
+   "session": "L",
+   "campus": "main",
+   "meetings": [
+    {
+     "days": "TBA",
+     "start": "TBA",
+     "end": "",
+     "room": "TBA",
+     "instructor": "Kathleen Finnegan, Afrinash Ahamad",
+     "startDate": "2027-05-24",
+     "endDate": "2027-07-24"
+    }
+   ]
+  },
+  {
+   "code": "HAD 440",
+   "section": "C01",
+   "component": "CLN",
+   "classNumber": "53811",
+   "session": "8",
+   "campus": "main",
+   "meetings": [
+    {
+     "days": "TBA",
+     "start": "TBA",
+     "end": "",
+     "room": "OFFCAMPUS OFFCAMPUS",
+     "instructor": "Jeannie Guglielmo",
+     "startDate": "2027-05-24",
+     "endDate": "2027-06-18"
+    }
+   ]
+  }
+ ]
+}
