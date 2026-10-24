@@ -118,7 +118,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "English Secondary"
           },
           {
             "id": "education-and-teacher-certification.certification-track.foreign-languages",
@@ -200,7 +201,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Foreign Languages Secondary"
           },
           {
             "id": "education-and-teacher-certification.certification-track.mathematics",
@@ -316,7 +318,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Mathematics Secondary"
           },
           {
             "id": "education-and-teacher-certification.certification-track.sciences",
@@ -384,7 +387,8 @@
                 "text": "Supporting science competencies in each science other than the major (biology, chemistry, earth and space science, physics), as listed by major in the program section, which the program advisor may modify individually.",
                 "reason": "Supporting course lists vary by major and include many alternative course combinations and advisor discretion."
               }
-            ]
+            ],
+            "label": "Science Secondary"
           },
           {
             "id": "education-and-teacher-certification.certification-track.social-studies",
@@ -453,7 +457,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Social Studies Secondary"
           },
           {
             "id": "education-and-teacher-certification.certification-track.tesol",
@@ -581,9 +586,12 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "TESOL Pre-K–12"
           }
-        ]
+        ],
+        "id": "education-and-teacher-certification.certification-track.choice",
+        "choice": "track"
       },
       "sourceText": "Teacher certification programs: English Secondary; Foreign Languages Secondary; Mathematics Secondary; Science Secondary (Biology, Chemistry, Earth Sciences, Physics); Social Studies Secondary; TESOL Pre-K-12. Each program lists its own initial certification requirements, including professional educational requirements."
     }

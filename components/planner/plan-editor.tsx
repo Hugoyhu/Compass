@@ -110,6 +110,19 @@ export function PlanEditor({ view }: { view: PlanView }) {
         </Alert>
       )}
 
+      {view.undeclared.map((u) => (
+        <Alert key={u.href}>
+          <AlertTitle>
+            Choose your {u.program} {u.kind}
+          </AlertTitle>
+          <AlertAction>
+            <Link href={u.href} className={buttonVariants({ size: "sm", variant: "outline" })}>
+              Choose
+            </Link>
+          </AlertAction>
+        </Alert>
+      ))}
+
       {plan.length > 0 && <Summary projection={projection} />}
 
       {plan.length === 0 ? (

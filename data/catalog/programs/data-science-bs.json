@@ -272,7 +272,9 @@
                   ]
                 }
               }
-            ]
+            ],
+            "id": "data-science-bs.7.business",
+            "label": "Business"
           },
           {
             "manualCheck": "Upper-division CSE technical lecture courses only, not taken to satisfy any other major requirement.",
@@ -291,7 +293,9 @@
                 "data-science-bs.5",
                 "data-science-bs.6"
               ]
-            }
+            },
+            "id": "data-science-bs.7.computer-science",
+            "label": "Computer Science"
           },
           {
             "manualCheck": "Upper-division AMS technical lecture courses only, not taken to satisfy any other major requirement.",
@@ -310,9 +314,13 @@
                 "data-science-bs.5",
                 "data-science-bs.6"
               ]
-            }
+            },
+            "id": "data-science-bs.7.applied-mathematics-and-statistics",
+            "label": "Applied Mathematics and Statistics"
           }
-        ]
+        ],
+        "id": "data-science-bs.7.choice",
+        "choice": "specialization"
       },
       "sourceText": "7. Specialization: Each student must complete a specialization consisting of 12 or more credits. Courses taken to satisfy a specialization requirement may not be used to satisfy the technical elective requirements. Business: BUS 220 - Introduction to Decision Sciences 3 credits; At least three of the following: BUS 340, BUS 346, BUS 375, BUS 376, BUS 377. Computer Science: Any combination of upper-division CSE technical lecture courses totaling 12 or more credits not taken to satisfy any other major requirement. Applied Mathematics and Statistics: Any combination of upper-division AMS technical lecture courses totaling 12 or more credits not taken to satisfy any other major requirement."
     },

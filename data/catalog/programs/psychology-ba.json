@@ -321,7 +321,8 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "Africana Studies"
           },
           {
             "id": "psychology-ba.outside-concentration.ant",
@@ -344,7 +345,8 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "Anthropology"
           },
           {
             "id": "psychology-ba.outside-concentration.ams",
@@ -367,7 +369,8 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "Applied Mathematics and Statistics"
           },
           {
             "id": "psychology-ba.outside-concentration.bio",
@@ -390,7 +393,8 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "Biology"
           },
           {
             "id": "psychology-ba.outside-concentration.cse",
@@ -413,7 +417,8 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "Computer Science"
           },
           {
             "id": "psychology-ba.outside-concentration.eco",
@@ -436,7 +441,8 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "Economics"
           },
           {
             "id": "psychology-ba.outside-concentration.his",
@@ -459,7 +465,8 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "History"
           },
           {
             "id": "psychology-ba.outside-concentration.lin",
@@ -482,7 +489,8 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "Linguistics"
           },
           {
             "id": "psychology-ba.outside-concentration.mat",
@@ -505,7 +513,8 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "Mathematics"
           },
           {
             "id": "psychology-ba.outside-concentration.phi",
@@ -528,7 +537,8 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "Philosophy"
           },
           {
             "id": "psychology-ba.outside-concentration.pol",
@@ -551,7 +561,8 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "Political Science"
           },
           {
             "id": "psychology-ba.outside-concentration.soc",
@@ -574,7 +585,8 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "Sociology"
           },
           {
             "id": "psychology-ba.outside-concentration.wst",
@@ -597,19 +609,26 @@
                 },
                 "minCourses": 2
               }
-            ]
+            ],
+            "label": "Women's, Gender, and Sexuality Studies"
           },
           {
             "type": "unparsed",
             "text": "Marketing (MKT): requires BUS 348 and BUS 448; one elective from BUS 334, BUS 302, or BUS 378; and another elective from BUS 359, BUS 358, or independent study in research BUS 487.",
-            "reason": "Marketing concentration has its own required and elective structure that is not modeled as a 12-credit subject pool."
+            "reason": "Marketing concentration has its own required and elective structure that is not modeled as a 12-credit subject pool.",
+            "id": "psychology-ba.outside-concentration.marketing",
+            "label": "Marketing"
           },
           {
             "type": "unparsed",
             "text": "Writing: requires WRT 305 or WRT 380 plus three other upper-division writing courses.",
-            "reason": "Writing concentration has its own required and elective structure that is not modeled as a 12-credit subject pool."
+            "reason": "Writing concentration has its own required and elective structure that is not modeled as a 12-credit subject pool.",
+            "id": "psychology-ba.outside-concentration.writing",
+            "label": "Writing"
           }
-        ]
+        ],
+        "id": "psychology-ba.outside-concentration.choice",
+        "choice": "concentration"
       },
       "sourceText": "5. A 12-credit (minimum four courses) concentration in one of the course subjects listed below. At least two courses must be upper-division (numbered between 300 and 499). Practica, research, and internship courses do not satisfy this requirement. The concentration requirement may also be satisfied by an approved minor or a second major in any department or program."
     }

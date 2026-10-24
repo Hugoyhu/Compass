@@ -159,7 +159,9 @@
           {
             "type": "unparsed",
             "text": "Declare a second major or a minor (requirements set by the other program)",
-            "reason": "Second major and minor requirements are defined by other programs and are not part of this page."
+            "reason": "Second major and minor requirements are defined by other programs and are not part of this page.",
+            "id": "journalism-ba.concentration.second-major-or-minor",
+            "label": "Second major or minor"
           },
           {
             "type": "choose",
@@ -219,7 +221,9 @@
                 },
                 "minCourses": 3
               }
-            ]
+            ],
+            "id": "journalism-ba.concentration.science-and-the-environment",
+            "label": "Science and the Environment"
           },
           {
             "type": "choose",
@@ -303,7 +307,9 @@
                 },
                 "minCourses": 3
               }
-            ]
+            ],
+            "id": "journalism-ba.concentration.diversity-and-american-society",
+            "label": "Diversity and American Society"
           },
           {
             "type": "choose",
@@ -377,7 +383,9 @@
                 },
                 "minCourses": 3
               }
-            ]
+            ],
+            "id": "journalism-ba.concentration.public-affairs-public-policy",
+            "label": "Public Affairs/Public Policy"
           },
           {
             "type": "choose",
@@ -460,14 +468,20 @@
                 },
                 "minCourses": 3
               }
-            ]
+            ],
+            "id": "journalism-ba.concentration.global-issues-and-perspectives",
+            "label": "Global Issues and Perspectives"
           },
           {
             "type": "unparsed",
             "text": "Design an 18-credit interdisciplinary concentration in an academic subject of the student's choosing, with at least nine upper-division credits (consult the undergraduate director)",
-            "reason": "Individually designed concentrations are approved by the undergraduate director and cannot be checked against a fixed course pool."
+            "reason": "Individually designed concentrations are approved by the undergraduate director and cannot be checked against a fixed course pool.",
+            "id": "journalism-ba.concentration.self-designed",
+            "label": "Self-designed"
           }
-        ]
+        ],
+        "id": "journalism-ba.concentration.choice",
+        "choice": "concentration"
       },
       "sourceText": "Students must declare a second major, a minor, or an interdisciplinary concentration. Students may design an 18-credit interdisciplinary concentration in an academic subject of their choosing. Nine credits, or three classes, of the 18 credits required of all concentrations must be at the upper-division level. Students may also select one of four pre-designed concentrations created to explore broad topics - Public Affairs/Public Policy, Diversity and American Society, Global Issues and Perspectives, and Science and The Environment (complete 6 courses in any one area)."
     },

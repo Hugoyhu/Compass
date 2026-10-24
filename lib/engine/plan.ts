@@ -132,7 +132,8 @@ function openProgramCount(a: DegreeAudit): number {
 function openCourseCount(a: DegreeAudit): number {
   let count = 0;
   for (const r of a.programs.flatMap((p) => p.requirements)) {
-    if (isDone(r.status) || isReview(r.status)) continue;
+    // A requirement awaiting an advisor can still list courses to plan; only its review items are skipped.
+    if (isDone(r.status)) continue;
     for (const item of r.missing) {
       if (item.kind === "course") count++;
       else if (item.kind === "choose") count += item.unit === "courses" ? item.remaining : Math.ceil(item.remaining / ELECTIVE_CREDITS);
@@ -201,8 +202,12 @@ export function generatePlan(ctx: PlanContext): PlannedTerm[] {
     const before = plan.filter((t) => termOrdinal(t.term) < termOrdinal(term));
     const studentBefore = withPlan(student, before);
     const auditBefore = audit(ctx, studentBefore);
-    const prereqsMet = prerequisiteChecker(auditBefore, studentBefore);
-    const standing = Number(standingFor(auditBefore.credits.earned + auditBefore.credits.inProgress).slice(1));
+    // Electives and SBC placeholders planned earlier count toward standing too.
+    const placeholderCreditsBefore = electiveCredits(before);
+    const prereqsMet = prerequisiteChecker(auditBefore, studentBefore, placeholderCreditsBefore);
+    const standing = Number(
+      standingFor(auditBefore.credits.earned + auditBefore.credits.inProgress + placeholderCreditsBefore).slice(1),
+    );
 
     const creditsLeft = planned.credits.required - planned.credits.earned - planned.credits.inProgress - electiveCredits(plan);
     // Heavier terms while lots of program work remains, so senior sequences (CSE 495 → 496) still fit in four years.
@@ -377,7 +382,8 @@ function pickProgramCourses(
     );
     const elsewhere = requiredElsewhere(p);
     p.requirements.forEach((r, requirementIndex) => {
-      if (isDone(r.status) || isReview(r.status)) return;
+      // Requirements awaiting an advisor still get their listed courses planned.
+      if (isDone(r.status)) return;
       const add = (course: CourseRecord, key: string, limit: number, alternatives: CourseCode[] = []) =>
         candidates.push({ course, key, limit, alternatives, rank: [level(course), programIndex, requirementIndex, Number(course.code.split(" ")[1])] });
 

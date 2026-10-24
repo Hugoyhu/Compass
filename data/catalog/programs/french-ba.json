@@ -110,7 +110,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "A: Language and Literature"
           },
           {
             "id": "french-ba.concentration.b",
@@ -236,9 +237,11 @@
                 "text": "Students must choose a sequence of four courses in a department or program other than French (FRN or HUF).",
                 "reason": "The page does not name the disciplines or courses; the sequence is advisor-approved."
               }
-            ]
+            ],
+            "label": "B: French and a Second Discipline"
           }
-        ]
+        ],
+        "choice": "concentration"
       },
       "sourceText": "Students must complete Concentration A or Concentration B. Concentration A: Concentration in Language and Literature. Concentration B: Concentration in French and a Second Discipline."
     },

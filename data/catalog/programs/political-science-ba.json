@@ -70,11 +70,11 @@
                 "POL 390",
                 "POL 401"
               ],
-              "minNumber": 200,
               "excludeCourses": [
                 "POL 201"
               ]
-            }
+            },
+            "label": "Comparative Politics and International Relations"
           },
           {
             "id": "political-science-ba.A-concentration.aglp",
@@ -120,11 +120,11 @@
                 "POL 390",
                 "POL 401"
               ],
-              "minNumber": 200,
               "excludeCourses": [
                 "POL 201"
               ]
-            }
+            },
+            "label": "American Government, Law, and Public Policy"
           },
           {
             "id": "political-science-ba.A-concentration.pbpp",
@@ -159,13 +159,15 @@
                 "POL 401",
                 "POL 402"
               ],
-              "minNumber": 200,
               "excludeCourses": [
                 "POL 201"
               ]
-            }
+            },
+            "label": "Political Behavior and Political Psychology"
           }
-        ]
+        ],
+        "id": "political-science-ba.A-concentration.choice",
+        "choice": "concentration"
       },
       "sourceText": "Concentration: (12 credits) 12 credits must be taken from courses in one of the concentrations listed below."
     },
