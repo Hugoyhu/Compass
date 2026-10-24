@@ -12,9 +12,10 @@
 import type { CourseRecord } from "@/lib/domain/catalog/course";
 import type { Section } from "@/lib/domain/catalog/offering";
 import type { ProgramDefinition } from "@/lib/domain/catalog/program";
+import { termOrdinal } from "@/lib/domain/terms";
 import type { SbcCategory, StudentRecord, TermId } from "@/lib/domain/types";
 import { loadCourseFiles, loadOfferingFiles, loadProgramFiles } from "./catalog-files";
-import { fetchCourses, fetchOfferingSections, fetchPrograms } from "./postgres-catalog";
+import { fetchCatalogMeta, fetchCourses, fetchOfferingSections, fetchPrograms } from "./postgres-catalog";
 import { seedSbcCategories, universityCreditRules } from "./seed/sbc";
 import { seedStudent } from "./seed/student";
 
@@ -27,10 +28,16 @@ export interface CompassRepository {
    * "not offered".
    */
   listSections(term: TermId): Promise<Section[] | null>;
+  /** Terms that have section data, oldest first. */
+  listOfferingTerms(): Promise<TermId[]>;
   listSbcCategories(): Promise<SbcCategory[]>;
   getUniversityCreditRules(): Promise<typeof universityCreditRules>;
   /** The fictional sample student, for demos. */
   getSampleStudent(): Promise<StudentRecord>;
+}
+
+function sortTerms(terms: TermId[]): TermId[] {
+  return [...terms].sort((a, b) => termOrdinal(a) - termOrdinal(b));
 }
 
 const shared = {
@@ -61,6 +68,9 @@ function fileRepository(): CompassRepository {
     async listSections(term) {
       return (offerings ??= loadOfferingFiles()).find((o) => o.term === term)?.sections ?? null;
     },
+    async listOfferingTerms() {
+      return sortTerms((offerings ??= loadOfferingFiles()).map((o) => o.term));
+    },
   };
 }
 
@@ -70,6 +80,9 @@ function postgresRepository(): CompassRepository {
     listCourses: fetchCourses,
     listPrograms: fetchPrograms,
     listSections: fetchOfferingSections,
+    async listOfferingTerms() {
+      return sortTerms(((await fetchCatalogMeta())?.offeringTerms ?? []) as TermId[]);
+    },
   };
 }
 
