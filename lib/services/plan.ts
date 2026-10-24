@@ -4,9 +4,12 @@
  */
 import { getRepository } from "@/lib/data/repository";
 import type { Section } from "@/lib/domain/catalog/offering";
-import { nextRegularTerm, nextTerm } from "@/lib/domain/terms";
-import type { CourseCode, StudentRecord, TermId } from "@/lib/domain/types";
+import { nextRegularTerm, nextTerm, parseTerm } from "@/lib/domain/terms";
+import type { CourseCode, Season, StudentRecord, TermId } from "@/lib/domain/types";
 import { checkPlan, minTermCredits, type PlanContext } from "@/lib/engine/plan";
+
+/** A season's schedule counts as complete when it lists at least this share of the fullest term's courses. */
+const COMPLETE_SCHEDULE_SHARE = 0.5;
 
 /** Main-campus sections per course (SUNY Korea sections don't count as offerings here). */
 export function countMainCampusSections(sections: Section[]): Map<CourseCode, number> {
@@ -40,7 +43,30 @@ export async function planContext(student: StudentRecord): Promise<PlanContext> 
       if (sections?.length) sectionsByTerm.set(term, countMainCampusSections(sections));
     }),
   );
-  return { student, programs, courses, sbcCategories, creditRules, sectionsByTerm };
+  return { student, programs, courses, sbcCategories, creditRules, sectionsByTerm, offeredBySeason: await offeredBySeason() };
+}
+
+/**
+ * Courses offered on main campus in each season, from the season's most recent
+ * schedule. A scrape that covers well under the fullest term's courses (a
+ * partial run) says nothing about what's missing, so that season stays unknown.
+ */
+async function offeredBySeason(): Promise<Partial<Record<Season, Set<CourseCode>>>> {
+  const repo = getRepository();
+  const terms = await repo.listOfferingTerms();
+  const byTerm = await Promise.all(
+    terms.map(async (term) => ({
+      term,
+      codes: new Set(((await repo.listSections(term)) ?? []).filter((s) => s.campus === "main").map((s) => s.code)),
+    })),
+  );
+  const fullest = Math.max(0, ...byTerm.map((t) => t.codes.size));
+  const offered: Partial<Record<Season, Set<CourseCode>>> = {};
+  for (const { term, codes } of byTerm) {
+    // Later terms replace earlier ones, since listOfferingTerms is oldest first.
+    if (codes.size >= fullest * COMPLETE_SCHEDULE_SHARE) offered[parseTerm(term).season] = codes;
+  }
+  return offered;
 }
 
 export async function getPlanView(student: StudentRecord) {
