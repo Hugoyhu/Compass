@@ -3,12 +3,13 @@
  *
  * Planned courses are modeled as in-progress attempts in their term, so the
  * audit and the next-semester proposer treat them as "will be passed". Free
- * electives have no course code and only add credits.
+ * electives have no course code and only add credits. SBC placeholders add
+ * credits and count their SBC as planned.
  */
 import type { CourseRecord, Prereq } from "@/lib/domain/catalog/course";
 import type { ProgramDefinition } from "@/lib/domain/catalog/program";
 import { nextRegularTerm, termOrdinal } from "@/lib/domain/terms";
-import type { CourseAttempt, CourseCode, PlannedTerm, SbcCategory, StudentRecord, TermId } from "@/lib/domain/types";
+import type { CourseAttempt, CourseCode, PlannedTerm, PlanItem, SbcCategory, SbcCode, StudentRecord, TermId } from "@/lib/domain/types";
 import { DEEPER_UNDERSTANDING, runDegreeAudit, summarizeCredits, type DegreeAudit, type SbcResult } from "./audit";
 import { requirementHeading } from "./describe";
 import { primarySubject, proposeNextSemester } from "./planner";
@@ -27,6 +28,10 @@ export const MAX_TERM_CREDITS = 19;
 /** Below this, a fall or spring term is part-time; the default minimum per term. */
 export const FULL_TIME_CREDITS = 12;
 const ELECTIVE_CREDITS = 3;
+/** Credits planned for an SBC placeholder; upper-tier SBCs need at least 3. */
+export const SBC_PLACEHOLDER_CREDITS = 3;
+/** The most credits the generator plans in a term. */
+const GENERATED_MAX_CREDITS = 18;
 
 export interface PlanContext {
   student: StudentRecord;
@@ -56,8 +61,17 @@ function audit(ctx: PlanContext, student: StudentRecord): DegreeAudit {
   return runDegreeAudit({ ...ctx, student });
 }
 
+/** Credits for an item without a course code: an elective or an SBC placeholder. */
+function placeholderCredits(item: PlanItem): number {
+  return "elective" in item ? item.elective : "sbc" in item ? SBC_PLACEHOLDER_CREDITS : 0;
+}
+
 function electiveCredits(plan: PlannedTerm[]): number {
-  return plan.flatMap((t) => t.items).reduce((s, i) => s + ("elective" in i ? i.elective : 0), 0);
+  return plan.flatMap((t) => t.items).reduce((s, i) => s + placeholderCredits(i), 0);
+}
+
+function sbcPlaceholders(plan: PlannedTerm[]): Set<SbcCode> {
+  return new Set(plan.flatMap((t) => t.items.flatMap((i) => ("sbc" in i ? [i.sbc] : []))));
 }
 
 const isDone = (status: string) => status === "satisfied" || status === "in-progress" || status === "exempt";
@@ -65,19 +79,27 @@ const isDone = (status: string) => status === "satisfied" || status === "in-prog
 const isReview = (status: string) => status === "needs-review";
 
 /**
- * SBC objectives still open, counting planned courses as done. Only three of the
- * four Pursue Deeper Understanding categories are required.
+ * SBC objectives still open, counting planned courses and placeholders as done.
+ * Only three of the four Pursue Deeper Understanding categories are required.
  */
-function openSbc(a: DegreeAudit): SbcResult[] {
+function openSbc(a: DegreeAudit, placeholders: Set<SbcCode> = new Set()): SbcResult[] {
+  const done = (r: SbcResult) => isDone(r.status) || placeholders.has(r.category.code);
   const isDeeper = (r: SbcResult) => DEEPER_UNDERSTANDING.categories.includes(r.category.code);
-  const deeperDone = a.sbc.results.filter((r) => isDeeper(r) && isDone(r.status)).length;
-  return a.sbc.results.filter(
-    (r) => !isDone(r.status) && !(isDeeper(r) && deeperDone >= DEEPER_UNDERSTANDING.required),
-  );
+  const deeperDone = a.sbc.results.filter((r) => isDeeper(r) && done(r)).length;
+  return a.sbc.results.filter((r) => !done(r) && !(isDeeper(r) && deeperDone >= DEEPER_UNDERSTANDING.required));
 }
 
-function openCount(a: DegreeAudit): number {
-  return a.programs.flatMap((p) => p.requirements).filter((r) => !isDone(r.status) && !isReview(r.status)).length + openSbc(a).length;
+/** SBCs that still need a placeholder: every open one, but only enough Deeper Understanding ones for three. */
+function sbcToPlace(a: DegreeAudit): SbcCode[] {
+  const open = openSbc(a);
+  const isDeeper = (r: SbcResult) => DEEPER_UNDERSTANDING.categories.includes(r.category.code);
+  const deeperDone = a.sbc.results.filter((r) => isDeeper(r) && isDone(r.status)).length;
+  const deeper = open.filter(isDeeper).slice(0, Math.max(0, DEEPER_UNDERSTANDING.required - deeperDone));
+  return open.filter((r) => !isDeeper(r) || deeper.includes(r)).map((r) => r.category.code);
+}
+
+function openProgramCount(a: DegreeAudit): number {
+  return a.programs.flatMap((p) => p.requirements).filter((r) => !isDone(r.status) && !isReview(r.status)).length;
 }
 
 /** The student's minimum credits for a fall or spring term. */
@@ -90,6 +112,10 @@ export function minTermCredits(student: StudentRecord): number {
  * next-semester proposal given everything planned before it. Free electives top
  * up each term once requirement courses run out, until the credit total is met,
  * and every term to at least the student's minimum, including the last.
+ *
+ * The proposal picks only courses programs need. SBCs those courses leave open
+ * become placeholders ("an SBC: HUM course") rather than an arbitrary course,
+ * taking the place of electives where there are any.
  */
 export function generatePlan(ctx: PlanContext, { maxTerms = 8, targetCredits = 15 } = {}): PlannedTerm[] {
   const minCredits = minTermCredits(ctx.student);
@@ -101,7 +127,7 @@ export function generatePlan(ctx: PlanContext, { maxTerms = 8, targetCredits = 1
     const current = audit(ctx, student);
     const creditsLeft =
       current.credits.required - current.credits.earned - current.credits.inProgress - electiveCredits(plan);
-    if (openCount(current) === 0 && creditsLeft <= 0) break;
+    if (openProgramCount(current) === 0 && creditsLeft <= 0) break;
 
     const proposal = proposeNextSemester({
       audit: current,
@@ -110,12 +136,13 @@ export function generatePlan(ctx: PlanContext, { maxTerms = 8, targetCredits = 1
       term,
       sectionCounts: ctx.sectionsByTerm.get(term) ?? null,
       targetCredits,
+      pickForSbc: false,
     });
     const items: PlannedTerm["items"] = proposal.courses.map((p) => ({ code: p.course.code }));
     let credits = proposal.totalCredits;
     let left = creditsLeft - credits;
     // Top up to the target, going over it (to the usual 18-credit cap) rather than under.
-    while (credits < targetCredits && credits + ELECTIVE_CREDITS <= Math.max(18, minCredits) && left > 0) {
+    while (credits < targetCredits && credits + ELECTIVE_CREDITS <= Math.max(GENERATED_MAX_CREDITS, minCredits) && left > 0) {
       items.push({ elective: ELECTIVE_CREDITS });
       credits += ELECTIVE_CREDITS;
       left -= ELECTIVE_CREDITS;
@@ -129,7 +156,41 @@ export function generatePlan(ctx: PlanContext, { maxTerms = 8, targetCredits = 1
     plan.push({ term, items });
     term = nextRegularTerm(term);
   }
-  return plan;
+  const catalog = new Map(ctx.courses.map((c) => [c.code, c]));
+  const itemCredits = (i: PlanItem) => {
+    const course = "code" in i ? catalog.get(i.code) : undefined;
+    return course ? plannedCredits(course) : placeholderCredits(i);
+  };
+  return placeSbcs(plan, sbcToPlace(audit(ctx, withPlan(ctx.student, plan))), { nextTerm: term, maxTerms, itemCredits });
+}
+
+/**
+ * Puts SBC placeholders in the plan: in place of electives, earliest first,
+ * then in terms with room, then in terms added at the end.
+ */
+function placeSbcs(
+  plan: PlannedTerm[],
+  sbcs: SbcCode[],
+  { nextTerm, maxTerms, itemCredits }: { nextTerm: TermId; maxTerms: number; itemCredits: (item: PlanItem) => number },
+): PlannedTerm[] {
+  const queue = [...sbcs];
+  const result = plan.map((t) => ({
+    ...t,
+    items: t.items.map((i): PlanItem => ("elective" in i && i.elective === SBC_PLACEHOLDER_CREDITS && queue.length ? { sbc: queue.shift()! } : i)),
+  }));
+  for (const t of result) {
+    let credits = t.items.reduce((s, i) => s + itemCredits(i), 0);
+    while (queue.length && credits + SBC_PLACEHOLDER_CREDITS <= GENERATED_MAX_CREDITS) {
+      t.items.push({ sbc: queue.shift()! });
+      credits += SBC_PLACEHOLDER_CREDITS;
+    }
+  }
+  let term = nextTerm;
+  while (queue.length && result.length < maxTerms) {
+    result.push({ term, items: queue.splice(0, 5).map((sbc) => ({ sbc })) });
+    term = nextRegularTerm(term);
+  }
+  return result;
 }
 
 // ---------------------------------------------------------------------------
@@ -139,8 +200,10 @@ export function generatePlan(ctx: PlanContext, { maxTerms = 8, targetCredits = 1
 export type ScheduleStatus = "scheduled" | "not-scheduled" | "unknown";
 
 export interface CheckedItem {
-  /** Course code, or null for a free elective. */
+  /** Course code, or null for a free elective or an SBC placeholder. */
   code: CourseCode | null;
+  /** The SBC of a placeholder; null otherwise. */
+  sbc: SbcCode | null;
   title: string;
   credits: number;
   schedule: ScheduleStatus;
@@ -178,6 +241,8 @@ export function checkPlan(ctx: PlanContext, plan: PlannedTerm[]): { terms: Check
   const projection = projectPlan(ctx, plan);
   const minCredits = minTermCredits(ctx.student);
   const seen = new Set<CourseCode>();
+  const seenSbc = new Set<SbcCode>();
+  const sbcNames = new Map(ctx.sbcCategories.map((c) => [c.code, c.name]));
   let creditsBefore = base.credits.earned + base.credits.inProgress;
 
   const terms = plan.map((t): CheckedTerm => {
@@ -188,8 +253,21 @@ export function checkPlan(ctx: PlanContext, plan: PlannedTerm[]): { terms: Check
     const sections = ctx.sectionsByTerm.get(t.term);
 
     const items = t.items.map((item): CheckedItem => {
-      if ("elective" in item) {
-        return { code: null, title: "Elective", credits: item.elective, schedule: "unknown", problems: [], checks: [], counts: [] };
+      const placeholder: Omit<CheckedItem, "title" | "credits"> = { code: null, sbc: null, schedule: "unknown", problems: [], checks: [], counts: [] };
+      if ("elective" in item) return { ...placeholder, title: "Elective", credits: item.elective };
+      if ("sbc" in item) {
+        const problems = [
+          ...(projection.sbcMet.includes(item.sbc) ? [`${item.sbc} is already covered`] : []),
+          ...(seenSbc.has(item.sbc) ? ["Planned twice"] : []),
+        ];
+        seenSbc.add(item.sbc);
+        return {
+          ...placeholder,
+          sbc: item.sbc,
+          title: sbcNames.get(item.sbc) ?? `${item.sbc} course`,
+          credits: SBC_PLACEHOLDER_CREDITS,
+          problems,
+        };
       }
       const course = catalog.get(item.code);
       const problems: string[] = [];
@@ -205,6 +283,7 @@ export function checkPlan(ctx: PlanContext, plan: PlannedTerm[]): { terms: Check
       if (pair && !sameTerm.has(pair) && !index.has(pair)) problems.push(`Take with ${pair}`);
       return {
         code: item.code,
+        sbc: null,
         title: course?.title ?? "",
         credits: course ? plannedCredits(course) : 0,
         schedule: !sections ? "unknown" : sections.has(item.code) ? "scheduled" : "not-scheduled",
@@ -235,6 +314,8 @@ export function checkPlan(ctx: PlanContext, plan: PlannedTerm[]): { terms: Check
 export interface PlanProjection {
   programs: { id: string; name: string; done: number; total: number }[];
   sbc: { done: number; total: number };
+  /** SBCs that completed and planned courses cover, not counting placeholders. */
+  sbcMet: SbcCode[];
   credits: { planned: number; required: number };
   upperDivision: { planned: number; required: number };
   /** Requirement titles each planned course counts toward. */
@@ -251,7 +332,7 @@ export function projectPlan(ctx: PlanContext, plan: PlannedTerm[]): PlanProjecti
   const planned = new Set(plan.flatMap((t) => t.items.flatMap((i) => ("code" in i ? [i.code] : []))));
   const result = audit(ctx, withPlan(ctx.student, plan));
   const done = isDone;
-  const sbcOpen = openSbc(result);
+  const sbcOpen = openSbc(result, sbcPlaceholders(plan));
 
   const countsByCourse = new Map<CourseCode, string[]>();
   const add = (code: CourseCode, label: string) => {
@@ -285,6 +366,7 @@ export function projectPlan(ctx: PlanContext, plan: PlannedTerm[]): PlanProjecti
       total: p.requirements.length,
     })),
     sbc: { done: result.sbc.total - Math.min(result.sbc.total, sbcOpen.length), total: result.sbc.total },
+    sbcMet: result.sbc.results.filter((r) => isDone(r.status)).map((r) => r.category.code),
     credits: { planned: credits, required: result.credits.required },
     upperDivision: {
       planned: result.credits.upperDivision.earned + result.credits.upperDivision.inProgress,

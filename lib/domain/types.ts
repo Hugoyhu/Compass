@@ -63,8 +63,11 @@ export interface StudentRecord {
 // Plans
 // ---------------------------------------------------------------------------
 
-/** A planned course, or a placeholder for a free elective of some number of credits. */
-export type PlanItem = { code: CourseCode } | { elective: number };
+/**
+ * A planned course, a placeholder for a free elective of some number of
+ * credits, or a placeholder for a course (3 credits) that carries an SBC.
+ */
+export type PlanItem = { code: CourseCode } | { elective: number } | { sbc: SbcCode };
 
 export interface PlannedTerm {
   term: TermId;
