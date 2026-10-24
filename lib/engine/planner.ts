@@ -96,7 +96,7 @@ function needsFrom(audit: DegreeAudit, courses: CourseRecord[]): { needs: Need[]
 }
 
 /** The most common subject among a program's course rules, e.g. "CSE" for the CS BS. */
-function primarySubject(program: ProgramDefinition): string {
+export function primarySubject(program: ProgramDefinition): string {
   const counts = new Map<string, number>();
   const visit = (rule: Rule) => {
     if (rule.type === "course") counts.set(rule.code.split(" ")[0], (counts.get(rule.code.split(" ")[0]) ?? 0) + 1);
