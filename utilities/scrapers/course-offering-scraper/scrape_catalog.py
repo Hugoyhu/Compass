@@ -673,11 +673,62 @@ def _merge_jsonl_files(paths: list[Path], destination: Path, key_fields: tuple[s
             stream.write(json.dumps(merged[key], ensure_ascii=False) + "\n")
 
 
+def merge_worker_dirs(out_dir: Path, worker_dirs: list[Path]) -> None:
+    """Fold worker outputs into out_dir, on top of whatever out_dir already holds."""
+    index_records: dict[tuple[str, str, str], dict[str, Any]] = {}
+    for index_path in [out_dir / "course-index.json", *(w / "course-index.json" for w in worker_dirs)]:
+        if not index_path.exists():
+            continue
+        try:
+            rows = json.loads(index_path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            print(f"WARNING: Could not read {index_path}; skipping it.")
+            continue
+        for row in rows:
+            key = (normalized(row.get("subject")), normalized(row.get("course_number")), normalized(row.get("title")))
+            index_records[key] = row
+    save_json(out_dir / "course-index.json", list(index_records.values()))
+    # Existing output first, so newer worker rows win.
+    _merge_jsonl_files(
+        [out_dir / "course-details.jsonl", *(w / "course-details.jsonl" for w in worker_dirs)],
+        out_dir / "course-details.jsonl",
+        ("catalog_course_code", "catalog_title"),
+    )
+    _merge_jsonl_files(
+        [out_dir / "course-sections.jsonl", *(w / "course-sections.jsonl" for w in worker_dirs)],
+        out_dir / "course-sections.jsonl",
+        ("course_code", "term", "class_number", "section"),
+    )
+    for worker_dir in worker_dirs:
+        for subdir in ("index", "raw"):
+            source_dir = worker_dir / subdir
+            if not source_dir.exists():
+                continue
+            for source in source_dir.rglob("*"):
+                if source.is_file():
+                    target = out_dir / source.relative_to(worker_dir)
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(source, target)
+
+
+def merge_leftover_workers(out_dir: Path) -> int:
+    """Merge and remove worker folders left by an interrupted run. Returns how many there were."""
+    workers_root = out_dir / ".workers"
+    leftovers = sorted(d for d in workers_root.glob("worker_*") if d.is_dir()) if workers_root.exists() else []
+    if leftovers:
+        print(f"Merging {len(leftovers)} worker folders left by an earlier run into {out_dir}…")
+        merge_worker_dirs(out_dir, leftovers)
+        shutil.rmtree(workers_root, ignore_errors=True)
+    return len(leftovers)
+
+
 def scrape_parallel(args: argparse.Namespace, letters: list[str]) -> int:
     """Run isolated browser sessions for disjoint groups, then merge their outputs."""
     out_dir = args.output.resolve()
     workers_root = out_dir / ".workers"
     logs_dir = out_dir / "logs"
+    # Never clear worker folders that hold unmerged progress from an interrupted run.
+    merge_leftover_workers(out_dir)
     workers_root.mkdir(parents=True, exist_ok=True)
     logs_dir.mkdir(parents=True, exist_ok=True)
     worker_count = min(args.workers, len(letters))
@@ -767,46 +818,25 @@ def scrape_parallel(args: argparse.Namespace, letters: list[str]) -> int:
     print(f"Status every {PARALLEL_STATUS_SECONDS}s; each worker's full log is in {logs_dir}.")
     results: list[tuple[int, int, Path]] = []
     from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
-    with ThreadPoolExecutor(max_workers=worker_count) as pool:
-        pending = {pool.submit(run_job, job) for job in jobs}
-        while pending:
-            finished, pending = wait(pending, timeout=PARALLEL_STATUS_SECONDS, return_when=FIRST_COMPLETED)
-            for future in finished:
-                result = future.result()
-                results.append(result)
-                idx, code, log_path = result
-                print(f"  Worker {idx}: {'finished' if code == 0 else f'exited with code {code}'} — log: {log_path}")
-            print(parallel_status())
+    try:
+        with ThreadPoolExecutor(max_workers=worker_count) as pool:
+            pending = {pool.submit(run_job, job) for job in jobs}
+            while pending:
+                finished, pending = wait(pending, timeout=PARALLEL_STATUS_SECONDS, return_when=FIRST_COMPLETED)
+                for future in finished:
+                    result = future.result()
+                    results.append(result)
+                    idx, code, log_path = result
+                    print(f"  Worker {idx}: {'finished' if code == 0 else f'exited with code {code}'} — log: {log_path}")
+                print(parallel_status())
+    except KeyboardInterrupt:
+        # Workers get the same Ctrl+C and stop; keep what they collected.
+        print("\nInterrupted. Merging what the workers collected so far; rerun the same command to resume.")
+        merge_leftover_workers(out_dir)
+        export_everything(out_dir, args, letters)
+        raise
 
-    # Merge each worker's partial indexes and deduplicate detail/section records.
-    index_records: dict[tuple[str, str, str], dict[str, Any]] = {}
-    detail_paths: list[Path] = []
-    section_paths: list[Path] = []
-    for idx, group_letters, worker_dir, log_path in jobs:
-        index_path = worker_dir / "course-index.json"
-        if index_path.exists():
-            try:
-                for row in json.loads(index_path.read_text(encoding="utf-8")):
-                    key = (normalized(row.get("subject")), normalized(row.get("course_number")), normalized(row.get("title")))
-                    index_records[key] = row
-            except (json.JSONDecodeError, OSError):
-                print(f"WARNING: Could not read worker {idx} course index.")
-        detail_paths.append(worker_dir / "course-details.jsonl")
-        section_paths.append(worker_dir / "course-sections.jsonl")
-        for subdir in ("index", "raw"):
-            source_dir = worker_dir / subdir
-            if source_dir.exists():
-                for source in source_dir.rglob("*"):
-                    if not source.is_file():
-                        continue
-                    relative = source.relative_to(worker_dir)
-                    target = out_dir / relative
-                    target.parent.mkdir(parents=True, exist_ok=True)
-                    shutil.copy2(source, target)
-
-    save_json(out_dir / "course-index.json", list(index_records.values()))
-    _merge_jsonl_files(detail_paths, out_dir / "course-details.jsonl", ("catalog_course_code", "catalog_title"))
-    _merge_jsonl_files(section_paths, out_dir / "course-sections.jsonl", ("course_code", "term", "class_number", "section"))
+    merge_worker_dirs(out_dir, [worker_dir for _, _, worker_dir, _ in jobs])
     # Worker directories contain intermediate copies and nested exports; keep the
     # human-readable logs but remove intermediates before building the final ZIP.
     shutil.rmtree(workers_root, ignore_errors=True)
@@ -1023,6 +1053,7 @@ def main() -> int:
     parser.add_argument("--max-details", type=int, default=0, help="Stop after this many detail pages (0 = no limit)")
     parser.add_argument("--workers", type=int, default=1, help="Independent browser workers (1 = sequential; try 4 first, up to 26). Parallel workers use separate sessions and merge outputs.")
     parser.add_argument("--index-only", action="store_true", help="Collect course lists only; do not open detail pages")
+    parser.add_argument("--merge-only", action="store_true", help="Merge worker folders left by an interrupted parallel run into --output and rebuild the exports; no scraping")
     parser.add_argument("--max-level", type=int, default=DEFAULT_MAX_LEVEL, help=f"Skip courses numbered above this (default {DEFAULT_MAX_LEVEL}: undergraduate only; 0 = no limit)")
     parser.add_argument("--sections-term", default="", help='Also collect class sections: one term ("Spring 2027"), several ("Fall 2026,Spring 2027"), or "all" listed terms')
     parser.add_argument("--headless", action="store_true", help="Run browser invisibly (visible by default for debugging)")
@@ -1036,6 +1067,12 @@ def main() -> int:
         parser.error(f"--workers must be between 1 and {MAX_WORKERS}")
     # Keep --url customizable, including if the public catalog's route changes.
     CATALOG_URL = args.url
+    if args.merge_only:
+        out_dir = args.output.resolve()
+        found = merge_leftover_workers(out_dir)
+        export_everything(out_dir, args, [])
+        print(f"Merged {found} worker folders." if found else "No worker folders to merge.")
+        return 0
     try:
         return scrape(args)
     except KeyboardInterrupt:
