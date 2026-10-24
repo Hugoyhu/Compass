@@ -57,6 +57,10 @@ export const ChooseConstraintSchema = z.discriminatedUnion("type", [
     type: z.literal("minFrom"),
     from: CourseSelectorSchema,
     minCourses: z.number().int(),
+    countUsedBy: z
+      .array(z.string())
+      .optional()
+      .describe("Requirement ids whose applied courses also count toward the minimum"),
   }),
   z.strictObject({
     type: z.literal("onePerGroup"),

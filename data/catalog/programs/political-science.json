@@ -185,42 +185,29 @@
             "POL 475",
             "POL 476"
           ]
-        }
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "POL"
+              ],
+              "minNumber": 300,
+              "excludeCourses": [
+                "POL 475",
+                "POL 476"
+              ]
+            },
+            "minCourses": 3,
+            "countUsedBy": [
+              "political-science.B"
+            ]
+          }
+        ],
+        "sourceText": "For the Concentration and Political Science Electives, all courses must be selected from courses numbered 200 or above (excluding POL 201), and at least three courses (9 credits) must be from courses numbered 300 or above."
       },
       "sourceText": "Two courses must be taken from POL courses or courses that are crosslisted with POL. Political Science Elective courses must meet the requirements listed in the Notes for the Minor."
-    },
-    {
-      "id": "political-science.300-level-courses",
-      "label": "notes-6-300-level",
-      "title": "Three courses numbered 300 or above (Concentration and Electives)",
-      "rule": {
-        "type": "unparsed",
-        "text": "For the Concentration and Political Science Electives, at least three courses (9 credits) must be from courses numbered 300 or above.",
-        "reason": "Cross-requirement course-level minimum that no single rule type expresses."
-      },
-      "sourceText": "For the Concentration and Political Science Electives, all courses must be selected from courses numbered 200 or above (excluding POL 201), and at least three courses (9 credits) must be from courses numbered 300 or above."
-    },
-    {
-      "id": "political-science.residency-pol-credits",
-      "label": "notes-4-department-credits",
-      "title": "At least nine credits in Political Science Department courses",
-      "rule": {
-        "type": "unparsed",
-        "text": "At least nine credits must be taken in courses offered by the Political Science Department at Stony Brook or cross-listed by the Department.",
-        "reason": "Minimum credit requirement across the minor that no rule type covers."
-      },
-      "sourceText": "At least nine credits must be taken in courses offered by the Political Science Department at Stony Brook or cross-listed by the Department."
-    },
-    {
-      "id": "political-science.su-limit",
-      "label": "notes-2-su-limit",
-      "title": "Satisfactory/Unsatisfactory credit limit",
-      "rule": {
-        "type": "unparsed",
-        "text": "No more than three credits of courses with Satisfactory/Unsatisfactory grading may be applied to the minor.",
-        "reason": "Credit cap on S/U-graded courses that no rule type covers."
-      },
-      "sourceText": "No more than three credits of courses with Satisfactory/Unsatisfactory grading may be applied to the minor."
     }
   ],
   "policies": [
@@ -233,6 +220,15 @@
         "political-science.C"
       ],
       "sourceText": "All courses taken to fulfill minor requirements must be passed with a letter grade of C or higher, except for those with a Satisfactory/Unsatisfactory grading scale which must be passed with an S."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 9,
+      "appliesTo": [
+        "political-science.B",
+        "political-science.C"
+      ],
+      "sourceText": "At least nine credits must be taken in courses offered by the Political Science Department at Stony Brook or cross-listed by the Department."
     }
   ],
   "substitutions": [
@@ -295,8 +291,8 @@
       "text": "Only transfer courses with a grade of C or higher may be accepted toward the minor."
     },
     {
-      "topic": "advising",
-      "text": "The minor is organized around one of the concentrations listed for the Political Science major; the concentration course lists are not included on this page."
+      "topic": "other",
+      "text": "No more than three credits of courses with Satisfactory/Unsatisfactory grading may be applied to the minor."
     }
   ],
   "source": {
@@ -305,7 +301,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }
