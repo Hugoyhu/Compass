@@ -631,36 +631,51 @@ function evaluationOrder(
 
 const SUBSTITUTION_SCOPE = "substitution:";
 
-/** The replacement's course codes, when it's one course or an allOf of courses. */
-function replacementCodes(sub: Substitution): CourseCode[] {
+/** Course codes a rule requires outright: every course leaf not under an anyOf or choose. */
+export function mandatoryCourses(rule: Rule): CourseCode[] {
+  if (rule.type === "course") return [rule.code];
+  if (rule.type === "allOf") return rule.rules.flatMap(mandatoryCourses);
+  return [];
+}
+
+/** The courses a substitution puts in place, when it is a plain course or list of courses. */
+export function substitutionCourses(sub: Substitution): CourseCode[] {
   if (sub.with.type === "course") return [sub.with.code];
-  if (
-    sub.with.type === "allOf" &&
-    sub.with.rules.every((r) => r.type === "course")
-  ) {
+  if (sub.with.type === "allOf" && sub.with.rules.every((r) => r.type === "course")) {
     return sub.with.rules.flatMap((r) => (r.type === "course" ? [r.code] : []));
   }
   return [];
 }
 
 /**
- * A substitution is in use once the student has taken, is taking, or has
- * planned any of its replacement courses (adding CSE 160 to the plan selects
- * the honors sequence). Ones needing approval, or replacing a rule rather
- * than courses, never apply automatically.
+ * Whether a substitution may apply without an advisor. One with an eligibility
+ * condition ("Students pursuing Honors") counts only when another of the
+ * student's programs requires its courses, e.g. the Honors CS program
+ * requiring CSE 350. Ones needing approval, or replacing a rule rather than
+ * courses, never apply automatically.
+ */
+export function substitutionEligible(sub: Substitution, requiredElsewhere: Set<CourseCode>): boolean {
+  if (sub.requiresApproval || sub.replaces.type !== "courses") return false;
+  const codes = substitutionCourses(sub);
+  return codes.length > 0 && (!sub.condition || codes.every((c) => requiredElsewhere.has(c)));
+}
+
+/**
+ * An eligible substitution is in use once the student has taken, is taking,
+ * or has planned any of its courses (adding CSE 160 to the plan selects the
+ * honors sequence), or when another of their programs requires all of them
+ * (an honors program that requires the honors sequence).
  */
 function activeSubstitutions(
   program: ProgramDefinition,
   attempts: Map<CourseCode, CourseAttempt>,
   planned: Set<CourseCode>,
+  requiredElsewhere: Set<CourseCode>,
 ): Substitution[] {
   return program.substitutions.filter((sub) => {
-    if (sub.requiresApproval || sub.replaces.type !== "courses") return false;
-    const codes = replacementCodes(sub);
-    return (
-      codes.length > 0 &&
-      codes.some((code) => attempts.has(code) || planned.has(code))
-    );
+    if (!substitutionEligible(sub, requiredElsewhere)) return false;
+    const codes = substitutionCourses(sub);
+    return codes.some((code) => attempts.has(code) || planned.has(code)) || codes.every((code) => requiredElsewhere.has(code));
   });
 }
 
@@ -754,7 +769,7 @@ function layoutSubstitution(
     requirements: rewritten,
     layout: {
       sub,
-      replacement: replacementCodes(sub),
+      replacement: substitutionCourses(sub),
       replaced: state.replaced,
       placedIn: state.placedIn,
       covered: state.covered,
@@ -912,7 +927,7 @@ export function auditProgram(
       t.items.flatMap((i) => ("code" in i ? [i.code] : [])),
     ),
   );
-  const active = activeSubstitutions(program, attempts, planned);
+  const active = activeSubstitutions(program, attempts, planned, requiredElsewhere);
   const { requirements: rules, notes } = applySubstitutions(
     program.requirements,
     active,
