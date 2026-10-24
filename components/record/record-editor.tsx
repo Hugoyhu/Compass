@@ -168,13 +168,13 @@ export function RecordEditor({
                 <h3 className="text-xs font-medium text-muted-foreground">
                   {group.label}
                 </h3>
-                <ul className="divide-y rounded-lg border">
+                <ul className="divide-y border-y">
                   {group.items.map(({ attempt, index }) => {
                     const known = catalog.get(attempt.code);
                     return (
                       <li
                         key={`${attemptKey(attempt)}-${index}`}
-                        className="flex items-center gap-2 px-3 py-1.5 text-sm"
+                        className="flex items-center gap-2 py-1.5 text-sm"
                       >
                         <span className="w-20 shrink-0 font-mono text-xs">
                           {attempt.code}
@@ -276,7 +276,7 @@ export function RecordEditor({
             <div className="space-y-1.5">
               <span className="text-xs font-medium">Programs</span>
               {draft.programIds.length > 0 && (
-                <ul className="divide-y rounded-lg border text-sm">
+                <ul className="divide-y border-y text-sm">
                   {draft.programIds.map((id) => (
                     <li
                       key={id}

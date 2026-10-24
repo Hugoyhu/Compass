@@ -37,7 +37,7 @@ function SbcGrid({ results }: { results: SbcResult[] }) {
                   render={
                     <div
                       tabIndex={0}
-                      className="flex items-center gap-1.5 rounded-md border px-2 py-1.5 text-xs font-medium outline-none focus-visible:ring-2 focus-visible:ring-ring data-[status=satisfied]:bg-muted/40"
+                      className="flex items-center gap-1.5 border border-foreground/30 px-2 py-1.5 text-xs font-medium outline-none focus-visible:ring-2 focus-visible:ring-ring data-[status=satisfied]:border-foreground data-[status=satisfied]:bg-foreground data-[status=satisfied]:text-background data-[status=satisfied]:[&_svg]:text-background"
                       data-status={r.status}
                     >
                       <StatusIcon status={r.status} className="size-3.5" />

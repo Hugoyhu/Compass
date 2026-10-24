@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: PageProps<"/courses/[code]">)
 
 export default function CoursePage({ params }: PageProps<"/courses/[code]">) {
   return (
-    <main className="mx-auto w-full max-w-6xl space-y-6 p-4 md:p-6">
+    <main className="mx-auto w-full max-w-7xl space-y-10 px-4 py-8 md:px-8 md:py-12">
       <Link href="/courses" className={buttonVariants({ variant: "ghost", size: "sm", className: "-ml-2" })}>
         <ArrowLeft />
         All courses

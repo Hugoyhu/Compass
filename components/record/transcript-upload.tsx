@@ -77,7 +77,7 @@ export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean;
           {groupAttempts(draft.attempts).map((group) => (
             <div key={group.key} className="space-y-1">
               <p className="text-xs font-medium text-muted-foreground">{group.label}</p>
-              <ul className="divide-y rounded-lg border">
+              <ul className="divide-y border-y">
                 {group.items.map(({ attempt, index }) => (
                   <li key={index}>
                     <label className="flex cursor-pointer items-center gap-3 px-3 py-2 text-sm has-[:not(:checked)]:opacity-50">
