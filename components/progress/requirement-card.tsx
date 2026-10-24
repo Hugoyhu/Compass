@@ -6,7 +6,7 @@ import { Card, CardAction, CardContent, CardHeader, CardTitle } from "@/componen
 import { formatTerm } from "@/lib/domain/terms";
 import type { CourseAttempt } from "@/lib/domain/types";
 import type { RequirementResult } from "@/lib/engine/audit";
-import { describeMissing, progressFractions } from "@/lib/engine/describe";
+import { describeMissing, itemNumber, progressFractions } from "@/lib/engine/describe";
 import type { CourseLabel } from "@/lib/services/dashboard";
 
 const SOURCE_BADGE = { sbu: null, ap: "AP", transfer: "Transfer" } as const;
@@ -27,7 +27,7 @@ export function RequirementCard({
     <Card id={result.requirement.id} size="sm" className="scroll-mt-20">
       <CardHeader>
         <CardTitle className="text-sm">
-          <span className="mr-1.5 text-muted-foreground tabular-nums">{result.requirement.label}.</span>
+          {itemNumber(result.requirement.label) && <span className="mr-1.5 text-muted-foreground tabular-nums">{itemNumber(result.requirement.label)}.</span>}
           {result.requirement.title}
         </CardTitle>
         <CardAction>
