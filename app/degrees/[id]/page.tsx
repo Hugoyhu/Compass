@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ProgramOptionsView } from "@/components/program/program-options";
+import { TypicalPathView, type CourseProgress } from "@/components/program/typical-path";
 import { ProgramToggle } from "@/components/degrees/program-toggle";
 import { CatalogText, NotesCard, ProgramRulesCard, RequirementNav, SubstitutionsCard } from "@/components/program/program-panels";
 import { RequirementCard } from "@/components/program/requirement-card";
@@ -12,6 +14,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { kindLabel } from "@/lib/domain/program-kinds";
 import { substitutionLayouts } from "@/lib/engine/audit";
+import { isPassing, buildCompletionIndex } from "@/lib/engine/prerequisites";
+import type { ProgramOptions } from "@/lib/engine/program-options";
+import type { TypicalPath } from "@/lib/engine/typical-path";
 import { attachSubstitutions, requirementRefs } from "@/lib/engine/describe";
 import { getProgramDetail, listProgramIds, type ProgramDetail } from "@/lib/services/degrees";
 import { getStudentRecord } from "@/lib/student/store";
@@ -74,6 +79,19 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
 
       <RequirementNav requirements={program.requirements} />
 
+      {(detail.path || detail.options) && (
+        <Suspense
+          fallback={
+            <>
+              {detail.path && <TypicalPathView path={detail.path} />}
+              {detail.options && <ProgramOptionsView options={detail.options} />}
+            </>
+          }
+        >
+          <PathsWithProgress path={detail.path} options={detail.options} />
+        </Suspense>
+      )}
+
       <div className="grid gap-6 lg:grid-cols-3">
         <section className="space-y-4 lg:col-span-2" aria-label="Requirements">
           {program.requirements.map((r) => (
@@ -117,6 +135,24 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
           <NotesCard notes={program.notes} />
         </aside>
       </div>
+    </>
+  );
+}
+
+/** The typical path and the options, marked with the visitor's progress; reads their record, so it sits in its own Suspense boundary. */
+async function PathsWithProgress({ path, options }: { path: TypicalPath | null; options: ProgramOptions | null }) {
+  const record = await getStudentRecord();
+  const progress: CourseProgress = {};
+  if (record) {
+    for (const [code, state] of buildCompletionIndex(record.attempts, { includeInProgress: true })) {
+      if (state === "in-progress") progress[code] = "in-progress";
+      else if (isPassing(state)) progress[code] = "done";
+    }
+  }
+  return (
+    <>
+      {path && <TypicalPathView path={path} progress={progress} />}
+      {options && <ProgramOptionsView options={options} progress={progress} />}
     </>
   );
 }

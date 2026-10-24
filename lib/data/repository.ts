@@ -9,12 +9,13 @@
  *
  * Student records are not here: see lib/student/store.ts.
  */
+import type { ProfessorRating } from "@/lib/domain/catalog/professor";
 import type { CourseRecord } from "@/lib/domain/catalog/course";
 import type { Section } from "@/lib/domain/catalog/offering";
 import type { ProgramDefinition } from "@/lib/domain/catalog/program";
 import { termOrdinal } from "@/lib/domain/terms";
 import type { SbcCategory, TermId } from "@/lib/domain/types";
-import { loadCourseFiles, loadOfferingFiles, loadProgramFiles } from "./catalog-files";
+import { loadCourseFiles, loadOfferingFiles, loadProfessorRatings, loadProgramFiles } from "./catalog-files";
 import { fetchCatalogMeta, fetchCourses, fetchOfferingSections, fetchPrograms } from "./postgres-catalog";
 import { sbcCategories, universityCreditRules } from "./sbc";
 
@@ -29,6 +30,8 @@ export interface CompassRepository {
   listSections(term: TermId): Promise<Section[] | null>;
   /** Terms that have section data, oldest first. */
   listOfferingTerms(): Promise<TermId[]>;
+  /** Rate My Professors ratings; empty until `npm run scrape:ratings` has run. Same source for files and Postgres. */
+  listProfessorRatings(): Promise<ProfessorRating[]>;
   listSbcCategories(): Promise<SbcCategory[]>;
   getUniversityCreditRules(): Promise<typeof universityCreditRules>;
 }
@@ -37,7 +40,12 @@ function sortTerms(terms: TermId[]): TermId[] {
   return [...terms].sort((a, b) => termOrdinal(a) - termOrdinal(b));
 }
 
+let professorRatings: ProfessorRating[] | undefined;
+
 const shared = {
+  async listProfessorRatings() {
+    return (professorRatings ??= loadProfessorRatings());
+  },
   async listSbcCategories() {
     return sbcCategories;
   },

@@ -51,3 +51,5 @@ CLAUDE.md
 /utilities/scrapers/course-offering-scraper/.venv/
 /utilities/scrapers/course-offering-scraper/__pycache__/
 /utilities/scrapers/major-minor/HANDOFF.md
+
+*.zip

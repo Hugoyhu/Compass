@@ -33,7 +33,7 @@ export function NextSemesterCard({ schedule }: { schedule: NextSemesterSchedule 
                     <p key={s.id} className="text-xs text-muted-foreground">
                       {s.label} · {s.days.length ? `${formatDays(s.days)} ${formatRange(s)}` : "TBA"}
                       {s.room && s.room !== "TBA" && ` · ${s.room}`}
-                      {s.instructor && s.instructor !== "TBA" && ` · ${s.instructor}`}
+                      {s.instructors.length > 0 && ` · ${s.instructors.join(", ")}`}
                     </p>
                   ))}
                 </div>
