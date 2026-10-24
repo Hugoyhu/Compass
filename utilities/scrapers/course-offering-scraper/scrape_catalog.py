@@ -33,6 +33,7 @@ ALPHABET_PREFIX = "DERIVED_SSS_BCC_SSR_ALPHANUM_"
 EXPAND_PREFIX = "DERIVED_SSS_BCC_SSS_EXPAND_ALL"
 RETURN_PREFIX = "DERIVED_SAA_CRS_RETURN_PB"
 LETTERS_DEFAULT = "A-Z-0-9"
+MAX_WORKERS = 26
 
 
 def normalized(text: str | None) -> str:
@@ -237,11 +238,78 @@ def expand_letter_once(page, letter: str) -> str:
             # No Expand All control: the letter has no subject groups at all.
             return "empty"
         # Subject groups start collapsed after switching letters; expand them.
-        if not run_postback(page, lambda: expand_button.click(timeout=10000), timeout=30000):
-            return "failed"
+        run_postback(page, lambda: expand_button.click(timeout=10000), timeout=30000)
+        # Drawing hundreds of rows takes a while after the response arrives.
+        try:
+            page.wait_for_function("() => document.querySelector('tr[id^=\"trCOURSE_LIST$\"]')", timeout=20000, polling=250)
+        except PlaywrightTimeoutError:
+            pass
+        expand_missing_groups(page, letter)
     except PlaywrightTimeoutError:
         return "failed"
     return "rows" if page.locator('tr[id^="trCOURSE_LIST$"]').count() else "failed"
+
+
+GROUPS_JS = """() => {
+  const groups = [...document.querySelectorAll('[id^="DERIVED_SSS_BCC_GROUP_BOX_1$147$$"]')]
+    .map(e => (e.id.match(/(\\d+)$/) || [])[1]).filter(Boolean);
+  const withRows = [...document.querySelectorAll('tr[id^="trCOURSE_LIST$"]')]
+    .map(e => (e.id.match(/^trCOURSE_LIST\\$(\\d+)_row/) || [])[1]);
+  // The toggle icon shows the group's state: PS_EXPAND_ICN while collapsed, PS_COLLAPSE_ICN while open.
+  const collapsed = [...document.querySelectorAll('img[id^="DERIVED_SSS_BCC_SSR_EXPAND_COLLAPS$IMG$"]')]
+    .filter(img => /EXPAND_ICN/.test(img.getAttribute('src') || ''))
+    .map(img => (img.id.match(/(\\d+)$/) || [])[1]);
+  return { groups: [...new Set(groups)], withRows: [...new Set(withRows)], collapsed };
+}"""
+
+
+NO_COURSES_COUNT_JS = """() => (document.body.innerText.match(/No active courses offered for this Subject/g) || []).length"""
+GROUP_OUTCOME_JS = """({ group, before }) => {
+  if (document.querySelector(`tr[id^="trCOURSE_LIST$${group}_row"]`)) return "rows";
+  const notes = (document.body.innerText.match(/No active courses offered for this Subject/g) || []).length;
+  return notes > before ? "empty" : false;
+}"""
+
+
+def expand_missing_groups(page, letter: str) -> None:
+    """Expand, one at a time, any subject group that Expand All left without rows.
+
+    Expand All is unreliable: for H it expanded none of ~100 groups, for U only
+    one. Each group also has its own toggle, which works.
+    """
+    state = page.evaluate(GROUPS_JS)
+    without_rows = [g for g in state["groups"] if g not in state["withRows"]]
+    # An open group with no rows is an empty subject ("No active courses offered");
+    # clicking its toggle would only close it again.
+    missing = [g for g in without_rows if g in state["collapsed"]]
+    empty_subjects = len(without_rows) - len(missing)
+    if not missing:
+        if empty_subjects:
+            print(f"  [{letter}] {empty_subjects} subjects have no active courses.")
+        return
+    print(f"  [{letter}] Expand All left {len(missing)} of {len(state['groups'])} subject groups collapsed; expanding them one by one.")
+    failed = []
+    for group in missing:
+        toggle = page.locator(f'[id="DERIVED_SSS_BCC_SSR_EXPAND_COLLAPS${group}"]').first
+        if toggle.count() == 0:
+            failed.append(group)
+            continue
+        before = page.evaluate(NO_COURSES_COUNT_JS)
+        run_postback(page, lambda: toggle.click(timeout=10000))
+        try:
+            # Wait for the outcome itself, not a fixed delay: the group's rows, or
+            # PeopleSoft's "no active courses" note for an empty subject.
+            outcome = page.wait_for_function(
+                GROUP_OUTCOME_JS, arg={"group": group, "before": before}, timeout=15000, polling=250
+            ).json_value()
+        except PlaywrightTimeoutError:
+            failed.append(group)
+            continue
+        if outcome == "empty":
+            empty_subjects += 1
+    print(f"  [{letter}] {empty_subjects} subjects have no active courses.")
+    if failed:
+        print(f"  [{letter}] WARNING: {len(failed)} subject groups would not expand: {', '.join(failed)}")
 
 
 def ensure_letter_expanded(page, letter: str, raw_index_dir: Path) -> list[dict[str, Any]]:
@@ -782,7 +850,7 @@ def main() -> int:
     parser.add_argument("--letters", default=LETTERS_DEFAULT, help="A-Z-0-9 (default), A-Z, 0-9, or comma-separated individual groups")
     parser.add_argument("--courses", default="", help='Only open these courses, e.g. "CSE 214,HIS 101" (re-scrapes them even when resuming)')
     parser.add_argument("--max-details", type=int, default=0, help="Stop after this many detail pages (0 = no limit)")
-    parser.add_argument("--workers", type=int, default=1, help="Independent browser workers (1 = sequential; try 4 first, up to 13). Parallel workers use separate sessions and merge outputs.")
+    parser.add_argument("--workers", type=int, default=1, help="Independent browser workers (1 = sequential; try 4 first, up to 26). Parallel workers use separate sessions and merge outputs.")
     parser.add_argument("--index-only", action="store_true", help="Collect course lists only; do not open detail pages")
     parser.add_argument("--sections-term", default="", help='Also collect class sections: one term ("Spring 2027"), several ("Fall 2026,Spring 2027"), or "all" listed terms')
     parser.add_argument("--headless", action="store_true", help="Run browser invisibly (visible by default for debugging)")
@@ -792,8 +860,8 @@ def main() -> int:
     parser.add_argument("--pause-every", type=int, default=50, help="Pause after this many detail pages (default: 50; 0 disables)")
     parser.add_argument("--pause-seconds", type=int, default=5, help="Pause duration (default: 5 seconds)")
     args = parser.parse_args()
-    if args.workers < 1 or args.workers > 13:
-        parser.error("--workers must be between 1 and 13")
+    if args.workers < 1 or args.workers > MAX_WORKERS:
+        parser.error(f"--workers must be between 1 and {MAX_WORKERS}")
     # Keep --url customizable, including if the public catalog's route changes.
     CATALOG_URL = args.url
     try:

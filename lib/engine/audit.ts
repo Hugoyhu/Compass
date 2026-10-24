@@ -603,6 +603,12 @@ export function auditProgram(
 // SBC and credits
 // ---------------------------------------------------------------------------
 
+/**
+ * "Pursue Deeper Understanding by completing advanced studies in three of four
+ * distinct areas of knowledge" (Undergraduate Catalog, The Stony Brook Curriculum).
+ */
+export const DEEPER_UNDERSTANDING = { categories: ["EXP+", "HFA+", "SBS+", "STEM+"] as SbcCode[], required: 3 };
+
 export function auditSbc(
   student: StudentRecord,
   catalog: Map<CourseCode, CourseRecord>,
@@ -627,10 +633,26 @@ export function auditSbc(
     return { category, status: match.status === "completed" ? "satisfied" : "in-progress", appliedCode: match.code };
   });
 
+  // Only three of the four upper-tier categories are required. Once three are met,
+  // the fourth isn't needed; it counts toward neither the total nor the satisfied count.
+  const met = (r: SbcResult) => r.status === "satisfied" || r.status === "exempt";
+  const isDeeper = (r: SbcResult) => DEEPER_UNDERSTANDING.categories.includes(r.category.code);
+  const deeper = results.filter(isDeeper);
+  if (deeper.filter(met).length >= DEEPER_UNDERSTANDING.required) {
+    for (const r of deeper) {
+      if (met(r) || r.status === "in-progress") continue;
+      r.status = "exempt";
+      r.exemptReason = `Not required: ${DEEPER_UNDERSTANDING.required} of the ${DEEPER_UNDERSTANDING.categories.length} Pursue Deeper Understanding categories are met`;
+    }
+  }
+  const optional = deeper.length - Math.min(deeper.length, DEEPER_UNDERSTANDING.required);
+
   return {
     results,
-    satisfied: results.filter((r) => r.status === "satisfied" || r.status === "exempt").length,
-    total: results.length,
+    satisfied:
+      results.filter((r) => !isDeeper(r) && met(r)).length +
+      Math.min(deeper.filter((r) => met(r) && !r.exemptReason?.startsWith("Not required")).length, DEEPER_UNDERSTANDING.required),
+    total: results.length - optional,
   };
 }
 

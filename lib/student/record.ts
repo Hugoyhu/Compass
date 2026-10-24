@@ -31,7 +31,8 @@ export const StudentRecordSchema = z.object({
   name: z.string().max(80),
   entryTerm: TermIdSchema,
   currentTerm: TermIdSchema,
-  programIds: z.array(z.string()).max(MAX_PROGRAMS),
+  // A major plus special programs (Honors College, WISE, ...).
+  programIds: z.array(z.string()).max(6),
   attempts: z.array(CourseAttemptSchema).max(120),
 });
 
