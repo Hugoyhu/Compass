@@ -87,25 +87,24 @@
       "label": "core-ams-courses",
       "title": "Core AMS courses",
       "rule": {
-        "manualCheck": "The page lists AMS 301 AND AMS 310, then OR AMS 311. This is modeled literally as (AMS 301 and AMS 310) or AMS 311. Confirm with the department whether AMS 301 is required alongside AMS 311.",
-        "type": "anyOf",
+        "type": "allOf",
         "rules": [
           {
-            "type": "allOf",
+            "type": "course",
+            "code": "AMS 301"
+          },
+          {
+            "type": "anyOf",
             "rules": [
               {
                 "type": "course",
-                "code": "AMS 301"
+                "code": "AMS 310"
               },
               {
                 "type": "course",
-                "code": "AMS 310"
+                "code": "AMS 311"
               }
             ]
-          },
-          {
-            "type": "course",
-            "code": "AMS 311"
           }
         ]
       },
@@ -125,6 +124,9 @@
           "minNumber": 300,
           "excludeUsedBy": [
             "applied-mathematics-and-statistics.core"
+          ],
+          "excludeCourses": [
+            "AMS 300"
           ]
         },
         "constraints": [
