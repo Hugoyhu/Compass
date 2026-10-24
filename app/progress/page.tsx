@@ -11,7 +11,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { PolicyStatus } from "@/lib/engine/audit";
-import { POLICY_STATUS_LABELS, STATUS_LABELS } from "@/lib/engine/describe";
+import { NOTE_TOPICS, POLICY_STATUS_LABELS, POLICY_TITLES, requirementHeading, STATUS_LABELS } from "@/lib/engine/describe";
 import { getStudentView } from "@/lib/services/dashboard";
 import { getStudentRecord } from "@/lib/student/store";
 
@@ -23,23 +23,6 @@ const POLICY_ICONS: Record<PolicyStatus, { icon: LucideIcon; className: string }
   "not-met": { icon: CircleX, className: "text-status-critical" },
   pending: { icon: CircleDashed, className: "text-muted-foreground" },
   info: { icon: Info, className: "text-muted-foreground" },
-};
-
-const NOTE_TOPICS: Record<string, string> = {
-  admission: "Admission",
-  advising: "Advising",
-  grading: "Grading",
-  sbc: "SBC",
-  other: "Note",
-};
-
-const POLICY_TITLES: Record<string, string> = {
-  minGrade: "Minimum grade",
-  letterGradeRequired: "Letter grades",
-  minGpa: "GPA minimum",
-  residencyCredits: "Credits at Stony Brook",
-  residencyRequired: "Must be taken at Stony Brook",
-  prerequisiteGrade: "Prerequisite grades",
 };
 
 export default function ProgressPage() {
@@ -106,7 +89,7 @@ async function Progress() {
             className="inline-flex items-center gap-1.5 rounded-md border px-2 py-1 text-xs hover:bg-muted"
           >
             <StatusIcon status={r.status} className="size-3.5" />
-            {r.requirement.label}. {r.requirement.title}
+            {requirementHeading(r.requirement)}
           </a>
         ))}
       </nav>
