@@ -5,7 +5,7 @@ import { CircleCheck, CircleDashed, CircleX, Clock, ExternalLink, Info, type Luc
 import { StatusIcon } from "@/components/audit/status-badge";
 import { GetStarted } from "@/components/onboarding/get-started";
 import { RequirementCard } from "@/components/progress/requirement-card";
-import { Alert, AlertAction, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Alert, AlertAction, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -46,8 +46,7 @@ async function Progress() {
     return (
       <Alert>
         <Info />
-        <AlertTitle>Choose your major to see a full audit</AlertTitle>
-        <AlertDescription>Degree progress compares your courses with your major&apos;s requirements.</AlertDescription>
+        <AlertTitle>No major selected</AlertTitle>
         <AlertAction>
           <Link href="/record" className={buttonVariants({ size: "sm" })}>
             Choose major
@@ -66,14 +65,10 @@ async function Progress() {
         <div className="space-y-1">
           <h2 className="text-2xl font-semibold tracking-tight">{program.name}</h2>
           <p className="text-sm text-muted-foreground">
-            {program.source.catalog} · {major.satisfied} of {major.total} requirements satisfied
-            {program.approxCredits ? ` · about ${program.approxCredits} credits in the major` : ""}
+            {major.satisfied} of {major.total} requirements done
           </p>
         </div>
         <div className="flex items-center gap-2">
-          <Badge variant="outline" className="font-normal">
-            {program.review.status === "reviewed" ? "Reviewed transcription" : "Draft transcription"}
-          </Badge>
           <a href={program.source.url} target="_blank" rel="noreferrer" className={buttonVariants({ variant: "ghost", size: "sm" })}>
             Catalog page
             <ExternalLink />
@@ -105,7 +100,6 @@ async function Progress() {
           <Card size="sm">
             <CardHeader>
               <CardTitle>Program rules</CardTitle>
-              <CardDescription>Grade, GPA, and residency rules that apply across requirements.</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3">
@@ -119,11 +113,7 @@ async function Progress() {
                           {POLICY_TITLES[p.policy.type] ?? p.policy.type}
                           <span className="ml-1.5 text-xs font-normal text-muted-foreground">{POLICY_STATUS_LABELS[p.status]}</span>
                         </p>
-                        <p className="text-xs text-muted-foreground">{p.detail}</p>
-                        <details className="text-xs">
-                          <summary className="cursor-pointer text-muted-foreground select-none hover:text-foreground">Catalog text</summary>
-                          <p className="mt-1 text-muted-foreground">{p.policy.sourceText}</p>
-                        </details>
+                        {p.detail && <p className="text-xs text-muted-foreground">{p.detail}</p>}
                       </div>
                     </li>
                   );
@@ -135,7 +125,7 @@ async function Progress() {
           {substitutions.length > 0 && (
             <Card size="sm">
               <CardHeader>
-                <CardTitle>Allowed substitutions</CardTitle>
+                <CardTitle>Substitutions</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-xs text-muted-foreground">
@@ -158,7 +148,7 @@ async function Progress() {
             <CardHeader>
               <CardTitle>Stony Brook Curriculum</CardTitle>
               <CardDescription>
-                {audit.sbc.satisfied} of {audit.sbc.total} satisfied or exempt
+                {audit.sbc.satisfied} of {audit.sbc.total} done
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -175,16 +165,13 @@ async function Progress() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-3 text-xs text-muted-foreground">
-                Upper-tier objectives (EXP+, HFA+, SBS+, STEM+) aren&apos;t audited yet.
-              </p>
             </CardContent>
           </Card>
 
           {program.notes.length > 0 && (
             <Card size="sm">
               <CardHeader>
-                <CardTitle>Notes from the catalog</CardTitle>
+                <CardTitle>Notes</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-xs text-muted-foreground">

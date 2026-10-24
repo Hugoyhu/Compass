@@ -9,23 +9,17 @@ import { describeRemaining, itemNumber, progressFractions } from "@/lib/engine/d
 
 export function OutstandingRequirementsCard({
   results,
-  programName,
 }: {
   results: RequirementResult[];
-  programName: string;
 }) {
   return (
     <Card className="h-full">
       <CardHeader>
-        <CardTitle>Outstanding requirements</CardTitle>
-        <CardDescription>
-          {results.length === 0
-            ? `Every ${programName} requirement is satisfied`
-            : `${results.length} ${programName} ${results.length === 1 ? "requirement needs" : "requirements need"} attention`}
-        </CardDescription>
+        <CardTitle>Remaining requirements</CardTitle>
+        <CardDescription>{results.length === 0 ? "All done" : `${results.length} left`}</CardDescription>
         <CardAction>
           <Link href="/progress" className={buttonVariants({ variant: "ghost", size: "sm" })}>
-            Full audit
+            Details
             <ArrowRight />
           </Link>
         </CardAction>

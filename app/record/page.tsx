@@ -10,13 +10,7 @@ export const metadata: Metadata = { title: "My Courses" };
 export default function RecordPage() {
   return (
     <main className="mx-auto w-full max-w-7xl space-y-6 p-4 md:p-6">
-      <div className="space-y-1">
-        <h2 className="text-2xl font-semibold tracking-tight">My courses</h2>
-        <p className="text-sm text-muted-foreground">
-          Courses you&apos;ve completed or are taking, plus AP and transfer credit. Saved to your account when you&apos;re
-          signed in, otherwise in this browser.
-        </p>
-      </div>
+      <h2 className="text-2xl font-semibold tracking-tight">My courses</h2>
       <Suspense fallback={<Skeleton className="h-96" />}>
         <Editor />
       </Suspense>

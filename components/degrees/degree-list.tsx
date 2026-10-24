@@ -36,7 +36,7 @@ export function DegreeList({ programs }: { programs: ProgramSummary[] }) {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search majors and minors"
+            placeholder="Search"
             aria-label="Search majors and minors"
             className="pl-8"
           />
@@ -50,13 +50,9 @@ export function DegreeList({ programs }: { programs: ProgramSummary[] }) {
         </Tabs>
       </div>
 
-      <p className="text-xs text-muted-foreground" aria-live="polite">
-        {matches.length === programs.length ? `${programs.length} programs` : `${matches.length} of ${programs.length} programs`}
-      </p>
-
       {matches.length === 0 ? (
         <p className="rounded-lg border border-dashed p-6 text-center text-sm text-muted-foreground">
-          No programs match &ldquo;{query}&rdquo;.
+          No matches
         </p>
       ) : (
         <ul className="divide-y rounded-lg border">
@@ -66,11 +62,7 @@ export function DegreeList({ programs }: { programs: ProgramSummary[] }) {
                 <div className="min-w-0 flex-1 space-y-0.5">
                   <p className="truncate text-sm font-medium">{p.name}</p>
                   <p className="truncate text-xs text-muted-foreground">
-                    {[
-                      p.degree,
-                      `${p.requirementCount} ${p.requirementCount === 1 ? "requirement" : "requirements"}`,
-                      p.approxCredits && `about ${p.approxCredits} credits`,
-                    ]
+                    {[p.degree, p.approxCredits && `${p.approxCredits} credits`]
                       .filter(Boolean)
                       .join(" · ")}
                   </p>
@@ -78,11 +70,6 @@ export function DegreeList({ programs }: { programs: ProgramSummary[] }) {
                 <Badge variant="outline" className="hidden font-normal capitalize sm:inline-flex">
                   {p.kind}
                 </Badge>
-                {p.unparsedCount > 0 && (
-                  <Badge variant="outline" className="hidden font-normal md:inline-flex" title="Parts of this program are shown as catalog text only">
-                    {p.unparsedCount} unstructured
-                  </Badge>
-                )}
                 <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
               </Link>
             </li>
