@@ -32,8 +32,7 @@ export function AppSidebar({ footer }: { footer: React.ReactNode }) {
                 <Compass className="size-4" />
               </div>
               <div className="grid flex-1 text-left leading-tight">
-                <span className="truncate font-semibold">Compass</span>
-                <span className="truncate text-xs text-muted-foreground">SBU degree planner</span>
+                <span className="truncate text-lg font-semibold">Compass</span>
               </div>
             </SidebarMenuButton>
           </SidebarMenuItem>

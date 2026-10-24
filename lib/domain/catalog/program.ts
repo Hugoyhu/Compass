@@ -217,7 +217,9 @@ export const NoteSchema = z.strictObject({
 export const ProgramDefinitionSchema = z.strictObject({
   id: z.string().describe('Slug, e.g. "cse-bs"'),
   name: z.string().describe('As printed, e.g. "Computer Science, BS"'),
-  kind: z.enum(["major", "minor"]),
+  kind: z
+    .enum(["major", "minor", "program"])
+    .describe("program: a special academic program taken alongside a major, e.g. the Honors College"),
   degree: z.string().optional().describe('e.g. "Bachelor of Science in Computer Science"'),
   source: SourceSchema,
   review: ReviewSchema,

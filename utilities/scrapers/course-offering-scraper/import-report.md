@@ -62,8 +62,8 @@ $0.00 with claude-haiku-5-5 for 848 distinct texts (847 from cache, 1 failed, 0 
 
 - 2026-FA: 715 sections (18 at SUNY Korea)
 - 2026-SU: 1333 sections (6 at SUNY Korea)
-- 2027-SP: 2929 sections (178 at SUNY Korea)
-- Sections skipped: 4328 for graduate or unknown courses, 0 with no meeting dates
+- 2027-SP: 2924 sections (176 at SUNY Korea)
+- Sections skipped: 4205 for graduate or unknown courses, 0 with no meeting dates
 
 ## Duplicates merged
 

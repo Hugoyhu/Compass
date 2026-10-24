@@ -1223,25 +1223,6 @@
    ]
   },
   {
-   "code": "ADV 488",
-   "section": "S01",
-   "component": "SEM",
-   "classNumber": "49749",
-   "session": "B",
-   "campus": "main",
-   "meetings": [
-    {
-     "days": "Mo",
-     "start": "2:00PM",
-     "end": "3:20PM",
-     "room": "TBA",
-     "instructor": "Rebecca Geist",
-     "startDate": "2027-01-25",
-     "endDate": "2027-05-19"
-    }
-   ]
-  },
-  {
    "code": "AFH 101",
    "section": "01",
    "component": "LEC",
@@ -29895,44 +29876,6 @@
   },
   {
    "code": "EST 221",
-   "section": "30",
-   "component": "LEC",
-   "classNumber": "48476",
-   "session": "B",
-   "campus": "main",
-   "meetings": [
-    {
-     "days": "MoWeFr",
-     "start": "11:00AM",
-     "end": "11:55AM",
-     "room": "ONLINE ONLINE ONLINE",
-     "instructor": "Daniene Byrne",
-     "startDate": "2027-01-25",
-     "endDate": "2027-05-19"
-    }
-   ]
-  },
-  {
-   "code": "EST 221",
-   "section": "90",
-   "component": "LEC",
-   "classNumber": "54199",
-   "session": "SGB",
-   "campus": "korea",
-   "meetings": [
-    {
-     "days": "MoWe",
-     "start": "5:00PM",
-     "end": "6:20PM",
-     "room": "Korea OUTOFCNTRY",
-     "instructor": "Cornelius Bradter",
-     "startDate": "2027-02-26",
-     "endDate": "2027-06-17"
-    }
-   ]
-  },
-  {
-   "code": "EST 221",
    "section": "90",
    "component": "LEC",
    "classNumber": "54199",
@@ -30232,44 +30175,6 @@
      "instructor": "Jieshu Wang",
      "startDate": "2027-01-25",
      "endDate": "2027-05-19"
-    }
-   ]
-  },
-  {
-   "code": "EST 371",
-   "section": "01",
-   "component": "LEC",
-   "classNumber": "55071",
-   "session": "B",
-   "campus": "main",
-   "meetings": [
-    {
-     "days": "MoWe",
-     "start": "9:30AM",
-     "end": "10:50AM",
-     "room": "EARTH&SPACE 079 WESTCAMPUS",
-     "instructor": "Jieshu Wang",
-     "startDate": "2027-01-25",
-     "endDate": "2027-05-19"
-    }
-   ]
-  },
-  {
-   "code": "EST 371",
-   "section": "90",
-   "component": "LEC",
-   "classNumber": "55634",
-   "session": "SGB",
-   "campus": "korea",
-   "meetings": [
-    {
-     "days": "MoWe",
-     "start": "3:30PM",
-     "end": "4:50PM",
-     "room": "Korea OUTOFCNTRY",
-     "instructor": "Staff",
-     "startDate": "2027-02-26",
-     "endDate": "2027-06-17"
     }
    ]
   },

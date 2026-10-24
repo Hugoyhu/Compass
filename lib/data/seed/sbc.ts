@@ -1,9 +1,10 @@
 /**
  * Stony Brook Curriculum (SBC) objectives the audit checks.
  *
- * Names follow the Undergraduate Catalog. The upper-tier "Pursue Deeper
- * Understanding" categories (EXP+, HFA+, SBS+, STEM+) are not audited yet:
- * their rules involve partial fulfillment across courses.
+ * Names follow the Undergraduate Catalog. The four "Pursue Deeper
+ * Understanding" categories (EXP+, HFA+, SBS+, STEM+) are a choose-3-of-4
+ * group; the audit applies that rule (see DEEPER_UNDERSTANDING in
+ * lib/engine/audit.ts).
  */
 import type { SbcCategory } from "@/lib/domain/types";
 
@@ -19,6 +20,10 @@ export const seedSbcCategories: SbcCategory[] = [
   { code: "GLO", name: "Engage Global Issues" },
   { code: "LANG", name: "Communicate in a Human Language Other Than English" },
   { code: "STAS", name: "Understand Relationships between Science or Technology and the Arts, Humanities, or Social Sciences" },
+  { code: "EXP+", name: "Pursue Deeper Understanding: Experiential Learning" },
+  { code: "HFA+", name: "Pursue Deeper Understanding: Humanities and Fine Arts" },
+  { code: "SBS+", name: "Pursue Deeper Understanding: Social and Behavioral Sciences" },
+  { code: "STEM+", name: "Pursue Deeper Understanding: Science, Technology, Engineering, and Mathematics" },
   { code: "CER", name: "Practice and Respect Critical and Ethical Reasoning" },
   { code: "DIV", name: "Understand, Value, and Appreciate Human Diversity" },
   { code: "ESI", name: "Evaluate and Synthesize Researched Information" },
