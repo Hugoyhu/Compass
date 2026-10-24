@@ -79,12 +79,12 @@ export function describeMissing(item: MissingItem): string {
 /** Plain-language summary of what is still needed for a requirement. */
 export function describeRemaining(result: RequirementResult): string {
   if (result.status === "satisfied") return "Complete";
-  if (result.status === "in-progress") return "Will be satisfied once in-progress courses are completed";
+  if (result.status === "in-progress") return "Done once current courses finish";
   const pending =
     result.inProgress > 0
       ? ` (${result.inProgress} ${result.inProgress === 1 ? result.unit.slice(0, -1) : result.unit} in progress)`
       : "";
-  return `Still needed: ${result.missing.map(describeMissing).join("; ")}${pending}`;
+  return `Needs ${result.missing.map(describeMissing).join("; ")}${pending}`;
 }
 
 /** 0–1 fractions for completed and in-progress portions of a requirement. */

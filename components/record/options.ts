@@ -11,7 +11,6 @@ export interface ProgramOption {
   id: string;
   name: string;
   kind: "major" | "minor";
-  reviewed: boolean;
 }
 
 /** Default "current term" for new records; students can change it. */

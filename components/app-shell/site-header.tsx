@@ -1,22 +1,11 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { FlaskConical } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { navItemFor } from "./nav";
 
-export function SiteHeader({
-  sourceLabel,
-  disclaimer,
-  account,
-}: {
-  sourceLabel: string;
-  disclaimer: string;
-  account: React.ReactNode;
-}) {
+export function SiteHeader({ account }: { account: React.ReactNode }) {
   const item = navItemFor(usePathname());
 
   return (
@@ -24,22 +13,7 @@ export function SiteHeader({
       <SidebarTrigger className="-ml-1" />
       <Separator orientation="vertical" className="mx-1 h-4 self-center" />
       <h1 className="text-sm font-medium">{item?.title ?? "Compass"}</h1>
-      <div className="ml-auto flex items-center gap-2">
-        <Tooltip>
-          <TooltipTrigger
-            render={
-              <Badge variant="outline" className="cursor-help gap-1.5 border-status-warning/50 bg-status-warning/10 text-foreground">
-                <FlaskConical />
-                {sourceLabel}
-              </Badge>
-            }
-          />
-          <TooltipContent side="bottom" className="max-w-xs">
-            {disclaimer}
-          </TooltipContent>
-        </Tooltip>
-        {account}
-      </div>
+      <div className="ml-auto flex items-center gap-2">{account}</div>
     </header>
   );
 }

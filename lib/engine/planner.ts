@@ -216,9 +216,9 @@ export function proposeNextSemester({
       .map((n) => {
         const options = courses.filter((c) => n.options.has(c.code) && !taken.has(c.code));
         const reason = options.some(isEligible)
-          ? "Credit load reached"
+          ? "Term is full"
           : options.length === 0
-            ? "No matching courses in the catalog data"
+            ? "No courses found"
             : "Prerequisites not yet met";
         return { title: n.title, reason };
       }),

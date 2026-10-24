@@ -10,7 +10,7 @@ export function SbcChecklistCard({ audit }: { audit: SbcAudit }) {
       <CardHeader>
         <CardTitle>Stony Brook Curriculum</CardTitle>
         <CardDescription>
-          {audit.satisfied} of {audit.total} SBC objectives satisfied or exempt
+          {audit.satisfied} of {audit.total} done
         </CardDescription>
       </CardHeader>
       <CardContent>

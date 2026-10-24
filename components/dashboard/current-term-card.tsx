@@ -15,13 +15,12 @@ export function CurrentTermCard({
       <CardHeader>
         <CardTitle>This semester</CardTitle>
         <CardDescription>
-          {formatTerm(term)} · {courses.length} {courses.length === 1 ? "course" : "courses"} · {credits} credits in
-          progress
+          {formatTerm(term)} · {credits} credits
         </CardDescription>
       </CardHeader>
       <CardContent>
         {courses.length === 0 ? (
-          <p className="text-sm text-muted-foreground">No in-progress courses recorded.</p>
+          <p className="text-sm text-muted-foreground">No courses this semester.</p>
         ) : (
           <ul className="divide-y">
             {courses.map(({ attempt, title, credits }) => (

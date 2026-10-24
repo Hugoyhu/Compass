@@ -53,12 +53,11 @@ export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean;
     return (
       <Card id="upload">
         <CardHeader>
-          <CardTitle>Review your transcript</CardTitle>
+          <CardTitle>Review courses</CardTitle>
           <CardDescription>
-            Found {draft.attempts.length} courses
+            {draft.attempts.length} courses
             {draft.plan ? ` · ${draft.plan}` : ""}
-            {draft.currentTerm ? ` · in progress: ${formatTerm(draft.currentTerm)}` : ""}. Uncheck anything that looks
-            wrong; you can edit courses after saving.
+            {draft.currentTerm ? ` · ${formatTerm(draft.currentTerm)}` : ""}
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -134,12 +133,7 @@ export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean;
         <FileUp className="size-5 shrink-0 text-primary" aria-hidden />
         <div className="min-w-0 flex-1 space-y-0.5">
           <p className="font-medium">Upload a transcript</p>
-          <p className="text-xs text-muted-foreground">
-            The unofficial transcript PDF from SOLAR. Claude reads the course list; you review it before saving. The
-            PDF is sent to Anthropic&apos;s API and not kept. Compass keeps only course rows, your name, and your plan,
-            never ID numbers.
-          </p>
-          {pending && <p className="text-xs text-muted-foreground">Reading… this usually takes 10–20 seconds.</p>}
+          <p className="text-xs text-muted-foreground">Unofficial transcript PDF from SOLAR. Read by Claude, not stored.</p>
           {error && (
             <p role="alert" className="text-sm text-destructive">
               {error}
