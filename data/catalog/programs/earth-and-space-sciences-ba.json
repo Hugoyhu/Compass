@@ -512,7 +512,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Earth and Space Sciences"
           },
           {
             "id": "earth-and-space-sciences-ba.track.education",
@@ -673,9 +674,12 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Earth Science Education"
           }
-        ]
+        ],
+        "id": "earth-and-space-sciences-ba.track.choice",
+        "choice": "track"
       },
       "sourceText": "The major in Earth and Space Sciences leads to the Bachelor of Arts degree. All courses offered for the major must be passed with a letter grade of C or higher. Completion of the major requires approximately 61-73 credits. Requirements for the Earth and Space Sciences Track and Requirements for the Earth Science Education Track are listed separately."
     }

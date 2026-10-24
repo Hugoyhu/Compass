@@ -158,7 +158,8 @@ function openProgramCount(a: DegreeAudit): number {
 function openCourseCount(a: DegreeAudit): number {
   let count = 0;
   for (const r of a.programs.flatMap((p) => p.requirements)) {
-    if (isDone(r.status) || isReview(r.status)) continue;
+    // A requirement awaiting an advisor can still list courses to plan; only its review items are skipped.
+    if (isDone(r.status)) continue;
     for (const item of r.missing) {
       if (item.kind === "course") count++;
       else if (item.kind === "choose") count += item.unit === "courses" ? item.remaining : Math.ceil(item.remaining / ELECTIVE_CREDITS);
@@ -227,11 +228,16 @@ export function generatePlan(ctx: PlanContext): PlannedTerm[] {
     const before = plan.filter((t) => termOrdinal(t.term) < termOrdinal(term));
     const studentBefore = withPlan(student, before);
     const auditBefore = audit(ctx, studentBefore);
-    const prereqsMet = prerequisiteChecker(auditBefore, studentBefore);
+    // Electives and SBC placeholders planned earlier count toward standing, while
+    // AP credit does not advance the student's class level.
+    const placeholderCreditsBefore = electiveCredits(before);
+    const prereqsMet = prerequisiteChecker(auditBefore, studentBefore, placeholderCreditsBefore);
     // Course level follows college experience: AP credit raises standing but doesn't make a first-year student a
     // sophomore. Transfer credit does count, so a transfer junior can take 300-level courses right away.
     const { earned, inProgress, bySource } = auditBefore.credits;
-    const standing = Number(standingFor(earned + inProgress - bySource.ap).slice(1));
+    const standing = Number(
+      standingFor(earned + inProgress - bySource.ap + placeholderCreditsBefore).slice(1),
+    );
 
     const creditsLeft = planned.credits.required - planned.credits.earned - planned.credits.inProgress - electiveCredits(plan);
     // Heavier terms while lots of program work remains, so senior sequences (CSE 495 → 496) still fit in four years.

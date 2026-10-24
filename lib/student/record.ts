@@ -50,6 +50,7 @@ export const StudentRecordSchema = z.object({
   attempts: z.array(CourseAttemptSchema).max(120),
   plan: z.array(PlannedTermSchema).max(MAX_PLAN_TERMS).default([]),
   minTermCredits: z.number().int().min(0).max(19).optional(),
+  choices: z.record(z.string().max(120), z.string().max(120)).optional(),
 });
 
 export const RECORD_COOKIE = "compass_record";
@@ -126,6 +127,7 @@ export function encodeRecord(record: StudentRecord): string[] {
     record.attempts.map(pack),
     record.plan.map(packTerm),
     record.minTermCredits ?? null,
+    record.choices ?? {},
   ];
   const encoded = Buffer.from(JSON.stringify(payload), "utf8").toString("base64url");
   const chunks: string[] = [];
@@ -138,8 +140,8 @@ export function encodeRecord(record: StudentRecord): string[] {
 export function decodeRecord(chunks: string[]): StudentRecord | null {
   if (chunks.length === 0) return null;
   try {
-    // Records saved before plans existed have no seventh or eighth element.
-    const [version, name, entryTerm, currentTerm, programIds, attempts, plan = [], minTermCredits = null] = JSON.parse(
+    // Older records stop before the plan (7th), minimum credits (8th), or choices (9th).
+    const [version, name, entryTerm, currentTerm, programIds, attempts, plan = [], minTermCredits = null, choices = {}] = JSON.parse(
       Buffer.from(chunks.join(""), "base64url").toString("utf8"),
     );
     if (version !== VERSION) return null;
@@ -152,6 +154,7 @@ export function decodeRecord(chunks: string[]): StudentRecord | null {
       attempts: (attempts as PackedAttempt[]).map(unpack),
       plan: (plan as PackedTerm[]).map(unpackTerm),
       ...(minTermCredits !== null && { minTermCredits }),
+      ...(Object.keys(choices).length > 0 && { choices }),
     });
     return parsed.success ? (parsed.data as StudentRecord) : null;
   } catch {

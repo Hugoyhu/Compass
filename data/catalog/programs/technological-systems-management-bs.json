@@ -133,7 +133,9 @@
             "manualCheck": "Confirm the seven courses come from one area or department, have at least 21 credits and at least three 300/400-level courses totaling at least nine credits, do not overlap requirements A, B, D or E, and that specialization course options have prior approval.",
             "type": "unparsed",
             "text": "A cluster of seven related courses, totaling at least 21 credits, in one area of natural science, engineering, applied science, or environmental studies from a single department or program, or in the department defined specialization of Information and Communication Technologies for Development. At least three courses, totaling at least nine credits, must be at the 300 or 400 level.",
-            "reason": "The eligible course pool for a general specialization is open-ended and not enumerated on the page."
+            "reason": "The eligible course pool for a general specialization is open-ended and not enumerated on the page.",
+            "id": "technological-systems-management-bs.C.related-area-cluster",
+            "label": "Related-area cluster"
           },
           {
             "type": "allOf",
@@ -202,7 +204,9 @@
                   }
                 ]
               }
-            ]
+            ],
+            "id": "technological-systems-management-bs.C.computer-science",
+            "label": "Computer Science"
           },
           {
             "type": "allOf",
@@ -271,9 +275,12 @@
                   }
                 ]
               }
-            ]
+            ],
+            "id": "technological-systems-management-bs.C.information-systems",
+            "label": "Information Systems"
           }
-        ]
+        ],
+        "choice": "specialization"
       },
       "sourceText": "A cluster of seven related courses, totaling at least 21 credits*, in one area of natural science, engineering, applied science, or environmental studies from a single department or program, or in the department defined specialization of Information and Communication Technologies for Development. At least three courses, totaling at least nine credits, must be at the 300 or 400 level. Specializations in the areas of Computer Science and Information Systems are slightly different. *Note: All 21 credits must be unique without any overlap in requirements: A, B, D or E and specialization course options require prior approval. Specialization in Computer Science: CSE 101 OR CSE 103; CSE 114; CSE 214; ISE 218; select three from ISE 305; CSE 310 OR ISE 316; CSE 337; CSE 373; up to two of CSE 390-CSE 391-CSE 392 with prior approval. Specialization in Information Systems: CSE 101 OR CSE 103; CSE 114; CSE 214; ISE 218; select three from ISE 305; CSE 310 OR ISE 316; ISE 321; ISE 331; up to two of CSE 390-CSE 391-CSE 392 with prior approval."
     },

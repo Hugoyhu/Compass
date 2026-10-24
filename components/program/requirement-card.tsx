@@ -4,7 +4,8 @@ import { StatusBadge } from "@/components/audit/status-badge";
 import { Card, CardAction, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { ProgramRequirement, Substitution } from "@/lib/domain/catalog/program";
 import type { RequirementResult, SubstitutionLayout } from "@/lib/engine/audit";
-import { describeMissing, itemNumber, progressFractions } from "@/lib/engine/describe";
+import { choicesIn, describeMissing, itemNumber, progressFractions } from "@/lib/engine/describe";
+import { ChoicePicker } from "./choice-picker";
 import { AlternativePath, CatalogText, CoveredNote, SubstitutionNote } from "./program-panels";
 import { CourseLine, namedCourses, RuleTree, type RuleContext } from "./rule-tree";
 
@@ -58,6 +59,10 @@ export function RequirementCard({
       </CardHeader>
       <CardContent className="space-y-3">
         {result && <Progress result={result} />}
+
+        {result &&
+          ctx.choices &&
+          choicesIn(rule).map((choice) => <ChoicePicker key={choice.id} choice={choice} selected={ctx.choices?.[choice.id]} />)}
 
         <RuleTree rule={rule} ctx={cardCtx} />
 

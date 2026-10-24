@@ -252,6 +252,8 @@ interface Ctx {
   policies: ProgramPolicy[];
   issues: { policyType: ProgramPolicy["type"]; message: string }[];
   rejected: Set<CourseCode>;
+  /** The student's declared concentrations: choice rule id → chosen alternative id. */
+  choices: Record<string, string>;
 }
 
 interface NodeResult {
@@ -399,7 +401,10 @@ function evaluateNode(ctx: Ctx, rule: Rule): NodeResult {
     }
 
     case "anyOf": {
-      // Score each alternative on a throwaway context, then commit the best.
+      // A declared concentration (or specialization, track) is the only alternative that counts.
+      const chosen = rule.choice && rule.id ? rule.rules.find((alt) => alt.id === ctx.choices[rule.id!]) : undefined;
+      if (chosen) return evaluateRule(ctx, chosen);
+      // Otherwise score each alternative on a throwaway context, then commit the best.
       const scores = rule.rules.map((alt) => {
         const r = evaluateRule(forkCtx(ctx), alt);
         return r.required === 0
@@ -407,7 +412,12 @@ function evaluateNode(ctx: Ctx, rule: Rule): NodeResult {
           : (r.completed + 0.99 * r.inProgress) / r.required;
       });
       const bestScore = Math.max(...scores);
-      const best = rule.rules[scores.indexOf(bestScore)];
+      // With nothing started, report the first alternative the catalog can satisfy, not one naming missing courses.
+      const inCatalog = (alt: Rule): boolean =>
+        alt.type === "course" ? ctx.catalog.has(alt.code) : alt.type === "allOf" || alt.type === "anyOf" ? alt.rules.every(inCatalog) : alt.type !== "unparsed";
+      const best =
+        (bestScore === 0 ? rule.rules.find((alt, i) => scores[i] === 0 && inCatalog(alt)) : undefined) ??
+        rule.rules[scores.indexOf(bestScore)];
       const result = evaluateRule(ctx, best);
       // Nothing started and every alternative is a single course: offer them all as one slot.
       if (bestScore === 0 && rule.rules.every((alt) => alt.type === "course")) {
@@ -943,6 +953,7 @@ export function auditProgram(
     policies: program.policies,
     issues: [],
     rejected: new Set(),
+    choices: student.choices ?? {},
   };
 
   const byId = new Map<string, RequirementResult>();

@@ -54,7 +54,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Arts and Sciences majors"
           },
           {
             "id": "physics.tracks.ceas",
@@ -133,9 +134,12 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Engineering and Applied Sciences majors"
           }
-        ]
+        ],
+        "id": "physics.tracks.choice",
+        "choice": "track"
       },
       "sourceText": "Requirements for the Minor in Physics for students with majors in the College of Arts and Sciences: PHY 251 - Modern Physics; PHY 252 - Modern Physics Laboratory; PHY 300 - Waves and Optics; PHY 301 - Electromagnetic Theory I; PHY 303 - Mechanics; PHY 335 - Electronics and Instrumentation Laboratory; and one of the following: PHY 306 - Thermodynamics, Kinetic Theory, and Statistical Mechanics OR CHE 302 - Physical Chemistry II. Requirements for the Minor in Physics for students with majors in the College of Engineering and Applied Sciences: the following two courses: PHY 300 - Waves and Optics; PHY 303 - Mechanics; one of the following: PHY 251 - Modern Physics AND PHY 252 - Modern Physics Laboratory OR ESG 281 - Engineering Introduction to the Solid State; one of the following: PHY 301 - Electromagnetic Theory I OR ESE 319 - Electromagnetic Waves and Transmission Lines; one of the following: PHY 306 - Thermodynamics, Kinetic Theory, and Statistical Mechanics OR MEC 398 - Thermodynamics II OR CME 314 - Chemical Engineering Thermodynamics II; one of the following: PHY 335 - Electronics and Instrumentation Laboratory OR ESE 314 - Electronics Laboratory B"
     },

@@ -47,7 +47,12 @@ export function primarySubject(program: ProgramDefinition): string {
  * courses count as passed, and program rules such as "C or higher in
  * prerequisites for CSE courses" apply.
  */
-export function prerequisiteChecker(audit: DegreeAudit, student: StudentRecord) {
+export function prerequisiteChecker(
+  audit: DegreeAudit,
+  student: StudentRecord,
+  /** Credits the audit can't see, such as planned electives, that still count toward standing. */
+  extraCredits = 0,
+) {
   const prereqGrades = new Map<string, LetterGrade>();
   for (const program of audit.programs) {
     for (const policy of program.program.policies) {
@@ -56,7 +61,7 @@ export function prerequisiteChecker(audit: DegreeAudit, student: StudentRecord) 
   }
   const index = buildCompletionIndex(student.attempts, { includeInProgress: true });
   const majorSubjects = audit.programs.filter((p) => p.program.kind === "major").map((p) => primarySubject(p.program));
-  const standing = standingFor(audit.credits.earned + audit.credits.inProgress);
+  const standing = standingFor(audit.credits.earned + audit.credits.inProgress + extraCredits);
   return (c: Pick<CourseRecord, "code" | "prerequisites">) =>
     evaluatePrereq(c.prerequisites, { index, standing, majorSubjects, defaultMinGrade: prereqGrades.get(c.code.split(" ")[0]) });
 }
