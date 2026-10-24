@@ -35,11 +35,11 @@ export async function CourseDetailView({
             {course.code}
           </p>
           {inDialog ? (
-            <DialogTitle className="text-2xl font-semibold tracking-tight">
+            <DialogTitle className="text-3xl font-normal tracking-tight">
               {course.title}
             </DialogTitle>
           ) : (
-            <h2 className="text-2xl font-semibold tracking-tight">
+            <h2 className="text-3xl font-normal tracking-tight">
               {course.title}
             </h2>
           )}

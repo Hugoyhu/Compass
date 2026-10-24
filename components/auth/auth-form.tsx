@@ -57,7 +57,7 @@ export function AuthForm({ mode, hasGuestRecord }: { mode: "sign-in" | "sign-up"
             </p>
           )}
         </CardContent>
-        <CardFooter className="mt-4 flex-col items-stretch gap-3 border-t bg-muted/30 py-3">
+        <CardFooter className="mt-4 flex-col items-stretch gap-3 py-3">
           <Button type="submit" disabled={pending}>
             {pending && <Loader2 className="animate-spin" />}
             {signingUp ? "Create account" : "Sign in"}

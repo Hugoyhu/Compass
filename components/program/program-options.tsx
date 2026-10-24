@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Check, Clock } from "lucide-react";
 import { selectClassName } from "@/components/record/options";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { slugFor } from "@/lib/domain/course-slug";
 import type { OptionCard, OptionLane, ProgramOptions } from "@/lib/engine/program-options";
 import { cn } from "@/lib/utils";
@@ -67,10 +67,10 @@ export function ProgramOptionsView({ options, progress = {} }: { options: Progra
                             aria-pressed={selected === c.code}
                             title={`${c.code} ${c.title}`}
                             className={cn(
-                              "block w-full rounded-md border border-primary/40 bg-primary/10 px-2 py-1 text-left text-[11px] leading-tight transition-opacity",
+                              "block w-full rounded-sm border border-foreground/25 bg-card px-2 py-1 text-left text-[11px] leading-tight transition-opacity",
                               selected === c.code && "ring-2 ring-primary",
                               card && !related.has(c.code) && "opacity-25",
-                              card && related.has(c.code) && c.code !== card.code && "border-primary bg-primary/25",
+                              card && related.has(c.code) && c.code !== card.code && "border-primary bg-primary/10",
                             )}
                           >
                             <span className="flex items-center justify-between gap-1">
@@ -98,10 +98,6 @@ export function ProgramOptionsView({ options, progress = {} }: { options: Progra
     <Card size="sm">
       <CardHeader>
         <CardTitle>All options</CardTitle>
-        <CardDescription>
-          Every course that could count toward each open choice in this program, split by level. A card with &ldquo;or&rdquo; lists courses that can stand in
-          for it. Click a course to see what it builds on and what it leads to.
-        </CardDescription>
         <div className="pt-1">
           <label className="flex items-center gap-2 text-xs text-muted-foreground">
             Hide courses not offered in

@@ -28,11 +28,11 @@ export function AppSidebar({ footer }: { footer: React.ReactNode }) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" render={<Link href="/" />} tooltip="Compass">
-              <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                <Compass className="size-4" />
+              <div className="flex aspect-square size-8 items-center justify-center text-sidebar-primary">
+                <Compass className="size-5" strokeWidth={1.5} />
               </div>
               <div className="grid flex-1 text-left leading-tight">
-                <span className="truncate text-lg font-semibold">Compass</span>
+                <span className="truncate font-heading text-xl font-semibold tracking-tight">Compass</span>
               </div>
             </SidebarMenuButton>
           </SidebarMenuItem>
@@ -41,7 +41,7 @@ export function AppSidebar({ footer }: { footer: React.ReactNode }) {
 
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Plan</SidebarGroupLabel>
+          <SidebarGroupLabel className="small-caps">Plan</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {navItems.map((item) => (

@@ -242,7 +242,7 @@ export function RecordEditor({
               }
             />
           </CardContent>
-          <CardFooter className="flex-wrap items-center gap-3 border-t bg-muted/30 py-3">
+          <CardFooter className="flex-wrap items-center gap-3 py-3">
             <Button onClick={() => persist(draft)} disabled={!dirty || pending}>
               {pending && <Loader2 className="animate-spin" />}
               Save changes
@@ -350,7 +350,7 @@ export function RecordEditor({
               </select>
             </label>
           </CardContent>
-          <CardFooter className="border-t bg-muted/30 py-3">
+          <CardFooter className="py-3">
             <Button
               size="sm"
               onClick={() => persist(draft)}
