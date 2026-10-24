@@ -20,8 +20,7 @@ export interface CourseLabel {
 
 export async function getStudentView(student: StudentRecord) {
   const repo = getRepository();
-  const [source, courses, programs, sbcCategories, creditRules] = await Promise.all([
-    repo.source(),
+  const [courses, programs, sbcCategories, creditRules] = await Promise.all([
     repo.listCourses(),
     repo.listPrograms(),
     repo.listSbcCategories(),
@@ -39,7 +38,7 @@ export async function getStudentView(student: StudentRecord) {
   const labels: Record<string, CourseLabel> = {};
   for (const attempt of student.attempts) {
     const course = catalog.get(attempt.code);
-    labels[attempt.code] = { code: attempt.code, title: course?.title ?? attempt.title ?? "Course not in catalog data", inCatalog: !!course };
+    labels[attempt.code] = { code: attempt.code, title: course?.title ?? attempt.title ?? "Unknown course", inCatalog: !!course };
   }
 
   const currentCourses = student.attempts
@@ -51,7 +50,6 @@ export async function getStudentView(student: StudentRecord) {
     }));
 
   return {
-    source,
     student,
     audit,
     major: audit.programs.find((p) => p.program.kind === "major"),
@@ -77,6 +75,6 @@ export async function getEditorOptions() {
   const [courses, programs] = await Promise.all([repo.listCourses(), repo.listPrograms()]);
   return {
     courses: courses.map((c: CourseRecord) => ({ code: c.code, title: c.title, credits: c.credits.max })),
-    programs: programs.map((p) => ({ id: p.id, name: p.name, kind: p.kind, reviewed: p.review.status === "reviewed" })),
+    programs: programs.map((p) => ({ id: p.id, name: p.name, kind: p.kind })),
   };
 }

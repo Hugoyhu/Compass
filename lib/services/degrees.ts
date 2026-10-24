@@ -12,10 +12,6 @@ export interface ProgramSummary {
   kind: ProgramDefinition["kind"];
   degree?: string;
   approxCredits?: number;
-  requirementCount: number;
-  /** Rule nodes the extractor couldn't structure; shown as catalog text only. */
-  unparsedCount: number;
-  reviewed: boolean;
 }
 
 export interface CourseInfo {
@@ -36,12 +32,6 @@ function programRules(program: ProgramDefinition): Rule[] {
   ];
 }
 
-function countUnparsed(program: ProgramDefinition): number {
-  let count = 0;
-  for (const rule of program.requirements.map((r) => r.rule)) walkRules(rule, (r) => r.type === "unparsed" && count++);
-  return count;
-}
-
 function formatCredits({ min, max }: { min: number; max: number }): string {
   return min === max ? `${min} cr` : `${min}–${max} cr`;
 }
@@ -55,9 +45,6 @@ export async function listProgramSummaries(): Promise<ProgramSummary[]> {
       kind: p.kind,
       degree: p.degree,
       approxCredits: p.approxCredits,
-      requirementCount: p.requirements.length,
-      unparsedCount: countUnparsed(p),
-      reviewed: p.review.status === "reviewed",
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
 }
@@ -91,7 +78,7 @@ export async function getProgramDetail(id: string) {
     if (course) courseInfo[code] = { title: course.title, credits: formatCredits(course.credits) };
   }
 
-  return { program, courseInfo, unparsedCount: countUnparsed(program) };
+  return { program, courseInfo };
 }
 
 export type ProgramDetail = NonNullable<Awaited<ReturnType<typeof getProgramDetail>>>;

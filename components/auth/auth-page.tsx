@@ -21,7 +21,7 @@ async function AuthContent({ mode }: { mode: "sign-in" | "sign-up" }) {
     return (
       <Alert className="max-w-md">
         <AlertTitle>Accounts aren&apos;t available</AlertTitle>
-        <AlertDescription>This server has no database configured. Your courses are saved in this browser instead.</AlertDescription>
+        <AlertDescription>Your courses are saved in this browser.</AlertDescription>
       </Alert>
     );
   }

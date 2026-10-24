@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Suspense } from "react";
-import { CalendarCheck, FlaskConical, GraduationCap, Layers, ListChecks } from "lucide-react";
+import { CalendarCheck, GraduationCap, Layers, ListChecks } from "lucide-react";
 import { ProgressMeter } from "@/components/audit/progress-meter";
 import { CurrentTermCard } from "@/components/dashboard/current-term-card";
 import { DegreeProgressCard } from "@/components/dashboard/degree-progress-card";
@@ -9,7 +9,7 @@ import { OutstandingRequirementsCard } from "@/components/dashboard/outstanding-
 import { SbcChecklistCard } from "@/components/dashboard/sbc-checklist-card";
 import { StatTile } from "@/components/dashboard/stat-tile";
 import { GetStarted } from "@/components/onboarding/get-started";
-import { Alert, AlertAction, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Alert, AlertAction, AlertTitle } from "@/components/ui/alert";
 import { buttonVariants } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { formatTerm } from "@/lib/domain/terms";
@@ -31,7 +31,7 @@ async function Dashboard() {
   const record = await getStudentRecord();
   if (!record) return <GetStarted />;
 
-  const { source, student, audit, major, proposal, graduation, currentCourses } = await getStudentView(record);
+  const { student, audit, major, proposal, graduation, currentCourses } = await getStudentView(record);
   const firstName = student.name.split(" ")[0];
   const outstanding = major?.requirements.filter((r) => r.status !== "satisfied") ?? [];
   const finishing = major?.requirements.filter((r) => r.status === "in-progress").length ?? 0;
@@ -40,33 +40,22 @@ async function Dashboard() {
   return (
     <>
       <div className="space-y-1">
-        <h2 className="text-2xl font-semibold tracking-tight">{firstName ? `Welcome back, ${firstName}` : "Your degree"}</h2>
+        <h2 className="text-2xl font-semibold tracking-tight">{firstName || "Your degree"}</h2>
         <p className="text-sm text-muted-foreground">
-          {major ? `${major.program.name} · ${major.program.source.catalog} · ` : ""}
-          {audit.credits.standing} standing · Currently {formatTerm(student.currentTerm)}
+          {major ? `${major.program.name} · ` : ""}
+          {audit.credits.standing} · {formatTerm(student.currentTerm)}
         </p>
       </div>
 
       {!major && (
         <Alert>
           <GraduationCap />
-          <AlertTitle>Choose your major</AlertTitle>
-          <AlertDescription>Pick your major to see requirement progress and a next-semester plan.</AlertDescription>
+          <AlertTitle>No major selected</AlertTitle>
           <AlertAction>
             <Link href="/record" className={buttonVariants({ size: "sm" })}>
               Choose major
             </Link>
           </AlertAction>
-        </Alert>
-      )}
-
-      {source.includesDemoData && (
-        <Alert className="border-status-warning/40 bg-status-warning/5">
-          <FlaskConical />
-          <AlertTitle>Preview data</AlertTitle>
-          <AlertDescription>
-            {source.disclaimer} Always confirm requirements with the official Undergraduate Catalog and your advisor.
-          </AlertDescription>
         </Alert>
       )}
 
@@ -78,14 +67,14 @@ async function Dashboard() {
           {major && (
             <StatTile
               icon={ListChecks}
-              label="Major requirements satisfied"
+              label="Major requirements"
               value={
                 <>
                   {major.satisfied}
                   <span className="text-base font-normal text-muted-foreground"> / {major.total}</span>
                 </>
               }
-              detail={`${finishing} more complete when current courses finish`}
+              detail={finishing > 0 ? `+${finishing} in progress` : undefined}
             >
               <ProgressMeter completed={major.satisfied / major.total} label="Major requirements satisfied" />
             </StatTile>
@@ -99,7 +88,7 @@ async function Dashboard() {
                 <span className="text-base font-normal text-muted-foreground"> / {upper.required}</span>
               </>
             }
-            detail={`${upper.inProgress} more in progress`}
+            detail={upper.inProgress > 0 ? `+${upper.inProgress} in progress` : undefined}
           >
             <ProgressMeter
               {...progressFractions({ completed: upper.earned, inProgress: upper.inProgress, required: upper.required })}
@@ -110,7 +99,7 @@ async function Dashboard() {
             icon={CalendarCheck}
             label="Estimated graduation"
             value={formatTerm(graduation.term)}
-            detail={`${graduation.semestersRemaining} semesters after this one at ~15 credits each. Rough estimate.`}
+            detail={`${graduation.semestersRemaining} more ${graduation.semestersRemaining === 1 ? "semester" : "semesters"}`}
           />
         </div>
       </section>
@@ -118,7 +107,7 @@ async function Dashboard() {
       {major && (
         <section className="grid gap-4 lg:grid-cols-5" aria-label="Requirements and plan">
           <div className="lg:col-span-3">
-            <OutstandingRequirementsCard results={outstanding} programName={major.program.name} />
+            <OutstandingRequirementsCard results={outstanding} />
           </div>
           <div className="lg:col-span-2">
             <NextSemesterCard proposal={proposal} />

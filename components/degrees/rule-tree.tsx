@@ -1,4 +1,3 @@
-import { FileQuestion, ShieldQuestion } from "lucide-react";
 import type { ChooseConstraint, CourseSelector, Rule } from "@/lib/domain/catalog/program";
 import type { CourseInfo } from "@/lib/services/degrees";
 
@@ -15,7 +14,6 @@ export function RuleTree({ rule, ctx }: { rule: Rule; ctx: RuleContext }) {
     return (
       <div className="space-y-2">
         <RuleList rules={rule.rules} ctx={ctx} />
-        <ManualCheck rule={rule} />
       </div>
     );
   }
@@ -40,14 +38,12 @@ function RuleNode({ rule, ctx }: { rule: Rule; ctx: RuleContext }) {
       return (
         <div className="space-y-1">
           <CourseLine code={rule.code} ctx={ctx} />
-          <ManualCheck rule={rule} />
         </div>
       );
     case "allOf":
       return (
         <Group label="All of">
           <RuleList rules={rule.rules} ctx={ctx} />
-          <ManualCheck rule={rule} />
         </Group>
       );
     case "anyOf": {
@@ -65,7 +61,6 @@ function RuleNode({ rule, ctx }: { rule: Rule; ctx: RuleContext }) {
                 </li>
               ))}
             </ul>
-            <ManualCheck rule={rule} />
           </div>
         );
       }
@@ -79,7 +74,6 @@ function RuleNode({ rule, ctx }: { rule: Rule; ctx: RuleContext }) {
               </li>
             ))}
           </ul>
-          <ManualCheck rule={rule} />
         </Group>
       );
     }
@@ -87,14 +81,7 @@ function RuleNode({ rule, ctx }: { rule: Rule; ctx: RuleContext }) {
       return <Choose rule={rule} ctx={ctx} />;
     case "unparsed":
       return (
-        <div className="space-y-1 rounded-md border border-dashed p-2 text-xs">
-          <p className="flex items-center gap-1.5 font-medium">
-            <FileQuestion className="size-3.5 shrink-0 text-muted-foreground" aria-hidden />
-            Not structured yet. Read the catalog wording:
-          </p>
-          <p className="leading-relaxed text-muted-foreground">{rule.text}</p>
-          <ManualCheck rule={rule} />
-        </div>
+        <p className="text-sm leading-relaxed">{rule.text}</p>
       );
   }
 }
@@ -119,7 +106,7 @@ function Choose({ rule, ctx }: { rule: Extract<Rule, { type: "choose" }>; ctx: R
       )}
       {listed.length > 0 && (
         <div className="space-y-1">
-          {sources.length > 0 && <p className="text-xs text-muted-foreground">Or these specific courses:</p>}
+          {sources.length > 0 && <p className="text-xs text-muted-foreground">Or:</p>}
           <ul className="space-y-1">
             {listed.map((code) => (
               <li key={code}>
@@ -135,7 +122,6 @@ function Choose({ rule, ctx }: { rule: Extract<Rule, { type: "choose" }>; ctx: R
           {describeConstraint(k, ctx)}
         </p>
       ))}
-      <ManualCheck rule={rule} />
     </Group>
   );
 }
@@ -154,19 +140,9 @@ function CourseLine({ code, ctx }: { code: string; ctx: RuleContext }) {
   return (
     <span className="flex items-baseline gap-2 text-sm">
       <span className="w-[4.5rem] shrink-0 font-mono text-xs">{code}</span>
-      <span className={`min-w-0 flex-1 ${info ? "" : "text-muted-foreground italic"}`}>{info?.title ?? "Not in course data"}</span>
+      <span className={`min-w-0 flex-1 ${info ? "" : "text-muted-foreground italic"}`}>{info?.title ?? ""}</span>
       {info && <span className="shrink-0 text-xs text-muted-foreground tabular-nums">{info.credits}</span>}
     </span>
-  );
-}
-
-function ManualCheck({ rule }: { rule: Rule }) {
-  if (!rule.manualCheck) return null;
-  return (
-    <p className="flex items-start gap-1.5 text-xs text-muted-foreground">
-      <ShieldQuestion className="mt-px size-3.5 shrink-0" aria-hidden />
-      Advisor check: {rule.manualCheck}
-    </p>
   );
 }
 
