@@ -549,12 +549,18 @@ function evaluateChoose(
     .reduce((s, a) => s + amount(a), 0);
 
   // A minimum-from shortfall keeps the requirement open even when the count is reached.
+  let shortfall = 0;
   for (const k of minFrom) {
-    const have = result.applied.filter((a) =>
+    const counted = [
+      ...result.applied,
+      ...(k.countUsedBy ?? []).flatMap((id) => ctx.appliedBy.get(id) ?? []),
+    ];
+    const have = counted.filter((a) =>
       matchesSelector(a.code, ctx.catalog.get(a.code), k.from),
     ).length;
     if (have < k.minCourses) {
-      const deficit = k.minCourses - have;
+      const deficit = Math.min(k.minCourses - have, required);
+      shortfall = Math.max(shortfall, deficit);
       result.completed = Math.min(result.completed, required - deficit);
       result.inProgress = Math.min(
         result.inProgress,
@@ -571,7 +577,8 @@ function evaluateChoose(
     }
   }
 
-  const remaining = required - result.completed - result.inProgress;
+  // Courses that make up the shortfall also count toward the total, so they aren't asked for twice.
+  const remaining = required - result.completed - result.inProgress - shortfall;
   if (remaining > 0) {
     result.missing.push({
       kind: "choose",
@@ -601,7 +608,11 @@ function dependencies(rule: Rule, ruleOwner: Map<string, string>): string[] {
   const ids = [
     ...(rule.from.excludeUsedBy ?? []),
     ...(rule.constraints ?? []).flatMap((k) =>
-      k.type === "notEquivalentTo" ? [k.requirementId] : [],
+      k.type === "notEquivalentTo"
+        ? [k.requirementId]
+        : k.type === "minFrom"
+          ? (k.countUsedBy ?? [])
+          : [],
     ),
   ];
   return ids.map((id) => ruleOwner.get(id) ?? id);
