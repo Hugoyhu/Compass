@@ -1,0 +1,263 @@
+Worker 7 groups: G, 6
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_07 --letters G,6 --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Spring 2027 --no-resume
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group G (1/2)…
+  [G] 2 subjects have no active courses.
+  [G] Found 226 course entries.
+  [G] Skipping 115 courses numbered above 499; 111 left.
+    [G 1/111] Opening GEO 101 — Environmental Geology
+      Spring 2027: found 1 class sections.
+    [G 2/111] Opening GEO 102 — The Earth
+      Spring 2027: found 2 class sections.
+    [G 3/111] Opening GEO 103 — The Earth Through Time
+      Spring 2027: found 1 class sections.
+    [G 4/111] Opening GEO 104 — Ripples Across the World: Global Effects of Natural Disasters
+      Spring 2027: found 1 class sections.
+    [G 5/111] Opening GEO 105 — Energy Resources in Transition
+      Spring 2027: found 1 class sections.
+    [G 6/111] Opening GEO 106 — Planetary Geology
+      Spring 2027: not listed for this course. Available terms: Summer 2026
+    [G 7/111] Opening GEO 107 — Natural Hazards
+      Spring 2027: found 1 class sections.
+    [G 8/111] Opening GEO 112 — Physical Geology Laboratory
+      Spring 2027: found 1 class sections.
+    [G 9/111] Opening GEO 113 — Historical Geology Laboratory
+      Spring 2027: found 1 class sections.
+    [G 10/111] Opening GEO 115 — Making the Invisible Visible: Polarized light microscopy
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (G 10/111) · 10 scraped, 0 already done, 0 failed · 7.7 pages/min · 1m17s elapsed · ~13m02s left in G
+    [G 11/111] Opening GEO 121 — Principles of Geology
+      No View Class Sections button; course has no sections.
+    [G 12/111] Opening GEO 122 — Physical Geology
+      Spring 2027: found 2 class sections.
+    [G 13/111] Opening GEO 287 — Introductory Research in Geology
+      Spring 2027: found 18 class sections.
+    [G 14/111] Opening GEO 303 — Sedimentary Geology and Geochronology (with emphasis on the Turkana Basin)
+      Spring 2027: found 1 class sections.
+    [G 15/111] Opening GEO 304 — Energy, Mineral Resources, and the Environment
+      Spring 2027: found 1 class sections.
+    [G 16/111] Opening GEO 305 — Field Geology
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 17/111] Opening GEO 306 — Mineralogy
+      Spring 2027: found 1 class sections.
+    [G 18/111] Opening GEO 307 — Global Environmental Change
+      No View Class Sections button; course has no sections.
+    [G 19/111] Opening GEO 309 — Structural Geology
+      Spring 2027: found 1 class sections.
+    [G 20/111] Opening GEO 310 — Introduction to Geophysics
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+  Progress: group 1/2 (G 20/111) · 20 scraped, 0 already done, 0 failed · 10.5 pages/min · 1m54s elapsed · ~8m41s left in G
+    [G 21/111] Opening GEO 311 — Geoscience and Global Concerns
+      No View Class Sections button; course has no sections.
+    [G 22/111] Opening GEO 313 — Understanding Water Resources for the 21st Century
+      Spring 2027: not listed for this course. Available terms: Fall 2026, Summer 2026
+    [G 23/111] Opening GEO 315 — Groundwater Hydrology
+      Spring 2027: found 1 class sections.
+    [G 24/111] Opening GEO 316 — Geochemistry of Surficial Processes
+      No View Class Sections button; course has no sections.
+    [G 25/111] Opening GEO 318 — Engineering Geology and Coastal Processes
+      No View Class Sections button; course has no sections.
+    [G 26/111] Opening GEO 320 — Glacial Geology
+      Spring 2027: found 1 class sections.
+    [G 27/111] Opening GEO 330 — The Geology of Mars
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 28/111] Opening GEO 347 — Remote Sensing
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 29/111] Opening GEO 366 — Mineralogy Laboratory
+      Spring 2027: found 1 class sections.
+    [G 30/111] Opening GEO 369 — Structural Geology Laboratory
+      Spring 2027: found 1 class sections.
+  Progress: group 1/2 (G 30/111) · 30 scraped, 0 already done, 0 failed · 13.5 pages/min · 2m12s elapsed · ~5m58s left in G
+    [G 31/111] Opening GEO 403 — Sedimentation and Stratigraphy
+      Spring 2027: found 1 class sections.
+    [G 32/111] Opening GEO 404 — Geomorphology
+      No View Class Sections button; course has no sections.
+    [G 33/111] Opening GEO 405 — Field Camp
+      Spring 2027: not listed for this course. Available terms: Summer 2026
+    [G 34/111] Opening GEO 407 — Igneous and Metamorphic Petrology
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 35/111] Opening GEO 444 — Experiential Learning
+      No View Class Sections button; course has no sections.
+    [G 36/111] Opening GEO 447 — Senior Tutorial in Geology
+      Spring 2027: found 15 class sections.
+    [G 37/111] Opening GEO 448 — Geosciences Colloquium
+      Spring 2027: found 1 class sections.
+    [G 38/111] Opening GEO 463 — Sedimentation and Stratigraphy Laboratory
+      Spring 2027: found 1 class sections.
+    [G 39/111] Opening GEO 467 — Igneous and Metamorphic Petrology Laboratory
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 40/111] Opening GEO 475 — Undergraduate Teaching Practicum I
+      Spring 2027: found 18 class sections.
+  Progress: group 1/2 (G 40/111) · 40 scraped, 0 already done, 0 failed · 14.0 pages/min · 2m51s elapsed · ~5m05s left in G
+    [G 41/111] Opening GEO 476 — Undergraduate Teaching Practicum II
+      Spring 2027: found 19 class sections.
+    [G 42/111] Opening GEO 487 — Senior Research in Geology
+      Spring 2027: found 19 class sections.
+    [G 43/111] Opening GEO 488 — Internship
+      Spring 2027: found 14 class sections.
+    [G 44/111] Opening GEO 496 — Research and Synthesize Scientific Literature in Geoscience
+      Spring 2027: found 6 class sections.
+    [G 45/111] Opening GEO 497 — Research Communication in Geoscience
+      No View Class Sections button; course has no sections.
+    [G 46/111] Opening GER 101 — Intensive Elementary German
+      Spring 2027: not listed for this course. Available terms: Summer 2026
+    [G 47/111] Opening GER 111 — Elementary German I
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 48/111] Opening GER 112 — Elementary German II
+      Spring 2027: found 2 class sections.
+    [G 49/111] Opening GER 211 — Intermediate German I
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 50/111] Opening GER 212 — Intermediate German II
+      Spring 2027: found 1 class sections.
+  Progress: group 1/2 (G 50/111) · 50 scraped, 0 already done, 0 failed · 13.4 pages/min · 3m44s elapsed · ~4m33s left in G
+    Pausing 5s after 50 detail pages…
+    [G 51/111] Opening GER 311 — German Conversation and Composition
+      Spring 2027: not listed for this course. Available terms: Summer 2026
+    [G 52/111] Opening GER 312 — German Conversation and Composition
+      No View Class Sections button; course has no sections.
+    [G 53/111] Opening GER 313 — German Vocabulary in Conceptual Groups
+      No View Class Sections button; course has no sections.
+    [G 54/111] Opening GER 343 — Introduction to Literary Genres
+      No View Class Sections button; course has no sections.
+    [G 55/111] Opening GER 438 — Structure of German
+      No View Class Sections button; course has no sections.
+    [G 56/111] Opening GER 439 — History of German
+      No View Class Sections button; course has no sections.
+    [G 57/111] Opening GER 444 — Experiential Learning
+      No View Class Sections button; course has no sections.
+    [G 58/111] Opening GER 447 — Directed Readings in German
+      Spring 2027: found 1 class sections.
+    [G 59/111] Opening GER 459 — Write Effectively in German
+      Spring 2027: found 1 class sections.
+    [G 60/111] Opening GER 475 — Undergraduate Teaching Practicum in German I
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+  Progress: group 1/2 (G 60/111) · 60 scraped, 0 already done, 0 failed · 14.2 pages/min · 4m14s elapsed · ~3m36s left in G
+    [G 61/111] Opening GER 476 — Undergraduate Teaching Practicum in German II
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 62/111] Opening GER 488 — Internship
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 63/111] Opening GER 495 — Senior Honors Project in German
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 64/111] Opening GLI 102 — Academy of Civic Life
+      Spring 2027: not listed for this course. Available terms: Summer 2026
+    [G 65/111] Opening GLI 211 — Perspectives in Globalization Studies and International Relations
+      Spring 2027: found 2 class sections.
+    [G 66/111] Opening GLI 212 — Issues in Globalization Studies and International Relations
+      Spring 2027: found 1 class sections.
+    [G 67/111] Opening GLI 320 — Global, Cultural, and Environmental Issues
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 68/111] Opening GLI 330 — Global, Political, and Economic Issues
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 69/111] Opening GLI 340 — Conflict Resolution, Coalition Building, and Peacemaking
+      Spring 2027: found 1 class sections.
+    [G 70/111] Opening GLI 391 — Humanities and Fine Arts Topics in Globalization Studies
+      Spring 2027: not listed for this course. Available terms: Summer 2026, Winter 2027
+  Progress: group 1/2 (G 70/111) · 70 scraped, 0 already done, 0 failed · 15.0 pages/min · 4m40s elapsed · ~2m44s left in G
+    [G 71/111] Opening GLI 392 — Social and Behavioral Sciences Topics in Globalization Studies
+      No View Class Sections button; course has no sections.
+    [G 72/111] Opening GLI 402 — Democracy and Justice for All
+      No View Class Sections button; course has no sections.
+    [G 73/111] Opening GLI 444 — Experiential Learning
+      Spring 2027: not listed for this course. Available terms: Fall 2026, Summer 2026
+    [G 74/111] Opening GLI 450 — Capstone Seminar in Globalization Studies and International Relations
+      Spring 2027: found 1 class sections.
+    [G 75/111] Opening GLI 458 — Speak Effectively Before an Audience
+      No View Class Sections button; course has no sections.
+    [G 76/111] Opening GLI 459 — Write Effectively in Globalization Studies and International Relations
+      No View Class Sections button; course has no sections.
+    [G 77/111] Opening GLI 475 — Undergraduate Teaching Practicum I
+      Spring 2027: found 2 class sections.
+    [G 78/111] Opening GLI 476 — Undergraduate Teaching Practicum II
+      Spring 2027: found 2 class sections.
+    [G 79/111] Opening GLI 487 — Independent Research in Globalization Studies and International Relations
+      Spring 2027: not listed for this course. Available terms: Fall 2026, Summer 2026
+    [G 80/111] Opening GLI 488 — Internship
+      Spring 2027: found 1 class sections.
+  Progress: group 1/2 (G 80/111) · 80 scraped, 0 already done, 0 failed · 15.3 pages/min · 5m14s elapsed · ~2m01s left in G
+    [G 81/111] Opening GLI 495 — Senior Honors Project in Globalization Studies and International Relations
+      Spring 2027: found 2 class sections.
+    [G 82/111] Opening GRK 101 — Intensive Elementary Modern Greek
+      No View Class Sections button; course has no sections.
+    [G 83/111] Opening GRK 111 — Elementary Ancient Greek I
+      Spring 2027: found 1 class sections.
+    [G 84/111] Opening GRK 112 — Elementary Ancient Greek II
+      No View Class Sections button; course has no sections.
+    [G 85/111] Opening GRK (120) — Conversational Immersion in Beginner Modern Greek ** available as of 01/01/2027
+      No View Class Sections button; course has no sections.
+    [G 86/111] Opening GRK 121 — Elementary Modern Greek I
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 87/111] Opening GRK 122 — Elementary Modern Greek II
+      Spring 2027: found 1 class sections.
+    [G 88/111] Opening GRK 211 — Intermediate Modern Greek I
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 89/111] Opening GRK 212 — Intermediate Modern Greek II
+      Spring 2027: found 1 class sections.
+    [G 90/111] Opening GRK 221 — Conversation in Modern Greek Part I
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+  Progress: group 1/2 (G 90/111) · 90 scraped, 0 already done, 0 failed · 16.0 pages/min · 5m38s elapsed · ~1m18s left in G
+    [G 91/111] Opening GRK 222 — Conversation in Modern Greek Part II
+      Spring 2027: found 1 class sections.
+    [G 92/111] Opening GRK 321 — Advanced Modern Greek I
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 93/111] Opening GRK 322 — Advanced Modern Greek II
+      Spring 2027: found 1 class sections.
+    [G 94/111] Opening GSI 200 — Global Summer Institute
+      No View Class Sections button; course has no sections.
+    [G 95/111] Opening GSI 201 — English for Academic Success
+      No View Class Sections button; course has no sections.
+    [G 96/111] Opening GSS 105 — Introduction to Maps and Mapping
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 97/111] Opening GSS 309 — GIS and Cartography
+      No View Class Sections button; course has no sections.
+    [G 98/111] Opening GSS 313 — GIS Design and Application I
+      Spring 2027: found 3 class sections.
+    [G 99/111] Opening GSS 314 — GIS Laboratory
+      Spring 2027: found 3 class sections.
+    [G 100/111] Opening GSS 317 — Geospatial Narratives: Deep Mapping for Humanities and Social Sciences
+      Spring 2027: found 1 class sections.
+  Progress: group 1/2 (G 100/111) · 100 scraped, 0 already done, 0 failed · 16.3 pages/min · 6m08s elapsed · ~40s left in G
+    Pausing 5s after 100 detail pages…
+    [G 101/111] Opening GSS 323 — GIS Database and Design
+      Spring 2027: found 1 class sections.
+    [G 102/111] Opening GSS 325 — GIS Design & Applications II
+      Spring 2027: found 1 class sections.
+    [G 103/111] Opening GSS 326 — GIS Project Management
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 104/111] Opening GSS 350 — Applied Spatial Data Analysis
+      No View Class Sections button; course has no sections.
+    [G 105/111] Opening GSS 354 — Geospatial Science for the Coastal Zone
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [G 106/111] Opening GSS 355 — Remote Sensing GIS Data
+      No View Class Sections button; course has no sections.
+    [G 107/111] Opening GSS 360 — LiDAR Remote Sensing
+      No View Class Sections button; course has no sections.
+    [G 108/111] Opening GSS 390 — Topics in Geospatial Science
+      No View Class Sections button; course has no sections.
+    [G 109/111] Opening GSS 475 — Undergraduate Teaching Practicum
+      Spring 2027: found 3 class sections.
+    [G 110/111] Opening GSS 487 — Geospatial Science Research
+      Spring 2027: found 2 class sections.
+  Progress: group 1/2 (G 110/111) · 110 scraped, 0 already done, 0 failed · 16.2 pages/min · 6m46s elapsed · ~3s left in G
+    [G 111/111] Opening GSS 488 — Geospatial Science Internship
+      Spring 2027: found 1 class sections.
+  Progress: group 2/2 (G 111/111) · 111 scraped, 0 already done, 0 failed · 16.1 pages/min · 6m54s elapsed
+
+Processing subject-code group 6 (2/2)…
+  [6] Letter has no subject groups.
+Exported index: 111 records (JSON + CSV)
+Exported details: 111 records (JSONL + JSON + CSV)
+Exported sections: 168 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_07/semesteros-export.zip
+
+Done in 6m55s: 111 scraped, 0 already done, 0 failed, 115 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_07/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_07/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_07/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_07/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_07/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_07/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_07/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_07/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.

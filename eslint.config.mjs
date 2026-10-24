@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Python virtual environments bundle third-party JavaScript.
+    "**/.venv/**",
   ]),
 ]);
 

@@ -55,12 +55,15 @@ Useful options:
 - `--letters C,0,1` — selected groups.
 - `--max-details 3` — smoke test; `0` means no limit.
 - `--index-only` — collect course index pages only, no course detail pages.
+- `--max-level 499` — skip courses numbered above 499, i.e. graduate courses (the default). Their detail pages are never opened, and exports leave out any saved by earlier runs. `--max-level 0` includes everything.
 - `--sections-term "Spring 2027"` — also scrape sections: one term, a comma-separated list, or `all`.
 - `--courses "CSE 214,HIS 101"` — only open these courses (re-scraped even when resuming); visits only their letters.
 - `--headless` — hide the browser after the visible UI flow has been verified.
 - `--no-resume` — revisit details even if they were collected before. Normally, reruns resume and avoid duplicate course/section rows.
 - `--output PATH` — choose the output directory.
 - `--delay-ms 700` — increase waits if PeopleSoft is slow.
+
+**Progress output.** Each subject group starts with its course count and how many 500+ courses were skipped. Each course prints as `[C 12/372] Opening …`, and every 10 courses a status line shows totals, pages per minute, elapsed time, and the time left in the current group. With `--workers`, the terminal shows a combined status line every 20 seconds (per-worker detail is in `logs/`). The run ends with a summary of scraped, already-done, failed, and skipped courses.
 
 The scraper pauses every 50 newly processed course details by default. Adjust with `--pause-every` and `--pause-seconds`; use `--pause-every 0` to disable the periodic pause. A Ctrl+C interruption preserves completed rows, and rerunning with the same output folder resumes.
 

@@ -1,0 +1,1913 @@
+[
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "30-LEC",
+    "class_number": "45583",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Jennifer Nesfield",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLA_339_Methods_and_Materials_in_the_Teaching_of_Foreign_Languages_sections_Spring_2027.html",
+    "course_code": "FLA 339",
+    "course_title": "Methods and Materials in the Teaching of Foreign Languages"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "40577",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "HUMANITIES 2053 WESTCAMPUS",
+        "instructor": "Jacqueline Rodgers",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLA_340_Curriculum_Development_and_Micro-Teaching_sections_Spring_2027.html",
+    "course_code": "FLA 340",
+    "course_title": "Curriculum Development and Micro-Teaching"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "30-LEC",
+    "class_number": "51567",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Jacqueline Rodgers",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLA_340_Curriculum_Development_and_Micro-Teaching_sections_Spring_2027.html",
+    "course_code": "FLA 340",
+    "course_title": "Curriculum Development and Micro-Teaching"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "V01-SUP",
+    "class_number": "45584",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Jennifer Nesfield",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLA_449_Field_Experience_Grades_7-12_sections_Spring_2027.html",
+    "course_code": "FLA 449",
+    "course_title": "Field Experience, Grades 7-12"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "V01-SUP",
+    "class_number": "43044",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Jacqueline Rodgers",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLA_450_Field_Experience_Grades_7-12_sections_Spring_2027.html",
+    "course_code": "FLA 450",
+    "course_title": "Field Experience, Grades 7-12"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "V01-SUP",
+    "class_number": "40578",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Jennifer Nesfield",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLA_451_Supervised_Student_Teaching_Middle_School_Level_Grades_7-9_sections_Spring_2027.html",
+    "course_code": "FLA 451",
+    "course_title": "Supervised Student Teaching: Middle School Level Grades 7-9"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "V01-SUP",
+    "class_number": "40579",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Jennifer Nesfield",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLA_452_Supervised_Student_Teaching_High_School_Grades_10-12_sections_Spring_2027.html",
+    "course_code": "FLA 452",
+    "course_title": "Supervised Student Teaching: High School Grades 10-12"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "S01-SEM",
+    "class_number": "40580",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "5:00PM",
+        "end": "6:20PM",
+        "room": "HUMANITIES 2094 WESTCAMPUS",
+        "instructor": "Jennifer Nesfield",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLA_454_Student_Teaching_Seminar_sections_Spring_2027.html",
+    "course_code": "FLA 454",
+    "course_title": "Student Teaching Seminar"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "50142",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "12:30PM",
+        "end": "1:50PM",
+        "room": "SOCBEHAV SCI N106 WESTCAMPUS",
+        "instructor": "Staff",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "02-LEC",
+    "class_number": "50143",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "SOCBEHAV SCI N104 WESTCAMPUS",
+        "instructor": "William Chandler",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "03-LEC",
+    "class_number": "50144",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "SOCBEHAV SCI N104 WESTCAMPUS",
+        "instructor": "Jing Wang",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "04-LEC",
+    "class_number": "50145",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "MELVILLE LBR N3035 WESTCAMPUS",
+        "instructor": "Jing Wang",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "05-LEC",
+    "class_number": "50146",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "12:30PM",
+        "end": "1:50PM",
+        "room": "SOCBEHAV SCI N108 WESTCAMPUS",
+        "instructor": "Staff",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "06-LEC",
+    "class_number": "50147",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "Fr",
+        "start": "9:30AM",
+        "end": "12:20PM",
+        "room": "MELVILLE LBR N3045 WESTCAMPUS",
+        "instructor": "Staff",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "07-LEC",
+    "class_number": "50148",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "12:30PM",
+        "end": "1:50PM",
+        "room": "MELVILLE LBR N3045 WESTCAMPUS",
+        "instructor": "Elizabeth Rohrbaugh",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "08-LEC",
+    "class_number": "50149",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "MELVILLE LBR N3045 WESTCAMPUS",
+        "instructor": "Elizabeth Rohrbaugh",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "09-LEC",
+    "class_number": "50150",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "MELVILLE LBR N3033 WESTCAMPUS",
+        "instructor": "Conor Demmett",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "10-LEC",
+    "class_number": "50202",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "MELVILLE LBR N3033 WESTCAMPUS",
+        "instructor": "Conor Demmett",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "11-LEC",
+    "class_number": "50203",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "SOCBEHAV SCI N104 WESTCAMPUS",
+        "instructor": "Timothy O'Connor",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "12-LEC",
+    "class_number": "50204",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "9:30AM",
+        "end": "10:50AM",
+        "room": "SOCBEHAV SCI N104 WESTCAMPUS",
+        "instructor": "Timothy O'Connor",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "13-LEC",
+    "class_number": "50207",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "SOCBEHAV SCI N108 WESTCAMPUS",
+        "instructor": "Staff",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "14-LEC",
+    "class_number": "54486",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "SOCBEHAV SCI N108 WESTCAMPUS",
+        "instructor": "Staff",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "15-LEC",
+    "class_number": "50687",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "Fr",
+        "start": "11:00AM",
+        "end": "1:50PM",
+        "room": "MELVILLE LBR N3062 WESTCAMPUS",
+        "instructor": "Staff",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "16-LEC",
+    "class_number": "53333",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "SOCBEHAV SCI N106 WESTCAMPUS",
+        "instructor": "Elizabeth Rohrbaugh",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "17-LEC",
+    "class_number": "54487",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "SOCBEHAV SCI N106 WESTCAMPUS",
+        "instructor": "Staff",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_101_Introduction_to_Filmmaking_and_Television_Visual_Storytelling_sections_Spring_2027.html",
+    "course_code": "FLM 101",
+    "course_title": "Introduction to Filmmaking and Television: Visual Storytelling"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "50170",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "Mo",
+        "start": "2:00PM",
+        "end": "4:50PM",
+        "room": "MELVILLE LBR W4535 WESTCAMPUS",
+        "instructor": "Amy Gaipa",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_102_Introduction_to_Film_and_Television_Composition_How_Films_and_TV_Shows_Say_What_They_Mean_sections_Spring_2027.html",
+    "course_code": "FLM 102",
+    "course_title": "Introduction to Film and Television Composition: How Films and TV Shows Say What They Mean"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "02-LEC",
+    "class_number": "50171",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "MELVILLE LBR W4535 WESTCAMPUS",
+        "instructor": "David Chan",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_102_Introduction_to_Film_and_Television_Composition_How_Films_and_TV_Shows_Say_What_They_Mean_sections_Spring_2027.html",
+    "course_code": "FLM 102",
+    "course_title": "Introduction to Film and Television Composition: How Films and TV Shows Say What They Mean"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "03-LEC",
+    "class_number": "50175",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "MELVILLE LBR W4535 WESTCAMPUS",
+        "instructor": "Staff",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_102_Introduction_to_Film_and_Television_Composition_How_Films_and_TV_Shows_Say_What_They_Mean_sections_Spring_2027.html",
+    "course_code": "FLM 102",
+    "course_title": "Introduction to Film and Television Composition: How Films and TV Shows Say What They Mean"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "04-LEC",
+    "class_number": "50192",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "MELVILLE LBR W4535 WESTCAMPUS",
+        "instructor": "David Chan",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_102_Introduction_to_Film_and_Television_Composition_How_Films_and_TV_Shows_Say_What_They_Mean_sections_Spring_2027.html",
+    "course_code": "FLM 102",
+    "course_title": "Introduction to Film and Television Composition: How Films and TV Shows Say What They Mean"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "05-LEC",
+    "class_number": "50205",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "5:00PM",
+        "end": "6:20PM",
+        "room": "MELVILLE LBR W4535 WESTCAMPUS",
+        "instructor": "Staff",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_102_Introduction_to_Film_and_Television_Composition_How_Films_and_TV_Shows_Say_What_They_Mean_sections_Spring_2027.html",
+    "course_code": "FLM 102",
+    "course_title": "Introduction to Film and Television Composition: How Films and TV Shows Say What They Mean"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "06-LEC",
+    "class_number": "50206",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "We",
+        "start": "2:00PM",
+        "end": "4:50PM",
+        "room": "MELVILLE LBR W4535 WESTCAMPUS",
+        "instructor": "Karen Offitzer",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_102_Introduction_to_Film_and_Television_Composition_How_Films_and_TV_Shows_Say_What_They_Mean_sections_Spring_2027.html",
+    "course_code": "FLM 102",
+    "course_title": "Introduction to Film and Television Composition: How Films and TV Shows Say What They Mean"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "90-LEC",
+    "class_number": "54233",
+    "session": "SGB",
+    "status": null,
+    "meetings": [
+      {
+        "days": "Fr",
+        "start": "9:30AM",
+        "end": "12:20PM",
+        "room": "Korea OUTOFCNTRY",
+        "instructor": "Sun Park",
+        "dates": "02/26/2027 - 06/17/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_102_Introduction_to_Film_and_Television_Composition_How_Films_and_TV_Shows_Say_What_They_Mean_sections_Spring_2027.html",
+    "course_code": "FLM 102",
+    "course_title": "Introduction to Film and Television Composition: How Films and TV Shows Say What They Mean"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "91-LEC",
+    "class_number": "54234",
+    "session": "SGB",
+    "status": null,
+    "meetings": [
+      {
+        "days": "Fr",
+        "start": "1:00PM",
+        "end": "3:50PM",
+        "room": "Korea OUTOFCNTRY",
+        "instructor": "Sun Park",
+        "dates": "02/26/2027 - 06/17/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_102_Introduction_to_Film_and_Television_Composition_How_Films_and_TV_Shows_Say_What_They_Mean_sections_Spring_2027.html",
+    "course_code": "FLM 102",
+    "course_title": "Introduction to Film and Television Composition: How Films and TV Shows Say What They Mean"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "50195",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "JAVITS LECTR 106 WESTCAMPUS",
+        "instructor": "Kate Levitt",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_201_Visual_Storytelling_Across_the_DIsciplines_sections_Spring_2027.html",
+    "course_code": "FLM 201",
+    "course_title": "Visual Storytelling Across the DIsciplines"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "02-LEC",
+    "class_number": "52764",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "HARRIMAN HLL 112 WESTCAMPUS",
+        "instructor": "Kate Levitt",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_201_Visual_Storytelling_Across_the_DIsciplines_sections_Spring_2027.html",
+    "course_code": "FLM 201",
+    "course_title": "Visual Storytelling Across the DIsciplines"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "03-LEC",
+    "class_number": "51379",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "12:30PM",
+        "end": "1:50PM",
+        "room": "JAVITS LECTR 106 WESTCAMPUS",
+        "instructor": "Kate Levitt",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_201_Visual_Storytelling_Across_the_DIsciplines_sections_Spring_2027.html",
+    "course_code": "FLM 201",
+    "course_title": "Visual Storytelling Across the DIsciplines"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "50200",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "SOCBEHAV SCI S328 WESTCAMPUS",
+        "instructor": "Amanda McLoughlin, Kathleen Russo",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_203_Podcasting_Audio_Storytelling_Skills_for_Filmmakers_sections_Spring_2027.html",
+    "course_code": "FLM 203",
+    "course_title": "Podcasting: Audio Storytelling Skills for Filmmakers"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "02-LEC",
+    "class_number": "51413",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "SOCBEHAV SCI S328 WESTCAMPUS",
+        "instructor": "Amanda McLoughlin, Kathleen Russo",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_203_Podcasting_Audio_Storytelling_Skills_for_Filmmakers_sections_Spring_2027.html",
+    "course_code": "FLM 203",
+    "course_title": "Podcasting: Audio Storytelling Skills for Filmmakers"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "02-LEC",
+    "class_number": "50196",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "SOCBEHAV SCI N104 WESTCAMPUS",
+        "instructor": "William Chandler",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_215_Scriptwriting_for_Film_and_Television_sections_Spring_2027.html",
+    "course_code": "FLM 215",
+    "course_title": "Scriptwriting for Film and Television"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "03-LEC",
+    "class_number": "50172",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "5:00PM",
+        "end": "6:20PM",
+        "room": "MELVILLE LBR N3045 WESTCAMPUS",
+        "instructor": "Staff",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_215_Scriptwriting_for_Film_and_Television_sections_Spring_2027.html",
+    "course_code": "FLM 215",
+    "course_title": "Scriptwriting for Film and Television"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "51380",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "Tu",
+        "start": "12:30PM",
+        "end": "3:20PM",
+        "room": "MELVILLE LBR N3035 WESTCAMPUS",
+        "instructor": "Jing Wang",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_220_Documentary_Filmmaking_sections_Spring_2027.html",
+    "course_code": "FLM 220",
+    "course_title": "Documentary Filmmaking"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "54491",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "We",
+        "start": "2:00PM",
+        "end": "4:50PM",
+        "room": "MELVILLE LBR N3045 WESTCAMPUS",
+        "instructor": "Lucio Castro",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_221_Fiction_Filmmaking_sections_Spring_2027.html",
+    "course_code": "FLM 221",
+    "course_title": "Fiction Filmmaking"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "02-LEC",
+    "class_number": "54489",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "Mo",
+        "start": "2:00PM",
+        "end": "4:40PM",
+        "room": "MELVILLE LBR N3045 WESTCAMPUS",
+        "instructor": "Timothy O'Connor",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_301_The_Filmmaker_s_Toolbox_Cinematography_Sound_and_Editing_sections_Spring_2027.html",
+    "course_code": "FLM 301",
+    "course_title": "The Filmmaker's Toolbox: Cinematography, Sound and Editing"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "53032",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "Th",
+        "start": "12:30PM",
+        "end": "3:20PM",
+        "room": "MELVILLE LBR N3035 WESTCAMPUS",
+        "instructor": "Kerry Donahue",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_304_Launching_Your_Podcast_Advanced_Production_Class_sections_Spring_2027.html",
+    "course_code": "FLM 304",
+    "course_title": "Launching Your Podcast/Advanced Production Class"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "50176",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "12:30PM",
+        "end": "1:50PM",
+        "room": "SOCBEHAV SCI N104 WESTCAMPUS",
+        "instructor": "William Chandler",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_310_Story_Analysis_for_Filmmakers_and_Television_Writers_sections_Spring_2027.html",
+    "course_code": "FLM 310",
+    "course_title": "Story Analysis for Filmmakers and Television Writers"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "54490",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "Tu",
+        "start": "3:30PM",
+        "end": "6:20PM",
+        "room": "MELVILLE LBR N3035 WESTCAMPUS",
+        "instructor": "Amy Gaipa",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_320_Topics_in_Film_for_Filmmakers_and_Television_Writers_sections_Spring_2027.html",
+    "course_code": "FLM 320",
+    "course_title": "Topics in Film for Filmmakers and Television Writers"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "50174",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "Fr",
+        "start": "9:30AM",
+        "end": "12:20PM",
+        "room": "MELVILLE LBR N3035 WESTCAMPUS",
+        "instructor": "Amy Gaipa",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_402_Capstone_Project_sections_Spring_2027.html",
+    "course_code": "FLM 402",
+    "course_title": "Capstone Project"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T01-TUT",
+    "class_number": "53091",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Karen Offitzer",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_475_Undergraduate_Teaching_Practicum_I_sections_Spring_2027.html",
+    "course_code": "FLM 475",
+    "course_title": "Undergraduate Teaching Practicum I"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T01-TUT",
+    "class_number": "50197",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Kate Levitt",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_488_Internship_sections_Spring_2027.html",
+    "course_code": "FLM 488",
+    "course_title": "Internship"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T02-TUT",
+    "class_number": "50199",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Amy Gaipa",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_488_Internship_sections_Spring_2027.html",
+    "course_code": "FLM 488",
+    "course_title": "Internship"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T01-TUT",
+    "class_number": "50198",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Karen Offitzer",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FLM_499_Independent_Project_sections_Spring_2027.html",
+    "course_code": "FLM 499",
+    "course_title": "Independent Project"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "46096",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "9:30AM",
+        "end": "10:50AM",
+        "room": "HUMANITIES 1057 WESTCAMPUS",
+        "instructor": "Leslie Marino",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_111_Elementary_French_I_sections_Spring_2027.html",
+    "course_code": "FRN 111",
+    "course_title": "Elementary French I"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "02-LEC",
+    "class_number": "44853",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "HUMANITIES 1057 WESTCAMPUS",
+        "instructor": "Leslie Marino",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_111_Elementary_French_I_sections_Spring_2027.html",
+    "course_code": "FRN 111",
+    "course_title": "Elementary French I"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "03-LEC",
+    "class_number": "45314",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "HUMANITIES 1057 WESTCAMPUS",
+        "instructor": "Leslie Marino",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_111_Elementary_French_I_sections_Spring_2027.html",
+    "course_code": "FRN 111",
+    "course_title": "Elementary French I"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "04-LEC",
+    "class_number": "54709",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "MELVILLE LBR N3074 WESTCAMPUS",
+        "instructor": "TinaMarie Friscia",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_111_Elementary_French_I_sections_Spring_2027.html",
+    "course_code": "FRN 111",
+    "course_title": "Elementary French I"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "R01-REC",
+    "class_number": "46097",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Leslie Marino",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_111_Elementary_French_I_sections_Spring_2027.html",
+    "course_code": "FRN 111",
+    "course_title": "Elementary French I"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "R02-REC",
+    "class_number": "44854",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Leslie Marino",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_111_Elementary_French_I_sections_Spring_2027.html",
+    "course_code": "FRN 111",
+    "course_title": "Elementary French I"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "R03-REC",
+    "class_number": "45315",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Leslie Marino",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_111_Elementary_French_I_sections_Spring_2027.html",
+    "course_code": "FRN 111",
+    "course_title": "Elementary French I"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "R04-REC",
+    "class_number": "54710",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "TinaMarie Friscia",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_111_Elementary_French_I_sections_Spring_2027.html",
+    "course_code": "FRN 111",
+    "course_title": "Elementary French I"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "44809",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "9:30AM",
+        "end": "10:50AM",
+        "room": "FREY HALL 224 WESTCAMPUS",
+        "instructor": "Julie Laisney",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "02-LEC",
+    "class_number": "43749",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "FREY HALL 224 WESTCAMPUS",
+        "instructor": "Julie Laisney",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "03-LEC",
+    "class_number": "45231",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "HUMANITIES 1057 WESTCAMPUS",
+        "instructor": "Virginia Gilmore",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "04-LEC",
+    "class_number": "45236",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "HUMANITIES 1057 WESTCAMPUS",
+        "instructor": "Virginia Gilmore",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "05-LEC",
+    "class_number": "45242",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "12:30PM",
+        "end": "1:50PM",
+        "room": "STALLER CTR 3216 WESTCAMPUS",
+        "instructor": "Melanie Varvarande",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "06-LEC",
+    "class_number": "45310",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "HUMANITIES 3020 WESTCAMPUS",
+        "instructor": "Madeline Turan",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "07-LEC",
+    "class_number": "45312",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "HUMANITIES 1023 WESTCAMPUS",
+        "instructor": "Madeline Turan",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "08-LEC",
+    "class_number": "54711",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "HUMANITIES 1057 WESTCAMPUS",
+        "instructor": "Sophie Sirulnick",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "R01-REC",
+    "class_number": "44810",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Julie Laisney",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "R02-REC",
+    "class_number": "43750",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Julie Laisney",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "R03-REC",
+    "class_number": "45232",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Virginia Gilmore",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "R04-REC",
+    "class_number": "45235",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Virginia Gilmore",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "R05-REC",
+    "class_number": "45241",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Melanie Varvarande",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "R06-REC",
+    "class_number": "45311",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Madeline Turan",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "R07-REC",
+    "class_number": "45313",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Madeline Turan",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "R08-REC",
+    "class_number": "54712",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Sophie Sirulnick",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_112_Elementary_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 112",
+    "course_title": "Elementary French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "40581",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "11:00AM",
+        "end": "12:20PM",
+        "room": "STALLER CTR 3216 WESTCAMPUS",
+        "instructor": "Melanie Varvarande",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_212_Intermediate_French_2_sections_Spring_2027.html",
+    "course_code": "FRN 212",
+    "course_title": "Intermediate French 2"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "44596",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "2:00PM",
+        "end": "3:20PM",
+        "room": "HUMANITIES 3014 WESTCAMPUS",
+        "instructor": "Franck Dalmas",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_312_Composition_sections_Spring_2027.html",
+    "course_code": "FRN 312",
+    "course_title": "Composition"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "54735",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "3:30PM",
+        "end": "4:50PM",
+        "room": "SOCBEHAV SCI N109 WESTCAMPUS",
+        "instructor": "Franck Dalmas",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_396_Readings_in_French_Literature_II_Analysis_and_Interpretation_sections_Spring_2027.html",
+    "course_code": "FRN 396",
+    "course_title": "Readings in French Literature II: Analysis and Interpretation"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "30-LEC",
+    "class_number": "55398",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "MoWe",
+        "start": "5:00PM",
+        "end": "6:20PM",
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Martin Maillot",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_410_Business_French_sections_Spring_2027.html",
+    "course_code": "FRN 410",
+    "course_title": "Business French"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "01-LEC",
+    "class_number": "54964",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "5:00PM",
+        "end": "6:20PM",
+        "room": "HUMANITIES 2053 WESTCAMPUS",
+        "instructor": "Jacques Keubeung Fokou",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_423_Africana_Literature_in_French_sections_Spring_2027.html",
+    "course_code": "FRN 423",
+    "course_title": "Africana Literature in French"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "30-LEC",
+    "class_number": "54966",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TuTh",
+        "start": "5:00PM",
+        "end": "6:20PM",
+        "room": "ONLINE ONLINE ONLINE",
+        "instructor": "Jacques Keubeung Fokou",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_423_Africana_Literature_in_French_sections_Spring_2027.html",
+    "course_code": "FRN 423",
+    "course_title": "Africana Literature in French"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T01-TUT",
+    "class_number": "40829",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Sarah Jourdain",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_447_Directed_Readings_in_French_sections_Spring_2027.html",
+    "course_code": "FRN 447",
+    "course_title": "Directed Readings in French"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T02-TUT",
+    "class_number": "41116",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Franck Dalmas",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_447_Directed_Readings_in_French_sections_Spring_2027.html",
+    "course_code": "FRN 447",
+    "course_title": "Directed Readings in French"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T01-TUT",
+    "class_number": "45121",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Sarah Jourdain",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_459_Write_Effectively_in_French_sections_Spring_2027.html",
+    "course_code": "FRN 459",
+    "course_title": "Write Effectively in French"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T02-TUT",
+    "class_number": "45192",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Franck Dalmas",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_459_Write_Effectively_in_French_sections_Spring_2027.html",
+    "course_code": "FRN 459",
+    "course_title": "Write Effectively in French"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T01-TUT",
+    "class_number": "40830",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Sarah Jourdain",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_475_Undergraduate_Teaching_Practicum_in_French_I_sections_Spring_2027.html",
+    "course_code": "FRN 475",
+    "course_title": "Undergraduate Teaching Practicum in French I"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T02-TUT",
+    "class_number": "42377",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Franck Dalmas",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_475_Undergraduate_Teaching_Practicum_in_French_I_sections_Spring_2027.html",
+    "course_code": "FRN 475",
+    "course_title": "Undergraduate Teaching Practicum in French I"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T04-TUT",
+    "class_number": "51464",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_475_Undergraduate_Teaching_Practicum_in_French_I_sections_Spring_2027.html",
+    "course_code": "FRN 475",
+    "course_title": "Undergraduate Teaching Practicum in French I"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T01-TUT",
+    "class_number": "43551",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Sarah Jourdain",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_476_Undergraduate_Teaching_Practicum_in_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 476",
+    "course_title": "Undergraduate Teaching Practicum in French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T02-TUT",
+    "class_number": "51461",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Virginia Gilmore",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_476_Undergraduate_Teaching_Practicum_in_French_II_sections_Spring_2027.html",
+    "course_code": "FRN 476",
+    "course_title": "Undergraduate Teaching Practicum in French II"
+  },
+  {
+    "term": "Spring 2027",
+    "requested_term": "Spring 2027",
+    "section": "T01-TUT",
+    "class_number": "41117",
+    "session": "B",
+    "status": null,
+    "meetings": [
+      {
+        "days": "TBA",
+        "start": "TBA",
+        "end": null,
+        "room": "TBA",
+        "instructor": "Staff",
+        "dates": "01/25/2027 - 05/19/2027"
+      }
+    ],
+    "raw_sections_file": "raw/details/FRN_495_Senior_Honors_Project_in_French_sections_Spring_2027.html",
+    "course_code": "FRN 495",
+    "course_title": "Senior Honors Project in French"
+  }
+]

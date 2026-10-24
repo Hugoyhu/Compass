@@ -1,13 +1,14 @@
-import type { CourseSelector } from "@/lib/domain/catalog/program";
+import type { CourseSelector, ProgramDefinition, ProgramPolicy, Rule, Substitution } from "@/lib/domain/catalog/program";
 import type { MissingItem, PolicyStatus, RequirementResult, RequirementStatus } from "./audit";
 
-export const STATUS_LABELS: Record<RequirementStatus | "exempt", string> = {
+export const STATUS_LABELS: Record<RequirementStatus | "exempt" | "not-required", string> = {
   satisfied: "Satisfied",
   "in-progress": "In progress",
   partial: "Partially met",
   "not-started": "Not started",
   "needs-review": "Needs review",
   exempt: "Exempt",
+  "not-required": "Not needed",
 };
 
 export const POLICY_STATUS_LABELS: Record<PolicyStatus, string> = {
@@ -96,4 +97,85 @@ export function progressFractions(result: Pick<RequirementResult, "completed" | 
   const completed = Math.min(1, result.completed / result.required);
   const inProgress = Math.min(1 - completed, result.inProgress / result.required);
   return { completed, inProgress };
+}
+
+/**
+ * Requirement ids, and ids of rules nested inside them, → how to refer to the
+ * requirement: "requirement 3 (Title)" in full, "3" in a short list. Slug labels
+ * aren't shown, so those requirements are referred to by title.
+ */
+export function requirementRefs(program: ProgramDefinition): { full: Record<string, string>; short: Record<string, string> } {
+  const full: Record<string, string> = {};
+  const short: Record<string, string> = {};
+  const visit = (rule: Rule, id: string) => {
+    if (rule.id && !(rule.id in full)) {
+      full[rule.id] = full[id];
+      short[rule.id] = short[id];
+    }
+    if (rule.type === "allOf" || rule.type === "anyOf") rule.rules.forEach((r) => visit(r, id));
+  };
+  for (const r of program.requirements) {
+    const n = itemNumber(r.label);
+    full[r.id] = n ? `requirement ${n} (${r.title})` : `“${r.title}”`;
+    short[r.id] = n ?? `“${r.title}”`;
+    visit(r.rule, r.id);
+  }
+  return { full, short };
+}
+
+export function describePolicy(p: ProgramPolicy, shortRefs: Record<string, string>): string {
+  const ids = "appliesTo" in p ? p.appliesTo : [];
+  const names = ids.map((id) => shortRefs[id] ?? id);
+  const numbered = ids.every((id) => shortRefs[id] && !shortRefs[id].startsWith("“"));
+  const scope =
+    names.length === 0 ? "" : numbered ? ` in ${names.length === 1 ? "requirement" : "requirements"} ${names.join(", ")}` : ` in ${names.join(", ")}`;
+  switch (p.type) {
+    case "minGrade":
+      return `${p.grade} or higher${scope}.`;
+    case "letterGradeRequired":
+      return `Courses${scope} must be taken for a letter grade.`;
+    case "minGpa":
+      return `${p.gpa.toFixed(2)} GPA or higher${scope}.`;
+    case "residencyCredits":
+      return `At least ${p.minCredits} credits${scope} must be taken at Stony Brook.`;
+    case "residencyRequired":
+      return `Courses${scope} must be taken at Stony Brook.`;
+    case "prerequisiteGrade":
+      return `${p.minGrade} or higher in ${p.subjects.join("/")} prerequisites${p.passNoCreditAllowed ? "" : "; no Pass/No Credit"}.`;
+  }
+}
+
+/**
+ * Attaches each substitution to every requirement it changes (one that names a
+ * replaced course or contains the replaced rule). Substitutions in `skip` (shown
+ * elsewhere, e.g. as alternative paths) are left out; ones matching nothing
+ * are returned as unattached.
+ */
+export function attachSubstitutions(
+  program: ProgramDefinition,
+  skip: Set<string>,
+): { byRequirement: Map<string, Substitution[]>; unattached: Substitution[] } {
+  const byRequirement = new Map<string, Substitution[]>();
+  const unattached: Substitution[] = [];
+  const contents = program.requirements.map((r) => {
+    const codes = new Set<string>();
+    const ids = new Set<string>([r.id]);
+    const visit = (rule: Rule) => {
+      if (rule.id) ids.add(rule.id);
+      if (rule.type === "course") codes.add(rule.code);
+      if (rule.type === "choose") rule.from.courses?.forEach((c) => codes.add(c));
+      if (rule.type === "allOf" || rule.type === "anyOf") rule.rules.forEach(visit);
+    };
+    visit(r.rule);
+    return { id: r.id, codes, ids };
+  });
+  for (const sub of program.substitutions) {
+    if (skip.has(sub.id)) continue;
+    const targets = contents.filter(({ codes, ids }) =>
+      sub.replaces.type === "courses" ? sub.replaces.courses.some((c) => codes.has(c)) : ids.has(sub.replaces.ruleId),
+    );
+    if (targets.length === 0) unattached.push(sub);
+    targets.forEach(({ id }) => byRequirement.set(id, [...(byRequirement.get(id) ?? []), sub]));
+  }
+  return { byRequirement, unattached };
 }

@@ -53,13 +53,8 @@ export async function listProgramIds(): Promise<string[]> {
   return (await getRepository().listPrograms()).map((p) => p.id);
 }
 
-/** One program plus titles for every course its rules and sample sequence name. */
-export async function getProgramDetail(id: string) {
-  const repo = getRepository();
-  const [programs, courses] = await Promise.all([repo.listPrograms(), repo.listCourses()]);
-  const program = programs.find((p) => p.id === id);
-  if (!program) return null;
-
+/** Every course code a program's rules, substitutions, and sample sequence name. */
+export function programCourseCodes(program: ProgramDefinition): Set<string> {
   const codes = new Set<string>();
   for (const rule of programRules(program)) {
     walkRules(rule, (r) => {
@@ -70,15 +65,25 @@ export async function getProgramDetail(id: string) {
   for (const term of program.sampleSequence ?? []) {
     for (const slot of term.slots) if (slot.kind === "course") [slot.code, ...(slot.alternatives ?? [])].forEach((c) => codes.add(c));
   }
+  return codes;
+}
 
-  const catalog = new Map(courses.map((c) => [c.code, c]));
-  const courseInfo: Record<string, CourseInfo> = {};
+/** Titles and credits for course codes; codes missing from the catalog are left out. */
+export async function courseInfoFor(codes: Iterable<string>): Promise<Record<string, CourseInfo>> {
+  const catalog = new Map((await getRepository().listCourses()).map((c) => [c.code, c]));
+  const info: Record<string, CourseInfo> = {};
   for (const code of codes) {
     const course = catalog.get(code);
-    if (course) courseInfo[code] = { title: course.title, credits: formatCredits(course.credits) };
+    if (course) info[code] = { title: course.title, credits: formatCredits(course.credits) };
   }
+  return info;
+}
 
-  return { program, courseInfo };
+/** One program plus titles for every course its rules and sample sequence name. */
+export async function getProgramDetail(id: string) {
+  const program = (await getRepository().listPrograms()).find((p) => p.id === id);
+  if (!program) return null;
+  return { program, courseInfo: await courseInfoFor(programCourseCodes(program)) };
 }
 
 export type ProgramDetail = NonNullable<Awaited<ReturnType<typeof getProgramDetail>>>;

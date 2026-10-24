@@ -1,0 +1,176 @@
+Worker 10 groups: J, 9
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_10 --letters J,9 --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Spring 2027 --no-resume
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group J (1/2)…
+  [J] 3 subjects have no active courses.
+  [J] Found 94 course entries.
+  [J] Skipping 24 courses numbered above 499; 70 left.
+    [J 1/70] Opening JDH 261 — The Bible as Literature
+      No View Class Sections button; course has no sections.
+    [J 2/70] Opening JDH 390 — Humanities Topics in Judaic Studies
+      No View Class Sections button; course has no sections.
+    [J 3/70] Opening JDH 447 — Readings in Judaic Studies
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [J 4/70] Opening JDS 225 — Jewish History from Antiquity to the Middle Ages
+      No View Class Sections button; course has no sections.
+    [J 5/70] Opening JDS 226 — Modern Jewish History: Dilemmas of Difference
+      No View Class Sections button; course has no sections.
+    [J 6/70] Opening JDS 241 — Nazi Genocide and the Holocaust
+      No View Class Sections button; course has no sections.
+    [J 7/70] Opening JDS 356 — Zionism, Israel, and the Middle East
+      No View Class Sections button; course has no sections.
+    [J 8/70] Opening JDS 447 — Readings in Judaic Studies
+      Spring 2027: not listed for this course. Available terms: Fall 2026, Summer 2026
+    [J 9/70] Opening JPN 111 — Elementary Japanese I
+      Spring 2027: found 4 class sections.
+    [J 10/70] Opening JPN 112 — Elementary Japanese II
+      Spring 2027: found 12 class sections.
+  Progress: group 1/2 (J 10/70) · 10 scraped, 0 already done, 0 failed · 14.3 pages/min · 41s elapsed · ~4m11s left in J
+    [J 11/70] Opening JPN 211 — Intermediate Japanese I
+      Spring 2027: not listed for this course. Available terms: Fall 2026, Summer 2026
+    [J 12/70] Opening JPN 212 — Intermediate Japanese II
+      Spring 2027: found 1 class sections.
+    [J 13/70] Opening JPN 311 — Advanced Japanese I
+      Spring 2027: not listed for this course. Available terms: Fall 2026, Summer 2026
+    [J 14/70] Opening JPN 312 — Advanced Japanese II
+      Spring 2027: found 1 class sections.
+    [J 15/70] Opening JPN 331 — Social Sciences Topics in Japanese Studies
+      No View Class Sections button; course has no sections.
+    [J 16/70] Opening JPN 332 — Humanities Topics in Japanese Studies
+      No View Class Sections button; course has no sections.
+    [J 17/70] Opening JPN 410 — Business Japanese
+      Spring 2027: not listed for this course. Available terms: Summer 2026
+    [J 18/70] Opening JPN 411 — Advanced Japanese III
+      No View Class Sections button; course has no sections.
+    [J 19/70] Opening JPN 412 — Advanced Japanese IV
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [J 20/70] Opening JPN 426 — Structure of Japanese
+      Spring 2027: found 1 class sections.
+  Progress: group 1/2 (J 20/70) · 20 scraped, 0 already done, 0 failed · 20.1 pages/min · 59s elapsed · ~2m29s left in J
+    [J 21/70] Opening JPN 444 — Experiential Learning
+      No View Class Sections button; course has no sections.
+    [J 22/70] Opening JPN 447 — Independent Study
+      Spring 2027: found 4 class sections.
+    [J 23/70] Opening JPN 475 — Undergraduate Teaching Practicum I
+      Spring 2027: found 6 class sections.
+    [J 24/70] Opening JPN 476 — Undergraduate Teaching Practicum II
+      Spring 2027: found 6 class sections.
+    [J 25/70] Opening JPN 487 — Independent Research
+      Spring 2027: found 5 class sections.
+    [J 26/70] Opening JPN 488 — Internship
+      Spring 2027: found 5 class sections.
+    [J 27/70] Opening JRN 101 — News Literacy
+      Spring 2027: found 4 class sections.
+    [J 28/70] Opening JRN 116 — Introduction to Digital Journalism
+      Spring 2027: found 2 class sections.
+    [J 29/70] Opening JRN 205 — News Reporting & Writing II
+      No View Class Sections button; course has no sections.
+    [J 30/70] Opening JRN 216 — Intermediate Digital Journalism
+      Spring 2027: found 2 class sections.
+  Progress: group 1/2 (J 30/70) · 30 scraped, 0 already done, 0 failed · 14.9 pages/min · 2m01s elapsed · ~2m41s left in J
+    [J 31/70] Opening JRN 217 — Journalistic Reporting and Writing
+      Spring 2027: found 1 class sections.
+    [J 32/70] Opening JRN 301 — The Changing News Business
+      Spring 2027: found 1 class sections.
+    [J 33/70] Opening JRN 303 — Global Issues in Journalism
+      Spring 2027: found 1 class sections.
+    [J 34/70] Opening JRN 310 — Multimedia Newsroom I
+      No View Class Sections button; course has no sections.
+    [J 35/70] Opening JRN 311 — Advanced Digital Journalism - Text
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [J 36/70] Opening JRN 312 — Podcasting, Radio, and Storytelling
+      Spring 2027: found 1 class sections.
+    [J 37/70] Opening JRN 313 — Advanced Digital Journalism - Audio-Visual
+      Spring 2027: found 1 class sections.
+    [J 38/70] Opening JRN 319 — The Image of the Journalist in Popular Culture
+      No View Class Sections button; course has no sections.
+    [J 39/70] Opening JRN 320 — Multimedia Newsroom II
+      No View Class Sections button; course has no sections.
+    [J 40/70] Opening JRN 322 — Working Newsroom
+      Spring 2027: found 1 class sections.
+  Progress: group 1/2 (J 40/70) · 40 scraped, 0 already done, 0 failed · 14.9 pages/min · 2m41s elapsed · ~2m01s left in J
+    [J 41/70] Opening JRN 334 — Science and Health Reporting
+      No View Class Sections button; course has no sections.
+    [J 42/70] Opening JRN 335 — Reporting in New York City
+      No View Class Sections button; course has no sections.
+    [J 43/70] Opening JRN 336 — Sports Reporting
+      Spring 2027: found 1 class sections.
+    [J 44/70] Opening JRN 337 — Introduction to Narrative Journalism
+      No View Class Sections button; course has no sections.
+    [J 45/70] Opening JRN 338 — Sports Broadcasting
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [J 46/70] Opening JRN 339 — Foreign Reporting
+      Spring 2027: found 1 class sections.
+    [J 47/70] Opening JRN 340 — Beat Reporting
+      No View Class Sections button; course has no sections.
+    [J 48/70] Opening JRN 363 — Magazine Writing
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [J 49/70] Opening JRN 364 — Advanced Reporting
+      No View Class Sections button; course has no sections.
+    [J 50/70] Opening JRN 366 — Press & the Presidency
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+  Progress: group 1/2 (J 50/70) · 50 scraped, 0 already done, 0 failed · 16.4 pages/min · 3m03s elapsed · ~1m13s left in J
+    Pausing 5s after 50 detail pages…
+    [J 51/70] Opening JRN 367 — Opinion Journalism
+      Spring 2027: found 1 class sections.
+    [J 52/70] Opening JRN 368 — Broadcast Engineering and Control Room Operation
+      No View Class Sections button; course has no sections.
+    [J 53/70] Opening JRN 370 — Advanced Visual Reporting and Storytelling
+      No View Class Sections button; course has no sections.
+    [J 54/70] Opening JRN 371 — The Big Time: News, Sports, and Weather
+      No View Class Sections button; course has no sections.
+    [J 55/70] Opening JRN 386 — Eyewitness News
+      No View Class Sections button; course has no sections.
+    [J 56/70] Opening JRN 390 — Special Topics in Journalism
+      Spring 2027: found 2 class sections.
+    [J 57/70] Opening JRN 392 — Journalism Without Walls Prep
+      No View Class Sections button; course has no sections.
+    [J 58/70] Opening JRN 413 — Journalisms of the Global South
+      Spring 2027: found 1 class sections.
+    [J 59/70] Opening JRN 433 — Journalistic Book and Serial Narrative Production
+      No View Class Sections button; course has no sections.
+    [J 60/70] Opening JRN 434 — Photojournalism
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (J 60/70) · 60 scraped, 0 already done, 0 failed · 17.1 pages/min · 3m30s elapsed · ~35s left in J
+    [J 61/70] Opening JRN 435 — Journalism Without Walls
+      No View Class Sections button; course has no sections.
+    [J 62/70] Opening JRN 438 — Weathercasting & Environmental Reporting
+      No View Class Sections button; course has no sections.
+    [J 63/70] Opening JRN 439 — WCast_Enviro Rprting: Feat Story & Mini-Doc BCast
+      No View Class Sections button; course has no sections.
+    [J 64/70] Opening JRN 444 — Experiential Learning
+      Spring 2027: found 1 class sections.
+    [J 65/70] Opening JRN 475 — Undergraduate Teaching Practicum I
+      Spring 2027: found 1 class sections.
+    [J 66/70] Opening JRN 476 — Undergraduate Teaching Practicum II
+      Spring 2027: found 1 class sections.
+    [J 67/70] Opening JRN 487 — Independent Study
+      Spring 2027: found 5 class sections.
+    [J 68/70] Opening JRN 488 — Journalism Internship
+      Spring 2027: found 1 class sections.
+    [J 69/70] Opening JRN 489 — Journalism Specialized Internship
+      Spring 2027: found 1 class sections.
+    [J 70/70] Opening JRN 490 — Journalism Senior Project
+      Spring 2027: found 2 class sections.
+  Progress: group 1/2 (J 70/70) · 70 scraped, 0 already done, 0 failed · 15.6 pages/min · 4m29s elapsed
+  Progress: group 2/2 (J 70/70) · 70 scraped, 0 already done, 0 failed · 15.6 pages/min · 4m29s elapsed
+
+Processing subject-code group 9 (2/2)…
+  [9] Letter has no subject groups.
+Exported index: 70 records (JSON + CSV)
+Exported details: 70 records (JSONL + JSON + CSV)
+Exported sections: 77 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_10/semesteros-export.zip
+
+Done in 4m30s: 70 scraped, 0 already done, 0 failed, 24 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_10/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_10/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_10/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_10/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_10/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_10/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_10/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_10/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.

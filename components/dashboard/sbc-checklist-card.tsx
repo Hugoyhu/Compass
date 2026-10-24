@@ -1,10 +1,11 @@
 import { StatusIcon } from "@/components/audit/status-badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import type { SbcAudit } from "@/lib/engine/audit";
+import { groupSbcResults, type SbcAudit, type SbcResult } from "@/lib/engine/audit";
 import { STATUS_LABELS } from "@/lib/engine/describe";
 
 export function SbcChecklistCard({ audit }: { audit: SbcAudit }) {
+  const { required, threeOf } = groupSbcResults(audit.results);
   return (
     <Card className="h-full">
       <CardHeader>
@@ -14,8 +15,22 @@ export function SbcChecklistCard({ audit }: { audit: SbcAudit }) {
         </CardDescription>
       </CardHeader>
       <CardContent>
+        <SbcGrid results={required} />
+        {threeOf.length > 0 && (
+          <>
+            <p className="mt-3 mb-1.5 text-xs font-medium text-muted-foreground">Three of:</p>
+            <SbcGrid results={threeOf} />
+          </>
+        )}
+      </CardContent>
+    </Card>
+  );
+}
+
+function SbcGrid({ results }: { results: SbcResult[] }) {
+  return (
         <ul className="grid grid-cols-3 gap-2 sm:grid-cols-4">
-          {audit.results.map((r) => (
+          {results.map((r) => (
             <li key={r.category.code}>
               <Tooltip>
                 <TooltipTrigger
@@ -42,7 +57,5 @@ export function SbcChecklistCard({ audit }: { audit: SbcAudit }) {
             </li>
           ))}
         </ul>
-      </CardContent>
-    </Card>
   );
 }

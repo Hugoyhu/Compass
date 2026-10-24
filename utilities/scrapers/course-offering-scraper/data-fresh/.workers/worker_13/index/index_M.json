@@ -1,0 +1,2418 @@
+[
+  {
+    "subject": "MAE",
+    "course_number": "301",
+    "course_code": "MAE 301",
+    "title": "Foundations of Secondary School Mathematics",
+    "source_file": "index_M.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "MAE",
+    "course_number": "302",
+    "course_code": "MAE 302",
+    "title": "Methods and Materials for Teaching Secondary School Mathematics",
+    "source_file": "index_M.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "MAE",
+    "course_number": "311",
+    "course_code": "MAE 311",
+    "title": "Introduction to Methods of Teaching Secondary School Mathematics",
+    "source_file": "index_M.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "MAE",
+    "course_number": "312",
+    "course_code": "MAE 312",
+    "title": "Micro-Teaching",
+    "source_file": "index_M.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "MAE",
+    "course_number": "330",
+    "course_code": "MAE 330",
+    "title": "Technology in Mathematics Education",
+    "source_file": "index_M.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "MAE",
+    "course_number": "400",
+    "course_code": "MAE 400",
+    "title": "Experiential Learning, Speak Effectively, Practice Critical and Ethical Reasoning",
+    "source_file": "index_M.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "MAE",
+    "course_number": "401",
+    "course_code": "MAE 401",
+    "title": "Respect Diversity and Foster Inclusiveness (DIV) for BS/MA in Teaching only",
+    "source_file": "index_M.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "MAE",
+    "course_number": "447",
+    "course_code": "MAE 447",
+    "title": "Directed Readings in Mathematics Education",
+    "source_file": "index_M.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "MAE",
+    "course_number": "451",
+    "course_code": "MAE 451",
+    "title": "Supervised Teaching - Middle School Level Grades 7-9",
+    "source_file": "index_M.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "MAE",
+    "course_number": "452",
+    "course_code": "MAE 452",
+    "title": "Supervised Teaching - High School Grades 10-12",
+    "source_file": "index_M.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "MAE",
+    "course_number": "454",
+    "course_code": "MAE 454",
+    "title": "Student Teaching Seminar",
+    "source_file": "index_M.html",
+    "source_group_index": 0
+  },
+  {
+    "subject": "MAP",
+    "course_number": "101",
+    "course_code": "MAP 101",
+    "title": "Fundamentals of Arithmetic and Algebra",
+    "source_file": "index_M.html",
+    "source_group_index": 1
+  },
+  {
+    "subject": "MAP",
+    "course_number": "102",
+    "course_code": "MAP 102",
+    "title": "Proficiency Algebra Review",
+    "source_file": "index_M.html",
+    "source_group_index": 1
+  },
+  {
+    "subject": "MAP",
+    "course_number": "103",
+    "course_code": "MAP 103",
+    "title": "Proficiency Algebra",
+    "source_file": "index_M.html",
+    "source_group_index": 1
+  },
+  {
+    "subject": "MAP",
+    "course_number": "104",
+    "course_code": "MAP 104",
+    "title": "Overview of Math Fundamentals",
+    "source_file": "index_M.html",
+    "source_group_index": 1
+  },
+  {
+    "subject": "MAR",
+    "course_number": "101",
+    "course_code": "MAR 101",
+    "title": "Long Island Sound: Science and Use",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "102",
+    "course_code": "MAR 102",
+    "title": "Introduction to SCUBA Diving",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "104",
+    "course_code": "MAR 104",
+    "title": "Oceanography",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "105",
+    "course_code": "MAR 105",
+    "title": "Introduction to Oceanography Laboratory",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "106",
+    "course_code": "MAR 106",
+    "title": "Life in Our Ocean",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "107",
+    "course_code": "MAR 107",
+    "title": "Marine Organisms in Changing Oceans",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "110",
+    "course_code": "MAR 110",
+    "title": "Shark Biology & Conservation",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "201",
+    "course_code": "MAR 201",
+    "title": "The Jaws Effect",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "301",
+    "course_code": "MAR 301",
+    "title": "Environmental Microbiology",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "302",
+    "course_code": "MAR 302",
+    "title": "Marine Microbiology and Microbial Ecology",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "303",
+    "course_code": "MAR 303",
+    "title": "Long Island Marine Habitats",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "304",
+    "course_code": "MAR 304",
+    "title": "Waves, Tides, and Beaches",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "305",
+    "course_code": "MAR 305",
+    "title": "Experimental Marine Biology",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "306",
+    "course_code": "MAR 306",
+    "title": "Introduction to Scientific Diving",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "308",
+    "course_code": "MAR 308",
+    "title": "Environmental Instrumental Analysis",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "315",
+    "course_code": "MAR 315",
+    "title": "Marine Conservation",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "318",
+    "course_code": "MAR 318",
+    "title": "Engineering Geology and Coastal Processes",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "320",
+    "course_code": "MAR 320",
+    "title": "Limnology",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "333",
+    "course_code": "MAR 333",
+    "title": "Coastal Oceanography",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "334",
+    "course_code": "MAR 334",
+    "title": "Remote Sensing of the Environment",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "336",
+    "course_code": "MAR 336",
+    "title": "Marine Pollution",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "340",
+    "course_code": "MAR 340",
+    "title": "Environmental Problems and Solutions",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "346",
+    "course_code": "MAR 346",
+    "title": "Marine Sedimentology",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "349",
+    "course_code": "MAR 349",
+    "title": "Introduction to Biological Oceanography",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "350",
+    "course_code": "MAR 350",
+    "title": "Introduction to Ocean Physics",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "351",
+    "course_code": "MAR 351",
+    "title": "Introduction to Ocean Chemistry",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "352",
+    "course_code": "MAR 352",
+    "title": "Introduction to Physical Oceanography",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "354",
+    "course_code": "MAR 354",
+    "title": "Introduction to Geological Oceanography",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "355",
+    "course_code": "MAR 355",
+    "title": "Coastal Cultural Experience",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "356",
+    "course_code": "MAR 356",
+    "title": "Maritime Traditions of New England",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "357",
+    "course_code": "MAR 357",
+    "title": "Unsinkable Technologies: History of Maritime Science and Technology",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "362",
+    "course_code": "MAR 362",
+    "title": "Marine Vertebrate Biology",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "365",
+    "course_code": "MAR 365",
+    "title": "Bioacoustics",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "370",
+    "course_code": "MAR 370",
+    "title": "Marine Mammals",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "373",
+    "course_code": "MAR 373",
+    "title": "Marine Apex Predators: Ecology and Conservation",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "375",
+    "course_code": "MAR 375",
+    "title": "Marine Mammal and Sea Turtle Rehabilitation",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "376",
+    "course_code": "MAR 376",
+    "title": "Biology and Conservation of Sea Turtles",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "377",
+    "course_code": "MAR 377",
+    "title": "Biology and Conservation of Seabirds",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "380",
+    "course_code": "MAR 380",
+    "title": "Ichthyology",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "382",
+    "course_code": "MAR 382",
+    "title": "Introduction to Next Generation Sequencing and its applications across fields",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "384",
+    "course_code": "MAR 384",
+    "title": "Diseases of Aquatic Organisms",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "385",
+    "course_code": "MAR 385",
+    "title": "Principles of Fishery Biology and Management",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "386",
+    "course_code": "MAR 386",
+    "title": "Ecosystem Science for Fisheries Management",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "388",
+    "course_code": "MAR 388",
+    "title": "Tropical Marine Ecology",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "389",
+    "course_code": "MAR 389",
+    "title": "Coral Biology and Conservation - Red Sea Program",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "390",
+    "course_code": "MAR 390",
+    "title": "Aquaculture",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "392",
+    "course_code": "MAR 392",
+    "title": "Waste Management Issues",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "393",
+    "course_code": "MAR 393",
+    "title": "Waste Treatment Technologies",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "394",
+    "course_code": "MAR 394",
+    "title": "Environmental Toxicology and Public Health",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "395",
+    "course_code": "MAR 395",
+    "title": "Topics in Marine Environmental Sciences",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "447",
+    "course_code": "MAR 447",
+    "title": "Readings in Marine Science",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "458",
+    "course_code": "MAR 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "459",
+    "course_code": "MAR 459",
+    "title": "Write Effectively in ATM, ENS, MAR and MVB",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "475",
+    "course_code": "MAR 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "487",
+    "course_code": "MAR 487",
+    "title": "Research in Marine Sciences",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAR",
+    "course_number": "488",
+    "course_code": "MAR 488",
+    "title": "Internship",
+    "source_file": "index_M.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "MAT",
+    "course_number": "118",
+    "course_code": "MAT 118",
+    "title": "Mathematical Thinking",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "119",
+    "course_code": "MAT 119",
+    "title": "Foundations for Precalculus",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "122",
+    "course_code": "MAT 122",
+    "title": "Overview of Calculus with Applications",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "123",
+    "course_code": "MAT 123",
+    "title": "Precalculus",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "125",
+    "course_code": "MAT 125",
+    "title": "Calculus A",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "126",
+    "course_code": "MAT 126",
+    "title": "Calculus B",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "127",
+    "course_code": "MAT 127",
+    "title": "Calculus C",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "130",
+    "course_code": "MAT 130",
+    "title": "Trigonometry and Logarithms",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "131",
+    "course_code": "MAT 131",
+    "title": "Calculus I",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "132",
+    "course_code": "MAT 132",
+    "title": "Calculus II",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "200",
+    "course_code": "MAT 200",
+    "title": "Logic, Language and Proof",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "203",
+    "course_code": "MAT 203",
+    "title": "Calculus III with Applications",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "211",
+    "course_code": "MAT 211",
+    "title": "Introduction to Linear Algebra",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "250",
+    "course_code": "MAT 250",
+    "title": "Introduction to Advanced Mathematics",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "260",
+    "course_code": "MAT 260",
+    "title": "Problem Solving in Mathematics",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "303",
+    "course_code": "MAT 303",
+    "title": "Calculus IV with Applications",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "307",
+    "course_code": "MAT 307",
+    "title": "Multivariable Calculus with Linear Algebra",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "308",
+    "course_code": "MAT 308",
+    "title": "Differential Equations with Linear Algebra",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "310",
+    "course_code": "MAT 310",
+    "title": "Linear Algebra",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "311",
+    "course_code": "MAT 311",
+    "title": "Number Theory",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "312",
+    "course_code": "MAT 312",
+    "title": "Applied Algebra",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "313",
+    "course_code": "MAT 313",
+    "title": "Abstract Algebra",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "314",
+    "course_code": "MAT 314",
+    "title": "Abstract Algebra II",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "315",
+    "course_code": "MAT 315",
+    "title": "Advanced Linear Algebra",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "319",
+    "course_code": "MAT 319",
+    "title": "Foundations of Analysis",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "320",
+    "course_code": "MAT 320",
+    "title": "Introduction to Analysis",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "322",
+    "course_code": "MAT 322",
+    "title": "Analysis in Several Dimensions",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "324",
+    "course_code": "MAT 324",
+    "title": "Real Analysis",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "331",
+    "course_code": "MAT 331",
+    "title": "Computer-Assisted Mathematical Problem Solving",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "336",
+    "course_code": "MAT 336",
+    "title": "History of Mathematics",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "341",
+    "course_code": "MAT 341",
+    "title": "Applied Real Analysis",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "342",
+    "course_code": "MAT 342",
+    "title": "Applied Complex Analysis",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "344",
+    "course_code": "MAT 344",
+    "title": "Complex Analysis",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "351",
+    "course_code": "MAT 351",
+    "title": "Differential Equations: Dynamics and Chaos",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "355",
+    "course_code": "MAT 355",
+    "title": "Markov Chains and Mixing Times",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "360",
+    "course_code": "MAT 360",
+    "title": "Geometric Structures",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "362",
+    "course_code": "MAT 362",
+    "title": "Differential Geometry of Surfaces",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "364",
+    "course_code": "MAT 364",
+    "title": "Topology and Geometry",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "371",
+    "course_code": "MAT 371",
+    "title": "Logic",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "373",
+    "course_code": "MAT 373",
+    "title": "Analysis of Algorithms",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "401",
+    "course_code": "MAT 401",
+    "title": "Seminar in Mathematics",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "402",
+    "course_code": "MAT 402",
+    "title": "Seminar in Mathematics",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "444",
+    "course_code": "MAT 444",
+    "title": "Experiential Learning",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "458",
+    "course_code": "MAT 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "459",
+    "course_code": "MAT 459",
+    "title": "Write Effectively in Mathematics",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "464",
+    "course_code": "MAT 464",
+    "title": "Foundations of Topology",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "475",
+    "course_code": "MAT 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "487",
+    "course_code": "MAT 487",
+    "title": "Independent Study in Special Topics",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MAT",
+    "course_number": "495",
+    "course_code": "MAT 495",
+    "title": "Honors Thesis",
+    "source_file": "index_M.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "MDA",
+    "course_number": "117",
+    "course_code": "MDA 117",
+    "title": "Media: Analysis and Culture",
+    "source_file": "index_M.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "MDA",
+    "course_number": "277",
+    "course_code": "MDA 277",
+    "title": "The Media Industry",
+    "source_file": "index_M.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "MDA",
+    "course_number": "480",
+    "course_code": "MDA 480",
+    "title": "Projects in Media",
+    "source_file": "index_M.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "MDA",
+    "course_number": "488",
+    "course_code": "MDA 488",
+    "title": "Internship",
+    "source_file": "index_M.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "MEC",
+    "course_number": "100",
+    "course_code": "MEC 100",
+    "title": "Introduction to Mechanical Engineering",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "101",
+    "course_code": "MEC 101",
+    "title": "Freshman Design Innovation",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "102",
+    "course_code": "MEC 102",
+    "title": "Engineering Computing and Problem Solving",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "104",
+    "course_code": "MEC 104",
+    "title": "Practical Science of Things",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "105",
+    "course_code": "MEC 105",
+    "title": "Everyday Science and Engineering",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "203",
+    "course_code": "MEC 203",
+    "title": "Engineering Graphics and CAD",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "220",
+    "course_code": "MEC 220",
+    "title": "Practical Electronics for Mechanical Engineers",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "225",
+    "course_code": "MEC 225",
+    "title": "Fundamentals of Machining Practices",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "226",
+    "course_code": "MEC 226",
+    "title": "Modern Machining Practices",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "260",
+    "course_code": "MEC 260",
+    "title": "Engineering Statics",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "262",
+    "course_code": "MEC 262",
+    "title": "Engineering Dynamics",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "280",
+    "course_code": "MEC 280",
+    "title": "Pollution and Human Health",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "300",
+    "course_code": "MEC 300",
+    "title": "Professional Conduct for Engineers",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "301",
+    "course_code": "MEC 301",
+    "title": "Thermodynamics",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "305",
+    "course_code": "MEC 305",
+    "title": "Heat and Mass Transfer",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "310",
+    "course_code": "MEC 310",
+    "title": "Introduction to Machine Design",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "316",
+    "course_code": "MEC 316",
+    "title": "Instrumentation and Solid Mechanics Laboratory",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "317",
+    "course_code": "MEC 317",
+    "title": "Thermal Sciences and Fluid Mechanics Laboratory",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "320",
+    "course_code": "MEC 320",
+    "title": "Numerical Methods in Engineering Design and Analysis",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "325",
+    "course_code": "MEC 325",
+    "title": "Manufacturing Processes",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "363",
+    "course_code": "MEC 363",
+    "title": "Mechanics of Solids",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "364",
+    "course_code": "MEC 364",
+    "title": "Introduction to Fluid Mechanics",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "393",
+    "course_code": "MEC 393",
+    "title": "Engineering Fluid Mechanics",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "398",
+    "course_code": "MEC 398",
+    "title": "Thermodynamics II",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "402",
+    "course_code": "MEC 402",
+    "title": "Mechanical Vibrations",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "410",
+    "course_code": "MEC 410",
+    "title": "Design of Machine Elements",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "411",
+    "course_code": "MEC 411",
+    "title": "Control System Analysis and Design",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "422",
+    "course_code": "MEC 422",
+    "title": "Thermal System Design",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "423",
+    "course_code": "MEC 423",
+    "title": "Internal Combustion Engines",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "440",
+    "course_code": "MEC 440",
+    "title": "Mechanical Engineering Design I",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "441",
+    "course_code": "MEC 441",
+    "title": "Mechanical Engineering Design II",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "442",
+    "course_code": "MEC 442",
+    "title": "Introduction to Experimental Stress Analysis",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "450",
+    "course_code": "MEC 450",
+    "title": "Mechatronics",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "455",
+    "course_code": "MEC 455",
+    "title": "Applied Stress Analysis",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "456",
+    "course_code": "MEC 456",
+    "title": "Introduction to Engineering Mechanics of Composites",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "457",
+    "course_code": "MEC 457",
+    "title": "Engineering Composites Fabrication and Characterization",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "464",
+    "course_code": "MEC 464",
+    "title": "Fundamentals of Aerodynamics",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "465",
+    "course_code": "MEC 465",
+    "title": "Aerospace Propulsion",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "470",
+    "course_code": "MEC 470",
+    "title": "Introduction to Tribology",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "475",
+    "course_code": "MEC 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "488",
+    "course_code": "MEC 488",
+    "title": "Mechanical Engineering Internship",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "491",
+    "course_code": "MEC 491",
+    "title": "Topics in Mechanical Engineering",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "492",
+    "course_code": "MEC 492",
+    "title": "Topics in Mechanical Engineering",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "495",
+    "course_code": "MEC 495",
+    "title": "Professional Engineering Seminar",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MEC",
+    "course_number": "499",
+    "course_code": "MEC 499",
+    "title": "Research in Mechanical Engineering",
+    "source_file": "index_M.html",
+    "source_group_index": 8
+  },
+  {
+    "subject": "MSL",
+    "course_number": "101",
+    "course_code": "MSL 101",
+    "title": "Introduction to the Army",
+    "source_file": "index_M.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "MSL",
+    "course_number": "102",
+    "course_code": "MSL 102",
+    "title": "Foundations of Agile and Adaptive Leadership",
+    "source_file": "index_M.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "MSL",
+    "course_number": "201",
+    "course_code": "MSL 201",
+    "title": "Leadership and Decision Making",
+    "source_file": "index_M.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "MSL",
+    "course_number": "202",
+    "course_code": "MSL 202",
+    "title": "Army Doctrine and Team Development",
+    "source_file": "index_M.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "MSL",
+    "course_number": "301",
+    "course_code": "MSL 301",
+    "title": "Training Management and Warfighting Functions",
+    "source_file": "index_M.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "MSL",
+    "course_number": "302",
+    "course_code": "MSL 302",
+    "title": "Applied Leadership in Small Unit Operations",
+    "source_file": "index_M.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "MSL",
+    "course_number": "401",
+    "course_code": "MSL 401",
+    "title": "The Army Officer",
+    "source_file": "index_M.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "MSL",
+    "course_number": "402",
+    "course_code": "MSL 402",
+    "title": "Company Grade Leadership",
+    "source_file": "index_M.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "MUS",
+    "course_number": "101",
+    "course_code": "MUS 101",
+    "title": "Introduction to Western Classical Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "103",
+    "course_code": "MUS 103",
+    "title": "Introduction to Music and the Cinema",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "105",
+    "course_code": "MUS 105",
+    "title": "Music Cultures of the World",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "106",
+    "course_code": "MUS 106",
+    "title": "Introduction to African American Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "109",
+    "course_code": "MUS 109",
+    "title": "Rock, Popular Music, and Society",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "119",
+    "course_code": "MUS 119",
+    "title": "The Elements of Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "120",
+    "course_code": "MUS 120",
+    "title": "Elementary Musicianship",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "121",
+    "course_code": "MUS 121",
+    "title": "Musicianship I",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "122",
+    "course_code": "MUS 122",
+    "title": "Beginning Keyboard",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "123",
+    "course_code": "MUS 123",
+    "title": "Elementary Guitar",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "130",
+    "course_code": "MUS 130",
+    "title": "Sound Structures",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "141",
+    "course_code": "MUS 141",
+    "title": "Keyboard Harmony A",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "142",
+    "course_code": "MUS 142",
+    "title": "Keyboard Harmony B",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "161",
+    "course_code": "MUS 161",
+    "title": "Piano",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "163",
+    "course_code": "MUS 163",
+    "title": "Harpsichord",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "165",
+    "course_code": "MUS 165",
+    "title": "Violin",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "166",
+    "course_code": "MUS 166",
+    "title": "Viola",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "167",
+    "course_code": "MUS 167",
+    "title": "Cello",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "168",
+    "course_code": "MUS 168",
+    "title": "String Bass",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "169",
+    "course_code": "MUS 169",
+    "title": "Classical Guitar",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "170",
+    "course_code": "MUS 170",
+    "title": "Flute",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "171",
+    "course_code": "MUS 171",
+    "title": "Oboe",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "172",
+    "course_code": "MUS 172",
+    "title": "Clarinet",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "173",
+    "course_code": "MUS 173",
+    "title": "Bassoon",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "175",
+    "course_code": "MUS 175",
+    "title": "Horn",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "176",
+    "course_code": "MUS 176",
+    "title": "Trumpet",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "177",
+    "course_code": "MUS 177",
+    "title": "Trombone",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "178",
+    "course_code": "MUS 178",
+    "title": "Saxophone",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "180",
+    "course_code": "MUS 180",
+    "title": "Percussion",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "182",
+    "course_code": "MUS 182",
+    "title": "Voice",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "(185)",
+    "course_code": "MUS (185)",
+    "title": "Individual Jazz Study ** available as of 01/01/2027",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "187",
+    "course_code": "MUS 187",
+    "title": "Other Instruments",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "189",
+    "course_code": "MUS 189",
+    "title": "Introduction to Jazz Improvisation",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "205",
+    "course_code": "MUS 205",
+    "title": "Creative Coding - Multimedia Interactions",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "207",
+    "course_code": "MUS 207",
+    "title": "Introduction to Music Performers and Performance",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "208",
+    "course_code": "MUS 208",
+    "title": "Introduction to Music Technology",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "210",
+    "course_code": "MUS 210",
+    "title": "Introduction to Music Histories and Cultures",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "220",
+    "course_code": "MUS 220",
+    "title": "Musicianship II",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "221",
+    "course_code": "MUS 221",
+    "title": "Musicianship III",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "235",
+    "course_code": "MUS 235",
+    "title": "Introduction to African Drumming",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "261",
+    "course_code": "MUS 261",
+    "title": "Stony Brook Chorale",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "262",
+    "course_code": "MUS 262",
+    "title": "University Orchestra",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "263",
+    "course_code": "MUS 263",
+    "title": "University Wind Ensemble",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "264",
+    "course_code": "MUS 264",
+    "title": "Big Band Jazz Ensemble",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "265",
+    "course_code": "MUS 265",
+    "title": "Workshop in Performance",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "266",
+    "course_code": "MUS 266",
+    "title": "Guitar Workshop",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "267",
+    "course_code": "MUS 267",
+    "title": "Small Jazz Ensemble Level 1",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "268",
+    "course_code": "MUS 268",
+    "title": "Spirit of Stony Brook Athletic Band",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "271",
+    "course_code": "MUS 271",
+    "title": "Camerata Singers",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "289",
+    "course_code": "MUS 289",
+    "title": "Small Jazz Ensemble Level 2",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "290",
+    "course_code": "MUS 290",
+    "title": "Vocal Repertory",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "300",
+    "course_code": "MUS 300",
+    "title": "Music, Technology, and Digital Culture",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "301",
+    "course_code": "MUS 301",
+    "title": "Shakespeare and Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "302",
+    "course_code": "MUS 302",
+    "title": "Music in the Age of Bach",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "303",
+    "course_code": "MUS 303",
+    "title": "Music in the Age of Beethoven",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "304",
+    "course_code": "MUS 304",
+    "title": "American Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "306",
+    "course_code": "MUS 306",
+    "title": "The Music and Culture of Hip-Hop",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "307",
+    "course_code": "MUS 307",
+    "title": "Imaginative Worlds of Opera",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "308",
+    "course_code": "MUS 308",
+    "title": "History of Jazz",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "309",
+    "course_code": "MUS 309",
+    "title": "Music Since 1900",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "310",
+    "course_code": "MUS 310",
+    "title": "Music and Culture in the 1960's",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "311",
+    "course_code": "MUS 311",
+    "title": "Topics in Ethnomusicology",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "313",
+    "course_code": "MUS 313",
+    "title": "Hearing Politics",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "314",
+    "course_code": "MUS 314",
+    "title": "Music, Gender, and Sexuality",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "315",
+    "course_code": "MUS 315",
+    "title": "The Structural Principles of Music I",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "316",
+    "course_code": "MUS 316",
+    "title": "The Structural Principles of Music II",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "317",
+    "course_code": "MUS 317",
+    "title": "Music in China",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "320",
+    "course_code": "MUS 320",
+    "title": "U.S. Popular Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "321",
+    "course_code": "MUS 321",
+    "title": "Tonal Harmony I",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "322",
+    "course_code": "MUS 322",
+    "title": "Tonal Harmony II",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "323",
+    "course_code": "MUS 323",
+    "title": "Techniques of Music, 1880 to the Present",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "324",
+    "course_code": "MUS 324",
+    "title": "Harmonic Foundations of American Popular Music I",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "325",
+    "course_code": "MUS 325",
+    "title": "Harmonic Foundations of American Popular Music II",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "331",
+    "course_code": "MUS 331",
+    "title": "Musicianship IV",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "335",
+    "course_code": "MUS 335",
+    "title": "Advanced African Drumming",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "339",
+    "course_code": "MUS 339",
+    "title": "Composition",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "340",
+    "course_code": "MUS 340",
+    "title": "Timbre and Technology",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "341",
+    "course_code": "MUS 341",
+    "title": "Sound Design",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "344",
+    "course_code": "MUS 344",
+    "title": "Audio Engineering",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "350",
+    "course_code": "MUS 350",
+    "title": "Western Classical Music Before 1750",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "351",
+    "course_code": "MUS 351",
+    "title": "Western Classical Music 1750 to 1900",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "352",
+    "course_code": "MUS 352",
+    "title": "Western Classical Music from 1900 to the Present",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "353",
+    "course_code": "MUS 353",
+    "title": "Contemporary Music Practices",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "361",
+    "course_code": "MUS 361",
+    "title": "Piano",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "362",
+    "course_code": "MUS 362",
+    "title": "Piano Pedagogy",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "363",
+    "course_code": "MUS 363",
+    "title": "Harpsichord",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "365",
+    "course_code": "MUS 365",
+    "title": "Violin",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "366",
+    "course_code": "MUS 366",
+    "title": "Viola",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "367",
+    "course_code": "MUS 367",
+    "title": "Cello",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "368",
+    "course_code": "MUS 368",
+    "title": "String Bass",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "369",
+    "course_code": "MUS 369",
+    "title": "Classical Guitar",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "370",
+    "course_code": "MUS 370",
+    "title": "Flute",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "371",
+    "course_code": "MUS 371",
+    "title": "Oboe",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "372",
+    "course_code": "MUS 372",
+    "title": "Clarinet",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "373",
+    "course_code": "MUS 373",
+    "title": "Bassoon",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "375",
+    "course_code": "MUS 375",
+    "title": "Horn",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "376",
+    "course_code": "MUS 376",
+    "title": "Trumpet",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "377",
+    "course_code": "MUS 377",
+    "title": "Trombone",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "378",
+    "course_code": "MUS 378",
+    "title": "Saxophone",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "380",
+    "course_code": "MUS 380",
+    "title": "Percussion",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "382",
+    "course_code": "MUS 382",
+    "title": "Voice",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "387",
+    "course_code": "MUS 387",
+    "title": "Other Instruments",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "388",
+    "course_code": "MUS 388",
+    "title": "Fundamentals of Accompanying",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "390",
+    "course_code": "MUS 390",
+    "title": "Advanced Accompanying",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "391",
+    "course_code": "MUS 391",
+    "title": "Chamber Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "421",
+    "course_code": "MUS 421",
+    "title": "Analysis of Tonal Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "422",
+    "course_code": "MUS 422",
+    "title": "Analysis of Post-Tonal Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "437",
+    "course_code": "MUS 437",
+    "title": "Electronic Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "439",
+    "course_code": "MUS 439",
+    "title": "Advanced Composition",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "444",
+    "course_code": "MUS 444",
+    "title": "Experiential Learning",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "450",
+    "course_code": "MUS 450",
+    "title": "Seminar in the History of Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "451",
+    "course_code": "MUS 451",
+    "title": "Senior Seminar in Ethnography of Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "458",
+    "course_code": "MUS 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "459",
+    "course_code": "MUS 459",
+    "title": "Write Effectively in Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "475",
+    "course_code": "MUS 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "476",
+    "course_code": "MUS 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "487",
+    "course_code": "MUS 487",
+    "title": "Independent Project",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "488",
+    "course_code": "MUS 488",
+    "title": "Internship",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "491",
+    "course_code": "MUS 491",
+    "title": "Conducting",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MUS",
+    "course_number": "495",
+    "course_code": "MUS 495",
+    "title": "Senior Honors Project in Music",
+    "source_file": "index_M.html",
+    "source_group_index": 25
+  },
+  {
+    "subject": "MVL",
+    "course_number": "141",
+    "course_code": "MVL 141",
+    "title": "The Legend of King Arthur",
+    "source_file": "index_M.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "MVL",
+    "course_number": "241",
+    "course_code": "MVL 241",
+    "title": "Heroes and Warriors",
+    "source_file": "index_M.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "MVL",
+    "course_number": "447",
+    "course_code": "MVL 447",
+    "title": "Independent Readings and Research",
+    "source_file": "index_M.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "MVL",
+    "course_number": "475",
+    "course_code": "MVL 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_M.html",
+    "source_group_index": 26
+  },
+  {
+    "subject": "MVL",
+    "course_number": "476",
+    "course_code": "MVL 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_M.html",
+    "source_group_index": 26
+  }
+]

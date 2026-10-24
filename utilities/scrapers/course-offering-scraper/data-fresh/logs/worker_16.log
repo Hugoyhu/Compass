@@ -1,0 +1,572 @@
+Worker 16 groups: P
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_16 --letters P --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Spring 2027 --no-resume
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group P (1/1)…
+  [P] 9 subjects have no active courses.
+  [P] Found 601 course entries.
+  [P] Skipping 343 courses numbered above 499; 258 left.
+    [P 1/258] Opening PAE 101 — Intermediate Academic English
+      No View Class Sections button; course has no sections.
+    [P 2/258] Opening PAE (102) — Advanced Academic English ** available as of 08/20/2040
+      No View Class Sections button; course has no sections.
+    [P 3/258] Opening PER 101 — Intensive Elementary Persian
+      No View Class Sections button; course has no sections.
+    [P 4/258] Opening PER 111 — Elementary Persian I
+      No View Class Sections button; course has no sections.
+    [P 5/258] Opening PER 112 — Elementary Persian II
+      No View Class Sections button; course has no sections.
+    [P 6/258] Opening PHI 100 — Concepts of the Person (II)
+      Spring 2027: found 2 class sections.
+    [P 7/258] Opening PHI 101 — Historical Introduction to Western Philosophy (I)
+      Spring 2027: found 2 class sections.
+    [P 8/258] Opening PHI 102 — Introduction to Philosophical Psychology
+      Spring 2027: found 1 class sections.
+    [P 9/258] Opening PHI 103 — Philosophic Problems (II)
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 10/258] Opening PHI 104 — Moral Reasoning (II)
+      Spring 2027: found 3 class sections.
+  Progress: group 1/1 (P 10/258) · 10 scraped, 0 already done, 0 failed · 10.4 pages/min · 57s elapsed · ~23m55s left in P
+    [P 11/258] Opening PHI 105 — Politics and Society (II)
+      Spring 2027: found 2 class sections.
+    [P 12/258] Opening PHI 108 — Logical and Critical Reasoning (II)
+      Spring 2027: found 4 class sections.
+    [P 13/258] Opening PHI 109 — Philosophy and Literature in Social Context (III)
+      No View Class Sections button; course has no sections.
+    [P 14/258] Opening PHI 110 — Arts and Ideas (III)
+      No View Class Sections button; course has no sections.
+    [P 15/258] Opening PHI 111 — Introduction to Eastern Philosophy (I)
+      No View Class Sections button; course has no sections.
+    [P 16/258] Opening PHI 112 — Technology and Modern Life
+      Spring 2027: found 1 class sections.
+    [P 17/258] Opening PHI 113 — Philosophical Engineering
+      Spring 2027: found 1 class sections.
+    [P 18/258] Opening PHI 116 — Philosophy of America's Founding
+      Spring 2027: not listed for this course. Available terms: Fall 2026, Winter 2027
+    [P 19/258] Opening PHI 200 — Introduction to Ancient Philosophy (I)
+      No View Class Sections button; course has no sections.
+    [P 20/258] Opening PHI 201 — Demons to Think With
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (P 20/258) · 20 scraped, 0 already done, 0 failed · 12.7 pages/min · 1m34s elapsed · ~18m43s left in P
+    [P 21/258] Opening PHI 204 — Ethics in Artificial Intelligence and Data
+      No View Class Sections button; course has no sections.
+    [P 22/258] Opening PHI 206 — Introduction to Modern Philosophy (17th and 18th century) (I)
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 23/258] Opening PHI 220 — Introduction to Symbolic Logic (II)
+      No View Class Sections button; course has no sections.
+    [P 24/258] Opening PHI 247 — Existentialism (I)
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 25/258] Opening PHI 264 — Philosophy and the Arts (III)
+      Spring 2027: found 1 class sections.
+    [P 26/258] Opening PHI 268 — Science, Technology, and Society
+      No View Class Sections button; course has no sections.
+    [P 27/258] Opening PHI 277 — Political Philosophy (II)
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 28/258] Opening PHI 284 — Introduction to Feminist Theory (III)
+      No View Class Sections button; course has no sections.
+    [P 29/258] Opening PHI 300 — Ancient Philosophy (I)
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 30/258] Opening PHI 304 — Medieval Philosophy (I)
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+  Progress: group 1/1 (P 30/258) · 30 scraped, 0 already done, 0 failed · 15.8 pages/min · 1m54s elapsed · ~14m27s left in P
+    [P 31/258] Opening PHI 306 — Modern Philosophy (I)
+      Spring 2027: found 1 class sections.
+    [P 32/258] Opening PHI 308 — 19th-Century Philosophy (I)
+      No View Class Sections button; course has no sections.
+    [P 33/258] Opening PHI 309 — 20th-Century Philosophy (I)
+      Spring 2027: found 1 class sections.
+    [P 34/258] Opening PHI 310 — American Philosophy (I)
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 35/258] Opening PHI 312 — Phenomenology
+      No View Class Sections button; course has no sections.
+    [P 36/258] Opening PHI 320 — Metaphysics (II)
+      No View Class Sections button; course has no sections.
+    [P 37/258] Opening PHI 325 — Contemporary Philosophies of Language (II)
+      No View Class Sections button; course has no sections.
+    [P 38/258] Opening PHI 330 — Topics in Advanced Symbolic Logic (II)
+      No View Class Sections button; course has no sections.
+    [P 39/258] Opening PHI 332 — Theories of Knowledge (II)
+      No View Class Sections button; course has no sections.
+    [P 40/258] Opening PHI 335 — Philosophy of Time (II)
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (P 40/258) · 40 scraped, 0 already done, 0 failed · 18.1 pages/min · 2m12s elapsed · ~12m03s left in P
+    [P 41/258] Opening PHI 336 — Philosophy of Religion (II)
+      Spring 2027: not listed for this course. Available terms: Summer 2026
+    [P 42/258] Opening PHI 340 — Philosophical Traditions of East Asia (I)
+      No View Class Sections button; course has no sections.
+    [P 43/258] Opening PHI 344 — Japanese Thought and Philosophy (I)
+      No View Class Sections button; course has no sections.
+    [P 44/258] Opening PHI 347 — Hermeneutics and Deconstruction (II)
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 45/258] Opening PHI 353 — Philosophy of Mind (II)
+      Spring 2027: not listed for this course. Available terms: Summer 2026
+    [P 46/258] Opening PHI 362 — Philosophy of Biology
+      No View Class Sections button; course has no sections.
+    [P 47/258] Opening PHI 363 — Philosophy of the Social Sciences (III)
+      No View Class Sections button; course has no sections.
+    [P 48/258] Opening PHI 364 — Philosophy of Technology (III)
+      Spring 2027: found 1 class sections.
+    [P 49/258] Opening PHI 365 — Philosophy and Computers (III)
+      No View Class Sections button; course has no sections.
+    [P 50/258] Opening PHI 366 — Philosophy of the Environment (III)
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+  Progress: group 1/1 (P 50/258) · 50 scraped, 0 already done, 0 failed · 19.5 pages/min · 2m34s elapsed · ~10m41s left in P
+    Pausing 5s after 50 detail pages…
+    [P 51/258] Opening PHI 367 — Philosophy of War and Peace (III)
+      No View Class Sections button; course has no sections.
+    [P 52/258] Opening PHI 368 — Philosophy of Science (III)
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 53/258] Opening PHI 369 — Philosophy of Mathematics (III)
+      No View Class Sections button; course has no sections.
+    [P 54/258] Opening PHI 370 — Philosophical Psychology (III)
+      Spring 2027: not listed for this course. Available terms: Summer 2026, Winter 2027
+    [P 55/258] Opening PHI 371 — Literature and Justice (III)
+      No View Class Sections button; course has no sections.
+    [P 56/258] Opening PHI 372 — Ethical Inquiry (II)
+      No View Class Sections button; course has no sections.
+    [P 57/258] Opening PHI 373 — Philosophy in Relation to Other Disciplines (III)
+      No View Class Sections button; course has no sections.
+    [P 58/258] Opening PHI 374 — Bioethics
+      No View Class Sections button; course has no sections.
+    [P 59/258] Opening PHI 375 — Philosophy of Law (III)
+      Spring 2027: not listed for this course. Available terms: Summer 2026, Winter 2027
+    [P 60/258] Opening PHI 376 — Philosophy and Medicine (III)
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (P 60/258) · 60 scraped, 0 already done, 0 failed · 20.2 pages/min · 2m58s elapsed · ~9m48s left in P
+    [P 61/258] Opening PHI 377 — Contemporary Political Philosophy (II)
+      Spring 2027: found 1 class sections.
+    [P 62/258] Opening PHI 378 — Philosophical Topics in Asian American History (III)
+      No View Class Sections button; course has no sections.
+    [P 63/258] Opening PHI 379 — Philosophy of Race (III)
+      No View Class Sections button; course has no sections.
+    [P 64/258] Opening PHI 380 — Literature and Philosophy (III)
+      Spring 2027: found 1 class sections.
+    [P 65/258] Opening PHI 381 — Aesthetics (II)
+      No View Class Sections button; course has no sections.
+    [P 66/258] Opening PHI 382 — The Quantum Moment: Quantum Mechanics in Philosophy, Culture, and Life (III)
+      No View Class Sections button; course has no sections.
+    [P 67/258] Opening PHI 384 — Advanced Topics in Feminist Philosophy (III)
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 68/258] Opening PHI 390 — Topics in Philosophy (either I, II, or III)
+      No View Class Sections button; course has no sections.
+    [P 69/258] Opening PHI 395 — Junior Seminar
+      Spring 2027: found 1 class sections.
+    [P 70/258] Opening PHI 400 — Advanced Seminar on Ancient Western Philosophy
+      Spring 2027: found 1 class sections.
+  Progress: group 1/1 (P 70/258) · 70 scraped, 0 already done, 0 failed · 21.0 pages/min · 3m20s elapsed · ~8m57s left in P
+    [P 71/258] Opening PHI 401 — Individual Systems of the Great Philosophers (I)
+      No View Class Sections button; course has no sections.
+    [P 72/258] Opening PHI 402 — Analysis of Philosophic Texts (I)
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 73/258] Opening PHI 406 — Advanced Seminar on Modern Western Philosophy
+      No View Class Sections button; course has no sections.
+    [P 74/258] Opening PHI 420 — Advanced Topics in Philosophy (either I, II, or III)
+      No View Class Sections button; course has no sections.
+    [P 75/258] Opening PHI 421 — Language and Reality
+      No View Class Sections button; course has no sections.
+    [P 76/258] Opening PHI 422 — Freedom and Creativity
+      No View Class Sections button; course has no sections.
+    [P 77/258] Opening PHI 444 — Experiential Learning
+      Spring 2027: found 1 class sections.
+    [P 78/258] Opening PHI 458 — Speak Effectively Before an Audience
+      Spring 2027: found 17 class sections.
+    [P 79/258] Opening PHI 459 — Write Effectively in Philosophy
+      Spring 2027: found 17 class sections.
+    [P 80/258] Opening PHI 472 — Topics in Asian Philosophy (I)
+      Spring 2027: found 1 class sections.
+  Progress: group 1/1 (P 80/258) · 80 scraped, 0 already done, 0 failed · 19.6 pages/min · 4m05s elapsed · ~9m06s left in P
+    [P 81/258] Opening PHI 473 — Orientalism
+      Spring 2027: found 1 class sections.
+    [P 82/258] Opening PHI 475 — Undergraduate Teaching Practicum I
+      Spring 2027: found 16 class sections.
+    [P 83/258] Opening PHI 476 — Undergraduate Teaching Practicum II
+      Spring 2027: found 16 class sections.
+    [P 84/258] Opening PHI 487 — Readings and Research in Philosophy (II)
+      Spring 2027: found 16 class sections.
+    [P 85/258] Opening PHI 489 — Readings and Research in the History of Philosophy (I)
+      Spring 2027: found 16 class sections.
+    [P 86/258] Opening PHI 490 — Readings and Research in Philosophical Investigations of Other Disciplines (III)
+      Spring 2027: found 16 class sections.
+    [P 87/258] Opening PHI 495 — Philosophy Honors Thesis
+      Spring 2027: found 15 class sections.
+    [P 88/258] Opening PHY 112 — Light, Color, and Vision
+      Spring 2027: found 1 class sections.
+    [P 89/258] Opening PHY 113 — Physics of Sports
+      No View Class Sections button; course has no sections.
+    [P 90/258] Opening PHY 115 — Physics of Sports Laboratory
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (P 90/258) · 90 scraped, 0 already done, 0 failed · 17.5 pages/min · 5m07s elapsed · ~9m34s left in P
+    [P 91/258] Opening PHY 119 — Physics for Environmental Studies
+      Spring 2027: found 3 class sections.
+    [P 92/258] Opening PHY 121 — Physics for the Life Sciences I
+      Spring 2027: not listed for this course. Available terms: Fall 2026, Summer 2026
+    [P 93/258] Opening PHY 122 — Physics for the Life Sciences II
+      Spring 2027: found 9 class sections.
+    [P 94/258] Opening PHY 125 — Classical Physics A
+      Spring 2027: found 4 class sections.
+    [P 95/258] Opening PHY 126 — Classical Physics B
+      Spring 2027: not listed for this course. Available terms: Fall 2026, Summer 2026
+    [P 96/258] Opening PHY 127 — Classical Physics C
+      Spring 2027: found 4 class sections.
+    [P 97/258] Opening PHY 131 — Classical Physics I
+      Spring 2027: found 10 class sections.
+    [P 98/258] Opening PHY 132 — Classical Physics II
+      Spring 2027: found 14 class sections.
+    [P 99/258] Opening PHY 133 — Classical Physics Laboratory I
+      Spring 2027: found 18 class sections.
+    [P 100/258] Opening PHY 134 — Classical Physics Laboratory II
+      Spring 2027: found 27 class sections.
+  Progress: group 1/1 (P 100/258) · 100 scraped, 0 already done, 0 failed · 16.1 pages/min · 6m11s elapsed · ~9m47s left in P
+    Pausing 5s after 100 detail pages…
+    [P 101/258] Opening PHY 141 — Classical Physics I: Honors
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 102/258] Opening PHY 142 — Classical Physics II: Honors
+      Spring 2027: found 2 class sections.
+    [P 103/258] Opening PHY 153 — Data Analysis for Physics and Astronomy with Python
+      Spring 2027: found 1 class sections.
+    [P 104/258] Opening PHY 191 — Transitional Study
+      Spring 2027: found 1 class sections.
+    [P 105/258] Opening PHY 192 — Transitional Study
+      Spring 2027: found 1 class sections.
+    [P 106/258] Opening PHY 231 — Physics for Future Presidents
+      No View Class Sections button; course has no sections.
+    [P 107/258] Opening PHY 237 — World Climate and Atmosphere
+      Spring 2027: found 1 class sections.
+    [P 108/258] Opening PHY 251 — Modern Physics
+      Spring 2027: found 3 class sections.
+    [P 109/258] Opening PHY 252 — Modern Physics Laboratory
+      Spring 2027: found 4 class sections.
+    [P 110/258] Opening PHY 277 — Computation for Physics and Astronomy
+      Spring 2027: found 2 class sections.
+  Progress: group 1/1 (P 110/258) · 110 scraped, 0 already done, 0 failed · 15.5 pages/min · 7m05s elapsed · ~9m33s left in P
+    [P 111/258] Opening PHY 287 — Introduction to Research
+      Spring 2027: found 96 class sections.
+    [P 112/258] Opening PHY 291 — Transitional Study
+      Spring 2027: found 1 class sections.
+    [P 113/258] Opening PHY 300 — Waves and Optics
+      Spring 2027: found 2 class sections.
+    [P 114/258] Opening PHY 301 — Electromagnetic Theory I
+      Spring 2027: found 1 class sections.
+    [P 115/258] Opening PHY 302 — Electromagnetic Theory II
+      Spring 2027: found 1 class sections.
+    [P 116/258] Opening PHY 303 — Mechanics
+      Spring 2027: found 1 class sections.
+    [P 117/258] Opening PHY 306 — Thermodynamics, Kinetic Theory, and Statistical Mechanics
+      Spring 2027: found 1 class sections.
+    [P 118/258] Opening PHY 307 — Physical and Mathematical Foundations of Quantum Mechanics
+      No View Class Sections button; course has no sections.
+    [P 119/258] Opening PHY 308 — Quantum Physics
+      Spring 2027: found 1 class sections.
+    [P 120/258] Opening PHY 311 — Connections in Science
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (P 120/258) · 120 scraped, 0 already done, 0 failed · 14.5 pages/min · 8m17s elapsed · ~9m32s left in P
+    [P 121/258] Opening PHY 313 — Mystery of Matter
+      No View Class Sections button; course has no sections.
+    [P 122/258] Opening PHY 335 — Electronics and Instrumentation Laboratory
+      Spring 2027: found 2 class sections.
+    [P 123/258] Opening PHY 382 — The Quantum Moment: Quantum Mechanics in Philosophy, Culture, and Life (III)
+      No View Class Sections button; course has no sections.
+    [P 124/258] Opening PHY 390 — Special Topics in Physics
+      No View Class Sections button; course has no sections.
+    [P 125/258] Opening PHY 405 — Advanced Quantum Physics
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 126/258] Opening PHY 408 — Relativity
+      Spring 2027: found 1 class sections.
+    [P 127/258] Opening PHY 420 — Introduction to Accelerator Science and Technology
+      No View Class Sections button; course has no sections.
+    [P 128/258] Opening PHY 431 — Nuclear and Particle Physics
+      Spring 2027: found 1 class sections.
+    [P 129/258] Opening PHY 444 — Experiential Learning
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 130/258] Opening PHY 445 — Senior Laboratory
+      Spring 2027: found 3 class sections.
+  Progress: group 1/1 (P 130/258) · 130 scraped, 0 already done, 0 failed · 14.6 pages/min · 8m54s elapsed · ~8m46s left in P
+    [P 131/258] Opening PHY 447 — Tutorial in Advanced Topics
+      Spring 2027: found 95 class sections.
+    [P 132/258] Opening PHY 451 — Quantum Electronics
+      No View Class Sections button; course has no sections.
+    [P 133/258] Opening PHY 452 — Atomic Physics and Lasers
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 134/258] Opening PHY 458 — Speak Effectively Before an Audience
+      No View Class Sections button; course has no sections.
+    [P 135/258] Opening PHY 459 — Write Effectively in Physics
+      Spring 2027: found 1 class sections.
+    [P 136/258] Opening PHY 472 — Solid-State Physics
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 137/258] Opening PHY 475 — Undergraduate Teaching Practicum
+      Spring 2027: grid shows ['Summer 2026']; retrying.
+      Spring 2027: found 96 class sections.
+    [P 138/258] Opening PHY 487 — Research
+      Spring 2027: found 96 class sections.
+    [P 139/258] Opening POL 101 — World Politics
+      Spring 2027: found 3 class sections.
+    [P 140/258] Opening POL 102 — Introduction to American Government
+      Spring 2027: found 3 class sections.
+  Progress: group 1/1 (P 140/258) · 140 scraped, 0 already done, 0 failed · 12.9 pages/min · 10m51s elapsed · ~9m08s left in P
+    [P 141/258] Opening POL 103 — Introduction to Comparative Politics
+      Spring 2027: found 1 class sections.
+    [P 142/258] Opening POL 201 — Introduction to Statistical Methods in Political Science
+      Spring 2027: found 2 class sections.
+    [P 143/258] Opening POL 214 — Modern Latin America
+      Spring 2027: not listed for this course. Available terms: Fall 2026, Summer 2026
+    [P 144/258] Opening POL 216 — History of U.S.-Latin American Relations
+      No View Class Sections button; course has no sections.
+    [P 145/258] Opening POL 270 — Experiments in Political Science
+      No View Class Sections button; course has no sections.
+    [P 146/258] Opening POL 301 — Democratization
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 147/258] Opening POL 302 — Politics of Latin America
+      Spring 2027: found 1 class sections.
+    [P 148/258] Opening POL 303 — Gender and Politics in Global Perspective
+      No View Class Sections button; course has no sections.
+    [P 149/258] Opening POL 304 — Comparative Political Institutions
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 150/258] Opening POL 305 — Government and Politics of the United Kingdom
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+  Progress: group 1/1 (P 150/258) · 150 scraped, 0 already done, 0 failed · 13.1 pages/min · 11m27s elapsed · ~8m14s left in P
+    Pausing 5s after 150 detail pages…
+    [P 151/258] Opening POL 308 — Women Islam and Political Change in Africa
+      No View Class Sections button; course has no sections.
+    [P 152/258] Opening POL 309 — Politics in the European Union
+      Spring 2027: found 1 class sections.
+    [P 153/258] Opening POL 310 — Immigration and Refugee Politics
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 154/258] Opening POL 311 — Introduction to International Law
+      Spring 2027: found 1 class sections.
+    [P 155/258] Opening POL 313 — Problems of International Relations
+      Spring 2027: found 1 class sections.
+    [P 156/258] Opening POL 317 — American Election Campaigns
+      No View Class Sections button; course has no sections.
+    [P 157/258] Opening POL 318 — Voters and Elections
+      Spring 2027: not listed for this course. Available terms: Summer 2026
+    [P 158/258] Opening POL 319 — Business Law
+      No View Class Sections button; course has no sections.
+    [P 159/258] Opening POL 320 — Constitutional Law and Politics: United States
+      Spring 2027: found 1 class sections.
+    [P 160/258] Opening POL 322 — The Presidency in the American Political System
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (P 160/258) · 160 scraped, 0 already done, 0 failed · 13.1 pages/min · 12m13s elapsed · ~7m29s left in P
+    [P 161/258] Opening POL 323 — U.S. Congress
+      Spring 2027: found 2 class sections.
+    [P 162/258] Opening POL 324 — American Political Parties and Pressure Groups
+      Spring 2027: not listed for this course. Available terms: Summer 2026
+    [P 163/258] Opening POL 325 — Civil Liberties and Civil Rights
+      Spring 2027: found 1 class sections.
+    [P 164/258] Opening POL 327 — Urban Politics
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 165/258] Opening POL 328 — Criminal Law
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 166/258] Opening POL 330 — Gender Issues in the Law
+      Spring 2027: found 1 class sections.
+    [P 167/258] Opening POL 332 — Politics of Criminal Due Process
+      Spring 2027: not listed for this course. Available terms: Fall 2026, Summer 2026, Winter 2027
+    [P 168/258] Opening POL 333 — Environmental Law
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 169/258] Opening POL 334 — Modern Terrorism
+      No View Class Sections button; course has no sections.
+    [P 170/258] Opening POL 336 — U.S. Foreign Policy
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (P 170/258) · 170 scraped, 0 already done, 0 failed · 13.3 pages/min · 12m45s elapsed · ~6m36s left in P
+    [P 171/258] Opening POL 337 — The Politics of Africa
+      Spring 2027: found 1 class sections.
+    [P 172/258] Opening POL 338 — Contemporary India: History, Politics, and Diplomacy
+      No View Class Sections button; course has no sections.
+    [P 173/258] Opening POL 339 — Contemporary China: History, Politics, and Diplomacy
+      No View Class Sections button; course has no sections.
+    [P 174/258] Opening POL 344 — American Political Ideology and Public Opinion
+      Spring 2027: found 1 class sections.
+    [P 175/258] Opening POL 346 — Political Psychology
+      Spring 2027: found 1 class sections.
+    [P 176/258] Opening POL 347 — Women and Politics
+      Spring 2027: found 1 class sections.
+    [P 177/258] Opening POL 348 — Political Beliefs and Judgments
+      Spring 2027: not listed for this course. Available terms: Summer 2026
+    [P 178/258] Opening POL 349 — Social Psychology and Law
+      No View Class Sections button; course has no sections.
+    [P 179/258] Opening POL 350 — Contemporary European Political Theory
+      No View Class Sections button; course has no sections.
+    [P 180/258] Opening POL 351 — Social Surveys in Contemporary Society
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (P 180/258) · 180 scraped, 0 already done, 0 failed · 13.4 pages/min · 13m26s elapsed · ~5m49s left in P
+    [P 181/258] Opening POL 352 — Current Political Events
+      No View Class Sections button; course has no sections.
+    [P 182/258] Opening POL 353 — Contemporary Race Relations in American Politics
+      Spring 2027: not listed for this course. Available terms: Fall 2026, Summer 2026
+    [P 183/258] Opening POL 359 — Public Policy and Administration
+      Spring 2027: found 1 class sections.
+    [P 184/258] Opening POL 365 — Economy and Democracy
+      No View Class Sections button; course has no sections.
+    [P 185/258] Opening POL 366 — Press & the Presidency
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 186/258] Opening POL 367 — Mass Media in American Politics
+      Spring 2027: not listed for this course. Available terms: Summer 2026
+    [P 187/258] Opening POL 368 — Social Networks and Politics
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 188/258] Opening POL 369 — Introduction to Political Informatics
+      Spring 2027: found 1 class sections.
+    [P 189/258] Opening POL 371 — Politics of Climate Change
+      Spring 2027: found 1 class sections.
+    [P 190/258] Opening POL 373 — The Biology of Politics
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+  Progress: group 1/1 (P 190/258) · 190 scraped, 0 already done, 0 failed · 13.6 pages/min · 13m56s elapsed · ~4m59s left in P
+    [P 191/258] Opening POL 374 — Global Issues in the United Nations
+      Spring 2027: found 1 class sections.
+    [P 192/258] Opening POL 375 — The Political Animal
+      No View Class Sections button; course has no sections.
+    [P 193/258] Opening POL 378 — Introduction to Torts
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 194/258] Opening POL 379 — Federal Government Power
+      No View Class Sections button; course has no sections.
+    [P 195/258] Opening POL 380 — Government and Politics of the Middle East
+      Spring 2027: found 1 class sections.
+    [P 196/258] Opening POL 390 — Topics in Political Science
+      Spring 2027: found 2 class sections.
+    [P 197/258] Opening POL 401 — Seminar in Advanced Topics
+      No View Class Sections button; course has no sections.
+    [P 198/258] Opening POL 402 — Advanced Seminar in Political Psychology
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 199/258] Opening POL 447 — Directed Readings in Political Science
+      Spring 2027: found 25 class sections.
+    [P 200/258] Opening POL 458 — Speak Effectively Before an Audience
+      Spring 2027: found 1 class sections.
+  Progress: group 1/1 (P 200/258) · 200 scraped, 0 already done, 0 failed · 13.6 pages/min · 14m42s elapsed · ~4m15s left in P
+    Pausing 5s after 200 detail pages…
+    [P 201/258] Opening POL 459 — Write Effectively in Political Science
+      Spring 2027: found 1 class sections.
+    [P 202/258] Opening POL 475 — Undergraduate Teaching Practicum I
+      Spring 2027: found 25 class sections.
+    [P 203/258] Opening POL 476 — Undergraduate Teaching Practicum II
+      Spring 2027: found 25 class sections.
+    [P 204/258] Opening POL 477 — Qualitative & Mixed Methods
+      No View Class Sections button; course has no sections.
+    [P 205/258] Opening POL 487 — Directed Research
+      Spring 2027: found 1 class sections.
+    [P 206/258] Opening POL 488 — Internship
+      Spring 2027: found 1 class sections.
+    [P 207/258] Opening POL 489 — Washington or Albany Internship
+      Spring 2027: found 1 class sections.
+    [P 208/258] Opening POL 490 — Washington or Albany Seminar
+      Spring 2027: found 1 class sections.
+    [P 209/258] Opening POL 495 — Senior Honors Project in Political Science
+      Spring 2027: found 25 class sections.
+    [P 210/258] Opening POL 496 — Senior Honors Project in Political Science
+      Spring 2027: found 25 class sections.
+  Progress: group 1/1 (P 210/258) · 210 scraped, 0 already done, 0 failed · 13.0 pages/min · 16m10s elapsed · ~3m41s left in P
+    [P 211/258] Opening POR 111 — Elementary Portuguese I
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 212/258] Opening POR 112 — Elementary Portuguese II
+      Spring 2027: found 1 class sections.
+    [P 213/258] Opening POR 411 — Portuguese for Spanish Speakers
+      No View Class Sections button; course has no sections.
+    [P 214/258] Opening PSY 103 — Introduction to Psychology
+      Spring 2027: found 3 class sections.
+    [P 215/258] Opening PSY 201 — Statistical Methods in Psychology
+      Spring 2027: found 2 class sections.
+    [P 216/258] Opening PSY 220 — Survey in Developmental Psychology
+      Spring 2027: found 1 class sections.
+    [P 217/258] Opening PSY 230 — Survey in Abnormal and Clinical Psychology
+      Spring 2027: found 2 class sections.
+    [P 218/258] Opening PSY 240 — Survey in Social Psychology
+      Spring 2027: found 1 class sections.
+    [P 219/258] Opening PSY 250 — Survey in Biopsychology
+      Spring 2027: found 2 class sections.
+    [P 220/258] Opening PSY 260 — Survey in Cognition and Perception
+      Spring 2027: found 1 class sections.
+  Progress: group 1/1 (P 220/258) · 220 scraped, 0 already done, 0 failed · 12.8 pages/min · 17m15s elapsed · ~2m58s left in P
+    [P 221/258] Opening PSY 273 — Supervised Research in Psychology
+      Spring 2027: found 30 class sections.
+    [P 222/258] Opening PSY 283 — Applications and Community Service
+      No View Class Sections button; course has no sections.
+    [P 223/258] Opening PSY 301 — Advanced Statistics
+      Spring 2027: found 1 class sections.
+    [P 224/258] Opening PSY 310 — Research and Writing in Psychology
+      Spring 2027: found 16 class sections.
+    [P 225/258] Opening PSY 327 — Human Growth and Development in the Educational Context
+      Spring 2027: found 1 class sections.
+    [P 226/258] Opening PSY 333 — Mood Disorders
+      Spring 2027: not listed for this course. Available terms: Winter 2027
+    [P 227/258] Opening PSY 334 — Autism Spectrum Disorders
+      No View Class Sections button; course has no sections.
+    [P 228/258] Opening PSY 338 — Abnormal Child Psychology
+      Spring 2027: found 1 class sections.
+    [P 229/258] Opening PSY 339 — Special Topics in Clinical Psychology
+      Spring 2027: found 3 class sections.
+    [P 230/258] Opening PSY 341 — Psychology of Prejudice
+      Spring 2027: not listed for this course. Available terms: Summer 2026, Winter 2027
+  Progress: group 1/1 (P 230/258) · 230 scraped, 0 already done, 0 failed · 12.6 pages/min · 18m17s elapsed · ~2m13s left in P
+    [P 231/258] Opening PSY 342 — Psychology of Women's Health
+      Spring 2027: found 1 class sections.
+    [P 232/258] Opening PSY 345 — Theories of Personality
+      No View Class Sections button; course has no sections.
+    [P 233/258] Opening PSY 346 — Health Psychology
+      Spring 2027: not listed for this course. Available terms: Summer 2026, Winter 2027
+    [P 234/258] Opening PSY 347 — Psychology of Women
+      Spring 2027: not listed for this course. Available terms: Winter 2027
+    [P 235/258] Opening PSY 348 — Special Topics in Social Psychology
+      No View Class Sections button; course has no sections.
+    [P 236/258] Opening PSY 349 — Special Topics in Social Psychology
+      Spring 2027: found 3 class sections.
+    [P 237/258] Opening PSY 354 — Neurobiology of Learning and Memory
+      Spring 2027: found 1 class sections.
+    [P 238/258] Opening PSY 355 — Human Brain Function
+      Spring 2027: found 1 class sections.
+    [P 239/258] Opening PSY 356 — Physiological Psychology
+      Spring 2027: found 1 class sections.
+    [P 240/258] Opening PSY 358 — Special Topics in Biopsychology
+      Spring 2027: found 1 class sections.
+  Progress: group 1/1 (P 240/258) · 240 scraped, 0 already done, 0 failed · 12.6 pages/min · 19m01s elapsed · ~1m25s left in P
+    [P 241/258] Opening PSY 359 — Special Topics in Biopsychology
+      Spring 2027: found 1 class sections.
+    [P 242/258] Opening PSY 364 — Judgment and Decision Making
+      No View Class Sections button; course has no sections.
+    [P 243/258] Opening PSY 365 — The Psychology of Language
+      Spring 2027: found 1 class sections.
+    [P 244/258] Opening PSY 367 — Memory
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 245/258] Opening PSY 368 — Sensation and Perception
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 246/258] Opening PSY 369 — Special Topics in Cognition and Perception
+      Spring 2027: found 2 class sections.
+    [P 247/258] Opening PSY 375 — History and Systems of Psychology
+      No View Class Sections button; course has no sections.
+    [P 248/258] Opening PSY 380 — Research Lab: Human Cognition
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 249/258] Opening PSY 382 — Research Lab: Social Psychology
+      Spring 2027: found 2 class sections.
+    [P 250/258] Opening PSY 444 — Experiential Learning
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+  Progress: group 1/1 (P 250/258) · 250 scraped, 0 already done, 0 failed · 12.7 pages/min · 19m42s elapsed · ~37s left in P
+    Pausing 5s after 250 detail pages…
+    [P 251/258] Opening PSY 447 — Readings in Psychology
+      Spring 2027: found 38 class sections.
+    [P 252/258] Opening PSY 459 — Write Effectively in Psychology
+      Spring 2027: found 1 class sections.
+    [P 253/258] Opening PSY 475 — Undergraduate Teaching Practicum I
+      Spring 2027: found 37 class sections.
+    [P 254/258] Opening PSY 476 — Undergraduate Teaching Practicum II
+      Spring 2027: found 37 class sections.
+    [P 255/258] Opening PSY 487 — Independent Research in Psychology
+      Spring 2027: found 38 class sections.
+    [P 256/258] Opening PSY 488 — Internship
+      Spring 2027: found 37 class sections.
+    [P 257/258] Opening PSY 495 — Senior Honors Seminar
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [P 258/258] Opening PSY 496 — Senior Honors Seminar
+      Spring 2027: found 1 class sections.
+  Progress: group 1/1 (P 258/258) · 258 scraped, 0 already done, 0 failed · 12.3 pages/min · 21m02s elapsed
+Exported index: 258 records (JSON + CSV)
+Exported details: 258 records (JSONL + JSON + CSV)
+Exported sections: 1088 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_16/semesteros-export.zip
+
+Done in 21m03s: 258 scraped, 0 already done, 0 failed, 343 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_16/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_16/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_16/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_16/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_16/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_16/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_16/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_16/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.

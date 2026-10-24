@@ -1,0 +1,26 @@
+{
+  "exported_at_utc": "2026-10-24T15:29:20.601551+00:00",
+  "catalog_url": "https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL",
+  "letters_processed_this_run": [
+    "I",
+    "8"
+  ],
+  "course_index_records": 78,
+  "course_detail_records": 78,
+  "class_section_records": 58,
+  "sections_term": "Spring 2027",
+  "max_course_level": 499,
+  "files": [
+    "course-index.json",
+    "course-index.csv",
+    "course-details.jsonl",
+    "course-details.json",
+    "course-details.csv",
+    "course-sections.jsonl",
+    "course-sections.json",
+    "course-sections.csv",
+    "index/",
+    "raw/"
+  ],
+  "warning": "Review run logs for skipped letters/courses and validate the raw captures before treating this export as complete."
+}

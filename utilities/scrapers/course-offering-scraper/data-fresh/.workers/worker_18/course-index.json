@@ -1,0 +1,282 @@
+[
+  {
+    "subject": "RLS",
+    "course_number": "102",
+    "course_code": "RLS 102",
+    "title": "Eastern Religions",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "240",
+    "course_code": "RLS 240",
+    "title": "Confucianism and Daoism",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "256",
+    "course_code": "RLS 256",
+    "title": "Hinduism",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "260",
+    "course_code": "RLS 260",
+    "title": "Buddhism",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "280",
+    "course_code": "RLS 280",
+    "title": "Islam",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "287",
+    "course_code": "RLS 287",
+    "title": "Islam in China",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "366",
+    "course_code": "RLS 366",
+    "title": "Feminine Spirituality",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "380",
+    "course_code": "RLS 380",
+    "title": "Islamic Classics",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "382",
+    "course_code": "RLS 382",
+    "title": "Japanese Buddhism",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "387",
+    "course_code": "RLS 387",
+    "title": "Islam and Confucianism",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "444",
+    "course_code": "RLS 444",
+    "title": "Experiential Learning",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "447",
+    "course_code": "RLS 447",
+    "title": "Readings in Religious Studies",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "459",
+    "course_code": "RLS 459",
+    "title": "Write Effectively in Religious Studies",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RLS",
+    "course_number": "475",
+    "course_code": "RLS 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "index_R.html",
+    "source_group_index": 3
+  },
+  {
+    "subject": "RUS",
+    "course_number": "101",
+    "course_code": "RUS 101",
+    "title": "Intensive Elementary Russian",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "111",
+    "course_code": "RUS 111",
+    "title": "Elementary Russian I",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "112",
+    "course_code": "RUS 112",
+    "title": "Elementary Russian II",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "211",
+    "course_code": "RUS 211",
+    "title": "Intermediate Russian I",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "212",
+    "course_code": "RUS 212",
+    "title": "Intermediate Russian II",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "213",
+    "course_code": "RUS 213",
+    "title": "Intermediate Russian for Students of Russian-Speaking Background",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "311",
+    "course_code": "RUS 311",
+    "title": "Russian Conversation and Composition",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "312",
+    "course_code": "RUS 312",
+    "title": "Russian Conversation and Composition",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "323",
+    "course_code": "RUS 323",
+    "title": "Russian Literary Texts",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "331",
+    "course_code": "RUS 331",
+    "title": "Contemporary Russian Literacy",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "332",
+    "course_code": "RUS 332",
+    "title": "Professional Russian",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "411",
+    "course_code": "RUS 411",
+    "title": "Advanced Russian I (Fourth-year)",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "412",
+    "course_code": "RUS 412",
+    "title": "Advanced Russian II (Fourth-year)",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "439",
+    "course_code": "RUS 439",
+    "title": "Structure of Russian",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "444",
+    "course_code": "RUS 444",
+    "title": "Experiential Learning",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "447",
+    "course_code": "RUS 447",
+    "title": "Directed Readings in Russian",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "475",
+    "course_code": "RUS 475",
+    "title": "Undergraduate Teaching Practicum in Russian I",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "476",
+    "course_code": "RUS 476",
+    "title": "Undergraduate Teaching Practicum in Russian II",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "491",
+    "course_code": "RUS 491",
+    "title": "Special Author",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "492",
+    "course_code": "RUS 492",
+    "title": "Special Genre or Period",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "RUS",
+    "course_number": "495",
+    "course_code": "RUS 495",
+    "title": "Senior Honors Project in Russian",
+    "source_file": "index_R.html",
+    "source_group_index": 6
+  }
+]

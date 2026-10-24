@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import type { RequirementStatus } from "@/lib/engine/audit";
 import { STATUS_LABELS } from "@/lib/engine/describe";
 
-type DisplayStatus = RequirementStatus | "exempt";
+type DisplayStatus = RequirementStatus | "exempt" | "not-required";
 
 const STYLES: Record<DisplayStatus, { icon: typeof Circle; className: string }> = {
   satisfied: { icon: CircleCheck, className: "text-status-good" },
@@ -12,6 +12,7 @@ const STYLES: Record<DisplayStatus, { icon: typeof Circle; className: string }> 
   "not-started": { icon: Circle, className: "text-muted-foreground" },
   "needs-review": { icon: CircleHelp, className: "text-[#a86f00]" },
   exempt: { icon: CircleMinus, className: "text-muted-foreground" },
+  "not-required": { icon: CircleMinus, className: "text-muted-foreground" },
 };
 
 /** Status is always icon + label — never color alone. */

@@ -1,0 +1,562 @@
+[
+  {
+    "subject": "JDH",
+    "course_number": "261",
+    "course_code": "JDH 261",
+    "title": "The Bible as Literature",
+    "source_file": "index_J.html",
+    "source_group_index": 1
+  },
+  {
+    "subject": "JDH",
+    "course_number": "390",
+    "course_code": "JDH 390",
+    "title": "Humanities Topics in Judaic Studies",
+    "source_file": "index_J.html",
+    "source_group_index": 1
+  },
+  {
+    "subject": "JDH",
+    "course_number": "447",
+    "course_code": "JDH 447",
+    "title": "Readings in Judaic Studies",
+    "source_file": "index_J.html",
+    "source_group_index": 1
+  },
+  {
+    "subject": "JDS",
+    "course_number": "225",
+    "course_code": "JDS 225",
+    "title": "Jewish History from Antiquity to the Middle Ages",
+    "source_file": "index_J.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "JDS",
+    "course_number": "226",
+    "course_code": "JDS 226",
+    "title": "Modern Jewish History: Dilemmas of Difference",
+    "source_file": "index_J.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "JDS",
+    "course_number": "241",
+    "course_code": "JDS 241",
+    "title": "Nazi Genocide and the Holocaust",
+    "source_file": "index_J.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "JDS",
+    "course_number": "356",
+    "course_code": "JDS 356",
+    "title": "Zionism, Israel, and the Middle East",
+    "source_file": "index_J.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "JDS",
+    "course_number": "447",
+    "course_code": "JDS 447",
+    "title": "Readings in Judaic Studies",
+    "source_file": "index_J.html",
+    "source_group_index": 2
+  },
+  {
+    "subject": "JPN",
+    "course_number": "111",
+    "course_code": "JPN 111",
+    "title": "Elementary Japanese I",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "112",
+    "course_code": "JPN 112",
+    "title": "Elementary Japanese II",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "211",
+    "course_code": "JPN 211",
+    "title": "Intermediate Japanese I",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "212",
+    "course_code": "JPN 212",
+    "title": "Intermediate Japanese II",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "311",
+    "course_code": "JPN 311",
+    "title": "Advanced Japanese I",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "312",
+    "course_code": "JPN 312",
+    "title": "Advanced Japanese II",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "331",
+    "course_code": "JPN 331",
+    "title": "Social Sciences Topics in Japanese Studies",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "332",
+    "course_code": "JPN 332",
+    "title": "Humanities Topics in Japanese Studies",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "410",
+    "course_code": "JPN 410",
+    "title": "Business Japanese",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "411",
+    "course_code": "JPN 411",
+    "title": "Advanced Japanese III",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "412",
+    "course_code": "JPN 412",
+    "title": "Advanced Japanese IV",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "426",
+    "course_code": "JPN 426",
+    "title": "Structure of Japanese",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "444",
+    "course_code": "JPN 444",
+    "title": "Experiential Learning",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "447",
+    "course_code": "JPN 447",
+    "title": "Independent Study",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "475",
+    "course_code": "JPN 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "476",
+    "course_code": "JPN 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "487",
+    "course_code": "JPN 487",
+    "title": "Independent Research",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JPN",
+    "course_number": "488",
+    "course_code": "JPN 488",
+    "title": "Internship",
+    "source_file": "index_J.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "JRN",
+    "course_number": "101",
+    "course_code": "JRN 101",
+    "title": "News Literacy",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "116",
+    "course_code": "JRN 116",
+    "title": "Introduction to Digital Journalism",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "205",
+    "course_code": "JRN 205",
+    "title": "News Reporting & Writing II",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "216",
+    "course_code": "JRN 216",
+    "title": "Intermediate Digital Journalism",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "217",
+    "course_code": "JRN 217",
+    "title": "Journalistic Reporting and Writing",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "301",
+    "course_code": "JRN 301",
+    "title": "The Changing News Business",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "303",
+    "course_code": "JRN 303",
+    "title": "Global Issues in Journalism",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "310",
+    "course_code": "JRN 310",
+    "title": "Multimedia Newsroom I",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "311",
+    "course_code": "JRN 311",
+    "title": "Advanced Digital Journalism - Text",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "312",
+    "course_code": "JRN 312",
+    "title": "Podcasting, Radio, and Storytelling",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "313",
+    "course_code": "JRN 313",
+    "title": "Advanced Digital Journalism - Audio-Visual",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "319",
+    "course_code": "JRN 319",
+    "title": "The Image of the Journalist in Popular Culture",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "320",
+    "course_code": "JRN 320",
+    "title": "Multimedia Newsroom II",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "322",
+    "course_code": "JRN 322",
+    "title": "Working Newsroom",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "334",
+    "course_code": "JRN 334",
+    "title": "Science and Health Reporting",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "335",
+    "course_code": "JRN 335",
+    "title": "Reporting in New York City",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "336",
+    "course_code": "JRN 336",
+    "title": "Sports Reporting",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "337",
+    "course_code": "JRN 337",
+    "title": "Introduction to Narrative Journalism",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "338",
+    "course_code": "JRN 338",
+    "title": "Sports Broadcasting",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "339",
+    "course_code": "JRN 339",
+    "title": "Foreign Reporting",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "340",
+    "course_code": "JRN 340",
+    "title": "Beat Reporting",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "363",
+    "course_code": "JRN 363",
+    "title": "Magazine Writing",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "364",
+    "course_code": "JRN 364",
+    "title": "Advanced Reporting",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "366",
+    "course_code": "JRN 366",
+    "title": "Press & the Presidency",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "367",
+    "course_code": "JRN 367",
+    "title": "Opinion Journalism",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "368",
+    "course_code": "JRN 368",
+    "title": "Broadcast Engineering and Control Room Operation",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "370",
+    "course_code": "JRN 370",
+    "title": "Advanced Visual Reporting and Storytelling",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "371",
+    "course_code": "JRN 371",
+    "title": "The Big Time: News, Sports, and Weather",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "386",
+    "course_code": "JRN 386",
+    "title": "Eyewitness News",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "390",
+    "course_code": "JRN 390",
+    "title": "Special Topics in Journalism",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "392",
+    "course_code": "JRN 392",
+    "title": "Journalism Without Walls Prep",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "413",
+    "course_code": "JRN 413",
+    "title": "Journalisms of the Global South",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "433",
+    "course_code": "JRN 433",
+    "title": "Journalistic Book and Serial Narrative Production",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "434",
+    "course_code": "JRN 434",
+    "title": "Photojournalism",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "435",
+    "course_code": "JRN 435",
+    "title": "Journalism Without Walls",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "438",
+    "course_code": "JRN 438",
+    "title": "Weathercasting & Environmental Reporting",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "439",
+    "course_code": "JRN 439",
+    "title": "WCast_Enviro Rprting: Feat Story & Mini-Doc BCast",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "444",
+    "course_code": "JRN 444",
+    "title": "Experiential Learning",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "475",
+    "course_code": "JRN 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "476",
+    "course_code": "JRN 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "487",
+    "course_code": "JRN 487",
+    "title": "Independent Study",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "488",
+    "course_code": "JRN 488",
+    "title": "Journalism Internship",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "489",
+    "course_code": "JRN 489",
+    "title": "Journalism Specialized Internship",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "JRN",
+    "course_number": "490",
+    "course_code": "JRN 490",
+    "title": "Journalism Senior Project",
+    "source_file": "index_J.html",
+    "source_group_index": 6
+  }
+]

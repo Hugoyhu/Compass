@@ -1,0 +1,71 @@
+Worker 11 groups: K
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_11 --letters K --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Spring 2027 --no-resume
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group K (1/1)…
+  [K] 3 subjects have no active courses.
+  [K] Found 31 course entries.
+  [K] Skipping 9 courses numbered above 499; 22 left.
+    [K 1/22] Opening KOR 101 — Intensive Elementary Korean
+      No View Class Sections button; course has no sections.
+    [K 2/22] Opening KOR 111 — Elementary Korean I
+      Spring 2027: found 6 class sections.
+    [K 3/22] Opening KOR 112 — Elementary Korean II
+      Spring 2027: found 6 class sections.
+    [K 4/22] Opening KOR 120 — Elementary Korean for Heritage Speakers
+      Spring 2027: found 2 class sections.
+    [K 5/22] Opening KOR 211 — Intermediate Korean I
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [K 6/22] Opening KOR 212 — Intermediate Korean II
+      Spring 2027: found 1 class sections.
+    [K 7/22] Opening KOR 220 — Intermediate Korean for Korean Speakers
+      Spring 2027: found 2 class sections.
+    [K 8/22] Opening KOR 311 — Advanced Korean I
+      No View Class Sections button; course has no sections.
+    [K 9/22] Opening KOR 312 — Advanced Korean II
+      Spring 2027: found 1 class sections.
+    [K 10/22] Opening KOR 331 — Social Science Topics in Korean Studies
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (K 10/22) · 10 scraped, 0 already done, 0 failed · 12.6 pages/min · 47s elapsed · ~57s left in K
+    [K 11/22] Opening KOR 332 — Humanities Topics in Korean Studies
+      Spring 2027: found 1 class sections.
+    [K 12/22] Opening KOR 411 — Advanced Korean III
+      No View Class Sections button; course has no sections.
+    [K 13/22] Opening KOR 412 — Advanced Korean IV
+      No View Class Sections button; course has no sections.
+    [K 14/22] Opening KOR 426 — Structure of Korean
+      No View Class Sections button; course has no sections.
+    [K 15/22] Opening KOR 444 — Experiential Learning
+      Spring 2027: found 1 class sections.
+    [K 16/22] Opening KOR 447 — Independent Study
+      Spring 2027: found 5 class sections.
+    [K 17/22] Opening KOR 475 — Undergraduate Teaching Practicum I
+      Spring 2027: found 6 class sections.
+    [K 18/22] Opening KOR 476 — Undergraduate Teaching Practicum II
+      Spring 2027: found 6 class sections.
+    [K 19/22] Opening KOR 487 — Supervised Research in Korean Studies
+      Spring 2027: found 3 class sections.
+    [K 20/22] Opening KOR 488 — Internship
+      Spring 2027: found 3 class sections.
+  Progress: group 1/1 (K 20/22) · 20 scraped, 0 already done, 0 failed · 12.2 pages/min · 1m38s elapsed · ~9s left in K
+    [K 21/22] Opening KSW 111 — Beginning Kiswahili I
+      No View Class Sections button; course has no sections.
+    [K 22/22] Opening KSW 112 — Beginning Kiswahili II
+      No View Class Sections button; course has no sections.
+  Progress: group 1/1 (K 22/22) · 22 scraped, 0 already done, 0 failed · 13.0 pages/min · 1m41s elapsed
+Exported index: 22 records (JSON + CSV)
+Exported details: 22 records (JSONL + JSON + CSV)
+Exported sections: 43 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_11/semesteros-export.zip
+
+Done in 1m41s: 22 scraped, 0 already done, 0 failed, 9 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_11/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_11/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_11/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_11/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_11/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_11/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_11/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_11/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.

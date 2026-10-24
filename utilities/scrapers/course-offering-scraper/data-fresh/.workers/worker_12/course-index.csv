@@ -1,0 +1,97 @@
+﻿subject,course_number,course_code,title,source_file,source_group_index
+LAC,200,LAC 200,Introduction to Latin American and Caribbean Societies,index_L.html,0
+LAC,487,LAC 487,Independent Research in Latin American and Caribbean Studies,index_L.html,0
+LAC,488,LAC 488,Internship,index_L.html,0
+LAN,111,LAN 111,Uncommonly Taught Language (Elementary) I,index_L.html,1
+LAN,112,LAN 112,Uncommonly Taught Language (Elementary) II,index_L.html,1
+LAN,211,LAN 211,Uncommonly Taught Language (Intermediate) I,index_L.html,1
+LAN,212,LAN 212,Uncommonly Taught Language (Intermediate) II,index_L.html,1
+LAN,447,LAN 447,Directed Readings in Uncommonly Taught Languages,index_L.html,1
+LAN,475,LAN 475,Practicum in Language Teaching I,index_L.html,1
+LAN,476,LAN 476,Practicum in Language Teaching II,index_L.html,1
+LAT,111,LAT 111,Elementary Latin I,index_L.html,2
+LAT,112,LAT 112,Elementary Latin II,index_L.html,2
+LAT,251,LAT 251,Readings in Latin Literature I,index_L.html,2
+LAT,252,LAT 252,Readings in Latin Literature II,index_L.html,2
+LAT,353,LAT 353,Literature of the Roman Republic,index_L.html,2
+LAT,354,LAT 354,Literature of the Roman Empire,index_L.html,2
+LAT,355,LAT 355,Early Medieval Latin,index_L.html,2
+LAT,356,LAT 356,Late Medieval Latin,index_L.html,2
+LAT,447,LAT 447,Directed Readings in Latin,index_L.html,2
+LAT,475,LAT 475,Undergraduate Teaching Practicum,index_L.html,2
+LBR,210,LBR 210,Critical Information Literacy,index_L.html,3
+LBR,211,LBR 211,Critical Data and AI Literacies,index_L.html,3
+LBR,475,LBR 475,Undergraduate Teaching Practicum I,index_L.html,3
+LCR,487,LCR 487,Directed Research in Community Service Learning,index_L.html,4
+LDR,210,LDR 210,Principles of Leadership,index_L.html,5
+LDR,310,LDR 310,Case Studies in Leadership,index_L.html,5
+LDR,410,LDR 410,Leadership Exploration and Practicum,index_L.html,5
+LDR,488,LDR 488,Internship in Leadership Development,index_L.html,5
+LHD,305,LHD 305,HIV Reduction in the Campus Context,index_L.html,8
+LHD,306,LHD 306,HIV Reduction in the Campus Context,index_L.html,8
+LHD,307,LHD 307,Laboratory in HIV Reduction in the Campus Context,index_L.html,8
+LHD,308,LHD 308,Laboratory in HIV Reduction in the Campus Context,index_L.html,8
+LHD,487,LHD 487,Independent Study in Human Sexual and Gender Development,index_L.html,8
+LHW,102,LHW 102,Introductory Seminar to the Health Professions,index_L.html,9
+LHW,301,LHW 301,Issues in Health and Wellness,index_L.html,9
+LHW,488,LHW 488,Internship in Health and Wellness,index_L.html,9
+LIA,487,LIA 487,Independent Research in Interdisciplinary Arts,index_L.html,10
+LIA,488,LIA 488,Internship in Arts Management,index_L.html,10
+LIN,101,LIN 101,Human Language,index_L.html,12
+LIN,110,LIN 110,The Anatomy of English Words,index_L.html,12
+LIN,120,LIN 120,Language and Technology,index_L.html,12
+LIN,200,LIN 200,Language in the United States,index_L.html,12
+LIN,201,LIN 201,Phonetics,index_L.html,12
+LIN,202,LIN 202,Introduction to Phonetics and Phonology,index_L.html,12
+LIN,203,LIN 203,Introduction to Syntax and Morphology,index_L.html,12
+LIN,230,LIN 230,Languages of the World,index_L.html,12
+LIN,235,LIN 235,Signed Languages & Deaf Communities,index_L.html,12
+LIN,240,LIN 240,Spanish in the U.S.,index_L.html,12
+LIN,250,LIN 250,Languages and Cultures of Asian Americans,index_L.html,12
+LIN,260,LIN 260,Language and Mind,index_L.html,12
+LIN,270,LIN 270,Language and Politics,index_L.html,12
+LIN,280,LIN 280,Language in Social Media,index_L.html,12
+LIN,301,LIN 301,Phonology,index_L.html,12
+LIN,307,LIN 307,Sociolinguistics,index_L.html,12
+LIN,308,LIN 308,Language Variation and Change,index_L.html,12
+LIN,311,LIN 311,Syntax,index_L.html,12
+LIN,320,LIN 320,English Grammar,index_L.html,12
+LIN,321,LIN 321,Morphology and Word Formation,index_L.html,12
+LIN,324,LIN 324,Romance Linguistics,index_L.html,12
+LIN,330,LIN 330,Language Acquisition,index_L.html,12
+LIN,334,LIN 334,Basic Programming Techniques: Computational Ling,index_L.html,12
+LIN,335,LIN 335,Computational Linguistics,index_L.html,12
+LIN,340,LIN 340,Historical Linguistics,index_L.html,12
+LIN,341,LIN 341,Bilingualism,index_L.html,12
+LIN,344,LIN 344,Literacy Development,index_L.html,12
+LIN,345,LIN 345,Writing Systems of the World,index_L.html,12
+LIN,346,LIN 346,Language and Meaning,index_L.html,12
+LIN,347,LIN 347,Pragmatics,index_L.html,12
+LIN,350,LIN 350,Experimental Phonetics,index_L.html,12
+LIN,355,LIN 355,Language and Life in a Selected Area of the World,index_L.html,12
+LIN,356,LIN 356,Topics in Language and Life in Europe,index_L.html,12
+LIN,361,LIN 361,Mathematical Methods in Linguistics,index_L.html,12
+LIN,370,LIN 370,Intercultural Communication,index_L.html,12
+LIN,375,LIN 375,TESOL Pedagogy: Theory and Practice,index_L.html,12
+LIN,378,LIN 378,Content-Based Language and Literacy Development,index_L.html,12
+LIN,380,LIN 380,Anatomy and Physiology of Speech and Hearing,index_L.html,12
+LIN,381,LIN 381,Language and Speech Disorders,index_L.html,12
+LIN,382,LIN 382,Audiology,index_L.html,12
+LIN,405,LIN 405,Writing in Linguistics,index_L.html,12
+LIN,425,LIN 425,Special Topics in Linguistics,index_L.html,12
+LIN,426,LIN 426,Special Topics in Linguistics,index_L.html,12
+LIN,427,LIN 427,Special Topics in Linguistics,index_L.html,12
+LIN,431,LIN 431,The Structure of an Uncommonly Taught Language,index_L.html,12
+LIN,444,LIN 444,Experiential Learning,index_L.html,12
+LIN,447,LIN 447,Directed Readings in Linguistics,index_L.html,12
+LIN,449,LIN 449,"Field Experience, Grades N-12",index_L.html,12
+LIN,450,LIN 450,"Field Experience, Grades N-12",index_L.html,12
+LIN,451,LIN 451,Supervised Teaching -- English as a Second Language: Primary Grades N-6,index_L.html,12
+LIN,452,LIN 452,Supervised Student Teaching in English as a Second Language: Secondary Grades 7-12,index_L.html,12
+LIN,454,LIN 454,"Managing Instruction, Assessment, and Resources",index_L.html,12
+LIN,475,LIN 475,Undergraduate Teaching Practicum I,index_L.html,12
+LIN,476,LIN 476,Undergraduate Teaching Practicum II,index_L.html,12
+LIN,487,LIN 487,Directed Research in Linguistics,index_L.html,12
+LIN,488,LIN 488,Internship,index_L.html,12
+LIN,495,LIN 495,Senior Honors Project in Linguistics,index_L.html,12
+LIN,496,LIN 496,Senior Honors Project in Linguistics,index_L.html,12

@@ -17,6 +17,7 @@ import type {
   ProgramPolicy,
   ProgramRequirement,
   Rule,
+  Substitution,
 } from "@/lib/domain/catalog/program";
 import type {
   CourseAttempt,
@@ -74,6 +75,10 @@ export interface RequirementResult {
   issues: string[];
   /** Conditions only an advisor can confirm. */
   manualChecks: string[];
+  /** Explanations, e.g. which substitution changed this requirement. */
+  notes: string[];
+  /** The rule as evaluated: the catalog rule with any active substitution applied. */
+  rule: Rule;
 }
 
 export type PolicyStatus = "satisfied" | "in-progress" | "not-met" | "pending" | "info";
@@ -92,11 +97,14 @@ export interface ProgramAudit {
   total: number;
   /** Completed courses rejected by a grade policy and not applied anywhere: retake candidates. */
   retakes: CourseCode[];
+  /** Ids of substitutions in use (the student took or planned a replacement course). */
+  activeSubstitutions: string[];
 }
 
 export interface SbcResult {
   category: SbcCategory;
-  status: RequirementStatus | "exempt";
+  /** "not-required": the 4th upper-tier category once 3 of the 4 are met. */
+  status: RequirementStatus | "exempt" | "not-required";
   appliedCode?: CourseCode;
   exemptReason?: string;
 }
@@ -178,13 +186,9 @@ function bestAttempts(attempts: CourseAttempt[]): Map<CourseCode, CourseAttempt>
 // Program audit
 // ---------------------------------------------------------------------------
 
-interface Attempt extends CourseAttempt {
-  viaSubstitution?: string;
-}
-
 interface Ctx {
   catalog: Map<CourseCode, CourseRecord>;
-  attempts: Map<CourseCode, Attempt>;
+  attempts: Map<CourseCode, CourseAttempt>;
   allowReuse: boolean;
   used: Set<CourseCode>;
   /** Applied courses per requirement id and rule id. */
@@ -211,20 +215,21 @@ function creditsOf(ctx: Ctx, attempt: CourseAttempt): number {
   return attempt.credits ?? ctx.catalog.get(attempt.code)?.credits.max ?? 0;
 }
 
-function toApplied(ctx: Ctx, attempt: Attempt): AppliedCourse {
+function toApplied(ctx: Ctx, attempt: CourseAttempt): AppliedCourse {
+  const substitution = ctx.scope.find((id) => id.startsWith(SUBSTITUTION_SCOPE));
   return {
     code: attempt.code,
     credits: creditsOf(ctx, attempt),
     state: attempt.status,
     source: attempt.source,
     grade: attempt.grade,
-    viaSubstitution: attempt.viaSubstitution,
+    ...(substitution && { viaSubstitution: substitution.slice(SUBSTITUTION_SCOPE.length) }),
   };
 }
 
 /** Whether a completed attempt meets the grade policies in scope; records why not. */
-function meetsGradePolicies(ctx: Ctx, attempt: Attempt): boolean {
-  if (attempt.status === "in-progress" || !attempt.grade || attempt.viaSubstitution) return true;
+function meetsGradePolicies(ctx: Ctx, attempt: CourseAttempt): boolean {
+  if (attempt.status === "in-progress" || !attempt.grade) return true;
   for (const policy of ctx.policies) {
     if (!("appliesTo" in policy) || !policy.appliesTo.some((id) => ctx.scope.includes(id))) continue;
     if (policy.type === "minGrade" && !meetsMinGrade(attempt.grade, policy.grade)) {
@@ -242,13 +247,13 @@ function meetsGradePolicies(ctx: Ctx, attempt: Attempt): boolean {
   return true;
 }
 
-function available(ctx: Ctx, code: CourseCode): Attempt | undefined {
+function available(ctx: Ctx, code: CourseCode): CourseAttempt | undefined {
   if (!ctx.allowReuse && ctx.used.has(code)) return undefined;
   const attempt = ctx.attempts.get(code);
   return attempt && meetsGradePolicies(ctx, attempt) ? attempt : undefined;
 }
 
-function claim(ctx: Ctx, attempt: Attempt, applied: AppliedCourse) {
+function claim(ctx: Ctx, attempt: CourseAttempt, applied: AppliedCourse) {
   ctx.used.add(attempt.code);
   for (const id of ctx.scope) ctx.appliedBy.set(id, [...(ctx.appliedBy.get(id) ?? []), applied]);
 }
@@ -354,7 +359,7 @@ function evaluateChoose(ctx: Ctx, rule: Extract<Rule, { type: "choose" }>): Node
     .filter((a) => matchesSelector(a.code, ctx.catalog.get(a.code), rule.from))
     .sort((a, b) => {
       // Courses that satisfy a minimum-from constraint first, then completed before in-progress.
-      const inMin = (x: Attempt) => (minFrom.some((k) => matchesSelector(x.code, ctx.catalog.get(x.code), k.from)) ? 0 : 1);
+      const inMin = (x: CourseAttempt) => (minFrom.some((k) => matchesSelector(x.code, ctx.catalog.get(x.code), k.from)) ? 0 : 1);
       return inMin(a) - inMin(b) || Number(a.status === "in-progress") - Number(b.status === "in-progress");
     });
 
@@ -459,24 +464,134 @@ function evaluationOrder(requirements: ProgramRequirement[]): ProgramRequirement
   return order;
 }
 
-/** Substitutions that need no approval and have no eligibility condition apply automatically. */
-function applySubstitutions(program: ProgramDefinition, attempts: Map<CourseCode, Attempt>) {
-  for (const sub of program.substitutions) {
-    if (sub.requiresApproval || sub.condition || sub.replaces.type !== "courses") continue;
-    const withCodes =
-      sub.with.type === "course"
-        ? [sub.with.code]
-        : sub.with.type === "allOf" && sub.with.rules.every((r) => r.type === "course")
-          ? sub.with.rules.map((r) => (r.type === "course" ? r.code : ""))
-          : [];
-    const taken = withCodes.map((code) => attempts.get(code));
-    if (withCodes.length === 0 || taken.some((a) => !a)) continue;
-    const status = taken.every((a) => a!.status === "completed") ? "completed" : "in-progress";
-    for (const code of sub.replaces.courses) {
-      if (attempts.has(code)) continue;
-      attempts.set(code, { code, source: "sbu", status, credits: 0, viaSubstitution: sub.id });
+const SUBSTITUTION_SCOPE = "substitution:";
+
+/** The replacement's course codes, when it's one course or an allOf of courses. */
+function replacementCodes(sub: Substitution): CourseCode[] {
+  if (sub.with.type === "course") return [sub.with.code];
+  if (sub.with.type === "allOf" && sub.with.rules.every((r) => r.type === "course")) {
+    return sub.with.rules.flatMap((r) => (r.type === "course" ? [r.code] : []));
+  }
+  return [];
+}
+
+/**
+ * A substitution is in use once the student has taken, is taking, or has
+ * planned any of its replacement courses (adding CSE 160 to the plan selects
+ * the honors sequence). Ones needing approval, or replacing a rule rather
+ * than courses, never apply automatically.
+ */
+function activeSubstitutions(program: ProgramDefinition, attempts: Map<CourseCode, CourseAttempt>, planned: Set<CourseCode>): Substitution[] {
+  return program.substitutions.filter((sub) => {
+    if (sub.requiresApproval || sub.replaces.type !== "courses") return false;
+    const codes = replacementCodes(sub);
+    return codes.length > 0 && codes.some((code) => attempts.has(code) || planned.has(code));
+  });
+}
+
+interface SubstitutionState {
+  sub: Substitution;
+  replaced: CourseCode[];
+  requirementId: string;
+  placedIn?: { id: string; label: string };
+  covered: Map<string, CourseCode[]>;
+}
+
+/**
+ * Rewrites a rule for an active substitution. The first replaced course (in
+ * requirement order) becomes the replacement rule, so its progress and missing
+ * courses show up there; later replaced courses are covered and drop out.
+ * Returns null for a node the substitution fully covers.
+ */
+function substituteRule(rule: Rule, state: SubstitutionState): Rule | null {
+  switch (rule.type) {
+    case "course":
+      if (!state.replaced.includes(rule.code)) return rule;
+      if (!state.placedIn) {
+        state.placedIn = { id: state.requirementId, label: "" };
+        return { ...state.sub.with, id: `${SUBSTITUTION_SCOPE}${state.sub.id}`, ...(state.sub.condition && { manualCheck: state.sub.condition }) };
+      }
+      // Replaced courses in the same requirement as the replacement need no separate note.
+      if (state.requirementId !== state.placedIn.id) {
+        state.covered.set(state.requirementId, [...(state.covered.get(state.requirementId) ?? []), rule.code]);
+      }
+      return null;
+    case "allOf":
+      return { ...rule, rules: rule.rules.map((r) => substituteRule(r, state)).filter((r): r is Rule => r !== null) };
+    case "anyOf": {
+      const rules = rule.rules.map((r) => substituteRule(r, state));
+      // A covered alternative satisfies the whole choice.
+      return rules.includes(null) ? null : { ...rule, rules: rules as Rule[] };
+    }
+    default:
+      return rule;
+  }
+}
+
+export interface SubstitutionLayout {
+  sub: Substitution;
+  /** Course codes that make up the replacement. */
+  replacement: CourseCode[];
+  /** Course codes it replaces. */
+  replaced: CourseCode[];
+  /** Where the replacement is evaluated: the requirement holding the first replaced course. */
+  placedIn: { id: string; label: string };
+  /** Replaced courses in other requirements than placedIn, by requirement id. */
+  covered: Map<string, CourseCode[]>;
+}
+
+/** Rewrites requirements for one substitution and reports where it landed. */
+function layoutSubstitution(
+  requirements: ProgramRequirement[],
+  sub: Substitution,
+): { requirements: ProgramRequirement[]; layout: SubstitutionLayout | null } {
+  if (sub.replaces.type !== "courses") return { requirements, layout: null };
+  const state: SubstitutionState = { sub, replaced: sub.replaces.courses, requirementId: "", covered: new Map() };
+  const rewritten = requirements.map((req) => {
+    state.requirementId = req.id;
+    const hadPlaced = Boolean(state.placedIn);
+    const rule = substituteRule(req.rule, state) ?? { type: "allOf" as const, rules: [] };
+    if (!hadPlaced && state.placedIn) state.placedIn.label = req.label;
+    return { ...req, rule };
+  });
+  if (!state.placedIn) return { requirements, layout: null };
+  return {
+    requirements: rewritten,
+    layout: { sub, replacement: replacementCodes(sub), replaced: state.replaced, placedIn: state.placedIn, covered: state.covered },
+  };
+}
+
+/**
+ * Where each course substitution in a program would apply, whether or not a
+ * student uses it. The Degree Explorer shows alternatives with this, so it
+ * matches how the audit applies them.
+ */
+export function substitutionLayouts(program: ProgramDefinition): SubstitutionLayout[] {
+  return program.substitutions.flatMap((sub) => {
+    const { layout } = layoutSubstitution(program.requirements, sub);
+    return layout && layout.replacement.length > 0 ? [layout] : [];
+  });
+}
+
+/** Applies active substitutions to the requirement rules and explains each change. */
+function applySubstitutions(
+  requirements: ProgramRequirement[],
+  substitutions: Substitution[],
+): { requirements: ProgramRequirement[]; notes: Map<string, string[]> } {
+  const notes = new Map<string, string[]>();
+  const note = (id: string, text: string) => notes.set(id, [...(notes.get(id) ?? []), text]);
+  for (const sub of substitutions) {
+    const result = layoutSubstitution(requirements, sub);
+    if (!result.layout) continue;
+    requirements = result.requirements;
+    const { placedIn, covered, replacement, replaced } = result.layout;
+    const codes = replacement.join(", ");
+    note(placedIn.id, `Substitution in use: ${codes} replace ${replaced.join(", ")}.`);
+    for (const [id, codesCovered] of covered) {
+      note(id, `${codesCovered.join(", ")} ${codesCovered.length === 1 ? "is" : "are"} covered by ${codes} (requirement ${placedIn.label}).`);
     }
   }
+  return { requirements, notes };
 }
 
 function evaluatePolicies(ctx: Ctx, program: ProgramDefinition, rejectedBy: Map<string, Ctx["issues"]>): PolicyResult[] {
@@ -484,7 +599,7 @@ function evaluatePolicies(ctx: Ctx, program: ProgramDefinition, rejectedBy: Map<
     const seen = new Set<string>();
     return ids
       .flatMap((id) => ctx.appliedBy.get(id) ?? [])
-      .filter((a) => !a.viaSubstitution && !seen.has(a.code) && seen.add(a.code));
+      .filter((a) => !seen.has(a.code) && seen.add(a.code));
   };
 
   return program.policies.map((policy): PolicyResult => {
@@ -550,8 +665,10 @@ export function auditProgram(
   student: StudentRecord,
   catalog: Map<CourseCode, CourseRecord>,
 ): ProgramAudit {
-  const attempts: Map<CourseCode, Attempt> = bestAttempts(student.attempts);
-  applySubstitutions(program, attempts);
+  const attempts = bestAttempts(student.attempts);
+  const planned = new Set(student.plan.flatMap((t) => t.items.flatMap((i) => ("code" in i ? [i.code] : []))));
+  const active = activeSubstitutions(program, attempts, planned);
+  const { requirements: rules, notes } = applySubstitutions(program.requirements, active);
 
   const ctx: Ctx = {
     catalog,
@@ -567,7 +684,7 @@ export function auditProgram(
 
   const byId = new Map<string, RequirementResult>();
   const rejectedBy = new Map<string, Ctx["issues"]>();
-  for (const req of evaluationOrder(program.requirements)) {
+  for (const req of evaluationOrder(rules)) {
     const reqCtx: Ctx = { ...ctx, scope: [req.id], issues: [] };
     const r = evaluateRule(reqCtx, req.rule);
     rejectedBy.set(req.id, reqCtx.issues);
@@ -584,6 +701,8 @@ export function auditProgram(
       missing: r.missing,
       issues,
       manualChecks: r.manualChecks,
+      notes: notes.get(req.id) ?? [],
+      rule: req.rule,
     });
   }
 
@@ -596,6 +715,7 @@ export function auditProgram(
     satisfied: requirements.filter((r) => r.status === "satisfied").length,
     total: requirements.length,
     retakes: [...ctx.rejected].filter((code) => !appliedCodes.has(code)),
+    activeSubstitutions: active.map((sub) => sub.id),
   };
 }
 
@@ -608,6 +728,12 @@ export function auditProgram(
  * distinct areas of knowledge" (Undergraduate Catalog, The Stony Brook Curriculum).
  */
 export const DEEPER_UNDERSTANDING = { categories: ["EXP+", "HFA+", "SBS+", "STEM+"] as SbcCode[], required: 3 };
+
+/** Splits SBC results into the individually required objectives and the "three of" upper-tier group. */
+export function groupSbcResults(results: SbcResult[]): { required: SbcResult[]; threeOf: SbcResult[] } {
+  const inGroup = (r: SbcResult) => DEEPER_UNDERSTANDING.categories.includes(r.category.code);
+  return { required: results.filter((r) => !inGroup(r)), threeOf: results.filter(inGroup) };
+}
 
 export function auditSbc(
   student: StudentRecord,
@@ -641,8 +767,7 @@ export function auditSbc(
   if (deeper.filter(met).length >= DEEPER_UNDERSTANDING.required) {
     for (const r of deeper) {
       if (met(r) || r.status === "in-progress") continue;
-      r.status = "exempt";
-      r.exemptReason = `Not required: ${DEEPER_UNDERSTANDING.required} of the ${DEEPER_UNDERSTANDING.categories.length} Pursue Deeper Understanding categories are met`;
+      r.status = "not-required";
     }
   }
   const optional = deeper.length - Math.min(deeper.length, DEEPER_UNDERSTANDING.required);
@@ -651,7 +776,7 @@ export function auditSbc(
     results,
     satisfied:
       results.filter((r) => !isDeeper(r) && met(r)).length +
-      Math.min(deeper.filter((r) => met(r) && !r.exemptReason?.startsWith("Not required")).length, DEEPER_UNDERSTANDING.required),
+      Math.min(deeper.filter(met).length, DEEPER_UNDERSTANDING.required),
     total: results.length - optional,
   };
 }
