@@ -86,6 +86,11 @@ export function RecordEditor({
   }
 
   const majors = programs.filter((p) => p.kind === "major");
+  const specialPrograms = programs.filter((p) => p.kind === "program");
+  const majorId = draft.programIds.find((id) => majors.some((p) => p.id === id)) ?? "";
+  // The major comes first, then any special programs (Honors College, WISE, ...).
+  const setPrograms = (major: string, special: string[]) => update({ programIds: [...(major ? [major] : []), ...special] });
+  const selectedSpecial = draft.programIds.filter((id) => specialPrograms.some((p) => p.id === id));
   const totalCredits = draft.attempts
     .filter((a) => a.status === "completed" && a.grade && !["F", "NC", "W", "I"].includes(a.grade))
     .reduce((sum, a) => sum + (a.credits ?? catalog.get(a.code)?.credits ?? 0), 0);
@@ -185,8 +190,8 @@ export function RecordEditor({
               <span className="text-xs font-medium">Major</span>
               <select
                 className={selectClassName}
-                value={draft.programIds[0] ?? ""}
-                onChange={(e) => update({ programIds: e.target.value ? [e.target.value] : [] })}
+                value={majorId}
+                onChange={(e) => setPrograms(e.target.value, selectedSpecial)}
               >
                 <option value="">None</option>
                 {majors.map((p) => (
@@ -196,6 +201,27 @@ export function RecordEditor({
                 ))}
               </select>
             </label>
+            {specialPrograms.length > 0 && (
+              <fieldset className="space-y-1.5">
+                <legend className="text-xs font-medium">Special programs</legend>
+                {specialPrograms.map((p) => (
+                  <label key={p.id} className="flex items-center gap-2 text-sm">
+                    <input
+                      type="checkbox"
+                      className="size-4 accent-primary"
+                      checked={selectedSpecial.includes(p.id)}
+                      onChange={(e) =>
+                        setPrograms(
+                          majorId,
+                          e.target.checked ? [...selectedSpecial, p.id] : selectedSpecial.filter((id) => id !== p.id),
+                        )
+                      }
+                    />
+                    {p.name}
+                  </label>
+                ))}
+              </fieldset>
+            )}
             <label className="block space-y-1.5">
               <span className="text-xs font-medium">Current term</span>
               <select

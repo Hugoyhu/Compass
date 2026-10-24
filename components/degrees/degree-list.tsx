@@ -25,6 +25,7 @@ export function DegreeList({ programs }: { programs: ProgramSummary[] }) {
     all: programs.length,
     major: programs.filter((p) => p.kind === "major").length,
     minor: programs.filter((p) => p.kind === "minor").length,
+    program: programs.filter((p) => p.kind === "program").length,
   };
 
   return (
@@ -37,7 +38,7 @@ export function DegreeList({ programs }: { programs: ProgramSummary[] }) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search"
-            aria-label="Search majors and minors"
+            aria-label="Search majors, minors, and programs"
             className="pl-8"
           />
         </div>
@@ -46,6 +47,7 @@ export function DegreeList({ programs }: { programs: ProgramSummary[] }) {
             <TabsTrigger value="all">All ({counts.all})</TabsTrigger>
             <TabsTrigger value="major">Majors ({counts.major})</TabsTrigger>
             <TabsTrigger value="minor">Minors ({counts.minor})</TabsTrigger>
+            <TabsTrigger value="program">Programs ({counts.program})</TabsTrigger>
           </TabsList>
         </Tabs>
       </div>

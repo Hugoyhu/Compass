@@ -1,0 +1,150 @@
+{
+  "id": "cse-honors",
+  "name": "Honors in Computer Science",
+  "kind": "program",
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1411",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "hand"
+  },
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "cse-honors.1",
+      "label": "1",
+      "title": "Foundations of Computer Science: Honors",
+      "sourceText": "CSE 150 - Foundations of Computer Science: Honors 4 credits",
+      "rule": {
+        "type": "course",
+        "code": "CSE 150"
+      }
+    },
+    {
+      "id": "cse-honors.2",
+      "label": "2",
+      "title": "Computer Science A: Honors, with lab",
+      "sourceText": "Students may substitute the four courses CSE 160, CSE 161, CSE 260 and CSE 261 for the three courses CSE 114, CSE 214 and CSE 307.",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CSE 160"
+          },
+          {
+            "type": "course",
+            "code": "CSE 161"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cse-honors.3",
+      "label": "3",
+      "title": "Computer Science B: Honors, with lab",
+      "sourceText": "Students may substitute the four courses CSE 160, CSE 161, CSE 260 and CSE 261 for the three courses CSE 114, CSE 214 and CSE 307.",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "CSE 260"
+          },
+          {
+            "type": "course",
+            "code": "CSE 261"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cse-honors.4",
+      "label": "4",
+      "title": "Theory of Computation: Honors",
+      "sourceText": "Students pursuing Honors may substitute CSE 350 - Theory of Computation: Honors for CSE 213.",
+      "rule": {
+        "type": "course",
+        "code": "CSE 350"
+      }
+    },
+    {
+      "id": "cse-honors.5",
+      "label": "5",
+      "title": "Analysis of Algorithms: Honors",
+      "sourceText": "CSE 385 - Analysis of Algorithms: Honors 4 credits",
+      "rule": {
+        "type": "course",
+        "code": "CSE 385"
+      }
+    },
+    {
+      "id": "cse-honors.6",
+      "label": "6",
+      "title": "Research or senior honors project",
+      "sourceText": "CSE 487 - Research in Computer Science or CSE 488 - Internship in Computer Science or CSE 495/CSE 496 Senior Honors Research Project I, II",
+      "rule": {
+        "type": "anyOf",
+        "rules": [
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CSE 487"
+              },
+              {
+                "type": "course",
+                "code": "CSE 488"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "CSE 495"
+              },
+              {
+                "type": "course",
+                "code": "CSE 496"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "policies": [],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "other",
+      "text": "Requirements follow the department's honors course sequence. The catalog states the conditions for conferral of honors: all CS major requirements, the two-semester honors project, CSE 303 or CSE 350, at least three honors courses besides the project (one, with a GPA of at least 3.75 overall and in CSE), and a GPA of at least 3.50, both cumulative and in CSE courses."
+    },
+    {
+      "topic": "other",
+      "text": "Graduate courses or other advanced undergraduate courses may count as honors courses with prior department approval. The teaching practicum CSE 475 may substitute for one honors course."
+    },
+    {
+      "topic": "grading",
+      "text": "Students whose GPA drops below 3.50, cumulative or in CSE courses, may lose Honors designation."
+    },
+    {
+      "topic": "admission",
+      "text": "Open to freshmen (unweighted high school average of 93 or higher, strong math and science grades) and to continuing CS majors with U2 standing or higher, at least two technical CSE courses, and a 3.50 GPA both in CSE courses and cumulative."
+    },
+    {
+      "topic": "other",
+      "text": "Honors students in good standing at the end of junior year are recommended, on application, for the five-year joint B.S./M.S. program in Computer Science."
+    }
+  ]
+}

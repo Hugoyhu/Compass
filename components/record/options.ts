@@ -10,7 +10,7 @@ export interface CourseOption {
 export interface ProgramOption {
   id: string;
   name: string;
-  kind: "major" | "minor";
+  kind: "major" | "minor" | "program";
 }
 
 /** Default "current term" for new records; students can change it. */

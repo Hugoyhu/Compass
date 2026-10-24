@@ -1,0 +1,106 @@
+{
+  "id": "university-scholars",
+  "name": "University Scholars",
+  "kind": "program",
+  "source": {
+    "catalog": "Fall 2026 Undergraduate Catalog",
+    "url": "https://catalog.stonybrook.edu/preview_program.php?catoid=11&poid=1579",
+    "fetchedAt": "2026-10-24"
+  },
+  "review": {
+    "status": "draft",
+    "extractedBy": "hand"
+  },
+  "allowCourseReuse": false,
+  "requirements": [
+    {
+      "id": "university-scholars.1",
+      "label": "1",
+      "title": "Introduction to University Scholars",
+      "sourceText": "Students must satisfactorily complete first-year foundational courses (SCH 101 and SCH 102) ... Receive an “S” (Satisfactory) grade in their SCH 101 course",
+      "rule": {
+        "type": "course",
+        "code": "SCH 101",
+        "manualCheck": "Requires a grade of S (Satisfactory)."
+      }
+    },
+    {
+      "id": "university-scholars.2",
+      "label": "2",
+      "title": "Scholars courses",
+      "sourceText": "First Year SCH 101 and 102; Second and Third Years SCH 200 and 300; Fourth Year SCH 490. The Scholars Senior Capstone (SCH 490) is the culminating academic requirement in the program.",
+      "rule": {
+        "type": "allOf",
+        "rules": [
+          {
+            "type": "course",
+            "code": "SCH 102"
+          },
+          {
+            "type": "course",
+            "code": "SCH 200"
+          },
+          {
+            "type": "course",
+            "code": "SCH 300"
+          },
+          {
+            "type": "course",
+            "code": "SCH 490"
+          }
+        ]
+      }
+    },
+    {
+      "id": "university-scholars.3",
+      "label": "3",
+      "title": "EXP+ requirement",
+      "sourceText": "Students must satisfactorily complete ... the EXP+ requirement",
+      "rule": {
+        "type": "unparsed",
+        "text": "the EXP+ requirement",
+        "reason": "Any course carrying EXP+ satisfies it; the SBC checklist tracks EXP+."
+      }
+    },
+    {
+      "id": "university-scholars.4",
+      "label": "4",
+      "title": "Co-curricular engagement",
+      "sourceText": "First-semester Scholars are required to participate in two co-curricular engagement activities during their first term in the program; in each subsequent semester, they must participate in at least one.",
+      "rule": {
+        "type": "unparsed",
+        "text": "Two co-curricular engagement activities in the first semester, then at least one each semester",
+        "reason": "Engagement activities don't appear on a transcript."
+      }
+    }
+  ],
+  "policies": [
+    {
+      "type": "minGrade",
+      "grade": "C",
+      "appliesTo": [
+        "university-scholars.2"
+      ],
+      "sourceText": "a C or better in all required SCH courses"
+    }
+  ],
+  "substitutions": [],
+  "sbc": {
+    "exemptions": [],
+    "fulfillment": []
+  },
+  "notes": [
+    {
+      "topic": "other",
+      "text": "To stay in University Scholars and receive the transcript notation: an S in SCH 101, a C or better in all required SCH courses, a cumulative GPA of at least 3.0, and the engagement minimum each semester."
+    },
+    {
+      "topic": "other",
+      "text": "These are the requirements for students entering in Fall 2025 or later. Students who entered earlier complete SCH 101, SCH 102, the EXP+ requirement, and engagement requirements only."
+    },
+    {
+      "topic": "admission",
+      "text": "By invitation only."
+    }
+  ]
+}
