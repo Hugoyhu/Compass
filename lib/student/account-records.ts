@@ -6,7 +6,7 @@ import { StudentRecordSchema } from "./record";
 export async function loadAccountRecord(userId: string): Promise<StudentRecord | null> {
   const sql = requireSql();
   const [profile] = await sql`
-    select name, entry_term, current_term, program_ids from student_profiles where user_id = ${userId}`;
+    select name, entry_term, current_term, program_ids, plan from student_profiles where user_id = ${userId}`;
   if (!profile) return null;
   const rows = await sql`
     select code, source, term, grade, status, credits, origin, title, sbc
@@ -29,6 +29,7 @@ export async function loadAccountRecord(userId: string): Promise<StudentRecord |
     currentTerm: profile.current_term,
     programIds: profile.program_ids,
     attempts,
+    plan: profile.plan ?? [],
   });
   return parsed.success ? (parsed.data as StudentRecord) : null;
 }
@@ -37,11 +38,11 @@ export async function loadAccountRecord(userId: string): Promise<StudentRecord |
 export async function saveAccountRecord(userId: string, record: StudentRecord): Promise<void> {
   await requireSql().begin(async (tx) => {
     await tx`
-      insert into student_profiles (user_id, name, entry_term, current_term, program_ids, updated_at)
-      values (${userId}, ${record.name}, ${record.entryTerm}, ${record.currentTerm}, ${tx.array(record.programIds)}, now())
+      insert into student_profiles (user_id, name, entry_term, current_term, program_ids, plan, updated_at)
+      values (${userId}, ${record.name}, ${record.entryTerm}, ${record.currentTerm}, ${tx.array(record.programIds)}, ${tx.json(record.plan as unknown as Parameters<typeof tx.json>[0])}, now())
       on conflict (user_id) do update set
         name = excluded.name, entry_term = excluded.entry_term, current_term = excluded.current_term,
-        program_ids = excluded.program_ids, updated_at = now()`;
+        program_ids = excluded.program_ids, plan = excluded.plan, updated_at = now()`;
     await tx`delete from course_attempts where user_id = ${userId}`;
     if (record.attempts.length === 0) return;
     const rows = record.attempts.map((a, position) => ({
