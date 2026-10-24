@@ -75,3 +75,6 @@ export interface SemesterPlan {
   name: string;
   semesters: PlannedSemester[];
 }
+
+/** Majors and minors a student can track at once. */
+export const MAX_PROGRAMS = 4;

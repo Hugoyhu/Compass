@@ -9,7 +9,7 @@
  */
 import { z } from "zod";
 import { CourseCodeSchema, LetterGradeSchema, SbcCodeSchema } from "@/lib/domain/catalog/common";
-import type { CourseAttempt, CreditSource, StudentRecord, TermId } from "@/lib/domain/types";
+import { MAX_PROGRAMS, type CourseAttempt, type CreditSource, type StudentRecord, type TermId } from "@/lib/domain/types";
 
 export const TermIdSchema = z.string().regex(/^\d{4}-(FA|WI|SP|SU)$/) as unknown as z.ZodType<TermId>;
 export const GradeSchema = z.union([LetterGradeSchema, z.enum(["P", "T", "NC", "W", "I"])]);
@@ -31,7 +31,7 @@ export const StudentRecordSchema = z.object({
   name: z.string().max(80),
   entryTerm: TermIdSchema,
   currentTerm: TermIdSchema,
-  programIds: z.array(z.string()).max(4),
+  programIds: z.array(z.string()).max(MAX_PROGRAMS),
   attempts: z.array(CourseAttemptSchema).max(120),
 });
 

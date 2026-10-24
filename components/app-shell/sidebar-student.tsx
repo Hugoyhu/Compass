@@ -9,7 +9,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 export async function SidebarStudent() {
   const [record, user] = await Promise.all([getStudentRecord(), getCurrentUser()]);
   const programs = record ? await getRepository().listPrograms() : [];
-  const major = programs.find((p) => record?.programIds.includes(p.id));
+  const names = (record?.programIds ?? []).map((id) => programs.find((p) => p.id === id)?.name).filter(Boolean);
   const name = record?.name || user?.username || (record ? "Your record" : "No record yet");
   const displayName = record?.name || user?.username;
   const initials = displayName ? displayName.split(/\s+/).map((part) => part[0]).join("").slice(0, 2) : "?";
@@ -24,7 +24,7 @@ export async function SidebarStudent() {
           <div className="grid flex-1 text-left leading-tight">
             <span className="truncate font-medium">{name}</span>
             <span className="truncate text-xs text-muted-foreground">
-              {major?.name ?? (record ? "Choose a major" : "Add your courses")}
+              {names.length > 0 ? names.join(", ") : record ? "No programs yet" : "Add your courses"}
             </span>
           </div>
         </SidebarMenuButton>
