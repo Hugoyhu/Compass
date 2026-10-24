@@ -53,27 +53,20 @@ export interface StudentRecord {
   /** Ids of the student's majors and minors (ProgramDefinition ids). */
   programIds: string[];
   attempts: CourseAttempt[];
+  /** Future terms the student intends to take, in order. */
+  plan: PlannedTerm[];
 }
 
 // ---------------------------------------------------------------------------
 // Plans
 // ---------------------------------------------------------------------------
 
-export interface PlannedCourse {
-  code: CourseCode;
-  /** Requirement ids this course is intended to satisfy. */
-  satisfies: string[];
-}
+/** A planned course, or a placeholder for a free elective of some number of credits. */
+export type PlanItem = { code: CourseCode } | { elective: number };
 
-export interface PlannedSemester {
+export interface PlannedTerm {
   term: TermId;
-  courses: PlannedCourse[];
-}
-
-export interface SemesterPlan {
-  id: string;
-  name: string;
-  semesters: PlannedSemester[];
+  items: PlanItem[];
 }
 
 /** Programs (majors, minors, honors programs, …) a student can track at once. */

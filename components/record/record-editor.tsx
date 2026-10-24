@@ -31,6 +31,7 @@ const EMPTY_RECORD: StudentRecord = {
   currentTerm: DEFAULT_CURRENT_TERM,
   programIds: [],
   attempts: [],
+  plan: [],
 };
 
 export function RecordEditor({
