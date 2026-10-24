@@ -1,25 +1,25 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { GetStarted } from "@/components/onboarding/get-started";
-import { PlanEditor } from "@/components/planner/plan-editor";
+import { ScheduleBuilder } from "@/components/planner/schedule-builder";
 import { Skeleton } from "@/components/ui/skeleton";
-import { getPlanView } from "@/lib/services/plan";
-import { getStudentRecord } from "@/lib/student/store";
+import { getScheduleView } from "@/lib/services/schedule";
+import { readSchedule } from "@/lib/student/schedule";
 
-export const metadata: Metadata = { title: "Semester Planner" };
+export const metadata: Metadata = { title: "Schedule Builder" };
 
-export default function PlannerPage() {
+export default function PlannerPage({ searchParams }: PageProps<"/planner">) {
   return (
-    <main className="mx-auto w-full max-w-7xl space-y-6 p-4 md:p-6">
-      <Suspense fallback={<Skeleton className="h-[32rem]" />}>
-        <Planner />
+    <main className="mx-auto w-full max-w-7xl p-4 md:p-6">
+      <Suspense fallback={<Skeleton className="h-[40rem]" />}>
+        <Schedule searchParams={searchParams} />
       </Suspense>
     </main>
   );
 }
 
-async function Planner() {
-  const record = await getStudentRecord();
-  if (!record) return <GetStarted />;
-  return <PlanEditor view={await getPlanView(record)} />;
+async function Schedule({ searchParams }: Pick<PageProps<"/planner">, "searchParams">) {
+  const { term } = await searchParams;
+  const view = await getScheduleView(typeof term === "string" ? term : undefined);
+  const selected = view.term ? await readSchedule(view.term) : [];
+  return <ScheduleBuilder key={view.term} view={view} initialSelected={selected} />;
 }

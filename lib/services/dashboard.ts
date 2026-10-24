@@ -5,13 +5,14 @@
  */
 import { getRepository } from "@/lib/data/repository";
 import type { CourseRecord } from "@/lib/domain/catalog/course";
-import { nextRegularTerm } from "@/lib/domain/terms";
 import type { StudentRecord } from "@/lib/domain/types";
 import { kindOrder } from "@/lib/domain/program-kinds";
 import { runDegreeAudit } from "@/lib/engine/audit";
+import { computeGpa } from "@/lib/engine/gpa";
 import { checkPlan } from "@/lib/engine/plan";
-import { estimateGraduationTerm, proposeNextSemester } from "@/lib/engine/planner";
-import { countMainCampusSections, planContext } from "./plan";
+import { estimateGraduationTerm } from "@/lib/engine/planner";
+import { planContext } from "./plan";
+import { getNextSemesterSchedule } from "./schedule";
 
 /** Display info for a course code, falling back to the transcript title for unknown courses. */
 export interface CourseLabel {
@@ -30,18 +31,12 @@ export async function getStudentView(student: StudentRecord) {
   ]);
 
   const audit = runDegreeAudit({ student, programs, courses, sbcCategories, creditRules });
-  const nextTerm = nextRegularTerm(student.currentTerm);
-  const sections = await repo.listSections(nextTerm);
-  const sectionCounts = sections && countMainCampusSections(sections);
-  const proposal = proposeNextSemester({ audit, student, courses, term: nextTerm, sectionCounts });
+  const nextSemester = await getNextSemesterSchedule(student.currentTerm);
   const graduation = estimateGraduationTerm(audit, student.currentTerm);
 
-  // With a plan, the dashboard shows its first term and its graduation term instead of estimates.
+  // With a plan, the dashboard shows its graduation term instead of an estimate.
   const checked = student.plan.length > 0 ? checkPlan(await planContext(student), student.plan) : null;
-  const plan = checked && {
-    firstTerm: checked.terms[0],
-    graduation: checked.projection.graduation,
-  };
+  const plan = checked && { graduation: checked.projection.graduation };
 
   const catalog = new Map(courses.map((c) => [c.code, c]));
   const labels: Record<string, CourseLabel> = {};
@@ -49,6 +44,8 @@ export async function getStudentView(student: StudentRecord) {
     const course = catalog.get(attempt.code);
     labels[attempt.code] = { code: attempt.code, title: course?.title ?? attempt.title ?? "Unknown course", inCatalog: !!course };
   }
+
+  const gpa = computeGpa(student.attempts, (a) => a.credits ?? catalog.get(a.code)?.credits.max ?? 0);
 
   const currentCourses = student.attempts
     .filter((a) => a.status === "in-progress")
@@ -68,10 +65,11 @@ export async function getStudentView(student: StudentRecord) {
     audit,
     programs: enrolled,
     major: enrolled.find((p) => p.program.kind === "major"),
-    proposal,
+    nextSemester,
     graduation,
     plan,
     currentCourses,
+    gpa,
     labels,
   };
 }

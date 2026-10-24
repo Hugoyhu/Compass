@@ -72246,6 +72246,58 @@
     }
   },
   {
+    "code": "POL 369",
+    "title": "Introduction to Political Informatics",
+    "credits": {
+      "min": 3,
+      "max": 3
+    },
+    "description": "Recent advances in the availability of large data sets, analytic methods, and technology tools have impacted the foundations of democratic society, specifically the ability of elections to provide representation for the underlying population. This course presents the information aspects of these advances. Topics covered include election data capture, election result data sets, gerrymandering, redistricting, micro-targeting, voter surveys, election security, election district geometry, impact of social media, measures of political quality, and the prediction of election results. This course is offered as both ISE 369 and POL 369.",
+    "sbc": [
+      {
+        "category": "TECH"
+      },
+      {
+        "category": "SBS+"
+      }
+    ],
+    "prerequisiteText": "AMS 102, AMS 110, AMS 310, or POL 201 or any other course satisfying the POL Major Methodology requirement",
+    "advisoryText": "POL 102; CSE 101, CSE 114, or IAE 101",
+    "equivalents": ["ISE 369"],
+    "attributes": [],
+    "typicallyOffered": ["Spring"],
+    "source": {
+      "catalog": "Stony Brook PeopleSoft course catalog",
+      "url": "https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL",
+      "fetchedAt": "2026-10-24"
+    },
+    "prerequisites": {
+      "type": "or",
+      "of": [
+        {
+          "type": "course",
+          "code": "AMS 102"
+        },
+        {
+          "type": "course",
+          "code": "AMS 110"
+        },
+        {
+          "type": "course",
+          "code": "AMS 310"
+        },
+        {
+          "type": "course",
+          "code": "POL 201"
+        },
+        {
+          "type": "unparsed",
+          "text": "any other course satisfying the POL Major Methodology requirement"
+        }
+      ]
+    }
+  },
+  {
     "code": "ISE 377",
     "title": "Introduction to Medical Imaging",
     "credits": {

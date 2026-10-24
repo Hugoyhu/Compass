@@ -8,7 +8,6 @@ import { z } from "zod";
 import { CourseRecordSchema, type CourseRecord } from "@/lib/domain/catalog/course";
 import { OfferingTermSchema, type OfferingTerm } from "@/lib/domain/catalog/offering";
 import { ProgramDefinitionSchema, type ProgramDefinition } from "@/lib/domain/catalog/program";
-import { seedCourses } from "./seed/courses";
 
 const CATALOG_DIR = path.join(process.cwd(), "data/catalog");
 
@@ -28,15 +27,27 @@ export function loadProgramFiles(): ProgramDefinition[] {
   return programs;
 }
 
-/** Real courses from courses.json when present and valid; otherwise the demo seed. */
-export function loadCourseFiles(): { courses: CourseRecord[]; fromCatalog: boolean } {
-  const file = path.join(CATALOG_DIR, "courses.json");
-  if (existsSync(file)) {
-    const parsed = z.array(CourseRecordSchema).safeParse(JSON.parse(readFileSync(file, "utf8")));
-    if (parsed.success) return { courses: parsed.data, fromCatalog: true };
-    console.warn("[catalog] data/catalog/courses.json is invalid; falling back to demo courses");
+/** Course codes are keys throughout the app, so a code listed twice keeps its first record. */
+function uniqueByCode(courses: CourseRecord[]): CourseRecord[] {
+  const seen = new Set<string>();
+  const unique = courses.filter((c) => !seen.has(c.code) && seen.add(c.code));
+  if (unique.length < courses.length) {
+    console.warn(`[catalog] courses.json lists ${courses.length - unique.length} course codes more than once; keeping the first of each`);
   }
-  return { courses: seedCourses, fromCatalog: false };
+  return unique;
+}
+
+/** Courses from courses.json. A missing or invalid file yields no courses rather than taking the app down. */
+export function loadCourseFiles(): CourseRecord[] {
+  const file = path.join(CATALOG_DIR, "courses.json");
+  if (!existsSync(file)) {
+    console.warn("[catalog] data/catalog/courses.json is missing; run npm run import:courses");
+    return [];
+  }
+  const parsed = z.array(CourseRecordSchema).safeParse(JSON.parse(readFileSync(file, "utf8")));
+  if (parsed.success) return uniqueByCode(parsed.data);
+  console.warn("[catalog] data/catalog/courses.json is invalid; run npm run validate:catalog");
+  return [];
 }
 
 export function loadOfferingFiles(): OfferingTerm[] {

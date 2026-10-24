@@ -4,7 +4,7 @@
  *
  *   npm run db:load
  *
- * Programs, courses (demo seed until courses.json exists), the prerequisite
+ * Programs, courses, the prerequisite
  * graph, and term offerings are replaced in one transaction. Accounts and
  * student records are never touched.
  */
@@ -26,10 +26,10 @@ async function main() {
   if (!process.env.DATABASE_URL) throw new Error("DATABASE_URL is not set");
 
   const programs = loadProgramFiles();
-  const { courses, fromCatalog } = loadCourseFiles();
+  const courses = loadCourseFiles();
   const offerings = loadOfferingFiles();
   console.log(
-    `Files: ${programs.length} programs, ${courses.length} courses (${fromCatalog ? "catalog" : "demo seed"}), ` +
+    `Files: ${programs.length} programs, ${courses.length} courses, ` +
       `${offerings.length} offering terms`,
   );
 
@@ -89,7 +89,6 @@ async function main() {
       }
 
       const meta = {
-        coursesSource: fromCatalog ? "catalog" : "demo",
         loadedAt: new Date().toISOString(),
         offeringTerms: offerings.map((o) => o.term),
       };
