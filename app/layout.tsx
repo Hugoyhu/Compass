@@ -7,7 +7,6 @@ import { SidebarStudent, SidebarStudentSkeleton } from "@/components/app-shell/s
 import { SiteHeader } from "@/components/app-shell/site-header";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { getRepository } from "@/lib/data/repository";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,9 +24,7 @@ export const metadata: Metadata = {
   description: "Prerequisite-aware degree audit and semester planning for Stony Brook students.",
 };
 
-export default async function RootLayout({ children }: LayoutProps<"/">) {
-  const source = await getRepository().source();
-
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full">
@@ -42,8 +39,6 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
             />
             <SidebarInset>
               <SiteHeader
-                sourceLabel={source.label}
-                disclaimer={source.disclaimer}
                 account={
                   <Suspense fallback={null}>
                     <AccountMenu />

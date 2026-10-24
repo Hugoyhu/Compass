@@ -96,7 +96,7 @@ export function RequirementCard({
         {result.manualChecks.map((check) => (
           <p key={check} className="flex items-start gap-1.5 text-xs text-muted-foreground">
             <ShieldQuestion className="mt-px size-3.5 shrink-0" aria-hidden />
-            Advisor check: {check}
+            {check}
           </p>
         ))}
 

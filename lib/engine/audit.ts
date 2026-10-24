@@ -501,20 +501,20 @@ function evaluatePolicies(ctx: Ctx, program: ProgramDefinition, rejectedBy: Map<
         ];
         return problems.length > 0
           ? { policy, status: "not-met", detail: problems.join("; ") }
-          : { policy, status: "satisfied", detail: "All applied courses meet it so far" };
+          : { policy, status: "satisfied", detail: "" };
       }
       case "minGpa": {
         // Transfer and exam grades don't enter the Stony Brook GPA.
         const graded = appliedTo(policy.appliesTo).filter(
           (a) => a.state === "completed" && a.source === "sbu" && a.grade && a.grade in GRADE_POINTS,
         );
-        if (graded.length === 0) return { policy, status: "pending", detail: "No graded courses yet" };
+        if (graded.length === 0) return { policy, status: "pending", detail: "" };
         const credits = graded.reduce((s, a) => s + a.credits, 0);
         const gpa = graded.reduce((s, a) => s + GRADE_POINTS[a.grade as LetterGrade] * a.credits, 0) / credits;
         return {
           policy,
           status: gpa >= policy.gpa ? "satisfied" : "not-met",
-          detail: `GPA ${gpa.toFixed(2)} (minimum ${policy.gpa.toFixed(2)})`,
+          detail: `${gpa.toFixed(2)} / ${policy.gpa.toFixed(2)} minimum`,
         };
       }
       case "residencyCredits": {
@@ -524,22 +524,22 @@ function evaluatePolicies(ctx: Ctx, program: ProgramDefinition, rejectedBy: Map<
         return {
           policy,
           status: done >= policy.minCredits ? "satisfied" : done + pending >= policy.minCredits ? "in-progress" : "not-met",
-          detail: `${done}${pending ? ` + ${pending} in progress` : ""} of ${policy.minCredits} credits at Stony Brook`,
+          detail: `${done}${pending ? ` + ${pending}` : ""} / ${policy.minCredits} credits`,
         };
       }
       case "residencyRequired": {
         const applied = appliedTo(policy.appliesTo);
-        if (applied.length === 0) return { policy, status: "pending", detail: "Not taken yet; must be taken at Stony Brook" };
+        if (applied.length === 0) return { policy, status: "pending", detail: "" };
         const outside = applied.filter((a) => a.source !== "sbu");
         return outside.length > 0
           ? { policy, status: "not-met", detail: `${outside.map((a) => a.code).join(", ")} must be taken at Stony Brook` }
-          : { policy, status: "satisfied", detail: "Taken at Stony Brook" };
+          : { policy, status: "satisfied", detail: "" };
       }
       case "prerequisiteGrade":
         return {
           policy,
           status: "info",
-          detail: `${policy.minGrade} or higher required in prerequisites for ${policy.subjects.join(", ")} courses (used by the planner)`,
+          detail: `${policy.minGrade} or higher in ${policy.subjects.join(", ")} prerequisites`,
         };
     }
   });

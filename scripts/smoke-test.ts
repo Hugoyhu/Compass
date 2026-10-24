@@ -34,13 +34,13 @@ async function main() {
   try {
     // 1. A new visitor sees onboarding.
     await page.goto(BASE);
-    await page.getByRole("heading", { name: "Plan your Stony Brook degree" }).waitFor();
+    await page.getByRole("heading", { name: "Add your courses" }).waitFor();
     check(true, "New visitor sees the get-started screen");
     await shot(page, "1-onboarding");
 
     // 2. Sample student → dashboard and degree progress.
     await page.getByRole("button", { name: "Load sample student" }).click();
-    await page.getByRole("heading", { name: /Welcome back, Alex/ }).waitFor();
+    await page.getByRole("heading", { name: /Alex/ }).waitFor();
     check(await page.getByText("AMS 310: C- is below the C minimum").isVisible(), "Dashboard flags the AMS 310 grade problem");
     check(await page.getByText("Retake").first().isVisible(), "Proposal marks AMS 310 as a retake");
     await shot(page, "2-dashboard-sample");
@@ -57,17 +57,17 @@ async function main() {
     // Wait for hydration so the file input's change handler is attached.
     await page.waitForLoadState("networkidle");
     await page.locator("#transcript-file").setInputFiles(FIXTURE);
-    await page.getByText("Review your transcript").waitFor({ timeout: 90_000 });
-    check(await page.getByText("Found 15 courses").isVisible(), "Review screen lists 15 courses from the fixture");
+    await page.getByText("Review courses").waitFor({ timeout: 90_000 });
+    check(await page.getByText("15 courses").first().isVisible(), "Review screen lists 15 courses from the fixture");
     await shot(page, "4-review");
     await page.getByRole("button", { name: /Replace my courses/ }).click();
-    await page.getByText("Saved.").waitFor();
+    await page.getByText("Saved", { exact: true }).waitFor();
     check(await page.getByText("HON 105").first().isVisible(), "Saved courses include HON 105 from the transcript");
     await shot(page, "5-record-saved");
 
     await page.goto(BASE);
-    await page.getByRole("heading", { name: /Welcome back, Alex/ }).waitFor();
-    check(await page.getByText("Currently Spring 2026").isVisible(), "Dashboard uses the transcript's current term");
+    await page.getByRole("heading", { name: /Alex/ }).waitFor();
+    check(await page.getByText(/Spring 2026/).first().isVisible(), "Dashboard uses the transcript's current term");
     await shot(page, "6-dashboard-uploaded");
 
     // 4. Clearing returns to onboarding.

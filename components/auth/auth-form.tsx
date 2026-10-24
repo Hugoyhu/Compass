@@ -16,12 +16,7 @@ export function AuthForm({ mode, hasGuestRecord }: { mode: "sign-in" | "sign-up"
     <Card className="mx-auto w-full max-w-sm">
       <CardHeader>
         <CardTitle className="text-lg">{signingUp ? "Create an account" : "Sign in"}</CardTitle>
-        <CardDescription>
-          {signingUp
-            ? "Save your courses and plans across devices. Just a username and password: no email needed."
-            : "Welcome back."}
-          {hasGuestRecord && " The courses you've added in this browser will move into your account."}
-        </CardDescription>
+        {hasGuestRecord && <CardDescription>Courses saved in this browser will move to your account.</CardDescription>}
       </CardHeader>
       <form action={action}>
         <CardContent className="space-y-4">
@@ -53,9 +48,7 @@ export function AuthForm({ mode, hasGuestRecord }: { mode: "sign-in" | "sign-up"
             <label className="block space-y-1.5">
               <span className="text-xs font-medium">Confirm password</span>
               <Input name="confirm" type="password" autoComplete="new-password" required maxLength={200} />
-              <span className="block text-xs text-muted-foreground">
-                There&apos;s no password reset, so pick one you&apos;ll remember.
-              </span>
+              <span className="block text-xs text-muted-foreground">There&apos;s no password reset.</span>
             </label>
           )}
           {state.error && (
@@ -70,9 +63,9 @@ export function AuthForm({ mode, hasGuestRecord }: { mode: "sign-in" | "sign-up"
             {signingUp ? "Create account" : "Sign in"}
           </Button>
           <p className="text-center text-xs text-muted-foreground">
-            {signingUp ? "Already have an account? " : "New to Compass? "}
+            {signingUp ? "Have an account? " : "No account? "}
             <Link href={signingUp ? "/login" : "/signup"} className="font-medium text-foreground underline-offset-4 hover:underline">
-              {signingUp ? "Sign in" : "Create an account"}
+              {signingUp ? "Sign in" : "Create one"}
             </Link>
           </p>
         </CardFooter>

@@ -21,7 +21,7 @@ export function DegreeProgressCard({ credits }: { credits: CreditSummary }) {
         <CardTitle className="flex items-baseline gap-3">
           <span className="text-5xl font-semibold tracking-tight">{percent}%</span>
           <span className="text-sm font-normal text-muted-foreground">
-            {credits.earned} of {credits.required} credits earned
+            {credits.earned} / {credits.required} credits
           </span>
         </CardTitle>
       </CardHeader>
@@ -82,7 +82,7 @@ export function DegreeProgressCard({ credits }: { credits: CreditSummary }) {
 
         {credits.inProgress > 0 && (
           <p className="border-t pt-3 text-xs text-muted-foreground">
-            Once current courses are complete:{" "}
+            With current courses:{" "}
             <span className="font-medium text-foreground tabular-nums">
               {credits.earned + credits.inProgress} credits (
               {Math.round(((credits.earned + credits.inProgress) / credits.required) * 100)}%)

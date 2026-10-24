@@ -14,19 +14,11 @@ import type { Section } from "@/lib/domain/catalog/offering";
 import type { ProgramDefinition } from "@/lib/domain/catalog/program";
 import type { SbcCategory, StudentRecord, TermId } from "@/lib/domain/types";
 import { loadCourseFiles, loadOfferingFiles, loadProgramFiles } from "./catalog-files";
-import { fetchCatalogMeta, fetchCourses, fetchOfferingSections, fetchPrograms } from "./postgres-catalog";
+import { fetchCourses, fetchOfferingSections, fetchPrograms } from "./postgres-catalog";
 import { seedSbcCategories, universityCreditRules } from "./seed/sbc";
 import { seedStudent } from "./seed/student";
 
-export interface DataSourceInfo {
-  label: string;
-  /** True while any part of what the app shows is demo data. */
-  includesDemoData: boolean;
-  disclaimer: string;
-}
-
 export interface CompassRepository {
-  source(): Promise<DataSourceInfo>;
   listCourses(): Promise<CourseRecord[]>;
   listPrograms(): Promise<ProgramDefinition[]>;
   /**
@@ -39,19 +31,6 @@ export interface CompassRepository {
   getUniversityCreditRules(): Promise<typeof universityCreditRules>;
   /** The fictional sample student, for demos. */
   getSampleStudent(): Promise<StudentRecord>;
-}
-
-function sourceInfo(coursesFromCatalog: boolean): DataSourceInfo {
-  return {
-    label: "Preview data",
-    includesDemoData: true,
-    disclaimer: [
-      "Degree requirements are transcribed from the Stony Brook Fall 2026 Undergraduate Catalog and have not been officially verified.",
-      coursesFromCatalog
-        ? "Course details come from the Stony Brook course catalog."
-        : "Course details (prerequisites, offerings) are an approximate demo sample.",
-    ].join(" "),
-  };
 }
 
 const shared = {
@@ -73,9 +52,6 @@ function fileRepository(): CompassRepository {
   const getCourses = () => (courses ??= loadCourseFiles());
   return {
     ...shared,
-    async source() {
-      return sourceInfo(getCourses().fromCatalog);
-    },
     async listCourses() {
       return getCourses().courses;
     },
@@ -91,10 +67,6 @@ function fileRepository(): CompassRepository {
 function postgresRepository(): CompassRepository {
   return {
     ...shared,
-    async source() {
-      const meta = await fetchCatalogMeta();
-      return sourceInfo(meta?.coursesSource === "catalog");
-    },
     listCourses: fetchCourses,
     listPrograms: fetchPrograms,
     listSections: fetchOfferingSections,

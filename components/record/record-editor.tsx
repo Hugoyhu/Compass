@@ -3,7 +3,6 @@
 import { useMemo, useState, useTransition } from "react";
 import { Loader2, Plus, Trash2 } from "lucide-react";
 import { clearRecord, loadSampleRecord, saveRecord } from "@/app/actions/record";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -65,7 +64,7 @@ export function RecordEditor({
       if (result.ok) {
         setDraft(toSave);
         setDirty(false);
-        setMessage({ kind: "ok", text: "Saved. Your dashboard and degree progress are updated." });
+        setMessage({ kind: "ok", text: "Saved" });
       } else {
         setMessage({ kind: "error", text: result.error });
       }
@@ -99,12 +98,12 @@ export function RecordEditor({
           <CardHeader>
             <CardTitle>Courses</CardTitle>
             <CardDescription>
-              {draft.attempts.length} entries · {totalCredits} credits earned
+              {totalCredits} credits earned
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-5">
             {draft.attempts.length === 0 && (
-              <p className="text-sm text-muted-foreground">No courses yet. Upload a transcript or add courses below.</p>
+              <p className="text-sm text-muted-foreground">No courses yet.</p>
             )}
             {groupAttempts(draft.attempts).map((group) => (
               <section key={group.key} className="space-y-1.5" aria-label={group.label}>
@@ -116,12 +115,7 @@ export function RecordEditor({
                       <li key={`${attemptKey(attempt)}-${index}`} className="flex items-center gap-2 px-3 py-1.5 text-sm">
                         <span className="w-20 shrink-0 font-mono text-xs">{attempt.code}</span>
                         <span className="min-w-0 flex-1 truncate">
-                          {known?.title ?? attempt.title ?? "Course not in catalog data"}
-                          {!known && (
-                            <Badge variant="outline" className="ml-2 font-normal">
-                              Not in catalog data
-                            </Badge>
-                          )}
+                          {known?.title ?? attempt.title ?? "Unknown course"}
                         </span>
                         <span className="w-12 shrink-0 text-right text-xs tabular-nums text-muted-foreground">
                           {attempt.credits ?? known?.credits ?? "–"} cr
@@ -181,12 +175,11 @@ export function RecordEditor({
         <Card>
           <CardHeader>
             <CardTitle>Profile</CardTitle>
-            <CardDescription>Used to pick requirements and plan your next term.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <label className="block space-y-1.5">
-              <span className="text-xs font-medium">Name (optional)</span>
-              <Input value={draft.name} maxLength={80} onChange={(e) => update({ name: e.target.value })} placeholder="First name is enough" />
+              <span className="text-xs font-medium">Name</span>
+              <Input value={draft.name} maxLength={80} onChange={(e) => update({ name: e.target.value })} />
             </label>
             <label className="block space-y-1.5">
               <span className="text-xs font-medium">Major</span>
@@ -195,17 +188,13 @@ export function RecordEditor({
                 value={draft.programIds[0] ?? ""}
                 onChange={(e) => update({ programIds: e.target.value ? [e.target.value] : [] })}
               >
-                <option value="">Choose a major…</option>
+                <option value="">None</option>
                 {majors.map((p) => (
                   <option key={p.id} value={p.id}>
                     {p.name}
-                    {p.reviewed ? "" : " (draft)"}
                   </option>
                 ))}
               </select>
-              <span className="block text-xs text-muted-foreground">
-                {majors.length} majors available so far. &quot;Draft&quot; requirements were machine-read from the catalog.
-              </span>
             </label>
             <label className="block space-y-1.5">
               <span className="text-xs font-medium">Current term</span>
@@ -232,7 +221,6 @@ export function RecordEditor({
         <Card size="sm">
           <CardHeader>
             <CardTitle>Start over</CardTitle>
-            <CardDescription>Replace your courses with the sample student, or delete them.</CardDescription>
           </CardHeader>
           <CardContent className="flex flex-wrap gap-2">
             <form action={loadSampleRecord}>
@@ -247,7 +235,7 @@ export function RecordEditor({
               }}
             >
               <Button type="submit" variant="ghost" size="sm" className="text-destructive">
-                Clear my record
+                Delete all courses
               </Button>
             </form>
           </CardContent>
@@ -276,7 +264,7 @@ function AddCourseForm({
     e.preventDefault();
     const normalized = code.toUpperCase().replace(/^([A-Z]{3,4})\s*(\d{3}).*$/, "$1 $2");
     if (!/^[A-Z]{3,4} \d{3}$/.test(normalized)) {
-      setError('Enter a course code like "CSE 214".');
+      setError("Use a code like CSE 214.");
       return;
     }
     const known = courses.find((c) => c.code === normalized);
@@ -301,7 +289,7 @@ function AddCourseForm({
           list="catalog-courses"
           value={code}
           onChange={(e) => setCode(e.target.value)}
-          placeholder="Course code, e.g. CSE 214"
+          placeholder="CSE 214"
           aria-label="Course code"
         />
         <datalist id="catalog-courses">

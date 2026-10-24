@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import { ArrowLeft, ArrowLeftRight, ExternalLink, FileQuestion } from "lucide-react";
+import { ArrowLeft, ArrowLeftRight, ExternalLink } from "lucide-react";
 import { RuleTree, type RuleContext } from "@/components/degrees/rule-tree";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { ProgramDefinition, ProgramPolicy, Rule, Substitution } from "@/lib/domain/catalog/program";
 import { itemNumber, NOTE_TOPICS, POLICY_TITLES, requirementHeading } from "@/lib/engine/describe";
@@ -40,7 +39,7 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
   const detail = await getProgramDetail((await params).id);
   if (!detail) notFound();
 
-  const { program, unparsedCount } = detail;
+  const { program } = detail;
   const refs = requirementRefs(program);
   const { byRequirement, unattached } = substitutionsByRequirement(program);
   const ctx: RuleContext = { courses: detail.courseInfo, refs: refs.full };
@@ -51,39 +50,18 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
         <div className="space-y-1">
           <h2 className="text-2xl font-semibold tracking-tight">{program.name}</h2>
           <p className="text-sm text-muted-foreground">
-            {[
-              program.degree ?? (program.kind === "minor" ? "Minor" : "Major"),
-              program.source.catalog,
-              `${program.requirements.length} ${program.requirements.length === 1 ? "requirement" : "requirements"}`,
-              program.approxCredits && `about ${program.approxCredits} credits`,
-            ]
+            {[program.degree ?? (program.kind === "minor" ? "Minor" : "Major"), program.approxCredits && `${program.approxCredits} credits`]
               .filter(Boolean)
               .join(" · ")}
           </p>
         </div>
         <div className="flex items-center gap-2">
-          <Badge variant="outline" className="font-normal">
-            {program.review.status === "reviewed" ? "Reviewed transcription" : "Draft transcription"}
-          </Badge>
           <a href={program.source.url} target="_blank" rel="noreferrer" className={buttonVariants({ variant: "ghost", size: "sm" })}>
             Catalog page
             <ExternalLink />
           </a>
         </div>
       </div>
-
-      {unparsedCount > 0 && (
-        <Alert>
-          <FileQuestion />
-          <AlertTitle>
-            {unparsedCount} {unparsedCount === 1 ? "part of this program isn't" : "parts of this program aren't"} structured yet
-          </AlertTitle>
-          <AlertDescription>
-            Those parts show the catalog wording instead of a course list, and the degree audit flags them for review. Check the
-            catalog page or an advisor before relying on them.
-          </AlertDescription>
-        </Alert>
-      )}
 
       {program.requirements.length > 1 && (
         <nav aria-label="Requirements" className="flex flex-wrap gap-1.5">
@@ -120,7 +98,6 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
             <Card size="sm">
               <CardHeader>
                 <CardTitle>Program rules</CardTitle>
-                <CardDescription>Grade, GPA, and residency rules that apply across requirements.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
@@ -128,7 +105,6 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
                     <li key={i} className="space-y-0.5 text-sm">
                       <p className="font-medium">{POLICY_TITLES[p.type] ?? p.type}</p>
                       <p className="text-xs text-muted-foreground">{describePolicy(p, refs.short)}</p>
-                      <CatalogText text={p.sourceText} />
                     </li>
                   ))}
                 </ul>
@@ -139,7 +115,7 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
           {unattached.length > 0 && (
             <Card size="sm">
               <CardHeader>
-                <CardTitle>Allowed substitutions</CardTitle>
+                <CardTitle>Substitutions</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-xs text-muted-foreground">
@@ -162,7 +138,6 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
             <Card size="sm">
               <CardHeader>
                 <CardTitle>Stony Brook Curriculum</CardTitle>
-                <CardDescription>How this program affects SBC objectives.</CardDescription>
               </CardHeader>
               <CardContent className="space-y-3">
                 {program.sbc.exemptions.map((e) => (
@@ -185,7 +160,7 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
           {program.notes.length > 0 && (
             <Card size="sm">
               <CardHeader>
-                <CardTitle>Notes from the catalog</CardTitle>
+                <CardTitle>Notes</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-xs text-muted-foreground">
@@ -210,8 +185,7 @@ function SampleSequence({ detail }: { detail: ProgramDetail }) {
   return (
     <Card size="sm">
       <CardHeader>
-        <CardTitle>Sample course sequence</CardTitle>
-        <CardDescription>One way to complete the program in four years, as suggested by the catalog.</CardDescription>
+        <CardTitle>Sample schedule</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="grid gap-3 sm:grid-cols-2">
@@ -252,7 +226,7 @@ function SubstitutionNote({ sub }: { sub: Substitution }) {
       <ArrowLeftRight className="mt-px size-3.5 shrink-0 text-muted-foreground" aria-hidden />
       <div className="min-w-0 space-y-1">
         <p className="font-medium">
-          Alternative path
+          Substitution
           {sub.condition && <span className="font-normal text-muted-foreground"> · {sub.condition}</span>}
           {sub.requiresApproval && (
             <Badge variant="outline" className="ml-1.5 font-normal">
