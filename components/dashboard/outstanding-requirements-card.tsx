@@ -5,7 +5,7 @@ import { StatusBadge } from "@/components/audit/status-badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardAction, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import type { RequirementResult } from "@/lib/engine/audit";
-import { describeRemaining, progressFractions } from "@/lib/engine/describe";
+import { describeRemaining, itemNumber, progressFractions } from "@/lib/engine/describe";
 
 export function OutstandingRequirementsCard({
   results,
@@ -38,7 +38,7 @@ export function OutstandingRequirementsCard({
               <li key={result.requirement.id} className="space-y-2 py-3 first:pt-0 last:pb-0">
                 <div className="flex items-start justify-between gap-3">
                   <p className="min-w-0 font-medium">
-                    <span className="mr-1.5 text-muted-foreground tabular-nums">{result.requirement.label}.</span>
+                    {itemNumber(result.requirement.label) && <span className="mr-1.5 text-muted-foreground tabular-nums">{itemNumber(result.requirement.label)}.</span>}
                     {result.requirement.title}
                   </p>
                   <StatusBadge status={result.status} className="pt-0.5" />

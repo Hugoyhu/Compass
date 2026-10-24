@@ -18,6 +18,37 @@ export const POLICY_STATUS_LABELS: Record<PolicyStatus, string> = {
   info: "Note",
 };
 
+export const POLICY_TITLES: Record<string, string> = {
+  minGrade: "Minimum grade",
+  letterGradeRequired: "Letter grades",
+  minGpa: "GPA minimum",
+  residencyCredits: "Credits at Stony Brook",
+  residencyRequired: "Must be taken at Stony Brook",
+  prerequisiteGrade: "Prerequisite grades",
+};
+
+export const NOTE_TOPICS: Record<string, string> = {
+  admission: "Admission",
+  advising: "Advising",
+  grading: "Grading",
+  sbc: "SBC",
+  other: "Note",
+};
+
+/**
+ * The printed item number ("1", "2a", "A"), or null when the label is an
+ * extractor-made slug like "chem-lecture" that shouldn't be shown.
+ */
+export function itemNumber(label: string): string | null {
+  return /^[0-9A-Za-z]{1,3}(\.[0-9A-Za-z]{1,3})?\.?$/.test(label) ? label.replace(/\.$/, "") : null;
+}
+
+/** "3. Computer Science Electives", or just the title when there's no item number. */
+export function requirementHeading(req: { label: string; title: string }): string {
+  const n = itemNumber(req.label);
+  return n ? `${n}. ${req.title}` : req.title;
+}
+
 /** Short description of a course pool, e.g. "upper-division CSE courses". */
 export function describeSelector(sel: CourseSelector): string {
   const parts: string[] = [];

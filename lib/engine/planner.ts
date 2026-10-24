@@ -12,6 +12,7 @@ import type { ProgramDefinition, Rule } from "@/lib/domain/catalog/program";
 import type { CourseCode, LetterGrade, StudentRecord, TermId } from "@/lib/domain/types";
 import { nextRegularTerm } from "@/lib/domain/terms";
 import { matchesSelector, type DegreeAudit } from "./audit";
+import { requirementHeading } from "./describe";
 import {
   buildCompletionIndex,
   evaluatePrereq,
@@ -62,7 +63,7 @@ function needsFrom(audit: DegreeAudit, courses: CourseRecord[]): { needs: Need[]
       if (r.status === "satisfied" || r.status === "in-progress") continue;
       r.missing.forEach((item, i) => {
         const requirementId = `${r.requirement.id}#${i}`;
-        const title = `${r.requirement.label}. ${r.requirement.title}`;
+        const title = requirementHeading(r.requirement);
         if (item.kind === "course") {
           needs.push({ requirementId, title, kind: "required", options: new Set(item.options), remaining: 1 });
         } else if (item.kind === "choose") {
