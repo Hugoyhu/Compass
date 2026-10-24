@@ -84,36 +84,18 @@
     {
       "id": "cse-honors.6",
       "label": "6",
-      "title": "Research or senior honors project",
-      "sourceText": "CSE 487 - Research in Computer Science or CSE 488 - Internship in Computer Science or CSE 495/CSE 496 Senior Honors Research Project I, II",
+      "title": "Senior Honors Research Project",
+      "sourceText": "CSE 495 - Senior Honors Research Project I 3 credits; CSE 496 - Senior Honors Research Project II 3 credits",
       "rule": {
-        "type": "anyOf",
+        "type": "allOf",
         "rules": [
           {
-            "type": "allOf",
-            "rules": [
-              {
-                "type": "course",
-                "code": "CSE 487"
-              },
-              {
-                "type": "course",
-                "code": "CSE 488"
-              }
-            ]
+            "type": "course",
+            "code": "CSE 495"
           },
           {
-            "type": "allOf",
-            "rules": [
-              {
-                "type": "course",
-                "code": "CSE 495"
-              },
-              {
-                "type": "course",
-                "code": "CSE 496"
-              }
-            ]
+            "type": "course",
+            "code": "CSE 496"
           }
         ]
       }

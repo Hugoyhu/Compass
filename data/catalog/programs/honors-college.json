@@ -154,54 +154,13 @@
   ],
   "substitutions": [],
   "sbc": {
-    "exemptions": [
-      {
-        "category": "HUM",
-        "reason": "Satisfied by completing the Honors College curriculum"
-      },
-      {
-        "category": "SBS",
-        "reason": "Satisfied by completing the Honors College curriculum"
-      },
-      {
-        "category": "CER",
-        "reason": "Satisfied by completing the Honors College curriculum"
-      },
-      {
-        "category": "ARTS",
-        "reason": "Satisfied by completing the Honors College curriculum"
-      },
-      {
-        "category": "STAS",
-        "reason": "Satisfied by completing the Honors College curriculum"
-      },
-      {
-        "category": "GLO",
-        "reason": "Satisfied by completing the Honors College curriculum"
-      },
-      {
-        "category": "ESI",
-        "reason": "Satisfied by completing the Honors College curriculum"
-      },
-      {
-        "category": "SPK",
-        "reason": "Satisfied by completing the Honors College curriculum"
-      },
-      {
-        "category": "WRTD",
-        "reason": "Satisfied by completing the Honors College curriculum"
-      },
-      {
-        "category": "EXP+",
-        "reason": "Satisfied by completing the Honors College curriculum"
-      }
-    ],
+    "exemptions": [],
     "fulfillment": []
   },
   "notes": [
     {
       "topic": "sbc",
-      "text": "Honors College students still complete WRT, QPS, LANG, SNW, TECH, and USA, and advanced studies in at least two of STEM+, SBS+, and HFA+. Those upper-tier courses must be passed with a C or higher and carry at least 3 credits; they may overlap with major requirements."
+      "text": "The catalog says the Honors College curriculum covers HUM, SBS, CER, ARTS, STAS, GLO, ESI, SPK, WRTD, and EXP+; the SBC checklist credits each one through the tags on the courses actually taken. Honors College students also complete WRT, QPS, LANG, SNW, TECH, and USA, and advanced studies in at least two of STEM+, SBS+, and HFA+. Those upper-tier courses must be passed with a C or higher and carry at least 3 credits; they may overlap with major requirements."
     },
     {
       "topic": "grading",

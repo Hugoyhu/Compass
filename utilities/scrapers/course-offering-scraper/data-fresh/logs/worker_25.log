@@ -1,0 +1,25 @@
+Worker 25 groups: Y
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_25 --letters Y --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Spring 2027 --no-resume
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group Y (1/1)…
+  [Y] 2 subjects have no active courses.
+  [Y] No course rows after Expand All; reloading the catalog and retrying once.
+  [Y] 2 subjects have no active courses.
+  [Y] FAILED: still no course rows after a retry.
+Exported index: 0 records (JSON + CSV)
+Exported details: 0 records (JSONL + JSON + CSV)
+Exported sections: 0 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_25/semesteros-export.zip
+
+Done in 55s: 0 scraped, 0 already done, 0 failed, 0 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_25/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_25/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_25/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_25/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_25/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_25/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_25/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_25/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.

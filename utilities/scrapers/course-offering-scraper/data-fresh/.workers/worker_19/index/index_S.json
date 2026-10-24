@@ -1,0 +1,1698 @@
+[
+  {
+    "subject": "SBSNC",
+    "course_number": "8",
+    "course_code": "SBSNC 8",
+    "title": "Young Artists and Writers Project",
+    "source_file": "index_S.html",
+    "source_group_index": 4
+  },
+  {
+    "subject": "SBSNC",
+    "course_number": "9",
+    "course_code": "SBSNC 9",
+    "title": "Southampton Arts Non-credit Activities",
+    "source_file": "index_S.html",
+    "source_group_index": 4
+  },
+  {
+    "subject": "SBSNC",
+    "course_number": "10",
+    "course_code": "SBSNC 10",
+    "title": "SBU Southampton Non Credit",
+    "source_file": "index_S.html",
+    "source_group_index": 4
+  },
+  {
+    "subject": "SBSNC",
+    "course_number": "11",
+    "course_code": "SBSNC 11",
+    "title": "FoodLab Non-Credit Programs",
+    "source_file": "index_S.html",
+    "source_group_index": 4
+  },
+  {
+    "subject": "SBU",
+    "course_number": "101",
+    "course_code": "SBU 101",
+    "title": "Introduction to Stony Brook",
+    "source_file": "index_S.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "SBU",
+    "course_number": "102",
+    "course_code": "SBU 102",
+    "title": "Undergraduate College Seminar",
+    "source_file": "index_S.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "SBU",
+    "course_number": "275",
+    "course_code": "SBU 275",
+    "title": "Undergraduate College Fellows Seminar",
+    "source_file": "index_S.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "SBU",
+    "course_number": "276",
+    "course_code": "SBU 276",
+    "title": "Undergraduate College Fellows Practicum",
+    "source_file": "index_S.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "SBU",
+    "course_number": "475",
+    "course_code": "SBU 475",
+    "title": "Undergraduate College Teaching Practicum",
+    "source_file": "index_S.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "SBU",
+    "course_number": "488",
+    "course_code": "SBU 488",
+    "title": "Undergraduate College Internship",
+    "source_file": "index_S.html",
+    "source_group_index": 5
+  },
+  {
+    "subject": "SCH",
+    "course_number": "101",
+    "course_code": "SCH 101",
+    "title": "Introduction to University Scholars & Stony Brook",
+    "source_file": "index_S.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "SCH",
+    "course_number": "102",
+    "course_code": "SCH 102",
+    "title": "University Scholars Seminar",
+    "source_file": "index_S.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "SCH",
+    "course_number": "200",
+    "course_code": "SCH 200",
+    "title": "Scholars Leadership Foundations",
+    "source_file": "index_S.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "SCH",
+    "course_number": "275",
+    "course_code": "SCH 275",
+    "title": "University Honors Fellows Seminar",
+    "source_file": "index_S.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "SCH",
+    "course_number": "276",
+    "course_code": "SCH 276",
+    "title": "University Honors Fellows Practicum",
+    "source_file": "index_S.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "SCH",
+    "course_number": "300",
+    "course_code": "SCH 300",
+    "title": "Scholars Leadership Practice",
+    "source_file": "index_S.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "SCH",
+    "course_number": "444",
+    "course_code": "SCH 444",
+    "title": "Experiential Learning",
+    "source_file": "index_S.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "SCH",
+    "course_number": "475",
+    "course_code": "SCH 475",
+    "title": "Scholars Teaching Practicum",
+    "source_file": "index_S.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "SCH",
+    "course_number": "488",
+    "course_code": "SCH 488",
+    "title": "University Scholars Internship",
+    "source_file": "index_S.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "SCH",
+    "course_number": "490",
+    "course_code": "SCH 490",
+    "title": "Scholars Senior Capstone",
+    "source_file": "index_S.html",
+    "source_group_index": 6
+  },
+  {
+    "subject": "SCI",
+    "course_number": "410",
+    "course_code": "SCI 410",
+    "title": "Pedagogy and Methods for Science Education I",
+    "source_file": "index_S.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "SCI",
+    "course_number": "420",
+    "course_code": "SCI 420",
+    "title": "Pedagogy and Methods for Science Education II",
+    "source_file": "index_S.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "SCI",
+    "course_number": "447",
+    "course_code": "SCI 447",
+    "title": "Directed Readings in Science Education",
+    "source_file": "index_S.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "SCI",
+    "course_number": "449",
+    "course_code": "SCI 449",
+    "title": "Field Experience, Grades 7-12",
+    "source_file": "index_S.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "SCI",
+    "course_number": "450",
+    "course_code": "SCI 450",
+    "title": "Field Experience, Grades 7-12",
+    "source_file": "index_S.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "SCI",
+    "course_number": "451",
+    "course_code": "SCI 451",
+    "title": "Supervised Teaching-Science: Middle Level Grades 7-9",
+    "source_file": "index_S.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "SCI",
+    "course_number": "452",
+    "course_code": "SCI 452",
+    "title": "Supervised Teaching-Science: High School Grades 10-12",
+    "source_file": "index_S.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "SCI",
+    "course_number": "454",
+    "course_code": "SCI 454",
+    "title": "Science Student Teaching Seminar",
+    "source_file": "index_S.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "SCI",
+    "course_number": "487",
+    "course_code": "SCI 487",
+    "title": "Applied Research",
+    "source_file": "index_S.html",
+    "source_group_index": 7
+  },
+  {
+    "subject": "SKT",
+    "course_number": "111",
+    "course_code": "SKT 111",
+    "title": "Elementary Sanskrit I",
+    "source_file": "index_S.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "SKT",
+    "course_number": "112",
+    "course_code": "SKT 112",
+    "title": "Elementary Sanskrit II",
+    "source_file": "index_S.html",
+    "source_group_index": 12
+  },
+  {
+    "subject": "SLN",
+    "course_number": "111",
+    "course_code": "SLN 111",
+    "title": "Elementary American Sign Language I",
+    "source_file": "index_S.html",
+    "source_group_index": 13
+  },
+  {
+    "subject": "SLN",
+    "course_number": "112",
+    "course_code": "SLN 112",
+    "title": "Elementary American Sign Language II",
+    "source_file": "index_S.html",
+    "source_group_index": 13
+  },
+  {
+    "subject": "SLN",
+    "course_number": "211",
+    "course_code": "SLN 211",
+    "title": "Intermediate Sign Language I",
+    "source_file": "index_S.html",
+    "source_group_index": 13
+  },
+  {
+    "subject": "SLN",
+    "course_number": "212",
+    "course_code": "SLN 212",
+    "title": "Intermediate Sign Language II",
+    "source_file": "index_S.html",
+    "source_group_index": 13
+  },
+  {
+    "subject": "SLN",
+    "course_number": "475",
+    "course_code": "SLN 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_S.html",
+    "source_group_index": 13
+  },
+  {
+    "subject": "SLN",
+    "course_number": "476",
+    "course_code": "SLN 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_S.html",
+    "source_group_index": 13
+  },
+  {
+    "subject": "SOC",
+    "course_number": "105",
+    "course_code": "SOC 105",
+    "title": "Introduction to Sociology",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "110",
+    "course_code": "SOC 110",
+    "title": "Fire Ecology,Climate Change,& Indigenous Knowledge",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "200",
+    "course_code": "SOC 200",
+    "title": "Medicine and Society",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "201",
+    "course_code": "SOC 201",
+    "title": "Research Methods in Sociology",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "202",
+    "course_code": "SOC 202",
+    "title": "Statistical Methods in Sociology",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "204",
+    "course_code": "SOC 204",
+    "title": "Intimate Relationships",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "243",
+    "course_code": "SOC 243",
+    "title": "Sociology of Youth",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "247",
+    "course_code": "SOC 247",
+    "title": "Sociology of Gender",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "248",
+    "course_code": "SOC 248",
+    "title": "Social Problems in Global Perspective",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "268",
+    "course_code": "SOC 268",
+    "title": "Theory and Practice in Student Leadership",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "302",
+    "course_code": "SOC 302",
+    "title": "American Society",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "303",
+    "course_code": "SOC 303",
+    "title": "Social Inequality",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "304",
+    "course_code": "SOC 304",
+    "title": "Sociology of the Family",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "309",
+    "course_code": "SOC 309",
+    "title": "Social Conflicts and Movements",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "310",
+    "course_code": "SOC 310",
+    "title": "Racism and Ethnic Relations",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "315",
+    "course_code": "SOC 315",
+    "title": "Sociology of Technology",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "323",
+    "course_code": "SOC 323",
+    "title": "Urban Society",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "330",
+    "course_code": "SOC 330",
+    "title": "Media and Society",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "336",
+    "course_code": "SOC 336",
+    "title": "Social Change",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "337",
+    "course_code": "SOC 337",
+    "title": "Social Deviance",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "338",
+    "course_code": "SOC 338",
+    "title": "The Sociology of Crime",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "339",
+    "course_code": "SOC 339",
+    "title": "Sociology of Alcoholism and Drug Abuse",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "340",
+    "course_code": "SOC 340",
+    "title": "Sociology of Human Reproduction",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "344",
+    "course_code": "SOC 344",
+    "title": "Environmental Sociology",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "348",
+    "course_code": "SOC 348",
+    "title": "Global Sociology",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "352",
+    "course_code": "SOC 352",
+    "title": "Sociology of Religion",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "356",
+    "course_code": "SOC 356",
+    "title": "Political Sociology",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "361",
+    "course_code": "SOC 361",
+    "title": "Historical Development of Sociological Theory",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "362",
+    "course_code": "SOC 362",
+    "title": "Contemporary Sociological Theory",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "364",
+    "course_code": "SOC 364",
+    "title": "Sociology of Latin America",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "365",
+    "course_code": "SOC 365",
+    "title": "Global Africa",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "371",
+    "course_code": "SOC 371",
+    "title": "Gender and Work",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "374",
+    "course_code": "SOC 374",
+    "title": "Global Issues in the United Nations",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "380",
+    "course_code": "SOC 380",
+    "title": "Social Psychology",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "381",
+    "course_code": "SOC 381",
+    "title": "Sociology of Organizations",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "384",
+    "course_code": "SOC 384",
+    "title": "Sociology of the Life Course",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "390",
+    "course_code": "SOC 390",
+    "title": "Special Topics",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "391",
+    "course_code": "SOC 391",
+    "title": "Special Topics",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "392",
+    "course_code": "SOC 392",
+    "title": "Special Topics",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "393",
+    "course_code": "SOC 393",
+    "title": "Special Topics in Health, Medicine, and Social Change",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "394",
+    "course_code": "SOC 394",
+    "title": "Special Topics, Experiential Learning",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "395",
+    "course_code": "SOC 395",
+    "title": "Topics in Science, Technology, and Society",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "444",
+    "course_code": "SOC 444",
+    "title": "Experiential Learning",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "447",
+    "course_code": "SOC 447",
+    "title": "Independent Readings",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "458",
+    "course_code": "SOC 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "459",
+    "course_code": "SOC 459",
+    "title": "Write Effectively in Sociology",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "475",
+    "course_code": "SOC 475",
+    "title": "Undergraduate Teaching Practicum I",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "476",
+    "course_code": "SOC 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "487",
+    "course_code": "SOC 487",
+    "title": "Independent Research",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "488",
+    "course_code": "SOC 488",
+    "title": "Internship",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "495",
+    "course_code": "SOC 495",
+    "title": "Senior Honors Project I",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SOC",
+    "course_number": "496",
+    "course_code": "SOC 496",
+    "title": "Senior Honors Project II",
+    "source_file": "index_S.html",
+    "source_group_index": 15
+  },
+  {
+    "subject": "SPD",
+    "course_number": "99",
+    "course_code": "SPD 99",
+    "title": "SPD Cumulative Transfer Units",
+    "source_file": "index_S.html",
+    "source_group_index": 16
+  },
+  {
+    "subject": "SPN",
+    "course_number": "111",
+    "course_code": "SPN 111",
+    "title": "Elementary Spanish I",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "112",
+    "course_code": "SPN 112",
+    "title": "Elementary Spanish II",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "211",
+    "course_code": "SPN 211",
+    "title": "Intermediate Spanish I",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "212",
+    "course_code": "SPN 212",
+    "title": "Intermediate Spanish II",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "213",
+    "course_code": "SPN 213",
+    "title": "Intermediate Spanish for Speakers of Spanish",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "214",
+    "course_code": "SPN 214",
+    "title": "Intermediate Medical Spanish I",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "215",
+    "course_code": "SPN 215",
+    "title": "Intermediate Medical Spanish II",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "310",
+    "course_code": "SPN 310",
+    "title": "Spanish Grammar and Composition for Students of Hispanic-American Background",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "311",
+    "course_code": "SPN 311",
+    "title": "Spanish Conversation and Composition",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "312",
+    "course_code": "SPN 312",
+    "title": "Introduction to Literary Studies",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "321",
+    "course_code": "SPN 321",
+    "title": "Advanced Spanish Grammar and Composition",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "322",
+    "course_code": "SPN 322",
+    "title": "Practical Spanish",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "323",
+    "course_code": "SPN 323",
+    "title": "Advanced Spanish Conversation",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "384",
+    "course_code": "SPN 384",
+    "title": "Introduction to Latin American Literature and Culture I",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "385",
+    "course_code": "SPN 385",
+    "title": "Introduction to Latin American Literature and Culture II",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "386",
+    "course_code": "SPN 386",
+    "title": "Introduction to Latin American Literature and Culture III",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "387",
+    "course_code": "SPN 387",
+    "title": "Introduction to Spanish Literature and Culture I",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "388",
+    "course_code": "SPN 388",
+    "title": "Introduction to Spanish Literature and Culture II",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "389",
+    "course_code": "SPN 389",
+    "title": "Introduction to Spanish Literature and Culture III",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "390",
+    "course_code": "SPN 390",
+    "title": "Communication, Media and Journalism in Spanish",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "391",
+    "course_code": "SPN 391",
+    "title": "The Culture and Civilization of Spain",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "392",
+    "course_code": "SPN 392",
+    "title": "The Culture and Civilization of Latin America",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "393",
+    "course_code": "SPN 393",
+    "title": "Introduction to Hispanic Linguistics",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "405",
+    "course_code": "SPN 405",
+    "title": "Issues in Hispanic Cultural Studies",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "410",
+    "course_code": "SPN 410",
+    "title": "Theory in Contexts",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "415",
+    "course_code": "SPN 415",
+    "title": "Hispanic Cultures in Contact",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "420",
+    "course_code": "SPN 420",
+    "title": "Topics in Spanish and Latin American Cinema",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "435",
+    "course_code": "SPN 435",
+    "title": "Topics in Latin American Literature from the Colonial Period to the Present",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "443",
+    "course_code": "SPN 443",
+    "title": "Medical Spanish Experiential Learning",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "444",
+    "course_code": "SPN 444",
+    "title": "Experiential Learning",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "445",
+    "course_code": "SPN 445",
+    "title": "Topics in Spanish Literature from the Middle Ages to the Present",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "447",
+    "course_code": "SPN 447",
+    "title": "Directed Readings",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "458",
+    "course_code": "SPN 458",
+    "title": "Speak Effectively Before an Audience",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "459",
+    "course_code": "SPN 459",
+    "title": "Write Effectively in Spanish",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "463",
+    "course_code": "SPN 463",
+    "title": "Contrastive Spanish-English Grammar",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "465",
+    "course_code": "SPN 465",
+    "title": "Topics in Hispanic Linguistics",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "475",
+    "course_code": "SPN 475",
+    "title": "Undergraduate Teaching Practicum I in Spanish",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "476",
+    "course_code": "SPN 476",
+    "title": "Undergraduate Teaching Practicum in Spanish II",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "488",
+    "course_code": "SPN 488",
+    "title": "Internship",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SPN",
+    "course_number": "495",
+    "course_code": "SPN 495",
+    "title": "Spanish Senior Honors",
+    "source_file": "index_S.html",
+    "source_group_index": 17
+  },
+  {
+    "subject": "SSE",
+    "course_number": "100",
+    "course_code": "SSE 100",
+    "title": "Economics for Social Studies Teachers",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "350",
+    "course_code": "SSE 350",
+    "title": "Foundations of Education",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "397",
+    "course_code": "SSE 397",
+    "title": "Teaching Social Studies",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "398",
+    "course_code": "SSE 398",
+    "title": "Social Studies Teaching Strategies",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "400",
+    "course_code": "SSE 400",
+    "title": "Experiential Learning, Speak Effectively, Practice Critical and Ethical Reasoning",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "447",
+    "course_code": "SSE 447",
+    "title": "Directed Readings in Social Studies Education",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "449",
+    "course_code": "SSE 449",
+    "title": "Field Experience, Grades 7-12",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "450",
+    "course_code": "SSE 450",
+    "title": "Field Experience, Grades 7-12",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "451",
+    "course_code": "SSE 451",
+    "title": "Supervised Student Teaching -- Middle Level Grades 7-9",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "452",
+    "course_code": "SSE 452",
+    "title": "Supervised Student Teaching-High School Grades 10-12",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "454",
+    "course_code": "SSE 454",
+    "title": "Student Teaching Seminar",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "475",
+    "course_code": "SSE 475",
+    "title": "Undergrad Teachng Practicum I",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "476",
+    "course_code": "SSE 476",
+    "title": "Undergrad Teachng Practicum II",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSE",
+    "course_number": "487",
+    "course_code": "SSE 487",
+    "title": "Independent Project in Social Sciences Education",
+    "source_file": "index_S.html",
+    "source_group_index": 19
+  },
+  {
+    "subject": "SSI",
+    "course_number": "400",
+    "course_code": "SSI 400",
+    "title": "Experiential Learning, Speak Effectively, Practice Critical and Ethical Reasoning",
+    "source_file": "index_S.html",
+    "source_group_index": 20
+  },
+  {
+    "subject": "SSP",
+    "course_number": "101",
+    "course_code": "SSP 101",
+    "title": "Introduction to Stony Brook",
+    "source_file": "index_S.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "SSP",
+    "course_number": "105",
+    "course_code": "SSP 105",
+    "title": "Opportunities in STEM & Beyond",
+    "source_file": "index_S.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "SSP",
+    "course_number": "205",
+    "course_code": "SSP 205",
+    "title": "Pathway to STEM PhD I",
+    "source_file": "index_S.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "SSP",
+    "course_number": "305",
+    "course_code": "SSP 305",
+    "title": "Pathways to the STEM PhD II",
+    "source_file": "index_S.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "SSP",
+    "course_number": "380",
+    "course_code": "SSP 380",
+    "title": "Research and Discovery in STEM",
+    "source_file": "index_S.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "SSP",
+    "course_number": "475",
+    "course_code": "SSP 475",
+    "title": "Teaching Practicum",
+    "source_file": "index_S.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "SSP",
+    "course_number": "477",
+    "course_code": "SSP 477",
+    "title": "Mentoring/Leadership Practicum",
+    "source_file": "index_S.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "SSP",
+    "course_number": "487",
+    "course_code": "SSP 487",
+    "title": "Research Practicum",
+    "source_file": "index_S.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "SSP",
+    "course_number": "488",
+    "course_code": "SSP 488",
+    "title": "Internship Practicum",
+    "source_file": "index_S.html",
+    "source_group_index": 22
+  },
+  {
+    "subject": "SUS",
+    "course_number": "111",
+    "course_code": "SUS 111",
+    "title": "Introduction to Sustainability",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "113",
+    "course_code": "SUS 113",
+    "title": "Physical Geography Lecture",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "114",
+    "course_code": "SUS 114",
+    "title": "Physical Geography Lab",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "115",
+    "course_code": "SUS 115",
+    "title": "Introduction to Human Demography",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "117",
+    "course_code": "SUS 117",
+    "title": "Design Drawing",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "121",
+    "course_code": "SUS 121",
+    "title": "Climate Change: Science, Impacts, Justice, and Solutions",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "200",
+    "course_code": "SUS 200",
+    "title": "Human Settlement: History and Future",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "201",
+    "course_code": "SUS 201",
+    "title": "Systems and Models",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "202",
+    "course_code": "SUS 202",
+    "title": "Introduction to Environmental Humanities",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "203",
+    "course_code": "SUS 203",
+    "title": "Interpretation and Critical Analysis",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "204",
+    "course_code": "SUS 204",
+    "title": "Population Studies",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "206",
+    "course_code": "SUS 206",
+    "title": "Economics and Sustainability",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "301",
+    "course_code": "SUS 301",
+    "title": "Technical Writing and Communication",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "302",
+    "course_code": "SUS 302",
+    "title": "Integrative Assessment Models",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "305",
+    "course_code": "SUS 305",
+    "title": "Collective Action and Advocacy",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "306",
+    "course_code": "SUS 306",
+    "title": "Business and Sustainability",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "307",
+    "course_code": "SUS 307",
+    "title": "Environmental Economics and Management",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "308",
+    "course_code": "SUS 308",
+    "title": "Economic Development",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "311",
+    "course_code": "SUS 311",
+    "title": "Disasters and Society: A Global Perspective",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "314",
+    "course_code": "SUS 314",
+    "title": "Civilizations and Collapse",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "316",
+    "course_code": "SUS 316",
+    "title": "Cuba and Sustainability",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "317",
+    "course_code": "SUS 317",
+    "title": "American Environmental History",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "318",
+    "course_code": "SUS 318",
+    "title": "American Environmental Politics",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "319",
+    "course_code": "SUS 319",
+    "title": "Restoration Ecology",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "320",
+    "course_code": "SUS 320",
+    "title": "Utopia and Dystopia and the Environment in Literature and Culture",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "321",
+    "course_code": "SUS 321",
+    "title": "Ecology and Evolution in American Literature",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "322",
+    "course_code": "SUS 322",
+    "title": "Human Ecology",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "323",
+    "course_code": "SUS 323",
+    "title": "Environmental Justice",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "324",
+    "course_code": "SUS 324",
+    "title": "Human Geography and the Environment",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "325",
+    "course_code": "SUS 325",
+    "title": "Environmental Writing and the Media",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "326",
+    "course_code": "SUS 326",
+    "title": "Conservation Genetics",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "328",
+    "course_code": "SUS 328",
+    "title": "Ecofeminism, Literature & Film",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "329",
+    "course_code": "SUS 329",
+    "title": "Environmental Film, Media, Arts",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "332",
+    "course_code": "SUS 332",
+    "title": "Nature Writing & Photography",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "(337)",
+    "course_code": "SUS (337)",
+    "title": "Food, Land Use, and Global Change ** available as of 01/01/2027",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "340",
+    "course_code": "SUS 340",
+    "title": "Ecological and Social Dimensions of Disease",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "342",
+    "course_code": "SUS 342",
+    "title": "Energy and Mineral Resources",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "343",
+    "course_code": "SUS 343",
+    "title": "Age of the Anthropocene",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "344",
+    "course_code": "SUS 344",
+    "title": "Sustainable Natural Resources",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "350",
+    "course_code": "SUS 350",
+    "title": "Contemporary Topics in Sustainability",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "351",
+    "course_code": "SUS 351",
+    "title": "Design and Implement a Research Project in Ecotoxicology",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "352",
+    "course_code": "SUS 352",
+    "title": "Conduct and Communicate a Research Project in Ecotoxicology",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "354",
+    "course_code": "SUS 354",
+    "title": "Drawing for Design--CAD",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "362",
+    "course_code": "SUS 362",
+    "title": "Resilient Communities",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "366",
+    "course_code": "SUS 366",
+    "title": "Philosophy of the Environment (III)",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "374",
+    "course_code": "SUS 374",
+    "title": "Environment and Development in African History",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "386",
+    "course_code": "SUS 386",
+    "title": "The Maya",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "390",
+    "course_code": "SUS 390",
+    "title": "Environmental Humanities Capstone",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "401",
+    "course_code": "SUS 401",
+    "title": "Integrative, Collaborative Systems Studies",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "405",
+    "course_code": "SUS 405",
+    "title": "Environmental Sustainability in Tanzania",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "406",
+    "course_code": "SUS 406",
+    "title": "Coastal Housing Resilience",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "444",
+    "course_code": "SUS 444",
+    "title": "Experiential Learning",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "459",
+    "course_code": "SUS 459",
+    "title": "Write Effectively in Sustainability",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "475",
+    "course_code": "SUS 475",
+    "title": "Undergraduate Teaching Practicum",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "476",
+    "course_code": "SUS 476",
+    "title": "Undergraduate Teaching Practicum II",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "487",
+    "course_code": "SUS 487",
+    "title": "Research in Sustainability",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SUS",
+    "course_number": "488",
+    "course_code": "SUS 488",
+    "title": "Internship in Sustainability Studies",
+    "source_file": "index_S.html",
+    "source_group_index": 23
+  },
+  {
+    "subject": "SWA",
+    "course_number": "101",
+    "course_code": "SWA 101",
+    "title": "Intensive Elementary Swahili",
+    "source_file": "index_S.html",
+    "source_group_index": 24
+  }
+]

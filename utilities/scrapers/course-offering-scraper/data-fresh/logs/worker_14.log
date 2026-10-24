@@ -1,0 +1,33 @@
+Worker 14 groups: N
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_14 --letters N --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Spring 2027 --no-resume
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group N (1/1)…
+  [N] 5 subjects have no active courses.
+  [N] Found 34 course entries.
+  [N] Skipping 30 courses numbered above 499; 4 left.
+    [N 1/4] Opening NAI 101 — Intro to Native American and Indigenous Studies
+      Spring 2027: found 1 class sections.
+    [N 2/4] Opening NAI 211 — Intro to Native Amer. Literature, Cultures & Art
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+    [N 3/4] Opening NAI 221 — Native American Peoples and Environmental Justice
+      Spring 2027: found 1 class sections.
+    [N 4/4] Opening NAI 488 — Internship
+      Spring 2027: found 1 class sections.
+  Progress: group 1/1 (N 4/4) · 4 scraped, 0 already done, 0 failed · 27s elapsed
+Exported index: 4 records (JSON + CSV)
+Exported details: 4 records (JSONL + JSON + CSV)
+Exported sections: 3 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_14/semesteros-export.zip
+
+Done in 27s: 4 scraped, 0 already done, 0 failed, 30 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_14/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_14/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_14/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_14/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_14/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_14/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_14/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_14/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.

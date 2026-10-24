@@ -34,10 +34,112 @@ EXPAND_PREFIX = "DERIVED_SSS_BCC_SSS_EXPAND_ALL"
 RETURN_PREFIX = "DERIVED_SAA_CRS_RETURN_PB"
 LETTERS_DEFAULT = "A-Z-0-9"
 MAX_WORKERS = 26
+# Undergraduate courses only: 500+ are graduate courses.
+DEFAULT_MAX_LEVEL = 499
+PROGRESS_EVERY = 10
+PARALLEL_STATUS_SECONDS = 20
+# Rates and ETAs are noise until a run has some history.
+MIN_SECONDS_FOR_RATE = 30
 
 
 def normalized(text: str | None) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
+
+
+def course_level(record: dict[str, Any]) -> int | None:
+    """The numeric part of a course number ("114AP" → 114, "(301)" → 301); None if there isn't one."""
+    number = record.get("course_number") or record.get("catalog_course_number")
+    if not number:
+        code = normalized(record.get("catalog_course_code") or record.get("course_code"))
+        number = code.split(" ", 1)[1] if " " in code else ""
+    match = re.search(r"\d+", str(number))
+    return int(match.group()) if match else None
+
+
+def within_level(record: dict[str, Any], max_level: int) -> bool:
+    """True unless the course is numbered above max_level (0 = no limit). Unnumbered courses are kept."""
+    if not max_level:
+        return True
+    level = course_level(record)
+    return level is None or level <= max_level
+
+
+def format_duration(seconds: float) -> str:
+    seconds = int(seconds)
+    hours, rest = divmod(seconds, 3600)
+    minutes, secs = divmod(rest, 60)
+    return f"{hours}h{minutes:02d}m" if hours else f"{minutes}m{secs:02d}s" if minutes else f"{secs}s"
+
+
+class Progress:
+    """Run counters for terminal status lines, also saved to progress.json (read by the parallel parent)."""
+
+    def __init__(self, out_dir: Path, total_groups: int) -> None:
+        self.path = out_dir / "progress.json"
+        self.started = time.monotonic()
+        self.total_groups = total_groups
+        self.groups_done = 0
+        self.letter = ""
+        self.letter_total = 0
+        self.letter_position = 0
+        self.counts = {"scraped": 0, "already_done": 0, "failed": 0, "skipped_level": 0}
+        self.loading = False
+        self.save()
+
+    def load_letter(self, letter: str) -> None:
+        """Expanding a group's subject list can take a while; show it as loading meanwhile."""
+        self.letter, self.letter_total, self.letter_position, self.loading = letter, 0, 0, True
+        self.save()
+
+    def start_letter(self, letter: str, total: int, skipped_level: int) -> None:
+        self.letter, self.letter_total, self.letter_position, self.loading = letter, total, 0, False
+        self.counts["skipped_level"] += skipped_level
+        self.save()
+
+    def finish_letter(self) -> None:
+        self.groups_done += 1
+        self.letter_position = self.letter_total
+        self.save()
+
+    def record(self, outcome: str) -> None:
+        self.letter_position += 1
+        self.counts[outcome] += 1
+        self.save()
+
+    def label(self) -> str:
+        return f"[{self.letter} {self.letter_position + 1}/{self.letter_total}]"
+
+    def status(self) -> str:
+        elapsed = time.monotonic() - self.started
+        rate = self.counts["scraped"] / (elapsed / 60) if elapsed >= MIN_SECONDS_FOR_RATE else 0.0
+        remaining = self.letter_total - self.letter_position
+        eta = f" · ~{format_duration(remaining / rate * 60)} left in {self.letter}" if rate > 0 and remaining > 0 else ""
+        c = self.counts
+        return (
+            f"Progress: group {min(self.groups_done + 1, self.total_groups)}/{self.total_groups} "
+            f"({self.letter} {self.letter_position}/{self.letter_total}) · {c['scraped']} scraped, "
+            f"{c['already_done']} already done, {c['failed']} failed · "
+            f"{f'{rate:.1f} pages/min · ' if rate else ''}{format_duration(elapsed)} elapsed{eta}"
+        )
+
+    def summary(self) -> str:
+        c = self.counts
+        return (
+            f"Done in {format_duration(time.monotonic() - self.started)}: {c['scraped']} scraped, "
+            f"{c['already_done']} already done, {c['failed']} failed, {c['skipped_level']} graduate (500+) courses skipped."
+        )
+
+    def save(self) -> None:
+        save_json(self.path, {
+            "letter": self.letter,
+            "loading": self.loading,
+            "letter_position": self.letter_position,
+            "letter_total": self.letter_total,
+            "groups_done": self.groups_done,
+            "total_groups": self.total_groups,
+            "elapsed_seconds": round(time.monotonic() - self.started, 1),
+            **self.counts,
+        })
 
 
 def page_course_records(html: str, source_name: str) -> list[dict[str, Any]]:
@@ -179,6 +281,12 @@ def export_everything(out_dir: Path, args: argparse.Namespace, processed_codes: 
             index_rows = []
     detail_rows = read_jsonl(out_dir / "course-details.jsonl")
     section_rows = read_jsonl(out_dir / "course-sections.jsonl")
+    # The JSONL files can hold graduate courses from earlier runs; exports leave them out.
+    before = len(index_rows) + len(detail_rows) + len(section_rows)
+    index_rows = [r for r in index_rows if within_level(r, args.max_level)]
+    detail_rows = [r for r in detail_rows if within_level(r, args.max_level)]
+    section_rows = [r for r in section_rows if within_level(r, args.max_level)]
+    dropped = before - len(index_rows) - len(detail_rows) - len(section_rows)
 
     save_json(out_dir / "course-details.json", detail_rows)
     save_json(out_dir / "course-sections.json", section_rows)
@@ -194,6 +302,7 @@ def export_everything(out_dir: Path, args: argparse.Namespace, processed_codes: 
         "course_detail_records": len(detail_rows),
         "class_section_records": len(section_rows),
         "sections_term": args.sections_term or None,
+        "max_course_level": args.max_level or None,
         "files": [
             "course-index.json", "course-index.csv",
             "course-details.jsonl", "course-details.json", "course-details.csv",
@@ -210,6 +319,8 @@ def export_everything(out_dir: Path, args: argparse.Namespace, processed_codes: 
             if not file_path.is_file() or file_path == zip_path:
                 continue
             archive.write(file_path, file_path.relative_to(out_dir))
+    if dropped:
+        print(f"Left {dropped} records for courses above {args.max_level} out of the exports.")
     print(f"Exported index: {len(index_rows)} records (JSON + CSV)")
     print(f"Exported details: {len(detail_rows)} records (JSONL + JSON + CSV)")
     print(f"Exported sections: {len(section_rows)} records (JSONL + JSON + CSV)")
@@ -601,6 +712,7 @@ def scrape_parallel(args: argparse.Namespace, letters: list[str]) -> int:
             "--delay-ms", str(args.delay_ms),
             "--pause-every", str(args.pause_every),
             "--pause-seconds", str(args.pause_seconds),
+            "--max-level", str(args.max_level),
         ]
         if args.index_only:
             cmd.append("--index-only")
@@ -618,17 +730,53 @@ def scrape_parallel(args: argparse.Namespace, letters: list[str]) -> int:
             result = subprocess.run(cmd, stdout=log, stderr=subprocess.STDOUT, text=True)
         return idx, result.returncode, log_path
 
+    started = time.monotonic()
+
+    def parallel_status() -> str:
+        """Combines the progress.json each worker writes into one line."""
+        totals = {"scraped": 0, "already_done": 0, "failed": 0, "skipped_level": 0}
+        groups_done = 0
+        current: list[str] = []
+        for idx, group_letters, worker_dir, _ in jobs:
+            try:
+                snapshot = json.loads((worker_dir / "progress.json").read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                current.append(f"W{idx} starting")
+                continue
+            for key in totals:
+                totals[key] += snapshot.get(key, 0)
+            groups_done += snapshot.get("groups_done", 0)
+            if snapshot.get("groups_done", 0) >= len(group_letters):
+                current.append(f"W{idx} done")
+            elif snapshot.get("loading"):
+                current.append(f"W{idx} {snapshot.get('letter')} loading list")
+            else:
+                current.append(f"W{idx} {snapshot.get('letter') or '?'} {snapshot.get('letter_position', 0)}/{snapshot.get('letter_total', 0)}")
+        elapsed = time.monotonic() - started
+        rate = totals["scraped"] / (elapsed / 60) if elapsed >= MIN_SECONDS_FOR_RATE else 0.0
+        return (
+            f"Progress: groups {groups_done}/{len(letters)} · {totals['scraped']} scraped, "
+            f"{totals['already_done']} already done, {totals['failed']} failed, "
+            f"{totals['skipped_level']} 500+ skipped · {f'{rate:.1f} pages/min · ' if rate else ''}"
+            f"{format_duration(elapsed)} elapsed\n"
+            f"          {' | '.join(current)}"
+        )
+
     print(f"Starting {worker_count} isolated browser workers (requested {args.workers}).")
     print("Each worker gets separate PeopleSoft session state; output will be merged after completion.")
+    print(f"Status every {PARALLEL_STATUS_SECONDS}s; each worker's full log is in {logs_dir}.")
     results: list[tuple[int, int, Path]] = []
-    from concurrent.futures import ThreadPoolExecutor, as_completed
+    from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
     with ThreadPoolExecutor(max_workers=worker_count) as pool:
-        futures = [pool.submit(run_job, job) for job in jobs]
-        for future in as_completed(futures):
-            result = future.result()
-            results.append(result)
-            idx, code, log_path = result
-            print(f"  Worker {idx}: {'finished' if code == 0 else f'exited with code {code}'} — log: {log_path}")
+        pending = {pool.submit(run_job, job) for job in jobs}
+        while pending:
+            finished, pending = wait(pending, timeout=PARALLEL_STATUS_SECONDS, return_when=FIRST_COMPLETED)
+            for future in finished:
+                result = future.result()
+                results.append(result)
+                idx, code, log_path = result
+                print(f"  Worker {idx}: {'finished' if code == 0 else f'exited with code {code}'} — log: {log_path}")
+            print(parallel_status())
 
     # Merge each worker's partial indexes and deduplicate detail/section records.
     index_records: dict[tuple[str, str, str], dict[str, Any]] = {}
@@ -717,6 +865,9 @@ def scrape(args: argparse.Namespace) -> int:
 
     total_details = 0
     processed_codes: list[str] = []
+    progress = Progress(out_dir, len(letters))
+    if args.max_level:
+        print(f"Skipping courses numbered above {args.max_level} (use --max-level 0 to include them).")
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=args.headless)
         context = browser.new_context(viewport={"width": 1440, "height": 1000})
@@ -737,13 +888,21 @@ def scrape(args: argparse.Namespace) -> int:
         all_index: dict[tuple[str | None, str, str], dict[str, Any]] = {}
         for letter in letters:
             processed_codes.append(letter)
-            print(f"\nProcessing subject-code group {letter}…")
+            print(f"\nProcessing subject-code group {letter} ({len(processed_codes)}/{len(letters)})…")
+            progress.load_letter(letter)
             records = ensure_letter_expanded(page, letter, raw_index_dir)
+            kept = [r for r in records if within_level(r, args.max_level)]
+            skipped_level = len(records) - len(kept)
+            records = kept
+            if skipped_level:
+                print(f"  [{letter}] Skipping {skipped_level} courses numbered above {args.max_level}; {len(records)} left.")
+            progress.start_letter(letter, len(records), skipped_level)
             # Save an explicit empty index for letters/digits with no catalog entries.
             clean_records = [{k: v for k, v in r.items() if not k.startswith("_")} for r in records]
             save_json(index_dir / f"index_{letter}.json", clean_records)
             if not records:
                 write_index(out_dir / "course-index.json", list(all_index.values()))
+                progress.finish_letter()
                 continue
             for record in records:
                 key = (record.get("subject"), record.get("course_number"), record.get("title"))
@@ -751,6 +910,7 @@ def scrape(args: argparse.Namespace) -> int:
             write_index(out_dir / "course-index.json", list(all_index.values()))
 
             if args.index_only:
+                progress.finish_letter()
                 continue
 
             for position, wanted in enumerate(records, start=1):
@@ -758,19 +918,22 @@ def scrape(args: argparse.Namespace) -> int:
                     print(f"\nReached --max-details={args.max_details}; stopping after test run.")
                     browser.close()
                     export_everything(out_dir, args, processed_codes)
+                    print(progress.summary())
                     return 0
                 if only_courses and normalized(wanted.get("course_code")).upper() not in only_courses:
                     continue
                 key = (normalized(wanted.get("course_code")), normalized(wanted.get("title")))
                 if args.resume and key in done and not only_courses:
                     if not args.sections_term or (normalized(wanted.get("course_code")), normalized(args.sections_term)) in completed_section_terms:
+                        progress.record("already_done")
                         continue
 
                 link_id = ensure_course_list(page, letter, wanted, raw_index_dir)
                 if not link_id:
                     print(f"    SKIP: Could not locate {wanted.get('course_code')} — {wanted.get('title')}")
+                    progress.record("failed")
                     continue
-                print(f"    [{position}/{len(records)}] Opening {wanted.get('course_code')} — {wanted.get('title')}")
+                print(f"    {progress.label()} Opening {wanted.get('course_code')} — {wanted.get('title')}")
                 try:
                     page.locator(f'[id="{link_id}"]').click(timeout=15000)
                     page.locator(f'[id^="{RETURN_PREFIX}"]').first.wait_for(state="visible", timeout=20000)
@@ -807,8 +970,12 @@ def scrape(args: argparse.Namespace) -> int:
                     if args.sections_term and section_status != "error":
                         completed_section_terms.add((normalized(parsed.get("catalog_course_code") or parsed.get("course_code")), normalized(args.sections_term)))
                     total_details += 1
+                    progress.record("scraped")
+                    if progress.counts["scraped"] % PROGRESS_EVERY == 0:
+                        print(f"  {progress.status()}")
                 except PlaywrightTimeoutError as exc:
                     print(f"    ERROR: Timed out opening detail for {wanted.get('course_code')}: {exc}")
+                    progress.record("failed")
                     page.screenshot(path=str(out_dir / f"timeout-{safe_filename(wanted.get('course_code') or 'course')}.png"))
                     # Don't attempt a return click if the detail page never loaded.
                     if not page.locator(f'[id^="{RETURN_PREFIX}"]').count():
@@ -827,10 +994,14 @@ def scrape(args: argparse.Namespace) -> int:
                     print(f"    Pausing {args.pause_seconds}s after {total_details} detail pages…")
                     time.sleep(args.pause_seconds)
 
+            progress.finish_letter()
+            print(f"  {progress.status()}")
+
         browser.close()
 
     export_everything(out_dir, args, processed_codes)
-    print("\nFinished.")
+    print(f"\n{progress.summary()}")
+    print("Finished.")
     print(f"Index: {out_dir / 'course-index.json'}")
     print(f"Details: {detail_jsonl}")
     if args.sections_term:
@@ -852,6 +1023,7 @@ def main() -> int:
     parser.add_argument("--max-details", type=int, default=0, help="Stop after this many detail pages (0 = no limit)")
     parser.add_argument("--workers", type=int, default=1, help="Independent browser workers (1 = sequential; try 4 first, up to 26). Parallel workers use separate sessions and merge outputs.")
     parser.add_argument("--index-only", action="store_true", help="Collect course lists only; do not open detail pages")
+    parser.add_argument("--max-level", type=int, default=DEFAULT_MAX_LEVEL, help=f"Skip courses numbered above this (default {DEFAULT_MAX_LEVEL}: undergraduate only; 0 = no limit)")
     parser.add_argument("--sections-term", default="", help='Also collect class sections: one term ("Spring 2027"), several ("Fall 2026,Spring 2027"), or "all" listed terms')
     parser.add_argument("--headless", action="store_true", help="Run browser invisibly (visible by default for debugging)")
     parser.add_argument("--no-resume", dest="resume", action="store_false", help="Do not skip details already in course-details.jsonl")

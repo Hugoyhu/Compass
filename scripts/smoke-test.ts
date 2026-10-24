@@ -49,7 +49,15 @@ async function main() {
     await page.getByRole("heading", { name: "Computer Science, BS" }).waitFor();
     check(await page.getByText("Program rules").isVisible(), "Degree progress shows program rules");
     check((await page.locator("[id^='cse-bs.']").count()) === 9, "Degree progress shows all 9 requirements");
+    check(await page.getByText("C- · retake").first().isVisible(), "Degree progress marks AMS 310 as a retake in its requirement");
     await shot(page, "3-progress-sample");
+
+    await page.goto(`${BASE}/degrees/cse-bs`);
+    await page.getByRole("heading", { name: "Computer Science, BS" }).waitFor();
+    check(
+      await page.getByText("Alternative path: replaces CSE 114, CSE 214, CSE 307").isVisible(),
+      "Degree Explorer shows the honors sequence as an alternative path",
+    );
 
     // 3. Upload the fixture transcript, review, replace, and see the dashboard update.
     await page.goto(`${BASE}/record`);
@@ -76,10 +84,10 @@ async function main() {
     page.once("dialog", (d) => d.accept());
     await Promise.all([
       page.waitForResponse((r) => r.request().method() === "POST"),
-      page.getByRole("button", { name: "Clear my record" }).click(),
+      page.getByRole("button", { name: "Delete all courses" }).click(),
     ]);
     await page.goto(BASE);
-    await page.getByRole("heading", { name: "Plan your Stony Brook degree" }).waitFor();
+    await page.getByRole("heading", { name: "Add your courses" }).waitFor();
     check(true, "Clearing the record returns to onboarding");
 
     // 5. Accounts: a guest record moves into a new account and survives sign-out/sign-in.
@@ -92,7 +100,7 @@ async function main() {
       const password = "correct horse battery";
       await page.goto(BASE);
       await page.getByRole("button", { name: "Load sample student" }).click();
-      await page.getByRole("heading", { name: /Welcome back, Alex/ }).waitFor();
+      await page.getByRole("heading", { name: /Alex/ }).waitFor();
 
       await page.goto(`${BASE}/signup`);
       await page.waitForLoadState("networkidle");
@@ -100,12 +108,12 @@ async function main() {
       await page.getByLabel("Password", { exact: true }).fill(password);
       await page.getByLabel("Confirm password").fill(password);
       await page.getByRole("button", { name: "Create account" }).click();
-      await page.getByRole("heading", { name: /Welcome back, Alex/ }).waitFor();
+      await page.getByRole("heading", { name: /Alex/ }).waitFor();
       check(await page.getByText(username).first().isVisible(), "Sign-up moves the guest record into the new account");
       await shot(page, "7-signed-in");
 
       await page.getByRole("button", { name: "Sign out" }).click();
-      await page.getByRole("heading", { name: "Plan your Stony Brook degree" }).waitFor();
+      await page.getByRole("heading", { name: "Add your courses" }).waitFor();
       check(true, "Signing out shows onboarding (the guest copy was moved, not left behind)");
 
       await page.goto(`${BASE}/login`);
@@ -117,7 +125,7 @@ async function main() {
       check(true, "A wrong password is rejected");
       await page.getByLabel("Password").fill(password);
       await page.getByRole("button", { name: "Sign in" }).click();
-      await page.getByRole("heading", { name: /Welcome back, Alex/ }).waitFor();
+      await page.getByRole("heading", { name: /Alex/ }).waitFor();
       check(true, "Signing back in restores the record from the database");
 
       await page.goto(`${BASE}/progress`);

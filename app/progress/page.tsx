@@ -1,30 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
-import { CircleCheck, CircleDashed, CircleX, Clock, ExternalLink, Info, Plus, type LucideIcon } from "lucide-react";
+import { ExternalLink, Info, Plus } from "lucide-react";
 import { StatusIcon } from "@/components/audit/status-badge";
 import { ProgramToggle } from "@/components/degrees/program-toggle";
 import { GetStarted } from "@/components/onboarding/get-started";
-import { RequirementCard } from "@/components/progress/requirement-card";
+import { NotesCard, ProgramRulesCard, RequirementNav, SubstitutionsCard } from "@/components/program/program-panels";
+import { RequirementCard } from "@/components/program/requirement-card";
+import type { RuleContext } from "@/components/program/rule-tree";
 import { Alert, AlertAction, AlertTitle } from "@/components/ui/alert";
-import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
-import type { PolicyStatus } from "@/lib/engine/audit";
-import { NOTE_TOPICS, POLICY_STATUS_LABELS, POLICY_TITLES, requirementHeading, STATUS_LABELS } from "@/lib/engine/describe";
-import { getStudentView } from "@/lib/services/dashboard";
+import { groupSbcResults, substitutionLayouts, type SbcResult } from "@/lib/engine/audit";
+import { attachSubstitutions, requirementRefs, STATUS_LABELS } from "@/lib/engine/describe";
+import { getProgressView } from "@/lib/services/progress";
 import { getStudentRecord } from "@/lib/student/store";
 
 export const metadata: Metadata = { title: "Degree Progress" };
-
-const POLICY_ICONS: Record<PolicyStatus, { icon: LucideIcon; className: string }> = {
-  satisfied: { icon: CircleCheck, className: "text-status-good" },
-  "in-progress": { icon: Clock, className: "text-[#a86f00]" },
-  "not-met": { icon: CircleX, className: "text-status-critical" },
-  pending: { icon: CircleDashed, className: "text-muted-foreground" },
-  info: { icon: Info, className: "text-muted-foreground" },
-};
 
 export default function ProgressPage({ searchParams }: PageProps<"/progress">) {
   return (
@@ -36,14 +29,16 @@ export default function ProgressPage({ searchParams }: PageProps<"/progress">) {
   );
 }
 
+/** The Degree Explorer's view of one of the student's programs, with their status on top. */
 async function Progress({ searchParams }: Pick<PageProps<"/progress">, "searchParams">) {
   const record = await getStudentRecord();
   if (!record) return <GetStarted />;
 
-  const { audit, programs, labels, student } = await getStudentView(record);
-  const attempts = new Map(student.attempts.map((a) => [a.code, a]));
+  const { program: requested } = await searchParams;
+  const progress = await getProgressView(record, typeof requested === "string" ? requested : undefined);
+  const { view, selected } = progress;
 
-  if (programs.length === 0) {
+  if (!selected) {
     return (
       <Alert>
         <Info />
@@ -57,15 +52,17 @@ async function Progress({ searchParams }: Pick<PageProps<"/progress">, "searchPa
     );
   }
 
-  const { program: requested } = await searchParams;
-  const selected = programs.find((p) => p.program.id === requested) ?? programs[0];
   const { program } = selected;
-  const substitutions = program.substitutions;
+  const refs = requirementRefs(program);
+  const layouts = substitutionLayouts(program);
+  const { byRequirement, unattached } = attachSubstitutions(program, new Set(layouts.map((l) => l.sub.id)));
+  const ctx: RuleContext = { courses: progress.courseInfo, refs: refs.full, status: progress.statuses };
+  const results = new Map(selected.requirements.map((r) => [r.requirement.id, r]));
 
   return (
     <>
       <nav aria-label="Your programs" className="flex flex-wrap items-center gap-1 border-b">
-        {programs.map((p) => {
+        {view.programs.map((p) => {
           const active = p === selected;
           return (
             <Link
@@ -95,6 +92,9 @@ async function Progress({ searchParams }: Pick<PageProps<"/progress">, "searchPa
           </p>
         </div>
         <div className="flex items-center gap-2">
+          <Link href={`/degrees/${program.id}`} className={buttonVariants({ variant: "ghost", size: "sm" })}>
+            View in Degree Explorer
+          </Link>
           <a href={program.source.url} target="_blank" rel="noreferrer" className={buttonVariants({ variant: "ghost", size: "sm" })}>
             Catalog page
             <ExternalLink />
@@ -103,119 +103,77 @@ async function Progress({ searchParams }: Pick<PageProps<"/progress">, "searchPa
         </div>
       </div>
 
-      <nav aria-label="Requirements" className="flex flex-wrap gap-1.5">
-        {selected.requirements.map((r) => (
-          <a
-            key={r.requirement.id}
-            href={`#${r.requirement.id}`}
-            className="inline-flex items-center gap-1.5 rounded-md border px-2 py-1 text-xs hover:bg-muted"
-          >
-            <StatusIcon status={r.status} className="size-3.5" />
-            {requirementHeading(r.requirement)}
-          </a>
-        ))}
-      </nav>
+      <RequirementNav
+        requirements={program.requirements}
+        statuses={Object.fromEntries(selected.requirements.map((r) => [r.requirement.id, r.status]))}
+      />
 
       <div className="grid gap-6 lg:grid-cols-3">
         <section className="space-y-4 lg:col-span-2" aria-label="Requirements">
-          {selected.requirements.map((result) => (
-            <RequirementCard key={result.requirement.id} result={result} labels={labels} attempts={attempts} />
+          {program.requirements.map((r) => (
+            <RequirementCard
+              key={r.id}
+              requirement={r}
+              ctx={ctx}
+              layouts={layouts}
+              substitutions={byRequirement.get(r.id) ?? []}
+              refs={refs.full}
+              result={results.get(r.id)}
+              activeSubstitutions={selected.activeSubstitutions}
+            />
           ))}
         </section>
 
         <aside className="space-y-4">
-          {selected.policies.length > 0 && (
-            <Card size="sm">
-              <CardHeader>
-                <CardTitle>Program rules</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  {selected.policies.map((p, i) => {
-                    const { icon: Icon, className } = POLICY_ICONS[p.status];
-                    return (
-                      <li key={i} className="flex gap-2 text-sm">
-                        <Icon className={`mt-0.5 size-4 shrink-0 ${className}`} aria-hidden />
-                        <div className="min-w-0 space-y-0.5">
-                          <p className="font-medium">
-                            {POLICY_TITLES[p.policy.type] ?? p.policy.type}
-                            <span className="ml-1.5 text-xs font-normal text-muted-foreground">{POLICY_STATUS_LABELS[p.status]}</span>
-                          </p>
-                          {p.detail && <p className="text-xs text-muted-foreground">{p.detail}</p>}
-                        </div>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </CardContent>
-            </Card>
-          )}
-
-          {substitutions.length > 0 && (
-            <Card size="sm">
-              <CardHeader>
-                <CardTitle>Substitutions</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-xs text-muted-foreground">
-                  {substitutions.map((s) => (
-                    <li key={s.id}>
-                      {s.sourceText}
-                      {s.requiresApproval && (
-                        <Badge variant="outline" className="ml-1.5 font-normal">
-                          Needs approval
-                        </Badge>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          )}
-
+          <ProgramRulesCard policies={program.policies} shortRefs={refs.short} results={selected.policies} />
+          <SubstitutionsCard substitutions={unattached} />
           <Card size="sm">
             <CardHeader>
               <CardTitle>Stony Brook Curriculum</CardTitle>
               <CardDescription>
-                {audit.sbc.satisfied} of {audit.sbc.total} done
+                {view.audit.sbc.satisfied} of {view.audit.sbc.total} done
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-1.5">
-                {audit.sbc.results.map((s) => (
-                  <li key={s.category.code} className="flex items-start gap-2 text-xs">
-                    <StatusIcon status={s.status} className="mt-px size-3.5" />
-                    <span className="w-11 shrink-0 font-medium">{s.category.code}</span>
-                    <span className="min-w-0 flex-1 text-muted-foreground">
-                      {STATUS_LABELS[s.status]}
-                      {s.appliedCode ? ` · ${s.appliedCode}` : ""}
-                      {s.exemptReason ? ` · ${s.exemptReason}` : ""}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              <SbcChecklist results={view.audit.sbc.results} />
             </CardContent>
           </Card>
-
-          {program.notes.length > 0 && (
-            <Card size="sm">
-              <CardHeader>
-                <CardTitle>Notes</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-xs text-muted-foreground">
-                  {program.notes.map((n, i) => (
-                    <li key={i}>
-                      <span className="font-medium text-foreground">{NOTE_TOPICS[n.topic] ?? n.topic}: </span>
-                      {n.text}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          )}
+          <NotesCard notes={program.notes} />
         </aside>
       </div>
     </>
+  );
+}
+
+function SbcChecklist({ results }: { results: SbcResult[] }) {
+  const { required, threeOf } = groupSbcResults(results);
+  return (
+    <>
+      <SbcList results={required} />
+      {threeOf.length > 0 && (
+        <>
+          <p className="mt-3 mb-1.5 text-xs font-medium text-muted-foreground">Three of:</p>
+          <SbcList results={threeOf} />
+        </>
+      )}
+    </>
+  );
+}
+
+function SbcList({ results }: { results: SbcResult[] }) {
+  return (
+    <ul className="space-y-1.5">
+      {results.map((s) => (
+        <li key={s.category.code} className="flex items-start gap-2 text-xs">
+          <StatusIcon status={s.status} className="mt-px size-3.5" />
+          <span className="w-11 shrink-0 font-medium">{s.category.code}</span>
+          <span className="min-w-0 flex-1 text-muted-foreground">
+            {STATUS_LABELS[s.status]}
+            {s.appliedCode ? ` · ${s.appliedCode}` : ""}
+            {s.exemptReason ? ` · ${s.exemptReason}` : ""}
+          </span>
+        </li>
+      ))}
+    </ul>
   );
 }

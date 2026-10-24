@@ -1,0 +1,82 @@
+Worker 4 groups: D, 3
+Command: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/.venv/bin/python /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/scrape_catalog.py --url https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL --output /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_04 --letters D,3 --workers 1 --delay-ms 500 --pause-every 50 --pause-seconds 5 --max-level 499 --sections-term Spring 2027 --no-resume
+
+Skipping courses numbered above 499 (use --max-level 0 to include them).
+Opening public catalog: https://prod.ps.stonybrook.edu/psc/csprodg/EMPLOYEE/CAMP/c/COMMUNITY_ACCESS.SSS_BROWSE_CATLG.GBL
+
+Processing subject-code group D (1/2)…
+  [D] 9 subjects have no active courses.
+  [D] Found 73 course entries.
+  [D] Skipping 47 courses numbered above 499; 26 left.
+    [D 1/26] Opening DAN 101 — Movement & Somatic Learning
+      No View Class Sections button; course has no sections.
+    [D 2/26] Opening DAN 102 — Intro to World Dance Cultures
+      No View Class Sections button; course has no sections.
+    [D 3/26] Opening DAN 164 — Tap Technique and History
+      No View Class Sections button; course has no sections.
+    [D 4/26] Opening DAN 165 — Contemporary Dance I
+      No View Class Sections button; course has no sections.
+    [D 5/26] Opening DAN 166 — Ballet Technique I
+      No View Class Sections button; course has no sections.
+    [D 6/26] Opening DAN 167 — Jazz Dance Technique I
+      No View Class Sections button; course has no sections.
+    [D 7/26] Opening DAN 168 — World Dance I
+      No View Class Sections button; course has no sections.
+    [D 8/26] Opening DAN 203 — Laban Movement Analysis
+      No View Class Sections button; course has no sections.
+    [D 9/26] Opening DAN 264 — Movement Awareness and Analysis
+      No View Class Sections button; course has no sections.
+    [D 10/26] Opening DAN 353 — Special Topics in Dance Performance
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (D 10/26) · 10 scraped, 0 already done, 0 failed · 28s elapsed
+    [D 11/26] Opening DAN 365 — Contemporary Dance II
+      No View Class Sections button; course has no sections.
+    [D 12/26] Opening DAN 366 — Ballet Technique II
+      No View Class Sections button; course has no sections.
+    [D 13/26] Opening DAN 367 — Jazz Dance Technique II
+      No View Class Sections button; course has no sections.
+    [D 14/26] Opening DAN 368 — Dance Improvisation
+      No View Class Sections button; course has no sections.
+    [D 15/26] Opening DAN 369 — World Dance II
+      No View Class Sections button; course has no sections.
+    [D 16/26] Opening DAN 400 — Performance Dance Ensemble
+      No View Class Sections button; course has no sections.
+    [D 17/26] Opening DAN 444 — Experiential Learning
+      No View Class Sections button; course has no sections.
+    [D 18/26] Opening DAN 465 — Contemporary Dance Theatre and Repertory
+      No View Class Sections button; course has no sections.
+    [D 19/26] Opening DAN 467 — Jazz Dance Technique III
+      No View Class Sections button; course has no sections.
+    [D 20/26] Opening DAN 468 — Choreography
+      No View Class Sections button; course has no sections.
+  Progress: group 1/2 (D 20/26) · 20 scraped, 0 already done, 0 failed · 28.3 pages/min · 42s elapsed · ~12s left in D
+    [D 21/26] Opening DAN 475 — Undergraduate Teaching Practicum I
+      No View Class Sections button; course has no sections.
+    [D 22/26] Opening DAN 476 — Undergraduate Teaching Practicum II
+      No View Class Sections button; course has no sections.
+    [D 23/26] Opening DAN 487 — Independent Research
+      No View Class Sections button; course has no sections.
+    [D 24/26] Opening DAN 488 — Internship
+      No View Class Sections button; course has no sections.
+    [D 25/26] Opening DIA 383 — Topics in Game Studies
+      No View Class Sections button; course has no sections.
+    [D 26/26] Opening DIA 444 — Experiential Learning
+      Spring 2027: not listed for this course. Available terms: Fall 2026
+  Progress: group 2/2 (D 26/26) · 26 scraped, 0 already done, 0 failed · 30.0 pages/min · 51s elapsed
+
+Processing subject-code group 3 (2/2)…
+  [3] Letter has no subject groups.
+Exported index: 26 records (JSON + CSV)
+Exported details: 26 records (JSONL + JSON + CSV)
+Exported sections: 0 records (JSONL + JSON + CSV)
+Complete bundle: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_04/semesteros-export.zip
+
+Done in 52s: 26 scraped, 0 already done, 0 failed, 47 graduate (500+) courses skipped.
+Finished.
+Index: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_04/course-index.json
+Details: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_04/course-details.jsonl
+Class sections: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_04/course-sections.jsonl
+Raw HTML: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_04/raw
+CSV exports: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_04/course-index.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_04/course-details.csv, /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_04/course-sections.csv
+ZIP export: /Users/hugohu/Documents/compass/utilities/scrapers/course-offering-scraper/data-fresh/.workers/worker_04/semesteros-export.zip
+Note: check the run log for skipped or timed-out courses before treating the data as complete.
