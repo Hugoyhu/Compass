@@ -161,7 +161,9 @@
                   ]
                 }
               }
-            ]
+            ],
+            "id": "business-management-bs.specialization.accounting",
+            "label": "Accounting"
           },
           {
             "type": "allOf",
@@ -183,7 +185,9 @@
                   ]
                 }
               }
-            ]
+            ],
+            "id": "business-management-bs.specialization.ai-for-business-innovation",
+            "label": "AI for Business Innovation"
           },
           {
             "type": "allOf",
@@ -224,7 +228,9 @@
                   }
                 ]
               }
-            ]
+            ],
+            "id": "business-management-bs.specialization.finance",
+            "label": "Finance"
           },
           {
             "type": "allOf",
@@ -258,7 +264,9 @@
                   ]
                 }
               }
-            ]
+            ],
+            "id": "business-management-bs.specialization.marketing",
+            "label": "Marketing"
           },
           {
             "type": "choose",
@@ -271,9 +279,13 @@
                 "BUS 393",
                 "BUS 488"
               ]
-            }
+            },
+            "id": "business-management-bs.specialization.operations-management",
+            "label": "Operations Management"
           }
-        ]
+        ],
+        "id": "business-management-bs.specialization.choice",
+        "choice": "specialization"
       },
       "sourceText": "Choose one specialization from the following areas: Accounting (Required courses: ACC 310, ACC 311; Select two from: ACC 313, ACC 320, ACC 400, ACC 403, BUS 488); AI for Business Innovation (Required: BUS 375; Select three from: ACC 320, BUS 338, BUS 356, BUS 379, BUS 444); Finance (Required: BUS 355; Select three from: BUS 317, BUS 331, BUS 332, BUS 336, BUS 356, BUS 365, BUS 366 OR ECO 360, BUS 367, BUS 381, ECO 383, BUS 406, BUS 488); Marketing (Required: BUS 358, BUS 359, BUS 448; Select one from: BUS 302, BUS 334, BUS 357, BUS 362, BUS 363, BUS 378, BUS 395, BUS 449, BUS 488); Operations Management (Select four from: BUS 371, BUS 372, BUS 375, BUS 393, BUS 488)"
     },

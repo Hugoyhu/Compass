@@ -157,7 +157,8 @@
                 "type": "course",
                 "code": "AFS 459"
               }
-            ]
+            ],
+            "label": "Interdisciplinary"
           },
           {
             "id": "africana-studies-ba.1.human-rights",
@@ -312,8 +313,7 @@
                     "AFS 477",
                     "AFS 487",
                     "AFH 487"
-                  ],
-                  "minNumber": 400
+                  ]
                 }
               },
               {
@@ -322,7 +322,8 @@
                 "type": "course",
                 "code": "AFS 459"
               }
-            ]
+            ],
+            "label": "Human Rights and Social Justice"
           },
           {
             "id": "africana-studies-ba.1.health",
@@ -467,8 +468,7 @@
                     "AFS 477",
                     "AFS 487",
                     "AFH 487"
-                  ],
-                  "minNumber": 400
+                  ]
                 }
               },
               {
@@ -477,9 +477,12 @@
                 "type": "course",
                 "code": "AFS 459"
               }
-            ]
+            ],
+            "label": "Health and Disease in Africa and the African Diaspora"
           }
-        ]
+        ],
+        "id": "africana-studies-ba.1.choice",
+        "choice": "concentration"
       },
       "sourceText": "Students select from an Interdisciplinary concentration, a concentration in Human Rights and Social Justice, and a concentration in Health and Disease. All courses for the major, except those graded S/U, must be passed with a letter grade of C or higher."
     },

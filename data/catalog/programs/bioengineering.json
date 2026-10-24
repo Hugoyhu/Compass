@@ -146,7 +146,9 @@
                   }
                 ]
               }
-            ]
+            ],
+            "id": "bioengineering.tracks.biomaterials-biomechanics",
+            "label": "Biomaterials/Biomechanics"
           },
           {
             "type": "allOf",
@@ -189,7 +191,9 @@
                   }
                 ]
               }
-            ]
+            ],
+            "id": "bioengineering.tracks.bioelectricity",
+            "label": "Bioelectricity"
           },
           {
             "type": "allOf",
@@ -213,9 +217,13 @@
                   ]
                 }
               }
-            ]
+            ],
+            "id": "bioengineering.tracks.molecular-cellular",
+            "label": "Molecular/Cellular"
           }
-        ]
+        ],
+        "id": "bioengineering.tracks.choice",
+        "choice": "track"
       },
       "sourceText": "Biomaterials/Biomechanics: BME 260 - Statics and Dynamics in Biological Systems 4 credits; BME 303 - Biomechanics 3 credits; BME 353 - Introduction to Biomaterials 3 credits OR BME 381 - Nanofabrication in Biomedical Applications 3 credits; Calculus III: AMS 261 - Applied Calculus III 4 credits OR MAT 203 - Calculus III with Applications 4 credits. Bioelectricity: BME 271 - Introduction to Electric Circuits and Bioelectricity 3 credits; BME 301 - Bioelectricity 3 credits; BME 311 - Fundamentals of Macro to Molecular Bioimaging 3 credits OR BME 313 - Bioinstrumentation 3 credits OR BME 481 - Biosensors 3 credits; Linear Algebra: AMS 210 - Applied Linear Algebra 3 credits OR MAT 211 - Introduction to Linear Algebra 3 credits. Molecular/Cellular: BME 304 - Genetic Engineering 3 credits; BME 381 - Nanofabrication in Biomedical Applications 3 credits; PICK TWO: BME 404 - Essentials of Tissue Engineering 3 credits, BME 402 - Contemporary Biotechnology 3 credits, BME 371 - Biological Microfluidics 3 credits"
     },

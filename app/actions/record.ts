@@ -72,3 +72,13 @@ export async function clearRecord(): Promise<void> {
     await clearGuestRecord();
   }
 }
+
+/** Declares a concentration, specialization, or track; null clears the choice. */
+export async function setChoice(choiceId: string, alternativeId: string | null): Promise<SaveResult> {
+  const record = await getStudentRecord();
+  if (!record) return { ok: false, error: "Add your courses first" };
+  const choices = { ...record.choices };
+  if (alternativeId) choices[choiceId] = alternativeId;
+  else delete choices[choiceId];
+  return saveRecord({ ...record, choices });
+}

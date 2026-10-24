@@ -82,13 +82,28 @@ interface RuleMeta {
   sourceText?: string;
   /** A condition software can't verify (topic, approval); the audit flags it for an advisor. */
   manualCheck?: string;
+  /** Display name, e.g. "Finance" for one alternative of a specialization choice. */
+  label?: string;
 }
+
+/** What a student-chosen alternative is called in the catalog. */
+export const ChoiceKindSchema = z.enum(["concentration", "specialization", "track"]);
+export type ChoiceKind = z.infer<typeof ChoiceKindSchema>;
 
 export type Rule = RuleMeta &
   (
     | { type: "course"; code: CourseCode }
     | { type: "allOf"; rules: Rule[] }
-    | { type: "anyOf"; rules: Rule[] }
+    | {
+        type: "anyOf";
+        rules: Rule[];
+        /**
+         * Set when the student declares one alternative (a concentration,
+         * specialization, or track) rather than satisfying whichever they can.
+         * The node and each alternative then have an id and a label.
+         */
+        choice?: ChoiceKind;
+      }
     | {
         type: "choose";
         count?: number;
@@ -103,6 +118,7 @@ const ruleMeta = {
   id: z.string().optional(),
   sourceText: z.string().optional(),
   manualCheck: z.string().optional(),
+  label: z.string().optional().describe('Display name for an alternative of a choice, e.g. "Finance"'),
 };
 
 const leafVariants = [
@@ -132,6 +148,9 @@ export const RuleSchema: z.ZodType<Rule> = z.discriminatedUnion("type", [
     rules: z
       .array(z.lazy(() => RuleSchema))
       .describe("Exactly one alternative must be satisfied; an alternative may be an allOf"),
+    choice: ChoiceKindSchema.optional().describe(
+      "Set when the student declares one alternative (concentration, specialization, track); give the node and each alternative an id and a label",
+    ),
   }),
 ]) as z.ZodType<Rule>;
 
