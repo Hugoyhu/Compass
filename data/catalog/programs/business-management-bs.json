@@ -120,9 +120,20 @@
             ]
           },
           {
-            "type": "unparsed",
-            "text": "or a higher level calculus course",
-            "reason": "The page does not name the qualifying higher-level calculus courses"
+            "type": "choose",
+            "count": 1,
+            "label": "Higher-level calculus",
+            "from": {
+              "courses": [
+                "MAT 125",
+                "MAT 126",
+                "MAT 127",
+                "MAT 131",
+                "MAT 132",
+                "AMS 151",
+                "AMS 161"
+              ]
+            }
           }
         ]
       },
@@ -288,28 +299,6 @@
         "choice": "specialization"
       },
       "sourceText": "Choose one specialization from the following areas: Accounting (Required courses: ACC 310, ACC 311; Select two from: ACC 313, ACC 320, ACC 400, ACC 403, BUS 488); AI for Business Innovation (Required: BUS 375; Select three from: ACC 320, BUS 338, BUS 356, BUS 379, BUS 444); Finance (Required: BUS 355; Select three from: BUS 317, BUS 331, BUS 332, BUS 336, BUS 356, BUS 365, BUS 366 OR ECO 360, BUS 367, BUS 381, ECO 383, BUS 406, BUS 488); Marketing (Required: BUS 358, BUS 359, BUS 448; Select one from: BUS 302, BUS 334, BUS 357, BUS 362, BUS 363, BUS 378, BUS 395, BUS 449, BUS 488); Operations Management (Select four from: BUS 371, BUS 372, BUS 375, BUS 393, BUS 488)"
-    },
-    {
-      "id": "business-management-bs.transfer-credit",
-      "label": "transfer-credit",
-      "title": "Transfer Credit Limit for the Business Major",
-      "rule": {
-        "type": "unparsed",
-        "text": "Students may apply a maximum of 21 transfer credits toward the Business Major. Of the total 21 credits, only 6 credits may used to fulfill an area of specialization.",
-        "reason": "Program-wide transfer credit limits with a specialization sub-cap are not expressible with the available rule types"
-      },
-      "sourceText": "Students may apply a maximum of 21 transfer credits toward the Business Major. Of the total 21 credits, only 6 credits may used to fulfill an area of specialization."
-    },
-    {
-      "id": "business-management-bs.total-credits",
-      "label": "total-credits",
-      "title": "Total Major Credits",
-      "rule": {
-        "type": "unparsed",
-        "text": "Completion of the major requires 60 credits.",
-        "reason": "Program-wide total credit requirement is not expressible as a course rule"
-      },
-      "sourceText": "The major in Business Management leads to the Bachelor of Science degree. Completion of the major requires 60 credits."
     }
   ],
   "policies": [
@@ -350,6 +339,16 @@
         "business-management-bs.core.bus301"
       ],
       "sourceText": "BUS 301 contains the necessary writing components which satisfy the Upper Division Writing Requirement for the business major, and also satisfies the Stony Brook Curriculum learning objectives SPK and WRTD. This course must be taken at Stony Brook."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 39,
+      "appliesTo": [
+        "business-management-bs.core",
+        "business-management-bs.calculus",
+        "business-management-bs.specialization"
+      ],
+      "sourceText": "Students may apply a maximum of 21 transfer credits toward the Business Major. (The major requires 60 credits, so at least 39 must be taken at Stony Brook.)"
     }
   ],
   "substitutions": [],
@@ -632,6 +631,14 @@
     {
       "topic": "other",
       "text": "The page's C-minimum grade rule lists BUS courses, ECO 110, ECO 111, and MAT 122. ACC courses are not named in that rule, so the minimum-grade policy on the specialization requirement may apply more broadly than the page states; confirm with the program office."
+    },
+    {
+      "topic": "other",
+      "text": "Completion of the major requires 60 credits."
+    },
+    {
+      "topic": "other",
+      "text": "Of the maximum 21 transfer credits applicable to the Business Major, only 6 credits may be used to fulfill an area of specialization. Not checked by the audit."
     }
   ],
   "source": {
@@ -640,7 +647,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

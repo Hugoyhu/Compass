@@ -83,7 +83,7 @@
           },
           {
             "id": "journalism-ba.required-courses.senior-project",
-            "manualCheck": "JRN 490 (Journalism Senior Project) requires U3/U4 standing and must follow completion of one of JRN 311, JRN 312, or JRN 313.",
+            "manualCheck": "JRN 490 (Journalism Senior Project) must follow completion of one of JRN 311, JRN 312, or JRN 313.",
             "type": "course",
             "code": "JRN 490"
           }
@@ -153,16 +153,9 @@
       "label": "concentration",
       "title": "Concentration in Outside Area (18 credits)",
       "rule": {
-        "manualCheck": "Concentration courses marked 'Individual Topics need approval' (e.g., ATM 237, PHY 237, SOC 390, WST 399, HIS 396) require approval. Check prerequisites. Each concentration needs at least 9 credits (three courses) at the upper-division level.",
+        "manualCheck": "Concentration courses marked 'Individual Topics need approval' (e.g., ATM 237, PHY 237, SOC 390, WST 399, HIS 396) require approval. Check prerequisites. The second major, minor, and self-designed alternatives are not checked by this audit; confirm them with the undergraduate director.",
         "type": "anyOf",
         "rules": [
-          {
-            "type": "unparsed",
-            "text": "Declare a second major or a minor (requirements set by the other program)",
-            "reason": "Second major and minor requirements are defined by other programs and are not part of this page.",
-            "id": "journalism-ba.concentration.second-major-or-minor",
-            "label": "Second major or minor"
-          },
           {
             "type": "choose",
             "count": 6,
@@ -217,7 +210,30 @@
               {
                 "type": "minFrom",
                 "from": {
-                  "minNumber": 300
+                  "courses": [
+                    "BIO 353",
+                    "BIO 358",
+                    "BIO 386",
+                    "ECO 373",
+                    "ENS 301",
+                    "ENS 311",
+                    "ENS 312",
+                    "ENS 333",
+                    "EST 330",
+                    "GEO 304",
+                    "GEO 305",
+                    "GEO 311",
+                    "GEO 313",
+                    "HIS 365",
+                    "HIS 399",
+                    "MAR 340",
+                    "PHI 366",
+                    "POL 333",
+                    "SOC 315",
+                    "SOC 340",
+                    "SOC 344",
+                    "WST 340"
+                  ]
                 },
                 "minCourses": 3
               }
@@ -303,7 +319,50 @@
               {
                 "type": "minFrom",
                 "from": {
-                  "minNumber": 300
+                  "courses": [
+                    "AAS 334",
+                    "AAS 338",
+                    "AFH 382",
+                    "AFS 310",
+                    "AFS 319",
+                    "AFS 325",
+                    "AFS 350",
+                    "AFS 363",
+                    "AFS 394",
+                    "AMR 301",
+                    "EGL 382",
+                    "EST 330",
+                    "HIS 325",
+                    "HIS 362",
+                    "HIS 368",
+                    "HIS 396",
+                    "HUI 336",
+                    "PHI 383",
+                    "POL 320",
+                    "POL 330",
+                    "SOC 302",
+                    "SOC 303",
+                    "SOC 304",
+                    "SOC 310",
+                    "SOC 315",
+                    "SOC 330",
+                    "SOC 336",
+                    "SOC 337",
+                    "SOC 338",
+                    "SOC 340",
+                    "SOC 348",
+                    "SOC 378",
+                    "SOC 380",
+                    "SOC 390",
+                    "WST 310",
+                    "WST 330",
+                    "WST 335",
+                    "WST 347",
+                    "WST 350",
+                    "WST 382",
+                    "WST 383",
+                    "WST 399"
+                  ]
                 },
                 "minCourses": 3
               }
@@ -379,7 +438,46 @@
               {
                 "type": "minFrom",
                 "from": {
-                  "minNumber": 300
+                  "courses": [
+                    "AFS 325",
+                    "AFS 339",
+                    "ANT 310",
+                    "BUS 348",
+                    "ECO 303",
+                    "ECO 305",
+                    "ECO 360",
+                    "ENS 333",
+                    "EST 330",
+                    "HIS 325",
+                    "HIS 339",
+                    "HIS 378",
+                    "HIS 396",
+                    "MAR 340",
+                    "POL 309",
+                    "POL 317",
+                    "POL 318",
+                    "POL 319",
+                    "POL 320",
+                    "POL 322",
+                    "POL 323",
+                    "POL 324",
+                    "POL 325",
+                    "POL 327",
+                    "POL 332",
+                    "POL 333",
+                    "POL 336",
+                    "POL 346",
+                    "POL 359",
+                    "POL 367",
+                    "SOC 302",
+                    "SOC 336",
+                    "SOC 337",
+                    "SOC 338",
+                    "SOC 340",
+                    "SOC 378",
+                    "SOC 386",
+                    "WST 340"
+                  ]
                 },
                 "minCourses": 3
               }
@@ -464,7 +562,45 @@
               {
                 "type": "minFrom",
                 "from": {
-                  "minNumber": 300
+                  "courses": [
+                    "AAS 372",
+                    "AFH 339",
+                    "AFH 390",
+                    "AFS 319",
+                    "AFS 337",
+                    "AFS 346",
+                    "AFS 350",
+                    "AFS 365",
+                    "AFS 375",
+                    "ARH 329",
+                    "EST 330",
+                    "GEO 311",
+                    "HIS 341",
+                    "HIS 346",
+                    "HIS 353",
+                    "HIS 378",
+                    "HIS 393",
+                    "HIS 397",
+                    "HUI 336",
+                    "HUI 338",
+                    "POL 309",
+                    "POL 310",
+                    "POL 311",
+                    "POL 313",
+                    "POL 336",
+                    "POL 337",
+                    "POL 338",
+                    "POL 350",
+                    "POL 374",
+                    "SOC 348",
+                    "SOC 364",
+                    "SOC 365",
+                    "SOC 374",
+                    "SOC 378",
+                    "SOC 386",
+                    "WST 301",
+                    "WST 350"
+                  ]
                 },
                 "minCourses": 3
               }
@@ -473,39 +609,24 @@
             "label": "Global Issues and Perspectives"
           },
           {
-            "type": "unparsed",
-            "text": "Design an 18-credit interdisciplinary concentration in an academic subject of the student's choosing, with at least nine upper-division credits (consult the undergraduate director)",
-            "reason": "Individually designed concentrations are approved by the undergraduate director and cannot be checked against a fixed course pool.",
+            "id": "journalism-ba.concentration.second-major-or-minor",
+            "label": "Second major or minor",
+            "type": "allOf",
+            "rules": [],
+            "manualCheck": "Declare a second major or a minor (requirements set by the other program). Not evaluated here; confirm this alternative separately."
+          },
+          {
             "id": "journalism-ba.concentration.self-designed",
-            "label": "Self-designed"
+            "label": "Self-designed",
+            "type": "allOf",
+            "rules": [],
+            "manualCheck": "Design an 18-credit interdisciplinary concentration in an academic subject of the student's choosing, with at least nine upper-division credits (consult the undergraduate director). Not evaluated here; confirm this alternative separately."
           }
         ],
         "id": "journalism-ba.concentration.choice",
         "choice": "concentration"
       },
       "sourceText": "Students must declare a second major, a minor, or an interdisciplinary concentration. Students may design an 18-credit interdisciplinary concentration in an academic subject of their choosing. Nine credits, or three classes, of the 18 credits required of all concentrations must be at the upper-division level. Students may also select one of four pre-designed concentrations created to explore broad topics - Public Affairs/Public Policy, Diversity and American Society, Global Issues and Perspectives, and Science and The Environment (complete 6 courses in any one area)."
-    },
-    {
-      "id": "journalism-ba.internship-limits",
-      "label": "internship-limits",
-      "title": "Internship credit limits",
-      "rule": {
-        "type": "unparsed",
-        "text": "Students may enroll in multiple internships up to 6 credits each. The total number of credits from all internships combined may not exceed 12. Students may apply up to 6 credits from JRN internships and/or independent studies to the major and a total of 12 credits to general graduation requirements.",
-        "reason": "Cross-course credit caps on internships are not expressible as a single requirement rule. The 6-credit major cap is modeled as a constraint on the electives requirement."
-      },
-      "sourceText": "Students may enroll in multiple internships up to 6 credits each. The total number of credits from all internships combined may not exceed 12. Students may apply up to 6 credits from JRN internships and/or independent studies to the major and a total of 12 credits to general graduation requirements."
-    },
-    {
-      "id": "journalism-ba.academic-standing",
-      "label": "academic-standing",
-      "title": "Continuation in the major",
-      "rule": {
-        "type": "unparsed",
-        "text": "Students who earn final grades of C- or lower twice in the same journalism course, or in three different journalism classes, will be dropped from the major.",
-        "reason": "Continuation-in-major rule based on grade history; not a degree-requirement rule type."
-      },
-      "sourceText": "Students who earn final grades of C- or lower twice in the same journalism course, or in three different journalism classes, will be dropped from the major. A finding of academic dishonesty in any journalism or mass communication course will result in a failing grade for that course."
     }
   ],
   "policies": [
@@ -856,6 +977,14 @@
     {
       "topic": "other",
       "text": "The program page lists the Journalism major as 45 credits. The sample sequence rows for Junior Fall total more than the 15 credits printed on the page; follow the course list, not the printed totals."
+    },
+    {
+      "topic": "other",
+      "text": "Internship limits: students may enroll in multiple internships of up to 6 credits each, with no more than 12 credits of internships in total. Up to 6 credits from JRN internships and/or independent studies may be applied to the major, and up to 12 credits to general graduation requirements. The 6-credit major cap is enforced on the elective requirement; the 12-credit general cap is not checked."
+    },
+    {
+      "topic": "grading",
+      "text": "Students who earn final grades of C- or lower twice in the same journalism course, or in three different journalism classes, will be dropped from the major."
     }
   ],
   "source": {
@@ -864,7 +993,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

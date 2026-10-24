@@ -15,15 +15,89 @@
         "rules": [
           {
             "id": "computer-engineering-be.1.calculus",
-            "type": "allOf",
+            "type": "anyOf",
             "rules": [
               {
-                "type": "course",
-                "code": "AMS 151"
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "AMS 151"
+                  },
+                  {
+                    "type": "course",
+                    "code": "AMS 161"
+                  }
+                ]
               },
               {
-                "type": "course",
-                "code": "AMS 161"
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 132"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 125"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 126"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 127"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 131"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 171"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 142"
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 141"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 171"
+                  }
+                ]
               }
             ]
           },
@@ -383,25 +457,7 @@
       "sourceText": "Note: ESE 440 and ESE 441 are engineering design projects that must be carried out at Stony Brook under the supervision of an Electrical and Computer Engineering faculty member."
     }
   ],
-  "substitutions": [
-    {
-      "id": "computer-engineering-be.sub.calculus",
-      "replaces": {
-        "type": "courses",
-        "courses": [
-          "AMS 151",
-          "AMS 161"
-        ]
-      },
-      "with": {
-        "type": "unparsed",
-        "text": "MAT 131 and MAT 132, or MAT 125, MAT 126 and MAT 127",
-        "reason": "The substitute is a multi-course alternative sequence, which the substitution 'with' field cannot express as a single course, choose, or unparsed rule set"
-      },
-      "requiresApproval": false,
-      "sourceText": "Note: The following alternate calculus course sequences may be substituted for AMS 151, AMS 161 in major requirements or prerequisites: MAT 131 and MAT 132 or MAT 125, MAT 126 and MAT 127"
-    }
-  ],
+  "substitutions": [],
   "sbc": {
     "exemptions": [
       {
@@ -719,7 +775,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }
