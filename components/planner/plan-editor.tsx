@@ -17,7 +17,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { selectClassName } from "@/components/record/options";
 import { formatTerm } from "@/lib/domain/terms";
-import type { PlannedTerm, PlanItem, TermId } from "@/lib/domain/types";
+import type { PlannedTerm, PlanItem, SbcCode, TermId } from "@/lib/domain/types";
 import type { CheckedItem, CheckedTerm } from "@/lib/engine/plan";
 import type { PlanView } from "@/lib/services/plan";
 import { cn } from "@/lib/utils";
@@ -28,7 +28,7 @@ const MIN_CREDIT_OPTIONS = [0, 3, 6, 9, 12, 13, 14, 15, 16, 17, 18, 19];
 function toPlan(terms: CheckedTerm[]): PlannedTerm[] {
   return terms.map((t) => ({
     term: t.term,
-    items: t.items.map((i): PlanItem => (i.code ? { code: i.code } : { elective: i.credits })),
+    items: t.items.map((i): PlanItem => (i.code ? { code: i.code } : i.sbc ? { sbc: i.sbc } : { elective: i.credits })),
   }));
 }
 
@@ -47,10 +47,8 @@ export function PlanEditor({ view }: { view: PlanView }) {
   const save = (next: PlannedTerm[]) => run(() => savePlan(next));
   const setItems = (index: number, items: PlanItem[]) => save(plan.map((t, i) => (i === index ? { ...t, items } : t)));
 
-  function generate() {
-    if (plan.length > 0 && !confirm("Replace your plan with a generated one?")) return;
-    run(generatePlanAction);
-  }
+  // Generating fills only empty semesters, so it never needs a confirmation.
+  const generate = () => run(generatePlanAction);
 
   function move(from: number, itemIndex: number, to: TermId) {
     const item = plan[from].items[itemIndex];
@@ -129,6 +127,7 @@ export function PlanEditor({ view }: { view: PlanView }) {
               term={term}
               otherTerms={plan.filter((_, i) => i !== index).map((t) => t.term)}
               courses={view.courses}
+              sbcCategories={view.sbcCategories}
               onAdd={(item) => setItems(index, [...plan[index].items, item])}
               onRemove={(itemIndex) => setItems(index, plan[index].items.filter((_, j) => j !== itemIndex))}
               onMove={(itemIndex, to) => move(index, itemIndex, to)}
@@ -215,6 +214,7 @@ function TermCard({
   term,
   otherTerms,
   courses,
+  sbcCategories,
   onAdd,
   onRemove,
   onMove,
@@ -223,6 +223,7 @@ function TermCard({
   term: CheckedTerm;
   otherTerms: TermId[];
   courses: PlanView["courses"];
+  sbcCategories: PlanView["sbcCategories"];
   onAdd: (item: PlanItem) => void;
   onRemove: (index: number) => void;
   onMove: (index: number, to: TermId) => void;
@@ -255,7 +256,7 @@ function TermCard({
           <ul className="divide-y rounded-lg border">
             {term.items.map((item, index) => (
               <ItemRow
-                key={`${item.code ?? "elective"}-${index}`}
+                key={`${item.code ?? item.sbc ?? "elective"}-${index}`}
                 item={item}
                 term={term.term}
                 otherTerms={otherTerms}
@@ -267,7 +268,7 @@ function TermCard({
         )}
       </CardContent>
       <CardFooter className="border-t bg-muted/30 py-2">
-        <AddCourse courses={courses} onAdd={onAdd} />
+        <AddCourse courses={courses} sbcCategories={sbcCategories} onAdd={onAdd} />
       </CardFooter>
     </Card>
   );
@@ -286,12 +287,13 @@ function ItemRow({
   onRemove: () => void;
   onMove: (to: TermId) => void;
 }) {
-  const name = item.code ?? "elective";
+  const label = item.code ?? (item.sbc && `SBC ${item.sbc}`);
+  const name = label ?? "elective";
   return (
     <li className="flex items-start gap-2 py-1.5 pr-1 pl-3">
       <div className="min-w-0 flex-1 space-y-0.5">
         <p className="flex items-baseline gap-2 text-sm">
-          <span className="w-16 shrink-0 font-mono text-xs">{item.code ?? "—"}</span>
+          <span className="w-16 shrink-0 font-mono text-xs">{label ?? "—"}</span>
           <span title={item.title} className={cn("min-w-0 truncate", !item.code && "text-muted-foreground italic")}>
             {item.title}
           </span>
@@ -333,7 +335,15 @@ function ItemRow({
   );
 }
 
-function AddCourse({ courses, onAdd }: { courses: PlanView["courses"]; onAdd: (item: PlanItem) => void }) {
+function AddCourse({
+  courses,
+  sbcCategories,
+  onAdd,
+}: {
+  courses: PlanView["courses"];
+  sbcCategories: PlanView["sbcCategories"];
+  onAdd: (item: PlanItem) => void;
+}) {
   const [code, setCode] = useState("");
   const [error, setError] = useState<string | null>(null);
 
@@ -358,7 +368,7 @@ function AddCourse({ courses, onAdd }: { courses: PlanView["courses"]; onAdd: (i
           onChange={(e) => setCode(e.target.value)}
           placeholder="Course code"
           aria-label="Course code"
-          className="h-7 text-sm"
+          className="h-7 min-w-0 flex-1 text-sm"
         />
         <Button type="submit" variant="outline" size="sm" aria-label="Add course">
           <Plus />
@@ -367,6 +377,19 @@ function AddCourse({ courses, onAdd }: { courses: PlanView["courses"]; onAdd: (i
         <Button type="button" variant="ghost" size="sm" onClick={() => onAdd({ elective: ELECTIVE_CREDITS })}>
           Elective
         </Button>
+        <select
+          aria-label="Add an SBC course"
+          className={cn(selectClassName, "h-7 w-auto shrink-0")}
+          value=""
+          onChange={(e) => e.target.value && onAdd({ sbc: e.target.value as SbcCode })}
+        >
+          <option value="">SBC…</option>
+          {sbcCategories.map((c) => (
+            <option key={c.code} value={c.code} title={c.name}>
+              {c.code}
+            </option>
+          ))}
+        </select>
       </div>
       {error && (
         <p role="alert" className="text-xs text-destructive">
