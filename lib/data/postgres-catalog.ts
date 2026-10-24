@@ -25,12 +25,12 @@ export async function fetchPrograms(): Promise<ProgramDefinition[]> {
   return rows.map((r) => r.data as ProgramDefinition);
 }
 
-export async function fetchCatalogMeta(): Promise<{ coursesSource: "catalog" | "demo"; offeringTerms: string[] } | null> {
+export async function fetchCatalogMeta(): Promise<{ offeringTerms: string[] } | null> {
   "use cache";
   cacheLife("hours");
   cacheTag("catalog");
   const [row] = await requireSql()`select value from catalog_meta where key = 'catalog'`;
-  return (row?.value as { coursesSource: "catalog" | "demo"; offeringTerms: string[] }) ?? null;
+  return (row?.value as { offeringTerms: string[] }) ?? null;
 }
 
 /** Sections for one term, or null when the database has no offering data for it. */

@@ -8,7 +8,7 @@
  */
 import type { SbcCategory } from "@/lib/domain/types";
 
-export const seedSbcCategories: SbcCategory[] = [
+export const sbcCategories: SbcCategory[] = [
   { code: "WRT", name: "Write Effectively in English" },
   { code: "QPS", name: "Master Quantitative Problem Solving" },
   { code: "SNW", name: "Study the Natural World" },

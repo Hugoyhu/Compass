@@ -12,7 +12,7 @@ export const navItems: NavItem[] = [
   { title: "Degree Explorer", href: "/degrees", icon: GraduationCap },
   { title: "Course Explorer", href: "/courses", icon: BookOpen },
   { title: "Degree Progress", href: "/progress", icon: ListChecks },
-  { title: "Semester Planner", href: "/planner", icon: CalendarRange },
+  { title: "Schedule Builder", href: "/planner", icon: CalendarRange },
 ];
 
 export function navItemFor(pathname: string): NavItem | undefined {

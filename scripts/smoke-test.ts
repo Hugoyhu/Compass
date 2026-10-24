@@ -28,6 +28,17 @@ async function shot(page: Page, name: string) {
   await page.screenshot({ path: path.join(shotsDir, `${name}.png`), fullPage: true });
 }
 
+/** Opens My Courses and uploads the fixture transcript, waiting for the review screen. */
+async function uploadFixture(page: Page) {
+  await page.goto(`${BASE}/record`);
+  await page.getByRole("heading", { name: "My courses", exact: true }).waitFor();
+  // Wait for hydration so the file input's change handler is attached.
+  await page.waitForLoadState("networkidle");
+  await page.locator("#transcript-file").setInputFiles(FIXTURE);
+  await page.getByText("Review courses").waitFor({ timeout: 90_000 });
+  check(await page.getByText("15 courses").first().isVisible(), "Review screen lists 15 courses from the fixture");
+}
+
 async function main() {
   const browser = await chromium.launch({ channel: "chrome", headless: true });
   const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
@@ -38,20 +49,7 @@ async function main() {
     check(true, "New visitor sees the get-started screen");
     await shot(page, "1-onboarding");
 
-    // 2. Sample student → dashboard and degree progress.
-    await page.getByRole("button", { name: "Load sample student" }).click();
-    await page.getByRole("heading", { name: /Alex/ }).waitFor();
-    check(await page.getByText("AMS 310: C- is below the C minimum").isVisible(), "Dashboard flags the AMS 310 grade problem");
-    check(await page.getByText("Retake").first().isVisible(), "Proposal marks AMS 310 as a retake");
-    await shot(page, "2-dashboard-sample");
-
-    await page.goto(`${BASE}/progress`);
-    await page.getByRole("heading", { name: "Computer Science, BS" }).waitFor();
-    check(await page.getByText("Program rules").isVisible(), "Degree progress shows program rules");
-    check((await page.locator("[id^='cse-bs.']").count()) === 9, "Degree progress shows all 9 requirements");
-    check(await page.getByText("C- · retake").first().isVisible(), "Degree progress marks AMS 310 as a retake in its requirement");
-    await shot(page, "3-progress-sample");
-
+    // 2. The Degree Explorer needs no record.
     await page.goto(`${BASE}/degrees/cse-bs`);
     await page.getByRole("heading", { name: "Computer Science, BS" }).waitFor();
     check(
@@ -60,13 +58,7 @@ async function main() {
     );
 
     // 3. Upload the fixture transcript, review, replace, and see the dashboard update.
-    await page.goto(`${BASE}/record`);
-    await page.getByRole("heading", { name: "My courses", exact: true }).waitFor();
-    // Wait for hydration so the file input's change handler is attached.
-    await page.waitForLoadState("networkidle");
-    await page.locator("#transcript-file").setInputFiles(FIXTURE);
-    await page.getByText("Review courses").waitFor({ timeout: 90_000 });
-    check(await page.getByText("15 courses").first().isVisible(), "Review screen lists 15 courses from the fixture");
+    await uploadFixture(page);
     await shot(page, "4-review");
     await page.getByRole("button", { name: /Replace my courses/ }).click();
     await page.getByText("Saved", { exact: true }).waitFor();
@@ -98,9 +90,9 @@ async function main() {
     } else {
       const username = `smoketest-${Date.now().toString(36)}`;
       const password = "correct horse battery";
-      await page.goto(BASE);
-      await page.getByRole("button", { name: "Load sample student" }).click();
-      await page.getByRole("heading", { name: /Alex/ }).waitFor();
+      await uploadFixture(page);
+      await page.getByRole("button", { name: /Replace my courses/ }).click();
+      await page.getByText("Saved", { exact: true }).waitFor();
 
       await page.goto(`${BASE}/signup`);
       await page.waitForLoadState("networkidle");
@@ -129,8 +121,8 @@ async function main() {
       check(true, "Signing back in restores the record from the database");
 
       await page.goto(`${BASE}/progress`);
-      await page.getByRole("heading", { name: "Computer Science, BS" }).waitFor();
-      check(true, "Degree progress works for a signed-in account");
+      await page.waitForLoadState("networkidle");
+      check(!(await page.getByText("Add your courses").isVisible()), "Degree progress works for a signed-in account");
 
       // Remove the throwaway account (its sessions and record cascade).
       if (process.env.DATABASE_URL || existsSync(".env")) {

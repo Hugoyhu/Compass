@@ -63,11 +63,6 @@ export async function removeProgram(programId: string): Promise<SaveResult> {
   return saveRecord({ ...record, programIds: record.programIds.filter((id) => id !== programId) });
 }
 
-/** Replaces the visitor's record with the fictional sample student. */
-export async function loadSampleRecord(): Promise<void> {
-  await store(await getRepository().getSampleStudent());
-}
-
 export async function clearRecord(): Promise<void> {
   const user = await getCurrentUser();
   if (user) {

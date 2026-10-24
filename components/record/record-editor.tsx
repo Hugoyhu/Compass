@@ -4,7 +4,6 @@ import { useMemo, useState, useTransition } from "react";
 import { Loader2, Plus, Trash2, X } from "lucide-react";
 import {
   clearRecord,
-  loadSampleRecord,
   saveRecord,
 } from "@/app/actions/record";
 import { Button } from "@/components/ui/button";
@@ -367,11 +366,6 @@ export function RecordEditor({
             <CardTitle>Start over</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-wrap gap-2">
-            <form action={loadSampleRecord}>
-              <Button type="submit" variant="outline" size="sm">
-                Load sample student
-              </Button>
-            </form>
             <form
               action={clearRecord}
               onSubmit={(e) => {
