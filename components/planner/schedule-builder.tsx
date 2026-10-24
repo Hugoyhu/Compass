@@ -136,7 +136,7 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <h2 className="text-2xl font-semibold tracking-tight">Schedule Builder</h2>
+        <h2 className="text-3xl font-normal tracking-tight">Schedule Builder</h2>
         <div className="flex items-center gap-3">
           <span className="text-sm text-muted-foreground tabular-nums">
             {pickedCourses.size} {pickedCourses.size === 1 ? "course" : "courses"} · {credits} credits
@@ -193,7 +193,7 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
             {results.length === 0 && <p className="p-2 text-sm text-muted-foreground">No matching sections.</p>}
             {results.length > MAX_RESULTS && (
               <p className="p-2 text-xs text-muted-foreground">
-                Showing {MAX_RESULTS} of {results.length} sections. Search to narrow them down.
+                {MAX_RESULTS} of {results.length} shown
               </p>
             )}
           </div>
@@ -210,7 +210,7 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
             onExpand={expand}
           />
           {hover && !hover.section.days.length && (
-            <p className="text-xs text-muted-foreground">This section has no set meeting time.</p>
+            <p className="text-xs text-muted-foreground">No set meeting time</p>
           )}
           {hoverConflicts.length > 0 && (
             <p className="text-xs text-destructive">

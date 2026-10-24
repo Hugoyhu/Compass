@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Suspense } from "react";
-import { CalendarCheck, GraduationCap, Layers, ListChecks, Star } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 import { ProgressMeter } from "@/components/audit/progress-meter";
 import { CurrentTermCard } from "@/components/dashboard/current-term-card";
 import { DegreeProgressCard } from "@/components/dashboard/degree-progress-card";
@@ -44,7 +44,7 @@ async function Dashboard() {
   return (
     <>
       <div className="space-y-1">
-        <h2 className="text-2xl font-semibold tracking-tight">{firstName || "Your degree"}</h2>
+        <h2 className="text-3xl font-normal tracking-tight">{firstName || "Your degree"}</h2>
         <p className="text-sm text-muted-foreground">
           {programs.map((p) => `${p.program.name} · `).join("")}
           {audit.credits.standing} · {formatTerm(student.currentTerm)}
@@ -70,12 +70,11 @@ async function Dashboard() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
           {major && (
             <StatTile
-              icon={ListChecks}
               label="Major requirements"
               value={
                 <>
                   {major.satisfied}
-                  <span className="text-base font-normal text-muted-foreground"> / {major.total}</span>
+                  <span className="text-lg text-muted-foreground"> / {major.total}</span>
                 </>
               }
               detail={finishing > 0 ? `+${finishing} in progress` : undefined}
@@ -84,12 +83,11 @@ async function Dashboard() {
             </StatTile>
           )}
           <StatTile
-            icon={Layers}
             label="Upper-division credits"
             value={
               <>
                 {upper.earned}
-                <span className="text-base font-normal text-muted-foreground"> / {upper.required}</span>
+                <span className="text-lg text-muted-foreground"> / {upper.required}</span>
               </>
             }
             detail={upper.inProgress > 0 ? `+${upper.inProgress} in progress` : undefined}
@@ -100,13 +98,11 @@ async function Dashboard() {
             />
           </StatTile>
           <StatTile
-            icon={Star}
             label="GPA"
             value={gpa.credits > 0 ? gpa.value.toFixed(2) : "0.0"}
             detail={gpa.credits > 0 ? `Out of 4.0 · ${gpa.credits} Stony Brook credits` : "No graded Stony Brook courses yet"}
           />
           <StatTile
-            icon={CalendarCheck}
             label={plan?.graduation ? "Graduation" : "Estimated graduation"}
             value={formatTerm(plan?.graduation ?? graduation.term)}
             detail={

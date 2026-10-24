@@ -11,7 +11,7 @@ export function NextSemesterCard({ schedule }: { schedule: NextSemesterSchedule 
   return (
     <Card className="h-full">
       <CardHeader>
-        <CardDescription>Next semester</CardDescription>
+        <CardDescription className="not-italic small-caps">Next semester</CardDescription>
         <CardTitle className="text-lg">{formatTerm(schedule.term)}</CardTitle>
       </CardHeader>
       <CardContent className="flex-1">
@@ -43,7 +43,7 @@ export function NextSemesterCard({ schedule }: { schedule: NextSemesterSchedule 
           </ul>
         )}
       </CardContent>
-      <CardFooter className="justify-between border-t bg-muted/30 py-3">
+      <CardFooter className="justify-between py-3">
         <span className="text-sm">
           <span className="font-semibold tabular-nums">{schedule.credits}</span> <span className="text-muted-foreground">credits</span>
         </span>

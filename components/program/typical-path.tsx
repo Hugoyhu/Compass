@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Check, Clock } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { slugFor } from "@/lib/domain/course-slug";
 import type { PathCard, TypicalPath } from "@/lib/engine/typical-path";
 import { cn } from "@/lib/utils";
@@ -71,10 +71,6 @@ export function TypicalPathView({ path, progress = {} }: { path: TypicalPath; pr
     <Card size="sm">
       <CardHeader>
         <CardTitle>Typical path</CardTitle>
-        <CardDescription>
-          The usual order of a major&apos;s courses, left to right. A card with &ldquo;or&rdquo; lists courses that can stand in for it. An arrow means the later course
-          builds on the earlier one; dashed means one of several ways in. Click a course to follow it.
-        </CardDescription>
       </CardHeader>
       <CardContent className="space-y-3">
         <div className="overflow-x-auto rounded-lg border bg-background">
@@ -118,7 +114,7 @@ export function TypicalPathView({ path, progress = {} }: { path: TypicalPath; pr
                   onClick={() => setSelected(selected === c.code ? null : c.code)}
                   aria-pressed={selected === c.code}
                   className={cn(
-                    "absolute flex flex-col justify-center rounded-md border border-primary/50 bg-primary/10 px-2 text-left text-[11px] leading-tight transition-opacity",
+                    "absolute flex flex-col justify-center rounded-sm border border-foreground/25 bg-card px-2 text-left text-[11px] leading-tight transition-opacity",
                     selected === c.code && "ring-2 ring-primary",
                     focus && !focus.has(c.code) && "opacity-25",
                   )}

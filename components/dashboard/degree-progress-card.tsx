@@ -17,17 +17,17 @@ export function DegreeProgressCard({ credits }: { credits: CreditSummary }) {
   return (
     <Card className="h-full">
       <CardHeader>
-        <CardDescription>Degree progress</CardDescription>
+        <CardDescription className="not-italic small-caps">Degree progress</CardDescription>
         <CardTitle className="flex items-baseline gap-3">
-          <span className="text-5xl font-semibold tracking-tight">{percent}%</span>
-          <span className="text-sm font-normal text-muted-foreground">
+          <span className="text-6xl font-normal tracking-tight tabular-nums">{percent}%</span>
+          <span className="text-sm font-normal text-muted-foreground italic">
             {credits.earned} / {credits.required} credits
           </span>
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         <div
-          className="flex h-3 w-full gap-0.5 overflow-hidden rounded"
+          className="flex h-2 w-full gap-px overflow-hidden"
           role="img"
           aria-label={`Credits by source: ${SEGMENTS.map((s) => `${s.label} ${values[s.key]}`).join(", ")}, ${remaining} remaining`}
         >
@@ -64,16 +64,16 @@ export function DegreeProgressCard({ credits }: { credits: CreditSummary }) {
         <dl className="grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-5">
           {SEGMENTS.map((s) => (
             <div key={s.key} className="space-y-0.5">
-              <dt className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                <span className={`size-2 rounded-full ${s.color}`} aria-hidden />
+              <dt className="flex items-center gap-1.5 text-sm text-muted-foreground small-caps">
+                <span className={`size-2.5 ${s.color}`} aria-hidden />
                 {s.label}
               </dt>
               <dd className="text-sm font-medium tabular-nums">{values[s.key]} cr</dd>
             </div>
           ))}
           <div className="space-y-0.5">
-            <dt className="flex items-center gap-1.5 text-xs text-muted-foreground">
-              <span className="size-2 rounded-full bg-muted ring-1 ring-border" aria-hidden />
+            <dt className="flex items-center gap-1.5 text-sm text-muted-foreground small-caps">
+              <span className="size-2.5 bg-muted ring-1 ring-border" aria-hidden />
               Remaining
             </dt>
             <dd className="text-sm font-medium tabular-nums">{remaining} cr</dd>

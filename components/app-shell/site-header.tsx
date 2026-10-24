@@ -9,10 +9,10 @@ export function SiteHeader({ account }: { account: React.ReactNode }) {
   const item = navItemFor(usePathname());
 
   return (
-    <header className="sticky top-0 z-10 flex h-14 shrink-0 items-center gap-2 border-b bg-background/90 px-4 backdrop-blur">
+    <header className="sticky top-0 z-10 flex h-14 shrink-0 items-center gap-2 border-b bg-background px-4">
       <SidebarTrigger className="-ml-1" />
       <Separator orientation="vertical" className="mx-1 h-4 self-center" />
-      <h1 className="text-sm font-medium">{item?.title ?? "Compass"}</h1>
+      <h1 className="text-sm font-medium small-caps text-muted-foreground">{item?.title ?? "Compass"}</h1>
       <div className="ml-auto flex items-center gap-2">{account}</div>
     </header>
   );

@@ -59,7 +59,7 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
     <>
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="space-y-1">
-          <h2 className="text-2xl font-semibold tracking-tight">{program.name}</h2>
+          <h2 className="text-3xl font-normal tracking-tight">{program.name}</h2>
           <p className="text-sm text-muted-foreground">
             {[program.degree ?? kindLabel(program.kind), program.approxCredits && `${program.approxCredits} credits`]
               .filter(Boolean)
