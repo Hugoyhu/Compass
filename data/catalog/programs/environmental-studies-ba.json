@@ -270,7 +270,8 @@
                 },
                 "maxCourses": 2
               }
-            ]
+            ],
+            "label": "Conservation Biology/Biological Anthropology"
           },
           {
             "id": "environmental-studies-ba.concentration.marine-ecology",
@@ -313,7 +314,8 @@
                 "MAR 386",
                 "MAR 388"
               ]
-            }
+            },
+            "label": "Marine Science, Marine or Terrestrial Ecology"
           },
           {
             "id": "environmental-studies-ba.concentration.law-policy",
@@ -349,9 +351,12 @@
                 "SUS 366",
                 "SUS 405"
               ]
-            }
+            },
+            "label": "Environmental Law, Waste Management, and Public Policy"
           }
-        ]
+        ],
+        "id": "environmental-studies-ba.concentration.choice",
+        "choice": "concentration"
       },
       "sourceText": "Choose 4 courses with a 12 credit minimum from one of the following concentrations: Conservation Biology/Biological Anthropology (ANT 309, ANT 322, ANT 352, ANT 361, BIO 336, BIO 351, BIO 353, BIO 356, MAR 315, SUS 326; Up to two of the following: MAR 373, MAR 375, MAR 376, MAR 377); Marine Science, Marine or Terrestrial Ecology (BIO 319, BIO 351, BIO 352, BIO 353, BIO 354, BIO 371, BIO 385, EBH 359, ENV 316, MAR 301, MAR 302, MAR 303, MAR 304, MAR 305, MAR 315, MAR 320, MAR 333, MAR 334, MAR 336, MAR 346, MAR 349, MAR 351, MAR 352, MAR 354, MAR 370, MAR 373, MAR 375, MAR 376, MAR 377, MAR 380, MAR 385, MAR 386, MAR 388); Environmental Law, Waste Management, and Public Policy (AAS 352, ENS 333, ENV 316, GEO 313, HIS 302, MAR 336, MAR 392, MAR 393, MAR 394, PHI 364, PHI 375, POL 320, POL 351, POL 359, SOC 344, SUS 305, SUS 317 OR HIS 365, SUS 318, SUS 321, SUS 323, SUS 325, SUS 329, SUS 344, SUS 366, SUS 405)"
     },

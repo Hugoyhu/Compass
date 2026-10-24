@@ -331,7 +331,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Biotechnology"
           },
           {
             "id": "engineering-science-be.B.civil-engineering",
@@ -386,7 +387,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Civil Engineering"
           },
           {
             "id": "engineering-science-be.B.environmental-engineering",
@@ -457,7 +459,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Environmental Engineering"
           },
           {
             "id": "engineering-science-be.B.electronics-engineering",
@@ -503,7 +506,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Electronics Engineering"
           },
           {
             "id": "engineering-science-be.B.materials-science-engineering",
@@ -549,7 +553,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Materials Science and Engineering"
           },
           {
             "id": "engineering-science-be.B.mechanical-manufacturing-engineering",
@@ -596,7 +601,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Mechanical and Manufacturing Engineering"
           },
           {
             "id": "engineering-science-be.B.nanoscale-engineering",
@@ -647,7 +653,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "label": "Nanoscale Engineering"
           },
           {
             "id": "engineering-science-be.B.engineering-management",
@@ -681,9 +688,12 @@
                   ]
                 }
               }
-            ]
+            ],
+            "label": "Engineering Management"
           }
-        ]
+        ],
+        "id": "engineering-science-be.B.choice",
+        "choice": "specialization"
       },
       "sourceText": "The area of specialization, composed of four technical electives, must be declared in writing by the end of the junior year. The eight areas of specialization are biotechnology, civil engineering, environmental engineering, electronics engineering, materials science and engineering, mechanical and manufacturing engineering, nanoscale engineering, and engineering management."
     },

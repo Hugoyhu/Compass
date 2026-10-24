@@ -7,7 +7,7 @@ Requirements
 - Caps and minimums inside a choice ("only 3 credits from ...", "at least two core courses") → constraints. "May not be equivalent to courses used in item 7" → notEquivalentTo.
 - Courses named in a cap or allowance are eligible for that choice even if the main description doesn't cover them: add any the pool doesn't already match to "courses". "...to satisfy one elective" means maxCourses: 1.
 - Give a rule node an id ("<requirement id>.<slug>") only when a policy or substitution needs to reference it.
-- If the major requires choosing one of several tracks or concentrations, model it as "anyOf" of each track's rules when the page lists the courses; otherwise use "unparsed".
+- If the major requires choosing one of several tracks or concentrations, model it as "anyOf" of each track's rules when the page lists the courses; otherwise use "unparsed". Set "choice" on that anyOf to "concentration", "specialization", or "track" (the page's word), give it an "id", and give each alternative an "id" and a "label" with the name as printed (for example "Finance").
 - Ignore optional specializations, honors programs, and accelerated BS/MS programs. Mention them in notes instead.
 - Program-wide credit rules that no rule type covers ("at least 21 upper-division credits", "6 credits at the 400 level") → their own requirement with an "unparsed" rule, never only a note, so the audit flags them.
 - When something cannot be expressed exactly, use an "unparsed" rule with the verbatim text and a reason. A faithful "unparsed" node is always better than a confident wrong rule.

@@ -56,7 +56,7 @@ async function Progress({ searchParams }: Pick<PageProps<"/progress">, "searchPa
   const refs = requirementRefs(program);
   const layouts = substitutionLayouts(program);
   const { byRequirement, unattached } = attachSubstitutions(program, new Set(layouts.map((l) => l.sub.id)));
-  const ctx: RuleContext = { courses: progress.courseInfo, refs: refs.full, status: progress.statuses };
+  const ctx: RuleContext = { courses: progress.courseInfo, refs: refs.full, status: progress.statuses, choices: record.choices ?? {} };
   const results = new Map(selected.requirements.map((r) => [r.requirement.id, r]));
 
   return (

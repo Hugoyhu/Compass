@@ -29,9 +29,141 @@
       "label": "B",
       "title": "Concentration (9 credits)",
       "rule": {
-        "type": "unparsed",
-        "text": "Three courses must be taken from courses in one of the Political Science, BA concentrations. Concentration courses must meet the requirements listed in the Notes for the Minor (numbered 200 or above, excluding POL 201; at least three courses across the concentration and electives numbered 300 or above).",
-        "reason": "The concentration course lists are defined in the major's concentrations, which are not included on this page."
+        "type": "anyOf",
+        "id": "political-science.B.choice",
+        "choice": "concentration",
+        "sourceText": "Three courses must be taken from courses in one of the Political Science, BA. Concentration courses must meet the requirements listed in the Notes for the Minor.",
+        "rules": [
+          {
+            "id": "political-science.B.cpir",
+            "sourceText": "Comparative Politics and International Relations concentration",
+            "manualCheck": "POL 390 and POL 401 count only when the topic is appropriate to the concentration. Courses marked crosslisted on the page may be taken under either department but not both.",
+            "type": "choose",
+            "from": {
+              "courses": [
+                "POL 214",
+                "POL 216",
+                "POL 301",
+                "POL 302",
+                "POL 303",
+                "POL 304",
+                "POL 305",
+                "POL 308",
+                "POL 309",
+                "POL 310",
+                "POL 311",
+                "POL 313",
+                "POL 334",
+                "POL 336",
+                "POL 337",
+                "POL 338",
+                "POL 339",
+                "POL 350",
+                "POL 365",
+                "POL 371",
+                "POL 374",
+                "POL 380",
+                "PHI 367",
+                "POL 390",
+                "POL 401"
+              ],
+              "excludeCourses": [
+                "POL 201"
+              ]
+            },
+            "label": "Comparative Politics and International Relations",
+            "count": 3
+          },
+          {
+            "id": "political-science.B.aglp",
+            "sourceText": "American Government, Law, and Public Policy concentration",
+            "manualCheck": "POL 390 and POL 401 count only when the topic is appropriate to the concentration. Courses marked crosslisted on the page may be taken under either department but not both.",
+            "type": "choose",
+            "from": {
+              "courses": [
+                "POL 317",
+                "POL 318",
+                "POL 319",
+                "POL 320",
+                "POL 322",
+                "POL 323",
+                "POL 324",
+                "POL 325",
+                "POL 327",
+                "POL 328",
+                "POL 330",
+                "POL 332",
+                "POL 333",
+                "POL 336",
+                "POL 344",
+                "POL 347",
+                "POL 349",
+                "POL 350",
+                "POL 351",
+                "POL 352",
+                "POL 353",
+                "POL 359",
+                "POL 365",
+                "POL 366",
+                "POL 367",
+                "POL 368",
+                "POL 369",
+                "POL 371",
+                "POL 378",
+                "POL 379",
+                "PHI 277",
+                "PHI 375",
+                "PHI 377",
+                "POL 390",
+                "POL 401"
+              ],
+              "excludeCourses": [
+                "POL 201"
+              ]
+            },
+            "label": "American Government, Law, and Public Policy",
+            "count": 3
+          },
+          {
+            "id": "political-science.B.pbpp",
+            "sourceText": "Political Behavior and Political Psychology concentration",
+            "manualCheck": "POL 390 and POL 401 count only when the topic is appropriate to the concentration. Courses marked crosslisted on the page may be taken under either department but not both.",
+            "type": "choose",
+            "from": {
+              "courses": [
+                "POL 270",
+                "POL 303",
+                "POL 317",
+                "POL 318",
+                "POL 323",
+                "POL 344",
+                "POL 346",
+                "POL 347",
+                "POL 348",
+                "POL 349",
+                "POL 350",
+                "POL 351",
+                "POL 352",
+                "POL 353",
+                "POL 367",
+                "POL 368",
+                "POL 369",
+                "POL 371",
+                "POL 373",
+                "POL 375",
+                "PHI 379",
+                "POL 390",
+                "POL 401",
+                "POL 402"
+              ],
+              "excludeCourses": [
+                "POL 201"
+              ]
+            },
+            "label": "Political Behavior and Political Psychology",
+            "count": 3
+          }
+        ]
       },
       "sourceText": "Three courses must be taken from courses in one of the Political Science, BA. Concentration courses must meet the requirements listed in the Notes for the Minor."
     },

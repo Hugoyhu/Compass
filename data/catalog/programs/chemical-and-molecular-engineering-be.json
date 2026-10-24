@@ -283,7 +283,8 @@
                   ]
                 ]
               }
-            ]
+            ],
+            "label": "Materials Science"
           },
           {
             "id": "chemical-and-molecular-engineering-be.5.nanotechnology",
@@ -311,7 +312,8 @@
                   ]
                 ]
               }
-            ]
+            ],
+            "label": "Nanotechnology"
           },
           {
             "id": "chemical-and-molecular-engineering-be.5.polymer",
@@ -339,13 +341,15 @@
                   ]
                 ]
               }
-            ]
+            ],
+            "label": "Polymer"
           },
           {
             "id": "chemical-and-molecular-engineering-be.5.tissue-engineering",
             "type": "unparsed",
             "text": "Tissue Engineering specialization: BME 404 - Essentials of Tissue Engineering; any TWO (three for students admitted prior to Fall 2012) of BIO 310, BIO 328, BIO 335, BIO 317, BME 354, CHE 346; CME 371 - Biomaterials OR BME 353 - Introduction to Biomaterials; CME 481 - Advanced Cell Biology for Chemical Engineers",
-            "reason": "The page's structure for this track (required courses, a choose-two pool, and an either/or) is ambiguous and cannot be expressed reliably."
+            "reason": "The page's structure for this track (required courses, a choose-two pool, and an either/or) is ambiguous and cannot be expressed reliably.",
+            "label": "Tissue Engineering"
           },
           {
             "id": "chemical-and-molecular-engineering-be.5.business",
@@ -363,7 +367,8 @@
                 "chemical-and-molecular-engineering-be.3",
                 "chemical-and-molecular-engineering-be.4"
               ]
-            }
+            },
+            "label": "Business"
           },
           {
             "id": "chemical-and-molecular-engineering-be.5.chemistry",
@@ -381,7 +386,8 @@
                 "chemical-and-molecular-engineering-be.3",
                 "chemical-and-molecular-engineering-be.4"
               ]
-            }
+            },
+            "label": "Chemistry"
           },
           {
             "id": "chemical-and-molecular-engineering-be.5.physics",
@@ -399,7 +405,8 @@
                 "chemical-and-molecular-engineering-be.3",
                 "chemical-and-molecular-engineering-be.4"
               ]
-            }
+            },
+            "label": "Physics"
           },
           {
             "id": "chemical-and-molecular-engineering-be.5.custom",
@@ -409,9 +416,12 @@
             "count": 3,
             "from": {
               "minNumber": 300
-            }
+            },
+            "label": "Custom"
           }
-        ]
+        ],
+        "id": "chemical-and-molecular-engineering-be.5.choice",
+        "choice": "specialization"
       },
       "sourceText": "Chemical and Molecular Engineering students must choose from one of the eight specializations offered. Each specialization requires the completion of three (four for students admitted prior to Fall 2012) technical elective courses at the 300 level or higher."
     },

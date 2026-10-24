@@ -12,6 +12,8 @@ export interface RuleContext {
   status?: Record<string, CourseStatus>;
   /** Student view only: courses the audit applied to the requirement being shown. */
   applied?: Set<string>;
+  /** Student view only: declared concentrations, choice rule id → alternative id. */
+  choices?: Record<string, string>;
 }
 
 const SUBSTITUTION_PREFIX = "substitution:";
@@ -84,6 +86,7 @@ function RuleNode({ rule, ctx }: { rule: Rule; ctx: RuleContext }) {
         </Group>
       );
     case "anyOf": {
+      if (rule.choice) return <Choice rule={rule} ctx={ctx} />;
       // "CSE 373 or CSE 385" reads better inline than as a nested block.
       if (rule.rules.every((r) => r.type === "course" && !r.manualCheck)) {
         return (
@@ -121,6 +124,37 @@ function RuleNode({ rule, ctx }: { rule: Rule; ctx: RuleContext }) {
         <p className="text-sm leading-relaxed">{rule.text}</p>
       );
   }
+}
+
+/**
+ * A concentration, specialization, or track. Once the student has chosen, only
+ * that one is shown; otherwise each is a collapsed section with its name.
+ */
+function Choice({ rule, ctx }: { rule: Extract<Rule, { type: "anyOf" }>; ctx: RuleContext }) {
+  const chosen = rule.id ? rule.rules.find((alt) => alt.id === ctx.choices?.[rule.id!]) : undefined;
+  if (chosen) {
+    return (
+      <Group label={chosen.label ?? "Chosen"}>
+        <RuleNode rule={chosen} ctx={ctx} />
+      </Group>
+    );
+  }
+  return (
+    <Group label={`One ${rule.choice}`}>
+      <ul className="space-y-1">
+        {rule.rules.map((alt, i) => (
+          <li key={alt.id ?? i}>
+            <details className="group">
+              <summary className="cursor-pointer text-sm select-none hover:text-foreground">{alt.label ?? `Option ${i + 1}`}</summary>
+              <div className="mt-1.5 pl-3">
+                <RuleNode rule={alt} ctx={ctx} />
+              </div>
+            </details>
+          </li>
+        ))}
+      </ul>
+    </Group>
+  );
 }
 
 function Choose({ rule, ctx }: { rule: Extract<Rule, { type: "choose" }>; ctx: RuleContext }) {

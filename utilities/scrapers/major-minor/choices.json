@@ -1,0 +1,35 @@
+{
+  "_comment": "Concentrations, specializations, and tracks: which requirement's top-level anyOf a student chooses from, and each alternative's name in order. Applied by tag-choices.ts; rerun it after re-extracting programs.",
+  "requirements": {
+    "africana-studies-ba.1": { "kind": "concentration", "labels": ["Interdisciplinary", "Human Rights and Social Justice", "Health and Disease in Africa and the African Diaspora"] },
+    "art-studio-ba.concentration": { "kind": "concentration", "labels": ["Painting, Drawing, and Printmaking", "Electronic Media and Photography", "Sculpture and Ceramic Sculpture"] },
+    "atmospheric-and-oceanic-sciences-bs.track": { "kind": "track", "labels": ["Meteorology", "Climate"] },
+    "bioengineering.tracks": { "kind": "track", "labels": ["Biomaterials/Biomechanics", "Bioelectricity", "Molecular/Cellular"] },
+    "biology-bs.specialization": { "kind": "specialization", "labels": ["Bioengineering", "Developmental Genetics", "Ecology and Evolution", "Environmental Biology", "Interdisciplinary Biology", "Neuroscience", "Quantitative Biology and Bioinformatics"] },
+    "business-management-bs.specialization": { "kind": "specialization", "labels": ["Accounting", "AI for Business Innovation", "Finance", "Marketing", "Operations Management"] },
+    "chemical-and-molecular-engineering-be.5": { "kind": "specialization", "labels": ["Materials Science", "Nanotechnology", "Polymer", "Tissue Engineering", "Business", "Chemistry", "Physics", "Custom"] },
+    "data-science-bs.7": { "kind": "specialization", "labels": ["Business", "Computer Science", "Applied Mathematics and Statistics"] },
+    "earth-and-space-sciences-ba.track": { "kind": "track", "labels": ["Earth and Space Sciences", "Earth Science Education"] },
+    "education-and-teacher-certification.certification-track": { "kind": "track", "labels": ["English Secondary", "Foreign Languages Secondary", "Mathematics Secondary", "Science Secondary", "Social Studies Secondary", "TESOL Pre-K–12"] },
+    "engineering-science-be.B": { "kind": "specialization", "labels": ["Biotechnology", "Civil Engineering", "Environmental Engineering", "Electronics Engineering", "Materials Science and Engineering", "Mechanical and Manufacturing Engineering", "Nanoscale Engineering", "Engineering Management"] },
+    "environmental-studies-ba.concentration": { "kind": "concentration", "labels": ["Conservation Biology/Biological Anthropology", "Marine Science, Marine or Terrestrial Ecology", "Environmental Law, Waste Management, and Public Policy"] },
+    "french-ba.concentration": { "kind": "concentration", "labels": ["A: Language and Literature", "B: French and a Second Discipline"] },
+    "information-systems-bs.specialization": { "kind": "specialization", "labels": ["Business and Economics", "Financial Information Systems", "Health Informatics", "System and Network Administration", "Technological Systems Management", "Other Application Area"] },
+    "italian-studies-ba.concentration": { "kind": "concentration", "labels": ["A: Language and Literature", "B: Italian and a Second Discipline"] },
+    "journalism-ba.concentration": { "kind": "concentration", "labels": ["Second major or minor", "Science and the Environment", "Diversity and American Society", "Public Affairs/Public Policy", "Global Issues and Perspectives", "Self-designed"] },
+    "manufacturing-engineering.track": { "kind": "track", "labels": ["Engineering Science majors", "All other majors"] },
+    "physics.tracks": { "kind": "track", "labels": ["Arts and Sciences majors", "Engineering and Applied Sciences majors"] },
+    "political-science-ba.A-concentration": { "kind": "concentration", "labels": ["Comparative Politics and International Relations", "American Government, Law, and Public Policy", "Political Behavior and Political Psychology"] },
+    "psychology-ba.outside-concentration": { "kind": "concentration", "labels": ["Africana Studies", "Anthropology", "Applied Mathematics and Statistics", "Biology", "Computer Science", "Economics", "History", "Linguistics", "Mathematics", "Philosophy", "Political Science", "Sociology", "Women's, Gender, and Sexuality Studies", "Marketing", "Writing"] },
+    "sustainability-studies-ba.D": { "kind": "track", "labels": ["Ecosystems and Human Impact", "Environmental Humanities", "Societies, Economics, and Governance"] },
+    "technological-systems-management-bs.C": { "kind": "specialization", "labels": ["Related-area cluster", "Computer Science", "Information Systems"] }
+  },
+  "copies": {
+    "political-science.B": {
+      "_comment": "The minor takes three courses (instead of 12 credits) from one of the BA's concentrations.",
+      "from": "political-science-ba.A-concentration",
+      "count": 3,
+      "title": "Concentration (9 credits)"
+    }
+  }
+}

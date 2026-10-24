@@ -251,7 +251,9 @@
                   }
                 ]
               }
-            ]
+            ],
+            "id": "atmospheric-and-oceanic-sciences-bs.track.meteorology",
+            "label": "Meteorology"
           },
           {
             "type": "allOf",
@@ -285,9 +287,13 @@
                   }
                 ]
               }
-            ]
+            ],
+            "id": "atmospheric-and-oceanic-sciences-bs.track.climate",
+            "label": "Climate"
           }
-        ]
+        ],
+        "id": "atmospheric-and-oceanic-sciences-bs.track.choice",
+        "choice": "track"
       },
       "sourceText": "Additional Requirements for the Meteorology Track: MAT 303 - Calculus IV with Applications OR AMS 361 - Applied Calculus IV: Differential Equations; ATM 346 - Advanced Atmospheric Dynamics; ATM 347 - Advanced Synoptic Meteorology and Weather Forecasting; PHY 251 - Modern Physics OR ATM 320 - Problem Solving with Python; ATM 365 - Tropical Meteorology OR ATM 383 - Doppler Weather Radar. Additional Requirements for the Climate Track: ATM 201 - Introduction to Climate and Climate Change; ATM 305 - Global Atmospheric Change; ATM 320 - Problem Solving with Python; GEO 313 - Understanding Water Resources for the 21st Century; MAR 340 - Environmental Problems and Solutions OR ENS 301 - Contemporary Environmental Issues and Policies"
     },
