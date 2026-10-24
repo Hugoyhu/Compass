@@ -305,10 +305,63 @@
       "label": "specializations",
       "title": "Specializations",
       "rule": {
-        "manualCheck": "Student must select one specialization by the end of the sophomore year and complete 2 specialization electives from the undergraduate guide list. Specialization courses must be passed with a C or higher.",
-        "type": "unparsed",
-        "text": "Select one of four specializations (Circuits and VLSI; Communications, Signal Processing, and Networking; Nanoelectronics and Photonics; Power and Energy Systems), each requiring 2 elective courses. Acceptable electives are listed in the electrical engineering undergraduate guide.",
-        "reason": "The page names the four specializations and says each requires 2 electives, but the elective course lists are not on this page."
+        "type": "anyOf",
+        "id": "electrical-engineering-be.specializations.option",
+        "choice": "specialization",
+        "rules": [
+          {
+            "type": "choose",
+            "id": "electrical-engineering-be.specializations.option.circuits-vlsi",
+            "label": "Circuits and VLSI",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "ESE"
+              ],
+              "minNumber": 300
+            },
+            "manualCheck": "Student must complete 2 specialization electives from the Circuits and VLSI list in the undergraduate guide. Approximation: the specialization elective lists are in the Electrical Engineering Undergraduate Guide, so this counts any upper-division ESE course until the list is entered. Confirm the courses with an advisor."
+          },
+          {
+            "type": "choose",
+            "id": "electrical-engineering-be.specializations.option.communications-signal-processing-networking",
+            "label": "Communications, Signal Processing, and Networking",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "ESE"
+              ],
+              "minNumber": 300
+            },
+            "manualCheck": "Student must complete 2 specialization electives from the Communications, Signal Processing, and Networking list in the undergraduate guide. Approximation: the specialization elective lists are in the Electrical Engineering Undergraduate Guide, so this counts any upper-division ESE course until the list is entered. Confirm the courses with an advisor."
+          },
+          {
+            "type": "choose",
+            "id": "electrical-engineering-be.specializations.option.nanoelectronics-photonics",
+            "label": "Nanoelectronics and Photonics",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "ESE"
+              ],
+              "minNumber": 300
+            },
+            "manualCheck": "Student must complete 2 specialization electives from the Nanoelectronics and Photonics list in the undergraduate guide. Approximation: the specialization elective lists are in the Electrical Engineering Undergraduate Guide, so this counts any upper-division ESE course until the list is entered. Confirm the courses with an advisor."
+          },
+          {
+            "type": "choose",
+            "id": "electrical-engineering-be.specializations.option.power-energy-systems",
+            "label": "Power and Energy Systems",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "ESE"
+              ],
+              "minNumber": 300
+            },
+            "manualCheck": "Student must complete 2 specialization electives from the Power and Energy Systems list in the undergraduate guide. Approximation: the specialization elective lists are in the Electrical Engineering Undergraduate Guide, so this counts any upper-division ESE course until the list is entered. Confirm the courses with an advisor."
+          }
+        ]
       },
       "sourceText": "Students must select one of the four specializations listed below by the end of the sophomore year. Circuits and VLSI; Communications, Signal Processing, and Networking; Nanoelectronics and Photonics; Power and Energy Systems. Each specialization requires 2 elective courses. A list of acceptable electives can be found in the electrical engineering undergraduate guide."
     },
@@ -330,7 +383,8 @@
             "electrical-engineering-be.core-courses",
             "electrical-engineering-be.design",
             "electrical-engineering-be.upper-division-writing",
-            "electrical-engineering-be.engineering-ethics"
+            "electrical-engineering-be.engineering-ethics",
+            "electrical-engineering-be.specializations"
           ]
         }
       },
@@ -737,7 +791,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

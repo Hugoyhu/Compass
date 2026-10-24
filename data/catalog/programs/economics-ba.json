@@ -109,6 +109,16 @@
               ]
             },
             "minCourses": 1
+          },
+          {
+            "type": "maxFrom",
+            "from": {
+              "subjects": [
+                "ECO"
+              ],
+              "minNumber": 400
+            },
+            "maxCourses": 2
           }
         ]
       },
@@ -119,7 +129,7 @@
       "label": "A.5",
       "title": "One additional course",
       "rule": {
-        "manualCheck": "Either an economics course (not ECO 359 or ECO 459) or a course from a list of pre-approved electives in other departments. The page does not list the other-department electives; confirm eligibility with the Economics department.",
+        "manualCheck": "Either an economics course (not ECO 359 or ECO 459) or a course from a list of pre-approved electives in other departments. The page does not list the other-department electives; confirm eligibility with the Economics department. No more than two 400-level courses in total count toward the major (A.4 and A.5 combined).",
         "type": "choose",
         "count": 1,
         "from": {
@@ -138,37 +148,27 @@
             "economics-ba.A.4"
           ]
         },
-        "constraints": []
+        "constraints": [
+          {
+            "type": "maxFrom",
+            "from": {
+              "subjects": [
+                "ECO"
+              ],
+              "minNumber": 400
+            },
+            "maxCourses": 1
+          }
+        ]
       },
       "sourceText": "5. One additional course, either in economics (not including ECO 359 or ECO 459) or from a list of pre-approved electives in other departments, that carries a minimum of three credits."
-    },
-    {
-      "id": "economics-ba.A.note-400",
-      "label": "A.note-400",
-      "title": "Limit on 400-level courses",
-      "rule": {
-        "type": "unparsed",
-        "text": "No more than two 400-level courses will count toward fulfillment of the major.",
-        "reason": "A program-wide cap on 400-level courses across the major is not expressible as a per-requirement constraint."
-      },
-      "sourceText": "Note: No more than two 400-level courses will count toward fulfillment of the major."
-    },
-    {
-      "id": "economics-ba.A.note-transfer",
-      "label": "A.note-transfer",
-      "title": "Limit on economics courses taken elsewhere",
-      "rule": {
-        "type": "unparsed",
-        "text": "A maximum of four courses in economics taken at other institutions may be applied toward the major.",
-        "reason": "A transfer-course cap across the major is not a course-selection rule and cannot be expressed with the available rule types."
-      },
-      "sourceText": "A maximum of four courses in economics taken at other institutions may be applied toward the major."
     },
     {
       "id": "economics-ba.B",
       "label": "B",
       "title": "Mathematics",
       "rule": {
+        "manualCheck": "Level 6 on the mathematics placement examination also satisfies this requirement; confirm with the department.",
         "type": "anyOf",
         "rules": [
           {
@@ -193,29 +193,22 @@
             "code": "AMS 151"
           },
           {
-            "type": "unparsed",
-            "text": "Level 6 on the mathematics placement examination",
-            "reason": "Placement-exam result is not a course and cannot be checked from course records."
-          },
-          {
-            "type": "unparsed",
-            "text": "Any higher level calculus course (See Note 2)",
-            "reason": "Refers to a Note 2 that does not appear on this page; the qualifying courses are not listed."
+            "type": "choose",
+            "count": 1,
+            "label": "Higher-level calculus",
+            "from": {
+              "courses": [
+                "MAT 126",
+                "MAT 127",
+                "MAT 131",
+                "MAT 132",
+                "AMS 161"
+              ]
+            }
           }
         ]
       },
       "sourceText": "MAT 125 - Calculus A 3 credits OR MAT 130 - Trigonometry and Logarithms 1 credit, MAT 125 - Calculus A Credits: 3 credits OR AMS 151 - Applied Calculus I 3 credits OR level 6 on the mathematics placement examination OR any higher level calculus course (See Note 2)"
-    },
-    {
-      "id": "economics-ba.B.note",
-      "label": "B.note",
-      "title": "Conditional prerequisite math course",
-      "rule": {
-        "type": "unparsed",
-        "text": "If students do not place into MAT 125 on the basis of the math placement examination, MAT 123 or MAT 119 /MAT 123 is a required course for the major.",
-        "reason": "Conditional on placement-exam results, which are not present in course records."
-      },
-      "sourceText": "Note: If students do not place into MAT 125 on the basis of the math placement examination, MAT 123 or MAT 119 /MAT 123 is a required course for the major."
     },
     {
       "id": "economics-ba.C",
@@ -247,17 +240,6 @@
         ]
       },
       "sourceText": "All students must do so by registering for the WRTD certified class ECO 359 unless they intend to complete a larger, more substantial, independent research project. Those seeking to complete a substantial independent research project should not register for ECO 359. They should instead seek a faculty member's approval to register for ECO 487 and obtain their WRTD certification by registering for the 0-credit ECO 459 class in the same semester."
-    },
-    {
-      "id": "economics-ba.credits",
-      "label": "Credits",
-      "title": "Minimum credits for the major",
-      "rule": {
-        "type": "unparsed",
-        "text": "Completion of the major requires a minimum of 46 credits.",
-        "reason": "Program-wide credit minimum is not expressible with the available rule types."
-      },
-      "sourceText": "Completion of the major requires a minimum of 46 credits."
     }
   ],
   "policies": [
@@ -583,6 +565,22 @@
     {
       "topic": "other",
       "text": "Students may consider Second Majors and Minors in Applied Mathematics and Statistics (AMS), Business (BUS, major only), and Computer Science (CSE)."
+    },
+    {
+      "topic": "other",
+      "text": "No more than two 400-level courses will count toward fulfillment of the major (enforced within A.4; A.5 allows one 400-level course, so confirm the combined total)."
+    },
+    {
+      "topic": "other",
+      "text": "A maximum of four courses in economics taken at other institutions may be applied toward the major. Not checked by the audit."
+    },
+    {
+      "topic": "other",
+      "text": "If students do not place into MAT 125 on the basis of the math placement examination, MAT 123 or MAT 119/MAT 123 is a required course for the major. Not checked by the audit."
+    },
+    {
+      "topic": "other",
+      "text": "Completion of the major requires a minimum of 46 credits."
     }
   ],
   "source": {
@@ -591,7 +589,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

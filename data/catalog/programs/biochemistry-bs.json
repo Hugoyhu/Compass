@@ -132,7 +132,7 @@
           },
           {
             "id": "biochemistry-bs.related-fields.calculus",
-            "manualCheck": "Students who do not place into MAT 125 or MAT 131 on the math placement examination must also complete MAT 123 (or MAT 119 / MAT 123), which the page lists as a required course for the major.",
+            "manualCheck": "Level 9 on the mathematics placement examination also satisfies the calculus requirement but cannot be verified from a transcript; add that to the advisor review if applicable. Students who do not place into MAT 125 or MAT 131 must also complete MAT 123 (or MAT 119 / MAT 123), which the page lists as a required course for the major.",
             "type": "anyOf",
             "rules": [
               {
@@ -177,11 +177,6 @@
                     "code": "AMS 161"
                   }
                 ]
-              },
-              {
-                "type": "unparsed",
-                "text": "Level 9 on mathematics placement examination",
-                "reason": "Placement examination result cannot be verified from a transcript"
               }
             ]
           },
@@ -793,6 +788,10 @@
     {
       "topic": "other",
       "text": "Accelerated programs not evaluated here: the 5-year BS/MS in Biochemistry and Cell Biology, the BS/MS in Chemistry, and the BS/MBA options."
+    },
+    {
+      "topic": "other",
+      "text": "Calculus requirement can also be met by level 9 on the mathematics placement examination (not verifiable from a transcript; confirm with an advisor)."
     }
   ],
   "source": {
@@ -801,7 +800,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

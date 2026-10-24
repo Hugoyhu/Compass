@@ -61,65 +61,209 @@
               ]
             },
             "maxCredits": 6
+          },
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "SOC"
+              ],
+              "minNumber": 300
+            },
+            "minCourses": 5
           }
-        ]
+        ],
+        "manualCheck": "Of the 18 elective credits, 15 must be upper division (checked as five upper-division courses)."
       },
       "sourceText": "In addition to the required courses above, students must complete an additional 18 credits of coursework (of which 15 credits must be upper division) from among all sociology course offerings. Note: Only six credits of independent study courses (SOC 447, SOC 487, SOC 488, SOC 495, SOC 496) may be used toward the requirements of 18 elective credits in sociology."
-    },
-    {
-      "id": "sociology-ba.upper-division-electives",
-      "label": "upper-division-electives",
-      "title": "Upper-division credits within sociology electives",
-      "rule": {
-        "type": "unparsed",
-        "text": "Of the 18 sociology elective credits, 15 credits must be upper division.",
-        "reason": "Credit-level minimum within the elective pool cannot be expressed with the available constraints."
-      },
-      "sourceText": "In addition to the required courses above, students must complete an additional 18 credits of coursework (of which 15 credits must be upper division) from among all sociology course offerings."
     },
     {
       "id": "sociology-ba.related-areas",
       "label": "related-areas",
       "title": "Study in Related Areas",
       "rule": {
-        "type": "unparsed",
-        "text": "At least three courses (nine credits, of which 6 credits must be upper division) chosen from one of the following related social sciences: Africana studies (only those courses with designator AFS), anthropology (only those courses with designator ANT), economics, history, linguistics, political science, psychology, and women's studies. Credits from applied social science professions such as social work, police science, education, and management science are not applicable.",
-        "reason": "Requires choosing one related area; subject designators for economics, history, linguistics and political science are not all stated on the page, and the upper-division minimum is a further credit rule."
+        "type": "anyOf",
+        "manualCheck": "Choose one related social science; credits from applied professions such as social work, police science, education and management science are not applicable. Nine credits, six of them upper division.",
+        "rules": [
+          {
+            "type": "choose",
+            "label": "Africana Studies",
+            "count": 3,
+            "from": {
+              "subjects": [
+                "AFS"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "AFS"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "label": "Anthropology",
+            "count": 3,
+            "from": {
+              "subjects": [
+                "ANT"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "ANT"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "label": "Economics",
+            "count": 3,
+            "from": {
+              "subjects": [
+                "ECO"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "ECO"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "label": "History",
+            "count": 3,
+            "from": {
+              "subjects": [
+                "HIS"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "HIS"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "label": "Linguistics",
+            "count": 3,
+            "from": {
+              "subjects": [
+                "LIN"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "LIN"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "label": "Political Science",
+            "count": 3,
+            "from": {
+              "subjects": [
+                "POL"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "POL"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "label": "Psychology",
+            "count": 3,
+            "from": {
+              "subjects": [
+                "PSY"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "PSY"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 2
+              }
+            ]
+          },
+          {
+            "type": "choose",
+            "label": "Women's Studies",
+            "count": 3,
+            "from": {
+              "subjects": [
+                "WST"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "minFrom",
+                "from": {
+                  "subjects": [
+                    "WST"
+                  ],
+                  "minNumber": 300
+                },
+                "minCourses": 2
+              }
+            ]
+          }
+        ]
       },
       "sourceText": "At least three courses (nine credits, of which 6 credits must be upper division) chosen from one of the following related social sciences: Africana studies (only those courses with designator AFS), anthropology (only those courses with designator ANT), economics, history, linguistics, political science, psychology, and women's studies. Credits from applied social science professions such as social work, police science, education, and management science are not applicable."
-    },
-    {
-      "id": "sociology-ba.pass-grade-limit",
-      "label": "pass-grade-limit",
-      "title": "Pass-graded course limit",
-      "rule": {
-        "type": "unparsed",
-        "text": "Excluding required courses, credit can be awarded for just one P graded course.",
-        "reason": "Program-wide limit on P-graded credit has no rule type."
-      },
-      "sourceText": "Excluding required courses, credit can be awarded for just one P graded course."
-    },
-    {
-      "id": "sociology-ba.credits",
-      "label": "credits",
-      "title": "Total and sociology credit requirements",
-      "rule": {
-        "type": "unparsed",
-        "text": "Completion of the major requires 39 credits, of which 27 to 30 credits are in Sociology courses.",
-        "reason": "Program-wide credit totals have no rule type."
-      },
-      "sourceText": "Completion of the major requires 39 credits, of which 27 to 30 credits are in Sociology courses."
-    },
-    {
-      "id": "sociology-ba.upper-division-writing",
-      "label": "upper-division-writing",
-      "title": "Upper-Division Writing Requirement",
-      "rule": {
-        "type": "unparsed",
-        "text": "Fulfilled through SOC 361, which is also counted under the required courses and also satisfies the SBC WRTD requirement.",
-        "reason": "SOC 361 is already counted in the required courses and cannot be counted twice; this is a satisfied-by note rather than a separate credit rule."
-      },
-      "sourceText": "Sociology majors are expected to fulfill the upper-division writing requirement by the time of graduation. This requirement is met through SOC 361, the required Historical Development of Sociological Theory course, which also satisfies the SBC WRTD requirement."
     }
   ],
   "policies": [
@@ -145,7 +289,16 @@
   "substitutions": [],
   "sbc": {
     "exemptions": [],
-    "fulfillment": []
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "course",
+          "code": "SOC 361"
+        },
+        "sourceText": "Sociology majors are expected to fulfill the upper-division writing requirement by the time of graduation. This requirement is met through SOC 361, the required Historical Development of Sociological Theory course, which also satisfies the SBC WRTD requirement."
+      }
+    ]
   },
   "sampleSequence": [
     {
@@ -412,6 +565,14 @@
   ],
   "notes": [
     {
+      "topic": "other",
+      "text": "Completion of the major requires 39 credits, of which 27 to 30 credits are in Sociology courses. This total is not audited separately; it follows from the requirements below."
+    },
+    {
+      "topic": "grading",
+      "text": "Excluding required courses, credit can be awarded for just one P graded course."
+    },
+    {
       "topic": "advising",
       "text": "The upper-division writing requirement is met through SOC 361, which also satisfies the SBC WRTD requirement."
     },
@@ -434,7 +595,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

@@ -176,8 +176,6 @@
       "label": "A-electives",
       "title": "Study Within the Area of the Major: Political Science electives (12 credits)",
       "rule": {
-        "sourceText": "12 credits must be taken from POL courses or courses that are crosslisted with POL.",
-        "manualCheck": "Courses crosslisted with POL that carry another subject code are not matched by subject; verify manually. POL 475 and POL 476 may not be used toward the major.",
         "type": "choose",
         "credits": 12,
         "from": {
@@ -190,31 +188,31 @@
             "POL 475",
             "POL 476"
           ]
-        }
+        },
+        "constraints": [
+          {
+            "type": "minFrom",
+            "from": {
+              "subjects": [
+                "POL",
+                "PHI"
+              ],
+              "minNumber": 300,
+              "excludeCourses": [
+                "POL 475",
+                "POL 476"
+              ]
+            },
+            "minCourses": 4,
+            "countUsedBy": [
+              "political-science-ba.A-concentration"
+            ]
+          }
+        ],
+        "manualCheck": "Courses crosslisted with POL that carry another subject code are not matched by subject; verify manually. POL 475 and POL 476 may not be used toward the major. The 300-level minimum is checked as four courses (each POL 300+ course in the concentration and electives is three credits). Credits must be offered by, or cross-listed with, the Political Science Department; the audit checks only that they were taken at Stony Brook.",
+        "sourceText": "For the Concentration and Political Science Electives, all courses must be selected from courses numbered 200 or above (excluding POL 201), and at least 12 credits must be from courses numbered 300 or above. For the Concentration and Political Science Electives, at least 12 credits must be taken in courses offered by the Political Science Department at Stony Brook or cross-listed by the Department. Political Science electives: 12 credits must be taken from POL courses or courses that are crosslisted with POL."
       },
       "sourceText": "Political Science electives: (12 credits) 12 credits must be taken from POL courses or courses that are crosslisted with POL."
-    },
-    {
-      "id": "political-science-ba.A-300-level",
-      "label": "A-300-level",
-      "title": "300-level credit minimum for concentration and electives",
-      "rule": {
-        "type": "unparsed",
-        "text": "For the Concentration and Political Science Electives, at least 12 credits must be from courses numbered 300 or above.",
-        "reason": "Credit minimum spanning two requirements (concentration and electives); no rule type covers it."
-      },
-      "sourceText": "For the Concentration and Political Science Electives, all courses must be selected from courses numbered 200 or above (excluding POL 201), and at least 12 credits must be from courses numbered 300 or above."
-    },
-    {
-      "id": "political-science-ba.A-dept-credits",
-      "label": "A-dept-credits",
-      "title": "Political Science Department credit minimum for concentration and electives",
-      "rule": {
-        "type": "unparsed",
-        "text": "For the Concentration and Political Science Electives, at least 12 credits must be taken in courses offered by the Political Science Department at Stony Brook or cross-listed by the Department.",
-        "reason": "Credit minimum spanning two requirements that depends on departmental offering; no rule type covers it."
-      },
-      "sourceText": "For the Concentration and Political Science Electives, at least 12 credits must be taken in courses offered by the Political Science Department at Stony Brook or cross-listed by the Department."
     },
     {
       "id": "political-science-ba.B",
@@ -223,25 +221,153 @@
       "rule": {
         "sourceText": "Two courses numbered 300 or higher, offered by one of the related area course designations below. Note: Courses crosslisted with a political science course or included within a program of study do not count towards this requirement.",
         "manualCheck": "Both courses must be offered by the same related-area designation. Courses crosslisted with a political science course or included within a program of study do not count.",
-        "type": "choose",
-        "count": 2,
-        "from": {
-          "subjects": [
-            "AAS",
-            "AFS",
-            "ANT",
-            "BUS",
-            "ECO",
-            "GLI",
-            "HIS",
-            "JRN",
-            "PHI",
-            "PSY",
-            "SOC",
-            "WST"
-          ],
-          "minNumber": 300
-        }
+        "type": "anyOf",
+        "rules": [
+          {
+            "id": "political-science-ba.B.aas",
+            "label": "AAS",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "AAS"
+              ],
+              "minNumber": 300
+            }
+          },
+          {
+            "id": "political-science-ba.B.afs",
+            "label": "AFS",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "AFS"
+              ],
+              "minNumber": 300
+            }
+          },
+          {
+            "id": "political-science-ba.B.ant",
+            "label": "ANT",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "ANT"
+              ],
+              "minNumber": 300
+            }
+          },
+          {
+            "id": "political-science-ba.B.bus",
+            "label": "BUS",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "BUS"
+              ],
+              "minNumber": 300
+            }
+          },
+          {
+            "id": "political-science-ba.B.eco",
+            "label": "ECO",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "ECO"
+              ],
+              "minNumber": 300
+            }
+          },
+          {
+            "id": "political-science-ba.B.gli",
+            "label": "GLI",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "GLI"
+              ],
+              "minNumber": 300
+            }
+          },
+          {
+            "id": "political-science-ba.B.his",
+            "label": "HIS",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "HIS"
+              ],
+              "minNumber": 300
+            }
+          },
+          {
+            "id": "political-science-ba.B.jrn",
+            "label": "JRN",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "JRN"
+              ],
+              "minNumber": 300
+            }
+          },
+          {
+            "id": "political-science-ba.B.phi",
+            "label": "PHI",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "PHI"
+              ],
+              "minNumber": 300
+            }
+          },
+          {
+            "id": "political-science-ba.B.psy",
+            "label": "PSY",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "PSY"
+              ],
+              "minNumber": 300
+            }
+          },
+          {
+            "id": "political-science-ba.B.soc",
+            "label": "SOC",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "SOC"
+              ],
+              "minNumber": 300
+            }
+          },
+          {
+            "id": "political-science-ba.B.wst",
+            "label": "WST",
+            "type": "choose",
+            "count": 2,
+            "from": {
+              "subjects": [
+                "WST"
+              ],
+              "minNumber": 300
+            }
+          }
+        ]
       },
       "sourceText": "B. Study in Related Areas (6 credits): Two courses numbered 300 or higher, offered by one of the related area course designations below."
     },
@@ -297,17 +423,6 @@
         "code": "POL 459"
       },
       "sourceText": "Political science majors can meet the upper division writing requirement by completing POL 459."
-    },
-    {
-      "id": "political-science-ba.su-limit",
-      "label": "Note 2",
-      "title": "Satisfactory/Unsatisfactory credit limit",
-      "rule": {
-        "type": "unparsed",
-        "text": "No more than six credits of courses with Satisfactory/Unsatisfactory grading may be applied to the major.",
-        "reason": "Program-wide credit cap across all major requirements; no rule type covers it."
-      },
-      "sourceText": "No more than six credits of courses with Satisfactory/Unsatisfactory grading may be applied to the major."
     }
   ],
   "policies": [
@@ -331,6 +446,15 @@
         "political-science-ba.C"
       ],
       "sourceText": "Majors must demonstrate competence in appropriate social science methodology by passing POL 201 - Introduction to Statistical Methods in Political Science with a grade of C or higher."
+    },
+    {
+      "type": "residencyCredits",
+      "minCredits": 12,
+      "appliesTo": [
+        "political-science-ba.A-concentration",
+        "political-science-ba.A-electives"
+      ],
+      "sourceText": "For the Concentration and Political Science Electives, at least 12 credits must be taken in courses offered by the Political Science Department at Stony Brook or cross-listed by the Department."
     }
   ],
   "substitutions": [],
@@ -602,6 +726,10 @@
     {
       "topic": "sbc",
       "text": "Students completing the Stony Brook Curriculum must complete a course satisfying the WRTD learning objective (for example POL 368 or POL 459) to graduate."
+    },
+    {
+      "topic": "grading",
+      "text": "No more than six credits of courses with Satisfactory/Unsatisfactory grading may be applied to the major."
     }
   ],
   "source": {
@@ -610,7 +738,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

@@ -469,7 +469,7 @@ function evaluateChoose(
     (k): k is Extract<ChooseConstraint, { type: "minFrom" }> =>
       k.type === "minFrom",
   );
-  const candidates = [...ctx.attempts.values()]
+  const eligible = [...ctx.attempts.values()]
     .filter(
       (a) => !exclude.has(a.code) && (ctx.allowReuse || !ctx.used.has(a.code)),
     )
@@ -487,6 +487,20 @@ function evaluateChoose(
         Number(a.status === "in-progress") - Number(b.status === "in-progress")
       );
     });
+
+  // Each "at least N from …" group gets its courses first, so an early pick from one group can't crowd out another.
+  const firsts: CourseAttempt[] = [];
+  for (const k of minFrom) {
+    const countedElsewhere = (k.countUsedBy ?? [])
+      .flatMap((id) => ctx.appliedBy.get(id) ?? [])
+      .filter((a) => matchesSelector(a.code, ctx.catalog.get(a.code), k.from)).length;
+    const alreadyFirst = firsts.filter((a) => matchesSelector(a.code, ctx.catalog.get(a.code), k.from)).length;
+    eligible
+      .filter((a) => !firsts.includes(a) && matchesSelector(a.code, ctx.catalog.get(a.code), k.from))
+      .slice(0, Math.max(0, k.minCourses - countedElsewhere - alreadyFirst))
+      .forEach((a) => firsts.push(a));
+  }
+  const candidates = [...firsts, ...eligible.filter((a) => !firsts.includes(a))];
 
   const result: NodeResult = { ...emptyResult(unit), required };
   const capUsage = new Map<

@@ -333,14 +333,107 @@
             }
           },
           {
-            "type": "unparsed",
-            "text": "Biomedical engineering students must complete at least 30 credits of electives at the 300 or 400 level including at least two 3-credit design technical elective courses with a BME designation. Three technical elective courses must be BME courses (not BME 476, BME 488 or BME 499). BME 476, BME 488 and BME 499 may be taken as an additional technical elective for a total of 6 credits.",
-            "reason": "Total-credit, level, and BME-designation rule across pools cannot be checked by a single choose; BME 476, BME 488 and BME 499 are not in the listed pools."
-          },
-          {
-            "type": "unparsed",
-            "text": "Non BME Technical Electives: not more than five courses (15 credits) may be taken from the non-BME list (AMS 311, AMS 332, AMS 333, BIO 310, BIO 320, BIO 325, BIO 328, BIO 361, BIO 362, BIO 365, CHE 312, CHE 321, CHE 322, CHE 327, CHE 346, CHE 353, CSE 332, CSE 377, ESG 302, ESG 332, ESM 325, ESM 335, ESM 450, ESE 305, ESE 306, ESE 315, ESE 324, MEC 310, MEC 320, MEC 363, MEC 402, MEC 410, MEC 411, MEC 455). While more may be taken, they cannot replace the BME design plus BME technical elective courses.",
-            "reason": "A cap on a non-BME course pool with no stated required count cannot be expressed as a choose rule."
+            "id": "biomedical-engineering-be.5.additional",
+            "manualCheck": "The page requires 30 credits of electives at the 300/400 level. This rule assumes the two design and three technical electives are 3 credits each, so the remaining 15 credits are counted here. Other 300/400-level electives not listed here are not counted automatically; confirm with an advisor.",
+            "type": "choose",
+            "credits": 15,
+            "from": {
+              "courses": [
+                "AMS 311",
+                "AMS 332",
+                "AMS 333",
+                "BIO 310",
+                "BIO 320",
+                "BIO 325",
+                "BIO 328",
+                "BIO 361",
+                "BIO 362",
+                "BIO 365",
+                "CHE 312",
+                "CHE 321",
+                "CHE 322",
+                "CHE 327",
+                "CHE 346",
+                "CHE 353",
+                "CSE 332",
+                "CSE 377",
+                "ESG 302",
+                "ESG 332",
+                "ESM 325",
+                "ESM 335",
+                "ESM 450",
+                "ESE 305",
+                "ESE 306",
+                "ESE 315",
+                "ESE 324",
+                "MEC 310",
+                "MEC 320",
+                "MEC 363",
+                "MEC 402",
+                "MEC 410",
+                "MEC 411",
+                "MEC 455",
+                "BME 476",
+                "BME 488",
+                "BME 499"
+              ]
+            },
+            "constraints": [
+              {
+                "type": "maxFrom",
+                "from": {
+                  "courses": [
+                    "AMS 311",
+                    "AMS 332",
+                    "AMS 333",
+                    "BIO 310",
+                    "BIO 320",
+                    "BIO 325",
+                    "BIO 328",
+                    "BIO 361",
+                    "BIO 362",
+                    "BIO 365",
+                    "CHE 312",
+                    "CHE 321",
+                    "CHE 322",
+                    "CHE 327",
+                    "CHE 346",
+                    "CHE 353",
+                    "CSE 332",
+                    "CSE 377",
+                    "ESG 302",
+                    "ESG 332",
+                    "ESM 325",
+                    "ESM 335",
+                    "ESM 450",
+                    "ESE 305",
+                    "ESE 306",
+                    "ESE 315",
+                    "ESE 324",
+                    "MEC 310",
+                    "MEC 320",
+                    "MEC 363",
+                    "MEC 402",
+                    "MEC 410",
+                    "MEC 411",
+                    "MEC 455"
+                  ]
+                },
+                "maxCourses": 5
+              },
+              {
+                "type": "maxFrom",
+                "from": {
+                  "courses": [
+                    "BME 476",
+                    "BME 488",
+                    "BME 499"
+                  ]
+                },
+                "maxCredits": 6
+              }
+            ],
+            "sourceText": "Biomedical engineering students must complete at least 30 credits of electives at the 300 or 400 level. BME 476, BME 488 and BME 499 may be taken as an additional technical elective for a total of 6 credits. Non BME Technical Electives: Not more than five courses (15 credits) may be taken from this list (while more may be taken, they cannot replace the BME design plus BME technical elective courses)."
           }
         ]
       },
@@ -710,7 +803,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

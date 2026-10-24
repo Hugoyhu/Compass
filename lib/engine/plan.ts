@@ -357,6 +357,15 @@ function pickProgramCourses(
 
   // Every course a program requires outright; elective picks never use up one of these through an equivalent.
   const mandatory = new Set(planned.programs.flatMap((p) => p.program.requirements.flatMap((r) => mandatoryCourses(r.rule))));
+  // Courses a requirement still asks for by name, including those inside one of several alternatives (PHY 132 in a physics
+  // sequence). An item that lists options ("PHY 125 or PHY 131") doesn't say which will be taken.
+  const wanted = new Set(
+    planned.programs.flatMap((p) =>
+      p.requirements
+        .filter((r) => !isDone(r.status) && !isReview(r.status))
+        .flatMap((r) => r.missing.flatMap((m) => (m.kind === "course" && m.options.length === 1 ? m.options : []))),
+    ),
+  );
 
   // When a program lists alternatives ("CSE 113 or CSE 150"), prefer the one another program requires.
   const requiredElsewhere = (program: ProgramAudit) =>
@@ -380,7 +389,7 @@ function pickProgramCourses(
   const missingPrerequisite = (expr: Prereq | undefined, depth: number): CourseRecord | undefined => {
     if (!expr) return undefined;
     if (expr.type === "course") return onItsWay(expr.code) ? undefined : reachable(expr.code, depth);
-    if (expr.type === "or" && expr.of.some((e) => e.type === "course" && (onItsWay(e.code) || mandatory.has(e.code)))) return undefined;
+    if (expr.type === "or" && expr.of.some((e) => e.type === "course" && (onItsWay(e.code) || mandatory.has(e.code) || wanted.has(e.code)))) return undefined;
     if (expr.type === "and" || expr.type === "or") {
       for (const e of expr.of) {
         const found = missingPrerequisite(e, depth);
@@ -447,7 +456,19 @@ function pickProgramCourses(
           if (prerequisite) add(prerequisite, `${key}:prerequisite`, 1);
         } else if (item.kind === "choose") {
           const remaining = item.unit === "courses" ? item.remaining : Math.ceil(item.remaining / ELECTIVE_CREDITS);
-          const capped = (c: CourseRecord) => item.constraints.some((k) => k.type === "maxFrom" && matchesSelector(c.code, c, k.from));
+          // "At most N from …" limits how many of those courses are worth planning, not whether any are.
+          const caps = item.constraints.flatMap((k) => {
+            if (k.type !== "maxFrom") return [];
+            const counted = r.applied.filter((a) => matchesSelector(a.code, catalog.get(a.code), k.from));
+            return [{ k, courses: counted.length, credits: counted.reduce((sum, a) => sum + a.credits, 0) }];
+          });
+          const fits = (c: CourseRecord) =>
+            caps.every(
+              (cap) =>
+                !matchesSelector(c.code, c, cap.k.from) ||
+                ((cap.k.maxCourses === undefined || cap.courses < cap.k.maxCourses) &&
+                  (cap.k.maxCredits === undefined || cap.credits + c.credits.min <= cap.k.maxCredits)),
+            );
           const listed = item.pool.courses ?? [];
           const preference = (c: CourseRecord) => [listed.includes(c.code) ? listed.indexOf(c.code) : listed.length, sample.has(c.code) ? 0 : 1];
           ctx.courses
@@ -455,13 +476,21 @@ function pickProgramCourses(
               (c) =>
                 !item.exclude.includes(c.code) &&
                 matchesSelector(c.code, c, item.pool) &&
-                !capped(c) &&
                 !c.equivalents.some((e) => mandatory.has(e)) &&
                 usable(c),
             )
             .sort((a, b) => {
               const [x, y] = [preference(a), preference(b)];
               return x[0] - y[0] || x[1] - y[1] || level(a) - level(b);
+            })
+            .filter((c) => {
+              if (!fits(c)) return false;
+              caps.forEach((cap) => {
+                if (!matchesSelector(c.code, c, cap.k.from)) return;
+                cap.courses += 1;
+                cap.credits += c.credits.min;
+              });
+              return true;
             })
             .slice(0, remaining)
             .forEach((c) => add(c, key, remaining, [], true));
@@ -507,7 +536,12 @@ function pickProgramCourses(
     if (capped && (pickedByProgram.get(programId) ?? 0) >= NON_MAJOR_COURSES_PER_TERM) continue;
     // A lecture and its lab go into the same term.
     const pairCode = pairedCorequisite(course);
-    const pair = pairCode ? catalog.get(pairCode) : undefined;
+    // "MAT 125" as a corequisite usually means MAT 125 or higher; skip it for a student on a higher course.
+    const higherOnHand = (code: CourseCode) => {
+      const [subject, number] = code.split(" ");
+      return [...unavailable, ...picked.map((c) => c.code), ...wanted].some((c) => c.startsWith(`${subject} `) && Number(c.split(" ")[1]) > Number(number));
+    };
+    const pair = pairCode && (mandatory.has(pairCode) || wanted.has(pairCode) || !higherOnHand(pairCode)) ? catalog.get(pairCode) : undefined;
     const group = [course, ...(pair && usable(pair) ? [pair] : [])];
     const groupCredits = group.reduce((s, c) => s + plannedCredits(c), 0);
     if (credits + groupCredits > maxCredits) continue;

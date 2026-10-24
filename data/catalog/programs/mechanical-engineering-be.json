@@ -178,6 +178,10 @@
           },
           {
             "type": "course",
+            "code": "GEO 312"
+          },
+          {
+            "type": "course",
             "code": "AST 203"
           },
           {
@@ -371,9 +375,25 @@
             }
           },
           {
-            "type": "unparsed",
-            "text": "One technical elective selected from courses offered by any department of the College of Engineering and Applied Sciences, including MEC; approved list in the Department's Undergraduate Guide",
-            "reason": "CEAS department subjects are not enumerated on the page; the approved list is in an external guide"
+            "id": "mechanical-engineering-be.technical-electives.ceas",
+            "manualCheck": "Must appear on the Department's approved technical elective list in the Undergraduate Guide. The subject list approximates the CEAS departments; the page does not enumerate them.",
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "subjects": [
+                "AMS",
+                "BME",
+                "CIV",
+                "CME",
+                "CSE",
+                "ESE",
+                "ESG",
+                "ESM",
+                "EST",
+                "MEC"
+              ]
+            },
+            "sourceText": "One technical elective selected from courses offered by any department of the College of Engineering and Applied Sciences, including MEC"
           }
         ]
       },
@@ -850,7 +870,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

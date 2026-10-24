@@ -106,6 +106,36 @@
             ]
           },
           {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 125"
+              },
+              {
+                "type": "course",
+                "code": "MAT 126"
+              },
+              {
+                "type": "course",
+                "code": "MAT 127"
+              }
+            ]
+          },
+          {
+            "type": "allOf",
+            "rules": [
+              {
+                "type": "course",
+                "code": "MAT 131"
+              },
+              {
+                "type": "course",
+                "code": "MAT 132"
+              }
+            ]
+          },
+          {
             "type": "course",
             "code": "CSE 113"
           }
@@ -501,25 +531,7 @@
       "sourceText": "A grade of C or higher is required in prerequisite courses listed for all CSE and ISE courses. To enroll in ISE courses, students must have completed all prerequisites with a grade of C or higher (Pass/No Credit grades are not acceptable to meet prerequisites)."
     }
   ],
-  "substitutions": [
-    {
-      "id": "information-systems-bs.sub.mat-calculus",
-      "replaces": {
-        "type": "courses",
-        "courses": [
-          "AMS 151",
-          "AMS 161"
-        ]
-      },
-      "with": {
-        "type": "unparsed",
-        "text": "MAT 125, MAT 126, MAT 127 or MAT 131, MAT 132",
-        "reason": "The substitute is one of two alternative sequences; the substitution schema cannot express an alternative of multi-course sequences."
-      },
-      "requiresApproval": false,
-      "sourceText": "The following alternate calculus course sequences may be substituted for AMS 151, AMS 161 in major requirements or prerequisites: MAT 125, MAT 126, MAT 127 or MAT 131, MAT 132."
-    }
-  ],
+  "substitutions": [],
   "sbc": {
     "exemptions": [
       {
@@ -813,6 +825,10 @@
     {
       "topic": "other",
       "text": "Declared Computer Science majors may switch to the Information Systems major after exceeding the one-year admission timeline, provided they meet the stated criteria."
+    },
+    {
+      "topic": "other",
+      "text": "Equivalency for MAT courses achieved through the Mathematics Placement Examination is accepted to meet the calculus requirements; confirm placement credit with an advisor."
     }
   ],
   "source": {
@@ -821,7 +837,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

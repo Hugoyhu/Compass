@@ -599,27 +599,6 @@
         ]
       },
       "sourceText": "A thematic cluster of 4 courses at the 200-level or above (minimum 2 courses at the 300-level) selected from the following thematic clusters: Arts, Ideas & Culture; Empires, Violence & Global Connections; Health, Science & Environmental Change; Law, Politics & Social Justice; Race, Religion, Gender & Sexualities (12 credits)."
-    },
-    {
-      "id": "history-ba.upper-division-writing",
-      "label": "upper-division-writing",
-      "title": "Upper-Division Writing Requirement",
-      "rule": {
-        "type": "course",
-        "code": "HIS 401"
-      },
-      "sourceText": "Upper-Division Writing Requirement: Satisfactory completion of HIS 401 with a grade of C or better."
-    },
-    {
-      "id": "history-ba.residency",
-      "label": "residency",
-      "title": "Department residency for Requirements A and B",
-      "rule": {
-        "type": "unparsed",
-        "text": "At least 12 credits in Requirement A and B must be taken within the Department of History at Stony Brook.",
-        "reason": "As printed, Requirements A and B total only 6 credits, so a 12-credit residency minimum cannot be evaluated against them. Flagged for review."
-      },
-      "sourceText": "At least 12 credits in Requirement A and B must be taken within the Department of History at Stony Brook."
     }
   ],
   "policies": [
@@ -632,8 +611,7 @@
         "history-ba.D",
         "history-ba.E",
         "history-ba.F",
-        "history-ba.thematic-cluster",
-        "history-ba.upper-division-writing"
+        "history-ba.thematic-cluster"
       ],
       "sourceText": "All courses must be taken for a letter grade."
     },
@@ -647,17 +625,9 @@
         "history-ba.D",
         "history-ba.E",
         "history-ba.F",
-        "history-ba.thematic-cluster",
-        "history-ba.upper-division-writing"
+        "history-ba.thematic-cluster"
       ],
       "sourceText": "No grade lower than C may be applied toward the major."
-    },
-    {
-      "type": "residencyRequired",
-      "appliesTo": [
-        "history-ba.residency"
-      ],
-      "sourceText": "At least 12 credits in Requirement A and B must be taken within the Department of History at Stony Brook."
     }
   ],
   "substitutions": [],
@@ -933,6 +903,10 @@
   ],
   "notes": [
     {
+      "topic": "grading",
+      "text": "Upper-Division Writing Requirement: satisfactory completion of HIS 401 with a grade of C or better. HIS 401 is also the Senior Colloquium (Requirement F), so it is applied once there; the C-or-better grade is enforced by the program grade policy."
+    },
+    {
       "topic": "advising",
       "text": "Students should consult the department advisor about completing the Upper Division Writing Requirement consistently with university General Education requirements. Students completing the Stony Brook Curriculum must complete a WRTD-satisfying course; the Upper Division Writing Requirement is consistent in most cases with WRTD outcomes."
     },
@@ -955,6 +929,10 @@
     {
       "topic": "other",
       "text": "Specialized SBC table and per-course SBC tags are not modeled here; the SBC table lists optional major courses that can also satisfy SBC categories."
+    },
+    {
+      "topic": "other",
+      "text": "At least 12 credits in Requirement A and B must be taken within the Department of History at Stony Brook. As printed, Requirements A and B total only 6 credits, so this residency minimum is not modeled; confirm the intended requirement with the department."
     }
   ],
   "source": {
@@ -963,7 +941,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

@@ -94,34 +94,6 @@
             "type": "choose",
             "count": 1,
             "from": {
-              "subjects": [
-                "PSY"
-              ],
-              "minNumber": 200,
-              "excludeCourses": [
-                "PSY 201",
-                "PSY 273",
-                "PSY 283",
-                "PSY 310",
-                "PSY 399",
-                "PSY 447",
-                "PSY 475",
-                "PSY 476",
-                "PSY 487",
-                "PSY 488",
-                "PSY 495",
-                "PSY 496",
-                "PSY 300"
-              ],
-              "excludeUsedBy": [
-                "psychology-bs.2"
-              ]
-            }
-          },
-          {
-            "type": "choose",
-            "count": 1,
-            "from": {
               "courses": [
                 "PSY 380",
                 "PSY 382"
@@ -161,33 +133,43 @@
                 "PSY 488",
                 "PSY 495",
                 "PSY 496",
-                "PSY 300"
+                "PSY 300",
+                "PSY 459"
+              ]
+            }
+          },
+          {
+            "type": "choose",
+            "count": 1,
+            "from": {
+              "subjects": [
+                "PSY"
+              ],
+              "minNumber": 200,
+              "excludeCourses": [
+                "PSY 201",
+                "PSY 273",
+                "PSY 283",
+                "PSY 310",
+                "PSY 399",
+                "PSY 447",
+                "PSY 475",
+                "PSY 476",
+                "PSY 487",
+                "PSY 488",
+                "PSY 495",
+                "PSY 496",
+                "PSY 300",
+                "PSY 459"
+              ],
+              "excludeUsedBy": [
+                "psychology-bs.2"
               ]
             }
           }
         ]
       },
       "sourceText": "Five PSY courses: 1. One course numbered 200 or higher excluding PSY 201, PSY 273, PSY 283, PSY 310, PSY 399, PSY 447, PSY 475, PSY 476, PSY 487, PSY 488, PSY 495, PSY 496, the discontinued PSY 300, and 200-level survey courses used to satisfy requirement #2. 2. A laboratory course: PSY 380 or PSY 382. 3. An advanced statistics or one of the following: PSY 301, AMS 315, PSY 355, PSY 356, PSY 368, BIO 334, BIO 338. 4. Two more courses numbered 300 or higher, excluding PSY 310, PSY 399, PSY 447, PSY 475, PSY 476, PSY 487, PSY 488, PSY 495, PSY 496, and the discontinued PSY 300."
-    },
-    {
-      "id": "psychology-bs.4",
-      "label": "4",
-      "title": "Upper-Division Writing Requirement",
-      "rule": {
-        "type": "anyOf",
-        "rules": [
-          {
-            "type": "course",
-            "code": "PSY 310"
-          },
-          {
-            "manualCheck": "Special cases only: requires instructor permission and a substantial paper or writing sample in another Psychology course.",
-            "type": "course",
-            "code": "PSY 459"
-          }
-        ]
-      },
-      "sourceText": "A course that satisfies the Write Effectively within One's Discipline (WRTD) learning objective must be completed in order to graduate. This WRTD requirement will routinely be satisfied by completing PSY 310. However, in special cases, co-registration for the 0-credit PSY 459 while completing a substantial paper or writing sample in another Psychology course will satisfy the WRTD requirement. A student must obtain the permission of the course instructor prior to registering for PSY 459."
     },
     {
       "id": "psychology-bs.5",
@@ -291,49 +273,1024 @@
             ]
           },
           {
-            "type": "unparsed",
-            "text": "Any two concentrations selected from the following five choices: Biology (two BIO or biology-related courses from BIO 208, BIO 310, BIO 312, BIO 314, BIO 315, BIO 317, BIO 320, BIO 321, BIO 325, BIO 327, BIO 328, BIO 332, BIO 334, BIO 335, BIO 336, BIO 337, BIO 338, BIO 339, BIO 350, BIO 351, BIO 354, BIO 358, BIO 359, BIO 361, BCP 401, and HBM 320 + HBM 321 which count as ONE course; the same BIO course cannot be used for both this concentration and item 3); Chemistry (CHE 131, CHE 133, CHE 132, CHE 134; CHE 129 + CHE 130 together may substitute for CHE 131); Mathematics (two MAT courses numbered 200 or above, and 300-level AMS courses except AMS 310, AMS 312, AMS 315); Physics (one of: PHY 121 + PHY 122; PHY 125 + PHY 126 + PHY 127; PHY 131 + PHY 133 + PHY 132 + PHY 134; PHY 141 + PHY 142); Computer Science (CSE 113, CSE 114).",
-            "reason": "Choosing any two of five concentration groups cannot be expressed with the choose rule type; the concentration course lists are kept verbatim here for audit."
+            "type": "anyOf",
+            "rules": [
+              {
+                "type": "allOf",
+                "label": "Biology and Chemistry",
+                "rules": [
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "choose",
+                        "count": 2,
+                        "from": {
+                          "courses": [
+                            "BIO 208",
+                            "BIO 310",
+                            "BIO 312",
+                            "BIO 314",
+                            "BIO 315",
+                            "BIO 317",
+                            "BIO 320",
+                            "BIO 321",
+                            "BIO 325",
+                            "BIO 327",
+                            "BIO 328",
+                            "BIO 332",
+                            "BIO 334",
+                            "BIO 335",
+                            "BIO 336",
+                            "BIO 337",
+                            "BIO 338",
+                            "BIO 339",
+                            "BIO 350",
+                            "BIO 351",
+                            "BIO 354",
+                            "BIO 358",
+                            "BIO 359",
+                            "BIO 361",
+                            "BCP 401"
+                          ]
+                        }
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "choose",
+                            "count": 1,
+                            "from": {
+                              "courses": [
+                                "BIO 208",
+                                "BIO 310",
+                                "BIO 312",
+                                "BIO 314",
+                                "BIO 315",
+                                "BIO 317",
+                                "BIO 320",
+                                "BIO 321",
+                                "BIO 325",
+                                "BIO 327",
+                                "BIO 328",
+                                "BIO 332",
+                                "BIO 334",
+                                "BIO 335",
+                                "BIO 336",
+                                "BIO 337",
+                                "BIO 338",
+                                "BIO 339",
+                                "BIO 350",
+                                "BIO 351",
+                                "BIO 354",
+                                "BIO 358",
+                                "BIO 359",
+                                "BIO 361",
+                                "BCP 401"
+                              ]
+                            }
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "HBM 320"
+                              },
+                              {
+                                "type": "course",
+                                "code": "HBM 321"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "manualCheck": "Two biology courses from the listed BIO/BCP courses; HBM 320 + HBM 321 together count as one course. The same BIO course cannot be used for both this concentration and the Biology requirement."
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "anyOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "CHE 131"
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "CHE 129"
+                              },
+                              {
+                                "type": "course",
+                                "code": "CHE 130"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 133"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 132"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 134"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "label": "Biology and Mathematics",
+                "rules": [
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "choose",
+                        "count": 2,
+                        "from": {
+                          "courses": [
+                            "BIO 208",
+                            "BIO 310",
+                            "BIO 312",
+                            "BIO 314",
+                            "BIO 315",
+                            "BIO 317",
+                            "BIO 320",
+                            "BIO 321",
+                            "BIO 325",
+                            "BIO 327",
+                            "BIO 328",
+                            "BIO 332",
+                            "BIO 334",
+                            "BIO 335",
+                            "BIO 336",
+                            "BIO 337",
+                            "BIO 338",
+                            "BIO 339",
+                            "BIO 350",
+                            "BIO 351",
+                            "BIO 354",
+                            "BIO 358",
+                            "BIO 359",
+                            "BIO 361",
+                            "BCP 401"
+                          ]
+                        }
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "choose",
+                            "count": 1,
+                            "from": {
+                              "courses": [
+                                "BIO 208",
+                                "BIO 310",
+                                "BIO 312",
+                                "BIO 314",
+                                "BIO 315",
+                                "BIO 317",
+                                "BIO 320",
+                                "BIO 321",
+                                "BIO 325",
+                                "BIO 327",
+                                "BIO 328",
+                                "BIO 332",
+                                "BIO 334",
+                                "BIO 335",
+                                "BIO 336",
+                                "BIO 337",
+                                "BIO 338",
+                                "BIO 339",
+                                "BIO 350",
+                                "BIO 351",
+                                "BIO 354",
+                                "BIO 358",
+                                "BIO 359",
+                                "BIO 361",
+                                "BCP 401"
+                              ]
+                            }
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "HBM 320"
+                              },
+                              {
+                                "type": "course",
+                                "code": "HBM 321"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "manualCheck": "Two biology courses from the listed BIO/BCP courses; HBM 320 + HBM 321 together count as one course. The same BIO course cannot be used for both this concentration and the Biology requirement."
+                  },
+                  {
+                    "type": "choose",
+                    "count": 2,
+                    "from": {
+                      "subjects": [
+                        "MAT"
+                      ],
+                      "minNumber": 200,
+                      "ranges": [
+                        {
+                          "subject": "AMS",
+                          "from": 300,
+                          "to": 399
+                        }
+                      ],
+                      "excludeCourses": [
+                        "AMS 310",
+                        "AMS 312",
+                        "AMS 315"
+                      ]
+                    },
+                    "manualCheck": "Two courses chosen from MAT courses numbered 200 or above and 300-level AMS courses (except AMS 310, AMS 312, AMS 315)."
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "label": "Biology and Physics",
+                "rules": [
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "choose",
+                        "count": 2,
+                        "from": {
+                          "courses": [
+                            "BIO 208",
+                            "BIO 310",
+                            "BIO 312",
+                            "BIO 314",
+                            "BIO 315",
+                            "BIO 317",
+                            "BIO 320",
+                            "BIO 321",
+                            "BIO 325",
+                            "BIO 327",
+                            "BIO 328",
+                            "BIO 332",
+                            "BIO 334",
+                            "BIO 335",
+                            "BIO 336",
+                            "BIO 337",
+                            "BIO 338",
+                            "BIO 339",
+                            "BIO 350",
+                            "BIO 351",
+                            "BIO 354",
+                            "BIO 358",
+                            "BIO 359",
+                            "BIO 361",
+                            "BCP 401"
+                          ]
+                        }
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "choose",
+                            "count": 1,
+                            "from": {
+                              "courses": [
+                                "BIO 208",
+                                "BIO 310",
+                                "BIO 312",
+                                "BIO 314",
+                                "BIO 315",
+                                "BIO 317",
+                                "BIO 320",
+                                "BIO 321",
+                                "BIO 325",
+                                "BIO 327",
+                                "BIO 328",
+                                "BIO 332",
+                                "BIO 334",
+                                "BIO 335",
+                                "BIO 336",
+                                "BIO 337",
+                                "BIO 338",
+                                "BIO 339",
+                                "BIO 350",
+                                "BIO 351",
+                                "BIO 354",
+                                "BIO 358",
+                                "BIO 359",
+                                "BIO 361",
+                                "BCP 401"
+                              ]
+                            }
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "HBM 320"
+                              },
+                              {
+                                "type": "course",
+                                "code": "HBM 321"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "manualCheck": "Two biology courses from the listed BIO/BCP courses; HBM 320 + HBM 321 together count as one course. The same BIO course cannot be used for both this concentration and the Biology requirement."
+                  },
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 121"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 122"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 125"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 126"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 127"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 131"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 133"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 132"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 134"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 141"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 142"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "label": "Biology and Computer Science",
+                "rules": [
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "choose",
+                        "count": 2,
+                        "from": {
+                          "courses": [
+                            "BIO 208",
+                            "BIO 310",
+                            "BIO 312",
+                            "BIO 314",
+                            "BIO 315",
+                            "BIO 317",
+                            "BIO 320",
+                            "BIO 321",
+                            "BIO 325",
+                            "BIO 327",
+                            "BIO 328",
+                            "BIO 332",
+                            "BIO 334",
+                            "BIO 335",
+                            "BIO 336",
+                            "BIO 337",
+                            "BIO 338",
+                            "BIO 339",
+                            "BIO 350",
+                            "BIO 351",
+                            "BIO 354",
+                            "BIO 358",
+                            "BIO 359",
+                            "BIO 361",
+                            "BCP 401"
+                          ]
+                        }
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "choose",
+                            "count": 1,
+                            "from": {
+                              "courses": [
+                                "BIO 208",
+                                "BIO 310",
+                                "BIO 312",
+                                "BIO 314",
+                                "BIO 315",
+                                "BIO 317",
+                                "BIO 320",
+                                "BIO 321",
+                                "BIO 325",
+                                "BIO 327",
+                                "BIO 328",
+                                "BIO 332",
+                                "BIO 334",
+                                "BIO 335",
+                                "BIO 336",
+                                "BIO 337",
+                                "BIO 338",
+                                "BIO 339",
+                                "BIO 350",
+                                "BIO 351",
+                                "BIO 354",
+                                "BIO 358",
+                                "BIO 359",
+                                "BIO 361",
+                                "BCP 401"
+                              ]
+                            }
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "HBM 320"
+                              },
+                              {
+                                "type": "course",
+                                "code": "HBM 321"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "manualCheck": "Two biology courses from the listed BIO/BCP courses; HBM 320 + HBM 321 together count as one course. The same BIO course cannot be used for both this concentration and the Biology requirement."
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "CSE 113"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CSE 114"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "label": "Chemistry and Mathematics",
+                "rules": [
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "anyOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "CHE 131"
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "CHE 129"
+                              },
+                              {
+                                "type": "course",
+                                "code": "CHE 130"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 133"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 132"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 134"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "choose",
+                    "count": 2,
+                    "from": {
+                      "subjects": [
+                        "MAT"
+                      ],
+                      "minNumber": 200,
+                      "ranges": [
+                        {
+                          "subject": "AMS",
+                          "from": 300,
+                          "to": 399
+                        }
+                      ],
+                      "excludeCourses": [
+                        "AMS 310",
+                        "AMS 312",
+                        "AMS 315"
+                      ]
+                    },
+                    "manualCheck": "Two courses chosen from MAT courses numbered 200 or above and 300-level AMS courses (except AMS 310, AMS 312, AMS 315)."
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "label": "Chemistry and Physics",
+                "rules": [
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "anyOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "CHE 131"
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "CHE 129"
+                              },
+                              {
+                                "type": "course",
+                                "code": "CHE 130"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 133"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 132"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 134"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 121"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 122"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 125"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 126"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 127"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 131"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 133"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 132"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 134"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 141"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 142"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "label": "Chemistry and Computer Science",
+                "rules": [
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "anyOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "CHE 131"
+                          },
+                          {
+                            "type": "allOf",
+                            "rules": [
+                              {
+                                "type": "course",
+                                "code": "CHE 129"
+                              },
+                              {
+                                "type": "course",
+                                "code": "CHE 130"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 133"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 132"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CHE 134"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "CSE 113"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CSE 114"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "label": "Mathematics and Physics",
+                "rules": [
+                  {
+                    "type": "choose",
+                    "count": 2,
+                    "from": {
+                      "subjects": [
+                        "MAT"
+                      ],
+                      "minNumber": 200,
+                      "ranges": [
+                        {
+                          "subject": "AMS",
+                          "from": 300,
+                          "to": 399
+                        }
+                      ],
+                      "excludeCourses": [
+                        "AMS 310",
+                        "AMS 312",
+                        "AMS 315"
+                      ]
+                    },
+                    "manualCheck": "Two courses chosen from MAT courses numbered 200 or above and 300-level AMS courses (except AMS 310, AMS 312, AMS 315)."
+                  },
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 121"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 122"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 125"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 126"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 127"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 131"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 133"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 132"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 134"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 141"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 142"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "label": "Mathematics and Computer Science",
+                "rules": [
+                  {
+                    "type": "choose",
+                    "count": 2,
+                    "from": {
+                      "subjects": [
+                        "MAT"
+                      ],
+                      "minNumber": 200,
+                      "ranges": [
+                        {
+                          "subject": "AMS",
+                          "from": 300,
+                          "to": 399
+                        }
+                      ],
+                      "excludeCourses": [
+                        "AMS 310",
+                        "AMS 312",
+                        "AMS 315"
+                      ]
+                    },
+                    "manualCheck": "Two courses chosen from MAT courses numbered 200 or above and 300-level AMS courses (except AMS 310, AMS 312, AMS 315)."
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "CSE 113"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CSE 114"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "allOf",
+                "label": "Physics and Computer Science",
+                "rules": [
+                  {
+                    "type": "anyOf",
+                    "rules": [
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 121"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 122"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 125"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 126"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 127"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 131"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 133"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 132"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 134"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "allOf",
+                        "rules": [
+                          {
+                            "type": "course",
+                            "code": "PHY 141"
+                          },
+                          {
+                            "type": "course",
+                            "code": "PHY 142"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "allOf",
+                    "rules": [
+                      {
+                        "type": "course",
+                        "code": "CSE 113"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CSE 114"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "id": "psychology-bs.5.concentrations",
+            "manualCheck": "Any two of the five concentrations (Biology, Chemistry, Mathematics, Physics, Computer Science). CHE 129 + CHE 130 together may substitute for CHE 131."
           }
         ]
       },
       "sourceText": "In addition to the 34 to 35 credits in psychology, students must also complete 24 to 32 credits of courses outside the Department. For the BS Degree, all three categories below are required. 1. Mathematics; 2. Biology; 3. Any two concentrations selected from the following five choices: Biology, Chemistry, Mathematics, Physics, Computer Science."
-    },
-    {
-      "id": "psychology-bs.credits-total",
-      "label": "credits-total",
-      "title": "Total major credits",
-      "rule": {
-        "type": "unparsed",
-        "text": "Completion of the major for either a B.S. or a B.A. in Psychology requires 58 to 67 credits.",
-        "reason": "Program-wide credit range is not a rule type."
-      },
-      "sourceText": "Completion of the major for either a B.S. or a B.A. in Psychology requires 58 to 67 credits."
-    },
-    {
-      "id": "psychology-bs.credits-psychology",
-      "label": "credits-psychology",
-      "title": "Psychology credits",
-      "rule": {
-        "type": "unparsed",
-        "text": "34 to 35 credits in psychology, distributed across the Study within Psychology items.",
-        "reason": "Program-wide credit range is not a rule type."
-      },
-      "sourceText": "For both degree programs, 34 to 35 credits in psychology to be distributed as follows:"
-    },
-    {
-      "id": "psychology-bs.credits-outside",
-      "label": "credits-outside",
-      "title": "Credits outside the Psychology Department",
-      "rule": {
-        "type": "unparsed",
-        "text": "24 to 32 credits of courses outside the Department.",
-        "reason": "Program-wide credit range is not a rule type."
-      },
-      "sourceText": "In addition to the 34 to 35 credits in psychology, students must also complete 24 to 32 credits of courses outside the Department."
     }
   ],
   "policies": [
+    {
+      "type": "letterGradeRequired",
+      "appliesTo": [
+        "psychology-bs.1",
+        "psychology-bs.2",
+        "psychology-bs.3",
+        "psychology-bs.5"
+      ],
+      "sourceText": "All courses required for either the B.S. or B.A. degree must be passed with a letter grade of C or higher."
+    },
     {
       "type": "minGrade",
       "grade": "C",
@@ -341,7 +1298,6 @@
         "psychology-bs.1",
         "psychology-bs.2",
         "psychology-bs.3",
-        "psychology-bs.4",
         "psychology-bs.5"
       ],
       "sourceText": "All courses required for either the B.S. or B.A. degree must be passed with a letter grade of C or higher."
@@ -352,8 +1308,7 @@
       "appliesTo": [
         "psychology-bs.1",
         "psychology-bs.2",
-        "psychology-bs.3",
-        "psychology-bs.4"
+        "psychology-bs.3"
       ],
       "sourceText": "Transfer students must take at least 12 credits of psychology in residence at Stony Brook."
     }
@@ -361,7 +1316,26 @@
   "substitutions": [],
   "sbc": {
     "exemptions": [],
-    "fulfillment": []
+    "fulfillment": [
+      {
+        "category": "WRTD",
+        "rule": {
+          "type": "anyOf",
+          "rules": [
+            {
+              "type": "course",
+              "code": "PSY 310"
+            },
+            {
+              "manualCheck": "PSY 459 (0 credits) applies only when co-registered while completing a substantial paper or writing sample in another Psychology course, with the course instructor's permission obtained beforehand.",
+              "type": "course",
+              "code": "PSY 459"
+            }
+          ]
+        },
+        "sourceText": "A course that satisfies the Write Effectively within One's Discipline (WRTD) learning objective must be completed in order to graduate. This WRTD requirement will routinely be satisfied by completing PSY 310. However, in special cases, co-registration for the 0-credit PSY 459 while completing a substantial paper or writing sample in another Psychology course will satisfy the WRTD requirement. A student must obtain the permission of the course instructor prior to registering for PSY 459."
+      }
+    ]
   },
   "sampleSequence": [
     {
@@ -661,6 +1635,10 @@
   ],
   "notes": [
     {
+      "topic": "other",
+      "text": "Completion of the major for either a B.S. or a B.A. in Psychology requires 58 to 67 credits, including 34 to 35 credits in psychology and 24 to 32 credits of courses outside the Department. This total is not audited separately; it follows from the requirements below."
+    },
+    {
       "topic": "advising",
       "text": "Students interested in a Psychology major should meet with a Psychology Department Undergraduate Advisor (Room B-109), and should schedule periodic meetings to review progress toward Department requirements."
     },
@@ -674,7 +1652,7 @@
     },
     {
       "topic": "other",
-      "text": "PSY 310 is listed in item 1 and also satisfies the WRTD writing requirement in item 4, as the page states."
+      "text": "The upper-division writing requirement (WRTD) is routinely satisfied by PSY 310, which is also required in item 1. It is checked under the Stony Brook Curriculum (WRTD) rather than as a separate requirement. In special cases, co-registration for the 0-credit PSY 459 with instructor permission, while completing a substantial paper in another Psychology course, satisfies it."
     },
     {
       "topic": "other",
@@ -695,7 +1673,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

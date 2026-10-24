@@ -57,20 +57,10 @@
               }
             ]
           }
-        ]
+        ],
+        "manualCheck": "Some or all of this requirement may be fulfilled by the Mathematics Placement Exam, AP credit, or comparable means; the audit does not see placement scores. MAT 125 may be taken as MAT 130 / MAT 125 (MAT 130 is a one-credit course taken with MAT 125 or MAT 131; not modeled)."
       },
       "sourceText": "1. Single-variable Calculus: One of the following sequences: MAT 131 - Calculus I 4 credits; MAT 132 - Calculus II 4 credits; OR MAT 125 - Calculus A 3 credits (or MAT 130 /MAT 125); MAT 126 - Calculus B 3 credits; MAT 127 - Calculus C 3 credits; OR AMS 151 - Applied Calculus I 3 credits; AMS 161 - Applied Calculus II 3 credits. Note: Some or all of this requirement may be fulfilled by an appropriate score on the Mathematics Placement Exam, by AP credit, or by comparable means."
-    },
-    {
-      "id": "mathematics-bs.1a",
-      "label": "1a",
-      "title": "Placement-dependent MAT 123 requirement",
-      "rule": {
-        "type": "unparsed",
-        "text": "If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major.",
-        "reason": "Conditional on placement exam results, which a transcript does not show."
-      },
-      "sourceText": "If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major."
     },
     {
       "id": "mathematics-bs.2",
@@ -107,6 +97,20 @@
               {
                 "type": "course",
                 "code": "AMS 210"
+              },
+              {
+                "type": "allOf",
+                "rules": [
+                  {
+                    "type": "course",
+                    "code": "MAT 307"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT 308"
+                  }
+                ],
+                "sourceText": "Students who take both MAT 307 and MAT 308 do not need to take a separate course in linear algebra, since this material is included in those courses."
               }
             ]
           },
@@ -145,13 +149,9 @@
           {
             "type": "course",
             "code": "MAT 250"
-          },
-          {
-            "type": "unparsed",
-            "text": "Passing the MAT 200 challenge examination",
-            "reason": "A challenge exam result is not a transcript course."
           }
-        ]
+        ],
+        "manualCheck": "Passing the MAT 200 challenge examination also meets this requirement; the audit cannot see exam results."
       },
       "sourceText": "3. Preparation in the Language and Logic of Mathematics: This requirement can be met by either passing MAT 200 or MAT 250 or by passing the MAT 200 challenge examination. (Note: the writing intensive course MAT 200 is a requirement for students in the Secondary Teacher Education Program.)"
     },
@@ -374,7 +374,6 @@
       "type": "letterGradeRequired",
       "appliesTo": [
         "mathematics-bs.1",
-        "mathematics-bs.1a",
         "mathematics-bs.2",
         "mathematics-bs.3",
         "mathematics-bs.4",
@@ -391,7 +390,6 @@
       "grade": "C",
       "appliesTo": [
         "mathematics-bs.1",
-        "mathematics-bs.1a",
         "mathematics-bs.2",
         "mathematics-bs.3",
         "mathematics-bs.4",
@@ -404,30 +402,7 @@
       "sourceText": "All courses used to fulfill the requirements for the major must be taken for a letter grade and must be completed with a grade of C or higher."
     }
   ],
-  "substitutions": [
-    {
-      "id": "mathematics-bs.sub.linalg",
-      "replaces": {
-        "type": "rule",
-        "ruleId": "mathematics-bs.2.linalg"
-      },
-      "with": {
-        "type": "allOf",
-        "rules": [
-          {
-            "type": "course",
-            "code": "MAT 307"
-          },
-          {
-            "type": "course",
-            "code": "MAT 308"
-          }
-        ]
-      },
-      "requiresApproval": false,
-      "sourceText": "Note: Students who take both MAT 307 and MAT 308 do not need to take a separate course in linear algebra, since this material is included in those courses."
-    }
-  ],
+  "substitutions": [],
   "sbc": {
     "exemptions": [],
     "fulfillment": [
@@ -772,6 +747,10 @@
     {
       "topic": "other",
       "text": "Mathematics Learning Center offers tutorial help for 100-level courses, and more advanced students can also get assistance there."
+    },
+    {
+      "topic": "other",
+      "text": "If students do not place into MAT 125 or MAT 131 on the basis of the math placement examination, MAT 123 (or MAT 119 /MAT 123) is a required course for the major."
     }
   ],
   "source": {
@@ -780,7 +759,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }

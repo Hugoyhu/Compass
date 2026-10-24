@@ -229,10 +229,21 @@
       "label": "4",
       "title": "Upper-Division Writing Requirement",
       "rule": {
-        "manualCheck": "Confirm that the student has completed a course with the WRTD designation.",
-        "type": "unparsed",
-        "text": "All degree candidates must demonstrate skill in written English at a level acceptable for Applied Mathematics and Statistics majors. AMS students must register for a course designated by the University as WRTD (e.g., AMS 300).",
-        "reason": "WRTD is a university course designation, and the page gives only an example course (AMS 300) rather than a complete list."
+        "id": "applied-mathematics-and-statistics-bs.4.wrtd",
+        "manualCheck": "Any course designated WRTD by the University satisfies this; the page gives AMS 300 as an example and lists AMS 300, 318 and 333. Confirm others (AMS 313, 459, 487, 488 also carry WRTD in the course data) with the department.",
+        "type": "choose",
+        "count": 1,
+        "from": {
+          "courses": [
+            "AMS 300",
+            "AMS 313",
+            "AMS 318",
+            "AMS 333",
+            "AMS 459",
+            "AMS 487",
+            "AMS 488"
+          ]
+        }
       },
       "sourceText": "Upper-Division Writing Requirement: All degree candidates must demonstrate skill in written English at a level acceptable for Applied Mathematics and Statistics majors. AMS students must register for a course designated by the University as WRTD (e.g., AMS 300)."
     }
@@ -556,7 +567,8 @@
     "fetchedAt": "2026-10-24"
   },
   "review": {
-    "status": "draft",
-    "extractedBy": "claude-haiku-5-5"
+    "status": "reviewed",
+    "extractedBy": "claude-haiku-5-5",
+    "reviewedBy": "hand"
   }
 }
