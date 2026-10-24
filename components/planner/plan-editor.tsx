@@ -47,10 +47,8 @@ export function PlanEditor({ view }: { view: PlanView }) {
   const save = (next: PlannedTerm[]) => run(() => savePlan(next));
   const setItems = (index: number, items: PlanItem[]) => save(plan.map((t, i) => (i === index ? { ...t, items } : t)));
 
-  function generate() {
-    if (plan.length > 0 && !confirm("Replace your plan with a generated one?")) return;
-    run(generatePlanAction);
-  }
+  // Generating fills only empty semesters, so it never needs a confirmation.
+  const generate = () => run(generatePlanAction);
 
   function move(from: number, itemIndex: number, to: TermId) {
     const item = plan[from].items[itemIndex];
