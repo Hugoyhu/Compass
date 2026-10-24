@@ -1,0 +1,259 @@
+﻿subject,course_number,course_code,title,source_file,source_group_index
+PAE,101,PAE 101,Intermediate Academic English,index_P.html,1
+PAE,(102),PAE (102),Advanced Academic English ** available as of 08/20/2040,index_P.html,1
+PER,101,PER 101,Intensive Elementary Persian,index_P.html,7
+PER,111,PER 111,Elementary Persian I,index_P.html,7
+PER,112,PER 112,Elementary Persian II,index_P.html,7
+PHI,100,PHI 100,Concepts of the Person (II),index_P.html,9
+PHI,101,PHI 101,Historical Introduction to Western Philosophy (I),index_P.html,9
+PHI,102,PHI 102,Introduction to Philosophical Psychology,index_P.html,9
+PHI,103,PHI 103,Philosophic Problems (II),index_P.html,9
+PHI,104,PHI 104,Moral Reasoning (II),index_P.html,9
+PHI,105,PHI 105,Politics and Society (II),index_P.html,9
+PHI,108,PHI 108,Logical and Critical Reasoning (II),index_P.html,9
+PHI,109,PHI 109,Philosophy and Literature in Social Context (III),index_P.html,9
+PHI,110,PHI 110,Arts and Ideas (III),index_P.html,9
+PHI,111,PHI 111,Introduction to Eastern Philosophy (I),index_P.html,9
+PHI,112,PHI 112,Technology and Modern Life,index_P.html,9
+PHI,113,PHI 113,Philosophical Engineering,index_P.html,9
+PHI,116,PHI 116,Philosophy of America's Founding,index_P.html,9
+PHI,200,PHI 200,Introduction to Ancient Philosophy (I),index_P.html,9
+PHI,201,PHI 201,Demons to Think With,index_P.html,9
+PHI,204,PHI 204,Ethics in Artificial Intelligence and Data,index_P.html,9
+PHI,206,PHI 206,Introduction to Modern Philosophy (17th and 18th century) (I),index_P.html,9
+PHI,220,PHI 220,Introduction to Symbolic Logic (II),index_P.html,9
+PHI,247,PHI 247,Existentialism (I),index_P.html,9
+PHI,264,PHI 264,Philosophy and the Arts (III),index_P.html,9
+PHI,268,PHI 268,"Science, Technology, and Society",index_P.html,9
+PHI,277,PHI 277,Political Philosophy (II),index_P.html,9
+PHI,284,PHI 284,Introduction to Feminist Theory (III),index_P.html,9
+PHI,300,PHI 300,Ancient Philosophy (I),index_P.html,9
+PHI,304,PHI 304,Medieval Philosophy (I),index_P.html,9
+PHI,306,PHI 306,Modern Philosophy (I),index_P.html,9
+PHI,308,PHI 308,19th-Century Philosophy (I),index_P.html,9
+PHI,309,PHI 309,20th-Century Philosophy (I),index_P.html,9
+PHI,310,PHI 310,American Philosophy (I),index_P.html,9
+PHI,312,PHI 312,Phenomenology,index_P.html,9
+PHI,320,PHI 320,Metaphysics (II),index_P.html,9
+PHI,325,PHI 325,Contemporary Philosophies of Language (II),index_P.html,9
+PHI,330,PHI 330,Topics in Advanced Symbolic Logic (II),index_P.html,9
+PHI,332,PHI 332,Theories of Knowledge (II),index_P.html,9
+PHI,335,PHI 335,Philosophy of Time (II),index_P.html,9
+PHI,336,PHI 336,Philosophy of Religion (II),index_P.html,9
+PHI,340,PHI 340,Philosophical Traditions of East Asia (I),index_P.html,9
+PHI,344,PHI 344,Japanese Thought and Philosophy (I),index_P.html,9
+PHI,347,PHI 347,Hermeneutics and Deconstruction (II),index_P.html,9
+PHI,353,PHI 353,Philosophy of Mind (II),index_P.html,9
+PHI,362,PHI 362,Philosophy of Biology,index_P.html,9
+PHI,363,PHI 363,Philosophy of the Social Sciences (III),index_P.html,9
+PHI,364,PHI 364,Philosophy of Technology (III),index_P.html,9
+PHI,365,PHI 365,Philosophy and Computers (III),index_P.html,9
+PHI,366,PHI 366,Philosophy of the Environment (III),index_P.html,9
+PHI,367,PHI 367,Philosophy of War and Peace (III),index_P.html,9
+PHI,368,PHI 368,Philosophy of Science (III),index_P.html,9
+PHI,369,PHI 369,Philosophy of Mathematics (III),index_P.html,9
+PHI,370,PHI 370,Philosophical Psychology (III),index_P.html,9
+PHI,371,PHI 371,Literature and Justice (III),index_P.html,9
+PHI,372,PHI 372,Ethical Inquiry (II),index_P.html,9
+PHI,373,PHI 373,Philosophy in Relation to Other Disciplines (III),index_P.html,9
+PHI,374,PHI 374,Bioethics,index_P.html,9
+PHI,375,PHI 375,Philosophy of Law (III),index_P.html,9
+PHI,376,PHI 376,Philosophy and Medicine (III),index_P.html,9
+PHI,377,PHI 377,Contemporary Political Philosophy (II),index_P.html,9
+PHI,378,PHI 378,Philosophical Topics in Asian American History (III),index_P.html,9
+PHI,379,PHI 379,Philosophy of Race (III),index_P.html,9
+PHI,380,PHI 380,Literature and Philosophy (III),index_P.html,9
+PHI,381,PHI 381,Aesthetics (II),index_P.html,9
+PHI,382,PHI 382,"The Quantum Moment: Quantum Mechanics in Philosophy, Culture, and Life (III)",index_P.html,9
+PHI,384,PHI 384,Advanced Topics in Feminist Philosophy (III),index_P.html,9
+PHI,390,PHI 390,"Topics in Philosophy (either I, II, or III)",index_P.html,9
+PHI,395,PHI 395,Junior Seminar,index_P.html,9
+PHI,400,PHI 400,Advanced Seminar on Ancient Western Philosophy,index_P.html,9
+PHI,401,PHI 401,Individual Systems of the Great Philosophers (I),index_P.html,9
+PHI,402,PHI 402,Analysis of Philosophic Texts (I),index_P.html,9
+PHI,406,PHI 406,Advanced Seminar on Modern Western Philosophy,index_P.html,9
+PHI,420,PHI 420,"Advanced Topics in Philosophy (either I, II, or III)",index_P.html,9
+PHI,421,PHI 421,Language and Reality,index_P.html,9
+PHI,422,PHI 422,Freedom and Creativity,index_P.html,9
+PHI,444,PHI 444,Experiential Learning,index_P.html,9
+PHI,458,PHI 458,Speak Effectively Before an Audience,index_P.html,9
+PHI,459,PHI 459,Write Effectively in Philosophy,index_P.html,9
+PHI,472,PHI 472,Topics in Asian Philosophy (I),index_P.html,9
+PHI,473,PHI 473,Orientalism,index_P.html,9
+PHI,475,PHI 475,Undergraduate Teaching Practicum I,index_P.html,9
+PHI,476,PHI 476,Undergraduate Teaching Practicum II,index_P.html,9
+PHI,487,PHI 487,Readings and Research in Philosophy (II),index_P.html,9
+PHI,489,PHI 489,Readings and Research in the History of Philosophy (I),index_P.html,9
+PHI,490,PHI 490,Readings and Research in Philosophical Investigations of Other Disciplines (III),index_P.html,9
+PHI,495,PHI 495,Philosophy Honors Thesis,index_P.html,9
+PHY,112,PHY 112,"Light, Color, and Vision",index_P.html,10
+PHY,113,PHY 113,Physics of Sports,index_P.html,10
+PHY,115,PHY 115,Physics of Sports Laboratory,index_P.html,10
+PHY,119,PHY 119,Physics for Environmental Studies,index_P.html,10
+PHY,121,PHY 121,Physics for the Life Sciences I,index_P.html,10
+PHY,122,PHY 122,Physics for the Life Sciences II,index_P.html,10
+PHY,125,PHY 125,Classical Physics A,index_P.html,10
+PHY,126,PHY 126,Classical Physics B,index_P.html,10
+PHY,127,PHY 127,Classical Physics C,index_P.html,10
+PHY,131,PHY 131,Classical Physics I,index_P.html,10
+PHY,132,PHY 132,Classical Physics II,index_P.html,10
+PHY,133,PHY 133,Classical Physics Laboratory I,index_P.html,10
+PHY,134,PHY 134,Classical Physics Laboratory II,index_P.html,10
+PHY,141,PHY 141,Classical Physics I: Honors,index_P.html,10
+PHY,142,PHY 142,Classical Physics II: Honors,index_P.html,10
+PHY,153,PHY 153,Data Analysis for Physics and Astronomy with Python,index_P.html,10
+PHY,191,PHY 191,Transitional Study,index_P.html,10
+PHY,192,PHY 192,Transitional Study,index_P.html,10
+PHY,231,PHY 231,Physics for Future Presidents,index_P.html,10
+PHY,237,PHY 237,World Climate and Atmosphere,index_P.html,10
+PHY,251,PHY 251,Modern Physics,index_P.html,10
+PHY,252,PHY 252,Modern Physics Laboratory,index_P.html,10
+PHY,277,PHY 277,Computation for Physics and Astronomy,index_P.html,10
+PHY,287,PHY 287,Introduction to Research,index_P.html,10
+PHY,291,PHY 291,Transitional Study,index_P.html,10
+PHY,300,PHY 300,Waves and Optics,index_P.html,10
+PHY,301,PHY 301,Electromagnetic Theory I,index_P.html,10
+PHY,302,PHY 302,Electromagnetic Theory II,index_P.html,10
+PHY,303,PHY 303,Mechanics,index_P.html,10
+PHY,306,PHY 306,"Thermodynamics, Kinetic Theory, and Statistical Mechanics",index_P.html,10
+PHY,307,PHY 307,Physical and Mathematical Foundations of Quantum Mechanics,index_P.html,10
+PHY,308,PHY 308,Quantum Physics,index_P.html,10
+PHY,311,PHY 311,Connections in Science,index_P.html,10
+PHY,313,PHY 313,Mystery of Matter,index_P.html,10
+PHY,335,PHY 335,Electronics and Instrumentation Laboratory,index_P.html,10
+PHY,382,PHY 382,"The Quantum Moment: Quantum Mechanics in Philosophy, Culture, and Life (III)",index_P.html,10
+PHY,390,PHY 390,Special Topics in Physics,index_P.html,10
+PHY,405,PHY 405,Advanced Quantum Physics,index_P.html,10
+PHY,408,PHY 408,Relativity,index_P.html,10
+PHY,420,PHY 420,Introduction to Accelerator Science and Technology,index_P.html,10
+PHY,431,PHY 431,Nuclear and Particle Physics,index_P.html,10
+PHY,444,PHY 444,Experiential Learning,index_P.html,10
+PHY,445,PHY 445,Senior Laboratory,index_P.html,10
+PHY,447,PHY 447,Tutorial in Advanced Topics,index_P.html,10
+PHY,451,PHY 451,Quantum Electronics,index_P.html,10
+PHY,452,PHY 452,Atomic Physics and Lasers,index_P.html,10
+PHY,458,PHY 458,Speak Effectively Before an Audience,index_P.html,10
+PHY,459,PHY 459,Write Effectively in Physics,index_P.html,10
+PHY,472,PHY 472,Solid-State Physics,index_P.html,10
+PHY,475,PHY 475,Undergraduate Teaching Practicum,index_P.html,10
+PHY,487,PHY 487,Research,index_P.html,10
+POL,101,POL 101,World Politics,index_P.html,11
+POL,102,POL 102,Introduction to American Government,index_P.html,11
+POL,103,POL 103,Introduction to Comparative Politics,index_P.html,11
+POL,201,POL 201,Introduction to Statistical Methods in Political Science,index_P.html,11
+POL,214,POL 214,Modern Latin America,index_P.html,11
+POL,216,POL 216,History of U.S.-Latin American Relations,index_P.html,11
+POL,270,POL 270,Experiments in Political Science,index_P.html,11
+POL,301,POL 301,Democratization,index_P.html,11
+POL,302,POL 302,Politics of Latin America,index_P.html,11
+POL,303,POL 303,Gender and Politics in Global Perspective,index_P.html,11
+POL,304,POL 304,Comparative Political Institutions,index_P.html,11
+POL,305,POL 305,Government and Politics of the United Kingdom,index_P.html,11
+POL,308,POL 308,Women Islam and Political Change in Africa,index_P.html,11
+POL,309,POL 309,Politics in the European Union,index_P.html,11
+POL,310,POL 310,Immigration and Refugee Politics,index_P.html,11
+POL,311,POL 311,Introduction to International Law,index_P.html,11
+POL,313,POL 313,Problems of International Relations,index_P.html,11
+POL,317,POL 317,American Election Campaigns,index_P.html,11
+POL,318,POL 318,Voters and Elections,index_P.html,11
+POL,319,POL 319,Business Law,index_P.html,11
+POL,320,POL 320,Constitutional Law and Politics: United States,index_P.html,11
+POL,322,POL 322,The Presidency in the American Political System,index_P.html,11
+POL,323,POL 323,U.S. Congress,index_P.html,11
+POL,324,POL 324,American Political Parties and Pressure Groups,index_P.html,11
+POL,325,POL 325,Civil Liberties and Civil Rights,index_P.html,11
+POL,327,POL 327,Urban Politics,index_P.html,11
+POL,328,POL 328,Criminal Law,index_P.html,11
+POL,330,POL 330,Gender Issues in the Law,index_P.html,11
+POL,332,POL 332,Politics of Criminal Due Process,index_P.html,11
+POL,333,POL 333,Environmental Law,index_P.html,11
+POL,334,POL 334,Modern Terrorism,index_P.html,11
+POL,336,POL 336,U.S. Foreign Policy,index_P.html,11
+POL,337,POL 337,The Politics of Africa,index_P.html,11
+POL,338,POL 338,"Contemporary India: History, Politics, and Diplomacy",index_P.html,11
+POL,339,POL 339,"Contemporary China: History, Politics, and Diplomacy",index_P.html,11
+POL,344,POL 344,American Political Ideology and Public Opinion,index_P.html,11
+POL,346,POL 346,Political Psychology,index_P.html,11
+POL,347,POL 347,Women and Politics,index_P.html,11
+POL,348,POL 348,Political Beliefs and Judgments,index_P.html,11
+POL,349,POL 349,Social Psychology and Law,index_P.html,11
+POL,350,POL 350,Contemporary European Political Theory,index_P.html,11
+POL,351,POL 351,Social Surveys in Contemporary Society,index_P.html,11
+POL,352,POL 352,Current Political Events,index_P.html,11
+POL,353,POL 353,Contemporary Race Relations in American Politics,index_P.html,11
+POL,359,POL 359,Public Policy and Administration,index_P.html,11
+POL,365,POL 365,Economy and Democracy,index_P.html,11
+POL,366,POL 366,Press & the Presidency,index_P.html,11
+POL,367,POL 367,Mass Media in American Politics,index_P.html,11
+POL,368,POL 368,Social Networks and Politics,index_P.html,11
+POL,369,POL 369,Introduction to Political Informatics,index_P.html,11
+POL,371,POL 371,Politics of Climate Change,index_P.html,11
+POL,373,POL 373,The Biology of Politics,index_P.html,11
+POL,374,POL 374,Global Issues in the United Nations,index_P.html,11
+POL,375,POL 375,The Political Animal,index_P.html,11
+POL,378,POL 378,Introduction to Torts,index_P.html,11
+POL,379,POL 379,Federal Government Power,index_P.html,11
+POL,380,POL 380,Government and Politics of the Middle East,index_P.html,11
+POL,390,POL 390,Topics in Political Science,index_P.html,11
+POL,401,POL 401,Seminar in Advanced Topics,index_P.html,11
+POL,402,POL 402,Advanced Seminar in Political Psychology,index_P.html,11
+POL,447,POL 447,Directed Readings in Political Science,index_P.html,11
+POL,458,POL 458,Speak Effectively Before an Audience,index_P.html,11
+POL,459,POL 459,Write Effectively in Political Science,index_P.html,11
+POL,475,POL 475,Undergraduate Teaching Practicum I,index_P.html,11
+POL,476,POL 476,Undergraduate Teaching Practicum II,index_P.html,11
+POL,477,POL 477,Qualitative & Mixed Methods,index_P.html,11
+POL,487,POL 487,Directed Research,index_P.html,11
+POL,488,POL 488,Internship,index_P.html,11
+POL,489,POL 489,Washington or Albany Internship,index_P.html,11
+POL,490,POL 490,Washington or Albany Seminar,index_P.html,11
+POL,495,POL 495,Senior Honors Project in Political Science,index_P.html,11
+POL,496,POL 496,Senior Honors Project in Political Science,index_P.html,11
+POR,111,POR 111,Elementary Portuguese I,index_P.html,12
+POR,112,POR 112,Elementary Portuguese II,index_P.html,12
+POR,411,POR 411,Portuguese for Spanish Speakers,index_P.html,12
+PSY,103,PSY 103,Introduction to Psychology,index_P.html,15
+PSY,201,PSY 201,Statistical Methods in Psychology,index_P.html,15
+PSY,220,PSY 220,Survey in Developmental Psychology,index_P.html,15
+PSY,230,PSY 230,Survey in Abnormal and Clinical Psychology,index_P.html,15
+PSY,240,PSY 240,Survey in Social Psychology,index_P.html,15
+PSY,250,PSY 250,Survey in Biopsychology,index_P.html,15
+PSY,260,PSY 260,Survey in Cognition and Perception,index_P.html,15
+PSY,273,PSY 273,Supervised Research in Psychology,index_P.html,15
+PSY,283,PSY 283,Applications and Community Service,index_P.html,15
+PSY,301,PSY 301,Advanced Statistics,index_P.html,15
+PSY,310,PSY 310,Research and Writing in Psychology,index_P.html,15
+PSY,327,PSY 327,Human Growth and Development in the Educational Context,index_P.html,15
+PSY,333,PSY 333,Mood Disorders,index_P.html,15
+PSY,334,PSY 334,Autism Spectrum Disorders,index_P.html,15
+PSY,338,PSY 338,Abnormal Child Psychology,index_P.html,15
+PSY,339,PSY 339,Special Topics in Clinical Psychology,index_P.html,15
+PSY,341,PSY 341,Psychology of Prejudice,index_P.html,15
+PSY,342,PSY 342,Psychology of Women's Health,index_P.html,15
+PSY,345,PSY 345,Theories of Personality,index_P.html,15
+PSY,346,PSY 346,Health Psychology,index_P.html,15
+PSY,347,PSY 347,Psychology of Women,index_P.html,15
+PSY,348,PSY 348,Special Topics in Social Psychology,index_P.html,15
+PSY,349,PSY 349,Special Topics in Social Psychology,index_P.html,15
+PSY,354,PSY 354,Neurobiology of Learning and Memory,index_P.html,15
+PSY,355,PSY 355,Human Brain Function,index_P.html,15
+PSY,356,PSY 356,Physiological Psychology,index_P.html,15
+PSY,358,PSY 358,Special Topics in Biopsychology,index_P.html,15
+PSY,359,PSY 359,Special Topics in Biopsychology,index_P.html,15
+PSY,364,PSY 364,Judgment and Decision Making,index_P.html,15
+PSY,365,PSY 365,The Psychology of Language,index_P.html,15
+PSY,367,PSY 367,Memory,index_P.html,15
+PSY,368,PSY 368,Sensation and Perception,index_P.html,15
+PSY,369,PSY 369,Special Topics in Cognition and Perception,index_P.html,15
+PSY,375,PSY 375,History and Systems of Psychology,index_P.html,15
+PSY,380,PSY 380,Research Lab: Human Cognition,index_P.html,15
+PSY,382,PSY 382,Research Lab: Social Psychology,index_P.html,15
+PSY,444,PSY 444,Experiential Learning,index_P.html,15
+PSY,447,PSY 447,Readings in Psychology,index_P.html,15
+PSY,459,PSY 459,Write Effectively in Psychology,index_P.html,15
+PSY,475,PSY 475,Undergraduate Teaching Practicum I,index_P.html,15
+PSY,476,PSY 476,Undergraduate Teaching Practicum II,index_P.html,15
+PSY,487,PSY 487,Independent Research in Psychology,index_P.html,15
+PSY,488,PSY 488,Internship,index_P.html,15
+PSY,495,PSY 495,Senior Honors Seminar,index_P.html,15
+PSY,496,PSY 496,Senior Honors Seminar,index_P.html,15
