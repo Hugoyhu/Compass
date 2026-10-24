@@ -55,6 +55,8 @@ export interface StudentRecord {
   attempts: CourseAttempt[];
   /** Future terms the student intends to take, in order. */
   plan: PlannedTerm[];
+  /** The fewest credits the student wants in a fall or spring term; defaults to full time (12). */
+  minTermCredits?: number;
 }
 
 // ---------------------------------------------------------------------------
