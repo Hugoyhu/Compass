@@ -63,7 +63,7 @@ Environment variables (`.env` locally, the host's settings in production):
 ## Student records
 
 - **Storage:** a signed-in student's record (courses, grades, AP/transfer credit, major, current term) is stored in the database. A guest's record is stored only in their browser, as compact cookies split into chunks. Either way, server components run the audit with the visitor's data.
-- **Semester Planner** (`/planner`): a term-by-term plan through graduation, stored with the record (run `npm run db:migrate` to add its column). "Generate" fills it from the next-semester proposal; each term is checked for prerequisites, credit load, and whether courses are on that term's schedule.
+- **Semester Planner** (`/planner`): a term-by-term plan through graduation, stored with the record (run `npm run db:migrate` to add its columns). "Generate" fills it from the next-semester proposal, keeping each fall/spring term at or above the student's minimum credits (12 by default); each term is checked for prerequisites, credit load, and whether courses are on that term's schedule.
 - **My Courses** (`/record`): add, edit, and remove courses, choose a major, upload a transcript, load the sample student, or clear the record.
 - **Transcript upload:** Claude Haiku 5.5 reads the PDF and transcribes course rows into a small flat schema (structured outputs). Plain code then interprets them: AP code suffixes, grades, terms, in-progress detection, printed SBC tags. The student reviews every course before saving. The PDF isn't stored, and ID numbers are never extracted. The fictional fixture in `tests/fixtures/transcript/` mirrors the real layout; never commit real transcripts.
 

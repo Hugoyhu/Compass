@@ -29,13 +29,23 @@ import type {
   SbcCode,
   StudentRecord,
 } from "@/lib/domain/types";
-import { isPassing, meetsMinGrade, standingFor, usableAttempts } from "./prerequisites";
+import {
+  isPassing,
+  meetsMinGrade,
+  standingFor,
+  usableAttempts,
+} from "./prerequisites";
 
 // ---------------------------------------------------------------------------
 // Result types
 // ---------------------------------------------------------------------------
 
-export type RequirementStatus = "satisfied" | "in-progress" | "partial" | "not-started" | "needs-review";
+export type RequirementStatus =
+  | "satisfied"
+  | "in-progress"
+  | "partial"
+  | "not-started"
+  | "needs-review";
 
 export interface AppliedCourse {
   code: CourseCode;
@@ -62,7 +72,10 @@ export type MissingItem =
   | { kind: "review"; text: string };
 
 export interface RequirementResult {
-  requirement: Pick<ProgramRequirement, "id" | "label" | "title" | "sourceText">;
+  requirement: Pick<
+    ProgramRequirement,
+    "id" | "label" | "title" | "sourceText"
+  >;
   programId: string;
   status: RequirementStatus;
   unit: "courses" | "credits";
@@ -81,7 +94,12 @@ export interface RequirementResult {
   rule: Rule;
 }
 
-export type PolicyStatus = "satisfied" | "in-progress" | "not-met" | "pending" | "info";
+export type PolicyStatus =
+  | "satisfied"
+  | "in-progress"
+  | "not-met"
+  | "pending"
+  | "info";
 
 export interface PolicyResult {
   policy: ProgramPolicy;
@@ -135,7 +153,17 @@ export interface DegreeAudit {
 // ---------------------------------------------------------------------------
 
 const GRADE_POINTS: Record<LetterGrade, number> = {
-  A: 4, "A-": 3.67, "B+": 3.33, B: 3, "B-": 2.67, "C+": 2.33, C: 2, "C-": 1.67, "D+": 1.33, D: 1, F: 0,
+  A: 4,
+  "A-": 3.67,
+  "B+": 3.33,
+  B: 3,
+  "B-": 2.67,
+  "C+": 2.33,
+  C: 2,
+  "C-": 1.67,
+  "D+": 1.33,
+  D: 1,
+  F: 0,
 };
 
 function parseCode(code: CourseCode): { subject: string; number: number } {
@@ -143,13 +171,22 @@ function parseCode(code: CourseCode): { subject: string; number: number } {
   return { subject, number: Number(number) };
 }
 
-export function matchesSelector(code: CourseCode, course: CourseRecord | undefined, sel: CourseSelector): boolean {
+export function matchesSelector(
+  code: CourseCode,
+  course: CourseRecord | undefined,
+  sel: CourseSelector,
+): boolean {
   const { subject, number } = parseCode(code);
   const listed =
     (sel.courses?.includes(code) ?? false) ||
-    (sel.ranges?.some((r) => r.subject === subject && number >= r.from && number <= r.to) ?? false);
+    (sel.ranges?.some(
+      (r) => r.subject === subject && number >= r.from && number <= r.to,
+    ) ??
+      false);
   const hasFilters =
-    sel.subjects !== undefined || sel.minNumber !== undefined || sel.maxNumber !== undefined;
+    sel.subjects !== undefined ||
+    sel.minNumber !== undefined ||
+    sel.maxNumber !== undefined;
   const filtered =
     hasFilters &&
     (!sel.subjects || sel.subjects.includes(subject)) &&
@@ -158,12 +195,22 @@ export function matchesSelector(code: CourseCode, course: CourseRecord | undefin
 
   if (!listed && !filtered) return false;
   if (sel.excludeCourses?.includes(code)) return false;
-  if (sel.minCredits !== undefined && course && course.credits.max < sel.minCredits) return false;
-  if (sel.excludeAttributes?.some((a) => course?.attributes.includes(a))) return false;
+  if (
+    sel.minCredits !== undefined &&
+    course &&
+    course.credits.max < sel.minCredits
+  )
+    return false;
+  if (sel.excludeAttributes?.some((a) => course?.attributes.includes(a)))
+    return false;
   return true;
 }
 
-function statusFor(required: number, completed: number, inProgress: number): RequirementStatus {
+function statusFor(
+  required: number,
+  completed: number,
+  inProgress: number,
+): RequirementStatus {
   if (completed >= required) return "satisfied";
   if (completed + inProgress >= required) return "in-progress";
   if (completed + inProgress > 0) return "partial";
@@ -171,13 +218,20 @@ function statusFor(required: number, completed: number, inProgress: number): Req
 }
 
 /** Best usable attempt per course: completed beats in-progress; higher grade beats lower. */
-function bestAttempts(attempts: CourseAttempt[]): Map<CourseCode, CourseAttempt> {
+function bestAttempts(
+  attempts: CourseAttempt[],
+): Map<CourseCode, CourseAttempt> {
   const rank = (a: CourseAttempt) =>
-    a.status === "in-progress" ? -1 : a.grade && a.grade in GRADE_POINTS ? GRADE_POINTS[a.grade as LetterGrade] : 5;
+    a.status === "in-progress"
+      ? -1
+      : a.grade && a.grade in GRADE_POINTS
+        ? GRADE_POINTS[a.grade as LetterGrade]
+        : 5;
   const best = new Map<CourseCode, CourseAttempt>();
   for (const attempt of usableAttempts(attempts)) {
     const current = best.get(attempt.code);
-    if (!current || rank(attempt) > rank(current)) best.set(attempt.code, attempt);
+    if (!current || rank(attempt) > rank(current))
+      best.set(attempt.code, attempt);
   }
   return best;
 }
@@ -216,14 +270,18 @@ function creditsOf(ctx: Ctx, attempt: CourseAttempt): number {
 }
 
 function toApplied(ctx: Ctx, attempt: CourseAttempt): AppliedCourse {
-  const substitution = ctx.scope.find((id) => id.startsWith(SUBSTITUTION_SCOPE));
+  const substitution = ctx.scope.find((id) =>
+    id.startsWith(SUBSTITUTION_SCOPE),
+  );
   return {
     code: attempt.code,
     credits: creditsOf(ctx, attempt),
     state: attempt.status,
     source: attempt.source,
     grade: attempt.grade,
-    ...(substitution && { viaSubstitution: substitution.slice(SUBSTITUTION_SCOPE.length) }),
+    ...(substitution && {
+      viaSubstitution: substitution.slice(SUBSTITUTION_SCOPE.length),
+    }),
   };
 }
 
@@ -231,15 +289,31 @@ function toApplied(ctx: Ctx, attempt: CourseAttempt): AppliedCourse {
 function meetsGradePolicies(ctx: Ctx, attempt: CourseAttempt): boolean {
   if (attempt.status === "in-progress" || !attempt.grade) return true;
   for (const policy of ctx.policies) {
-    if (!("appliesTo" in policy) || !policy.appliesTo.some((id) => ctx.scope.includes(id))) continue;
-    if (policy.type === "minGrade" && !meetsMinGrade(attempt.grade, policy.grade)) {
-      ctx.issues.push({ policyType: policy.type, message: `${attempt.code}: ${attempt.grade} is below the ${policy.grade} minimum` });
+    if (
+      !("appliesTo" in policy) ||
+      !policy.appliesTo.some((id) => ctx.scope.includes(id))
+    )
+      continue;
+    if (
+      policy.type === "minGrade" &&
+      !meetsMinGrade(attempt.grade, policy.grade)
+    ) {
+      ctx.issues.push({
+        policyType: policy.type,
+        message: `${attempt.code}: ${attempt.grade} is below the ${policy.grade} minimum`,
+      });
       ctx.rejected.add(attempt.code);
       return false;
     }
     // Transfer/AP credit ("T") is not a pass/no-credit grade, so it is accepted here.
-    if (policy.type === "letterGradeRequired" && (attempt.grade === "P" || attempt.grade === "NC")) {
-      ctx.issues.push({ policyType: policy.type, message: `${attempt.code}: must be taken for a letter grade` });
+    if (
+      policy.type === "letterGradeRequired" &&
+      (attempt.grade === "P" || attempt.grade === "NC")
+    ) {
+      ctx.issues.push({
+        policyType: policy.type,
+        message: `${attempt.code}: must be taken for a letter grade`,
+      });
       ctx.rejected.add(attempt.code);
       return false;
     }
@@ -255,11 +329,21 @@ function available(ctx: Ctx, code: CourseCode): CourseAttempt | undefined {
 
 function claim(ctx: Ctx, attempt: CourseAttempt, applied: AppliedCourse) {
   ctx.used.add(attempt.code);
-  for (const id of ctx.scope) ctx.appliedBy.set(id, [...(ctx.appliedBy.get(id) ?? []), applied]);
+  for (const id of ctx.scope)
+    ctx.appliedBy.set(id, [...(ctx.appliedBy.get(id) ?? []), applied]);
 }
 
 function emptyResult(unit: NodeResult["unit"] = "courses"): NodeResult {
-  return { unit, required: 0, completed: 0, inProgress: 0, applied: [], missing: [], manualChecks: [], needsReview: false };
+  return {
+    unit,
+    required: 0,
+    completed: 0,
+    inProgress: 0,
+    applied: [],
+    missing: [],
+    manualChecks: [],
+    needsReview: false,
+  };
 }
 
 function forkCtx(ctx: Ctx): Ctx {
@@ -284,7 +368,11 @@ function evaluateNode(ctx: Ctx, rule: Rule): NodeResult {
     case "course": {
       const result = { ...emptyResult(), required: 1 };
       const attempt = available(ctx, rule.code);
-      if (!attempt) return { ...result, missing: [{ kind: "course", options: [rule.code] }] };
+      if (!attempt)
+        return {
+          ...result,
+          missing: [{ kind: "course", options: [rule.code] }],
+        };
       const applied = toApplied(ctx, attempt);
       claim(ctx, attempt, applied);
       return {
@@ -314,14 +402,18 @@ function evaluateNode(ctx: Ctx, rule: Rule): NodeResult {
       // Score each alternative on a throwaway context, then commit the best.
       const scores = rule.rules.map((alt) => {
         const r = evaluateRule(forkCtx(ctx), alt);
-        return r.required === 0 ? 0 : (r.completed + 0.99 * r.inProgress) / r.required;
+        return r.required === 0
+          ? 0
+          : (r.completed + 0.99 * r.inProgress) / r.required;
       });
       const bestScore = Math.max(...scores);
       const best = rule.rules[scores.indexOf(bestScore)];
       const result = evaluateRule(ctx, best);
       // Nothing started and every alternative is a single course: offer them all as one slot.
       if (bestScore === 0 && rule.rules.every((alt) => alt.type === "course")) {
-        const options = rule.rules.map((alt) => (alt.type === "course" ? alt.code : ""));
+        const options = rule.rules.map((alt) =>
+          alt.type === "course" ? alt.code : "",
+        );
         return { ...result, missing: [{ kind: "course", options }] };
       }
       return result;
@@ -331,42 +423,71 @@ function evaluateNode(ctx: Ctx, rule: Rule): NodeResult {
       return evaluateChoose(ctx, rule);
 
     case "unparsed":
-      return { ...emptyResult(), required: 1, missing: [{ kind: "review", text: rule.text }], needsReview: true };
+      return {
+        ...emptyResult(),
+        required: 1,
+        missing: [{ kind: "review", text: rule.text }],
+        needsReview: true,
+      };
   }
 }
 
-function evaluateChoose(ctx: Ctx, rule: Extract<Rule, { type: "choose" }>): NodeResult {
+function evaluateChoose(
+  ctx: Ctx,
+  rule: Extract<Rule, { type: "choose" }>,
+): NodeResult {
   const unit = rule.count !== undefined ? "courses" : "credits";
   const required = rule.count ?? rule.credits ?? 0;
   const constraints = rule.constraints ?? [];
 
   // Courses that may not be used here.
   const exclude = new Set<CourseCode>();
-  for (const id of rule.from.excludeUsedBy ?? []) ctx.appliedBy.get(id)?.forEach((a) => exclude.add(a.code));
+  for (const id of rule.from.excludeUsedBy ?? [])
+    ctx.appliedBy.get(id)?.forEach((a) => exclude.add(a.code));
   for (const k of constraints) {
     if (k.type !== "notEquivalentTo") continue;
     for (const a of ctx.appliedBy.get(k.requirementId) ?? []) {
       exclude.add(a.code);
       ctx.catalog.get(a.code)?.equivalents.forEach((e) => exclude.add(e));
       // Equivalence may be recorded on either course.
-      for (const course of ctx.catalog.values()) if (course.equivalents.includes(a.code)) exclude.add(course.code);
+      for (const course of ctx.catalog.values())
+        if (course.equivalents.includes(a.code)) exclude.add(course.code);
     }
   }
 
-  const minFrom = constraints.filter((k): k is Extract<ChooseConstraint, { type: "minFrom" }> => k.type === "minFrom");
+  const minFrom = constraints.filter(
+    (k): k is Extract<ChooseConstraint, { type: "minFrom" }> =>
+      k.type === "minFrom",
+  );
   const candidates = [...ctx.attempts.values()]
-    .filter((a) => !exclude.has(a.code) && (ctx.allowReuse || !ctx.used.has(a.code)))
+    .filter(
+      (a) => !exclude.has(a.code) && (ctx.allowReuse || !ctx.used.has(a.code)),
+    )
     .filter((a) => matchesSelector(a.code, ctx.catalog.get(a.code), rule.from))
     .sort((a, b) => {
       // Courses that satisfy a minimum-from constraint first, then completed before in-progress.
-      const inMin = (x: CourseAttempt) => (minFrom.some((k) => matchesSelector(x.code, ctx.catalog.get(x.code), k.from)) ? 0 : 1);
-      return inMin(a) - inMin(b) || Number(a.status === "in-progress") - Number(b.status === "in-progress");
+      const inMin = (x: CourseAttempt) =>
+        minFrom.some((k) =>
+          matchesSelector(x.code, ctx.catalog.get(x.code), k.from),
+        )
+          ? 0
+          : 1;
+      return (
+        inMin(a) - inMin(b) ||
+        Number(a.status === "in-progress") - Number(b.status === "in-progress")
+      );
     });
 
   const result: NodeResult = { ...emptyResult(unit), required };
-  const capUsage = new Map<ChooseConstraint, { courses: number; credits: number }>();
+  const capUsage = new Map<
+    ChooseConstraint,
+    { courses: number; credits: number }
+  >();
   const groupsUsed = new Set<number>();
-  const measure = () => (unit === "courses" ? result.applied.length : result.applied.reduce((s, a) => s + a.credits, 0));
+  const measure = () =>
+    unit === "courses"
+      ? result.applied.length
+      : result.applied.reduce((s, a) => s + a.credits, 0);
 
   for (const attempt of candidates) {
     if (measure() >= required) break;
@@ -375,7 +496,8 @@ function evaluateChoose(ctx: Ctx, rule: Extract<Rule, { type: "choose" }>): Node
 
     const caps = constraints.filter(
       (k): k is Extract<ChooseConstraint, { type: "maxFrom" }> =>
-        k.type === "maxFrom" && matchesSelector(attempt.code, ctx.catalog.get(attempt.code), k.from),
+        k.type === "maxFrom" &&
+        matchesSelector(attempt.code, ctx.catalog.get(attempt.code), k.from),
     );
     const overCap = caps.some((k) => {
       const usage = capUsage.get(k) ?? { courses: 0, credits: 0 };
@@ -387,7 +509,11 @@ function evaluateChoose(ctx: Ctx, rule: Extract<Rule, { type: "choose" }>): Node
     if (overCap) continue;
 
     const groupIndexes = constraints.flatMap((k) =>
-      k.type === "onePerGroup" ? k.groups.map((g, i) => (g.includes(attempt.code) ? i : -1)).filter((i) => i >= 0) : [],
+      k.type === "onePerGroup"
+        ? k.groups
+            .map((g, i) => (g.includes(attempt.code) ? i : -1))
+            .filter((i) => i >= 0)
+        : [],
     );
     if (groupIndexes.some((i) => groupsUsed.has(i))) continue;
 
@@ -396,66 +522,105 @@ function evaluateChoose(ctx: Ctx, rule: Extract<Rule, { type: "choose" }>): Node
     result.applied.push(applied);
     caps.forEach((k) => {
       const usage = capUsage.get(k) ?? { courses: 0, credits: 0 };
-      capUsage.set(k, { courses: usage.courses + 1, credits: usage.credits + credits });
+      capUsage.set(k, {
+        courses: usage.courses + 1,
+        credits: usage.credits + credits,
+      });
     });
     groupIndexes.forEach((i) => groupsUsed.add(i));
   }
 
   const amount = (a: AppliedCourse) => (unit === "courses" ? 1 : a.credits);
-  result.completed = result.applied.filter((a) => a.state === "completed").reduce((s, a) => s + amount(a), 0);
-  result.inProgress = result.applied.filter((a) => a.state === "in-progress").reduce((s, a) => s + amount(a), 0);
+  result.completed = result.applied
+    .filter((a) => a.state === "completed")
+    .reduce((s, a) => s + amount(a), 0);
+  result.inProgress = result.applied
+    .filter((a) => a.state === "in-progress")
+    .reduce((s, a) => s + amount(a), 0);
 
   // A minimum-from shortfall keeps the requirement open even when the count is reached.
   for (const k of minFrom) {
-    const have = result.applied.filter((a) => matchesSelector(a.code, ctx.catalog.get(a.code), k.from)).length;
+    const have = result.applied.filter((a) =>
+      matchesSelector(a.code, ctx.catalog.get(a.code), k.from),
+    ).length;
     if (have < k.minCourses) {
       const deficit = k.minCourses - have;
       result.completed = Math.min(result.completed, required - deficit);
-      result.inProgress = Math.min(result.inProgress, required - deficit - result.completed);
-      result.missing.push({ kind: "choose", remaining: deficit, unit: "courses", pool: k.from, constraints: [], exclude: [...exclude] });
+      result.inProgress = Math.min(
+        result.inProgress,
+        required - deficit - result.completed,
+      );
+      result.missing.push({
+        kind: "choose",
+        remaining: deficit,
+        unit: "courses",
+        pool: k.from,
+        constraints: [],
+        exclude: [...exclude],
+      });
     }
   }
 
   const remaining = required - result.completed - result.inProgress;
   if (remaining > 0) {
-    result.missing.push({ kind: "choose", remaining, unit, pool: rule.from, constraints, exclude: [...exclude] });
+    result.missing.push({
+      kind: "choose",
+      remaining,
+      unit,
+      pool: rule.from,
+      constraints,
+      exclude: [...exclude],
+    });
   }
   return result;
 }
 
 function containsChoose(rule: Rule): boolean {
   if (rule.type === "choose") return true;
-  return (rule.type === "allOf" || rule.type === "anyOf") && rule.rules.some(containsChoose);
+  return (
+    (rule.type === "allOf" || rule.type === "anyOf") &&
+    rule.rules.some(containsChoose)
+  );
 }
 
 /** Requirement ids referenced by a requirement's choose rules. */
 function dependencies(rule: Rule, ruleOwner: Map<string, string>): string[] {
-  if (rule.type === "allOf" || rule.type === "anyOf") return rule.rules.flatMap((r) => dependencies(r, ruleOwner));
+  if (rule.type === "allOf" || rule.type === "anyOf")
+    return rule.rules.flatMap((r) => dependencies(r, ruleOwner));
   if (rule.type !== "choose") return [];
   const ids = [
     ...(rule.from.excludeUsedBy ?? []),
-    ...(rule.constraints ?? []).flatMap((k) => (k.type === "notEquivalentTo" ? [k.requirementId] : [])),
+    ...(rule.constraints ?? []).flatMap((k) =>
+      k.type === "notEquivalentTo" ? [k.requirementId] : [],
+    ),
   ];
   return ids.map((id) => ruleOwner.get(id) ?? id);
 }
 
 function collectRuleIds(rule: Rule, owner: string, into: Map<string, string>) {
   if (rule.id) into.set(rule.id, owner);
-  if (rule.type === "allOf" || rule.type === "anyOf") rule.rules.forEach((r) => collectRuleIds(r, owner, into));
+  if (rule.type === "allOf" || rule.type === "anyOf")
+    rule.rules.forEach((r) => collectRuleIds(r, owner, into));
 }
 
 /** Fixed requirements first, then choose requirements after the ones they reference. */
-function evaluationOrder(requirements: ProgramRequirement[]): ProgramRequirement[] {
+function evaluationOrder(
+  requirements: ProgramRequirement[],
+): ProgramRequirement[] {
   const owner = new Map<string, string>();
   requirements.forEach((req) => {
     owner.set(req.id, req.id);
     collectRuleIds(req.rule, req.id, owner);
   });
-  const pending = [...requirements].sort((a, b) => Number(containsChoose(a.rule)) - Number(containsChoose(b.rule)));
+  const pending = [...requirements].sort(
+    (a, b) => Number(containsChoose(a.rule)) - Number(containsChoose(b.rule)),
+  );
   const done = new Set<string>();
   const order: ProgramRequirement[] = [];
   while (pending.length > 0) {
-    const index = pending.findIndex((req) => dependencies(req.rule, owner).every((d) => done.has(d) || d === req.id));
+    const index = pending.findIndex((req) =>
+      dependencies(req.rule, owner).every((d) => done.has(d) || d === req.id),
+    );
     // A dependency cycle shouldn't happen; fall back to the next requirement rather than looping.
     const [next] = pending.splice(index === -1 ? 0 : index, 1);
     order.push(next);
@@ -469,7 +634,10 @@ const SUBSTITUTION_SCOPE = "substitution:";
 /** The replacement's course codes, when it's one course or an allOf of courses. */
 function replacementCodes(sub: Substitution): CourseCode[] {
   if (sub.with.type === "course") return [sub.with.code];
-  if (sub.with.type === "allOf" && sub.with.rules.every((r) => r.type === "course")) {
+  if (
+    sub.with.type === "allOf" &&
+    sub.with.rules.every((r) => r.type === "course")
+  ) {
     return sub.with.rules.flatMap((r) => (r.type === "course" ? [r.code] : []));
   }
   return [];
@@ -481,11 +649,18 @@ function replacementCodes(sub: Substitution): CourseCode[] {
  * the honors sequence). Ones needing approval, or replacing a rule rather
  * than courses, never apply automatically.
  */
-function activeSubstitutions(program: ProgramDefinition, attempts: Map<CourseCode, CourseAttempt>, planned: Set<CourseCode>): Substitution[] {
+function activeSubstitutions(
+  program: ProgramDefinition,
+  attempts: Map<CourseCode, CourseAttempt>,
+  planned: Set<CourseCode>,
+): Substitution[] {
   return program.substitutions.filter((sub) => {
     if (sub.requiresApproval || sub.replaces.type !== "courses") return false;
     const codes = replacementCodes(sub);
-    return codes.length > 0 && codes.some((code) => attempts.has(code) || planned.has(code));
+    return (
+      codes.length > 0 &&
+      codes.some((code) => attempts.has(code) || planned.has(code))
+    );
   });
 }
 
@@ -509,15 +684,27 @@ function substituteRule(rule: Rule, state: SubstitutionState): Rule | null {
       if (!state.replaced.includes(rule.code)) return rule;
       if (!state.placedIn) {
         state.placedIn = { id: state.requirementId, label: "" };
-        return { ...state.sub.with, id: `${SUBSTITUTION_SCOPE}${state.sub.id}`, ...(state.sub.condition && { manualCheck: state.sub.condition }) };
+        return {
+          ...state.sub.with,
+          id: `${SUBSTITUTION_SCOPE}${state.sub.id}`,
+          ...(state.sub.condition && { manualCheck: state.sub.condition }),
+        };
       }
       // Replaced courses in the same requirement as the replacement need no separate note.
       if (state.requirementId !== state.placedIn.id) {
-        state.covered.set(state.requirementId, [...(state.covered.get(state.requirementId) ?? []), rule.code]);
+        state.covered.set(state.requirementId, [
+          ...(state.covered.get(state.requirementId) ?? []),
+          rule.code,
+        ]);
       }
       return null;
     case "allOf":
-      return { ...rule, rules: rule.rules.map((r) => substituteRule(r, state)).filter((r): r is Rule => r !== null) };
+      return {
+        ...rule,
+        rules: rule.rules
+          .map((r) => substituteRule(r, state))
+          .filter((r): r is Rule => r !== null),
+      };
     case "anyOf": {
       const rules = rule.rules.map((r) => substituteRule(r, state));
       // A covered alternative satisfies the whole choice.
@@ -546,18 +733,32 @@ function layoutSubstitution(
   sub: Substitution,
 ): { requirements: ProgramRequirement[]; layout: SubstitutionLayout | null } {
   if (sub.replaces.type !== "courses") return { requirements, layout: null };
-  const state: SubstitutionState = { sub, replaced: sub.replaces.courses, requirementId: "", covered: new Map() };
+  const state: SubstitutionState = {
+    sub,
+    replaced: sub.replaces.courses,
+    requirementId: "",
+    covered: new Map(),
+  };
   const rewritten = requirements.map((req) => {
     state.requirementId = req.id;
     const hadPlaced = Boolean(state.placedIn);
-    const rule = substituteRule(req.rule, state) ?? { type: "allOf" as const, rules: [] };
+    const rule = substituteRule(req.rule, state) ?? {
+      type: "allOf" as const,
+      rules: [],
+    };
     if (!hadPlaced && state.placedIn) state.placedIn.label = req.label;
     return { ...req, rule };
   });
   if (!state.placedIn) return { requirements, layout: null };
   return {
     requirements: rewritten,
-    layout: { sub, replacement: replacementCodes(sub), replaced: state.replaced, placedIn: state.placedIn, covered: state.covered },
+    layout: {
+      sub,
+      replacement: replacementCodes(sub),
+      replaced: state.replaced,
+      placedIn: state.placedIn,
+      covered: state.covered,
+    },
   };
 }
 
@@ -566,7 +767,9 @@ function layoutSubstitution(
  * student uses it. The Degree Explorer shows alternatives with this, so it
  * matches how the audit applies them.
  */
-export function substitutionLayouts(program: ProgramDefinition): SubstitutionLayout[] {
+export function substitutionLayouts(
+  program: ProgramDefinition,
+): SubstitutionLayout[] {
   return program.substitutions.flatMap((sub) => {
     const { layout } = layoutSubstitution(program.requirements, sub);
     return layout && layout.replacement.length > 0 ? [layout] : [];
@@ -579,22 +782,33 @@ function applySubstitutions(
   substitutions: Substitution[],
 ): { requirements: ProgramRequirement[]; notes: Map<string, string[]> } {
   const notes = new Map<string, string[]>();
-  const note = (id: string, text: string) => notes.set(id, [...(notes.get(id) ?? []), text]);
+  const note = (id: string, text: string) =>
+    notes.set(id, [...(notes.get(id) ?? []), text]);
   for (const sub of substitutions) {
     const result = layoutSubstitution(requirements, sub);
     if (!result.layout) continue;
     requirements = result.requirements;
     const { placedIn, covered, replacement, replaced } = result.layout;
     const codes = replacement.join(", ");
-    note(placedIn.id, `Substitution in use: ${codes} replace ${replaced.join(", ")}.`);
+    note(
+      placedIn.id,
+      `Substitution in use: ${codes} replace ${replaced.join(", ")}.`,
+    );
     for (const [id, codesCovered] of covered) {
-      note(id, `${codesCovered.join(", ")} ${codesCovered.length === 1 ? "is" : "are"} covered by ${codes} (requirement ${placedIn.label}).`);
+      note(
+        id,
+        `${codesCovered.join(", ")} ${codesCovered.length === 1 ? "is" : "are"} covered by ${codes} (requirement ${placedIn.label}).`,
+      );
     }
   }
   return { requirements, notes };
 }
 
-function evaluatePolicies(ctx: Ctx, program: ProgramDefinition, rejectedBy: Map<string, Ctx["issues"]>): PolicyResult[] {
+function evaluatePolicies(
+  ctx: Ctx,
+  program: ProgramDefinition,
+  rejectedBy: Map<string, Ctx["issues"]>,
+): PolicyResult[] {
   const appliedTo = (ids: string[]) => {
     const seen = new Set<string>();
     return ids
@@ -621,11 +835,20 @@ function evaluatePolicies(ctx: Ctx, program: ProgramDefinition, rejectedBy: Map<
       case "minGpa": {
         // Transfer and exam grades don't enter the Stony Brook GPA.
         const graded = appliedTo(policy.appliesTo).filter(
-          (a) => a.state === "completed" && a.source === "sbu" && a.grade && a.grade in GRADE_POINTS,
+          (a) =>
+            a.state === "completed" &&
+            a.source === "sbu" &&
+            a.grade &&
+            a.grade in GRADE_POINTS,
         );
-        if (graded.length === 0) return { policy, status: "pending", detail: "" };
+        if (graded.length === 0)
+          return { policy, status: "pending", detail: "" };
         const credits = graded.reduce((s, a) => s + a.credits, 0);
-        const gpa = graded.reduce((s, a) => s + GRADE_POINTS[a.grade as LetterGrade] * a.credits, 0) / credits;
+        const gpa =
+          graded.reduce(
+            (s, a) => s + GRADE_POINTS[a.grade as LetterGrade] * a.credits,
+            0,
+          ) / credits;
         return {
           policy,
           status: gpa >= policy.gpa ? "satisfied" : "not-met",
@@ -633,21 +856,37 @@ function evaluatePolicies(ctx: Ctx, program: ProgramDefinition, rejectedBy: Map<
         };
       }
       case "residencyCredits": {
-        const applied = appliedTo(policy.appliesTo).filter((a) => a.source === "sbu");
-        const done = applied.filter((a) => a.state === "completed").reduce((s, a) => s + a.credits, 0);
-        const pending = applied.filter((a) => a.state === "in-progress").reduce((s, a) => s + a.credits, 0);
+        const applied = appliedTo(policy.appliesTo).filter(
+          (a) => a.source === "sbu",
+        );
+        const done = applied
+          .filter((a) => a.state === "completed")
+          .reduce((s, a) => s + a.credits, 0);
+        const pending = applied
+          .filter((a) => a.state === "in-progress")
+          .reduce((s, a) => s + a.credits, 0);
         return {
           policy,
-          status: done >= policy.minCredits ? "satisfied" : done + pending >= policy.minCredits ? "in-progress" : "not-met",
+          status:
+            done >= policy.minCredits
+              ? "satisfied"
+              : done + pending >= policy.minCredits
+                ? "in-progress"
+                : "not-met",
           detail: `${done}${pending ? ` + ${pending}` : ""} / ${policy.minCredits} credits`,
         };
       }
       case "residencyRequired": {
         const applied = appliedTo(policy.appliesTo);
-        if (applied.length === 0) return { policy, status: "pending", detail: "" };
+        if (applied.length === 0)
+          return { policy, status: "pending", detail: "" };
         const outside = applied.filter((a) => a.source !== "sbu");
         return outside.length > 0
-          ? { policy, status: "not-met", detail: `${outside.map((a) => a.code).join(", ")} must be taken at Stony Brook` }
+          ? {
+              policy,
+              status: "not-met",
+              detail: `${outside.map((a) => a.code).join(", ")} must be taken at Stony Brook`,
+            }
           : { policy, status: "satisfied", detail: "" };
       }
       case "prerequisiteGrade":
@@ -664,11 +903,20 @@ export function auditProgram(
   program: ProgramDefinition,
   student: StudentRecord,
   catalog: Map<CourseCode, CourseRecord>,
+  /** Courses the student's other programs require outright. */
+  requiredElsewhere: Set<CourseCode> = new Set(),
 ): ProgramAudit {
   const attempts = bestAttempts(student.attempts);
-  const planned = new Set(student.plan.flatMap((t) => t.items.flatMap((i) => ("code" in i ? [i.code] : []))));
+  const planned = new Set(
+    student.plan.flatMap((t) =>
+      t.items.flatMap((i) => ("code" in i ? [i.code] : [])),
+    ),
+  );
   const active = activeSubstitutions(program, attempts, planned);
-  const { requirements: rules, notes } = applySubstitutions(program.requirements, active);
+  const { requirements: rules, notes } = applySubstitutions(
+    program.requirements,
+    active,
+  );
 
   const ctx: Ctx = {
     catalog,
@@ -690,9 +938,17 @@ export function auditProgram(
     rejectedBy.set(req.id, reqCtx.issues);
     const issues = [...new Set(reqCtx.issues.map((i) => i.message))];
     byId.set(req.id, {
-      requirement: { id: req.id, label: req.label, title: req.title, sourceText: req.sourceText },
+      requirement: {
+        id: req.id,
+        label: req.label,
+        title: req.title,
+        sourceText: req.sourceText,
+      },
       programId: program.id,
-      status: r.needsReview && r.completed + r.inProgress < r.required ? "needs-review" : statusFor(r.required, r.completed, r.inProgress),
+      status:
+        r.needsReview && r.completed + r.inProgress < r.required
+          ? "needs-review"
+          : statusFor(r.required, r.completed, r.inProgress),
       unit: r.unit,
       required: r.required,
       completed: r.completed,
@@ -707,7 +963,9 @@ export function auditProgram(
   }
 
   const requirements = program.requirements.map((req) => byId.get(req.id)!);
-  const appliedCodes = new Set(requirements.flatMap((r) => r.applied.map((a) => a.code)));
+  const appliedCodes = new Set(
+    requirements.flatMap((r) => r.applied.map((a) => a.code)),
+  );
   return {
     program,
     requirements,
@@ -727,12 +985,22 @@ export function auditProgram(
  * "Pursue Deeper Understanding by completing advanced studies in three of four
  * distinct areas of knowledge" (Undergraduate Catalog, The Stony Brook Curriculum).
  */
-export const DEEPER_UNDERSTANDING = { categories: ["EXP+", "HFA+", "SBS+", "STEM+"] as SbcCode[], required: 3 };
+export const DEEPER_UNDERSTANDING = {
+  categories: ["EXP+", "HFA+", "SBS+", "STEM+"] as SbcCode[],
+  required: 3,
+};
 
 /** Splits SBC results into the individually required objectives and the "three of" upper-tier group. */
-export function groupSbcResults(results: SbcResult[]): { required: SbcResult[]; threeOf: SbcResult[] } {
-  const inGroup = (r: SbcResult) => DEEPER_UNDERSTANDING.categories.includes(r.category.code);
-  return { required: results.filter((r) => !inGroup(r)), threeOf: results.filter(inGroup) };
+export function groupSbcResults(results: SbcResult[]): {
+  required: SbcResult[];
+  threeOf: SbcResult[];
+} {
+  const inGroup = (r: SbcResult) =>
+    DEEPER_UNDERSTANDING.categories.includes(r.category.code);
+  return {
+    required: results.filter((r) => !inGroup(r)),
+    threeOf: results.filter(inGroup),
+  };
 }
 
 export function auditSbc(
@@ -742,9 +1010,14 @@ export function auditSbc(
   programs: ProgramDefinition[],
 ): SbcAudit {
   const attempts = [...bestAttempts(student.attempts).values()].sort(
-    (a, b) => Number(a.status === "in-progress") - Number(b.status === "in-progress"),
+    (a, b) =>
+      Number(a.status === "in-progress") - Number(b.status === "in-progress"),
   );
-  const exemptions = new Map<SbcCode, string>(programs.flatMap((p) => p.sbc.exemptions.map((e) => [e.category, e.reason])));
+  const exemptions = new Map<SbcCode, string>(
+    programs.flatMap((p) =>
+      p.sbc.exemptions.map((e) => [e.category, e.reason]),
+    ),
+  );
 
   const results = categories.map((category): SbcResult => {
     const exemptReason = exemptions.get(category.code);
@@ -753,16 +1026,24 @@ export function auditSbc(
     const match = attempts.find(
       (a) =>
         a.sbc?.includes(category.code) ||
-        catalog.get(a.code)?.sbc.some((tag) => tag.category === category.code && !tag.partial),
+        catalog
+          .get(a.code)
+          ?.sbc.some((tag) => tag.category === category.code && !tag.partial),
     );
     if (!match) return { category, status: "not-started" };
-    return { category, status: match.status === "completed" ? "satisfied" : "in-progress", appliedCode: match.code };
+    return {
+      category,
+      status: match.status === "completed" ? "satisfied" : "in-progress",
+      appliedCode: match.code,
+    };
   });
 
   // Only three of the four upper-tier categories are required. Once three are met,
   // the fourth isn't needed; it counts toward neither the total nor the satisfied count.
-  const met = (r: SbcResult) => r.status === "satisfied" || r.status === "exempt";
-  const isDeeper = (r: SbcResult) => DEEPER_UNDERSTANDING.categories.includes(r.category.code);
+  const met = (r: SbcResult) =>
+    r.status === "satisfied" || r.status === "exempt";
+  const isDeeper = (r: SbcResult) =>
+    DEEPER_UNDERSTANDING.categories.includes(r.category.code);
   const deeper = results.filter(isDeeper);
   if (deeper.filter(met).length >= DEEPER_UNDERSTANDING.required) {
     for (const r of deeper) {
@@ -770,7 +1051,8 @@ export function auditSbc(
       r.status = "not-required";
     }
   }
-  const optional = deeper.length - Math.min(deeper.length, DEEPER_UNDERSTANDING.required);
+  const optional =
+    deeper.length - Math.min(deeper.length, DEEPER_UNDERSTANDING.required);
 
   return {
     results,
@@ -784,16 +1066,26 @@ export function auditSbc(
 export function summarizeCredits(
   student: StudentRecord,
   catalog: Map<CourseCode, CourseRecord>,
-  rules: { totalCredits: number; upperDivisionCredits: number; upperDivisionMinNumber: number },
+  rules: {
+    totalCredits: number;
+    upperDivisionCredits: number;
+    upperDivisionMinNumber: number;
+  },
 ): CreditSummary {
   const bySource: Record<CreditSource, number> = { sbu: 0, transfer: 0, ap: 0 };
-  const upperDivision = { required: rules.upperDivisionCredits, earned: 0, inProgress: 0 };
+  const upperDivision = {
+    required: rules.upperDivisionCredits,
+    earned: 0,
+    inProgress: 0,
+  };
   let earned = 0;
   let inProgress = 0;
 
   for (const attempt of bestAttempts(student.attempts).values()) {
-    const credits = attempt.credits ?? catalog.get(attempt.code)?.credits.max ?? 0;
-    const upper = parseCode(attempt.code).number >= rules.upperDivisionMinNumber;
+    const credits =
+      attempt.credits ?? catalog.get(attempt.code)?.credits.max ?? 0;
+    const upper =
+      parseCode(attempt.code).number >= rules.upperDivisionMinNumber;
     if (attempt.status === "in-progress") {
       inProgress += credits;
       if (upper) upperDivision.inProgress += credits;
@@ -804,7 +1096,26 @@ export function summarizeCredits(
     }
   }
 
-  return { required: rules.totalCredits, earned, inProgress, bySource, upperDivision, standing: standingFor(earned) };
+  return {
+    required: rules.totalCredits,
+    earned,
+    inProgress,
+    bySource,
+    upperDivision,
+    standing: standingFor(earned),
+  };
+}
+
+/** Courses that the other enrolled programs require outright. */
+export function requiredByOthers(
+  program: ProgramDefinition,
+  enrolled: ProgramDefinition[],
+): Set<CourseCode> {
+  return new Set(
+    enrolled
+      .filter((p) => p !== program)
+      .flatMap((p) => p.requirements.flatMap((r) => mandatoryCourses(r.rule))),
+  );
 }
 
 export function runDegreeAudit({
@@ -823,7 +1134,9 @@ export function runDegreeAudit({
   const catalog = new Map(courses.map((c) => [c.code, c]));
   const enrolled = programs.filter((p) => student.programIds.includes(p.id));
   return {
-    programs: enrolled.map((p) => auditProgram(p, student, catalog)),
+    programs: enrolled.map((p) =>
+      auditProgram(p, student, catalog, requiredByOthers(p, enrolled)),
+    ),
     sbc: auditSbc(student, catalog, sbcCategories, enrolled),
     credits: summarizeCredits(student, catalog, creditRules),
   };

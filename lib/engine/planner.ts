@@ -11,11 +11,12 @@ import type { CourseRecord } from "@/lib/domain/catalog/course";
 import type { ProgramDefinition, Rule } from "@/lib/domain/catalog/program";
 import type { CourseCode, LetterGrade, StudentRecord, TermId } from "@/lib/domain/types";
 import { nextRegularTerm } from "@/lib/domain/terms";
-import { matchesSelector, type DegreeAudit } from "./audit";
+import { matchesSelector, requiredByOthers, substitutionCourses, substitutionEligible, type DegreeAudit } from "./audit";
 import { requirementHeading } from "./describe";
 import {
   buildCompletionIndex,
   evaluatePrereq,
+  pairedCorequisite,
   plannedCredits,
   referencedCourses,
   standingFor,
@@ -55,15 +56,35 @@ const KIND_WEIGHT: Record<NeedKind, number> = { required: 30, sbc: 20, elective:
 /** Enough to prefer a confirmed course among similar options, not to outrank a more important need. */
 const CONFIRMED_BONUS = 5;
 
-function needsFrom(audit: DegreeAudit, courses: CourseRecord[]): { needs: Need[]; review: string[] } {
+/**
+ * Courses a program lets the student replace with ones another of their programs
+ * requires anyway: for an Honors CS student, CSE 114/214/307 (replaced by the
+ * CSE 160/161/260/261 sequence). Planning both tracks would duplicate work.
+ */
+function replacedByOtherPrograms(audit: DegreeAudit): Set<CourseCode> {
+  const enrolled = audit.programs.map((p) => p.program);
+  const replaced = new Set<CourseCode>();
+  for (const program of enrolled) {
+    const elsewhere = requiredByOthers(program, enrolled);
+    for (const sub of program.substitutions) {
+      if (sub.replaces.type !== "courses" || !substitutionEligible(sub, elsewhere)) continue;
+      if (substitutionCourses(sub).every((c) => elsewhere.has(c))) sub.replaces.courses.forEach((c) => replaced.add(c));
+    }
+  }
+  return replaced;
+}
+
+function needsFrom(audit: DegreeAudit, courses: CourseRecord[]): { needs: Need[]; review: string[]; replaced: Set<CourseCode> } {
   const needs: Need[] = [];
   const review: string[] = [];
+  const replaced = replacedByOtherPrograms(audit);
   for (const program of audit.programs) {
     for (const r of program.requirements) {
       if (r.status === "satisfied" || r.status === "in-progress") continue;
       r.missing.forEach((item, i) => {
         const requirementId = `${r.requirement.id}#${i}`;
         const title = requirementHeading(r.requirement);
+        if (item.kind === "course" && item.options.every((c) => replaced.has(c))) return;
         if (item.kind === "course") {
           needs.push({ requirementId, title, kind: "required", options: new Set(item.options), remaining: 1 });
         } else if (item.kind === "choose") {
@@ -92,7 +113,7 @@ function needsFrom(audit: DegreeAudit, courses: CourseRecord[]): { needs: Need[]
       remaining: 1,
     });
   }
-  return { needs, review };
+  return { needs, review, replaced };
 }
 
 /** The most common subject among a program's course rules, e.g. "CSE" for the CS BS. */
@@ -160,9 +181,9 @@ export function proposeNextSemester({
       (p.program.sampleSequence ?? []).flatMap((t) => t.slots.flatMap((s) => (s.kind === "course" ? [s.code] : []))),
     ),
   );
-  const { needs, review } = needsFrom(audit, courses);
+  const { needs, review, replaced } = needsFrom(audit, courses);
   const sectionsFor = (c: CourseRecord) => (sectionCounts ? (sectionCounts.get(c.code) ?? null) : null);
-  const isEligible = (c: CourseRecord) => !taken.has(c.code) && prereqsFor(c).met;
+  const isEligible = (c: CourseRecord) => !taken.has(c.code) && !replaced.has(c.code) && prereqsFor(c).met;
   let candidates = courses.filter(isEligible);
 
   const score = (c: CourseRecord) => {
@@ -183,31 +204,45 @@ export function proposeNextSemester({
     );
   };
 
+  const byCode = new Map(courses.map((c) => [c.code, c]));
   const picked: ProposedCourse[] = [];
   let total = 0;
-  while (total < targetCredits) {
-    const best = candidates
-      .filter((c) => total + plannedCredits(c) <= maxCredits)
-      .map((c) => ({ c, s: score(c) }))
-      .filter((x) => x.s > 0)
-      .sort((a, b) => b.s - a.s)[0];
-    if (!best) break;
 
+  /** A course plus the course it must be taken with, when that one isn't done yet. */
+  const groupFor = (c: CourseRecord): CourseRecord[] | null => {
+    const pairCode = pairedCorequisite(c);
+    const pair = pairCode && !taken.has(pairCode) && !picked.some((p) => p.course.code === pairCode) ? byCode.get(pairCode) : null;
+    if (!pair) return [c];
+    return isEligible(pair) ? [c, pair] : null;
+  };
+  const groupCredits = (group: CourseRecord[]) => group.reduce((s, c) => s + plannedCredits(c), 0);
+
+  const pick = (c: CourseRecord) => {
     // Within a program a course counts once (majors disallow reuse), so it fills its most
     // important program need; SBC objectives may overlap with major courses.
-    const matching = needs.filter((n) => n.remaining > 0 && n.options.has(best.c.code));
+    const matching = needs.filter((n) => n.remaining > 0 && n.options.has(c.code));
     const programNeed = matching.filter((n) => n.kind !== "sbc").sort((a, b) => KIND_WEIGHT[b.kind] - KIND_WEIGHT[a.kind])[0];
     const fills = [...(programNeed ? [programNeed] : []), ...matching.filter((n) => n.kind === "sbc")];
     fills.forEach((n) => n.remaining--);
     picked.push({
-      course: best.c,
+      course: c,
       fills: fills.map((n) => ({ requirementId: n.requirementId, title: n.title, kind: n.kind })),
-      checks: prereqsFor(best.c).unverifiable,
-      retake: retakes.has(best.c.code),
-      sections: sectionsFor(best.c),
+      checks: prereqsFor(c).unverifiable,
+      retake: retakes.has(c.code),
+      sections: sectionsFor(c),
     });
-    total += plannedCredits(best.c);
-    candidates = candidates.filter((c) => c.code !== best.c.code);
+    total += plannedCredits(c);
+    candidates = candidates.filter((x) => x.code !== c.code);
+  };
+
+  while (total < targetCredits) {
+    const best = candidates
+      .map((c) => ({ c, s: score(c), group: groupFor(c) }))
+      .filter((x) => x.s > 0 && x.group && total + groupCredits(x.group) <= maxCredits)
+      .sort((a, b) => b.s - a.s)[0];
+    if (!best) break;
+    // Paired courses (a lecture and its lab) go into the same term.
+    best.group!.forEach(pick);
   }
 
   const deferred = [
