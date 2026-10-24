@@ -140,6 +140,25 @@ function unlockCounts(courses: CourseRecord[], taken: Set<CourseCode>): Map<Cour
   return counts;
 }
 
+/**
+ * Checks a course's prerequisites for the student's next term: in-progress
+ * courses count as passed, and program rules such as "C or higher in
+ * prerequisites for CSE courses" apply.
+ */
+export function prerequisiteChecker(audit: DegreeAudit, student: StudentRecord) {
+  const prereqGrades = new Map<string, LetterGrade>();
+  for (const program of audit.programs) {
+    for (const policy of program.program.policies) {
+      if (policy.type === "prerequisiteGrade") policy.subjects.forEach((s) => prereqGrades.set(s, policy.minGrade));
+    }
+  }
+  const index = buildCompletionIndex(student.attempts, { includeInProgress: true });
+  const majorSubjects = audit.programs.filter((p) => p.program.kind === "major").map((p) => primarySubject(p.program));
+  const standing = standingFor(audit.credits.earned + audit.credits.inProgress);
+  return (c: Pick<CourseRecord, "code" | "prerequisites">) =>
+    evaluatePrereq(c.prerequisites, { index, standing, majorSubjects, defaultMinGrade: prereqGrades.get(c.code.split(" ")[0]) });
+}
+
 export function proposeNextSemester({
   audit,
   student,
@@ -161,18 +180,7 @@ export function proposeNextSemester({
   const retakes = new Set(audit.programs.flatMap((p) => p.retakes));
   const taken = new Set(usableAttempts(student.attempts).map((a) => a.code).filter((code) => !retakes.has(code)));
 
-  // Program rules such as "C or higher in prerequisites for CSE courses".
-  const prereqGrades = new Map<string, LetterGrade>();
-  for (const program of audit.programs) {
-    for (const policy of program.program.policies) {
-      if (policy.type === "prerequisiteGrade") policy.subjects.forEach((s) => prereqGrades.set(s, policy.minGrade));
-    }
-  }
-  const index = buildCompletionIndex(student.attempts, { includeInProgress: true });
-  const majorSubjects = audit.programs.filter((p) => p.program.kind === "major").map((p) => primarySubject(p.program));
-  const standing = standingFor(audit.credits.earned + audit.credits.inProgress);
-  const prereqsFor = (c: CourseRecord) =>
-    evaluatePrereq(c.prerequisites, { index, standing, majorSubjects, defaultMinGrade: prereqGrades.get(c.code.split(" ")[0]) });
+  const prereqsFor = prerequisiteChecker(audit, student);
 
   const unlocks = unlockCounts(courses, taken);
   // The catalog's sample sequence names the usual choice (e.g. "CSE 416 or CSE 356" lists 416 first).
