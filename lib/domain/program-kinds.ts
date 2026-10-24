@@ -7,7 +7,7 @@
 const KINDS: Record<string, { order: number; singular: string; plural: string }> = {
   major: { order: 0, singular: "Major", plural: "Majors" },
   minor: { order: 1, singular: "Minor", plural: "Minors" },
-  program: { order: 2, singular: "Program", plural: "Programs" },
+  program: { order: 2, singular: "Special program", plural: "Programs" },
 };
 
 export function kindOrder(kind: string): number {
