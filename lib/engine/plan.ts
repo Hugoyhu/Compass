@@ -2,16 +2,27 @@
  * Multi-term plans: generate one, check it, and project what it completes.
  *
  * Planned courses are modeled as in-progress attempts in their term, so the
- * audit and the next-semester proposer treat them as "will be passed". Free
- * electives have no course code and only add credits.
+ * audit and prerequisite checks treat them as "will be passed". Free
+ * electives have no course code and only add credits. SBC placeholders add
+ * credits and count their SBC as planned.
  */
 import type { CourseRecord, Prereq } from "@/lib/domain/catalog/course";
 import type { ProgramDefinition } from "@/lib/domain/catalog/program";
 import { nextRegularTerm, termOrdinal } from "@/lib/domain/terms";
-import type { CourseAttempt, CourseCode, PlannedTerm, SbcCategory, StudentRecord, TermId } from "@/lib/domain/types";
-import { DEEPER_UNDERSTANDING, runDegreeAudit, summarizeCredits, type DegreeAudit, type SbcResult } from "./audit";
+import type { CourseAttempt, CourseCode, PlannedTerm, PlanItem, SbcCategory, SbcCode, StudentRecord, TermId } from "@/lib/domain/types";
+import {
+  DEEPER_UNDERSTANDING,
+  mandatoryCourses,
+  matchesSelector,
+  requiredByOthers,
+  runDegreeAudit,
+  summarizeCredits,
+  type DegreeAudit,
+  type ProgramAudit,
+  type SbcResult,
+} from "./audit";
 import { requirementHeading } from "./describe";
-import { primarySubject, proposeNextSemester } from "./planner";
+import { prerequisiteChecker, primarySubject, replacedByOtherPrograms } from "./planner";
 import {
   buildCompletionIndex,
   evaluatePrereq,
@@ -27,6 +38,10 @@ export const MAX_TERM_CREDITS = 19;
 /** Below this, a fall or spring term is part-time; the default minimum per term. */
 export const FULL_TIME_CREDITS = 12;
 const ELECTIVE_CREDITS = 3;
+/** Credits planned for an SBC placeholder; upper-tier SBCs need at least 3. */
+export const SBC_PLACEHOLDER_CREDITS = 3;
+/** The most credits the generator plans in a term. */
+const GENERATED_MAX_CREDITS = 18;
 
 export interface PlanContext {
   student: StudentRecord;
@@ -56,8 +71,17 @@ function audit(ctx: PlanContext, student: StudentRecord): DegreeAudit {
   return runDegreeAudit({ ...ctx, student });
 }
 
+/** Credits for an item without a course code: an elective or an SBC placeholder. */
+function placeholderCredits(item: PlanItem): number {
+  return "elective" in item ? item.elective : "sbc" in item ? SBC_PLACEHOLDER_CREDITS : 0;
+}
+
 function electiveCredits(plan: PlannedTerm[]): number {
-  return plan.flatMap((t) => t.items).reduce((s, i) => s + ("elective" in i ? i.elective : 0), 0);
+  return plan.flatMap((t) => t.items).reduce((s, i) => s + placeholderCredits(i), 0);
+}
+
+function sbcPlaceholders(plan: PlannedTerm[]): Set<SbcCode> {
+  return new Set(plan.flatMap((t) => t.items.flatMap((i) => ("sbc" in i ? [i.sbc] : []))));
 }
 
 const isDone = (status: string) => status === "satisfied" || status === "in-progress" || status === "exempt";
@@ -65,19 +89,27 @@ const isDone = (status: string) => status === "satisfied" || status === "in-prog
 const isReview = (status: string) => status === "needs-review";
 
 /**
- * SBC objectives still open, counting planned courses as done. Only three of the
- * four Pursue Deeper Understanding categories are required.
+ * SBC objectives still open, counting planned courses and placeholders as done.
+ * Only three of the four Pursue Deeper Understanding categories are required.
  */
-function openSbc(a: DegreeAudit): SbcResult[] {
+function openSbc(a: DegreeAudit, placeholders: Set<SbcCode> = new Set()): SbcResult[] {
+  const done = (r: SbcResult) => isDone(r.status) || placeholders.has(r.category.code);
   const isDeeper = (r: SbcResult) => DEEPER_UNDERSTANDING.categories.includes(r.category.code);
-  const deeperDone = a.sbc.results.filter((r) => isDeeper(r) && isDone(r.status)).length;
-  return a.sbc.results.filter(
-    (r) => !isDone(r.status) && !(isDeeper(r) && deeperDone >= DEEPER_UNDERSTANDING.required),
-  );
+  const deeperDone = a.sbc.results.filter((r) => isDeeper(r) && done(r)).length;
+  return a.sbc.results.filter((r) => !done(r) && !(isDeeper(r) && deeperDone >= DEEPER_UNDERSTANDING.required));
 }
 
-function openCount(a: DegreeAudit): number {
-  return a.programs.flatMap((p) => p.requirements).filter((r) => !isDone(r.status) && !isReview(r.status)).length + openSbc(a).length;
+/** SBCs that still need a placeholder: every open one, but only enough Deeper Understanding ones for three. */
+function sbcToPlace(a: DegreeAudit): SbcCode[] {
+  const open = openSbc(a);
+  const isDeeper = (r: SbcResult) => DEEPER_UNDERSTANDING.categories.includes(r.category.code);
+  const deeperDone = a.sbc.results.filter((r) => isDeeper(r) && isDone(r.status)).length;
+  const deeper = open.filter(isDeeper).slice(0, Math.max(0, DEEPER_UNDERSTANDING.required - deeperDone));
+  return open.filter((r) => !isDeeper(r) || deeper.includes(r)).map((r) => r.category.code);
+}
+
+function openProgramCount(a: DegreeAudit): number {
+  return a.programs.flatMap((p) => p.requirements).filter((r) => !isDone(r.status) && !isReview(r.status)).length;
 }
 
 /** The student's minimum credits for a fall or spring term. */
@@ -85,51 +117,304 @@ export function minTermCredits(student: StudentRecord): number {
   return student.minTermCredits ?? FULL_TIME_CREDITS;
 }
 
-/**
- * Fills fall and spring terms after the current one, a term at a time, with the
- * next-semester proposal given everything planned before it. Free electives top
- * up each term once requirement courses run out, until the credit total is met,
- * and every term to at least the student's minimum, including the last.
- */
-export function generatePlan(ctx: PlanContext, { maxTerms = 8, targetCredits = 15 } = {}): PlannedTerm[] {
-  const minCredits = minTermCredits(ctx.student);
-  targetCredits = Math.max(targetCredits, minCredits);
-  const plan: PlannedTerm[] = [];
-  let term = nextRegularTerm(ctx.student.currentTerm);
-  for (let i = 0; i < maxTerms; i++) {
-    const student = withPlan(ctx.student, plan);
-    const current = audit(ctx, student);
-    const creditsLeft =
-      current.credits.required - current.credits.earned - current.credits.inProgress - electiveCredits(plan);
-    if (openCount(current) === 0 && creditsLeft <= 0) break;
+/** A degree is planned as eight fall and spring semesters. */
+export const DEGREE_TERMS = 8;
+/** Terms the generator may add after the four years when requirements are still open. */
+const EXTRA_TERMS = 4;
 
-    const proposal = proposeNextSemester({
-      audit: current,
-      student,
-      courses: ctx.courses,
-      term,
-      sectionCounts: ctx.sectionsByTerm.get(term) ?? null,
-      targetCredits,
-    });
-    const items: PlannedTerm["items"] = proposal.courses.map((p) => ({ code: p.course.code }));
-    let credits = proposal.totalCredits;
-    let left = creditsLeft - credits;
-    // Top up to the target, going over it (to the usual 18-credit cap) rather than under.
-    while (credits < targetCredits && credits + ELECTIVE_CREDITS <= Math.max(18, minCredits) && left > 0) {
+/** The eight fall/spring semesters from the student's first one. */
+export function fourYearTerms(student: StudentRecord): TermId[] {
+  const entry = student.entryTerm;
+  let term = entry.endsWith("FA") || entry.endsWith("SP") ? entry : nextRegularTerm(entry);
+  const terms: TermId[] = [];
+  for (let i = 0; i < DEGREE_TERMS; i++, term = nextRegularTerm(term)) terms.push(term);
+  return terms;
+}
+
+/**
+ * Whether a course is known to run in a term: on its schedule, or in a season
+ * it's usually offered. Schedule data is incomplete, so this only ranks
+ * choices; an unknown course is never ruled out.
+ */
+function knownOffered(ctx: PlanContext, course: CourseRecord, term: TermId): boolean {
+  const sections = ctx.sectionsByTerm.get(term);
+  if (sections?.has(course.code)) return true;
+  return course.typicallyOffered?.includes(term.endsWith("FA") ? "Fall" : "Spring") ?? false;
+}
+
+/**
+ * Fills the empty fall and spring semesters of a four-year degree, keeping every
+ * term the student has already planned. Each term rotates through the student's
+ * programs in their order, taking the next course each one needs, until the
+ * term reaches its share of the remaining credits; open SBCs then become
+ * placeholders, and electives fill the rest. Terms after the four years are
+ * added only while requirements remain.
+ */
+export function generatePlan(ctx: PlanContext): PlannedTerm[] {
+  const { student } = ctx;
+  const minCredits = minTermCredits(student);
+  const maxCredits = Math.max(GENERATED_MAX_CREDITS, minCredits);
+  const catalog = new Map(ctx.courses.map((c) => [c.code, c]));
+  const itemCredits = (i: PlanItem) => {
+    const course = "code" in i ? catalog.get(i.code) : undefined;
+    return course ? plannedCredits(course) : placeholderCredits(i);
+  };
+  const after = (t: TermId) => termOrdinal(t) > termOrdinal(student.currentTerm);
+
+  let plan = student.plan.filter((t) => t.items.length > 0);
+  const keptTerms = new Set(plan.map((t) => t.term));
+  const toFill = fourYearTerms(student).filter((t) => after(t) && !keptTerms.has(t));
+  let extra = 0;
+  let next = nextRegularTerm(fourYearTerms(student).at(-1)!);
+
+  for (let i = 0; i < toFill.length; i++) {
+    const term = toFill[i];
+    const termsLeft = toFill.length - i;
+    const planned = audit(ctx, withPlan(student, plan));
+    const before = plan.filter((t) => termOrdinal(t.term) < termOrdinal(term));
+    const studentBefore = withPlan(student, before);
+    const auditBefore = audit(ctx, studentBefore);
+    const prereqsMet = prerequisiteChecker(auditBefore, studentBefore);
+    const standing = Number(standingFor(auditBefore.credits.earned + auditBefore.credits.inProgress).slice(1));
+
+    const creditsLeft = planned.credits.required - planned.credits.earned - planned.credits.inProgress - electiveCredits(plan);
+    const target = Math.min(maxCredits, Math.max(minCredits, Math.ceil(creditsLeft / termsLeft)));
+
+    const items = pickProgramCourses(ctx, plan, planned, term, target, maxCredits, (c) => prereqsMet(c).met, standing);
+    const madeProgress = items.length > 0 || creditsLeft > 0;
+    let credits = items.reduce((s, item) => s + itemCredits(item), 0);
+
+    // Spread the open SBCs over the remaining terms, then fill with electives.
+    const withTerm = audit(ctx, withPlan(student, [...plan, { term, items }]));
+    const placed = sbcPlaceholders(plan);
+    const sbcs = sbcToPlace(withTerm).filter((s) => !placed.has(s));
+    for (const sbc of sbcs.slice(0, Math.ceil(sbcs.length / termsLeft))) {
+      if (credits + SBC_PLACEHOLDER_CREDITS > maxCredits) break;
+      items.push({ sbc });
+      credits += SBC_PLACEHOLDER_CREDITS;
+    }
+    // Credits still needed with this term's courses in (a planned retake replaces its earlier credits).
+    let stillNeeded =
+      withTerm.credits.required - withTerm.credits.earned - withTerm.credits.inProgress - electiveCredits(plan) -
+      items.reduce((s, item) => s + ("code" in item ? 0 : itemCredits(item)), 0);
+    // Reach the target even if that overshoots it a little; rounding down every term would leave credits short at
+    // the end. The last term also covers whatever is still needed.
+    while (credits < target || credits < minCredits || (termsLeft === 1 && stillNeeded > 0)) {
+      if (credits + ELECTIVE_CREDITS > MAX_TERM_CREDITS) break;
+      stillNeeded -= ELECTIVE_CREDITS;
       items.push({ elective: ELECTIVE_CREDITS });
       credits += ELECTIVE_CREDITS;
-      left -= ELECTIVE_CREDITS;
     }
-    // Never under the minimum, even when that means credits beyond the degree total.
-    while (credits < minCredits && credits + ELECTIVE_CREDITS <= MAX_TERM_CREDITS) {
-      items.push({ elective: ELECTIVE_CREDITS });
-      credits += ELECTIVE_CREDITS;
+    plan = [...plan, { term, items }].sort((a, b) => termOrdinal(a.term) - termOrdinal(b.term));
+
+    // Past four years, keep going only while requirements are open and terms still make progress on them.
+    if (extra > 0 && !madeProgress) {
+      plan = plan.filter((t) => t.term !== term);
+      break;
     }
-    if (items.length === 0) break;
-    plan.push({ term, items });
-    term = nextRegularTerm(term);
+    const after4 = audit(ctx, withPlan(student, plan));
+    const short = after4.credits.required - after4.credits.earned - after4.credits.inProgress - electiveCredits(plan) > 0;
+    if (i === toFill.length - 1 && extra < EXTRA_TERMS && (openProgramCount(after4) > 0 || short)) {
+      while (keptTerms.has(next)) next = nextRegularTerm(next);
+      toFill.push(next);
+      next = nextRegularTerm(next);
+      extra++;
+    }
   }
-  return plan;
+
+  // A placeholder placed before a real course that turned out to carry its SBC (WRT 102 for WRT) becomes an elective.
+  const generated = new Set(toFill);
+  const covered = new Set(
+    audit(ctx, withPlan(student, plan)).sbc.results.filter((r) => isDone(r.status)).map((r) => r.category.code),
+  );
+  return plan.map((t) =>
+    generated.has(t.term)
+      ? { ...t, items: t.items.map((i): PlanItem => ("sbc" in i && covered.has(i.sbc) ? { elective: SBC_PLACEHOLDER_CREDITS } : i)) }
+      : t,
+  );
+}
+
+/**
+ * One term's program courses, chosen round-robin: each pass asks every program,
+ * in the student's order, for the next course it needs that the student can
+ * take this term, until the term reaches its target.
+ */
+function pickProgramCourses(
+  ctx: PlanContext,
+  plan: PlannedTerm[],
+  planned: DegreeAudit,
+  term: TermId,
+  target: number,
+  maxCredits: number,
+  prereqsMet: (course: CourseRecord) => boolean,
+  /** Class standing before the term, 1 (U1) to 4 (U4). */
+  standing: number,
+): PlanItem[] {
+  const { student } = ctx;
+  const catalog = new Map(ctx.courses.map((c) => [c.code, c]));
+  const replaced = replacedByOtherPrograms(planned);
+  // Courses the student has, is taking, or has planned, except retakes; and anything that can't count alongside them.
+  const retakes = new Set(planned.programs.flatMap((p) => p.retakes));
+  const unavailable = new Set(
+    usableAttempts(withPlan(student, plan).attempts)
+      .map((a) => a.code)
+      .filter((c) => !retakes.has(c)),
+  );
+  for (const code of [...unavailable]) catalog.get(code)?.equivalents.forEach((e) => unavailable.add(e));
+
+  const picked: CourseRecord[] = [];
+  const pickedFor = new Map<string, number>();
+  const takeable = (c: CourseRecord | undefined): c is CourseRecord =>
+    !!c &&
+    !unavailable.has(c.code) &&
+    !replaced.has(c.code) &&
+    !picked.some((p) => p.code === c.code || p.equivalents.includes(c.code)) &&
+    // At most one level above standing: no 400-level courses for a first-year student.
+    Math.floor(Number(c.code.split(" ")[1]) / 100) <= standing + 1 &&
+    prereqsMet(c);
+  /** Takeable, and so is the course it must be taken with (a lab waits for its lecture). */
+  const usable = (c: CourseRecord | undefined): c is CourseRecord => {
+    if (!takeable(c)) return false;
+    const pair = pairedCorequisite(c);
+    return !pair || unavailable.has(pair) || picked.some((p) => p.code === pair) || takeable(catalog.get(pair));
+  };
+  const onItsWay = (code: CourseCode) => unavailable.has(code) || picked.some((p) => p.code === code);
+
+  // Every course a program requires outright; elective picks never use up one of these through an equivalent.
+  const mandatory = new Set(planned.programs.flatMap((p) => p.program.requirements.flatMap((r) => mandatoryCourses(r.rule))));
+
+  // When a program lists alternatives ("CSE 113 or CSE 150"), prefer the one another program requires.
+  const requiredElsewhere = (program: ProgramAudit) =>
+    requiredByOthers(
+      program.program,
+      planned.programs.map((p) => p.program),
+    );
+
+  /**
+   * A course that isn't taken yet, or the first missing prerequisite on the way
+   * to it (up to two levels): WRT 102 before CSE 300. Of alternatives ("CSE 216
+   * or CSE 260 or CSE 307"), none is pursued when one is already taken, planned,
+   * or required by a program anyway.
+   */
+  const reachable = (code: CourseCode, depth = 0): CourseRecord | undefined => {
+    const course = catalog.get(code);
+    if (!course || unavailable.has(code) || replaced.has(code)) return undefined;
+    if (usable(course)) return course;
+    return depth < 2 ? missingPrerequisite(catalog.get(code)?.prerequisites, depth + 1) : undefined;
+  };
+  const missingPrerequisite = (expr: Prereq | undefined, depth: number): CourseRecord | undefined => {
+    if (!expr) return undefined;
+    if (expr.type === "course") return onItsWay(expr.code) ? undefined : reachable(expr.code, depth);
+    if (expr.type === "or" && expr.of.some((e) => e.type === "course" && (onItsWay(e.code) || mandatory.has(e.code)))) return undefined;
+    if (expr.type === "and" || expr.type === "or") {
+      for (const e of expr.of) {
+        const found = missingPrerequisite(e, depth);
+        if (found) return found;
+      }
+    }
+    return undefined;
+  };
+
+  const order = (p: ProgramAudit) => {
+    const i = student.programIds.indexOf(p.program.id);
+    return i === -1 ? Infinity : i;
+  };
+  const programs = [...planned.programs].sort((a, b) => order(a) - order(b));
+
+  /**
+   * Once a term per program: a missing prerequisite of one of its required
+   * courses, so long chains (WRT 102 → CSE 300) start early even when that
+   * requirement comes last.
+   */
+  const unlocked = new Set<string>();
+  const unlockFor = (p: ProgramAudit): CourseRecord | null => {
+    if (unlocked.has(p.program.id)) return null;
+    unlocked.add(p.program.id);
+    for (const r of p.requirements) {
+      if (isDone(r.status) || isReview(r.status)) continue;
+      for (const item of r.missing) {
+        if (item.kind !== "course" || item.options.some((c) => usable(catalog.get(c)))) continue;
+        const prerequisite = item.options.filter((c) => !replaced.has(c)).map((c) => reachable(c)).find(Boolean);
+        if (prerequisite) return prerequisite;
+      }
+    }
+    return null;
+  };
+
+  /** The next course a program needs, from its first open requirement that has one available. */
+  const nextFor = (p: ProgramAudit): CourseRecord | null => {
+    const prerequisite = unlockFor(p);
+    if (prerequisite) return prerequisite;
+    const sample = new Set(
+      (p.program.sampleSequence ?? []).flatMap((t) => t.slots.flatMap((s) => (s.kind === "course" ? [s.code, ...(s.alternatives ?? [])] : []))),
+    );
+    for (const r of p.requirements) {
+      if (isDone(r.status) || isReview(r.status)) continue;
+      for (const [index, item] of r.missing.entries()) {
+        const key = `${r.requirement.id}#${index}`;
+        const already = pickedFor.get(key) ?? 0;
+        if (item.kind === "course") {
+          // One of its options is already on its way (planned this term, perhaps as another course's prerequisite).
+          if (already > 0 || item.options.some(onItsWay)) continue;
+          // An option another program requires is the only one worth taking (CSE 150 over CSE 113 for Honors CS).
+          const elsewhere = requiredElsewhere(p);
+          const open = item.options.filter((c) => !replaced.has(c));
+          const options = open.some((c) => elsewhere.has(c)) ? open.filter((c) => elsewhere.has(c)) : open;
+          const direct = options.map((c) => catalog.get(c)).find(usable);
+          if (direct) return pickedFor.set(key, 1), direct;
+          // Nothing takeable yet: plan what it's waiting on instead (WRT 102 before CSE 300).
+          const prerequisite = options.map((c) => reachable(c)).find(Boolean);
+          if (prerequisite) return prerequisite;
+        } else if (item.kind === "choose") {
+          const remaining = item.unit === "courses" ? item.remaining : Math.ceil(item.remaining / ELECTIVE_CREDITS);
+          if (already >= remaining) continue;
+          const capped = (c: CourseRecord) => item.constraints.some((k) => k.type === "maxFrom" && matchesSelector(c.code, c, k.from));
+          const listed = item.pool.courses ?? [];
+          const rank = (c: CourseRecord) => [
+            listed.includes(c.code) ? listed.indexOf(c.code) : listed.length,
+            sample.has(c.code) ? 0 : 1,
+            knownOffered(ctx, c, term) ? 0 : 1,
+            Number(c.code.split(" ")[1]),
+          ];
+          const course = ctx.courses
+            .filter(
+              (c) =>
+                !item.exclude.includes(c.code) &&
+                matchesSelector(c.code, c, item.pool) &&
+                !capped(c) &&
+                !c.equivalents.some((e) => mandatory.has(e)) &&
+                usable(c),
+            )
+            .sort((a, b) => {
+              const [x, y] = [rank(a), rank(b)];
+              return x[0] - y[0] || x[1] - y[1] || x[2] - y[2] || x[3] - y[3];
+            })[0];
+          if (course) return pickedFor.set(key, already + 1), course;
+        }
+      }
+    }
+    return null;
+  };
+
+  let credits = 0;
+  for (let progress = true; progress && credits < target; ) {
+    progress = false;
+    for (const p of programs) {
+      if (credits >= target) break;
+      const course = nextFor(p);
+      if (!course) continue;
+      // A lecture and its lab go into the same term.
+      const pairCode = pairedCorequisite(course);
+      const pair = pairCode ? catalog.get(pairCode) : undefined;
+      const group = [course, ...(pair && usable(pair) ? [pair] : [])];
+      const groupCredits = group.reduce((s, c) => s + plannedCredits(c), 0);
+      if (credits + groupCredits > maxCredits) continue;
+      picked.push(...group);
+      credits += groupCredits;
+      progress = true;
+    }
+  }
+  return picked.map((c) => ({ code: c.code }));
 }
 
 // ---------------------------------------------------------------------------
@@ -139,8 +424,10 @@ export function generatePlan(ctx: PlanContext, { maxTerms = 8, targetCredits = 1
 export type ScheduleStatus = "scheduled" | "not-scheduled" | "unknown";
 
 export interface CheckedItem {
-  /** Course code, or null for a free elective. */
+  /** Course code, or null for a free elective or an SBC placeholder. */
   code: CourseCode | null;
+  /** The SBC of a placeholder; null otherwise. */
+  sbc: SbcCode | null;
   title: string;
   credits: number;
   schedule: ScheduleStatus;
@@ -178,6 +465,8 @@ export function checkPlan(ctx: PlanContext, plan: PlannedTerm[]): { terms: Check
   const projection = projectPlan(ctx, plan);
   const minCredits = minTermCredits(ctx.student);
   const seen = new Set<CourseCode>();
+  const seenSbc = new Set<SbcCode>();
+  const sbcNames = new Map(ctx.sbcCategories.map((c) => [c.code, c.name]));
   let creditsBefore = base.credits.earned + base.credits.inProgress;
 
   const terms = plan.map((t): CheckedTerm => {
@@ -188,8 +477,21 @@ export function checkPlan(ctx: PlanContext, plan: PlannedTerm[]): { terms: Check
     const sections = ctx.sectionsByTerm.get(t.term);
 
     const items = t.items.map((item): CheckedItem => {
-      if ("elective" in item) {
-        return { code: null, title: "Elective", credits: item.elective, schedule: "unknown", problems: [], checks: [], counts: [] };
+      const placeholder: Omit<CheckedItem, "title" | "credits"> = { code: null, sbc: null, schedule: "unknown", problems: [], checks: [], counts: [] };
+      if ("elective" in item) return { ...placeholder, title: "Elective", credits: item.elective };
+      if ("sbc" in item) {
+        const problems = [
+          ...(projection.sbcMet.includes(item.sbc) ? [`${item.sbc} is already covered`] : []),
+          ...(seenSbc.has(item.sbc) ? ["Planned twice"] : []),
+        ];
+        seenSbc.add(item.sbc);
+        return {
+          ...placeholder,
+          sbc: item.sbc,
+          title: sbcNames.get(item.sbc) ?? `${item.sbc} course`,
+          credits: SBC_PLACEHOLDER_CREDITS,
+          problems,
+        };
       }
       const course = catalog.get(item.code);
       const problems: string[] = [];
@@ -201,10 +503,14 @@ export function checkPlan(ctx: PlanContext, plan: PlannedTerm[]): { terms: Check
       if (!prereqs.met && !concurrentlyMet(course?.prerequisites, sameTerm)) {
         problems.push(`Prerequisites: ${formatPrereq(course?.prerequisites)}`);
       }
+      // A paired course counts when it, or a course equivalent to it, is taken before or in the same term.
       const pair = course && pairedCorequisite(course);
-      if (pair && !sameTerm.has(pair) && !index.has(pair)) problems.push(`Take with ${pair}`);
+      const pairEquivalents = new Set([pair, ...(pair ? (catalog.get(pair)?.equivalents ?? []) : [])]);
+      const covered = [...sameTerm, ...index.keys()].some((c) => pairEquivalents.has(c) || catalog.get(c)?.equivalents.includes(pair ?? ""));
+      if (pair && !covered) problems.push(`Take with ${pair}`);
       return {
         code: item.code,
+        sbc: null,
         title: course?.title ?? "",
         credits: course ? plannedCredits(course) : 0,
         schedule: !sections ? "unknown" : sections.has(item.code) ? "scheduled" : "not-scheduled",
@@ -235,6 +541,8 @@ export function checkPlan(ctx: PlanContext, plan: PlannedTerm[]): { terms: Check
 export interface PlanProjection {
   programs: { id: string; name: string; done: number; total: number }[];
   sbc: { done: number; total: number };
+  /** SBCs that completed and planned courses cover, not counting placeholders. */
+  sbcMet: SbcCode[];
   credits: { planned: number; required: number };
   upperDivision: { planned: number; required: number };
   /** Requirement titles each planned course counts toward. */
@@ -251,7 +559,7 @@ export function projectPlan(ctx: PlanContext, plan: PlannedTerm[]): PlanProjecti
   const planned = new Set(plan.flatMap((t) => t.items.flatMap((i) => ("code" in i ? [i.code] : []))));
   const result = audit(ctx, withPlan(ctx.student, plan));
   const done = isDone;
-  const sbcOpen = openSbc(result);
+  const sbcOpen = openSbc(result, sbcPlaceholders(plan));
 
   const countsByCourse = new Map<CourseCode, string[]>();
   const add = (code: CourseCode, label: string) => {
@@ -285,6 +593,7 @@ export function projectPlan(ctx: PlanContext, plan: PlannedTerm[]): PlanProjecti
       total: p.requirements.length,
     })),
     sbc: { done: result.sbc.total - Math.min(result.sbc.total, sbcOpen.length), total: result.sbc.total },
+    sbcMet: result.sbc.results.filter((r) => isDone(r.status)).map((r) => r.category.code),
     credits: { planned: credits, required: result.credits.required },
     upperDivision: {
       planned: result.credits.upperDivision.earned + result.credits.upperDivision.inProgress,

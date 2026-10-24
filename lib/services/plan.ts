@@ -53,6 +53,7 @@ export async function getPlanView(student: StudentRecord) {
     hasPrograms: student.programIds.length > 0,
     minCredits: minTermCredits(student),
     courses: ctx.courses.map((c) => ({ code: c.code, title: c.title })),
+    sbcCategories: ctx.sbcCategories,
     // Terms that can be added: the next two years, not already in the plan.
     termOptions: upcomingTerms(student, 8).filter((t) => !planned.has(t)),
   };
