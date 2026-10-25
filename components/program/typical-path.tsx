@@ -123,8 +123,8 @@ export function TypicalPathView({ path, progress = {} }: { path: TypicalPath; pr
                   <span className="flex items-center justify-between gap-1">
                     <span className="font-mono font-semibold">{c.code}</span>
                     <span className="flex items-center gap-1 tabular-nums text-muted-foreground">
-                      {state === "done" && <Check className="size-3 text-status-good" aria-label="Taken" />}
-                      {state === "in-progress" && <Clock className="size-3 text-[#a86f00]" aria-label="In progress" />}
+                      {state === "done" && <Check className="size-4 text-status-good" strokeWidth={3} aria-label="Taken" />}
+                      {state === "in-progress" && <Clock className="size-4 text-[#986300]" strokeWidth={2.75} aria-label="In progress" />}
                       {c.credits > 0 && `${c.credits} cr`}
                     </span>
                   </span>

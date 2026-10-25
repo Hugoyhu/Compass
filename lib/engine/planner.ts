@@ -1,10 +1,9 @@
 /**
- * Prerequisite checking for a student's next term, and a rough graduation estimate.
+ * Prerequisite checking for a student's next term.
  */
 import type { CourseRecord } from "@/lib/domain/catalog/course";
 import type { ProgramDefinition, Rule } from "@/lib/domain/catalog/program";
-import type { CourseCode, LetterGrade, StudentRecord, TermId } from "@/lib/domain/types";
-import { nextRegularTerm } from "@/lib/domain/terms";
+import type { CourseCode, LetterGrade, StudentRecord } from "@/lib/domain/types";
 import { requiredByOthers, substitutionCourses, substitutionEligible, type DegreeAudit } from "./audit";
 import {
   buildCompletionIndex,
@@ -64,20 +63,4 @@ export function prerequisiteChecker(
   const standing = standingFor(audit.credits.earned + audit.credits.inProgress + extraCredits);
   return (c: Pick<CourseRecord, "code" | "prerequisites">) =>
     evaluatePrereq(c.prerequisites, { index, standing, majorSubjects, defaultMinGrade: prereqGrades.get(c.code.split(" ")[0]) });
-}
-
-/**
- * Rough graduation estimate from remaining credits at a steady load.
- * Ignores prerequisite chains and offering patterns — label it as an estimate.
- */
-export function estimateGraduationTerm(
-  audit: DegreeAudit,
-  currentTerm: TermId,
-  creditsPerTerm = 15,
-): { term: TermId; semestersRemaining: number } {
-  const remaining = Math.max(0, audit.credits.required - audit.credits.earned - audit.credits.inProgress);
-  const semestersRemaining = Math.ceil(remaining / creditsPerTerm);
-  let term = currentTerm;
-  for (let i = 0; i < semestersRemaining; i++) term = nextRegularTerm(term);
-  return { term, semestersRemaining };
 }

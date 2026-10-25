@@ -28,7 +28,7 @@ export function StatusBadge({
   const { icon: Icon, className: tone } = STYLES[status];
   return (
     <span className={cn("inline-flex items-center gap-1 text-xs font-medium whitespace-nowrap", className)}>
-      <Icon className={cn("size-3.5 shrink-0", tone)} aria-hidden />
+      <Icon className={cn("size-4 shrink-0", tone)} strokeWidth={2.75} aria-hidden />
       <span className={compact ? "sr-only" : "text-foreground/80"}>{STATUS_LABELS[status]}</span>
     </span>
   );
@@ -36,5 +36,5 @@ export function StatusBadge({
 
 export function StatusIcon({ status, className }: { status: DisplayStatus; className?: string }) {
   const { icon: Icon, className: tone } = STYLES[status];
-  return <Icon className={cn("size-4 shrink-0", tone, className)} aria-label={STATUS_LABELS[status]} />;
+  return <Icon className={cn("size-4 shrink-0", tone, className)} strokeWidth={2.75} aria-label={STATUS_LABELS[status]} />;
 }

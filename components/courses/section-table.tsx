@@ -1,7 +1,9 @@
 import type { Section } from "@/lib/domain/catalog/offering";
+import { instructorNames } from "@/lib/engine/professors";
+import type { InstructorRating } from "@/lib/services/schedule";
 
 /** Scheduled sections as a table; tutorials (independent study and similar) are only counted. */
-export function SectionTable({ sections }: { sections: Section[] }) {
+export function SectionTable({ sections, ratings }: { sections: Section[]; ratings: Record<string, InstructorRating> }) {
   const tutorials = sections.filter((s) => s.component === "TUT");
   const classes = sections.filter((s) => s.component !== "TUT");
   return (
@@ -33,7 +35,13 @@ export function SectionTable({ sections }: { sections: Section[] }) {
                     <td className="px-3 py-1.5 whitespace-nowrap">{m?.days ?? "TBA"}</td>
                     <td className="px-3 py-1.5 whitespace-nowrap tabular-nums">{m && m.start ? `${m.start}–${m.end}` : "TBA"}</td>
                     <td className="px-3 py-1.5">{m?.room || "TBA"}</td>
-                    <td className="px-3 py-1.5">{m?.instructor || "TBA"}</td>
+                    <td className="px-3 py-1.5">
+                      {m?.instructor ? (
+                        <Instructors text={m.instructor} ratings={ratings} />
+                      ) : (
+                        "TBA"
+                      )}
+                    </td>
                   </tr>
                 )),
               )}
@@ -47,5 +55,35 @@ export function SectionTable({ sections }: { sections: Section[] }) {
         </p>
       )}
     </div>
+  );
+}
+
+/** Instructor names, each followed by a link to their Rate My Professors score when one matched. */
+function Instructors({ text, ratings }: { text: string; ratings: Record<string, InstructorRating> }) {
+  const names = instructorNames(text);
+  if (names.length === 0) return <>{text}</>;
+  return (
+    <>
+      {names.map((name, i) => {
+        const r = ratings[name];
+        return (
+          <span key={name}>
+            {i > 0 && ", "}
+            {name}
+            {r && (
+              <a
+                href={`https://www.ratemyprofessors.com/professor/${r.id}`}
+                target="_blank"
+                rel="noreferrer"
+                title={`Rate My Professors: ${r.rating.toFixed(1)}/5 from ${r.numRatings} ${r.numRatings === 1 ? "rating" : "ratings"}, difficulty ${r.difficulty.toFixed(1)}`}
+                className="ml-1.5 tabular-nums text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+              >
+                ★ {r.rating.toFixed(1)}
+              </a>
+            )}
+          </span>
+        );
+      })}
+    </>
   );
 }

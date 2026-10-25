@@ -13,6 +13,8 @@ import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { kindLabel } from "@/lib/domain/program-kinds";
+import type { SampleTerm } from "@/lib/domain/catalog/program";
+import { formatProgramName } from "@/lib/domain/program-name";
 import { substitutionLayouts } from "@/lib/engine/audit";
 import { isPassing, buildCompletionIndex } from "@/lib/engine/prerequisites";
 import type { ProgramOptions } from "@/lib/engine/program-options";
@@ -27,7 +29,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/degrees/[id]">): Promise<Metadata> {
   const detail = await getProgramDetail((await params).id);
-  return { title: detail?.program.name ?? "Degree Explorer" };
+  return { title: detail ? formatProgramName(detail.program.name) : "Degree Explorer" };
 }
 
 export default function DegreePage({ params }: PageProps<"/degrees/[id]">) {
@@ -59,7 +61,7 @@ async function Degree({ params }: Pick<PageProps<"/degrees/[id]">, "params">) {
     <>
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="space-y-1">
-          <h2 className="text-5xl font-bold tracking-tight md:text-6xl">{program.name}</h2>
+          <h2 className="text-5xl font-bold tracking-tight md:text-6xl">{formatProgramName(program.name)}</h2>
           <p className="text-sm text-muted-foreground">
             {[program.degree ?? kindLabel(program.kind), program.approxCredits && `${program.approxCredits} credits`]
               .filter(Boolean)
@@ -163,6 +165,12 @@ async function AddProgram({ programId }: { programId: string }) {
   return <ProgramToggle programId={programId} added={record?.programIds.includes(programId) ?? false} />;
 }
 
+/** Courses by code, then the placeholders (SBC, electives) in their listed order. */
+function sortedSlots(slots: SampleTerm["slots"]): SampleTerm["slots"] {
+  const courses = slots.filter((s) => s.kind === "course").sort((a, b) => a.code.localeCompare(b.code, "en", { numeric: true }));
+  return [...courses, ...slots.filter((s) => s.kind !== "course")];
+}
+
 function SampleSequence({ detail }: { detail: ProgramDetail }) {
   const terms = detail.program.sampleSequence ?? [];
   return (
@@ -181,7 +189,7 @@ function SampleSequence({ detail }: { detail: ProgramDetail }) {
                 <span className="text-muted-foreground tabular-nums">{term.slots.reduce((sum, s) => sum + s.credits, 0)} cr</span>
               </p>
               <ul className="divide-y text-xs">
-                {term.slots.map((slot, j) => (
+                {sortedSlots(term.slots).map((slot, j) => (
                   <li key={j} className="flex items-baseline gap-2 px-3 py-1">
                     {slot.kind === "course" ? (
                       <>

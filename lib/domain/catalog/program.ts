@@ -268,6 +268,21 @@ export const ProgramDefinitionSchema = z.strictObject({
       .describe("Only program-specific SBC rules stated on the page; per-course SBC tags live on course records"),
   }),
   sampleSequence: z.array(SampleTermSchema).optional(),
+  placements: z
+    .array(
+      z.strictObject({
+        code: CourseCodeSchema,
+        semester: z.number().int().min(1).describe("Of the student's fall and spring semesters, 1 = their first"),
+      }),
+    )
+    .optional()
+    .describe("Courses that must be taken in a fixed semester when needed, e.g. HON 200 in the second; hand-curated"),
+  assumedCourses: z
+    .array(CourseCodeSchema)
+    .optional()
+    .describe(
+      "Courses planned for anyone in the program, standing in for a choice among several (the Honors College core seminars HON 201 and 401, which also cover ARTS and DIV); hand-curated",
+    ),
   notes: z.array(NoteSchema).describe("Displayed to students, never evaluated"),
 });
 

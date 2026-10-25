@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { CalendarClock, CircleCheck, Clock, TriangleAlert } from "lucide-react";
+import { slugFor } from "@/lib/domain/course-slug";
 import type { ChooseConstraint, CourseSelector, Rule } from "@/lib/domain/catalog/program";
 import type { CreditSource } from "@/lib/domain/types";
 import type { CourseInfo } from "@/lib/services/degrees";
@@ -211,7 +213,13 @@ export function CourseLine({ code, ctx }: { code: string; ctx: RuleContext }) {
   const status = ctx.status?.[code];
   return (
     <span className="flex items-baseline gap-2 text-sm">
-      <span className="w-[4.5rem] shrink-0 font-mono text-xs">{code}</span>
+      {info ? (
+        <Link href={`/courses/${slugFor(code)}`} className="w-[4.5rem] shrink-0 font-mono text-xs underline-offset-4 hover:underline">
+          {code}
+        </Link>
+      ) : (
+        <span className="w-[4.5rem] shrink-0 font-mono text-xs">{code}</span>
+      )}
       <span className={`min-w-0 flex-1 ${info ? "" : "text-muted-foreground italic"}`}>{info?.title ?? ""}</span>
       {info && <span className="shrink-0 text-xs text-muted-foreground tabular-nums">{info.credits}</span>}
       {ctx.status && (
@@ -241,7 +249,7 @@ function StatusMark({ status, elsewhere }: { status?: CourseStatus; elsewhere: b
       const label = status.grade === "T" ? (SOURCE_LABELS[status.source ?? "sbu"] ?? "Credit") : status.grade;
       return (
         <span className={`${base} font-medium`}>
-          <CircleCheck className="size-3.5 text-status-good" aria-hidden />
+          <CircleCheck className="size-4 text-status-good" strokeWidth={2.75} aria-hidden />
           {label}
           <span className="sr-only"> (completed)</span>
         </span>
@@ -250,7 +258,7 @@ function StatusMark({ status, elsewhere }: { status?: CourseStatus; elsewhere: b
     case "in-progress":
       return (
         <span className={`${base} text-muted-foreground`}>
-          <Clock className="size-3.5 text-[#a86f00]" aria-hidden />
+          <Clock className="size-4 text-[#986300]" strokeWidth={2.75} aria-hidden />
           In progress
         </span>
       );

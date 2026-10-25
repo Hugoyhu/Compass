@@ -6,7 +6,14 @@ import { extractTranscriptAction } from "@/app/actions/transcript";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { formatTerm } from "@/lib/domain/terms";
 import type { CourseAttempt } from "@/lib/domain/types";
 import type { TranscriptDraft } from "@/lib/transcript/extract";
@@ -18,7 +25,13 @@ export interface ReviewedTranscript {
   mode: "replace" | "merge";
 }
 
-export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean; onApply: (result: ReviewedTranscript) => void }) {
+export function TranscriptUpload({
+  hasCourses,
+  onApply,
+}: {
+  hasCourses: boolean;
+  onApply: (result: ReviewedTranscript) => void;
+}) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [pending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
@@ -44,7 +57,11 @@ export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean;
 
   function apply(mode: ReviewedTranscript["mode"]) {
     if (!draft) return;
-    onApply({ draft, attempts: draft.attempts.filter((_, i) => !excluded.has(i)), mode });
+    onApply({
+      draft,
+      attempts: draft.attempts.filter((_, i) => !excluded.has(i)),
+      mode,
+    });
     setDraft(null);
   }
 
@@ -76,7 +93,9 @@ export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean;
           )}
           {groupAttempts(draft.attempts).map((group) => (
             <div key={group.key} className="space-y-1">
-              <p className="text-xs font-medium text-muted-foreground">{group.label}</p>
+              <p className="text-xs font-medium text-muted-foreground">
+                {group.label}
+              </p>
               <ul className="divide-y border-y">
                 {group.items.map(({ attempt, index }) => (
                   <li key={index}>
@@ -92,16 +111,28 @@ export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean;
                           setExcluded(next);
                         }}
                       />
-                      <span className="w-20 shrink-0 font-mono text-xs">{attempt.code}</span>
-                      <span className="min-w-0 flex-1 truncate">{attempt.title}</span>
+                      <span className="w-20 shrink-0 font-mono text-xs">
+                        {attempt.code}
+                      </span>
+                      <span className="min-w-0 flex-1 truncate">
+                        {attempt.title}
+                      </span>
                       {attempt.sbc?.map((tag) => (
-                        <Badge key={tag} variant="outline" className="hidden font-normal sm:inline-flex">
+                        <Badge
+                          key={tag}
+                          variant="outline"
+                          className="hidden font-normal sm:inline-flex"
+                        >
                           {tag}
                         </Badge>
                       ))}
-                      <span className="w-14 shrink-0 text-right text-xs tabular-nums">{attempt.credits ?? "–"} cr</span>
+                      <span className="w-14 shrink-0 text-right text-xs tabular-nums">
+                        {attempt.credits ?? "–"} cr
+                      </span>
                       <span className="w-20 shrink-0 text-right text-xs">
-                        {attempt.status === "in-progress" ? "In progress" : (attempt.grade ?? "No grade")}
+                        {attempt.status === "in-progress"
+                          ? "In progress"
+                          : (attempt.grade ?? "No grade")}
                       </span>
                     </label>
                   </li>
@@ -112,10 +143,16 @@ export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean;
         </CardContent>
         <CardFooter className="flex-wrap gap-2 py-3">
           <Button onClick={() => apply("replace")} disabled={included === 0}>
-            {hasCourses ? `Replace my courses (${included})` : `Save ${included} courses`}
+            {hasCourses
+              ? `Replace my courses (${included})`
+              : `Save ${included} courses`}
           </Button>
           {hasCourses && (
-            <Button variant="outline" onClick={() => apply("merge")} disabled={included === 0}>
+            <Button
+              variant="outline"
+              onClick={() => apply("merge")}
+              disabled={included === 0}
+            >
               Add to my courses
             </Button>
           )}
@@ -133,7 +170,9 @@ export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean;
         <FileUp className="size-5 shrink-0 text-primary" aria-hidden />
         <div className="min-w-0 flex-1 space-y-0.5">
           <p className="font-medium">Upload a transcript</p>
-          <p className="text-xs text-muted-foreground">SOLAR unofficial transcript (PDF). Not stored.</p>
+          <p className="text-xs text-muted-foreground">
+            Upload your PDF transcript to automatically populate classes taken!
+          </p>
           {error && (
             <p role="alert" className="text-sm text-destructive">
               {error}
@@ -151,7 +190,11 @@ export function TranscriptUpload({ hasCourses, onApply }: { hasCourses: boolean;
             if (file) upload(file);
           }}
         />
-        <Button onClick={() => inputRef.current?.click()} disabled={pending} className="shrink-0">
+        <Button
+          onClick={() => inputRef.current?.click()}
+          disabled={pending}
+          className="shrink-0"
+        >
           {pending ? (
             <>
               <Loader2 className="animate-spin" />

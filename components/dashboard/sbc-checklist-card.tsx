@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { groupSbcResults, type SbcAudit, type SbcResult } from "@/lib/engine/audit";
 import { STATUS_LABELS } from "@/lib/engine/describe";
+import { cn } from "@/lib/utils";
 
 export function SbcChecklistCard({ audit }: { audit: SbcAudit }) {
   const { required, threeOf } = groupSbcResults(audit.results);
@@ -37,7 +38,13 @@ function SbcGrid({ results }: { results: SbcResult[] }) {
                   render={
                     <div
                       tabIndex={0}
-                      className="flex items-center gap-1.5 border border-foreground/30 px-2 py-1.5 text-xs font-medium outline-none focus-visible:ring-2 focus-visible:ring-ring data-[status=satisfied]:border-foreground data-[status=satisfied]:bg-foreground data-[status=satisfied]:text-background data-[status=satisfied]:[&_svg]:text-background"
+                      className={cn(
+                        "flex items-center gap-1.5 border border-foreground/30 px-2 py-1.5 text-xs font-medium outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                        "data-[status=satisfied]:border-foreground data-[status=satisfied]:bg-foreground data-[status=satisfied]:text-background data-[status=satisfied]:[&_svg]:text-background",
+                        "data-[status=in-progress]:border-[#a86f00]/60 data-[status=in-progress]:bg-[#a86f00]/10 data-[status=in-progress]:text-[#7a5000]",
+                        "data-[status=exempt]:border-muted-foreground/20 data-[status=exempt]:bg-muted data-[status=exempt]:text-muted-foreground",
+                        "data-[status=not-required]:border-muted-foreground/20 data-[status=not-required]:bg-muted data-[status=not-required]:text-muted-foreground",
+                      )}
                       data-status={r.status}
                     >
                       <StatusIcon status={r.status} className="size-3.5" />

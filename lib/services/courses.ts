@@ -12,8 +12,11 @@ import { nextRegularTerm, termOrdinal } from "@/lib/domain/terms";
 import type { CourseCode, StudentRecord, TermId } from "@/lib/domain/types";
 import { matchesSelector, runDegreeAudit } from "@/lib/engine/audit";
 import { requirementHeading } from "@/lib/engine/describe";
+import { buildRatingIndex, instructorNames } from "@/lib/engine/professors";
+import type { InstructorRating } from "@/lib/services/schedule";
 import { prerequisiteChecker } from "@/lib/engine/planner";
 import { buildCompletionIndex, referencedCourses, usableAttempts } from "@/lib/engine/prerequisites";
+import { formatProgramName } from "@/lib/domain/program-name";
 
 export type CourseStatus = "taken" | "in-progress" | "planned" | "can-take" | "prereqs-missing";
 
@@ -110,6 +113,18 @@ export async function getCourseDetail(code: CourseCode, student: StudentRecord |
     )
   ).filter((t) => t.sections.length > 0);
 
+  // Rate My Professors summaries for the instructors teaching these sections, by schedule name.
+  const findRating = buildRatingIndex(await repo.listProfessorRatings());
+  const ratings: Record<string, InstructorRating> = {};
+  for (const section of sections.flatMap((t) => t.sections)) {
+    for (const meeting of section.meetings) {
+      for (const name of instructorNames(meeting.instructor)) {
+        const match = ratings[name] ? null : findRating(name);
+        if (match) ratings[name] = { id: match.id, rating: match.rating, difficulty: match.difficulty, numRatings: match.numRatings, wouldTakeAgain: match.wouldTakeAgain };
+      }
+    }
+  }
+
   const unlocks = data.courses
     .filter((c) => c.code !== code && referencedCourses(c.prerequisites).includes(code))
     .map((c) => titleOf(c.code));
@@ -119,7 +134,7 @@ export async function getCourseDetail(code: CourseCode, student: StudentRecord |
   const countsToward: { program: string; requirement: string }[] = [];
   for (const p of status?.audit.programs ?? []) {
     for (const r of p.program.requirements) {
-      if (ruleMentions(r.rule, code, course)) countsToward.push({ program: p.program.name, requirement: requirementHeading(r) });
+      if (ruleMentions(r.rule, code, course)) countsToward.push({ program: formatProgramName(p.program.name), requirement: requirementHeading(r) });
     }
   }
 
@@ -146,6 +161,7 @@ export async function getCourseDetail(code: CourseCode, student: StudentRecord |
     course,
     credits: formatCredits(course.credits),
     sections,
+    ratings,
     unlocks,
     equivalents: course.equivalents.map(titleOf),
     countsToward,

@@ -9,8 +9,7 @@ import type { StudentRecord } from "@/lib/domain/types";
 import { kindOrder } from "@/lib/domain/program-kinds";
 import { runDegreeAudit } from "@/lib/engine/audit";
 import { computeGpa } from "@/lib/engine/gpa";
-import { checkPlan } from "@/lib/engine/plan";
-import { estimateGraduationTerm } from "@/lib/engine/planner";
+import { checkPlan, degreeTerms, targetTerms } from "@/lib/engine/plan";
 import { planContext } from "./plan";
 import { getNextSemesterSchedule } from "./schedule";
 
@@ -32,7 +31,8 @@ export async function getStudentView(student: StudentRecord) {
 
   const audit = runDegreeAudit({ student, programs, courses, sbcCategories, creditRules });
   const nextSemester = await getNextSemesterSchedule(student.currentTerm);
-  const graduation = estimateGraduationTerm(audit, student.currentTerm);
+  // Until a plan completes the degree, graduation is the last semester of the Semester Planner's goal.
+  const graduation = { term: degreeTerms(student).at(-1)!, semesters: targetTerms(student) };
 
   // With a plan, the dashboard shows its graduation term instead of an estimate.
   const checked = student.plan.length > 0 ? checkPlan(await planContext(student), student.plan) : null;

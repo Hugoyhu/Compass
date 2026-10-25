@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Prerequisite-aware degree audit and semester planning for Stony Brook students.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children, modal }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${grotesk.variable} h-full antialiased`}>
       <body className="min-h-full">
@@ -29,6 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             }
           />
           {children}
+          {modal}
         </TooltipProvider>
       </body>
     </html>

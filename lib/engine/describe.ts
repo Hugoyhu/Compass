@@ -64,6 +64,15 @@ export function describeSelector(sel: CourseSelector): string {
   return parts.join(" or ") || "the listed courses";
 }
 
+/** True when every course a pool can take is 300-level or above, so its courses count as upper-division credit. */
+export function isUpperDivisionPool(sel: CourseSelector): boolean {
+  const ranges = sel.ranges ?? [];
+  const courses = sel.courses ?? [];
+  const upper = ranges.every((r) => r.from >= 300) && courses.every((c) => Number(c.split(" ")[1]) >= 300);
+  if (sel.subjects?.length || sel.minNumber !== undefined) return upper && (sel.minNumber ?? 0) >= 300;
+  return upper && (ranges.length > 0 || courses.length > 0);
+}
+
 export function describeMissing(item: MissingItem): string {
   switch (item.kind) {
     case "course":

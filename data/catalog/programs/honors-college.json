@@ -45,7 +45,7 @@
             "code": "HON 200"
           }
         ],
-        "manualCheck": "Students who enter after their first semester follow a modified course program set by the Honors College."
+        "manualCheck": "HON 200 must be taken in your second semester (it is offered in spring only). Students who enter after their first semester follow a modified course program set by the Honors College."
       }
     },
     {
@@ -133,6 +133,35 @@
               }
             ],
             "manualCheck": "The Social Analysis and Impact Capstone is by application."
+          },
+          {
+            "type": "allOf",
+            "label": "Departmental senior project",
+            "rules": [
+              {
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "minNumber": 495,
+                  "maxNumber": 495,
+                  "excludeCourses": [
+                    "HON 495"
+                  ]
+                }
+              },
+              {
+                "type": "choose",
+                "count": 1,
+                "from": {
+                  "minNumber": 496,
+                  "maxNumber": 496,
+                  "excludeCourses": [
+                    "HON 496"
+                  ]
+                }
+              }
+            ],
+            "manualCheck": "A departmental 495/496 senior project or thesis (CSE 495/496, for example) substitutes for HON 495/496 with Honors College approval."
           }
         ],
         "manualCheck": "A departmental honors project may substitute with Honors College approval. A letter of intent is due by the last day of classes of junior year; the thesis is presented at the University Honors Senior Symposium."
@@ -157,6 +186,50 @@
     "exemptions": [],
     "fulfillment": []
   },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "HON 101",
+          "credits": 1
+        },
+        {
+          "kind": "course",
+          "code": "HON 105",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "HON 106",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "HON 200",
+          "credits": 1
+        }
+      ]
+    }
+  ],
+  "assumedCourses": [
+    "HON 201",
+    "HON 401"
+  ],
+  "placements": [
+    {
+      "code": "HON 200",
+      "semester": 2
+    }
+  ],
   "notes": [
     {
       "topic": "sbc",

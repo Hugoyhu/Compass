@@ -57,6 +57,8 @@ export interface StudentRecord {
   plan: PlannedTerm[];
   /** The fewest credits the student wants in a fall or spring term; defaults to full time (12). */
   minTermCredits?: number;
+  /** Fall and spring semesters to graduate in, counting from the first; defaults to eight. */
+  targetTerms?: number;
   /**
    * Declared concentrations, specializations, and tracks: a choice rule's id
    * → the id of the chosen alternative.
@@ -70,9 +72,16 @@ export interface StudentRecord {
 
 /**
  * A planned course, a placeholder for a free elective of some number of
- * credits, or a placeholder for a course (3 credits) that carries an SBC.
+ * credits, a placeholder for a course (3 credits) that carries an SBC, or an
+ * elective slot: a course still to pick from a program requirement's pool
+ * (`slot` is the requirement id; `also`, other requirements whose pools take
+ * the same courses, so one course can count for both).
  */
-export type PlanItem = { code: CourseCode } | { elective: number } | { sbc: SbcCode };
+export type PlanItem =
+  | { code: CourseCode }
+  | { elective: number }
+  | { sbc: SbcCode }
+  | { slot: string; credits: number; also?: string[] };
 
 export interface PlannedTerm {
   term: TermId;

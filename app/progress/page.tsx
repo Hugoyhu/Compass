@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { ExternalLink, Info, Plus } from "lucide-react";
 import { StatusIcon } from "@/components/audit/status-badge";
 import { ProgramToggle } from "@/components/degrees/program-toggle";
+import { formatProgramName } from "@/lib/domain/program-name";
 import { GetStarted } from "@/components/onboarding/get-started";
 import { NotesCard, ProgramRulesCard, RequirementNav, SubstitutionsCard } from "@/components/program/program-panels";
 import { RequirementCard } from "@/components/program/requirement-card";
@@ -71,7 +72,7 @@ async function Progress({ searchParams }: Pick<PageProps<"/progress">, "searchPa
               aria-current={active ? "page" : undefined}
               className={`-mb-px border-b-2 px-3 py-2 text-sm ${active ? "border-foreground font-medium" : "border-transparent text-muted-foreground hover:text-foreground"}`}
             >
-              {p.program.name}
+              {formatProgramName(p.program.name)}
               <span className="ml-1.5 text-xs text-muted-foreground tabular-nums">
                 {p.satisfied}/{p.total}
               </span>
@@ -86,7 +87,7 @@ async function Progress({ searchParams }: Pick<PageProps<"/progress">, "searchPa
 
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="space-y-1">
-          <h2 className="text-5xl font-bold tracking-tight md:text-6xl">{program.name}</h2>
+          <h2 className="text-5xl font-bold tracking-tight md:text-6xl">{formatProgramName(program.name)}</h2>
           <p className="text-sm text-muted-foreground">
             {selected.satisfied} of {selected.total} requirements done
           </p>

@@ -12,7 +12,9 @@ function plain(text: string): string {
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "")
     .toLowerCase()
-    .replace(/[^a-z ]/g, "");
+    .replace(/['’`.]/g, "")
+    .replace(/[^a-z]+/g, " ")
+    .trim();
 }
 
 /** Names the schedule lists for a meeting: one, or several separated by commas. */
@@ -43,7 +45,8 @@ export function buildRatingIndex(professors: ProfessorRating[]): (name: string) 
     if (words.length < 2) return null;
     const first = words[0];
     // "Maria De La Cruz": the last name is everything after the first word, or just the final word.
-    const lasts = [...new Set([words.slice(1).join(""), words[words.length - 1]])];
+    // Symbols count as word breaks, so "Mary-Jane Smith-Jones" tries "smithjones" and "jones" too.
+    const lasts = [...new Set(words.slice(1).map((_, i) => words.slice(i + 1).join("")))];
     for (const last of lasts) {
       const hit = pick(exact.get(`${first}|${last}`));
       if (hit) return hit;

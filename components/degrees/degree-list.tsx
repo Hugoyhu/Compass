@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { kindLabel, kindsIn } from "@/lib/domain/program-kinds";
+import { formatProgramName } from "@/lib/domain/program-name";
 import type { ProgramSummary } from "@/lib/services/degrees";
 
 type KindFilter = "all" | "mine" | ProgramSummary["kind"];
@@ -63,7 +64,7 @@ export function DegreeList({ programs, mine }: { programs: ProgramSummary[]; min
             <li key={p.id}>
               <Link href={`/degrees/${p.id}`} className="flex items-center gap-3 px-3 py-2.5 hover:bg-muted/50 focus-visible:bg-muted/50 focus-visible:outline-none">
                 <div className="min-w-0 flex-1 space-y-0.5">
-                  <p className="truncate text-sm font-medium">{p.name}</p>
+                  <p className="truncate text-sm font-medium">{formatProgramName(p.name)}</p>
                   <p className="truncate text-xs text-muted-foreground">
                     {[p.degree, p.approxCredits && `${p.approxCredits} credits`]
                       .filter(Boolean)

@@ -2,6 +2,7 @@
 
 import { useMemo, useState, useTransition } from "react";
 import { Loader2, Plus, Trash2, X } from "lucide-react";
+import Link from "next/link";
 import {
   clearRecord,
   saveRecord,
@@ -16,7 +17,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { slugFor } from "@/lib/domain/course-slug";
 import { kindLabel, kindsIn } from "@/lib/domain/program-kinds";
+import { formatProgramName } from "@/lib/domain/program-name";
 import { cn } from "@/lib/utils";
 import {
   MAX_PROGRAMS,
@@ -176,9 +179,18 @@ export function RecordEditor({
                         key={`${attemptKey(attempt)}-${index}`}
                         className="flex items-center gap-2 py-1.5 text-sm"
                       >
-                        <span className="w-20 shrink-0 font-mono text-xs">
-                          {attempt.code}
-                        </span>
+                        {known ? (
+                          <Link
+                            href={`/courses/${slugFor(attempt.code)}`}
+                            className="w-20 shrink-0 font-mono text-xs underline-offset-4 hover:underline"
+                          >
+                            {attempt.code}
+                          </Link>
+                        ) : (
+                          <span className="w-20 shrink-0 font-mono text-xs">
+                            {attempt.code}
+                          </span>
+                        )}
                         <span className="min-w-0 flex-1 truncate">
                           {known?.title ?? attempt.title ?? "Unknown course"}
                         </span>
@@ -325,7 +337,7 @@ export function RecordEditor({
                         .filter((p) => p.kind === kind)
                         .map((p) => (
                           <option key={p.id} value={p.id}>
-                            {p.name}
+                            {formatProgramName(p.name)}
                           </option>
                         ))}
                     </optgroup>
@@ -443,8 +455,9 @@ function AddCourseForm({
         />
         <datalist id="catalog-courses">
           {courses.map((c) => (
+            // The label repeats the code without its space, so "POL369" finds POL 369 too.
             <option key={c.code} value={c.code}>
-              {c.title}
+              {`${c.code.replace(" ", "")} · ${c.title}`}
             </option>
           ))}
         </datalist>

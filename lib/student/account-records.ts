@@ -6,7 +6,7 @@ import { StudentRecordSchema } from "./record";
 export async function loadAccountRecord(userId: string): Promise<StudentRecord | null> {
   const sql = requireSql();
   const [profile] = await sql`
-    select name, entry_term, current_term, program_ids, plan, min_term_credits, choices from student_profiles where user_id = ${userId}`;
+    select name, entry_term, current_term, program_ids, plan, min_term_credits, choices, target_terms from student_profiles where user_id = ${userId}`;
   if (!profile) return null;
   const rows = await sql`
     select code, source, term, grade, status, credits, origin, title, sbc
@@ -32,6 +32,7 @@ export async function loadAccountRecord(userId: string): Promise<StudentRecord |
     plan: profile.plan ?? [],
     ...(profile.min_term_credits !== null && { minTermCredits: profile.min_term_credits }),
     ...(profile.choices && Object.keys(profile.choices).length > 0 && { choices: profile.choices }),
+    ...(profile.target_terms !== null && { targetTerms: profile.target_terms }),
   });
   return parsed.success ? (parsed.data as StudentRecord) : null;
 }
@@ -40,12 +41,12 @@ export async function loadAccountRecord(userId: string): Promise<StudentRecord |
 export async function saveAccountRecord(userId: string, record: StudentRecord): Promise<void> {
   await requireSql().begin(async (tx) => {
     await tx`
-      insert into student_profiles (user_id, name, entry_term, current_term, program_ids, plan, min_term_credits, choices, updated_at)
-      values (${userId}, ${record.name}, ${record.entryTerm}, ${record.currentTerm}, ${tx.array(record.programIds)}, ${tx.json(record.plan as unknown as Parameters<typeof tx.json>[0])}, ${record.minTermCredits ?? null}, ${tx.json(record.choices ?? {})}, now())
+      insert into student_profiles (user_id, name, entry_term, current_term, program_ids, plan, min_term_credits, choices, target_terms, updated_at)
+      values (${userId}, ${record.name}, ${record.entryTerm}, ${record.currentTerm}, ${tx.array(record.programIds)}, ${tx.json(record.plan as unknown as Parameters<typeof tx.json>[0])}, ${record.minTermCredits ?? null}, ${tx.json(record.choices ?? {})}, ${record.targetTerms ?? null}, now())
       on conflict (user_id) do update set
         name = excluded.name, entry_term = excluded.entry_term, current_term = excluded.current_term,
         program_ids = excluded.program_ids, plan = excluded.plan,
-        min_term_credits = excluded.min_term_credits, choices = excluded.choices, updated_at = now()`;
+        min_term_credits = excluded.min_term_credits, choices = excluded.choices, target_terms = excluded.target_terms, updated_at = now()`;
     await tx`delete from course_attempts where user_id = ${userId}`;
     if (record.attempts.length === 0) return;
     const rows = record.attempts.map((a, position) => ({

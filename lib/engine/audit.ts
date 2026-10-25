@@ -11,6 +11,7 @@
  */
 import type { CourseRecord } from "@/lib/domain/catalog/course";
 import type {
+  ChoiceKind,
   ChooseConstraint,
   CourseSelector,
   ProgramDefinition,
@@ -68,6 +69,11 @@ export type MissingItem =
       constraints: ChooseConstraint[];
       /** Courses that may not be used here (already used elsewhere, or equivalent). */
       exclude: CourseCode[];
+      /**
+       * The concentration (specialization, track) the pool belongs to: the one
+       * declared, or else the closest, which the plan follows until one is.
+       */
+      option?: { kind: ChoiceKind; label: string; declared: boolean };
     }
   | { kind: "review"; text: string };
 
@@ -169,6 +175,27 @@ export const GRADE_POINTS: Record<LetterGrade, number> = {
 function parseCode(code: CourseCode): { subject: string; number: number } {
   const [subject, number] = code.split(" ");
   return { subject, number: Number(number) };
+}
+
+/**
+ * Credits a pool still takes of a course, given what already counts there:
+ * "at most 6 credits from non-AMS courses" leaves 0 for a CSE course once two
+ * CSE courses count. Infinity when no such limit covers the course.
+ */
+export function poolRoom(
+  item: Extract<MissingItem, { kind: "choose" }>,
+  applied: AppliedCourse[],
+  catalog: Map<CourseCode, CourseRecord>,
+  code: CourseCode,
+): number {
+  let room = Infinity;
+  for (const k of item.constraints) {
+    if (k.type !== "maxFrom" || !matchesSelector(code, catalog.get(code), k.from)) continue;
+    const counted = applied.filter((a) => matchesSelector(a.code, catalog.get(a.code), k.from));
+    if (k.maxCredits !== undefined) room = Math.min(room, k.maxCredits - counted.reduce((s, a) => s + a.credits, 0));
+    if (k.maxCourses !== undefined) room = Math.min(room, (k.maxCourses - counted.length) * 3);
+  }
+  return Math.max(0, room);
 }
 
 export function matchesSelector(
@@ -403,7 +430,12 @@ function evaluateNode(ctx: Ctx, rule: Rule): NodeResult {
     case "anyOf": {
       // A declared concentration (or specialization, track) is the only alternative that counts.
       const chosen = rule.choice && rule.id ? rule.rules.find((alt) => alt.id === ctx.choices[rule.id!]) : undefined;
-      if (chosen) return evaluateRule(ctx, chosen);
+      /** Marks the pools still open in a concentration with which one it is. */
+      const tag = (r: NodeResult, alt: Rule, declared: boolean): NodeResult =>
+        rule.choice && alt.label
+          ? { ...r, missing: r.missing.map((m) => (m.kind === "choose" ? { ...m, option: { kind: rule.choice!, label: alt.label!, declared } } : m)) }
+          : r;
+      if (chosen) return tag(evaluateRule(ctx, chosen), chosen, true);
       // Otherwise score each alternative on a throwaway context, then commit the best.
       const scores = rule.rules.map((alt) => {
         const r = evaluateRule(forkCtx(ctx), alt);
@@ -415,9 +447,13 @@ function evaluateNode(ctx: Ctx, rule: Rule): NodeResult {
       // With nothing started, report the first alternative the catalog can satisfy, not one naming missing courses.
       const inCatalog = (alt: Rule): boolean =>
         alt.type === "course" ? ctx.catalog.has(alt.code) : alt.type === "allOf" || alt.type === "anyOf" ? alt.rules.every(inCatalog) : alt.type !== "unparsed";
-      const best =
+      const first =
         (bestScore === 0 ? rule.rules.find((alt, i) => scores[i] === 0 && inCatalog(alt)) : undefined) ??
         rule.rules[scores.indexOf(bestScore)];
+      // Alternatives equally far along: the one with the most courses the student prefers.
+      const liked = (alt: Rule) => mandatoryCourses(alt).filter((c) => preferredCourses(ctx.choices).has(c)).length;
+      const tied = rule.rules.filter((alt, i) => scores[i] === bestScore && (bestScore > 0 || inCatalog(alt)));
+      const best = tied.length > 1 ? tied.reduce((a, b) => (liked(b) > liked(a) ? b : a), first) : first;
       const result = evaluateRule(ctx, best);
       // Nothing started and every alternative is a single course: offer them all as one slot.
       if (bestScore === 0 && rule.rules.every((alt) => alt.type === "course")) {
@@ -426,7 +462,7 @@ function evaluateNode(ctx: Ctx, rule: Rule): NodeResult {
         );
         return { ...result, missing: [{ kind: "course", options }] };
       }
-      return result;
+      return tag(result, best, false);
     }
 
     case "choose":
@@ -665,6 +701,19 @@ function evaluationOrder(
 }
 
 const SUBSTITUTION_SCOPE = "substitution:";
+
+const PREFER_PREFIX = "prefer:";
+
+/** Courses the student has chosen over the alternatives that would do (stored with their choices as "prefer:<code>"). */
+export function preferredCourses(choices: Record<string, string> | undefined): Set<CourseCode> {
+  return new Set(Object.keys(choices ?? {}).filter((k) => k.startsWith(PREFER_PREFIX)).map((k) => k.slice(PREFER_PREFIX.length)));
+}
+
+/** Courses the student has picked for a "choose" seat, or taken off their list ("pick:<code>", "avoid:<code>" in choices). */
+export function pickedCourses(choices: Record<string, string> | undefined, kind: "pick" | "avoid"): Set<CourseCode> {
+  const prefix = `${kind}:`;
+  return new Set(Object.keys(choices ?? {}).filter((k) => k.startsWith(prefix)).map((k) => k.slice(prefix.length)));
+}
 
 /** Course codes a rule requires outright: every course leaf not under an anyOf or choose. */
 export function mandatoryCourses(rule: Rule): CourseCode[] {

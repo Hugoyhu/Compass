@@ -9,7 +9,7 @@
  */
 import { z } from "zod";
 import { CourseCodeSchema, LetterGradeSchema, SbcCodeSchema } from "@/lib/domain/catalog/common";
-import { MAX_PROGRAMS, type CourseAttempt, type CreditSource, type PlannedTerm, type SbcCode, type StudentRecord, type TermId } from "@/lib/domain/types";
+import { MAX_PROGRAMS, type CourseAttempt, type CreditSource, type PlannedTerm, type PlanItem, type SbcCode, type StudentRecord, type TermId } from "@/lib/domain/types";
 
 export const TermIdSchema = z.string().regex(/^\d{4}-(FA|WI|SP|SU)$/) as unknown as z.ZodType<TermId>;
 export const GradeSchema = z.union([LetterGradeSchema, z.enum(["P", "T", "NC", "W", "I"])]);
@@ -26,6 +26,10 @@ export const CourseAttemptSchema = z.object({
   sbc: z.array(SbcCodeSchema).optional(),
 });
 
+/** Fewest and most fall/spring semesters a student can aim to graduate in. */
+export const MIN_TARGET_TERMS = 2;
+export const MAX_TARGET_TERMS = 12;
+
 /** Enough for a full four-year plan plus summer and winter sessions. */
 export const MAX_PLAN_TERMS = 16;
 
@@ -33,11 +37,12 @@ export const PlanItemSchema = z.union([
   z.strictObject({ code: CourseCodeSchema }),
   z.strictObject({ elective: z.number().min(0).max(12) }),
   z.strictObject({ sbc: SbcCodeSchema }),
+  z.strictObject({ slot: z.string().max(160), credits: z.number().min(0).max(12), also: z.array(z.string().max(160)).max(4).optional() }),
 ]);
 
 export const PlannedTermSchema = z.object({
   term: TermIdSchema,
-  items: z.array(PlanItemSchema).max(10),
+  items: z.array(PlanItemSchema).max(12),
 });
 
 export const StudentRecordSchema = z.object({
@@ -50,6 +55,7 @@ export const StudentRecordSchema = z.object({
   attempts: z.array(CourseAttemptSchema).max(120),
   plan: z.array(PlannedTermSchema).max(MAX_PLAN_TERMS).default([]),
   minTermCredits: z.number().int().min(0).max(19).optional(),
+  targetTerms: z.number().int().min(MIN_TARGET_TERMS).max(MAX_TARGET_TERMS).optional(),
   choices: z.record(z.string().max(120), z.string().max(120)).optional(),
 });
 
@@ -94,26 +100,37 @@ function unpack(p: PackedAttempt): CourseAttempt {
 
 /**
  * A plan term as [term, items], where an item is a course code, an elective's
- * credits, or "SBC:<code>" for an SBC placeholder.
+ * credits, "SBC:<code>" for an SBC placeholder, or "SLOT:<credits>:<requirement id>[|<also id>…]"
+ * for an elective slot.
  */
 type PackedTerm = [string, (string | number)[]];
 const SBC_PREFIX = "SBC:";
+const SLOT_PREFIX = "SLOT:";
+
+function packItem(i: PlanItem): string | number {
+  if ("code" in i) return i.code;
+  if ("sbc" in i) return SBC_PREFIX + i.sbc;
+  if ("slot" in i) return `${SLOT_PREFIX}${i.credits}:${[i.slot, ...(i.also ?? [])].join("|")}`;
+  return i.elective;
+}
+
+function unpackItem(i: string | number): PlanItem {
+  if (typeof i === "number") return { elective: i };
+  if (i.startsWith(SBC_PREFIX)) return { sbc: i.slice(SBC_PREFIX.length) as SbcCode };
+  if (i.startsWith(SLOT_PREFIX)) {
+    const [credits, ...rest] = i.slice(SLOT_PREFIX.length).split(":");
+    const [slot, ...also] = rest.join(":").split("|");
+    return { slot, credits: Number(credits), ...(also.length > 0 && { also }) };
+  }
+  return { code: i };
+}
 
 function packTerm(t: PlannedTerm): PackedTerm {
-  return [t.term, t.items.map((i) => ("code" in i ? i.code : "sbc" in i ? SBC_PREFIX + i.sbc : i.elective))];
+  return [t.term, t.items.map(packItem)];
 }
 
 function unpackTerm([term, items]: PackedTerm): PlannedTerm {
-  return {
-    term: term as TermId,
-    items: items.map((i) =>
-      typeof i === "number"
-        ? { elective: i }
-        : i.startsWith(SBC_PREFIX)
-          ? { sbc: i.slice(SBC_PREFIX.length) as SbcCode }
-          : { code: i },
-    ),
-  };
+  return { term: term as TermId, items: items.map(unpackItem) };
 }
 
 /** Encodes a record into cookie-sized chunks. Throws if it won't fit. */
@@ -128,6 +145,7 @@ export function encodeRecord(record: StudentRecord): string[] {
     record.plan.map(packTerm),
     record.minTermCredits ?? null,
     record.choices ?? {},
+    record.targetTerms ?? null,
   ];
   const encoded = Buffer.from(JSON.stringify(payload), "utf8").toString("base64url");
   const chunks: string[] = [];
@@ -140,8 +158,8 @@ export function encodeRecord(record: StudentRecord): string[] {
 export function decodeRecord(chunks: string[]): StudentRecord | null {
   if (chunks.length === 0) return null;
   try {
-    // Older records stop before the plan (7th), minimum credits (8th), or choices (9th).
-    const [version, name, entryTerm, currentTerm, programIds, attempts, plan = [], minTermCredits = null, choices = {}] = JSON.parse(
+    // Older records stop before the plan (7th), minimum credits (8th), choices (9th), or target semesters (10th).
+    const [version, name, entryTerm, currentTerm, programIds, attempts, plan = [], minTermCredits = null, choices = {}, targetTerms = null] = JSON.parse(
       Buffer.from(chunks.join(""), "base64url").toString("utf8"),
     );
     if (version !== VERSION) return null;
@@ -155,6 +173,7 @@ export function decodeRecord(chunks: string[]): StudentRecord | null {
       plan: (plan as PackedTerm[]).map(unpackTerm),
       ...(minTermCredits !== null && { minTermCredits }),
       ...(Object.keys(choices).length > 0 && { choices }),
+      ...(targetTerms !== null && { targetTerms }),
     });
     return parsed.success ? (parsed.data as StudentRecord) : null;
   } catch {

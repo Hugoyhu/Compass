@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ExternalLink } from "lucide-react";
 import { PrereqTree } from "@/components/courses/prereq-tree";
 import type { getScheduleCourseDetail } from "@/app/actions/schedule";
@@ -51,8 +52,11 @@ export function CourseDialog({
 }) {
   const instructors = [...new Set(picked.flatMap((s) => s.instructors))];
   const catalog = detail?.course;
+  // A course opened from in here (a prerequisite, the full page) shows over the page as its own
+  // modal; this one steps aside and returns when that modal closes.
+  const open = usePathname() === "/planner";
   return (
-    <Dialog open onOpenChange={(open) => !open && onClose()}>
+    <Dialog open={open} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="max-h-[90vh] gap-5 overflow-y-auto p-6 sm:max-w-2xl">
         <div className="space-y-1">
           <p className="font-mono text-sm text-muted-foreground">
@@ -137,9 +141,6 @@ export function CourseDialog({
                 );
               })}
             </ul>
-            <p className="text-xs text-muted-foreground">
-              Ratings sourced from Ratemyprofessors.com.
-            </p>
           </Section>
         )}
 

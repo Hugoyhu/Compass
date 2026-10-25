@@ -70,6 +70,10 @@ async function main() {
     check(await page.getByText(/Spring 2026/).first().isVisible(), "Dashboard uses the transcript's current term");
     await shot(page, "6-dashboard-uploaded");
 
+    await page.goto(`${BASE}/plan?view=roadmap`);
+    await page.getByRole("heading", { name: "Semester Planner" }).waitFor();
+    check(await page.getByText(/Semester \d+ of 8/).isVisible(), "Semester Planner shows the road to graduation");
+
     // 4. Clearing returns to onboarding.
     await page.goto(`${BASE}/record`);
     await page.waitForLoadState("networkidle");

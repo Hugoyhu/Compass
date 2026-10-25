@@ -31,7 +31,7 @@ export function CourseList({
   const [level, setLevel] = useState("");
   const [sbc, setSbc] = useState("");
   const [status, setStatus] = useState("");
-  const [scheduledOnly, setScheduledOnly] = useState(false);
+  const [scheduledOnly, setScheduledOnly] = useState(true);
   const [shown, setShown] = useState(PAGE);
   const deferredQuery = useDeferredValue(query);
   const hasStatus = courses.some((c) => c.status);

@@ -107,6 +107,73 @@
     "exemptions": [],
     "fulfillment": []
   },
+  "sampleSequence": [
+    {
+      "year": 1,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CSE 150",
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CSE 160",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CSE 161",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CSE 260",
+          "credits": 3
+        },
+        {
+          "kind": "course",
+          "code": "CSE 261",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CSE 385",
+          "credits": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Fall",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "CSE 350",
+          "credits": 4
+        }
+      ]
+    }
+  ],
   "notes": [
     {
       "topic": "other",

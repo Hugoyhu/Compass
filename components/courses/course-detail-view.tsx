@@ -145,7 +145,7 @@ export async function CourseDetailView({
                     <h3 className="text-xs font-medium text-muted-foreground">
                       {formatTerm(t.term)}
                     </h3>
-                    <SectionTable sections={t.sections} />
+                    <SectionTable sections={t.sections} ratings={detail.ratings} />
                   </section>
                 ))
               )}

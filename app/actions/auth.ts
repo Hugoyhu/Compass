@@ -1,5 +1,6 @@
 "use server";
 
+import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 import { getDummyHash, hashPassword, verifyPassword } from "@/lib/auth/password";
@@ -61,6 +62,7 @@ export async function signUp(_prev: AuthState, formData: FormData): Promise<Auth
 
   await startSession(userId);
   await adoptGuestRecord(userId);
+  revalidatePath("/", "layout");
   redirect(safeNext(formData.get("next")));
 }
 
@@ -79,10 +81,12 @@ export async function signIn(_prev: AuthState, formData: FormData): Promise<Auth
 
   await startSession(user.id as string);
   await adoptGuestRecord(user.id as string);
+  revalidatePath("/", "layout");
   redirect(safeNext(formData.get("next")));
 }
 
+/** The caller reloads the page afterwards: client navigation can keep showing pages cached while signed in. */
 export async function signOut(): Promise<void> {
   await endSession();
-  redirect("/");
+  revalidatePath("/", "layout");
 }

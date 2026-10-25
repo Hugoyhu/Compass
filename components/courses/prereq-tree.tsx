@@ -25,7 +25,7 @@ function Node({ prereq, courses }: { prereq: Prereq; courses: Courses }) {
       const state = info?.state ? STATE_ICONS[info.state] : null;
       return (
         <p className="flex items-baseline gap-2 text-sm">
-          {state && <state.icon className={`size-3.5 shrink-0 translate-y-0.5 ${state.className}`} aria-label={state.label} />}
+          {state && <state.icon className={`size-4 shrink-0 translate-y-0.5 ${state.className}`} strokeWidth={2.75} aria-label={state.label} />}
           <Link href={`/courses/${slugFor(prereq.code)}`} className="shrink-0 font-mono text-xs underline-offset-4 hover:underline">
             {prereq.code}
           </Link>

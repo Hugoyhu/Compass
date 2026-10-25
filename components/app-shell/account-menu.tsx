@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { LogOut, UserRound } from "lucide-react";
-import { signOut } from "@/app/actions/auth";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { UserRound } from "lucide-react";
+import { SignOutButton } from "@/components/app-shell/sign-out-button";
+import { buttonVariants } from "@/components/ui/button";
 import { accountsEnabled, getCurrentUser } from "@/lib/auth/session";
 
 /** Header account control. Reads the session: render inside <Suspense>. */
@@ -28,12 +28,7 @@ export async function AccountMenu() {
         <UserRound className="size-4 text-muted-foreground" aria-hidden />
         {user.username}
       </span>
-      <form action={signOut}>
-        <Button type="submit" variant="ghost" size="sm">
-          <LogOut />
-          Sign out
-        </Button>
-      </form>
+      <SignOutButton />
     </div>
   );
 }
