@@ -7,10 +7,10 @@ type DisplayStatus = RequirementStatus | "exempt" | "not-required";
 
 const STYLES: Record<DisplayStatus, { icon: typeof Circle; className: string }> = {
   satisfied: { icon: CircleCheck, className: "text-status-good" },
-  "in-progress": { icon: Clock, className: "text-[#a86f00]" },
+  "in-progress": { icon: Clock, className: "text-status-progress" },
   partial: { icon: CircleDashed, className: "text-muted-foreground" },
   "not-started": { icon: Circle, className: "text-muted-foreground" },
-  "needs-review": { icon: CircleHelp, className: "text-[#a86f00]" },
+  "needs-review": { icon: CircleHelp, className: "text-status-progress" },
   exempt: { icon: CircleMinus, className: "text-muted-foreground" },
   "not-required": { icon: CircleMinus, className: "text-muted-foreground" },
 };

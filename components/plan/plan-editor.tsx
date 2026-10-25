@@ -127,8 +127,8 @@ export function PlanEditor({ view }: { view: PlanView }) {
       </div>
 
       {view.target.beyond.length > 0 && (
-        <p role="status" className="flex items-start gap-2 border-l-4 border-[#a86f00] py-1 pl-4 text-sm">
-          <TriangleAlert className="mt-0.5 size-4 shrink-0 text-[#a86f00]" aria-hidden />
+        <p role="status" className="flex items-start gap-2 border-l-4 border-status-progress py-1 pl-4 text-sm">
+          <TriangleAlert className="mt-0.5 size-4 shrink-0 text-status-progress" aria-hidden />
           <span>
             {view.target.beyond.map(formatTerm).join(", ")} {view.target.beyond.length === 1 ? "runs" : "run"} past your{" "}
             {view.target.terms}-semester goal.{" "}
@@ -289,7 +289,7 @@ function TermColumn({
         </span>
       </div>
       {term.problems.map((p) => (
-        <p key={p} className="mt-2 flex items-center gap-1.5 text-xs text-[#a86f00]">
+        <p key={p} className="mt-2 flex items-center gap-1.5 text-xs text-status-progress">
           <TriangleAlert className="size-3.5 shrink-0" aria-hidden />
           {p}
         </p>

@@ -8,7 +8,7 @@ type Courses = CourseDetail["prereqCourses"];
 
 const STATE_ICONS = {
   done: { icon: CircleCheck, className: "text-status-good", label: "Taken" },
-  "in-progress": { icon: Clock, className: "text-[#a86f00]", label: "In progress" },
+  "in-progress": { icon: Clock, className: "text-status-progress", label: "In progress" },
   planned: { icon: CircleDashed, className: "text-muted-foreground", label: "Planned" },
   missing: { icon: Circle, className: "text-muted-foreground", label: "Not taken" },
 } as const;

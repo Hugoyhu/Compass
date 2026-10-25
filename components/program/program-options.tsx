@@ -77,7 +77,7 @@ export function ProgramOptionsView({ options, progress = {} }: { options: Progra
                               <span className="font-mono font-semibold">{c.code}</span>
                               <span className="flex items-center gap-1 text-muted-foreground tabular-nums">
                                 {state === "done" && <Check className="size-3 text-status-good" aria-label="Taken" />}
-                                {state === "in-progress" && <Clock className="size-3 text-[#a86f00]" aria-label="In progress" />}
+                                {state === "in-progress" && <Clock className="size-3 text-status-progress" aria-label="In progress" />}
                                 {c.credits > 0 && `${c.credits} cr`}
                               </span>
                             </span>

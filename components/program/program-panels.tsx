@@ -43,7 +43,7 @@ export function RequirementNav({
 
 const POLICY_ICONS: Record<PolicyStatus, { icon: LucideIcon; className: string }> = {
   satisfied: { icon: CircleCheck, className: "text-status-good" },
-  "in-progress": { icon: Clock, className: "text-[#a86f00]" },
+  "in-progress": { icon: Clock, className: "text-status-progress" },
   "not-met": { icon: CircleX, className: "text-status-critical" },
   pending: { icon: CircleDashed, className: "text-muted-foreground" },
   info: { icon: Info, className: "text-muted-foreground" },

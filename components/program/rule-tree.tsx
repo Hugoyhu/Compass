@@ -258,7 +258,7 @@ function StatusMark({ status, elsewhere }: { status?: CourseStatus; elsewhere: b
     case "in-progress":
       return (
         <span className={`${base} text-muted-foreground`}>
-          <Clock className="size-4 text-[#986300]" strokeWidth={2.75} aria-hidden />
+          <Clock className="size-4 text-status-progress" strokeWidth={2.75} aria-hidden />
           In progress
         </span>
       );

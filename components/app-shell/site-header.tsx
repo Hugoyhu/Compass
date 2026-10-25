@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import compassLogo from "@/app/compasslogo.png";
+import { ThemeToggle } from "./theme-toggle";
 import { cn } from "@/lib/utils";
 import { navItemFor, navItems } from "./nav";
 
@@ -12,13 +13,16 @@ export function SiteHeader({ account }: { account: React.ReactNode }) {
 
   return (
     <header className="border-b-2 border-foreground">
-      <div className="mx-auto grid w-full max-w-7xl grid-cols-12 items-center gap-x-6 gap-y-3 px-4 py-4 md:px-8">
-        <Link href="/" className="col-span-6 flex items-center gap-2 text-xl font-bold tracking-tight md:col-span-3">
-          <Image src={compassLogo} alt="" width={18} height={33} className="h-7 w-auto object-contain" priority />
+      <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center gap-x-6 gap-y-3 px-4 py-4 md:flex-nowrap md:px-8">
+        <Link href="/" className="flex shrink-0 items-center gap-2 text-xl font-bold tracking-tight">
+          <Image src={compassLogo} alt="" width={18} height={33} className="h-7 w-auto object-contain dark:invert" priority />
           Compass
         </Link>
-        <div className="col-span-6 flex justify-end md:order-last md:col-span-2">{account}</div>
-        <nav aria-label="Main" className="col-span-12 flex flex-wrap items-center gap-x-5 gap-y-1 text-base md:col-span-7">
+        <div className="ml-auto flex shrink-0 items-center justify-end gap-1 md:order-last md:ml-0">
+          <ThemeToggle />
+          {account}
+        </div>
+        <nav aria-label="Main" className="flex min-w-0 basis-full flex-wrap items-center gap-x-5 gap-y-1 text-base md:basis-auto md:flex-1 md:flex-nowrap md:justify-center md:overflow-x-auto md:whitespace-nowrap">
           {navItems.map((item) => (
             <Link
               key={item.href}

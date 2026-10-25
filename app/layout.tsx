@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Archivo } from "next/font/google";
 import { Suspense } from "react";
 import { AccountMenu } from "@/components/app-shell/account-menu";
+import { themeScript } from "@/components/app-shell/theme-toggle";
 import { SiteHeader } from "@/components/app-shell/site-header";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
@@ -18,7 +19,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, modal }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${grotesk.variable} h-full antialiased`}>
+    <html lang="en" className={`${grotesk.variable} h-full antialiased`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className="min-h-full">
         <TooltipProvider>
           <SiteHeader

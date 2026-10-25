@@ -15,9 +15,12 @@
   --color-series-2: var(--series-2);
   --color-series-3: var(--series-3);
   --color-series-4: var(--series-4);
+  --color-scrim: var(--scrim);
   --color-status-good: var(--status-good);
   --color-status-warning: var(--status-warning);
   --color-status-critical: var(--status-critical);
+  --color-status-progress: var(--status-progress);
+  --color-status-progress-strong: var(--status-progress-strong);
   --color-chart-4: var(--chart-4);
   --color-chart-3: var(--chart-3);
   --color-chart-2: var(--chart-2);
@@ -83,6 +86,9 @@
   --status-good: #1f7a3a;
   --status-warning: #c27c00;
   --status-critical: #d4261c;
+  --status-progress: #a86f00;
+  --status-progress-strong: #7a5000;
+  --scrim: oklch(0 0 0 / 10%);
 }
 
 .dark {
@@ -113,6 +119,27 @@
   --series-2: oklch(0.64 0.21 28);
   --series-3: oklch(0.55 0 0);
   --series-4: oklch(0.45 0.1 28);
+  --status-good: #4cc16d;
+  --status-warning: #e0a030;
+  --status-critical: #ff6b5e;
+  --status-progress: #e0a030;
+  --status-progress-strong: #f0c060;
+  --scrim: oklch(0 0 0 / 55%);
+}
+
+/* Schedule grid blocks. Defined on the block, not :root, so var(--hue) resolves from the course's own hue. */
+.course-block {
+  --course-bg: oklch(0.92 0.06 var(--hue) / 0.9);
+  --course-border: oklch(0.65 0.14 var(--hue));
+  --course-fg: oklch(0.3 0.08 var(--hue));
+  background-color: var(--course-bg);
+  border-color: var(--course-border);
+  color: var(--course-fg);
+}
+.dark .course-block {
+  --course-bg: oklch(0.32 0.07 var(--hue) / 0.9);
+  --course-border: oklch(0.55 0.12 var(--hue));
+  --course-fg: oklch(0.92 0.05 var(--hue));
 }
 
 @layer base {

@@ -40,8 +40,8 @@ function SbcGrid({ results }: { results: SbcResult[] }) {
                       tabIndex={0}
                       className={cn(
                         "flex items-center gap-1.5 border border-foreground/30 px-2 py-1.5 text-xs font-medium outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                        "data-[status=satisfied]:border-foreground data-[status=satisfied]:bg-foreground data-[status=satisfied]:text-background data-[status=satisfied]:[&_svg]:text-background",
-                        "data-[status=in-progress]:border-[#a86f00]/60 data-[status=in-progress]:bg-[#a86f00]/10 data-[status=in-progress]:text-[#7a5000]",
+                        "data-[status=satisfied]:border-status-good/60 data-[status=satisfied]:bg-status-good/10 data-[status=satisfied]:[&_svg]:text-status-good",
+                        "data-[status=in-progress]:border-status-progress/60 data-[status=in-progress]:bg-status-progress/10 data-[status=in-progress]:text-status-progress-strong",
                         "data-[status=exempt]:border-muted-foreground/20 data-[status=exempt]:bg-muted data-[status=exempt]:text-muted-foreground",
                         "data-[status=not-required]:border-muted-foreground/20 data-[status=not-required]:bg-muted data-[status=not-required]:text-muted-foreground",
                       )}

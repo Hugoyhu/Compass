@@ -306,7 +306,7 @@ type Ratings = Record<string, InstructorRating>;
 
 /** Rating color: green for 4 and up, amber from 3, red below. */
 function ratingTone(rating: number): string {
-  return rating >= 4 ? "text-emerald-600 dark:text-emerald-400" : rating >= 3 ? "text-amber-600 dark:text-amber-400" : "text-red-600 dark:text-red-400";
+  return rating >= 4 ? "text-status-good" : rating >= 3 ? "text-status-warning" : "text-status-critical";
 }
 
 /** Instructor names, each followed by its Rate My Professors rating when one matches. */
@@ -480,13 +480,11 @@ function ClassBlock({
       tabIndex={0}
       onClick={() => onExpand(block.code)}
       onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && (e.preventDefault(), onExpand(block.code))}
-      className="group absolute inset-x-0.5 cursor-pointer overflow-hidden rounded-md border px-1.5 py-1 text-[11px] leading-tight"
+      className="group absolute inset-x-0.5 cursor-pointer overflow-hidden rounded-md course-block border px-1.5 py-1 text-[11px] leading-tight"
       style={{
         ...style,
-        background: `oklch(0.92 0.06 ${hue} / 0.9)`,
-        borderColor: `oklch(0.65 0.14 ${hue})`,
-        color: `oklch(0.3 0.08 ${hue})`,
-      }}
+        "--hue": hue,
+      } as React.CSSProperties}
       title={`${block.code} ${title}\n${section.label} · ${formatMinutes(section.start)}–${formatMinutes(section.end)}`}
     >
       <button
@@ -496,7 +494,7 @@ function ClassBlock({
           e.stopPropagation();
           onRemove(section.id);
         }}
-        className="absolute top-0.5 right-0.5 hidden rounded p-0.5 hover:bg-black/10 group-hover:block focus-visible:block"
+        className="absolute top-0.5 right-0.5 hidden rounded p-0.5 hover:bg-foreground/10 group-hover:block focus-visible:block"
       >
         <X className="size-3" />
       </button>
