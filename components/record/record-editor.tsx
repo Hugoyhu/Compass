@@ -379,7 +379,13 @@ export function RecordEditor({
           </CardHeader>
           <CardContent className="flex flex-wrap gap-2">
             <form
-              action={clearRecord}
+              action={async () => {
+                await clearRecord();
+                // The draft is local state, so the refreshed server record won't replace it.
+                setDraft(EMPTY_RECORD);
+                setDirty(false);
+                setMessage(null);
+              }}
               onSubmit={(e) => {
                 if (!confirm("Delete all of your courses?")) e.preventDefault();
               }}

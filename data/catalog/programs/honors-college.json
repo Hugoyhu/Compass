@@ -218,6 +218,28 @@
           "credits": 1
         }
       ]
+    },
+    {
+      "year": 2,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "HON 205",
+          "credits": 1
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "season": "Spring",
+      "slots": [
+        {
+          "kind": "course",
+          "code": "HON 305",
+          "credits": 1
+        }
+      ]
     }
   ],
   "assumedCourses": [

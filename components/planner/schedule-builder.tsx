@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState, useTransition } from "react";
+import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { Check, Plus, Search, X } from "lucide-react";
 import { getScheduleCourseDetail, saveSchedule } from "@/app/actions/schedule";
@@ -11,7 +12,7 @@ import { selectClassName } from "@/components/record/options";
 import { DAY_LABELS, formatDays, formatMinutes, formatRange } from "@/lib/domain/meeting-format";
 import { formatTerm } from "@/lib/domain/terms";
 import type { TermId } from "@/lib/domain/types";
-import type { InstructorRating, ScheduleCourse, ScheduleSection, ScheduleView } from "@/lib/services/schedule";
+import type { InstructorRating, NeededItem, ScheduleCourse, ScheduleSection, ScheduleView } from "@/lib/services/schedule";
 import { cn } from "@/lib/utils";
 
 const HOUR_HEIGHT = 68;
@@ -53,7 +54,7 @@ function blocksFor({ course, section }: Entry): Block[] {
   return section.days.map((day) => ({ key: `${section.id}-${day}`, section, code: course.code, credits: course.credits, day }));
 }
 
-export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView; initialSelected: string[] }) {
+export function ScheduleBuilder({ view, initialSelected, needed }: { view: ScheduleView; initialSelected: string[]; needed: NeededItem[] | null }) {
   const router = useRouter();
   const pathname = usePathname();
   const [query, setQuery] = useState("");
@@ -200,6 +201,7 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
         </aside>
 
         <section className="min-w-0 space-y-3">
+          <NeededClasses term={view.term} needed={needed} pickedCodes={new Set(pickedCourses.keys())} offered={new Set(view.courses.map((c) => c.code))} onFind={setQuery} />
           <WeekGrid
             ratings={view.ratings}
             hours={hours}
@@ -245,6 +247,56 @@ export function ScheduleBuilder({ view, initialSelected }: { view: ScheduleView;
           detail={expanded.detail}
           onClose={() => setExpanded(null)}
         />
+      )}
+    </div>
+  );
+}
+
+/** The classes the student's plan has for this term, so they know what to look for. */
+function NeededClasses({
+  term,
+  needed,
+  pickedCodes,
+  offered,
+  onFind,
+}: {
+  term: TermId;
+  needed: NeededItem[] | null;
+  pickedCodes: Set<string>;
+  offered: Set<string>;
+  onFind: (query: string) => void;
+}) {
+  return (
+    <div className="rounded-lg border p-3 text-sm">
+      <p className="mb-1.5 text-xs font-medium text-muted-foreground">Classes you need for {formatTerm(term)}</p>
+      {!needed ? (
+        <p className="text-muted-foreground">
+          Nothing is planned for this term yet. Add it in your{" "}
+          <Link href="/plan" className="underline underline-offset-4">
+            plan
+          </Link>
+          .
+        </p>
+      ) : (
+        <ul className="grid gap-x-6 gap-y-1 sm:grid-cols-2">
+          {needed.map((item, i) =>
+            item.kind === "course" ? (
+              <li key={item.code} className="flex items-center justify-between gap-2">
+                <button type="button" className="flex min-w-0 items-center gap-1.5 text-left underline-offset-4 hover:underline" onClick={() => onFind(item.code)}>
+                  {pickedCodes.has(item.code) ? <Check className="size-4 shrink-0 text-status-good" aria-label="Picked" /> : <span className="size-4 shrink-0" />}
+                  <span className="font-mono text-xs">{item.code}</span>
+                  <span className="truncate text-muted-foreground">{item.title}</span>
+                </button>
+                <span className="shrink-0 text-xs text-muted-foreground">{offered.has(item.code) ? `${item.credits} cr` : "not offered"}</span>
+              </li>
+            ) : (
+              <li key={i} className="flex items-center justify-between gap-2 pl-5 text-muted-foreground">
+                <span>{item.label}</span>
+                <span className="text-xs">{item.credits} cr</span>
+              </li>
+            ),
+          )}
+        </ul>
       )}
     </div>
   );

@@ -6,8 +6,9 @@
 import { getRepository } from "@/lib/data/repository";
 import type { Section } from "@/lib/domain/catalog/offering";
 import { nextRegularTerm, parseTerm } from "@/lib/domain/terms";
-import type { TermId } from "@/lib/domain/types";
+import type { StudentRecord, TermId } from "@/lib/domain/types";
 import { buildRatingIndex, instructorNames } from "@/lib/engine/professors";
+import { placeholderCredits } from "@/lib/engine/plan";
 import { readSchedule } from "@/lib/student/schedule";
 
 /** Weekdays the grid shows; PeopleSoft writes them as two-letter codes ("MoWe"). */
@@ -164,3 +165,23 @@ export async function getNextSemesterSchedule(currentTerm: TermId) {
 export type NextSemesterSchedule = Awaited<ReturnType<typeof getNextSemesterSchedule>>;
 
 export type ScheduleView = Awaited<ReturnType<typeof getScheduleView>>;
+
+/** One thing the student's plan has for a term: a course to register for, or a placeholder still to fill. */
+export type NeededItem =
+  | { kind: "course"; code: string; title: string; credits: number }
+  | { kind: "placeholder"; label: string; credits: number };
+
+/** What the student's plan says to take in `term`, null when the plan has nothing for it. */
+export async function getNeededForTerm(student: StudentRecord | null, term: TermId | null): Promise<NeededItem[] | null> {
+  const planned = student?.plan.find((t) => t.term === term);
+  if (!planned || planned.items.length === 0) return null;
+  const info = new Map((await getRepository().listCourses()).map((c) => [c.code, c]));
+  return planned.items.map((item): NeededItem => {
+    if ("code" in item) {
+      const course = info.get(item.code);
+      return { kind: "course", code: item.code, title: course?.title ?? "", credits: course?.credits.min ?? 0 };
+    }
+    const label = "sbc" in item ? `${item.sbc} course` : "elective" in item ? "Free elective" : "Program elective";
+    return { kind: "placeholder", label, credits: placeholderCredits(item) };
+  });
+}

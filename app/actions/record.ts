@@ -1,6 +1,6 @@
 "use server";
 
-import { refresh } from "next/cache";
+import { refresh, revalidatePath } from "next/cache";
 import { z } from "zod";
 import { CourseCodeSchema } from "@/lib/domain/catalog/common";
 import { getCurrentUser } from "@/lib/auth/session";
@@ -68,10 +68,12 @@ export async function clearRecord(): Promise<void> {
   const user = await getCurrentUser();
   if (user) {
     await clearAccountRecord(user.id);
-    refresh();
   } else {
     await clearGuestRecord();
   }
+  // Every page shows the record, so drop all cached renders, not just the current one.
+  revalidatePath("/", "layout");
+  refresh();
 }
 
 /** Declares a concentration, specialization, or track; null clears the choice. */
