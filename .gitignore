@@ -29,6 +29,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+*.log
 
 # env files (can opt-in for committing if needed)
 .env*
@@ -48,8 +49,12 @@ CLAUDE.md
 /utilities/scrapers/course-offering-scraper/data/
 /utilities/scrapers/course-offering-scraper/data-old/
 /utilities/scrapers/course-offering-scraper/data-fresh/
+# raw HTML pages the scrapers save (re-creatable)
+/utilities/scrapers/*/*/raw/
 /utilities/scrapers/course-offering-scraper/.venv/
 /utilities/scrapers/course-offering-scraper/__pycache__/
 /utilities/scrapers/major-minor/HANDOFF.md
 
 *.zip
+*.html
+*.htm
