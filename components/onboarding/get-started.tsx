@@ -7,7 +7,15 @@ export function GetStarted() {
   return (
     <div className="space-y-6">
       <div className="space-y-1">
-        <h2 className="text-5xl font-bold tracking-tight md:text-6xl">Add your courses</h2>
+        <h2 className="text-5xl font-bold tracking-tight md:text-6xl">
+          Welcome to Compass!
+        </h2>
+        <p className="text-xl text-muted-foreground">
+          Track your degree progress, build a schedule, and plan your semesters.
+        </p>
+        <p className="text-xl text-muted-foreground">
+          Sign in or create an account to save your work.
+        </p>
       </div>
       <div className="grid gap-4 md:grid-cols-2">
         <Card>
@@ -27,7 +35,10 @@ export function GetStarted() {
             <CardTitle>Enter them yourself</CardTitle>
           </CardHeader>
           <CardFooter className="mt-auto">
-            <Link href="/record" className={buttonVariants({ variant: "outline" })}>
+            <Link
+              href="/record"
+              className={buttonVariants({ variant: "outline" })}
+            >
               Add courses
             </Link>
           </CardFooter>
