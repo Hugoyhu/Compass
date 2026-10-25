@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 
 export const THEME_KEY = "compass-theme";
 
-/** Runs before first paint (see the layout) so a saved or system dark theme doesn't flash light. */
-export const themeScript = `try{var t=localStorage.getItem("${THEME_KEY}");if(t==="dark"||(t!=="light"&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.classList.add("dark")}catch(e){}`;
+/** Runs before first paint (see the layout). Dark unless the visitor chose light, so it doesn't flash light. */
+export const themeScript = `try{var t=localStorage.getItem("${THEME_KEY}");if(t!=="light")document.documentElement.classList.add("dark")}catch(e){}`;
 
 function subscribe(onChange: () => void) {
   const observer = new MutationObserver(onChange);
