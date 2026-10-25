@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState, useTransition } from "react";
 import { Loader2, MoreHorizontal, Plus, TriangleAlert, X } from "lucide-react";
-import { generatePlanAction, savePlan, setTargetTerms } from "@/app/actions/plan";
+import { generatePlanAction, savePlan, setMinTermCredits, setTargetTerms } from "@/app/actions/plan";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -23,6 +23,9 @@ import { cn } from "@/lib/utils";
 import { formatProgramName } from "@/lib/domain/program-name";
 
 const ELECTIVE_CREDITS = 3;
+const FULL_TIME_CREDITS = 12;
+/** Fewest credits a fall or spring semester may have: part time below 12, up to 19 without approval. */
+const MIN_CREDIT_OPTIONS = [0, 3, 6, 9, 12, 13, 14, 15, 16, 17, 18, 19];
 
 function toItem(i: CheckedItem): PlanItem {
   if (i.code) return { code: i.code };
@@ -69,20 +72,37 @@ export function PlanEditor({ view }: { view: PlanView }) {
     <div className={cn("space-y-8", pending && "pointer-events-none opacity-70 transition-opacity")} aria-busy={pending}>
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="space-y-2">
-          <label className="flex flex-wrap items-center gap-2 text-sm font-medium">
-            Graduate in
-            <select
-              className={cn(selectClassName, "h-8 w-auto")}
-              value={view.target.terms}
-              onChange={(e) => run(() => setTargetTerms(Number(e.target.value)))}
-            >
-              {view.target.options.map((o) => (
-                <option key={o.terms} value={o.terms}>
-                  {o.terms} semesters · {formatTerm(o.last)}
-                </option>
-              ))}
-            </select>
-          </label>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium">
+            <label className="flex items-center gap-2">
+              Graduate in
+              <select
+                className={cn(selectClassName, "h-8 w-auto")}
+                value={view.target.terms}
+                onChange={(e) => run(() => setTargetTerms(Number(e.target.value)))}
+              >
+                {view.target.options.map((o) => (
+                  <option key={o.terms} value={o.terms}>
+                    {o.terms} semesters · {formatTerm(o.last)}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className="flex items-center gap-2">
+              At least
+              <select
+                className={cn(selectClassName, "h-8 w-auto")}
+                value={view.minCredits}
+                onChange={(e) => run(() => setMinTermCredits(Number(e.target.value)))}
+              >
+                {MIN_CREDIT_OPTIONS.map((n) => (
+                  <option key={n} value={n}>
+                    {n === FULL_TIME_CREDITS ? `${n} (full time)` : n}
+                  </option>
+                ))}
+              </select>
+              credits a semester
+            </label>
+          </div>
         </div>
         <div className="flex items-center gap-2">
           {pending && <Loader2 className="size-4 animate-spin text-muted-foreground" aria-label="Saving" />}

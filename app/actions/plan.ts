@@ -3,7 +3,7 @@
 import { z } from "zod";
 import { schedulePlan } from "@/lib/engine/scheduler";
 import { planContext } from "@/lib/services/plan";
-import { semestersUsed } from "@/lib/engine/plan";
+import { MAX_TERM_CREDITS, semestersUsed } from "@/lib/engine/plan";
 import { MAX_PLAN_TERMS, MAX_TARGET_TERMS, MIN_TARGET_TERMS, PlannedTermSchema } from "@/lib/student/record";
 import { getStudentRecord } from "@/lib/student/store";
 import { termOrdinal } from "@/lib/domain/terms";
@@ -40,6 +40,14 @@ export async function setTargetTerms(terms: number): Promise<SaveResult> {
   const min = Math.max(MIN_TARGET_TERMS, semestersUsed(record) + 1);
   if (!Number.isInteger(terms) || terms < min || terms > MAX_TARGET_TERMS) return { ok: false, error: `Choose ${min} to ${MAX_TARGET_TERMS} semesters` };
   return saveRecord({ ...record, targetTerms: terms });
+}
+
+/** Sets the fewest credits the student wants in a fall or spring semester; 12 is full time. */
+export async function setMinTermCredits(credits: number): Promise<SaveResult> {
+  if (!Number.isInteger(credits) || credits < 0 || credits > MAX_TERM_CREDITS) return { ok: false, error: `Choose 0 to ${MAX_TERM_CREDITS} credits` };
+  const record = await getStudentRecord();
+  if (!record) return { ok: false, error: "Add your courses first" };
+  return saveRecord({ ...record, minTermCredits: credits });
 }
 
 /** Adds a course to a term of the plan, adding the term if the plan doesn't have it. */
